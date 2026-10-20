@@ -1,0 +1,121 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":25,\"matches\":[{\"addr\":\"0x1800fe910\",\"string\":\"stream timeout\"},{\"addr\":\"0x1800fe930\",\"string\":\"timed out\"},{\"addr\":\"0x1800febd0\",\"string\":\"CreateThreadpoolTimer\"},{\"addr\":\"0x1800febe8\",\"string\":\"SetThreadpoolTimer\"},{\"addr\":\"0x1800fec00\",\"string\":\"WaitForThreadpoolTimerCallbacks\"},{\"addr\":\"0x1800fec20\",\"string\":\"CloseThreadpoolTimer\"},{\"addr\":\"0x1800fed60\",\"string\":\"GetSystemTimePreciseAsFileTime\"},{\"addr\":\"0x180102400\",\"string\":\"api-ms-win-core-datetime-l1-1-1\"},{\"addr\":\"0x1801028c0\",\"string\":\"api-ms-win-appmodel-runtime-l1-1-2\"},{\"addr\":\"0x1801029a8\",\"string\":\"GetTimeFormatEx\"},{\"addr\":\"0x180102c00\",\"string\":\"LC_TIME\"},{\"addr\":\"0x18010b7e0\",\"string\":\"Failed getting timezone info. \"},{\"addr\":\"0x18010e8b0\",\"string\":\"no two faces were detected at the same time. !!!\"},{\"addr\":\"0x180132a5c\",\"string\":\"setFaceAreaTime_3D\"},{\"addr\":\"0x180133748\",\"string\":\"onnxruntime.dll\"},{\"addr\":\"0x1801338dc\",\"string\":\"GetDynamicTimeZoneInformation\"},{\"addr\":\"0x1801339d6\",\"string\":\"GetLocalTime\"},{\"addr\":\"0x1801339e6\",\"string\":\"SetUnhandledExceptionFilter\"},{\"addr\":\"0x180133d5a\",\"string\":\"GetSystemTimeAsFileTime\"},{\"addr\":\"0x180133e92\",\"string\":\"UnhandledExceptionFilter\"},{\"addr\":\"0x180133fd2\",\"string\":\"SystemTimeToTzSpecificLocalTime\"},{\"addr\":\"0x180133ff4\",\"string\":\"FileTimeToSystemTime\"},{\"addr\":\"0x18013406a\",\"string\":\"GetTimeFormatW\"},{\"addr\":\"0x1801340ec\",\"string\":\"GetTimeZoneInformation\"},{\"addr\":\"0x180136000\",\"string\":\".?AVruntime_error@std@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 25,
+      "matches": [
+        {
+          "addr": "0x1800fe910",
+          "string": "stream timeout"
+        },
+        {
+          "addr": "0x1800fe930",
+          "string": "timed out"
+        },
+        {
+          "addr": "0x1800febd0",
+          "string": "CreateThreadpoolTimer"
+        },
+        {
+          "addr": "0x1800febe8",
+          "string": "SetThreadpoolTimer"
+        },
+        {
+          "addr": "0x1800fec00",
+          "string": "WaitForThreadpoolTimerCallbacks"
+        },
+        {
+          "addr": "0x1800fec20",
+          "string": "CloseThreadpoolTimer"
+        },
+        {
+          "addr": "0x1800fed60",
+          "string": "GetSystemTimePreciseAsFileTime"
+        },
+        {
+          "addr": "0x180102400",
+          "string": "api-ms-win-core-datetime-l1-1-1"
+        },
+        {
+          "addr": "0x1801028c0",
+          "string": "api-ms-win-appmodel-runtime-l1-1-2"
+        },
+        {
+          "addr": "0x1801029a8",
+          "string": "GetTimeFormatEx"
+        },
+        {
+          "addr": "0x180102c00",
+          "string": "LC_TIME"
+        },
+        {
+          "addr": "0x18010b7e0",
+          "string": "Failed getting timezone info. "
+        },
+        {
+          "addr": "0x18010e8b0",
+          "string": "no two faces were detected at the same time. !!!"
+        },
+        {
+          "addr": "0x180132a5c",
+          "string": "setFaceAreaTime_3D"
+        },
+        {
+          "addr": "0x180133748",
+          "string": "onnxruntime.dll"
+        },
+        {
+          "addr": "0x1801338dc",
+          "string": "GetDynamicTimeZoneInformation"
+        },
+        {
+          "addr": "0x1801339d6",
+          "string": "GetLocalTime"
+        },
+        {
+          "addr": "0x1801339e6",
+          "string": "SetUnhandledExceptionFilter"
+        },
+        {
+          "addr": "0x180133d5a",
+          "string": "GetSystemTimeAsFileTime"
+        },
+        {
+          "addr": "0x180133e92",
+          "string": "UnhandledExceptionFilter"
+        },
+        {
+          "addr": "0x180133fd2",
+          "string": "SystemTimeToTzSpecificLocalTime"
+        },
+        {
+          "addr": "0x180133ff4",
+          "string": "FileTimeToSystemTime"
+        },
+        {
+          "addr": "0x18013406a",
+          "string": "GetTimeFormatW"
+        },
+        {
+          "addr": "0x1801340ec",
+          "string": "GetTimeZoneInformation"
+        },
+        {
+          "addr": "0x180136000",
+          "string": ".?AVruntime_error@std@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

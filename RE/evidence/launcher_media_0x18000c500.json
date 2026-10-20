@@ -1,0 +1,117 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18000c500\",\"code\":\"char __fastcall sub_18000C500(__int64 a1)\\n{\\n  __int64 v2; // rcx\\n  __int64 v3; // rax\\n  const char *v4; // rdx\\n  __int64 v5; // rax\\n  __int64 v7; // rax\\n  _QWORD *v8; // rsi\\n  unsigned int v9; // ebx\\n  __int64 v10; // rax\\n  __int64 v11; // rax\\n  __int64 v12; // rax\\n  __int64 v13; // rax\\n  __int64 v14; // rdx\\n  __int64 v15; // r8\\n  __int64 v16; // r9\\n  __int64 v17; // rax\\n  __int64 v18; // rax\\n  char v19; // bl\\n  __int64 v20; // rcx\\n  __int64 v21; // [rsp+50h] [rbp-168h] BYREF\\n  void *ppFactory; // [rsp+58h] [rbp-160h] BYREF\\n  _BYTE v23[304]; // [rsp+60h] [rbp-158h] BYREF\\n  D3D_FEATURE_LEVEL pFeatureLevels[4]; // [rsp+190h] [rbp-28h] BYREF\\n\\n  if ( *(_QWORD *)(a1 + 32) != 0 )\\n  {\\n    v8 = (_QWORD *)(a1 + 40); /*0x18000c651*/\\n  }\\n  else\\n  {\\n    *(__m128i *)pFeatureLevels = _mm_load_si128((const __m128i *)&xmmword_18001C5D0); /*0x18000c540*/\\n    ppFactory = nullptr; /*0x18000c549*/\\n    CreateDXGIFactory(riid: &riid, &ppFactory); /*0x18000c55a*/\\n    (*(void (__fastcall **)(void *, _QWORD, __int64))(*(_QWORD *)ppFactory + 56LL))(a1: ppFactory, a2: 0, a3: a1 + 32); /*0x18000c56d*/\\n    (*(void (__fastcall **)(void *))(*(_QWORD *)ppFactory + 16LL))(a1: ppFactory); /*0x18000c578*/\\n    v2 = *(_QWORD *)(a1 + 32); /*0x18000c57b*/\\n    if ( v2 == 0 )\\n    {\\n      v3 = sub_180001820(a1: std::cout, a2: \\\"media_transpose2to3: TransposeOutput: Failure: \\\");\\n      v4 = \\\"No IDXGIAdapter found.\\\"; /*0x18000c597*/\\nLABEL_4:\\n      v5 = sub_180001820(a1: v3, a2: v4); /*0x18000c59e*/\\n      std::ostream::operator<<(a1: v5, a2: sub_180003130); /*0x18000c5b0*/\\n      return 0; /*0x18000c5b8*/\\n    }\\n    (*(void (__fastcall **)(__int64, _BYTE *))(*(_QWORD *)v2 + 64LL))(a1: v2, a2: v23); /*0x18000c5c5*/\\n    v7 = sub_1800097C0(a1: std::wcout, a2: v23); /*0x18000c5d4*/\\n    std::wostream::operator<<(a1: v7, a2: sub_18000A470); /*0x18000c5e3*/\\n    v8 = (_QWORD *)(a1 + 40); /*0x18000c5e9*/\\n    if ( D3D11CreateDevice(\\n           pAdapter: *(IDXGIAdapter **)(a1 + 32),\\n           DriverType: D3D_DRIVER_TYPE_UNKNOWN,\\n           Software: nullptr,\\n           Flags: 0,\\n           pFeatureLevels,\\n           FeatureLevels: 4u,\\n           SDKVersion: 7u,\\n           ppDevice: (ID3D11Device **)(a1 + 40),\\n           pFeatureLevel: nullptr,\\n           ppImmediateContext: (ID3D11DeviceContext **)(a1 + 48)) < 0 )\\n    {\\n      v3 = sub_180001820(a1: std::cout, a2: \\\"media_transpose2to3: TransposeOutput: Failure: \\\");\\n      v4 = \\\"D3D11CreateDevice\\\"; /*0x18000c645*/\\n      goto LABEL_4; /*0x18000c64c*/\\n    }\\n  }\\n  v21 = 0; /*0x18000c655*/\\n  __wind\\n  {\\n    if ( (**(int (__fastcall ***)(_QWORD, void *, __int64 *))*v8)(a1: *v8, a2: &unk_18001C1D8, a3: &v21) >= 0 /*0x18000c67a*/\\n      && v21 != 0 )\\n    {\\n      (*(void (__fastcall **)(__int64, __int64))(*(_QWORD *)v21 + 80LL))(a1: v21, a2: 5); /*0x18000c684*/\\n    }\\n    v9 = (*(__int64 (__fastcall **)(_QWORD))(*(_QWORD *)*v8 + 296LL))(a1: *v8); /*0x18000c693*/\\n    v10 = sub_180001820(a1: std::cout, a2: \\\"Direct3D Feature Level: \\\");\\n    v11 = std::ostream::operator<<(a1: v10, a2: v9 >> 12); /*0x18000c6b0*/\\n    v12 = sub_180001820(a1: v11, a2: \\\"_\\\"); /*0x18000c6c0*/\\n    v13 = std::ostream::operator<<(a1: v12, a2: (v9 >> 8) & 0xF); /*0x18000c6d0*/\\n    std::ostream::operator<<(a1: v13, a2: sub_180003130); /*0x18000c6e0*/\\n    if ( (unsigned __int8)sub_18000CA80(a1) != 0 )\\n    {\\n      v19 = 1; /*0x18000c728*/\\n    }\\n    else\\n    {\\n      v17 = sub_180001820(a1: std::cout, a2: \\\"media_transpose2to3: TransposeOutput: Failure: \\\");\\n      v18 = sub_180001820(a1: v17, a2: \\\"Failed to create 3D texture\\\"); /*0x18000c70f*/\\n      std::ostream::operator<<(a1: v18, a2: sub_180003130); /*0x18000c71e*/\\n      v19 = 0; /*0x18000c724*/\\n    }\\n  }\\n  __unwind\\n  {\\n    sub_18000AEC0(a1: &v21, a2: v14, a3: v15, a4: v16); /*0xf1c0000000000030*/\\n  }\\n  __wind /*0xf1c0000000000038*/\\n  {\\n    v20 = v21; /*0x18000c72a*/\\n    if ( v21 != 0 ) /*0x18000c732*/\\n    {\\n      v21 = 0; /*0x18000c734*/\\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v20 + 16LL))(a1: v20); /*0x18000c73c*/\\n    }\\n  }\\n  __unwind\\n  {\\n    __std_terminate(); /*0x1800185fc*/\\n  }\\n  return v19; /*0x18000c743*/\\n}\",\"refs\":[{\"addr\":\"0x18001c5d0\",\"name\":\"xmmword_18001C5D0\"},{\"addr\":\"0x1800185f0\",\"name\":\"CreateDXGIFactory\"},{\"addr\":\"0x18001c1c8\",\"name\":\"riid\"},{\"addr\":\"0x180001820\",\"name\":\"sub_180001820\"},{\"addr\":\"0x18001a138\",\"name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x18001c200\",\"name\":\"aMediaTranspose_1\",\"string\":\"media_transpose2to3: TransposeOutput: Failure: \"},{\"addr\":\"0x18001c1e8\",\"name\":\"aNoIdxgiadapter\",\"string\":\"No IDXGIAdapter found.\"},{\"addr\":\"0x18001a118\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x180003130\",\"name\":\"sub_180003130\"},{\"addr\":\"0x1800097c0\",\"name\":\"sub_1800097C0\"},{\"addr\":\"0x18001a248\",\"name\":\"?wcout@std@@3V?$basic_ostream@_WU?$char_traits@_W@std@@@1@A\"},{\"addr\":\"0x18001a230\",\"name\":\"??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x18000a470\",\"name\":\"sub_18000A470\"},{\"addr\":\"0x18001c230\",\"name\":\"aD3d11createdev\",\"string\":\"D3D11CreateDevice\"},{\"addr\":\"0x1800185f6\",\"name\":\"D3D11CreateDevice\"},{\"addr\":\"0x18001c1d8\",\"name\":\"unk_18001C1D8\"},{\"addr\":\"0x18001c248\",\"name\":\"aDirect3dFeatur\",\"string\":\"Direct3D Feature Level: \"},{\"addr\":\"0x18001a218\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z\"},{\"addr\":\"0x18001c244\",\"name\":\"asc_18001C244\",\"string\":\"_\"},{\"addr\":\"0x18001c268\",\"name\":\"aFailedToCreate_4\",\"string\":\"Failed to create 3D texture\"},{\"addr\":\"0x18000ca80\",\"name\":\"sub_18000CA80\"},{\"addr\":\"0x18000aec0\",\"name\":\"sub_18000AEC0\"},{\"addr\":\"0x18001a310\",\"name\":\"__imp___std_terminate\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18000c500",
+      "code": "char __fastcall sub_18000C500(__int64 a1)\n{\n  __int64 v2; // rcx\n  __int64 v3; // rax\n  const char *v4; // rdx\n  __int64 v5; // rax\n  __int64 v7; // rax\n  _QWORD *v8; // rsi\n  unsigned int v9; // ebx\n  __int64 v10; // rax\n  __int64 v11; // rax\n  __int64 v12; // rax\n  __int64 v13; // rax\n  __int64 v14; // rdx\n  __int64 v15; // r8\n  __int64 v16; // r9\n  __int64 v17; // rax\n  __int64 v18; // rax\n  char v19; // bl\n  __int64 v20; // rcx\n  __int64 v21; // [rsp+50h] [rbp-168h] BYREF\n  void *ppFactory; // [rsp+58h] [rbp-160h] BYREF\n  _BYTE v23[304]; // [rsp+60h] [rbp-158h] BYREF\n  D3D_FEATURE_LEVEL pFeatureLevels[4]; // [rsp+190h] [rbp-28h] BYREF\n\n  if ( *(_QWORD *)(a1 + 32) != 0 )\n  {\n    v8 = (_QWORD *)(a1 + 40); /*0x18000c651*/\n  }\n  else\n  {\n    *(__m128i *)pFeatureLevels = _mm_load_si128((const __m128i *)&xmmword_18001C5D0); /*0x18000c540*/\n    ppFactory = nullptr; /*0x18000c549*/\n    CreateDXGIFactory(riid: &riid, &ppFactory); /*0x18000c55a*/\n    (*(void (__fastcall **)(void *, _QWORD, __int64))(*(_QWORD *)ppFactory + 56LL))(a1: ppFactory, a2: 0, a3: a1 + 32); /*0x18000c56d*/\n    (*(void (__fastcall **)(void *))(*(_QWORD *)ppFactory + 16LL))(a1: ppFactory); /*0x18000c578*/\n    v2 = *(_QWORD *)(a1 + 32); /*0x18000c57b*/\n    if ( v2 == 0 )\n    {\n      v3 = sub_180001820(a1: std::cout, a2: \"media_transpose2to3: TransposeOutput: Failure: \");\n      v4 = \"No IDXGIAdapter found.\"; /*0x18000c597*/\nLABEL_4:\n      v5 = sub_180001820(a1: v3, a2: v4); /*0x18000c59e*/\n      std::ostream::operator<<(a1: v5, a2: sub_180003130); /*0x18000c5b0*/\n      return 0; /*0x18000c5b8*/\n    }\n    (*(void (__fastcall **)(__int64, _BYTE *))(*(_QWORD *)v2 + 64LL))(a1: v2, a2: v23); /*0x18000c5c5*/\n    v7 = sub_1800097C0(a1: std::wcout, a2: v23); /*0x18000c5d4*/\n    std::wostream::operator<<(a1: v7, a2: sub_18000A470); /*0x18000c5e3*/\n    v8 = (_QWORD *)(a1 + 40); /*0x18000c5e9*/\n    if ( D3D11CreateDevice(\n           pAdapter: *(IDXGIAdapter **)(a1 + 32),\n           DriverType: D3D_DRIVER_TYPE_UNKNOWN,\n           Software: nullptr,\n           Flags: 0,\n           pFeatureLevels,\n           FeatureLevels: 4u,\n           SDKVersion: 7u,\n           ppDevice: (ID3D11Device **)(a1 + 40),\n           pFeatureLevel: nullptr,\n           ppImmediateContext: (ID3D11DeviceContext **)(a1 + 48)) < 0 )\n    {\n      v3 = sub_180001820(a1: std::cout, a2: \"media_transpose2to3: TransposeOutput: Failure: \");\n      v4 = \"D3D11CreateDevice\"; /*0x18000c645*/\n      goto LABEL_4; /*0x18000c64c*/\n    }\n  }\n  v21 = 0; /*0x18000c655*/\n  __wind\n  {\n    if ( (**(int (__fastcall ***)(_QWORD, void *, __int64 *))*v8)(a1: *v8, a2: &unk_18001C1D8, a3: &v21) >= 0 /*0x18000c67a*/\n      && v21 != 0 )\n    {\n      (*(void (__fastcall **)(__int64, __int64))(*(_QWORD *)v21 + 80LL))(a1: v21, a2: 5); /*0x18000c684*/\n    }\n    v9 = (*(__int64 (__fastcall **)(_QWORD))(*(_QWORD *)*v8 + 296LL))(a1: *v8); /*0x18000c693*/\n    v10 = sub_180001820(a1: std::cout, a2: \"Direct3D Feature Level: \");\n    v11 = std::ostream::operator<<(a1: v10, a2: v9 >> 12); /*0x18000c6b0*/\n    v12 = sub_180001820(a1: v11, a2: \"_\"); /*0x18000c6c0*/\n    v13 = std::ostream::operator<<(a1: v12, a2: (v9 >> 8) & 0xF); /*0x18000c6d0*/\n    std::ostream::operator<<(a1: v13, a2: sub_180003130); /*0x18000c6e0*/\n    if ( (unsigned __int8)sub_18000CA80(a1) != 0 )\n    {\n      v19 = 1; /*0x18000c728*/\n    }\n    else\n    {\n      v17 = sub_180001820(a1: std::cout, a2: \"media_transpose2to3: TransposeOutput: Failure: \");\n      v18 = sub_180001820(a1: v17, a2: \"Failed to create 3D texture\"); /*0x18000c70f*/\n      std::ostream::operator<<(a1: v18, a2: sub_180003130); /*0x18000c71e*/\n      v19 = 0; /*0x18000c724*/\n    }\n  }\n  __unwind\n  {\n    sub_18000AEC0(a1: &v21, a2: v14, a3: v15, a4: v16); /*0xf1c0000000000030*/\n  }\n  __wind /*0xf1c0000000000038*/\n  {\n    v20 = v21; /*0x18000c72a*/\n    if ( v21 != 0 ) /*0x18000c732*/\n    {\n      v21 = 0; /*0x18000c734*/\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v20 + 16LL))(a1: v20); /*0x18000c73c*/\n    }\n  }\n  __unwind\n  {\n    __std_terminate(); /*0x1800185fc*/\n  }\n  return v19; /*0x18000c743*/\n}",
+      "refs": [
+        {
+          "addr": "0x18001c5d0",
+          "name": "xmmword_18001C5D0"
+        },
+        {
+          "addr": "0x1800185f0",
+          "name": "CreateDXGIFactory"
+        },
+        {
+          "addr": "0x18001c1c8",
+          "name": "riid"
+        },
+        {
+          "addr": "0x180001820",
+          "name": "sub_180001820"
+        },
+        {
+          "addr": "0x18001a138",
+          "name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x18001c200",
+          "name": "aMediaTranspose_1",
+          "string": "media_transpose2to3: TransposeOutput: Failure: "
+        },
+        {
+          "addr": "0x18001c1e8",
+          "name": "aNoIdxgiadapter",
+          "string": "No IDXGIAdapter found."
+        },
+        {
+          "addr": "0x18001a118",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x180003130",
+          "name": "sub_180003130"
+        },
+        {
+          "addr": "0x1800097c0",
+          "name": "sub_1800097C0"
+        },
+        {
+          "addr": "0x18001a248",
+          "name": "?wcout@std@@3V?$basic_ostream@_WU?$char_traits@_W@std@@@1@A"
+        },
+        {
+          "addr": "0x18001a230",
+          "name": "??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x18000a470",
+          "name": "sub_18000A470"
+        },
+        {
+          "addr": "0x18001c230",
+          "name": "aD3d11createdev",
+          "string": "D3D11CreateDevice"
+        },
+        {
+          "addr": "0x1800185f6",
+          "name": "D3D11CreateDevice"
+        },
+        {
+          "addr": "0x18001c1d8",
+          "name": "unk_18001C1D8"
+        },
+        {
+          "addr": "0x18001c248",
+          "name": "aDirect3dFeatur",
+          "string": "Direct3D Feature Level: "
+        },
+        {
+          "addr": "0x18001a218",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z"
+        },
+        {
+          "addr": "0x18001c244",
+          "name": "asc_18001C244",
+          "string": "_"
+        },
+        {
+          "addr": "0x18001c268",
+          "name": "aFailedToCreate_4",
+          "string": "Failed to create 3D texture"
+        },
+        {
+          "addr": "0x18000ca80",
+          "name": "sub_18000CA80"
+        },
+        {
+          "addr": "0x18000aec0",
+          "name": "sub_18000AEC0"
+        },
+        {
+          "addr": "0x18001a310",
+          "name": "__imp___std_terminate"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

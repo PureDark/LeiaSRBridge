@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"aikit\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: AiSetereoKit.dll (aikit)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "aikit",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: AiSetereoKit.dll (aikit)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

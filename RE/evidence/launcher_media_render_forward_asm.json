@@ -1,0 +1,87 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x180006a70\",\"asm\":{\"name\":\"sub_180006A70\",\"start_ea\":\"0x180006a70\",\"segment\":\".text\",\"lines\":[{\"addr\":\"180006a70\",\"instruction\":\"mov rcx, [rcx+8]\",\"label\":\"sub_180006A70\"},{\"addr\":\"180006a74\",\"instruction\":\"test rcx, rcx\"},{\"addr\":\"180006a77\",\"instruction\":\"jz short locret_180006A86\",\"refs\":[{\"addr\":\"0x180006a86\",\"name\":\"locret_180006A86\"}]},{\"addr\":\"180006a79\",\"instruction\":\"mov rax, [rcx]\"},{\"addr\":\"180006a7c\",\"instruction\":\"mov r9d, 1\"},{\"addr\":\"180006a82\",\"instruction\":\"jmp qword ptr [rax+20h]\"},{\"addr\":\"180006a86\",\"instruction\":\"retn\",\"label\":\"locret_180006A86\"}],\"stack_frame\":[{\"name\":\"__return_address\",\"offset\":\"0x0\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"}],\"return_type\":\"__int64\",\"arguments\":[{\"name\":\"arg0\",\"type\":\"__int64\"},{\"name\":\"arg1\",\"type\":\"__int64\"},{\"name\":\"arg2\",\"type\":\"__int64\"}]},\"instruction_count\":7,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x180006a70",
+      "asm": {
+        "name": "sub_180006A70",
+        "start_ea": "0x180006a70",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "180006a70",
+            "instruction": "mov rcx, [rcx+8]",
+            "label": "sub_180006A70"
+          },
+          {
+            "addr": "180006a74",
+            "instruction": "test rcx, rcx"
+          },
+          {
+            "addr": "180006a77",
+            "instruction": "jz short locret_180006A86",
+            "refs": [
+              {
+                "addr": "0x180006a86",
+                "name": "locret_180006A86"
+              }
+            ]
+          },
+          {
+            "addr": "180006a79",
+            "instruction": "mov rax, [rcx]"
+          },
+          {
+            "addr": "180006a7c",
+            "instruction": "mov r9d, 1"
+          },
+          {
+            "addr": "180006a82",
+            "instruction": "jmp qword ptr [rax+20h]"
+          },
+          {
+            "addr": "180006a86",
+            "instruction": "retn",
+            "label": "locret_180006A86"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "__return_address",
+            "offset": "0x0",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          }
+        ],
+        "return_type": "__int64",
+        "arguments": [
+          {
+            "name": "arg0",
+            "type": "__int64"
+          },
+          {
+            "name": "arg1",
+            "type": "__int64"
+          },
+          {
+            "name": "arg2",
+            "type": "__int64"
+          }
+        ]
+      },
+      "instruction_count": 7,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

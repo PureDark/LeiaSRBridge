@@ -1,0 +1,65 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":11,\"matches\":[{\"addr\":\"0x14003e8e8\",\"string\":\"doEyeTrack:\"},{\"addr\":\"0x14003e918\",\"string\":\"Eye Tracking\"},{\"addr\":\"0x14003eaa8\",\"string\":\"calibration_data\"},{\"addr\":\"0x14003eb08\",\"string\":\"\\\\\\\\.\\\\pipe\\\\YLFaceTrackingPipe\"},{\"addr\":\"0x14003ec28\",\"string\":\"setCameraMat_3D return = {}\"},{\"addr\":\"0x14003ed88\",\"string\":\"predict_time\"},{\"addr\":\"0x14003edd0\",\"string\":\"camera_info\"},{\"addr\":\"0x14004a572\",\"string\":\"setCameraMat_3D\"},{\"addr\":\"0x14004a584\",\"string\":\"doEyeTrack_3D\"},{\"addr\":\"0x14004a594\",\"string\":\"initBoeEyeTrack_3D\"},{\"addr\":\"0x14004a5d4\",\"string\":\"releaseBoeEyeTrack_3D\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 11,
+      "matches": [
+        {
+          "addr": "0x14003e8e8",
+          "string": "doEyeTrack:"
+        },
+        {
+          "addr": "0x14003e918",
+          "string": "Eye Tracking"
+        },
+        {
+          "addr": "0x14003eaa8",
+          "string": "calibration_data"
+        },
+        {
+          "addr": "0x14003eb08",
+          "string": "\\\\.\\pipe\\YLFaceTrackingPipe"
+        },
+        {
+          "addr": "0x14003ec28",
+          "string": "setCameraMat_3D return = {}"
+        },
+        {
+          "addr": "0x14003ed88",
+          "string": "predict_time"
+        },
+        {
+          "addr": "0x14003edd0",
+          "string": "camera_info"
+        },
+        {
+          "addr": "0x14004a572",
+          "string": "setCameraMat_3D"
+        },
+        {
+          "addr": "0x14004a584",
+          "string": "doEyeTrack_3D"
+        },
+        {
+          "addr": "0x14004a594",
+          "string": "initBoeEyeTrack_3D"
+        },
+        {
+          "addr": "0x14004a5d4",
+          "string": "releaseBoeEyeTrack_3D"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

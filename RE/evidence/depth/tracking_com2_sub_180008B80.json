@@ -1,0 +1,113 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180008B80\",\"code\":\"signed int __fastcall sub_180008B80(__int64 a1, char a2)\\n{\\n  void *v4; // rcx\\n  void *v5; // rcx\\n  signed int result; // eax\\n  wchar_t *v7; // rax\\n  const wchar_t *v8; // r8\\n  void *v9; // rcx\\n  void *v10; // rcx\\n  void *v11; // rax\\n  _BYTE *v12; // rax\\n  void *v13; // rcx\\n  void *Block[2]; // [rsp+50h] [rbp-B0h] BYREF\\n  __m128i si128; // [rsp+60h] [rbp-A0h]\\n  struct _PROCESS_INFORMATION ProcessInformation; // [rsp+70h] [rbp-90h] BYREF\\n  DWORD ExitCode; // [rsp+88h] [rbp-78h] BYREF\\n  struct _STARTUPINFOW StartupInfo; // [rsp+90h] [rbp-70h] BYREF\\n  WCHAR Filename[264]; // [rsp+100h] [rbp+0h] BYREF\\n  wchar_t Destination[264]; // [rsp+310h] [rbp+210h] BYREF\\n\\n  xmmword_18001A000 = 0; /*0x180008bb1*/\\n  dword_18001A010 = 0; /*0x180008bb8*/\\n  v4 = *(void **)(a1 + 80); /*0x180008bc2*/\\n  if ( v4 != nullptr && GetExitCodeProcess(hProcess: v4, lpExitCode: &ExitCode) && ExitCode == 259 ) /*0x180008be0*/\\n    return 0; /*0x180008df7*/\\n  v5 = *(void **)(a1 + 88); /*0x180008be6*/\\n  if ( v5 != nullptr && v5 != (void *)-1LL ) /*0x180008bf5*/\\n  {\\n    CloseHandle(hObject: v5); /*0x180008bf7*/\\n    *(_QWORD *)(a1 + 88) = 0; /*0x180008bfd*/\\n  }\\n  StartupInfo.cb = 104; /*0x180008c01*/\\n  memset(&StartupInfo.lpReserved, 0, 96); /*0x180008c0b*/\\n  if ( GetModuleFileNameW(hModule: qword_180017C30, lpFilename: Filename, nSize: 0x104u) != 0 ) /*0x180008c3c*/\\n  {\\n    v7 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x180008c62*/\\n    if ( v7 == nullptr ) /*0x180008c6a*/\\n      return -2147467259; /*0x180008c71*/\\n    v7[1] = 0; /*0x180008c76*/\\n    wcscpy_s(Destination, SizeInWords: 0x104u, Source: Filename); /*0x180008c8a*/\\n    v8 = L\\\"FaceTracking.exe\\\"; /*0x180008c97*/\\n    if ( a2 != 0 ) /*0x180008ca1*/\\n      v8 = L\\\"FaceTracking.exe 1\\\"; /*0x180008ca1*/\\n    wcscat_s(Destination: Filename, SizeInWords: 0x104u, Source: v8); /*0x180008cae*/\\n    if ( CreateProcessW( /*0x180008cec*/\\n           lpApplicationName: nullptr,\\n           lpCommandLine: Filename,\\n           lpProcessAttributes: nullptr,\\n           lpThreadAttributes: nullptr,\\n           bInheritHandles: false,\\n           dwCreationFlags: 0,\\n           lpEnvironment: nullptr,\\n           lpCurrentDirectory: Destination,\\n           lpStartupInfo: &StartupInfo,\\n           lpProcessInformation: &ProcessInformation) )\\n    {\\n      v9 = *(void **)(a1 + 80); /*0x180008cfa*/\\n      if ( v9 != nullptr ) /*0x180008d01*/\\n        CloseHandle(hObject: v9); /*0x180008d03*/\\n      *(_QWORD *)(a1 + 80) = ProcessInformation.hProcess; /*0x180008d0e*/\\n      CloseHandle(hObject: ProcessInformation.hThread); /*0x180008d17*/\\n      v10 = *(void **)(a1 + 72); /*0x180008d1d*/\\n      if ( v10 != nullptr ) /*0x180008d24*/\\n      {\\n        CloseHandle(hObject: v10); /*0x180008d26*/\\n        *(_QWORD *)(a1 + 72) = 0; /*0x180008d2c*/\\n      }\\n      v11 = (void *)sub_180008AB0(a1); /*0x180008d33*/\\n      *(_QWORD *)(a1 + 72) = v11; /*0x180008d38*/\\n      if ( v11 == nullptr || !AssignProcessToJobObject(hJob: v11, hProcess: *(HANDLE *)(a1 + 80)) ) /*0x180008d50*/\\n      {\\n        *(_OWORD *)Block = 0; /*0x180008d59*/\\n        si128 = 0; /*0x180008d61*/\\n        v12 = (_BYTE *)sub_1800077B0(a1: 32); /*0x180008d6c*/\\n        __wind /*0xf1c0000000000010*/\\n        {\\n          Block[0] = v12; /*0x180008d71*/\\n          si128 = _mm_load_si128((const __m128i *)&xmmword_18000F5A0); /*0x180008d7e*/\\n          *(_OWORD *)v12 = xmmword_18000F4B0; /*0x180008d8b*/\\n          v12[16] = 0; /*0x180008d8e*/\\n          sub_180009360(a1: Block); /*0x180008d97*/\\n          if ( si128.m128i_i64[1] > 0xFuLL ) /*0x180008da6*/\\n          {\\n            v13 = Block[0]; /*0x180008dab*/\\n            if ( (unsigned __int64)(si128.m128i_i64[1] + 1) >= 0x1000 ) /*0x180008dba*/\\n            {\\n              v13 = *((void **)Block[0] - 1); /*0x180008dc0*/\\n              if ( (unsigned __int64)((char *)Block[0] - (char *)v13 - 8) > 0x1F ) /*0x180008dcf*/\\n                invoke_watson(Expression: nullptr, FunctionName: nullptr, FileName: nullptr, LineNo: 0, Reserved: 0); /*0x180008de0*/\\n            }\\n            j_j_free(Block: v13); /*0x180008de7*/\\n          }\\n        }\\n        __unwind\\n        {\\n          sub_180007FD0(a1: Block); /*0xf1c0000000000008*/\\n        }\\n      }\\n      Sleep(dwMilliseconds: 0x12Cu); /*0x180008df1*/\\n      return 0; /*0x180008df1*/\\n    }\\n  }\\n  result = GetLastError(); /*0x180008c3e*/\\n  if ( result > 0 ) /*0x180008c46*/\\n    return (unsigned __int16)result | 0x80070000; /*0x180008c4f*/\\n  return result; /*0x180008df9*/\\n}\",\"refs\":[{\"addr\":\"0x18001a000\",\"name\":\"xmmword_18001A000\"},{\"addr\":\"0x18001a010\",\"name\":\"dword_18001A010\"},{\"addr\":\"0x18000e0f0\",\"name\":\"GetExitCodeProcess\"},{\"addr\":\"0x18000e0b0\",\"name\":\"CloseHandle\"},{\"addr\":\"0x18000bd59\",\"name\":\"wcsrchr\"},{\"addr\":\"0x18000e630\",\"name\":\"wcscpy_s\"},{\"addr\":\"0x18000f270\",\"name\":\"aFacetrackingEx_0\",\"string\":\"\\u6146\\u6563\\u7254\\u6361\\u696b\\u676e\\u652e\\u6578\"},{\"addr\":\"0x18000f488\",\"name\":\"aFacetrackingEx\",\"string\":\"\\u6146\\u6563\\u7254\\u6361\\u696b\\u676e\\u652e\\u6578\\u3120\"},{\"addr\":\"0x18000e638\",\"name\":\"wcscat_s\"},{\"addr\":\"0x180008ab0\",\"name\":\"sub_180008AB0\"},{\"addr\":\"0x1800077b0\",\"name\":\"sub_1800077B0\"},{\"addr\":\"0x18000f5a0\",\"name\":\"xmmword_18000F5A0\"},{\"addr\":\"0x18000f4b0\",\"name\":\"xmmword_18000F4B0\"},{\"addr\":\"0x180009360\",\"name\":\"sub_180009360\"},{\"addr\":\"0x18000e5d8\",\"name\":\"_invoke_watson\"},{\"addr\":\"0x18000aab8\",\"name\":\"j_j_free\"},{\"addr\":\"0x180007fd0\",\"name\":\"sub_180007FD0\"},{\"addr\":\"0x18000e108\",\"name\":\"AssignProcessToJobObject\"},{\"addr\":\"0x18000e0e0\",\"name\":\"Sleep\"},{\"addr\":\"0x18000e0f8\",\"name\":\"CreateProcessW\"},{\"addr\":\"0x18000e048\",\"name\":\"GetModuleFileNameW\"},{\"addr\":\"0x180017c30\",\"name\":\"qword_180017C30\"},{\"addr\":\"0x18000e140\",\"name\":\"GetLastError\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180008B80",
+      "code": "signed int __fastcall sub_180008B80(__int64 a1, char a2)\n{\n  void *v4; // rcx\n  void *v5; // rcx\n  signed int result; // eax\n  wchar_t *v7; // rax\n  const wchar_t *v8; // r8\n  void *v9; // rcx\n  void *v10; // rcx\n  void *v11; // rax\n  _BYTE *v12; // rax\n  void *v13; // rcx\n  void *Block[2]; // [rsp+50h] [rbp-B0h] BYREF\n  __m128i si128; // [rsp+60h] [rbp-A0h]\n  struct _PROCESS_INFORMATION ProcessInformation; // [rsp+70h] [rbp-90h] BYREF\n  DWORD ExitCode; // [rsp+88h] [rbp-78h] BYREF\n  struct _STARTUPINFOW StartupInfo; // [rsp+90h] [rbp-70h] BYREF\n  WCHAR Filename[264]; // [rsp+100h] [rbp+0h] BYREF\n  wchar_t Destination[264]; // [rsp+310h] [rbp+210h] BYREF\n\n  xmmword_18001A000 = 0; /*0x180008bb1*/\n  dword_18001A010 = 0; /*0x180008bb8*/\n  v4 = *(void **)(a1 + 80); /*0x180008bc2*/\n  if ( v4 != nullptr && GetExitCodeProcess(hProcess: v4, lpExitCode: &ExitCode) && ExitCode == 259 ) /*0x180008be0*/\n    return 0; /*0x180008df7*/\n  v5 = *(void **)(a1 + 88); /*0x180008be6*/\n  if ( v5 != nullptr && v5 != (void *)-1LL ) /*0x180008bf5*/\n  {\n    CloseHandle(hObject: v5); /*0x180008bf7*/\n    *(_QWORD *)(a1 + 88) = 0; /*0x180008bfd*/\n  }\n  StartupInfo.cb = 104; /*0x180008c01*/\n  memset(&StartupInfo.lpReserved, 0, 96); /*0x180008c0b*/\n  if ( GetModuleFileNameW(hModule: qword_180017C30, lpFilename: Filename, nSize: 0x104u) != 0 ) /*0x180008c3c*/\n  {\n    v7 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x180008c62*/\n    if ( v7 == nullptr ) /*0x180008c6a*/\n      return -2147467259; /*0x180008c71*/\n    v7[1] = 0; /*0x180008c76*/\n    wcscpy_s(Destination, SizeInWords: 0x104u, Source: Filename); /*0x180008c8a*/\n    v8 = L\"FaceTracking.exe\"; /*0x180008c97*/\n    if ( a2 != 0 ) /*0x180008ca1*/\n      v8 = L\"FaceTracking.exe 1\"; /*0x180008ca1*/\n    wcscat_s(Destination: Filename, SizeInWords: 0x104u, Source: v8); /*0x180008cae*/\n    if ( CreateProcessW( /*0x180008cec*/\n           lpApplicationName: nullptr,\n           lpCommandLine: Filename,\n           lpProcessAttributes: nullptr,\n           lpThreadAttributes: nullptr,\n           bInheritHandles: false,\n           dwCreationFlags: 0,\n           lpEnvironment: nullptr,\n           lpCurrentDirectory: Destination,\n           lpStartupInfo: &StartupInfo,\n           lpProcessInformation: &ProcessInformation) )\n    {\n      v9 = *(void **)(a1 + 80); /*0x180008cfa*/\n      if ( v9 != nullptr ) /*0x180008d01*/\n        CloseHandle(hObject: v9); /*0x180008d03*/\n      *(_QWORD *)(a1 + 80) = ProcessInformation.hProcess; /*0x180008d0e*/\n      CloseHandle(hObject: ProcessInformation.hThread); /*0x180008d17*/\n      v10 = *(void **)(a1 + 72); /*0x180008d1d*/\n      if ( v10 != nullptr ) /*0x180008d24*/\n      {\n        CloseHandle(hObject: v10); /*0x180008d26*/\n        *(_QWORD *)(a1 + 72) = 0; /*0x180008d2c*/\n      }\n      v11 = (void *)sub_180008AB0(a1); /*0x180008d33*/\n      *(_QWORD *)(a1 + 72) = v11; /*0x180008d38*/\n      if ( v11 == nullptr || !AssignProcessToJobObject(hJob: v11, hProcess: *(HANDLE *)(a1 + 80)) ) /*0x180008d50*/\n      {\n        *(_OWORD *)Block = 0; /*0x180008d59*/\n        si128 = 0; /*0x180008d61*/\n        v12 = (_BYTE *)sub_1800077B0(a1: 32); /*0x180008d6c*/\n        __wind /*0xf1c0000000000010*/\n        {\n          Block[0] = v12; /*0x180008d71*/\n          si128 = _mm_load_si128((const __m128i *)&xmmword_18000F5A0); /*0x180008d7e*/\n          *(_OWORD *)v12 = xmmword_18000F4B0; /*0x180008d8b*/\n          v12[16] = 0; /*0x180008d8e*/\n          sub_180009360(a1: Block); /*0x180008d97*/\n          if ( si128.m128i_i64[1] > 0xFuLL ) /*0x180008da6*/\n          {\n            v13 = Block[0]; /*0x180008dab*/\n            if ( (unsigned __int64)(si128.m128i_i64[1] + 1) >= 0x1000 ) /*0x180008dba*/\n            {\n              v13 = *((void **)Block[0] - 1); /*0x180008dc0*/\n              if ( (unsigned __int64)((char *)Block[0] - (char *)v13 - 8) > 0x1F ) /*0x180008dcf*/\n                invoke_watson(Expression: nullptr, FunctionName: nullptr, FileName: nullptr, LineNo: 0, Reserved: 0); /*0x180008de0*/\n            }\n            j_j_free(Block: v13); /*0x180008de7*/\n          }\n        }\n        __unwind\n        {\n          sub_180007FD0(a1: Block); /*0xf1c0000000000008*/\n        }\n      }\n      Sleep(dwMilliseconds: 0x12Cu); /*0x180008df1*/\n      return 0; /*0x180008df1*/\n    }\n  }\n  result = GetLastError(); /*0x180008c3e*/\n  if ( result > 0 ) /*0x180008c46*/\n    return (unsigned __int16)result | 0x80070000; /*0x180008c4f*/\n  return result; /*0x180008df9*/\n}",
+      "refs": [
+        {
+          "addr": "0x18001a000",
+          "name": "xmmword_18001A000"
+        },
+        {
+          "addr": "0x18001a010",
+          "name": "dword_18001A010"
+        },
+        {
+          "addr": "0x18000e0f0",
+          "name": "GetExitCodeProcess"
+        },
+        {
+          "addr": "0x18000e0b0",
+          "name": "CloseHandle"
+        },
+        {
+          "addr": "0x18000bd59",
+          "name": "wcsrchr"
+        },
+        {
+          "addr": "0x18000e630",
+          "name": "wcscpy_s"
+        },
+        {
+          "addr": "0x18000f270",
+          "name": "aFacetrackingEx_0",
+          "string": "慆散牔捡楫杮攮數"
+        },
+        {
+          "addr": "0x18000f488",
+          "name": "aFacetrackingEx",
+          "string": "慆散牔捡楫杮攮數ㄠ"
+        },
+        {
+          "addr": "0x18000e638",
+          "name": "wcscat_s"
+        },
+        {
+          "addr": "0x180008ab0",
+          "name": "sub_180008AB0"
+        },
+        {
+          "addr": "0x1800077b0",
+          "name": "sub_1800077B0"
+        },
+        {
+          "addr": "0x18000f5a0",
+          "name": "xmmword_18000F5A0"
+        },
+        {
+          "addr": "0x18000f4b0",
+          "name": "xmmword_18000F4B0"
+        },
+        {
+          "addr": "0x180009360",
+          "name": "sub_180009360"
+        },
+        {
+          "addr": "0x18000e5d8",
+          "name": "_invoke_watson"
+        },
+        {
+          "addr": "0x18000aab8",
+          "name": "j_j_free"
+        },
+        {
+          "addr": "0x180007fd0",
+          "name": "sub_180007FD0"
+        },
+        {
+          "addr": "0x18000e108",
+          "name": "AssignProcessToJobObject"
+        },
+        {
+          "addr": "0x18000e0e0",
+          "name": "Sleep"
+        },
+        {
+          "addr": "0x18000e0f8",
+          "name": "CreateProcessW"
+        },
+        {
+          "addr": "0x18000e048",
+          "name": "GetModuleFileNameW"
+        },
+        {
+          "addr": "0x180017c30",
+          "name": "qword_180017C30"
+        },
+        {
+          "addr": "0x18000e140",
+          "name": "GetLastError"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

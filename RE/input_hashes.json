@@ -1,0 +1,32 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "C3CD9FD7085A076A4FF4CD2F80816027C096785CD8395C191B3738DDD528D639",
+    "Path": "F:\\目标软件\\ModexLite\\AiSetereoKit.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "F8B25622E4392FFEBEBA0A9555028F6F114A2C252E038DBB0B9F67B5869EFC37",
+    "Path": "F:\\目标软件\\ModexLite\\StereoCore.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "270E7766F5D3F75EDF9B8A620287AB15BC530D9F1E7A95FE086CC8DD9F505E37",
+    "Path": "F:\\目标软件\\ModexLite\\modex_lite.exe"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "70A7D3C551E534F2C919D9C85194A24D8F31BA6CA022B43F294F4FA65021E294",
+    "Path": "F:\\目标软件\\ModexLite\\game_monitor_plugin.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "AF03492FF9A235F15B0CBF0484F40DFA3FCBEE48A2EEAD524D9BC1225C39112A",
+    "Path": "F:\\目标软件\\ModexLite\\media_transpose2to3_plugin.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0CF08F3F4C535E5466C2FEEB489D0229431B6FA001B926087423EC574CEBF458",
+    "Path": "F:\\目标软件\\ModexLite\\data\\app.so"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800219B0\",\"code\":\"// Wrapper proves x/y/z float, enabled byte, z_l/z_r float ABI. Native stores z_l in CB+60, never reads z_r. z_l multiplies view index in Mapping_PS; use 1 for ordinary SBS. Constructor leaves z_l=0.\\nvoid __fastcall LF3D_UpdateEyeInfo(void *self, float x, float y, float z, bool enabled, float z_l, float z_r)\\n{\\n  float *v7; // rbx\\n\\n  v7 = *((float **)self + 5); /*0x1800219b6*/\\n  LF3DCalibration_UpdateEyeInfo(self: v7, x, y, z, enabled); /*0x1800219c6*/\\n  *(float *)(*(_QWORD *)v7 + 60LL) = z_l; /*0x1800219d4*/\\n}\",\"refs\":[{\"addr\":\"0x1800059f0\",\"name\":\"LF3DCalibration_UpdateEyeInfo\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800219B0",
+      "code": "// Wrapper proves x/y/z float, enabled byte, z_l/z_r float ABI. Native stores z_l in CB+60, never reads z_r. z_l multiplies view index in Mapping_PS; use 1 for ordinary SBS. Constructor leaves z_l=0.\nvoid __fastcall LF3D_UpdateEyeInfo(void *self, float x, float y, float z, bool enabled, float z_l, float z_r)\n{\n  float *v7; // rbx\n\n  v7 = *((float **)self + 5); /*0x1800219b6*/\n  LF3DCalibration_UpdateEyeInfo(self: v7, x, y, z, enabled); /*0x1800219c6*/\n  *(float *)(*(_QWORD *)v7 + 60LL) = z_l; /*0x1800219d4*/\n}",
+      "refs": [
+        {
+          "addr": "0x1800059f0",
+          "name": "LF3DCalibration_UpdateEyeInfo"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

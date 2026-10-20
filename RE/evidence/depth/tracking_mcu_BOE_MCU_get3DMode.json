@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"BOE_MCU_get3DMode\",\"code\":\"__int64 BOE_MCU_get3DMode()\\n{\\n  __int64 v0; // rax\\n  __int64 v1; // rax\\n  __int64 v2; // rax\\n  _BYTE v4[24]; // [rsp+20h] [rbp-18h] BYREF\\n\\n  v0 = sub_180036BD0(a1: v4, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\MCU_library\\\\\\\\mcu_interface.cpp\\\", a3: 64); /*0x1800356f6*/\\n  v1 = sub_18003DF90(a1: v0); /*0x1800356fe*/\\n  sub_18000A770(a1: v1, a2: \\\"called BOE_MCU_get3DMode\\\"); /*0x18003570d*/\\n  sub_180037160(a1: v4); /*0x180035717*/\\n  v2 = sub_180035340(); /*0x18003571c*/\\n  return __crt_stdio_input::input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>::~input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>(a1: v2); /*0x180035729*/\\n}\",\"refs\":[{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004fa68\",\"name\":\"aDSourceRepos3d_87\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004fa48\",\"name\":\"aCalledBoeMcuGe\",\"string\":\"called BOE_MCU_get3DMode\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x180035340\",\"name\":\"sub_180035340\"},{\"addr\":\"0x180035290\",\"name\":\"??1?$input_processor@_WV?$console_input_adapter@_W@__crt_stdio_input@@@__crt_stdio_input@@QEAA@XZ_1\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "BOE_MCU_get3DMode",
+      "code": "__int64 BOE_MCU_get3DMode()\n{\n  __int64 v0; // rax\n  __int64 v1; // rax\n  __int64 v2; // rax\n  _BYTE v4[24]; // [rsp+20h] [rbp-18h] BYREF\n\n  v0 = sub_180036BD0(a1: v4, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\", a3: 64); /*0x1800356f6*/\n  v1 = sub_18003DF90(a1: v0); /*0x1800356fe*/\n  sub_18000A770(a1: v1, a2: \"called BOE_MCU_get3DMode\"); /*0x18003570d*/\n  sub_180037160(a1: v4); /*0x180035717*/\n  v2 = sub_180035340(); /*0x18003571c*/\n  return __crt_stdio_input::input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>::~input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>(a1: v2); /*0x180035729*/\n}",
+      "refs": [
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004fa68",
+          "name": "aDSourceRepos3d_87",
+          "string": "D:\\source\\repos\\3DResolution\\MCU_library\\mcu_interface.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004fa48",
+          "name": "aCalledBoeMcuGe",
+          "string": "called BOE_MCU_get3DMode"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x180035340",
+          "name": "sub_180035340"
+        },
+        {
+          "addr": "0x180035290",
+          "name": "??1?$input_processor@_WV?$console_input_adapter@_W@__crt_stdio_input@@@__crt_stdio_input@@QEAA@XZ_1"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

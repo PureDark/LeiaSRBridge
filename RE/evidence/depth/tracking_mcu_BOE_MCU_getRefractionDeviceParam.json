@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"BOE_MCU_getRefractionDeviceParam\",\"code\":\"__int64 __fastcall BOE_MCU_getRefractionDeviceParam(__int64 a1)\\n{\\n  __int64 v1; // rax\\n  __int64 v2; // rax\\n  __int64 v4; // [rsp+20h] [rbp-28h]\\n  _BYTE v5[32]; // [rsp+28h] [rbp-20h] BYREF\\n\\n  v1 = sub_180036BD0(a1: v5, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\MCU_library\\\\\\\\mcu_interface.cpp\\\", a3: 79); /*0x1800357fb*/\\n  v2 = sub_18003DF90(a1: v1); /*0x180035803*/\\n  sub_18000A770(a1: v2, a2: \\\"called BOE_MCU_getRefractionDeviceParam\\\"); /*0x180035812*/\\n  sub_180037160(a1: v5); /*0x18003581c*/\\n  v4 = sub_180035340(); /*0x180035826*/\\n  return sub_180015620(a1: v4, a2: a1); /*0x18003583a*/\\n}\",\"refs\":[{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004fb90\",\"name\":\"aDSourceRepos3d_90\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004fb68\",\"name\":\"aCalledBoeMcuGe_2\",\"string\":\"called BOE_MCU_getRefractionDeviceParam\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x180035340\",\"name\":\"sub_180035340\"},{\"addr\":\"0x180015620\",\"name\":\"sub_180015620\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "BOE_MCU_getRefractionDeviceParam",
+      "code": "__int64 __fastcall BOE_MCU_getRefractionDeviceParam(__int64 a1)\n{\n  __int64 v1; // rax\n  __int64 v2; // rax\n  __int64 v4; // [rsp+20h] [rbp-28h]\n  _BYTE v5[32]; // [rsp+28h] [rbp-20h] BYREF\n\n  v1 = sub_180036BD0(a1: v5, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\", a3: 79); /*0x1800357fb*/\n  v2 = sub_18003DF90(a1: v1); /*0x180035803*/\n  sub_18000A770(a1: v2, a2: \"called BOE_MCU_getRefractionDeviceParam\"); /*0x180035812*/\n  sub_180037160(a1: v5); /*0x18003581c*/\n  v4 = sub_180035340(); /*0x180035826*/\n  return sub_180015620(a1: v4, a2: a1); /*0x18003583a*/\n}",
+      "refs": [
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004fb90",
+          "name": "aDSourceRepos3d_90",
+          "string": "D:\\source\\repos\\3DResolution\\MCU_library\\mcu_interface.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004fb68",
+          "name": "aCalledBoeMcuGe_2",
+          "string": "called BOE_MCU_getRefractionDeviceParam"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x180035340",
+          "name": "sub_180035340"
+        },
+        {
+          "addr": "0x180015620",
+          "name": "sub_180015620"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

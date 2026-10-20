@@ -1,0 +1,241 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"kind\":\"names\",\"data\":[{\"kind\":\"name\",\"addr\":\"0x18000bd30\",\"name\":\"??_7?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000bdc8\",\"name\":\"??_7?$CComAggObject@VCSimpleFaceTracking@@@ATL@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000bdf0\",\"name\":\"??_7?$CComObject@VCSimpleFaceTracking@@@ATL@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ec28\",\"name\":\"??_R3CSimpleFaceTracking@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ec40\",\"name\":\"??_R2CSimpleFaceTracking@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ec88\",\"name\":\"??_R1A@?0A@EA@CSimpleFaceTracking@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ecb0\",\"name\":\"??_R1EA@?0A@EA@?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ecd8\",\"name\":\"??_R3?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ecf0\",\"name\":\"??_R2?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ed00\",\"name\":\"??_R1A@?0A@EA@?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ed90\",\"name\":\"??_R4?$CComObject@VCSimpleFaceTracking@@@ATL@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000edb8\",\"name\":\"??_R3?$CComObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000edd0\",\"name\":\"??_R2?$CComObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ee20\",\"name\":\"??_R1A@?0A@EA@?$CComObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ee48\",\"name\":\"??_R4?$CComAggObject@VCSimpleFaceTracking@@@ATL@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ee70\",\"name\":\"??_R3?$CComAggObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ee88\",\"name\":\"??_R2?$CComAggObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000eeb0\",\"name\":\"??_R1A@?0A@EA@?$CComAggObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ef58\",\"name\":\"??_R4?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000ef80\",\"name\":\"??_R3?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000efa0\",\"name\":\"??_R2?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18000eff0\",\"name\":\"??_R1A@?0A@EA@?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180012758\",\"name\":\"??_R0?AVCSimpleFaceTracking@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180012790\",\"name\":\"??_R0?AV?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800128b8\",\"name\":\"??_R0?AV?$CComObject@VCSimpleFaceTracking@@@ATL@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180012900\",\"name\":\"??_R0?AV?$CComAggObject@VCSimpleFaceTracking@@@ATL@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800129a0\",\"name\":\"??_R0?AV?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false}],\"next_offset\":null,\"total\":27,\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "kind": "names",
+          "data": [
+            {
+              "kind": "name",
+              "addr": "0x18000bd30",
+              "name": "??_7?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000bdc8",
+              "name": "??_7?$CComAggObject@VCSimpleFaceTracking@@@ATL@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000bdf0",
+              "name": "??_7?$CComObject@VCSimpleFaceTracking@@@ATL@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ec28",
+              "name": "??_R3CSimpleFaceTracking@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ec40",
+              "name": "??_R2CSimpleFaceTracking@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ec88",
+              "name": "??_R1A@?0A@EA@CSimpleFaceTracking@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ecb0",
+              "name": "??_R1EA@?0A@EA@?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ecd8",
+              "name": "??_R3?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ecf0",
+              "name": "??_R2?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ed00",
+              "name": "??_R1A@?0A@EA@?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ed90",
+              "name": "??_R4?$CComObject@VCSimpleFaceTracking@@@ATL@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000edb8",
+              "name": "??_R3?$CComObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000edd0",
+              "name": "??_R2?$CComObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ee20",
+              "name": "??_R1A@?0A@EA@?$CComObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ee48",
+              "name": "??_R4?$CComAggObject@VCSimpleFaceTracking@@@ATL@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ee70",
+              "name": "??_R3?$CComAggObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ee88",
+              "name": "??_R2?$CComAggObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000eeb0",
+              "name": "??_R1A@?0A@EA@?$CComAggObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ef58",
+              "name": "??_R4?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000ef80",
+              "name": "??_R3?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000efa0",
+              "name": "??_R2?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18000eff0",
+              "name": "??_R1A@?0A@EA@?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180012758",
+              "name": "??_R0?AVCSimpleFaceTracking@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180012790",
+              "name": "??_R0?AV?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800128b8",
+              "name": "??_R0?AV?$CComObject@VCSimpleFaceTracking@@@ATL@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180012900",
+              "name": "??_R0?AV?$CComAggObject@VCSimpleFaceTracking@@@ATL@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800129a0",
+              "name": "??_R0?AV?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            }
+          ],
+          "next_offset": null,
+          "total": 27,
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

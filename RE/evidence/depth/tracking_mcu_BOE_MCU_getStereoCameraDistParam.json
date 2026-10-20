@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"BOE_MCU_getStereoCameraDistParam\",\"code\":\"__int64 __fastcall BOE_MCU_getStereoCameraDistParam(__int64 a1)\\n{\\n  __int64 v1; // rax\\n  __int64 v2; // rax\\n  __int64 v4; // [rsp+20h] [rbp-28h]\\n  _BYTE v5[32]; // [rsp+28h] [rbp-20h] BYREF\\n\\n  v1 = sub_180036BD0(a1: v5, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\MCU_library\\\\\\\\mcu_interface.cpp\\\", a3: 95); /*0x18003597b*/\\n  v2 = sub_18003DF90(a1: v1); /*0x180035983*/\\n  sub_18000A770(a1: v2, a2: \\\"called BOE_MCU_getStereoCameraDistParam\\\"); /*0x180035992*/\\n  sub_180037160(a1: v5); /*0x18003599c*/\\n  v4 = sub_180035340(); /*0x1800359a6*/\\n  return sub_180015CA0(a1: v4, a2: a1); /*0x1800359ba*/\\n}\",\"refs\":[{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004fd30\",\"name\":\"aDSourceRepos3d_94\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004fd08\",\"name\":\"aCalledBoeMcuGe_6\",\"string\":\"called BOE_MCU_getStereoCameraDistParam\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x180035340\",\"name\":\"sub_180035340\"},{\"addr\":\"0x180015ca0\",\"name\":\"sub_180015CA0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "BOE_MCU_getStereoCameraDistParam",
+      "code": "__int64 __fastcall BOE_MCU_getStereoCameraDistParam(__int64 a1)\n{\n  __int64 v1; // rax\n  __int64 v2; // rax\n  __int64 v4; // [rsp+20h] [rbp-28h]\n  _BYTE v5[32]; // [rsp+28h] [rbp-20h] BYREF\n\n  v1 = sub_180036BD0(a1: v5, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\", a3: 95); /*0x18003597b*/\n  v2 = sub_18003DF90(a1: v1); /*0x180035983*/\n  sub_18000A770(a1: v2, a2: \"called BOE_MCU_getStereoCameraDistParam\"); /*0x180035992*/\n  sub_180037160(a1: v5); /*0x18003599c*/\n  v4 = sub_180035340(); /*0x1800359a6*/\n  return sub_180015CA0(a1: v4, a2: a1); /*0x1800359ba*/\n}",
+      "refs": [
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004fd30",
+          "name": "aDSourceRepos3d_94",
+          "string": "D:\\source\\repos\\3DResolution\\MCU_library\\mcu_interface.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004fd08",
+          "name": "aCalledBoeMcuGe_6",
+          "string": "called BOE_MCU_getStereoCameraDistParam"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x180035340",
+          "name": "sub_180035340"
+        },
+        {
+          "addr": "0x180015ca0",
+          "name": "sub_180015CA0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,1425 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"kind\":\"strings\",\"data\":[{\"kind\":\"string\",\"addr\":\"0x180585000\",\"text\":\"PCI\\\\VEN_8086&DEV_7D1E\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585018\",\"text\":\"PCI\\\\VEN_8086&DEV_7D1C\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585030\",\"text\":\"PCI\\\\VEN_8086&DEV_8E40\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585048\",\"text\":\"PCI\\\\VEN_8086&DEV_7D45\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585060\",\"text\":\"PCI\\\\VEN_8086&DEV_8E4B\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585078\",\"text\":\"PCI\\\\VEN_8086&DEV_8E4A\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585090\",\"text\":\"PCI\\\\VEN_8086&DEV_AD02\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805850a8\",\"text\":\"PCI\\\\VEN_8086&DEV_AD01\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805850c0\",\"text\":\"PCI\\\\VEN_8086&DEV_A781\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805850d8\",\"text\":\"PCI\\\\VEN_8086&DEV_A780\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805850f0\",\"text\":\"VEN_8086\",\"length\":8,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585100\",\"text\":\"PCI\\\\VEN_8086&DEV_0BD4\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585118\",\"text\":\"Neural\",\"length\":6,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585120\",\"text\":\"AI Boost\",\"length\":8,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585170\",\"text\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\DepthDilate.cpp\",\"length\":67,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805851b8\",\"text\":\"AiStereo::DepthDilate::CreateShader\",\"length\":35,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585250\",\"text\":\"AiStereo::DepthDilate::CreateInputLayout\",\"length\":40,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585280\",\"text\":\"AiStereo::DepthDilate::CreateVetexInfo\",\"length\":38,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805852c0\",\"text\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\Inpating.cpp\",\"length\":64,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585308\",\"text\":\"AiStereo::Inpating::CreateShader\",\"length\":32,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585380\",\"text\":\"AiStereo::Inpating::CreateInputLayout\",\"length\":37,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805853c8\",\"text\":\"AiStereo::Inpating::CreateVetexInfo\",\"length\":35,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805853f0\",\"text\":\"AiStereo::Inpating::CreateConstantBuffer\",\"length\":40,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585438\",\"text\":\"AiStereo::Inpating::CreateSamplerState\",\"length\":38,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585480\",\"text\":\"AiStereo::Inpating::UpdateConstantBuffer\",\"length\":40,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805854b0\",\"text\":\"FXAA->Update the constant buffer\",\"length\":32,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805854d8\",\"text\":\"AiStereo::Preprocess::CreateShader\",\"length\":34,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585530\",\"text\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\Preprocess.cpp\",\"length\":66,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585578\",\"text\":\"AiStereo::Preprocess::CreateInputLayout\",\"length\":39,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805855b8\",\"text\":\"AiStereo::Preprocess::CreateVetexInfo\",\"length\":37,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805855f8\",\"text\":\"AiStereo::Preprocess::CreateSamplerState\",\"length\":40,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585640\",\"text\":\"StereoRenderer core version:{}\",\"length\":30,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585660\",\"text\":\"1.1.3.build-1360\",\"length\":16,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585680\",\"text\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\StereoGraphicsEngine.cpp\",\"length\":76,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805856d0\",\"text\":\"AiStereo::StereoGraphicsEngine::InitGraphicsDevice\",\"length\":50,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585708\",\"text\":\"g_deviceContext:\",\"length\":16,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585720\",\"text\":\"d3dDevice:\",\"length\":10,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585730\",\"text\":\"Failed to initialize preprocess!\",\"length\":32,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585758\",\"text\":\"Failed to initialize DepthEngine!\",\"length\":33,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585780\",\"text\":\"Failed to initialize stereoProcess!\",\"length\":35,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805857a8\",\"text\":\"Failed to initialize depthDilate!\",\"length\":33,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805857d0\",\"text\":\"Failed to create ViewPort!\",\"length\":26,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805857f0\",\"text\":\"Failed to initialize inpating!\",\"length\":30,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585810\",\"text\":\"Failed to create Texture!\",\"length\":25,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585830\",\"text\":\"Failed to create PreprocessTexture!\",\"length\":35,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585858\",\"text\":\"StereoRenderer initialized successfully !\",\"length\":41,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585888\",\"text\":\"Failed to create Texture2!\",\"length\":26,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805858a8\",\"text\":\"Failed to inference!\",\"length\":20,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805858c0\",\"text\":\"AiStereo::StereoGraphicsEngine::Render\",\"length\":38,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805858e8\",\"text\":\"AiStereo::StereoGraphicsEngine::Release\",\"length\":39,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585910\",\"text\":\"StereoRenderer released!\",\"length\":24,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585a00\",\"text\":\"AiStereo::StereoProcess2::CreateShader\",\"length\":38,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585a30\",\"text\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\StereoProcess2.cpp\",\"length\":70,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585a78\",\"text\":\"AiStereo::StereoProcess2::CreateConstantBuffer\",\"length\":46,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585ac0\",\"text\":\"AiStereo::StereoProcess2::CreateInputLayout\",\"length\":43,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585b08\",\"text\":\"fDpt:\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585b18\",\"text\":\"AiStereo::StereoProcess2::CreateVetexInfo\",\"length\":41,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585b78\",\"text\":\"AiStereo::StereoProcess2::CreateSamplerState\",\"length\":44,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585ba8\",\"text\":\"space\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585bb0\",\"text\":\"Not Specified\",\"length\":13,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585bc0\",\"text\":\"CoInitializeEx failed: 0x{:X}\",\"length\":29,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585be0\",\"text\":\"Error\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585bf0\",\"text\":\"CoInitializeSecurity failed: 0x{:X}\",\"length\":35,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585c18\",\"text\":\"CoCreateInstance(IWbemLocator) failed: 0x{:X}\",\"length\":45,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585c48\",\"text\":\"AiStereo::EDID::Edid::getBaseboardSNFromCmd\",\"length\":43,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585c78\",\"text\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\EDID\\\\Edid.cpp\",\"length\":60,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585cb8\",\"text\":\"CoSetProxyBlanket failed: 0x{:X}\",\"length\":32,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585ce0\",\"text\":\"SELECT SerialNumber FROM Win32_BaseBoard\",\"length\":40,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585d38\",\"text\":\"ROOT\\\\CIMV2\",\"length\":10,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585d50\",\"text\":\"ConnectServer failed: 0x{:X}\",\"length\":28,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585d70\",\"text\":\"SerialNumber\",\"length\":12,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585d98\",\"text\":\"WMI query failed: 0x{:X}\",\"length\":24,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585db8\",\"text\":\"SystemProductName\",\"length\":17,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585dd0\",\"text\":\"SerialNumber : {}\",\"length\":17,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585de8\",\"text\":\"WMI query returned no results for Win32_BaseBoard\",\"length\":49,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585e20\",\"text\":\"AiStereo::EDID::Edid::GetEdidSNs\",\"length\":32,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585e48\",\"text\":\"MACHINE_MCU_UUID\",\"length\":16,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585e60\",\"text\":\"HARDWARE\\\\DESCRIPTION\\\\System\\\\BIOS\",\"length\":32,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585e88\",\"text\":\"productName:{}\",\"length\":14,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585e98\",\"text\":\"EDID infoList size:{}\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585eb0\",\"text\":\"==========\",\"length\":10,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585ec0\",\"text\":\"SOFTWARE\\\\BOE\",\"length\":12,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585ed0\",\"text\":\"uuid:{}\",\"length\":7,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585ee8\",\"text\":\"manufacturer:{}; SN:{}; model:{}\",\"length\":32,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f10\",\"text\":\"read edid failed!\",\"length\":17,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f24\",\"text\":\"alpha\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f30\",\"text\":\"alpha\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f3c\",\"text\":\"alnum\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f48\",\"text\":\"alnum\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f54\",\"text\":\"cntrl\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f60\",\"text\":\"cntrl\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f6c\",\"text\":\"blank\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f78\",\"text\":\"blank\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f84\",\"text\":\"digit\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585f90\",\"text\":\"digit\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585fa4\",\"text\":\"lower\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585fb0\",\"text\":\"lower\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585fbc\",\"text\":\"graph\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585fc8\",\"text\":\"graph\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585fd4\",\"text\":\"punct\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585fe0\",\"text\":\"punct\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585fec\",\"text\":\"print\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180585ff8\",\"text\":\"print\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586008\",\"text\":\"upper\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586010\",\"text\":\"space\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586024\",\"text\":\"xdigit\",\"length\":6,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586030\",\"text\":\"upper\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586040\",\"text\":\"vector<bool> too long\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586058\",\"text\":\"xdigit\",\"length\":6,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586290\",\"text\":\"()$^.*+?[]|\\\\-{},:=!\\n\\r\\b\",\"length\":22,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805864f0\",\"text\":\"[json.exception.\",\"length\":16,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586508\",\"text\":\", column \",\"length\":9,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586518\",\"text\":\" at line \",\"length\":9,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586530\",\"text\":\"attempting to parse an empty input; check that your input string or stream contains the expected JSON\",\"length\":101,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805865a0\",\"text\":\"-----BEGIN PUBLIC KEY-----\\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvXEwqwJUHAFl1hLfnHo/\\nUM774oIcliAvMTZXShO42iFYgQ5MUNtyDvzpqeHE99JB7TYhG2TdytAYCrpLhNkg\\nyjYv7VXH9uF7M9KKUad9TKcSna0M9xJxYHvB4e4jfQhfj2umDVcunu70vMzBy1uj\\niFt/sURndEUHCrw2HW2krE9qVZGnhQJV93CG62S7HO7WfoQgepQbS1VmSYdsscH6\\ndOtB5saJ+zogfmEFLYJVR/MxaP5KSjJfxpqMwcehyNKNK/o3QbgSBQvAeBfvuck4\\nBRBNjKdCJAPHaAuD/K9ZXij44sh2IsELVZExzhmIkmCcwom1sQf4w5T0wWzFmJ7n\\nUwIDAQAB\\n-----END PUBLIC KEY-----\",\"length\":450,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586768\",\"text\":\"1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p\",\"length\":32,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586798\",\"text\":\"PATCH\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805867a8\",\"text\":\"algorithm\",\"length\":9,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805867b8\",\"text\":\"SHA-256\",\"length\":7,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805867c4\",\"text\":\"nonce\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805867e8\",\"text\":\"location\",\"length\":8,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805867f8\",\"text\":\"Failed to create cipher context\",\"length\":31,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586818\",\"text\":\"Failed to initialize decryption\",\"length\":31,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586838\",\"text\":\"Invalid encrypted data\",\"length\":22,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586850\",\"text\":\"Failed to create base64 BIO\",\"length\":27,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586870\",\"text\":\"Failed to create memory BIO\",\"length\":27,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586890\",\"text\":\"Decryption update failed\",\"length\":24,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805868b0\",\"text\":\"Decryption final failed\",\"length\":23,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805868c8\",\"text\":\"license\",\"length\":7,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805868d0\",\"text\":\"signature\",\"length\":9,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805868e0\",\"text\":\"Failed to decode base64 data\",\"length\":28,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586900\",\"text\":\"File not found!\",\"length\":15,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586910\",\"text\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\LicenseManager.cpp\",\"length\":65,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586958\",\"text\":\"Failed to create BIO\",\"length\":20,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586970\",\"text\":\"Error reading file:{}\",\"length\":21,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586988\",\"text\":\"AiStereo::LicenseManager::GetGameLic\",\"length\":36,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805869b0\",\"text\":\"Failed to create verification context\",\"length\":37,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x1805869d8\",\"text\":\"Failed to initialize verification\",\"length\":33,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586a00\",\"text\":\"AiStereo::LicenseManager::VerifySignature\",\"length\":41,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586a30\",\"text\":\"Failed to read public key\",\"length\":25,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586a50\",\"text\":\"descrypt hardware_address:{}\",\"length\":28,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586a70\",\"text\":\"AiStereo::LicenseManager::checkTencentLicense\",\"length\":45,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586aa0\",\"text\":\"Signature verification failed:\",\"length\":30,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586ac0\",\"text\":\"hardware_address\",\"length\":16,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586ad8\",\"text\":\"VerifySignature:{}\",\"length\":18,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586af0\",\"text\":\"curTimestamp:{} s,expiration_date:{} s\",\"length\":38,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586b18\",\"text\":\"expiration_date\",\"length\":15,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586b28\",\"text\":\"expiration_date:{}\",\"length\":18,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586b40\",\"text\":\"check hardware_address({}):true\",\"length\":31,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586b60\",\"text\":\"check hardware_address:failed\",\"length\":29,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586b80\",\"text\":\"check license:{}\",\"length\":16,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586b98\",\"text\":\"check hardware_address({} == {})?\",\"length\":33,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586bc0\",\"text\":\"license verification\",\"length\":20,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586bd8\",\"text\":\"AiStereo::LicenseManager::VerifiLicense\",\"length\":39,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586c00\",\"text\":\"checkTencentLicese error:{}\",\"length\":27,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586c20\",\"text\":\"\\\\inlab\\\\game.lic\",\"length\":15,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586c30\",\"text\":\"License verification successful, hardware_address:{}\",\"length\":52,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586c68\",\"text\":\"License verification failed\",\"length\":27,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586c88\",\"text\":\"parse error\",\"length\":11,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586c98\",\"text\":\"parse_error\",\"length\":11,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586cac\",\"text\":\"expect\",\"length\":6,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586cb4\",\"text\":\"value\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586cc0\",\"text\":\"object separator\",\"length\":16,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586cd8\",\"text\":\"number overflow parsing '\",\"length\":25,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586cf8\",\"text\":\"cannot use operator[] with a string argument with \",\"length\":50,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586d30\",\"text\":\"object key\",\"length\":10,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586d3c\",\"text\":\"array\",\"length\":5,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586d44\",\"text\":\"object\",\"length\":6,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586d50\",\"text\":\"type_error\",\"length\":10,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586d60\",\"text\":\"<U+%.4X>\",\"length\":8,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586d70\",\"text\":\"; last read: '\",\"length\":14,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586d80\",\"text\":\"syntax error \",\"length\":13,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586d90\",\"text\":\"while parsing \",\"length\":14,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586da8\",\"text\":\"string\",\"length\":6,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586db0\",\"text\":\"unexpected \",\"length\":11,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586dc0\",\"text\":\"; expected \",\"length\":11,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586dd0\",\"text\":\"discarded\",\"length\":9,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586ddc\",\"text\":\"number\",\"length\":6,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586de8\",\"text\":\"boolean\",\"length\":7,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586df0\",\"text\":\"binary\",\"length\":6,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586df8\",\"text\":\"out_of_range\",\"length\":12,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586e08\",\"text\":\"excessive array size: \",\"length\":22,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586e20\",\"text\":\"invalid\",\"length\":7,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586e28\",\"text\":\"invalid literal\",\"length\":15,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586e38\",\"text\":\"<uninitialized>\",\"length\":15,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586e48\",\"text\":\"excessive object size: \",\"length\":23,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586e60\",\"text\":\"invalid BOM; must be 0xEF 0xBB 0xBF if given\",\"length\":44,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586e90\",\"text\":\"null literal\",\"length\":12,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586ea0\",\"text\":\"string literal\",\"length\":14,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586eb0\",\"text\":\"true literal\",\"length\":12,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586ec0\",\"text\":\"false literal\",\"length\":13,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586ed8\",\"text\":\"number literal\",\"length\":14,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586ef0\",\"text\":\"<parse error>\",\"length\":13,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586f08\",\"text\":\"unknown token\",\"length\":13,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586f18\",\"text\":\"type must be string, but is \",\"length\":28,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586f38\",\"text\":\"end of input\",\"length\":12,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586f48\",\"text\":\"'[', '{', or a literal\",\"length\":22,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586f60\",\"text\":\"cannot use erase() with \",\"length\":24,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586f80\",\"text\":\"invalid number; expected digit after '-'\",\"length\":40,\"segment\":\".rdata\"},{\"kind\":\"string\",\"addr\":\"0x180586fb0\",\"text\":\"iterator does not fit current value\",\"length\":35,\"segment\":\".rdata\"}],\"next_offset\":200,\"total\":272,\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "kind": "strings",
+          "data": [
+            {
+              "kind": "string",
+              "addr": "0x180585000",
+              "text": "PCI\\VEN_8086&DEV_7D1E",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585018",
+              "text": "PCI\\VEN_8086&DEV_7D1C",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585030",
+              "text": "PCI\\VEN_8086&DEV_8E40",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585048",
+              "text": "PCI\\VEN_8086&DEV_7D45",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585060",
+              "text": "PCI\\VEN_8086&DEV_8E4B",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585078",
+              "text": "PCI\\VEN_8086&DEV_8E4A",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585090",
+              "text": "PCI\\VEN_8086&DEV_AD02",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805850a8",
+              "text": "PCI\\VEN_8086&DEV_AD01",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805850c0",
+              "text": "PCI\\VEN_8086&DEV_A781",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805850d8",
+              "text": "PCI\\VEN_8086&DEV_A780",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805850f0",
+              "text": "VEN_8086",
+              "length": 8,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585100",
+              "text": "PCI\\VEN_8086&DEV_0BD4",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585118",
+              "text": "Neural",
+              "length": 6,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585120",
+              "text": "AI Boost",
+              "length": 8,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585170",
+              "text": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\Core\\DepthDilate.cpp",
+              "length": 67,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805851b8",
+              "text": "AiStereo::DepthDilate::CreateShader",
+              "length": 35,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585250",
+              "text": "AiStereo::DepthDilate::CreateInputLayout",
+              "length": 40,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585280",
+              "text": "AiStereo::DepthDilate::CreateVetexInfo",
+              "length": 38,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805852c0",
+              "text": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\Core\\Inpating.cpp",
+              "length": 64,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585308",
+              "text": "AiStereo::Inpating::CreateShader",
+              "length": 32,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585380",
+              "text": "AiStereo::Inpating::CreateInputLayout",
+              "length": 37,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805853c8",
+              "text": "AiStereo::Inpating::CreateVetexInfo",
+              "length": 35,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805853f0",
+              "text": "AiStereo::Inpating::CreateConstantBuffer",
+              "length": 40,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585438",
+              "text": "AiStereo::Inpating::CreateSamplerState",
+              "length": 38,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585480",
+              "text": "AiStereo::Inpating::UpdateConstantBuffer",
+              "length": 40,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805854b0",
+              "text": "FXAA->Update the constant buffer",
+              "length": 32,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805854d8",
+              "text": "AiStereo::Preprocess::CreateShader",
+              "length": 34,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585530",
+              "text": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\Core\\Preprocess.cpp",
+              "length": 66,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585578",
+              "text": "AiStereo::Preprocess::CreateInputLayout",
+              "length": 39,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805855b8",
+              "text": "AiStereo::Preprocess::CreateVetexInfo",
+              "length": 37,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805855f8",
+              "text": "AiStereo::Preprocess::CreateSamplerState",
+              "length": 40,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585640",
+              "text": "StereoRenderer core version:{}",
+              "length": 30,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585660",
+              "text": "1.1.3.build-1360",
+              "length": 16,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585680",
+              "text": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\Core\\StereoGraphicsEngine.cpp",
+              "length": 76,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805856d0",
+              "text": "AiStereo::StereoGraphicsEngine::InitGraphicsDevice",
+              "length": 50,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585708",
+              "text": "g_deviceContext:",
+              "length": 16,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585720",
+              "text": "d3dDevice:",
+              "length": 10,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585730",
+              "text": "Failed to initialize preprocess!",
+              "length": 32,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585758",
+              "text": "Failed to initialize DepthEngine!",
+              "length": 33,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585780",
+              "text": "Failed to initialize stereoProcess!",
+              "length": 35,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805857a8",
+              "text": "Failed to initialize depthDilate!",
+              "length": 33,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805857d0",
+              "text": "Failed to create ViewPort!",
+              "length": 26,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805857f0",
+              "text": "Failed to initialize inpating!",
+              "length": 30,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585810",
+              "text": "Failed to create Texture!",
+              "length": 25,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585830",
+              "text": "Failed to create PreprocessTexture!",
+              "length": 35,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585858",
+              "text": "StereoRenderer initialized successfully !",
+              "length": 41,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585888",
+              "text": "Failed to create Texture2!",
+              "length": 26,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805858a8",
+              "text": "Failed to inference!",
+              "length": 20,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805858c0",
+              "text": "AiStereo::StereoGraphicsEngine::Render",
+              "length": 38,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805858e8",
+              "text": "AiStereo::StereoGraphicsEngine::Release",
+              "length": 39,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585910",
+              "text": "StereoRenderer released!",
+              "length": 24,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585a00",
+              "text": "AiStereo::StereoProcess2::CreateShader",
+              "length": 38,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585a30",
+              "text": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\Core\\StereoProcess2.cpp",
+              "length": 70,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585a78",
+              "text": "AiStereo::StereoProcess2::CreateConstantBuffer",
+              "length": 46,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585ac0",
+              "text": "AiStereo::StereoProcess2::CreateInputLayout",
+              "length": 43,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585b08",
+              "text": "fDpt:",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585b18",
+              "text": "AiStereo::StereoProcess2::CreateVetexInfo",
+              "length": 41,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585b78",
+              "text": "AiStereo::StereoProcess2::CreateSamplerState",
+              "length": 44,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585ba8",
+              "text": "space",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585bb0",
+              "text": "Not Specified",
+              "length": 13,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585bc0",
+              "text": "CoInitializeEx failed: 0x{:X}",
+              "length": 29,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585be0",
+              "text": "Error",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585bf0",
+              "text": "CoInitializeSecurity failed: 0x{:X}",
+              "length": 35,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585c18",
+              "text": "CoCreateInstance(IWbemLocator) failed: 0x{:X}",
+              "length": 45,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585c48",
+              "text": "AiStereo::EDID::Edid::getBaseboardSNFromCmd",
+              "length": 43,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585c78",
+              "text": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\EDID\\Edid.cpp",
+              "length": 60,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585cb8",
+              "text": "CoSetProxyBlanket failed: 0x{:X}",
+              "length": 32,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585ce0",
+              "text": "SELECT SerialNumber FROM Win32_BaseBoard",
+              "length": 40,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585d38",
+              "text": "ROOT\\CIMV2",
+              "length": 10,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585d50",
+              "text": "ConnectServer failed: 0x{:X}",
+              "length": 28,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585d70",
+              "text": "SerialNumber",
+              "length": 12,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585d98",
+              "text": "WMI query failed: 0x{:X}",
+              "length": 24,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585db8",
+              "text": "SystemProductName",
+              "length": 17,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585dd0",
+              "text": "SerialNumber : {}",
+              "length": 17,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585de8",
+              "text": "WMI query returned no results for Win32_BaseBoard",
+              "length": 49,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585e20",
+              "text": "AiStereo::EDID::Edid::GetEdidSNs",
+              "length": 32,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585e48",
+              "text": "MACHINE_MCU_UUID",
+              "length": 16,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585e60",
+              "text": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "length": 32,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585e88",
+              "text": "productName:{}",
+              "length": 14,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585e98",
+              "text": "EDID infoList size:{}",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585eb0",
+              "text": "==========",
+              "length": 10,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585ec0",
+              "text": "SOFTWARE\\BOE",
+              "length": 12,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585ed0",
+              "text": "uuid:{}",
+              "length": 7,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585ee8",
+              "text": "manufacturer:{}; SN:{}; model:{}",
+              "length": 32,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f10",
+              "text": "read edid failed!",
+              "length": 17,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f24",
+              "text": "alpha",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f30",
+              "text": "alpha",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f3c",
+              "text": "alnum",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f48",
+              "text": "alnum",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f54",
+              "text": "cntrl",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f60",
+              "text": "cntrl",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f6c",
+              "text": "blank",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f78",
+              "text": "blank",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f84",
+              "text": "digit",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585f90",
+              "text": "digit",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585fa4",
+              "text": "lower",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585fb0",
+              "text": "lower",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585fbc",
+              "text": "graph",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585fc8",
+              "text": "graph",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585fd4",
+              "text": "punct",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585fe0",
+              "text": "punct",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585fec",
+              "text": "print",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180585ff8",
+              "text": "print",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586008",
+              "text": "upper",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586010",
+              "text": "space",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586024",
+              "text": "xdigit",
+              "length": 6,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586030",
+              "text": "upper",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586040",
+              "text": "vector<bool> too long",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586058",
+              "text": "xdigit",
+              "length": 6,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586290",
+              "text": "()$^.*+?[]|\\-{},:=!\n\r\b",
+              "length": 22,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805864f0",
+              "text": "[json.exception.",
+              "length": 16,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586508",
+              "text": ", column ",
+              "length": 9,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586518",
+              "text": " at line ",
+              "length": 9,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586530",
+              "text": "attempting to parse an empty input; check that your input string or stream contains the expected JSON",
+              "length": 101,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805865a0",
+              "text": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvXEwqwJUHAFl1hLfnHo/\nUM774oIcliAvMTZXShO42iFYgQ5MUNtyDvzpqeHE99JB7TYhG2TdytAYCrpLhNkg\nyjYv7VXH9uF7M9KKUad9TKcSna0M9xJxYHvB4e4jfQhfj2umDVcunu70vMzBy1uj\niFt/sURndEUHCrw2HW2krE9qVZGnhQJV93CG62S7HO7WfoQgepQbS1VmSYdsscH6\ndOtB5saJ+zogfmEFLYJVR/MxaP5KSjJfxpqMwcehyNKNK/o3QbgSBQvAeBfvuck4\nBRBNjKdCJAPHaAuD/K9ZXij44sh2IsELVZExzhmIkmCcwom1sQf4w5T0wWzFmJ7n\nUwIDAQAB\n-----END PUBLIC KEY-----",
+              "length": 450,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586768",
+              "text": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p",
+              "length": 32,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586798",
+              "text": "PATCH",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805867a8",
+              "text": "algorithm",
+              "length": 9,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805867b8",
+              "text": "SHA-256",
+              "length": 7,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805867c4",
+              "text": "nonce",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805867e8",
+              "text": "location",
+              "length": 8,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805867f8",
+              "text": "Failed to create cipher context",
+              "length": 31,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586818",
+              "text": "Failed to initialize decryption",
+              "length": 31,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586838",
+              "text": "Invalid encrypted data",
+              "length": 22,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586850",
+              "text": "Failed to create base64 BIO",
+              "length": 27,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586870",
+              "text": "Failed to create memory BIO",
+              "length": 27,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586890",
+              "text": "Decryption update failed",
+              "length": 24,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805868b0",
+              "text": "Decryption final failed",
+              "length": 23,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805868c8",
+              "text": "license",
+              "length": 7,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805868d0",
+              "text": "signature",
+              "length": 9,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805868e0",
+              "text": "Failed to decode base64 data",
+              "length": 28,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586900",
+              "text": "File not found!",
+              "length": 15,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586910",
+              "text": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\LicenseManager.cpp",
+              "length": 65,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586958",
+              "text": "Failed to create BIO",
+              "length": 20,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586970",
+              "text": "Error reading file:{}",
+              "length": 21,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586988",
+              "text": "AiStereo::LicenseManager::GetGameLic",
+              "length": 36,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805869b0",
+              "text": "Failed to create verification context",
+              "length": 37,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x1805869d8",
+              "text": "Failed to initialize verification",
+              "length": 33,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586a00",
+              "text": "AiStereo::LicenseManager::VerifySignature",
+              "length": 41,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586a30",
+              "text": "Failed to read public key",
+              "length": 25,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586a50",
+              "text": "descrypt hardware_address:{}",
+              "length": 28,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586a70",
+              "text": "AiStereo::LicenseManager::checkTencentLicense",
+              "length": 45,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586aa0",
+              "text": "Signature verification failed:",
+              "length": 30,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586ac0",
+              "text": "hardware_address",
+              "length": 16,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586ad8",
+              "text": "VerifySignature:{}",
+              "length": 18,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586af0",
+              "text": "curTimestamp:{} s,expiration_date:{} s",
+              "length": 38,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586b18",
+              "text": "expiration_date",
+              "length": 15,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586b28",
+              "text": "expiration_date:{}",
+              "length": 18,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586b40",
+              "text": "check hardware_address({}):true",
+              "length": 31,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586b60",
+              "text": "check hardware_address:failed",
+              "length": 29,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586b80",
+              "text": "check license:{}",
+              "length": 16,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586b98",
+              "text": "check hardware_address({} == {})?",
+              "length": 33,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586bc0",
+              "text": "license verification",
+              "length": 20,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586bd8",
+              "text": "AiStereo::LicenseManager::VerifiLicense",
+              "length": 39,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586c00",
+              "text": "checkTencentLicese error:{}",
+              "length": 27,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586c20",
+              "text": "\\inlab\\game.lic",
+              "length": 15,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586c30",
+              "text": "License verification successful, hardware_address:{}",
+              "length": 52,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586c68",
+              "text": "License verification failed",
+              "length": 27,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586c88",
+              "text": "parse error",
+              "length": 11,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586c98",
+              "text": "parse_error",
+              "length": 11,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586cac",
+              "text": "expect",
+              "length": 6,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586cb4",
+              "text": "value",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586cc0",
+              "text": "object separator",
+              "length": 16,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586cd8",
+              "text": "number overflow parsing '",
+              "length": 25,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586cf8",
+              "text": "cannot use operator[] with a string argument with ",
+              "length": 50,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586d30",
+              "text": "object key",
+              "length": 10,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586d3c",
+              "text": "array",
+              "length": 5,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586d44",
+              "text": "object",
+              "length": 6,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586d50",
+              "text": "type_error",
+              "length": 10,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586d60",
+              "text": "<U+%.4X>",
+              "length": 8,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586d70",
+              "text": "; last read: '",
+              "length": 14,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586d80",
+              "text": "syntax error ",
+              "length": 13,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586d90",
+              "text": "while parsing ",
+              "length": 14,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586da8",
+              "text": "string",
+              "length": 6,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586db0",
+              "text": "unexpected ",
+              "length": 11,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586dc0",
+              "text": "; expected ",
+              "length": 11,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586dd0",
+              "text": "discarded",
+              "length": 9,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586ddc",
+              "text": "number",
+              "length": 6,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586de8",
+              "text": "boolean",
+              "length": 7,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586df0",
+              "text": "binary",
+              "length": 6,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586df8",
+              "text": "out_of_range",
+              "length": 12,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586e08",
+              "text": "excessive array size: ",
+              "length": 22,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586e20",
+              "text": "invalid",
+              "length": 7,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586e28",
+              "text": "invalid literal",
+              "length": 15,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586e38",
+              "text": "<uninitialized>",
+              "length": 15,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586e48",
+              "text": "excessive object size: ",
+              "length": 23,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586e60",
+              "text": "invalid BOM; must be 0xEF 0xBB 0xBF if given",
+              "length": 44,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586e90",
+              "text": "null literal",
+              "length": 12,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586ea0",
+              "text": "string literal",
+              "length": 14,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586eb0",
+              "text": "true literal",
+              "length": 12,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586ec0",
+              "text": "false literal",
+              "length": 13,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586ed8",
+              "text": "number literal",
+              "length": 14,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586ef0",
+              "text": "<parse error>",
+              "length": 13,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586f08",
+              "text": "unknown token",
+              "length": 13,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586f18",
+              "text": "type must be string, but is ",
+              "length": 28,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586f38",
+              "text": "end of input",
+              "length": 12,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586f48",
+              "text": "'[', '{', or a literal",
+              "length": 22,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586f60",
+              "text": "cannot use erase() with ",
+              "length": 24,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586f80",
+              "text": "invalid number; expected digit after '-'",
+              "length": 40,
+              "segment": ".rdata"
+            },
+            {
+              "kind": "string",
+              "addr": "0x180586fb0",
+              "text": "iterator does not fit current value",
+              "length": 35,
+              "segment": ".rdata"
+            }
+          ],
+          "next_offset": 200,
+          "total": 272,
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

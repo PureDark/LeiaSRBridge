@@ -1,0 +1,269 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":62,\"matches\":[{\"addr\":\"0x1401be6a8\",\"string\":\"BLINKEYE\"},{\"addr\":\"0x1401bef60\",\"string\":\"landmarks not detected\\n\"},{\"addr\":\"0x1401bef90\",\"string\":\"landmarks not detected 2D\\n\"},{\"addr\":\"0x1401bf478\",\"string\":\"Year is out of valid range: 1400..9999\"},{\"addr\":\"0x1401bf4c8\",\"string\":\"Day of month is not valid for year\"},{\"addr\":\"0x1401bf758\",\"string\":\"searchLastUserTimeSeconds\"},{\"addr\":\"0x1401bf7c0\",\"string\":\"intendedUserSearchingROIsize\"},{\"addr\":\"0x1401bfe88\",\"string\":\"recordAllLandmarks\"},{\"addr\":\"0x1401bfea0\",\"string\":\"recordEyeLandmarks\"},{\"addr\":\"0x1401bfec8\",\"string\":\"recordHeadPose\"},{\"addr\":\"0x1401c0178\",\"string\":\"_eyeLandmarks.csv\"},{\"addr\":\"0x1401c01a8\",\"string\":\"_headPose.csv\"},{\"addr\":\"0x1401c1518\",\"string\":\"Switch to using raw landlandmarks\"},{\"addr\":\"0x1401c23a8\",\"string\":\"searchIntendedUser thread\"},{\"addr\":\"0x1401c3220\",\"string\":\"C:\\\\actions-runner-2\\\\_work\\\\LeiaSR\\\\LeiaSR\\\\eyetracker\\\\src\\\\FaceLockBlinkEyeTracker.cpp\"},{\"addr\":\"0x1401c3358\",\"string\":\"BlinkEye contextFaceTracker creation failed\"},{\"addr\":\"0x1401c33a0\",\"string\":\"BlinkEye contextFaceDetector creation failed\"},{\"addr\":\"0x1401c3430\",\"string\":\" Error creating Landmarks3dDetector: \"},{\"addr\":\"0x1401c34a8\",\"string\":\"Blinkeye coordinates are NaN\"},{\"addr\":\"0x1401c34e8\",\"string\":\"[ERROR] Stereo mode enabled, but no linked blinkeyetracker: \"},{\"addr\":\"0x1401c3528\",\"string\":\"Landmarks size not 68!\"},{\"addr\":\"0x1401c3560\",\"string\":\"Blinkeye get 3d eye centers failed\"},{\"addr\":\"0x1401c3588\",\"string\":\"Blinkeye get blink probabilities failed\"},{\"addr\":\"0x1401cb8b0\",\"string\":\"MediaFoundation searching for : \"},{\"addr\":\"0x1401cdd10\",\"string\":\"usePredictionForHeadPose\"},{\"addr\":\"0x1401cddd0\",\"string\":\"predictionTimeHeadPose_s\"},{\"addr\":\"0x1401ce1b8\",\"string\":\"EarlyTermination\"},{\"addr\":\"0x1401cf660\",\"string\":\"JFg1jyA1ZST25w82oJBYq8f0NQtHc7bK01cS4OM0hmOGd7PDKiRGiIrsLcjgfw/J/jx3mBuEaR5J\"},{\"addr\":\"0x1401d51f0\",\"string\":\"t7geARjzf6oe85YZdQvODK9SMHYo/QwdcPwwnSf4Dtmvvg5XnSG41s16X0n7o7g5ZgFr+HTLwMzR\"},{\"addr\":\"0x1401dbd20\",\"string\":\"GRVVisGEARz1qjm/GY/jW9kE6alXImoLE+F0opY6QTQXAo+KKleXAWmMEUs972E/aFQtmR2V2mxo\"},{\"addr\":\"0x1401dd670\",\"string\":\"T0mE9aIOVS9DLgIURa5qmWUFvolbrZ698AwXlEV8vkMgSDZyxgRSBdyZcmQawO26rEVQWeAr7dw2\"},{\"addr\":\"0x1401e0640\",\"string\":\"8yN+OP1IWu/DZUzauOoVqhEPEARq316Uj15VXoPpy2oa9/L0Pqzna3d+8/VxnSlWWo7i7bWEXbc5\"},{\"addr\":\"0x1401edfa0\",\"string\":\"IsHeRrzLNmntT4lzgHtEArSwEcYDRXLKBd+L13FZBV8iMX3ON8vUBMLU8QKoSDXatEI//h8RcI2R\"},{\"addr\":\"0x1401ef940\",\"string\":\"95eArvlyyr0JKWkMochvrYl2iHN/4cv15vog9n/9pUP15ttJdZdqiE+qwBaGA+B78y7kCf4X8dAE\"},{\"addr\":\"0x1401f3cc0\",\"string\":\"pLEArb7kuWg3W3Gc0pdlONrgWVvoYpTtwQsrY8QfZmIVmQ+Dkcz4q+LqfYRU+TEIM4Y06Gm67JzA\"},{\"addr\":\"0x1401f8a40\",\"string\":\"kwcYWkLBme6vSiaeyLRG8y6A78zeoc93lGy87yjRWYkr9CeARb8B3tHX4E1APF0Dcs3/6MTZhnmv\"},{\"addr\":\"0x1401fc678\",\"string\":\"CM_PROB_TOO_EARLY\"},{\"addr\":\"0x1401fe088\",\"string\":\"</RawHeadPose>\"},{\"addr\":\"0x1401fe300\",\"string\":\"<RawHeadPose>\"},{\"addr\":\"0x140254776\",\"string\":\"?estimate@Landmarks3dDetector@blink@@QEAA?AW4BlStatus@@AEAVHeadPoseDetectorData@2@AEAVLandmarks3dDetectorData@2@@Z\"},{\"addr\":\"0x1402547ec\",\"string\":\"??0Landmarks3dDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVLandmarks3dDetectorConfig@1@@Z\"},{\"addr\":\"0x140254848\",\"string\":\"?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z\"},{\"addr\":\"0x1402548ca\",\"string\":\"??0Landmarks3dDetectorData@blink@@QEAA@XZ\"},{\"addr\":\"0x140254f4c\",\"string\":\"?get_landmarks@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@W4BlLandmarksType@@AEAV?$BlVector@UBlPoint2d@@@common@2@@Z\"},{\"addr\":\"0x140255112\",\"string\":\"??1Landmarks3dDetectorConfig@blink@@UEAA@XZ\"},{\"addr\":\"0x140255140\",\"string\":\"??0Landmarks3dDetectorConfig@blink@@QEAA@XZ\"},{\"addr\":\"0x14025516e\",\"string\":\"??1HeadPoseDetectorConfig@blink@@UEAA@XZ\"},{\"addr\":\"0x14025519a\",\"string\":\"??0HeadPoseDetectorConfig@blink@@QEAA@XZ\"},{\"addr\":\"0x140255518\",\"string\":\"?estimate@HeadPoseDetector@blink@@QEAA?AW4BlStatus@@AEAVFaceDetectorData@2@AEAVHeadPoseDetectorData@2@@Z\"},{\"addr\":\"0x140255584\",\"string\":\"??0HeadPoseDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVHeadPoseDetectorConfig@1@@Z\"},{\"addr\":\"0x14025574c\",\"string\":\"?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z\"},{\"addr\":\"0x1402557b2\",\"string\":\"??0HeadPoseDetectorData@blink@@QEAA@XZ\"},{\"addr\":\"0x1402562b0\",\"string\":\"?minAreaRect@cv@@YA?AVRotatedRect@1@AEBV_InputArray@1@@Z\"},{\"addr\":\"0x140257f50\",\"string\":\"ClearCommError\"},{\"addr\":\"0x140259742\",\"string\":\"?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z\"},{\"addr\":\"0x14025f480\",\"string\":\".?AU?$error_info_injector@Ubad_year@gregorian@boost@@@exception_detail@boost@@\"},{\"addr\":\"0x14025f5f0\",\"string\":\".?AU?$wrapexcept@Ubad_year@gregorian@boost@@@boost@@\"},{\"addr\":\"0x14025fca0\",\"string\":\".?AV?$clone_impl@U?$error_info_injector@Ubad_year@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@\"},{\"addr\":\"0x14025fd90\",\"string\":\".?AUbad_year@gregorian@boost@@\"},{\"addr\":\"0x140261dc0\",\"string\":\".?AV?$_Ref_count_obj@VLandmarks3dDetectorData@blink@@@std@@\"},{\"addr\":\"0x140261e90\",\"string\":\".?AV?$_Ref_count_obj@VHeadPoseDetectorData@blink@@@std@@\"},{\"addr\":\"0x140261ee0\",\"string\":\".?AVBlinkEyeTracker@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 62,
+      "matches": [
+        {
+          "addr": "0x1401be6a8",
+          "string": "BLINKEYE"
+        },
+        {
+          "addr": "0x1401bef60",
+          "string": "landmarks not detected\n"
+        },
+        {
+          "addr": "0x1401bef90",
+          "string": "landmarks not detected 2D\n"
+        },
+        {
+          "addr": "0x1401bf478",
+          "string": "Year is out of valid range: 1400..9999"
+        },
+        {
+          "addr": "0x1401bf4c8",
+          "string": "Day of month is not valid for year"
+        },
+        {
+          "addr": "0x1401bf758",
+          "string": "searchLastUserTimeSeconds"
+        },
+        {
+          "addr": "0x1401bf7c0",
+          "string": "intendedUserSearchingROIsize"
+        },
+        {
+          "addr": "0x1401bfe88",
+          "string": "recordAllLandmarks"
+        },
+        {
+          "addr": "0x1401bfea0",
+          "string": "recordEyeLandmarks"
+        },
+        {
+          "addr": "0x1401bfec8",
+          "string": "recordHeadPose"
+        },
+        {
+          "addr": "0x1401c0178",
+          "string": "_eyeLandmarks.csv"
+        },
+        {
+          "addr": "0x1401c01a8",
+          "string": "_headPose.csv"
+        },
+        {
+          "addr": "0x1401c1518",
+          "string": "Switch to using raw landlandmarks"
+        },
+        {
+          "addr": "0x1401c23a8",
+          "string": "searchIntendedUser thread"
+        },
+        {
+          "addr": "0x1401c3220",
+          "string": "C:\\actions-runner-2\\_work\\LeiaSR\\LeiaSR\\eyetracker\\src\\FaceLockBlinkEyeTracker.cpp"
+        },
+        {
+          "addr": "0x1401c3358",
+          "string": "BlinkEye contextFaceTracker creation failed"
+        },
+        {
+          "addr": "0x1401c33a0",
+          "string": "BlinkEye contextFaceDetector creation failed"
+        },
+        {
+          "addr": "0x1401c3430",
+          "string": " Error creating Landmarks3dDetector: "
+        },
+        {
+          "addr": "0x1401c34a8",
+          "string": "Blinkeye coordinates are NaN"
+        },
+        {
+          "addr": "0x1401c34e8",
+          "string": "[ERROR] Stereo mode enabled, but no linked blinkeyetracker: "
+        },
+        {
+          "addr": "0x1401c3528",
+          "string": "Landmarks size not 68!"
+        },
+        {
+          "addr": "0x1401c3560",
+          "string": "Blinkeye get 3d eye centers failed"
+        },
+        {
+          "addr": "0x1401c3588",
+          "string": "Blinkeye get blink probabilities failed"
+        },
+        {
+          "addr": "0x1401cb8b0",
+          "string": "MediaFoundation searching for : "
+        },
+        {
+          "addr": "0x1401cdd10",
+          "string": "usePredictionForHeadPose"
+        },
+        {
+          "addr": "0x1401cddd0",
+          "string": "predictionTimeHeadPose_s"
+        },
+        {
+          "addr": "0x1401ce1b8",
+          "string": "EarlyTermination"
+        },
+        {
+          "addr": "0x1401cf660",
+          "string": "JFg1jyA1ZST25w82oJBYq8f0NQtHc7bK01cS4OM0hmOGd7PDKiRGiIrsLcjgfw/J/jx3mBuEaR5J"
+        },
+        {
+          "addr": "0x1401d51f0",
+          "string": "t7geARjzf6oe85YZdQvODK9SMHYo/QwdcPwwnSf4Dtmvvg5XnSG41s16X0n7o7g5ZgFr+HTLwMzR"
+        },
+        {
+          "addr": "0x1401dbd20",
+          "string": "GRVVisGEARz1qjm/GY/jW9kE6alXImoLE+F0opY6QTQXAo+KKleXAWmMEUs972E/aFQtmR2V2mxo"
+        },
+        {
+          "addr": "0x1401dd670",
+          "string": "T0mE9aIOVS9DLgIURa5qmWUFvolbrZ698AwXlEV8vkMgSDZyxgRSBdyZcmQawO26rEVQWeAr7dw2"
+        },
+        {
+          "addr": "0x1401e0640",
+          "string": "8yN+OP1IWu/DZUzauOoVqhEPEARq316Uj15VXoPpy2oa9/L0Pqzna3d+8/VxnSlWWo7i7bWEXbc5"
+        },
+        {
+          "addr": "0x1401edfa0",
+          "string": "IsHeRrzLNmntT4lzgHtEArSwEcYDRXLKBd+L13FZBV8iMX3ON8vUBMLU8QKoSDXatEI//h8RcI2R"
+        },
+        {
+          "addr": "0x1401ef940",
+          "string": "95eArvlyyr0JKWkMochvrYl2iHN/4cv15vog9n/9pUP15ttJdZdqiE+qwBaGA+B78y7kCf4X8dAE"
+        },
+        {
+          "addr": "0x1401f3cc0",
+          "string": "pLEArb7kuWg3W3Gc0pdlONrgWVvoYpTtwQsrY8QfZmIVmQ+Dkcz4q+LqfYRU+TEIM4Y06Gm67JzA"
+        },
+        {
+          "addr": "0x1401f8a40",
+          "string": "kwcYWkLBme6vSiaeyLRG8y6A78zeoc93lGy87yjRWYkr9CeARb8B3tHX4E1APF0Dcs3/6MTZhnmv"
+        },
+        {
+          "addr": "0x1401fc678",
+          "string": "CM_PROB_TOO_EARLY"
+        },
+        {
+          "addr": "0x1401fe088",
+          "string": "</RawHeadPose>"
+        },
+        {
+          "addr": "0x1401fe300",
+          "string": "<RawHeadPose>"
+        },
+        {
+          "addr": "0x140254776",
+          "string": "?estimate@Landmarks3dDetector@blink@@QEAA?AW4BlStatus@@AEAVHeadPoseDetectorData@2@AEAVLandmarks3dDetectorData@2@@Z"
+        },
+        {
+          "addr": "0x1402547ec",
+          "string": "??0Landmarks3dDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVLandmarks3dDetectorConfig@1@@Z"
+        },
+        {
+          "addr": "0x140254848",
+          "string": "?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z"
+        },
+        {
+          "addr": "0x1402548ca",
+          "string": "??0Landmarks3dDetectorData@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x140254f4c",
+          "string": "?get_landmarks@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@W4BlLandmarksType@@AEAV?$BlVector@UBlPoint2d@@@common@2@@Z"
+        },
+        {
+          "addr": "0x140255112",
+          "string": "??1Landmarks3dDetectorConfig@blink@@UEAA@XZ"
+        },
+        {
+          "addr": "0x140255140",
+          "string": "??0Landmarks3dDetectorConfig@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x14025516e",
+          "string": "??1HeadPoseDetectorConfig@blink@@UEAA@XZ"
+        },
+        {
+          "addr": "0x14025519a",
+          "string": "??0HeadPoseDetectorConfig@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x140255518",
+          "string": "?estimate@HeadPoseDetector@blink@@QEAA?AW4BlStatus@@AEAVFaceDetectorData@2@AEAVHeadPoseDetectorData@2@@Z"
+        },
+        {
+          "addr": "0x140255584",
+          "string": "??0HeadPoseDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVHeadPoseDetectorConfig@1@@Z"
+        },
+        {
+          "addr": "0x14025574c",
+          "string": "?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z"
+        },
+        {
+          "addr": "0x1402557b2",
+          "string": "??0HeadPoseDetectorData@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1402562b0",
+          "string": "?minAreaRect@cv@@YA?AVRotatedRect@1@AEBV_InputArray@1@@Z"
+        },
+        {
+          "addr": "0x140257f50",
+          "string": "ClearCommError"
+        },
+        {
+          "addr": "0x140259742",
+          "string": "?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z"
+        },
+        {
+          "addr": "0x14025f480",
+          "string": ".?AU?$error_info_injector@Ubad_year@gregorian@boost@@@exception_detail@boost@@"
+        },
+        {
+          "addr": "0x14025f5f0",
+          "string": ".?AU?$wrapexcept@Ubad_year@gregorian@boost@@@boost@@"
+        },
+        {
+          "addr": "0x14025fca0",
+          "string": ".?AV?$clone_impl@U?$error_info_injector@Ubad_year@gregorian@boost@@@exception_detail@boost@@@exception_detail@boost@@"
+        },
+        {
+          "addr": "0x14025fd90",
+          "string": ".?AUbad_year@gregorian@boost@@"
+        },
+        {
+          "addr": "0x140261dc0",
+          "string": ".?AV?$_Ref_count_obj@VLandmarks3dDetectorData@blink@@@std@@"
+        },
+        {
+          "addr": "0x140261e90",
+          "string": ".?AV?$_Ref_count_obj@VHeadPoseDetectorData@blink@@@std@@"
+        },
+        {
+          "addr": "0x140261ee0",
+          "string": ".?AVBlinkEyeTracker@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

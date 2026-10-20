@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"?log@@YAMM@Z\",\"code\":\"float __fastcall log(float a1)\\n{\\n  return cosf(X: a1); /*0x18005eba5*/\\n}\",\"refs\":[{\"addr\":\"0x18006901f\",\"name\":\"cosf\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "?log@@YAMM@Z",
+      "code": "float __fastcall log(float a1)\n{\n  return cosf(X: a1); /*0x18005eba5*/\n}",
+      "refs": [
+        {
+          "addr": "0x18006901f",
+          "name": "cosf"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

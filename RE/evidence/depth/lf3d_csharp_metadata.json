@@ -1,0 +1,5160 @@
+[
+  {
+    "methods": [
+      {
+        "parameters": [
+          {
+            "name": "innerException",
+            "seq": 1
+          },
+          {
+            "name": "nestedException",
+            "seq": 2
+          }
+        ],
+        "signature": "00020112611261",
+        "name": "<CrtImplementationDetails>.ThrowNestedModuleLoadException",
+        "rva": 11776,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "errorMessage",
+            "seq": 1
+          }
+        ],
+        "signature": "0001010E",
+        "name": "<CrtImplementationDetails>.ThrowModuleLoadException",
+        "rva": 10164,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "errorMessage",
+            "seq": 1
+          },
+          {
+            "name": "innerException",
+            "seq": 2
+          }
+        ],
+        "signature": "0002010E1261",
+        "name": "<CrtImplementationDetails>.ThrowModuleLoadException",
+        "rva": 10184,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "handler",
+            "seq": 1
+          }
+        ],
+        "signature": "0001011275",
+        "name": "<CrtImplementationDetails>.RegisterModuleUninitializer",
+        "rva": 10468,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "guid",
+            "seq": 1
+          }
+        ],
+        "signature": "000111809920808D0F20311184B8",
+        "name": "<CrtImplementationDetails>.FromGUID",
+        "rva": 10492,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "ppUnk",
+            "seq": 1
+          }
+        ],
+        "signature": "00012005208091080F0F1184C8",
+        "name": "__get_default_appdomain",
+        "rva": 10572,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "ppUnk",
+            "seq": 1
+          }
+        ],
+        "signature": "00012005010F1184C8",
+        "name": "__release_appdomain",
+        "rva": 10700,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000128085",
+        "name": "<CrtImplementationDetails>.GetDefaultDomain",
+        "rva": 10728,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "function",
+            "seq": 1
+          },
+          {
+            "name": "cookie",
+            "seq": 2
+          }
+        ],
+        "signature": "00022005011B01012005208091080F010F01",
+        "name": "<CrtImplementationDetails>.DoCallBackInDefaultDomain",
+        "rva": 10824,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "__scrt_is_safe_for_managed_code",
+        "rva": 11008,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "cookie",
+            "seq": 1
+          }
+        ],
+        "signature": "00012005208091080F01",
+        "name": "<CrtImplementationDetails>.DefaultDomain.DoNothing",
+        "rva": 11056,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "<CrtImplementationDetails>.DefaultDomain.HasPerProcess",
+        "rva": 11088,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "<CrtImplementationDetails>.DefaultDomain.HasNative",
+        "rva": 11172,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "<CrtImplementationDetails>.DefaultDomain.NeedsInitialization",
+        "rva": 11300,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "<CrtImplementationDetails>.DefaultDomain.NeedsUninitialization",
+        "rva": 11356,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "<CrtImplementationDetails>.DefaultDomain.Initialize",
+        "rva": 11376,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "?A0xeb4f7d22.??__E?Initialized@CurrentDomain@<CrtImplementationDetails>@@$$Q2HA@@YMXXZ",
+        "rva": 4096,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "?A0xeb4f7d22.??__E?Uninitialized@CurrentDomain@<CrtImplementationDetails>@@$$Q2HA@@YMXXZ",
+        "rva": 4116,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "?A0xeb4f7d22.??__E?IsDefaultDomain@CurrentDomain@<CrtImplementationDetails>@@$$Q2_NA@@YMXXZ",
+        "rva": 4136,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "?A0xeb4f7d22.??__E?InitializedVtables@CurrentDomain@<CrtImplementationDetails>@@$$Q2W4Progress@2@A@@YMXXZ",
+        "rva": 4156,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "?A0xeb4f7d22.??__E?InitializedNative@CurrentDomain@<CrtImplementationDetails>@@$$Q2W4Progress@2@A@@YMXXZ",
+        "rva": 4176,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "?A0xeb4f7d22.??__E?InitializedPerProcess@CurrentDomain@<CrtImplementationDetails>@@$$Q2W4Progress@2@A@@YMXXZ",
+        "rva": 4196,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "?A0xeb4f7d22.??__E?InitializedPerAppDomain@CurrentDomain@<CrtImplementationDetails>@@$$Q2W4Progress@2@A@@YMXXZ",
+        "rva": 4216,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.InitializeVtables",
+        "rva": 11860,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.InitializeDefaultAppDomain",
+        "rva": 11912,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.InitializeNative",
+        "rva": 11944,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.InitializePerProcess",
+        "rva": 12088,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.InitializePerAppDomain",
+        "rva": 12152,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.InitializeUninitializer",
+        "rva": 12212,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport._Initialize",
+        "rva": 12256,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "<CrtImplementationDetails>.LanguageSupport.UninitializeAppDomain",
+        "rva": 11404,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "cookie",
+            "seq": 1
+          }
+        ],
+        "signature": "00012005208091080F01",
+        "name": "<CrtImplementationDetails>.LanguageSupport._UninitializeDefaultDomain",
+        "rva": 11424,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "<CrtImplementationDetails>.LanguageSupport.UninitializeDefaultDomain",
+        "rva": 11480,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "A_0",
+            "seq": 1
+          },
+          {
+            "name": "A_1",
+            "seq": 2
+          }
+        ],
+        "signature": "0002011C127D",
+        "name": "<CrtImplementationDetails>.LanguageSupport.DomainUnload",
+        "rva": 11536,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "innerException",
+            "seq": 2
+          }
+        ],
+        "signature": "0002010F1184D01261",
+        "name": "<CrtImplementationDetails>.LanguageSupport.Cleanup",
+        "rva": 12508,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000120050F1184D00F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.{ctor}",
+        "rva": 12624,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.{dtor}",
+        "rva": 12648,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D0",
+        "name": "<CrtImplementationDetails>.LanguageSupport.Initialize",
+        "rva": 12668,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": ".cctor",
+        "rva": 12856,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00010E0F20311184D4",
+        "name": "gcroot<System::String ^>..PE$AAVString@System@@",
+        "rva": 11596,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "t",
+            "seq": 2
+          }
+        ],
+        "signature": "000220808D0F1184D40F1184D40E",
+        "name": "gcroot<System::String ^>.=",
+        "rva": 11632,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F1184D4",
+        "name": "gcroot<System::String ^>.{dtor}",
+        "rva": 11672,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000120050F1184D40F1184D4",
+        "name": "gcroot<System::String ^>.{ctor}",
+        "rva": 11712,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00002080E52080B51221",
+        "name": "<CrtImplementationDetails>.AtExitLock._handle",
+        "rva": 12992,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 1
+          }
+        ],
+        "signature": "0001011C",
+        "name": "<CrtImplementationDetails>.AtExitLock._lock_Construct",
+        "rva": 14264,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 1
+          }
+        ],
+        "signature": "0001011C",
+        "name": "<CrtImplementationDetails>.AtExitLock._lock_Set",
+        "rva": 13040,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00001C",
+        "name": "<CrtImplementationDetails>.AtExitLock._lock_Get",
+        "rva": 13120,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "<CrtImplementationDetails>.AtExitLock._lock_Destruct",
+        "rva": 13156,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "<CrtImplementationDetails>.AtExitLock.IsInitialized",
+        "rva": 13196,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "<CrtImplementationDetails>.AtExitLock.AddRef",
+        "rva": 14292,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "<CrtImplementationDetails>.AtExitLock.RemoveRef",
+        "rva": 13224,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "<CrtImplementationDetails>.AtExitLock.Enter",
+        "rva": 13264,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "<CrtImplementationDetails>.AtExitLock.Exit",
+        "rva": 13288,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "?A0xdf32f105.__global_lock",
+        "rva": 13312,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "?A0xdf32f105.__global_unlock",
+        "rva": 13344,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "value",
+            "seq": 0
+          }
+        ],
+        "signature": "0000200502",
+        "name": "?A0xdf32f105.__alloc_global_lock",
+        "rva": 14340,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "?A0xdf32f105.__dealloc_global_lock",
+        "rva": 13376,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "func",
+            "seq": 1
+          },
+          {
+            "name": "__pexit_list_size",
+            "seq": 2
+          },
+          {
+            "name": "__ponexitend_e",
+            "seq": 3
+          },
+          {
+            "name": "__ponexitbegin_e",
+            "seq": 4
+          }
+        ],
+        "signature": "0004081B0000010F0B0F0F1B0000010F0F1B000001",
+        "name": "_atexit_helper",
+        "rva": 13396,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "_exit_callback",
+        "rva": 13772,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000008",
+        "name": "_initatexit_m",
+        "rva": 14364,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "_Function",
+            "seq": 1
+          }
+        ],
+        "signature": "00011B0000081B000008",
+        "name": "_onexit_m",
+        "rva": 14436,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "func",
+            "seq": 1
+          }
+        ],
+        "signature": "0001081B000001",
+        "name": "_atexit_m",
+        "rva": 13948,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000008",
+        "name": "_initatexit_app_domain",
+        "rva": 14464,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": "_app_exit_callback",
+        "rva": 13988,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "_Function",
+            "seq": 1
+          }
+        ],
+        "signature": "00011B0000081B000008",
+        "name": "_onexit_m_appdomain",
+        "rva": 14532,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "func",
+            "seq": 1
+          }
+        ],
+        "signature": "0001081B000001",
+        "name": "_atexit_m_appdomain",
+        "rva": 14224,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "_Ptr",
+            "seq": 1
+          }
+        ],
+        "signature": "00010F010F01",
+        "name": "DecodePointer",
+        "rva": 0,
+        "impl": "PreserveSig"
+      },
+      {
+        "parameters": [
+          {
+            "name": "_Ptr",
+            "seq": 1
+          }
+        ],
+        "signature": "00010F010F01",
+        "name": "EncodePointer",
+        "rva": 0,
+        "impl": "PreserveSig"
+      },
+      {
+        "parameters": [
+          {
+            "name": "pfbegin",
+            "seq": 1
+          },
+          {
+            "name": "pfend",
+            "seq": 2
+          }
+        ],
+        "signature": "0002080F1B01002005080F1B0100200508",
+        "name": "_initterm_e",
+        "rva": 14580,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "pfbegin",
+            "seq": 1
+          },
+          {
+            "name": "pfend",
+            "seq": 2
+          }
+        ],
+        "signature": "0002010F1B01002005010F1B0100200501",
+        "name": "_initterm",
+        "rva": 14628,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00001180ED",
+        "name": "<CrtImplementationDetails>.ThisModule.Handle",
+        "rva": 14668,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "pfbegin",
+            "seq": 1
+          },
+          {
+            "name": "pfend",
+            "seq": 2
+          }
+        ],
+        "signature": "0002010F20311B00000F2031010F20311B00000F203101",
+        "name": "_initterm_m",
+        "rva": 14748,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "methodToken",
+            "seq": 1
+          }
+        ],
+        "signature": "00011B00000F2031011B00000F203101",
+        "name": "<CrtImplementationDetails>.ThisModule.ResolveMethod<void const * __clrcall(void)>",
+        "rva": 14704,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "pDtor",
+            "seq": 1
+          },
+          {
+            "name": "pThis",
+            "seq": 2
+          }
+        ],
+        "signature": "0002011B0001010F010F01",
+        "name": "___CxxCallUnwindDtor",
+        "rva": 14816,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "pDtor",
+            "seq": 1
+          },
+          {
+            "name": "pThis",
+            "seq": 2
+          }
+        ],
+        "signature": "0002011B0001010F010F01",
+        "name": "___CxxCallUnwindDelDtor",
+        "rva": 14884,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "pVecDtor",
+            "seq": 1
+          },
+          {
+            "name": "ptr",
+            "seq": 2
+          },
+          {
+            "name": "size",
+            "seq": 3
+          },
+          {
+            "name": "count",
+            "seq": 4
+          },
+          {
+            "name": "pDtor",
+            "seq": 5
+          }
+        ],
+        "signature": "0005011B0004010F010B081B0001010F010F010B081B0001010F01",
+        "name": "___CxxCallUnwindVecDtor",
+        "rva": 14952,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005010F2031202D04",
+        "name": "LoadLicenseFromFile",
+        "rva": 15239,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "000020050F1118",
+        "name": "CreateGLCoreRender",
+        "rva": 15251,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "00022005010F2031202D0408",
+        "name": "LoadLicenseFromBuffer",
+        "rva": 15245,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "000120050F11180F01",
+        "name": "CreateDX11Render",
+        "rva": 15257,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "000020050F01",
+        "name": "_getFiberPtrId",
+        "rva": 11040,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "_cexit",
+        "rva": 15204,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "000120050120809109",
+        "name": "Sleep",
+        "rva": 15263,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "abort",
+        "rva": 15275,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "0000200501",
+        "name": "__security_init_cookie",
+        "rva": 6208,
+        "impl": "133"
+      },
+      {
+        "parameters": [],
+        "signature": "00012005080F1185B8",
+        "name": "__FrameUnwindFilter",
+        "rva": 15269,
+        "impl": "133"
+      }
+    ],
+    "fields": [
+      {
+        "name": "_GUID_cb2f6723_ab3a_11d2_9c40_00c04fa30a3e",
+        "signature": "0620311184D8"
+      },
+      {
+        "name": "_GUID_cb2f6722_ab3a_11d2_9c40_00c04fa30a3e",
+        "signature": "0620311184D8"
+      },
+      {
+        "name": "?Uninitialized@CurrentDomain@<CrtImplementationDetails>@@$$Q2HA",
+        "signature": "0608"
+      },
+      {
+        "name": "?A0xeb4f7d22.?Uninitialized$initializer$@CurrentDomain@<CrtImplementationDetails>@@$$Q2P6MXXZEA",
+        "signature": "061B000001"
+      },
+      {
+        "name": "?InitializedNative@CurrentDomain@<CrtImplementationDetails>@@$$Q2W4Progress@2@A",
+        "signature": "061184AC"
+      },
+      {
+        "name": "?A0xeb4f7d22.?InitializedNative$initializer$@CurrentDomain@<CrtImplementationDetails>@@$$Q2P6MXXZEA",
+        "signature": "061B000001"
+      },
+      {
+        "name": "_GUID_90f1a06c_7712_4762_86b5_7a5eba6bdb02",
+        "signature": "0620311184D8"
+      },
+      {
+        "name": "_GUID_90f1a06e_7712_4762_86b5_7a5eba6bdb02",
+        "signature": "0620311184D8"
+      },
+      {
+        "name": "?InitializedPerAppDomain@CurrentDomain@<CrtImplementationDetails>@@$$Q2W4Progress@2@A",
+        "signature": "061184AC"
+      },
+      {
+        "name": "?Entered@DefaultDomain@<CrtImplementationDetails>@@2_NA",
+        "signature": "0602"
+      },
+      {
+        "name": "?hasNative@DefaultDomain@<CrtImplementationDetails>@@0W4TriBool@2@A",
+        "signature": "061184A8"
+      },
+      {
+        "name": "?InitializedPerProcess@DefaultDomain@<CrtImplementationDetails>@@2_NA",
+        "signature": "0602"
+      },
+      {
+        "name": "?Count@AllDomains@<CrtImplementationDetails>@@2HA",
+        "signature": "0608"
+      },
+      {
+        "name": "?Initialized@CurrentDomain@<CrtImplementationDetails>@@$$Q2HA",
+        "signature": "0608"
+      },
+      {
+        "name": "?InitializedNativeFromCCTOR@DefaultDomain@<CrtImplementationDetails>@@2_NA",
+        "signature": "0602"
+      },
+      {
+        "name": "?IsDefaultDomain@CurrentDomain@<CrtImplementationDetails>@@$$Q2_NA",
+        "signature": "0602"
+      },
+      {
+        "name": "?InitializedVtables@CurrentDomain@<CrtImplementationDetails>@@$$Q2W4Progress@2@A",
+        "signature": "061184AC"
+      },
+      {
+        "name": "?InitializedNative@DefaultDomain@<CrtImplementationDetails>@@2_NA",
+        "signature": "0602"
+      },
+      {
+        "name": "?InitializedPerProcess@CurrentDomain@<CrtImplementationDetails>@@$$Q2W4Progress@2@A",
+        "signature": "061184AC"
+      },
+      {
+        "name": "?hasPerProcess@DefaultDomain@<CrtImplementationDetails>@@0W4TriBool@2@A",
+        "signature": "061184A8"
+      },
+      {
+        "name": "__xc_mp_z",
+        "signature": "062031118514"
+      },
+      {
+        "name": "__xi_vt_z",
+        "signature": "062031118514"
+      },
+      {
+        "name": "?A0xeb4f7d22.?InitializedPerProcess$initializer$@CurrentDomain@<CrtImplementationDetails>@@$$Q2P6MXXZEA",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__xc_ma_a",
+        "signature": "062031118514"
+      },
+      {
+        "name": "__xc_ma_z",
+        "signature": "062031118514"
+      },
+      {
+        "name": "?A0xeb4f7d22.?InitializedPerAppDomain$initializer$@CurrentDomain@<CrtImplementationDetails>@@$$Q2P6MXXZEA",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__xi_vt_a",
+        "signature": "062031118514"
+      },
+      {
+        "name": "?A0xeb4f7d22.?Initialized$initializer$@CurrentDomain@<CrtImplementationDetails>@@$$Q2P6MXXZEA",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__xc_mp_a",
+        "signature": "062031118514"
+      },
+      {
+        "name": "?A0xeb4f7d22.?InitializedVtables$initializer$@CurrentDomain@<CrtImplementationDetails>@@$$Q2P6MXXZEA",
+        "signature": "061B000001"
+      },
+      {
+        "name": "?A0xeb4f7d22.?IsDefaultDomain$initializer$@CurrentDomain@<CrtImplementationDetails>@@$$Q2P6MXXZEA",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?ThrowNestedModuleLoadException@<CrtImplementationDetails>@@$$FYMXPE$AAVException@System@@0@Z",
+        "signature": "061B00020112611261"
+      },
+      {
+        "name": "__m2mep@?ThrowModuleLoadException@<CrtImplementationDetails>@@$$FYMXPE$AAVString@System@@@Z",
+        "signature": "061B0001010E"
+      },
+      {
+        "name": "__m2mep@?ThrowModuleLoadException@<CrtImplementationDetails>@@$$FYMXPE$AAVString@System@@PE$AAVException@3@@Z",
+        "signature": "061B0002010E1261"
+      },
+      {
+        "name": "__m2mep@?RegisterModuleUninitializer@<CrtImplementationDetails>@@$$FYMXPE$AAVEventHandler@System@@@Z",
+        "signature": "061B0001011275"
+      },
+      {
+        "name": "__m2mep@?FromGUID@<CrtImplementationDetails>@@$$FYM?AVGuid@System@@AEBU_GUID@@@Z",
+        "signature": "061B00011180990F1184B8"
+      },
+      {
+        "name": "__m2mep@?__get_default_appdomain@@$$FYAJPEAPEAUIUnknown@@@Z",
+        "signature": "061B0001080F0F1184C8"
+      },
+      {
+        "name": "__m2mep@?__release_appdomain@@$$FYAXPEAUIUnknown@@@Z",
+        "signature": "061B0001010F1184C8"
+      },
+      {
+        "name": "__m2mep@?GetDefaultDomain@<CrtImplementationDetails>@@$$FYMPE$AAVAppDomain@System@@XZ",
+        "signature": "061B0000128085"
+      },
+      {
+        "name": "__m2mep@?DoCallBackInDefaultDomain@<CrtImplementationDetails>@@$$FYAXP6AJPEAX@Z0@Z",
+        "signature": "061B0002011B01012005208091080F010F01"
+      },
+      {
+        "name": "__m2mep@?__scrt_is_safe_for_managed_code@@$$FYA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?DoNothing@DefaultDomain@<CrtImplementationDetails>@@$$FCAJPEAX@Z",
+        "signature": "061B0001080F01"
+      },
+      {
+        "name": "__m2mep@?HasPerProcess@DefaultDomain@<CrtImplementationDetails>@@$$FSA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?HasNative@DefaultDomain@<CrtImplementationDetails>@@$$FSA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?NeedsInitialization@DefaultDomain@<CrtImplementationDetails>@@$$FSA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?NeedsUninitialization@DefaultDomain@<CrtImplementationDetails>@@$$FSA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?Initialize@DefaultDomain@<CrtImplementationDetails>@@$$FSAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?InitializeVtables@LanguageSupport@<CrtImplementationDetails>@@$$FAEAAXXZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?InitializeDefaultAppDomain@LanguageSupport@<CrtImplementationDetails>@@$$FAEAAXXZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?InitializeNative@LanguageSupport@<CrtImplementationDetails>@@$$FAEAAXXZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?InitializePerProcess@LanguageSupport@<CrtImplementationDetails>@@$$FAEAAXXZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?InitializePerAppDomain@LanguageSupport@<CrtImplementationDetails>@@$$FAEAAXXZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?InitializeUninitializer@LanguageSupport@<CrtImplementationDetails>@@$$FAEAAXXZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?_Initialize@LanguageSupport@<CrtImplementationDetails>@@$$FAEAAXXZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?UninitializeAppDomain@LanguageSupport@<CrtImplementationDetails>@@$$FCAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?_UninitializeDefaultDomain@LanguageSupport@<CrtImplementationDetails>@@$$FCAJPEAX@Z",
+        "signature": "061B0001080F01"
+      },
+      {
+        "name": "__m2mep@?UninitializeDefaultDomain@LanguageSupport@<CrtImplementationDetails>@@$$FCAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?DomainUnload@LanguageSupport@<CrtImplementationDetails>@@$$FCMXPE$AAVObject@System@@PE$AAVEventArgs@4@@Z",
+        "signature": "061B0002011C127D"
+      },
+      {
+        "name": "__m2mep@?Cleanup@LanguageSupport@<CrtImplementationDetails>@@$$FAEAMXPE$AAVException@System@@@Z",
+        "signature": "061B0002010F1184D01261"
+      },
+      {
+        "name": "__m2mep@??0LanguageSupport@<CrtImplementationDetails>@@$$FQEAA@XZ",
+        "signature": "061B00010F1184D00F1184D0"
+      },
+      {
+        "name": "__m2mep@??1LanguageSupport@<CrtImplementationDetails>@@$$FQEAA@XZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?Initialize@LanguageSupport@<CrtImplementationDetails>@@$$FQEAAXXZ",
+        "signature": "061B0001010F1184D0"
+      },
+      {
+        "name": "__m2mep@?.cctor@@$$FYMXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@??B?$gcroot@PE$AAVString@System@@@@$$FQEBMPE$AAVString@System@@XZ",
+        "signature": "061B00010E0F1184D4"
+      },
+      {
+        "name": "__m2mep@??4?$gcroot@PE$AAVString@System@@@@$$FQEAMAEAU0@PE$AAVString@System@@@Z",
+        "signature": "061B00020F1184D40F1184D40E"
+      },
+      {
+        "name": "__m2mep@??1?$gcroot@PE$AAVString@System@@@@$$FQEAA@XZ",
+        "signature": "061B0001010F1184D4"
+      },
+      {
+        "name": "__m2mep@??0?$gcroot@PE$AAVString@System@@@@$$FQEAA@XZ",
+        "signature": "061B00010F1184D40F1184D4"
+      },
+      {
+        "name": "__unep@?DoNothing@DefaultDomain@<CrtImplementationDetails>@@$$FCAJPEAX@Z",
+        "signature": "060F0F08"
+      },
+      {
+        "name": "__unep@?_UninitializeDefaultDomain@LanguageSupport@<CrtImplementationDetails>@@$$FCAJPEAX@Z",
+        "signature": "060F0F08"
+      },
+      {
+        "name": "?A0xdf32f105.__onexitbegin_m",
+        "signature": "060F1B000001"
+      },
+      {
+        "name": "?A0xdf32f105.__exit_list_size",
+        "signature": "060B"
+      },
+      {
+        "name": "__onexitend_app_domain",
+        "signature": "060F1B000001"
+      },
+      {
+        "name": "?_lock@AtExitLock@<CrtImplementationDetails>@@$$Q0PEAXEA",
+        "signature": "060F01"
+      },
+      {
+        "name": "?_ref_count@AtExitLock@<CrtImplementationDetails>@@$$Q0HA",
+        "signature": "0608"
+      },
+      {
+        "name": "?A0xdf32f105.__onexitend_m",
+        "signature": "060F1B000001"
+      },
+      {
+        "name": "__exit_list_size_app_domain",
+        "signature": "060B"
+      },
+      {
+        "name": "__onexitbegin_app_domain",
+        "signature": "060F1B000001"
+      },
+      {
+        "name": "__m2mep@?_handle@AtExitLock@<CrtImplementationDetails>@@$$FCMPE$AA__ZVGCHandle@InteropServices@Runtime@System@@XZ",
+        "signature": "061B00001221"
+      },
+      {
+        "name": "__m2mep@?_lock_Construct@AtExitLock@<CrtImplementationDetails>@@$$FCMXPE$AAVObject@System@@@Z",
+        "signature": "061B0001011C"
+      },
+      {
+        "name": "__m2mep@?_lock_Set@AtExitLock@<CrtImplementationDetails>@@$$FCMXPE$AAVObject@System@@@Z",
+        "signature": "061B0001011C"
+      },
+      {
+        "name": "__m2mep@?_lock_Get@AtExitLock@<CrtImplementationDetails>@@$$FCMPE$AAVObject@System@@XZ",
+        "signature": "061B00001C"
+      },
+      {
+        "name": "__m2mep@?_lock_Destruct@AtExitLock@<CrtImplementationDetails>@@$$FCAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?IsInitialized@AtExitLock@<CrtImplementationDetails>@@$$FSA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?AddRef@AtExitLock@<CrtImplementationDetails>@@$$FSAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?RemoveRef@AtExitLock@<CrtImplementationDetails>@@$$FSAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?Enter@AtExitLock@<CrtImplementationDetails>@@$$FSAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?Exit@AtExitLock@<CrtImplementationDetails>@@$$FSAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?__global_lock@?A0xdf32f105@@$$FYA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?__global_unlock@?A0xdf32f105@@$$FYA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?__alloc_global_lock@?A0xdf32f105@@$$FYA_NXZ",
+        "signature": "061B000002"
+      },
+      {
+        "name": "__m2mep@?__dealloc_global_lock@?A0xdf32f105@@$$FYAXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?_atexit_helper@@$$J0YMHP6MXXZPEA_KPEAPEAP6MXXZ2@Z",
+        "signature": "061B0004081B0000010F0B0F0F1B0000010F0F1B000001"
+      },
+      {
+        "name": "__m2mep@?_exit_callback@@$$J0YMXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?_initatexit_m@@$$J0YMHXZ",
+        "signature": "061B000008"
+      },
+      {
+        "name": "__m2mep@?_onexit_m@@$$J0YMP6MHXZP6MHXZ@Z",
+        "signature": "061B00011B0000081B000008"
+      },
+      {
+        "name": "__m2mep@?_atexit_m@@$$J0YMHP6MXXZ@Z",
+        "signature": "061B0001081B000001"
+      },
+      {
+        "name": "__m2mep@?_initatexit_app_domain@@$$J0YMHXZ",
+        "signature": "061B000008"
+      },
+      {
+        "name": "__m2mep@?_app_exit_callback@@$$J0YMXXZ",
+        "signature": "061B000001"
+      },
+      {
+        "name": "__m2mep@?_onexit_m_appdomain@@$$J0YMP6MHXZP6MHXZ@Z",
+        "signature": "061B00011B0000081B000008"
+      },
+      {
+        "name": "__m2mep@?_atexit_m_appdomain@@$$J0YMHP6MXXZ@Z",
+        "signature": "061B0001081B000001"
+      },
+      {
+        "name": "__m2mep@?_initterm_e@@$$FYMHPEAP6AHXZ0@Z",
+        "signature": "061B0002080F1B01002005080F1B0100200508"
+      },
+      {
+        "name": "__m2mep@?_initterm@@$$FYMXPEAP6AXXZ0@Z",
+        "signature": "061B0002010F1B01002005010F1B0100200501"
+      },
+      {
+        "name": "__m2mep@?Handle@ThisModule@<CrtImplementationDetails>@@$$FCM?AVModuleHandle@System@@XZ",
+        "signature": "061B00001180ED"
+      },
+      {
+        "name": "__m2mep@?_initterm_m@@$$FYMXPEBQ6MPEBXXZ0@Z",
+        "signature": "061B0002010F1B00000F2031010F1B00000F203101"
+      },
+      {
+        "name": "__m2mep@??$ResolveMethod@$$A6MPEBXXZ@ThisModule@<CrtImplementationDetails>@@$$FSMP6MPEBXXZP6MPEBXXZ@Z",
+        "signature": "061B00011B00000F2031011B00000F203101"
+      },
+      {
+        "name": "__m2mep@?___CxxCallUnwindDtor@@$$J0YMXP6MXPEAX@Z0@Z",
+        "signature": "061B0002011B0001010F010F01"
+      },
+      {
+        "name": "__m2mep@?___CxxCallUnwindDelDtor@@$$J0YMXP6MXPEAX@Z0@Z",
+        "signature": "061B0002011B0001010F010F01"
+      },
+      {
+        "name": "__m2mep@?___CxxCallUnwindVecDtor@@$$J0YMXP6MXPEAX_KHP6MX0@Z@Z01H2@Z",
+        "signature": "061B0005011B0004010F010B081B0001010F010F010B081B0001010F01"
+      },
+      {
+        "name": "__xi_z",
+        "signature": "061184E0"
+      },
+      {
+        "name": "__scrt_current_native_startup_state",
+        "signature": "061184A4"
+      },
+      {
+        "name": "__scrt_native_startup_lock",
+        "signature": "060F01"
+      },
+      {
+        "name": "__xc_a",
+        "signature": "06118528"
+      },
+      {
+        "name": "__xi_a",
+        "signature": "061184E0"
+      },
+      {
+        "name": "__scrt_native_dllmain_reason",
+        "signature": "0609"
+      },
+      {
+        "name": "__xc_z",
+        "signature": "06118528"
+      }
+    ],
+    "name": "<Module>",
+    "namespace": ""
+  },
+  {
+    "methods": {
+      "parameters": [
+        {
+          "name": "A_0",
+          "seq": 1
+        }
+      ],
+      "signature": "2001010E",
+      "name": ".ctor",
+      "rva": 4240,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "CppInlineNamespaceAttribute",
+    "namespace": "vc.cppcli.attributes.?A0x4ab8d1aa"
+  },
+  {
+    "methods": {
+      "parameters": [],
+      "signature": "200001",
+      "name": ".ctor",
+      "rva": 4260,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "IsChar16_t",
+    "namespace": "vc.cppcli.modopts"
+  },
+  {
+    "methods": {
+      "parameters": [],
+      "signature": "200001",
+      "name": ".ctor",
+      "rva": 4280,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "IsChar32_t",
+    "namespace": "vc.cppcli.modopts"
+  },
+  {
+    "methods": [
+      {
+        "parameters": [
+          {
+            "name": "license",
+            "seq": 1
+          },
+          {
+            "name": "length",
+            "seq": 2
+          }
+        ],
+        "signature": "0002010E08",
+        "name": "LoadLicense",
+        "rva": 4340,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "path",
+            "seq": 1
+          }
+        ],
+        "signature": "0001010E",
+        "name": "LoadLicense",
+        "rva": 4300,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "d3dDevice",
+            "seq": 1
+          }
+        ],
+        "signature": "20010118",
+        "name": ".ctor",
+        "rva": 4416,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": ".ctor",
+        "rva": 4380,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": "~LF3DRenderCoreManager",
+        "rva": 5056,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": "!LF3DRenderCoreManager",
+        "rva": 4460,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": "SharpInitialize",
+        "rva": 4512,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "textureHandle",
+            "seq": 1
+          },
+          {
+            "name": "w",
+            "seq": 2
+          },
+          {
+            "name": "h",
+            "seq": 3
+          }
+        ],
+        "signature": "200301180808",
+        "name": "SharpSetTexture",
+        "rva": 4548,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "textureHandle",
+            "seq": 1
+          },
+          {
+            "name": "defectType",
+            "seq": 2
+          },
+          {
+            "name": "w",
+            "seq": 3
+          },
+          {
+            "name": "h",
+            "seq": 4
+          }
+        ],
+        "signature": "20040118080808",
+        "name": "SharpSetCompTex",
+        "rva": 4596,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "h",
+            "seq": 1
+          },
+          {
+            "name": "v",
+            "seq": 2
+          }
+        ],
+        "signature": "2002010808",
+        "name": "SharpSetFormat",
+        "rva": 4648,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "path",
+            "seq": 1
+          },
+          {
+            "name": "viewpointOffset",
+            "seq": 2
+          },
+          {
+            "name": "colorInversion",
+            "seq": 3
+          }
+        ],
+        "signature": "2003010E0202",
+        "name": "SharpLoadDeviceConfigFromFile",
+        "rva": 4692,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "width",
+            "seq": 1
+          },
+          {
+            "name": "height",
+            "seq": 2
+          }
+        ],
+        "signature": "2002010808",
+        "name": "SharpSetScreenSize",
+        "rva": 4756,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "x",
+            "seq": 1
+          },
+          {
+            "name": "y",
+            "seq": 2
+          },
+          {
+            "name": "width",
+            "seq": 3
+          },
+          {
+            "name": "height",
+            "seq": 4
+          }
+        ],
+        "signature": "20040108080808",
+        "name": "SharpSetWindowPos",
+        "rva": 4800,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "x",
+            "seq": 1
+          },
+          {
+            "name": "y",
+            "seq": 2
+          },
+          {
+            "name": "z",
+            "seq": 3
+          },
+          {
+            "name": "enabled",
+            "seq": 4
+          },
+          {
+            "name": "z_l",
+            "seq": 5
+          },
+          {
+            "name": "z_r",
+            "seq": 6
+          }
+        ],
+        "signature": "2006010C0C0C020C0C",
+        "name": "SharpUpdateEyeInfo",
+        "rva": 4844,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "v",
+            "seq": 1
+          }
+        ],
+        "signature": "2001010C",
+        "name": "SharpUpdateOffsetXb",
+        "rva": 4892,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "fDpt",
+            "seq": 1
+          },
+          {
+            "name": "dD3",
+            "seq": 2
+          }
+        ],
+        "signature": "2002010C0C",
+        "name": "SharpSetDepth",
+        "rva": 4932,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": "SharpDraw",
+        "rva": 4976,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": "SharpRelease",
+        "rva": 5016,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "A_0",
+            "seq": 1
+          }
+        ],
+        "signature": "20010102",
+        "name": "Dispose",
+        "rva": 5076,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": "Dispose",
+        "rva": 5164,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": "Finalize",
+        "rva": 5144,
+        "impl": "IL"
+      }
+    ],
+    "fields": {
+      "name": "m_pImp",
+      "signature": "060F1118"
+    },
+    "name": "LF3DRenderCoreManager",
+    "namespace": "ManageLF3DRenderCore"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "ILF3DBaseRender",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "$ArrayType$$$BY01Q6AXXZ",
+    "namespace": "<CppImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "_s__RTTIClassHierarchyDescriptor",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$_TypeDescriptor$_extraBytes_22",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "$ArrayType$$$BY0BE@Q6AXXZ",
+    "namespace": "<CppImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "$_s__RTTIBaseClassArray$_extraBytes_8",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "__clr_placement_new_t",
+    "namespace": "?A0x4ab8d1aa"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "_s__RTTICompleteObjectLocator2",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "_s__RTTIBaseClassDescriptor",
+    "namespace": ""
+  },
+  {
+    "methods": {
+      "parameters": [
+        {
+          "name": "A_0",
+          "seq": 1
+        }
+      ],
+      "signature": "2001010E",
+      "name": ".ctor",
+      "rva": 5196,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "CppInlineNamespaceAttribute",
+    "namespace": "vc.cppcli.attributes.?A0x76a3d1cb"
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "__clr_placement_new_t",
+    "namespace": "?A0x76a3d1cb"
+  },
+  {
+    "methods": {
+      "parameters": [
+        {
+          "name": "A_0",
+          "seq": 1
+        }
+      ],
+      "signature": "2001010E",
+      "name": ".ctor",
+      "rva": 9648,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "CppInlineNamespaceAttribute",
+    "namespace": "vc.cppcli.attributes.?A0xeb4f7d22"
+  },
+  {
+    "methods": {
+      "parameters": [],
+      "signature": "200001",
+      "name": ".ctor",
+      "rva": 9668,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "IsChar8_t",
+    "namespace": "vc.cppcli.modopts"
+  },
+  {
+    "methods": [
+      {
+        "parameters": [
+          {
+            "name": "info",
+            "seq": 1
+          },
+          {
+            "name": "context",
+            "seq": 2
+          }
+        ],
+        "signature": "20020112651169",
+        "name": ".ctor",
+        "rva": 9732,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "message",
+            "seq": 1
+          },
+          {
+            "name": "innerException",
+            "seq": 2
+          }
+        ],
+        "signature": "2002010E1261",
+        "name": ".ctor",
+        "rva": 9708,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "message",
+            "seq": 1
+          }
+        ],
+        "signature": "2001010E",
+        "name": ".ctor",
+        "rva": 9688,
+        "impl": "IL"
+      }
+    ],
+    "fields": null,
+    "name": "Exception",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": [
+      {
+        "parameters": [
+          {
+            "name": "info",
+            "seq": 1
+          },
+          {
+            "name": "context",
+            "seq": 2
+          }
+        ],
+        "signature": "20020112651169",
+        "name": ".ctor",
+        "rva": 9800,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "message",
+            "seq": 1
+          },
+          {
+            "name": "innerException",
+            "seq": 2
+          }
+        ],
+        "signature": "2002010E1261",
+        "name": ".ctor",
+        "rva": 9776,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "message",
+            "seq": 1
+          }
+        ],
+        "signature": "2001010E",
+        "name": ".ctor",
+        "rva": 9756,
+        "impl": "IL"
+      }
+    ],
+    "fields": {
+      "name": "Nested",
+      "signature": "060E"
+    },
+    "name": "ModuleLoadException",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": [
+      {
+        "parameters": [
+          {
+            "name": "info",
+            "seq": 1
+          },
+          {
+            "name": "context",
+            "seq": 2
+          }
+        ],
+        "signature": "20020112651169",
+        "name": ".ctor",
+        "rva": 10100,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "message",
+            "seq": 1
+          },
+          {
+            "name": "innerException",
+            "seq": 2
+          },
+          {
+            "name": "nestedException",
+            "seq": 3
+          }
+        ],
+        "signature": "2003010E12611261",
+        "name": ".ctor",
+        "rva": 11748,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "20001261",
+        "name": "get_NestedException",
+        "rva": 9824,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "__set_formal",
+            "seq": 1
+          }
+        ],
+        "signature": "2001011261",
+        "name": "set_NestedException",
+        "rva": 9844,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "20000E",
+        "name": "ToString",
+        "rva": 9864,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "info",
+            "seq": 1
+          },
+          {
+            "name": "context",
+            "seq": 2
+          }
+        ],
+        "signature": "20020112651169",
+        "name": "GetObjectData",
+        "rva": 10040,
+        "impl": "IL"
+      }
+    ],
+    "fields": [
+      {
+        "name": "formatString",
+        "signature": "060E"
+      },
+      {
+        "name": "<backing_store>NestedException",
+        "signature": "061261"
+      }
+    ],
+    "name": "ModuleLoadExceptionHandlerException",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": [
+      {
+        "parameters": [
+          {
+            "name": "handler",
+            "seq": 1
+          }
+        ],
+        "signature": "2001011275",
+        "name": "AddHandler",
+        "rva": 10208,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "000001",
+        "name": ".cctor",
+        "rva": 12936,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": ".ctor",
+        "rva": 11804,
+        "impl": "IL"
+      },
+      {
+        "parameters": [
+          {
+            "name": "source",
+            "seq": 1
+          },
+          {
+            "name": "arguments",
+            "seq": 2
+          }
+        ],
+        "signature": "2002011C127D",
+        "name": "SingletonDomainUnload",
+        "rva": 10304,
+        "impl": "IL"
+      }
+    ],
+    "fields": [
+      {
+        "name": "lock",
+        "signature": "061C"
+      },
+      {
+        "name": "_ModuleUninitializer",
+        "signature": "061258"
+      }
+    ],
+    "name": "ModuleUninitializer",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": [
+      {
+        "parameters": [
+          {
+            "name": "info",
+            "seq": 1
+          },
+          {
+            "name": "context",
+            "seq": 2
+          }
+        ],
+        "signature": "20020112651169",
+        "name": ".ctor",
+        "rva": 10984,
+        "impl": "IL"
+      },
+      {
+        "parameters": [],
+        "signature": "200001",
+        "name": ".ctor",
+        "rva": 10964,
+        "impl": "IL"
+      }
+    ],
+    "fields": null,
+    "name": "OpenMPWithMultipleAppdomainsException",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_EXCEPTION_DISPOSITION",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_SID_NAME_USE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_ACL_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_AUDIT_EVENT_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_ACCESS_REASON_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_SECURITY_IMPERSONATION_LEVEL",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TOKEN_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TOKEN_ELEVATION_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TOKEN_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_MANDATORY_LEVEL",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_SE_IMAGE_SIGNATURE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_HARDWARE_COUNTER_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_PROCESS_MITIGATION_POLICY",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_JOBOBJECT_RATE_CONTROL_TOLERANCE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "JOB_OBJECT_NET_RATE_CONTROL_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "JOB_OBJECT_IO_RATE_CONTROL_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "JOBOBJECT_IO_ATTRIBUTION_CONTROL_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_JOBOBJECTINFOCLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_SERVERSILO_STATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_FIRMWARE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_LOGICAL_PROCESSOR_RELATIONSHIP",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_PROCESSOR_CACHE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_CPU_SET_INFORMATION_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "MEM_EXTENDED_PARAMETER_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_MEM_DEDICATED_ATTRIBUTE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "MEM_SECTION_EXTENDED_PARAMETER_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_SharedVirtualDiskSupportType",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_SharedVirtualDiskHandleState",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_SYSTEM_POWER_STATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_DEVICE_POWER_STATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_MONITOR_DISPLAY_STATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_USER_ACTIVITY_PRESENCE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_POWER_REQUEST_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_POWER_MONITOR_REQUEST_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_POWER_PLATFORM_ROLE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "POWER_SETTING_ALTITUDE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_HIBERFILE_BUCKET_SIZE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "IMAGE_AUX_SYMBOL_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "ARM64_FNPDATA_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "ARM64_FNPDATA_CR",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "IMPORT_OBJECT_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "IMPORT_OBJECT_NAME_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "ReplacesCorHdrNumericDefines",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_RTL_UMS_THREAD_INFO_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_RTL_UMS_SCHEDULER_REASON",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_OS_DEPLOYEMENT_STATE_VALUES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_IMAGE_POLICY_ENTRY_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_IMAGE_POLICY_ID",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_RTL_SYSTEM_GLOBAL_DATA_ID",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_HEAP_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_ACTIVATION_CONTEXT_INFO_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_CM_SERVICE_NODE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_CM_SERVICE_LOAD_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_CM_ERROR_CONTROL_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TAPE_DRIVE_PROBLEM_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TRANSACTION_OUTCOME",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TRANSACTION_STATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TRANSACTION_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TRANSACTIONMANAGER_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_RESOURCEMANAGER_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_ENLISTMENT_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_KTMOBJECT_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_TP_CALLBACK_PRIORITY",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "DPI_AWARENESS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "DPI_HOSTING_BEHAVIOR",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_FINDEX_INFO_LEVELS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_FINDEX_SEARCH_OPS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_READ_DIRECTORY_NOTIFY_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_GET_FILEEX_INFO_LEVELS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_FILE_INFO_BY_HANDLE_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_STREAM_INFO_LEVELS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_QUEUE_USER_APC_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_THREAD_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_PROCESS_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_MACHINE_ATTRIBUTES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_PROCESS_MEMORY_EXHAUSTION_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_COMPUTER_NAME_FORMAT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_MEMORY_RESOURCE_NOTIFICATION_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "OFFER_PRIORITY",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "WIN32_MEMORY_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "WIN32_MEMORY_PARTITION_INFORMATION_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "FILE_WRITE_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "FILE_FLUSH_MODE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_DEP_SYSTEM_POLICY_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_PROC_THREAD_ATTRIBUTE_NUM",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_COPYFILE2_MESSAGE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_COPYFILE2_MESSAGE_ACTION",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_COPYFILE2_COPY_PHASE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_PRIORITY_HINT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_FILE_ID_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "DISPLAYCONFIG_TOPOLOGY_ID",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_DISPLAYCONFIG_COLOR_ENCODING",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "DIALOG_DPI_CHANGE_BEHAVIORS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagPOINTER_INPUT_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagPOINTER_BUTTON_CHANGE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagFEEDBACK_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagHANDEDNESS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagPOINTER_DEVICE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagPOINTER_DEVICE_CURSOR_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagINPUT_MESSAGE_DEVICE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagINPUT_MESSAGE_ORIGIN_ID",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagAR_STATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "ORIENTATION_PREFERENCE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "SYSNLS_FUNCTION",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "SYSGEOTYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "SYSGEOCLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_NORM_FORM",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0605"
+    },
+    "name": "byte",
+    "namespace": "std"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_Invoker_strategy",
+    "namespace": "std"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "060B"
+    },
+    "name": "align_val_t",
+    "namespace": "std"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_RPC_HTTP_REDIRECTOR_STAGE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "RPC_ADDRESS_CHANGE_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_LRPC_SYSTEM_HANDLE_MARSHAL_DIRECTION",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "RpcProxyPerfCounters",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_RPC_NOTIFICATION_TYPES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_RPC_ASYNC_EVENT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagExtendedErrorParamTypes",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagRpcLocalAddressFormat",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagRpcCallType",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagRpcCallClientLocality",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_RPC_NOTIFICATIONS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_USER_MARSHAL_CB_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_IDL_CS_CONVERT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_system_handle_t",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagREGCLS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagCOINITBASE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagMEMCTX",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagCLSCTX",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagMSHLFLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagMSHCTX",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagACTIVATIONTYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagEXTCONN",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSTGTY",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSTREAM_SEEK",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagLOCKTYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagEOLE_AUTHENTICATION_CAPABILITIES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagRPCOPT_PROPERTIES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagRPCOPT_SERVER_LOCALITY_VALUES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagGLOBALOPT_PROPERTIES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagGLOBALOPT_EH_VALUES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagGLOBALOPT_RPCTP_VALUES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagGLOBALOPT_RO_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagGLOBALOPT_UNMARSHALING_POLICY_VALUES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagDCOM_CALL_STATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_APTTYPEQUALIFIER",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_APTTYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_THDTYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "CO_MARSHALING_CONTEXT_ATTRIBUTES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSTDMSHLFLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagCOWAIT_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "CWMO_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "AgileReferenceOptions",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagDVASPECT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSTGC",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSTGMOVE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSTATFLAG",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "VARENUM",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagTYSPEC",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagBIND_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagMKSYS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagMKREDUCE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagADVF",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagTYMED",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagDATADIR",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagCALLTYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSERVERCALL",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagPENDINGTYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagPENDINGMSG",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagApplicationType",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagShutdownType",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSF_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagTYPEKIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagCALLCONV",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagFUNCKIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagINVOKEKIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagVARKIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagTYPEFLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagFUNCFLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagVARFLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagDESCKIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagSYSKIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagLIBFLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagCHANGEKIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagCOINIT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagCOMSD",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagDISCARDCACHE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLEGETMONIKER",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLEWHICHMK",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagUSERCLASSTYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLEMISC",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLECLOSE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLERENDER",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLEUPDATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLELINKBIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagBINDSPEED",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLECONTF",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagOLEVERBATTRIB",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagDOMNodeType",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagXMLEMEM_TYPE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "IEObjectType",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IMonikerProp_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IBindStatusCallback_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IBindStatusCallback_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IBindStatusCallback_0003",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IBindStatusCallback_0004",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IBindStatusCallback_0005",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IBindStatusCallback_0006",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagBINDSTATUS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IBindStatusCallbackEx_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IAuthenticateEx_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_ICodeInstall_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IUri_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IUri_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagBINDSTRING",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_tagPI_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_tagOIBDG_FLAGS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_tagPARSEACTION",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_tagPSUACTION",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_tagQUERYOPTION",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_tagINTERNETFEATURELIST",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IInternetSecurityManager_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IInternetSecurityManager_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IInternetSecurityManager_0003",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagURLZONE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagURLTEMPLATE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IInternetZoneManager_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IInternetZoneManager_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_URLZONEREG",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL_IGetBindHandle_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "PIDMSI_STATUS_VALUE",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "tagREGKIND",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_gchost_0000_0000_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_gchost_0000_0000_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "ValidatorFlags",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0000_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0000_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0000_0003",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0000_0004",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0000_0005",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0009_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0009_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0009_0003",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0011_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "ETaskType",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0020_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0021_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0021_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0028_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0028_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0028_0003",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0028_0004",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0030_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0030_0002",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_CLRAssemblyIdentityFlags",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_hostBiningPolicyModifyFlags",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0040_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_HostApplicationPolicy",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0045_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0046_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__MIDL___MIDL_itf_mscoree_0000_0048_0001",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "$ArrayType$$$BY0N@$$CB_W",
+    "namespace": "<CppImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "$ArrayType$$$BY0M@$$CBD",
+    "namespace": "<CppImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "$ArrayType$$$BY0O@$$CB_W",
+    "namespace": "<CppImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_crt_argv_mode",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_crt_exit_return_mode",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_crt_exit_cleanup_mode",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_crt_app_type",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "ISA_AVAILABILITY",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "_EVENT_INFO_CLASS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__vcrt_lock_id",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__scrt_module_type",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "__scrt_native_startup_state",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "TriBool",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "value__",
+      "signature": "0608"
+    },
+    "name": "Progress",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "__crt_locale_data_public",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "__crt_locale_pointers",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "_GUID",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "_TP_CALLBACK_ENVIRON_V3",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "<unnamed-type-u>",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "<unnamed-type-s>",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "IUnknown",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "DefaultDomain",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "LanguageSupport",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "gcroot<System::String ^>",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "__s_GUID",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "HINSTANCE__",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "$ArrayType$$$BY0A@P6AHXZ",
+    "namespace": "<CppImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "_ldiv_t",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "tagMSG",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "HWND__",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "tagPROPVARIANT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$354$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$355$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$356$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "_SECURITY_ATTRIBUTES",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "_EVENT_DESCRIPTOR",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "ICLRRuntimeHost",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "_OSVERSIONINFOEXW",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "_OSVERSIONINFOEXA",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "$ArrayType$$$BY00Q6MPEBXXZ",
+    "namespace": "<CppImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "hash<double>",
+    "namespace": "std"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "HDC__",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "tagRECT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "hash<std::nullptr_t>",
+    "namespace": "std"
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "$ArrayType$$$BY0A@P6AXXZ",
+    "namespace": "<CppImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "ICorRuntimeHost",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "hash<float>",
+    "namespace": "std"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "_EVENT_DATA_DESCRIPTOR",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$361$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0606"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$362$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "hash<long double>",
+    "namespace": "std"
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "__crt_fast_encoded_nullptr_t",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "__clr_placement_new_t",
+    "namespace": "?A0xeb4f7d22"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "_lldiv_t",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "tagVARIANT",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$346$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$347$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$348$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0xeb4f7d22$349$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "tagTEXTMETRICA",
+    "namespace": ""
+  },
+  {
+    "methods": {
+      "parameters": [
+        {
+          "name": "A_0",
+          "seq": 1
+        }
+      ],
+      "signature": "2001010E",
+      "name": ".ctor",
+      "rva": 12972,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "CppInlineNamespaceAttribute",
+    "namespace": "vc.cppcli.attributes.?A0xdf32f105"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "_iobuf",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "AtExitLock",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "_CUSTOM_SYSTEM_EVENT_TRIGGER_CONFIG",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "$UnnamedClass$0xdf32f105$299$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0606"
+    },
+    "name": "$UnnamedClass$0xdf32f105$300$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "__clr_placement_new_t",
+    "namespace": "?A0xdf32f105"
+  },
+  {
+    "methods": {
+      "parameters": [
+        {
+          "name": "A_0",
+          "seq": 1
+        }
+      ],
+      "signature": "2001010E",
+      "name": ".ctor",
+      "rva": 14560,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "CppInlineNamespaceAttribute",
+    "namespace": "vc.cppcli.attributes.?A0x91c65320"
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "ThisModule",
+    "namespace": "<CrtImplementationDetails>"
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "__clr_placement_new_t",
+    "namespace": "?A0x91c65320"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0x91c65320$353$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0x91c65320$354$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0x91c65320$355$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "$UnnamedClass$0x91c65320$303$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0606"
+    },
+    "name": "$UnnamedClass$0x91c65320$304$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0x91c65320$345$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0x91c65320$346$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0x91c65320$347$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "$UnnamedClass$0x91c65320$348$",
+    "namespace": ""
+  },
+  {
+    "methods": {
+      "parameters": [
+        {
+          "name": "A_0",
+          "seq": 1
+        }
+      ],
+      "signature": "2001010E",
+      "name": ".ctor",
+      "rva": 14796,
+      "impl": "IL"
+    },
+    "fields": null,
+    "name": "CppInlineNamespaceAttribute",
+    "namespace": "vc.cppcli.attributes.?A0x88c8ed9d"
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "060A"
+    },
+    "name": "_EXCEPTION_POINTERS",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0608"
+    },
+    "name": "$UnnamedClass$0x88c8ed9d$299$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": {
+      "name": "<alignment member>",
+      "signature": "0606"
+    },
+    "name": "$UnnamedClass$0x88c8ed9d$300$",
+    "namespace": ""
+  },
+  {
+    "methods": null,
+    "fields": null,
+    "name": "__clr_placement_new_t",
+    "namespace": "?A0x88c8ed9d"
+  }
+]

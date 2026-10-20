@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x180035290\",\"code\":\"__int64 __fastcall __crt_stdio_input::input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>::~input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>(\\n        __int64 a1)\\n{\\n  return sub_180017AE0(a1: a1 + 16); /*0x1800352aa*/\\n}\",\"refs\":[{\"addr\":\"0x180017ae0\",\"name\":\"sub_180017AE0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x180035290",
+      "code": "__int64 __fastcall __crt_stdio_input::input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>::~input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>(\n        __int64 a1)\n{\n  return sub_180017AE0(a1: a1 + 16); /*0x1800352aa*/\n}",
+      "refs": [
+        {
+          "addr": "0x180017ae0",
+          "name": "sub_180017AE0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

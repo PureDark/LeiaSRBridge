@@ -1,0 +1,49 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18013f360\",\"code\":\"void __fastcall sub_18013F360(__int64 a1, float a2, float a3)\\n{\\n  __int64 v3; // rbx\\n  float *v4; // rcx\\n  int *v5; // rax\\n  float *v6; // rcx\\n  float *v7; // rax\\n  __int64 v8; // rax\\n  __int64 v9; // rax\\n  __int64 v10; // rax\\n  __int64 v11; // rax\\n  float v12; // [rsp+20h] [rbp-28h] BYREF\\n  int v13; // [rsp+28h] [rbp-20h] BYREF\\n  int v14; // [rsp+2Ch] [rbp-1Ch] BYREF\\n  float v15; // [rsp+30h] [rbp-18h] BYREF\\n\\n  v3 = *(_QWORD *)(a1 + 48); /*0x18013f366*/\\n  if ( v3 != 0 ) /*0x18013f36d*/\\n  {\\n    v12 = a2; /*0x18013f376*/\\n    v13 = 1065353216; /*0x18013f37f*/\\n    v4 = (float *)&v14; /*0x18013f38c*/\\n    v14 = 0; /*0x18013f391*/\\n    v15 = a3; /*0x18013f3a0*/\\n    if ( a2 >= 0.0 ) /*0x18013f3a6*/\\n      v4 = &v12; /*0x18013f3a6*/\\n    v5 = &v13; /*0x18013f3aa*/\\n    if ( a2 <= 1.0 ) /*0x18013f3b6*/\\n      v5 = (int *)v4; /*0x18013f3b6*/\\n    v6 = (float *)&v13; /*0x18013f3ba*/\\n    *(_DWORD *)(v3 + 68) = *v5; /*0x18013f3c4*/\\n    v12 = 1.0; /*0x18013f3cc*/\\n    v13 = 0; /*0x18013f3d4*/\\n    if ( a3 >= 0.0 ) /*0x18013f3dc*/\\n      v6 = &v15; /*0x18013f3dc*/\\n    v7 = &v12; /*0x18013f3e0*/\\n    if ( a3 <= 1.0 ) /*0x18013f3ec*/\\n      v7 = v6; /*0x18013f3ec*/\\n    *(float *)(v3 + 72) = *v7; /*0x18013f3f2*/\\n    v8 = sub_18010DC60(a1: std::cout, a2: \\\"fDpt:\\\"); /*0x18013f3fc*/\\n    v9 = std::ostream::operator<<(a1: v8); /*0x18013f409*/\\n    std::ostream::operator<<(a1: v9, a2: sub_18010DEC0); /*0x18013f419*/\\n    v10 = sub_18010DC60(a1: std::cout, a2: \\\"dD3:\\\"); /*0x18013f42d*/\\n    v11 = std::ostream::operator<<(a1: v10); /*0x18013f43a*/\\n    std::ostream::operator<<(a1: v11, a2: sub_18010DEC0); /*0x18013f44a*/\\n    *(_BYTE *)(v3 + 64) = 1; /*0x18013f450*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x18010dc60\",\"name\":\"sub_18010DC60\"},{\"addr\":\"0x1803bb5a0\",\"name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x180585b08\",\"name\":\"aFdpt\",\"string\":\"fDpt:\"},{\"addr\":\"0x1803bb4d8\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@M@Z\"},{\"addr\":\"0x1803bb540\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x18010dec0\",\"name\":\"sub_18010DEC0\"},{\"addr\":\"0x180585b10\",\"name\":\"aDd3\",\"string\":\"dD3:\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18013f360",
+      "code": "void __fastcall sub_18013F360(__int64 a1, float a2, float a3)\n{\n  __int64 v3; // rbx\n  float *v4; // rcx\n  int *v5; // rax\n  float *v6; // rcx\n  float *v7; // rax\n  __int64 v8; // rax\n  __int64 v9; // rax\n  __int64 v10; // rax\n  __int64 v11; // rax\n  float v12; // [rsp+20h] [rbp-28h] BYREF\n  int v13; // [rsp+28h] [rbp-20h] BYREF\n  int v14; // [rsp+2Ch] [rbp-1Ch] BYREF\n  float v15; // [rsp+30h] [rbp-18h] BYREF\n\n  v3 = *(_QWORD *)(a1 + 48); /*0x18013f366*/\n  if ( v3 != 0 ) /*0x18013f36d*/\n  {\n    v12 = a2; /*0x18013f376*/\n    v13 = 1065353216; /*0x18013f37f*/\n    v4 = (float *)&v14; /*0x18013f38c*/\n    v14 = 0; /*0x18013f391*/\n    v15 = a3; /*0x18013f3a0*/\n    if ( a2 >= 0.0 ) /*0x18013f3a6*/\n      v4 = &v12; /*0x18013f3a6*/\n    v5 = &v13; /*0x18013f3aa*/\n    if ( a2 <= 1.0 ) /*0x18013f3b6*/\n      v5 = (int *)v4; /*0x18013f3b6*/\n    v6 = (float *)&v13; /*0x18013f3ba*/\n    *(_DWORD *)(v3 + 68) = *v5; /*0x18013f3c4*/\n    v12 = 1.0; /*0x18013f3cc*/\n    v13 = 0; /*0x18013f3d4*/\n    if ( a3 >= 0.0 ) /*0x18013f3dc*/\n      v6 = &v15; /*0x18013f3dc*/\n    v7 = &v12; /*0x18013f3e0*/\n    if ( a3 <= 1.0 ) /*0x18013f3ec*/\n      v7 = v6; /*0x18013f3ec*/\n    *(float *)(v3 + 72) = *v7; /*0x18013f3f2*/\n    v8 = sub_18010DC60(a1: std::cout, a2: \"fDpt:\"); /*0x18013f3fc*/\n    v9 = std::ostream::operator<<(a1: v8); /*0x18013f409*/\n    std::ostream::operator<<(a1: v9, a2: sub_18010DEC0); /*0x18013f419*/\n    v10 = sub_18010DC60(a1: std::cout, a2: \"dD3:\"); /*0x18013f42d*/\n    v11 = std::ostream::operator<<(a1: v10); /*0x18013f43a*/\n    std::ostream::operator<<(a1: v11, a2: sub_18010DEC0); /*0x18013f44a*/\n    *(_BYTE *)(v3 + 64) = 1; /*0x18013f450*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x18010dc60",
+          "name": "sub_18010DC60"
+        },
+        {
+          "addr": "0x1803bb5a0",
+          "name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x180585b08",
+          "name": "aFdpt",
+          "string": "fDpt:"
+        },
+        {
+          "addr": "0x1803bb4d8",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@M@Z"
+        },
+        {
+          "addr": "0x1803bb540",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x18010dec0",
+          "name": "sub_18010DEC0"
+        },
+        {
+          "addr": "0x180585b10",
+          "name": "aDd3",
+          "string": "dD3:"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

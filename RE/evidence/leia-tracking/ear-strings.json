@@ -1,0 +1,141 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":30,\"matches\":[{\"addr\":\"0x1401bfec8\",\"string\":\"recordHeadPose\"},{\"addr\":\"0x1401c01a8\",\"string\":\"_headPose.csv\"},{\"addr\":\"0x1401c04c0\",\"string\":\"Camera1HeadPosition.x, Camera1HeadPosition.y, Camera1HeadPosition.z, \"},{\"addr\":\"0x1401c0540\",\"string\":\"Camera2HeadPosition.x, Camera2HeadPosition.y, Camera2HeadPosition.z, \"},{\"addr\":\"0x1401cd730\",\"string\":\"timeLogged, leftEye.x, leftEye.y, leftEye.z, rightEye.x, rightEye.y, rightEye.z, timeReceived, timeCaptured, resetFilter, frameNumber, numberOfEyePairs, headPosition.x, headPosition.y, headPosition.z, headDirection.x, headDirection.y, headDirection.z\"},{\"addr\":\"0x1401cd830\",\"string\":\"timeLogged, leftEye.x, leftEye.y, leftEye.z, rightEye.x, rightEye.y, rightEye.z, usedInterpolatedTime, mostRecentObservationTime, resetFilter, sentEyePairCounter, numberOfEyePairs, headPosition.x, headPosition.y, headPosition.z, headDirection.x, headDirection.y, headDirection.z\"},{\"addr\":\"0x1401cdd10\",\"string\":\"usePredictionForHeadPose\"},{\"addr\":\"0x1401cdd48\",\"string\":\"rescaleIPDThreshold\"},{\"addr\":\"0x1401cdd60\",\"string\":\"rescaleToIPD\"},{\"addr\":\"0x1401cddd0\",\"string\":\"predictionTimeHeadPose_s\"},{\"addr\":\"0x1401cde88\",\"string\":\"HeadPositionFilter\"},{\"addr\":\"0x1401d6910\",\"string\":\"2mpVtjcwCRKVBFiPdyeqyVI1j7srk8WrRc0GozuUkSBMVk5KHQa3/qZqiV1w9KN7eMRaYiT46bP4\"},{\"addr\":\"0x1401e19f0\",\"string\":\"uBYa+giIPDINPDLGNobNEPl3kerfygAFfVkxd33eO9LwDAMGAZmbywt/OwRmraCFhT8Qz9jygFse\"},{\"addr\":\"0x1401e7300\",\"string\":\"ZGgtiPD9Lk9pXqPb9LHcY4nWCEioiMUBd9IJlcWa5NOnZe+xeEHgVpy0vYrtqVHsoRAiXzRTxgaa\"},{\"addr\":\"0x1401efa30\",\"string\":\"Z65qxcLwDmjokz84nvJ1zpNeDcCq19jnxNqEOaDIpDVQxtM6RY5L96Sn395ecZHJFpL/E1TEHSbk\"},{\"addr\":\"0x1401f87c0\",\"string\":\"cVpeof6Vqbe6J4I3E9Bcrnm3moAyKGiPDJ6UqthQuILGNTH2GOOXAl2I1X0qcJ4G2H5xgLNliett\"},{\"addr\":\"0x1401f98a0\",\"string\":\"Bl/qheUN9FwqXsVheoacBp+Uh9NulkH01NsKCyX3nV9ec1sdzwh8hj3zWZIpD+ATVH3S9Hh0pt2+\"},{\"addr\":\"0x1401fa480\",\"string\":\"D3BowPV9v7Mk+IPddFxHdQeyHdaquVKxWoWHzlDnv0gbzlv/EdZVUd7k8rbqYgUdPl9os0dbh8gq\"},{\"addr\":\"0x1401fe088\",\"string\":\"</RawHeadPose>\"},{\"addr\":\"0x1401fe300\",\"string\":\"<RawHeadPose>\"},{\"addr\":\"0x140254776\",\"string\":\"?estimate@Landmarks3dDetector@blink@@QEAA?AW4BlStatus@@AEAVHeadPoseDetectorData@2@AEAVLandmarks3dDetectorData@2@@Z\"},{\"addr\":\"0x14025516e\",\"string\":\"??1HeadPoseDetectorConfig@blink@@UEAA@XZ\"},{\"addr\":\"0x14025519a\",\"string\":\"??0HeadPoseDetectorConfig@blink@@QEAA@XZ\"},{\"addr\":\"0x140255518\",\"string\":\"?estimate@HeadPoseDetector@blink@@QEAA?AW4BlStatus@@AEAVFaceDetectorData@2@AEAVHeadPoseDetectorData@2@@Z\"},{\"addr\":\"0x140255584\",\"string\":\"??0HeadPoseDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVHeadPoseDetectorConfig@1@@Z\"},{\"addr\":\"0x14025574c\",\"string\":\"?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z\"},{\"addr\":\"0x1402557b2\",\"string\":\"??0HeadPoseDetectorData@blink@@QEAA@XZ\"},{\"addr\":\"0x140261e90\",\"string\":\".?AV?$_Ref_count_obj@VHeadPoseDetectorData@blink@@@std@@\"},{\"addr\":\"0x1402639d0\",\"string\":\".?AV?$PredictiveFilter@UHeadPosition@@N@@\"},{\"addr\":\"0x140263a10\",\"string\":\".?AVLLSHeadPositionPredictor@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 30,
+      "matches": [
+        {
+          "addr": "0x1401bfec8",
+          "string": "recordHeadPose"
+        },
+        {
+          "addr": "0x1401c01a8",
+          "string": "_headPose.csv"
+        },
+        {
+          "addr": "0x1401c04c0",
+          "string": "Camera1HeadPosition.x, Camera1HeadPosition.y, Camera1HeadPosition.z, "
+        },
+        {
+          "addr": "0x1401c0540",
+          "string": "Camera2HeadPosition.x, Camera2HeadPosition.y, Camera2HeadPosition.z, "
+        },
+        {
+          "addr": "0x1401cd730",
+          "string": "timeLogged, leftEye.x, leftEye.y, leftEye.z, rightEye.x, rightEye.y, rightEye.z, timeReceived, timeCaptured, resetFilter, frameNumber, numberOfEyePairs, headPosition.x, headPosition.y, headPosition.z, headDirection.x, headDirection.y, headDirection.z"
+        },
+        {
+          "addr": "0x1401cd830",
+          "string": "timeLogged, leftEye.x, leftEye.y, leftEye.z, rightEye.x, rightEye.y, rightEye.z, usedInterpolatedTime, mostRecentObservationTime, resetFilter, sentEyePairCounter, numberOfEyePairs, headPosition.x, headPosition.y, headPosition.z, headDirection.x, headDirection.y, headDirection.z"
+        },
+        {
+          "addr": "0x1401cdd10",
+          "string": "usePredictionForHeadPose"
+        },
+        {
+          "addr": "0x1401cdd48",
+          "string": "rescaleIPDThreshold"
+        },
+        {
+          "addr": "0x1401cdd60",
+          "string": "rescaleToIPD"
+        },
+        {
+          "addr": "0x1401cddd0",
+          "string": "predictionTimeHeadPose_s"
+        },
+        {
+          "addr": "0x1401cde88",
+          "string": "HeadPositionFilter"
+        },
+        {
+          "addr": "0x1401d6910",
+          "string": "2mpVtjcwCRKVBFiPdyeqyVI1j7srk8WrRc0GozuUkSBMVk5KHQa3/qZqiV1w9KN7eMRaYiT46bP4"
+        },
+        {
+          "addr": "0x1401e19f0",
+          "string": "uBYa+giIPDINPDLGNobNEPl3kerfygAFfVkxd33eO9LwDAMGAZmbywt/OwRmraCFhT8Qz9jygFse"
+        },
+        {
+          "addr": "0x1401e7300",
+          "string": "ZGgtiPD9Lk9pXqPb9LHcY4nWCEioiMUBd9IJlcWa5NOnZe+xeEHgVpy0vYrtqVHsoRAiXzRTxgaa"
+        },
+        {
+          "addr": "0x1401efa30",
+          "string": "Z65qxcLwDmjokz84nvJ1zpNeDcCq19jnxNqEOaDIpDVQxtM6RY5L96Sn395ecZHJFpL/E1TEHSbk"
+        },
+        {
+          "addr": "0x1401f87c0",
+          "string": "cVpeof6Vqbe6J4I3E9Bcrnm3moAyKGiPDJ6UqthQuILGNTH2GOOXAl2I1X0qcJ4G2H5xgLNliett"
+        },
+        {
+          "addr": "0x1401f98a0",
+          "string": "Bl/qheUN9FwqXsVheoacBp+Uh9NulkH01NsKCyX3nV9ec1sdzwh8hj3zWZIpD+ATVH3S9Hh0pt2+"
+        },
+        {
+          "addr": "0x1401fa480",
+          "string": "D3BowPV9v7Mk+IPddFxHdQeyHdaquVKxWoWHzlDnv0gbzlv/EdZVUd7k8rbqYgUdPl9os0dbh8gq"
+        },
+        {
+          "addr": "0x1401fe088",
+          "string": "</RawHeadPose>"
+        },
+        {
+          "addr": "0x1401fe300",
+          "string": "<RawHeadPose>"
+        },
+        {
+          "addr": "0x140254776",
+          "string": "?estimate@Landmarks3dDetector@blink@@QEAA?AW4BlStatus@@AEAVHeadPoseDetectorData@2@AEAVLandmarks3dDetectorData@2@@Z"
+        },
+        {
+          "addr": "0x14025516e",
+          "string": "??1HeadPoseDetectorConfig@blink@@UEAA@XZ"
+        },
+        {
+          "addr": "0x14025519a",
+          "string": "??0HeadPoseDetectorConfig@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x140255518",
+          "string": "?estimate@HeadPoseDetector@blink@@QEAA?AW4BlStatus@@AEAVFaceDetectorData@2@AEAVHeadPoseDetectorData@2@@Z"
+        },
+        {
+          "addr": "0x140255584",
+          "string": "??0HeadPoseDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVHeadPoseDetectorConfig@1@@Z"
+        },
+        {
+          "addr": "0x14025574c",
+          "string": "?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z"
+        },
+        {
+          "addr": "0x1402557b2",
+          "string": "??0HeadPoseDetectorData@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x140261e90",
+          "string": ".?AV?$_Ref_count_obj@VHeadPoseDetectorData@blink@@@std@@"
+        },
+        {
+          "addr": "0x1402639d0",
+          "string": ".?AV?$PredictiveFilter@UHeadPosition@@N@@"
+        },
+        {
+          "addr": "0x140263a10",
+          "string": ".?AVLLSHeadPositionPredictor@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

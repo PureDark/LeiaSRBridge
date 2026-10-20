@@ -1,0 +1,129 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":27,\"matches\":[{\"addr\":\"0x28caf0\",\"string\":\"open3dHotkeyGet:(\\\\d+\\\\+\\\\d+)\"},{\"addr\":\"0x295ae0\",\"string\":\"setOpen3DHotkey\"},{\"addr\":\"0x298ca0\",\"string\":\"open3dHotkeySet:2\"},{\"addr\":\"0x2a5880\",\"string\":\"C:\\\\Program Files\\\\Depth Transformer\\\\Depth Transformer.exe\"},{\"addr\":\"0x2c33b0\",\"string\":\"query3DHotkey timeout, marking as failed\"},{\"addr\":\"0x2c8b90\",\"string\":\"query3DHotkey\"},{\"addr\":\"0x2cc820\",\"string\":\"query3DHotkey failed: \"},{\"addr\":\"0x2cf608\",\"string\":\"epthTransformerPlus\\\\DepthTransformerPlus.exe\"},{\"addr\":\"0x309270\",\"string\":\"Win3DControl._internal@1071354661\"},{\"addr\":\"0x314bd0\",\"string\":\"ws://localhost:20650\"},{\"addr\":\"0x33c440\",\"string\":\"close3D\"},{\"addr\":\"0x352260\",\"string\":\"open3d\"},{\"addr\":\"0x358cb0\",\"string\":\"--Win3DControl---init (namedPipe)\"},{\"addr\":\"0x35ea40\",\"string\":\"Win3DControl ready failed: \"},{\"addr\":\"0x363740\",\"string\":\"open3dHotkeyGet\"},{\"addr\":\"0x3689a0\",\"string\":\"Query3DHotkey failed, ret=\"},{\"addr\":\"0x390570\",\"string\":\"open3dHotkeyGet:2\"},{\"addr\":\"0x3cafe0\",\"string\":\"{\\\"Query3DHotkey\\\": 1}\"},{\"addr\":\"0x3eec00\",\"string\":\"\\\\\\\\.\\\\pipe\\\\BOE3DAssistantNamedPipe2\"},{\"addr\":\"0x419200\",\"string\":\"getOpen3DHotkey\"},{\"addr\":\"0x422100\",\"string\":\"Win3DControl ready (channel=\"},{\"addr\":\"0x425bc0\",\"string\":\"close3d\"},{\"addr\":\"0x44c510\",\"string\":\"Win3DControl\"},{\"addr\":\"0x4512f0\",\"string\":\"Depth Transformer Plus\"},{\"addr\":\"0x458a50\",\"string\":\"Depth Transformer\"},{\"addr\":\"0x4821d0\",\"string\":\"--Win3DControl---init (websocket)\"},{\"addr\":\"0x494290\",\"string\":\"open3D\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 27,
+      "matches": [
+        {
+          "addr": "0x28caf0",
+          "string": "open3dHotkeyGet:(\\d+\\+\\d+)"
+        },
+        {
+          "addr": "0x295ae0",
+          "string": "setOpen3DHotkey"
+        },
+        {
+          "addr": "0x298ca0",
+          "string": "open3dHotkeySet:2"
+        },
+        {
+          "addr": "0x2a5880",
+          "string": "C:\\Program Files\\Depth Transformer\\Depth Transformer.exe"
+        },
+        {
+          "addr": "0x2c33b0",
+          "string": "query3DHotkey timeout, marking as failed"
+        },
+        {
+          "addr": "0x2c8b90",
+          "string": "query3DHotkey"
+        },
+        {
+          "addr": "0x2cc820",
+          "string": "query3DHotkey failed: "
+        },
+        {
+          "addr": "0x2cf608",
+          "string": "epthTransformerPlus\\DepthTransformerPlus.exe"
+        },
+        {
+          "addr": "0x309270",
+          "string": "Win3DControl._internal@1071354661"
+        },
+        {
+          "addr": "0x314bd0",
+          "string": "ws://localhost:20650"
+        },
+        {
+          "addr": "0x33c440",
+          "string": "close3D"
+        },
+        {
+          "addr": "0x352260",
+          "string": "open3d"
+        },
+        {
+          "addr": "0x358cb0",
+          "string": "--Win3DControl---init (namedPipe)"
+        },
+        {
+          "addr": "0x35ea40",
+          "string": "Win3DControl ready failed: "
+        },
+        {
+          "addr": "0x363740",
+          "string": "open3dHotkeyGet"
+        },
+        {
+          "addr": "0x3689a0",
+          "string": "Query3DHotkey failed, ret="
+        },
+        {
+          "addr": "0x390570",
+          "string": "open3dHotkeyGet:2"
+        },
+        {
+          "addr": "0x3cafe0",
+          "string": "{\"Query3DHotkey\": 1}"
+        },
+        {
+          "addr": "0x3eec00",
+          "string": "\\\\.\\pipe\\BOE3DAssistantNamedPipe2"
+        },
+        {
+          "addr": "0x419200",
+          "string": "getOpen3DHotkey"
+        },
+        {
+          "addr": "0x422100",
+          "string": "Win3DControl ready (channel="
+        },
+        {
+          "addr": "0x425bc0",
+          "string": "close3d"
+        },
+        {
+          "addr": "0x44c510",
+          "string": "Win3DControl"
+        },
+        {
+          "addr": "0x4512f0",
+          "string": "Depth Transformer Plus"
+        },
+        {
+          "addr": "0x458a50",
+          "string": "Depth Transformer"
+        },
+        {
+          "addr": "0x4821d0",
+          "string": "--Win3DControl---init (websocket)"
+        },
+        {
+          "addr": "0x494290",
+          "string": "open3D"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

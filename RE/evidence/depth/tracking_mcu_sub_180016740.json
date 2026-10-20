@@ -1,0 +1,154 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180016740\",\"code\":\"char __fastcall sub_180016740(__int64 a1, __int64 a2)\\n{\\n  __int64 v2; // rax\\n  __int64 v4; // rax\\n  __int64 v5; // rax\\n  __int64 v6; // rax\\n  __int64 v7; // rax\\n  __int64 v8; // rax\\n  __int64 v9; // rax\\n  __int64 v10; // rax\\n  __int64 v11; // rax\\n  __int64 v12; // rax\\n  __int64 v13; // [rsp+50h] [rbp-148h]\\n  __int64 v14; // [rsp+60h] [rbp-138h]\\n  __int64 v15; // [rsp+70h] [rbp-128h]\\n  __int64 v16; // [rsp+80h] [rbp-118h]\\n  __int64 v17; // [rsp+90h] [rbp-108h]\\n  __int64 v18; // [rsp+A0h] [rbp-F8h]\\n  __int64 v19; // [rsp+B0h] [rbp-E8h]\\n  __int64 v20; // [rsp+C0h] [rbp-D8h]\\n  __int64 v21; // [rsp+D0h] [rbp-C8h]\\n  __int64 v22; // [rsp+E0h] [rbp-B8h]\\n  _BYTE v23[16]; // [rsp+E8h] [rbp-B0h] BYREF\\n  _BYTE v24[16]; // [rsp+F8h] [rbp-A0h] BYREF\\n  _BYTE v25[16]; // [rsp+108h] [rbp-90h] BYREF\\n  _BYTE v26[16]; // [rsp+118h] [rbp-80h] BYREF\\n  _BYTE v27[16]; // [rsp+128h] [rbp-70h] BYREF\\n  _BYTE v28[16]; // [rsp+138h] [rbp-60h] BYREF\\n  _BYTE v29[16]; // [rsp+148h] [rbp-50h] BYREF\\n  _BYTE v30[16]; // [rsp+158h] [rbp-40h] BYREF\\n  _BYTE v31[16]; // [rsp+168h] [rbp-30h] BYREF\\n  _BYTE v32[8]; // [rsp+178h] [rbp-20h] BYREF\\n\\n  if ( Concurrency::task_options::has_cancellation_token(this: (Concurrency::task_options *)(a1 + 344)) ) /*0x180016775*/\\n  {\\n    memset(v32, 0, 4u); /*0x180016800*/\\n    switch ( (int)a2 ) /*0x18001682e*/\\n    {\\n      case 0: /*0x18001682e*/\\n        v32[0] = 0; /*0x180016852*/\\n        v32[1] = 10; /*0x180016863*/\\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016881*/\\n        *(_DWORD *)(a1 + 744) = -1; /*0x18001688e*/\\n        v15 = sub_180036BD0(a1: v25, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1097); /*0x1800168bc*/\\n        __wind /*0xf1c0000000000108*/\\n        {\\n          v4 = sub_18003DF90(a1: v15); /*0x1800168c6*/\\n          sub_18000A770(a1: v4, a2: \\\"send open3D cmd\\\"); /*0x1800168d5*/\\n        }\\n        __unwind\\n        {\\n          sub_180037160(a1: v25); /*0x180045c8b*/\\n        }\\n        sub_180037160(a1: v25); /*0x1800168e3*/\\n        break; /*0x1800168e8*/\\n      case 1: /*0x18001682e*/\\n        v32[0] = 0; /*0x18001690f*/\\n        v32[1] = 11; /*0x180016920*/\\n        v16 = sub_180036BD0(a1: v26, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1102); /*0x18001694c*/\\n        __wind /*0xf1c00000000000f0*/\\n        {\\n          v5 = sub_18003DF90(a1: v16); /*0x18001695c*/\\n          sub_18000A770(a1: v5, a2: \\\"send close3D cmd\\\"); /*0x18001696b*/\\n        }\\n        __unwind\\n        {\\n          sub_180037160(a1: v26); /*0x180045ca6*/\\n        }\\n        sub_180037160(a1: v26); /*0x180016979*/\\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016994*/\\n        *(_DWORD *)(a1 + 744) = -1; /*0x1800169a1*/\\n        break; /*0x1800169ab*/\\n      case 2: /*0x18001682e*/\\n        v32[0] = 0; /*0x1800169d2*/\\n        v32[1] = 14; /*0x1800169e3*/\\n        v17 = sub_180036BD0(a1: v27, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1109); /*0x180016a15*/\\n        __wind /*0xf1c00000000000d8*/\\n        {\\n          v6 = sub_18003DF90(a1: v17); /*0x180016a25*/\\n          sub_18000A770(a1: v6, a2: \\\"send query3D cmd\\\"); /*0x180016a34*/\\n        }\\n        __unwind\\n        {\\n          sub_180037160(a1: v27); /*0x180045cc1*/\\n        }\\n        sub_180037160(a1: v27); /*0x180016a42*/\\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016a5d*/\\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016a6a*/\\n        break; /*0x180016a74*/\\n      case 3: /*0x18001682e*/\\n        v32[0] = 8; /*0x180016a82*/\\n        v32[1] = 0x80; /*0x180016a93*/\\n        v32[2] = 0; /*0x180016abd*/\\n        sub_180017210(a1, a2: v32, a3: 3); /*0x180016adb*/\\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016ae8*/\\n        break; /*0x180016af2*/\\n      case 4: /*0x18001682e*/\\n        v32[0] = 7; /*0x180016b00*/\\n        v32[1] = BYTE4(a2); /*0x180016b19*/\\n        v18 = sub_180036BD0(a1: v28, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1124); /*0x180016b4a*/\\n        __wind /*0xf1c00000000000c0*/\\n        {\\n          v7 = sub_18003DF90(a1: v18); /*0x180016b5a*/\\n          v13 = sub_18000A770(a1: v7, a2: \\\"send readdata:\\\"); /*0x180016b6e*/\\n          v8 = std::ostream::operator<<(a1: v13, a2: HIDWORD(a2)); /*0x180016b7f*/\\n          sub_18000A770(a1: v8, a2: \\\" cmd\\\"); /*0x180016b8f*/\\n        }\\n        __unwind\\n        {\\n          sub_180037160(a1: v28); /*0x180045cdc*/\\n        }\\n        sub_180037160(a1: v28); /*0x180016b9d*/\\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016bb8*/\\n        *(_DWORD *)(a1 + 744) = HIDWORD(a2); /*0x180016bcc*/\\n        break; /*0x180016bd2*/\\n      case 5: /*0x18001682e*/\\n        v19 = sub_180036BD0(a1: v29, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1129); /*0x180016c01*/\\n        __wind /*0xf1c00000000000a8*/\\n        {\\n          v9 = sub_18003DF90(a1: v19); /*0x180016c11*/\\n          sub_18000A770(a1: v9, a2: \\\"send writedata cmd\\\"); /*0x180016c20*/\\n        }\\n        __unwind\\n        {\\n          sub_180037160(a1: v29); /*0x180045cf7*/\\n        }\\n        sub_180037160(a1: v29); /*0x180016c2e*/\\n        sub_180016EA0(a1); /*0x180016c3b*/\\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016c48*/\\n        break; /*0x180016c52*/\\n      case 6: /*0x18001682e*/\\n        v20 = sub_180036BD0(a1: v30, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1134); /*0x180016c81*/\\n        __wind /*0xf1c0000000000090*/\\n        {\\n          v10 = sub_18003DF90(a1: v20); /*0x180016c91*/\\n          sub_18000A770(a1: v10, a2: \\\"send writedata cmd\\\"); /*0x180016ca0*/\\n        }\\n        __unwind\\n        {\\n          sub_180037160(a1: v30); /*0x180045d12*/\\n        }\\n        sub_180037160(a1: v30); /*0x180016cae*/\\n        sub_180016EE0(a1, a2: HIDWORD(a2)); /*0x180016cc2*/\\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016ccf*/\\n        break; /*0x180016cd9*/\\n      case 7: /*0x18001682e*/\\n        v32[0] = 0; /*0x180016d00*/\\n        v32[1] = 13; /*0x180016d11*/\\n        v21 = sub_180036BD0(a1: v31, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1141); /*0x180016d43*/\\n        __wind /*0xf1c0000000000078*/\\n        {\\n          v11 = sub_18003DF90(a1: v21); /*0x180016d53*/\\n          sub_18000A770(a1: v11, a2: \\\"send IAPMode cmd\\\"); /*0x180016d62*/\\n        }\\n        __unwind\\n        {\\n          sub_180037160(a1: v31); /*0x180045d2d*/\\n        }\\n        sub_180037160(a1: v31); /*0x180016d70*/\\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016d8b*/\\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016d98*/\\n        break; /*0x180016da2*/\\n      case 8: /*0x18001682e*/\\n        v32[0] = 9; /*0x180016db0*/\\n        v32[1] = -82; /*0x180016dc1*/\\n        v22 = sub_180036BD0(a1: v23, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1148); /*0x180016df3*/\\n        __wind /*0xf1c0000000000060*/\\n        {\\n          v12 = sub_18003DF90(a1: v22); /*0x180016e03*/\\n          sub_18000A770(a1: v12, a2: \\\"send MCUVersion cmd\\\"); /*0x180016e12*/\\n        }\\n        __unwind\\n        {\\n          sub_180037160(a1: v23); /*0x180045d48*/\\n        }\\n        sub_180037160(a1: v23); /*0x180016e20*/\\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016e3b*/\\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016e48*/\\n        break; /*0x180016e48*/\\n      default:\\n        return 1;\\n    }\\n    return 1; /*0x180016e52*/\\n  }\\n  else\\n  {\\n    v14 = sub_180036BD0(a1: v24, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 1086); /*0x1800167a5*/\\n    __wind /*0xf1c0000000000120*/\\n    {\\n      v2 = sub_18003DF90(a1: v14); /*0x1800167af*/\\n      sub_18000A770(a1: v2, a2: \\\"sendcmd if (!m_serial.isOpen()),send failed,return false\\\"); /*0x1800167be*/\\n    }\\n    __unwind\\n    {\\n      sub_180037160(a1: v24); /*0x180045c70*/\\n    }\\n    sub_180037160(a1: v24); /*0x1800167cc*/\\n    sub_180017B00(a1: a1 + 16, a2: 0); /*0x1800167e2*/\\n    return 0; /*0x1800167e7*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x180017210\",\"name\":\"sub_180017210\"},{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004ee78\",\"name\":\"aDSourceRepos3d_62\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004ee68\",\"name\":\"aSendOpen3dCmd\",\"string\":\"send open3D cmd\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x18004eec8\",\"name\":\"aDSourceRepos3d_63\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004eeb0\",\"name\":\"aSendClose3dCmd\",\"string\":\"send close3D cmd\"},{\"addr\":\"0x18004ef18\",\"name\":\"aDSourceRepos3d_64\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004ef00\",\"name\":\"aSendQuery3dCmd\",\"string\":\"send query3D cmd\"},{\"addr\":\"0x18004ef68\",\"name\":\"aDSourceRepos3d_65\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004ef58\",\"name\":\"aSendReaddata\",\"string\":\"send readdata:\"},{\"addr\":\"0x18004a490\",\"name\":\"__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z\"},{\"addr\":\"0x18004ef4c\",\"name\":\"aCmd\",\"string\":\" cmd\"},{\"addr\":\"0x18004efb8\",\"name\":\"aDSourceRepos3d_66\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004efa0\",\"name\":\"aSendWritedataC\",\"string\":\"send writedata cmd\"},{\"addr\":\"0x180016ea0\",\"name\":\"sub_180016EA0\"},{\"addr\":\"0x18004f008\",\"name\":\"aDSourceRepos3d_67\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004eff0\",\"name\":\"aSendWritedataC_0\",\"string\":\"send writedata cmd\"},{\"addr\":\"0x180016ee0\",\"name\":\"sub_180016EE0\"},{\"addr\":\"0x18004f058\",\"name\":\"aDSourceRepos3d_68\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004f040\",\"name\":\"aSendIapmodeCmd\",\"string\":\"send IAPMode cmd\"},{\"addr\":\"0x18004f0a8\",\"name\":\"aDSourceRepos3d_69\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004f090\",\"name\":\"aSendMcuversion\",\"string\":\"send MCUVersion cmd\"},{\"addr\":\"0x18004ee30\",\"name\":\"aDSourceRepos3d_61\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004ede8\",\"name\":\"aSendcmdIfMSeri\",\"string\":\"sendcmd if (!m_serial.isOpen()),send failed,return false\"},{\"addr\":\"0x180017b00\",\"name\":\"sub_180017B00\"},{\"addr\":\"0x180010de0\",\"name\":\"?has_cancellation_token@task_options@Concurrency@@QEBA_NXZ\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180016740",
+      "code": "char __fastcall sub_180016740(__int64 a1, __int64 a2)\n{\n  __int64 v2; // rax\n  __int64 v4; // rax\n  __int64 v5; // rax\n  __int64 v6; // rax\n  __int64 v7; // rax\n  __int64 v8; // rax\n  __int64 v9; // rax\n  __int64 v10; // rax\n  __int64 v11; // rax\n  __int64 v12; // rax\n  __int64 v13; // [rsp+50h] [rbp-148h]\n  __int64 v14; // [rsp+60h] [rbp-138h]\n  __int64 v15; // [rsp+70h] [rbp-128h]\n  __int64 v16; // [rsp+80h] [rbp-118h]\n  __int64 v17; // [rsp+90h] [rbp-108h]\n  __int64 v18; // [rsp+A0h] [rbp-F8h]\n  __int64 v19; // [rsp+B0h] [rbp-E8h]\n  __int64 v20; // [rsp+C0h] [rbp-D8h]\n  __int64 v21; // [rsp+D0h] [rbp-C8h]\n  __int64 v22; // [rsp+E0h] [rbp-B8h]\n  _BYTE v23[16]; // [rsp+E8h] [rbp-B0h] BYREF\n  _BYTE v24[16]; // [rsp+F8h] [rbp-A0h] BYREF\n  _BYTE v25[16]; // [rsp+108h] [rbp-90h] BYREF\n  _BYTE v26[16]; // [rsp+118h] [rbp-80h] BYREF\n  _BYTE v27[16]; // [rsp+128h] [rbp-70h] BYREF\n  _BYTE v28[16]; // [rsp+138h] [rbp-60h] BYREF\n  _BYTE v29[16]; // [rsp+148h] [rbp-50h] BYREF\n  _BYTE v30[16]; // [rsp+158h] [rbp-40h] BYREF\n  _BYTE v31[16]; // [rsp+168h] [rbp-30h] BYREF\n  _BYTE v32[8]; // [rsp+178h] [rbp-20h] BYREF\n\n  if ( Concurrency::task_options::has_cancellation_token(this: (Concurrency::task_options *)(a1 + 344)) ) /*0x180016775*/\n  {\n    memset(v32, 0, 4u); /*0x180016800*/\n    switch ( (int)a2 ) /*0x18001682e*/\n    {\n      case 0: /*0x18001682e*/\n        v32[0] = 0; /*0x180016852*/\n        v32[1] = 10; /*0x180016863*/\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016881*/\n        *(_DWORD *)(a1 + 744) = -1; /*0x18001688e*/\n        v15 = sub_180036BD0(a1: v25, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1097); /*0x1800168bc*/\n        __wind /*0xf1c0000000000108*/\n        {\n          v4 = sub_18003DF90(a1: v15); /*0x1800168c6*/\n          sub_18000A770(a1: v4, a2: \"send open3D cmd\"); /*0x1800168d5*/\n        }\n        __unwind\n        {\n          sub_180037160(a1: v25); /*0x180045c8b*/\n        }\n        sub_180037160(a1: v25); /*0x1800168e3*/\n        break; /*0x1800168e8*/\n      case 1: /*0x18001682e*/\n        v32[0] = 0; /*0x18001690f*/\n        v32[1] = 11; /*0x180016920*/\n        v16 = sub_180036BD0(a1: v26, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1102); /*0x18001694c*/\n        __wind /*0xf1c00000000000f0*/\n        {\n          v5 = sub_18003DF90(a1: v16); /*0x18001695c*/\n          sub_18000A770(a1: v5, a2: \"send close3D cmd\"); /*0x18001696b*/\n        }\n        __unwind\n        {\n          sub_180037160(a1: v26); /*0x180045ca6*/\n        }\n        sub_180037160(a1: v26); /*0x180016979*/\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016994*/\n        *(_DWORD *)(a1 + 744) = -1; /*0x1800169a1*/\n        break; /*0x1800169ab*/\n      case 2: /*0x18001682e*/\n        v32[0] = 0; /*0x1800169d2*/\n        v32[1] = 14; /*0x1800169e3*/\n        v17 = sub_180036BD0(a1: v27, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1109); /*0x180016a15*/\n        __wind /*0xf1c00000000000d8*/\n        {\n          v6 = sub_18003DF90(a1: v17); /*0x180016a25*/\n          sub_18000A770(a1: v6, a2: \"send query3D cmd\"); /*0x180016a34*/\n        }\n        __unwind\n        {\n          sub_180037160(a1: v27); /*0x180045cc1*/\n        }\n        sub_180037160(a1: v27); /*0x180016a42*/\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016a5d*/\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016a6a*/\n        break; /*0x180016a74*/\n      case 3: /*0x18001682e*/\n        v32[0] = 8; /*0x180016a82*/\n        v32[1] = 0x80; /*0x180016a93*/\n        v32[2] = 0; /*0x180016abd*/\n        sub_180017210(a1, a2: v32, a3: 3); /*0x180016adb*/\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016ae8*/\n        break; /*0x180016af2*/\n      case 4: /*0x18001682e*/\n        v32[0] = 7; /*0x180016b00*/\n        v32[1] = BYTE4(a2); /*0x180016b19*/\n        v18 = sub_180036BD0(a1: v28, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1124); /*0x180016b4a*/\n        __wind /*0xf1c00000000000c0*/\n        {\n          v7 = sub_18003DF90(a1: v18); /*0x180016b5a*/\n          v13 = sub_18000A770(a1: v7, a2: \"send readdata:\"); /*0x180016b6e*/\n          v8 = std::ostream::operator<<(a1: v13, a2: HIDWORD(a2)); /*0x180016b7f*/\n          sub_18000A770(a1: v8, a2: \" cmd\"); /*0x180016b8f*/\n        }\n        __unwind\n        {\n          sub_180037160(a1: v28); /*0x180045cdc*/\n        }\n        sub_180037160(a1: v28); /*0x180016b9d*/\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016bb8*/\n        *(_DWORD *)(a1 + 744) = HIDWORD(a2); /*0x180016bcc*/\n        break; /*0x180016bd2*/\n      case 5: /*0x18001682e*/\n        v19 = sub_180036BD0(a1: v29, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1129); /*0x180016c01*/\n        __wind /*0xf1c00000000000a8*/\n        {\n          v9 = sub_18003DF90(a1: v19); /*0x180016c11*/\n          sub_18000A770(a1: v9, a2: \"send writedata cmd\"); /*0x180016c20*/\n        }\n        __unwind\n        {\n          sub_180037160(a1: v29); /*0x180045cf7*/\n        }\n        sub_180037160(a1: v29); /*0x180016c2e*/\n        sub_180016EA0(a1); /*0x180016c3b*/\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016c48*/\n        break; /*0x180016c52*/\n      case 6: /*0x18001682e*/\n        v20 = sub_180036BD0(a1: v30, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1134); /*0x180016c81*/\n        __wind /*0xf1c0000000000090*/\n        {\n          v10 = sub_18003DF90(a1: v20); /*0x180016c91*/\n          sub_18000A770(a1: v10, a2: \"send writedata cmd\"); /*0x180016ca0*/\n        }\n        __unwind\n        {\n          sub_180037160(a1: v30); /*0x180045d12*/\n        }\n        sub_180037160(a1: v30); /*0x180016cae*/\n        sub_180016EE0(a1, a2: HIDWORD(a2)); /*0x180016cc2*/\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016ccf*/\n        break; /*0x180016cd9*/\n      case 7: /*0x18001682e*/\n        v32[0] = 0; /*0x180016d00*/\n        v32[1] = 13; /*0x180016d11*/\n        v21 = sub_180036BD0(a1: v31, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1141); /*0x180016d43*/\n        __wind /*0xf1c0000000000078*/\n        {\n          v11 = sub_18003DF90(a1: v21); /*0x180016d53*/\n          sub_18000A770(a1: v11, a2: \"send IAPMode cmd\"); /*0x180016d62*/\n        }\n        __unwind\n        {\n          sub_180037160(a1: v31); /*0x180045d2d*/\n        }\n        sub_180037160(a1: v31); /*0x180016d70*/\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016d8b*/\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016d98*/\n        break; /*0x180016da2*/\n      case 8: /*0x18001682e*/\n        v32[0] = 9; /*0x180016db0*/\n        v32[1] = -82; /*0x180016dc1*/\n        v22 = sub_180036BD0(a1: v23, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1148); /*0x180016df3*/\n        __wind /*0xf1c0000000000060*/\n        {\n          v12 = sub_18003DF90(a1: v22); /*0x180016e03*/\n          sub_18000A770(a1: v12, a2: \"send MCUVersion cmd\"); /*0x180016e12*/\n        }\n        __unwind\n        {\n          sub_180037160(a1: v23); /*0x180045d48*/\n        }\n        sub_180037160(a1: v23); /*0x180016e20*/\n        sub_180017210(a1, a2: v32, a3: 2); /*0x180016e3b*/\n        *(_DWORD *)(a1 + 744) = -1; /*0x180016e48*/\n        break; /*0x180016e48*/\n      default:\n        return 1;\n    }\n    return 1; /*0x180016e52*/\n  }\n  else\n  {\n    v14 = sub_180036BD0(a1: v24, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 1086); /*0x1800167a5*/\n    __wind /*0xf1c0000000000120*/\n    {\n      v2 = sub_18003DF90(a1: v14); /*0x1800167af*/\n      sub_18000A770(a1: v2, a2: \"sendcmd if (!m_serial.isOpen()),send failed,return false\"); /*0x1800167be*/\n    }\n    __unwind\n    {\n      sub_180037160(a1: v24); /*0x180045c70*/\n    }\n    sub_180037160(a1: v24); /*0x1800167cc*/\n    sub_180017B00(a1: a1 + 16, a2: 0); /*0x1800167e2*/\n    return 0; /*0x1800167e7*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x180017210",
+          "name": "sub_180017210"
+        },
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004ee78",
+          "name": "aDSourceRepos3d_62",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004ee68",
+          "name": "aSendOpen3dCmd",
+          "string": "send open3D cmd"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x18004eec8",
+          "name": "aDSourceRepos3d_63",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004eeb0",
+          "name": "aSendClose3dCmd",
+          "string": "send close3D cmd"
+        },
+        {
+          "addr": "0x18004ef18",
+          "name": "aDSourceRepos3d_64",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004ef00",
+          "name": "aSendQuery3dCmd",
+          "string": "send query3D cmd"
+        },
+        {
+          "addr": "0x18004ef68",
+          "name": "aDSourceRepos3d_65",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004ef58",
+          "name": "aSendReaddata",
+          "string": "send readdata:"
+        },
+        {
+          "addr": "0x18004a490",
+          "name": "__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z"
+        },
+        {
+          "addr": "0x18004ef4c",
+          "name": "aCmd",
+          "string": " cmd"
+        },
+        {
+          "addr": "0x18004efb8",
+          "name": "aDSourceRepos3d_66",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004efa0",
+          "name": "aSendWritedataC",
+          "string": "send writedata cmd"
+        },
+        {
+          "addr": "0x180016ea0",
+          "name": "sub_180016EA0"
+        },
+        {
+          "addr": "0x18004f008",
+          "name": "aDSourceRepos3d_67",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004eff0",
+          "name": "aSendWritedataC_0",
+          "string": "send writedata cmd"
+        },
+        {
+          "addr": "0x180016ee0",
+          "name": "sub_180016EE0"
+        },
+        {
+          "addr": "0x18004f058",
+          "name": "aDSourceRepos3d_68",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004f040",
+          "name": "aSendIapmodeCmd",
+          "string": "send IAPMode cmd"
+        },
+        {
+          "addr": "0x18004f0a8",
+          "name": "aDSourceRepos3d_69",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004f090",
+          "name": "aSendMcuversion",
+          "string": "send MCUVersion cmd"
+        },
+        {
+          "addr": "0x18004ee30",
+          "name": "aDSourceRepos3d_61",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004ede8",
+          "name": "aSendcmdIfMSeri",
+          "string": "sendcmd if (!m_serial.isOpen()),send failed,return false"
+        },
+        {
+          "addr": "0x180017b00",
+          "name": "sub_180017B00"
+        },
+        {
+          "addr": "0x180010de0",
+          "name": "?has_cancellation_token@task_options@Concurrency@@QEBA_NXZ"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

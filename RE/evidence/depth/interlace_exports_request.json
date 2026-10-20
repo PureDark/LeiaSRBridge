@@ -1,0 +1,77 @@
+{
+  "database": "interlace",
+  "queries": [
+    {
+      "include_constants": false,
+      "include_strings": false,
+      "include_xrefs": false,
+      "include_decompile": true,
+      "include_basic_blocks": false,
+      "include_disasm": false,
+      "include_proto": true,
+      "include_callers": false,
+      "addr": "BOE_Interleaving_initSDK",
+      "include_callees": false
+    },
+    {
+      "include_constants": false,
+      "include_strings": false,
+      "include_xrefs": false,
+      "include_decompile": true,
+      "include_basic_blocks": false,
+      "include_disasm": false,
+      "include_proto": true,
+      "include_callers": false,
+      "addr": "BOE_Interleaving_doInterleave",
+      "include_callees": false
+    },
+    {
+      "include_constants": false,
+      "include_strings": false,
+      "include_xrefs": false,
+      "include_decompile": true,
+      "include_basic_blocks": false,
+      "include_disasm": false,
+      "include_proto": true,
+      "include_callers": false,
+      "addr": "BOE_Interleaving_setWholeParam",
+      "include_callees": false
+    },
+    {
+      "include_constants": false,
+      "include_strings": false,
+      "include_xrefs": false,
+      "include_decompile": true,
+      "include_basic_blocks": false,
+      "include_disasm": false,
+      "include_proto": true,
+      "include_callers": false,
+      "addr": "BOE_Interleaving_setDeviceParam",
+      "include_callees": false
+    },
+    {
+      "include_constants": false,
+      "include_strings": false,
+      "include_xrefs": false,
+      "include_decompile": true,
+      "include_basic_blocks": false,
+      "include_disasm": false,
+      "include_proto": true,
+      "include_callers": false,
+      "addr": "BOE_Interleaving_setRefractDeviceParam",
+      "include_callees": false
+    },
+    {
+      "include_constants": false,
+      "include_strings": false,
+      "include_xrefs": false,
+      "include_decompile": true,
+      "include_basic_blocks": false,
+      "include_disasm": false,
+      "include_proto": true,
+      "include_callers": false,
+      "addr": "BOE_Interleaving_releaseSDK",
+      "include_callees": false
+    }
+  ]
+}

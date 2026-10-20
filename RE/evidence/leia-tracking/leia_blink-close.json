@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"leia_blink\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: blink.dll (leia_blink)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "leia_blink",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: blink.dll (leia_blink)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

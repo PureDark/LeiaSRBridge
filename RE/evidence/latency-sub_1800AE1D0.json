@@ -1,0 +1,42 @@
+{
+  "addr": "sub_1800AE1D0",
+  "code": "_BYTE *sub_1800AE1D0()\n{\n  _BYTE *result; // rax\n\n  if ( SDWORD2(xmmword_18013C8D0) <= *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer /*0x1800ae1f5*/\n                                                 + (unsigned int)dword_18013ACE0)\n                                               + 20LL) )\n    return &algn_18013C2D8[24]; /*0x1800ae1f5*/\n  Init_thread_header(a1: (char *)&xmmword_18013C8D0 + 8); /*0x1800ae20a*/\n  if ( DWORD2(xmmword_18013C8D0) != -1 ) /*0x1800ae216*/\n    return &algn_18013C2D8[24]; /*0x1800ae1f7*/\n  __wind /*0xf1c000000000001c*/\n  {\n    sub_1800B32C0(); /*0x1800ae218*/\n    atexit(a1: sub_1800FC8C0); /*0x1800ae224*/\n    Init_thread_footer(a1: (char *)&xmmword_18013C8D0 + 8); /*0x1800ae231*/\n    result = &algn_18013C2D8[24]; /*0x1800ae236*/\n  }\n  __unwind\n  {\n    Init_thread_abort(a1: (char *)&xmmword_18013C8D0 + 8); /*0x1800faa17*/\n  }\n  return result; /*0x1800ae1fe*/\n}",
+  "refs": [
+    {
+      "addr": "0x18013c2d8",
+      "name": "algn_18013C2D8"
+    },
+    {
+      "addr": "0x18013c8d0",
+      "name": "xmmword_18013C8D0"
+    },
+    {
+      "addr": "0x18013ace0",
+      "name": "dword_18013ACE0"
+    },
+    {
+      "addr": "0x1800b7c00",
+      "name": "_Init_thread_header"
+    },
+    {
+      "addr": "0x1800b32c0",
+      "name": "sub_1800B32C0"
+    },
+    {
+      "addr": "0x1800b8184",
+      "name": "atexit"
+    },
+    {
+      "addr": "0x1800fc8c0",
+      "name": "sub_1800FC8C0"
+    },
+    {
+      "addr": "0x1800b7ba0",
+      "name": "_Init_thread_footer"
+    },
+    {
+      "addr": "0x1800b7b70",
+      "name": "_Init_thread_abort"
+    }
+  ]
+}

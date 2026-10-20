@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18005F160\",\"code\":\"float *__fastcall sub_18005F160(float *a1, float *a2, float *a3)\\n{\\n  BOE_MakeFloat3( /*0x18005f394*/\\n    result: a2,\\n    x: (float)((float)((float)(a1[37] * *a3) + (float)(a1[38] * a3[1])) + (float)(a1[39] * a3[2])) + a1[33],\\n    y: (float)((float)((float)(a1[40] * *a3) + (float)(a1[41] * a3[1])) + (float)(a1[42] * a3[2])) + a1[34],\\n    z: (float)((float)((float)(a1[43] * *a3) + (float)(a1[44] * a3[1])) + (float)(a1[45] * a3[2])) + a1[35]);\\n  return a2; /*0x18005f39e*/\\n}\",\"refs\":[{\"addr\":\"0x180058a00\",\"name\":\"BOE_MakeFloat3\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18005F160",
+      "code": "float *__fastcall sub_18005F160(float *a1, float *a2, float *a3)\n{\n  BOE_MakeFloat3( /*0x18005f394*/\n    result: a2,\n    x: (float)((float)((float)(a1[37] * *a3) + (float)(a1[38] * a3[1])) + (float)(a1[39] * a3[2])) + a1[33],\n    y: (float)((float)((float)(a1[40] * *a3) + (float)(a1[41] * a3[1])) + (float)(a1[42] * a3[2])) + a1[34],\n    z: (float)((float)((float)(a1[43] * *a3) + (float)(a1[44] * a3[1])) + (float)(a1[45] * a3[2])) + a1[35]);\n  return a2; /*0x18005f39e*/\n}",
+      "refs": [
+        {
+          "addr": "0x180058a00",
+          "name": "BOE_MakeFloat3"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

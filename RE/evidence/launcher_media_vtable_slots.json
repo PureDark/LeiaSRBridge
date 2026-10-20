@@ -1,0 +1,42 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x18001aa18\",\"ty\":\"u64le\",\"value\":6442478016},{\"addr\":\"0x18001aa20\",\"ty\":\"u64le\",\"value\":6442478064},{\"addr\":\"0x18001aa28\",\"ty\":\"u64le\",\"value\":6442478128},{\"addr\":\"0x18001aa30\",\"ty\":\"u64le\",\"value\":6442478192},{\"addr\":\"0x18001aa38\",\"ty\":\"u64le\",\"value\":6442478160}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x18001aa18",
+          "ty": "u64le",
+          "value": 6442478016
+        },
+        {
+          "addr": "0x18001aa20",
+          "ty": "u64le",
+          "value": 6442478064
+        },
+        {
+          "addr": "0x18001aa28",
+          "ty": "u64le",
+          "value": 6442478128
+        },
+        {
+          "addr": "0x18001aa30",
+          "ty": "u64le",
+          "value": 6442478192
+        },
+        {
+          "addr": "0x18001aa38",
+          "ty": "u64le",
+          "value": 6442478160
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

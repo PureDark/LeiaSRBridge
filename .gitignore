@@ -1,0 +1,40 @@
+# Generated builds, historical binaries and releases
+/build*/
+**/build/
+/artifacts/
+/dist/
+/out/
+CMakeFiles/
+CMakeCache.txt
+CMakeUserPresets.json
+/.vs/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.exe
+*.dll
+*.so
+*.tlog
+*.lastbuildstate
+*.VC.db
+
+# Local proprietary dependencies, original analysis binaries and installers
+/dependencies/
+/RE/inputs/
+/installers/
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+
+# Local settings and Python caches; research logs and source shaders are retained
+__pycache__/
+*.pyc
+/settings.ini
+/games.txt
+/logs/
+/boe_mcu_mat.ini

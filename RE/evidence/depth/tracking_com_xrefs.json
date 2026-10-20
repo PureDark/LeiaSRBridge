@@ -1,0 +1,65 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x18000c010\",\"xrefs\":[{\"addr\":\"0x1800063bc\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"size\":\"0x399\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x18000c088\",\"xrefs\":[{\"addr\":\"0x1800064e5\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"size\":\"0x399\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x18000c0b0\",\"xrefs\":[{\"addr\":\"0x180006306\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"size\":\"0x399\"}}],\"more\":false,\"xref_count\":1}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x18000c010",
+          "xrefs": [
+            {
+              "addr": "0x1800063bc",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006270",
+                "name": "sub_180006270",
+                "size": "0x399"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x18000c088",
+          "xrefs": [
+            {
+              "addr": "0x1800064e5",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006270",
+                "name": "sub_180006270",
+                "size": "0x399"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x18000c0b0",
+          "xrefs": [
+            {
+              "addr": "0x180006306",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006270",
+                "name": "sub_180006270",
+                "size": "0x399"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

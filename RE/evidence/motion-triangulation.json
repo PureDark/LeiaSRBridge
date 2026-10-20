@@ -1,0 +1,72 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "addr": "0x1800AFB70",
+      "code": "char __fastcall sub_1800AFB70(__int64 a1, __int64 *a2, __int64 a3)\n{\n  __int64 v4; // r15\n  __int64 v5; // rdx\n  char result; // al\n  _OWORD *v7; // rax\n  float *v8; // rcx\n  float v9; // xmm1_4\n  float v10; // xmm0_4\n  float v11; // xmm1_4\n  float v12; // xmm0_4\n  _OWORD *v13; // rax\n  __m128d *v14; // rcx\n  __m128d v15; // xmm8\n  __m128d v16; // xmm7\n  double v17; // xmm1_8\n  void **v18; // rbx\n  double *v19; // rdx\n  double v20; // xmm1_8\n  void **v21; // r13\n  double *v22; // rdx\n  void **v23; // r12\n  double *v24; // rdx\n  unsigned __int64 v25; // rdx\n  int v26; // r8d\n  unsigned __int64 v27; // rcx\n  __int64 v28; // rdx\n  __int64 v29; // rdx\n  __int64 v30; // rcx\n  double v31; // xmm3_8\n  double v32; // xmm2_8\n  double v33; // xmm1_8\n  __int64 v34; // rax\n  float v35; // xmm3_4\n  float v36; // xmm5_4\n  float v37; // xmm2_4\n  float v38; // xmm4_4\n  __m128d v39; // xmm14\n  __m128d v40; // xmm13\n  float v41; // xmm15_4\n  float v42; // xmm10_4\n  double v43; // xmm12_8\n  double v44; /... [73540 chars total]",
+      "refs": [
+        {
+          "addr": "0x1800a2ad0",
+          "name": "sub_1800A2AD0"
+        },
+        {
+          "addr": "0x1800b7d10",
+          "name": "??2@YAPEAX_K@Z"
+        },
+        {
+          "addr": "0x1800fd540",
+          "name": "?undistortPoints@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@0000@Z"
+        },
+        {
+          "addr": "0x1800b3f10",
+          "name": "sub_1800B3F10"
+        },
+        {
+          "addr": "0x1800b3d60",
+          "name": "sub_1800B3D60"
+        },
+        {
+          "addr": "0x1800b3bb0",
+          "name": "sub_1800B3BB0"
+        },
+        {
+          "addr": "0x1800ba070",
+          "name": "memmove"
+        },
+        {
+          "addr": "0x1800b1e50",
+          "name": "sub_1800B1E50"
+        },
+        {
+          "addr": "0x1800aea50",
+          "name": "sub_1800AEA50"
+        },
+        {
+          "addr": "0x1800b38f0",
+          "name": "sub_1800B38F0"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800AFB70\",\"code\":\"char __fastcall sub_1800AFB70(__int64 a1, __int64 *a2, __int64 a3)\\n{\\n  __int64 v4; // r15\\n  __int64 v5; // rdx\\n  char result; // al\\n  _OWORD *v7; // rax\\n  float *v8; // rcx\\n  float v9; // xmm1_4\\n  float v10; // xmm0_4\\n  float v11; // xmm1_4\\n  float v12; // xmm0_4\\n  _OWORD *v13; // rax\\n  __m128d *v14; // rcx\\n  __m128d v15; // xmm8\\n  __m128d v16; // xmm7\\n  double v17; // xmm1_8\\n  void **v18; // rbx\\n  double *v19; // rdx\\n  double v20; // xmm1_8\\n  void **v21; // r13\\n  double *v22; // rdx\\n  void **v23; // r12\\n  double *v24; // rdx\\n  unsigned __int64 v25; // rdx\\n  int v26; // r8d\\n  unsigned __int64 v27; // rcx\\n  __int64 v28; // rdx\\n  __int64 v29; // rdx\\n  __int64 v30; // rcx\\n  double v31; // xmm3_8\\n  double v32; // xmm2_8\\n  double v33; // xmm1_8\\n  __int64 v34; // rax\\n  float v35; // xmm3_4\\n  float v36; // xmm5_4\\n  float v37; // xmm2_4\\n  float v38; // xmm4_4\\n  __m128d v39; // xmm14\\n  __m128d v40; // xmm13\\n  float v41; // xmm15_4\\n  float v42; // xmm10_4\\n  double v43; // xmm12_8\\n  double v44; /... [73540 chars total]\",\"refs\":[{\"addr\":\"0x1800a2ad0\",\"name\":\"sub_1800A2AD0\"},{\"addr\":\"0x1800b7d10\",\"name\":\"??2@YAPEAX_K@Z\"},{\"addr\":\"0x1800fd540\",\"name\":\"?undistortPoints@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@0000@Z\"},{\"addr\":\"0x1800b3f10\",\"name\":\"sub_1800B3F10\"},{\"addr\":\"0x1800b3d60\",\"name\":\"sub_1800B3D60\"},{\"addr\":\"0x1800b3bb0\",\"name\":\"sub_1800B3BB0\"},{\"addr\":\"0x1800ba070\",\"name\":\"memmove\"},{\"addr\":\"0x1800b1e50\",\"name\":\"sub_1800B1E50\"},{\"addr\":\"0x1800aea50\",\"name\":\"sub_1800AEA50\"},{\"addr\":\"0x1800b38f0\",\"name\":\"sub_1800B38F0\"}]}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/bf535dca-ad88-48e0-a40a-086d848c9a0c.json http://127.0.0.1:60628/output/bf535dca-ad88-48e0-a40a-086d848c9a0c.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 76918,
+        "output_id": "bf535dca-ad88-48e0-a40a-086d848c9a0c",
+        "download_url": "http://127.0.0.1:60628/output/bf535dca-ad88-48e0-a40a-086d848c9a0c.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/bf535dca-ad88-48e0-a40a-086d848c9a0c.json http://127.0.0.1:60628/output/bf535dca-ad88-48e0-a40a-086d848c9a0c.json"
+      }
+    }
+  },
+  "id": 1
+}

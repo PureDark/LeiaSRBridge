@@ -1,0 +1,101 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"LoadMediaTransposeEngine\",\"code\":\"BOOL __fastcall LoadMediaTransposeEngine(const char *a1)\\n{\\n  __int64 v2; // rax\\n  const char *v3; // rdx\\n  __int64 v4; // rax\\n  BOOL result; // eax\\n  BOOL fPending; // [rsp+30h] [rbp+8h] BYREF\\n\\n  v2 = sub_180001820(a1: std::cout, a2: \\\"LoadMediaTransposeEngine cacheDir: \\\");\\n  v3 = \\\"null\\\"; /*0x180006daf*/\\n  if ( a1 != nullptr ) /*0x180006db9*/\\n    v3 = a1; /*0x180006db9*/\\n  v4 = sub_180001820(a1: v2, a2: v3); /*0x180006dbd*/\\n  std::ostream::operator<<(a1: v4, a2: sub_180003130); /*0x180006dcc*/\\n  result = InitOnceBeginInitialize(lpInitOnce: &InitOnce, dwFlags: 0, &fPending, lpContext: nullptr); /*0x180006de3*/\\n  if ( !result ) /*0x180006deb*/\\n    abort(); /*0x180006ded*/\\n  if ( fPending ) /*0x180006df9*/\\n  {\\n    if ( Mtx_lock(a1: (_Mtx_t)&unk_180026000) != 0 ) /*0x180006e09*/\\n    {\\n      std::_Throw_Cpp_error(a1: 5); /*0x180006e6d*/\\n      __debugbreak(); /*0x180006e72*/\\n    }\\n    if ( dword_18002604C == 0x7FFFFFFF ) /*0x180006e15*/\\n    {\\n      dword_18002604C = 2147483646; /*0x180006e78*/\\n      std::_Throw_Cpp_error(a1: 6); /*0x180006e82*/\\n      JUMPOUT(0x180006E87LL); /*0x180006e87*/\\n    }\\n    if ( byte_180027790 == 0 ) /*0x180006e1d*/\\n    {\\n      LoadStereoEngine(a1); /*0x180006e22*/\\n      byte_180027790 = 1; /*0x180006e2e*/\\n      Cnd_broadcast(a1: (_Cnd_t)&unk_1800277B0); /*0x180006e35*/\\n    }\\n    Mtx_unlock(a1: (_Mtx_t)&unk_180026000); /*0x180006e41*/\\n    result = InitOnceComplete(lpInitOnce: &InitOnce, dwFlags: 0, lpContext: nullptr); /*0x180006e52*/\\n    if ( !result ) /*0x180006e5a*/\\n      sub_1800069A0(); /*0x180006e62*/\\n  }\\n  return result; /*0x180006e5c*/\\n}\",\"refs\":[{\"addr\":\"0x180001820\",\"name\":\"sub_180001820\"},{\"addr\":\"0x18001a138\",\"name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x18001aa48\",\"name\":\"aLoadmediatrans_0\",\"string\":\"LoadMediaTransposeEngine cacheDir: \"},{\"addr\":\"0x18001a704\",\"name\":\"aNull\",\"string\":\"null\"},{\"addr\":\"0x18001a118\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x180003130\",\"name\":\"sub_180003130\"},{\"addr\":\"0x18001a0d0\",\"name\":\"InitOnceBeginInitialize\"},{\"addr\":\"0x180027798\",\"name\":\"InitOnce\"},{\"addr\":\"0x18001a3d8\",\"name\":\"abort\"},{\"addr\":\"0x18001714d\",\"name\":\"?_Throw_Cpp_error@std@@YAXH@Z\"},{\"addr\":\"0x180017170\",\"name\":\"_Mtx_lock\"},{\"addr\":\"0x180026000\",\"name\":\"unk_180026000\"},{\"addr\":\"0x18002604c\",\"name\":\"dword_18002604C\"},{\"addr\":\"0x180016ccd\",\"name\":\"LoadStereoEngine\"},{\"addr\":\"0x180027790\",\"name\":\"byte_180027790\"},{\"addr\":\"0x18001717c\",\"name\":\"_Cnd_broadcast\"},{\"addr\":\"0x1800277b0\",\"name\":\"unk_1800277B0\"},{\"addr\":\"0x180017176\",\"name\":\"_Mtx_unlock\"},{\"addr\":\"0x18001a0c8\",\"name\":\"InitOnceComplete\"},{\"addr\":\"0x1800069a0\",\"name\":\"sub_1800069A0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "LoadMediaTransposeEngine",
+      "code": "BOOL __fastcall LoadMediaTransposeEngine(const char *a1)\n{\n  __int64 v2; // rax\n  const char *v3; // rdx\n  __int64 v4; // rax\n  BOOL result; // eax\n  BOOL fPending; // [rsp+30h] [rbp+8h] BYREF\n\n  v2 = sub_180001820(a1: std::cout, a2: \"LoadMediaTransposeEngine cacheDir: \");\n  v3 = \"null\"; /*0x180006daf*/\n  if ( a1 != nullptr ) /*0x180006db9*/\n    v3 = a1; /*0x180006db9*/\n  v4 = sub_180001820(a1: v2, a2: v3); /*0x180006dbd*/\n  std::ostream::operator<<(a1: v4, a2: sub_180003130); /*0x180006dcc*/\n  result = InitOnceBeginInitialize(lpInitOnce: &InitOnce, dwFlags: 0, &fPending, lpContext: nullptr); /*0x180006de3*/\n  if ( !result ) /*0x180006deb*/\n    abort(); /*0x180006ded*/\n  if ( fPending ) /*0x180006df9*/\n  {\n    if ( Mtx_lock(a1: (_Mtx_t)&unk_180026000) != 0 ) /*0x180006e09*/\n    {\n      std::_Throw_Cpp_error(a1: 5); /*0x180006e6d*/\n      __debugbreak(); /*0x180006e72*/\n    }\n    if ( dword_18002604C == 0x7FFFFFFF ) /*0x180006e15*/\n    {\n      dword_18002604C = 2147483646; /*0x180006e78*/\n      std::_Throw_Cpp_error(a1: 6); /*0x180006e82*/\n      JUMPOUT(0x180006E87LL); /*0x180006e87*/\n    }\n    if ( byte_180027790 == 0 ) /*0x180006e1d*/\n    {\n      LoadStereoEngine(a1); /*0x180006e22*/\n      byte_180027790 = 1; /*0x180006e2e*/\n      Cnd_broadcast(a1: (_Cnd_t)&unk_1800277B0); /*0x180006e35*/\n    }\n    Mtx_unlock(a1: (_Mtx_t)&unk_180026000); /*0x180006e41*/\n    result = InitOnceComplete(lpInitOnce: &InitOnce, dwFlags: 0, lpContext: nullptr); /*0x180006e52*/\n    if ( !result ) /*0x180006e5a*/\n      sub_1800069A0(); /*0x180006e62*/\n  }\n  return result; /*0x180006e5c*/\n}",
+      "refs": [
+        {
+          "addr": "0x180001820",
+          "name": "sub_180001820"
+        },
+        {
+          "addr": "0x18001a138",
+          "name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x18001aa48",
+          "name": "aLoadmediatrans_0",
+          "string": "LoadMediaTransposeEngine cacheDir: "
+        },
+        {
+          "addr": "0x18001a704",
+          "name": "aNull",
+          "string": "null"
+        },
+        {
+          "addr": "0x18001a118",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x180003130",
+          "name": "sub_180003130"
+        },
+        {
+          "addr": "0x18001a0d0",
+          "name": "InitOnceBeginInitialize"
+        },
+        {
+          "addr": "0x180027798",
+          "name": "InitOnce"
+        },
+        {
+          "addr": "0x18001a3d8",
+          "name": "abort"
+        },
+        {
+          "addr": "0x18001714d",
+          "name": "?_Throw_Cpp_error@std@@YAXH@Z"
+        },
+        {
+          "addr": "0x180017170",
+          "name": "_Mtx_lock"
+        },
+        {
+          "addr": "0x180026000",
+          "name": "unk_180026000"
+        },
+        {
+          "addr": "0x18002604c",
+          "name": "dword_18002604C"
+        },
+        {
+          "addr": "0x180016ccd",
+          "name": "LoadStereoEngine"
+        },
+        {
+          "addr": "0x180027790",
+          "name": "byte_180027790"
+        },
+        {
+          "addr": "0x18001717c",
+          "name": "_Cnd_broadcast"
+        },
+        {
+          "addr": "0x1800277b0",
+          "name": "unk_1800277B0"
+        },
+        {
+          "addr": "0x180017176",
+          "name": "_Mtx_unlock"
+        },
+        {
+          "addr": "0x18001a0c8",
+          "name": "InitOnceComplete"
+        },
+        {
+          "addr": "0x1800069a0",
+          "name": "sub_1800069A0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,55 @@
+{
+  "result": [
+    {
+      "addr": "0x1800B24E0",
+      "xrefs": [
+        {
+          "addr": "0x1800b3126",
+          "type": "code",
+          "fn": {
+            "addr": "0x1800b3090",
+            "name": "sub_1800B3090",
+            "size": "0x22b"
+          }
+        },
+        {
+          "addr": "0x1800b3187",
+          "type": "code",
+          "fn": {
+            "addr": "0x1800b3090",
+            "name": "sub_1800B3090",
+            "size": "0x22b"
+          }
+        },
+        {
+          "addr": "0x180141380",
+          "type": "data",
+          "fn": null
+        }
+      ],
+      "more": false,
+      "xref_count": 3
+    },
+    {
+      "addr": "0x180039070",
+      "xrefs": [
+        {
+          "addr": "0x180038ce7",
+          "type": "code",
+          "fn": {
+            "addr": "0x180038b50",
+            "name": "sub_180038B50",
+            "size": "0x1dd"
+          }
+        },
+        {
+          "addr": "0x180140180",
+          "type": "data",
+          "fn": null
+        }
+      ],
+      "more": false,
+      "xref_count": 2
+    }
+  ]
+}

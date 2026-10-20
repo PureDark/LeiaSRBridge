@@ -1,0 +1,101 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":20,\"matches\":[{\"addr\":\"0x1803d6dc8\",\"string\":\"DISPLAYTEXT\"},{\"addr\":\"0x1803eff68\",\"string\":\"setext-track2\"},{\"addr\":\"0x1803f0088\",\"string\":\"setCext-Track2Data\"},{\"addr\":\"0x1803f0238\",\"string\":\"encrypted track 2\"},{\"addr\":\"0x1803f0268\",\"string\":\"cleartext track 2\"},{\"addr\":\"0x1803fa968\",\"string\":\"evp_keyexch_from_algorithm\"},{\"addr\":\"0x180403ec0\",\"string\":\"There are %d, %d, %d elements left on our factors, exps, coeffs stacks\\n\"},{\"addr\":\"0x1804112d0\",\"string\":\"pipeline failure\"},{\"addr\":\"0x18041e100\",\"string\":\"keyEncipherment\"},{\"addr\":\"0x180437150\",\"string\":\"invalid bit string bits left\"},{\"addr\":\"0x180438960\",\"string\":\"broken pipe\"},{\"addr\":\"0x18043aed8\",\"string\":\"pipeline not supported\"},{\"addr\":\"0x18043b0b0\",\"string\":\"too many pipes\"},{\"addr\":\"0x18049aff8\",\"string\":\"right_encode\"},{\"addr\":\"0x180585ec0\",\"string\":\"SOFTWARE\\\\BOE\"},{\"addr\":\"0x180588010\",\"string\":\"AiStereo::YL_SetParax\"},{\"addr\":\"0x1805b6d49\",\"string\":\"YL_SetParax\"},{\"addr\":\"0x1805b9dde\",\"string\":\"EnumDisplayDevicesW\"},{\"addr\":\"0x1805b9e58\",\"string\":\"RegOpenKeyExW\"},{\"addr\":\"0x1805b9e86\",\"string\":\"RegOpenKeyExA\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 20,
+      "matches": [
+        {
+          "addr": "0x1803d6dc8",
+          "string": "DISPLAYTEXT"
+        },
+        {
+          "addr": "0x1803eff68",
+          "string": "setext-track2"
+        },
+        {
+          "addr": "0x1803f0088",
+          "string": "setCext-Track2Data"
+        },
+        {
+          "addr": "0x1803f0238",
+          "string": "encrypted track 2"
+        },
+        {
+          "addr": "0x1803f0268",
+          "string": "cleartext track 2"
+        },
+        {
+          "addr": "0x1803fa968",
+          "string": "evp_keyexch_from_algorithm"
+        },
+        {
+          "addr": "0x180403ec0",
+          "string": "There are %d, %d, %d elements left on our factors, exps, coeffs stacks\n"
+        },
+        {
+          "addr": "0x1804112d0",
+          "string": "pipeline failure"
+        },
+        {
+          "addr": "0x18041e100",
+          "string": "keyEncipherment"
+        },
+        {
+          "addr": "0x180437150",
+          "string": "invalid bit string bits left"
+        },
+        {
+          "addr": "0x180438960",
+          "string": "broken pipe"
+        },
+        {
+          "addr": "0x18043aed8",
+          "string": "pipeline not supported"
+        },
+        {
+          "addr": "0x18043b0b0",
+          "string": "too many pipes"
+        },
+        {
+          "addr": "0x18049aff8",
+          "string": "right_encode"
+        },
+        {
+          "addr": "0x180585ec0",
+          "string": "SOFTWARE\\BOE"
+        },
+        {
+          "addr": "0x180588010",
+          "string": "AiStereo::YL_SetParax"
+        },
+        {
+          "addr": "0x1805b6d49",
+          "string": "YL_SetParax"
+        },
+        {
+          "addr": "0x1805b9dde",
+          "string": "EnumDisplayDevicesW"
+        },
+        {
+          "addr": "0x1805b9e58",
+          "string": "RegOpenKeyExW"
+        },
+        {
+          "addr": "0x1805b9e86",
+          "string": "RegOpenKeyExA"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

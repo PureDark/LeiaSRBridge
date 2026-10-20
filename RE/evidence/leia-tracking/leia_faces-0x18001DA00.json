@@ -1,0 +1,35 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18001DA00\",\"code\":\"__int64 __fastcall sub_18001DA00(struct SR::SRContext *a1)\\n{\\n  struct SR::HeadTracker *v1; // rbx\\n  void *v2; // rax\\n  __int64 result; // rax\\n  void *v4; // [rsp+48h] [rbp+10h]\\n\\n  v1 = SR::HeadTracker::create(a1); /*0x18001da14*/\\n  v2 = operator new(Size: 0x2E0u); /*0x18001da1c*/\\n  v4 = v2; /*0x18001da21*/\\n  __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000030*/\\n  if ( v2 != nullptr ) /*0x18001da29*/\\n  {\\n    result = sub_18001CE30(a1: v2, a2: v1); /*0x18001da31*/\\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000024*/\\n      goto unwind_state_0; /*0xf1c0000000000024*/\\n    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000028*/\\n  }\\n  else\\n  {\\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000010*/\\n    {\\nunwind_state_0:\\n      j_j_free(Block: v4); /*0xf1c0000000000014*/\\n      __eh34_propagate_exception_into_caller(0, -1); /*0xf1c0000000000018*/\\n    }\\n    __eh34_exit_wind_state(0, -1); /*0xf1c000000000001c*/\\n    return 0; /*0x18001da3d*/\\n  }\\n  return result; /*0x18001da37*/\\n}\",\"refs\":[{\"addr\":\"0x1800183d0\",\"name\":\"?create@HeadTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z\"},{\"addr\":\"0x18003c3f8\",\"name\":\"??2@YAPEAX_K@Z\"},{\"addr\":\"0x18001ce30\",\"name\":\"sub_18001CE30\"},{\"addr\":\"0x18003c434\",\"name\":\"j_j_free\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18001DA00",
+      "code": "__int64 __fastcall sub_18001DA00(struct SR::SRContext *a1)\n{\n  struct SR::HeadTracker *v1; // rbx\n  void *v2; // rax\n  __int64 result; // rax\n  void *v4; // [rsp+48h] [rbp+10h]\n\n  v1 = SR::HeadTracker::create(a1); /*0x18001da14*/\n  v2 = operator new(Size: 0x2E0u); /*0x18001da1c*/\n  v4 = v2; /*0x18001da21*/\n  __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000030*/\n  if ( v2 != nullptr ) /*0x18001da29*/\n  {\n    result = sub_18001CE30(a1: v2, a2: v1); /*0x18001da31*/\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000024*/\n      goto unwind_state_0; /*0xf1c0000000000024*/\n    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000028*/\n  }\n  else\n  {\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000010*/\n    {\nunwind_state_0:\n      j_j_free(Block: v4); /*0xf1c0000000000014*/\n      __eh34_propagate_exception_into_caller(0, -1); /*0xf1c0000000000018*/\n    }\n    __eh34_exit_wind_state(0, -1); /*0xf1c000000000001c*/\n    return 0; /*0x18001da3d*/\n  }\n  return result; /*0x18001da37*/\n}",
+      "refs": [
+        {
+          "addr": "0x1800183d0",
+          "name": "?create@HeadTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z"
+        },
+        {
+          "addr": "0x18003c3f8",
+          "name": "??2@YAPEAX_K@Z"
+        },
+        {
+          "addr": "0x18001ce30",
+          "name": "sub_18001CE30"
+        },
+        {
+          "addr": "0x18003c434",
+          "name": "j_j_free"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

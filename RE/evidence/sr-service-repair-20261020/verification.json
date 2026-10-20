@@ -1,0 +1,40 @@
+{
+  "VerifiedAt": "2026-10-20T23:34:08.8608721+08:00",
+  "Services": [
+    {
+      "Name": "SR Eye Tracker",
+      "DisplayName": "Simulated Reality Eye Tracker",
+      "Description": "Provides Simulated Reality (SR) applications with the user抯 eye positions to display content according to the user抯 perspective. If this service is stopped or disabled, SR applications will not be able to use SR features, such as displaying 3D images.",
+      "State": "Running",
+      "StartMode": "Auto",
+      "StartName": "LocalSystem",
+      "PathName": "C:\\Program Files\\LeiaSR\\Tracker\\bin\\SREyeTracker.exe",
+      "ProcessId": 43736,
+      "ExitCode": 0
+    },
+    {
+      "Name": "SR Service",
+      "DisplayName": "Simulated Reality Service",
+      "Description": "Provides Simulated Reality (SR) applications with access to essential SR features. If this service is stopped or disabled, SR applications will not be able to use SR features, such as displaying 3D images.",
+      "State": "Running",
+      "StartMode": "Auto",
+      "StartName": "LocalSystem",
+      "PathName": "C:\\Program Files\\LeiaSR\\Platform\\bin\\SRService.exe",
+      "ProcessId": 19276,
+      "ExitCode": 0
+    }
+  ],
+  "ListeningSockets": [
+    {
+      "LocalAddress": "0.0.0.0",
+      "LocalPort": 53537,
+      "OwningProcess": 19276
+    }
+  ],
+  "ConnectedDevices": 1,
+  "DeviceID": "(811160121, VN022519ET0014)",
+  "NewServiceCrashCount": 0,
+  "NewServiceCrashes": [],
+  "RepairMethod": "Recreated missing service registrations using signed vendor executables with -install",
+  "CauseOfMissingRegistrations": "Unknown"
+}

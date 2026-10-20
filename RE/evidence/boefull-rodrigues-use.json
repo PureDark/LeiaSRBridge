@@ -1,0 +1,63 @@
+{
+  "addr": "0x180039070",
+  "code": "__int64 __fastcall sub_180039070(__int64 a1, __int64 a2, char a3)\n{\n  __int64 v6; // rax\n  __int64 v7; // xmm6_8\n  __int64 v8; // rdx\n  _QWORD *v9; // r8\n  _QWORD *v10; // rcx\n  _QWORD *v11; // rdx\n  __int64 v12; // rsi\n  _QWORD *v13; // rdx\n  cv *v14; // rcx\n  const struct cv::_OutputArray *v15; // rax\n  const struct cv::_OutputArray *v16; // r9\n  __int64 v17; // xmm6_8\n  __int64 v18; // r8\n  _QWORD *v19; // rdx\n  _QWORD *v20; // rcx\n  _QWORD *v21; // rdx\n  __int64 v22; // rsi\n  _QWORD *v23; // rdx\n  cv *v24; // rcx\n  const struct cv::_OutputArray *v25; // rax\n  const struct cv::_OutputArray *v26; // r9\n  double v27; // xmm0_8\n  double v28; // xmm0_8\n  __int64 result; // rax\n  __int128 v30; // [rsp+28h] [rbp-E0h] BYREF\n  _QWORD *v31; // [rsp+38h] [rbp-D0h]\n  __int64 v32; // [rsp+40h] [rbp-C8h]\n  unsigned __int64 v33; // [rsp+48h] [rbp-C0h]\n  __int64 v34; // [rsp+58h] [rbp-B0h] BYREF\n  __int64 v35; // [rsp+60h] [rbp-A8h]\n  _QWORD *v36; // [rsp+68h] [rbp-A0h]\n  __int64 v37; // [rsp+70h] [rbp-98h]\n  unsigned __int64 v38; // [rsp+78h] [rbp-90h]\n  __int64 v39; // [rsp+80h] [rbp-88h] BYREF\n  __int64 v40; // [rsp+88h] [rbp-80h]\n  __int64 v41; // [rsp+90h] [rbp-78h]\n  _QWORD v42[2]; // [rsp+98h] [rbp-70h] BYREF\n  __int64 v43; // [rsp+A8h] [rbp-60h]\n  _DWORD v44[24]; // [rsp+B8h] [rbp-50h] BYREF\n  _DWORD v45[24]; // [rsp+118h] [rbp+10h] BYREF\n  _BYTE v46[96]; // [rsp+178h] [rbp+70h] BYREF\n  _BYTE v47[96]; // [rsp+1D8h] [rbp+D0h] BYREF\n  _BYTE v48[96]; // [rsp+238h] [rbp+130h] BYREF\n  _BYTE v49[96]; // [rsp+298h] [rbp+190h] BYREF\n\n  v6 = sub_180008380(a1); /*0x1800390b1*/\n  v40 = 0; /*0x1800390b9*/\n  v42[0] = \"set transpose mat !!!\"; /*0x1800390c4*/\n  v42[1] = 21; /*0x1800390c8*/\n  v39 = 0; /*0x1800390d9*/\n  v41 = 0; /*0x1800390de*/\n  v30 = 0u; /*0x1800390e7*/\n  v31 = nullptr; /*0x1800390f1*/\n  sub_180005CC0(a1: *(_QWORD *)(v6 + 472), a2: &v30, a3: 1, a4: v42); /*0x18003910b*/\n  cv::Mat::Mat(this: (cv::Mat *)v46, a2: 3, a3: 1, a4: 6); /*0x180039120*/\n  __wind /*0xf1c0000000000070*/\n  {\n    v7 = *(_QWORD *)(a2 + 32); /*0x180039127*/\n    sub_18003A440(a1: &v34, a2: v46); /*0x180039135*/\n    *v36 = v7; /*0x18003913f*/\n    v8 = v34; /*0x180039143*/\n    if ( v34 != 0 ) /*0x18003914b*/\n    {\n      v9 = v36; /*0x18003914d*/\n      v10 = (_QWORD *)((char *)v36 + v35); /*0x180039157*/\n      v36 = v10; /*0x18003915a*/\n      if ( (unsigned __int64)v10 < v38 ) /*0x180039164*/\n        goto LABEL_6; /*0x180039164*/\n      v36 = v9; /*0x180039166*/\n      cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v34, a2: 1, a3: true); /*0x180039177*/\n      v8 = v34; /*0x18003917d*/\n    }\n    v10 = v36; /*0x180039182*/\nLABEL_6:\n    *(_QWORD *)&v30 = v8; /*0x180039187*/\n    *((_QWORD *)&v30 + 1) = v35; /*0x180039191*/\n    v31 = v10; /*0x180039196*/\n    v32 = v37; /*0x1800391a0*/\n    v33 = v38; /*0x1800391aa*/\n    *v10 = *(_QWORD *)(a2 + 40); /*0x1800391b3*/\n    if ( (_QWORD)v30 != 0 ) /*0x1800391bc*/\n    {\n      v11 = v31; /*0x1800391be*/\n      v31 = (_QWORD *)((char *)v31 + *((_QWORD *)&v30 + 1)); /*0x1800391cb*/\n      if ( (unsigned __int64)v31 >= v33 ) /*0x1800391d5*/\n      {\n        v31 = v11; /*0x1800391d7*/\n        cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v30, a2: 1, a3: true); /*0x1800391e9*/\n      }\n    }\n    *v31 = *(_QWORD *)(a2 + 48); /*0x1800391f8*/\n    v12 = v30; /*0x1800391fb*/\n    if ( (_QWORD)v30 != 0 ) /*0x180039203*/\n    {\n      v13 = v31; /*0x180039205*/\n      v31 = (_QWORD *)((char *)v31 + *((_QWORD *)&v30 + 1)); /*0x180039212*/\n      if ( (unsigned __int64)v31 >= v33 ) /*0x18003921c*/\n      {\n        v31 = v13; /*0x18003921e*/\n        cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v30, a2: 1, a3: true); /*0x180039230*/\n        v12 = v30; /*0x180039236*/\n      }\n    }\n    cv::Mat::Mat(this: (cv::Mat *)v44); /*0x18003923f*/\n    __wind /*0xf1c0000000000064*/\n    {\n      v44[0] = (v44[0] & 0xFFFFF000) + 6; /*0x180039251*/\n      sub_18003A520(a1: v44, a2: v12); /*0x18003925b*/\n    }\n    __unwind\n    {\n      cv::Mat::~Mat(this: (cv::Mat *)v44); /*0xf1c000000000005c*/\n    }\n    cv::Mat::Mat(a1: v49, a2: v44); /*0x18003926c*/\n    cv::Mat::~Mat(this: (cv::Mat *)v44); /*0x180039277*/\n    cv::Mat::~Mat(this: (cv::Mat *)v46); /*0x180039282*/\n    v41 = 0; /*0x180039288*/\n    LODWORD(v39) = 33619968; /*0x18003928c*/\n    v40 = a1 + 192; /*0x18003929b*/\n    v43 = 0; /*0x18003929f*/\n    LODWORD(v42[0]) = 16842752; /*0x1800392a3*/\n    v42[1] = v49; /*0x1800392b1*/\n  }\n  __unwind\n  {\n    cv::Mat::~Mat(this: (cv::Mat *)v46); /*0xf1c0000000000080*/\n  }\n  __wind /*0xf1c0000000000088*/\n  {\n    v15 = cv::noArray(this: v14); /*0x1800392b5*/\n    cv::Rodrigues(this: (cv *)v42, a2: (const struct cv::_InputArray *)&v39, a3: v15, a4: v16); /*0x1800392c7*/\n    cv::Mat::Mat(this: (cv::Mat *)v47, a2: 3, a3: 1, a4: 6); /*0x1800392e1*/\n    __wind /*0xf1c0000000000034*/\n    {\n      v17 = *(_QWORD *)(a2 + 56); /*0x1800392e8*/\n      sub_18003A440(a1: &v30, a2: v47); /*0x1800392f9*/\n      *v31 = v17; /*0x180039303*/\n      v18 = v30; /*0x180039307*/\n      if ( (_QWORD)v30 != 0 ) /*0x18003930f*/\n      {\n        v19 = v31; /*0x180039311*/\n        v20 = (_QWORD *)((char *)v31 + *((_QWORD *)&v30 + 1)); /*0x18003931b*/\n        v31 = v20; /*0x18003931e*/\n        if ( (unsigned __int64)v20 < v33 ) /*0x180039328*/\n          goto LABEL_18; /*0x180039328*/\n        v31 = v19; /*0x18003932a*/\n        cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v30, a2: 1, a3: true); /*0x18003933c*/\n        v18 = v30; /*0x180039342*/\n      }\n      v20 = v31; /*0x180039347*/\nLABEL_18:\n      v34 = v18; /*0x18003934c*/\n      v35 = *((_QWORD *)&v30 + 1); /*0x180039356*/\n      v36 = v20; /*0x18003935b*/\n      v37 = v32; /*0x180039365*/\n      v38 = v33; /*0x18003936f*/\n      *v20 = *(_QWORD *)(a2 + 64); /*0x180039378*/\n      if ( v34 != 0 ) /*0x180039381*/\n      {\n        v21 = v36; /*0x180039383*/\n        v36 = (_QWORD *)((char *)v36 + v35); /*0x180039390*/\n        if ( (unsigned __int64)v36 >= v38 ) /*0x18003939a*/\n        {\n          v36 = v21; /*0x18003939c*/\n          cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v34, a2: 1, a3: true); /*0x1800393ae*/\n        }\n      }\n      *v36 = *(_QWORD *)(a2 + 72); /*0x1800393bd*/\n      v22 = v34; /*0x1800393c0*/\n      if ( v34 != 0 ) /*0x1800393c8*/\n      {\n        v23 = v36; /*0x1800393ca*/\n        v36 = (_QWORD *)((char *)v36 + v35); /*0x1800393d7*/\n        if ( (unsigned __int64)v36 >= v38 ) /*0x1800393e1*/\n        {\n          v36 = v23; /*0x1800393e3*/\n          cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v34, a2: 1, a3: true); /*0x1800393f5*/\n          v22 = v34; /*0x1800393fb*/\n        }\n      }\n      cv::Mat::Mat(this: (cv::Mat *)v45); /*0x180039404*/\n      __wind /*0xf1c0000000000028*/\n      {\n        v45[0] = (v45[0] & 0xFFFFF000) + 6; /*0x180039416*/\n        sub_18003A520(a1: v45, a2: v22); /*0x180039420*/\n      }\n      __unwind\n      {\n        cv::Mat::~Mat(this: (cv::Mat *)v45); /*0xf1c0000000000020*/\n      }\n      cv::Mat::Mat(a1: v48, a2: v45); /*0x180039431*/\n      cv::Mat::~Mat(this: (cv::Mat *)v45); /*0x18003943c*/\n      cv::Mat::~Mat(this: (cv::Mat *)v47); /*0x18003944a*/\n      v41 = 0; /*0x180039450*/\n      LODWORD(v39) = 33619968; /*0x180039454*/\n      v40 = a1 + 672; /*0x180039463*/\n      v43 = 0; /*0x180039467*/\n      LODWORD(v42[0]) = 16842752; /*0x18003946b*/\n      v42[1] = v48; /*0x180039479*/\n    }\n    __unwind\n    {\n      cv::Mat::~Mat(this: (cv::Mat *)v47); /*0xf1c0000000000044*/\n    }\n    __wind /*0xf1c000000000004c*/\n    {\n      v25 = cv::noArray(this: v24); /*0x18003947d*/\n      cv::Rodrigues(this: (cv *)v42, a2: (const struct cv::_InputArray *)&v39, a3: v25, a4: v26); /*0x18003948f*/\n      **(_QWORD **)(a1 + 304) = *(_QWORD *)a2; /*0x18003949f*/\n      *(_QWORD *)(*(_QWORD *)(a1 + 304) + 16LL) = *(_QWORD *)(a2 + 8); /*0x1800394ad*/\n      *(_QWORD *)(**(_QWORD **)(a1 + 360) + *(_QWORD *)(a1 + 304) + 8LL) = *(_QWORD *)a2; /*0x1800394c5*/\n      *(_QWORD *)(**(_QWORD **)(a1 + 360) + *(_QWORD *)(a1 + 304) + 16LL) = *(_QWORD *)(a2 + 16); /*0x1800394df*/\n      *(_QWORD *)(*(_QWORD *)(a1 + 304) + 2LL * **(_QWORD **)(a1 + 360) + 16) = 0x3FF0000000000000LL; /*0x1800394ff*/\n      **(_QWORD **)(a1 + 784) = *(_QWORD *)a2; /*0x18003950e*/\n      *(_QWORD *)(*(_QWORD *)(a1 + 784) + 16LL) = *(_QWORD *)(a2 + 8); /*0x18003951c*/\n      v27 = *(double *)(a2 + 24); /*0x180039520*/\n      if ( a3 != 0 ) /*0x18003953b*/\n        v27 = v27 * -1.0; /*0x18003953d*/\n      *(double *)(*(_QWORD *)(a1 + 784) + 24LL) = v27 * *(double *)a2; /*0x180039545*/\n      *(_QWORD *)(**(_QWORD **)(a1 + 840) + *(_QWORD *)(a1 + 784) + 8LL) = *(_QWORD *)a2; /*0x18003955e*/\n      *(_QWORD *)(**(_QWORD **)(a1 + 840) + *(_QWORD *)(a1 + 784) + 16LL) = *(_QWORD *)(a2 + 16); /*0x180039578*/\n      *(_QWORD *)(*(_QWORD *)(a1 + 784) + 2LL * **(_QWORD **)(a1 + 840) + 16) = 0x3FF0000000000000LL; /*0x18003958e*/\n      v28 = *(double *)(a2 + 24); /*0x180039593*/\n      if ( a3 != 0 ) /*0x1800395a2*/\n        v28 = v28 * -1.0; /*0x1800395a4*/\n      **(double **)(a1 + 400) = v28; /*0x1800395a8*/\n    }\n    __unwind\n    {\n      cv::Mat::~Mat(this: (cv::Mat *)v48); /*0xf1c0000000000014*/\n    }\n    cv::Mat::~Mat(this: (cv::Mat *)v48); /*0x1800395b3*/\n    cv::Mat::~Mat(this: (cv::Mat *)v49); /*0x1800395c1*/\n    result = 1; /*0x1800395c7*/\n  }\n  __unwind\n  {\n    cv::Mat::~Mat(this: (cv::Mat *)v49); /*0xf1c0000000000008*/\n  }\n  return result; /*0x1800395cc*/\n}",
+  "refs": [
+    {
+      "addr": "0x180008380",
+      "name": "sub_180008380"
+    },
+    {
+      "addr": "0x18010ebb8",
+      "name": "aSetTransposeMa",
+      "string": "set transpose mat !!!"
+    },
+    {
+      "addr": "0x180005cc0",
+      "name": "sub_180005CC0"
+    },
+    {
+      "addr": "0x1800fd4e8",
+      "name": "??0Mat@cv@@QEAA@HHH@Z"
+    },
+    {
+      "addr": "0x18003a440",
+      "name": "sub_18003A440"
+    },
+    {
+      "addr": "0x1800fd538",
+      "name": "?seek@MatConstIterator@cv@@QEAAX_J_N@Z"
+    },
+    {
+      "addr": "0x1800fd578",
+      "name": "??0Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x18003a520",
+      "name": "sub_18003A520"
+    },
+    {
+      "addr": "0x1800b4b26",
+      "name": "??1Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x1800fd548",
+      "name": "??0Mat@cv@@QEAA@$$QEAV01@@Z"
+    },
+    {
+      "addr": "0x1800fd580",
+      "name": "__imp_??1Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x180038850",
+      "name": "??1Mat@cv@@QEAA@XZ_0"
+    },
+    {
+      "addr": "0x1800fd4e0",
+      "name": "?noArray@cv@@YAAEBV_InputOutputArray@1@XZ"
+    },
+    {
+      "addr": "0x1800fd4b8",
+      "name": "?Rodrigues@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@1@Z"
+    }
+  ]
+}

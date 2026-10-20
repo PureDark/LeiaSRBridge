@@ -1,0 +1,71 @@
+{
+  "database": "interlace",
+  "queries": [
+    {
+      "addr": "0x180058EB0",
+      "include_strings": false,
+      "include_disasm": false,
+      "include_callers": false,
+      "include_callees": false,
+      "include_xrefs": false,
+      "include_constants": false,
+      "include_decompile": true,
+      "include_basic_blocks": false
+    },
+    {
+      "addr": "0x18005E9B0",
+      "include_strings": false,
+      "include_disasm": false,
+      "include_callers": false,
+      "include_callees": false,
+      "include_xrefs": false,
+      "include_constants": false,
+      "include_decompile": true,
+      "include_basic_blocks": false
+    },
+    {
+      "addr": "0x18005D900",
+      "include_strings": false,
+      "include_disasm": false,
+      "include_callers": false,
+      "include_callees": false,
+      "include_xrefs": false,
+      "include_constants": false,
+      "include_decompile": true,
+      "include_basic_blocks": false
+    },
+    {
+      "addr": "0x18005DB00",
+      "include_strings": false,
+      "include_disasm": false,
+      "include_callers": false,
+      "include_callees": false,
+      "include_xrefs": false,
+      "include_constants": false,
+      "include_decompile": true,
+      "include_basic_blocks": false
+    },
+    {
+      "addr": "0x18005E380",
+      "include_strings": false,
+      "include_disasm": false,
+      "include_callers": false,
+      "include_callees": false,
+      "include_xrefs": false,
+      "include_constants": false,
+      "include_decompile": true,
+      "include_basic_blocks": false
+    },
+    {
+      "addr": "0x18005C640",
+      "include_strings": false,
+      "include_disasm": false,
+      "include_callers": false,
+      "include_callees": false,
+      "include_xrefs": false,
+      "include_constants": false,
+      "include_decompile": true,
+      "include_basic_blocks": false
+    }
+  ]
+}

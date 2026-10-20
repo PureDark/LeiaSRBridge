@@ -1,0 +1,93 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1801405f0\",\"code\":\"char __fastcall sub_1801405F0(__int64 a1, __int64 a2)\\n{\\n  volatile signed __int32 *v4; // rbx\\n  int (__fastcall *v5)(__int64, void *, __int64, _QWORD, __int64 *); // rsi\\n  __int64 *v6; // rbx\\n  __int64 v7; // rcx\\n  char result; // al\\n  void *v9; // [rsp+30h] [rbp-9h] BYREF\\n  __int64 v10; // [rsp+38h] [rbp-1h]\\n  __int64 v11; // [rsp+40h] [rbp+7h] BYREF\\n  volatile signed __int32 *v12; // [rsp+48h] [rbp+Fh]\\n  __int128 v13; // [rsp+50h] [rbp+17h]\\n  const char *v14; // [rsp+60h] [rbp+27h]\\n  __int128 v15; // [rsp+70h] [rbp+37h] BYREF\\n  const char *v16; // [rsp+80h] [rbp+47h]\\n\\n  if ( (*(int (__fastcall **)(__int64, void *, __int64, _QWORD, __int64))(*(_QWORD *)a2 + 96LL))( /*0x180140636*/\\n         a1: a2,\\n         a2: &unk_18057D180,\\n         a3: 716,\\n         a4: 0,\\n         a5: a1 + 8) >= 0 )\\n  {\\n    __wind /*0xf1c0000000000064*/\\n    {\\n      v5 = *(int (__fastcall **)(__int64, void *, __int64, _QWORD, __int64 *))(*(_QWORD *)a2 + 120LL); /*0x180140726*/\\n      v6 = (__int64 *)(a1 + 16); /*0x18014072a*/\\n      v7 = *v6; /*0x18014072e*/\\n      if ( *v6 != 0 ) /*0x180140734*/\\n      {\\n        *v6 = 0; /*0x180140736*/\\n        (*(void (__fastcall **)(__int64))(*(_QWORD *)v7 + 16LL))(a1: v7); /*0x180140740*/\\n      }\\n    }\\n    __unwind\\n    {\\n      __std_terminate(); /*0x1803b49be*/\\n    }\\n    if ( v5(a1: a2, a2: &unk_18057D450, a3: 18440, a4: 0, a5: v6) >= 0 ) /*0x180140760*/\\n      return 1; /*0x180140897*/\\n    if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x180140787*/\\n                                     + 16LL) )\\n    {\\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x180140790*/\\n      if ( dword_1805C9A98 == -1 ) /*0x18014079c*/\\n      {\\n        __wind /*0xf1c0000000000040*/\\n        {\\n          xmmword_1805C9820 = 0; /*0x1801407a1*/\\n          sub_180116C20(); /*0x1801407a8*/\\n          atexit(a1: sub_1803B9F10); /*0x1801407b4*/\\n          sub_1803B37CC(a1: &dword_1805C9A98); /*0x1801407c1*/\\n        }\\n        __unwind\\n        {\\n          sub_1803B3790(a1: &dword_1805C9A98); /*0x1803b7d6f*/\\n        }\\n      }\\n    }\\n    __eh34_enter_wind_state(-1, 1); /*0xf1c0000000000038*/\\n    v4 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801407c6*/\\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x1801407d0*/\\n    {\\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x1801407d2*/\\n      v4 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801407d6*/\\n    }\\n    v11 = xmmword_1805C9820; /*0x1801407e4*/\\n    v12 = v4; /*0x1801407e8*/\\n    *(_QWORD *)&v13 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\Core\\\\\\\\StereoProcess2.cpp\\\"; /*0x1801407f3*/\\n    DWORD2(v13) = 212; /*0x1801407f7*/\\n    HIDWORD(v13) = HIDWORD(v15); /*0x180140801*/\\n    v14 = \\\"AiStereo::StereoProcess2::CreateShader\\\"; /*0x18014080b*/\\n    v9 = &unk_1805859C8; /*0x180140816*/\\n    v10 = 22; /*0x18014081a*/\\n    v15 = v13; /*0x180140826*/\\n    v16 = \\\"AiStereo::StereoProcess2::CreateShader\\\"; /*0x18014082f*/\\n    sub_180114050(a1: xmmword_1805C9820, a2: &v15, a3: 2, a4: &v9); /*0x180140842*/\\n  }\\n  else\\n  {\\n    if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x18014065d*/\\n                                     + 16LL) )\\n    {\\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x180140666*/\\n      if ( dword_1805C9A98 == -1 ) /*0x180140672*/\\n      {\\n        __wind /*0xf1c0000000000078*/\\n        {\\n          xmmword_1805C9820 = 0; /*0x180140677*/\\n          sub_180116C20(); /*0x18014067e*/\\n          atexit(a1: sub_1803B9F10); /*0x18014068a*/\\n          sub_1803B37CC(a1: &dword_1805C9A98); /*0x180140697*/\\n        }\\n        __unwind\\n        {\\n          sub_1803B3790(a1: &dword_1805C9A98); /*0x1803b7d57*/\\n        }\\n      }\\n    }\\n    __eh34_enter_wind_state(-1, 1); /*0xf1c0000000000070*/\\n    v4 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18014069c*/\\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x1801406a6*/\\n    {\\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x1801406a8*/\\n      v4 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801406ac*/\\n    }\\n    v11 = xmmword_1805C9820; /*0x1801406ba*/\\n    v12 = v4; /*0x1801406be*/\\n    *(_QWORD *)&v13 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\Core\\\\\\\\StereoProcess2.cpp\\\"; /*0x1801406c9*/\\n    DWORD2(v13) = 180; /*0x1801406cd*/\\n    HIDWORD(v13) = HIDWORD(v15); /*0x1801406d7*/\\n    v14 = \\\"AiStereo::StereoProcess2::CreateShader\\\"; /*0x1801406e1*/\\n    v9 = &unk_1805859B0; /*0x1801406ec*/\\n    v10 = 22; /*0x1801406f0*/\\n    v15 = v13; /*0x1801406fc*/\\n    v16 = \\\"AiStereo::StereoProcess2::CreateShader\\\"; /*0x180140705*/\\n    sub_180114050(a1: xmmword_1805C9820, a2: &v15, a3: 2, a4: &v9); /*0x180140718*/\\n  }\\n  if ( v4 != nullptr && _InterlockedExchangeAdd(v4 + 2, 0xFFFFFFFF) == 1 ) /*0x18014085c*/\\n  {\\n    (**(void (__fastcall ***)(volatile signed __int32 *))v4)(a1: v4); /*0x180140864*/\\n    if ( _InterlockedExchangeAdd(v4 + 3, 0xFFFFFFFF) == 1 ) /*0x18014086e*/\\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v4 + 8LL))(a1: v4); /*0x180140876*/\\n  }\\n  result = 0; /*0x180140879*/\\n  if ( __eh34_unwind(1) ) /*0xf1c0000000000024*/\\n  {\\n    sub_18011BED0(a1: &v11); /*0xf1c0000000000028*/\\n    __eh34_propagate_exception_into_caller(1, -1); /*0xf1c000000000002c*/\\n  }\\n  __eh34_exit_wind_state(1, -1); /*0xf1c0000000000030*/\\n  return result; /*0x18014087f*/\\n}\",\"refs\":[{\"addr\":\"0x1803bb770\",\"name\":\"__imp___std_terminate\"},{\"addr\":\"0x18057d450\",\"name\":\"unk_18057D450\"},{\"addr\":\"0x1803b3838\",\"name\":\"sub_1803B3838\"},{\"addr\":\"0x1805c9a98\",\"name\":\"dword_1805C9A98\"},{\"addr\":\"0x1805c9820\",\"name\":\"xmmword_1805C9820\"},{\"addr\":\"0x180116c20\",\"name\":\"sub_180116C20\"},{\"addr\":\"0x1803b3744\",\"name\":\"atexit\"},{\"addr\":\"0x1803b9f10\",\"name\":\"sub_1803B9F10\"},{\"addr\":\"0x1803b37cc\",\"name\":\"sub_1803B37CC\"},{\"addr\":\"0x1803b3790\",\"name\":\"sub_1803B3790\"},{\"addr\":\"0x1805c973c\",\"name\":\"TlsIndex\"},{\"addr\":\"0x180585a30\",\"name\":\"aJProjectVsproj_5\",\"string\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\StereoProcess2.cpp\"},{\"addr\":\"0x180585a00\",\"name\":\"aAistereoStereo_4\",\"string\":\"AiStereo::StereoProcess2::CreateShader\"},{\"addr\":\"0x1805859c8\",\"name\":\"unk_1805859C8\"},{\"addr\":\"0x180114050\",\"name\":\"sub_180114050\"},{\"addr\":\"0x1805859b0\",\"name\":\"unk_1805859B0\"},{\"addr\":\"0x18057d180\",\"name\":\"unk_18057D180\"},{\"addr\":\"0x18011bed0\",\"name\":\"sub_18011BED0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1801405f0",
+      "code": "char __fastcall sub_1801405F0(__int64 a1, __int64 a2)\n{\n  volatile signed __int32 *v4; // rbx\n  int (__fastcall *v5)(__int64, void *, __int64, _QWORD, __int64 *); // rsi\n  __int64 *v6; // rbx\n  __int64 v7; // rcx\n  char result; // al\n  void *v9; // [rsp+30h] [rbp-9h] BYREF\n  __int64 v10; // [rsp+38h] [rbp-1h]\n  __int64 v11; // [rsp+40h] [rbp+7h] BYREF\n  volatile signed __int32 *v12; // [rsp+48h] [rbp+Fh]\n  __int128 v13; // [rsp+50h] [rbp+17h]\n  const char *v14; // [rsp+60h] [rbp+27h]\n  __int128 v15; // [rsp+70h] [rbp+37h] BYREF\n  const char *v16; // [rsp+80h] [rbp+47h]\n\n  if ( (*(int (__fastcall **)(__int64, void *, __int64, _QWORD, __int64))(*(_QWORD *)a2 + 96LL))( /*0x180140636*/\n         a1: a2,\n         a2: &unk_18057D180,\n         a3: 716,\n         a4: 0,\n         a5: a1 + 8) >= 0 )\n  {\n    __wind /*0xf1c0000000000064*/\n    {\n      v5 = *(int (__fastcall **)(__int64, void *, __int64, _QWORD, __int64 *))(*(_QWORD *)a2 + 120LL); /*0x180140726*/\n      v6 = (__int64 *)(a1 + 16); /*0x18014072a*/\n      v7 = *v6; /*0x18014072e*/\n      if ( *v6 != 0 ) /*0x180140734*/\n      {\n        *v6 = 0; /*0x180140736*/\n        (*(void (__fastcall **)(__int64))(*(_QWORD *)v7 + 16LL))(a1: v7); /*0x180140740*/\n      }\n    }\n    __unwind\n    {\n      __std_terminate(); /*0x1803b49be*/\n    }\n    if ( v5(a1: a2, a2: &unk_18057D450, a3: 18440, a4: 0, a5: v6) >= 0 ) /*0x180140760*/\n      return 1; /*0x180140897*/\n    if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x180140787*/\n                                     + 16LL) )\n    {\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x180140790*/\n      if ( dword_1805C9A98 == -1 ) /*0x18014079c*/\n      {\n        __wind /*0xf1c0000000000040*/\n        {\n          xmmword_1805C9820 = 0; /*0x1801407a1*/\n          sub_180116C20(); /*0x1801407a8*/\n          atexit(a1: sub_1803B9F10); /*0x1801407b4*/\n          sub_1803B37CC(a1: &dword_1805C9A98); /*0x1801407c1*/\n        }\n        __unwind\n        {\n          sub_1803B3790(a1: &dword_1805C9A98); /*0x1803b7d6f*/\n        }\n      }\n    }\n    __eh34_enter_wind_state(-1, 1); /*0xf1c0000000000038*/\n    v4 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801407c6*/\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x1801407d0*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x1801407d2*/\n      v4 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801407d6*/\n    }\n    v11 = xmmword_1805C9820; /*0x1801407e4*/\n    v12 = v4; /*0x1801407e8*/\n    *(_QWORD *)&v13 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\StereoProcess2.cpp\"; /*0x1801407f3*/\n    DWORD2(v13) = 212; /*0x1801407f7*/\n    HIDWORD(v13) = HIDWORD(v15); /*0x180140801*/\n    v14 = \"AiStereo::StereoProcess2::CreateShader\"; /*0x18014080b*/\n    v9 = &unk_1805859C8; /*0x180140816*/\n    v10 = 22; /*0x18014081a*/\n    v15 = v13; /*0x180140826*/\n    v16 = \"AiStereo::StereoProcess2::CreateShader\"; /*0x18014082f*/\n    sub_180114050(a1: xmmword_1805C9820, a2: &v15, a3: 2, a4: &v9); /*0x180140842*/\n  }\n  else\n  {\n    if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x18014065d*/\n                                     + 16LL) )\n    {\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x180140666*/\n      if ( dword_1805C9A98 == -1 ) /*0x180140672*/\n      {\n        __wind /*0xf1c0000000000078*/\n        {\n          xmmword_1805C9820 = 0; /*0x180140677*/\n          sub_180116C20(); /*0x18014067e*/\n          atexit(a1: sub_1803B9F10); /*0x18014068a*/\n          sub_1803B37CC(a1: &dword_1805C9A98); /*0x180140697*/\n        }\n        __unwind\n        {\n          sub_1803B3790(a1: &dword_1805C9A98); /*0x1803b7d57*/\n        }\n      }\n    }\n    __eh34_enter_wind_state(-1, 1); /*0xf1c0000000000070*/\n    v4 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18014069c*/\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x1801406a6*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x1801406a8*/\n      v4 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801406ac*/\n    }\n    v11 = xmmword_1805C9820; /*0x1801406ba*/\n    v12 = v4; /*0x1801406be*/\n    *(_QWORD *)&v13 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\StereoProcess2.cpp\"; /*0x1801406c9*/\n    DWORD2(v13) = 180; /*0x1801406cd*/\n    HIDWORD(v13) = HIDWORD(v15); /*0x1801406d7*/\n    v14 = \"AiStereo::StereoProcess2::CreateShader\"; /*0x1801406e1*/\n    v9 = &unk_1805859B0; /*0x1801406ec*/\n    v10 = 22; /*0x1801406f0*/\n    v15 = v13; /*0x1801406fc*/\n    v16 = \"AiStereo::StereoProcess2::CreateShader\"; /*0x180140705*/\n    sub_180114050(a1: xmmword_1805C9820, a2: &v15, a3: 2, a4: &v9); /*0x180140718*/\n  }\n  if ( v4 != nullptr && _InterlockedExchangeAdd(v4 + 2, 0xFFFFFFFF) == 1 ) /*0x18014085c*/\n  {\n    (**(void (__fastcall ***)(volatile signed __int32 *))v4)(a1: v4); /*0x180140864*/\n    if ( _InterlockedExchangeAdd(v4 + 3, 0xFFFFFFFF) == 1 ) /*0x18014086e*/\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v4 + 8LL))(a1: v4); /*0x180140876*/\n  }\n  result = 0; /*0x180140879*/\n  if ( __eh34_unwind(1) ) /*0xf1c0000000000024*/\n  {\n    sub_18011BED0(a1: &v11); /*0xf1c0000000000028*/\n    __eh34_propagate_exception_into_caller(1, -1); /*0xf1c000000000002c*/\n  }\n  __eh34_exit_wind_state(1, -1); /*0xf1c0000000000030*/\n  return result; /*0x18014087f*/\n}",
+      "refs": [
+        {
+          "addr": "0x1803bb770",
+          "name": "__imp___std_terminate"
+        },
+        {
+          "addr": "0x18057d450",
+          "name": "unk_18057D450"
+        },
+        {
+          "addr": "0x1803b3838",
+          "name": "sub_1803B3838"
+        },
+        {
+          "addr": "0x1805c9a98",
+          "name": "dword_1805C9A98"
+        },
+        {
+          "addr": "0x1805c9820",
+          "name": "xmmword_1805C9820"
+        },
+        {
+          "addr": "0x180116c20",
+          "name": "sub_180116C20"
+        },
+        {
+          "addr": "0x1803b3744",
+          "name": "atexit"
+        },
+        {
+          "addr": "0x1803b9f10",
+          "name": "sub_1803B9F10"
+        },
+        {
+          "addr": "0x1803b37cc",
+          "name": "sub_1803B37CC"
+        },
+        {
+          "addr": "0x1803b3790",
+          "name": "sub_1803B3790"
+        },
+        {
+          "addr": "0x1805c973c",
+          "name": "TlsIndex"
+        },
+        {
+          "addr": "0x180585a30",
+          "name": "aJProjectVsproj_5",
+          "string": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\Core\\StereoProcess2.cpp"
+        },
+        {
+          "addr": "0x180585a00",
+          "name": "aAistereoStereo_4",
+          "string": "AiStereo::StereoProcess2::CreateShader"
+        },
+        {
+          "addr": "0x1805859c8",
+          "name": "unk_1805859C8"
+        },
+        {
+          "addr": "0x180114050",
+          "name": "sub_180114050"
+        },
+        {
+          "addr": "0x1805859b0",
+          "name": "unk_1805859B0"
+        },
+        {
+          "addr": "0x18057d180",
+          "name": "unk_18057D180"
+        },
+        {
+          "addr": "0x18011bed0",
+          "name": "sub_18011BED0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

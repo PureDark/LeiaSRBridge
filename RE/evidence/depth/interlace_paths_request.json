@@ -1,0 +1,82 @@
+{
+  "queries": [
+    {
+      "include_decompile": true,
+      "include_callers": false,
+      "include_xrefs": false,
+      "addr": "0x180058d60",
+      "include_constants": false,
+      "include_basic_blocks": false,
+      "include_callees": false,
+      "include_disasm": false,
+      "include_strings": false
+    },
+    {
+      "include_decompile": true,
+      "include_callers": false,
+      "include_xrefs": false,
+      "addr": "0x180058eb0",
+      "include_constants": false,
+      "include_basic_blocks": false,
+      "include_callees": false,
+      "include_disasm": false,
+      "include_strings": false
+    },
+    {
+      "include_decompile": true,
+      "include_callers": false,
+      "include_xrefs": false,
+      "addr": "0x18005d6b0",
+      "include_constants": false,
+      "include_basic_blocks": false,
+      "include_callees": false,
+      "include_disasm": false,
+      "include_strings": false
+    },
+    {
+      "include_decompile": true,
+      "include_callers": false,
+      "include_xrefs": false,
+      "addr": "0x18005e9b0",
+      "include_constants": false,
+      "include_basic_blocks": false,
+      "include_callees": false,
+      "include_disasm": false,
+      "include_strings": false
+    },
+    {
+      "include_decompile": true,
+      "include_callers": false,
+      "include_xrefs": false,
+      "addr": "0x18005FCE0",
+      "include_constants": false,
+      "include_basic_blocks": false,
+      "include_callees": false,
+      "include_disasm": false,
+      "include_strings": false
+    },
+    {
+      "include_decompile": true,
+      "include_callers": false,
+      "include_xrefs": false,
+      "addr": "0x18005EBD0",
+      "include_constants": false,
+      "include_basic_blocks": false,
+      "include_callees": false,
+      "include_disasm": false,
+      "include_strings": false
+    },
+    {
+      "include_decompile": true,
+      "include_callers": false,
+      "include_xrefs": false,
+      "addr": "0x18005FF20",
+      "include_constants": false,
+      "include_basic_blocks": false,
+      "include_callees": false,
+      "include_disasm": false,
+      "include_strings": false
+    }
+  ],
+  "database": "interlace"
+}

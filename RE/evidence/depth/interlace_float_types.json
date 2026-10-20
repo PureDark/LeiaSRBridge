@@ -1,0 +1,35 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"edit\":{\"addr\":\"0x18005F530\",\"kind\":\"function\",\"signature\":\"void *__fastcall BOE_MapShaderConstants(void *self, float x, float y, float z, unsigned int mode, int inputWidth, int inputHeight);\"},\"kind\":\"function\",\"ok\":true},{\"edit\":{\"addr\":\"0x180058A00\",\"kind\":\"function\",\"signature\":\"float *__fastcall BOE_MakeFloat3(float *result, float x, float y, float z);\"},\"kind\":\"function\",\"ok\":true}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "edit": {
+            "addr": "0x18005F530",
+            "kind": "function",
+            "signature": "void *__fastcall BOE_MapShaderConstants(void *self, float x, float y, float z, unsigned int mode, int inputWidth, int inputHeight);"
+          },
+          "kind": "function",
+          "ok": true
+        },
+        {
+          "edit": {
+            "addr": "0x180058A00",
+            "kind": "function",
+            "signature": "float *__fastcall BOE_MakeFloat3(float *result, float x, float y, float z);"
+          },
+          "kind": "function",
+          "ok": true
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

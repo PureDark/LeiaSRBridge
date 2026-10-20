@@ -1,0 +1,77 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"func\":[{\"addr\":\"0x180117990\",\"old\":\"sub_180117990\",\"name\":\"AiStereo_Core_getModel_XorYL1102\",\"dir\":\"vibe\"},{\"addr\":\"0x180137000\",\"old\":\"sub_180137000\",\"name\":\"AiStereo_DepthEngineVino_GetWeightTensor\",\"dir\":\"vibe\"},{\"addr\":\"0x18014ca40\",\"old\":\"sub_18014CA40\",\"name\":\"AiStereo_DepthEngineVino_ctor\",\"dir\":\"vibe\"},{\"addr\":\"0x18013d570\",\"old\":\"sub_18013D570\",\"name\":\"AiStereo_StereoGraphicsEngine_ctor\",\"dir\":\"vibe\"},{\"addr\":\"0x18013d990\",\"old\":\"sub_18013D990\",\"name\":\"AiStereo_StereoGraphicsEngine_InitD3D11\",\"dir\":\"vibe\"},{\"addr\":\"0x18013ebe0\",\"old\":\"sub_18013EBE0\",\"name\":\"AiStereo_StereoGraphicsEngine_SetFrameSize\",\"dir\":\"vibe\"},{\"addr\":\"0x18013ecc0\",\"old\":\"sub_18013ECC0\",\"name\":\"AiStereo_StereoGraphicsEngine_RenderMonoToSBS\",\"dir\":\"vibe\"},{\"addr\":\"0x1801405f0\",\"old\":\"sub_1801405F0\",\"name\":\"AiStereo_StereoProcess2_CreateShader\",\"dir\":\"vibe\"},{\"addr\":\"0x18013f360\",\"old\":\"sub_18013F360\",\"name\":\"AiStereo_StereoGraphicsEngine_SetParax\",\"dir\":\"vibe\"}],\"summary\":{\"total\":9,\"ok\":9,\"failed\":0,\"stopped\":false}}"
+      }
+    ],
+    "structuredContent": {
+      "func": [
+        {
+          "addr": "0x180117990",
+          "old": "sub_180117990",
+          "name": "AiStereo_Core_getModel_XorYL1102",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180137000",
+          "old": "sub_180137000",
+          "name": "AiStereo_DepthEngineVino_GetWeightTensor",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18014ca40",
+          "old": "sub_18014CA40",
+          "name": "AiStereo_DepthEngineVino_ctor",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18013d570",
+          "old": "sub_18013D570",
+          "name": "AiStereo_StereoGraphicsEngine_ctor",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18013d990",
+          "old": "sub_18013D990",
+          "name": "AiStereo_StereoGraphicsEngine_InitD3D11",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18013ebe0",
+          "old": "sub_18013EBE0",
+          "name": "AiStereo_StereoGraphicsEngine_SetFrameSize",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18013ecc0",
+          "old": "sub_18013ECC0",
+          "name": "AiStereo_StereoGraphicsEngine_RenderMonoToSBS",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1801405f0",
+          "old": "sub_1801405F0",
+          "name": "AiStereo_StereoProcess2_CreateShader",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18013f360",
+          "old": "sub_18013F360",
+          "name": "AiStereo_StereoGraphicsEngine_SetParax",
+          "dir": "vibe"
+        }
+      ],
+      "summary": {
+        "total": 9,
+        "ok": 9,
+        "failed": 0,
+        "stopped": false
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

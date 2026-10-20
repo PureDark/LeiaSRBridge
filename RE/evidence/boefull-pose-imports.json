@@ -1,0 +1,24 @@
+{
+  "result": [
+    {
+      "data": [
+        {
+          "addr": "0x1800fd468",
+          "imported_name": "?solvePnP@cv@@YA_NAEBV_InputArray@1@000AEBV_OutputArray@1@1_NH@Z",
+          "module": "opencv_world4110"
+        }
+      ],
+      "next_offset": null
+    },
+    {
+      "data": [
+        {
+          "addr": "0x1800fd4b8",
+          "imported_name": "?Rodrigues@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@1@Z",
+          "module": "opencv_world4110"
+        }
+      ],
+      "next_offset": null
+    }
+  ]
+}

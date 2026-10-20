@@ -1,0 +1,119 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x1800272D0\",\"xrefs\":[{\"addr\":\"0x18003446f\",\"type\":\"code\",\"fn\":{\"addr\":\"0x1800323c0\",\"name\":\"sub_1800323C0\",\"size\":\"0x2a1a\"}},{\"addr\":\"0x18009dc94\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x18009e486\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x18009e949\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x18009ed7d\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x18009f3f1\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x18009f569\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x18009f8e8\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x18009fe88\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x1800a023f\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18009cc80\",\"name\":\"sub_18009CC80\",\"size\":\"0x3e8b\"}},{\"addr\":\"0x18013f370\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":11}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x1800272D0",
+          "xrefs": [
+            {
+              "addr": "0x18003446f",
+              "type": "code",
+              "fn": {
+                "addr": "0x1800323c0",
+                "name": "sub_1800323C0",
+                "size": "0x2a1a"
+              }
+            },
+            {
+              "addr": "0x18009dc94",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x18009e486",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x18009e949",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x18009ed7d",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x18009f3f1",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x18009f569",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x18009f8e8",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x18009fe88",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x1800a023f",
+              "type": "code",
+              "fn": {
+                "addr": "0x18009cc80",
+                "name": "sub_18009CC80",
+                "size": "0x3e8b"
+              }
+            },
+            {
+              "addr": "0x18013f370",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 11
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

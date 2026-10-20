@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"pose\",\"backend\":\"worker\",\"owned\":true,\"saved\":null,\"message\":\"Session closed: BOE_3DET_SDK.dll.i64 (pose)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "pose",
+      "backend": "worker",
+      "owned": true,
+      "saved": null,
+      "message": "Session closed: BOE_3DET_SDK.dll.i64 (pose)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

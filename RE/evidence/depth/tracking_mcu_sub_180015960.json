@@ -1,0 +1,69 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180015960\",\"code\":\"__int64 __fastcall sub_180015960(__int64 a1, __int64 a2)\\n{\\n  __int64 v2; // rax\\n  __int64 v4; // rax\\n  int i; // [rsp+20h] [rbp-58h]\\n  __int64 v6; // [rsp+30h] [rbp-48h]\\n  _BYTE v7[8]; // [rsp+40h] [rbp-38h] BYREF\\n  _BYTE v8[16]; // [rsp+48h] [rbp-30h] BYREF\\n  _BYTE v9[8]; // [rsp+58h] [rbp-20h] BYREF\\n\\n  if ( (unsigned int)sub_180017C60(a1: a1 + 12) == 1 ) /*0x180015994*/\\n  {\\n    WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 624), dwMilliseconds: 0); /*0x180015a05*/\\n    sub_180019530(a1: v9, a2: a1 + 480); /*0x180015a21*/\\n    __wind /*0xf1c0000000000024*/\\n    {\\n      v4 = sub_180010E20(a1: v7, a2: 4, a3: 225); /*0x180015a4a*/\\n      sub_180017A30(a1: a1 + 440, a2: v4); /*0x180015a57*/\\n    }\\n    __unwind\\n    {\\n      std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v9); /*0x180045b05*/\\n    }\\n    std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v9); /*0x180015a62*/\\n    if ( WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 624), dwMilliseconds: 0x7D0u) == 258 ) /*0x180015a97*/\\n    {\\n      return 4294967294LL; /*0x180015ae5*/\\n    }\\n    else\\n    {\\n      for ( i = 0; i < 9; ++i ) /*0x180015a99*/\\n        *(_QWORD *)(a2 + 8LL * i) = *(_QWORD *)(a1 + 8LL * i + 2112); /*0x180015ad8*/\\n      return 0; /*0x180015adf*/\\n    }\\n  }\\n  else\\n  {\\n    v6 = sub_180036BD0(a1: v8, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 876); /*0x1800159b7*/\\n    __wind /*0xf1c000000000003c*/\\n    {\\n      v2 = sub_18003DF90(a1: v6); /*0x1800159c1*/\\n      sub_18000A770(a1: v2, a2: \\\"getLeftCameraMatParam failed,serial port not opened\\\"); /*0x1800159d0*/\\n    }\\n    __unwind\\n    {\\n      sub_180037160(a1: v8); /*0x180045aed*/\\n    }\\n    sub_180037160(a1: v8); /*0x1800159db*/\\n    return 0xFFFFFFFFLL; /*0x1800159e0*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x18004a010\",\"name\":\"__imp_WaitForSingleObject\"},{\"addr\":\"0x180019530\",\"name\":\"sub_180019530\"},{\"addr\":\"0x180010e20\",\"name\":\"sub_180010E20\"},{\"addr\":\"0x180017a30\",\"name\":\"sub_180017A30\"},{\"addr\":\"0x180019510\",\"name\":\"??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ\"},{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004e9f8\",\"name\":\"aDSourceRepos3d_53\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004e9c0\",\"name\":\"aGetleftcameram\",\"string\":\"getLeftCameraMatParam failed,serial port not opened\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x180017c60\",\"name\":\"sub_180017C60\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180015960",
+      "code": "__int64 __fastcall sub_180015960(__int64 a1, __int64 a2)\n{\n  __int64 v2; // rax\n  __int64 v4; // rax\n  int i; // [rsp+20h] [rbp-58h]\n  __int64 v6; // [rsp+30h] [rbp-48h]\n  _BYTE v7[8]; // [rsp+40h] [rbp-38h] BYREF\n  _BYTE v8[16]; // [rsp+48h] [rbp-30h] BYREF\n  _BYTE v9[8]; // [rsp+58h] [rbp-20h] BYREF\n\n  if ( (unsigned int)sub_180017C60(a1: a1 + 12) == 1 ) /*0x180015994*/\n  {\n    WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 624), dwMilliseconds: 0); /*0x180015a05*/\n    sub_180019530(a1: v9, a2: a1 + 480); /*0x180015a21*/\n    __wind /*0xf1c0000000000024*/\n    {\n      v4 = sub_180010E20(a1: v7, a2: 4, a3: 225); /*0x180015a4a*/\n      sub_180017A30(a1: a1 + 440, a2: v4); /*0x180015a57*/\n    }\n    __unwind\n    {\n      std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v9); /*0x180045b05*/\n    }\n    std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v9); /*0x180015a62*/\n    if ( WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 624), dwMilliseconds: 0x7D0u) == 258 ) /*0x180015a97*/\n    {\n      return 4294967294LL; /*0x180015ae5*/\n    }\n    else\n    {\n      for ( i = 0; i < 9; ++i ) /*0x180015a99*/\n        *(_QWORD *)(a2 + 8LL * i) = *(_QWORD *)(a1 + 8LL * i + 2112); /*0x180015ad8*/\n      return 0; /*0x180015adf*/\n    }\n  }\n  else\n  {\n    v6 = sub_180036BD0(a1: v8, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 876); /*0x1800159b7*/\n    __wind /*0xf1c000000000003c*/\n    {\n      v2 = sub_18003DF90(a1: v6); /*0x1800159c1*/\n      sub_18000A770(a1: v2, a2: \"getLeftCameraMatParam failed,serial port not opened\"); /*0x1800159d0*/\n    }\n    __unwind\n    {\n      sub_180037160(a1: v8); /*0x180045aed*/\n    }\n    sub_180037160(a1: v8); /*0x1800159db*/\n    return 0xFFFFFFFFLL; /*0x1800159e0*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x18004a010",
+          "name": "__imp_WaitForSingleObject"
+        },
+        {
+          "addr": "0x180019530",
+          "name": "sub_180019530"
+        },
+        {
+          "addr": "0x180010e20",
+          "name": "sub_180010E20"
+        },
+        {
+          "addr": "0x180017a30",
+          "name": "sub_180017A30"
+        },
+        {
+          "addr": "0x180019510",
+          "name": "??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004e9f8",
+          "name": "aDSourceRepos3d_53",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004e9c0",
+          "name": "aGetleftcameram",
+          "string": "getLeftCameraMatParam failed,serial port not opened"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x180017c60",
+          "name": "sub_180017C60"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

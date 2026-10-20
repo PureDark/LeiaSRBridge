@@ -1,0 +1,33 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"CreateStereoRenderer\",\"xrefs\":[{\"addr\":\"0x180006d33\",\"type\":\"code\",\"fn\":{\"addr\":\"0x180006b70\",\"name\":\"CreateMediaTranspose\",\"size\":\"0x220\"}}],\"more\":false,\"xref_count\":1}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "CreateStereoRenderer",
+          "xrefs": [
+            {
+              "addr": "0x180006d33",
+              "type": "code",
+              "fn": {
+                "addr": "0x180006b70",
+                "name": "CreateMediaTranspose",
+                "size": "0x220"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,15 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+namespace std
+{
+	// Token: 0x020002B0 RID: 688
+	[NativeCppClass]
+	[StructLayout(LayoutKind.Sequential, Size = 16)]
+	internal struct num_put<wchar_t,std::ostreambuf_iterator<wchar_t,std::char_traits<wchar_t>\u0020>\u0020>
+	{
+		// Token: 0x04000434 RID: 1076
+		private long <alignment\u0020member>;
+	}
+}

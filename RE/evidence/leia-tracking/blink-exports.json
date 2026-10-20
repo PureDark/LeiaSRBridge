@@ -1,0 +1,44 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"query\":\"??0BlinkContext@blink@@QEAA@PEBD000@Z\",\"fn\":{\"addr\":\"0x18139e2f0\",\"name\":\"??0BlinkContext@blink@@QEAA@PEBD000@Z\",\"size\":\"0xcc\"},\"error\":null},{\"query\":\"?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z\",\"fn\":{\"addr\":\"0x1813ba2f0\",\"name\":\"?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z\",\"size\":\"0x102\"},\"error\":null},{\"query\":\"?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z\",\"fn\":{\"addr\":\"0x1813bcc70\",\"name\":\"?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z\",\"size\":\"0x2e4\"},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "query": "??0BlinkContext@blink@@QEAA@PEBD000@Z",
+          "fn": {
+            "addr": "0x18139e2f0",
+            "name": "??0BlinkContext@blink@@QEAA@PEBD000@Z",
+            "size": "0xcc"
+          },
+          "error": null
+        },
+        {
+          "query": "?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z",
+          "fn": {
+            "addr": "0x1813ba2f0",
+            "name": "?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z",
+            "size": "0x102"
+          },
+          "error": null
+        },
+        {
+          "query": "?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z",
+          "fn": {
+            "addr": "0x1813bcc70",
+            "name": "?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z",
+            "size": "0x2e4"
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

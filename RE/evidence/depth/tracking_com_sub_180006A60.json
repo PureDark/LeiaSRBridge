@@ -1,0 +1,44 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180006A60\",\"code\":\"__int64 sub_180006A60()\\n{\\n  wchar_t *v0; // rax\\n  __int64 v1; // rcx\\n  WCHAR *v2; // rax\\n  __int64 v3; // rax\\n  WCHAR *v4; // rcx\\n  __int64 v5; // rbx\\n  __int64 v6; // rax\\n  char *v7; // r8\\n  WCHAR v8; // dx\\n  WCHAR *v9; // rax\\n  struct _PROCESS_INFORMATION ProcessInformation; // [rsp+50h] [rbp-2B8h] BYREF\\n  struct _STARTUPINFOW StartupInfo; // [rsp+70h] [rbp-298h] BYREF\\n  wchar_t Filename[264]; // [rsp+E0h] [rbp-228h] BYREF\\n\\n  StartupInfo.cb = 104; /*0x180006a8d*/\\n  memset(&StartupInfo.lpReserved, 0, 96); /*0x180006a9d*/\\n  if ( GetModuleFileNameW(hModule: qword_180012A50, lpFilename: Filename, nSize: 0x104u) == 0 ) /*0x180006ad2*/\\n    return 1; /*0x180006ad2*/\\n  v0 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x180006ae5*/\\n  if ( v0 == nullptr ) /*0x180006aed*/\\n    return 1; /*0x180006aed*/\\n  v1 = 260; /*0x180006af6*/\\n  v0[1] = 0; /*0x180006af8*/\\n  v2 = Filename; /*0x180006afd*/\\n  do /*0x180006b13*/\\n  {\\n    if ( *v2 == 0 ) /*0x180006b09*/\\n      break; /*0x180006b09*/\\n    ++v2; /*0x180006b0b*/\\n    --v1; /*0x180006b0f*/\\n  }\\n  while ( v1 != 0 ); /*0x180006b13*/\\n  v3 = 260 - v1; /*0x180006b18*/\\n  if ( v1 != 0 ) /*0x180006b1e*/\\n  {\\n    v4 = &Filename[v3]; /*0x180006b2c*/\\n    v5 = 260 - v3; /*0x180006b30*/\\n    if ( 260 != v3 ) /*0x180006b30*/\\n    {\\n      v6 = 2147483646; /*0x180006b3c*/\\n      v7 = (char *)((char *)L\\\"COM_Control\\\\\\\\COM_CONTROL.exe\\\" - (char *)v4); /*0x180006b41*/\\n      do /*0x180006b61*/\\n      {\\n        if ( v6 == 0 ) /*0x180006b47*/\\n          break; /*0x180006b47*/\\n        v8 = *(WCHAR *)((char *)v4 + (_QWORD)v7); /*0x180006b49*/\\n        if ( v8 == 0 ) /*0x180006b51*/\\n          break; /*0x180006b51*/\\n        *v4 = v8; /*0x180006b53*/\\n        --v6; /*0x180006b56*/\\n        ++v4; /*0x180006b59*/\\n        --v5; /*0x180006b5d*/\\n      }\\n      while ( v5 != 0 ); /*0x180006b61*/\\n    }\\n    v9 = v4 - 1; /*0x180006b66*/\\n    if ( v5 != 0 ) /*0x180006b6a*/\\n      v9 = v4; /*0x180006b6a*/\\n    *v9 = 0; /*0x180006b6e*/\\n  }\\n  if ( !CreateProcessW( /*0x180006baf*/\\n          lpApplicationName: nullptr,\\n          lpCommandLine: Filename,\\n          lpProcessAttributes: nullptr,\\n          lpThreadAttributes: nullptr,\\n          bInheritHandles: false,\\n          dwCreationFlags: 0,\\n          lpEnvironment: nullptr,\\n          lpCurrentDirectory: nullptr,\\n          lpStartupInfo: &StartupInfo,\\n          lpProcessInformation: &ProcessInformation) )\\n    return 1; /*0x180006bcb*/\\n  CloseHandle(hObject: ProcessInformation.hThread); /*0x180006bb6*/\\n  CloseHandle(hObject: ProcessInformation.hProcess); /*0x180006bc1*/\\n  return 0; /*0x180006bd0*/\\n}\",\"refs\":[{\"addr\":\"0x18000b048\",\"name\":\"GetModuleFileNameW\"},{\"addr\":\"0x180012a50\",\"name\":\"qword_180012A50\"},{\"addr\":\"0x180009456\",\"name\":\"wcsrchr\"},{\"addr\":\"0x18000c158\",\"name\":\"aComControlComC_0\",\"string\":\"\\u4f43\\u5f4d\\u6f43\\u746e\\u6f72\\u5c6c\\u4f43\\u5f4d\\u4f43\\u544e\\u4f52\\u2e4c\\u7865\\ufffd\"},{\"addr\":\"0x18000b0d8\",\"name\":\"CreateProcessW\"},{\"addr\":\"0x18000b0a0\",\"name\":\"CloseHandle\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180006A60",
+      "code": "__int64 sub_180006A60()\n{\n  wchar_t *v0; // rax\n  __int64 v1; // rcx\n  WCHAR *v2; // rax\n  __int64 v3; // rax\n  WCHAR *v4; // rcx\n  __int64 v5; // rbx\n  __int64 v6; // rax\n  char *v7; // r8\n  WCHAR v8; // dx\n  WCHAR *v9; // rax\n  struct _PROCESS_INFORMATION ProcessInformation; // [rsp+50h] [rbp-2B8h] BYREF\n  struct _STARTUPINFOW StartupInfo; // [rsp+70h] [rbp-298h] BYREF\n  wchar_t Filename[264]; // [rsp+E0h] [rbp-228h] BYREF\n\n  StartupInfo.cb = 104; /*0x180006a8d*/\n  memset(&StartupInfo.lpReserved, 0, 96); /*0x180006a9d*/\n  if ( GetModuleFileNameW(hModule: qword_180012A50, lpFilename: Filename, nSize: 0x104u) == 0 ) /*0x180006ad2*/\n    return 1; /*0x180006ad2*/\n  v0 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x180006ae5*/\n  if ( v0 == nullptr ) /*0x180006aed*/\n    return 1; /*0x180006aed*/\n  v1 = 260; /*0x180006af6*/\n  v0[1] = 0; /*0x180006af8*/\n  v2 = Filename; /*0x180006afd*/\n  do /*0x180006b13*/\n  {\n    if ( *v2 == 0 ) /*0x180006b09*/\n      break; /*0x180006b09*/\n    ++v2; /*0x180006b0b*/\n    --v1; /*0x180006b0f*/\n  }\n  while ( v1 != 0 ); /*0x180006b13*/\n  v3 = 260 - v1; /*0x180006b18*/\n  if ( v1 != 0 ) /*0x180006b1e*/\n  {\n    v4 = &Filename[v3]; /*0x180006b2c*/\n    v5 = 260 - v3; /*0x180006b30*/\n    if ( 260 != v3 ) /*0x180006b30*/\n    {\n      v6 = 2147483646; /*0x180006b3c*/\n      v7 = (char *)((char *)L\"COM_Control\\\\COM_CONTROL.exe\" - (char *)v4); /*0x180006b41*/\n      do /*0x180006b61*/\n      {\n        if ( v6 == 0 ) /*0x180006b47*/\n          break; /*0x180006b47*/\n        v8 = *(WCHAR *)((char *)v4 + (_QWORD)v7); /*0x180006b49*/\n        if ( v8 == 0 ) /*0x180006b51*/\n          break; /*0x180006b51*/\n        *v4 = v8; /*0x180006b53*/\n        --v6; /*0x180006b56*/\n        ++v4; /*0x180006b59*/\n        --v5; /*0x180006b5d*/\n      }\n      while ( v5 != 0 ); /*0x180006b61*/\n    }\n    v9 = v4 - 1; /*0x180006b66*/\n    if ( v5 != 0 ) /*0x180006b6a*/\n      v9 = v4; /*0x180006b6a*/\n    *v9 = 0; /*0x180006b6e*/\n  }\n  if ( !CreateProcessW( /*0x180006baf*/\n          lpApplicationName: nullptr,\n          lpCommandLine: Filename,\n          lpProcessAttributes: nullptr,\n          lpThreadAttributes: nullptr,\n          bInheritHandles: false,\n          dwCreationFlags: 0,\n          lpEnvironment: nullptr,\n          lpCurrentDirectory: nullptr,\n          lpStartupInfo: &StartupInfo,\n          lpProcessInformation: &ProcessInformation) )\n    return 1; /*0x180006bcb*/\n  CloseHandle(hObject: ProcessInformation.hThread); /*0x180006bb6*/\n  CloseHandle(hObject: ProcessInformation.hProcess); /*0x180006bc1*/\n  return 0; /*0x180006bd0*/\n}",
+      "refs": [
+        {
+          "addr": "0x18000b048",
+          "name": "GetModuleFileNameW"
+        },
+        {
+          "addr": "0x180012a50",
+          "name": "qword_180012A50"
+        },
+        {
+          "addr": "0x180009456",
+          "name": "wcsrchr"
+        },
+        {
+          "addr": "0x18000c158",
+          "name": "aComControlComC_0",
+          "string": "佃彍潃瑮潲屬佃彍佃呎佒⹌硥�"
+        },
+        {
+          "addr": "0x18000b0d8",
+          "name": "CreateProcessW"
+        },
+        {
+          "addr": "0x18000b0a0",
+          "name": "CloseHandle"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

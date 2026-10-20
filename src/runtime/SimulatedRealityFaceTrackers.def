@@ -1,0 +1,13 @@
+LIBRARY SimulatedRealityFaceTrackers
+EXPORTS
+    ?create@HeadTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z=TitanLeiaRuntime.?create@HeadTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z
+    ?create@HeadPoseTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z=TitanLeiaRuntime.?create@HeadPoseTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z
+    ?create@EyeTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z=TitanLeiaRuntime.?create@EyeTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z
+    ?createRaw@EyeTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z=TitanLeiaRuntime.?createRaw@EyeTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z
+    ?stopListening@HeadStream@SR@@QEAAXXZ=TitanLeiaRuntime.?stopListening@HeadStream@SR@@QEAAXXZ
+    ?stopListening@HeadPoseStream@SR@@QEAAXXZ=TitanLeiaRuntime.?stopListening@HeadPoseStream@SR@@QEAAXXZ
+    ?stopListening@EyePairStream@SR@@QEAAXXZ=TitanLeiaRuntime.?stopListening@EyePairStream@SR@@QEAAXXZ
+    ??0EyePairStream@SR@@QEAA@PEAVEyeTracker@1@PEAVEyePairListener@1@@Z=TitanLeiaRuntime.??0EyePairStream@SR@@QEAA@PEAVEyeTracker@1@PEAVEyePairListener@1@@Z
+    ??1EyePairStream@SR@@QEAA@XZ=TitanLeiaRuntime.??1EyePairStream@SR@@QEAA@XZ
+    ?close@EyePairStream@SR@@QEAAXXZ=TitanLeiaRuntime.?close@EyePairStream@SR@@QEAAXXZ
+    ?update@EyePairStream@SR@@QEAAXUSR_eyePair@@@Z=TitanLeiaRuntime.?update@EyePairStream@SR@@QEAAXUSR_eyePair@@@Z

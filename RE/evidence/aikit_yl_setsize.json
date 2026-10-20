@@ -1,0 +1,70 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"YL_SetFrameSize\",\"code\":\"__int64 __fastcall YL_SetFrameSize(__int64 a1)\\n{\\n  __int64 v1; // rdx\\n  __int64 v2; // rcx\\n  volatile signed __int32 *v3; // rbx\\n  __int64 result; // rax\\n  _QWORD v5[2]; // [rsp+20h] [rbp-58h] BYREF\\n  __int128 v6; // [rsp+30h] [rbp-48h]\\n  const char *v7; // [rsp+40h] [rbp-38h]\\n  __int128 v8; // [rsp+50h] [rbp-28h] BYREF\\n  const char *v9; // [rsp+60h] [rbp-18h]\\n\\n  if ( a1 != 0 ) /*0x18015ba07*/\\n    return (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)a1 + 16LL))(a1); /*0x18015bb49*/\\n  if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x18015ba36*/\\n                                   + 16LL) )\\n  {\\n    sub_1803B3838(a1: &dword_1805C9A98); /*0x18015ba3f*/\\n    if ( dword_1805C9A98 == -1 ) /*0x18015ba4b*/\\n    {\\n      xmmword_1805C9820 = 0; /*0x18015ba50*/\\n      sub_180116C20(a1: v2, a2: v1); /*0x18015ba57*/\\n      atexit(a1: sub_1803B9F10); /*0x18015ba63*/\\n      sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015ba6f*/\\n    }\\n  }\\n  v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015ba74*/\\n  if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015ba7e*/\\n  {\\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015ba80*/\\n    v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015ba84*/\\n  }\\n  *(_QWORD *)&v6 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\YLStereoRendererEx.cpp\\\"; /*0x18015ba99*/\\n  HIDWORD(v6) = HIDWORD(v8); /*0x18015baac*/\\n  DWORD2(v6) = 130; /*0x18015babd*/\\n  v7 = \\\"AiStereo::YL_SetFrameSize\\\"; /*0x18015baca*/\\n  v5[0] = \\\"handle is null\\\"; /*0x18015badc*/\\n  v9 = \\\"AiStereo::YL_SetFrameSize\\\"; /*0x18015bae1*/\\n  v5[1] = 14; /*0x18015bae7*/\\n  v8 = v6; /*0x18015baf0*/\\n  result = sub_180114050(a1: xmmword_1805C9820, a2: &v8, a3: 4, a4: v5); /*0x18015baf5*/\\n  if ( v3 != nullptr ) /*0x18015bafd*/\\n  {\\n    result = (unsigned int)_InterlockedExchangeAdd(v3 + 2, 0xFFFFFFFF); /*0x18015bb0b*/\\n    if ( (_DWORD)result == 1 ) /*0x18015bb13*/\\n    {\\n      result = (**(__int64 (__fastcall ***)(volatile signed __int32 *))v3)(a1: v3); /*0x18015bb1b*/\\n      if ( _InterlockedExchangeAdd(v3 + 3, 0xFFFFFFFF) == 1 ) /*0x18015bb25*/\\n        return (*(__int64 (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v3 + 8LL))(a1: v3); /*0x18015bb2d*/\\n    }\\n  }\\n  return result; /*0x18015bb3d*/\\n}\",\"refs\":[{\"addr\":\"0x1803b3838\",\"name\":\"sub_1803B3838\"},{\"addr\":\"0x1805c9a98\",\"name\":\"dword_1805C9A98\"},{\"addr\":\"0x1805c9820\",\"name\":\"xmmword_1805C9820\"},{\"addr\":\"0x180116c20\",\"name\":\"sub_180116C20\"},{\"addr\":\"0x1803b3744\",\"name\":\"atexit\"},{\"addr\":\"0x1803b9f10\",\"name\":\"sub_1803B9F10\"},{\"addr\":\"0x1803b37cc\",\"name\":\"sub_1803B37CC\"},{\"addr\":\"0x1805c973c\",\"name\":\"TlsIndex\"},{\"addr\":\"0x180587e90\",\"name\":\"aJProjectVsproj_9\",\"string\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\YLStereoRendererEx.cpp\"},{\"addr\":\"0x180587fc8\",\"name\":\"aAistereoYlSetf\",\"string\":\"AiStereo::YL_SetFrameSize\"},{\"addr\":\"0x180587fe8\",\"name\":\"aHandleIsNull\",\"string\":\"handle is null\"},{\"addr\":\"0x180114050\",\"name\":\"sub_180114050\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "YL_SetFrameSize",
+      "code": "__int64 __fastcall YL_SetFrameSize(__int64 a1)\n{\n  __int64 v1; // rdx\n  __int64 v2; // rcx\n  volatile signed __int32 *v3; // rbx\n  __int64 result; // rax\n  _QWORD v5[2]; // [rsp+20h] [rbp-58h] BYREF\n  __int128 v6; // [rsp+30h] [rbp-48h]\n  const char *v7; // [rsp+40h] [rbp-38h]\n  __int128 v8; // [rsp+50h] [rbp-28h] BYREF\n  const char *v9; // [rsp+60h] [rbp-18h]\n\n  if ( a1 != 0 ) /*0x18015ba07*/\n    return (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)a1 + 16LL))(a1); /*0x18015bb49*/\n  if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x18015ba36*/\n                                   + 16LL) )\n  {\n    sub_1803B3838(a1: &dword_1805C9A98); /*0x18015ba3f*/\n    if ( dword_1805C9A98 == -1 ) /*0x18015ba4b*/\n    {\n      xmmword_1805C9820 = 0; /*0x18015ba50*/\n      sub_180116C20(a1: v2, a2: v1); /*0x18015ba57*/\n      atexit(a1: sub_1803B9F10); /*0x18015ba63*/\n      sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015ba6f*/\n    }\n  }\n  v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015ba74*/\n  if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015ba7e*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015ba80*/\n    v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015ba84*/\n  }\n  *(_QWORD *)&v6 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\YLStereoRendererEx.cpp\"; /*0x18015ba99*/\n  HIDWORD(v6) = HIDWORD(v8); /*0x18015baac*/\n  DWORD2(v6) = 130; /*0x18015babd*/\n  v7 = \"AiStereo::YL_SetFrameSize\"; /*0x18015baca*/\n  v5[0] = \"handle is null\"; /*0x18015badc*/\n  v9 = \"AiStereo::YL_SetFrameSize\"; /*0x18015bae1*/\n  v5[1] = 14; /*0x18015bae7*/\n  v8 = v6; /*0x18015baf0*/\n  result = sub_180114050(a1: xmmword_1805C9820, a2: &v8, a3: 4, a4: v5); /*0x18015baf5*/\n  if ( v3 != nullptr ) /*0x18015bafd*/\n  {\n    result = (unsigned int)_InterlockedExchangeAdd(v3 + 2, 0xFFFFFFFF); /*0x18015bb0b*/\n    if ( (_DWORD)result == 1 ) /*0x18015bb13*/\n    {\n      result = (**(__int64 (__fastcall ***)(volatile signed __int32 *))v3)(a1: v3); /*0x18015bb1b*/\n      if ( _InterlockedExchangeAdd(v3 + 3, 0xFFFFFFFF) == 1 ) /*0x18015bb25*/\n        return (*(__int64 (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v3 + 8LL))(a1: v3); /*0x18015bb2d*/\n    }\n  }\n  return result; /*0x18015bb3d*/\n}",
+      "refs": [
+        {
+          "addr": "0x1803b3838",
+          "name": "sub_1803B3838"
+        },
+        {
+          "addr": "0x1805c9a98",
+          "name": "dword_1805C9A98"
+        },
+        {
+          "addr": "0x1805c9820",
+          "name": "xmmword_1805C9820"
+        },
+        {
+          "addr": "0x180116c20",
+          "name": "sub_180116C20"
+        },
+        {
+          "addr": "0x1803b3744",
+          "name": "atexit"
+        },
+        {
+          "addr": "0x1803b9f10",
+          "name": "sub_1803B9F10"
+        },
+        {
+          "addr": "0x1803b37cc",
+          "name": "sub_1803B37CC"
+        },
+        {
+          "addr": "0x1805c973c",
+          "name": "TlsIndex"
+        },
+        {
+          "addr": "0x180587e90",
+          "name": "aJProjectVsproj_9",
+          "string": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\YLStereoRendererEx.cpp"
+        },
+        {
+          "addr": "0x180587fc8",
+          "name": "aAistereoYlSetf",
+          "string": "AiStereo::YL_SetFrameSize"
+        },
+        {
+          "addr": "0x180587fe8",
+          "name": "aHandleIsNull",
+          "string": "handle is null"
+        },
+        {
+          "addr": "0x180114050",
+          "name": "sub_180114050"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

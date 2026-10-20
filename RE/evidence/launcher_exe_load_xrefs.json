@@ -1,0 +1,182 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x1400150d8\",\"xrefs\":[{\"addr\":\"0x140001037\",\"type\":\"code\",\"fn\":{\"addr\":\"0x140001020\",\"name\":\"sub_140001020\",\"size\":\"0x97\"}},{\"addr\":\"0x14000298a\",\"type\":\"code\",\"fn\":{\"addr\":\"0x1400027a0\",\"name\":\"sub_1400027A0\",\"size\":\"0x798\"}},{\"addr\":\"0x1400077e8\",\"type\":\"code\",\"fn\":{\"addr\":\"0x140007780\",\"name\":\"sub_140007780\",\"size\":\"0xf0\"}},{\"addr\":\"0x140001037\",\"type\":\"data\",\"fn\":{\"addr\":\"0x140001020\",\"name\":\"sub_140001020\",\"size\":\"0x97\"}},{\"addr\":\"0x14000298a\",\"type\":\"data\",\"fn\":{\"addr\":\"0x1400027a0\",\"name\":\"sub_1400027A0\",\"size\":\"0x798\"}},{\"addr\":\"0x1400077e8\",\"type\":\"data\",\"fn\":{\"addr\":\"0x140007780\",\"name\":\"sub_140007780\",\"size\":\"0xf0\"}}],\"more\":false,\"xref_count\":6},{\"addr\":\"0x1400150e0\",\"xrefs\":[{\"addr\":\"0x140002970\",\"type\":\"code\",\"fn\":{\"addr\":\"0x1400027a0\",\"name\":\"sub_1400027A0\",\"size\":\"0x798\"}},{\"addr\":\"0x140002970\",\"type\":\"data\",\"fn\":{\"addr\":\"0x1400027a0\",\"name\":\"sub_1400027A0\",\"size\":\"0x798\"}}],\"more\":false,\"xref_count\":2},{\"addr\":\"0x1400150e8\",\"xrefs\":[{\"addr\":\"0x14000104f\",\"type\":\"code\",\"fn\":{\"addr\":\"0x140001020\",\"name\":\"sub_140001020\",\"size\":\"0x97\"}},{\"addr\":\"0x140001075\",\"type\":\"code\",\"fn\":{\"addr\":\"0x140001020\",\"name\":\"sub_140001020\",\"size\":\"0x97\"}},{\"addr\":\"0x1400029a3\",\"type\":\"code\",\"fn\":{\"addr\":\"0x1400027a0\",\"name\":\"sub_1400027A0\",\"size\":\"0x798\"}},{\"addr\":\"0x140007800\",\"type\":\"code\",\"fn\":{\"addr\":\"0x140007780\",\"name\":\"sub_140007780\",\"size\":\"0xf0\"}},{\"addr\":\"0x14000104f\",\"type\":\"data\",\"fn\":{\"addr\":\"0x140001020\",\"name\":\"sub_140001020\",\"size\":\"0x97\"}},{\"addr\":\"0x140001075\",\"type\":\"data\",\"fn\":{\"addr\":\"0x140001020\",\"name\":\"sub_140001020\",\"size\":\"0x97\"}},{\"addr\":\"0x1400029a3\",\"type\":\"data\",\"fn\":{\"addr\":\"0x1400027a0\",\"name\":\"sub_1400027A0\",\"size\":\"0x798\"}},{\"addr\":\"0x140007800\",\"type\":\"data\",\"fn\":{\"addr\":\"0x140007780\",\"name\":\"sub_140007780\",\"size\":\"0xf0\"}}],\"more\":false,\"xref_count\":8}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x1400150d8",
+          "xrefs": [
+            {
+              "addr": "0x140001037",
+              "type": "code",
+              "fn": {
+                "addr": "0x140001020",
+                "name": "sub_140001020",
+                "size": "0x97"
+              }
+            },
+            {
+              "addr": "0x14000298a",
+              "type": "code",
+              "fn": {
+                "addr": "0x1400027a0",
+                "name": "sub_1400027A0",
+                "size": "0x798"
+              }
+            },
+            {
+              "addr": "0x1400077e8",
+              "type": "code",
+              "fn": {
+                "addr": "0x140007780",
+                "name": "sub_140007780",
+                "size": "0xf0"
+              }
+            },
+            {
+              "addr": "0x140001037",
+              "type": "data",
+              "fn": {
+                "addr": "0x140001020",
+                "name": "sub_140001020",
+                "size": "0x97"
+              }
+            },
+            {
+              "addr": "0x14000298a",
+              "type": "data",
+              "fn": {
+                "addr": "0x1400027a0",
+                "name": "sub_1400027A0",
+                "size": "0x798"
+              }
+            },
+            {
+              "addr": "0x1400077e8",
+              "type": "data",
+              "fn": {
+                "addr": "0x140007780",
+                "name": "sub_140007780",
+                "size": "0xf0"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 6
+        },
+        {
+          "addr": "0x1400150e0",
+          "xrefs": [
+            {
+              "addr": "0x140002970",
+              "type": "code",
+              "fn": {
+                "addr": "0x1400027a0",
+                "name": "sub_1400027A0",
+                "size": "0x798"
+              }
+            },
+            {
+              "addr": "0x140002970",
+              "type": "data",
+              "fn": {
+                "addr": "0x1400027a0",
+                "name": "sub_1400027A0",
+                "size": "0x798"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        },
+        {
+          "addr": "0x1400150e8",
+          "xrefs": [
+            {
+              "addr": "0x14000104f",
+              "type": "code",
+              "fn": {
+                "addr": "0x140001020",
+                "name": "sub_140001020",
+                "size": "0x97"
+              }
+            },
+            {
+              "addr": "0x140001075",
+              "type": "code",
+              "fn": {
+                "addr": "0x140001020",
+                "name": "sub_140001020",
+                "size": "0x97"
+              }
+            },
+            {
+              "addr": "0x1400029a3",
+              "type": "code",
+              "fn": {
+                "addr": "0x1400027a0",
+                "name": "sub_1400027A0",
+                "size": "0x798"
+              }
+            },
+            {
+              "addr": "0x140007800",
+              "type": "code",
+              "fn": {
+                "addr": "0x140007780",
+                "name": "sub_140007780",
+                "size": "0xf0"
+              }
+            },
+            {
+              "addr": "0x14000104f",
+              "type": "data",
+              "fn": {
+                "addr": "0x140001020",
+                "name": "sub_140001020",
+                "size": "0x97"
+              }
+            },
+            {
+              "addr": "0x140001075",
+              "type": "data",
+              "fn": {
+                "addr": "0x140001020",
+                "name": "sub_140001020",
+                "size": "0x97"
+              }
+            },
+            {
+              "addr": "0x1400029a3",
+              "type": "data",
+              "fn": {
+                "addr": "0x1400027a0",
+                "name": "sub_1400027A0",
+                "size": "0x798"
+              }
+            },
+            {
+              "addr": "0x140007800",
+              "type": "data",
+              "fn": {
+                "addr": "0x140007780",
+                "name": "sub_140007780",
+                "size": "0xf0"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 8
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

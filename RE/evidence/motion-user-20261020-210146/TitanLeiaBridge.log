@@ -1,0 +1,135 @@
+20:50:57 MCU: initSDK (no AI or capture modules are loaded).
+20:50:57 后台进程已启动，设备就绪状态请查看上方。SDK 1.34.10 / x64 / DX12；便携设备组件。
+20:50:58 MCU: read this device's 6/6/8 optical calibration values.
+20:50:58 已从当前显示器生成 9/9/10 摄像头校准；没有使用其他屏的安装包标定。
+20:50:59 Portable eye provider started without machine COM registration; observation times are not sensor frame times.
+20:50:59 Horizontal eye prediction: 0 ms; local observation clock, maximum correction 10 mm.
+20:50:59 设备就绪；未获取有效眼位，使用默认 (0, 0, 600 mm)，可启动游戏；识别恢复后自动跟踪。
+20:50:59 Eye polling: 4 ms high-resolution wait (not sensor frame rate).
+20:51:04 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1165 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:51:09 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1176 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:51:14 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1173 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:51:19 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1179 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:51:24 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1180 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:51:25 设备就绪；使用跟踪眼位（传感器帧时间未知），可启动游戏。
+20:51:29 Eye observations (not sensor frames): interval_ms=5000 tracked=766 held=45 default=340 changed=293 max_step_mm=20.4361 xyz=60.4158,187.437,460.777 prediction_ms=0 prediction_dx_mm=0
+20:51:34 Eye observations (not sensor frames): interval_ms=5000 tracked=1166 held=0 default=0 changed=402 max_step_mm=4.0363 xyz=-15.9263,222.014,496.646 prediction_ms=0 prediction_dx_mm=0
+20:51:34 水平眼位预测：0 ms（关闭）
+20:51:39 Eye observations (not sensor frames): interval_ms=5000 tracked=1171 held=0 default=0 changed=420 max_step_mm=1.63814 xyz=-36.1716,195.608,470.215 prediction_ms=0 prediction_dx_mm=0
+20:51:44 Eye observations (not sensor frames): interval_ms=5000 tracked=1170 held=0 default=0 changed=428 max_step_mm=2.44068 xyz=-73.5935,138.83,587.716 prediction_ms=0 prediction_dx_mm=0
+20:51:49 Eye observations (not sensor frames): interval_ms=5000 tracked=1172 held=0 default=0 changed=440 max_step_mm=2.09096 xyz=-43.3402,126.264,522.047 prediction_ms=0 prediction_dx_mm=0
+20:51:49 水平眼位预测：0 ms（关闭）
+20:51:54 Eye observations (not sensor frames): interval_ms=5000 tracked=1170 held=0 default=0 changed=392 max_step_mm=2.04643 xyz=-63.8545,121.598,581.636 prediction_ms=0 prediction_dx_mm=0
+20:51:58 Lens requested ON (software state; no hardware acknowledgement).
+20:51:59 Eye observations (not sensor frames): interval_ms=5000 tracked=1170 held=0 default=0 changed=410 max_step_mm=2.73229 xyz=0.669807,119.971,600.379 prediction_ms=0 prediction_dx_mm=0
+20:52:04 Eye observations (not sensor frames): interval_ms=5000 tracked=1159 held=0 default=0 changed=427 max_step_mm=2.7707 xyz=81.4581,101.556,615.133 prediction_ms=0 prediction_dx_mm=0
+20:52:09 Eye observations (not sensor frames): interval_ms=5000 tracked=1157 held=0 default=0 changed=448 max_step_mm=3.18765 xyz=-179.067,83.2665,621.005 prediction_ms=0 prediction_dx_mm=0
+20:52:14 Eye observations (not sensor frames): interval_ms=5000 tracked=1158 held=0 default=0 changed=344 max_step_mm=3.3361 xyz=204.358,89.8335,597.096 prediction_ms=0 prediction_dx_mm=0
+20:52:19 Eye observations (not sensor frames): interval_ms=5000 tracked=1134 held=0 default=0 changed=440 max_step_mm=3.55731 xyz=173.229,97.2824,588.517 prediction_ms=0 prediction_dx_mm=0
+20:52:24 Eye observations (not sensor frames): interval_ms=5000 tracked=1158 held=0 default=0 changed=340 max_step_mm=2.57801 xyz=138.678,95.1212,582.861 prediction_ms=0 prediction_dx_mm=0
+20:52:29 Eye observations (not sensor frames): interval_ms=5000 tracked=1156 held=0 default=0 changed=315 max_step_mm=2.57412 xyz=76.3504,92.4891,577.34 prediction_ms=0 prediction_dx_mm=0
+20:52:32 设备就绪；短暂未获取眼位，保持上次位置，持续丢失超过 500 ms 后使用默认眼位。
+20:52:34 Eye observations (not sensor frames): interval_ms=5000 tracked=812 held=116 default=229 changed=304 max_step_mm=4.2183 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:52:35 设备就绪；使用跟踪眼位（传感器帧时间未知），可启动游戏。
+20:52:39 Eye observations (not sensor frames): interval_ms=5000 tracked=787 held=0 default=369 changed=310 max_step_mm=18.5666 xyz=-201.134,96.873,578.1 prediction_ms=0 prediction_dx_mm=0
+20:52:44 Eye observations (not sensor frames): interval_ms=5000 tracked=1126 held=0 default=0 changed=444 max_step_mm=3.38334 xyz=33.8677,95.4693,600.889 prediction_ms=0 prediction_dx_mm=0
+20:52:49 Eye observations (not sensor frames): interval_ms=5000 tracked=1154 held=0 default=0 changed=351 max_step_mm=3.01793 xyz=-4.23201,87.8635,615.033 prediction_ms=0 prediction_dx_mm=0
+20:52:51 Lens requested OFF (queued by vendor SDK).
+20:52:54 Eye observations (not sensor frames): interval_ms=5000 tracked=1164 held=0 default=0 changed=448 max_step_mm=5.23358 xyz=-34.8217,152.48,519.865 prediction_ms=0 prediction_dx_mm=0
+20:52:56 设备就绪；短暂未获取眼位，保持上次位置，持续丢失超过 500 ms 后使用默认眼位。
+20:52:59 Eye observations (not sensor frames): interval_ms=5000 tracked=457 held=121 default=603 changed=175 max_step_mm=6.35325 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:04 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1177 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:09 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1176 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:14 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1181 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:19 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1175 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:24 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1180 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:29 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1172 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:34 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1175 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:39 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1176 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:44 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1179 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:49 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1166 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:54 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1171 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:53:59 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1177 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:04 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1175 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:09 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1177 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:14 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1171 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:19 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1165 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:24 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1165 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:29 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1174 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:34 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1177 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:39 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1173 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:44 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1176 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:49 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1178 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:54 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1178 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:54:59 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1174 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:04 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1172 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:09 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1180 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:14 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1174 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:19 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1178 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:24 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1173 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:29 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1175 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:34 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1175 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:39 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1174 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:44 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1179 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:49 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1174 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:55:51 设备就绪；使用跟踪眼位（传感器帧时间未知），可启动游戏。
+20:55:54 Eye observations (not sensor frames): interval_ms=5000 tracked=604 held=0 default=573 changed=237 max_step_mm=52.3221 xyz=170.307,91.4493,686.565 prediction_ms=0 prediction_dx_mm=0
+20:55:54 设备就绪；短暂未获取眼位，保持上次位置，持续丢失超过 500 ms 后使用默认眼位。
+20:55:55 设备就绪；短暂未获取眼位，保持上次位置，持续丢失超过 500 ms 后使用默认眼位。
+20:55:59 Eye observations (not sensor frames): interval_ms=5000 tracked=1041 held=125 default=0 changed=407 max_step_mm=160.896 xyz=-21.1172,59.7537,558.617 prediction_ms=0 prediction_dx_mm=0
+20:56:04 Eye observations (not sensor frames): interval_ms=5000 tracked=1174 held=0 default=0 changed=222 max_step_mm=2.30617 xyz=-53.6375,65.4192,571.093 prediction_ms=0 prediction_dx_mm=0
+20:56:09 Eye observations (not sensor frames): interval_ms=5000 tracked=1173 held=0 default=0 changed=233 max_step_mm=2.23098 xyz=-34.0065,64.9784,565.47 prediction_ms=0 prediction_dx_mm=0
+20:56:09 Ctrl+Alt+F9 已被占用，使用窗口内的水平眼位预测按钮。
+20:56:09 Another TitanLeiaBridge broker is already running.
+20:56:14 Eye observations (not sensor frames): interval_ms=5000 tracked=1158 held=0 default=0 changed=274 max_step_mm=2.35841 xyz=-29.8138,59.7676,557.359 prediction_ms=0 prediction_dx_mm=0
+20:56:19 Eye observations (not sensor frames): interval_ms=5000 tracked=1173 held=0 default=0 changed=348 max_step_mm=1.76861 xyz=-42.6791,62.9305,568.809 prediction_ms=0 prediction_dx_mm=0
+20:56:20 Ctrl+Alt+F9 已被占用，使用窗口内的水平眼位预测按钮。
+20:56:20 Another TitanLeiaBridge broker is already running.
+20:56:24 Eye observations (not sensor frames): interval_ms=5000 tracked=1155 held=0 default=0 changed=307 max_step_mm=2.12367 xyz=-3.9734,47.2737,553.611 prediction_ms=0 prediction_dx_mm=0
+20:56:26 MCU shutdown: off request=0, queued read barrier=0 (not a physical lens acknowledgement).
+20:56:26 Eye StopCamera: 0x00000000
+20:56:27 Eye Close: 0x00000000
+20:56:27 MCU closed.
+20:56:27 MCU SDK released.
+20:56:31 MCU: initSDK (no AI or capture modules are loaded).
+20:56:31 后台进程已启动，设备就绪状态请查看上方。SDK 1.34.10 / x64 / DX12；便携设备组件。
+20:56:32 MCU: read this device's 6/6/8 optical calibration values.
+20:56:32 已从当前显示器生成 9/9/10 摄像头校准；没有使用其他屏的安装包标定。
+20:56:32 Portable eye provider started without machine COM registration; observation times are not sensor frame times.
+20:56:32 Horizontal eye prediction: 0 ms; local observation clock, maximum correction 10 mm.
+20:56:32 设备就绪；未获取有效眼位，使用默认 (0, 0, 600 mm)，可启动游戏；识别恢复后自动跟踪。
+20:56:32 Eye polling: 4 ms high-resolution wait (not sensor frame rate).
+20:56:35 水平眼位预测：0 ms（关闭）
+20:56:37 Eye observations (not sensor frames): interval_ms=5000 tracked=1067 held=0 default=108 changed=162 max_step_mm=2.40257 xyz=-4.97294,44.4053,557.105 prediction_ms=0 prediction_dx_mm=0
+20:56:38 Lens requested ON (software state; no hardware acknowledgement).
+20:56:42 Eye observations (not sensor frames): interval_ms=5000 tracked=1161 held=0 default=0 changed=234 max_step_mm=2.02848 xyz=-8.92495,49.4167,571.752 prediction_ms=0 prediction_dx_mm=0
+20:56:47 Eye observations (not sensor frames): interval_ms=5000 tracked=1157 held=0 default=0 changed=281 max_step_mm=1.97515 xyz=-130.218,57.1037,533.958 prediction_ms=0 prediction_dx_mm=0
+20:56:52 Eye observations (not sensor frames): interval_ms=5000 tracked=1154 held=0 default=0 changed=453 max_step_mm=1.87362 xyz=-115.586,55.4147,538.391 prediction_ms=0 prediction_dx_mm=0
+20:56:57 Eye observations (not sensor frames): interval_ms=5000 tracked=1158 held=0 default=0 changed=452 max_step_mm=3.16061 xyz=-30.9788,58.4426,534.983 prediction_ms=0 prediction_dx_mm=0
+20:57:02 Eye observations (not sensor frames): interval_ms=5000 tracked=1158 held=0 default=0 changed=431 max_step_mm=2.17305 xyz=-93.2606,67.5584,548.085 prediction_ms=0 prediction_dx_mm=0
+20:57:07 Eye observations (not sensor frames): interval_ms=5000 tracked=1160 held=0 default=0 changed=343 max_step_mm=3.28694 xyz=28.0332,44.8,566.456 prediction_ms=0 prediction_dx_mm=0
+20:57:08 设备就绪；短暂未获取眼位，保持上次位置，持续丢失超过 500 ms 后使用默认眼位。
+20:57:12 Eye observations (not sensor frames): interval_ms=5000 tracked=1143 held=14 default=0 changed=350 max_step_mm=68.6981 xyz=84.3826,36.3074,590.007 prediction_ms=0 prediction_dx_mm=0
+20:57:17 Eye observations (not sensor frames): interval_ms=5000 tracked=1160 held=0 default=0 changed=200 max_step_mm=2.40054 xyz=138.5,31.9575,571.628 prediction_ms=0 prediction_dx_mm=0
+20:57:22 Eye observations (not sensor frames): interval_ms=5000 tracked=1158 held=0 default=0 changed=363 max_step_mm=2.9777 xyz=114.646,37.2704,574.515 prediction_ms=0 prediction_dx_mm=0
+20:57:27 Eye observations (not sensor frames): interval_ms=5000 tracked=1159 held=0 default=0 changed=315 max_step_mm=2.12268 xyz=19.2679,44.6403,573.965 prediction_ms=0 prediction_dx_mm=0
+20:57:32 Eye observations (not sensor frames): interval_ms=5000 tracked=1160 held=0 default=0 changed=414 max_step_mm=2.17305 xyz=22.8555,43.7637,559.44 prediction_ms=0 prediction_dx_mm=0
+20:57:36 Lens requested OFF (queued by vendor SDK).
+20:57:37 Eye observations (not sensor frames): interval_ms=5000 tracked=1163 held=0 default=0 changed=449 max_step_mm=2.30534 xyz=-16.5326,40.3684,566.684 prediction_ms=0 prediction_dx_mm=0
+20:57:42 Eye observations (not sensor frames): interval_ms=5000 tracked=1173 held=0 default=0 changed=166 max_step_mm=1.87465 xyz=6.49948,40.9517,567.911 prediction_ms=0 prediction_dx_mm=0
+20:57:44 设备就绪；短暂未获取眼位，保持上次位置，持续丢失超过 500 ms 后使用默认眼位。
+20:57:45 设备就绪；未获取有效眼位，使用默认 (0, 0, 600 mm)，可启动游戏；识别恢复后自动跟踪。
+20:57:47 Eye observations (not sensor frames): interval_ms=5000 tracked=317 held=225 default=629 changed=126 max_step_mm=52.867 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:57:52 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1177 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:57:57 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1181 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:02 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1177 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:07 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1180 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:12 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1170 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:17 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1175 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:22 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1178 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:27 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1177 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:32 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1181 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:37 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1168 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:42 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1181 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:47 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1175 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0
+20:58:52 Eye observations (not sensor frames): interval_ms=5000 tracked=0 held=0 default=1182 changed=0 max_step_mm=0 xyz=0,0,600 prediction_ms=0 prediction_dx_mm=0

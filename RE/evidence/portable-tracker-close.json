@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"portable_tracker\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: FaceTracking.exe (portable_tracker)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "portable_tracker",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: FaceTracking.exe (portable_tracker)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

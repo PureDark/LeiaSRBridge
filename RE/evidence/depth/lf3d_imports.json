@@ -1,0 +1,488 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"data\":[{\"addr\":\"0x18004f2e8\",\"imported_name\":\"wglGetProcAddress\",\"module\":\"OPENGL32\"},{\"addr\":\"0x18004f000\",\"imported_name\":\"TlsSetValue\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f008\",\"imported_name\":\"MultiByteToWideChar\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f010\",\"imported_name\":\"LoadLibraryA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f018\",\"imported_name\":\"GetProcAddress\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f020\",\"imported_name\":\"FreeLibrary\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f028\",\"imported_name\":\"SetEndOfFile\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f030\",\"imported_name\":\"WriteConsoleW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f038\",\"imported_name\":\"HeapSize\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f040\",\"imported_name\":\"WideCharToMultiByte\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f048\",\"imported_name\":\"EnterCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f050\",\"imported_name\":\"LeaveCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f058\",\"imported_name\":\"InitializeCriticalSectionEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f060\",\"imported_name\":\"DeleteCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f068\",\"imported_name\":\"EncodePointer\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f070\",\"imported_name\":\"DecodePointer\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f078\",\"imported_name\":\"LCMapStringEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f080\",\"imported_name\":\"GetStringTypeW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f088\",\"imported_name\":\"GetCPInfo\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f090\",\"imported_name\":\"ReleaseSRWLockExclusive\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f098\",\"imported_name\":\"AcquireSRWLockExclusive\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0a0\",\"imported_name\":\"WakeAllConditionVariable\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0a8\",\"imported_name\":\"SleepConditionVariableSRW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0b0\",\"imported_name\":\"RtlCaptureContext\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0b8\",\"imported_name\":\"RtlLookupFunctionEntry\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0c0\",\"imported_name\":\"RtlVirtualUnwind\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0c8\",\"imported_name\":\"UnhandledExceptionFilter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0d0\",\"imported_name\":\"SetUnhandledExceptionFilter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0d8\",\"imported_name\":\"GetCurrentProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0e0\",\"imported_name\":\"TerminateProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0e8\",\"imported_name\":\"IsProcessorFeaturePresent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0f0\",\"imported_name\":\"IsDebuggerPresent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f0f8\",\"imported_name\":\"GetStartupInfoW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f100\",\"imported_name\":\"GetModuleHandleW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f108\",\"imported_name\":\"QueryPerformanceCounter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f110\",\"imported_name\":\"GetCurrentProcessId\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f118\",\"imported_name\":\"GetCurrentThreadId\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f120\",\"imported_name\":\"GetSystemTimeAsFileTime\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f128\",\"imported_name\":\"InitializeSListHead\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f130\",\"imported_name\":\"RtlUnwindEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f138\",\"imported_name\":\"RtlPcToFileHeader\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f140\",\"imported_name\":\"RaiseException\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f148\",\"imported_name\":\"InterlockedFlushSList\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f150\",\"imported_name\":\"GetLastError\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f158\",\"imported_name\":\"SetLastError\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f160\",\"imported_name\":\"InitializeCriticalSectionAndSpinCount\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f168\",\"imported_name\":\"TlsAlloc\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f170\",\"imported_name\":\"TlsGetValue\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f178\",\"imported_name\":\"RtlUnwind\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f180\",\"imported_name\":\"TlsFree\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f188\",\"imported_name\":\"LoadLibraryExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f190\",\"imported_name\":\"ExitProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f198\",\"imported_name\":\"GetModuleHandleExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1a0\",\"imported_name\":\"GetModuleFileNameW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1a8\",\"imported_name\":\"HeapFree\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1b0\",\"imported_name\":\"HeapAlloc\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1b8\",\"imported_name\":\"GetStdHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1c0\",\"imported_name\":\"GetFileType\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1c8\",\"imported_name\":\"GetFileSizeEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1d0\",\"imported_name\":\"SetFilePointerEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1d8\",\"imported_name\":\"FlushFileBuffers\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1e0\",\"imported_name\":\"WriteFile\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1e8\",\"imported_name\":\"GetConsoleOutputCP\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1f0\",\"imported_name\":\"GetConsoleMode\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f1f8\",\"imported_name\":\"CloseHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f200\",\"imported_name\":\"FlsAlloc\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f208\",\"imported_name\":\"FlsGetValue\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f210\",\"imported_name\":\"FlsSetValue\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f218\",\"imported_name\":\"FlsFree\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f220\",\"imported_name\":\"CompareStringW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f228\",\"imported_name\":\"LCMapStringW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f230\",\"imported_name\":\"GetLocaleInfoW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f238\",\"imported_name\":\"IsValidLocale\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f240\",\"imported_name\":\"GetUserDefaultLCID\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f248\",\"imported_name\":\"EnumSystemLocalesW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f250\",\"imported_name\":\"ReadFile\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f258\",\"imported_name\":\"ReadConsoleW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f260\",\"imported_name\":\"GetTimeZoneInformation\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f268\",\"imported_name\":\"HeapReAlloc\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f270\",\"imported_name\":\"FindClose\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f278\",\"imported_name\":\"FindFirstFileExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f280\",\"imported_name\":\"FindNextFileW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f288\",\"imported_name\":\"IsValidCodePage\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f290\",\"imported_name\":\"GetACP\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f298\",\"imported_name\":\"GetOEMCP\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2a0\",\"imported_name\":\"GetCommandLineA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2a8\",\"imported_name\":\"GetCommandLineW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2b0\",\"imported_name\":\"GetEnvironmentStringsW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2b8\",\"imported_name\":\"FreeEnvironmentStringsW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2c0\",\"imported_name\":\"SetEnvironmentVariableW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2c8\",\"imported_name\":\"GetProcessHeap\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2d0\",\"imported_name\":\"SetStdHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2d8\",\"imported_name\":\"CreateFileW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18004f2f8\",\"imported_name\":\"MessageBoxW\",\"module\":\"USER32\"}],\"next_offset\":null}"
+      }
+    ],
+    "structuredContent": {
+      "data": [
+        {
+          "addr": "0x18004f2e8",
+          "imported_name": "wglGetProcAddress",
+          "module": "OPENGL32"
+        },
+        {
+          "addr": "0x18004f000",
+          "imported_name": "TlsSetValue",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f008",
+          "imported_name": "MultiByteToWideChar",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f010",
+          "imported_name": "LoadLibraryA",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f018",
+          "imported_name": "GetProcAddress",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f020",
+          "imported_name": "FreeLibrary",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f028",
+          "imported_name": "SetEndOfFile",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f030",
+          "imported_name": "WriteConsoleW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f038",
+          "imported_name": "HeapSize",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f040",
+          "imported_name": "WideCharToMultiByte",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f048",
+          "imported_name": "EnterCriticalSection",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f050",
+          "imported_name": "LeaveCriticalSection",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f058",
+          "imported_name": "InitializeCriticalSectionEx",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f060",
+          "imported_name": "DeleteCriticalSection",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f068",
+          "imported_name": "EncodePointer",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f070",
+          "imported_name": "DecodePointer",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f078",
+          "imported_name": "LCMapStringEx",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f080",
+          "imported_name": "GetStringTypeW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f088",
+          "imported_name": "GetCPInfo",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f090",
+          "imported_name": "ReleaseSRWLockExclusive",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f098",
+          "imported_name": "AcquireSRWLockExclusive",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0a0",
+          "imported_name": "WakeAllConditionVariable",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0a8",
+          "imported_name": "SleepConditionVariableSRW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0b0",
+          "imported_name": "RtlCaptureContext",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0b8",
+          "imported_name": "RtlLookupFunctionEntry",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0c0",
+          "imported_name": "RtlVirtualUnwind",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0c8",
+          "imported_name": "UnhandledExceptionFilter",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0d0",
+          "imported_name": "SetUnhandledExceptionFilter",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0d8",
+          "imported_name": "GetCurrentProcess",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0e0",
+          "imported_name": "TerminateProcess",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0e8",
+          "imported_name": "IsProcessorFeaturePresent",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0f0",
+          "imported_name": "IsDebuggerPresent",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f0f8",
+          "imported_name": "GetStartupInfoW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f100",
+          "imported_name": "GetModuleHandleW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f108",
+          "imported_name": "QueryPerformanceCounter",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f110",
+          "imported_name": "GetCurrentProcessId",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f118",
+          "imported_name": "GetCurrentThreadId",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f120",
+          "imported_name": "GetSystemTimeAsFileTime",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f128",
+          "imported_name": "InitializeSListHead",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f130",
+          "imported_name": "RtlUnwindEx",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f138",
+          "imported_name": "RtlPcToFileHeader",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f140",
+          "imported_name": "RaiseException",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f148",
+          "imported_name": "InterlockedFlushSList",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f150",
+          "imported_name": "GetLastError",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f158",
+          "imported_name": "SetLastError",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f160",
+          "imported_name": "InitializeCriticalSectionAndSpinCount",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f168",
+          "imported_name": "TlsAlloc",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f170",
+          "imported_name": "TlsGetValue",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f178",
+          "imported_name": "RtlUnwind",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f180",
+          "imported_name": "TlsFree",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f188",
+          "imported_name": "LoadLibraryExW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f190",
+          "imported_name": "ExitProcess",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f198",
+          "imported_name": "GetModuleHandleExW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1a0",
+          "imported_name": "GetModuleFileNameW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1a8",
+          "imported_name": "HeapFree",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1b0",
+          "imported_name": "HeapAlloc",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1b8",
+          "imported_name": "GetStdHandle",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1c0",
+          "imported_name": "GetFileType",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1c8",
+          "imported_name": "GetFileSizeEx",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1d0",
+          "imported_name": "SetFilePointerEx",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1d8",
+          "imported_name": "FlushFileBuffers",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1e0",
+          "imported_name": "WriteFile",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1e8",
+          "imported_name": "GetConsoleOutputCP",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1f0",
+          "imported_name": "GetConsoleMode",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f1f8",
+          "imported_name": "CloseHandle",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f200",
+          "imported_name": "FlsAlloc",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f208",
+          "imported_name": "FlsGetValue",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f210",
+          "imported_name": "FlsSetValue",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f218",
+          "imported_name": "FlsFree",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f220",
+          "imported_name": "CompareStringW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f228",
+          "imported_name": "LCMapStringW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f230",
+          "imported_name": "GetLocaleInfoW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f238",
+          "imported_name": "IsValidLocale",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f240",
+          "imported_name": "GetUserDefaultLCID",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f248",
+          "imported_name": "EnumSystemLocalesW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f250",
+          "imported_name": "ReadFile",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f258",
+          "imported_name": "ReadConsoleW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f260",
+          "imported_name": "GetTimeZoneInformation",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f268",
+          "imported_name": "HeapReAlloc",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f270",
+          "imported_name": "FindClose",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f278",
+          "imported_name": "FindFirstFileExW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f280",
+          "imported_name": "FindNextFileW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f288",
+          "imported_name": "IsValidCodePage",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f290",
+          "imported_name": "GetACP",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f298",
+          "imported_name": "GetOEMCP",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2a0",
+          "imported_name": "GetCommandLineA",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2a8",
+          "imported_name": "GetCommandLineW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2b0",
+          "imported_name": "GetEnvironmentStringsW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2b8",
+          "imported_name": "FreeEnvironmentStringsW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2c0",
+          "imported_name": "SetEnvironmentVariableW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2c8",
+          "imported_name": "GetProcessHeap",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2d0",
+          "imported_name": "SetStdHandle",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2d8",
+          "imported_name": "CreateFileW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18004f2f8",
+          "imported_name": "MessageBoxW",
+          "module": "USER32"
+        }
+      ],
+      "next_offset": null
+    },
+    "isError": false
+  },
+  "id": 1
+}

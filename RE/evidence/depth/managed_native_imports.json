@@ -1,0 +1,209 @@
+[
+  {
+    "file": "RE\\inputs\\depth\\BOEInterleaving.dll",
+    "imports": [
+      {
+        "module": "VCRUNTIME140.dll",
+        "names": [
+          "__current_exception_context",
+          "memset",
+          "__FrameUnwindFilter",
+          "__std_type_info_destroy_list",
+          "__C_specific_handler",
+          "_CxxThrowException",
+          "__std_exception_destroy",
+          "__current_exception",
+          "__std_exception_copy",
+          "memcpy"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-runtime-l1-1-0.dll",
+        "names": [
+          "_crt_atexit",
+          "_execute_onexit_table",
+          "_register_onexit_function",
+          "_initialize_onexit_table",
+          "terminate",
+          "abort",
+          "_cexit",
+          "_initterm",
+          "_crt_at_quick_exit",
+          "_initterm_e",
+          "_seh_filter_dll",
+          "_initialize_narrow_environment",
+          "_configure_narrow_argv"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-heap-l1-1-0.dll",
+        "names": [
+          "_callnewh",
+          "free",
+          "malloc"
+        ]
+      },
+      {
+        "module": "KERNEL32.dll",
+        "names": [
+          "InitializeSListHead",
+          "GetSystemTimeAsFileTime",
+          "GetCurrentThreadId",
+          "GetCurrentProcessId",
+          "QueryPerformanceCounter",
+          "RtlCaptureContext",
+          "RtlLookupFunctionEntry",
+          "RtlVirtualUnwind",
+          "IsDebuggerPresent",
+          "UnhandledExceptionFilter",
+          "SetUnhandledExceptionFilter",
+          "GetStartupInfoW",
+          "Sleep",
+          "WideCharToMultiByte",
+          "DisableThreadLibraryCalls",
+          "GetModuleHandleW",
+          "IsProcessorFeaturePresent"
+        ]
+      },
+      {
+        "module": "interlaceSDK.dll",
+        "names": [
+          "BOE_Interleaving_setRefractDeviceParam",
+          "BOE_Interleaving_setDeviceParam",
+          "BOE_Interleaving_setWholeParam",
+          "BOE_Interleaving_doInterleave",
+          "BOE_Interleaving_initSDK",
+          "BOE_Interleaving_releaseSDK"
+        ]
+      },
+      {
+        "module": "MSVCP140.dll",
+        "names": [
+          "?__ExceptionPtrCopy@@YAXPEAXPEBX@Z",
+          "?__ExceptionPtrDestroy@@YAXPEAX@Z"
+        ]
+      },
+      {
+        "module": "mscoree.dll",
+        "names": [
+          "_CorDllMain"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "RE\\inputs\\depth\\BOERenderWapper.dll",
+    "imports": [
+      {
+        "module": "KERNEL32.dll",
+        "names": [
+          "GetCurrentThreadId",
+          "GetSystemTimeAsFileTime",
+          "DisableThreadLibraryCalls",
+          "InitializeSListHead",
+          "RtlCaptureContext",
+          "RtlLookupFunctionEntry",
+          "GetCurrentProcessId",
+          "IsDebuggerPresent",
+          "UnhandledExceptionFilter",
+          "SetUnhandledExceptionFilter",
+          "GetStartupInfoW",
+          "IsProcessorFeaturePresent",
+          "GetModuleHandleW",
+          "RtlVirtualUnwind",
+          "QueryPerformanceCounter",
+          "Sleep",
+          "GetCurrentProcess",
+          "TerminateProcess"
+        ]
+      },
+      {
+        "module": "VCRUNTIME140.dll",
+        "names": [
+          "memcpy",
+          "__std_exception_copy",
+          "__std_exception_destroy",
+          "_CxxThrowException",
+          "__C_specific_handler",
+          "__FrameUnwindFilter",
+          "__std_terminate",
+          "memset",
+          "__current_exception_context",
+          "__current_exception",
+          "__std_type_info_destroy_list"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-runtime-l1-1-0.dll",
+        "names": [
+          "_register_onexit_function",
+          "_initialize_onexit_table",
+          "_initialize_narrow_environment",
+          "_execute_onexit_table",
+          "_seh_filter_dll",
+          "_initterm_e",
+          "_initterm",
+          "_crt_atexit",
+          "_crt_at_quick_exit",
+          "_cexit",
+          "_invoke_watson",
+          "abort",
+          "terminate",
+          "_configure_narrow_argv"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-heap-l1-1-0.dll",
+        "names": [
+          "_callnewh",
+          "free",
+          "malloc"
+        ]
+      },
+      {
+        "module": "D3DCOMPILER_47.dll",
+        "names": [
+          "D3DCompile"
+        ]
+      },
+      {
+        "module": "MSVCP140.dll",
+        "names": [
+          "?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z",
+          "?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z",
+          "?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z",
+          "?width@ios_base@std@@QEAA_J_J@Z",
+          "?width@ios_base@std@@QEBA_JXZ",
+          "?flags@ios_base@std@@QEBAHXZ",
+          "?good@ios_base@std@@QEBA_NXZ",
+          "?uncaught_exception@std@@YA_NXZ",
+          "?_Xlength_error@std@@YAXPEBD@Z",
+          "?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A",
+          "?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ",
+          "?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z",
+          "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@J@Z",
+          "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z",
+          "?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ",
+          "?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z",
+          "?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ",
+          "?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ",
+          "?__ExceptionPtrCopy@@YAXPEAXPEBX@Z",
+          "?__ExceptionPtrDestroy@@YAXPEAX@Z",
+          "?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ"
+        ]
+      },
+      {
+        "module": "VCRUNTIME140_1.dll",
+        "names": [
+          "__CxxFrameHandler4"
+        ]
+      },
+      {
+        "module": "mscoree.dll",
+        "names": [
+          "_CorDllMain"
+        ]
+      }
+    ]
+  }
+]

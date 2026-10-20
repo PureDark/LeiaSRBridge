@@ -1,0 +1,102 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"data\":[{\"addr\":\"0x18001a6b8\",\"name\":\"??_7MediaTranspose2to3Plugin@media_transpose2to3@@6B@\"},{\"addr\":\"0x18001a6d0\",\"name\":\"aMediaTranspose_0\"},{\"addr\":\"0x18001aa18\",\"name\":\"??_7MediaTranspose@gear@@6B@\"},{\"addr\":\"0x18001c200\",\"name\":\"aMediaTranspose_1\"},{\"addr\":\"0x18001f680\",\"name\":\"??_R4MediaTranspose2to3Plugin@media_transpose2to3@@6B@\"},{\"addr\":\"0x18001f6a8\",\"name\":\"??_R3MediaTranspose2to3Plugin@media_transpose2to3@@8\"},{\"addr\":\"0x18001f6c0\",\"name\":\"??_R2MediaTranspose2to3Plugin@media_transpose2to3@@8\"},{\"addr\":\"0x18001f6d8\",\"name\":\"??_R1A@?0A@EA@MediaTranspose2to3Plugin@media_transpose2to3@@8\"},{\"addr\":\"0x18001fbc0\",\"name\":\"??_R3IMediaTranspose@gear@@8\"},{\"addr\":\"0x18001fbd8\",\"name\":\"??_R2IMediaTranspose@gear@@8\"},{\"addr\":\"0x18001fbe8\",\"name\":\"??_R1A@?0A@EA@IMediaTranspose@gear@@8\"},{\"addr\":\"0x18001fc10\",\"name\":\"??_R4MediaTranspose@gear@@6B@\"},{\"addr\":\"0x18001fc38\",\"name\":\"??_R3MediaTranspose@gear@@8\"},{\"addr\":\"0x18001fc50\",\"name\":\"??_R2MediaTranspose@gear@@8\"},{\"addr\":\"0x18001fc68\",\"name\":\"??_R1A@?0A@EA@MediaTranspose@gear@@8\"},{\"addr\":\"0x1800243c0\",\"name\":\"aMediaTranspose\"},{\"addr\":\"0x18002440d\",\"name\":\"aMediatranspose\"},{\"addr\":\"0x1800268d0\",\"name\":\"??_R0?AVMediaTranspose2to3Plugin@media_transpose2to3@@@8\"},{\"addr\":\"0x180026e68\",\"name\":\"??_R0?AVIMediaTranspose@gear@@@8\"},{\"addr\":\"0x180026e98\",\"name\":\"??_R0?AVMediaTranspose@gear@@@8\"}],\"next_offset\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "data": [
+            {
+              "addr": "0x18001a6b8",
+              "name": "??_7MediaTranspose2to3Plugin@media_transpose2to3@@6B@"
+            },
+            {
+              "addr": "0x18001a6d0",
+              "name": "aMediaTranspose_0"
+            },
+            {
+              "addr": "0x18001aa18",
+              "name": "??_7MediaTranspose@gear@@6B@"
+            },
+            {
+              "addr": "0x18001c200",
+              "name": "aMediaTranspose_1"
+            },
+            {
+              "addr": "0x18001f680",
+              "name": "??_R4MediaTranspose2to3Plugin@media_transpose2to3@@6B@"
+            },
+            {
+              "addr": "0x18001f6a8",
+              "name": "??_R3MediaTranspose2to3Plugin@media_transpose2to3@@8"
+            },
+            {
+              "addr": "0x18001f6c0",
+              "name": "??_R2MediaTranspose2to3Plugin@media_transpose2to3@@8"
+            },
+            {
+              "addr": "0x18001f6d8",
+              "name": "??_R1A@?0A@EA@MediaTranspose2to3Plugin@media_transpose2to3@@8"
+            },
+            {
+              "addr": "0x18001fbc0",
+              "name": "??_R3IMediaTranspose@gear@@8"
+            },
+            {
+              "addr": "0x18001fbd8",
+              "name": "??_R2IMediaTranspose@gear@@8"
+            },
+            {
+              "addr": "0x18001fbe8",
+              "name": "??_R1A@?0A@EA@IMediaTranspose@gear@@8"
+            },
+            {
+              "addr": "0x18001fc10",
+              "name": "??_R4MediaTranspose@gear@@6B@"
+            },
+            {
+              "addr": "0x18001fc38",
+              "name": "??_R3MediaTranspose@gear@@8"
+            },
+            {
+              "addr": "0x18001fc50",
+              "name": "??_R2MediaTranspose@gear@@8"
+            },
+            {
+              "addr": "0x18001fc68",
+              "name": "??_R1A@?0A@EA@MediaTranspose@gear@@8"
+            },
+            {
+              "addr": "0x1800243c0",
+              "name": "aMediaTranspose"
+            },
+            {
+              "addr": "0x18002440d",
+              "name": "aMediatranspose"
+            },
+            {
+              "addr": "0x1800268d0",
+              "name": "??_R0?AVMediaTranspose2to3Plugin@media_transpose2to3@@@8"
+            },
+            {
+              "addr": "0x180026e68",
+              "name": "??_R0?AVIMediaTranspose@gear@@@8"
+            },
+            {
+              "addr": "0x180026e98",
+              "name": "??_R0?AVMediaTranspose@gear@@@8"
+            }
+          ],
+          "next_offset": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

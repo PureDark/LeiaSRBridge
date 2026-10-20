@@ -1,0 +1,1367 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"data\":[{\"addr\":\"0x180001000\",\"name\":\"sub_180001000\",\"size\":\"0x61\"},{\"addr\":\"0x180001070\",\"name\":\"sub_180001070\",\"size\":\"0xb0\"},{\"addr\":\"0x180001120\",\"name\":\"sub_180001120\",\"size\":\"0x20\"},{\"addr\":\"0x180001140\",\"name\":\"sub_180001140\",\"size\":\"0xd\"},{\"addr\":\"0x180001150\",\"name\":\"sub_180001150\",\"size\":\"0xd\"},{\"addr\":\"0x180001160\",\"name\":\"sub_180001160\",\"size\":\"0x4\"},{\"addr\":\"0x180001170\",\"name\":\"sub_180001170\",\"size\":\"0x76\"},{\"addr\":\"0x1800011f0\",\"name\":\"sub_1800011F0\",\"size\":\"0x18\"},{\"addr\":\"0x180001210\",\"name\":\"sub_180001210\",\"size\":\"0x72\"},{\"addr\":\"0x180001290\",\"name\":\"sub_180001290\",\"size\":\"0x6\"},{\"addr\":\"0x1800012a0\",\"name\":\"sub_1800012A0\",\"size\":\"0xa\"},{\"addr\":\"0x1800012b0\",\"name\":\"sub_1800012B0\",\"size\":\"0x22\"},{\"addr\":\"0x1800012e0\",\"name\":\"sub_1800012E0\",\"size\":\"0xc0\"},{\"addr\":\"0x1800013a0\",\"name\":\"InitializeCriticalSectionEx\",\"size\":\"0x7\"},{\"addr\":\"0x1800013b0\",\"name\":\"sub_1800013B0\",\"size\":\"0xd\"},{\"addr\":\"0x1800013c0\",\"name\":\"sub_1800013C0\",\"size\":\"0x39\"},{\"addr\":\"0x180001400\",\"name\":\"sub_180001400\",\"size\":\"0x2e\"},{\"addr\":\"0x180001430\",\"name\":\"sub_180001430\",\"size\":\"0x1e\"},{\"addr\":\"0x180001450\",\"name\":\"sub_180001450\",\"size\":\"0xe\"},{\"addr\":\"0x180001460\",\"name\":\"sub_180001460\",\"size\":\"0xb\"},{\"addr\":\"0x180001470\",\"name\":\"sub_180001470\",\"size\":\"0x30\"},{\"addr\":\"0x1800014a0\",\"name\":\"sub_1800014A0\",\"size\":\"0x8c\"},{\"addr\":\"0x180001530\",\"name\":\"sub_180001530\",\"size\":\"0x1a9\"},{\"addr\":\"0x1800016e0\",\"name\":\"sub_1800016E0\",\"size\":\"0x6\"},{\"addr\":\"0x1800016f0\",\"name\":\"sub_1800016F0\",\"size\":\"0x3d\"},{\"addr\":\"0x180001730\",\"name\":\"sub_180001730\",\"size\":\"0x607\"},{\"addr\":\"0x180001d40\",\"name\":\"sub_180001D40\",\"size\":\"0x2b\"},{\"addr\":\"0x180001d70\",\"name\":\"sub_180001D70\",\"size\":\"0x162\"},{\"addr\":\"0x180001ee0\",\"name\":\"sub_180001EE0\",\"size\":\"0x1b\"},{\"addr\":\"0x180001f00\",\"name\":\"sub_180001F00\",\"size\":\"0x10\"},{\"addr\":\"0x180001f10\",\"name\":\"sub_180001F10\",\"size\":\"0x23a\"},{\"addr\":\"0x180002150\",\"name\":\"sub_180002150\",\"size\":\"0x528\"},{\"addr\":\"0x180002680\",\"name\":\"sub_180002680\",\"size\":\"0x20e\"},{\"addr\":\"0x180002890\",\"name\":\"sub_180002890\",\"size\":\"0xa4\"},{\"addr\":\"0x180002940\",\"name\":\"sub_180002940\",\"size\":\"0x9\"},{\"addr\":\"0x180002950\",\"name\":\"sub_180002950\",\"size\":\"0x12f\"},{\"addr\":\"0x180002a80\",\"name\":\"sub_180002A80\",\"size\":\"0x20f\"},{\"addr\":\"0x180002c90\",\"name\":\"sub_180002C90\",\"size\":\"0xa\"},{\"addr\":\"0x180002ca0\",\"name\":\"sub_180002CA0\",\"size\":\"0x8a\"},{\"addr\":\"0x180002d30\",\"name\":\"sub_180002D30\",\"size\":\"0x1a8\"},{\"addr\":\"0x180002ee0\",\"name\":\"sub_180002EE0\",\"size\":\"0xfc\"},{\"addr\":\"0x180002fe0\",\"name\":\"sub_180002FE0\",\"size\":\"0x435\"},{\"addr\":\"0x180003420\",\"name\":\"sub_180003420\",\"size\":\"0x6\"},{\"addr\":\"0x180003430\",\"name\":\"sub_180003430\",\"size\":\"0x14c\"},{\"addr\":\"0x180003580\",\"name\":\"sub_180003580\",\"size\":\"0x4c9\"},{\"addr\":\"0x180003a50\",\"name\":\"sub_180003A50\",\"size\":\"0x206\"},{\"addr\":\"0x180003c60\",\"name\":\"sub_180003C60\",\"size\":\"0xdaf\"},{\"addr\":\"0x180004a10\",\"name\":\"sub_180004A10\",\"size\":\"0x3\"},{\"addr\":\"0x180004a20\",\"name\":\"sub_180004A20\",\"size\":\"0xb2\"},{\"addr\":\"0x180004ae0\",\"name\":\"sub_180004AE0\",\"size\":\"0x9e6\"},{\"addr\":\"0x1800054d0\",\"name\":\"sub_1800054D0\",\"size\":\"0x48\"},{\"addr\":\"0x180005520\",\"name\":\"DllCanUnloadNow\",\"size\":\"0x2c\"},{\"addr\":\"0x180005550\",\"name\":\"DllGetClassObject\",\"size\":\"0x15e\"},{\"addr\":\"0x1800056b0\",\"name\":\"DllInstall\",\"size\":\"0x1c9\"},{\"addr\":\"0x180005880\",\"name\":\"DllRegisterServer\",\"size\":\"0x14a\"},{\"addr\":\"0x1800059d0\",\"name\":\"DllUnregisterServer\",\"size\":\"0x30\"},{\"addr\":\"0x180005a00\",\"name\":\"sub_180005A00\",\"size\":\"0x2c\"},{\"addr\":\"0x180005a30\",\"name\":\"sub_180005A30\",\"size\":\"0x48\"},{\"addr\":\"0x180005a80\",\"name\":\"sub_180005A80\",\"size\":\"0x131\"},{\"addr\":\"0x180005bc0\",\"name\":\"sub_180005BC0\",\"size\":\"0x55\"},{\"addr\":\"0x180005c20\",\"name\":\"?_Reference@_RefCounter@details@Concurrency@@QEAAJXZ\",\"size\":\"0xd\"},{\"addr\":\"0x180005c30\",\"name\":\"sub_180005C30\",\"size\":\"0x59\"},{\"addr\":\"0x180005c90\",\"name\":\"sub_180005C90\",\"size\":\"0x5f\"},{\"addr\":\"0x180005cf0\",\"name\":\"?Reset@EventWaitNode@details@Concurrency@@QEAA_NXZ\",\"size\":\"0xb\"},{\"addr\":\"0x180005d00\",\"name\":\"?Destroy@EventWaitNode@details@Concurrency@@QEAAXXZ\",\"size\":\"0xb\"},{\"addr\":\"0x180005d10\",\"name\":\"sub_180005D10\",\"size\":\"0xa\"},{\"addr\":\"0x180005d20\",\"name\":\"sub_180005D20\",\"size\":\"0x5\"},{\"addr\":\"0x180005d30\",\"name\":\"sub_180005D30\",\"size\":\"0x93\"},{\"addr\":\"0x180005dd0\",\"name\":\"sub_180005DD0\",\"size\":\"0x5c\"},{\"addr\":\"0x180005e30\",\"name\":\"sub_180005E30\",\"size\":\"0x5\"},{\"addr\":\"0x180005e40\",\"name\":\"sub_180005E40\",\"size\":\"0x93\"},{\"addr\":\"0x180005ee0\",\"name\":\"_guard_check_icall_nop\",\"size\":\"0x3\"},{\"addr\":\"0x180005ef0\",\"name\":\"sub_180005EF0\",\"size\":\"0x1c\"},{\"addr\":\"0x180005f10\",\"name\":\"sub_180005F10\",\"size\":\"0x54\"},{\"addr\":\"0x180005f70\",\"name\":\"sub_180005F70\",\"size\":\"0x26\"},{\"addr\":\"0x180005fa0\",\"name\":\"sub_180005FA0\",\"size\":\"0x4e\"},{\"addr\":\"0x180005ff0\",\"name\":\"sub_180005FF0\",\"size\":\"0x14\"},{\"addr\":\"0x180006010\",\"name\":\"sub_180006010\",\"size\":\"0x69\"},{\"addr\":\"0x180006080\",\"name\":\"sub_180006080\",\"size\":\"0x12d\"},{\"addr\":\"0x1800061b0\",\"name\":\"sub_1800061B0\",\"size\":\"0x90\"},{\"addr\":\"0x180006240\",\"name\":\"sub_180006240\",\"size\":\"0x17\"},{\"addr\":\"0x180006260\",\"name\":\"sub_180006260\",\"size\":\"0x4\"},{\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"size\":\"0x399\"},{\"addr\":\"0x180006610\",\"name\":\"sub_180006610\",\"size\":\"0x43\"},{\"addr\":\"0x180006660\",\"name\":\"sub_180006660\",\"size\":\"0x43\"},{\"addr\":\"0x1800066b0\",\"name\":\"sub_1800066B0\",\"size\":\"0x37\"},{\"addr\":\"0x1800066f0\",\"name\":\"sub_1800066F0\",\"size\":\"0x18b\"},{\"addr\":\"0x180006880\",\"name\":\"sub_180006880\",\"size\":\"0x4b\"},{\"addr\":\"0x1800068d0\",\"name\":\"sub_1800068D0\",\"size\":\"0x189\"},{\"addr\":\"0x180006a60\",\"name\":\"sub_180006A60\",\"size\":\"0x189\"},{\"addr\":\"0x180006bf0\",\"name\":\"sub_180006BF0\",\"size\":\"0x45\"},{\"addr\":\"0x180006c40\",\"name\":\"sub_180006C40\",\"size\":\"0x5c\"},{\"addr\":\"0x180006ca0\",\"name\":\"sub_180006CA0\",\"size\":\"0x127\"},{\"addr\":\"0x180006dd0\",\"name\":\"sub_180006DD0\",\"size\":\"0xe\"},{\"addr\":\"0x180006de0\",\"name\":\"sub_180006DE0\",\"size\":\"0x25c\"},{\"addr\":\"0x180007040\",\"name\":\"sub_180007040\",\"size\":\"0x39\"},{\"addr\":\"0x180007080\",\"name\":\"sub_180007080\",\"size\":\"0x99\"},{\"addr\":\"0x180007120\",\"name\":\"sub_180007120\",\"size\":\"0x13\"},{\"addr\":\"0x180007140\",\"name\":\"sub_180007140\",\"size\":\"0x42\"},{\"addr\":\"0x180007190\",\"name\":\"sub_180007190\",\"size\":\"0x22\"},{\"addr\":\"0x1800071c0\",\"name\":\"sub_1800071C0\",\"size\":\"0x16\"},{\"addr\":\"0x1800071e0\",\"name\":\"sub_1800071E0\",\"size\":\"0x18\"},{\"addr\":\"0x180007200\",\"name\":\"sub_180007200\",\"size\":\"0x2b\"},{\"addr\":\"0x180007230\",\"name\":\"sub_180007230\",\"size\":\"0x44\"},{\"addr\":\"0x180007280\",\"name\":\"sub_180007280\",\"size\":\"0x13d\"},{\"addr\":\"0x1800073c0\",\"name\":\"sub_1800073C0\",\"size\":\"0x71\"},{\"addr\":\"0x180007440\",\"name\":\"sub_180007440\",\"size\":\"0x1ad\"},{\"addr\":\"0x1800075f0\",\"name\":\"sub_1800075F0\",\"size\":\"0x154\"},{\"addr\":\"0x180007750\",\"name\":\"sub_180007750\",\"size\":\"0x347\"},{\"addr\":\"0x180007aa0\",\"name\":\"sub_180007AA0\",\"size\":\"0x1dc\"},{\"addr\":\"0x180007c80\",\"name\":\"sub_180007C80\",\"size\":\"0x4c\"},{\"addr\":\"0x180007cd0\",\"name\":\"sub_180007CD0\",\"size\":\"0x131\"},{\"addr\":\"0x180007e10\",\"name\":\"sub_180007E10\",\"size\":\"0xc\"},{\"addr\":\"0x180007e20\",\"name\":\"sub_180007E20\",\"size\":\"0xe\"},{\"addr\":\"0x180007e30\",\"name\":\"sub_180007E30\",\"size\":\"0x2e\"},{\"addr\":\"0x180007e60\",\"name\":\"sub_180007E60\",\"size\":\"0x11\"},{\"addr\":\"0x180007e80\",\"name\":\"sub_180007E80\",\"size\":\"0x1c\"},{\"addr\":\"0x180007ea0\",\"name\":\"sub_180007EA0\",\"size\":\"0x1c\"},{\"addr\":\"0x180007ebc\",\"name\":\"BSTR_UserSize\",\"size\":\"0x6\"},{\"addr\":\"0x180007ec2\",\"name\":\"BSTR_UserMarshal\",\"size\":\"0x6\"},{\"addr\":\"0x180007ec8\",\"name\":\"BSTR_UserUnmarshal\",\"size\":\"0x6\"},{\"addr\":\"0x180007ece\",\"name\":\"BSTR_UserFree\",\"size\":\"0x6\"},{\"addr\":\"0x180007ed4\",\"name\":\"BSTR_UserSize64\",\"size\":\"0x6\"},{\"addr\":\"0x180007eda\",\"name\":\"BSTR_UserMarshal64\",\"size\":\"0x6\"},{\"addr\":\"0x180007ee0\",\"name\":\"BSTR_UserUnmarshal64\",\"size\":\"0x6\"},{\"addr\":\"0x180007ee6\",\"name\":\"BSTR_UserFree64\",\"size\":\"0x6\"},{\"addr\":\"0x180007eec\",\"name\":\"LPSAFEARRAY_UserSize\",\"size\":\"0x6\"},{\"addr\":\"0x180007ef2\",\"name\":\"LPSAFEARRAY_UserMarshal\",\"size\":\"0x6\"},{\"addr\":\"0x180007ef8\",\"name\":\"LPSAFEARRAY_UserUnmarshal\",\"size\":\"0x6\"},{\"addr\":\"0x180007efe\",\"name\":\"LPSAFEARRAY_UserFree\",\"size\":\"0x6\"},{\"addr\":\"0x180007f04\",\"name\":\"LPSAFEARRAY_UserSize64\",\"size\":\"0x6\"},{\"addr\":\"0x180007f0a\",\"name\":\"LPSAFEARRAY_UserMarshal64\",\"size\":\"0x6\"},{\"addr\":\"0x180007f10\",\"name\":\"LPSAFEARRAY_UserUnmarshal64\",\"size\":\"0x6\"},{\"addr\":\"0x180007f16\",\"name\":\"LPSAFEARRAY_UserFree64\",\"size\":\"0x6\"},{\"addr\":\"0x180007f1c\",\"name\":\"sub_180007F1C\",\"size\":\"0xa5\"},{\"addr\":\"0x180007fc4\",\"name\":\"sub_180007FC4\",\"size\":\"0x34\"},{\"addr\":\"0x180007ff8\",\"name\":\"j_free\",\"size\":\"0x5\"},{\"addr\":\"0x180008000\",\"name\":\"sub_180008000\",\"size\":\"0x2b\"},{\"addr\":\"0x18000802c\",\"name\":\"sub_18000802C\",\"size\":\"0x6b\"},{\"addr\":\"0x180008098\",\"name\":\"sub_180008098\",\"size\":\"0x61\"},{\"addr\":\"0x1800080fc\",\"name\":\"j_j_free\",\"size\":\"0x5\"},{\"addr\":\"0x180008104\",\"name\":\"j_j_j_free\",\"size\":\"0x5\"},{\"addr\":\"0x18000810c\",\"name\":\"sub_18000810C\",\"size\":\"0x39\"},{\"addr\":\"0x180008148\",\"name\":\"sub_180008148\",\"size\":\"0x34\"},{\"addr\":\"0x18000817c\",\"name\":\"sub_18000817C\",\"size\":\"0x15\"},{\"addr\":\"0x180008194\",\"name\":\"sub_180008194\",\"size\":\"0x28\"},{\"addr\":\"0x1800081bc\",\"name\":\"sub_1800081BC\",\"size\":\"0x15\"},{\"addr\":\"0x1800081d4\",\"name\":\"sub_1800081D4\",\"size\":\"0x60\"},{\"addr\":\"0x180008234\",\"name\":\"sub_180008234\",\"size\":\"0x30\"},{\"addr\":\"0x180008264\",\"name\":\"sub_180008264\",\"size\":\"0x14\"},{\"addr\":\"0x180008278\",\"name\":\"sub_180008278\",\"size\":\"0x3a\"},{\"addr\":\"0x1800082b4\",\"name\":\"sub_1800082B4\",\"size\":\"0x8b\"},{\"addr\":\"0x180008340\",\"name\":\"sub_180008340\",\"size\":\"0x98\"},{\"addr\":\"0x1800083d8\",\"name\":\"sub_1800083D8\",\"size\":\"0x24\"},{\"addr\":\"0x1800083fc\",\"name\":\"sub_1800083FC\",\"size\":\"0x29\"},{\"addr\":\"0x180008428\",\"name\":\"sub_180008428\",\"size\":\"0x3a\"},{\"addr\":\"0x180008464\",\"name\":\"atexit\",\"size\":\"0x17\"},{\"addr\":\"0x18000847c\",\"name\":\"__raise_securityfailure\",\"size\":\"0x34\"},{\"addr\":\"0x1800084b0\",\"name\":\"__report_gsfailure\",\"size\":\"0xd3\"},{\"addr\":\"0x180008584\",\"name\":\"sub_180008584\",\"size\":\"0xe\"},{\"addr\":\"0x180008598\",\"name\":\"__report_securityfailure\",\"size\":\"0x9d\"},{\"addr\":\"0x180008638\",\"name\":\"capture_current_context\",\"size\":\"0x6d\"},{\"addr\":\"0x1800086a8\",\"name\":\"capture_previous_context\",\"size\":\"0x71\"},{\"addr\":\"0x18000871c\",\"name\":\"sub_18000871C\",\"size\":\"0x5\"},{\"addr\":\"0x180008724\",\"name\":\"__GSHandlerCheck\",\"size\":\"0x1d\"},{\"addr\":\"0x180008744\",\"name\":\"__GSHandlerCheckCommon\",\"size\":\"0x5b\"},{\"addr\":\"0x1800087a0\",\"name\":\"__GSHandlerCheck_EH4\",\"size\":\"0x7f\"},{\"addr\":\"0x180008830\",\"name\":\"__alloca_probe\",\"size\":\"0x4e\"},{\"addr\":\"0x180008890\",\"name\":\"__security_check_cookie\",\"size\":\"0x1e\"},{\"addr\":\"0x1800088b0\",\"name\":\"sub_1800088B0\",\"size\":\"0x70\"},{\"addr\":\"0x180008920\",\"name\":\"sub_180008920\",\"size\":\"0x13\"},{\"addr\":\"0x180008934\",\"name\":\"sub_180008934\",\"size\":\"0x50\"},{\"addr\":\"0x180008984\",\"name\":\"sub_180008984\",\"size\":\"0x116\"},{\"addr\":\"0x180008a9c\",\"name\":\"sub_180008A9C\",\"size\":\"0x80\"},{\"addr\":\"0x180008b1c\",\"name\":\"sub_180008B1C\",\"size\":\"0x128\"},{\"addr\":\"0x180008c44\",\"name\":\"DllEntryPoint\",\"size\":\"0x3d\"},{\"addr\":\"0x180008c84\",\"name\":\"sub_180008C84\",\"size\":\"0x2ca\"},{\"addr\":\"0x180008f50\",\"name\":\"?__uncaught_exception@@YA_NXZ\",\"size\":\"0xc\"},{\"addr\":\"0x180008f5c\",\"name\":\"sub_180008F5C\",\"size\":\"0x8\"},{\"addr\":\"0x180008f64\",\"name\":\"sub_180008F64\",\"size\":\"0x148\"},{\"addr\":\"0x1800090ac\",\"name\":\"sub_1800090AC\",\"size\":\"0x3b\"},{\"addr\":\"0x1800090e8\",\"name\":\"sub_1800090E8\",\"size\":\"0xac\"},{\"addr\":\"0x180009194\",\"name\":\"sub_180009194\",\"size\":\"0xe\"},{\"addr\":\"0x1800091a4\",\"name\":\"sub_1800091A4\",\"size\":\"0xc\"},{\"addr\":\"0x1800091b0\",\"name\":\"sub_1800091B0\",\"size\":\"0x8\"},{\"addr\":\"0x1800091b8\",\"name\":\"sub_1800091B8\",\"size\":\"0x8\"},{\"addr\":\"0x1800091c0\",\"name\":\"sub_1800091C0\",\"size\":\"0x1b\"},{\"addr\":\"0x1800091dc\",\"name\":\"sub_1800091DC\",\"size\":\"0x8\"},{\"addr\":\"0x1800091e4\",\"name\":\"sub_1800091E4\",\"size\":\"0x3c\"},{\"addr\":\"0x180009220\",\"name\":\"sub_180009220\",\"size\":\"0x3c\"},{\"addr\":\"0x180009260\",\"name\":\"sub_180009260\",\"size\":\"0x3c\"},{\"addr\":\"0x18000929c\",\"name\":\"sub_18000929C\",\"size\":\"0x1e\"},{\"addr\":\"0x1800092bc\",\"name\":\"sub_1800092BC\",\"size\":\"0x3c\"},{\"addr\":\"0x1800092f8\",\"name\":\"sub_1800092F8\",\"size\":\"0x1e\"},{\"addr\":\"0x180009318\",\"name\":\"sub_180009318\",\"size\":\"0x32\"},{\"addr\":\"0x18000934c\",\"name\":\"??1agent@Concurrency@@UEAA@XZ\",\"size\":\"0x13\"},{\"addr\":\"0x180009360\",\"name\":\"sub_180009360\",\"size\":\"0x42\"},{\"addr\":\"0x1800093a4\",\"name\":\"?cancel_current_task@Concurrency@@YAXXZ\",\"size\":\"0x20\"},{\"addr\":\"0x1800093c4\",\"name\":\"?cancel_current_task@Concurrency@@YAXXZ_0\",\"size\":\"0x20\"},{\"addr\":\"0x1800093e4\",\"name\":\"unknown_libname_1\",\"size\":\"0x12\"},{\"addr\":\"0x1800093f6\",\"name\":\"?uncaught_exception@std@@YA_NXZ\",\"size\":\"0x6\"},{\"addr\":\"0x1800093fc\",\"name\":\"IUnknown_QueryInterface_Proxy\",\"size\":\"0x6\"},{\"addr\":\"0x180009402\",\"name\":\"IUnknown_AddRef_Proxy\",\"size\":\"0x6\"},{\"addr\":\"0x180009408\",\"name\":\"IUnknown_Release_Proxy\",\"size\":\"0x6\"},{\"addr\":\"0x18000940e\",\"name\":\"NdrStubCall3\",\"size\":\"0x6\"},{\"addr\":\"0x180009414\",\"name\":\"NdrOleAllocate\",\"size\":\"0x6\"},{\"addr\":\"0x18000941a\",\"name\":\"NdrOleFree\",\"size\":\"0x6\"},{\"addr\":\"0x180009420\",\"name\":\"NdrStubForwardingFunction\",\"size\":\"0x6\"},{\"addr\":\"0x180009426\",\"name\":\"NdrCStdStubBuffer2_Release\",\"size\":\"0x6\"},{\"addr\":\"0x18000942c\",\"name\":\"__std_terminate\",\"size\":\"0x6\"},{\"addr\":\"0x180009432\",\"name\":\"_CxxThrowException\",\"size\":\"0x6\"},{\"addr\":\"0x180009438\",\"name\":\"__CxxFrameHandler4\",\"size\":\"0x6\"},{\"addr\":\"0x18000943e\",\"name\":\"memset\",\"size\":\"0x6\"},{\"addr\":\"0x180009444\",\"name\":\"wcsstr\",\"size\":\"0x6\"},{\"addr\":\"0x18000944a\",\"name\":\"memcpy\",\"size\":\"0x6\"},{\"addr\":\"0x180009450\",\"name\":\"_purecall\",\"size\":\"0x6\"},{\"addr\":\"0x180009456\",\"name\":\"wcsrchr\",\"size\":\"0x6\"},{\"addr\":\"0x18000945c\",\"name\":\"memcmp\",\"size\":\"0x6\"},{\"addr\":\"0x180009462\",\"name\":\"__current_exception\",\"size\":\"0x6\"},{\"addr\":\"0x180009468\",\"name\":\"__current_exception_context\",\"size\":\"0x6\"},{\"addr\":\"0x18000946e\",\"name\":\"__C_specific_handler\",\"size\":\"0x6\"},{\"addr\":\"0x180009474\",\"name\":\"__std_type_info_destroy_list\",\"size\":\"0x6\"},{\"addr\":\"0x18000947a\",\"name\":\"__std_exception_copy\",\"size\":\"0x6\"},{\"addr\":\"0x180009480\",\"name\":\"__std_exception_destroy\",\"size\":\"0x6\"},{\"addr\":\"0x180009486\",\"name\":\"free\",\"size\":\"0x6\"},{\"addr\":\"0x18000948c\",\"name\":\"malloc\",\"size\":\"0x6\"},{\"addr\":\"0x180009492\",\"name\":\"terminate\",\"size\":\"0x6\"},{\"addr\":\"0x180009498\",\"name\":\"_seh_filter_dll\",\"size\":\"0x6\"},{\"addr\":\"0x18000949e\",\"name\":\"_configure_narrow_argv\",\"size\":\"0x6\"},{\"addr\":\"0x1800094a4\",\"name\":\"_initialize_narrow_environment\",\"size\":\"0x6\"},{\"addr\":\"0x1800094aa\",\"name\":\"_initialize_onexit_table\",\"size\":\"0x6\"},{\"addr\":\"0x1800094b0\",\"name\":\"_register_onexit_function\",\"size\":\"0x6\"},{\"addr\":\"0x1800094b6\",\"name\":\"_execute_onexit_table\",\"size\":\"0x6\"},{\"addr\":\"0x1800094bc\",\"name\":\"_crt_atexit\",\"size\":\"0x6\"},{\"addr\":\"0x1800094c2\",\"name\":\"_cexit\",\"size\":\"0x6\"},{\"addr\":\"0x1800094c8\",\"name\":\"_initterm\",\"size\":\"0x6\"},{\"addr\":\"0x1800094ce\",\"name\":\"_initterm_e\",\"size\":\"0x6\"},{\"addr\":\"0x1800094d4\",\"name\":\"_callnewh\",\"size\":\"0x6\"},{\"addr\":\"0x1800094dc\",\"name\":\"sub_1800094DC\",\"size\":\"0x3\"},{\"addr\":\"0x1800094f0\",\"name\":\"_guard_dispatch_icall_nop\",\"size\":\"0x2\"},{\"addr\":\"0x180009510\",\"name\":\"_guard_xfg_dispatch_icall_nop\",\"size\":\"0x6\"},{\"addr\":\"0x180009520\",\"name\":\"sub_180009520\",\"size\":\"0xc\"},{\"addr\":\"0x180009530\",\"name\":\"sub_180009530\",\"size\":\"0xc\"},{\"addr\":\"0x180009540\",\"name\":\"sub_180009540\",\"size\":\"0xc\"},{\"addr\":\"0x180009570\",\"name\":\"sub_180009570\",\"size\":\"0x1e\"},{\"addr\":\"0x180009590\",\"name\":\"sub_180009590\",\"size\":\"0xc\"},{\"addr\":\"0x1800095a0\",\"name\":\"unknown_libname_2\",\"size\":\"0xc\"},{\"addr\":\"0x1800095c0\",\"name\":\"sub_1800095C0\",\"size\":\"0xc\"},{\"addr\":\"0x1800095d0\",\"name\":\"sub_1800095D0\",\"size\":\"0xc\"},{\"addr\":\"0x1800095e0\",\"name\":\"sub_1800095E0\",\"size\":\"0xc\"},{\"addr\":\"0x1800095f0\",\"name\":\"sub_1800095F0\",\"size\":\"0xc\"},{\"addr\":\"0x180009600\",\"name\":\"sub_180009600\",\"size\":\"0x3b\"},{\"addr\":\"0x180009640\",\"name\":\"sub_180009640\",\"size\":\"0x10\"},{\"addr\":\"0x180009650\",\"name\":\"sub_180009650\",\"size\":\"0x10\"},{\"addr\":\"0x180009660\",\"name\":\"sub_180009660\",\"size\":\"0x1f\"},{\"addr\":\"0x180009680\",\"name\":\"sub_180009680\",\"size\":\"0x10\"},{\"addr\":\"0x180009690\",\"name\":\"sub_180009690\",\"size\":\"0x1e\"},{\"addr\":\"0x1800096b0\",\"name\":\"sub_1800096B0\",\"size\":\"0xc\"},{\"addr\":\"0x1800096c0\",\"name\":\"sub_1800096C0\",\"size\":\"0xc\"},{\"addr\":\"0x1800096d0\",\"name\":\"sub_1800096D0\",\"size\":\"0xc\"},{\"addr\":\"0x1800096e0\",\"name\":\"unknown_libname_3\",\"size\":\"0xc\"},{\"addr\":\"0x1800096f0\",\"name\":\"sub_1800096F0\",\"size\":\"0xc\"},{\"addr\":\"0x180009700\",\"name\":\"sub_180009700\",\"size\":\"0x1f\"},{\"addr\":\"0x180009720\",\"name\":\"sub_180009720\",\"size\":\"0xc\"},{\"addr\":\"0x1800097fb\",\"name\":\"sub_1800097FB\",\"size\":\"0x1e\"},{\"addr\":\"0x1800098a0\",\"name\":\"sub_1800098A0\",\"size\":\"0x89\"},{\"addr\":\"0x180009930\",\"name\":\"sub_180009930\",\"size\":\"0x4e\"},{\"addr\":\"0x180009980\",\"name\":\"sub_180009980\",\"size\":\"0xc\"},{\"addr\":\"0x18000a000\",\"name\":\"sub_18000A000\",\"size\":\"0x7c\"}],\"next_offset\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "data": [
+            {
+              "addr": "0x180001000",
+              "name": "sub_180001000",
+              "size": "0x61"
+            },
+            {
+              "addr": "0x180001070",
+              "name": "sub_180001070",
+              "size": "0xb0"
+            },
+            {
+              "addr": "0x180001120",
+              "name": "sub_180001120",
+              "size": "0x20"
+            },
+            {
+              "addr": "0x180001140",
+              "name": "sub_180001140",
+              "size": "0xd"
+            },
+            {
+              "addr": "0x180001150",
+              "name": "sub_180001150",
+              "size": "0xd"
+            },
+            {
+              "addr": "0x180001160",
+              "name": "sub_180001160",
+              "size": "0x4"
+            },
+            {
+              "addr": "0x180001170",
+              "name": "sub_180001170",
+              "size": "0x76"
+            },
+            {
+              "addr": "0x1800011f0",
+              "name": "sub_1800011F0",
+              "size": "0x18"
+            },
+            {
+              "addr": "0x180001210",
+              "name": "sub_180001210",
+              "size": "0x72"
+            },
+            {
+              "addr": "0x180001290",
+              "name": "sub_180001290",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800012a0",
+              "name": "sub_1800012A0",
+              "size": "0xa"
+            },
+            {
+              "addr": "0x1800012b0",
+              "name": "sub_1800012B0",
+              "size": "0x22"
+            },
+            {
+              "addr": "0x1800012e0",
+              "name": "sub_1800012E0",
+              "size": "0xc0"
+            },
+            {
+              "addr": "0x1800013a0",
+              "name": "InitializeCriticalSectionEx",
+              "size": "0x7"
+            },
+            {
+              "addr": "0x1800013b0",
+              "name": "sub_1800013B0",
+              "size": "0xd"
+            },
+            {
+              "addr": "0x1800013c0",
+              "name": "sub_1800013C0",
+              "size": "0x39"
+            },
+            {
+              "addr": "0x180001400",
+              "name": "sub_180001400",
+              "size": "0x2e"
+            },
+            {
+              "addr": "0x180001430",
+              "name": "sub_180001430",
+              "size": "0x1e"
+            },
+            {
+              "addr": "0x180001450",
+              "name": "sub_180001450",
+              "size": "0xe"
+            },
+            {
+              "addr": "0x180001460",
+              "name": "sub_180001460",
+              "size": "0xb"
+            },
+            {
+              "addr": "0x180001470",
+              "name": "sub_180001470",
+              "size": "0x30"
+            },
+            {
+              "addr": "0x1800014a0",
+              "name": "sub_1800014A0",
+              "size": "0x8c"
+            },
+            {
+              "addr": "0x180001530",
+              "name": "sub_180001530",
+              "size": "0x1a9"
+            },
+            {
+              "addr": "0x1800016e0",
+              "name": "sub_1800016E0",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800016f0",
+              "name": "sub_1800016F0",
+              "size": "0x3d"
+            },
+            {
+              "addr": "0x180001730",
+              "name": "sub_180001730",
+              "size": "0x607"
+            },
+            {
+              "addr": "0x180001d40",
+              "name": "sub_180001D40",
+              "size": "0x2b"
+            },
+            {
+              "addr": "0x180001d70",
+              "name": "sub_180001D70",
+              "size": "0x162"
+            },
+            {
+              "addr": "0x180001ee0",
+              "name": "sub_180001EE0",
+              "size": "0x1b"
+            },
+            {
+              "addr": "0x180001f00",
+              "name": "sub_180001F00",
+              "size": "0x10"
+            },
+            {
+              "addr": "0x180001f10",
+              "name": "sub_180001F10",
+              "size": "0x23a"
+            },
+            {
+              "addr": "0x180002150",
+              "name": "sub_180002150",
+              "size": "0x528"
+            },
+            {
+              "addr": "0x180002680",
+              "name": "sub_180002680",
+              "size": "0x20e"
+            },
+            {
+              "addr": "0x180002890",
+              "name": "sub_180002890",
+              "size": "0xa4"
+            },
+            {
+              "addr": "0x180002940",
+              "name": "sub_180002940",
+              "size": "0x9"
+            },
+            {
+              "addr": "0x180002950",
+              "name": "sub_180002950",
+              "size": "0x12f"
+            },
+            {
+              "addr": "0x180002a80",
+              "name": "sub_180002A80",
+              "size": "0x20f"
+            },
+            {
+              "addr": "0x180002c90",
+              "name": "sub_180002C90",
+              "size": "0xa"
+            },
+            {
+              "addr": "0x180002ca0",
+              "name": "sub_180002CA0",
+              "size": "0x8a"
+            },
+            {
+              "addr": "0x180002d30",
+              "name": "sub_180002D30",
+              "size": "0x1a8"
+            },
+            {
+              "addr": "0x180002ee0",
+              "name": "sub_180002EE0",
+              "size": "0xfc"
+            },
+            {
+              "addr": "0x180002fe0",
+              "name": "sub_180002FE0",
+              "size": "0x435"
+            },
+            {
+              "addr": "0x180003420",
+              "name": "sub_180003420",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180003430",
+              "name": "sub_180003430",
+              "size": "0x14c"
+            },
+            {
+              "addr": "0x180003580",
+              "name": "sub_180003580",
+              "size": "0x4c9"
+            },
+            {
+              "addr": "0x180003a50",
+              "name": "sub_180003A50",
+              "size": "0x206"
+            },
+            {
+              "addr": "0x180003c60",
+              "name": "sub_180003C60",
+              "size": "0xdaf"
+            },
+            {
+              "addr": "0x180004a10",
+              "name": "sub_180004A10",
+              "size": "0x3"
+            },
+            {
+              "addr": "0x180004a20",
+              "name": "sub_180004A20",
+              "size": "0xb2"
+            },
+            {
+              "addr": "0x180004ae0",
+              "name": "sub_180004AE0",
+              "size": "0x9e6"
+            },
+            {
+              "addr": "0x1800054d0",
+              "name": "sub_1800054D0",
+              "size": "0x48"
+            },
+            {
+              "addr": "0x180005520",
+              "name": "DllCanUnloadNow",
+              "size": "0x2c"
+            },
+            {
+              "addr": "0x180005550",
+              "name": "DllGetClassObject",
+              "size": "0x15e"
+            },
+            {
+              "addr": "0x1800056b0",
+              "name": "DllInstall",
+              "size": "0x1c9"
+            },
+            {
+              "addr": "0x180005880",
+              "name": "DllRegisterServer",
+              "size": "0x14a"
+            },
+            {
+              "addr": "0x1800059d0",
+              "name": "DllUnregisterServer",
+              "size": "0x30"
+            },
+            {
+              "addr": "0x180005a00",
+              "name": "sub_180005A00",
+              "size": "0x2c"
+            },
+            {
+              "addr": "0x180005a30",
+              "name": "sub_180005A30",
+              "size": "0x48"
+            },
+            {
+              "addr": "0x180005a80",
+              "name": "sub_180005A80",
+              "size": "0x131"
+            },
+            {
+              "addr": "0x180005bc0",
+              "name": "sub_180005BC0",
+              "size": "0x55"
+            },
+            {
+              "addr": "0x180005c20",
+              "name": "?_Reference@_RefCounter@details@Concurrency@@QEAAJXZ",
+              "size": "0xd"
+            },
+            {
+              "addr": "0x180005c30",
+              "name": "sub_180005C30",
+              "size": "0x59"
+            },
+            {
+              "addr": "0x180005c90",
+              "name": "sub_180005C90",
+              "size": "0x5f"
+            },
+            {
+              "addr": "0x180005cf0",
+              "name": "?Reset@EventWaitNode@details@Concurrency@@QEAA_NXZ",
+              "size": "0xb"
+            },
+            {
+              "addr": "0x180005d00",
+              "name": "?Destroy@EventWaitNode@details@Concurrency@@QEAAXXZ",
+              "size": "0xb"
+            },
+            {
+              "addr": "0x180005d10",
+              "name": "sub_180005D10",
+              "size": "0xa"
+            },
+            {
+              "addr": "0x180005d20",
+              "name": "sub_180005D20",
+              "size": "0x5"
+            },
+            {
+              "addr": "0x180005d30",
+              "name": "sub_180005D30",
+              "size": "0x93"
+            },
+            {
+              "addr": "0x180005dd0",
+              "name": "sub_180005DD0",
+              "size": "0x5c"
+            },
+            {
+              "addr": "0x180005e30",
+              "name": "sub_180005E30",
+              "size": "0x5"
+            },
+            {
+              "addr": "0x180005e40",
+              "name": "sub_180005E40",
+              "size": "0x93"
+            },
+            {
+              "addr": "0x180005ee0",
+              "name": "_guard_check_icall_nop",
+              "size": "0x3"
+            },
+            {
+              "addr": "0x180005ef0",
+              "name": "sub_180005EF0",
+              "size": "0x1c"
+            },
+            {
+              "addr": "0x180005f10",
+              "name": "sub_180005F10",
+              "size": "0x54"
+            },
+            {
+              "addr": "0x180005f70",
+              "name": "sub_180005F70",
+              "size": "0x26"
+            },
+            {
+              "addr": "0x180005fa0",
+              "name": "sub_180005FA0",
+              "size": "0x4e"
+            },
+            {
+              "addr": "0x180005ff0",
+              "name": "sub_180005FF0",
+              "size": "0x14"
+            },
+            {
+              "addr": "0x180006010",
+              "name": "sub_180006010",
+              "size": "0x69"
+            },
+            {
+              "addr": "0x180006080",
+              "name": "sub_180006080",
+              "size": "0x12d"
+            },
+            {
+              "addr": "0x1800061b0",
+              "name": "sub_1800061B0",
+              "size": "0x90"
+            },
+            {
+              "addr": "0x180006240",
+              "name": "sub_180006240",
+              "size": "0x17"
+            },
+            {
+              "addr": "0x180006260",
+              "name": "sub_180006260",
+              "size": "0x4"
+            },
+            {
+              "addr": "0x180006270",
+              "name": "sub_180006270",
+              "size": "0x399"
+            },
+            {
+              "addr": "0x180006610",
+              "name": "sub_180006610",
+              "size": "0x43"
+            },
+            {
+              "addr": "0x180006660",
+              "name": "sub_180006660",
+              "size": "0x43"
+            },
+            {
+              "addr": "0x1800066b0",
+              "name": "sub_1800066B0",
+              "size": "0x37"
+            },
+            {
+              "addr": "0x1800066f0",
+              "name": "sub_1800066F0",
+              "size": "0x18b"
+            },
+            {
+              "addr": "0x180006880",
+              "name": "sub_180006880",
+              "size": "0x4b"
+            },
+            {
+              "addr": "0x1800068d0",
+              "name": "sub_1800068D0",
+              "size": "0x189"
+            },
+            {
+              "addr": "0x180006a60",
+              "name": "sub_180006A60",
+              "size": "0x189"
+            },
+            {
+              "addr": "0x180006bf0",
+              "name": "sub_180006BF0",
+              "size": "0x45"
+            },
+            {
+              "addr": "0x180006c40",
+              "name": "sub_180006C40",
+              "size": "0x5c"
+            },
+            {
+              "addr": "0x180006ca0",
+              "name": "sub_180006CA0",
+              "size": "0x127"
+            },
+            {
+              "addr": "0x180006dd0",
+              "name": "sub_180006DD0",
+              "size": "0xe"
+            },
+            {
+              "addr": "0x180006de0",
+              "name": "sub_180006DE0",
+              "size": "0x25c"
+            },
+            {
+              "addr": "0x180007040",
+              "name": "sub_180007040",
+              "size": "0x39"
+            },
+            {
+              "addr": "0x180007080",
+              "name": "sub_180007080",
+              "size": "0x99"
+            },
+            {
+              "addr": "0x180007120",
+              "name": "sub_180007120",
+              "size": "0x13"
+            },
+            {
+              "addr": "0x180007140",
+              "name": "sub_180007140",
+              "size": "0x42"
+            },
+            {
+              "addr": "0x180007190",
+              "name": "sub_180007190",
+              "size": "0x22"
+            },
+            {
+              "addr": "0x1800071c0",
+              "name": "sub_1800071C0",
+              "size": "0x16"
+            },
+            {
+              "addr": "0x1800071e0",
+              "name": "sub_1800071E0",
+              "size": "0x18"
+            },
+            {
+              "addr": "0x180007200",
+              "name": "sub_180007200",
+              "size": "0x2b"
+            },
+            {
+              "addr": "0x180007230",
+              "name": "sub_180007230",
+              "size": "0x44"
+            },
+            {
+              "addr": "0x180007280",
+              "name": "sub_180007280",
+              "size": "0x13d"
+            },
+            {
+              "addr": "0x1800073c0",
+              "name": "sub_1800073C0",
+              "size": "0x71"
+            },
+            {
+              "addr": "0x180007440",
+              "name": "sub_180007440",
+              "size": "0x1ad"
+            },
+            {
+              "addr": "0x1800075f0",
+              "name": "sub_1800075F0",
+              "size": "0x154"
+            },
+            {
+              "addr": "0x180007750",
+              "name": "sub_180007750",
+              "size": "0x347"
+            },
+            {
+              "addr": "0x180007aa0",
+              "name": "sub_180007AA0",
+              "size": "0x1dc"
+            },
+            {
+              "addr": "0x180007c80",
+              "name": "sub_180007C80",
+              "size": "0x4c"
+            },
+            {
+              "addr": "0x180007cd0",
+              "name": "sub_180007CD0",
+              "size": "0x131"
+            },
+            {
+              "addr": "0x180007e10",
+              "name": "sub_180007E10",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x180007e20",
+              "name": "sub_180007E20",
+              "size": "0xe"
+            },
+            {
+              "addr": "0x180007e30",
+              "name": "sub_180007E30",
+              "size": "0x2e"
+            },
+            {
+              "addr": "0x180007e60",
+              "name": "sub_180007E60",
+              "size": "0x11"
+            },
+            {
+              "addr": "0x180007e80",
+              "name": "sub_180007E80",
+              "size": "0x1c"
+            },
+            {
+              "addr": "0x180007ea0",
+              "name": "sub_180007EA0",
+              "size": "0x1c"
+            },
+            {
+              "addr": "0x180007ebc",
+              "name": "BSTR_UserSize",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007ec2",
+              "name": "BSTR_UserMarshal",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007ec8",
+              "name": "BSTR_UserUnmarshal",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007ece",
+              "name": "BSTR_UserFree",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007ed4",
+              "name": "BSTR_UserSize64",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007eda",
+              "name": "BSTR_UserMarshal64",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007ee0",
+              "name": "BSTR_UserUnmarshal64",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007ee6",
+              "name": "BSTR_UserFree64",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007eec",
+              "name": "LPSAFEARRAY_UserSize",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007ef2",
+              "name": "LPSAFEARRAY_UserMarshal",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007ef8",
+              "name": "LPSAFEARRAY_UserUnmarshal",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007efe",
+              "name": "LPSAFEARRAY_UserFree",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007f04",
+              "name": "LPSAFEARRAY_UserSize64",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007f0a",
+              "name": "LPSAFEARRAY_UserMarshal64",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007f10",
+              "name": "LPSAFEARRAY_UserUnmarshal64",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007f16",
+              "name": "LPSAFEARRAY_UserFree64",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180007f1c",
+              "name": "sub_180007F1C",
+              "size": "0xa5"
+            },
+            {
+              "addr": "0x180007fc4",
+              "name": "sub_180007FC4",
+              "size": "0x34"
+            },
+            {
+              "addr": "0x180007ff8",
+              "name": "j_free",
+              "size": "0x5"
+            },
+            {
+              "addr": "0x180008000",
+              "name": "sub_180008000",
+              "size": "0x2b"
+            },
+            {
+              "addr": "0x18000802c",
+              "name": "sub_18000802C",
+              "size": "0x6b"
+            },
+            {
+              "addr": "0x180008098",
+              "name": "sub_180008098",
+              "size": "0x61"
+            },
+            {
+              "addr": "0x1800080fc",
+              "name": "j_j_free",
+              "size": "0x5"
+            },
+            {
+              "addr": "0x180008104",
+              "name": "j_j_j_free",
+              "size": "0x5"
+            },
+            {
+              "addr": "0x18000810c",
+              "name": "sub_18000810C",
+              "size": "0x39"
+            },
+            {
+              "addr": "0x180008148",
+              "name": "sub_180008148",
+              "size": "0x34"
+            },
+            {
+              "addr": "0x18000817c",
+              "name": "sub_18000817C",
+              "size": "0x15"
+            },
+            {
+              "addr": "0x180008194",
+              "name": "sub_180008194",
+              "size": "0x28"
+            },
+            {
+              "addr": "0x1800081bc",
+              "name": "sub_1800081BC",
+              "size": "0x15"
+            },
+            {
+              "addr": "0x1800081d4",
+              "name": "sub_1800081D4",
+              "size": "0x60"
+            },
+            {
+              "addr": "0x180008234",
+              "name": "sub_180008234",
+              "size": "0x30"
+            },
+            {
+              "addr": "0x180008264",
+              "name": "sub_180008264",
+              "size": "0x14"
+            },
+            {
+              "addr": "0x180008278",
+              "name": "sub_180008278",
+              "size": "0x3a"
+            },
+            {
+              "addr": "0x1800082b4",
+              "name": "sub_1800082B4",
+              "size": "0x8b"
+            },
+            {
+              "addr": "0x180008340",
+              "name": "sub_180008340",
+              "size": "0x98"
+            },
+            {
+              "addr": "0x1800083d8",
+              "name": "sub_1800083D8",
+              "size": "0x24"
+            },
+            {
+              "addr": "0x1800083fc",
+              "name": "sub_1800083FC",
+              "size": "0x29"
+            },
+            {
+              "addr": "0x180008428",
+              "name": "sub_180008428",
+              "size": "0x3a"
+            },
+            {
+              "addr": "0x180008464",
+              "name": "atexit",
+              "size": "0x17"
+            },
+            {
+              "addr": "0x18000847c",
+              "name": "__raise_securityfailure",
+              "size": "0x34"
+            },
+            {
+              "addr": "0x1800084b0",
+              "name": "__report_gsfailure",
+              "size": "0xd3"
+            },
+            {
+              "addr": "0x180008584",
+              "name": "sub_180008584",
+              "size": "0xe"
+            },
+            {
+              "addr": "0x180008598",
+              "name": "__report_securityfailure",
+              "size": "0x9d"
+            },
+            {
+              "addr": "0x180008638",
+              "name": "capture_current_context",
+              "size": "0x6d"
+            },
+            {
+              "addr": "0x1800086a8",
+              "name": "capture_previous_context",
+              "size": "0x71"
+            },
+            {
+              "addr": "0x18000871c",
+              "name": "sub_18000871C",
+              "size": "0x5"
+            },
+            {
+              "addr": "0x180008724",
+              "name": "__GSHandlerCheck",
+              "size": "0x1d"
+            },
+            {
+              "addr": "0x180008744",
+              "name": "__GSHandlerCheckCommon",
+              "size": "0x5b"
+            },
+            {
+              "addr": "0x1800087a0",
+              "name": "__GSHandlerCheck_EH4",
+              "size": "0x7f"
+            },
+            {
+              "addr": "0x180008830",
+              "name": "__alloca_probe",
+              "size": "0x4e"
+            },
+            {
+              "addr": "0x180008890",
+              "name": "__security_check_cookie",
+              "size": "0x1e"
+            },
+            {
+              "addr": "0x1800088b0",
+              "name": "sub_1800088B0",
+              "size": "0x70"
+            },
+            {
+              "addr": "0x180008920",
+              "name": "sub_180008920",
+              "size": "0x13"
+            },
+            {
+              "addr": "0x180008934",
+              "name": "sub_180008934",
+              "size": "0x50"
+            },
+            {
+              "addr": "0x180008984",
+              "name": "sub_180008984",
+              "size": "0x116"
+            },
+            {
+              "addr": "0x180008a9c",
+              "name": "sub_180008A9C",
+              "size": "0x80"
+            },
+            {
+              "addr": "0x180008b1c",
+              "name": "sub_180008B1C",
+              "size": "0x128"
+            },
+            {
+              "addr": "0x180008c44",
+              "name": "DllEntryPoint",
+              "size": "0x3d"
+            },
+            {
+              "addr": "0x180008c84",
+              "name": "sub_180008C84",
+              "size": "0x2ca"
+            },
+            {
+              "addr": "0x180008f50",
+              "name": "?__uncaught_exception@@YA_NXZ",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x180008f5c",
+              "name": "sub_180008F5C",
+              "size": "0x8"
+            },
+            {
+              "addr": "0x180008f64",
+              "name": "sub_180008F64",
+              "size": "0x148"
+            },
+            {
+              "addr": "0x1800090ac",
+              "name": "sub_1800090AC",
+              "size": "0x3b"
+            },
+            {
+              "addr": "0x1800090e8",
+              "name": "sub_1800090E8",
+              "size": "0xac"
+            },
+            {
+              "addr": "0x180009194",
+              "name": "sub_180009194",
+              "size": "0xe"
+            },
+            {
+              "addr": "0x1800091a4",
+              "name": "sub_1800091A4",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800091b0",
+              "name": "sub_1800091B0",
+              "size": "0x8"
+            },
+            {
+              "addr": "0x1800091b8",
+              "name": "sub_1800091B8",
+              "size": "0x8"
+            },
+            {
+              "addr": "0x1800091c0",
+              "name": "sub_1800091C0",
+              "size": "0x1b"
+            },
+            {
+              "addr": "0x1800091dc",
+              "name": "sub_1800091DC",
+              "size": "0x8"
+            },
+            {
+              "addr": "0x1800091e4",
+              "name": "sub_1800091E4",
+              "size": "0x3c"
+            },
+            {
+              "addr": "0x180009220",
+              "name": "sub_180009220",
+              "size": "0x3c"
+            },
+            {
+              "addr": "0x180009260",
+              "name": "sub_180009260",
+              "size": "0x3c"
+            },
+            {
+              "addr": "0x18000929c",
+              "name": "sub_18000929C",
+              "size": "0x1e"
+            },
+            {
+              "addr": "0x1800092bc",
+              "name": "sub_1800092BC",
+              "size": "0x3c"
+            },
+            {
+              "addr": "0x1800092f8",
+              "name": "sub_1800092F8",
+              "size": "0x1e"
+            },
+            {
+              "addr": "0x180009318",
+              "name": "sub_180009318",
+              "size": "0x32"
+            },
+            {
+              "addr": "0x18000934c",
+              "name": "??1agent@Concurrency@@UEAA@XZ",
+              "size": "0x13"
+            },
+            {
+              "addr": "0x180009360",
+              "name": "sub_180009360",
+              "size": "0x42"
+            },
+            {
+              "addr": "0x1800093a4",
+              "name": "?cancel_current_task@Concurrency@@YAXXZ",
+              "size": "0x20"
+            },
+            {
+              "addr": "0x1800093c4",
+              "name": "?cancel_current_task@Concurrency@@YAXXZ_0",
+              "size": "0x20"
+            },
+            {
+              "addr": "0x1800093e4",
+              "name": "unknown_libname_1",
+              "size": "0x12"
+            },
+            {
+              "addr": "0x1800093f6",
+              "name": "?uncaught_exception@std@@YA_NXZ",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800093fc",
+              "name": "IUnknown_QueryInterface_Proxy",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009402",
+              "name": "IUnknown_AddRef_Proxy",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009408",
+              "name": "IUnknown_Release_Proxy",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000940e",
+              "name": "NdrStubCall3",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009414",
+              "name": "NdrOleAllocate",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000941a",
+              "name": "NdrOleFree",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009420",
+              "name": "NdrStubForwardingFunction",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009426",
+              "name": "NdrCStdStubBuffer2_Release",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000942c",
+              "name": "__std_terminate",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009432",
+              "name": "_CxxThrowException",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009438",
+              "name": "__CxxFrameHandler4",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000943e",
+              "name": "memset",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009444",
+              "name": "wcsstr",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000944a",
+              "name": "memcpy",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009450",
+              "name": "_purecall",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009456",
+              "name": "wcsrchr",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000945c",
+              "name": "memcmp",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009462",
+              "name": "__current_exception",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009468",
+              "name": "__current_exception_context",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000946e",
+              "name": "__C_specific_handler",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009474",
+              "name": "__std_type_info_destroy_list",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000947a",
+              "name": "__std_exception_copy",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009480",
+              "name": "__std_exception_destroy",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009486",
+              "name": "free",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000948c",
+              "name": "malloc",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009492",
+              "name": "terminate",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009498",
+              "name": "_seh_filter_dll",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x18000949e",
+              "name": "_configure_narrow_argv",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094a4",
+              "name": "_initialize_narrow_environment",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094aa",
+              "name": "_initialize_onexit_table",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094b0",
+              "name": "_register_onexit_function",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094b6",
+              "name": "_execute_onexit_table",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094bc",
+              "name": "_crt_atexit",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094c2",
+              "name": "_cexit",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094c8",
+              "name": "_initterm",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094ce",
+              "name": "_initterm_e",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094d4",
+              "name": "_callnewh",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x1800094dc",
+              "name": "sub_1800094DC",
+              "size": "0x3"
+            },
+            {
+              "addr": "0x1800094f0",
+              "name": "_guard_dispatch_icall_nop",
+              "size": "0x2"
+            },
+            {
+              "addr": "0x180009510",
+              "name": "_guard_xfg_dispatch_icall_nop",
+              "size": "0x6"
+            },
+            {
+              "addr": "0x180009520",
+              "name": "sub_180009520",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x180009530",
+              "name": "sub_180009530",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x180009540",
+              "name": "sub_180009540",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x180009570",
+              "name": "sub_180009570",
+              "size": "0x1e"
+            },
+            {
+              "addr": "0x180009590",
+              "name": "sub_180009590",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800095a0",
+              "name": "unknown_libname_2",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800095c0",
+              "name": "sub_1800095C0",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800095d0",
+              "name": "sub_1800095D0",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800095e0",
+              "name": "sub_1800095E0",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800095f0",
+              "name": "sub_1800095F0",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x180009600",
+              "name": "sub_180009600",
+              "size": "0x3b"
+            },
+            {
+              "addr": "0x180009640",
+              "name": "sub_180009640",
+              "size": "0x10"
+            },
+            {
+              "addr": "0x180009650",
+              "name": "sub_180009650",
+              "size": "0x10"
+            },
+            {
+              "addr": "0x180009660",
+              "name": "sub_180009660",
+              "size": "0x1f"
+            },
+            {
+              "addr": "0x180009680",
+              "name": "sub_180009680",
+              "size": "0x10"
+            },
+            {
+              "addr": "0x180009690",
+              "name": "sub_180009690",
+              "size": "0x1e"
+            },
+            {
+              "addr": "0x1800096b0",
+              "name": "sub_1800096B0",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800096c0",
+              "name": "sub_1800096C0",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800096d0",
+              "name": "sub_1800096D0",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800096e0",
+              "name": "unknown_libname_3",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800096f0",
+              "name": "sub_1800096F0",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x180009700",
+              "name": "sub_180009700",
+              "size": "0x1f"
+            },
+            {
+              "addr": "0x180009720",
+              "name": "sub_180009720",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x1800097fb",
+              "name": "sub_1800097FB",
+              "size": "0x1e"
+            },
+            {
+              "addr": "0x1800098a0",
+              "name": "sub_1800098A0",
+              "size": "0x89"
+            },
+            {
+              "addr": "0x180009930",
+              "name": "sub_180009930",
+              "size": "0x4e"
+            },
+            {
+              "addr": "0x180009980",
+              "name": "sub_180009980",
+              "size": "0xc"
+            },
+            {
+              "addr": "0x18000a000",
+              "name": "sub_18000A000",
+              "size": "0x7c"
+            }
+          ],
+          "next_offset": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

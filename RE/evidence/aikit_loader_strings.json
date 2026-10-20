@@ -1,0 +1,442 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"0x180233d80\",\"addr\":\"0x180233d80\",\"name\":\"sub_180233D80\",\"analysis\":{\"size\":\"0x20c\",\"prototype\":null,\"decompile\":null,\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x1803fd690\",\"length\":11,\"string\":\"getaddrinfo\"},{\"addr\":\"0x1803fd6a0\",\"length\":11,\"string\":\"getnameinfo\"},{\"addr\":\"0x1803fd6b0\",\"length\":12,\"string\":\"freeaddrinfo\"},{\"addr\":\"0x1803fd6c0\",\"length\":7,\"string\":\"\\\\ws2_32\"},{\"addr\":\"0x1803fd6c8\",\"length\":7,\"string\":\"\\\\wship6\"}],\"string_ref_count\":5,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x18023cf50\",\"addr\":\"0x18023cf50\",\"name\":\"sub_18023CF50\",\"analysis\":{\"size\":\"0x16c\",\"prototype\":null,\"decompile\":null,\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x1803fe618\",\"length\":18,\"string\":\"_OPENSSL_isservice\"}],\"string_ref_count\":1,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1802c6390\",\"addr\":\"0x1802c6390\",\"name\":\"sub_1802C6390\",\"analysis\":{\"size\":\"0x1a4\",\"prototype\":null,\"decompile\":null,\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x18042d8e8\",\"length\":15,\"string\":\"OPENSSL_Applink\"}],\"string_ref_count\":1,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1802cea50\",\"addr\":\"0x1802cea50\",\"name\":\"sub_1802CEA50\",\"analysis\":{\"size\":\"0x18e\",\"prototype\":null,\"decompile\":null,\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e1d0\",\"length\":10,\"string\":\"win32_load\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e1d0\",\"length\":10,\"string\":\"win32_load\"},{\"addr\":\"0x18042e1f8\",\"length\":12,\"string\":\"filename(%s)\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e1d0\",\"length\":10,\"string\":\"win32_load\"}],\"string_ref_count\":7,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1802ced20\",\"addr\":\"0x1802ced20\",\"name\":\"sub_1802CED20\",\"analysis\":{\"size\":\"0x130\",\"prototype\":null,\"decompile\":null,\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x18042e218\",\"length\":15,\"string\":\"win32_bind_func\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e218\",\"length\":15,\"string\":\"win32_bind_func\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e218\",\"length\":15,\"string\":\"win32_bind_func\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e228\",\"length\":11,\"string\":\"symname(%s)\"},{\"addr\":\"0x18042e218\",\"length\":15,\"string\":\"win32_bind_func\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"}],\"string_ref_count\":9,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1802cf180\",\"addr\":\"0x1802cf180\",\"name\":\"sub_1802CF180\",\"analysis\":{\"size\":\"0x292\",\"prototype\":null,\"decompile\":null,\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x18042e2a0\",\"length\":16,\"string\":\"win32_pathbyaddr\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e2b8\",\"length\":24,\"string\":\"CreateToolhelp32Snapshot\"},{\"addr\":\"0x18042e2a0\",\"length\":16,\"string\":\"win32_pathbyaddr\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e2d8\",\"length\":13,\"string\":\"Module32First\"},{\"addr\":\"0x18042e2e8\",\"length\":12,\"string\":\"Module32Next\"},{\"addr\":\"0x18042e2a0\",\"length\":16,\"string\":\"win32_pathbyaddr\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e2a0\",\"length\":16,\"string\":\"win32_pathbyaddr\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"}],\"string_ref_count\":11,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1802cf420\",\"addr\":\"0x1802cf420\",\"name\":\"sub_1802CF420\",\"analysis\":{\"size\":\"0x217\",\"prototype\":null,\"decompile\":null,\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x18042e2f8\",\"length\":18,\"string\":\"win32_globallookup\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e2b8\",\"length\":24,\"string\":\"CreateToolhelp32Snapshot\"},{\"addr\":\"0x18042e2f8\",\"length\":18,\"string\":\"win32_globallookup\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"},{\"addr\":\"0x18042e2d8\",\"length\":13,\"string\":\"Module32First\"},{\"addr\":\"0x18042e2e8\",\"length\":12,\"string\":\"Module32Next\"},{\"addr\":\"0x18042e2f8\",\"length\":18,\"string\":\"win32_globallookup\"},{\"addr\":\"0x18042e1e0\",\"length\":22,\"string\":\"crypto\\\\dso\\\\dso_win32.c\"}],\"string_ref_count\":9,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "0x180233d80",
+          "addr": "0x180233d80",
+          "name": "sub_180233D80",
+          "analysis": {
+            "size": "0x20c",
+            "prototype": null,
+            "decompile": null,
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x1803fd690",
+                "length": 11,
+                "string": "getaddrinfo"
+              },
+              {
+                "addr": "0x1803fd6a0",
+                "length": 11,
+                "string": "getnameinfo"
+              },
+              {
+                "addr": "0x1803fd6b0",
+                "length": 12,
+                "string": "freeaddrinfo"
+              },
+              {
+                "addr": "0x1803fd6c0",
+                "length": 7,
+                "string": "\\ws2_32"
+              },
+              {
+                "addr": "0x1803fd6c8",
+                "length": 7,
+                "string": "\\wship6"
+              }
+            ],
+            "string_ref_count": 5,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x18023cf50",
+          "addr": "0x18023cf50",
+          "name": "sub_18023CF50",
+          "analysis": {
+            "size": "0x16c",
+            "prototype": null,
+            "decompile": null,
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x1803fe618",
+                "length": 18,
+                "string": "_OPENSSL_isservice"
+              }
+            ],
+            "string_ref_count": 1,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1802c6390",
+          "addr": "0x1802c6390",
+          "name": "sub_1802C6390",
+          "analysis": {
+            "size": "0x1a4",
+            "prototype": null,
+            "decompile": null,
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x18042d8e8",
+                "length": 15,
+                "string": "OPENSSL_Applink"
+              }
+            ],
+            "string_ref_count": 1,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1802cea50",
+          "addr": "0x1802cea50",
+          "name": "sub_1802CEA50",
+          "analysis": {
+            "size": "0x18e",
+            "prototype": null,
+            "decompile": null,
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e1d0",
+                "length": 10,
+                "string": "win32_load"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e1d0",
+                "length": 10,
+                "string": "win32_load"
+              },
+              {
+                "addr": "0x18042e1f8",
+                "length": 12,
+                "string": "filename(%s)"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e1d0",
+                "length": 10,
+                "string": "win32_load"
+              }
+            ],
+            "string_ref_count": 7,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1802ced20",
+          "addr": "0x1802ced20",
+          "name": "sub_1802CED20",
+          "analysis": {
+            "size": "0x130",
+            "prototype": null,
+            "decompile": null,
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x18042e218",
+                "length": 15,
+                "string": "win32_bind_func"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e218",
+                "length": 15,
+                "string": "win32_bind_func"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e218",
+                "length": 15,
+                "string": "win32_bind_func"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e228",
+                "length": 11,
+                "string": "symname(%s)"
+              },
+              {
+                "addr": "0x18042e218",
+                "length": 15,
+                "string": "win32_bind_func"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              }
+            ],
+            "string_ref_count": 9,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1802cf180",
+          "addr": "0x1802cf180",
+          "name": "sub_1802CF180",
+          "analysis": {
+            "size": "0x292",
+            "prototype": null,
+            "decompile": null,
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x18042e2a0",
+                "length": 16,
+                "string": "win32_pathbyaddr"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e2b8",
+                "length": 24,
+                "string": "CreateToolhelp32Snapshot"
+              },
+              {
+                "addr": "0x18042e2a0",
+                "length": 16,
+                "string": "win32_pathbyaddr"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e2d8",
+                "length": 13,
+                "string": "Module32First"
+              },
+              {
+                "addr": "0x18042e2e8",
+                "length": 12,
+                "string": "Module32Next"
+              },
+              {
+                "addr": "0x18042e2a0",
+                "length": 16,
+                "string": "win32_pathbyaddr"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e2a0",
+                "length": 16,
+                "string": "win32_pathbyaddr"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              }
+            ],
+            "string_ref_count": 11,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1802cf420",
+          "addr": "0x1802cf420",
+          "name": "sub_1802CF420",
+          "analysis": {
+            "size": "0x217",
+            "prototype": null,
+            "decompile": null,
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x18042e2f8",
+                "length": 18,
+                "string": "win32_globallookup"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e2b8",
+                "length": 24,
+                "string": "CreateToolhelp32Snapshot"
+              },
+              {
+                "addr": "0x18042e2f8",
+                "length": 18,
+                "string": "win32_globallookup"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              },
+              {
+                "addr": "0x18042e2d8",
+                "length": 13,
+                "string": "Module32First"
+              },
+              {
+                "addr": "0x18042e2e8",
+                "length": 12,
+                "string": "Module32Next"
+              },
+              {
+                "addr": "0x18042e2f8",
+                "length": 18,
+                "string": "win32_globallookup"
+              },
+              {
+                "addr": "0x18042e1e0",
+                "length": 22,
+                "string": "crypto\\dso\\dso_win32.c"
+              }
+            ],
+            "string_ref_count": 9,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

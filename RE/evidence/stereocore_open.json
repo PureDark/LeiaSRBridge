@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"stereocore\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\StereoCore.dll\",\"filename\":\"StereoCore.dll\",\"created_at\":\"2026-10-20T00:37:50.059709\",\"last_accessed\":\"2026-10-20T00:37:50.059709\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_caches\",\"ok\":true,\"ms\":574.53},{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.01}],\"health\":{\"status\":\"ok\",\"uptime_sec\":69.73,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\StereoCore.dll.i64\",\"module\":\"StereoCore.dll\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\StereoCore.dll\",\"imagebase\":\"0x0\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":242}},\"message\":\"Binary opened: StereoCore.dll (stereocore)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "stereocore",
+        "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\StereoCore.dll",
+        "filename": "StereoCore.dll",
+        "created_at": "2026-10-20T00:37:50.059709",
+        "last_accessed": "2026-10-20T00:37:50.059709",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_caches",
+            "ok": true,
+            "ms": 574.53
+          },
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.01
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 69.73,
+          "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\StereoCore.dll.i64",
+          "module": "StereoCore.dll",
+          "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\StereoCore.dll",
+          "imagebase": "0x0",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": true,
+          "strings_cache_size": 242
+        }
+      },
+      "message": "Binary opened: StereoCore.dll (stereocore)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

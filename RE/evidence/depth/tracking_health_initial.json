@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"error\":\"Session not found: tracking\"}"
+      }
+    ],
+    "isError": true
+  },
+  "id": 1
+}

@@ -1,0 +1,49 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":7,\"matches\":[{\"addr\":\"0x180410578\",\"string\":\"decryption failed\"},{\"addr\":\"0x180410590\",\"string\":\"decryption failed or bad record mac\"},{\"addr\":\"0x180411ba0\",\"string\":\"tlsv1 alert decryption failed\"},{\"addr\":\"0x180584ea0\",\"string\":\"StereoCore.dll\"},{\"addr\":\"0x180586818\",\"string\":\"Failed to initialize decryption\"},{\"addr\":\"0x180586890\",\"string\":\"Decryption update failed\"},{\"addr\":\"0x1805868b0\",\"string\":\"Decryption final failed\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 7,
+      "matches": [
+        {
+          "addr": "0x180410578",
+          "string": "decryption failed"
+        },
+        {
+          "addr": "0x180410590",
+          "string": "decryption failed or bad record mac"
+        },
+        {
+          "addr": "0x180411ba0",
+          "string": "tlsv1 alert decryption failed"
+        },
+        {
+          "addr": "0x180584ea0",
+          "string": "StereoCore.dll"
+        },
+        {
+          "addr": "0x180586818",
+          "string": "Failed to initialize decryption"
+        },
+        {
+          "addr": "0x180586890",
+          "string": "Decryption update failed"
+        },
+        {
+          "addr": "0x1805868b0",
+          "string": "Decryption final failed"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"query\":\"dword_14003F2B0\",\"value\":\"0x3f800000\"}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "query": "dword_14003F2B0",
+          "value": "0x3f800000"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

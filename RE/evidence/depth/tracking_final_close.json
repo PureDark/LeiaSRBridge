@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"tracking\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: BOE_3DET_SDK.dll.i64 (tracking)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "tracking",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: BOE_3DET_SDK.dll.i64 (tracking)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

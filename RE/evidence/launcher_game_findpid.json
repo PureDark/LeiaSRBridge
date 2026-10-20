@@ -1,0 +1,64 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800079f0\",\"code\":\"__int64 __fastcall sub_1800079F0(__int64 a1, __int64 a2)\\n{\\n  HANDLE Toolhelp32Snapshot; // rax\\n  void *v4; // rdi\\n  DWORD th32ProcessID; // esi\\n  const wchar_t *v7; // rdx\\n  __int64 v8; // rax\\n  __int64 v9; // rax\\n  PROCESSENTRY32W pe; // [rsp+20h] [rbp-258h] BYREF\\n\\n  Toolhelp32Snapshot = CreateToolhelp32Snapshot(dwFlags: 2u, th32ProcessID: 0); /*0x180007a19*/\\n  v4 = Toolhelp32Snapshot; /*0x180007a1e*/\\n  if ( Toolhelp32Snapshot == (HANDLE)-1LL ) /*0x180007a25*/\\n    return 0; /*0x180007a25*/\\n  pe.dwSize = 568; /*0x180007a2c*/\\n  if ( !Process32FirstW(hSnapshot: Toolhelp32Snapshot, lppe: &pe) ) /*0x180007a3e*/\\n  {\\n    CloseHandle(hObject: v4); /*0x180007a43*/\\n    return 0; /*0x180007a4b*/\\n  }\\n  th32ProcessID = 0; /*0x180007a58*/\\n  while ( 1 ) /*0x180007a65*/\\n  {\\n    v7 = (const wchar_t *)a2; /*0x180007a65*/\\n    if ( *(_QWORD *)(a2 + 24) > 7u ) /*0x180007a68*/\\n      v7 = *(const wchar_t **)a2; /*0x180007a6a*/\\n    if ( wcsicmp(String1: pe.szExeFile, String2: v7) == 0 ) /*0x180007a7a*/\\n      break; /*0x180007a7a*/\\n    if ( !Process32NextW(hSnapshot: v4, lppe: &pe) ) /*0x180007a8b*/\\n      goto LABEL_12; /*0x180007a8b*/\\n  }\\n  th32ProcessID = pe.th32ProcessID; /*0x180007a8f*/\\nLABEL_12:\\n  CloseHandle(hObject: v4); /*0x180007a93*/\\n  v8 = std::ostream::operator<<(a1: std::cout, a2: L\\\"addGame FindProcessId: pid = \\\");\\n  v9 = std::ostream::operator<<(a1: v8, a2: th32ProcessID); /*0x180007ab5*/\\n  std::ostream::operator<<(a1: v9, a2: sub_180004410); /*0x180007ac5*/\\n  return th32ProcessID; /*0x180007ad5*/\\n}\",\"refs\":[{\"addr\":\"0x1800123ed\",\"name\":\"CreateToolhelp32Snapshot\"},{\"addr\":\"0x180016080\",\"name\":\"CloseHandle\"},{\"addr\":\"0x1800123f3\",\"name\":\"Process32FirstW\"},{\"addr\":\"0x180016510\",\"name\":\"_wcsicmp\"},{\"addr\":\"0x1800123f9\",\"name\":\"Process32NextW\"},{\"addr\":\"0x180016288\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@PEBX@Z\"},{\"addr\":\"0x180016350\",\"name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x180017618\",\"name\":\"aAddgameFindpro\",\"string\":\"\\u6461\\u4764\\u6d61\\u2065\\u6946\\u646e\\u7250\\u636f\\u7365\\u4973\\u3a64\\u7020\\u6469\\u3d20\\ufffd\"},{\"addr\":\"0x180016270\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z\"},{\"addr\":\"0x180016258\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x180004410\",\"name\":\"sub_180004410\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800079f0",
+      "code": "__int64 __fastcall sub_1800079F0(__int64 a1, __int64 a2)\n{\n  HANDLE Toolhelp32Snapshot; // rax\n  void *v4; // rdi\n  DWORD th32ProcessID; // esi\n  const wchar_t *v7; // rdx\n  __int64 v8; // rax\n  __int64 v9; // rax\n  PROCESSENTRY32W pe; // [rsp+20h] [rbp-258h] BYREF\n\n  Toolhelp32Snapshot = CreateToolhelp32Snapshot(dwFlags: 2u, th32ProcessID: 0); /*0x180007a19*/\n  v4 = Toolhelp32Snapshot; /*0x180007a1e*/\n  if ( Toolhelp32Snapshot == (HANDLE)-1LL ) /*0x180007a25*/\n    return 0; /*0x180007a25*/\n  pe.dwSize = 568; /*0x180007a2c*/\n  if ( !Process32FirstW(hSnapshot: Toolhelp32Snapshot, lppe: &pe) ) /*0x180007a3e*/\n  {\n    CloseHandle(hObject: v4); /*0x180007a43*/\n    return 0; /*0x180007a4b*/\n  }\n  th32ProcessID = 0; /*0x180007a58*/\n  while ( 1 ) /*0x180007a65*/\n  {\n    v7 = (const wchar_t *)a2; /*0x180007a65*/\n    if ( *(_QWORD *)(a2 + 24) > 7u ) /*0x180007a68*/\n      v7 = *(const wchar_t **)a2; /*0x180007a6a*/\n    if ( wcsicmp(String1: pe.szExeFile, String2: v7) == 0 ) /*0x180007a7a*/\n      break; /*0x180007a7a*/\n    if ( !Process32NextW(hSnapshot: v4, lppe: &pe) ) /*0x180007a8b*/\n      goto LABEL_12; /*0x180007a8b*/\n  }\n  th32ProcessID = pe.th32ProcessID; /*0x180007a8f*/\nLABEL_12:\n  CloseHandle(hObject: v4); /*0x180007a93*/\n  v8 = std::ostream::operator<<(a1: std::cout, a2: L\"addGame FindProcessId: pid = \");\n  v9 = std::ostream::operator<<(a1: v8, a2: th32ProcessID); /*0x180007ab5*/\n  std::ostream::operator<<(a1: v9, a2: sub_180004410); /*0x180007ac5*/\n  return th32ProcessID; /*0x180007ad5*/\n}",
+      "refs": [
+        {
+          "addr": "0x1800123ed",
+          "name": "CreateToolhelp32Snapshot"
+        },
+        {
+          "addr": "0x180016080",
+          "name": "CloseHandle"
+        },
+        {
+          "addr": "0x1800123f3",
+          "name": "Process32FirstW"
+        },
+        {
+          "addr": "0x180016510",
+          "name": "_wcsicmp"
+        },
+        {
+          "addr": "0x1800123f9",
+          "name": "Process32NextW"
+        },
+        {
+          "addr": "0x180016288",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@PEBX@Z"
+        },
+        {
+          "addr": "0x180016350",
+          "name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x180017618",
+          "name": "aAddgameFindpro",
+          "string": "摡䝤浡⁥楆摮牐捯獥䥳㩤瀠摩㴠�"
+        },
+        {
+          "addr": "0x180016270",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z"
+        },
+        {
+          "addr": "0x180016258",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x180004410",
+          "name": "sub_180004410"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

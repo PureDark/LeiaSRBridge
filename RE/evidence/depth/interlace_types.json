@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"edit\":{\"signature\":\"int __fastcall BOE_Interleaving_doInterleave(float x, float y, float z, void *context, void *outputTarget, void *inputViewOrRtvHandle, int width, int height, int inputFormat, int mode, int sRGBFix);\",\"kind\":\"function\",\"addr\":\"0x180060580\"},\"kind\":\"function\",\"ok\":true},{\"edit\":{\"signature\":\"int __fastcall BOE_DX11_DoInterleave(void *self, float x, float y, float z, void *context, void *outputRtv, void *inputSrv, int width, int height, int inputFormat, int mode, int sRGBFix);\",\"kind\":\"function\",\"addr\":\"0x180058EB0\"},\"kind\":\"function\",\"ok\":true},{\"edit\":{\"signature\":\"int __fastcall BOE_DX12_DoInterleave(void *self, float x, float y, float z, void *commandList, void *outputResource, void *rtvHandle, int width, int height, int inputFormat, int mode, int sRGBFix);\",\"kind\":\"function\",\"addr\":\"0x18005E9B0\"},\"kind\":\"function\",\"ok\":true},{\"edit\":{\"signature\":\"int __fastcall BOE_Interleaving_initSDK(void *device, void *inputResource, const double *deviceParams, const double *wholeMat, const double *refractParams, int dxVersion, int viewportLeft, int viewportTop, int viewportWidth, int viewportHeight, int outFormat, const char *logPath);\",\"kind\":\"function\",\"addr\":\"0x1800602A0\"},\"kind\":\"function\",\"ok\":true}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "edit": {
+            "signature": "int __fastcall BOE_Interleaving_doInterleave(float x, float y, float z, void *context, void *outputTarget, void *inputViewOrRtvHandle, int width, int height, int inputFormat, int mode, int sRGBFix);",
+            "kind": "function",
+            "addr": "0x180060580"
+          },
+          "kind": "function",
+          "ok": true
+        },
+        {
+          "edit": {
+            "signature": "int __fastcall BOE_DX11_DoInterleave(void *self, float x, float y, float z, void *context, void *outputRtv, void *inputSrv, int width, int height, int inputFormat, int mode, int sRGBFix);",
+            "kind": "function",
+            "addr": "0x180058EB0"
+          },
+          "kind": "function",
+          "ok": true
+        },
+        {
+          "edit": {
+            "signature": "int __fastcall BOE_DX12_DoInterleave(void *self, float x, float y, float z, void *commandList, void *outputResource, void *rtvHandle, int width, int height, int inputFormat, int mode, int sRGBFix);",
+            "kind": "function",
+            "addr": "0x18005E9B0"
+          },
+          "kind": "function",
+          "ok": true
+        },
+        {
+          "edit": {
+            "signature": "int __fastcall BOE_Interleaving_initSDK(void *device, void *inputResource, const double *deviceParams, const double *wholeMat, const double *refractParams, int dxVersion, int viewportLeft, int viewportTop, int viewportWidth, int viewportHeight, int outFormat, const char *logPath);",
+            "kind": "function",
+            "addr": "0x1800602A0"
+          },
+          "kind": "function",
+          "ok": true
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

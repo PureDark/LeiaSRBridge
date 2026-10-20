@@ -1,0 +1,22 @@
+﻿[
+    {
+        "Name":  "SR Eye Tracker",
+        "DisplayName":  "Simulated Reality Eye Tracker",
+        "State":  "Running",
+        "StartMode":  "Auto",
+        "StartName":  "LocalSystem",
+        "PathName":  "C:\\Program Files\\LeiaSR\\Tracker\\bin\\SREyeTracker.exe",
+        "ProcessId":  43736,
+        "ExitCode":  0
+    },
+    {
+        "Name":  "SR Service",
+        "DisplayName":  "Simulated Reality Service",
+        "State":  "Running",
+        "StartMode":  "Auto",
+        "StartName":  "LocalSystem",
+        "PathName":  "C:\\Program Files\\LeiaSR\\Platform\\bin\\SRService.exe",
+        "ProcessId":  19276,
+        "ExitCode":  0
+    }
+]

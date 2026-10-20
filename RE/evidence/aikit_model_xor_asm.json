@@ -1,0 +1,440 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x180118309\",\"asm\":{\"name\":\"sub_180117990\",\"start_ea\":\"0x180118309\",\"segment\":\".text\",\"lines\":[{\"addr\":\"180118309\",\"instruction\":\"mov r10, qword ptr [rbp+3F0h+var_2C0]\",\"label\":\"loc_180118309\"},{\"addr\":\"180118310\",\"instruction\":\"mov r11, qword ptr [rbp+3F0h+var_2A8]\"},{\"addr\":\"180118317\",\"instruction\":\"mov r9d, r13d\"},{\"addr\":\"18011831a\",\"instruction\":\"mov r8, r13\"},{\"addr\":\"18011831d\",\"instruction\":\"test r14d, r14d\"},{\"addr\":\"180118320\",\"instruction\":\"jle short loc_180118362\",\"refs\":[{\"addr\":\"0x180118362\",\"name\":\"loc_180118362\"}]},{\"addr\":\"180118322\",\"instruction\":\"lea rbx, aYl1102; \\\"YL1102\\\"\",\"refs\":[{\"addr\":\"0x180582e78\",\"name\":\"aYl1102\",\"string\":\"YL1102\"}]},{\"addr\":\"180118329\",\"instruction\":\"nop dword ptr [rax+00000000h]\"},{\"addr\":\"180118330\",\"instruction\":\"mov eax, 2AAAAAABh\",\"label\":\"loc_180118330\"},{\"addr\":\"180118335\",\"instruction\":\"imul r9d\"},{\"addr\":\"180118338\",\"instruction\":\"mov eax, edx\"},{\"addr\":\"18011833a\",\"instruction\":\"shr eax, 1Fh\"},{\"addr\":\"18011833d\",\"instruction\":\"add edx, eax\"},{\"addr\":\"18011833f\",\"instruction\":\"lea ecx, [rdx+rdx*2]\"},{\"addr\":\"180118342\",\"instruction\":\"add ecx, ecx\"},{\"addr\":\"180118344\",\"instruction\":\"mov eax, r9d\"},{\"addr\":\"180118347\",\"instruction\":\"sub eax, ecx\"},{\"addr\":\"180118349\",\"instruction\":\"cdqe\"},{\"addr\":\"18011834b\",\"instruction\":\"movzx eax, byte ptr [rax+rbx]\"},{\"addr\":\"18011834f\",\"instruction\":\"xor al, [r8+r11]\"},{\"addr\":\"180118353\",\"instruction\":\"mov [r8+r10], al\"},{\"addr\":\"180118357\",\"instruction\":\"inc r9d\"},{\"addr\":\"18011835a\",\"instruction\":\"inc r8\"},{\"addr\":\"18011835d\",\"instruction\":\"cmp r8, rdi\"},{\"addr\":\"180118360\",\"instruction\":\"jl short loc_180118330\",\"refs\":[{\"addr\":\"0x180118330\",\"name\":\"loc_180118330\"}]},{\"addr\":\"180118362\",\"instruction\":\"mov ecx, 20h ; ' '; Size\",\"label\":\"loc_180118362\",\"comments\":[\"Size\"]},{\"addr\":\"180118367\",\"instruction\":\"call sub_1803B33B0\",\"refs\":[{\"addr\":\"0x1803b33b0\",\"name\":\"sub_1803B33B0\"}]},{\"addr\":\"18011836c\",\"instruction\":\"mov r8, [rbp+3F0h+var_2B0]\"},{\"addr\":\"180118373\",\"instruction\":\"mov [rbp+3F0h+var_2B0], r13\"},{\"addr\":\"18011837a\",\"instruction\":\"mov rdx, qword ptr [rbp+3F0h+var_2C0+8]\"},{\"addr\":\"180118381\",\"instruction\":\"mov qword ptr [rbp+3F0h+var_2C0+8], r13\"},{\"addr\":\"180118388\",\"instruction\":\"mov rcx, qword ptr [rbp+3F0h+var_2C0]\"},{\"addr\":\"18011838f\",\"instruction\":\"mov qword ptr [rbp+3F0h+var_2C0], r13\"},{\"addr\":\"180118396\",\"instruction\":\"mov [rax], rcx\"},{\"addr\":\"180118399\",\"instruction\":\"mov [rax+8], rdx\"}],\"stack_frame\":[{\"name\":\"var_4D0\",\"offset\":\"0x28\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"Src\",\"offset\":\"0x30\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_4B8\",\"offset\":\"0x40\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_4B0\",\"offset\":\"0x48\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_4A8\",\"offset\":\"0x50\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_498\",\"offset\":\"0x60\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_490\",\"offset\":\"0x68\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_488\",\"offset\":\"0x70\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_478\",\"offset\":\"0x80\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_470\",\"offset\":\"0x88\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_460\",\"offset\":\"0x98\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_458\",\"offset\":\"0xa0\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_448\",\"offset\":\"0xb0\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_444\",\"offset\":\"0xb4\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_440\",\"offset\":\"0xb8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_438\",\"offset\":\"0xc0\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_420\",\"offset\":\"0xd8\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_400\",\"offset\":\"0xf8\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_3E0\",\"offset\":\"0x118\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_3D0\",\"offset\":\"0x128\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_3C8\",\"offset\":\"0x130\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_3C0\",\"offset\":\"0x138\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_3B8\",\"offset\":\"0x140\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_340\",\"offset\":\"0x1b8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_320\",\"offset\":\"0x1d8\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_2C0\",\"offset\":\"0x238\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_2B0\",\"offset\":\"0x248\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_2A8\",\"offset\":\"0x250\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_298\",\"offset\":\"0x260\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_290\",\"offset\":\"0x268\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_280\",\"offset\":\"0x278\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_278\",\"offset\":\"0x280\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_270\",\"offset\":\"0x288\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"Filename\",\"offset\":\"0x2a8\",\"size\":\"0x210\",\"type\":\"WCHAR[264]\"},{\"name\":\"var_40\",\"offset\":\"0x4b8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_20\",\"offset\":\"0x4d8\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"__saved_registers\",\"offset\":\"0x4f8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"__return_address\",\"offset\":\"0x500\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"}],\"return_type\":\"__int64 *\",\"arguments\":[{\"name\":\"arg0\",\"type\":\"__int64 *\"},{\"name\":\"arg1\",\"type\":\"_QWORD *\"}]},\"instruction_count\":35,\"total_instructions\":null,\"cursor\":{\"next\":35}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x180118309",
+      "asm": {
+        "name": "sub_180117990",
+        "start_ea": "0x180118309",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "180118309",
+            "instruction": "mov r10, qword ptr [rbp+3F0h+var_2C0]",
+            "label": "loc_180118309"
+          },
+          {
+            "addr": "180118310",
+            "instruction": "mov r11, qword ptr [rbp+3F0h+var_2A8]"
+          },
+          {
+            "addr": "180118317",
+            "instruction": "mov r9d, r13d"
+          },
+          {
+            "addr": "18011831a",
+            "instruction": "mov r8, r13"
+          },
+          {
+            "addr": "18011831d",
+            "instruction": "test r14d, r14d"
+          },
+          {
+            "addr": "180118320",
+            "instruction": "jle short loc_180118362",
+            "refs": [
+              {
+                "addr": "0x180118362",
+                "name": "loc_180118362"
+              }
+            ]
+          },
+          {
+            "addr": "180118322",
+            "instruction": "lea rbx, aYl1102; \"YL1102\"",
+            "refs": [
+              {
+                "addr": "0x180582e78",
+                "name": "aYl1102",
+                "string": "YL1102"
+              }
+            ]
+          },
+          {
+            "addr": "180118329",
+            "instruction": "nop dword ptr [rax+00000000h]"
+          },
+          {
+            "addr": "180118330",
+            "instruction": "mov eax, 2AAAAAABh",
+            "label": "loc_180118330"
+          },
+          {
+            "addr": "180118335",
+            "instruction": "imul r9d"
+          },
+          {
+            "addr": "180118338",
+            "instruction": "mov eax, edx"
+          },
+          {
+            "addr": "18011833a",
+            "instruction": "shr eax, 1Fh"
+          },
+          {
+            "addr": "18011833d",
+            "instruction": "add edx, eax"
+          },
+          {
+            "addr": "18011833f",
+            "instruction": "lea ecx, [rdx+rdx*2]"
+          },
+          {
+            "addr": "180118342",
+            "instruction": "add ecx, ecx"
+          },
+          {
+            "addr": "180118344",
+            "instruction": "mov eax, r9d"
+          },
+          {
+            "addr": "180118347",
+            "instruction": "sub eax, ecx"
+          },
+          {
+            "addr": "180118349",
+            "instruction": "cdqe"
+          },
+          {
+            "addr": "18011834b",
+            "instruction": "movzx eax, byte ptr [rax+rbx]"
+          },
+          {
+            "addr": "18011834f",
+            "instruction": "xor al, [r8+r11]"
+          },
+          {
+            "addr": "180118353",
+            "instruction": "mov [r8+r10], al"
+          },
+          {
+            "addr": "180118357",
+            "instruction": "inc r9d"
+          },
+          {
+            "addr": "18011835a",
+            "instruction": "inc r8"
+          },
+          {
+            "addr": "18011835d",
+            "instruction": "cmp r8, rdi"
+          },
+          {
+            "addr": "180118360",
+            "instruction": "jl short loc_180118330",
+            "refs": [
+              {
+                "addr": "0x180118330",
+                "name": "loc_180118330"
+              }
+            ]
+          },
+          {
+            "addr": "180118362",
+            "instruction": "mov ecx, 20h ; ' '; Size",
+            "label": "loc_180118362",
+            "comments": [
+              "Size"
+            ]
+          },
+          {
+            "addr": "180118367",
+            "instruction": "call sub_1803B33B0",
+            "refs": [
+              {
+                "addr": "0x1803b33b0",
+                "name": "sub_1803B33B0"
+              }
+            ]
+          },
+          {
+            "addr": "18011836c",
+            "instruction": "mov r8, [rbp+3F0h+var_2B0]"
+          },
+          {
+            "addr": "180118373",
+            "instruction": "mov [rbp+3F0h+var_2B0], r13"
+          },
+          {
+            "addr": "18011837a",
+            "instruction": "mov rdx, qword ptr [rbp+3F0h+var_2C0+8]"
+          },
+          {
+            "addr": "180118381",
+            "instruction": "mov qword ptr [rbp+3F0h+var_2C0+8], r13"
+          },
+          {
+            "addr": "180118388",
+            "instruction": "mov rcx, qword ptr [rbp+3F0h+var_2C0]"
+          },
+          {
+            "addr": "18011838f",
+            "instruction": "mov qword ptr [rbp+3F0h+var_2C0], r13"
+          },
+          {
+            "addr": "180118396",
+            "instruction": "mov [rax], rcx"
+          },
+          {
+            "addr": "180118399",
+            "instruction": "mov [rax+8], rdx"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "var_4D0",
+            "offset": "0x28",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "Src",
+            "offset": "0x30",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_4B8",
+            "offset": "0x40",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_4B0",
+            "offset": "0x48",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_4A8",
+            "offset": "0x50",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_498",
+            "offset": "0x60",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_490",
+            "offset": "0x68",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_488",
+            "offset": "0x70",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_478",
+            "offset": "0x80",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_470",
+            "offset": "0x88",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_460",
+            "offset": "0x98",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_458",
+            "offset": "0xa0",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_448",
+            "offset": "0xb0",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_444",
+            "offset": "0xb4",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_440",
+            "offset": "0xb8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_438",
+            "offset": "0xc0",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_420",
+            "offset": "0xd8",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_400",
+            "offset": "0xf8",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_3E0",
+            "offset": "0x118",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_3D0",
+            "offset": "0x128",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_3C8",
+            "offset": "0x130",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_3C0",
+            "offset": "0x138",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_3B8",
+            "offset": "0x140",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_340",
+            "offset": "0x1b8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_320",
+            "offset": "0x1d8",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_2C0",
+            "offset": "0x238",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_2B0",
+            "offset": "0x248",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_2A8",
+            "offset": "0x250",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_298",
+            "offset": "0x260",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_290",
+            "offset": "0x268",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_280",
+            "offset": "0x278",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_278",
+            "offset": "0x280",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_270",
+            "offset": "0x288",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "Filename",
+            "offset": "0x2a8",
+            "size": "0x210",
+            "type": "WCHAR[264]"
+          },
+          {
+            "name": "var_40",
+            "offset": "0x4b8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_20",
+            "offset": "0x4d8",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "__saved_registers",
+            "offset": "0x4f8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "__return_address",
+            "offset": "0x500",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          }
+        ],
+        "return_type": "__int64 *",
+        "arguments": [
+          {
+            "name": "arg0",
+            "type": "__int64 *"
+          },
+          {
+            "name": "arg1",
+            "type": "_QWORD *"
+          }
+        ]
+      },
+      "instruction_count": 35,
+      "total_instructions": null,
+      "cursor": {
+        "next": 35
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

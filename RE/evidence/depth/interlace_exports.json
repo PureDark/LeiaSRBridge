@@ -1,0 +1,191 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"BOE_Interleaving_initSDK\",\"addr\":\"0x1800602a0\",\"name\":\"BOE_Interleaving_initSDK\",\"analysis\":{\"size\":\"0x1fe\",\"prototype\":null,\"decompile\":\"__int64 __fastcall BOE_Interleaving_initSDK(\\n        __int64 a1,\\n        __int64 a2,\\n        __int64 a3,\\n        __int64 a4,\\n        __int64 a5,\\n        int a6,\\n        unsigned int a7,\\n        int a8,\\n        int a9,\\n        int a10,\\n        int a11,\\n        __int64 a12)\\n{\\n  __int64 v12; // rax\\n  __int64 v13; // rax\\n  __int64 v14; // rax\\n  __int64 v15; // rax\\n  __int64 v16; // rax\\n  __int64 v17; // rax\\n  __int64 v19; // rax\\n  __int64 v20; // [rsp+48h] [rbp-70h]\\n  __int64 v21; // [rsp+50h] [rbp-68h]\\n  __int64 v22; // [rsp+58h] [rbp-60h]\\n  _BYTE v23[16]; // [rsp+68h] [rbp-50h] BYREF\\n  _BYTE v24[16]; // [rsp+78h] [rbp-40h] BYREF\\n  _BYTE v25[16]; // [rsp+88h] [rbp-30h] BYREF\\n  _BYTE v26[32]; // [rsp+98h] [rbp-20h] BYREF\\n\\n  v12 = sub_180061390( /*0x1800602cd*/\\n          a1: v23,\\n          a2: \\\"D:\\\\\\\\projects\\\\\\\\eyemcuinterleavingsdk-master0414\\\\\\\\interlaceSDK\\\\\\\\interleaving_interface.cpp\\\",\\n          a3: 29);\\n  v13 = sub_180065B20(a1: v12); /*0x1800602d5*/\\n  sub_180006FF0(a1: v13, a2: \\\"called BOE_Interleaving_initSDK,begin init log\\\"); /*0x1800602e4*/\\n  sub_180061580(a1: v23); /*0x1800602ee*/\\n  sub_1800068D0(a1: \\\"interleaving\\\", a2: a12, a3: 2); /*0x180060309*/\\n  v14 = sub_180061390( /*0x180060321*/\\n          a1: v24,\\n          a2: \\\"D:\\\\\\\\projects\\\\\\\\eyemcuinterleavingsdk-master0414\\\\\\\\interlaceSDK\\\\\\\\interleaving_interface.cpp\\\",\\n          a3: 31);\\n  v15 = sub_180065B20(a1: v14); /*0x180060329*/\\n  sub_180006FF0(a1: v15, a2: \\\"called BOE_Interleaving_initSDK,init log finish,begin init DX\\\"); /*0x180060338*/\\n  sub_180061580(a1: v24); /*0x180060342*/\\n  if ( a6 == 11 ) /*0x180060350*/\\n  {\\n    v16 = sub_180060650(a1: v25); /*0x18006035a*/\\n    std::shared_ptr<__ExceptionPtr>::reset<__ExceptionPtr>(a1: &unk_1800BA758, a2: v16); /*0x180060369*/\\n    sub_18001FFB0(a1: v25); /*0x180060376*/\\n  }\\n  else\\n  {\\n    if ( a6 != 12 ) /*0x180060386*/\\n      return 0xFFFFFFFFLL; /*0x1800603b9*/\\n    v17 = sub_180060700(a1: v26); /*0x180060390*/\\n    std::shared_ptr<__ExceptionPtr>::reset<__ExceptionPtr>(a1: &unk_1800BA758, a2: v17); /*0x18006039f*/\\n    sub_18001FFB0(a1: v26); /*0x1800603ac*/\\n  }\\n  v20 = sub_18001EFA0(a1: &unk_1800BA758); /*0x1800603ca*/\\n  sub_18005FCE0(a1: v20, a2: a3); /*0x1800603dc*/\\n  v21 = sub_18001EFA0(a1: &unk_1800BA758); /*0x1800603ed*/\\n  sub_18005EBD0(a1: v21, a2: a4); /*0x1800603ff*/\\n  v22 = sub_18001EFA0(a1: &unk_1800BA758); /*0x180060410*/\\n  sub_18005FF20(a1: v22, a2: a5); /*0x180060422*/\\n  v19 = sub_18001EFA0(a1: &unk_1800BA758); /*0x18006042e*/\\n  return (*(__int64 (__fastcall **)(__int64, __int64, __int64, _QWORD, int, int, int, int, __int64))(*(_QWORD *)v19 + 8LL))( /*0x180060496*/\\n           a1: v19,\\n           a2: a1,\\n           a3: a2,\\n           a4: a7,\\n           a5: a8,\\n           a6: a9,\\n           a7: a10,\\n           a8: a11,\\n           a9: v19);\\n}\",\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"BOE_Interleaving_doInterleave\",\"addr\":\"0x180060580\",\"name\":\"BOE_Interleaving_doInterleave\",\"analysis\":{\"size\":\"0xc9\",\"prototype\":null,\"decompile\":\"__int64 BOE_Interleaving_doInterleave()\\n{\\n  __int64 v0; // rax\\n\\n  v0 = sub_18001EFA0(a1: &unk_1800BA758); /*0x1800605a2*/\\n  (*(void (__fastcall **)(__int64))(*(_QWORD *)v0 + 16LL))(a1: v0); /*0x18006063b*/\\n  return 1; /*0x180060644*/\\n}\",\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"BOE_Interleaving_setWholeParam\",\"addr\":\"0x1800604f0\",\"name\":\"BOE_Interleaving_setWholeParam\",\"analysis\":{\"size\":\"0x2f\",\"prototype\":null,\"decompile\":\"__int64 __fastcall BOE_Interleaving_setWholeParam(__int64 a1)\\n{\\n  __int64 v2; // [rsp+20h] [rbp-18h]\\n\\n  v2 = sub_18001EFA0(a1: &unk_1800BA758); /*0x180060505*/\\n  return sub_18005EBD0(a1: v2, a2: a1); /*0x18006051a*/\\n}\",\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"BOE_Interleaving_setDeviceParam\",\"addr\":\"0x180060520\",\"name\":\"BOE_Interleaving_setDeviceParam\",\"analysis\":{\"size\":\"0x2f\",\"prototype\":null,\"decompile\":\"__int64 __fastcall BOE_Interleaving_setDeviceParam(__int64 a1)\\n{\\n  __int64 v2; // [rsp+20h] [rbp-18h]\\n\\n  v2 = sub_18001EFA0(a1: &unk_1800BA758); /*0x180060535*/\\n  return sub_18005FCE0(a1: v2, a2: a1); /*0x18006054a*/\\n}\",\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"BOE_Interleaving_setRefractDeviceParam\",\"addr\":\"0x180060550\",\"name\":\"BOE_Interleaving_setRefractDeviceParam\",\"analysis\":{\"size\":\"0x2f\",\"prototype\":null,\"decompile\":\"__int64 __fastcall BOE_Interleaving_setRefractDeviceParam(__int64 a1)\\n{\\n  __int64 v2; // [rsp+20h] [rbp-18h]\\n\\n  v2 = sub_18001EFA0(a1: &unk_1800BA758); /*0x180060565*/\\n  return sub_18005FF20(a1: v2, a2: a1); /*0x18006057a*/\\n}\",\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"BOE_Interleaving_releaseSDK\",\"addr\":\"0x1800604a0\",\"name\":\"BOE_Interleaving_releaseSDK\",\"analysis\":{\"size\":\"0x42\",\"prototype\":null,\"decompile\":\"__int64 BOE_Interleaving_releaseSDK()\\n{\\n  __int64 v0; // rax\\n  __int64 v1; // rax\\n  _BYTE v3[24]; // [rsp+20h] [rbp-18h] BYREF\\n\\n  v0 = sub_180061390( /*0x1800604b6*/\\n         a1: v3,\\n         a2: \\\"D:\\\\\\\\projects\\\\\\\\eyemcuinterleavingsdk-master0414\\\\\\\\interlaceSDK\\\\\\\\interleaving_interface.cpp\\\",\\n         a3: 49);\\n  v1 = sub_180065B20(a1: v0); /*0x1800604be*/\\n  sub_180006FF0(a1: v1, a2: \\\"called BOE_MCU_releaseMCU\\\"); /*0x1800604cd*/\\n  return sub_180061580(a1: v3); /*0x1800604dd*/\\n}\",\"decompile_error\":null,\"disasm\":null,\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "BOE_Interleaving_initSDK",
+          "addr": "0x1800602a0",
+          "name": "BOE_Interleaving_initSDK",
+          "analysis": {
+            "size": "0x1fe",
+            "prototype": null,
+            "decompile": "__int64 __fastcall BOE_Interleaving_initSDK(\n        __int64 a1,\n        __int64 a2,\n        __int64 a3,\n        __int64 a4,\n        __int64 a5,\n        int a6,\n        unsigned int a7,\n        int a8,\n        int a9,\n        int a10,\n        int a11,\n        __int64 a12)\n{\n  __int64 v12; // rax\n  __int64 v13; // rax\n  __int64 v14; // rax\n  __int64 v15; // rax\n  __int64 v16; // rax\n  __int64 v17; // rax\n  __int64 v19; // rax\n  __int64 v20; // [rsp+48h] [rbp-70h]\n  __int64 v21; // [rsp+50h] [rbp-68h]\n  __int64 v22; // [rsp+58h] [rbp-60h]\n  _BYTE v23[16]; // [rsp+68h] [rbp-50h] BYREF\n  _BYTE v24[16]; // [rsp+78h] [rbp-40h] BYREF\n  _BYTE v25[16]; // [rsp+88h] [rbp-30h] BYREF\n  _BYTE v26[32]; // [rsp+98h] [rbp-20h] BYREF\n\n  v12 = sub_180061390( /*0x1800602cd*/\n          a1: v23,\n          a2: \"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleaving_interface.cpp\",\n          a3: 29);\n  v13 = sub_180065B20(a1: v12); /*0x1800602d5*/\n  sub_180006FF0(a1: v13, a2: \"called BOE_Interleaving_initSDK,begin init log\"); /*0x1800602e4*/\n  sub_180061580(a1: v23); /*0x1800602ee*/\n  sub_1800068D0(a1: \"interleaving\", a2: a12, a3: 2); /*0x180060309*/\n  v14 = sub_180061390( /*0x180060321*/\n          a1: v24,\n          a2: \"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleaving_interface.cpp\",\n          a3: 31);\n  v15 = sub_180065B20(a1: v14); /*0x180060329*/\n  sub_180006FF0(a1: v15, a2: \"called BOE_Interleaving_initSDK,init log finish,begin init DX\"); /*0x180060338*/\n  sub_180061580(a1: v24); /*0x180060342*/\n  if ( a6 == 11 ) /*0x180060350*/\n  {\n    v16 = sub_180060650(a1: v25); /*0x18006035a*/\n    std::shared_ptr<__ExceptionPtr>::reset<__ExceptionPtr>(a1: &unk_1800BA758, a2: v16); /*0x180060369*/\n    sub_18001FFB0(a1: v25); /*0x180060376*/\n  }\n  else\n  {\n    if ( a6 != 12 ) /*0x180060386*/\n      return 0xFFFFFFFFLL; /*0x1800603b9*/\n    v17 = sub_180060700(a1: v26); /*0x180060390*/\n    std::shared_ptr<__ExceptionPtr>::reset<__ExceptionPtr>(a1: &unk_1800BA758, a2: v17); /*0x18006039f*/\n    sub_18001FFB0(a1: v26); /*0x1800603ac*/\n  }\n  v20 = sub_18001EFA0(a1: &unk_1800BA758); /*0x1800603ca*/\n  sub_18005FCE0(a1: v20, a2: a3); /*0x1800603dc*/\n  v21 = sub_18001EFA0(a1: &unk_1800BA758); /*0x1800603ed*/\n  sub_18005EBD0(a1: v21, a2: a4); /*0x1800603ff*/\n  v22 = sub_18001EFA0(a1: &unk_1800BA758); /*0x180060410*/\n  sub_18005FF20(a1: v22, a2: a5); /*0x180060422*/\n  v19 = sub_18001EFA0(a1: &unk_1800BA758); /*0x18006042e*/\n  return (*(__int64 (__fastcall **)(__int64, __int64, __int64, _QWORD, int, int, int, int, __int64))(*(_QWORD *)v19 + 8LL))( /*0x180060496*/\n           a1: v19,\n           a2: a1,\n           a3: a2,\n           a4: a7,\n           a5: a8,\n           a6: a9,\n           a7: a10,\n           a8: a11,\n           a9: v19);\n}",
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "BOE_Interleaving_doInterleave",
+          "addr": "0x180060580",
+          "name": "BOE_Interleaving_doInterleave",
+          "analysis": {
+            "size": "0xc9",
+            "prototype": null,
+            "decompile": "__int64 BOE_Interleaving_doInterleave()\n{\n  __int64 v0; // rax\n\n  v0 = sub_18001EFA0(a1: &unk_1800BA758); /*0x1800605a2*/\n  (*(void (__fastcall **)(__int64))(*(_QWORD *)v0 + 16LL))(a1: v0); /*0x18006063b*/\n  return 1; /*0x180060644*/\n}",
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "BOE_Interleaving_setWholeParam",
+          "addr": "0x1800604f0",
+          "name": "BOE_Interleaving_setWholeParam",
+          "analysis": {
+            "size": "0x2f",
+            "prototype": null,
+            "decompile": "__int64 __fastcall BOE_Interleaving_setWholeParam(__int64 a1)\n{\n  __int64 v2; // [rsp+20h] [rbp-18h]\n\n  v2 = sub_18001EFA0(a1: &unk_1800BA758); /*0x180060505*/\n  return sub_18005EBD0(a1: v2, a2: a1); /*0x18006051a*/\n}",
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "BOE_Interleaving_setDeviceParam",
+          "addr": "0x180060520",
+          "name": "BOE_Interleaving_setDeviceParam",
+          "analysis": {
+            "size": "0x2f",
+            "prototype": null,
+            "decompile": "__int64 __fastcall BOE_Interleaving_setDeviceParam(__int64 a1)\n{\n  __int64 v2; // [rsp+20h] [rbp-18h]\n\n  v2 = sub_18001EFA0(a1: &unk_1800BA758); /*0x180060535*/\n  return sub_18005FCE0(a1: v2, a2: a1); /*0x18006054a*/\n}",
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "BOE_Interleaving_setRefractDeviceParam",
+          "addr": "0x180060550",
+          "name": "BOE_Interleaving_setRefractDeviceParam",
+          "analysis": {
+            "size": "0x2f",
+            "prototype": null,
+            "decompile": "__int64 __fastcall BOE_Interleaving_setRefractDeviceParam(__int64 a1)\n{\n  __int64 v2; // [rsp+20h] [rbp-18h]\n\n  v2 = sub_18001EFA0(a1: &unk_1800BA758); /*0x180060565*/\n  return sub_18005FF20(a1: v2, a2: a1); /*0x18006057a*/\n}",
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "BOE_Interleaving_releaseSDK",
+          "addr": "0x1800604a0",
+          "name": "BOE_Interleaving_releaseSDK",
+          "analysis": {
+            "size": "0x42",
+            "prototype": null,
+            "decompile": "__int64 BOE_Interleaving_releaseSDK()\n{\n  __int64 v0; // rax\n  __int64 v1; // rax\n  _BYTE v3[24]; // [rsp+20h] [rbp-18h] BYREF\n\n  v0 = sub_180061390( /*0x1800604b6*/\n         a1: v3,\n         a2: \"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleaving_interface.cpp\",\n         a3: 49);\n  v1 = sub_180065B20(a1: v0); /*0x1800604be*/\n  sub_180006FF0(a1: v1, a2: \"called BOE_MCU_releaseMCU\"); /*0x1800604cd*/\n  return sub_180061580(a1: v3); /*0x1800604dd*/\n}",
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,65 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x1401cdd48\",\"xrefs\":[{\"addr\":\"0x14013af8d\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14013a460\",\"name\":\"sub_14013A460\",\"size\":\"0xdb4\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x1401cdd60\",\"xrefs\":[{\"addr\":\"0x14013b00f\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14013a460\",\"name\":\"sub_14013A460\",\"size\":\"0xdb4\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x1401fe300\",\"xrefs\":[{\"addr\":\"0x140189cac\",\"type\":\"data\",\"fn\":{\"addr\":\"0x1401884a0\",\"name\":\"sub_1401884A0\",\"size\":\"0x1fb4\"}}],\"more\":false,\"xref_count\":1}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x1401cdd48",
+          "xrefs": [
+            {
+              "addr": "0x14013af8d",
+              "type": "data",
+              "fn": {
+                "addr": "0x14013a460",
+                "name": "sub_14013A460",
+                "size": "0xdb4"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x1401cdd60",
+          "xrefs": [
+            {
+              "addr": "0x14013b00f",
+              "type": "data",
+              "fn": {
+                "addr": "0x14013a460",
+                "name": "sub_14013A460",
+                "size": "0xdb4"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x1401fe300",
+          "xrefs": [
+            {
+              "addr": "0x140189cac",
+              "type": "data",
+              "fn": {
+                "addr": "0x1401884a0",
+                "name": "sub_1401884A0",
+                "size": "0x1fb4"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

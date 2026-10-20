@@ -1,0 +1,15 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+namespace std
+{
+	// Token: 0x02000286 RID: 646
+	[NativeCppClass]
+	[StructLayout(LayoutKind.Sequential, Size = 40)]
+	internal struct system_error
+	{
+		// Token: 0x0400040C RID: 1036
+		private long <alignment\u0020member>;
+	}
+}

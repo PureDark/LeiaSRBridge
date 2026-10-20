@@ -1,0 +1,32 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x314bd0\",\"scope\":\"line\",\"appended\":true},{\"addr\":\"0x3eec00\",\"scope\":\"line\",\"appended\":true},{\"addr\":\"0x352260\",\"scope\":\"line\",\"appended\":true}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x314bd0",
+          "scope": "line",
+          "appended": true
+        },
+        {
+          "addr": "0x3eec00",
+          "scope": "line",
+          "appended": true
+        },
+        {
+          "addr": "0x352260",
+          "scope": "line",
+          "appended": true
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "addr": "0x18013C7A8",
+      "xrefs": [
+        {
+          "addr": "0x1800b331d",
+          "type": "data",
+          "fn": {
+            "addr": "0x1800b32c0",
+            "name": "sub_1800B32C0",
+            "size": "0x31c"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    }
+  ]
+}

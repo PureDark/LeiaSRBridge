@@ -1,0 +1,99 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18015bdf4\",\"asm\":{\"name\":\"YL_Render2\",\"start_ea\":\"0x18015bdf4\",\"segment\":\".text\",\"lines\":[{\"addr\":\"18015bdf7\",\"instruction\":\"add rsp, 88h\"},{\"addr\":\"18015bdfe\",\"instruction\":\"jmp r10\"}],\"stack_frame\":[{\"name\":\"var_58\",\"offset\":\"0x30\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_50\",\"offset\":\"0x38\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_48\",\"offset\":\"0x40\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_38\",\"offset\":\"0x50\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_28\",\"offset\":\"0x60\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_18\",\"offset\":\"0x70\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_8\",\"offset\":\"0x80\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"__return_address\",\"offset\":\"0x88\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"},{\"name\":\"arg_0\",\"offset\":\"0x90\",\"size\":\"0x8\",\"type\":\"_QWORD\"}],\"return_type\":\"char\",\"arguments\":[{\"name\":\"arg0\",\"type\":\"__int64\"}]},\"instruction_count\":2,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18015bdf4",
+      "asm": {
+        "name": "YL_Render2",
+        "start_ea": "0x18015bdf4",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "18015bdf7",
+            "instruction": "add rsp, 88h"
+          },
+          {
+            "addr": "18015bdfe",
+            "instruction": "jmp r10"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "var_58",
+            "offset": "0x30",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_50",
+            "offset": "0x38",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_48",
+            "offset": "0x40",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_38",
+            "offset": "0x50",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_28",
+            "offset": "0x60",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_18",
+            "offset": "0x70",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_8",
+            "offset": "0x80",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "__return_address",
+            "offset": "0x88",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          },
+          {
+            "name": "arg_0",
+            "offset": "0x90",
+            "size": "0x8",
+            "type": "_QWORD"
+          }
+        ],
+        "return_type": "char",
+        "arguments": [
+          {
+            "name": "arg0",
+            "type": "__int64"
+          }
+        ]
+      },
+      "instruction_count": 2,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

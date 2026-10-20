@@ -1,0 +1,47 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x1800602A0\",\"scope\":\"func\",\"appended\":true},{\"addr\":\"0x180060580\",\"scope\":\"func\",\"appended\":true},{\"addr\":\"0x1800604A0\",\"scope\":\"func\",\"appended\":true},{\"addr\":\"0x18005E380\",\"scope\":\"func\",\"appended\":true},{\"addr\":\"0x18005D900\",\"scope\":\"func\",\"appended\":true},{\"addr\":\"0x18005F530\",\"scope\":\"func\",\"appended\":true}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x1800602A0",
+          "scope": "func",
+          "appended": true
+        },
+        {
+          "addr": "0x180060580",
+          "scope": "func",
+          "appended": true
+        },
+        {
+          "addr": "0x1800604A0",
+          "scope": "func",
+          "appended": true
+        },
+        {
+          "addr": "0x18005E380",
+          "scope": "func",
+          "appended": true
+        },
+        {
+          "addr": "0x18005D900",
+          "scope": "func",
+          "appended": true
+        },
+        {
+          "addr": "0x18005F530",
+          "scope": "func",
+          "appended": true
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,173 @@
+{
+  "exported_at": "2026-10-21T02:03:23.418007+08:00",
+  "sessions": [
+    {
+      "session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "parent_session_id": null,
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T00-34-59-01a15504-2cf9-7b60-b725-d88deea1283c.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-20T00-34-59-01a15504-2cf9-7b60-b725-d88deea1283c.jsonl",
+      "transcript": "transcripts/01a15504-2cf9-7b60-b725-d88deea1283c.md",
+      "bytes": 19586210,
+      "sha256": "0e6419eedf28ab99317a1cf087e71e24004cd2d7d34ace055e7333c4676809b9",
+      "messages": 188,
+      "agent_name": "主会话"
+    },
+    {
+      "session_id": "01a15504-b858-7ac1-b964-29de3e650998",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T00-35-35-01a15504-b858-7ac1-b964-29de3e650998.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-20T00-35-35-01a15504-b858-7ac1-b964-29de3e650998.jsonl",
+      "transcript": "transcripts/01a15504-b858-7ac1-b964-29de3e650998.md",
+      "bytes": 3641082,
+      "sha256": "2e79d497d72d4d77e54560964fb1072e526704f7cc14eb43ea3cafa51beaad9e",
+      "messages": 10,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15506-0bb1-7f71-b737-f01528095bc9",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T00-37-02-01a15506-0bb1-7f71-b737-f01528095bc9.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-20T00-37-02-01a15506-0bb1-7f71-b737-f01528095bc9.jsonl",
+      "transcript": "transcripts/01a15506-0bb1-7f71-b737-f01528095bc9.md",
+      "bytes": 2801349,
+      "sha256": "722a30cac652997c9118ba838f3b2ce1f0eba3212e26f194eac34e084505681f",
+      "messages": 7,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15506-3117-72b3-8ae4-36ff96d4ab08",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T00-37-11-01a15506-3117-72b3-8ae4-36ff96d4ab08.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-20T00-37-11-01a15506-3117-72b3-8ae4-36ff96d4ab08.jsonl",
+      "transcript": "transcripts/01a15506-3117-72b3-8ae4-36ff96d4ab08.md",
+      "bytes": 1885180,
+      "sha256": "885a74056f4458acc8e599e72cbc03b698ee5f8afe33f6d419f3ce4a97ea3ab2",
+      "messages": 6,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15528-46f3-70e1-8b2d-f7b4a9fd18af",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T01-14-25-01a15528-46f3-70e1-8b2d-f7b4a9fd18af.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-20T01-14-25-01a15528-46f3-70e1-8b2d-f7b4a9fd18af.jsonl",
+      "transcript": "transcripts/01a15528-46f3-70e1-8b2d-f7b4a9fd18af.md",
+      "bytes": 1078393,
+      "sha256": "7e61cb050b667f07d2f887196371d5efe90faefe9a0ffe989484430e12f46e27",
+      "messages": 4,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15528-6b6a-7110-83ae-8ad2c40ba5f6",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T01-14-34-01a15528-6b6a-7110-83ae-8ad2c40ba5f6.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-20T01-14-34-01a15528-6b6a-7110-83ae-8ad2c40ba5f6.jsonl",
+      "transcript": "transcripts/01a15528-6b6a-7110-83ae-8ad2c40ba5f6.md",
+      "bytes": 1605148,
+      "sha256": "17b02cf900af35e6f8d42cf12b206ca8f94a3cb41291d2003bfc1a28f68b8143",
+      "messages": 5,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15528-9687-73c2-8b54-d9f41f3e8e0d",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T01-14-45-01a15528-9687-73c2-8b54-d9f41f3e8e0d.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-20T01-14-45-01a15528-9687-73c2-8b54-d9f41f3e8e0d.jsonl",
+      "transcript": "transcripts/01a15528-9687-73c2-8b54-d9f41f3e8e0d.md",
+      "bytes": 1155996,
+      "sha256": "634281d69eaf56b67f1fccc5b326293727bf7cc88db9380af2b733fef07290c5",
+      "messages": 5,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a1554a-7274-7121-a076-08587399c450",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\20\\rollout-2026-10-20T01-51-44-01a1554a-7274-7121-a076-08587399c450.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-20T01-51-44-01a1554a-7274-7121-a076-08587399c450.jsonl",
+      "transcript": "transcripts/01a1554a-7274-7121-a076-08587399c450.md",
+      "bytes": 655423,
+      "sha256": "32437b9399d19176e3328ede34aa498bc45a7a33dfb721aec419b6ef64c5ea3d",
+      "messages": 8,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15a11-2617-75a3-b250-6ccf6415cf56",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T00-07-15-01a15a11-2617-75a3-b250-6ccf6415cf56.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-21T00-07-15-01a15a11-2617-75a3-b250-6ccf6415cf56.jsonl",
+      "transcript": "transcripts/01a15a11-2617-75a3-b250-6ccf6415cf56.md",
+      "bytes": 1344305,
+      "sha256": "47b3d68b46eb0d33f869968f4be0c2a370e6453962bdf2a28db683d0f7771696",
+      "messages": 5,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15a11-fd43-7fa0-9de8-21fbcaba5289",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T00-08-10-01a15a11-fd43-7fa0-9de8-21fbcaba5289.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-21T00-08-10-01a15a11-fd43-7fa0-9de8-21fbcaba5289.jsonl",
+      "transcript": "transcripts/01a15a11-fd43-7fa0-9de8-21fbcaba5289.md",
+      "bytes": 867348,
+      "sha256": "f9551d6efc123a6f1744e2842b7784538d4a9f51c01803679e64e5ebee7ba1c5",
+      "messages": 5,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15a22-aa66-7430-b374-96d306a82b2d",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T00-26-23-01a15a22-aa66-7430-b374-96d306a82b2d.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-21T00-26-23-01a15a22-aa66-7430-b374-96d306a82b2d.jsonl",
+      "transcript": "transcripts/01a15a22-aa66-7430-b374-96d306a82b2d.md",
+      "bytes": 1044905,
+      "sha256": "5585a887b1dccf6b11e4f68f70d497024db30f1aa87e587726935e387ff4eda2",
+      "messages": 3,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15a23-61c8-77d3-99bc-704784bc421f",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T00-27-10-01a15a23-61c8-77d3-99bc-704784bc421f.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-21T00-27-10-01a15a23-61c8-77d3-99bc-704784bc421f.jsonl",
+      "transcript": "transcripts/01a15a23-61c8-77d3-99bc-704784bc421f.md",
+      "bytes": 759819,
+      "sha256": "a56f4cc37f64ef3aa4dd0c3bf80265df09b8953d6157532af11b026880177bc4",
+      "messages": 3,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15a31-9590-7822-9a3d-033e4e3a6ddc",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T00-42-41-01a15a31-9590-7822-9a3d-033e4e3a6ddc.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-21T00-42-41-01a15a31-9590-7822-9a3d-033e4e3a6ddc.jsonl",
+      "transcript": "transcripts/01a15a31-9590-7822-9a3d-033e4e3a6ddc.md",
+      "bytes": 617719,
+      "sha256": "aaaf183cf18a90b3cd4c147ca0d319590a3d8962dd6cd67995b4598475280af5",
+      "messages": 8,
+      "agent_name": "Agent"
+    },
+    {
+      "session_id": "01a15a31-e70c-7ba3-a5a6-6650015811b0",
+      "parent_session_id": "01a15504-2cf9-7b60-b725-d88deea1283c",
+      "source": "C:\\Users\\PureDark\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T00-43-02-01a15a31-e70c-7ba3-a5a6-6650015811b0.jsonl",
+      "original_cwd": "F:\\目标软件\\ModexLite",
+      "raw_file": "raw/rollout-2026-10-21T00-43-02-01a15a31-e70c-7ba3-a5a6-6650015811b0.jsonl",
+      "transcript": "transcripts/01a15a31-e70c-7ba3-a5a6-6650015811b0.md",
+      "bytes": 763202,
+      "sha256": "f1eb89aa14b7cb3f618be75c3b81e76fd95a3284dec5a46f92c83f0d608766dc",
+      "messages": 8,
+      "agent_name": "Agent"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":20,\"matches\":[{\"addr\":\"0x18000ba78\",\"string\":\"HKEY_LOCAL_MACHINE\"},{\"addr\":\"0x18000c010\",\"string\":\"Global\\\\FaceTrackingExitEvent\"},{\"addr\":\"0x18000c088\",\"string\":\"FaceTracking.exe\"},{\"addr\":\"0x18000c0b0\",\"string\":\"COM:open facetracking\"},{\"addr\":\"0x18000e150\",\"string\":\"ISimpleFaceTracking\"},{\"addr\":\"0x18000f2f8\",\"string\":\"J:\\\\Project\\\\VSProjects\\\\FaceTracking\\\\FaceTrackingManagerService\\\\x64\\\\Release\\\\FaceTrackingManagerService.pdb\"},{\"addr\":\"0x18001073a\",\"string\":\"FaceTrackingManagerService.dll\"},{\"addr\":\"0x180010f22\",\"string\":\"GetThreadLocale\"},{\"addr\":\"0x180010f34\",\"string\":\"SetThreadLocale\"},{\"addr\":\"0x180012440\",\"string\":\".?AVCFaceTrackingManagerServiceModule@@\"},{\"addr\":\"0x180012480\",\"string\":\".?AV?$CAtlDllModuleT@VCFaceTrackingManagerServiceModule@@@ATL@@\"},{\"addr\":\"0x1800124d0\",\"string\":\".?AV?$CAtlModuleT@VCFaceTrackingManagerServiceModule@@@ATL@@\"},{\"addr\":\"0x180012520\",\"string\":\".?AU?$CAtlValidateModuleConfiguration@$00VCFaceTrackingManagerServiceModule@@@ATL@@\"},{\"addr\":\"0x180012738\",\"string\":\".?AUISimpleFaceTracking@@\"},{\"addr\":\"0x180012768\",\"string\":\".?AVCSimpleFaceTracking@@\"},{\"addr\":\"0x1800127a0\",\"string\":\".?AV?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@\"},{\"addr\":\"0x180012810\",\"string\":\".?AV?$IDispatchImpl@UISimpleFaceTracking@@$1?IID_ISimpleFaceTracking@@3U_GUID@@B$1?LIBID_FaceTrackingManagerServiceLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@\"},{\"addr\":\"0x1800128c8\",\"string\":\".?AV?$CComObject@VCSimpleFaceTracking@@@ATL@@\"},{\"addr\":\"0x180012910\",\"string\":\".?AV?$CComAggObject@VCSimpleFaceTracking@@@ATL@@\"},{\"addr\":\"0x1800129b0\",\"string\":\".?AV?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 20,
+      "matches": [
+        {
+          "addr": "0x18000ba78",
+          "string": "HKEY_LOCAL_MACHINE"
+        },
+        {
+          "addr": "0x18000c010",
+          "string": "Global\\FaceTrackingExitEvent"
+        },
+        {
+          "addr": "0x18000c088",
+          "string": "FaceTracking.exe"
+        },
+        {
+          "addr": "0x18000c0b0",
+          "string": "COM:open facetracking"
+        },
+        {
+          "addr": "0x18000e150",
+          "string": "ISimpleFaceTracking"
+        },
+        {
+          "addr": "0x18000f2f8",
+          "string": "J:\\Project\\VSProjects\\FaceTracking\\FaceTrackingManagerService\\x64\\Release\\FaceTrackingManagerService.pdb"
+        },
+        {
+          "addr": "0x18001073a",
+          "string": "FaceTrackingManagerService.dll"
+        },
+        {
+          "addr": "0x180010f22",
+          "string": "GetThreadLocale"
+        },
+        {
+          "addr": "0x180010f34",
+          "string": "SetThreadLocale"
+        },
+        {
+          "addr": "0x180012440",
+          "string": ".?AVCFaceTrackingManagerServiceModule@@"
+        },
+        {
+          "addr": "0x180012480",
+          "string": ".?AV?$CAtlDllModuleT@VCFaceTrackingManagerServiceModule@@@ATL@@"
+        },
+        {
+          "addr": "0x1800124d0",
+          "string": ".?AV?$CAtlModuleT@VCFaceTrackingManagerServiceModule@@@ATL@@"
+        },
+        {
+          "addr": "0x180012520",
+          "string": ".?AU?$CAtlValidateModuleConfiguration@$00VCFaceTrackingManagerServiceModule@@@ATL@@"
+        },
+        {
+          "addr": "0x180012738",
+          "string": ".?AUISimpleFaceTracking@@"
+        },
+        {
+          "addr": "0x180012768",
+          "string": ".?AVCSimpleFaceTracking@@"
+        },
+        {
+          "addr": "0x1800127a0",
+          "string": ".?AV?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@"
+        },
+        {
+          "addr": "0x180012810",
+          "string": ".?AV?$IDispatchImpl@UISimpleFaceTracking@@$1?IID_ISimpleFaceTracking@@3U_GUID@@B$1?LIBID_FaceTrackingManagerServiceLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+        },
+        {
+          "addr": "0x1800128c8",
+          "string": ".?AV?$CComObject@VCSimpleFaceTracking@@@ATL@@"
+        },
+        {
+          "addr": "0x180012910",
+          "string": ".?AV?$CComAggObject@VCSimpleFaceTracking@@@ATL@@"
+        },
+        {
+          "addr": "0x1800129b0",
+          "string": ".?AV?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

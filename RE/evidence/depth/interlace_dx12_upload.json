@@ -1,0 +1,57 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18005D900\",\"code\":\"__int64 __fastcall sub_18005D900(__int64 a1, int a2, int a3, int a4, int a5, int a6, int a7)\\n{\\n  int v8; // [rsp+40h] [rbp-A8h]\\n  __int64 v9; // [rsp+48h] [rbp-A0h]\\n  __int64 v10; // [rsp+50h] [rbp-98h]\\n  _BYTE v11[32]; // [rsp+68h] [rbp-80h] BYREF\\n  _BYTE v12[32]; // [rsp+88h] [rbp-60h] BYREF\\n  void *v13; // [rsp+A8h] [rbp-40h] BYREF\\n  _BYTE v14[16]; // [rsp+B0h] [rbp-38h] BYREF\\n\\n  sub_18005F530(a1, a2, a3, a4, a5, a6, a7); /*0x18005d976*/\\n  v13 = nullptr; /*0x18005d97b*/\\n  unknown_libname_13(a1: v14, a2: 0, a3: 0); /*0x18005d994*/\\n  v9 = unknown_libname_11(a1: a1 + 368); /*0x18005d9af*/\\n  v8 = (*(__int64 (__fastcall **)(__int64, _QWORD, _BYTE *, void **))(*(_QWORD *)v9 + 64LL))( /*0x18005d9e0*/\\n         a1: v9,\\n         a2: 0,\\n         a3: v14,\\n         a4: &v13);\\n  if ( v8 >= 0 ) /*0x18005d9e9*/\\n  {\\n    qmemcpy(v13, (const void *)(a1 + 204), 0x50u); /*0x18005da45*/\\n    v10 = unknown_libname_11(a1: a1 + 368); /*0x18005da5d*/\\n    (*(void (__fastcall **)(__int64, _QWORD, _QWORD))(*(_QWORD *)v10 + 72LL))(a1: v10, a2: 0, a3: 0); /*0x18005da7d*/\\n    if ( (unsigned int)sub_18005AC10(a1: a1 + 368) == -1 ) /*0x18005da9b*/\\n    {\\n      sub_1800087D0(a1: v12, a2: \\\"uploadBuffer is null, HRESULT:\\\"); /*0x18005daac*/\\n      __wind /*0xf1c0000000000024*/\\n      {\\n        sub_180058A50(a1, a2: 0xFFFFFFFFLL, a3: v12); /*0x18005dac7*/\\n      }\\n      __unwind\\n      {\\n        sub_180008710(a1: v12); /*0x18006cff8*/\\n      }\\n      sub_180008710(a1: v12); /*0x18005dad5*/\\n      return 0xFFFFFFFFLL; /*0x18005dadb*/\\n    }\\n    else\\n    {\\n      return 0; /*0x18005dae2*/\\n    }\\n  }\\n  else\\n  {\\n    sub_1800087D0(a1: v11, a2: \\\"Failed to map upload buffer. HRESULT:\\\"); /*0x18005d9f7*/\\n    __wind /*0xf1c000000000003c*/\\n    {\\n      sub_180058A50(a1, a2: (unsigned int)v8, a3: v11); /*0x18005da0e*/\\n    }\\n    __unwind\\n    {\\n      sub_180008710(a1: v11); /*0x18006cfdd*/\\n    }\\n    sub_180008710(a1: v11); /*0x18005da19*/\\n    return 0xFFFFFFFFLL; /*0x18005da1f*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x18005f530\",\"name\":\"sub_18005F530\"},{\"addr\":\"0x180005840\",\"name\":\"unknown_libname_13\"},{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"},{\"addr\":\"0x1800087d0\",\"name\":\"sub_1800087D0\"},{\"addr\":\"0x180081520\",\"name\":\"aUploadbufferIs\",\"string\":\"uploadBuffer is null, HRESULT:\"},{\"addr\":\"0x180058a50\",\"name\":\"sub_180058A50\"},{\"addr\":\"0x180008710\",\"name\":\"sub_180008710\"},{\"addr\":\"0x18005ac10\",\"name\":\"sub_18005AC10\"},{\"addr\":\"0x1800814a0\",\"name\":\"aFailedToMapUpl\",\"string\":\"Failed to map upload buffer. HRESULT:\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18005D900",
+      "code": "__int64 __fastcall sub_18005D900(__int64 a1, int a2, int a3, int a4, int a5, int a6, int a7)\n{\n  int v8; // [rsp+40h] [rbp-A8h]\n  __int64 v9; // [rsp+48h] [rbp-A0h]\n  __int64 v10; // [rsp+50h] [rbp-98h]\n  _BYTE v11[32]; // [rsp+68h] [rbp-80h] BYREF\n  _BYTE v12[32]; // [rsp+88h] [rbp-60h] BYREF\n  void *v13; // [rsp+A8h] [rbp-40h] BYREF\n  _BYTE v14[16]; // [rsp+B0h] [rbp-38h] BYREF\n\n  sub_18005F530(a1, a2, a3, a4, a5, a6, a7); /*0x18005d976*/\n  v13 = nullptr; /*0x18005d97b*/\n  unknown_libname_13(a1: v14, a2: 0, a3: 0); /*0x18005d994*/\n  v9 = unknown_libname_11(a1: a1 + 368); /*0x18005d9af*/\n  v8 = (*(__int64 (__fastcall **)(__int64, _QWORD, _BYTE *, void **))(*(_QWORD *)v9 + 64LL))( /*0x18005d9e0*/\n         a1: v9,\n         a2: 0,\n         a3: v14,\n         a4: &v13);\n  if ( v8 >= 0 ) /*0x18005d9e9*/\n  {\n    qmemcpy(v13, (const void *)(a1 + 204), 0x50u); /*0x18005da45*/\n    v10 = unknown_libname_11(a1: a1 + 368); /*0x18005da5d*/\n    (*(void (__fastcall **)(__int64, _QWORD, _QWORD))(*(_QWORD *)v10 + 72LL))(a1: v10, a2: 0, a3: 0); /*0x18005da7d*/\n    if ( (unsigned int)sub_18005AC10(a1: a1 + 368) == -1 ) /*0x18005da9b*/\n    {\n      sub_1800087D0(a1: v12, a2: \"uploadBuffer is null, HRESULT:\"); /*0x18005daac*/\n      __wind /*0xf1c0000000000024*/\n      {\n        sub_180058A50(a1, a2: 0xFFFFFFFFLL, a3: v12); /*0x18005dac7*/\n      }\n      __unwind\n      {\n        sub_180008710(a1: v12); /*0x18006cff8*/\n      }\n      sub_180008710(a1: v12); /*0x18005dad5*/\n      return 0xFFFFFFFFLL; /*0x18005dadb*/\n    }\n    else\n    {\n      return 0; /*0x18005dae2*/\n    }\n  }\n  else\n  {\n    sub_1800087D0(a1: v11, a2: \"Failed to map upload buffer. HRESULT:\"); /*0x18005d9f7*/\n    __wind /*0xf1c000000000003c*/\n    {\n      sub_180058A50(a1, a2: (unsigned int)v8, a3: v11); /*0x18005da0e*/\n    }\n    __unwind\n    {\n      sub_180008710(a1: v11); /*0x18006cfdd*/\n    }\n    sub_180008710(a1: v11); /*0x18005da19*/\n    return 0xFFFFFFFFLL; /*0x18005da1f*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x18005f530",
+          "name": "sub_18005F530"
+        },
+        {
+          "addr": "0x180005840",
+          "name": "unknown_libname_13"
+        },
+        {
+          "addr": "0x180005480",
+          "name": "unknown_libname_11"
+        },
+        {
+          "addr": "0x1800087d0",
+          "name": "sub_1800087D0"
+        },
+        {
+          "addr": "0x180081520",
+          "name": "aUploadbufferIs",
+          "string": "uploadBuffer is null, HRESULT:"
+        },
+        {
+          "addr": "0x180058a50",
+          "name": "sub_180058A50"
+        },
+        {
+          "addr": "0x180008710",
+          "name": "sub_180008710"
+        },
+        {
+          "addr": "0x18005ac10",
+          "name": "sub_18005AC10"
+        },
+        {
+          "addr": "0x1800814a0",
+          "name": "aFailedToMapUpl",
+          "string": "Failed to map upload buffer. HRESULT:"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

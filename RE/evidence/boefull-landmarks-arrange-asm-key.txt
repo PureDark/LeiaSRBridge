@@ -1,0 +1,51 @@
+18009c3d4 mov rdx, [rsi]
+18009c3d7 nop word ptr [rax+rax+00000000h]
+18009c3e0 movsxd rax, dword ptr [rcx]
+18009c3e3 addss xmm0, dword ptr [rdx+rax*8]
+18009c3e8 addss xmm2, dword ptr [rdx+rax*8+4]
+18009c3ee add rcx, 4
+18009c3f2 cmp rcx, r14
+18009c3f5 jnz short loc_18009C3E0
+18009c3f7 mov rcx, r13
+18009c3fa cmp r13, r12
+18009c3fd jz short loc_18009C419
+18009c3ff mov rdx, [rsi]
+18009c402 movsxd rax, dword ptr [rcx]
+18009c405 addss xmm1, dword ptr [rdx+rax*8]
+18009c40a addss xmm6, dword ptr [rdx+rax*8+4]
+18009c410 add rcx, 4
+18009c414 cmp rcx, r12
+18009c417 jnz short loc_18009C402
+18009c419 mov [rdi+18h], r15
+18009c41d mov [rdi+20h], r15
+18009c421 mov [rdi+28h], r15
+18009c425 mov [rdi+30h], r15
+18009c429 mov [rdi+38h], r15
+18009c42d mov [rdi+40h], r15
+18009c431 lea r9, [rdi+48h]
+18009c435 mov [r9], r15
+18009c438 mov [r9+8], r15
+18009c43c mov [r9+10h], r15
+18009c440 mov byte ptr [rdi+70h], 0
+18009c444 mov [rsp+150h+var_120], 1
+18009c44c cvtss2sd xmm0, xmm0
+18009c450 movsd xmm3, cs:qword_18010FF98
+18009c458 mulsd xmm0, xmm3
+18009c45c xorps xmm4, xmm4
+18009c45f cvtsd2ss xmm4, xmm0
+18009c463 movss dword ptr [rdi+8], xmm4
+18009c468 xorps xmm0, xmm0
+18009c46b cvtss2sd xmm0, xmm2
+18009c46f mulsd xmm0, xmm3
+18009c473 cvtpd2ps xmm5, xmm0
+18009c477 movss dword ptr [rdi+0Ch], xmm5
+18009c47c cvtss2sd xmm1, xmm1
+18009c480 mulsd xmm1, xmm3
+18009c484 xorps xmm2, xmm2
+18009c487 cvtsd2ss xmm2, xmm1
+18009c48b movss dword ptr [rdi+10h], xmm2
+18009c490 xorps xmm0, xmm0
+18009c493 cvtss2sd xmm0, xmm6
+18009c497 mulsd xmm0, xmm3
+18009c49b cvtpd2ps xmm3, xmm0
+18009c49f movss dword ptr [rdi+14h], xmm3

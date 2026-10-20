@@ -1,0 +1,44 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"query\":\"LoadMediaTransposeEngine\",\"fn\":{\"addr\":\"0x180006d90\",\"name\":\"LoadMediaTransposeEngine\",\"size\":\"0xf8\"},\"error\":null},{\"query\":\"CreateMediaTranspose\",\"fn\":{\"addr\":\"0x180006b70\",\"name\":\"CreateMediaTranspose\",\"size\":\"0x220\"},\"error\":null},{\"query\":\"UnloadMediaTransposeEngine\",\"fn\":{\"addr\":\"0x180006e90\",\"name\":\"UnloadMediaTransposeEngine\",\"size\":\"0xc3\"},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "query": "LoadMediaTransposeEngine",
+          "fn": {
+            "addr": "0x180006d90",
+            "name": "LoadMediaTransposeEngine",
+            "size": "0xf8"
+          },
+          "error": null
+        },
+        {
+          "query": "CreateMediaTranspose",
+          "fn": {
+            "addr": "0x180006b70",
+            "name": "CreateMediaTranspose",
+            "size": "0x220"
+          },
+          "error": null
+        },
+        {
+          "query": "UnloadMediaTransposeEngine",
+          "fn": {
+            "addr": "0x180006e90",
+            "name": "UnloadMediaTransposeEngine",
+            "size": "0xc3"
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

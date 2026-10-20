@@ -1,0 +1,43 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x140109130\",\"code\":\"__int64 __fastcall sub_140109130(__int64 a1, __int64 a2, __int64 a3)\\n{\\n  unsigned int *v6; // rax\\n  _BYTE v24[24]; // [rsp+38h] [rbp-50h] BYREF\\n  _QWORD v25[6]; // [rsp+50h] [rbp-38h] BYREF\\n\\n  _RSI = a3; /*0x14010914b*/\\n  _RDI = a2; /*0x14010914e*/\\n  blink::FaceDetectorConfig::get_max_number_of_sources(this: (blink::FaceDetectorConfig *)(a1 + 3008)); /*0x14010915b*/\\n  blink::common::BlVector<unsigned int>::BlVector<unsigned int>(a1: v24); /*0x140109166*/\\n  __wind /*0xf1c0000000000020*/\\n  {\\n    blink::FaceDetectorData::get_face_ids(a1: *(_QWORD *)(a1 + 3376), a2: 0, a3: 1, a4: v24); /*0x14010917f*/\\n    v6 = (unsigned int *)blink::common::BlVector<unsigned int>::operator[](a1: v24, a2: 0); /*0x14010918c*/\\n    blink::HeadPoseDetectorData::get_head_pose( /*0x1401091af*/\\n      a1: *(_QWORD *)(a1 + 3392),\\n      a2: 0,\\n      a3: *v6,\\n      a4: *(unsigned int *)(a1 + 3048),\\n      a5: v25);\\n    __asm /*0x1401091b5*/\\n    {\\n      vmovsd xmm4, [rsp+88h+var_28]\\n      vcvtpd2ps xmm4, xmm4\\n      vmovsd xmm3, [rsp+88h+var_30]\\n      vcvtpd2ps xmm3, xmm3\\n      vmovsd xmm5, qword ptr cs:xmmword_1401FFC90\\n      vmovsd xmm0, [rsp+88h+var_38]\\n      vxorpd xmm1, xmm0, xmm5\\n      vcvtsd2ss xmm2, xmm1, xmm1\\n      vmovss dword ptr [rdi], xmm2\\n      vmovss dword ptr [rdi+4], xmm3\\n      vmovss dword ptr [rdi+8], xmm4\\n      vmovsd xmm0, [rsp+88h+var_10]\\n      vxorpd xmm1, xmm0, xmm5\\n      vcvtsd2ss xmm4, xmm1, xmm1\\n      vmovsd xmm2, [rsp+88h+var_18]\\n      vxorpd xmm0, xmm2, xmm5\\n      vcvtsd2ss xmm3, xmm0, xmm0\\n      vmovsd xmm1, [rsp+88h+var_20]\\n      vcvtpd2ps xmm1, xmm1\\n      vmovss dword ptr [rsi], xmm1\\n      vmovss dword ptr [rsi+4], xmm3\\n      vmovss dword ptr [rsi+8], xmm4\\n    }\\n  }\\n  __unwind\\n  {\\n    blink::common::BlVector<unsigned int>::~BlVector<unsigned int>(a1: v24); /*0x1401abd26*/\\n  }\\n  return blink::common::BlVector<unsigned int>::~BlVector<unsigned int>(a1: v24); /*0x14010922c*/\\n}\",\"refs\":[{\"addr\":\"0x1401bb230\",\"name\":\"?get_max_number_of_sources@FaceDetectorConfig@blink@@QEBAIXZ\"},{\"addr\":\"0x1401bb160\",\"name\":\"??0?$BlVector@I@common@blink@@QEAA@XZ\"},{\"addr\":\"0x1401bb1d8\",\"name\":\"?get_face_ids@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IW4BlImageFormat@@AEAV?$BlVector@I@common@2@@Z\"},{\"addr\":\"0x1401bb148\",\"name\":\"??A?$BlVector@I@common@blink@@QEAAAEAI_K@Z\"},{\"addr\":\"0x1401bb070\",\"name\":\"?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z\"},{\"addr\":\"0x1401bb158\",\"name\":\"??1?$BlVector@I@common@blink@@UEAA@XZ\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x140109130",
+      "code": "__int64 __fastcall sub_140109130(__int64 a1, __int64 a2, __int64 a3)\n{\n  unsigned int *v6; // rax\n  _BYTE v24[24]; // [rsp+38h] [rbp-50h] BYREF\n  _QWORD v25[6]; // [rsp+50h] [rbp-38h] BYREF\n\n  _RSI = a3; /*0x14010914b*/\n  _RDI = a2; /*0x14010914e*/\n  blink::FaceDetectorConfig::get_max_number_of_sources(this: (blink::FaceDetectorConfig *)(a1 + 3008)); /*0x14010915b*/\n  blink::common::BlVector<unsigned int>::BlVector<unsigned int>(a1: v24); /*0x140109166*/\n  __wind /*0xf1c0000000000020*/\n  {\n    blink::FaceDetectorData::get_face_ids(a1: *(_QWORD *)(a1 + 3376), a2: 0, a3: 1, a4: v24); /*0x14010917f*/\n    v6 = (unsigned int *)blink::common::BlVector<unsigned int>::operator[](a1: v24, a2: 0); /*0x14010918c*/\n    blink::HeadPoseDetectorData::get_head_pose( /*0x1401091af*/\n      a1: *(_QWORD *)(a1 + 3392),\n      a2: 0,\n      a3: *v6,\n      a4: *(unsigned int *)(a1 + 3048),\n      a5: v25);\n    __asm /*0x1401091b5*/\n    {\n      vmovsd xmm4, [rsp+88h+var_28]\n      vcvtpd2ps xmm4, xmm4\n      vmovsd xmm3, [rsp+88h+var_30]\n      vcvtpd2ps xmm3, xmm3\n      vmovsd xmm5, qword ptr cs:xmmword_1401FFC90\n      vmovsd xmm0, [rsp+88h+var_38]\n      vxorpd xmm1, xmm0, xmm5\n      vcvtsd2ss xmm2, xmm1, xmm1\n      vmovss dword ptr [rdi], xmm2\n      vmovss dword ptr [rdi+4], xmm3\n      vmovss dword ptr [rdi+8], xmm4\n      vmovsd xmm0, [rsp+88h+var_10]\n      vxorpd xmm1, xmm0, xmm5\n      vcvtsd2ss xmm4, xmm1, xmm1\n      vmovsd xmm2, [rsp+88h+var_18]\n      vxorpd xmm0, xmm2, xmm5\n      vcvtsd2ss xmm3, xmm0, xmm0\n      vmovsd xmm1, [rsp+88h+var_20]\n      vcvtpd2ps xmm1, xmm1\n      vmovss dword ptr [rsi], xmm1\n      vmovss dword ptr [rsi+4], xmm3\n      vmovss dword ptr [rsi+8], xmm4\n    }\n  }\n  __unwind\n  {\n    blink::common::BlVector<unsigned int>::~BlVector<unsigned int>(a1: v24); /*0x1401abd26*/\n  }\n  return blink::common::BlVector<unsigned int>::~BlVector<unsigned int>(a1: v24); /*0x14010922c*/\n}",
+      "refs": [
+        {
+          "addr": "0x1401bb230",
+          "name": "?get_max_number_of_sources@FaceDetectorConfig@blink@@QEBAIXZ"
+        },
+        {
+          "addr": "0x1401bb160",
+          "name": "??0?$BlVector@I@common@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1401bb1d8",
+          "name": "?get_face_ids@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IW4BlImageFormat@@AEAV?$BlVector@I@common@2@@Z"
+        },
+        {
+          "addr": "0x1401bb148",
+          "name": "??A?$BlVector@I@common@blink@@QEAAAEAI_K@Z"
+        },
+        {
+          "addr": "0x1401bb070",
+          "name": "?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z"
+        },
+        {
+          "addr": "0x1401bb158",
+          "name": "??1?$BlVector@I@common@blink@@UEAA@XZ"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

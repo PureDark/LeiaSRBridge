@@ -1,0 +1,17 @@
+[
+  {
+    "path": "C:\\Program Files\\LeiaSR\\Platform\\bin\\SimulatedRealityCore.dll",
+    "sha256": "8ED554AF444F8B98284358B060108465B611250FA35FF6B5FE73D4EE6C19254B",
+    "version": "57c9f88a7d v1.36.4.35453 2026-06-08T09:19:10Z"
+  },
+  {
+    "path": "C:\\Program Files\\LeiaSR\\Platform\\bin\\SimulatedRealityFaceTrackers.dll",
+    "sha256": "F4C86E5B519985ABEAA8C3A4D2A86A6520EA8F44B378356346B6F21BF13448CE",
+    "version": "57c9f88a7d v1.36.4.35453 2026-06-08T09:19:10Z"
+  },
+  {
+    "path": "F:\\目标软件\\ModexLite\\RE\\leia-probe\\build\\Release\\LeiaReadOnlyProbe.exe",
+    "sha256": "46BF7E1AFFB4B4DCE587267BCC2A8451C7399A3C1084D0657C6AF817C7192F7E",
+    "version": null
+  }
+]

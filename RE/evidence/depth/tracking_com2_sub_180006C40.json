@@ -1,0 +1,32 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180006C40\",\"code\":\"__int64 __fastcall sub_180006C40(__int64 a1)\\n{\\n  __int128 v1; // xmm1\\n  unsigned int v2; // ebx\\n  struct _RTL_CRITICAL_SECTION CriticalSection; // [rsp+20h] [rbp-38h] BYREF\\n\\n  v1 = *(_OWORD *)(a1 + 112); /*0x180006c60*/\\n  *(_OWORD *)&CriticalSection.DebugInfo = *(_OWORD *)(a1 + 96); /*0x180006c64*/\\n  CriticalSection.SpinCount = *(_QWORD *)(a1 + 128); /*0x180006c71*/\\n  *(_OWORD *)&CriticalSection.OwningThread = v1; /*0x180006c77*/\\n  v2 = sub_180009450(a1, a2: \\\"0\\\"); /*0x180006c86*/\\n  DeleteCriticalSection(lpCriticalSection: &CriticalSection); /*0x180006c88*/\\n  return v2; /*0x180006c90*/\\n}\",\"refs\":[{\"addr\":\"0x180009450\",\"name\":\"sub_180009450\"},{\"addr\":\"0x18000f564\",\"name\":\"a0\",\"string\":\"0\"},{\"addr\":\"0x18000e130\",\"name\":\"DeleteCriticalSection\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180006C40",
+      "code": "__int64 __fastcall sub_180006C40(__int64 a1)\n{\n  __int128 v1; // xmm1\n  unsigned int v2; // ebx\n  struct _RTL_CRITICAL_SECTION CriticalSection; // [rsp+20h] [rbp-38h] BYREF\n\n  v1 = *(_OWORD *)(a1 + 112); /*0x180006c60*/\n  *(_OWORD *)&CriticalSection.DebugInfo = *(_OWORD *)(a1 + 96); /*0x180006c64*/\n  CriticalSection.SpinCount = *(_QWORD *)(a1 + 128); /*0x180006c71*/\n  *(_OWORD *)&CriticalSection.OwningThread = v1; /*0x180006c77*/\n  v2 = sub_180009450(a1, a2: \"0\"); /*0x180006c86*/\n  DeleteCriticalSection(lpCriticalSection: &CriticalSection); /*0x180006c88*/\n  return v2; /*0x180006c90*/\n}",
+      "refs": [
+        {
+          "addr": "0x180009450",
+          "name": "sub_180009450"
+        },
+        {
+          "addr": "0x18000f564",
+          "name": "a0",
+          "string": "0"
+        },
+        {
+          "addr": "0x18000e130",
+          "name": "DeleteCriticalSection"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

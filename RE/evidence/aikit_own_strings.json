@@ -1,0 +1,193 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":43,\"matches\":[{\"addr\":\"0x180582db0\",\"string\":\"AiStereo::Core::getModel\"},{\"addr\":\"0x180584bb8\",\"string\":\"AiStereo::Core::DepthEngineVino::InitEngine\"},{\"addr\":\"0x180584e08\",\"string\":\"AiStereo::Core::DepthEngineVino::Inference\"},{\"addr\":\"0x180584e70\",\"string\":\"AiStereo::Core::DepthEngineVino::GetModelXML\"},{\"addr\":\"0x180584ec8\",\"string\":\"AiStereo::Core::DepthEngineVino::GetWeightTensor\"},{\"addr\":\"0x1805851b8\",\"string\":\"AiStereo::DepthDilate::CreateShader\"},{\"addr\":\"0x180585250\",\"string\":\"AiStereo::DepthDilate::CreateInputLayout\"},{\"addr\":\"0x180585280\",\"string\":\"AiStereo::DepthDilate::CreateVetexInfo\"},{\"addr\":\"0x180585308\",\"string\":\"AiStereo::Inpating::CreateShader\"},{\"addr\":\"0x180585380\",\"string\":\"AiStereo::Inpating::CreateInputLayout\"},{\"addr\":\"0x1805853c8\",\"string\":\"AiStereo::Inpating::CreateVetexInfo\"},{\"addr\":\"0x1805853f0\",\"string\":\"AiStereo::Inpating::CreateConstantBuffer\"},{\"addr\":\"0x180585438\",\"string\":\"AiStereo::Inpating::CreateSamplerState\"},{\"addr\":\"0x180585480\",\"string\":\"AiStereo::Inpating::UpdateConstantBuffer\"},{\"addr\":\"0x1805854d8\",\"string\":\"AiStereo::Preprocess::CreateShader\"},{\"addr\":\"0x180585578\",\"string\":\"AiStereo::Preprocess::CreateInputLayout\"},{\"addr\":\"0x1805855b8\",\"string\":\"AiStereo::Preprocess::CreateVetexInfo\"},{\"addr\":\"0x1805855f8\",\"string\":\"AiStereo::Preprocess::CreateSamplerState\"},{\"addr\":\"0x1805856d0\",\"string\":\"AiStereo::StereoGraphicsEngine::InitGraphicsDevice\"},{\"addr\":\"0x1805858c0\",\"string\":\"AiStereo::StereoGraphicsEngine::Render\"},{\"addr\":\"0x1805858e8\",\"string\":\"AiStereo::StereoGraphicsEngine::Release\"},{\"addr\":\"0x180585a00\",\"string\":\"AiStereo::StereoProcess2::CreateShader\"},{\"addr\":\"0x180585a78\",\"string\":\"AiStereo::StereoProcess2::CreateConstantBuffer\"},{\"addr\":\"0x180585ac0\",\"string\":\"AiStereo::StereoProcess2::CreateInputLayout\"},{\"addr\":\"0x180585b18\",\"string\":\"AiStereo::StereoProcess2::CreateVetexInfo\"},{\"addr\":\"0x180585b78\",\"string\":\"AiStereo::StereoProcess2::CreateSamplerState\"},{\"addr\":\"0x180585c48\",\"string\":\"AiStereo::EDID::Edid::getBaseboardSNFromCmd\"},{\"addr\":\"0x180585e20\",\"string\":\"AiStereo::EDID::Edid::GetEdidSNs\"},{\"addr\":\"0x180586988\",\"string\":\"AiStereo::LicenseManager::GetGameLic\"},{\"addr\":\"0x180586a00\",\"string\":\"AiStereo::LicenseManager::VerifySignature\"},{\"addr\":\"0x180586a70\",\"string\":\"AiStereo::LicenseManager::checkTencentLicense\"},{\"addr\":\"0x180586bd8\",\"string\":\"AiStereo::LicenseManager::VerifiLicense\"},{\"addr\":\"0x180587d98\",\"string\":\"AiStereo::LoadStereoEngine\"},{\"addr\":\"0x180587df0\",\"string\":\"AiStereo::CreateStereoRenderer\"},{\"addr\":\"0x180587e68\",\"string\":\"AiStereo::UnloadStereoEngine\"},{\"addr\":\"0x180587ed8\",\"string\":\"AiStereo::YL_GlobalInitStereoEngine\"},{\"addr\":\"0x180587f00\",\"string\":\"AiStereo::YL_CreateStereoRendererEx\"},{\"addr\":\"0x180587f70\",\"string\":\"AiStereo::YL_GlobalUninitStereoEngine\"},{\"addr\":\"0x180587f98\",\"string\":\"AiStereo::YL_Render2\"},{\"addr\":\"0x180587fb0\",\"string\":\"AiStereo::YL_Render\"},{\"addr\":\"0x180587fc8\",\"string\":\"AiStereo::YL_SetFrameSize\"},{\"addr\":\"0x180587ff8\",\"string\":\"AiStereo::YL_Release\"},{\"addr\":\"0x180588010\",\"string\":\"AiStereo::YL_SetParax\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 43,
+      "matches": [
+        {
+          "addr": "0x180582db0",
+          "string": "AiStereo::Core::getModel"
+        },
+        {
+          "addr": "0x180584bb8",
+          "string": "AiStereo::Core::DepthEngineVino::InitEngine"
+        },
+        {
+          "addr": "0x180584e08",
+          "string": "AiStereo::Core::DepthEngineVino::Inference"
+        },
+        {
+          "addr": "0x180584e70",
+          "string": "AiStereo::Core::DepthEngineVino::GetModelXML"
+        },
+        {
+          "addr": "0x180584ec8",
+          "string": "AiStereo::Core::DepthEngineVino::GetWeightTensor"
+        },
+        {
+          "addr": "0x1805851b8",
+          "string": "AiStereo::DepthDilate::CreateShader"
+        },
+        {
+          "addr": "0x180585250",
+          "string": "AiStereo::DepthDilate::CreateInputLayout"
+        },
+        {
+          "addr": "0x180585280",
+          "string": "AiStereo::DepthDilate::CreateVetexInfo"
+        },
+        {
+          "addr": "0x180585308",
+          "string": "AiStereo::Inpating::CreateShader"
+        },
+        {
+          "addr": "0x180585380",
+          "string": "AiStereo::Inpating::CreateInputLayout"
+        },
+        {
+          "addr": "0x1805853c8",
+          "string": "AiStereo::Inpating::CreateVetexInfo"
+        },
+        {
+          "addr": "0x1805853f0",
+          "string": "AiStereo::Inpating::CreateConstantBuffer"
+        },
+        {
+          "addr": "0x180585438",
+          "string": "AiStereo::Inpating::CreateSamplerState"
+        },
+        {
+          "addr": "0x180585480",
+          "string": "AiStereo::Inpating::UpdateConstantBuffer"
+        },
+        {
+          "addr": "0x1805854d8",
+          "string": "AiStereo::Preprocess::CreateShader"
+        },
+        {
+          "addr": "0x180585578",
+          "string": "AiStereo::Preprocess::CreateInputLayout"
+        },
+        {
+          "addr": "0x1805855b8",
+          "string": "AiStereo::Preprocess::CreateVetexInfo"
+        },
+        {
+          "addr": "0x1805855f8",
+          "string": "AiStereo::Preprocess::CreateSamplerState"
+        },
+        {
+          "addr": "0x1805856d0",
+          "string": "AiStereo::StereoGraphicsEngine::InitGraphicsDevice"
+        },
+        {
+          "addr": "0x1805858c0",
+          "string": "AiStereo::StereoGraphicsEngine::Render"
+        },
+        {
+          "addr": "0x1805858e8",
+          "string": "AiStereo::StereoGraphicsEngine::Release"
+        },
+        {
+          "addr": "0x180585a00",
+          "string": "AiStereo::StereoProcess2::CreateShader"
+        },
+        {
+          "addr": "0x180585a78",
+          "string": "AiStereo::StereoProcess2::CreateConstantBuffer"
+        },
+        {
+          "addr": "0x180585ac0",
+          "string": "AiStereo::StereoProcess2::CreateInputLayout"
+        },
+        {
+          "addr": "0x180585b18",
+          "string": "AiStereo::StereoProcess2::CreateVetexInfo"
+        },
+        {
+          "addr": "0x180585b78",
+          "string": "AiStereo::StereoProcess2::CreateSamplerState"
+        },
+        {
+          "addr": "0x180585c48",
+          "string": "AiStereo::EDID::Edid::getBaseboardSNFromCmd"
+        },
+        {
+          "addr": "0x180585e20",
+          "string": "AiStereo::EDID::Edid::GetEdidSNs"
+        },
+        {
+          "addr": "0x180586988",
+          "string": "AiStereo::LicenseManager::GetGameLic"
+        },
+        {
+          "addr": "0x180586a00",
+          "string": "AiStereo::LicenseManager::VerifySignature"
+        },
+        {
+          "addr": "0x180586a70",
+          "string": "AiStereo::LicenseManager::checkTencentLicense"
+        },
+        {
+          "addr": "0x180586bd8",
+          "string": "AiStereo::LicenseManager::VerifiLicense"
+        },
+        {
+          "addr": "0x180587d98",
+          "string": "AiStereo::LoadStereoEngine"
+        },
+        {
+          "addr": "0x180587df0",
+          "string": "AiStereo::CreateStereoRenderer"
+        },
+        {
+          "addr": "0x180587e68",
+          "string": "AiStereo::UnloadStereoEngine"
+        },
+        {
+          "addr": "0x180587ed8",
+          "string": "AiStereo::YL_GlobalInitStereoEngine"
+        },
+        {
+          "addr": "0x180587f00",
+          "string": "AiStereo::YL_CreateStereoRendererEx"
+        },
+        {
+          "addr": "0x180587f70",
+          "string": "AiStereo::YL_GlobalUninitStereoEngine"
+        },
+        {
+          "addr": "0x180587f98",
+          "string": "AiStereo::YL_Render2"
+        },
+        {
+          "addr": "0x180587fb0",
+          "string": "AiStereo::YL_Render"
+        },
+        {
+          "addr": "0x180587fc8",
+          "string": "AiStereo::YL_SetFrameSize"
+        },
+        {
+          "addr": "0x180587ff8",
+          "string": "AiStereo::YL_Release"
+        },
+        {
+          "addr": "0x180588010",
+          "string": "AiStereo::YL_SetParax"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,8 @@
+pass 0 mismatches 0
+pass 1 mismatches 0
+pass 2 mismatches 0
+pass 3 mismatches 0
+pass 4 mismatches 0
+pass 5 mismatches 0
+WARP original-CS/direct-PS comparison: 84480 channels, 0 mismatches, max difference 0; debug errors/warnings 0
+PASS: wholeMat, LR/RL, near-eye branch, five optical passes, left-eye fallback, viewport/scissor, destroy-before-submit.

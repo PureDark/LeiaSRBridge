@@ -1,0 +1,29 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":2,\"matches\":[{\"addr\":\"0x1801339e6\",\"string\":\"SetUnhandledExceptionFilter\"},{\"addr\":\"0x180133e92\",\"string\":\"UnhandledExceptionFilter\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 2,
+      "matches": [
+        {
+          "addr": "0x1801339e6",
+          "string": "SetUnhandledExceptionFilter"
+        },
+        {
+          "addr": "0x180133e92",
+          "string": "UnhandledExceptionFilter"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

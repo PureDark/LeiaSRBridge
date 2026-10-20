@@ -1,0 +1,20 @@
+__int64 __fastcall doEyeTrack_3D(int a1, int a2, int a3, int a4, _DWORD *a5)
+{
+  char *v9; // rbx
+  struct _Mtx_internal_imp_t *v10; // rdi
+  int v11; // eax
+  unsigned int v12; // ebx
+
+  SetUnhandledExceptionFilter(lpTopLevelExceptionFilter: TopLevelExceptionFilter); /*0x18002a62b*/
+  v9 = (char *)sub_180098700(); /*0x18002a636*/
+  v10 = (struct _Mtx_internal_imp_t *)(v9 + 544); /*0x18002a639*/
+  v11 = Mtx_lock(a1: (_Mtx_t)(v9 + 544)); /*0x18002a643*/
+  if ( v11 != 0 ) /*0x18002a64a*/
+    std::_Throw_C_error(a1: v11); /*0x18002a6a3*/
+  if ( v9[536] != 0 ) /*0x18002a656*/
+    v12 = sub_1800261B0(a1: (__int64)(v9 + 16), a2: a1, a3: a2, a4: a3, a5: a4, a6: a5); /*0x18002a67c*/
+  else
+    v12 = 0; /*0x18002a658*/
+  Mtx_unlock(a1: v10); /*0x18002a681*/
+  return v12; /*0x18002a686*/
+}

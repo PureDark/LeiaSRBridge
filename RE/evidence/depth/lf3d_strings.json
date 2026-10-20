@@ -1,0 +1,621 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":150,\"matches\":[{\"addr\":\"0x18005a438\",\"string\":\"; \\n\\treturn vec2(iView, bias);\\n}\\n\"},{\"addr\":\"0x18005a460\",\"string\":\"vec2 segment(vec3 uvz,float m,float n,float z_left)\\n{\\n\\tfloat z = uvz.z *  m * n;\\n   float iView = floor(z);\\n\\tiView =  clamp(iView, 0.0, m * n- 1.0) * z_left;\\n\\tfloat nokor = z - iView * 1.0;\\n\\tfloat bias = 1.0-(abs(nokor - 0.5) * 2.0);\\n\\tbias = pow(1.135 * bias + 0.001,1.05); \\n\\tbias = clamp(bias, 0.0, 1.0);\\n\\tbias = bias * z_left + (1.0 - z_left) * \"},{\"addr\":\"0x18005a690\",\"string\":\"(tex_sampler_0, vec2(xin, uvz.y)).r;\\n\\t\\td1 = invView * d1 + (1.0-invView) * (1.0 - d1);\\n\\t\\td1 = d1*(seg.x-0.5)*fDpt_;\\n\\t\\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\\n\\t\\txtemp = min(xtemp, abs(((seg.x - 0.5) * fDpt_)/(loop/1.2)));\\n\\t\\txin = xin + xtemp * sn;\\n\\t }\\n xtemp = uvz.x + d1 - d3;\\n xtemp = 1.0-abs(1.0-xtemp);\\n return vec3(xtemp-0.5, uvz.y,seg.y);\\n}\"},{\"addr\":\"0x18005a800\",\"string\":\"vec3 texArr(vec3 uvz,float m,float n,float z_l_,float dD3_,float fDpt_)\\n{\\n\\tvec2 seg = segment(uvz, m, n, z_l_);\\n\\tfloat d1;\\n\\tfloat xtemp;\\n\\tfloat invView =0.0;\\n\\tfloat sn = sign(seg.x-0.5);\\n\\tfloat d3 = dD3_;\\n\\tfloat loop =3.0;\\n\\td3 = d3*(seg.x-0.5)*fDpt_;\\n\\tfloat xin = uvz.x - d3;\\n\\tfor (float i=0.0;i<loop;i++){\\n\\t\\td1 = \"},{\"addr\":\"0x18005a9b0\",\"string\":\" + actual.y * tilt) * pitch + center;\\n\\t\\tnuv.z = mod(nuv.z + ceil(abs(nuv.z)), 1.0);\\n\\t\\tfloat sign_s = (1.0-sign(rows-1.0))*s+sign(rows-1.0)*(1.0-s);\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\n\\t\\tvec3 pos = texArr(nuv,columns,rows,z_l);\\n\\t\\trgb[i] =\"},{\"addr\":\"0x18005abf0\",\"string\":\" mediump vec2 v_texcoord;\\nuniform sampler2D tex_sampler_0;\\nuniform highp float PixelOffset;\\nuniform highp float widthProp;\\nuniform highp float heightProp;\\nuniform highp float startXProp;\\nuniform highp float startYProp;\\nuniform highp float center;\\nuniform highp float shift_Norm;\\nuniform highp float tilt;\\nuniform highp float pitch;\\nuniform highp float subp;\\nuniform lowp float s;\\nuniform int ri;\\nuniform int bi;\\nuniform lowp float columns;\\nuniform lowp float rows;\\nuniform lowp float z_l;\\n\\nvec2 segment(vec3 uvz, float m, float n, float z_left);\\n\"},{\"addr\":\"0x18005ae30\",\"string\":\"float(i) * (PixelOffset + subp)\"},{\"addr\":\"0x18005ae50\",\"string\":\"float(i) * (PixelOffset + subp)*tilt\"},{\"addr\":\"0x18005b1d0\",\"string\":\" + actual.y * tilt) * pitch + center;\\n\"},{\"addr\":\"0x18005b460\",\"string\":\"uniform highp float pitch;\\n\"},{\"addr\":\"0x18005b580\",\"string\":\"uniform highp float PixelOffset;\\n\"},{\"addr\":\"0x18005b6d9\",\"string\":\"myShaderTexture\"},{\"addr\":\"0x18005b894\",\"string\":\"PixelOffset\"},{\"addr\":\"0x18005b8f2\",\"string\":\"pitch\"},{\"addr\":\"0x18005b928\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x18005d0d4\",\"string\":\"DX11 pixel shader for LF3DRender\\n* \"},{\"addr\":\"0x18005d21a\",\"string\":\"a\\n*/\\n#include \\\"ComonType.i\\\"\\n\\n/////////////\\n// GLOBALS //\\n/////////////\\nTexture2D myShaderTexture;  // \"},{\"addr\":\"0x18005d284\",\"string\":\"PSSetShaderResources\"},{\"addr\":\"0x18005d56e\",\"string\":\"DX11 pixel shader for LF3DRender\\n* \"},{\"addr\":\"0x18005d6b4\",\"string\":\"a\\n*/\\n#include \\\"ComonType.i\\\"\\n\\n/////////////\\n// GLOBALS //\\n/////////////\\nTexture2D myShaderTexture;  // \"},{\"addr\":\"0x18005d71e\",\"string\":\"PSSetShaderResources\"},{\"addr\":\"0x18005d791\",\"string\":\"\\n\\ncbuffer PS_CONSTANT_BUFFER\\n{\\n\\tfloat PixelOffset;\\n\\tfloat widthProp;\\n\\tfloat heightProp;\\n\\tfloat startXProp;\\n\\tfloat startYProp;\\n\\tfloat center;\\n\\tfloat shift_Norm;\\n\\tfloat tilt;\\n\\tfloat pitch;\\n\\tfloat subp;\\n\\tfloat s;\\n\\tint\\tri,bi;\\n\\tfloat columns;\\n\\tfloat rows;\\n\\tfloat z_l;\\n};\\n\\n//--------------------------------------------------------------------------------------\\n//texArr function\\n//--------------------------------------------------------------------------------------\\nfloat2 texArr(float3 uvz, float m, float n)\\n{\\n\\t// decide which section to take from based on the z.\\n\\tfloat z = floor(uvz.z * m * n);\\n\\tz = clamp(z, 0.0, m * n - 1.0) * z_l;\\n\\tfloat x = (fmod(z, m) + uvz.x) / m;\\n\\tfloat y = (floor(z / m) + uvz.y) / n;\\n\\treturn float2(x, y);\\n}\\n\\n// \"},{\"addr\":\"0x18005da7c\",\"string\":\"\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\n{\\t\\n\\tfloat3 nuv = float3(input.tex, 0.0f);   \\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\n\\tfloat4 rgb[3];\\t\\t\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\n\\t\\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt)* pitch + center;\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\t\\t\\n\\t\\tfloat sign_s = (1.0-sign(rows-1.0))*s+sign(rows-1.0)*(1.0-s);\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\n\\t\\t // Sample\"},{\"addr\":\"0x18005dd38\",\"string\":\"\\t \\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\n\\t}\\n\\n\\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\\n}\\n\\n\\n/**\\n*\"},{\"addr\":\"0x18005ddd5\",\"string\":\"@vojin\\n* Pixel shader==\"},{\"addr\":\"0x18005dfd3\",\"string\":\" PixelOffset\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x18005e02c\",\"string\":\"PixelOffset\\n*/\"},{\"addr\":\"0x18005e4cd\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_PS.hlsl\"},{\"addr\":\"0x18005e526\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_ps.hlsl\"},{\"addr\":\"0x18005e57e\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x18005e5d2\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x18005e8dc\",\"string\":\"]XMicrosoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x18005fef7\",\"string\":\"\\n\\ncbuffer PS_CONSTANT_BUFFER\\n{\\n\\tfloat PixelOffset;\\n\\tfloat widthProp;\\n\\tfloat heightProp;\\n\\tfloat startXProp;\\n\\tfloat startYProp;\\n\\tfloat center;\\n\\tfloat shift_Norm;\\n\\tfloat tilt;\\n\\tfloat pitch;\\n\\tfloat subp;\\n\\tfloat s;\\n\\tint\\tri,bi;\\n\\tfloat columns;\\n\\tfloat rows;\\n\\tfloat z_l;\\n};\\n\\n//--------------------------------------------------------------------------------------\\n//texArr function\\n//--------------------------------------------------------------------------------------\\nfloat2 texArr(float3 uvz, float m, float n)\\n{\\n\\t// decide which section to take from based on the z.\\n\\tfloat z = floor(uvz.z * m * n);\\n\\tz = clamp(z, 0.0, m * n - 1.0) * z_l;\\n\\tfloat x = (fmod(z, m) + uvz.x) / m;\\n\\tfloat y = (floor(z / m) + uvz.y) / n;\\n\\treturn float2(x, y);\\n}\\n\\n// \"},{\"addr\":\"0x1800601e2\",\"string\":\"\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\n{\\t\\n\\tfloat3 nuv = float3(input.tex, 0.0f);   \\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\n\\tfloat4 rgb[3];\\t\\t\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\n\\t\\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt)* pitch + center;\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\t\\t\\n\\t\\tfloat sign_s = (1.0-sign(rows-1.0))*s+sign(rows-1.0)*(1.0-s);\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\n\\t\\t // Sample\"},{\"addr\":\"0x18006049e\",\"string\":\"\\t \\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\n\\t}\\n\\n\\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\\n}\\n\\n\\n/**\\n*\"},{\"addr\":\"0x18006053b\",\"string\":\"@vojin\\n* Pixel shader==\"},{\"addr\":\"0x180060739\",\"string\":\" PixelOffset\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x180060792\",\"string\":\"PixelOffset\\n*/\"},{\"addr\":\"0x180060cc0\",\"string\":\"D3DSHDR\"},{\"addr\":\"0x1800612f0\",\"string\":\"myShaderTexture\"},{\"addr\":\"0x180061338\",\"string\":\"PixelOffset\"},{\"addr\":\"0x180061430\",\"string\":\"pitch\"},{\"addr\":\"0x1800619b0\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_PS.hlsl\"},{\"addr\":\"0x180061a08\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x180061b02\",\"string\":\"/src/files/j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_ps.hlsl\"},{\"addr\":\"0x180061b65\",\"string\":\"/src/files/j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x18006231c\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180063540\",\"string\":\"//--------------------------------------------------------------------------------------\\n// File: VertexShader\\n//\\n// The vertex shader file for the DX11.  \\n// Author: vojin\\n//--------------------------------------------------------------------------------------\\n#include \\\"ComonType.i\\\"\\n\\n// \"},{\"addr\":\"0x180063b4d\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_VS.hlsl\"},{\"addr\":\"0x180063ba6\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_vs.hlsl\"},{\"addr\":\"0x180063bfe\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x180063c52\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x180063ca6\",\"string\":\"//--------------------------------------------------------------------------------------\\n// File: VertexShader\\n//\\n// The vertex shader file for the DX11. \\u001b\"},{\"addr\":\"0x180063f5c\",\"string\":\"]XMicrosoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180064d40\",\"string\":\"D3DSHDR\"},{\"addr\":\"0x180065830\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_VS.hlsl\"},{\"addr\":\"0x180065888\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x180065982\",\"string\":\"/src/files/j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_vs.hlsl\"},{\"addr\":\"0x1800659e5\",\"string\":\"/src/files/j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x180066429\",\"string\":\"myShaderTexture\"},{\"addr\":\"0x180066734\",\"string\":\"PixelOffset\"},{\"addr\":\"0x1800667ae\",\"string\":\"pitch\"},{\"addr\":\"0x180066805\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x18006840b\",\"string\":\"DX11 pixel shader for LF3DRender\\r\\n* \"},{\"addr\":\"0x180068556\",\"string\":\"a\\r\\n*/\\r\\n#include \\\"ComonType.i\\\"\\r\\n\\r\\n/////////////\\r\\n// GLOBALS //\\r\\n/////////////\\r\\nTexture2D myShaderTexture;  // \"},{\"addr\":\"0x1800685c7\",\"string\":\"PSSetShaderResources\"},{\"addr\":\"0x18006889d\",\"string\":\"DX11 pixel shader for LF3DRender\\r\\n* \"},{\"addr\":\"0x1800689e8\",\"string\":\"a\\r\\n*/\\r\\n#include \\\"ComonType.i\\\"\\r\\n\\r\\n/////////////\\r\\n// GLOBALS //\\r\\n/////////////\\r\\nTexture2D myShaderTexture;  // \"},{\"addr\":\"0x180068a59\",\"string\":\"PSSetShaderResources\"},{\"addr\":\"0x180068acd\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER\\r\\n{\\r\\n\\tfloat PixelOffset;\\r\\n\\tfloat widthProp;\\r\\n\\tfloat heightProp;\\r\\n\\tfloat startXProp;\\r\\n\\tfloat startYProp;\\r\\n\\tfloat center;\\r\\n\\tfloat shift_Norm;\\r\\n\\tfloat tilt;\\r\\n\\tfloat pitch;\\r\\n\\tfloat subp;\\r\\n\\tfloat s;\\r\\n\\tint\\tri, bi;\\r\\n\\tfloat columns;\\r\\n\\tfloat rows;\\r\\n\\tfloat z_l;\\t\\r\\n\\tfloat fDpt;\\r\\n\\tfloat dD3;\\r\\n};\\r\\n\\r\\n//--------------------------------------------------------------------------------------\\r\\n//texArr function\\r\\n//--------------------------------------------------------------------------------------\\r\\nfloat2 texArr(float3 uvz)\\r\\n{\\r\\n\\tfloat d1;\\r\\n\\tfloat xtemp;\\r\\n\\tfloat invView = 0.0;\\r\\n\\tfloat sn = sign(uvz.z - 0.5);\\r\\n\\tfloat d3 = dD3;\\r\\n\\tfloat loop = 3.0;\\r\\n\\td3 = d3 * (uvz.z - 0.5) * fDpt;\\r\\n\\tfloat xin = uvz.x - d3;\\r\\n\\tfor (float i = 0.0; i < loop; i++) {\\r\\n\\t\\td1 = myShaderTexture.Sample(mySampleType, float2(xin, uvz.y)).r;\\r\\n\\t\\td1 = invView * d1 + (1.0 - invView) * (1.0 - d1);\\r\\n\\t\\td1 = d1 * (uvz.z - 0.5) * fDpt;\\r\\n\\t\\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\\r\\n\\t\\txtemp = min(xtemp, abs(((uvz.z - 0.5) * fDpt) / (loop / 1.2)));\\r\\n\\t\\txin = xin + xtemp * sn;\\r\\n\\t}\\r\\n\\txtemp = uvz.x + d1 - d3;\\r\\n\\txtemp = 1.0 - abs(1.0 - xtemp);\\r\\n\\treturn float2(xtemp - 0.5, uvz.y);\\r\\n}\\r\\n\\r\\n// \"},{\"addr\":\"0x180068f6f\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\r\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n\\tfloat4 rgb[3];\\r\\n\\r\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\t\\t\\r\\n\\t\\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n\\t\\tnuv.z =1.0 - fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\tfloat sign_s = s;\\t\\t\\r\\n\\t\\tif (columns >= 0.0) {\\r\\n\\t\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t\\tnuv.z = floor(nuv.z * 2.0 * 1.0);\\r\\n\\t\\t\\tnuv.z = clamp(nuv.z, 0.0, 2.0 * 1.0 - 1.0) * z_l;\\r\\n\\t\\t}\\r\\n\\t\\telse {\\r\\n\\t\\t\\tsign_s = 1.0 - s;\\r\\n\\t\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t}\\r\\n\\t\\t\\r\\n\\t\\tfloat2 result = texArr(float3(nuv.x * 0.5f + 0.5f, nuv.y, nuv.z));\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x18006936a\",\"string\":\"\\t \\r\\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, result);\\r\\n\\t}\\r\\n\\r\\n\\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\\r\\n}\\r\\n\\r\\n\\r\\n/**\\r\\n*\"},{\"addr\":\"0x1800693fc\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x180069bf9\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_2dz_PS.hlsl\"},{\"addr\":\"0x180069c56\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_2dz_ps.hlsl\"},{\"addr\":\"0x180069cb2\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x180069d06\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x18006a008\",\"string\":\"]XMicrosoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x18006a76a\",\"string\":\"invView\"},{\"addr\":\"0x18006bc3b\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER\\r\\n{\\r\\n\\tfloat PixelOffset;\\r\\n\\tfloat widthProp;\\r\\n\\tfloat heightProp;\\r\\n\\tfloat startXProp;\\r\\n\\tfloat startYProp;\\r\\n\\tfloat center;\\r\\n\\tfloat shift_Norm;\\r\\n\\tfloat tilt;\\r\\n\\tfloat pitch;\\r\\n\\tfloat subp;\\r\\n\\tfloat s;\\r\\n\\tint\\tri, bi;\\r\\n\\tfloat columns;\\r\\n\\tfloat rows;\\r\\n\\tfloat z_l;\\t\\r\\n\\tfloat fDpt;\\r\\n\\tfloat dD3;\\r\\n};\\r\\n\\r\\n//--------------------------------------------------------------------------------------\\r\\n//texArr function\\r\\n//--------------------------------------------------------------------------------------\\r\\nfloat2 texArr(float3 uvz)\\r\\n{\\r\\n\\tfloat d1;\\r\\n\\tfloat xtemp;\\r\\n\\tfloat invView = 0.0;\\r\\n\\tfloat sn = sign(uvz.z - 0.5);\\r\\n\\tfloat d3 = dD3;\\r\\n\\tfloat loop = 3.0;\\r\\n\\td3 = d3 * (uvz.z - 0.5) * fDpt;\\r\\n\\tfloat xin = uvz.x - d3;\\r\\n\\tfor (float i = 0.0; i < loop; i++) {\\r\\n\\t\\td1 = myShaderTexture.Sample(mySampleType, float2(xin, uvz.y)).r;\\r\\n\\t\\td1 = invView * d1 + (1.0 - invView) * (1.0 - d1);\\r\\n\\t\\td1 = d1 * (uvz.z - 0.5) * fDpt;\\r\\n\\t\\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\\r\\n\\t\\txtemp = min(xtemp, abs(((uvz.z - 0.5) * fDpt) / (loop / 1.2)));\\r\\n\\t\\txin = xin + xtemp * sn;\\r\\n\\t}\\r\\n\\txtemp = uvz.x + d1 - d3;\\r\\n\\txtemp = 1.0 - abs(1.0 - xtemp);\\r\\n\\treturn float2(xtemp - 0.5, uvz.y);\\r\\n}\\r\\n\\r\\n// \"},{\"addr\":\"0x18006c0dd\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\r\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n\\tfloat4 rgb[3];\\r\\n\\r\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\t\\t\\r\\n\\t\\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n\\t\\tnuv.z =1.0 - fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\tfloat sign_s = s;\\t\\t\\r\\n\\t\\tif (columns >= 0.0) {\\r\\n\\t\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t\\tnuv.z = floor(nuv.z * 2.0 * 1.0);\\r\\n\\t\\t\\tnuv.z = clamp(nuv.z, 0.0, 2.0 * 1.0 - 1.0) * z_l;\\r\\n\\t\\t}\\r\\n\\t\\telse {\\r\\n\\t\\t\\tsign_s = 1.0 - s;\\r\\n\\t\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t}\\r\\n\\t\\t\\r\\n\\t\\tfloat2 result = texArr(float3(nuv.x * 0.5f + 0.5f, nuv.y, nuv.z));\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x18006c4d8\",\"string\":\"\\t \\r\\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, result);\\r\\n\\t}\\r\\n\\r\\n\\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\\r\\n}\\r\\n\\r\\n\\r\\n/**\\r\\n*\"},{\"addr\":\"0x18006c56a\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x18006cdec\",\"string\":\"D3DSHDR\"},{\"addr\":\"0x18006d41c\",\"string\":\"myShaderTexture\"},{\"addr\":\"0x18006d464\",\"string\":\"PixelOffset\"},{\"addr\":\"0x18006d55c\",\"string\":\"pitch\"},{\"addr\":\"0x18006dadc\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_2dz_PS.hlsl\"},{\"addr\":\"0x18006db38\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x18006dc2e\",\"string\":\"/src/files/j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_2dz_ps.hlsl\"},{\"addr\":\"0x18006dc95\",\"string\":\"/src/files/j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x18006e6d9\",\"string\":\"myShaderTexture\"},{\"addr\":\"0x18006e92c\",\"string\":\"PixelOffset\"},{\"addr\":\"0x18006e98a\",\"string\":\"pitch\"},{\"addr\":\"0x18006e9e4\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180070616\",\"string\":\"DX11 pixel shader for LF3DRender,\"},{\"addr\":\"0x180070777\",\"string\":\"a\\n*/\\n\\n#include \\\"ComonType.i\\\"\\n\\n/////////////\\n// GLOBALS //\\n/////////////\\nTexture2D myShaderTexture: register(t0);  // \"},{\"addr\":\"0x1800707f0\",\"string\":\"PSSetShaderResources\"},{\"addr\":\"0x180070a90\",\"string\":\"DX11 pixel shader for LF3DRender,\"},{\"addr\":\"0x180070bf1\",\"string\":\"a\\n*/\\n\\n#include \\\"ComonType.i\\\"\\n\\n/////////////\\n// GLOBALS //\\n/////////////\\nTexture2D myShaderTexture: register(t0);  // \"},{\"addr\":\"0x180070c6a\",\"string\":\"PSSetShaderResources\"},{\"addr\":\"0x180070d0b\",\"string\":\"\\n\\ncbuffer PS_CONSTANT_BUFFER:register(b0)\\n{\\n\\tfloat PixelOffset;\\n\\tfloat widthProp;\\n\\tfloat heightProp;\\n\\tfloat startXProp;\\n\\tfloat startYProp;\\n\\tfloat center, shift_Norm, tilt, pitch,subp,s;\\n\\tint\\tri;\\n\\tint bi;\\n\\tfloat columns;\\n\\tfloat rows;\\n\\tfloat z_l;\\t\\n\\tfloat cColumns;//_c_row\\n\\tfloat cRows;//_c_col\\n\\tfloat cEffect;\\n\\tfloat picnum;\\n\\tfloat kz;\\n\\tfloat kx;\\t\\n};\\n\\n/*\\nfunc:texArr function\\nm:\"},{\"addr\":\"0x180070fc3\",\"string\":\"\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\n{\\n\\t\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\n\\n\\tfloat4 comOffset;\\n\\tfloat m;\\t\\n\\tfloat3 comnuv = float3(actual, picnum);\\n\\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\n\\tm = (kz * comOffset.r + (1.0 - kz) * comOffset.g);\\n\\n\\tfloat4 rgb[3];\\t\\t\\n\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\n\\t\\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * kx * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\n\\t\\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\n\\t\\tnuv.z = floor(nuv.z * columns * rows);\\n\\t\\t // Sample\"},{\"addr\":\"0x1800713a5\",\"string\":\"\\n\\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\n\\t}\\t\\n\\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\\n\\t//return _comtex.Sample(mySampleType,input.tex);\\n}\\n\\n\\n/**\\n*\"},{\"addr\":\"0x1800714b6\",\"string\":\"@vojin\\n* Pixel shader==\"},{\"addr\":\"0x1800716b6\",\"string\":\" PixelOffset\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x18007170f\",\"string\":\"PixelOffset\\n* \\n*  \"},{\"addr\":\"0x180071e11\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_compensation_PS156.hlsl\"},{\"addr\":\"0x180071e7a\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_compensation_ps156.hlsl\"},{\"addr\":\"0x180071ee2\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x180071f36\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x180072220\",\"string\":\"]XMicrosoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180074091\",\"string\":\"\\n\\ncbuffer PS_CONSTANT_BUFFER:register(b0)\\n{\\n\\tfloat PixelOffset;\\n\\tfloat widthProp;\\n\\tfloat heightProp;\\n\\tfloat startXProp;\\n\\tfloat startYProp;\\n\\tfloat center, shift_Norm, tilt, pitch,subp,s;\\n\\tint\\tri;\\n\\tint bi;\\n\\tfloat columns;\\n\\tfloat rows;\\n\\tfloat z_l;\\t\\n\\tfloat cColumns;//_c_row\\n\\tfloat cRows;//_c_col\\n\\tfloat cEffect;\\n\\tfloat picnum;\\n\\tfloat kz;\\n\\tfloat kx;\\t\\n};\\n\\n/*\\nfunc:texArr function\\nm:\"},{\"addr\":\"0x180074349\",\"string\":\"\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\n{\\n\\t\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\n\\n\\tfloat4 comOffset;\\n\\tfloat m;\\t\\n\\tfloat3 comnuv = float3(actual, picnum);\\n\\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\n\\tm = (kz * comOffset.r + (1.0 - kz) * comOffset.g);\\n\\n\\tfloat4 rgb[3];\\t\\t\\n\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\n\\t\\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * kx * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\n\\t\\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\n\\t\\tnuv.z = floor(nuv.z * columns * rows);\\n\\t\\t // Sample\"},{\"addr\":\"0x18007472b\",\"string\":\"\\n\\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\n\\t}\\t\\n\\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\\n\\t//return _comtex.Sample(mySampleType,input.tex);\\n}\\n\\n\\n/**\\n*\"},{\"addr\":\"0x18007483c\",\"string\":\"@vojin\\n* Pixel shader==\"},{\"addr\":\"0x180074a3c\",\"string\":\" PixelOffset\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x180074a95\",\"string\":\"PixelOffset\\n* \\n*  \"},{\"addr\":\"0x180075204\",\"string\":\"D3DSHDR\"},{\"addr\":\"0x180075834\",\"string\":\"myShaderTexture\"},{\"addr\":\"0x180075898\",\"string\":\"PixelOffset\"},{\"addr\":\"0x180075990\",\"string\":\"pitch\"},{\"addr\":\"0x180075ef4\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_compensation_PS156.hlsl\"},{\"addr\":\"0x180075f5c\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x180076046\",\"string\":\"/src/files/j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_compensation_ps156.hlsl\"},{\"addr\":\"0x1800760b9\",\"string\":\"/src/files/j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x1800768f9\",\"string\":\"myShaderTexture\"},{\"addr\":\"0x180076b4c\",\"string\":\"PixelOffset\"},{\"addr\":\"0x180076baa\",\"string\":\"pitch\"},{\"addr\":\"0x180076c06\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180078872\",\"string\":\"DX11 pixel shader for LF3DRender,\"},{\"addr\":\"0x1800789d7\",\"string\":\"a\\n*/\\n\\n#include \\\"ComonType.i\\\"\\n\\n/////////////\\n// GLOBALS //\\n/////////////\\nTexture2D myShaderTexture: register(t0);  // \"},{\"addr\":\"0x180078a50\",\"string\":\"PSSetShaderResou\"},{\"addr\":\"0x180078cec\",\"string\":\"DX11 pixel shader for LF3DRender,\"},{\"addr\":\"0x180078e51\",\"string\":\"a\\n*/\\n\\n#include \\\"ComonType.i\\\"\\n\\n/////////////\\n// GLOBALS //\\n/////////////\\nTexture2D myShaderTexture: register(t0);  // \"},{\"addr\":\"0x180078eca\",\"string\":\"PSSetShaderResources\"},{\"addr\":\"0x180078f6b\",\"string\":\"\\n\\ncbuffer PS_CONSTANT_BUFFER:register(b0)\\n{\\n\\tfloat PixelOffset;\\n\\tfloat widthProp;\\n\\tfloat heightProp;\\n\\tfloat startXProp;\\n\\tfloat startYProp;\\n\\tfloat center, shift_Norm, tilt, pitch,subp,s;\\n\\tint\\tri,bi;\\t\\n\\tfloat columns;\\n\\tfloat rows;\\n\\tfloat z_l;\\n\\tfloat cColumns;//_c_row\\n\\tfloat cRows;//_c_col\\n\\tfloat cEffect;//_c_effect\\n\\tfloat Keye;\\n\\tfloat kl;\\n\\tfloat _c_pos;\\n};\\n\\n/*\\nfunc:texArr function\\nm:\"},{\"addr\":\"0x180079229\",\"string\":\"\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\n{\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\n\\n\\tfloat4 comOffset;\\n\\tfloat m;\\t\\n\\tfloat3 comnuv = float3(actual, _c_pos);\\n\\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\n\\tm = (kl + 1.0 - Keye) * comOffset.r + (Keye - kl) * comOffset.g;\\n\\n\\tfloat4 rgb[3];\\t\\n\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\n\\t\\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\n\\t\\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\n\\t\\tnuv.z = floor(nuv.z * columns * rows);\\n\\t\\t // Sample\"},{\"addr\":\"0x180079611\",\"string\":\"\\n\\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\n\\t}\\t\\n\\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);   \\n\\t//return float4(m, m, m,1.0);\\n\\t//return comOffset;\\n}\\n\\n\\n/**\\n*\"},{\"addr\":\"0x180079727\",\"string\":\"@vojin\\n* Pixel shader==\"},{\"addr\":\"0x180079924\",\"string\":\" PixelOffset\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x18007997d\",\"string\":\"PixelOffset\\n* \\n* \"},{\"addr\":\"0x18007a06d\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\Mapping_compensation_PS650.hlsl\"},{\"addr\":\"0x18007a0d6\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\mapping_compensation_ps650.hlsl\"},{\"addr\":\"0x18007a13e\",\"string\":\"J:\\\\Project\\\\SDK\\\\NativeRenderingPlugin\\\\PluginSource\\\\source\\\\core\\\\d3dShader\\\\ComonType.i\"},{\"addr\":\"0x18007a192\",\"string\":\"j:\\\\project\\\\sdk\\\\nativerenderingplugin\\\\pluginsource\\\\source\\\\core\\\\d3dshader\\\\comontype.i\"},{\"addr\":\"0x18007a47c\",\"string\":\"]XMicrosoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x18007c2f1\",\"string\":\"\\n\\ncbuffer PS_CONSTANT_BUFFER:register(b0)\\n{\\n\\tfloat PixelOffset;\\n\\tfloat widthProp;\\n\\tfloat heightProp;\\n\\tfloat startXProp;\\n\\tfloat startYProp;\\n\\tfloat center, shift_Norm, tilt, pitch,subp,s;\\n\\tint\\tri,bi;\\t\\n\\tfloat columns;\\n\\tfloat rows;\\n\\tfloat z_l;\\n\\tfloat cColumns;//_c_row\\n\\tfloat cRows;//_c_col\\n\\tfloat cEffect;//_c_effect\\n\\tfloat Keye;\\n\\tfloat kl;\\n\\tfloat _c_pos;\\n};\\n\\n/*\\nfunc:texArr function\\nm:\"},{\"addr\":\"0x18007c5af\",\"string\":\"\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\n{\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\n\\n\\tfloat4 comOffset;\\n\\tfloat m;\\t\\n\\tfloat3 comnuv = float3(actual, _c_pos);\\n\\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\n\\tm = (kl + 1.0 - Keye) * comOffset.r + (Keye - kl) * comOffset.g;\\n\\n\\tfloat4 rgb[3];\\t\\n\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\n\\t\\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\n\\t\\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\n\\t\\tnuv.z = floor(nuv.z * columns * rows);\\n\\t\\t // Sample\"},{\"addr\":\"0x18007c997\",\"string\":\"\\n\\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\n\\t}\\t\\n\\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);   \\n\\t//return float4(m, m, m,1.0);\\n\\t//return comOffset;\\n}\\n\\n\\n/**\\n*\"}],\"cursor\":{\"next\":150}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 150,
+      "matches": [
+        {
+          "addr": "0x18005a438",
+          "string": "; \n\treturn vec2(iView, bias);\n}\n"
+        },
+        {
+          "addr": "0x18005a460",
+          "string": "vec2 segment(vec3 uvz,float m,float n,float z_left)\n{\n\tfloat z = uvz.z *  m * n;\n   float iView = floor(z);\n\tiView =  clamp(iView, 0.0, m * n- 1.0) * z_left;\n\tfloat nokor = z - iView * 1.0;\n\tfloat bias = 1.0-(abs(nokor - 0.5) * 2.0);\n\tbias = pow(1.135 * bias + 0.001,1.05); \n\tbias = clamp(bias, 0.0, 1.0);\n\tbias = bias * z_left + (1.0 - z_left) * "
+        },
+        {
+          "addr": "0x18005a690",
+          "string": "(tex_sampler_0, vec2(xin, uvz.y)).r;\n\t\td1 = invView * d1 + (1.0-invView) * (1.0 - d1);\n\t\td1 = d1*(seg.x-0.5)*fDpt_;\n\t\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\n\t\txtemp = min(xtemp, abs(((seg.x - 0.5) * fDpt_)/(loop/1.2)));\n\t\txin = xin + xtemp * sn;\n\t }\n xtemp = uvz.x + d1 - d3;\n xtemp = 1.0-abs(1.0-xtemp);\n return vec3(xtemp-0.5, uvz.y,seg.y);\n}"
+        },
+        {
+          "addr": "0x18005a800",
+          "string": "vec3 texArr(vec3 uvz,float m,float n,float z_l_,float dD3_,float fDpt_)\n{\n\tvec2 seg = segment(uvz, m, n, z_l_);\n\tfloat d1;\n\tfloat xtemp;\n\tfloat invView =0.0;\n\tfloat sn = sign(seg.x-0.5);\n\tfloat d3 = dD3_;\n\tfloat loop =3.0;\n\td3 = d3*(seg.x-0.5)*fDpt_;\n\tfloat xin = uvz.x - d3;\n\tfor (float i=0.0;i<loop;i++){\n\t\td1 = "
+        },
+        {
+          "addr": "0x18005a9b0",
+          "string": " + actual.y * tilt) * pitch + center;\n\t\tnuv.z = mod(nuv.z + ceil(abs(nuv.z)), 1.0);\n\t\tfloat sign_s = (1.0-sign(rows-1.0))*s+sign(rows-1.0)*(1.0-s);\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\n\t\tvec3 pos = texArr(nuv,columns,rows,z_l);\n\t\trgb[i] ="
+        },
+        {
+          "addr": "0x18005abf0",
+          "string": " mediump vec2 v_texcoord;\nuniform sampler2D tex_sampler_0;\nuniform highp float PixelOffset;\nuniform highp float widthProp;\nuniform highp float heightProp;\nuniform highp float startXProp;\nuniform highp float startYProp;\nuniform highp float center;\nuniform highp float shift_Norm;\nuniform highp float tilt;\nuniform highp float pitch;\nuniform highp float subp;\nuniform lowp float s;\nuniform int ri;\nuniform int bi;\nuniform lowp float columns;\nuniform lowp float rows;\nuniform lowp float z_l;\n\nvec2 segment(vec3 uvz, float m, float n, float z_left);\n"
+        },
+        {
+          "addr": "0x18005ae30",
+          "string": "float(i) * (PixelOffset + subp)"
+        },
+        {
+          "addr": "0x18005ae50",
+          "string": "float(i) * (PixelOffset + subp)*tilt"
+        },
+        {
+          "addr": "0x18005b1d0",
+          "string": " + actual.y * tilt) * pitch + center;\n"
+        },
+        {
+          "addr": "0x18005b460",
+          "string": "uniform highp float pitch;\n"
+        },
+        {
+          "addr": "0x18005b580",
+          "string": "uniform highp float PixelOffset;\n"
+        },
+        {
+          "addr": "0x18005b6d9",
+          "string": "myShaderTexture"
+        },
+        {
+          "addr": "0x18005b894",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x18005b8f2",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x18005b928",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x18005d0d4",
+          "string": "DX11 pixel shader for LF3DRender\n* "
+        },
+        {
+          "addr": "0x18005d21a",
+          "string": "a\n*/\n#include \"ComonType.i\"\n\n/////////////\n// GLOBALS //\n/////////////\nTexture2D myShaderTexture;  // "
+        },
+        {
+          "addr": "0x18005d284",
+          "string": "PSSetShaderResources"
+        },
+        {
+          "addr": "0x18005d56e",
+          "string": "DX11 pixel shader for LF3DRender\n* "
+        },
+        {
+          "addr": "0x18005d6b4",
+          "string": "a\n*/\n#include \"ComonType.i\"\n\n/////////////\n// GLOBALS //\n/////////////\nTexture2D myShaderTexture;  // "
+        },
+        {
+          "addr": "0x18005d71e",
+          "string": "PSSetShaderResources"
+        },
+        {
+          "addr": "0x18005d791",
+          "string": "\n\ncbuffer PS_CONSTANT_BUFFER\n{\n\tfloat PixelOffset;\n\tfloat widthProp;\n\tfloat heightProp;\n\tfloat startXProp;\n\tfloat startYProp;\n\tfloat center;\n\tfloat shift_Norm;\n\tfloat tilt;\n\tfloat pitch;\n\tfloat subp;\n\tfloat s;\n\tint\tri,bi;\n\tfloat columns;\n\tfloat rows;\n\tfloat z_l;\n};\n\n//--------------------------------------------------------------------------------------\n//texArr function\n//--------------------------------------------------------------------------------------\nfloat2 texArr(float3 uvz, float m, float n)\n{\n\t// decide which section to take from based on the z.\n\tfloat z = floor(uvz.z * m * n);\n\tz = clamp(z, 0.0, m * n - 1.0) * z_l;\n\tfloat x = (fmod(z, m) + uvz.x) / m;\n\tfloat y = (floor(z / m) + uvz.y) / n;\n\treturn float2(x, y);\n}\n\n// "
+        },
+        {
+          "addr": "0x18005da7c",
+          "string": "\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\n{\t\n\tfloat3 nuv = float3(input.tex, 0.0f);   \n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\n\tfloat4 rgb[3];\t\t\n\tfor (int i = 0; i < 3; i++) {\t\t\n\t\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt)* pitch + center;\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\t\t\n\t\tfloat sign_s = (1.0-sign(rows-1.0))*s+sign(rows-1.0)*(1.0-s);\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18005dd38",
+          "string": "\t \n\t\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\n\t}\n\n\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\n}\n\n\n/**\n*"
+        },
+        {
+          "addr": "0x18005ddd5",
+          "string": "@vojin\n* Pixel shader=="
+        },
+        {
+          "addr": "0x18005dfd3",
+          "string": " PixelOffset\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x18005e02c",
+          "string": "PixelOffset\n*/"
+        },
+        {
+          "addr": "0x18005e4cd",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_PS.hlsl"
+        },
+        {
+          "addr": "0x18005e526",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_ps.hlsl"
+        },
+        {
+          "addr": "0x18005e57e",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x18005e5d2",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x18005e8dc",
+          "string": "]XMicrosoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x18005fef7",
+          "string": "\n\ncbuffer PS_CONSTANT_BUFFER\n{\n\tfloat PixelOffset;\n\tfloat widthProp;\n\tfloat heightProp;\n\tfloat startXProp;\n\tfloat startYProp;\n\tfloat center;\n\tfloat shift_Norm;\n\tfloat tilt;\n\tfloat pitch;\n\tfloat subp;\n\tfloat s;\n\tint\tri,bi;\n\tfloat columns;\n\tfloat rows;\n\tfloat z_l;\n};\n\n//--------------------------------------------------------------------------------------\n//texArr function\n//--------------------------------------------------------------------------------------\nfloat2 texArr(float3 uvz, float m, float n)\n{\n\t// decide which section to take from based on the z.\n\tfloat z = floor(uvz.z * m * n);\n\tz = clamp(z, 0.0, m * n - 1.0) * z_l;\n\tfloat x = (fmod(z, m) + uvz.x) / m;\n\tfloat y = (floor(z / m) + uvz.y) / n;\n\treturn float2(x, y);\n}\n\n// "
+        },
+        {
+          "addr": "0x1800601e2",
+          "string": "\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\n{\t\n\tfloat3 nuv = float3(input.tex, 0.0f);   \n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\n\tfloat4 rgb[3];\t\t\n\tfor (int i = 0; i < 3; i++) {\t\t\n\t\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt)* pitch + center;\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\t\t\n\t\tfloat sign_s = (1.0-sign(rows-1.0))*s+sign(rows-1.0)*(1.0-s);\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18006049e",
+          "string": "\t \n\t\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\n\t}\n\n\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\n}\n\n\n/**\n*"
+        },
+        {
+          "addr": "0x18006053b",
+          "string": "@vojin\n* Pixel shader=="
+        },
+        {
+          "addr": "0x180060739",
+          "string": " PixelOffset\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x180060792",
+          "string": "PixelOffset\n*/"
+        },
+        {
+          "addr": "0x180060cc0",
+          "string": "D3DSHDR"
+        },
+        {
+          "addr": "0x1800612f0",
+          "string": "myShaderTexture"
+        },
+        {
+          "addr": "0x180061338",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x180061430",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x1800619b0",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_PS.hlsl"
+        },
+        {
+          "addr": "0x180061a08",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x180061b02",
+          "string": "/src/files/j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_ps.hlsl"
+        },
+        {
+          "addr": "0x180061b65",
+          "string": "/src/files/j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x18006231c",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180063540",
+          "string": "//--------------------------------------------------------------------------------------\n// File: VertexShader\n//\n// The vertex shader file for the DX11.  \n// Author: vojin\n//--------------------------------------------------------------------------------------\n#include \"ComonType.i\"\n\n// "
+        },
+        {
+          "addr": "0x180063b4d",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_VS.hlsl"
+        },
+        {
+          "addr": "0x180063ba6",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_vs.hlsl"
+        },
+        {
+          "addr": "0x180063bfe",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x180063c52",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x180063ca6",
+          "string": "//--------------------------------------------------------------------------------------\n// File: VertexShader\n//\n// The vertex shader file for the DX11. \u001b"
+        },
+        {
+          "addr": "0x180063f5c",
+          "string": "]XMicrosoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180064d40",
+          "string": "D3DSHDR"
+        },
+        {
+          "addr": "0x180065830",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_VS.hlsl"
+        },
+        {
+          "addr": "0x180065888",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x180065982",
+          "string": "/src/files/j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_vs.hlsl"
+        },
+        {
+          "addr": "0x1800659e5",
+          "string": "/src/files/j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x180066429",
+          "string": "myShaderTexture"
+        },
+        {
+          "addr": "0x180066734",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x1800667ae",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x180066805",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x18006840b",
+          "string": "DX11 pixel shader for LF3DRender\r\n* "
+        },
+        {
+          "addr": "0x180068556",
+          "string": "a\r\n*/\r\n#include \"ComonType.i\"\r\n\r\n/////////////\r\n// GLOBALS //\r\n/////////////\r\nTexture2D myShaderTexture;  // "
+        },
+        {
+          "addr": "0x1800685c7",
+          "string": "PSSetShaderResources"
+        },
+        {
+          "addr": "0x18006889d",
+          "string": "DX11 pixel shader for LF3DRender\r\n* "
+        },
+        {
+          "addr": "0x1800689e8",
+          "string": "a\r\n*/\r\n#include \"ComonType.i\"\r\n\r\n/////////////\r\n// GLOBALS //\r\n/////////////\r\nTexture2D myShaderTexture;  // "
+        },
+        {
+          "addr": "0x180068a59",
+          "string": "PSSetShaderResources"
+        },
+        {
+          "addr": "0x180068acd",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER\r\n{\r\n\tfloat PixelOffset;\r\n\tfloat widthProp;\r\n\tfloat heightProp;\r\n\tfloat startXProp;\r\n\tfloat startYProp;\r\n\tfloat center;\r\n\tfloat shift_Norm;\r\n\tfloat tilt;\r\n\tfloat pitch;\r\n\tfloat subp;\r\n\tfloat s;\r\n\tint\tri, bi;\r\n\tfloat columns;\r\n\tfloat rows;\r\n\tfloat z_l;\t\r\n\tfloat fDpt;\r\n\tfloat dD3;\r\n};\r\n\r\n//--------------------------------------------------------------------------------------\r\n//texArr function\r\n//--------------------------------------------------------------------------------------\r\nfloat2 texArr(float3 uvz)\r\n{\r\n\tfloat d1;\r\n\tfloat xtemp;\r\n\tfloat invView = 0.0;\r\n\tfloat sn = sign(uvz.z - 0.5);\r\n\tfloat d3 = dD3;\r\n\tfloat loop = 3.0;\r\n\td3 = d3 * (uvz.z - 0.5) * fDpt;\r\n\tfloat xin = uvz.x - d3;\r\n\tfor (float i = 0.0; i < loop; i++) {\r\n\t\td1 = myShaderTexture.Sample(mySampleType, float2(xin, uvz.y)).r;\r\n\t\td1 = invView * d1 + (1.0 - invView) * (1.0 - d1);\r\n\t\td1 = d1 * (uvz.z - 0.5) * fDpt;\r\n\t\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\r\n\t\txtemp = min(xtemp, abs(((uvz.z - 0.5) * fDpt) / (loop / 1.2)));\r\n\t\txin = xin + xtemp * sn;\r\n\t}\r\n\txtemp = uvz.x + d1 - d3;\r\n\txtemp = 1.0 - abs(1.0 - xtemp);\r\n\treturn float2(xtemp - 0.5, uvz.y);\r\n}\r\n\r\n// "
+        },
+        {
+          "addr": "0x180068f6f",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n\tfloat3 nuv = float3(input.tex, 0.0f);\r\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n\tfloat4 rgb[3];\r\n\r\n\tfor (int i = 0; i < 3; i++) {\t\t\t\t\r\n\t\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n\t\tnuv.z =1.0 - fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\tfloat sign_s = s;\t\t\r\n\t\tif (columns >= 0.0) {\r\n\t\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t\tnuv.z = floor(nuv.z * 2.0 * 1.0);\r\n\t\t\tnuv.z = clamp(nuv.z, 0.0, 2.0 * 1.0 - 1.0) * z_l;\r\n\t\t}\r\n\t\telse {\r\n\t\t\tsign_s = 1.0 - s;\r\n\t\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t}\r\n\t\t\r\n\t\tfloat2 result = texArr(float3(nuv.x * 0.5f + 0.5f, nuv.y, nuv.z));\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18006936a",
+          "string": "\t \r\n\t\trgb[i] = myShaderTexture.Sample(mySampleType, result);\r\n\t}\r\n\r\n\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\r\n}\r\n\r\n\r\n/**\r\n*"
+        },
+        {
+          "addr": "0x1800693fc",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x180069bf9",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_2dz_PS.hlsl"
+        },
+        {
+          "addr": "0x180069c56",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_2dz_ps.hlsl"
+        },
+        {
+          "addr": "0x180069cb2",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x180069d06",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x18006a008",
+          "string": "]XMicrosoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x18006a76a",
+          "string": "invView"
+        },
+        {
+          "addr": "0x18006bc3b",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER\r\n{\r\n\tfloat PixelOffset;\r\n\tfloat widthProp;\r\n\tfloat heightProp;\r\n\tfloat startXProp;\r\n\tfloat startYProp;\r\n\tfloat center;\r\n\tfloat shift_Norm;\r\n\tfloat tilt;\r\n\tfloat pitch;\r\n\tfloat subp;\r\n\tfloat s;\r\n\tint\tri, bi;\r\n\tfloat columns;\r\n\tfloat rows;\r\n\tfloat z_l;\t\r\n\tfloat fDpt;\r\n\tfloat dD3;\r\n};\r\n\r\n//--------------------------------------------------------------------------------------\r\n//texArr function\r\n//--------------------------------------------------------------------------------------\r\nfloat2 texArr(float3 uvz)\r\n{\r\n\tfloat d1;\r\n\tfloat xtemp;\r\n\tfloat invView = 0.0;\r\n\tfloat sn = sign(uvz.z - 0.5);\r\n\tfloat d3 = dD3;\r\n\tfloat loop = 3.0;\r\n\td3 = d3 * (uvz.z - 0.5) * fDpt;\r\n\tfloat xin = uvz.x - d3;\r\n\tfor (float i = 0.0; i < loop; i++) {\r\n\t\td1 = myShaderTexture.Sample(mySampleType, float2(xin, uvz.y)).r;\r\n\t\td1 = invView * d1 + (1.0 - invView) * (1.0 - d1);\r\n\t\td1 = d1 * (uvz.z - 0.5) * fDpt;\r\n\t\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\r\n\t\txtemp = min(xtemp, abs(((uvz.z - 0.5) * fDpt) / (loop / 1.2)));\r\n\t\txin = xin + xtemp * sn;\r\n\t}\r\n\txtemp = uvz.x + d1 - d3;\r\n\txtemp = 1.0 - abs(1.0 - xtemp);\r\n\treturn float2(xtemp - 0.5, uvz.y);\r\n}\r\n\r\n// "
+        },
+        {
+          "addr": "0x18006c0dd",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n\tfloat3 nuv = float3(input.tex, 0.0f);\r\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n\tfloat4 rgb[3];\r\n\r\n\tfor (int i = 0; i < 3; i++) {\t\t\t\t\r\n\t\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n\t\tnuv.z =1.0 - fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\tfloat sign_s = s;\t\t\r\n\t\tif (columns >= 0.0) {\r\n\t\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t\tnuv.z = floor(nuv.z * 2.0 * 1.0);\r\n\t\t\tnuv.z = clamp(nuv.z, 0.0, 2.0 * 1.0 - 1.0) * z_l;\r\n\t\t}\r\n\t\telse {\r\n\t\t\tsign_s = 1.0 - s;\r\n\t\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t}\r\n\t\t\r\n\t\tfloat2 result = texArr(float3(nuv.x * 0.5f + 0.5f, nuv.y, nuv.z));\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18006c4d8",
+          "string": "\t \r\n\t\trgb[i] = myShaderTexture.Sample(mySampleType, result);\r\n\t}\r\n\r\n\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\r\n}\r\n\r\n\r\n/**\r\n*"
+        },
+        {
+          "addr": "0x18006c56a",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x18006cdec",
+          "string": "D3DSHDR"
+        },
+        {
+          "addr": "0x18006d41c",
+          "string": "myShaderTexture"
+        },
+        {
+          "addr": "0x18006d464",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x18006d55c",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x18006dadc",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_2dz_PS.hlsl"
+        },
+        {
+          "addr": "0x18006db38",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x18006dc2e",
+          "string": "/src/files/j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_2dz_ps.hlsl"
+        },
+        {
+          "addr": "0x18006dc95",
+          "string": "/src/files/j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x18006e6d9",
+          "string": "myShaderTexture"
+        },
+        {
+          "addr": "0x18006e92c",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x18006e98a",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x18006e9e4",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180070616",
+          "string": "DX11 pixel shader for LF3DRender,"
+        },
+        {
+          "addr": "0x180070777",
+          "string": "a\n*/\n\n#include \"ComonType.i\"\n\n/////////////\n// GLOBALS //\n/////////////\nTexture2D myShaderTexture: register(t0);  // "
+        },
+        {
+          "addr": "0x1800707f0",
+          "string": "PSSetShaderResources"
+        },
+        {
+          "addr": "0x180070a90",
+          "string": "DX11 pixel shader for LF3DRender,"
+        },
+        {
+          "addr": "0x180070bf1",
+          "string": "a\n*/\n\n#include \"ComonType.i\"\n\n/////////////\n// GLOBALS //\n/////////////\nTexture2D myShaderTexture: register(t0);  // "
+        },
+        {
+          "addr": "0x180070c6a",
+          "string": "PSSetShaderResources"
+        },
+        {
+          "addr": "0x180070d0b",
+          "string": "\n\ncbuffer PS_CONSTANT_BUFFER:register(b0)\n{\n\tfloat PixelOffset;\n\tfloat widthProp;\n\tfloat heightProp;\n\tfloat startXProp;\n\tfloat startYProp;\n\tfloat center, shift_Norm, tilt, pitch,subp,s;\n\tint\tri;\n\tint bi;\n\tfloat columns;\n\tfloat rows;\n\tfloat z_l;\t\n\tfloat cColumns;//_c_row\n\tfloat cRows;//_c_col\n\tfloat cEffect;\n\tfloat picnum;\n\tfloat kz;\n\tfloat kx;\t\n};\n\n/*\nfunc:texArr function\nm:"
+        },
+        {
+          "addr": "0x180070fc3",
+          "string": "\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\n{\n\t\n\tfloat3 nuv = float3(input.tex, 0.0f);\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\n\n\tfloat4 comOffset;\n\tfloat m;\t\n\tfloat3 comnuv = float3(actual, picnum);\n\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\n\tm = (kz * comOffset.r + (1.0 - kz) * comOffset.g);\n\n\tfloat4 rgb[3];\t\t\n\n\tfor (int i = 0; i < 3; i++) {\t\t\n\t\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * kx * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\n\t\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\n\t\tnuv.z = floor(nuv.z * columns * rows);\n\t\t // Sample"
+        },
+        {
+          "addr": "0x1800713a5",
+          "string": "\n\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\n\t\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\n\t}\t\n\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\n\t//return _comtex.Sample(mySampleType,input.tex);\n}\n\n\n/**\n*"
+        },
+        {
+          "addr": "0x1800714b6",
+          "string": "@vojin\n* Pixel shader=="
+        },
+        {
+          "addr": "0x1800716b6",
+          "string": " PixelOffset\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x18007170f",
+          "string": "PixelOffset\n* \n*  "
+        },
+        {
+          "addr": "0x180071e11",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_compensation_PS156.hlsl"
+        },
+        {
+          "addr": "0x180071e7a",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_compensation_ps156.hlsl"
+        },
+        {
+          "addr": "0x180071ee2",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x180071f36",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x180072220",
+          "string": "]XMicrosoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180074091",
+          "string": "\n\ncbuffer PS_CONSTANT_BUFFER:register(b0)\n{\n\tfloat PixelOffset;\n\tfloat widthProp;\n\tfloat heightProp;\n\tfloat startXProp;\n\tfloat startYProp;\n\tfloat center, shift_Norm, tilt, pitch,subp,s;\n\tint\tri;\n\tint bi;\n\tfloat columns;\n\tfloat rows;\n\tfloat z_l;\t\n\tfloat cColumns;//_c_row\n\tfloat cRows;//_c_col\n\tfloat cEffect;\n\tfloat picnum;\n\tfloat kz;\n\tfloat kx;\t\n};\n\n/*\nfunc:texArr function\nm:"
+        },
+        {
+          "addr": "0x180074349",
+          "string": "\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\n{\n\t\n\tfloat3 nuv = float3(input.tex, 0.0f);\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\n\n\tfloat4 comOffset;\n\tfloat m;\t\n\tfloat3 comnuv = float3(actual, picnum);\n\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\n\tm = (kz * comOffset.r + (1.0 - kz) * comOffset.g);\n\n\tfloat4 rgb[3];\t\t\n\n\tfor (int i = 0; i < 3; i++) {\t\t\n\t\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * kx * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\n\t\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\n\t\tnuv.z = floor(nuv.z * columns * rows);\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18007472b",
+          "string": "\n\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\n\t\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\n\t}\t\n\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);\n\t//return _comtex.Sample(mySampleType,input.tex);\n}\n\n\n/**\n*"
+        },
+        {
+          "addr": "0x18007483c",
+          "string": "@vojin\n* Pixel shader=="
+        },
+        {
+          "addr": "0x180074a3c",
+          "string": " PixelOffset\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x180074a95",
+          "string": "PixelOffset\n* \n*  "
+        },
+        {
+          "addr": "0x180075204",
+          "string": "D3DSHDR"
+        },
+        {
+          "addr": "0x180075834",
+          "string": "myShaderTexture"
+        },
+        {
+          "addr": "0x180075898",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x180075990",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x180075ef4",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_compensation_PS156.hlsl"
+        },
+        {
+          "addr": "0x180075f5c",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x180076046",
+          "string": "/src/files/j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_compensation_ps156.hlsl"
+        },
+        {
+          "addr": "0x1800760b9",
+          "string": "/src/files/j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x1800768f9",
+          "string": "myShaderTexture"
+        },
+        {
+          "addr": "0x180076b4c",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x180076baa",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x180076c06",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180078872",
+          "string": "DX11 pixel shader for LF3DRender,"
+        },
+        {
+          "addr": "0x1800789d7",
+          "string": "a\n*/\n\n#include \"ComonType.i\"\n\n/////////////\n// GLOBALS //\n/////////////\nTexture2D myShaderTexture: register(t0);  // "
+        },
+        {
+          "addr": "0x180078a50",
+          "string": "PSSetShaderResou"
+        },
+        {
+          "addr": "0x180078cec",
+          "string": "DX11 pixel shader for LF3DRender,"
+        },
+        {
+          "addr": "0x180078e51",
+          "string": "a\n*/\n\n#include \"ComonType.i\"\n\n/////////////\n// GLOBALS //\n/////////////\nTexture2D myShaderTexture: register(t0);  // "
+        },
+        {
+          "addr": "0x180078eca",
+          "string": "PSSetShaderResources"
+        },
+        {
+          "addr": "0x180078f6b",
+          "string": "\n\ncbuffer PS_CONSTANT_BUFFER:register(b0)\n{\n\tfloat PixelOffset;\n\tfloat widthProp;\n\tfloat heightProp;\n\tfloat startXProp;\n\tfloat startYProp;\n\tfloat center, shift_Norm, tilt, pitch,subp,s;\n\tint\tri,bi;\t\n\tfloat columns;\n\tfloat rows;\n\tfloat z_l;\n\tfloat cColumns;//_c_row\n\tfloat cRows;//_c_col\n\tfloat cEffect;//_c_effect\n\tfloat Keye;\n\tfloat kl;\n\tfloat _c_pos;\n};\n\n/*\nfunc:texArr function\nm:"
+        },
+        {
+          "addr": "0x180079229",
+          "string": "\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\n{\n\tfloat3 nuv = float3(input.tex, 0.0f);\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\n\n\tfloat4 comOffset;\n\tfloat m;\t\n\tfloat3 comnuv = float3(actual, _c_pos);\n\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\n\tm = (kl + 1.0 - Keye) * comOffset.r + (Keye - kl) * comOffset.g;\n\n\tfloat4 rgb[3];\t\n\n\tfor (int i = 0; i < 3; i++) {\t\t\n\t\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\n\t\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\n\t\tnuv.z = floor(nuv.z * columns * rows);\n\t\t // Sample"
+        },
+        {
+          "addr": "0x180079611",
+          "string": "\n\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\n\t\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\n\t}\t\n\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);   \n\t//return float4(m, m, m,1.0);\n\t//return comOffset;\n}\n\n\n/**\n*"
+        },
+        {
+          "addr": "0x180079727",
+          "string": "@vojin\n* Pixel shader=="
+        },
+        {
+          "addr": "0x180079924",
+          "string": " PixelOffset\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x18007997d",
+          "string": "PixelOffset\n* \n* "
+        },
+        {
+          "addr": "0x18007a06d",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\Mapping_compensation_PS650.hlsl"
+        },
+        {
+          "addr": "0x18007a0d6",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\mapping_compensation_ps650.hlsl"
+        },
+        {
+          "addr": "0x18007a13e",
+          "string": "J:\\Project\\SDK\\NativeRenderingPlugin\\PluginSource\\source\\core\\d3dShader\\ComonType.i"
+        },
+        {
+          "addr": "0x18007a192",
+          "string": "j:\\project\\sdk\\nativerenderingplugin\\pluginsource\\source\\core\\d3dshader\\comontype.i"
+        },
+        {
+          "addr": "0x18007a47c",
+          "string": "]XMicrosoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x18007c2f1",
+          "string": "\n\ncbuffer PS_CONSTANT_BUFFER:register(b0)\n{\n\tfloat PixelOffset;\n\tfloat widthProp;\n\tfloat heightProp;\n\tfloat startXProp;\n\tfloat startYProp;\n\tfloat center, shift_Norm, tilt, pitch,subp,s;\n\tint\tri,bi;\t\n\tfloat columns;\n\tfloat rows;\n\tfloat z_l;\n\tfloat cColumns;//_c_row\n\tfloat cRows;//_c_col\n\tfloat cEffect;//_c_effect\n\tfloat Keye;\n\tfloat kl;\n\tfloat _c_pos;\n};\n\n/*\nfunc:texArr function\nm:"
+        },
+        {
+          "addr": "0x18007c5af",
+          "string": "\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\n{\n\tfloat3 nuv = float3(input.tex, 0.0f);\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\n\n\tfloat4 comOffset;\n\tfloat m;\t\n\tfloat3 comnuv = float3(actual, _c_pos);\n\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\n\tm = (kl + 1.0 - Keye) * comOffset.r + (Keye - kl) * comOffset.g;\n\n\tfloat4 rgb[3];\t\n\n\tfor (int i = 0; i < 3; i++) {\t\t\n\t\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\n\t\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\n\t\tnuv.z = floor(nuv.z * columns * rows);\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18007c997",
+          "string": "\n\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\n\t\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\n\t}\t\n\treturn float4(rgb[ri].r, rgb[1].g, rgb[bi].b, 1.0f);   \n\t//return float4(m, m, m,1.0);\n\t//return comOffset;\n}\n\n\n/**\n*"
+        }
+      ],
+      "cursor": {
+        "next": 150
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

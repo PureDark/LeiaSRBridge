@@ -1,0 +1,32 @@
+void *sub_180098700()
+{
+  void *result; // rax
+
+  if ( dword_18013C040 <= *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x180098725*/
+                                    + 20LL) )
+    return &unk_18013C050; /*0x180098725*/
+  Init_thread_header(a1: &dword_18013C040); /*0x18009873a*/
+  if ( dword_18013C040 != -1 ) /*0x180098746*/
+    return &unk_18013C050; /*0x180098727*/
+  __wind /*0xf1c0000000000030*/
+  {
+    __wind /*0xf1c0000000000038*/
+    {
+      sub_1800980C0(); /*0x18009874f*/
+      byte_18013C268 = 0; /*0x180098754*/
+      Mtx_init_in_situ(a1: (_Mtx_t)&unk_18013C270, a2: 2); /*0x180098767*/
+      atexit(a1: sub_1800FC800); /*0x180098774*/
+      Init_thread_footer(a1: &dword_18013C040); /*0x180098781*/
+      result = &unk_18013C050; /*0x180098786*/
+    }
+    __unwind
+    {
+      sub_180098480(a1: &unk_18013C050); /*0x1800f81b7*/
+    }
+  }
+  __unwind
+  {
+    Init_thread_abort(a1: &dword_18013C040); /*0x1800f81a7*/
+  }
+  return result; /*0x18009872e*/
+}

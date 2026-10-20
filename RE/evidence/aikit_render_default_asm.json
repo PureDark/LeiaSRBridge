@@ -1,0 +1,74 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18013eca0\",\"asm\":{\"name\":\"sub_18013ECA0\",\"start_ea\":\"0x18013eca0\",\"segment\":\".text\",\"lines\":[{\"addr\":\"18013eca0\",\"instruction\":\"sub rsp, 38h\",\"label\":\"sub_18013ECA0\"},{\"addr\":\"18013eca4\",\"instruction\":\"mov rax, [rcx]\"},{\"addr\":\"18013eca7\",\"instruction\":\"mov [rsp+38h+var_18], 0\"},{\"addr\":\"18013ecaf\",\"instruction\":\"call qword ptr [rax+18h]\"},{\"addr\":\"18013ecb2\",\"instruction\":\"add rsp, 38h\"},{\"addr\":\"18013ecb6\",\"instruction\":\"retn\"}],\"stack_frame\":[{\"name\":\"var_18\",\"offset\":\"0x20\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"__return_address\",\"offset\":\"0x38\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"}],\"return_type\":\"__int64\",\"arguments\":[{\"name\":\"arg0\",\"type\":\"__int64\"}]},\"instruction_count\":6,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18013eca0",
+      "asm": {
+        "name": "sub_18013ECA0",
+        "start_ea": "0x18013eca0",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "18013eca0",
+            "instruction": "sub rsp, 38h",
+            "label": "sub_18013ECA0"
+          },
+          {
+            "addr": "18013eca4",
+            "instruction": "mov rax, [rcx]"
+          },
+          {
+            "addr": "18013eca7",
+            "instruction": "mov [rsp+38h+var_18], 0"
+          },
+          {
+            "addr": "18013ecaf",
+            "instruction": "call qword ptr [rax+18h]"
+          },
+          {
+            "addr": "18013ecb2",
+            "instruction": "add rsp, 38h"
+          },
+          {
+            "addr": "18013ecb6",
+            "instruction": "retn"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "var_18",
+            "offset": "0x20",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "__return_address",
+            "offset": "0x38",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          }
+        ],
+        "return_type": "__int64",
+        "arguments": [
+          {
+            "name": "arg0",
+            "type": "__int64"
+          }
+        ]
+      },
+      "instruction_count": 6,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

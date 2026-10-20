@@ -1,0 +1,75 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800069f0\",\"asm\":{\"name\":\"sub_1800069F0\",\"start_ea\":\"0x1800069f0\",\"segment\":\".text\",\"lines\":[{\"addr\":\"1800069f0\",\"instruction\":\"mov rcx, [rcx+8]\",\"label\":\"sub_1800069F0\"},{\"addr\":\"1800069f4\",\"instruction\":\"test rcx, rcx\"},{\"addr\":\"1800069f7\",\"instruction\":\"jz short locret_180006A00\",\"refs\":[{\"addr\":\"0x180006a00\",\"name\":\"locret_180006A00\"}]},{\"addr\":\"1800069f9\",\"instruction\":\"mov rax, [rcx]\"},{\"addr\":\"1800069fc\",\"instruction\":\"jmp qword ptr [rax+8]\"},{\"addr\":\"180006a00\",\"instruction\":\"retn\",\"label\":\"locret_180006A00\"}],\"stack_frame\":[{\"name\":\"__return_address\",\"offset\":\"0x0\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"}],\"return_type\":\"__int64\",\"arguments\":[{\"name\":\"arg0\",\"type\":\"__int64\"}]},\"instruction_count\":6,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800069f0",
+      "asm": {
+        "name": "sub_1800069F0",
+        "start_ea": "0x1800069f0",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "1800069f0",
+            "instruction": "mov rcx, [rcx+8]",
+            "label": "sub_1800069F0"
+          },
+          {
+            "addr": "1800069f4",
+            "instruction": "test rcx, rcx"
+          },
+          {
+            "addr": "1800069f7",
+            "instruction": "jz short locret_180006A00",
+            "refs": [
+              {
+                "addr": "0x180006a00",
+                "name": "locret_180006A00"
+              }
+            ]
+          },
+          {
+            "addr": "1800069f9",
+            "instruction": "mov rax, [rcx]"
+          },
+          {
+            "addr": "1800069fc",
+            "instruction": "jmp qword ptr [rax+8]"
+          },
+          {
+            "addr": "180006a00",
+            "instruction": "retn",
+            "label": "locret_180006A00"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "__return_address",
+            "offset": "0x0",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          }
+        ],
+        "return_type": "__int64",
+        "arguments": [
+          {
+            "name": "arg0",
+            "type": "__int64"
+          }
+        ]
+      },
+      "instruction_count": 6,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

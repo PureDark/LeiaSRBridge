@@ -1,0 +1,119 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"func\":[{\"addr\":\"0x180021530\",\"old\":\"sub_180021530\",\"name\":\"LF3DDX11_Initialize\",\"dir\":\"vibe\"},{\"addr\":\"0x1800215B0\",\"old\":\"sub_1800215B0\",\"name\":\"LF3DDX11_SetInputTexture2D\",\"dir\":\"vibe\"},{\"addr\":\"0x1800218A0\",\"old\":\"sub_1800218A0\",\"name\":\"LF3D_SetViewAtlasFormat\",\"dir\":\"vibe\"},{\"addr\":\"0x1800218D0\",\"old\":\"sub_1800218D0\",\"name\":\"LF3D_LoadDeviceConfigFromFile\",\"dir\":\"vibe\"},{\"addr\":\"0x180021950\",\"old\":\"sub_180021950\",\"name\":\"LF3D_SetWindowScreenRect\",\"dir\":\"vibe\"},{\"addr\":\"0x1800219B0\",\"old\":\"sub_1800219B0\",\"name\":\"LF3D_UpdateEyeInfo\",\"dir\":\"vibe\"},{\"addr\":\"0x1800219E0\",\"old\":\"sub_1800219E0\",\"name\":\"LF3D_UpdateOffsetXb\",\"dir\":\"vibe\"},{\"addr\":\"0x180021A30\",\"old\":\"sub_180021A30\",\"name\":\"LF3DDX11_Draw\",\"dir\":\"vibe\"},{\"addr\":\"0x1800059F0\",\"old\":\"sub_1800059F0\",\"name\":\"LF3DCalibration_UpdateEyeInfo\",\"dir\":\"vibe\"},{\"addr\":\"0x180005900\",\"old\":\"sub_180005900\",\"name\":\"LF3DCalibration_ApplyLensConstants\",\"dir\":\"vibe\"},{\"addr\":\"0x180010680\",\"old\":\"sub_180010680\",\"name\":\"LF3DCalibration_ParseLensFields\",\"dir\":\"vibe\"},{\"addr\":\"0x18000F8A0\",\"old\":\"sub_18000F8A0\",\"name\":\"LF3DCalibration_LoadEncodedFile\",\"dir\":\"vibe\"},{\"addr\":\"0x180006280\",\"old\":\"sub_180006280\",\"name\":\"LF3DCore_DrawIntoBoundTarget\",\"dir\":\"vibe\"},{\"addr\":\"0x1800063C0\",\"old\":\"sub_1800063C0\",\"name\":\"LF3DCore_CreateMappingPixelShader\",\"dir\":\"vibe\"},{\"addr\":\"0x180006400\",\"old\":\"sub_180006400\",\"name\":\"LF3DCore_BindInputSRV\",\"dir\":\"vibe\"},{\"addr\":\"0x180006430\",\"old\":\"sub_180006430\",\"name\":\"LF3DCore_UpdateMappingConstants\",\"dir\":\"vibe\"}],\"summary\":{\"total\":16,\"ok\":16,\"failed\":0,\"stopped\":false}}"
+      }
+    ],
+    "structuredContent": {
+      "func": [
+        {
+          "addr": "0x180021530",
+          "old": "sub_180021530",
+          "name": "LF3DDX11_Initialize",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1800215B0",
+          "old": "sub_1800215B0",
+          "name": "LF3DDX11_SetInputTexture2D",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1800218A0",
+          "old": "sub_1800218A0",
+          "name": "LF3D_SetViewAtlasFormat",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1800218D0",
+          "old": "sub_1800218D0",
+          "name": "LF3D_LoadDeviceConfigFromFile",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180021950",
+          "old": "sub_180021950",
+          "name": "LF3D_SetWindowScreenRect",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1800219B0",
+          "old": "sub_1800219B0",
+          "name": "LF3D_UpdateEyeInfo",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1800219E0",
+          "old": "sub_1800219E0",
+          "name": "LF3D_UpdateOffsetXb",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180021A30",
+          "old": "sub_180021A30",
+          "name": "LF3DDX11_Draw",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1800059F0",
+          "old": "sub_1800059F0",
+          "name": "LF3DCalibration_UpdateEyeInfo",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180005900",
+          "old": "sub_180005900",
+          "name": "LF3DCalibration_ApplyLensConstants",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180010680",
+          "old": "sub_180010680",
+          "name": "LF3DCalibration_ParseLensFields",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18000F8A0",
+          "old": "sub_18000F8A0",
+          "name": "LF3DCalibration_LoadEncodedFile",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180006280",
+          "old": "sub_180006280",
+          "name": "LF3DCore_DrawIntoBoundTarget",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1800063C0",
+          "old": "sub_1800063C0",
+          "name": "LF3DCore_CreateMappingPixelShader",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180006400",
+          "old": "sub_180006400",
+          "name": "LF3DCore_BindInputSRV",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180006430",
+          "old": "sub_180006430",
+          "name": "LF3DCore_UpdateMappingConstants",
+          "dir": "vibe"
+        }
+      ],
+      "summary": {
+        "total": 16,
+        "ok": 16,
+        "failed": 0,
+        "stopped": false
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

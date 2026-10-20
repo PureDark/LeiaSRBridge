@@ -1,0 +1,39 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18014ca40\",\"code\":\"__int64 __fastcall sub_18014CA40(__int64 a1)\\n{\\n  __int64 v2; // rcx\\n  __int64 result; // rax\\n\\n  *(_QWORD *)a1 = &AiStereo::Core::DepthEngineVino::`vftable'; /*0x18014ca59*/\\n  *(_DWORD *)(a1 + 8) = 252; /*0x18014ca5c*/\\n  *(_DWORD *)(a1 + 12) = 252; /*0x18014ca63*/\\n  *(_DWORD *)(a1 + 16) = 252; /*0x18014ca6a*/\\n  *(_DWORD *)(a1 + 20) = 252; /*0x18014ca71*/\\n  v2 = a1 + 24; /*0x18014ca78*/\\n  *(_OWORD *)v2 = 0; /*0x18014ca7f*/\\n  *(_QWORD *)(v2 + 16) = 0; /*0x18014ca84*/\\n  *(_QWORD *)(v2 + 24) = 0; /*0x18014ca88*/\\n  __wind /*0xf1c0000000000054*/\\n  {\\n    sub_18010EA80(a1: v2); /*0x18014ca99*/\\n    *(_OWORD *)(a1 + 56) = 0; /*0x18014caa6*/\\n    *(_QWORD *)(a1 + 72) = 0; /*0x18014caa9*/\\n    *(_QWORD *)(a1 + 80) = 0; /*0x18014caad*/\\n    __wind /*0xf1c0000000000048*/\\n    {\\n      sub_18010EA80(a1: a1 + 56); /*0x18014cabe*/\\n      *(_QWORD *)(a1 + 88) = 1; /*0x18014cac4*/\\n      *(_QWORD *)(a1 + 96) = 3; /*0x18014cacc*/\\n      *(_OWORD *)(a1 + 104) = 0; /*0x18014cadb*/\\n      *(_QWORD *)(a1 + 120) = 0; /*0x18014cade*/\\n      *(_QWORD *)(a1 + 128) = 0; /*0x18014cae2*/\\n      __wind /*0xf1c0000000000018*/\\n      {\\n        sub_18010EA80(a1: a1 + 104); /*0x18014caf3*/\\n        ov::InferRequest::InferRequest(this: (ov::InferRequest *)(a1 + 136)); /*0x18014caff*/\\n        result = a1; /*0x18014cb06*/\\n      }\\n      __unwind\\n      {\\n        sub_18010E0E0(a1: a1 + 56); /*0x1803b8a17*/\\n      }\\n    }\\n    __unwind\\n    {\\n      sub_18010E0E0(a1: a1 + 24); /*0x1803b8a07*/\\n    }\\n  }\\n  __unwind\\n  {\\n    sub_180133E60(a1); /*0xf1c0000000000040*/\\n  }\\n  return result; /*0x18014cb09*/\\n}\",\"refs\":[{\"addr\":\"0x180586428\",\"name\":\"??_7DepthEngineVino@Core@AiStereo@@6B@\"},{\"addr\":\"0x18010ea80\",\"name\":\"sub_18010EA80\"},{\"addr\":\"0x1803bbc90\",\"name\":\"??0InferRequest@ov@@QEAA@XZ\"},{\"addr\":\"0x18010e0e0\",\"name\":\"sub_18010E0E0\"},{\"addr\":\"0x180133e60\",\"name\":\"sub_180133E60\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18014ca40",
+      "code": "__int64 __fastcall sub_18014CA40(__int64 a1)\n{\n  __int64 v2; // rcx\n  __int64 result; // rax\n\n  *(_QWORD *)a1 = &AiStereo::Core::DepthEngineVino::`vftable'; /*0x18014ca59*/\n  *(_DWORD *)(a1 + 8) = 252; /*0x18014ca5c*/\n  *(_DWORD *)(a1 + 12) = 252; /*0x18014ca63*/\n  *(_DWORD *)(a1 + 16) = 252; /*0x18014ca6a*/\n  *(_DWORD *)(a1 + 20) = 252; /*0x18014ca71*/\n  v2 = a1 + 24; /*0x18014ca78*/\n  *(_OWORD *)v2 = 0; /*0x18014ca7f*/\n  *(_QWORD *)(v2 + 16) = 0; /*0x18014ca84*/\n  *(_QWORD *)(v2 + 24) = 0; /*0x18014ca88*/\n  __wind /*0xf1c0000000000054*/\n  {\n    sub_18010EA80(a1: v2); /*0x18014ca99*/\n    *(_OWORD *)(a1 + 56) = 0; /*0x18014caa6*/\n    *(_QWORD *)(a1 + 72) = 0; /*0x18014caa9*/\n    *(_QWORD *)(a1 + 80) = 0; /*0x18014caad*/\n    __wind /*0xf1c0000000000048*/\n    {\n      sub_18010EA80(a1: a1 + 56); /*0x18014cabe*/\n      *(_QWORD *)(a1 + 88) = 1; /*0x18014cac4*/\n      *(_QWORD *)(a1 + 96) = 3; /*0x18014cacc*/\n      *(_OWORD *)(a1 + 104) = 0; /*0x18014cadb*/\n      *(_QWORD *)(a1 + 120) = 0; /*0x18014cade*/\n      *(_QWORD *)(a1 + 128) = 0; /*0x18014cae2*/\n      __wind /*0xf1c0000000000018*/\n      {\n        sub_18010EA80(a1: a1 + 104); /*0x18014caf3*/\n        ov::InferRequest::InferRequest(this: (ov::InferRequest *)(a1 + 136)); /*0x18014caff*/\n        result = a1; /*0x18014cb06*/\n      }\n      __unwind\n      {\n        sub_18010E0E0(a1: a1 + 56); /*0x1803b8a17*/\n      }\n    }\n    __unwind\n    {\n      sub_18010E0E0(a1: a1 + 24); /*0x1803b8a07*/\n    }\n  }\n  __unwind\n  {\n    sub_180133E60(a1); /*0xf1c0000000000040*/\n  }\n  return result; /*0x18014cb09*/\n}",
+      "refs": [
+        {
+          "addr": "0x180586428",
+          "name": "??_7DepthEngineVino@Core@AiStereo@@6B@"
+        },
+        {
+          "addr": "0x18010ea80",
+          "name": "sub_18010EA80"
+        },
+        {
+          "addr": "0x1803bbc90",
+          "name": "??0InferRequest@ov@@QEAA@XZ"
+        },
+        {
+          "addr": "0x18010e0e0",
+          "name": "sub_18010E0E0"
+        },
+        {
+          "addr": "0x180133e60",
+          "name": "sub_180133E60"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

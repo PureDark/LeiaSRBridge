@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"latency\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\BOE_3DET_SDK.dll\",\"filename\":\"BOE_3DET_SDK.dll\",\"created_at\":\"2026-10-20T21:47:58.175695\",\"last_accessed\":\"2026-10-20T21:47:58.175695\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_caches\",\"ok\":true,\"ms\":167.93},{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.01}],\"health\":{\"status\":\"ok\",\"uptime_sec\":0.972,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\BOE_3DET_SDK.dll.i64\",\"module\":null,\"input_path\":null,\"imagebase\":\"0x0\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":1527}},\"message\":\"Binary opened: BOE_3DET_SDK.dll (latency)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "latency",
+        "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\BOE_3DET_SDK.dll",
+        "filename": "BOE_3DET_SDK.dll",
+        "created_at": "2026-10-20T21:47:58.175695",
+        "last_accessed": "2026-10-20T21:47:58.175695",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_caches",
+            "ok": true,
+            "ms": 167.93
+          },
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.01
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 0.972,
+          "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\BOE_3DET_SDK.dll.i64",
+          "module": null,
+          "input_path": null,
+          "imagebase": "0x0",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": true,
+          "strings_cache_size": 1527
+        }
+      },
+      "message": "Binary opened: BOE_3DET_SDK.dll (latency)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

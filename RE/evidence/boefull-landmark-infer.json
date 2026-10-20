@@ -1,0 +1,42 @@
+{
+  "addr": "0x1801BE770",
+  "code": "__int64 __fastcall BoeLandmark::doInfer(__int64 a1)\n{\n  __int64 v2; // rbx\n  void *v3; // rcx\n  __int64 v4; // rbx\n  void *Block[2]; // [rsp+30h] [rbp-48h] BYREF\n  __m128i si128; // [rsp+40h] [rbp-38h]\n\n  if ( *(_QWORD *)(a1 + 32) == 0 ) /*0x1801be790*/\n  {\n    v2 = qword_180917B38; /*0x1801be796*/\n    *(_OWORD *)Block = 0; /*0x1801be7a0*/\n    __eh34_enter_wind_state(-1, 0); /*0xf1c000000000002c*/\n    Block[0] = (void *)sub_1801B82B0(a1: 32); /*0x1801be7b8*/\n    si128 = _mm_load_si128((const __m128i *)&xmmword_180655360); /*0x1801be7c5*/\n    strcpy((char *)Block[0], \"Please do init first !\"); /*0x1801be7d2*/\n    sub_1801BB350(a1: v2, a2: a1, a3: Block); /*0x1801be7f8*/\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000020*/\n      goto unwind_state_0; /*0xf1c0000000000020*/\n    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000024*/\n    if ( si128.m128i_i64[1] <= 0xFuLL ) /*0x1801be807*/\n      return 0; /*0x1801be807*/\n    v3 = Block[0]; /*0x1801be810*/\n    if ( (unsigned __int64)(si128.m128i_i64[1] + 1) >= 0x1000 ) /*0x1801be81f*/\n    {\n      v3 = *((void **)Block[0] - 1); /*0x1801be829*/\n      if ( (unsigned __int64)((char *)Block[0] - (char *)v3 - 8) > 0x1F ) /*0x1801be838*/\n        invoke_watson(Expression: nullptr, FunctionName: nullptr, FileName: nullptr, LineNo: 0, Reserved: 0); /*0x1801be851*/\n    }\nLABEL_13:\n    j_j_free(Block: v3); /*0x1801be910*/\n    return 0; /*0x1801be917*/\n  }\n  if ( (unsigned __int8)sub_1801BFA50() == 0 ) /*0x1801be85f*/\n  {\n    v4 = qword_180917B38; /*0x1801be865*/\n    *(_OWORD *)Block = 0; /*0x1801be86f*/\n    Block[0] = (void *)sub_1801B82B0(a1: 32); /*0x1801be887*/\n    si128 = _mm_load_si128((const __m128i *)&xmmword_180655350); /*0x1801be894*/\n    strcpy((char *)Block[0], \"Failed to landmark !\"); /*0x1801be8a1*/\n    __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000018*/\n    sub_1801BB350(a1: v4, a2: a1, a3: Block); /*0x1801be8bc*/\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000004*/\n    {\nunwind_state_0:\n      sub_1801BA080(a1: Block); /*0xf1c0000000000008*/\n      __eh34_propagate_exception_into_caller(0, -1); /*0xf1c000000000000c*/\n    }\n    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000010*/\n    if ( si128.m128i_i64[1] <= 0xFuLL ) /*0x1801be8cb*/\n      return 0; /*0x1801be8cb*/\n    v3 = Block[0]; /*0x1801be8d0*/\n    if ( (unsigned __int64)(si128.m128i_i64[1] + 1) >= 0x1000 ) /*0x1801be8df*/\n    {\n      v3 = *((void **)Block[0] - 1); /*0x1801be8e5*/\n      if ( (unsigned __int64)((char *)Block[0] - (char *)v3 - 8) > 0x1F ) /*0x1801be8f4*/\n        invoke_watson(Expression: nullptr, FunctionName: nullptr, FileName: nullptr, LineNo: 0, Reserved: 0); /*0x1801be909*/\n    }\n    goto LABEL_13; /*0x1801be8f4*/\n  }\n  return 1; /*0x1801be91e*/\n}",
+  "refs": [
+    {
+      "addr": "0x180917b38",
+      "name": "qword_180917B38"
+    },
+    {
+      "addr": "0x1801b82b0",
+      "name": "sub_1801B82B0"
+    },
+    {
+      "addr": "0x180655360",
+      "name": "xmmword_180655360"
+    },
+    {
+      "addr": "0x1801bb350",
+      "name": "sub_1801BB350"
+    },
+    {
+      "addr": "0x180653c08",
+      "name": "_invoke_watson"
+    },
+    {
+      "addr": "0x18062fda8",
+      "name": "j_j_free"
+    },
+    {
+      "addr": "0x180655350",
+      "name": "xmmword_180655350"
+    },
+    {
+      "addr": "0x1801ba080",
+      "name": "sub_1801BA080"
+    },
+    {
+      "addr": "0x1801bfa50",
+      "name": "sub_1801BFA50"
+    }
+  ]
+}

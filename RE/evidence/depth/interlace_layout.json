@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18005F3D0\",\"code\":\"__int64 __fastcall sub_18005F3D0(__int64 a1, int a2)\\n{\\n  if ( a2 != 0 ) /*0x18005f3e8*/\\n  {\\n    if ( a2 == 1 ) /*0x18005f3ee*/\\n    {\\n      *(_DWORD *)(a1 + 252) = 0; /*0x18005f45e*/\\n      *(_DWORD *)(a1 + 256) = 2; /*0x18005f47e*/\\n      return a1; /*0x18005f479*/\\n    }\\n    else if ( a2 == 2 ) /*0x18005f3f4*/\\n    {\\n      *(_DWORD *)(a1 + 252) = 0; /*0x18005f4a0*/\\n      *(_DWORD *)(a1 + 256) = 4; /*0x18005f4c0*/\\n      return a1; /*0x18005f4bb*/\\n    }\\n    else\\n    {\\n      if ( a2 == 3 ) /*0x18005f3fe*/\\n      {\\n        *(_DWORD *)(a1 + 252) = 1; /*0x18005f4df*/\\n        *(_DWORD *)(a1 + 256) = 4; /*0x18005f4ff*/\\n      }\\n      else\\n      {\\n        *(_DWORD *)(a1 + 252) = 0; /*0x18005f510*/\\n        *(_DWORD *)(a1 + 256) = 2; /*0x18005f51f*/\\n      }\\n      return a1; /*0x18005f51a*/\\n    }\\n  }\\n  else\\n  {\\n    *(_DWORD *)(a1 + 252) = 1; /*0x18005f41c*/\\n    *(_DWORD *)(a1 + 256) = 2; /*0x18005f43c*/\\n    return a1; /*0x18005f437*/\\n  }\\n}\"}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18005F3D0",
+      "code": "__int64 __fastcall sub_18005F3D0(__int64 a1, int a2)\n{\n  if ( a2 != 0 ) /*0x18005f3e8*/\n  {\n    if ( a2 == 1 ) /*0x18005f3ee*/\n    {\n      *(_DWORD *)(a1 + 252) = 0; /*0x18005f45e*/\n      *(_DWORD *)(a1 + 256) = 2; /*0x18005f47e*/\n      return a1; /*0x18005f479*/\n    }\n    else if ( a2 == 2 ) /*0x18005f3f4*/\n    {\n      *(_DWORD *)(a1 + 252) = 0; /*0x18005f4a0*/\n      *(_DWORD *)(a1 + 256) = 4; /*0x18005f4c0*/\n      return a1; /*0x18005f4bb*/\n    }\n    else\n    {\n      if ( a2 == 3 ) /*0x18005f3fe*/\n      {\n        *(_DWORD *)(a1 + 252) = 1; /*0x18005f4df*/\n        *(_DWORD *)(a1 + 256) = 4; /*0x18005f4ff*/\n      }\n      else\n      {\n        *(_DWORD *)(a1 + 252) = 0; /*0x18005f510*/\n        *(_DWORD *)(a1 + 256) = 2; /*0x18005f51f*/\n      }\n      return a1; /*0x18005f51a*/\n    }\n  }\n  else\n  {\n    *(_DWORD *)(a1 + 252) = 1; /*0x18005f41c*/\n    *(_DWORD *)(a1 + 256) = 2; /*0x18005f43c*/\n    return a1; /*0x18005f437*/\n  }\n}"
+    },
+    "isError": false
+  },
+  "id": 1
+}

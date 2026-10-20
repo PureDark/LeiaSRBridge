@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"tracking\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: FaceTrackingManagerService.dll (tracking)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "tracking",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: FaceTrackingManagerService.dll (tracking)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "SR Service",
+    "Service": {
+      "Name": "SR Service",
+      "State": "Stopped",
+      "StartMode": "Unknown",
+      "StartName": null,
+      "PathName": null,
+      "ProcessId": 0,
+      "ExitCode": 1067
+    },
+    "RegistryExists": false,
+    "Executable": "C:\\Program Files\\LeiaSR\\Platform\\bin\\SRService.exe",
+    "SignatureStatus": "Valid",
+    "SHA256": "99D4B1645DBA8A73BB0530F0EBB8B1C7EACC6254AFFC19C8F9D65418FCA586FA"
+  },
+  {
+    "Name": "SR Eye Tracker",
+    "Service": {
+      "Name": "SR Eye Tracker",
+      "State": "Stopped",
+      "StartMode": "Unknown",
+      "StartName": null,
+      "PathName": null,
+      "ProcessId": 0,
+      "ExitCode": 0
+    },
+    "RegistryExists": false,
+    "Executable": "C:\\Program Files\\LeiaSR\\Tracker\\bin\\SREyeTracker.exe",
+    "SignatureStatus": "Valid",
+    "SHA256": "91B02C13592167842023151804C0FE50515BF1609791FA247D2F1385EA97F261"
+  }
+]

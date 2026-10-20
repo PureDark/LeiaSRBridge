@@ -1,0 +1,15 @@
+{
+  "edits": [
+    {
+      "addr": "0x18005F530",
+      "kind": "function",
+      "signature": "void *__fastcall BOE_MapShaderConstants(void *self, float x, float y, float z, unsigned int mode, int inputWidth, int inputHeight);"
+    },
+    {
+      "addr": "0x180058A00",
+      "kind": "function",
+      "signature": "float *__fastcall BOE_MakeFloat3(float *result, float x, float y, float z);"
+    }
+  ],
+  "database": "interlace"
+}

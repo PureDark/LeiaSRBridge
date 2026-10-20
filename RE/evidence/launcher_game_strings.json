@@ -1,0 +1,329 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":77,\"matches\":[{\"addr\":\"0x180016798\",\"string\":\"game_monitor\"},{\"addr\":\"0x1800167a8\",\"string\":\"game_monitor/event\"},{\"addr\":\"0x180016888\",\"string\":\"stopGameMonitor\"},{\"addr\":\"0x180016898\",\"string\":\"stopGameMonitor: monitor thread joined\"},{\"addr\":\"0x1800168c0\",\"string\":\"addGame\"},{\"addr\":\"0x1800168e8\",\"string\":\"removeGame\"},{\"addr\":\"0x180016918\",\"string\":\"removeAllGames\"},{\"addr\":\"0x180016960\",\"string\":\"StartMonitoring is_monitoring_: \"},{\"addr\":\"0x180016988\",\"string\":\"StopMonitoring signal sent (no join)\"},{\"addr\":\"0x1800169b8\",\"string\":\"addGame gameId: \"},{\"addr\":\"0x1800169d0\",\"string\":\"addGame gameId exist, resetting state: \"},{\"addr\":\"0x1800169f8\",\"string\":\"addGame gameId add to list: \"},{\"addr\":\"0x180016a18\",\"string\":\"addGame platform: \"},{\"addr\":\"0x180016a38\",\"string\":\"addGame exeName: \"},{\"addr\":\"0x180016a80\",\"string\":\"addGame lastStateChange: \"},{\"addr\":\"0x180016aa0\",\"string\":\"addGame begin: \"},{\"addr\":\"0x180016ab0\",\"string\":\"RemoveGame: last game removed, signaling monitor to stop\"},{\"addr\":\"0x180016af0\",\"string\":\"RemoveAllGames: all games removed, signaling monitor to stop\"},{\"addr\":\"0x180016b38\",\"string\":\"MonitorLoop exiting (games: \"},{\"addr\":\"0x180016b78\",\"string\":\"UpdateRunningStability: gameId=\"},{\"addr\":\"0x180016bb0\",\"string\":\"UpdateGameState elapsed: \"},{\"addr\":\"0x180016bd0\",\"string\":\"addGame UpdateGameState: state = \"},{\"addr\":\"0x180016bf8\",\"string\":\"=== UpdateGameState DEBUG ===\"},{\"addr\":\"0x180016c18\",\"string\":\"Current game state: \"},{\"addr\":\"0x180016c30\",\"string\":\"Calling IsGameRunning...\"},{\"addr\":\"0x180016c50\",\"string\":\"IsGameRunning returned TRUE - checking for state transition\"},{\"addr\":\"0x180016c90\",\"string\":\"State transition confirmed to GAME_RUNNING\"},{\"addr\":\"0x180016cc0\",\"string\":\"State transition to GAME_RUNNING pending confirmation\"},{\"addr\":\"0x180016cf8\",\"string\":\"IsGameRunning returned FALSE - staying in current state\"},{\"addr\":\"0x180016d30\",\"string\":\"State transition confirmed to GAME_STARTING\"},{\"addr\":\"0x180016d60\",\"string\":\" timeSinceStarting=\"},{\"addr\":\"0x180016d80\",\"string\":\"Non-Steam GAME_STARTING: process not found, consecutive miss count=\"},{\"addr\":\"0x180016dd0\",\"string\":\"Non-Steam game process disappeared in GAME_STARTING, transitioning to GAME_EXITED\"},{\"addr\":\"0x180016e30\",\"string\":\"Non-Steam GAME_STARTING: process never seen yet (possibly downloading/updating), waiting...\"},{\"addr\":\"0x180016e90\",\"string\":\"Final game state: \"},{\"addr\":\"0x180016ea8\",\"string\":\"=== GAME_RUNNING STATE DEBUG ===\"},{\"addr\":\"0x180016ed0\",\"string\":\"Calling IsGameRunning for running game...\"},{\"addr\":\"0x180016f00\",\"string\":\"IsGameRunning returned FALSE for running game\"},{\"addr\":\"0x180016f30\",\"string\":\"Game exit confirmed, transitioning to GAME_EXITED\"},{\"addr\":\"0x180016f68\",\"string\":\"State transition to GAME_EXITED pending confirmation\"},{\"addr\":\"0x180016fa0\",\"string\":\"IsGameRunning returned TRUE - game continues running\"},{\"addr\":\"0x180016ff0\",\"string\":\"EpicGamesLauncher.exe\"},{\"addr\":\"0x180017020\",\"string\":\"WeGame.exe\"},{\"addr\":\"0x1800170f8\",\"string\":\"=== IsGameRunning DEBUG ===\"},{\"addr\":\"0x180017128\",\"string\":\"Steam game ID: \"},{\"addr\":\"0x180017138\",\"string\":\"Calling CheckSteamGameRunning...\"},{\"addr\":\"0x180017170\",\"string\":\"CheckSteamGameRunning returned: \"},{\"addr\":\"0x1800171b0\",\"string\":\"Final IsGameRunning result: \"},{\"addr\":\"0x180017318\",\"string\":\" gameState=\"},{\"addr\":\"0x180017390\",\"string\":\"Steam game \"},{\"addr\":\"0x1800173a8\",\"string\":\"=== STARTUP PHASE DEBUG ===\"},{\"addr\":\"0x180017410\",\"string\":\"gameState: \"},{\"addr\":\"0x180017438\",\"string\":\"Steam game startup confirmed (clean start): \"},{\"addr\":\"0x180017470\",\"string\":\"Steam game startup (clean): waiting for stability (\"},{\"addr\":\"0x1800174a8\",\"string\":\"Steam game startup confirmed (after oscillation): \"},{\"addr\":\"0x1800174e0\",\"string\":\"Steam game startup (oscillation detected): waiting for stability (\"},{\"addr\":\"0x180017530\",\"string\":\"Steam game startup: running=0 detected (oscillation flag set), continuing to wait\"},{\"addr\":\"0x1800175a8\",\"string\":\"Steam game exit confirmed after \"},{\"addr\":\"0x1800175f0\",\"string\":\"Steam game: transient running=0 (\"},{\"addr\":\"0x180017618\",\"string\":\"addGame FindProcessId: pid = \"},{\"addr\":\"0x180017680\",\"string\":\"Filtering rapid STARTING->RUNNING transition: delaying notification\"},{\"addr\":\"0x1800176e0\",\"string\":\" for game \"},{\"addr\":\"0x180017718\",\"string\":\"processId\"},{\"addr\":\"0x1800177b8\",\"string\":\"GameMonitorStreamHandler OnListenInternal ok\\n\"},{\"addr\":\"0x1800177e8\",\"string\":\"GameMonitorStreamHandler OnCancelInternal ok\\n\"},{\"addr\":\"0x18001c010\",\"string\":\"E:\\\\devops\\\\agent\\\\workspace\\\\p-77070d4eaed140e59334544e4780bb92\\\\src\\\\Modex\\\\build\\\\windows\\\\x64\\\\plugins\\\\game_monitor\\\\Release\\\\game_monitor_plugin.pdb\"},{\"addr\":\"0x18001ea22\",\"string\":\"game_monitor_plugin.dll\"},{\"addr\":\"0x18001ea3a\",\"string\":\"GameMonitorPluginCApiRegisterWithRegistrar\"},{\"addr\":\"0x18001f436\",\"string\":\"Process32FirstW\"},{\"addr\":\"0x18001f448\",\"string\":\"Process32NextW\"},{\"addr\":\"0x180020ea8\",\"string\":\"IsProcessorFeaturePresent\"},{\"addr\":\"0x180020ec4\",\"string\":\"GetCurrentProcess\"},{\"addr\":\"0x180020ed8\",\"string\":\"TerminateProcess\"},{\"addr\":\"0x180020f06\",\"string\":\"GetCurrentProcessId\"},{\"addr\":\"0x180021768\",\"string\":\".?AVGameMonitorPlugin@game_monitor@@\"},{\"addr\":\"0x1800217a0\",\"string\":\".?AVGameMonitorStreamHandler@game_monitor@@\"},{\"addr\":\"0x1800219d0\",\"string\":\".?AV?$_Ref_count_obj2@UGameInstance@GameMonitorPlugin@game_monitor@@@std@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 77,
+      "matches": [
+        {
+          "addr": "0x180016798",
+          "string": "game_monitor"
+        },
+        {
+          "addr": "0x1800167a8",
+          "string": "game_monitor/event"
+        },
+        {
+          "addr": "0x180016888",
+          "string": "stopGameMonitor"
+        },
+        {
+          "addr": "0x180016898",
+          "string": "stopGameMonitor: monitor thread joined"
+        },
+        {
+          "addr": "0x1800168c0",
+          "string": "addGame"
+        },
+        {
+          "addr": "0x1800168e8",
+          "string": "removeGame"
+        },
+        {
+          "addr": "0x180016918",
+          "string": "removeAllGames"
+        },
+        {
+          "addr": "0x180016960",
+          "string": "StartMonitoring is_monitoring_: "
+        },
+        {
+          "addr": "0x180016988",
+          "string": "StopMonitoring signal sent (no join)"
+        },
+        {
+          "addr": "0x1800169b8",
+          "string": "addGame gameId: "
+        },
+        {
+          "addr": "0x1800169d0",
+          "string": "addGame gameId exist, resetting state: "
+        },
+        {
+          "addr": "0x1800169f8",
+          "string": "addGame gameId add to list: "
+        },
+        {
+          "addr": "0x180016a18",
+          "string": "addGame platform: "
+        },
+        {
+          "addr": "0x180016a38",
+          "string": "addGame exeName: "
+        },
+        {
+          "addr": "0x180016a80",
+          "string": "addGame lastStateChange: "
+        },
+        {
+          "addr": "0x180016aa0",
+          "string": "addGame begin: "
+        },
+        {
+          "addr": "0x180016ab0",
+          "string": "RemoveGame: last game removed, signaling monitor to stop"
+        },
+        {
+          "addr": "0x180016af0",
+          "string": "RemoveAllGames: all games removed, signaling monitor to stop"
+        },
+        {
+          "addr": "0x180016b38",
+          "string": "MonitorLoop exiting (games: "
+        },
+        {
+          "addr": "0x180016b78",
+          "string": "UpdateRunningStability: gameId="
+        },
+        {
+          "addr": "0x180016bb0",
+          "string": "UpdateGameState elapsed: "
+        },
+        {
+          "addr": "0x180016bd0",
+          "string": "addGame UpdateGameState: state = "
+        },
+        {
+          "addr": "0x180016bf8",
+          "string": "=== UpdateGameState DEBUG ==="
+        },
+        {
+          "addr": "0x180016c18",
+          "string": "Current game state: "
+        },
+        {
+          "addr": "0x180016c30",
+          "string": "Calling IsGameRunning..."
+        },
+        {
+          "addr": "0x180016c50",
+          "string": "IsGameRunning returned TRUE - checking for state transition"
+        },
+        {
+          "addr": "0x180016c90",
+          "string": "State transition confirmed to GAME_RUNNING"
+        },
+        {
+          "addr": "0x180016cc0",
+          "string": "State transition to GAME_RUNNING pending confirmation"
+        },
+        {
+          "addr": "0x180016cf8",
+          "string": "IsGameRunning returned FALSE - staying in current state"
+        },
+        {
+          "addr": "0x180016d30",
+          "string": "State transition confirmed to GAME_STARTING"
+        },
+        {
+          "addr": "0x180016d60",
+          "string": " timeSinceStarting="
+        },
+        {
+          "addr": "0x180016d80",
+          "string": "Non-Steam GAME_STARTING: process not found, consecutive miss count="
+        },
+        {
+          "addr": "0x180016dd0",
+          "string": "Non-Steam game process disappeared in GAME_STARTING, transitioning to GAME_EXITED"
+        },
+        {
+          "addr": "0x180016e30",
+          "string": "Non-Steam GAME_STARTING: process never seen yet (possibly downloading/updating), waiting..."
+        },
+        {
+          "addr": "0x180016e90",
+          "string": "Final game state: "
+        },
+        {
+          "addr": "0x180016ea8",
+          "string": "=== GAME_RUNNING STATE DEBUG ==="
+        },
+        {
+          "addr": "0x180016ed0",
+          "string": "Calling IsGameRunning for running game..."
+        },
+        {
+          "addr": "0x180016f00",
+          "string": "IsGameRunning returned FALSE for running game"
+        },
+        {
+          "addr": "0x180016f30",
+          "string": "Game exit confirmed, transitioning to GAME_EXITED"
+        },
+        {
+          "addr": "0x180016f68",
+          "string": "State transition to GAME_EXITED pending confirmation"
+        },
+        {
+          "addr": "0x180016fa0",
+          "string": "IsGameRunning returned TRUE - game continues running"
+        },
+        {
+          "addr": "0x180016ff0",
+          "string": "EpicGamesLauncher.exe"
+        },
+        {
+          "addr": "0x180017020",
+          "string": "WeGame.exe"
+        },
+        {
+          "addr": "0x1800170f8",
+          "string": "=== IsGameRunning DEBUG ==="
+        },
+        {
+          "addr": "0x180017128",
+          "string": "Steam game ID: "
+        },
+        {
+          "addr": "0x180017138",
+          "string": "Calling CheckSteamGameRunning..."
+        },
+        {
+          "addr": "0x180017170",
+          "string": "CheckSteamGameRunning returned: "
+        },
+        {
+          "addr": "0x1800171b0",
+          "string": "Final IsGameRunning result: "
+        },
+        {
+          "addr": "0x180017318",
+          "string": " gameState="
+        },
+        {
+          "addr": "0x180017390",
+          "string": "Steam game "
+        },
+        {
+          "addr": "0x1800173a8",
+          "string": "=== STARTUP PHASE DEBUG ==="
+        },
+        {
+          "addr": "0x180017410",
+          "string": "gameState: "
+        },
+        {
+          "addr": "0x180017438",
+          "string": "Steam game startup confirmed (clean start): "
+        },
+        {
+          "addr": "0x180017470",
+          "string": "Steam game startup (clean): waiting for stability ("
+        },
+        {
+          "addr": "0x1800174a8",
+          "string": "Steam game startup confirmed (after oscillation): "
+        },
+        {
+          "addr": "0x1800174e0",
+          "string": "Steam game startup (oscillation detected): waiting for stability ("
+        },
+        {
+          "addr": "0x180017530",
+          "string": "Steam game startup: running=0 detected (oscillation flag set), continuing to wait"
+        },
+        {
+          "addr": "0x1800175a8",
+          "string": "Steam game exit confirmed after "
+        },
+        {
+          "addr": "0x1800175f0",
+          "string": "Steam game: transient running=0 ("
+        },
+        {
+          "addr": "0x180017618",
+          "string": "addGame FindProcessId: pid = "
+        },
+        {
+          "addr": "0x180017680",
+          "string": "Filtering rapid STARTING->RUNNING transition: delaying notification"
+        },
+        {
+          "addr": "0x1800176e0",
+          "string": " for game "
+        },
+        {
+          "addr": "0x180017718",
+          "string": "processId"
+        },
+        {
+          "addr": "0x1800177b8",
+          "string": "GameMonitorStreamHandler OnListenInternal ok\n"
+        },
+        {
+          "addr": "0x1800177e8",
+          "string": "GameMonitorStreamHandler OnCancelInternal ok\n"
+        },
+        {
+          "addr": "0x18001c010",
+          "string": "E:\\devops\\agent\\workspace\\p-77070d4eaed140e59334544e4780bb92\\src\\Modex\\build\\windows\\x64\\plugins\\game_monitor\\Release\\game_monitor_plugin.pdb"
+        },
+        {
+          "addr": "0x18001ea22",
+          "string": "game_monitor_plugin.dll"
+        },
+        {
+          "addr": "0x18001ea3a",
+          "string": "GameMonitorPluginCApiRegisterWithRegistrar"
+        },
+        {
+          "addr": "0x18001f436",
+          "string": "Process32FirstW"
+        },
+        {
+          "addr": "0x18001f448",
+          "string": "Process32NextW"
+        },
+        {
+          "addr": "0x180020ea8",
+          "string": "IsProcessorFeaturePresent"
+        },
+        {
+          "addr": "0x180020ec4",
+          "string": "GetCurrentProcess"
+        },
+        {
+          "addr": "0x180020ed8",
+          "string": "TerminateProcess"
+        },
+        {
+          "addr": "0x180020f06",
+          "string": "GetCurrentProcessId"
+        },
+        {
+          "addr": "0x180021768",
+          "string": ".?AVGameMonitorPlugin@game_monitor@@"
+        },
+        {
+          "addr": "0x1800217a0",
+          "string": ".?AVGameMonitorStreamHandler@game_monitor@@"
+        },
+        {
+          "addr": "0x1800219d0",
+          "string": ".?AV?$_Ref_count_obj2@UGameInstance@GameMonitorPlugin@game_monitor@@@std@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,162 @@
+{
+  "addr": "0x1800B24E0",
+  "code": "void __fastcall sub_1800B24E0(\n        __int64 a1,\n        void **a2,\n        __int64 a3,\n        __int64 a4,\n        double *a5,\n        double *a6,\n        double *a7,\n        double *a8,\n        double *a9,\n        double *a10,\n        __int64 a11)\n{\n  char *v14; // rax\n  __int128 *v15; // rcx\n  cv *v16; // rcx\n  unsigned int v17; // eax\n  const struct cv::_InputArray *v18; // r9\n  double v19; // xmm0_8\n  double v20; // xmm10_8\n  double v21; // xmm6_8\n  int v22; // esi\n  _DWORD *v23; // rbx\n  bool v24; // di\n  __int64 v25; // rdx\n  __int64 v26; // rcx\n  double v27; // xmm0_8\n  double *v28; // rbx\n  double v29; // xmm0_8\n  double *v30; // rdi\n  __int64 v31; // rdx\n  __int64 v32; // rcx\n  double v33; // xmm0_8\n  double *v34; // rax\n  __int64 v35; // rax\n  double *v36; // rbx\n  __int64 v37; // rdi\n  __int64 v38; // r8\n  double *v39; // rdx\n  double *v40; // rcx\n  double *v41; // rdx\n  double *v42; // rdx\n  double *v43; // rdx\n  double *v44; // rdx\n  double *v45; // rdx\n  double *v46; // rdx\n  double *v47; // rdx\n  __int64 v48; // rbx\n  double *v49; // r8\n  __int64 v50; // rdx\n  __int64 v51; // rax\n  __int64 v52; // rdi\n  __int64 v53; // rbx\n  __int64 v54; // rdx\n  __int64 v55; // rax\n  __int64 v56; // rax\n  __int64 v57; // rbx\n  __int64 v58; // rax\n  __int64 v59; // rdx\n  __int64 v60; // rax\n  __int64 v61; // rax\n  _QWORD *v62; // rax\n  char *v63; // rcx\n  const struct cv::_OutputArray *v64; // [rsp+38h] [rbp-D0h]\n  __int64 v65; // [rsp+48h] [rbp-C0h] BYREF\n  void **v66; // [rsp+50h] [rbp-B8h]\n  double *v67; // [rsp+58h] [rbp-B0h]\n  __int64 v68; // [rsp+60h] [rbp-A8h]\n  unsigned __int64 v69; // [rsp+68h] [rbp-A0h]\n  __int64 v70; // [rsp+70h] [rbp-98h] BYREF\n  void **v71; // [rsp+78h] [rbp-90h]\n  double *v72; // [rsp+80h] [rbp-88h]\n  __int64 v73; // [rsp+88h] [rbp-80h]\n  unsigned __int64 v74; // [rsp+90h] [rbp-78h]\n  char *v75; // [rsp+98h] [rbp-70h] BYREF\n  char *v76; // [rsp+A0h] [rbp-68h]\n  char *v77; // [rsp+A8h] [rbp-60h]\n  double *v78; // [rsp+B0h] [rbp-58h]\n  double *v79; // [rsp+B8h] [rbp-50h]\n  double *v80; // [rsp+C0h] [rbp-48h]\n  __int64 v81; // [rsp+C8h] [rbp-40h]\n  int v82; // [rsp+D0h] [rbp-38h] BYREF\n  _BYTE *v83; // [rsp+D8h] [rbp-30h]\n  __int64 v84; // [rsp+E0h] [rbp-28h]\n  int v85; // [rsp+E8h] [rbp-20h] BYREF\n  _DWORD *v86; // [rsp+F0h] [rbp-18h]\n  __int64 v87; // [rsp+F8h] [rbp-10h]\n  int v88; // [rsp+100h] [rbp-8h] BYREF\n  __int64 v89; // [rsp+108h] [rbp+0h]\n  __int64 v90; // [rsp+110h] [rbp+8h]\n  int v91; // [rsp+118h] [rbp+10h] BYREF\n  __int64 v92; // [rsp+120h] [rbp+18h]\n  __int64 v93; // [rsp+128h] [rbp+20h]\n  _DWORD v94[4]; // [rsp+138h] [rbp+30h] BYREF\n  _DWORD *v95; // [rsp+178h] [rbp+70h]\n  __int128 v96; // [rsp+198h] [rbp+90h] BYREF\n  _QWORD v97[12]; // [rsp+1A8h] [rbp+A0h] BYREF\n  _QWORD v98[12]; // [rsp+208h] [rbp+100h] BYREF\n  unsigned __int64 v99; // [rsp+268h] [rbp+160h] BYREF\n  char v100; // [rsp+270h] [rbp+168h] BYREF\n  _DWORD v101[24]; // [rsp+2F8h] [rbp+1F0h] BYREF\n  _BYTE v102[16]; // [rsp+358h] [rbp+250h] BYREF\n  double *v103; // [rsp+368h] [rbp+260h]\n  __int64 *v104; // [rsp+3A0h] [rbp+298h]\n  _BYTE v105[96]; // [rsp+3B8h] [rbp+2B0h] BYREF\n  _BYTE v106[96]; // [rsp+418h] [rbp+310h] BYREF\n  _BYTE v107[96]; // [rsp+478h] [rbp+370h] BYREF\n  _BYTE v108[16]; // [rsp+4D8h] [rbp+3D0h] BYREF\n  char v109[96]; // [rsp+4E8h] [rbp+3E0h] BYREF\n  char v110[96]; // [rsp+548h] [rbp+440h] BYREF\n  char v111[144]; // [rsp+5A8h] [rbp+4A0h] BYREF\n  _BYTE v112[16]; // [rsp+638h] [rbp+530h] BYREF\n  char v113[96]; // [rsp+648h] [rbp+540h] BYREF\n  char v114[96]; // [rsp+6A8h] [rbp+5A0h] BYREF\n  char v115[144]; // [rsp+708h] [rbp+600h] BYREF\n  _BYTE v116[16]; // [rsp+798h] [rbp+690h] BYREF\n  char v117[96]; // [rsp+7A8h] [rbp+6A0h] BYREF\n  char v118[96]; // [rsp+808h] [rbp+700h] BYREF\n  char v119[144]; // [rsp+868h] [rbp+760h] BYREF\n  _BYTE v120[16]; // [rsp+8F8h] [rbp+7F0h] BYREF\n  char v121[96]; // [rsp+908h] [rbp+800h] BYREF\n  char v122[96]; // [rsp+968h] [rbp+860h] BYREF\n  char v123[144]; // [rsp+9C8h] [rbp+8C0h] BYREF\n  _BYTE v124[16]; // [rsp+A58h] [rbp+950h] BYREF\n  char v125[96]; // [rsp+A68h] [rbp+960h] BYREF\n  char v126[96]; // [rsp+AC8h] [rbp+9C0h] BYREF\n  char v127[144]; // [rsp+B28h] [rbp+A20h] BYREF\n  _BYTE v128[16]; // [rsp+BB8h] [rbp+AB0h] BYREF\n  char v129[96]; // [rsp+BC8h] [rbp+AC0h] BYREF\n  char v130[96]; // [rsp+C28h] [rbp+B20h] BYREF\n  char v131[144]; // [rsp+C88h] [rbp+B80h] BYREF\n  _BYTE v132[16]; // [rsp+D18h] [rbp+C10h] BYREF\n  char v133[96]; // [rsp+D28h] [rbp+C20h] BYREF\n  char v134[96]; // [rsp+D88h] [rbp+C80h] BYREF\n  char v135[144]; // [rsp+DE8h] [rbp+CE0h] BYREF\n\n  v78 = a8; /*0x1800b2563*/\n  v79 = a9; /*0x1800b256e*/\n  v80 = a10; /*0x1800b2579*/\n  v81 = a11; /*0x1800b2584*/\n  v96 = 0; /*0x1800b258b*/\n  *(_OWORD *)v97 = 0; /*0x1800b2595*/\n  *(_OWORD *)&v97[2] = xmmword_1801102D0; /*0x1800b25a3*/\n  *(_OWORD *)&v97[4] = xmmword_1801101B0; /*0x1800b25b1*/\n  *(_OWORD *)&v97[6] = xmmword_180110300; /*0x1800b25bf*/\n  *(_OWORD *)&v97[8] = xmmword_1801102F0; /*0x1800b25cd*/\n  *(_OWORD *)&v97[10] = xmmword_1801101A0; /*0x1800b25db*/\n  *(_OWORD *)v98 = xmmword_1801101C0; /*0x1800b25e9*/\n  *(_OWORD *)&v98[2] = xmmword_1801102F0; /*0x1800b25f7*/\n  *(_OWORD *)&v98[4] = xmmword_180110310; /*0x1800b2605*/\n  *(_OWORD *)&v98[6] = xmmword_180110190; /*0x1800b2613*/\n  *(_OWORD *)&v98[8] = xmmword_1801102E0; /*0x1800b2621*/\n  *(_OWORD *)&v98[10] = xmmword_180110320; /*0x1800b262f*/\n  v99 = 0xC034000000000000uLL; /*0x1800b263e*/\n  v14 = (char *)operator new(Size: 0xD8u); /*0x1800b265a*/\n  v75 = v14; /*0x1800b265f*/\n  v76 = v14; /*0x1800b2663*/\n  v77 = v14 + 216; /*0x1800b266e*/\n  v15 = &v96; /*0x1800b2672*/\n  do /*0x1800b26a2*/\n  {\n    *(_OWORD *)v14 = *v15; /*0x1800b2683*/\n    *((_QWORD *)v14 + 2) = *((_QWORD *)v15 + 2); /*0x1800b268b*/\n    v14 += 24; /*0x1800b2690*/\n    v15 = (__int128 *)((char *)v15 + 24); /*0x1800b2694*/\n  }\n  while ( v15 != (__int128 *)&v100 ); /*0x1800b26a2*/\n  v76 = v14; /*0x1800b26a4*/\n  cv::Mat::Mat(this: (cv::Mat *)v94); /*0x1800b26ac*/\n  cv::Mat::Mat(this: (cv::Mat *)v107); /*0x1800b26ba*/\n  __eh34_enter_wind_state(-1, 0); /*0xf1c000000000018c*/\n  __eh34_enter_wind_state(0, 1); /*0xf1c0000000000190*/\n  __eh34_enter_wind_state(1, 2); /*0xf1c0000000000194*/\n  v84 = 0; /*0x1800b26c1*/\n  v82 = 33619968; /*0x1800b26c5*/\n  v83 = v107; /*0x1800b26d3*/\n  v87 = 0; /*0x1800b26d7*/\n  v85 = 33619968; /*0x1800b26db*/\n  v86 = v94; /*0x1800b26e6*/\n  v90 = 0; /*0x1800b26ea*/\n  v88 = 16842752; /*0x1800b26ee*/\n  v89 = a4; /*0x1800b26f5*/\n  v93 = 0; /*0x1800b26f9*/\n  v91 = 16842752; /*0x1800b26fd*/\n  v92 = a3; /*0x1800b2704*/\n  v72 = nullptr; /*0x1800b2708*/\n  LODWORD(v70) = -2130509810; /*0x1800b270d*/\n  v71 = a2; /*0x1800b2715*/\n  v67 = nullptr; /*0x1800b271a*/\n  v66 = (void **)&v75; /*0x1800b272b*/\n  LOBYTE(v64) = 0; /*0x1800b2738*/\n  cv::solvePnP( /*0x1800b2761*/\n    this: (cv *)&v65,\n    a2: (const struct cv::_InputArray *)&v70,\n    a3: (const struct cv::_InputArray *)&v91,\n    a4: (const struct cv::_InputArray *)&v88,\n    a5: (const struct cv::_InputArray *)&v85,\n    a6: (const struct cv::_OutputArray *)&v82,\n    a7: v64,\n    a8: 4,\n    a9: -2130509802);\n  v67 = nullptr; /*0x1800b2767*/\n  LODWORD(v65) = 16842752; /*0x1800b276c*/\n  v66 = (void **)v94; /*0x1800b2778*/\n  v17 = (unsigned int)cv::noArray(this: v16); /*0x1800b277d*/\n  v19 = cv::norm(this: (cv *)&v65, a2: (const struct cv::_InputArray *)4, a3: v17, a4: v18); /*0x1800b2790*/\n  v20 = v19; /*0x1800b2796*/\n  if ( v19 > 0.000001 ) /*0x1800b27a2*/\n  {\n    v21 = v19 * 0.5; /*0x1800b27ab*/\n    cos(X: v19 * 0.5); /*0x1800b27b6*/\n    v22 = v94[3]; /*0x1800b27c9*/\n    v23 = v95; /*0x1800b27cc*/\n    v24 = (v94[0] & 0x4000) != 0; /*0x1800b27d0*/\n    if ( (v94[0] & 0x4000) != 0 || *v95 == 1 ) /*0x1800b27d9*/\n    {\n      sin(X: v21); /*0x1800b2851*/\n      if ( !v24 && *v23 != 1 ) /*0x1800b2877*/\n      {\n        if ( v23[1] == 1 ) /*0x1800b287d*/\n          goto LABEL_15; /*0x1800b287d*/\n        goto LABEL_7; /*0x1800b287d*/\n      }\n      if ( !v24 && *v23 != 1 && v23[1] != 1 ) /*0x1800b28b4*/\n      {\nLABEL_7:\n        v25 = (unsigned int)(2 % v22); /*0x1800b282d*/\n        v26 = 2 % v22; /*0x1800b2842*/\n      }\n    }\n    else\n    {\n      sin(X: v21); /*0x1800b27de*/\n      if ( v23[1] != 1 ) /*0x1800b2800*/\n        goto LABEL_7; /*0x1800b2800*/\n    }\nLABEL_15:\n    v27 = sub_1800DEDE0(a1: v26, a2: v25); /*0x1800b28c7*/\n    v28 = v78; /*0x1800b291b*/\n    *v78 = v27; /*0x1800b291f*/\n    v29 = sub_1800DEB50(); /*0x1800b2950*/\n    v30 = v79; /*0x1800b2955*/\n    *v79 = v29; /*0x1800b2959*/\n    v33 = sub_1800DEDE0(a1: v32, a2: v31); /*0x1800b2991*/\n    v34 = v80; /*0x1800b2996*/\n    *v80 = v33; /*0x1800b299a*/\n    *a5 = *v28 / 3.141592653589793 * 180.0; /*0x1800b29ba*/\n    *a6 = *v30 / 3.141592653589793 * 180.0; /*0x1800b29cb*/\n    *a7 = *v34 / 3.141592653589793 * 180.0; /*0x1800b29dd*/\n    v35 = cv::operator/(a1: &v96, a2: v94); /*0x1800b29f2*/\n    __wind /*0xf1c000000000014c*/\n    {\n      sub_1800387F0(a1: v35, a2: v102); /*0x1800b2a03*/\n    }\n    __unwind\n    {\n      sub_180038860(a1: &v96); /*0xf1c000000000015c*/\n    }\n    __wind /*0xf1c0000000000164*/\n    {\n      cv::Mat::~Mat(this: (cv::Mat *)&v99); /*0x1800b2a10*/\n      cv::Mat::~Mat(this: (cv::Mat *)v98); /*0x1800b2a1d*/\n      cv::Mat::~Mat(this: (cv::Mat *)v97); /*0x1800b2a2a*/\n      cv::Mat::Mat(this: (cv::Mat *)v105, a2: 3, a3: 3, a4: 6); /*0x1800b2a43*/\n      __wind /*0xf1c0000000000128*/\n      {\n        v36 = v103; /*0x1800b2a4a*/\n        v37 = *v104; /*0x1800b2a58*/\n        sub_18003A440(a1: &v70, a2: v105); /*0x1800b2a67*/\n        *v72 = 0.0; /*0x1800b2a73*/\n        v38 = v70; /*0x1800b2a76*/\n        if ( v70 != 0 ) /*0x1800b2a7e*/\n        {\n          v39 = v72; /*0x1800b2a80*/\n          v40 = (double *)((char *)v71 + (_QWORD)v72); /*0x1800b2a8a*/\n          v72 = v40; /*0x1800b2a8d*/\n          if ( (unsigned __int64)v40 < v74 ) /*0x1800b2a96*/\n            goto LABEL_20; /*0x1800b2a96*/\n          v72 = v39; /*0x1800b2a98*/\n          cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v70, a2: 1, a3: true); /*0x1800b2aa8*/\n          v38 = v70; /*0x1800b2aae*/\n        }\n        v40 = v72; /*0x1800b2ab3*/\nLABEL_20:\n        v65 = v38; /*0x1800b2ab8*/\n        v66 = v71; /*0x1800b2ac2*/\n        v67 = v40; /*0x1800b2ac7*/\n        v68 = v73; /*0x1800b2ad0*/\n        v69 = v74; /*0x1800b2ad9*/\n        *v40 = -*(double *)((char *)v36 + 2 * v37); /*0x1800b2aee*/\n        if ( v65 != 0 ) /*0x1800b2af7*/\n        {\n          v41 = v67; /*0x1800b2af9*/\n          v67 = (double *)((char *)v66 + (_QWORD)v67); /*0x1800b2b06*/\n          if ( (unsigned __int64)v67 >= v69 ) /*0x1800b2b10*/\n          {\n            v67 = v41; /*0x1800b2b12*/\n            cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v65, a2: 1, a3: true); /*0x1800b2b24*/\n          }\n        }\n        *v67 = *(double *)((char *)v36 + v37); /*0x1800b2b33*/\n        if ( v65 != 0 ) /*0x1800b2b3b*/\n        {\n          v42 = v67; /*0x1800b2b3d*/\n          v67 = (double *)((char *)v66 + (_QWORD)v67); /*0x1800b2b4a*/\n          if ( (unsigned __int64)v67 >= v69 ) /*0x1800b2b54*/\n          {\n            v67 = v42; /*0x1800b2b56*/\n            cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v65, a2: 1, a3: true); /*0x1800b2b68*/\n          }\n        }\n        *v67 = *(double *)((char *)v36 + 2 * v37); /*0x1800b2b77*/\n        if ( v65 != 0 ) /*0x1800b2b7f*/\n        {\n          v43 = v67; /*0x1800b2b81*/\n          v67 = (double *)((char *)v66 + (_QWORD)v67); /*0x1800b2b8e*/\n          if ( (unsigned __int64)v67 >= v69 ) /*0x1800b2b98*/\n          {\n            v67 = v43; /*0x1800b2b9a*/\n            cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v65, a2: 1, a3: true); /*0x1800b2bac*/\n          }\n        }\n        *v67 = 0.0; /*0x1800b2bb7*/\n        if ( v65 != 0 ) /*0x1800b2bbf*/\n        {\n          v44 = v67; /*0x1800b2bc1*/\n          v67 = (double *)((char *)v66 + (_QWORD)v67); /*0x1800b2bce*/\n          if ( (unsigned __int64)v67 >= v69 ) /*0x1800b2bd8*/\n          {\n            v67 = v44; /*0x1800b2bda*/\n            cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v65, a2: 1, a3: true); /*0x1800b2bec*/\n          }\n        }\n        *v67 = -*v36; /*0x1800b2bfe*/\n        if ( v65 != 0 ) /*0x1800b2c07*/\n        {\n          v45 = v67; /*0x1800b2c09*/\n          v67 = (double *)((char *)v66 + (_QWORD)v67); /*0x1800b2c16*/\n          if ( (unsigned __int64)v67 >= v69 ) /*0x1800b2c20*/\n          {\n            v67 = v45; /*0x1800b2c22*/\n            cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v65, a2: 1, a3: true); /*0x1800b2c34*/\n          }\n        }\n        *v67 = -*(double *)((char *)v36 + v37); /*0x1800b2c47*/\n        if ( v65 != 0 ) /*0x1800b2c50*/\n        {\n          v46 = v67; /*0x1800b2c52*/\n          v67 = (double *)((char *)v66 + (_QWORD)v67); /*0x1800b2c5f*/\n          if ( (unsigned __int64)v67 >= v69 ) /*0x1800b2c69*/\n          {\n            v67 = v46; /*0x1800b2c6b*/\n            cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v65, a2: 1, a3: true); /*0x1800b2c7d*/\n          }\n        }\n        *v67 = *v36; /*0x1800b2c8b*/\n        if ( v65 != 0 ) /*0x1800b2c93*/\n        {\n          v47 = v67; /*0x1800b2c95*/\n          v67 = (double *)((char *)v66 + (_QWORD)v67); /*0x1800b2ca2*/\n          if ( (unsigned __int64)v67 >= v69 ) /*0x1800b2cac*/\n          {\n            v67 = v47; /*0x1800b2cae*/\n            cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v65, a2: 1, a3: true); /*0x1800b2cc0*/\n          }\n        }\n        *v67 = 0.0; /*0x1800b2ccb*/\n        v48 = v65; /*0x1800b2cce*/\n        if ( v65 != 0 ) /*0x1800b2cd6*/\n        {\n          v49 = v67; /*0x1800b2cd8*/\n          v67 = (double *)((char *)v66 + (_QWORD)v67); /*0x1800b2ce5*/\n          if ( (unsigned __int64)v67 >= v69 ) /*0x1800b2cef*/\n          {\n            v67 = v49; /*0x1800b2cf1*/\n            cv::MatConstIterator::seek(this: (cv::MatConstIterator *)&v65, a2: 1, a3: true); /*0x1800b2d03*/\n            v48 = v65; /*0x1800b2d09*/\n          }\n        }\n        cv::Mat::Mat(this: (cv::Mat *)v101); /*0x1800b2d15*/\n        __wind /*0xf1c000000000011c*/\n        {\n          v101[0] = (v101[0] & 0xFFFFF000) + 6; /*0x1800b2d2a*/\n          sub_18003A520(a1: v101, a2: v48); /*0x1800b2d3a*/\n        }\n        __unwind\n        {\n          cv::Mat::~Mat(this: (cv::Mat *)v101); /*0xf1c0000000000114*/\n        }\n        cv::Mat::Mat(a1: v106, a2: v101); /*0x1800b2d4e*/\n        cv::Mat::~Mat(this: (cv::Mat *)v101); /*0x1800b2d5c*/\n        cv::Mat::~Mat(this: (cv::Mat *)v105); /*0x1800b2d6a*/\n        sin(X: v20); /*0x1800b2d74*/\n      }\n      __unwind\n      {\n        cv::Mat::~Mat(this: (cv::Mat *)v105); /*0xf1c0000000000138*/\n      }\n      __wind /*0xf1c0000000000140*/\n      {\n        v51 = cv::operator*(a1: v132, a2: v50, a3: v106); /*0x1800b2d8a*/\n        __wind /*0xf1c0000000000104*/\n        {\n          v52 = v51; /*0x1800b2d90*/\n          v53 = cv::Mat::t(a1: v102, a2: v128); /*0x1800b2da7*/\n          cos(X: v20); /*0x1800b2dae*/\n          __wind /*0xf1c00000000000f8*/\n          {\n            v55 = cv::operator*(a1: v124, a2: v54, a3: v102); /*0x1800b2dcd*/\n            __wind /*0xf1c00000000000ec*/\n            {\n              v56 = cv::operator*(a1: v120, a2: v55, a3: v53); /*0x1800b2de1*/\n              __wind /*0xf1c00000000000e0*/\n              {\n                v57 = v56; /*0x1800b2de7*/\n                v58 = cv::Mat::eye(a1: v116, a2: 3, a3: 3, a4: 6); /*0x1800b2dfd*/\n                __wind /*0xf1c00000000000d4*/\n                {\n                  v60 = cv::operator*(a1: v112, a2: v59, a3: v58); /*0x1800b2e11*/\n                  __wind /*0xf1c00000000000c8*/\n                  {\n                    v61 = cv::operator+(a1: v108, a2: v60, a3: v57); /*0x1800b2e25*/\n                    __wind /*0xf1c00000000000bc*/\n                    {\n                      v62 = (_QWORD *)cv::operator+(a1: &v96, a2: v61, a3: v52); /*0x1800b2e39*/\n                      __wind /*0xf1c0000000000004*/\n                      {\n                        (*(void (__fastcall **)(_QWORD, _QWORD *, __int64, __int64))(*(_QWORD *)*v62 + 16LL))( /*0x1800b2e53*/\n                          a1: *v62,\n                          a2: v62,\n                          a3: v81,\n                          a4: 0xFFFFFFFFLL);\n                        cv::Mat::~Mat(this: (cv::Mat *)&v99); /*0x1800b2e5f*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v98); /*0x1800b2e6c*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v97); /*0x1800b2e79*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v111); /*0x1800b2e87*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v110); /*0x1800b2e94*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v109); /*0x1800b2ea1*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v115); /*0x1800b2eaf*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v114); /*0x1800b2ebc*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v113); /*0x1800b2ec9*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v119); /*0x1800b2ed7*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v118); /*0x1800b2ee4*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v117); /*0x1800b2ef1*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v123); /*0x1800b2eff*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v122); /*0x1800b2f0c*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v121); /*0x1800b2f19*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v127); /*0x1800b2f27*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v126); /*0x1800b2f34*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v125); /*0x1800b2f41*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v131); /*0x1800b2f4f*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v130); /*0x1800b2f5c*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v129); /*0x1800b2f69*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v135); /*0x1800b2f77*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v134); /*0x1800b2f84*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v133); /*0x1800b2f91*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v106); /*0x1800b2f9f*/\n                        cv::Mat::~Mat(this: (cv::Mat *)v102); /*0x1800b2fad*/\n                      }\n                      __unwind\n                      {\n                        sub_180038860(a1: &v96); /*0xf1c0000000000014*/\n                      }\n                    }\n                    __unwind\n                    {\n                      sub_180038860(a1: v108); /*0xf1c0000000000020*/\n                    }\n                  }\n                  __unwind\n                  {\n                    sub_180038860(a1: v112); /*0xf1c000000000002c*/\n                  }\n                }\n                __unwind\n                {\n                  sub_180038860(a1: v116); /*0xf1c0000000000038*/\n                }\n              }\n              __unwind\n              {\n                sub_180038860(a1: v120); /*0xf1c0000000000044*/\n              }\n            }\n            __unwind\n            {\n              sub_180038860(a1: v124); /*0xf1c0000000000050*/\n            }\n          }\n          __unwind\n          {\n            sub_180038860(a1: v128); /*0xf1c000000000005c*/\n          }\n        }\n        __unwind\n        {\n          sub_180038860(a1: v132); /*0xf1c0000000000068*/\n        }\n      }\n      __unwind\n      {\n        cv::Mat::~Mat(this: (cv::Mat *)v106); /*0xf1c0000000000074*/\n      }\n    }\n    __unwind\n    {\n      cv::Mat::~Mat(this: (cv::Mat *)v102); /*0xf1c0000000000080*/\n    }\n    if ( __eh34_unwind(2) ) /*0xf1c0000000000088*/\n      goto unwind_state_2; /*0xf1c0000000000088*/\n    __eh34_exit_wind_state(2, 1); /*0xf1c0000000000094*/\n    if ( __eh34_unwind(1) ) /*0xf1c0000000000098*/\n      goto unwind_state_1; /*0xf1c0000000000098*/\n    __eh34_exit_wind_state(1, 0); /*0xf1c00000000000a4*/\n    if ( __eh34_unwind(0) ) /*0xf1c00000000000a8*/\n      goto unwind_state_0; /*0xf1c00000000000a8*/\n    __eh34_exit_wind_state(0, -1); /*0xf1c00000000000b4*/\n    goto LABEL_46; /*0xf1c00000000000b8*/\n  }\n  if ( __eh34_unwind(2) ) /*0xf1c0000000000170*/\n  {\nunwind_state_2:\n    cv::Mat::~Mat(this: (cv::Mat *)v107); /*0xf1c000000000008c*/\n    __eh34_continue_unwinding(2, 1); /*0xf1c0000000000090*/\n  }\n  __eh34_exit_wind_state(2, 1); /*0xf1c0000000000174*/\n  if ( __eh34_unwind(1) ) /*0xf1c0000000000178*/\n  {\nunwind_state_1:\n    cv::Mat::~Mat(this: (cv::Mat *)v94); /*0xf1c000000000009c*/\n    __eh34_continue_unwinding(1, 0); /*0xf1c00000000000a0*/\n  }\n  __eh34_exit_wind_state(1, 0); /*0xf1c000000000017c*/\n  if ( __eh34_unwind(0) ) /*0xf1c0000000000180*/\n  {\nunwind_state_0:\n    sub_180027960(a1: &v75); /*0xf1c00000000000ac*/\n    __eh34_propagate_exception_into_caller(0, -1); /*0xf1c00000000000b0*/\n  }\n  __eh34_exit_wind_state(0, -1); /*0xf1c0000000000184*/\n  *a5 = 0.0; /*0x1800b2fb5*/\n  *a6 = 0.0; /*0x1800b2fb8*/\n  *a7 = 0.0; /*0x1800b2fbc*/\nLABEL_46:\n  cv::Mat::~Mat(this: (cv::Mat *)v107); /*0x1800b2fc0*/\n  cv::Mat::~Mat(this: (cv::Mat *)v94); /*0x1800b2fd2*/\n  v63 = v75; /*0x1800b2fd9*/\n  if ( v75 != nullptr ) /*0x1800b2fe0*/\n  {\n    if ( (unsigned __int64)(8 * ((v77 - v75) >> 3)) >= 0x1000 ) /*0x1800b300d*/\n    {\n      v63 = *((char **)v75 - 1); /*0x1800b3013*/\n      if ( (unsigned __int64)(v75 - v63 - 8) > 0x1F ) /*0x1800b3022*/\n        invalid_parameter_noinfo_noreturn(); /*0x1800b307c*/\n    }\n    j_j_j__free_base_0(Block: v63); /*0x1800b3024*/\n  }\n}",
+  "refs": [
+    {
+      "addr": "0x1801102d0",
+      "name": "xmmword_1801102D0"
+    },
+    {
+      "addr": "0x1801101b0",
+      "name": "xmmword_1801101B0"
+    },
+    {
+      "addr": "0x180110300",
+      "name": "xmmword_180110300"
+    },
+    {
+      "addr": "0x1801102f0",
+      "name": "xmmword_1801102F0"
+    },
+    {
+      "addr": "0x1801101a0",
+      "name": "xmmword_1801101A0"
+    },
+    {
+      "addr": "0x1801101c0",
+      "name": "xmmword_1801101C0"
+    },
+    {
+      "addr": "0x180110310",
+      "name": "xmmword_180110310"
+    },
+    {
+      "addr": "0x180110190",
+      "name": "xmmword_180110190"
+    },
+    {
+      "addr": "0x1801102e0",
+      "name": "xmmword_1801102E0"
+    },
+    {
+      "addr": "0x180110320",
+      "name": "xmmword_180110320"
+    },
+    {
+      "addr": "0x1800b7d10",
+      "name": "??2@YAPEAX_K@Z"
+    },
+    {
+      "addr": "0x1800fd578",
+      "name": "??0Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x1800fd468",
+      "name": "?solvePnP@cv@@YA_NAEBV_InputArray@1@000AEBV_OutputArray@1@1_NH@Z"
+    },
+    {
+      "addr": "0x1800fd4e0",
+      "name": "?noArray@cv@@YAAEBV_InputOutputArray@1@XZ"
+    },
+    {
+      "addr": "0x1800fd478",
+      "name": "?norm@cv@@YANAEBV_InputArray@1@H0@Z"
+    },
+    {
+      "addr": "0x1800df500",
+      "name": "cos"
+    },
+    {
+      "addr": "0x1800dfd50",
+      "name": "sin"
+    },
+    {
+      "addr": "0x1800dede0",
+      "name": "sub_1800DEDE0"
+    },
+    {
+      "addr": "0x1800deb50",
+      "name": "sub_1800DEB50"
+    },
+    {
+      "addr": "0x1800fd470",
+      "name": "??Kcv@@YA?AVMatExpr@0@AEBVMat@0@N@Z"
+    },
+    {
+      "addr": "0x1800387f0",
+      "name": "sub_1800387F0"
+    },
+    {
+      "addr": "0x180038860",
+      "name": "sub_180038860"
+    },
+    {
+      "addr": "0x1800fd580",
+      "name": "__imp_??1Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x1800fd4e8",
+      "name": "??0Mat@cv@@QEAA@HHH@Z"
+    },
+    {
+      "addr": "0x18003a440",
+      "name": "sub_18003A440"
+    },
+    {
+      "addr": "0x1800fd538",
+      "name": "?seek@MatConstIterator@cv@@QEAAX_J_N@Z"
+    },
+    {
+      "addr": "0x18003a520",
+      "name": "sub_18003A520"
+    },
+    {
+      "addr": "0x1800b4b26",
+      "name": "??1Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x1800fd548",
+      "name": "??0Mat@cv@@QEAA@$$QEAV01@@Z"
+    },
+    {
+      "addr": "0x180038850",
+      "name": "??1Mat@cv@@QEAA@XZ_0"
+    },
+    {
+      "addr": "0x1800fd490",
+      "name": "??Dcv@@YA?AVMatExpr@0@NAEBVMat@0@@Z"
+    },
+    {
+      "addr": "0x1800fd508",
+      "name": "?t@Mat@cv@@QEBA?AVMatExpr@2@XZ"
+    },
+    {
+      "addr": "0x1800fd480",
+      "name": "??Dcv@@YA?AVMatExpr@0@AEBV10@0@Z"
+    },
+    {
+      "addr": "0x1800fd498",
+      "name": "?eye@Mat@cv@@SA?AVMatExpr@2@HHH@Z"
+    },
+    {
+      "addr": "0x1800fd488",
+      "name": "??Dcv@@YA?AVMatExpr@0@NAEBV10@@Z"
+    },
+    {
+      "addr": "0x1800fd4d8",
+      "name": "??Hcv@@YA?AVMatExpr@0@AEBV10@0@Z"
+    },
+    {
+      "addr": "0x180027960",
+      "name": "sub_180027960"
+    },
+    {
+      "addr": "0x1800c199c",
+      "name": "_invalid_parameter_noinfo_noreturn"
+    },
+    {
+      "addr": "0x1800b819c",
+      "name": "j_j_j__free_base_0"
+    }
+  ]
+}

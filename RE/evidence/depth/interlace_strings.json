@@ -1,0 +1,185 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":41,\"matches\":[{\"addr\":\"0x180072010\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\common\\\\log.cpp\"},{\"addr\":\"0x180072078\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\common\\\\log.cpp\"},{\"addr\":\"0x1800720e0\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\common\\\\log.cpp\"},{\"addr\":\"0x180072720\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\common\\\\utils.cpp\"},{\"addr\":\"0x180072798\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\common\\\\utils.cpp\"},{\"addr\":\"0x180072810\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\common\\\\utils.cpp\"},{\"addr\":\"0x180072888\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\common\\\\utils.cpp\"},{\"addr\":\"0x1800730df\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x1800745f3\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180074c9f\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x18007aaa8\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x18007b1ab\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180080a90\",\"string\":\"initDx11: device pointer is null.\"},{\"addr\":\"0x180080ab8\",\"string\":\"initDx11: Invalid viewport width or height.\"},{\"addr\":\"0x180080ae8\",\"string\":\"doInterlaceDx11: context pointer is null.\"},{\"addr\":\"0x180080b18\",\"string\":\"doInterlaceDx11: inShaderResourceView pointer is null.\"},{\"addr\":\"0x180080c50\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\dx11interleaving.cpp\"},{\"addr\":\"0x180080d10\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\dx11interleaving.cpp\"},{\"addr\":\"0x180080dd0\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\dx11interleaving.cpp\"},{\"addr\":\"0x180081448\",\"string\":\"initDx12: device pointer is null.\"},{\"addr\":\"0x1800814c8\",\"string\":\"initDx12: resource pointer is null.\"},{\"addr\":\"0x1800814f0\",\"string\":\"doInterlaceDx12: commandList pointer is null.\"},{\"addr\":\"0x180081580\",\"string\":\"doInterlaceDx12: rtvhandle pointer is null.\"},{\"addr\":\"0x180081bff\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180083123\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x1800837cf\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x1800895d8\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x180089d4b\",\"string\":\"Microsoft (R) HLSL Shader Compiler 10.1\"},{\"addr\":\"0x18008f650\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleavingbase.cpp\"},{\"addr\":\"0x18008f700\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleavingbase.cpp\"},{\"addr\":\"0x18008f7a0\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleavingbase.cpp\"},{\"addr\":\"0x18008fce0\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleaving_interface.cpp\"},{\"addr\":\"0x18008fde0\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleaving_interface.cpp\"},{\"addr\":\"0x18008fe40\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleaving_interface.cpp\"},{\"addr\":\"0x180091eb0\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleavingbase.h\"},{\"addr\":\"0x1800966cc\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\x64\\\\Release\\\\interlaceSDK.pdb\"},{\"addr\":\"0x1800a34f4\",\"string\":\"interlaceSDK.dll\"},{\"addr\":\"0x1800a9f78\",\"string\":\".?AVDx11interleaving@@\"},{\"addr\":\"0x1800a9fc8\",\"string\":\".?AVDx12interleaving@@\"},{\"addr\":\"0x1800a9ff0\",\"string\":\".?AV?$_Ref_count_obj2@VDx11interleaving@@@std@@\"},{\"addr\":\"0x1800aa030\",\"string\":\".?AV?$_Ref_count_obj2@VDx12interleaving@@@std@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 41,
+      "matches": [
+        {
+          "addr": "0x180072010",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\common\\log.cpp"
+        },
+        {
+          "addr": "0x180072078",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\common\\log.cpp"
+        },
+        {
+          "addr": "0x1800720e0",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\common\\log.cpp"
+        },
+        {
+          "addr": "0x180072720",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\common\\utils.cpp"
+        },
+        {
+          "addr": "0x180072798",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\common\\utils.cpp"
+        },
+        {
+          "addr": "0x180072810",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\common\\utils.cpp"
+        },
+        {
+          "addr": "0x180072888",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\common\\utils.cpp"
+        },
+        {
+          "addr": "0x1800730df",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x1800745f3",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180074c9f",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x18007aaa8",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x18007b1ab",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180080a90",
+          "string": "initDx11: device pointer is null."
+        },
+        {
+          "addr": "0x180080ab8",
+          "string": "initDx11: Invalid viewport width or height."
+        },
+        {
+          "addr": "0x180080ae8",
+          "string": "doInterlaceDx11: context pointer is null."
+        },
+        {
+          "addr": "0x180080b18",
+          "string": "doInterlaceDx11: inShaderResourceView pointer is null."
+        },
+        {
+          "addr": "0x180080c50",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\dx11interleaving.cpp"
+        },
+        {
+          "addr": "0x180080d10",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\dx11interleaving.cpp"
+        },
+        {
+          "addr": "0x180080dd0",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\dx11interleaving.cpp"
+        },
+        {
+          "addr": "0x180081448",
+          "string": "initDx12: device pointer is null."
+        },
+        {
+          "addr": "0x1800814c8",
+          "string": "initDx12: resource pointer is null."
+        },
+        {
+          "addr": "0x1800814f0",
+          "string": "doInterlaceDx12: commandList pointer is null."
+        },
+        {
+          "addr": "0x180081580",
+          "string": "doInterlaceDx12: rtvhandle pointer is null."
+        },
+        {
+          "addr": "0x180081bff",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180083123",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x1800837cf",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x1800895d8",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x180089d4b",
+          "string": "Microsoft (R) HLSL Shader Compiler 10.1"
+        },
+        {
+          "addr": "0x18008f650",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\interleavingbase.cpp"
+        },
+        {
+          "addr": "0x18008f700",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\interleavingbase.cpp"
+        },
+        {
+          "addr": "0x18008f7a0",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\interleavingbase.cpp"
+        },
+        {
+          "addr": "0x18008fce0",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\interleaving_interface.cpp"
+        },
+        {
+          "addr": "0x18008fde0",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\interleaving_interface.cpp"
+        },
+        {
+          "addr": "0x18008fe40",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\interleaving_interface.cpp"
+        },
+        {
+          "addr": "0x180091eb0",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\interleavingbase.h"
+        },
+        {
+          "addr": "0x1800966cc",
+          "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\x64\\Release\\interlaceSDK.pdb"
+        },
+        {
+          "addr": "0x1800a34f4",
+          "string": "interlaceSDK.dll"
+        },
+        {
+          "addr": "0x1800a9f78",
+          "string": ".?AVDx11interleaving@@"
+        },
+        {
+          "addr": "0x1800a9fc8",
+          "string": ".?AVDx12interleaving@@"
+        },
+        {
+          "addr": "0x1800a9ff0",
+          "string": ".?AV?$_Ref_count_obj2@VDx11interleaving@@@std@@"
+        },
+        {
+          "addr": "0x1800aa030",
+          "string": ".?AV?$_Ref_count_obj2@VDx12interleaving@@@std@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

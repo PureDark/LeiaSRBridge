@@ -1,0 +1,33 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"edit\":{\"addr\":\"0x1800219B0\",\"signature\":\"void __fastcall LF3D_UpdateEyeInfo(void *self, float x, float y, float z, bool enabled, float z_l, float z_r);\"},\"kind\":\"function\",\"ok\":true},{\"edit\":{\"addr\":\"0x1800059F0\",\"signature\":\"void __fastcall LF3DCalibration_UpdateEyeInfo(float *self, float x, float y, float z, bool enabled);\"},\"kind\":\"function\",\"ok\":true}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "edit": {
+            "addr": "0x1800219B0",
+            "signature": "void __fastcall LF3D_UpdateEyeInfo(void *self, float x, float y, float z, bool enabled, float z_l, float z_r);"
+          },
+          "kind": "function",
+          "ok": true
+        },
+        {
+          "edit": {
+            "addr": "0x1800059F0",
+            "signature": "void __fastcall LF3DCalibration_UpdateEyeInfo(float *self, float x, float y, float z, bool enabled);"
+          },
+          "kind": "function",
+          "ok": true
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

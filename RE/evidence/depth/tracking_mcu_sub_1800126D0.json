@@ -1,0 +1,43 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_1800126D0\",\"code\":\"__int64 __fastcall sub_1800126D0(__int64 a1)\\n{\\n  _BYTE v2[8]; // [rsp+20h] [rbp-18h] BYREF\\n\\n  sub_180019530(a1: v2, a2: a1 + 480); /*0x1800126fb*/\\n  sub_180017820(a1: a1 + 440); /*0x18001270e*/\\n  std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v2); /*0x180012718*/\\n  sub_180033AF0(a1: a1 + 344); /*0x18001272b*/\\n  sub_180017C80(a1: a1 + 12, a2: 2); /*0x180012741*/\\n  sub_180017B00(a1: a1 + 176, a2: 0); /*0x180012756*/\\n  return sub_180017B00(a1: a1 + 336, a2: 0); /*0x180012770*/\\n}\",\"refs\":[{\"addr\":\"0x180019530\",\"name\":\"sub_180019530\"},{\"addr\":\"0x180017820\",\"name\":\"sub_180017820\"},{\"addr\":\"0x180019510\",\"name\":\"??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ\"},{\"addr\":\"0x180033af0\",\"name\":\"sub_180033AF0\"},{\"addr\":\"0x180017c80\",\"name\":\"sub_180017C80\"},{\"addr\":\"0x180017b00\",\"name\":\"sub_180017B00\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_1800126D0",
+      "code": "__int64 __fastcall sub_1800126D0(__int64 a1)\n{\n  _BYTE v2[8]; // [rsp+20h] [rbp-18h] BYREF\n\n  sub_180019530(a1: v2, a2: a1 + 480); /*0x1800126fb*/\n  sub_180017820(a1: a1 + 440); /*0x18001270e*/\n  std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v2); /*0x180012718*/\n  sub_180033AF0(a1: a1 + 344); /*0x18001272b*/\n  sub_180017C80(a1: a1 + 12, a2: 2); /*0x180012741*/\n  sub_180017B00(a1: a1 + 176, a2: 0); /*0x180012756*/\n  return sub_180017B00(a1: a1 + 336, a2: 0); /*0x180012770*/\n}",
+      "refs": [
+        {
+          "addr": "0x180019530",
+          "name": "sub_180019530"
+        },
+        {
+          "addr": "0x180017820",
+          "name": "sub_180017820"
+        },
+        {
+          "addr": "0x180019510",
+          "name": "??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x180033af0",
+          "name": "sub_180033AF0"
+        },
+        {
+          "addr": "0x180017c80",
+          "name": "sub_180017C80"
+        },
+        {
+          "addr": "0x180017b00",
+          "name": "sub_180017B00"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

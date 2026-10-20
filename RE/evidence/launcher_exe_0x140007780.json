@@ -1,0 +1,57 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x140007780\",\"code\":\"__int64 __fastcall sub_140007780(HWND hWnd, UINT Msg, WPARAM wParam, LONG_PTR *lParam)\\n{\\n  LONG_PTR v8; // r15\\n  HMODULE LibraryA; // rax\\n  HMODULE v10; // rbp\\n  FARPROC EnableNonClientDpiScaling; // rax\\n  LONG_PTR WindowLongPtrW; // rax\\n  int pvAttribute; // [rsp+58h] [rbp+10h] BYREF\\n\\n  if ( Msg == 129 ) /*0x1400077ae*/\\n  {\\n    SetWindowLongPtrW(hWnd, nIndex: -21, dwNewLong: *lParam); /*0x1400077b7*/\\n    pvAttribute = 2; /*0x1400077bd*/\\n    DwmSetWindowAttribute(hwnd: hWnd, dwAttribute: 0x21u, &pvAttribute, cbAttribute: 4u); /*0x1400077d8*/\\n    v8 = *lParam; /*0x1400077de*/\\n    LibraryA = LoadLibraryA(lpLibFileName: \\\"User32.dll\\\"); /*0x1400077e8*/\\n    v10 = LibraryA; /*0x1400077ee*/\\n    if ( LibraryA != nullptr ) /*0x1400077f4*/\\n    {\\n      EnableNonClientDpiScaling = GetProcAddress(hModule: LibraryA, lpProcName: \\\"EnableNonClientDpiScaling\\\"); /*0x140007800*/\\n      if ( EnableNonClientDpiScaling != nullptr ) /*0x140007809*/\\n        ((void (__fastcall *)(HWND))EnableNonClientDpiScaling)(a1: hWnd); /*0x14000780e*/\\n      FreeLibrary(hLibModule: v10); /*0x140007813*/\\n    }\\n    *(_QWORD *)(v8 + 16) = hWnd; /*0x140007819*/\\n    return DefWindowProcW(hWnd, Msg, wParam, (LPARAM)lParam); /*0x140007819*/\\n  }\\n  WindowLongPtrW = GetWindowLongPtrW(hWnd, nIndex: -21); /*0x140007848*/\\n  if ( WindowLongPtrW == 0 ) /*0x140007851*/\\n    return DefWindowProcW(hWnd, Msg, wParam, (LPARAM)lParam); /*0x140007847*/\\n  return (*(__int64 (__fastcall **)(LONG_PTR, HWND, _QWORD, WPARAM, LONG_PTR *))(*(_QWORD *)WindowLongPtrW + 8LL))( /*0x14000782f*/\\n           a1: WindowLongPtrW,\\n           a2: hWnd,\\n           a3: Msg,\\n           a4: wParam,\\n           a5: lParam);\\n}\",\"refs\":[{\"addr\":\"0x140015368\",\"name\":\"SetWindowLongPtrW\"},{\"addr\":\"0x1400156e8\",\"name\":\"DwmSetWindowAttribute\"},{\"addr\":\"0x1400150d8\",\"name\":\"LoadLibraryA\"},{\"addr\":\"0x1400160a0\",\"name\":\"LibFileName\",\"string\":\"User32.dll\"},{\"addr\":\"0x1400150e8\",\"name\":\"GetProcAddress\"},{\"addr\":\"0x1400160b0\",\"name\":\"aEnablenonclien\",\"string\":\"EnableNonClientDpiScaling\"},{\"addr\":\"0x140015148\",\"name\":\"FreeLibrary\"},{\"addr\":\"0x140015470\",\"name\":\"DefWindowProcW\"},{\"addr\":\"0x1400153b8\",\"name\":\"GetWindowLongPtrW\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x140007780",
+      "code": "__int64 __fastcall sub_140007780(HWND hWnd, UINT Msg, WPARAM wParam, LONG_PTR *lParam)\n{\n  LONG_PTR v8; // r15\n  HMODULE LibraryA; // rax\n  HMODULE v10; // rbp\n  FARPROC EnableNonClientDpiScaling; // rax\n  LONG_PTR WindowLongPtrW; // rax\n  int pvAttribute; // [rsp+58h] [rbp+10h] BYREF\n\n  if ( Msg == 129 ) /*0x1400077ae*/\n  {\n    SetWindowLongPtrW(hWnd, nIndex: -21, dwNewLong: *lParam); /*0x1400077b7*/\n    pvAttribute = 2; /*0x1400077bd*/\n    DwmSetWindowAttribute(hwnd: hWnd, dwAttribute: 0x21u, &pvAttribute, cbAttribute: 4u); /*0x1400077d8*/\n    v8 = *lParam; /*0x1400077de*/\n    LibraryA = LoadLibraryA(lpLibFileName: \"User32.dll\"); /*0x1400077e8*/\n    v10 = LibraryA; /*0x1400077ee*/\n    if ( LibraryA != nullptr ) /*0x1400077f4*/\n    {\n      EnableNonClientDpiScaling = GetProcAddress(hModule: LibraryA, lpProcName: \"EnableNonClientDpiScaling\"); /*0x140007800*/\n      if ( EnableNonClientDpiScaling != nullptr ) /*0x140007809*/\n        ((void (__fastcall *)(HWND))EnableNonClientDpiScaling)(a1: hWnd); /*0x14000780e*/\n      FreeLibrary(hLibModule: v10); /*0x140007813*/\n    }\n    *(_QWORD *)(v8 + 16) = hWnd; /*0x140007819*/\n    return DefWindowProcW(hWnd, Msg, wParam, (LPARAM)lParam); /*0x140007819*/\n  }\n  WindowLongPtrW = GetWindowLongPtrW(hWnd, nIndex: -21); /*0x140007848*/\n  if ( WindowLongPtrW == 0 ) /*0x140007851*/\n    return DefWindowProcW(hWnd, Msg, wParam, (LPARAM)lParam); /*0x140007847*/\n  return (*(__int64 (__fastcall **)(LONG_PTR, HWND, _QWORD, WPARAM, LONG_PTR *))(*(_QWORD *)WindowLongPtrW + 8LL))( /*0x14000782f*/\n           a1: WindowLongPtrW,\n           a2: hWnd,\n           a3: Msg,\n           a4: wParam,\n           a5: lParam);\n}",
+      "refs": [
+        {
+          "addr": "0x140015368",
+          "name": "SetWindowLongPtrW"
+        },
+        {
+          "addr": "0x1400156e8",
+          "name": "DwmSetWindowAttribute"
+        },
+        {
+          "addr": "0x1400150d8",
+          "name": "LoadLibraryA"
+        },
+        {
+          "addr": "0x1400160a0",
+          "name": "LibFileName",
+          "string": "User32.dll"
+        },
+        {
+          "addr": "0x1400150e8",
+          "name": "GetProcAddress"
+        },
+        {
+          "addr": "0x1400160b0",
+          "name": "aEnablenonclien",
+          "string": "EnableNonClientDpiScaling"
+        },
+        {
+          "addr": "0x140015148",
+          "name": "FreeLibrary"
+        },
+        {
+          "addr": "0x140015470",
+          "name": "DefWindowProcW"
+        },
+        {
+          "addr": "0x1400153b8",
+          "name": "GetWindowLongPtrW"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

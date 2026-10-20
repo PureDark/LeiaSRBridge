@@ -1,0 +1,171 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180014B30\",\"code\":\"__int64 __fastcall sub_180014B30(unsigned __int8 *a1)\\n{\\n  HANDLE CurrentThread; // rax\\n  __int64 v2; // rax\\n  __int64 result; // rax\\n  __int64 v4; // rax\\n  __int64 v5; // rax\\n  _QWORD *v6; // rax\\n  __int64 v7; // rax\\n  __int64 v8; // rax\\n  int v9; // [rsp+20h] [rbp-198h]\\n  __int64 v10; // [rsp+30h] [rbp-188h]\\n  __int64 v11; // [rsp+38h] [rbp-180h]\\n  __int64 v12; // [rsp+48h] [rbp-170h]\\n  __int64 v13; // [rsp+50h] [rbp-168h]\\n  unsigned __int8 *v14; // [rsp+58h] [rbp-160h]\\n  __int64 v15; // [rsp+60h] [rbp-158h]\\n  __int64 v16; // [rsp+68h] [rbp-150h]\\n  _BYTE v17[8]; // [rsp+70h] [rbp-148h] BYREF\\n  unsigned __int8 *v18; // [rsp+78h] [rbp-140h]\\n  unsigned __int8 *v19; // [rsp+80h] [rbp-138h]\\n  __int64 v20; // [rsp+88h] [rbp-130h]\\n  __int64 v21; // [rsp+90h] [rbp-128h]\\n  __int64 v22; // [rsp+98h] [rbp-120h]\\n  _BYTE v23[8]; // [rsp+A0h] [rbp-118h] BYREF\\n  __int64 v24; // [rsp+A8h] [rbp-110h]\\n  __int64 v25; // [rsp+B0h] [rbp-108h]\\n  __int64 v26; // [rsp+B8h] [rbp-100h]\\n  __int64 v27; // [rsp+C0h] [rbp-F8h]\\n  _BYTE v28[16]; // [rsp+C8h] [rbp-F0h] BYREF\\n  _BYTE v29[8]; // [rsp+D8h] [rbp-E0h] BYREF\\n  _BYTE v30[8]; // [rsp+E0h] [rbp-D8h] BYREF\\n  _BYTE v31[8]; // [rsp+E8h] [rbp-D0h] BYREF\\n  _BYTE v32[8]; // [rsp+F0h] [rbp-C8h] BYREF\\n  _BYTE v33[8]; // [rsp+F8h] [rbp-C0h] BYREF\\n  _BYTE v34[8]; // [rsp+100h] [rbp-B8h] BYREF\\n  _BYTE v35[8]; // [rsp+108h] [rbp-B0h] BYREF\\n  _BYTE v36[8]; // [rsp+110h] [rbp-A8h] BYREF\\n  _BYTE v37[8]; // [rsp+118h] [rbp-A0h] BYREF\\n  _BYTE v38[8]; // [rsp+120h] [rbp-98h] BYREF\\n  _BYTE v39[8]; // [rsp+128h] [rbp-90h] BYREF\\n  _BYTE v40[8]; // [rsp+130h] [rbp-88h] BYREF\\n  _BYTE v41[8]; // [rsp+138h] [rbp-80h] BYREF\\n  _BYTE v42[8]; // [rsp+140h] [rbp-78h] BYREF\\n  _BYTE v43[8]; // [rsp+148h] [rbp-70h] BYREF\\n  _BYTE v44[16]; // [rsp+150h] [rbp-68h] BYREF\\n  __int64 v45; // [rsp+160h] [rbp-58h] BYREF\\n  __int64 v46; // [rsp+168h] [rbp-50h] BYREF\\n  __int64 v47; // [rsp+170h] [rbp-48h]\\n  _BYTE v48[16]; // [rsp+178h] [rbp-40h] BYREF\\n  _BYTE v49[8]; // [rsp+188h] [rbp-30h] BYREF\\n  _BYTE v50[8]; // [rsp+190h] [rbp-28h] BYREF\\n  __int64 v51; // [rsp+198h] [rbp-20h]\\n  unsigned __int8 *v52; // [rsp+1C0h] [rbp+8h] BYREF\\n\\n  v52 = a1; /*0x180014b30*/\\n  v9 = 3; /*0x180014b4e*/\\n  CurrentThread = GetCurrentThread(); /*0x180014b56*/\\n  if ( !SetThreadPriority(hThread: CurrentThread, nPriority: 2) ) /*0x180014b6c*/\\n  {\\n    v12 = sub_180036BD0(a1: v44, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 728); /*0x180014b92*/\\n    __wind /*0xf1c000000000006c*/\\n    {\\n      v2 = sub_18003DF90(a1: v12); /*0x180014b9c*/\\n      sub_18000A770(a1: v2, a2: \\\"SendThreadProc SetThreadPriority failed\\\"); /*0x180014bab*/\\n    }\\n    __unwind\\n    {\\n      sub_180037160(a1: v44); /*0x180045990*/\\n    }\\n    sub_180037160(a1: v44); /*0x180014bb9*/\\n  }\\n  while ( 1 ) /*0x180014bc6*/\\n  {\\n    result = *v52; /*0x180014bc6*/\\n    if ( *v52 == 0 ) /*0x180014bcb*/\\n      return result; /*0x180015150*/\\n    sub_18000F220(a1: v48, a2: 16); /*0x180014bde*/\\n    std::unique_lock<std::mutex>::unique_lock<std::mutex>(a1: v48, a2: v52 + 256); /*0x180014bfc*/\\n    __eh34_enter_wind_state(-1, 1); /*0xf1c0000000000058*/\\n    v14 = v52 + 184; /*0x180014c10*/\\n    v13 = *(_QWORD *)std::_Iterator_base12::operator=(a1: v29, a2: &v52); /*0x180014c2d*/\\n    sub_18001BC90(a1: v14, a2: v48, a3: v13); /*0x180014c44*/\\n    if ( *v52 == 0 ) /*0x180014c56*/\\n    {\\n      if ( __eh34_unwind(1) ) /*0xf1c000000000004c*/\\n      {\\nunwind_state_1:\\n        std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v48); /*0xf1c0000000000024*/\\n        __eh34_propagate_exception_into_caller(1, -1); /*0xf1c0000000000028*/\\n      }\\n      __eh34_exit_wind_state(1, -1); /*0xf1c0000000000050*/\\n      return std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v48); /*0x180014c65*/\\n    }\\n    while ( (unsigned int)sub_180017C60(a1: v52 + 12) == 1 ) /*0x180014c81*/\\n    {\\n      v15 = sub_18001BB60(a1: v30, a2: &unk_18004D78C); /*0x180014c9b*/\\n      v16 = sub_18000EAE0(a1: v31); /*0x180014cad*/\\n      sub_18001BCD0(a1: &v45, a2: v16, a3: v15); /*0x180014cc4*/\\n      while ( (unsigned __int8)sub_180017970(a1: v52 + 440) == 0 ) /*0x180014ce4*/\\n      {\\n        v47 = *(_QWORD *)std::string::front(a1: v52 + 440); /*0x180014d03*/\\n        sub_180019530(a1: v49, a2: v52 + 480); /*0x180014d24*/\\n        sub_180017840(a1: v52 + 440); /*0x180014d3a*/\\n        std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v49); /*0x180014d47*/\\n        sub_180016740(a1: v52, a2: v47); /*0x180014d5c*/\\n        sub_18001BD20(a1: &v45); /*0x180014d69*/\\n        if ( *((_DWORD *)v52 + 186) != -1 ) /*0x180014d7d*/\\n        {\\n          v18 = v52 + 560; /*0x180014d91*/\\n          if ( (unsigned __int8)sub_180017B30(a1: v52 + 560, a2: 0) != 0 ) /*0x180014da7*/\\n          {\\n            sub_180016740(a1: v52, a2: v47); /*0x180014dbd*/\\n            v19 = v52 + 560; /*0x180014dd0*/\\n            sub_180017B90(a1: v52 + 560, a2: 0, a3: 0); /*0x180014de5*/\\n            v20 = sub_180036BD0(a1: v28, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 750); /*0x180014e04*/\\n            v21 = v20; /*0x180014e14*/\\n            __wind /*0xf1c0000000000040*/\\n            {\\n              v4 = sub_18003DF90(a1: v21); /*0x180014e24*/\\n              v22 = sub_18000A770(a1: v4, a2: \\\"MCU readcmd retry times:\\\"); /*0x180014e38*/\\n              std::ostream::operator<<(a1: v22, a2: (unsigned int)(4 - v9)); /*0x180014e53*/\\n            }\\n            __unwind\\n            {\\n              sub_180037160(a1: v28); /*0x1800459c6*/\\n            }\\n            sub_180037160(a1: v28); /*0x180014e62*/\\n            if ( --v9 <= 0 ) /*0x180014e76*/\\n            {\\n              *((_DWORD *)v52 + 186) = -1; /*0x180014e80*/\\n              v9 = 3; /*0x180014e8a*/\\n            }\\n            v5 = sub_18001BB60(a1: v32, a2: &unk_18004D78C); /*0x180014ea1*/\\n            sub_18001BDA0(a1: v23, a2: v5); /*0x180014eb1*/\\n            unknown_libname_843(a1: &v45, a2: v23); /*0x180014ec6*/\\n            sub_18001BD20(a1: &v45); /*0x180014ed3*/\\n          }\\n        }\\n        v24 = sub_18001BB60(a1: v33, a2: &unk_18004D78C); /*0x180014eec*/\\n        v25 = sub_18000EAE0(a1: v34); /*0x180014f01*/\\n        v45 = *(_QWORD *)sub_18001BCD0(a1: v35, a2: v25, a3: v24); /*0x180014f29*/\\n      }\\n      v26 = sub_18001BB60(a1: v36, a2: &unk_18004D78C); /*0x180014f4a*/\\n      v27 = sub_18000EAE0(a1: v37); /*0x180014f5f*/\\n      sub_18001BCD0(a1: &v46, a2: v27, a3: v26); /*0x180014f7f*/\\n      while ( (unsigned __int8)sub_180017AE0(a1: v52 + 16) != 0 ) /*0x180014f9d*/\\n      {\\n        v6 = (_QWORD *)sub_180010DF0(a1: v38, a2: 3); /*0x180014fb0*/\\n        sub_180016740(a1: v52, a2: *v6); /*0x180014fca*/\\n        sub_18001BD20(a1: &v46); /*0x180014fd7*/\\n        if ( (unsigned __int8)sub_180017970(a1: v52 + 440) == 0 ) /*0x180014ff7*/\\n        {\\n          v51 = *(_QWORD *)std::string::front(a1: v52 + 440); /*0x180015016*/\\n          sub_180019530(a1: v50, a2: v52 + 480); /*0x180015037*/\\n          sub_180017840(a1: v52 + 440); /*0x18001504d*/\\n          std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v50); /*0x18001505a*/\\n          sub_180016740(a1: v52, a2: v51); /*0x18001506f*/\\n          v7 = sub_18001BB60(a1: v39, a2: &unk_18004D78C); /*0x180015083*/\\n          sub_18001BDA0(a1: v17, a2: v7); /*0x180015090*/\\n          unknown_libname_843(a1: &v46, a2: v17); /*0x1800150a2*/\\n          sub_18001BD20(a1: &v46); /*0x1800150af*/\\n        }\\n        v11 = sub_18001BB60(a1: v40, a2: &unk_18004D78C); /*0x1800150c8*/\\n        v10 = sub_18000EAE0(a1: v41); /*0x1800150da*/\\n        v46 = *(_QWORD *)sub_18001BCD0(a1: v42, a2: v10, a3: v11); /*0x1800150f9*/\\n      }\\n      v8 = sub_18000EC10(a1: v43, a2: 1); /*0x180015113*/\\n      sub_18001BB80(a1: v8); /*0x18001511b*/\\n    }\\n    sub_180017B00(a1: v52 + 336, a2: 0); /*0x180015138*/\\n    if ( __eh34_unwind(1) ) /*0xf1c0000000000020*/\\n      goto unwind_state_1; /*0xf1c0000000000020*/\\n    __eh34_exit_wind_state(1, -1); /*0xf1c000000000002c*/\\n    std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v48); /*0x180015146*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x18004a018\",\"name\":\"__imp_GetCurrentThread\"},{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004e690\",\"name\":\"aDSourceRepos3d_45\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004e668\",\"name\":\"aSendthreadproc\",\"string\":\"SendThreadProc SetThreadPriority failed\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x18004a008\",\"name\":\"__imp_SetThreadPriority\"},{\"addr\":\"0x18000f220\",\"name\":\"sub_18000F220\"},{\"addr\":\"0x1800195b0\",\"name\":\"??0?$unique_lock@Vmutex@std@@@std@@QEAA@AEAVmutex@1@@Z\"},{\"addr\":\"0x1800151d0\",\"name\":\"??4_Iterator_base12@std@@QEAAAEAU01@AEBU01@@Z_0\"},{\"addr\":\"0x18001bc90\",\"name\":\"sub_18001BC90\"},{\"addr\":\"0x180019580\",\"name\":\"??1?$unique_lock@Vmutex@std@@@std@@QEAA@XZ\"},{\"addr\":\"0x18001bb60\",\"name\":\"sub_18001BB60\"},{\"addr\":\"0x18004d78c\",\"name\":\"unk_18004D78C\"},{\"addr\":\"0x18000eae0\",\"name\":\"sub_18000EAE0\"},{\"addr\":\"0x18001bcd0\",\"name\":\"sub_18001BCD0\"},{\"addr\":\"0x180017940\",\"name\":\"?front@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEADXZ\"},{\"addr\":\"0x180019530\",\"name\":\"sub_180019530\"},{\"addr\":\"0x180017840\",\"name\":\"sub_180017840\"},{\"addr\":\"0x180019510\",\"name\":\"??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ\"},{\"addr\":\"0x180016740\",\"name\":\"sub_180016740\"},{\"addr\":\"0x18001bd20\",\"name\":\"sub_18001BD20\"},{\"addr\":\"0x180017b90\",\"name\":\"sub_180017B90\"},{\"addr\":\"0x18004e6e8\",\"name\":\"aDSourceRepos3d_46\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004e6c8\",\"name\":\"aMcuReadcmdRetr\",\"string\":\"MCU readcmd retry times:\"},{\"addr\":\"0x18004a490\",\"name\":\"__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z\"},{\"addr\":\"0x18001bda0\",\"name\":\"sub_18001BDA0\"},{\"addr\":\"0x180019610\",\"name\":\"unknown_libname_843\"},{\"addr\":\"0x180017b30\",\"name\":\"sub_180017B30\"},{\"addr\":\"0x180017970\",\"name\":\"sub_180017970\"},{\"addr\":\"0x180010df0\",\"name\":\"sub_180010DF0\"},{\"addr\":\"0x180017ae0\",\"name\":\"sub_180017AE0\"},{\"addr\":\"0x18000ec10\",\"name\":\"sub_18000EC10\"},{\"addr\":\"0x18001bb80\",\"name\":\"sub_18001BB80\"},{\"addr\":\"0x180017c60\",\"name\":\"sub_180017C60\"},{\"addr\":\"0x180017b00\",\"name\":\"sub_180017B00\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180014B30",
+      "code": "__int64 __fastcall sub_180014B30(unsigned __int8 *a1)\n{\n  HANDLE CurrentThread; // rax\n  __int64 v2; // rax\n  __int64 result; // rax\n  __int64 v4; // rax\n  __int64 v5; // rax\n  _QWORD *v6; // rax\n  __int64 v7; // rax\n  __int64 v8; // rax\n  int v9; // [rsp+20h] [rbp-198h]\n  __int64 v10; // [rsp+30h] [rbp-188h]\n  __int64 v11; // [rsp+38h] [rbp-180h]\n  __int64 v12; // [rsp+48h] [rbp-170h]\n  __int64 v13; // [rsp+50h] [rbp-168h]\n  unsigned __int8 *v14; // [rsp+58h] [rbp-160h]\n  __int64 v15; // [rsp+60h] [rbp-158h]\n  __int64 v16; // [rsp+68h] [rbp-150h]\n  _BYTE v17[8]; // [rsp+70h] [rbp-148h] BYREF\n  unsigned __int8 *v18; // [rsp+78h] [rbp-140h]\n  unsigned __int8 *v19; // [rsp+80h] [rbp-138h]\n  __int64 v20; // [rsp+88h] [rbp-130h]\n  __int64 v21; // [rsp+90h] [rbp-128h]\n  __int64 v22; // [rsp+98h] [rbp-120h]\n  _BYTE v23[8]; // [rsp+A0h] [rbp-118h] BYREF\n  __int64 v24; // [rsp+A8h] [rbp-110h]\n  __int64 v25; // [rsp+B0h] [rbp-108h]\n  __int64 v26; // [rsp+B8h] [rbp-100h]\n  __int64 v27; // [rsp+C0h] [rbp-F8h]\n  _BYTE v28[16]; // [rsp+C8h] [rbp-F0h] BYREF\n  _BYTE v29[8]; // [rsp+D8h] [rbp-E0h] BYREF\n  _BYTE v30[8]; // [rsp+E0h] [rbp-D8h] BYREF\n  _BYTE v31[8]; // [rsp+E8h] [rbp-D0h] BYREF\n  _BYTE v32[8]; // [rsp+F0h] [rbp-C8h] BYREF\n  _BYTE v33[8]; // [rsp+F8h] [rbp-C0h] BYREF\n  _BYTE v34[8]; // [rsp+100h] [rbp-B8h] BYREF\n  _BYTE v35[8]; // [rsp+108h] [rbp-B0h] BYREF\n  _BYTE v36[8]; // [rsp+110h] [rbp-A8h] BYREF\n  _BYTE v37[8]; // [rsp+118h] [rbp-A0h] BYREF\n  _BYTE v38[8]; // [rsp+120h] [rbp-98h] BYREF\n  _BYTE v39[8]; // [rsp+128h] [rbp-90h] BYREF\n  _BYTE v40[8]; // [rsp+130h] [rbp-88h] BYREF\n  _BYTE v41[8]; // [rsp+138h] [rbp-80h] BYREF\n  _BYTE v42[8]; // [rsp+140h] [rbp-78h] BYREF\n  _BYTE v43[8]; // [rsp+148h] [rbp-70h] BYREF\n  _BYTE v44[16]; // [rsp+150h] [rbp-68h] BYREF\n  __int64 v45; // [rsp+160h] [rbp-58h] BYREF\n  __int64 v46; // [rsp+168h] [rbp-50h] BYREF\n  __int64 v47; // [rsp+170h] [rbp-48h]\n  _BYTE v48[16]; // [rsp+178h] [rbp-40h] BYREF\n  _BYTE v49[8]; // [rsp+188h] [rbp-30h] BYREF\n  _BYTE v50[8]; // [rsp+190h] [rbp-28h] BYREF\n  __int64 v51; // [rsp+198h] [rbp-20h]\n  unsigned __int8 *v52; // [rsp+1C0h] [rbp+8h] BYREF\n\n  v52 = a1; /*0x180014b30*/\n  v9 = 3; /*0x180014b4e*/\n  CurrentThread = GetCurrentThread(); /*0x180014b56*/\n  if ( !SetThreadPriority(hThread: CurrentThread, nPriority: 2) ) /*0x180014b6c*/\n  {\n    v12 = sub_180036BD0(a1: v44, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 728); /*0x180014b92*/\n    __wind /*0xf1c000000000006c*/\n    {\n      v2 = sub_18003DF90(a1: v12); /*0x180014b9c*/\n      sub_18000A770(a1: v2, a2: \"SendThreadProc SetThreadPriority failed\"); /*0x180014bab*/\n    }\n    __unwind\n    {\n      sub_180037160(a1: v44); /*0x180045990*/\n    }\n    sub_180037160(a1: v44); /*0x180014bb9*/\n  }\n  while ( 1 ) /*0x180014bc6*/\n  {\n    result = *v52; /*0x180014bc6*/\n    if ( *v52 == 0 ) /*0x180014bcb*/\n      return result; /*0x180015150*/\n    sub_18000F220(a1: v48, a2: 16); /*0x180014bde*/\n    std::unique_lock<std::mutex>::unique_lock<std::mutex>(a1: v48, a2: v52 + 256); /*0x180014bfc*/\n    __eh34_enter_wind_state(-1, 1); /*0xf1c0000000000058*/\n    v14 = v52 + 184; /*0x180014c10*/\n    v13 = *(_QWORD *)std::_Iterator_base12::operator=(a1: v29, a2: &v52); /*0x180014c2d*/\n    sub_18001BC90(a1: v14, a2: v48, a3: v13); /*0x180014c44*/\n    if ( *v52 == 0 ) /*0x180014c56*/\n    {\n      if ( __eh34_unwind(1) ) /*0xf1c000000000004c*/\n      {\nunwind_state_1:\n        std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v48); /*0xf1c0000000000024*/\n        __eh34_propagate_exception_into_caller(1, -1); /*0xf1c0000000000028*/\n      }\n      __eh34_exit_wind_state(1, -1); /*0xf1c0000000000050*/\n      return std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v48); /*0x180014c65*/\n    }\n    while ( (unsigned int)sub_180017C60(a1: v52 + 12) == 1 ) /*0x180014c81*/\n    {\n      v15 = sub_18001BB60(a1: v30, a2: &unk_18004D78C); /*0x180014c9b*/\n      v16 = sub_18000EAE0(a1: v31); /*0x180014cad*/\n      sub_18001BCD0(a1: &v45, a2: v16, a3: v15); /*0x180014cc4*/\n      while ( (unsigned __int8)sub_180017970(a1: v52 + 440) == 0 ) /*0x180014ce4*/\n      {\n        v47 = *(_QWORD *)std::string::front(a1: v52 + 440); /*0x180014d03*/\n        sub_180019530(a1: v49, a2: v52 + 480); /*0x180014d24*/\n        sub_180017840(a1: v52 + 440); /*0x180014d3a*/\n        std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v49); /*0x180014d47*/\n        sub_180016740(a1: v52, a2: v47); /*0x180014d5c*/\n        sub_18001BD20(a1: &v45); /*0x180014d69*/\n        if ( *((_DWORD *)v52 + 186) != -1 ) /*0x180014d7d*/\n        {\n          v18 = v52 + 560; /*0x180014d91*/\n          if ( (unsigned __int8)sub_180017B30(a1: v52 + 560, a2: 0) != 0 ) /*0x180014da7*/\n          {\n            sub_180016740(a1: v52, a2: v47); /*0x180014dbd*/\n            v19 = v52 + 560; /*0x180014dd0*/\n            sub_180017B90(a1: v52 + 560, a2: 0, a3: 0); /*0x180014de5*/\n            v20 = sub_180036BD0(a1: v28, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 750); /*0x180014e04*/\n            v21 = v20; /*0x180014e14*/\n            __wind /*0xf1c0000000000040*/\n            {\n              v4 = sub_18003DF90(a1: v21); /*0x180014e24*/\n              v22 = sub_18000A770(a1: v4, a2: \"MCU readcmd retry times:\"); /*0x180014e38*/\n              std::ostream::operator<<(a1: v22, a2: (unsigned int)(4 - v9)); /*0x180014e53*/\n            }\n            __unwind\n            {\n              sub_180037160(a1: v28); /*0x1800459c6*/\n            }\n            sub_180037160(a1: v28); /*0x180014e62*/\n            if ( --v9 <= 0 ) /*0x180014e76*/\n            {\n              *((_DWORD *)v52 + 186) = -1; /*0x180014e80*/\n              v9 = 3; /*0x180014e8a*/\n            }\n            v5 = sub_18001BB60(a1: v32, a2: &unk_18004D78C); /*0x180014ea1*/\n            sub_18001BDA0(a1: v23, a2: v5); /*0x180014eb1*/\n            unknown_libname_843(a1: &v45, a2: v23); /*0x180014ec6*/\n            sub_18001BD20(a1: &v45); /*0x180014ed3*/\n          }\n        }\n        v24 = sub_18001BB60(a1: v33, a2: &unk_18004D78C); /*0x180014eec*/\n        v25 = sub_18000EAE0(a1: v34); /*0x180014f01*/\n        v45 = *(_QWORD *)sub_18001BCD0(a1: v35, a2: v25, a3: v24); /*0x180014f29*/\n      }\n      v26 = sub_18001BB60(a1: v36, a2: &unk_18004D78C); /*0x180014f4a*/\n      v27 = sub_18000EAE0(a1: v37); /*0x180014f5f*/\n      sub_18001BCD0(a1: &v46, a2: v27, a3: v26); /*0x180014f7f*/\n      while ( (unsigned __int8)sub_180017AE0(a1: v52 + 16) != 0 ) /*0x180014f9d*/\n      {\n        v6 = (_QWORD *)sub_180010DF0(a1: v38, a2: 3); /*0x180014fb0*/\n        sub_180016740(a1: v52, a2: *v6); /*0x180014fca*/\n        sub_18001BD20(a1: &v46); /*0x180014fd7*/\n        if ( (unsigned __int8)sub_180017970(a1: v52 + 440) == 0 ) /*0x180014ff7*/\n        {\n          v51 = *(_QWORD *)std::string::front(a1: v52 + 440); /*0x180015016*/\n          sub_180019530(a1: v50, a2: v52 + 480); /*0x180015037*/\n          sub_180017840(a1: v52 + 440); /*0x18001504d*/\n          std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v50); /*0x18001505a*/\n          sub_180016740(a1: v52, a2: v51); /*0x18001506f*/\n          v7 = sub_18001BB60(a1: v39, a2: &unk_18004D78C); /*0x180015083*/\n          sub_18001BDA0(a1: v17, a2: v7); /*0x180015090*/\n          unknown_libname_843(a1: &v46, a2: v17); /*0x1800150a2*/\n          sub_18001BD20(a1: &v46); /*0x1800150af*/\n        }\n        v11 = sub_18001BB60(a1: v40, a2: &unk_18004D78C); /*0x1800150c8*/\n        v10 = sub_18000EAE0(a1: v41); /*0x1800150da*/\n        v46 = *(_QWORD *)sub_18001BCD0(a1: v42, a2: v10, a3: v11); /*0x1800150f9*/\n      }\n      v8 = sub_18000EC10(a1: v43, a2: 1); /*0x180015113*/\n      sub_18001BB80(a1: v8); /*0x18001511b*/\n    }\n    sub_180017B00(a1: v52 + 336, a2: 0); /*0x180015138*/\n    if ( __eh34_unwind(1) ) /*0xf1c0000000000020*/\n      goto unwind_state_1; /*0xf1c0000000000020*/\n    __eh34_exit_wind_state(1, -1); /*0xf1c000000000002c*/\n    std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v48); /*0x180015146*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x18004a018",
+          "name": "__imp_GetCurrentThread"
+        },
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004e690",
+          "name": "aDSourceRepos3d_45",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004e668",
+          "name": "aSendthreadproc",
+          "string": "SendThreadProc SetThreadPriority failed"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x18004a008",
+          "name": "__imp_SetThreadPriority"
+        },
+        {
+          "addr": "0x18000f220",
+          "name": "sub_18000F220"
+        },
+        {
+          "addr": "0x1800195b0",
+          "name": "??0?$unique_lock@Vmutex@std@@@std@@QEAA@AEAVmutex@1@@Z"
+        },
+        {
+          "addr": "0x1800151d0",
+          "name": "??4_Iterator_base12@std@@QEAAAEAU01@AEBU01@@Z_0"
+        },
+        {
+          "addr": "0x18001bc90",
+          "name": "sub_18001BC90"
+        },
+        {
+          "addr": "0x180019580",
+          "name": "??1?$unique_lock@Vmutex@std@@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x18001bb60",
+          "name": "sub_18001BB60"
+        },
+        {
+          "addr": "0x18004d78c",
+          "name": "unk_18004D78C"
+        },
+        {
+          "addr": "0x18000eae0",
+          "name": "sub_18000EAE0"
+        },
+        {
+          "addr": "0x18001bcd0",
+          "name": "sub_18001BCD0"
+        },
+        {
+          "addr": "0x180017940",
+          "name": "?front@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEADXZ"
+        },
+        {
+          "addr": "0x180019530",
+          "name": "sub_180019530"
+        },
+        {
+          "addr": "0x180017840",
+          "name": "sub_180017840"
+        },
+        {
+          "addr": "0x180019510",
+          "name": "??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x180016740",
+          "name": "sub_180016740"
+        },
+        {
+          "addr": "0x18001bd20",
+          "name": "sub_18001BD20"
+        },
+        {
+          "addr": "0x180017b90",
+          "name": "sub_180017B90"
+        },
+        {
+          "addr": "0x18004e6e8",
+          "name": "aDSourceRepos3d_46",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004e6c8",
+          "name": "aMcuReadcmdRetr",
+          "string": "MCU readcmd retry times:"
+        },
+        {
+          "addr": "0x18004a490",
+          "name": "__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z"
+        },
+        {
+          "addr": "0x18001bda0",
+          "name": "sub_18001BDA0"
+        },
+        {
+          "addr": "0x180019610",
+          "name": "unknown_libname_843"
+        },
+        {
+          "addr": "0x180017b30",
+          "name": "sub_180017B30"
+        },
+        {
+          "addr": "0x180017970",
+          "name": "sub_180017970"
+        },
+        {
+          "addr": "0x180010df0",
+          "name": "sub_180010DF0"
+        },
+        {
+          "addr": "0x180017ae0",
+          "name": "sub_180017AE0"
+        },
+        {
+          "addr": "0x18000ec10",
+          "name": "sub_18000EC10"
+        },
+        {
+          "addr": "0x18001bb80",
+          "name": "sub_18001BB80"
+        },
+        {
+          "addr": "0x180017c60",
+          "name": "sub_180017C60"
+        },
+        {
+          "addr": "0x180017b00",
+          "name": "sub_180017B00"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

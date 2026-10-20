@@ -1,0 +1,195 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x180137000\",\"code\":\"ov::Tensor *__fastcall sub_180137000(__int64 a1, ov::Tensor *a2)\\n{\\n  const void ***v3; // rax\\n  const void **v4; // rsi\\n  void *v5; // rbx\\n  void *v6; // rbx\\n  unsigned __int64 v7; // rbx\\n  char *v8; // rdi\\n  size_t v9; // rbx\\n  char *v10; // rax\\n  size_t v11; // r15\\n  volatile signed __int32 *v12; // rbx\\n  _QWORD *v13; // rax\\n  void *v14; // rax\\n  ov::Tensor *result; // rax\\n  __int64 v16; // rax\\n  __int64 v17; // rax\\n  __int64 v18; // rax\\n  __int128 v19; // xmm0\\n  __int64 v20; // r10\\n  void *v21[2]; // [rsp+20h] [rbp-E0h] BYREF\\n  __int64 v22; // [rsp+30h] [rbp-D0h]\\n  void *Block; // [rsp+38h] [rbp-C8h] BYREF\\n  __int128 pExceptionObject; // [rsp+40h] [rbp-C0h] BYREF\\n  const char *v25; // [rsp+50h] [rbp-B0h]\\n  const char *v26; // [rsp+60h] [rbp-A0h] BYREF\\n  __int64 v27; // [rsp+68h] [rbp-98h]\\n  const char *v28; // [rsp+70h] [rbp-90h]\\n  _QWORD v29[2]; // [rsp+78h] [rbp-88h] BYREF\\n  _BYTE v30[12]; // [rsp+88h] [rbp-78h] BYREF\\n  int v31; // [rsp+94h] [rbp-6Ch]\\n  ov::Tensor *v32; // [rsp+A8h] [rbp-58h]\\n  void *Src[2]; // [rsp+B0h] [rbp-50h] BYREF\\n  char *v34; // [rsp+C0h] [rbp-40h]\\n  __int128 v35; // [rsp+C8h] [rbp-38h] BYREF\\n  _QWORD *v36; // [rsp+D8h] [rbp-28h]\\n  __int128 v37; // [rsp+E0h] [rbp-20h] BYREF\\n  __int64 v38; // [rsp+F0h] [rbp-10h]\\n  _QWORD v39[4]; // [rsp+F8h] [rbp-8h] BYREF\\n\\n  __wind /*0xf1c00000000000fc*/\\n  {\\n    v32 = a2; /*0x18013702f*/\\n    LODWORD(v22) = 0; /*0x180137036*/\\n    memset(v39, 0, sizeof(v39)); /*0x18013703e*/\\n    sub_18010EA80(a1: v39); /*0x18013705b*/\\n    __wind /*0xf1c00000000000f0*/\\n    {\\n      Block = nullptr; /*0x180137061*/\\n      sub_180117990(a1: &Block, a2: v39); /*0x18013706f*/\\n      __wind /*0xf1c00000000000e4*/\\n      {\\n        v3 = (const void ***)sub_180117990(a1: v21, a2: v39); /*0x18013707e*/\\n        v4 = *v3; /*0x180137083*/\\n        *v3 = nullptr; /*0x180137086*/\\n        v5 = Block; /*0x180137089*/\\n        Block = v4; /*0x18013708e*/\\n        if ( v5 != nullptr ) /*0x180137096*/\\n        {\\n          sub_180125910(a1: v5); /*0x18013709b*/\\n          j_j_free(Block: v5); /*0x1801370a8*/\\n        }\\n        v6 = v21[0]; /*0x1801370ad*/\\n        if ( v21[0] != nullptr ) /*0x1801370b5*/\\n        {\\n          sub_180125910(a1: v21[0]); /*0x1801370ba*/\\n          j_j_free(Block: v6); /*0x1801370c7*/\\n        }\\n        if ( v4 == nullptr ) /*0x1801370cf*/\\n        {\\n          v16 = sub_180116B80(); /*0x180137385*/\\n          v17 = sub_180116BF0(a1: v16, a2: v29); /*0x180137392*/\\n          __wind /*0xf1c0000000000024*/\\n          {\\n            sub_18011C880(a1: v17); /*0x18013739b*/\\n            sub_180110CC0(a1: &v26, a2: \\\"Failed to load model\\\"); /*0x1801373af*/\\n            v18 = sub_180113110( /*0x1801373cf*/\\n                    a1: v30,\\n                    a2: \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\Core\\\\\\\\DepthEngine\\\\\\\\DepthEngineVino.cpp\\\",\\n                    a3: 330,\\n                    a4: \\\"AiStereo::Core::DepthEngineVino::GetWeightTensor\\\");\\n            *(_OWORD *)v21 = v19; /*0x1801373d4*/\\n            pExceptionObject = *(_OWORD *)v18; /*0x1801373dc*/\\n            v25 = *(const char **)(v18 + 16); /*0x1801373e6*/\\n            ((void (__fastcall *)(__int64, __int128 *, __int64, void **))sub_180114050)( /*0x1801373ff*/\\n              a1: v20,\\n              a2: &pExceptionObject,\\n              a3: 4,\\n              a4: v21);\\n          }\\n          __unwind\\n          {\\n            sub_18011BED0(a1: v29); /*0xf1c000000000001c*/\\n          }\\n          sub_18011BED0(a1: v29); /*0x18013740a*/\\n          sub_18010F360(a1: &pExceptionObject, a2: \\\"Failed to load model\\\"); /*0x18013741b*/\\n          throw (std::runtime_error *)&pExceptionObject; /*0x18013742c*/\\n        }\\n        *(_OWORD *)Src = 0; /*0x1801370d8*/\\n        v34 = nullptr; /*0x1801370dd*/\\n        v7 = (_BYTE *)v4[1] - (_BYTE *)*v4; /*0x1801370e5*/\\n        if ( v7 != 0 ) /*0x1801370e8*/\\n        {\\n          if ( v7 > 0x7FFFFFFFFFFFFFFFLL ) /*0x1801370f7*/\\n            sub_18010F120(); /*0x18013737f*/\\n          v8 = (char *)sub_18010F0B0(a1: v7); /*0x180137105*/\\n          Src[0] = v8; /*0x180137108*/\\n          Src[1] = v8; /*0x18013710c*/\\n          v34 = &v8[v7]; /*0x180137113*/\\n          v9 = (_BYTE *)v4[1] - (_BYTE *)*v4; /*0x18013711e*/\\n          memmove(a1: v8, Src: *v4, Size: v9); /*0x180137127*/\\n          v10 = &v8[v9]; /*0x18013712c*/\\n          Src[1] = &v8[v9]; /*0x180137130*/\\n        }\\n        else\\n        {\\n          v10 = (char *)Src[1]; /*0x180137136*/\\n        }\\n        __wind /*0xf1c00000000000d8*/\\n        {\\n          v11 = *((int *)v4 + 6); /*0x18013713a*/\\n          if ( Src[0] == v10 ) /*0x180137142*/\\n          {\\n            if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer /*0x180137169*/\\n                                               + (unsigned int)TlsIndex)\\n                                             + 16LL) )\\n            {\\n              sub_1803B3838(a1: &dword_1805C9A98); /*0x180137172*/\\n              if ( dword_1805C9A98 == -1 ) /*0x18013717e*/\\n              {\\n                __wind /*0xf1c00000000000c0*/\\n                {\\n                  xmmword_1805C9820 = 0; /*0x180137183*/\\n                  sub_180116C20(); /*0x18013718a*/\\n                  atexit(a1: sub_1803B9F10); /*0x180137196*/\\n                  sub_1803B37CC(a1: &dword_1805C9A98); /*0x1801371a3*/\\n                }\\n                __unwind\\n                {\\n                  sub_1803B3790(a1: &dword_1805C9A98); /*0x1803b7567*/\\n                }\\n              }\\n            }\\n            __wind /*0xf1c00000000000b4*/\\n            {\\n              v12 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801371a8*/\\n              if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x1801371b2*/\\n              {\\n                _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x1801371b4*/\\n                v12 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801371b8*/\\n              }\\n              v29[0] = xmmword_1805C9820; /*0x1801371c6*/\\n              v29[1] = v12; /*0x1801371cb*/\\n              v26 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\Core\\\\\\\\DepthEngine\\\\\\\\DepthEngineVino.cpp\\\"; /*0x1801371d6*/\\n              LODWORD(v27) = 339; /*0x1801371db*/\\n              HIDWORD(v27) = v31; /*0x1801371e6*/\\n              v28 = \\\"AiStereo::Core::DepthEngineVino::GetWeightTensor\\\"; /*0x1801371f1*/\\n              *((_QWORD *)&pExceptionObject + 1) = v27; /*0x180137210*/\\n              v25 = \\\"AiStereo::Core::DepthEngineVino::GetWeightTensor\\\"; /*0x18013721b*/\\n              sub_180114050( /*0x180137231*/\\n                a1: xmmword_1805C9820,\\n                a2: &pExceptionObject,\\n                a3: 4,\\n                a4: v21,\\n                a5: \\\" model is empty\\\",\\n                a6: 15,\\n                a7: v22,\\n                a8: Block,\\n                a9: \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\Core\\\\\\\\DepthEngine\\\\\\\\DepthEngineVino.cpp\\\");\\n              if ( v12 != nullptr && _InterlockedExchangeAdd(v12 + 2, 0xFFFFFFFF) == 1 ) /*0x18013724b*/\\n              {\\n                (**(void (__fastcall ***)(volatile signed __int32 *))v12)(a1: v12); /*0x180137253*/\\n                if ( _InterlockedExchangeAdd(v12 + 3, 0xFFFFFFFF) == 1 ) /*0x18013725d*/\\n                  (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v12 + 8LL))(a1: v12); /*0x180137265*/\\n              }\\n            }\\n            __unwind\\n            {\\n              sub_18011BED0(a1: v29); /*0xf1c00000000000ac*/\\n            }\\n          }\\n          v21[0] = (void *)(unsigned int)v11; /*0x18013726e*/\\n          v35 = 0; /*0x180137273*/\\n          v36 = nullptr; /*0x180137278*/\\n          v13 = (_QWORD *)sub_18010F0B0(a1: 8); /*0x180137281*/\\n          __wind /*0xf1c000000000009c*/\\n          {\\n            *(_QWORD *)&v35 = v13; /*0x180137286*/\\n            v36 = v13 + 1; /*0x18013728e*/\\n            *v13 = (unsigned int)v11; /*0x180137292*/\\n            *((_QWORD *)&v35 + 1) = v13 + 1; /*0x180137295*/\\n            v37 = 0; /*0x18013729e*/\\n            v38 = 0; /*0x1801372a2*/\\n            ov::Shape::Shape(a1: &v37, a2: &v35); /*0x1801372ae*/\\n            __wind /*0xf1c0000000000054*/\\n            {\\n              ov::Allocator::Allocator(this: (ov::Allocator *)v30); /*0x1801372b9*/\\n              __wind /*0xf1c0000000000048*/\\n              {\\n                LODWORD(v21[0]) = 16; /*0x1801372c0*/\\n                ov::Tensor::Tensor( /*0x1801372d8*/\\n                  this: a2,\\n                  a2: (const struct ov::element::Type *)v21,\\n                  a3: (const struct ov::Shape *)&v37,\\n                  a4: (const struct ov::Allocator *)v30);\\n                LODWORD(v22) = 1; /*0x1801372de*/\\n                ov::Allocator::~Allocator(this: (ov::Allocator *)v30); /*0x1801372ea*/\\n              }\\n              __unwind\\n              {\\n                ov::Allocator::~Allocator(this: (ov::Allocator *)v30); /*0xf1c0000000000040*/\\n              }\\n              LODWORD(v21[0]) = 16; /*0x1801372f0*/\\n              v14 = ov::Tensor::data(this: a2, a2: (const struct ov::element::Type *)v21); /*0x180137300*/\\n              memcpy(a1: v14, Src: Src[0], Size: v11); /*0x180137310*/\\n              ov::Shape::~Shape(this: (ov::Shape *)&v37); /*0x18013731a*/\\n              sub_18011C300(a1: &v35); /*0x180137325*/\\n              sub_180125910(a1: Src); /*0x18013732f*/\\n              sub_180125910(a1: v4); /*0x180137338*/\\n              j_j_free(Block: v4); /*0x180137345*/\\n              sub_18010EB70(a1: v39); /*0x18013734f*/\\n              result = a2; /*0x180137354*/\\n            }\\n            __unwind\\n            {\\n              ov::Shape::~Shape(this: (ov::Shape *)&v37); /*0xf1c0000000000064*/\\n            }\\n          }\\n          __unwind\\n          {\\n            sub_18011C300(a1: &v35); /*0xf1c0000000000070*/\\n          }\\n        }\\n        __unwind\\n        {\\n          sub_18011CB40(a1: Src); /*0xf1c000000000007c*/\\n        }\\n      }\\n      __unwind\\n      {\\n        sub_18011CB10(a1: &Block); /*0xf1c0000000000088*/\\n      }\\n    }\\n    __unwind\\n    {\\n      sub_18010E0E0(a1: v39); /*0xf1c0000000000094*/\\n    }\\n  }\\n  __unwind\\n  {\\n    if ( (v22 & 1) != 0 ) /*0x1803b75b1*/\\n    {\\n      LODWORD(v22) = v22 & 0xFFFFFFFE; /*0x1803b75b3*/\\n      ov::Tensor::~Tensor(this: v32); /*0x1803b75be*/\\n    }\\n  }\\n  return result; /*0x180137357*/\\n}\",\"refs\":[{\"addr\":\"0x18010ea80\",\"name\":\"sub_18010EA80\"},{\"addr\":\"0x180117990\",\"name\":\"sub_180117990\"},{\"addr\":\"0x180125910\",\"name\":\"sub_180125910\"},{\"addr\":\"0x1803b33a8\",\"name\":\"j_j_free\"},{\"addr\":\"0x180116b80\",\"name\":\"sub_180116B80\"},{\"addr\":\"0x180116bf0\",\"name\":\"sub_180116BF0\"},{\"addr\":\"0x18011c880\",\"name\":\"sub_18011C880\"},{\"addr\":\"0x180110cc0\",\"name\":\"sub_180110CC0\"},{\"addr\":\"0x180584eb0\",\"name\":\"aFailedToLoadMo\",\"string\":\"Failed to load model\"},{\"addr\":\"0x180113110\",\"name\":\"sub_180113110\"},{\"addr\":\"0x180584bf0\",\"name\":\"aJProjectVsproj_0\",\"string\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\DepthEngine\\\\DepthEngineVino.cpp\"},{\"addr\":\"0x180584ec8\",\"name\":\"aAistereoCoreDe_2\",\"string\":\"AiStereo::Core::DepthEngineVino::GetWeightTensor\"},{\"addr\":\"0x180114050\",\"name\":\"sub_180114050\"},{\"addr\":\"0x18011bed0\",\"name\":\"sub_18011BED0\"},{\"addr\":\"0x18010f360\",\"name\":\"sub_18010F360\"},{\"addr\":\"0x18010f120\",\"name\":\"sub_18010F120\"},{\"addr\":\"0x18010f0b0\",\"name\":\"sub_18010F0B0\"},{\"addr\":\"0x1803b49ee\",\"name\":\"memmove\"},{\"addr\":\"0x1803b3838\",\"name\":\"sub_1803B3838\"},{\"addr\":\"0x1805c9a98\",\"name\":\"dword_1805C9A98\"},{\"addr\":\"0x1805c9820\",\"name\":\"xmmword_1805C9820\"},{\"addr\":\"0x180116c20\",\"name\":\"sub_180116C20\"},{\"addr\":\"0x1803b3744\",\"name\":\"atexit\"},{\"addr\":\"0x1803b9f10\",\"name\":\"sub_1803B9F10\"},{\"addr\":\"0x1803b37cc\",\"name\":\"sub_1803B37CC\"},{\"addr\":\"0x1803b3790\",\"name\":\"sub_1803B3790\"},{\"addr\":\"0x1805c973c\",\"name\":\"TlsIndex\"},{\"addr\":\"0x180584f00\",\"name\":\"aModelIsEmpty\",\"string\":\" model is empty\"},{\"addr\":\"0x1803bbce8\",\"name\":\"??0Shape@ov@@QEAA@AEBV?$vector@_KV?$allocator@_K@std@@@std@@@Z\"},{\"addr\":\"0x1803bbe10\",\"name\":\"??0Allocator@ov@@QEAA@XZ\"},{\"addr\":\"0x1803bbe68\",\"name\":\"??0Tensor@ov@@QEAA@AEBVType@element@1@AEBVShape@1@AEBVAllocator@1@@Z\"},{\"addr\":\"0x1803bbe18\",\"name\":\"__imp_??1Allocator@ov@@QEAA@XZ\"},{\"addr\":\"0x1803b11a8\",\"name\":\"??1Allocator@ov@@QEAA@XZ\"},{\"addr\":\"0x1803bbe78\",\"name\":\"?data@Tensor@ov@@QEAAPEAXAEBVType@element@2@@Z\"},{\"addr\":\"0x1803b49e2\",\"name\":\"memcpy\"},{\"addr\":\"0x1803bbcd0\",\"name\":\"__imp_??1Shape@ov@@QEAA@XZ\"},{\"addr\":\"0x18011c300\",\"name\":\"sub_18011C300\"},{\"addr\":\"0x18010eb70\",\"name\":\"sub_18010EB70\"},{\"addr\":\"0x1803b11b4\",\"name\":\"??1Shape@ov@@QEAA@XZ\"},{\"addr\":\"0x18011cb40\",\"name\":\"sub_18011CB40\"},{\"addr\":\"0x18011cb10\",\"name\":\"sub_18011CB10\"},{\"addr\":\"0x18010e0e0\",\"name\":\"sub_18010E0E0\"},{\"addr\":\"0x1803bbe70\",\"name\":\"__imp_??1Tensor@ov@@QEAA@XZ\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x180137000",
+      "code": "ov::Tensor *__fastcall sub_180137000(__int64 a1, ov::Tensor *a2)\n{\n  const void ***v3; // rax\n  const void **v4; // rsi\n  void *v5; // rbx\n  void *v6; // rbx\n  unsigned __int64 v7; // rbx\n  char *v8; // rdi\n  size_t v9; // rbx\n  char *v10; // rax\n  size_t v11; // r15\n  volatile signed __int32 *v12; // rbx\n  _QWORD *v13; // rax\n  void *v14; // rax\n  ov::Tensor *result; // rax\n  __int64 v16; // rax\n  __int64 v17; // rax\n  __int64 v18; // rax\n  __int128 v19; // xmm0\n  __int64 v20; // r10\n  void *v21[2]; // [rsp+20h] [rbp-E0h] BYREF\n  __int64 v22; // [rsp+30h] [rbp-D0h]\n  void *Block; // [rsp+38h] [rbp-C8h] BYREF\n  __int128 pExceptionObject; // [rsp+40h] [rbp-C0h] BYREF\n  const char *v25; // [rsp+50h] [rbp-B0h]\n  const char *v26; // [rsp+60h] [rbp-A0h] BYREF\n  __int64 v27; // [rsp+68h] [rbp-98h]\n  const char *v28; // [rsp+70h] [rbp-90h]\n  _QWORD v29[2]; // [rsp+78h] [rbp-88h] BYREF\n  _BYTE v30[12]; // [rsp+88h] [rbp-78h] BYREF\n  int v31; // [rsp+94h] [rbp-6Ch]\n  ov::Tensor *v32; // [rsp+A8h] [rbp-58h]\n  void *Src[2]; // [rsp+B0h] [rbp-50h] BYREF\n  char *v34; // [rsp+C0h] [rbp-40h]\n  __int128 v35; // [rsp+C8h] [rbp-38h] BYREF\n  _QWORD *v36; // [rsp+D8h] [rbp-28h]\n  __int128 v37; // [rsp+E0h] [rbp-20h] BYREF\n  __int64 v38; // [rsp+F0h] [rbp-10h]\n  _QWORD v39[4]; // [rsp+F8h] [rbp-8h] BYREF\n\n  __wind /*0xf1c00000000000fc*/\n  {\n    v32 = a2; /*0x18013702f*/\n    LODWORD(v22) = 0; /*0x180137036*/\n    memset(v39, 0, sizeof(v39)); /*0x18013703e*/\n    sub_18010EA80(a1: v39); /*0x18013705b*/\n    __wind /*0xf1c00000000000f0*/\n    {\n      Block = nullptr; /*0x180137061*/\n      sub_180117990(a1: &Block, a2: v39); /*0x18013706f*/\n      __wind /*0xf1c00000000000e4*/\n      {\n        v3 = (const void ***)sub_180117990(a1: v21, a2: v39); /*0x18013707e*/\n        v4 = *v3; /*0x180137083*/\n        *v3 = nullptr; /*0x180137086*/\n        v5 = Block; /*0x180137089*/\n        Block = v4; /*0x18013708e*/\n        if ( v5 != nullptr ) /*0x180137096*/\n        {\n          sub_180125910(a1: v5); /*0x18013709b*/\n          j_j_free(Block: v5); /*0x1801370a8*/\n        }\n        v6 = v21[0]; /*0x1801370ad*/\n        if ( v21[0] != nullptr ) /*0x1801370b5*/\n        {\n          sub_180125910(a1: v21[0]); /*0x1801370ba*/\n          j_j_free(Block: v6); /*0x1801370c7*/\n        }\n        if ( v4 == nullptr ) /*0x1801370cf*/\n        {\n          v16 = sub_180116B80(); /*0x180137385*/\n          v17 = sub_180116BF0(a1: v16, a2: v29); /*0x180137392*/\n          __wind /*0xf1c0000000000024*/\n          {\n            sub_18011C880(a1: v17); /*0x18013739b*/\n            sub_180110CC0(a1: &v26, a2: \"Failed to load model\"); /*0x1801373af*/\n            v18 = sub_180113110( /*0x1801373cf*/\n                    a1: v30,\n                    a2: \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\DepthEngine\\\\DepthEngineVino.cpp\",\n                    a3: 330,\n                    a4: \"AiStereo::Core::DepthEngineVino::GetWeightTensor\");\n            *(_OWORD *)v21 = v19; /*0x1801373d4*/\n            pExceptionObject = *(_OWORD *)v18; /*0x1801373dc*/\n            v25 = *(const char **)(v18 + 16); /*0x1801373e6*/\n            ((void (__fastcall *)(__int64, __int128 *, __int64, void **))sub_180114050)( /*0x1801373ff*/\n              a1: v20,\n              a2: &pExceptionObject,\n              a3: 4,\n              a4: v21);\n          }\n          __unwind\n          {\n            sub_18011BED0(a1: v29); /*0xf1c000000000001c*/\n          }\n          sub_18011BED0(a1: v29); /*0x18013740a*/\n          sub_18010F360(a1: &pExceptionObject, a2: \"Failed to load model\"); /*0x18013741b*/\n          throw (std::runtime_error *)&pExceptionObject; /*0x18013742c*/\n        }\n        *(_OWORD *)Src = 0; /*0x1801370d8*/\n        v34 = nullptr; /*0x1801370dd*/\n        v7 = (_BYTE *)v4[1] - (_BYTE *)*v4; /*0x1801370e5*/\n        if ( v7 != 0 ) /*0x1801370e8*/\n        {\n          if ( v7 > 0x7FFFFFFFFFFFFFFFLL ) /*0x1801370f7*/\n            sub_18010F120(); /*0x18013737f*/\n          v8 = (char *)sub_18010F0B0(a1: v7); /*0x180137105*/\n          Src[0] = v8; /*0x180137108*/\n          Src[1] = v8; /*0x18013710c*/\n          v34 = &v8[v7]; /*0x180137113*/\n          v9 = (_BYTE *)v4[1] - (_BYTE *)*v4; /*0x18013711e*/\n          memmove(a1: v8, Src: *v4, Size: v9); /*0x180137127*/\n          v10 = &v8[v9]; /*0x18013712c*/\n          Src[1] = &v8[v9]; /*0x180137130*/\n        }\n        else\n        {\n          v10 = (char *)Src[1]; /*0x180137136*/\n        }\n        __wind /*0xf1c00000000000d8*/\n        {\n          v11 = *((int *)v4 + 6); /*0x18013713a*/\n          if ( Src[0] == v10 ) /*0x180137142*/\n          {\n            if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer /*0x180137169*/\n                                               + (unsigned int)TlsIndex)\n                                             + 16LL) )\n            {\n              sub_1803B3838(a1: &dword_1805C9A98); /*0x180137172*/\n              if ( dword_1805C9A98 == -1 ) /*0x18013717e*/\n              {\n                __wind /*0xf1c00000000000c0*/\n                {\n                  xmmword_1805C9820 = 0; /*0x180137183*/\n                  sub_180116C20(); /*0x18013718a*/\n                  atexit(a1: sub_1803B9F10); /*0x180137196*/\n                  sub_1803B37CC(a1: &dword_1805C9A98); /*0x1801371a3*/\n                }\n                __unwind\n                {\n                  sub_1803B3790(a1: &dword_1805C9A98); /*0x1803b7567*/\n                }\n              }\n            }\n            __wind /*0xf1c00000000000b4*/\n            {\n              v12 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801371a8*/\n              if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x1801371b2*/\n              {\n                _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x1801371b4*/\n                v12 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x1801371b8*/\n              }\n              v29[0] = xmmword_1805C9820; /*0x1801371c6*/\n              v29[1] = v12; /*0x1801371cb*/\n              v26 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\DepthEngine\\\\DepthEngineVino.cpp\"; /*0x1801371d6*/\n              LODWORD(v27) = 339; /*0x1801371db*/\n              HIDWORD(v27) = v31; /*0x1801371e6*/\n              v28 = \"AiStereo::Core::DepthEngineVino::GetWeightTensor\"; /*0x1801371f1*/\n              *((_QWORD *)&pExceptionObject + 1) = v27; /*0x180137210*/\n              v25 = \"AiStereo::Core::DepthEngineVino::GetWeightTensor\"; /*0x18013721b*/\n              sub_180114050( /*0x180137231*/\n                a1: xmmword_1805C9820,\n                a2: &pExceptionObject,\n                a3: 4,\n                a4: v21,\n                a5: \" model is empty\",\n                a6: 15,\n                a7: v22,\n                a8: Block,\n                a9: \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\DepthEngine\\\\DepthEngineVino.cpp\");\n              if ( v12 != nullptr && _InterlockedExchangeAdd(v12 + 2, 0xFFFFFFFF) == 1 ) /*0x18013724b*/\n              {\n                (**(void (__fastcall ***)(volatile signed __int32 *))v12)(a1: v12); /*0x180137253*/\n                if ( _InterlockedExchangeAdd(v12 + 3, 0xFFFFFFFF) == 1 ) /*0x18013725d*/\n                  (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v12 + 8LL))(a1: v12); /*0x180137265*/\n              }\n            }\n            __unwind\n            {\n              sub_18011BED0(a1: v29); /*0xf1c00000000000ac*/\n            }\n          }\n          v21[0] = (void *)(unsigned int)v11; /*0x18013726e*/\n          v35 = 0; /*0x180137273*/\n          v36 = nullptr; /*0x180137278*/\n          v13 = (_QWORD *)sub_18010F0B0(a1: 8); /*0x180137281*/\n          __wind /*0xf1c000000000009c*/\n          {\n            *(_QWORD *)&v35 = v13; /*0x180137286*/\n            v36 = v13 + 1; /*0x18013728e*/\n            *v13 = (unsigned int)v11; /*0x180137292*/\n            *((_QWORD *)&v35 + 1) = v13 + 1; /*0x180137295*/\n            v37 = 0; /*0x18013729e*/\n            v38 = 0; /*0x1801372a2*/\n            ov::Shape::Shape(a1: &v37, a2: &v35); /*0x1801372ae*/\n            __wind /*0xf1c0000000000054*/\n            {\n              ov::Allocator::Allocator(this: (ov::Allocator *)v30); /*0x1801372b9*/\n              __wind /*0xf1c0000000000048*/\n              {\n                LODWORD(v21[0]) = 16; /*0x1801372c0*/\n                ov::Tensor::Tensor( /*0x1801372d8*/\n                  this: a2,\n                  a2: (const struct ov::element::Type *)v21,\n                  a3: (const struct ov::Shape *)&v37,\n                  a4: (const struct ov::Allocator *)v30);\n                LODWORD(v22) = 1; /*0x1801372de*/\n                ov::Allocator::~Allocator(this: (ov::Allocator *)v30); /*0x1801372ea*/\n              }\n              __unwind\n              {\n                ov::Allocator::~Allocator(this: (ov::Allocator *)v30); /*0xf1c0000000000040*/\n              }\n              LODWORD(v21[0]) = 16; /*0x1801372f0*/\n              v14 = ov::Tensor::data(this: a2, a2: (const struct ov::element::Type *)v21); /*0x180137300*/\n              memcpy(a1: v14, Src: Src[0], Size: v11); /*0x180137310*/\n              ov::Shape::~Shape(this: (ov::Shape *)&v37); /*0x18013731a*/\n              sub_18011C300(a1: &v35); /*0x180137325*/\n              sub_180125910(a1: Src); /*0x18013732f*/\n              sub_180125910(a1: v4); /*0x180137338*/\n              j_j_free(Block: v4); /*0x180137345*/\n              sub_18010EB70(a1: v39); /*0x18013734f*/\n              result = a2; /*0x180137354*/\n            }\n            __unwind\n            {\n              ov::Shape::~Shape(this: (ov::Shape *)&v37); /*0xf1c0000000000064*/\n            }\n          }\n          __unwind\n          {\n            sub_18011C300(a1: &v35); /*0xf1c0000000000070*/\n          }\n        }\n        __unwind\n        {\n          sub_18011CB40(a1: Src); /*0xf1c000000000007c*/\n        }\n      }\n      __unwind\n      {\n        sub_18011CB10(a1: &Block); /*0xf1c0000000000088*/\n      }\n    }\n    __unwind\n    {\n      sub_18010E0E0(a1: v39); /*0xf1c0000000000094*/\n    }\n  }\n  __unwind\n  {\n    if ( (v22 & 1) != 0 ) /*0x1803b75b1*/\n    {\n      LODWORD(v22) = v22 & 0xFFFFFFFE; /*0x1803b75b3*/\n      ov::Tensor::~Tensor(this: v32); /*0x1803b75be*/\n    }\n  }\n  return result; /*0x180137357*/\n}",
+      "refs": [
+        {
+          "addr": "0x18010ea80",
+          "name": "sub_18010EA80"
+        },
+        {
+          "addr": "0x180117990",
+          "name": "sub_180117990"
+        },
+        {
+          "addr": "0x180125910",
+          "name": "sub_180125910"
+        },
+        {
+          "addr": "0x1803b33a8",
+          "name": "j_j_free"
+        },
+        {
+          "addr": "0x180116b80",
+          "name": "sub_180116B80"
+        },
+        {
+          "addr": "0x180116bf0",
+          "name": "sub_180116BF0"
+        },
+        {
+          "addr": "0x18011c880",
+          "name": "sub_18011C880"
+        },
+        {
+          "addr": "0x180110cc0",
+          "name": "sub_180110CC0"
+        },
+        {
+          "addr": "0x180584eb0",
+          "name": "aFailedToLoadMo",
+          "string": "Failed to load model"
+        },
+        {
+          "addr": "0x180113110",
+          "name": "sub_180113110"
+        },
+        {
+          "addr": "0x180584bf0",
+          "name": "aJProjectVsproj_0",
+          "string": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\Core\\DepthEngine\\DepthEngineVino.cpp"
+        },
+        {
+          "addr": "0x180584ec8",
+          "name": "aAistereoCoreDe_2",
+          "string": "AiStereo::Core::DepthEngineVino::GetWeightTensor"
+        },
+        {
+          "addr": "0x180114050",
+          "name": "sub_180114050"
+        },
+        {
+          "addr": "0x18011bed0",
+          "name": "sub_18011BED0"
+        },
+        {
+          "addr": "0x18010f360",
+          "name": "sub_18010F360"
+        },
+        {
+          "addr": "0x18010f120",
+          "name": "sub_18010F120"
+        },
+        {
+          "addr": "0x18010f0b0",
+          "name": "sub_18010F0B0"
+        },
+        {
+          "addr": "0x1803b49ee",
+          "name": "memmove"
+        },
+        {
+          "addr": "0x1803b3838",
+          "name": "sub_1803B3838"
+        },
+        {
+          "addr": "0x1805c9a98",
+          "name": "dword_1805C9A98"
+        },
+        {
+          "addr": "0x1805c9820",
+          "name": "xmmword_1805C9820"
+        },
+        {
+          "addr": "0x180116c20",
+          "name": "sub_180116C20"
+        },
+        {
+          "addr": "0x1803b3744",
+          "name": "atexit"
+        },
+        {
+          "addr": "0x1803b9f10",
+          "name": "sub_1803B9F10"
+        },
+        {
+          "addr": "0x1803b37cc",
+          "name": "sub_1803B37CC"
+        },
+        {
+          "addr": "0x1803b3790",
+          "name": "sub_1803B3790"
+        },
+        {
+          "addr": "0x1805c973c",
+          "name": "TlsIndex"
+        },
+        {
+          "addr": "0x180584f00",
+          "name": "aModelIsEmpty",
+          "string": " model is empty"
+        },
+        {
+          "addr": "0x1803bbce8",
+          "name": "??0Shape@ov@@QEAA@AEBV?$vector@_KV?$allocator@_K@std@@@std@@@Z"
+        },
+        {
+          "addr": "0x1803bbe10",
+          "name": "??0Allocator@ov@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1803bbe68",
+          "name": "??0Tensor@ov@@QEAA@AEBVType@element@1@AEBVShape@1@AEBVAllocator@1@@Z"
+        },
+        {
+          "addr": "0x1803bbe18",
+          "name": "__imp_??1Allocator@ov@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1803b11a8",
+          "name": "??1Allocator@ov@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1803bbe78",
+          "name": "?data@Tensor@ov@@QEAAPEAXAEBVType@element@2@@Z"
+        },
+        {
+          "addr": "0x1803b49e2",
+          "name": "memcpy"
+        },
+        {
+          "addr": "0x1803bbcd0",
+          "name": "__imp_??1Shape@ov@@QEAA@XZ"
+        },
+        {
+          "addr": "0x18011c300",
+          "name": "sub_18011C300"
+        },
+        {
+          "addr": "0x18010eb70",
+          "name": "sub_18010EB70"
+        },
+        {
+          "addr": "0x1803b11b4",
+          "name": "??1Shape@ov@@QEAA@XZ"
+        },
+        {
+          "addr": "0x18011cb40",
+          "name": "sub_18011CB40"
+        },
+        {
+          "addr": "0x18011cb10",
+          "name": "sub_18011CB10"
+        },
+        {
+          "addr": "0x18010e0e0",
+          "name": "sub_18010E0E0"
+        },
+        {
+          "addr": "0x1803bbe70",
+          "name": "__imp_??1Tensor@ov@@QEAA@XZ"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

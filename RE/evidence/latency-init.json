@@ -1,0 +1,222 @@
+{
+  "addr": "sub_1800B32C0",
+  "code": "_BYTE *__fastcall sub_1800B32C0(char *a1, __int64 a2, __int64 a3)\n{\n  __int64 v3; // rdx\n  __int64 v4; // r8\n  _QWORD *v5; // rax\n  unsigned __int64 v6; // rdx\n  __int64 v7; // rdx\n  __int64 v8; // r8\n  char *v9; // rbx\n  __int64 v10; // rdi\n  _BYTE *v11; // rcx\n  __int64 v12; // rdx\n  __int64 v13; // rcx\n  __int64 v14; // r8\n  __int64 v15; // rdx\n  __int64 v16; // rcx\n  __int64 v17; // r8\n  __int64 v18; // rax\n  __int64 v19; // rdx\n  __int64 v20; // rcx\n  __int64 v21; // r8\n  __int64 v22; // rax\n  int v23; // r9d\n  int v24; // r8d\n  __int64 v26; // [rsp+0h] [rbp-78h] BYREF\n  _QWORD *v27; // [rsp+20h] [rbp-58h] BYREF\n  unsigned __int64 v28; // [rsp+28h] [rbp-50h]\n  _QWORD *v29; // [rsp+30h] [rbp-48h]\n  char *v30; // [rsp+38h] [rbp-40h] BYREF\n  char *v31; // [rsp+40h] [rbp-38h]\n  char *v32; // [rsp+48h] [rbp-30h]\n  char *v33; // [rsp+80h] [rbp+8h] BYREF\n  __int64 v34; // [rsp+88h] [rbp+10h]\n  cv::Mat *v35; // [rsp+90h] [rbp+18h]\n\n  v33 = a1; /*0x1800b32c0*/\n  v35 = (cv::Mat *)&algn_18013C2D8[24]; /*0x1800b32d8*/\n  cv::Mat::Mat(a1: &algn_18013C2D8[24], a2, a3); /*0x1800b32e3*/\n  cv::Mat::Mat(a1: &unk_18013C350, a2: v3, a3: v4); /*0x1800b32f1*/\n  __wind /*0xf1c0000000000164*/\n  {\n    __wind /*0xf1c000000000016c*/\n    {\n      sub_180038890(a1: &unk_18013C3B0); /*0x1800b32ff*/\n      __wind /*0xf1c000000000012c*/\n      {\n        sub_180038890(a1: &unk_18013C590); /*0x1800b330c*/\n        __wind /*0xf1c0000000000178*/\n        {\n          __wind /*0xf1c0000000000180*/\n          {\n            __wind /*0xf1c0000000000188*/\n            {\n              __wind /*0xf1c0000000000190*/\n              {\n                __wind /*0xf1c0000000000198*/\n                {\n                  __wind /*0xf1c00000000001a0*/\n                  {\n                    __wind /*0xf1c00000000001a8*/\n                    {\n                      __wind /*0xf1c00000000001b0*/\n                      {\n                        __wind /*0xf1c00000000001b8*/\n                        {\n                          qword_18013C790 = 0; /*0x1800b3315*/\n                          LODWORD(qword_18013C798) = 50; /*0x1800b331d*/\n                          *(_OWORD *)&qword_18013C7A0 = 0; /*0x1800b332a*/\n                          xmmword_18013C7B0 = 0u; /*0x1800b333b*/\n                          *(_OWORD *)&qword_18013C7C0 = 0; /*0x1800b3342*/\n                          xmmword_18013C7D0 = 0u; /*0x1800b3351*/\n                          *(_OWORD *)&qword_18013C7E0 = 0; /*0x1800b3358*/\n                          xmmword_18013C7F0 = 0; /*0x1800b3360*/\n                          xmmword_18013C800 = 0u; /*0x1800b336f*/\n                          *(_OWORD *)&qword_18013C810 = 0; /*0x1800b3376*/\n                          LOWORD(xmmword_18013C820) = 0; /*0x1800b3389*/\n                          *((_QWORD *)&xmmword_18013C820 + 1) = 0; /*0x1800b3390*/\n                          *(_OWORD *)&word_18013C830 = 0; /*0x1800b3397*/\n                          xmmword_18013C840 = 0; /*0x1800b339f*/\n                          xmmword_18013C850 = 0u; /*0x1800b33ae*/\n                          *(_OWORD *)&qword_18013C860 = 0; /*0x1800b33b5*/\n                          xmmword_18013C870 = 0; /*0x1800b33bd*/\n                          xmmword_18013C880 = 0; /*0x1800b33c7*/\n                          xmmword_18013C890 = 0; /*0x1800b33ce*/\n                          xmmword_18013C8A0 = 0; /*0x1800b33d5*/\n                          LOBYTE(xmmword_18013C8B0) = 1; /*0x1800b33dc*/\n                          v33 = nullptr; /*0x1800b33e3*/\n                          v5 = operator new(Size: 0x30u); /*0x1800b33ef*/\n                          v27 = v5; /*0x1800b33f4*/\n                          v6 = (unsigned __int64)(v5 + 6); /*0x1800b33f9*/\n                          v29 = v5 + 6; /*0x1800b33fd*/\n                          v34 = 0; /*0x1800b3402*/\n                          if ( v33 != nullptr ) /*0x1800b341b*/\n                          {\n                            *v5 = 0; /*0x1800b342d*/\n                            v5[1] = 0; /*0x1800b3430*/\n                            v5[2] = 0; /*0x1800b3434*/\n                            v5[3] = 0; /*0x1800b3438*/\n                            v5[4] = 0; /*0x1800b343c*/\n                            v5[5] = 0; /*0x1800b3440*/\n                            v6 = (unsigned __int64)(v5 + 6); /*0x1800b3444*/\n                          }\n                          else\n                          {\n                            *(_OWORD *)v5 = 0; /*0x1800b3420*/\n                            *((_OWORD *)v5 + 1) = 0; /*0x1800b3423*/\n                            *((_OWORD *)v5 + 2) = 0; /*0x1800b3427*/\n                          }\n                          __wind /*0xf1c000000000006c*/\n                          {\n                            v28 = v6; /*0x1800b3448*/\n                            *((_QWORD *)&xmmword_18013C8B0 + 1) = 0; /*0x1800b344d*/\n                            *(_OWORD *)&byte_18013C8C0 = 0; /*0x1800b3457*/\n                            v9 = (char *)operator new(Size: 0x30u); /*0x1800b3469*/\n                            *((_QWORD *)&xmmword_18013C8B0 + 1) = v9; /*0x1800b346c*/\n                            *(_QWORD *)&byte_18013C8C0 = v9; /*0x1800b3473*/\n                            qword_18013C8C8 = (__int64)(v9 + 48); /*0x1800b347e*/\n                            v33 = (char *)&xmmword_18013C8B0 + 8; /*0x1800b348c*/\n                            v30 = v9; /*0x1800b3494*/\n                            v31 = v9; /*0x1800b3499*/\n                            v32 = (char *)&xmmword_18013C8B0 + 8; /*0x1800b349e*/\n                            v10 = 2; /*0x1800b34a3*/\n                            __wind /*0xf1c0000000000138*/\n                            {\n                              __wind /*0xf1c0000000000140*/\n                              {\n                                do /*0x1800b34ca*/\n                                {\n                                  sub_18002FF80(a1: v9, a2: &v27); /*0x1800b34b8*/\n                                  v9 += 24; /*0x1800b34bd*/\n                                  v31 = v9; /*0x1800b34c1*/\n                                  --v10; /*0x1800b34c6*/\n                                }\n                                while ( v10 != 0 ); /*0x1800b34ca*/\n                                *(_QWORD *)&byte_18013C8C0 = v9; /*0x1800b34cc*/\n                                v11 = v27; /*0x1800b34d3*/\n                                if ( v27 != nullptr ) /*0x1800b34db*/\n                                {\n                                  if ( (unsigned __int64)(8 * (v29 - v27)) >= 0x1000 ) /*0x1800b34fb*/\n                                  {\n                                    v11 = (_BYTE *)*(v27 - 1); /*0x1800b3501*/\n                                    if ( (unsigned __int64)((char *)v27 - v11 - 8) > 0x1F ) /*0x1800b3510*/\n                                      invalid_parameter_noinfo_noreturn(); /*0x1800b35d6*/\n                                  }\n                                  j_j_j__free_base_0(Block: v11); /*0x1800b3516*/\n                                }\n                              }\n                              __unwind\n                              {\n                                sub_1800B41C0(a1: &v30); /*0xf1c0000000000150*/\n                              }\n                            }\n                            __unwind\n                            {\n                              sub_1800B4150(a1: &v33); /*0xf1c000000000015c*/\n                            }\n                          }\n                          __unwind\n                          {\n                            sub_180027B90(a1: &v27); /*0xf1c000000000007c*/\n                          }\n                          __wind /*0xf1c0000000000084*/\n                          {\n                            LOBYTE(xmmword_18013C8D0) = 1; /*0x1800b351b*/\n                            sub_180038AC0(a1: v11, a2: v7, a3: v8); /*0x1800b3522*/\n                            cv::noArray(this: (cv *)&algn_18013C2D8[24]); /*0x1800b352d*/\n                            sub_180038AC0(a1: v13, a2: v12, a3: v14); /*0x1800b3533*/\n                            cv::noArray(this: (cv *)&unk_18013C350); /*0x1800b3546*/\n                            v18 = sub_180038AC0(a1: v16, a2: v15, a3: v17); /*0x1800b354c*/\n                            sub_180039600(a1: &unk_18013C3B0, a2: v18); /*0x1800b355b*/\n                            v22 = sub_180038AC0(a1: v20, a2: v19, a3: v21); /*0x1800b3560*/\n                            sub_180039600(a1: &unk_18013C590, a2: v22 + 480); /*0x1800b3573*/\n                            unk_18013C770 = *unk_18013C540; /*0x1800b3583*/\n                            v24 = unk_18013C4E0; /*0x1800b358b*/\n                            unk_18013C778 = *unk_18013C4E0; /*0x1800b3597*/\n                            qword_18013C780 = *(_QWORD *)(unk_18013C4E0 + 16LL); /*0x1800b35a5*/\n                            qword_18013C788 = *(_QWORD *)(unk_18013C4E0 + *unk_18013C518 + 16LL); /*0x1800b35be*/\n                          }\n                          __unwind\n                          {\n                            sub_1800B35E0(a1: (char *)v35 + 1480); /*0x1800faefe*/\n                          }\n                        }\n                        __unwind\n                        {\n                          sub_1800B35F0(a1: (char *)v35 + 1384); /*0x1800faece*/\n                        }\n                      }\n                      __unwind\n                      {\n                        sub_1800B3740(a1: (char *)v35 + 1360); /*0x1800faeae*/\n                      }\n                    }\n                    __unwind\n                    {\n                      sub_1800B3890(a1: (char *)v35 + 1336); /*0x1800fae8e*/\n                    }\n                  }\n                  __unwind\n                  {\n                    sub_18002C550(a1: (char *)v35 + 1304); /*0x1800fae6e*/\n                  }\n                }\n                __unwind\n                {\n                  sub_18002C550(a1: (char *)v35 + 1280); /*0x1800fae4e*/\n                }\n              }\n              __unwind\n              {\n                sub_18002C550(a1: (char *)v35 + 1256); /*0x1800fae2e*/\n              }\n            }\n            __unwind\n            {\n              sub_18002C550(a1: (char *)v35 + 1224); /*0x1800fae0e*/\n            }\n          }\n          __unwind\n          {\n            sub_18002C550(a1: (char *)v35 + 1200); /*0x1800fadee*/\n          }\n        }\n        __unwind\n        {\n          sub_180038A70(a1: (char *)v35 + 672); /*0x1800fadce*/\n        }\n      }\n      __unwind\n      {\n        sub_180038A70(a1: (char *)v35 + 192); /*0x1800fadae*/\n      }\n    }\n    __unwind\n    {\n      cv::Mat::Mat(this: (cv::Mat *)((char *)v35 + 96), a2: (unsigned int)&v26, a3: v24, a4: v23, a5: v27, a6: v28); /*0x1800fad8b*/\n    }\n  }\n  __unwind\n  {\n    cv::Mat::~Mat(this: v35); /*0xf1c0000000000124*/\n  }\n  return &algn_18013C2D8[24]; /*0x1800b35c9*/\n}",
+  "refs": [
+    {
+      "addr": "0x18013c2d8",
+      "name": "algn_18013C2D8"
+    },
+    {
+      "addr": "0x1800fd568",
+      "name": "??0Mat@cv@@QEAA@AEBV01@AEBV?$Rect_@H@1@@Z"
+    },
+    {
+      "addr": "0x18013c350",
+      "name": "unk_18013C350"
+    },
+    {
+      "addr": "0x180038890",
+      "name": "sub_180038890"
+    },
+    {
+      "addr": "0x18013c3b0",
+      "name": "unk_18013C3B0"
+    },
+    {
+      "addr": "0x18013c590",
+      "name": "unk_18013C590"
+    },
+    {
+      "addr": "0x18013c790",
+      "name": "qword_18013C790"
+    },
+    {
+      "addr": "0x18013c798",
+      "name": "qword_18013C798"
+    },
+    {
+      "addr": "0x18013c7a0",
+      "name": "qword_18013C7A0"
+    },
+    {
+      "addr": "0x18013c7b0",
+      "name": "xmmword_18013C7B0"
+    },
+    {
+      "addr": "0x18013c7c0",
+      "name": "qword_18013C7C0"
+    },
+    {
+      "addr": "0x18013c7d0",
+      "name": "xmmword_18013C7D0"
+    },
+    {
+      "addr": "0x18013c7e0",
+      "name": "qword_18013C7E0"
+    },
+    {
+      "addr": "0x18013c7f0",
+      "name": "xmmword_18013C7F0"
+    },
+    {
+      "addr": "0x18013c800",
+      "name": "xmmword_18013C800"
+    },
+    {
+      "addr": "0x18013c810",
+      "name": "qword_18013C810"
+    },
+    {
+      "addr": "0x18013c820",
+      "name": "xmmword_18013C820"
+    },
+    {
+      "addr": "0x18013c830",
+      "name": "word_18013C830"
+    },
+    {
+      "addr": "0x18013c840",
+      "name": "xmmword_18013C840"
+    },
+    {
+      "addr": "0x18013c850",
+      "name": "xmmword_18013C850"
+    },
+    {
+      "addr": "0x18013c860",
+      "name": "qword_18013C860"
+    },
+    {
+      "addr": "0x18013c870",
+      "name": "xmmword_18013C870"
+    },
+    {
+      "addr": "0x18013c880",
+      "name": "xmmword_18013C880"
+    },
+    {
+      "addr": "0x18013c890",
+      "name": "xmmword_18013C890"
+    },
+    {
+      "addr": "0x18013c8a0",
+      "name": "xmmword_18013C8A0"
+    },
+    {
+      "addr": "0x18013c8b0",
+      "name": "xmmword_18013C8B0"
+    },
+    {
+      "addr": "0x1800b7d10",
+      "name": "??2@YAPEAX_K@Z"
+    },
+    {
+      "addr": "0x18013c8c0",
+      "name": "byte_18013C8C0"
+    },
+    {
+      "addr": "0x18013c8c8",
+      "name": "qword_18013C8C8"
+    },
+    {
+      "addr": "0x18002ff80",
+      "name": "sub_18002FF80"
+    },
+    {
+      "addr": "0x1800c199c",
+      "name": "_invalid_parameter_noinfo_noreturn"
+    },
+    {
+      "addr": "0x1800b819c",
+      "name": "j_j_j__free_base_0"
+    },
+    {
+      "addr": "0x1800b41c0",
+      "name": "sub_1800B41C0"
+    },
+    {
+      "addr": "0x1800b4150",
+      "name": "sub_1800B4150"
+    },
+    {
+      "addr": "0x180027b90",
+      "name": "sub_180027B90"
+    },
+    {
+      "addr": "0x18013c8d0",
+      "name": "xmmword_18013C8D0"
+    },
+    {
+      "addr": "0x180038ac0",
+      "name": "sub_180038AC0"
+    },
+    {
+      "addr": "0x1800fd4e0",
+      "name": "?noArray@cv@@YAAEBV_InputOutputArray@1@XZ"
+    },
+    {
+      "addr": "0x180039600",
+      "name": "sub_180039600"
+    },
+    {
+      "addr": "0x18013c770",
+      "name": "unk_18013C770"
+    },
+    {
+      "addr": "0x18013c540",
+      "name": "unk_18013C540"
+    },
+    {
+      "addr": "0x18013c4e0",
+      "name": "unk_18013C4E0"
+    },
+    {
+      "addr": "0x18013c778",
+      "name": "unk_18013C778"
+    },
+    {
+      "addr": "0x18013c780",
+      "name": "qword_18013C780"
+    },
+    {
+      "addr": "0x18013c788",
+      "name": "qword_18013C788"
+    },
+    {
+      "addr": "0x18013c518",
+      "name": "unk_18013C518"
+    },
+    {
+      "addr": "0x1800b35e0",
+      "name": "sub_1800B35E0"
+    },
+    {
+      "addr": "0x1800b35f0",
+      "name": "sub_1800B35F0"
+    },
+    {
+      "addr": "0x1800b3740",
+      "name": "sub_1800B3740"
+    },
+    {
+      "addr": "0x1800b3890",
+      "name": "sub_1800B3890"
+    },
+    {
+      "addr": "0x18002c550",
+      "name": "sub_18002C550"
+    },
+    {
+      "addr": "0x180038a70",
+      "name": "sub_180038A70"
+    },
+    {
+      "addr": "0x1800fd570",
+      "name": "??0Mat@cv@@QEAA@HHHPEAX_K@Z"
+    },
+    {
+      "addr": "0x1800b4b26",
+      "name": "??1Mat@cv@@QEAA@XZ"
+    }
+  ]
+}

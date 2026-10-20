@@ -1,0 +1,3 @@
+I20261020 23:32:47.389411  8436 main.cpp:1429] Eye Tracker Version: 1.11.0.35453
+I20261020 23:33:16.312748 31304 MediaFoundationCamera.cpp:559] Device activated
+I20261020 23:33:16.378404 31304 MediaFoundationCamera.cpp:683] Streaming started. restart=0

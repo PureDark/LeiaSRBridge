@@ -1,0 +1,47 @@
+{
+  "result": [
+    {
+      "addr": "0x1800fd008",
+      "xrefs": [
+        {
+          "addr": "0x1800a512b",
+          "type": "code",
+          "fn": {
+            "addr": "0x1800a50d0",
+            "name": "sub_1800A50D0",
+            "size": "0xe3"
+          }
+        },
+        {
+          "addr": "0x1800a529b",
+          "type": "code",
+          "fn": {
+            "addr": "0x1800a5240",
+            "name": "sub_1800A5240",
+            "size": "0xe3"
+          }
+        },
+        {
+          "addr": "0x1800a512b",
+          "type": "data",
+          "fn": {
+            "addr": "0x1800a50d0",
+            "name": "sub_1800A50D0",
+            "size": "0xe3"
+          }
+        },
+        {
+          "addr": "0x1800a529b",
+          "type": "data",
+          "fn": {
+            "addr": "0x1800a5240",
+            "name": "sub_1800A5240",
+            "size": "0xe3"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 4
+    }
+  ]
+}

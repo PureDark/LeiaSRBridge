@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"latency\",\"backend\":\"worker\",\"owned\":true,\"saved\":null,\"message\":\"Session closed: BOE_3DET_SDK.dll (latency)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "latency",
+      "backend": "worker",
+      "owned": true,
+      "saved": null,
+      "message": "Session closed: BOE_3DET_SDK.dll (latency)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

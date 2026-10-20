@@ -1,0 +1,68 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180009450\",\"code\":\"signed int __fastcall sub_180009450(__int64 a1, const char *a2)\\n{\\n  __int64 v2; // rax\\n  unsigned int v5; // ebx\\n  HANDLE FileW; // rax\\n  signed int result; // eax\\n  bool v8; // sf\\n  DWORD v9; // eax\\n  DWORD LastError; // eax\\n  DWORD v11; // eax\\n  struct _OVERLAPPED Overlapped; // [rsp+40h] [rbp-48h] BYREF\\n  DWORD Mode; // [rsp+60h] [rbp-28h] BYREF\\n  DWORD NumberOfBytesWritten; // [rsp+64h] [rbp-24h] BYREF\\n\\n  v2 = *(_QWORD *)(a1 + 88); /*0x18000946b*/\\n  if ( v2 != 0 && v2 != -1 ) /*0x180009480*/\\n    goto LABEL_14; /*0x180009480*/\\n  v5 = 0; /*0x180009486*/\\n  while ( 1 ) /*0x1800094b7*/\\n  {\\n    FileW = CreateFileW( /*0x1800094b7*/\\n              lpFileName: L\\\"\\\\\\\\\\\\\\\\.\\\\\\\\pipe\\\\\\\\YLFaceTrackingPipe\\\",\\n              dwDesiredAccess: 0x40000000u,\\n              dwShareMode: 0,\\n              lpSecurityAttributes: nullptr,\\n              dwCreationDisposition: 3u,\\n              dwFlagsAndAttributes: 0x40000000u,\\n              hTemplateFile: nullptr);\\n    *(_QWORD *)(a1 + 88) = FileW; /*0x1800094bd*/\\n    if ( FileW != (HANDLE)-1LL ) /*0x1800094c5*/\\n    {\\n      Mode = 2; /*0x180009511*/\\n      SetNamedPipeHandleState( /*0x180009524*/\\n        hNamedPipe: FileW,\\n        lpMode: &Mode,\\n        lpMaxCollectionCount: nullptr,\\n        lpCollectDataTimeout: nullptr);\\n      goto LABEL_14; /*0x180009524*/\\n    }\\n    result = GetLastError(); /*0x1800094c7*/\\n    if ( result != 2 && result != 231 ) /*0x1800094d7*/\\n      break; /*0x1800094d7*/\\n    Sleep(dwMilliseconds: 0x32u); /*0x1800094de*/\\n    v5 += 50; /*0x1800094e4*/\\n    if ( v5 >= 0x3E8 ) /*0x1800094ed*/\\n      return -2147024638; /*0x1800094f4*/\\n  }\\n  v8 = result < 0; /*0x1800094f9*/\\n  if ( result > 0 ) /*0x1800094fb*/\\n  {\\n    result = (unsigned __int16)result | 0x80070000; /*0x180009500*/\\n    v8 = result < 0; /*0x180009505*/\\n  }\\n  if ( !v8 ) /*0x180009507*/\\n  {\\nLABEL_14:\\n    memset(&Overlapped, 0, 24); /*0x18000952a*/\\n    Overlapped.hEvent = CreateEventW( /*0x18000954b*/\\n                          lpEventAttributes: nullptr,\\n                          bManualReset: true,\\n                          bInitialState: false,\\n                          lpName: nullptr);\\n    if ( Overlapped.hEvent == nullptr ) /*0x180009553*/\\n    {\\n      result = GetLastError(); /*0x180009555*/\\n      if ( result > 0 ) /*0x18000955d*/\\n        return (unsigned __int16)result | 0x80070000; /*0x180009566*/\\n      return result; /*0x18000956b*/\\n    }\\n    v9 = strlen(Str: a2); /*0x180009573*/\\n    if ( !WriteFile( /*0x180009599*/\\n            hFile: *(HANDLE *)(a1 + 88),\\n            lpBuffer: a2,\\n            nNumberOfBytesToWrite: v9,\\n            lpNumberOfBytesWritten: &NumberOfBytesWritten,\\n            lpOverlapped: &Overlapped) )\\n    {\\n      LastError = GetLastError(); /*0x18000959b*/\\n      if ( LastError != 997 ) /*0x1800095a6*/\\n      {\\nLABEL_22:\\n        if ( LastError == 109 || LastError == 232 ) /*0x1800095e7*/\\n        {\\n          CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x1800095ed*/\\n          *(_QWORD *)(a1 + 88) = -1; /*0x1800095f3*/\\n        }\\n        goto LABEL_25; /*0x1800095f3*/\\n      }\\n      v11 = WaitForSingleObject(hHandle: Overlapped.hEvent, dwMilliseconds: 0x1F4u); /*0x1800095b2*/\\n      if ( v11 != 0 ) /*0x1800095ba*/\\n      {\\n        if ( v11 == 258 ) /*0x18000962a*/\\n          CancelIo(hFile: *(HANDLE *)(a1 + 88)); /*0x180009630*/\\n        goto LABEL_25; /*0x180009636*/\\n      }\\n      if ( !GetOverlappedResult( /*0x1800095d5*/\\n              hFile: *(HANDLE *)(a1 + 88),\\n              lpOverlapped: &Overlapped,\\n              lpNumberOfBytesTransferred: &NumberOfBytesWritten,\\n              bWait: false) )\\n      {\\n        LastError = GetLastError(); /*0x1800095d7*/\\n        goto LABEL_22; /*0x1800095d7*/\\n      }\\n    }\\nLABEL_25:\\n    CloseHandle(hObject: Overlapped.hEvent); /*0x1800095fb*/\\n    return 0; /*0x180009606*/\\n  }\\n  return result; /*0x180009608*/\\n}\",\"refs\":[{\"addr\":\"0x18000e0a0\",\"name\":\"CreateFileW\"},{\"addr\":\"0x18000f4c8\",\"name\":\"FileName\",\"string\":\"\\u5c5c\\u5c2e\\u6970\\u6570\\u595c\\u464c\\u6361\\u5465\\u6172\\u6b63\\u6e69\\u5067\\u7069\\ufffd\"},{\"addr\":\"0x18000e0b8\",\"name\":\"SetNamedPipeHandleState\"},{\"addr\":\"0x18000e140\",\"name\":\"GetLastError\"},{\"addr\":\"0x18000e0e0\",\"name\":\"Sleep\"},{\"addr\":\"0x18000e0d8\",\"name\":\"CreateEventW\"},{\"addr\":\"0x18000bda1\",\"name\":\"strlen\"},{\"addr\":\"0x18000e0b0\",\"name\":\"CloseHandle\"},{\"addr\":\"0x18000e0d0\",\"name\":\"WaitForSingleObject\"},{\"addr\":\"0x18000e0c8\",\"name\":\"CancelIo\"},{\"addr\":\"0x18000e150\",\"name\":\"GetOverlappedResult\"},{\"addr\":\"0x18000e0a8\",\"name\":\"WriteFile\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180009450",
+      "code": "signed int __fastcall sub_180009450(__int64 a1, const char *a2)\n{\n  __int64 v2; // rax\n  unsigned int v5; // ebx\n  HANDLE FileW; // rax\n  signed int result; // eax\n  bool v8; // sf\n  DWORD v9; // eax\n  DWORD LastError; // eax\n  DWORD v11; // eax\n  struct _OVERLAPPED Overlapped; // [rsp+40h] [rbp-48h] BYREF\n  DWORD Mode; // [rsp+60h] [rbp-28h] BYREF\n  DWORD NumberOfBytesWritten; // [rsp+64h] [rbp-24h] BYREF\n\n  v2 = *(_QWORD *)(a1 + 88); /*0x18000946b*/\n  if ( v2 != 0 && v2 != -1 ) /*0x180009480*/\n    goto LABEL_14; /*0x180009480*/\n  v5 = 0; /*0x180009486*/\n  while ( 1 ) /*0x1800094b7*/\n  {\n    FileW = CreateFileW( /*0x1800094b7*/\n              lpFileName: L\"\\\\\\\\.\\\\pipe\\\\YLFaceTrackingPipe\",\n              dwDesiredAccess: 0x40000000u,\n              dwShareMode: 0,\n              lpSecurityAttributes: nullptr,\n              dwCreationDisposition: 3u,\n              dwFlagsAndAttributes: 0x40000000u,\n              hTemplateFile: nullptr);\n    *(_QWORD *)(a1 + 88) = FileW; /*0x1800094bd*/\n    if ( FileW != (HANDLE)-1LL ) /*0x1800094c5*/\n    {\n      Mode = 2; /*0x180009511*/\n      SetNamedPipeHandleState( /*0x180009524*/\n        hNamedPipe: FileW,\n        lpMode: &Mode,\n        lpMaxCollectionCount: nullptr,\n        lpCollectDataTimeout: nullptr);\n      goto LABEL_14; /*0x180009524*/\n    }\n    result = GetLastError(); /*0x1800094c7*/\n    if ( result != 2 && result != 231 ) /*0x1800094d7*/\n      break; /*0x1800094d7*/\n    Sleep(dwMilliseconds: 0x32u); /*0x1800094de*/\n    v5 += 50; /*0x1800094e4*/\n    if ( v5 >= 0x3E8 ) /*0x1800094ed*/\n      return -2147024638; /*0x1800094f4*/\n  }\n  v8 = result < 0; /*0x1800094f9*/\n  if ( result > 0 ) /*0x1800094fb*/\n  {\n    result = (unsigned __int16)result | 0x80070000; /*0x180009500*/\n    v8 = result < 0; /*0x180009505*/\n  }\n  if ( !v8 ) /*0x180009507*/\n  {\nLABEL_14:\n    memset(&Overlapped, 0, 24); /*0x18000952a*/\n    Overlapped.hEvent = CreateEventW( /*0x18000954b*/\n                          lpEventAttributes: nullptr,\n                          bManualReset: true,\n                          bInitialState: false,\n                          lpName: nullptr);\n    if ( Overlapped.hEvent == nullptr ) /*0x180009553*/\n    {\n      result = GetLastError(); /*0x180009555*/\n      if ( result > 0 ) /*0x18000955d*/\n        return (unsigned __int16)result | 0x80070000; /*0x180009566*/\n      return result; /*0x18000956b*/\n    }\n    v9 = strlen(Str: a2); /*0x180009573*/\n    if ( !WriteFile( /*0x180009599*/\n            hFile: *(HANDLE *)(a1 + 88),\n            lpBuffer: a2,\n            nNumberOfBytesToWrite: v9,\n            lpNumberOfBytesWritten: &NumberOfBytesWritten,\n            lpOverlapped: &Overlapped) )\n    {\n      LastError = GetLastError(); /*0x18000959b*/\n      if ( LastError != 997 ) /*0x1800095a6*/\n      {\nLABEL_22:\n        if ( LastError == 109 || LastError == 232 ) /*0x1800095e7*/\n        {\n          CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x1800095ed*/\n          *(_QWORD *)(a1 + 88) = -1; /*0x1800095f3*/\n        }\n        goto LABEL_25; /*0x1800095f3*/\n      }\n      v11 = WaitForSingleObject(hHandle: Overlapped.hEvent, dwMilliseconds: 0x1F4u); /*0x1800095b2*/\n      if ( v11 != 0 ) /*0x1800095ba*/\n      {\n        if ( v11 == 258 ) /*0x18000962a*/\n          CancelIo(hFile: *(HANDLE *)(a1 + 88)); /*0x180009630*/\n        goto LABEL_25; /*0x180009636*/\n      }\n      if ( !GetOverlappedResult( /*0x1800095d5*/\n              hFile: *(HANDLE *)(a1 + 88),\n              lpOverlapped: &Overlapped,\n              lpNumberOfBytesTransferred: &NumberOfBytesWritten,\n              bWait: false) )\n      {\n        LastError = GetLastError(); /*0x1800095d7*/\n        goto LABEL_22; /*0x1800095d7*/\n      }\n    }\nLABEL_25:\n    CloseHandle(hObject: Overlapped.hEvent); /*0x1800095fb*/\n    return 0; /*0x180009606*/\n  }\n  return result; /*0x180009608*/\n}",
+      "refs": [
+        {
+          "addr": "0x18000e0a0",
+          "name": "CreateFileW"
+        },
+        {
+          "addr": "0x18000f4c8",
+          "name": "FileName",
+          "string": "屜尮楰数奜䙌捡呥慲正湩偧灩�"
+        },
+        {
+          "addr": "0x18000e0b8",
+          "name": "SetNamedPipeHandleState"
+        },
+        {
+          "addr": "0x18000e140",
+          "name": "GetLastError"
+        },
+        {
+          "addr": "0x18000e0e0",
+          "name": "Sleep"
+        },
+        {
+          "addr": "0x18000e0d8",
+          "name": "CreateEventW"
+        },
+        {
+          "addr": "0x18000bda1",
+          "name": "strlen"
+        },
+        {
+          "addr": "0x18000e0b0",
+          "name": "CloseHandle"
+        },
+        {
+          "addr": "0x18000e0d0",
+          "name": "WaitForSingleObject"
+        },
+        {
+          "addr": "0x18000e0c8",
+          "name": "CancelIo"
+        },
+        {
+          "addr": "0x18000e150",
+          "name": "GetOverlappedResult"
+        },
+        {
+          "addr": "0x18000e0a8",
+          "name": "WriteFile"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

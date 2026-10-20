@@ -1,0 +1,104 @@
+{
+  "n": 24,
+  "matches": [
+    {
+      "addr": "0x18010bd90",
+      "string": "zeros should not appear here"
+    },
+    {
+      "addr": "0x18010e348",
+      "string": "{} line {} init face landmark model failed !!!"
+    },
+    {
+      "addr": "0x18010eb38",
+      "string": "{} line {}  set camera transpose error !!!"
+    },
+    {
+      "addr": "0x18010ebb8",
+      "string": "set transpose mat !!!"
+    },
+    {
+      "addr": "0x18010f270",
+      "string": "landmark detect begin"
+    },
+    {
+      "addr": "0x18010f2f0",
+      "string": "stop flag is true, landmark detect will exit!!!"
+    },
+    {
+      "addr": "0x18010f3d8",
+      "string": "landmark_l landmark_l landmark_l"
+    },
+    {
+      "addr": "0x18010f428",
+      "string": "landmark_r landmark_r landmark_r"
+    },
+    {
+      "addr": "0x18010f508",
+      "string": "landmark point inside polyhedron ..."
+    },
+    {
+      "addr": "0x18010f538",
+      "string": "landmark detect exited!!!"
+    },
+    {
+      "addr": "0x18010f588",
+      "string": "boe3dET::EyeTrack::landmarkDetect"
+    },
+    {
+      "addr": "0x18010f9b8",
+      "string": "boe3dET::ModelLandMark::forward"
+    },
+    {
+      "addr": "0x18010fa20",
+      "string": "{} line {}  landmark  network is null !!!"
+    },
+    {
+      "addr": "0x18010fa50",
+      "string": "ModelLandMark::finalize()"
+    },
+    {
+      "addr": "0x18010fa70",
+      "string": "ModelLandMark::finalize() is nullptr"
+    },
+    {
+      "addr": "0x18010fe68",
+      "string": "ZEstimator::clearCache()"
+    },
+    {
+      "addr": "0x180132a5c",
+      "string": "setFaceAreaTime_3D"
+    },
+    {
+      "addr": "0x18013375a",
+      "string": "?doInfer@BoeLandmark@@QEAAHAEAVMat@cv@@AEAV?$vector@V?$Point_@M@cv@@V?$allocator@V?$Point_@M@cv@@@std@@@std@@AEAV?$vector@MV?$allocator@M@std@@@5@@Z"
+    },
+    {
+      "addr": "0x1801337f2",
+      "string": "??1BoeLandmark@@QEAA@XZ"
+    },
+    {
+      "addr": "0x18013380c",
+      "string": "??0BoeLandmark@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z"
+    },
+    {
+      "addr": "0x180133866",
+      "string": "BoeLandmark.dll"
+    },
+    {
+      "addr": "0x180139090",
+      "string": ".?AV?$_Ref_count_obj2@VModelLandMark@boe3dET@@@std@@"
+    },
+    {
+      "addr": "0x180139158",
+      "string": ".?AVModelLandMark@boe3dET@@"
+    },
+    {
+      "addr": "0x180139738",
+      "string": ".?AV?$_Ref_count_obj2@VBoeLandmark@@@std@@"
+    }
+  ],
+  "cursor": {
+    "done": true
+  }
+}

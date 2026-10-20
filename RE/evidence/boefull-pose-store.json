@@ -1,0 +1,34 @@
+{
+  "addr": "0x1800B3090",
+  "code": "void __fastcall sub_1800B3090(__int64 a1, __int64 a2, __int64 a3)\n{\n  __int64 v6; // rcx\n  __int64 v7; // rcx\n  double v8; // xmm0_8\n  _QWORD *v9; // rcx\n  _QWORD *v10; // rcx\n  __int16 v11; // [rsp+60h] [rbp-A0h]\n  double v12; // [rsp+68h] [rbp-98h] BYREF\n  double v13; // [rsp+70h] [rbp-90h] BYREF\n  __int64 v14; // [rsp+78h] [rbp-88h]\n  __int64 v15; // [rsp+80h] [rbp-80h]\n  double v16; // [rsp+88h] [rbp-78h] BYREF\n  double v17; // [rsp+90h] [rbp-70h] BYREF\n  double v18; // [rsp+98h] [rbp-68h] BYREF\n  double v19; // [rsp+A0h] [rbp-60h] BYREF\n  double v20; // [rsp+A8h] [rbp-58h] BYREF\n  double v21; // [rsp+B0h] [rbp-50h] BYREF\n  double v22; // [rsp+B8h] [rbp-48h] BYREF\n  double v23; // [rsp+C0h] [rbp-40h] BYREF\n  double v24; // [rsp+C8h] [rbp-38h] BYREF\n  double v25[2]; // [rsp+D0h] [rbp-30h] BYREF\n  _BYTE v26[96]; // [rsp+E0h] [rbp-20h] BYREF\n  _BYTE v27[96]; // [rsp+140h] [rbp+40h] BYREF\n\n  v14 = a2; /*0x1800b30c1*/\n  v15 = a3; /*0x1800b30c6*/\n  cv::Mat::Mat(this: (cv::Mat *)v27); /*0x1800b30ce*/\n  __wind /*0xf1c0000000000040*/\n  {\n    __wind /*0xf1c0000000000048*/\n    {\n      __wind /*0xf1c0000000000050*/\n      {\n        sub_1800B24E0( /*0x1800b3126*/\n          a1: v6,\n          (void **)a2,\n          a3: a1 + 192,\n          a4: a1 + 288,\n          a5: &v20,\n          a6: &v13,\n          a7: &v19,\n          a8: &v18,\n          a9: &v17,\n          a10: &v16,\n          a11: (__int64)v27);\n        cv::Mat::Mat(this: (cv::Mat *)v26); /*0x1800b312f*/\n        __wind /*0xf1c0000000000004*/\n        {\n          sub_1800B24E0( /*0x1800b3187*/\n            a1: v7,\n            a2: (void **)a3,\n            a3: a1 + 672,\n            a4: a1 + 768,\n            a5: v25,\n            a6: &v12,\n            a7: &v24,\n            a8: &v23,\n            a9: &v22,\n            a10: &v21,\n            a11: (__int64)v26);\n          v8 = (v12 + v13) * 0.5; /*0x1800b3198*/\n          if ( v8 < -8.0 || v8 > 8.0 ) /*0x1800b31ba*/\n          {\n            if ( v8 >= -8.0 ) /*0x1800b31c9*/\n            {\n              if ( v8 <= 8.0 ) /*0x1800b31d8*/\n              {\nLABEL_10:\n                cv::Mat::~Mat(this: (cv::Mat *)v26); /*0x1800b31ed*/\n                cv::Mat::~Mat(this: (cv::Mat *)v27); /*0x1800b31fc*/\n                v9 = *(_QWORD **)a2; /*0x1800b3203*/\n                if ( *(_QWORD *)a2 != 0 ) /*0x1800b320b*/\n                {\n                  if ( ((*(_QWORD *)(a2 + 16) - (_QWORD)v9) & 0xFFFFFFFFFFFFFFF0uLL) >= 0x1000 ) /*0x1800b321f*/\n                  {\n                    if ( (unsigned __int64)v9 - *(v9 - 1) - 8 > 0x1F ) /*0x1800b3234*/\n                      invalid_parameter_noinfo_noreturn(); /*0x1800b32af*/\n                    v9 = (_QWORD *)*(v9 - 1); /*0x1800b3236*/\n                  }\n                  j_j_j__free_base_0(Block: v9); /*0x1800b3239*/\n                  *(_QWORD *)a2 = 0; /*0x1800b323e*/\n                  *(_QWORD *)(a2 + 8) = 0; /*0x1800b3241*/\n                  *(_QWORD *)(a2 + 16) = 0; /*0x1800b3245*/\n                }\n                v10 = *(_QWORD **)a3; /*0x1800b3249*/\n                if ( *(_QWORD *)a3 != 0 ) /*0x1800b324f*/\n                {\n                  if ( ((*(_QWORD *)(a3 + 16) - (_QWORD)v10) & 0xFFFFFFFFFFFFFFF0uLL) >= 0x1000 ) /*0x1800b3263*/\n                  {\n                    if ( (unsigned __int64)v10 - *(v10 - 1) - 8 > 0x1F ) /*0x1800b3278*/\n                      invalid_parameter_noinfo_noreturn(); /*0x1800b32b5*/\n                    v10 = (_QWORD *)*(v10 - 1); /*0x1800b327a*/\n                  }\n                  j_j_j__free_base_0(Block: v10); /*0x1800b327d*/\n                  *(_QWORD *)a3 = 0; /*0x1800b3282*/\n                  *(_QWORD *)(a3 + 8) = 0; /*0x1800b3285*/\n                  *(_QWORD *)(a3 + 16) = 0; /*0x1800b3289*/\n                }\n                return; /*0x1800b3289*/\n              }\n              v11 = 1; /*0x1800b31da*/\n            }\n            else\n            {\n              v11 = 256; /*0x1800b31cb*/\n            }\n          }\n          else\n          {\n            v11 = 257; /*0x1800b31bc*/\n          }\n          *(_WORD *)(a1 + 1328) = v11; /*0x1800b31e6*/\n          goto LABEL_10; /*0x1800b31e6*/\n        }\n        __unwind\n        {\n          cv::Mat::~Mat(this: (cv::Mat *)v26); /*0xf1c0000000000014*/\n        }\n      }\n      __unwind\n      {\n        cv::Mat::~Mat(this: (cv::Mat *)v27); /*0xf1c0000000000020*/\n      }\n    }\n    __unwind\n    {\n      sub_180034EB0(a1: v14); /*0xf1c000000000002c*/\n    }\n  }\n  __unwind\n  {\n    sub_180034EB0(a1: v15); /*0xf1c0000000000038*/\n  }\n}",
+  "refs": [
+    {
+      "addr": "0x1800fd578",
+      "name": "??0Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x1800b24e0",
+      "name": "sub_1800B24E0"
+    },
+    {
+      "addr": "0x1800fd580",
+      "name": "__imp_??1Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x1800c199c",
+      "name": "_invalid_parameter_noinfo_noreturn"
+    },
+    {
+      "addr": "0x1800b819c",
+      "name": "j_j_j__free_base_0"
+    },
+    {
+      "addr": "0x1800b4b26",
+      "name": "??1Mat@cv@@QEAA@XZ"
+    },
+    {
+      "addr": "0x180034eb0",
+      "name": "sub_180034EB0"
+    }
+  ]
+}

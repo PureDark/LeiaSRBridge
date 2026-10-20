@@ -1,0 +1,166 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"BOE_MCU_get3DMode\",\"asm\":{\"name\":\"BOE_MCU_get3DMode\",\"start_ea\":\"0x1800356e0\",\"segment\":\".text\",\"lines\":[{\"addr\":\"1800356e0\",\"instruction\":\"sub rsp, 38h\",\"label\":\"BOE_MCU_get3DMode\",\"comments\":[\"; Exported entry   3. BOE_MCU_get3DMode\"]},{\"addr\":\"1800356e4\",\"instruction\":\"mov r8d, 40h ; '@'\"},{\"addr\":\"1800356ea\",\"instruction\":\"lea rdx, aDSourceRepos3d_87; \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\MCU_li\\\"...\",\"refs\":[{\"addr\":\"0x18004fa68\",\"name\":\"aDSourceRepos3d_87\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\"}]},{\"addr\":\"1800356f1\",\"instruction\":\"lea rcx, [rsp+38h+var_18]\"},{\"addr\":\"1800356f6\",\"instruction\":\"call sub_180036BD0\",\"refs\":[{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"}]},{\"addr\":\"1800356fb\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"1800356fe\",\"instruction\":\"call sub_18003DF90\",\"refs\":[{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"}]},{\"addr\":\"180035703\",\"instruction\":\"lea rdx, aCalledBoeMcuGe; \\\"called BOE_MCU_get3DMode\\\"\",\"refs\":[{\"addr\":\"0x18004fa48\",\"name\":\"aCalledBoeMcuGe\",\"string\":\"called BOE_MCU_get3DMode\"}]},{\"addr\":\"18003570a\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18003570d\",\"instruction\":\"call sub_18000A770\",\"refs\":[{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"}]},{\"addr\":\"180035712\",\"instruction\":\"lea rcx, [rsp+38h+var_18]\"},{\"addr\":\"180035717\",\"instruction\":\"call sub_180037160\",\"refs\":[{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"}]},{\"addr\":\"18003571c\",\"instruction\":\"call sub_180035340\",\"refs\":[{\"addr\":\"0x180035340\",\"name\":\"sub_180035340\"}]},{\"addr\":\"180035721\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"180035724\",\"instruction\":\"call ??1?$input_processor@_WV?$console_input_adapter@_W@__crt_stdio_input@@@__crt_stdio_input@@QEAA@XZ_1; __crt_stdio_input::input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>::~input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>(void)\",\"refs\":[{\"addr\":\"0x180035290\",\"name\":\"??1?$input_processor@_WV?$console_input_adapter@_W@__crt_stdio_input@@@__crt_stdio_input@@QEAA@XZ_1\"}]},{\"addr\":\"180035729\",\"instruction\":\"add rsp, 38h\"},{\"addr\":\"18003572d\",\"instruction\":\"retn\"}],\"stack_frame\":[{\"name\":\"var_18\",\"offset\":\"0x20\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"__return_address\",\"offset\":\"0x38\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"}],\"return_type\":\"__int64\",\"arguments\":[]},\"instruction_count\":17,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "BOE_MCU_get3DMode",
+      "asm": {
+        "name": "BOE_MCU_get3DMode",
+        "start_ea": "0x1800356e0",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "1800356e0",
+            "instruction": "sub rsp, 38h",
+            "label": "BOE_MCU_get3DMode",
+            "comments": [
+              "; Exported entry   3. BOE_MCU_get3DMode"
+            ]
+          },
+          {
+            "addr": "1800356e4",
+            "instruction": "mov r8d, 40h ; '@'"
+          },
+          {
+            "addr": "1800356ea",
+            "instruction": "lea rdx, aDSourceRepos3d_87; \"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_li\"...",
+            "refs": [
+              {
+                "addr": "0x18004fa68",
+                "name": "aDSourceRepos3d_87",
+                "string": "D:\\source\\repos\\3DResolution\\MCU_library\\mcu_interface.cpp"
+              }
+            ]
+          },
+          {
+            "addr": "1800356f1",
+            "instruction": "lea rcx, [rsp+38h+var_18]"
+          },
+          {
+            "addr": "1800356f6",
+            "instruction": "call sub_180036BD0",
+            "refs": [
+              {
+                "addr": "0x180036bd0",
+                "name": "sub_180036BD0"
+              }
+            ]
+          },
+          {
+            "addr": "1800356fb",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "1800356fe",
+            "instruction": "call sub_18003DF90",
+            "refs": [
+              {
+                "addr": "0x18003df90",
+                "name": "sub_18003DF90"
+              }
+            ]
+          },
+          {
+            "addr": "180035703",
+            "instruction": "lea rdx, aCalledBoeMcuGe; \"called BOE_MCU_get3DMode\"",
+            "refs": [
+              {
+                "addr": "0x18004fa48",
+                "name": "aCalledBoeMcuGe",
+                "string": "called BOE_MCU_get3DMode"
+              }
+            ]
+          },
+          {
+            "addr": "18003570a",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18003570d",
+            "instruction": "call sub_18000A770",
+            "refs": [
+              {
+                "addr": "0x18000a770",
+                "name": "sub_18000A770"
+              }
+            ]
+          },
+          {
+            "addr": "180035712",
+            "instruction": "lea rcx, [rsp+38h+var_18]"
+          },
+          {
+            "addr": "180035717",
+            "instruction": "call sub_180037160",
+            "refs": [
+              {
+                "addr": "0x180037160",
+                "name": "sub_180037160"
+              }
+            ]
+          },
+          {
+            "addr": "18003571c",
+            "instruction": "call sub_180035340",
+            "refs": [
+              {
+                "addr": "0x180035340",
+                "name": "sub_180035340"
+              }
+            ]
+          },
+          {
+            "addr": "180035721",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "180035724",
+            "instruction": "call ??1?$input_processor@_WV?$console_input_adapter@_W@__crt_stdio_input@@@__crt_stdio_input@@QEAA@XZ_1; __crt_stdio_input::input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>::~input_processor<wchar_t,__crt_stdio_input::console_input_adapter<wchar_t>>(void)",
+            "refs": [
+              {
+                "addr": "0x180035290",
+                "name": "??1?$input_processor@_WV?$console_input_adapter@_W@__crt_stdio_input@@@__crt_stdio_input@@QEAA@XZ_1"
+              }
+            ]
+          },
+          {
+            "addr": "180035729",
+            "instruction": "add rsp, 38h"
+          },
+          {
+            "addr": "18003572d",
+            "instruction": "retn"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "var_18",
+            "offset": "0x20",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "__return_address",
+            "offset": "0x38",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          }
+        ],
+        "return_type": "__int64",
+        "arguments": []
+      },
+      "instruction_count": 17,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

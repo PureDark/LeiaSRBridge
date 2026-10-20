@@ -1,0 +1,43 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"releaseBoeEyeTrack_3D\",\"code\":\"__int64 releaseBoeEyeTrack_3D()\\n{\\n  HANDLE CurrentProcess; // rax\\n  __int64 v1; // rax\\n\\n  SetUnhandledExceptionFilter(lpTopLevelExceptionFilter: TopLevelExceptionFilter); /*0x18002a6bb*/\\n  CurrentProcess = GetCurrentProcess(); /*0x18002a6c1*/\\n  SetPriorityClass(hProcess: CurrentProcess, dwPriorityClass: 0x20u); /*0x18002a6cf*/\\n  v1 = sub_180098700(); /*0x18002a6d5*/\\n  return sub_180098AF0(a1: v1); /*0x18002a6dd*/\\n}\",\"refs\":[{\"addr\":\"0x1800fd1f8\",\"name\":\"SetUnhandledExceptionFilter\"},{\"addr\":\"0x180029770\",\"name\":\"TopLevelExceptionFilter\"},{\"addr\":\"0x1800fd1c8\",\"name\":\"GetCurrentProcess\"},{\"addr\":\"0x1800fd1b8\",\"name\":\"SetPriorityClass\"},{\"addr\":\"0x180098700\",\"name\":\"sub_180098700\"},{\"addr\":\"0x180098af0\",\"name\":\"sub_180098AF0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "releaseBoeEyeTrack_3D",
+      "code": "__int64 releaseBoeEyeTrack_3D()\n{\n  HANDLE CurrentProcess; // rax\n  __int64 v1; // rax\n\n  SetUnhandledExceptionFilter(lpTopLevelExceptionFilter: TopLevelExceptionFilter); /*0x18002a6bb*/\n  CurrentProcess = GetCurrentProcess(); /*0x18002a6c1*/\n  SetPriorityClass(hProcess: CurrentProcess, dwPriorityClass: 0x20u); /*0x18002a6cf*/\n  v1 = sub_180098700(); /*0x18002a6d5*/\n  return sub_180098AF0(a1: v1); /*0x18002a6dd*/\n}",
+      "refs": [
+        {
+          "addr": "0x1800fd1f8",
+          "name": "SetUnhandledExceptionFilter"
+        },
+        {
+          "addr": "0x180029770",
+          "name": "TopLevelExceptionFilter"
+        },
+        {
+          "addr": "0x1800fd1c8",
+          "name": "GetCurrentProcess"
+        },
+        {
+          "addr": "0x1800fd1b8",
+          "name": "SetPriorityClass"
+        },
+        {
+          "addr": "0x180098700",
+          "name": "sub_180098700"
+        },
+        {
+          "addr": "0x180098af0",
+          "name": "sub_180098AF0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

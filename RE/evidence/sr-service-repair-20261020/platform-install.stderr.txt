@@ -1,0 +1,10 @@
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20261020 23:32:46.975538 47128 windowssharedmemory.cpp:84] Succesful shared mutex creation
+I20261020 23:32:46.979537 47128 windowssharedmemory.cpp:263] Succesful shared memory creation (size: 132711424)
+I20261020 23:32:46.981537 47128 windowssharedmemory.cpp:159] Succesful shared event creation
+I20261020 23:32:46.983537 47128 windowssharedmemory.cpp:84] Succesful shared mutex creation
+I20261020 23:32:46.985538 47128 windowssharedmemory.cpp:263] Succesful shared memory creation (size: 132711424)
+I20261020 23:32:46.987537 47128 windowssharedmemory.cpp:159] Succesful shared event creation
+I20261020 23:32:46.991537 47128 windowssharedmemory.cpp:84] Succesful shared mutex creation
+I20261020 23:32:46.993535 47128 windowssharedmemory.cpp:263] Succesful shared memory creation (size: 132711424)
+I20261020 23:32:46.993535 47128 windowssharedmemory.cpp:159] Succesful shared event creation

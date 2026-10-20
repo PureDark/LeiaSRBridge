@@ -1,0 +1,49 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"input\":\"0x13C050\",\"result\":{\"decimal\":\"1294416\",\"hexadecimal\":\"0x13c050\",\"bytes\":\"50 c0 13\",\"ascii\":null,\"binary\":\"0b100111100000001010000\"},\"error\":null},{\"input\":\"0xA8\",\"result\":null,\"error\":\"Number 0xA8 is too big for 1 bytes\"},{\"input\":\"0xC0\",\"result\":null,\"error\":\"Number 0xC0 is too big for 1 bytes\"},{\"input\":\"0x10\",\"result\":{\"decimal\":\"16\",\"hexadecimal\":\"0x10\",\"bytes\":\"10\",\"ascii\":null,\"binary\":\"0b10000\"},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "input": "0x13C050",
+          "result": {
+            "decimal": "1294416",
+            "hexadecimal": "0x13c050",
+            "bytes": "50 c0 13",
+            "ascii": null,
+            "binary": "0b100111100000001010000"
+          },
+          "error": null
+        },
+        {
+          "input": "0xA8",
+          "result": null,
+          "error": "Number 0xA8 is too big for 1 bytes"
+        },
+        {
+          "input": "0xC0",
+          "result": null,
+          "error": "Number 0xC0 is too big for 1 bytes"
+        },
+        {
+          "input": "0x10",
+          "result": {
+            "decimal": "16",
+            "hexadecimal": "0x10",
+            "bytes": "10",
+            "ascii": null,
+            "binary": "0b10000"
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

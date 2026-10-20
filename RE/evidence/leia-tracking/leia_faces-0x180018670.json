@@ -1,0 +1,39 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x180018670\",\"code\":\"void __fastcall SR::HeadStream::update(SR::HeadStream *this, struct SR_head *a2)\\n{\\n  __int64 v2; // rdi\\n  int v3; // eax\\n  void (__fastcall ***v4)(_QWORD, _BYTE *); // rcx\\n  int v5; // eax\\n  _BYTE v6[216]; // [rsp+30h] [rbp-D8h] BYREF\\n  __int64 v7; // [rsp+110h] [rbp+8h] BYREF\\n\\n  v2 = *(_QWORD *)this; /*0x180018688*/\\n  qmemcpy(v6, a2, 208); /*0x180018693*/\\n  v7 = v2 + 96; /*0x18001870f*/\\n  v3 = Mtx_lock(a1: (_Mtx_t)(v2 + 96)); /*0x180018716*/\\n  if ( v3 != 0 ) /*0x18001871d*/\\n    std::_Throw_C_error(a1: v3); /*0x180018721*/\\n  v4 = *(void (__fastcall ****)(_QWORD, _BYTE *))(v2 + 8); /*0x180018727*/\\n  if ( v4 != nullptr ) /*0x18001872e*/\\n  {\\n    __wind /*0xf1c0000000000034*/\\n    {\\n      (**v4)(a1: v4, a2: v6); /*0x180018738*/\\n    }\\n    __unwind\\n    {\\n      std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: &v7); /*0x18003ee27*/\\n    }\\n  }\\n  __wind /*0xf1c0000000000028*/\\n  {\\n    v5 = Mtx_unlock(a1: (_Mtx_t)(v2 + 96)); /*0x18001873e*/\\n    if ( v5 != 0 ) /*0x180018745*/\\n      std::_Throw_C_error(a1: v5); /*0x180018749*/\\n  }\\n  __unwind\\n  {\\n    __std_terminate(); /*0x18003d786*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x18003bbe4\",\"name\":\"_Mtx_lock\"},{\"addr\":\"0x18003bbf0\",\"name\":\"?_Throw_C_error@std@@YAXH@Z\"},{\"addr\":\"0x180004650\",\"name\":\"??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ\"},{\"addr\":\"0x18003bbea\",\"name\":\"_Mtx_unlock\"},{\"addr\":\"0x1800435d0\",\"name\":\"__imp___std_terminate\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x180018670",
+      "code": "void __fastcall SR::HeadStream::update(SR::HeadStream *this, struct SR_head *a2)\n{\n  __int64 v2; // rdi\n  int v3; // eax\n  void (__fastcall ***v4)(_QWORD, _BYTE *); // rcx\n  int v5; // eax\n  _BYTE v6[216]; // [rsp+30h] [rbp-D8h] BYREF\n  __int64 v7; // [rsp+110h] [rbp+8h] BYREF\n\n  v2 = *(_QWORD *)this; /*0x180018688*/\n  qmemcpy(v6, a2, 208); /*0x180018693*/\n  v7 = v2 + 96; /*0x18001870f*/\n  v3 = Mtx_lock(a1: (_Mtx_t)(v2 + 96)); /*0x180018716*/\n  if ( v3 != 0 ) /*0x18001871d*/\n    std::_Throw_C_error(a1: v3); /*0x180018721*/\n  v4 = *(void (__fastcall ****)(_QWORD, _BYTE *))(v2 + 8); /*0x180018727*/\n  if ( v4 != nullptr ) /*0x18001872e*/\n  {\n    __wind /*0xf1c0000000000034*/\n    {\n      (**v4)(a1: v4, a2: v6); /*0x180018738*/\n    }\n    __unwind\n    {\n      std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: &v7); /*0x18003ee27*/\n    }\n  }\n  __wind /*0xf1c0000000000028*/\n  {\n    v5 = Mtx_unlock(a1: (_Mtx_t)(v2 + 96)); /*0x18001873e*/\n    if ( v5 != 0 ) /*0x180018745*/\n      std::_Throw_C_error(a1: v5); /*0x180018749*/\n  }\n  __unwind\n  {\n    __std_terminate(); /*0x18003d786*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x18003bbe4",
+          "name": "_Mtx_lock"
+        },
+        {
+          "addr": "0x18003bbf0",
+          "name": "?_Throw_C_error@std@@YAXH@Z"
+        },
+        {
+          "addr": "0x180004650",
+          "name": "??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x18003bbea",
+          "name": "_Mtx_unlock"
+        },
+        {
+          "addr": "0x1800435d0",
+          "name": "__imp___std_terminate"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

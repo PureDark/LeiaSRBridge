@@ -1,0 +1,43 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180006C40\",\"code\":\"__int64 __fastcall sub_180006C40(__int64 a1, _DWORD *a2, _DWORD *a3, _DWORD *a4, _DWORD *a5, _DWORD *a6, _DWORD *a7)\\n{\\n  *a2 = dword_180016000; /*0x180006c4d*/\\n  *a3 = dword_180016004; /*0x180006c59*/\\n  *a4 = dword_180016008; /*0x180006c66*/\\n  *a5 = dword_18001600C; /*0x180006c73*/\\n  *a6 = dword_180016010; /*0x180006c84*/\\n  *a7 = dword_180016014; /*0x180006c95*/\\n  return 0; /*0x180006c9b*/\\n}\",\"refs\":[{\"addr\":\"0x180016000\",\"name\":\"dword_180016000\"},{\"addr\":\"0x180016004\",\"name\":\"dword_180016004\"},{\"addr\":\"0x180016008\",\"name\":\"dword_180016008\"},{\"addr\":\"0x18001600c\",\"name\":\"dword_18001600C\"},{\"addr\":\"0x180016010\",\"name\":\"dword_180016010\"},{\"addr\":\"0x180016014\",\"name\":\"dword_180016014\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180006C40",
+      "code": "__int64 __fastcall sub_180006C40(__int64 a1, _DWORD *a2, _DWORD *a3, _DWORD *a4, _DWORD *a5, _DWORD *a6, _DWORD *a7)\n{\n  *a2 = dword_180016000; /*0x180006c4d*/\n  *a3 = dword_180016004; /*0x180006c59*/\n  *a4 = dword_180016008; /*0x180006c66*/\n  *a5 = dword_18001600C; /*0x180006c73*/\n  *a6 = dword_180016010; /*0x180006c84*/\n  *a7 = dword_180016014; /*0x180006c95*/\n  return 0; /*0x180006c9b*/\n}",
+      "refs": [
+        {
+          "addr": "0x180016000",
+          "name": "dword_180016000"
+        },
+        {
+          "addr": "0x180016004",
+          "name": "dword_180016004"
+        },
+        {
+          "addr": "0x180016008",
+          "name": "dword_180016008"
+        },
+        {
+          "addr": "0x18001600c",
+          "name": "dword_18001600C"
+        },
+        {
+          "addr": "0x180016010",
+          "name": "dword_180016010"
+        },
+        {
+          "addr": "0x180016014",
+          "name": "dword_180016014"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

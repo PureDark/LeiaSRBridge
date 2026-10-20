@@ -1,0 +1,69 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"metadata\":{\"path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\StereoCore.dll.i64\",\"module\":\"StereoCore.dll\",\"arch\":\"64\",\"base_address\":\"0x0\",\"image_size\":\"0x2f1d40c\",\"md5\":\"cfe18da71573c2399bace6e5e5d41143\",\"sha256\":\"f8b25622e4392ffebeba0a9555028f6f114a2c252e038dbb0b9f67b5869efc37\"},\"statistics\":{\"total_functions\":1,\"named_functions\":1,\"library_functions\":0,\"unnamed_functions\":0,\"total_strings\":242,\"total_segments\":1},\"segments\":[{\"name\":\"seg000\",\"start\":\"0x0\",\"end\":\"0x2f1d40c\",\"size\":\"0x2f1d40c\",\"permissions\":\"---\"}],\"entrypoints\":[],\"interesting_strings\":[],\"interesting_functions\":[{\"addr\":\"0x27001b6\",\"name\":\"nullsub_1\",\"size\":1,\"xref_count\":0,\"callee_count\":0,\"type\":\"thunk\"}],\"imports_by_category\":{\"crypto\":[],\"network\":[],\"file_io\":[],\"process\":[],\"registry\":[],\"other\":[]},\"call_graph_summary\":{\"total_edges\":0,\"max_depth_estimate\":null,\"root_functions\":[\"nullsub_1\"],\"leaf_functions_count\":1}}"
+      }
+    ],
+    "structuredContent": {
+      "metadata": {
+        "path": "F:\\目标软件\\ModexLite\\RE\\inputs\\StereoCore.dll.i64",
+        "module": "StereoCore.dll",
+        "arch": "64",
+        "base_address": "0x0",
+        "image_size": "0x2f1d40c",
+        "md5": "cfe18da71573c2399bace6e5e5d41143",
+        "sha256": "f8b25622e4392ffebeba0a9555028f6f114a2c252e038dbb0b9f67b5869efc37"
+      },
+      "statistics": {
+        "total_functions": 1,
+        "named_functions": 1,
+        "library_functions": 0,
+        "unnamed_functions": 0,
+        "total_strings": 242,
+        "total_segments": 1
+      },
+      "segments": [
+        {
+          "name": "seg000",
+          "start": "0x0",
+          "end": "0x2f1d40c",
+          "size": "0x2f1d40c",
+          "permissions": "---"
+        }
+      ],
+      "entrypoints": [],
+      "interesting_strings": [],
+      "interesting_functions": [
+        {
+          "addr": "0x27001b6",
+          "name": "nullsub_1",
+          "size": 1,
+          "xref_count": 0,
+          "callee_count": 0,
+          "type": "thunk"
+        }
+      ],
+      "imports_by_category": {
+        "crypto": [],
+        "network": [],
+        "file_io": [],
+        "process": [],
+        "registry": [],
+        "other": []
+      },
+      "call_graph_summary": {
+        "total_edges": 0,
+        "max_depth_estimate": null,
+        "root_functions": [
+          "nullsub_1"
+        ],
+        "leaf_functions_count": 1
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

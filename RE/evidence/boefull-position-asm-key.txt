@@ -1,0 +1,131 @@
+1800b1484 mulsd xmm7, xmm11
+1800b1489 cvtss2sd xmm0, xmm0
+1800b148d movaps xmm1, xmm7
+1800b1490 divsd xmm1, xmm0
+1800b1494 cvtpd2ps xmm2, xmm1
+1800b1498 movss [rbp+3A0h+var_380], xmm2
+1800b149d movsd xmm5, qword ptr [r15+490h]
+1800b14a6 addsd xmm5, xmm5
+1800b14aa cvtps2pd xmm13, xmm2
+1800b14ae addsd xmm11, xmm11
+1800b14b3 xorps xmm0, xmm0
+1800b14b6 cvtsd2ss xmm0, xmm12
+1800b14bb addss xmm0, xmm15
+1800b14c0 cvtps2pd xmm1, xmm0
+1800b14c3 subsd xmm1, xmm5
+1800b14c7 movsd xmm6, qword ptr cs:xmmword_1801102B0
+1800b14cf xorps xmm1, xmm6
+1800b14d2 mulsd xmm1, xmm13
+1800b14d7 divsd xmm1, xmm11
+1800b14dc xorps xmm12, xmm12
+1800b14e0 cvtsd2ss xmm12, xmm1
+1800b14e5 movss dword ptr [rbp+3A0h+var_388], xmm12
+1800b14eb movsd xmm4, qword ptr [r15+498h]
+1800b14f4 addsd xmm4, xmm4
+1800b14f8 xorps xmm0, xmm0
+1800b14fb cvtsd2ss xmm0, xmm9
+1800b1500 addss xmm0, xmm10
+1800b1505 cvtps2pd xmm1, xmm0
+1800b1508 subsd xmm1, xmm4
+1800b150c xorps xmm1, xmm6
+1800b150f mulsd xmm1, xmm13
+1800b1514 divsd xmm1, xmm11
+1800b1519 xorps xmm10, xmm10
+1800b151d cvtsd2ss xmm10, xmm1
+1800b1522 movss dword ptr [rbp+3A0h+var_388+4], xmm10
+1800b1528 xorps xmm0, xmm0
+1800b152b cvtss2sd xmm0, xmm3
+1800b152f movaps xmm1, xmm7
+1800b1532 divsd xmm1, xmm0
+1800b1536 cvtpd2ps xmm2, xmm1
+1800b153a movss [rbp+3A0h+var_418], xmm2
+1800b153f cvtps2pd xmm3, xmm2
+1800b1542 movsd xmm0, qword ptr [rbp+3A0h+var_258]
+1800b154a cvtpd2ps xmm0, xmm0
+1800b154e addss xmm0, dword ptr [rbp+3A0h+arg_8]
+1800b1556 cvtps2pd xmm1, xmm0
+1800b1559 subsd xmm1, xmm5
+1800b155d xorps xmm1, xmm6
+1800b1560 mulsd xmm1, xmm3
+1800b1564 divsd xmm1, xmm11
+1800b1569 xorps xmm9, xmm9
+1800b156d cvtsd2ss xmm9, xmm1
+1800b1572 movsd xmm0, qword ptr [rbp+3A0h+var_240]
+1800b157a cvtpd2ps xmm0, xmm0
+1800b157e addss xmm0, [rbp+3A0h+var_390]
+1800b1583 cvtps2pd xmm1, xmm0
+1800b1586 subsd xmm1, xmm4
+1800b158a xorps xmm1, xmm6
+1800b158d mulsd xmm1, xmm3
+1800b1591 divsd xmm1, xmm11
+1800b1596 xorps xmm8, xmm8
+1800b159a cvtsd2ss xmm8, xmm1
+1800b159f xorps xmm0, xmm0
+1800b15a2 cvtss2sd xmm0, xmm14
+1800b15a7 divsd xmm7, xmm0
+1800b15ab cvtpd2ps xmm1, xmm7
+1800b15af movss dword ptr [rbp+3A0h+var_258+8], xmm1
+1800b15b7 cvtps2pd xmm2, xmm1
+1800b15ba movsd xmm0, qword ptr [rbp+3A0h+var_230]
+1800b15c2 cvtpd2ps xmm0, xmm0
+1800b15c6 addss xmm0, dword ptr [rbp+3A0h+arg_18]
+1800b15ce cvtps2pd xmm1, xmm0
+1800b15d1 subsd xmm1, xmm5
+1800b15d5 xorps xmm1, xmm6
+1800b15d8 mulsd xmm1, xmm2
+1800b15dc divsd xmm1, xmm11
+1800b15e1 xorps xmm7, xmm7
+1800b15e4 cvtsd2ss xmm7, xmm1
+1800b15e8 movsd xmm0, qword ptr [rbp+3A0h+var_310]
+1800b15f0 cvtpd2ps xmm0, xmm0
+1800b15f4 addss xmm0, [rbp+3A0h+var_38C]
+1800b15f9 cvtps2pd xmm1, xmm0
+1800b15fc subsd xmm1, xmm4
+1800b1600 xorps xmm1, xmm6
+1800b1603 mulsd xmm1, xmm2
+1800b1607 divsd xmm1, xmm11
+1800b160c xorps xmm6, xmm6
+1800b160f cvtsd2ss xmm6, xmm1
+1800b1613 lea rax, aXYZ; "x = {}, y = {}, z = {}"
+1800b161a mov qword ptr [rbp+3A0h+var_310], rax
+1800b1621 mov qword ptr [rbp+3A0h+var_310+8], 16h
+1800b162c call sub_180008380
+1800b1631 mov [rsp+4A0h+var_450], 0
+1800b163a mov qword ptr [rsp+4A0h+var_460+8], r14
+1800b163f mov qword ptr [rsp+4A0h+var_448], r14
+1800b1644 movaps xmm0, [rbp+3A0h+var_310]
+1800b164b movdqa [rbp+3A0h+var_310], xmm0
+1800b1653 movups xmm1, [rsp+4A0h+var_460+8]
+1800b1658 movaps [rsp+4A0h+var_448+8], xmm1
+1800b165d movsd xmm0, qword ptr [rsp+4A0h+var_448]
+1800b1663 movsd [rsp+4A0h+var_430], xmm0
+1800b1669 lea rcx, [rbp+3A0h+var_380]
+1800b166d mov [rsp+4A0h+var_470], rcx
+1800b1672 lea rcx, [rbp+3A0h+var_388+4]
+1800b1676 mov [rsp+4A0h+var_478], rcx
+1800b167b lea rcx, [rbp+3A0h+var_388]
+1800b167f mov [rsp+4A0h+var_480], rcx
+1800b1684 lea r9, [rbp+3A0h+var_310]
+1800b168b lea rdx, [rsp+4A0h+var_448+8]
+1800b1690 mov rcx, [rax+1D8h]
+1800b1697 call sub_1800B44F0
+1800b169c movaps xmm0, xmm12
+1800b16a0 unpcklps xmm0, xmm10
+1800b16a4 mov rcx, [rbp+3A0h+arg_10]
+1800b16ab movsd qword ptr [rcx+3Ch], xmm0
+1800b16b0 mov eax, [rbp+3A0h+var_380]
+1800b16b3 mov [rcx+44h], eax
+1800b16b6 movaps xmm0, xmm9
+1800b16ba unpcklps xmm0, xmm8
+1800b16be movsd qword ptr [rcx+48h], xmm0
+1800b16c3 mov eax, [rbp+3A0h+var_418]
+1800b16c6 mov [rcx+50h], eax
+1800b16c9 movaps xmm0, xmm7
+1800b16cc unpcklps xmm0, xmm6
+1800b16cf movsd qword ptr [rcx+54h], xmm0
+1800b16d4 mov eax, dword ptr [rbp+3A0h+var_258+8]
+1800b16da mov [rcx+5Ch], eax
+1800b16dd call sub_1800AE1D0
+1800b16e2 mov rcx, rax
+1800b16e5 movaps xmm1, xmm13
+1800b16e9 call sub_1800B1DA0

@@ -1,0 +1,49 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"CreateDX11Render\",\"code\":\"_QWORD *__fastcall CreateDX11Render(__int64 a1)\\n{\\n  _QWORD *v3; // rbx\\n  __int64 v4; // rax\\n\\n  if ( byte_18036D660 != 0 ) /*0x180021bf0*/\\n  {\\n    v3 = (_QWORD *)sub_180024F70(a1: 64); /*0x180021c25*/\\n    *v3 = &LF3DDX11Render::`vftable'; /*0x180021c36*/\\n    v3[3] = 0; /*0x180021c3b*/\\n    v3[4] = 0; /*0x180021c3f*/\\n    v3[6] = 0; /*0x180021c43*/\\n    v3[7] = 0; /*0x180021c47*/\\n    v3[2] = 0; /*0x180021c4b*/\\n    v3[1] = a1; /*0x180021c4e*/\\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)a1 + 320LL))(a1); /*0x180021c55*/\\n    v4 = sub_180024F70(a1: 200); /*0x180021c61*/\\n    v3[5] = sub_180005460(a1: v4); /*0x180021c6e*/\\n    return v3; /*0x180021c72*/\\n  }\\n  else\\n  {\\n    MessageBoxW( /*0x180021c08*/\\n      hWnd: nullptr,\\n      lpText: L\\\"CreateSimpleRender Failed,no license detected!\\\",\\n      lpCaption: L\\\"Error\\\",\\n      uType: 0x10u);\\n    return nullptr; /*0x180021c0e*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x180024f70\",\"name\":\"sub_180024F70\"},{\"addr\":\"0x180084c68\",\"name\":\"??_7LF3DDX11Render@@6B@\"},{\"addr\":\"0x180005460\",\"name\":\"sub_180005460\"},{\"addr\":\"0x18004f2f8\",\"name\":\"MessageBoxW\"},{\"addr\":\"0x180084b60\",\"name\":\"aCreatesimplere_0\",\"string\":\"\\u7243\\u6165\\u6574\\u6953\\u706d\\u656c\\u6552\\u646e\\u7265\\u4620\\u6961\\u656c\\u2c64\\u6f6e\\u6c20\\u6369\\u6e65\\u6573\\u6420\\u7465\\u6365\\u6574\\u2164\"},{\"addr\":\"0x18007ef18\",\"name\":\"Caption\",\"string\":\"\\u7245\\u6f72\\ufffd\"},{\"addr\":\"0x18036d660\",\"name\":\"byte_18036D660\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "CreateDX11Render",
+      "code": "_QWORD *__fastcall CreateDX11Render(__int64 a1)\n{\n  _QWORD *v3; // rbx\n  __int64 v4; // rax\n\n  if ( byte_18036D660 != 0 ) /*0x180021bf0*/\n  {\n    v3 = (_QWORD *)sub_180024F70(a1: 64); /*0x180021c25*/\n    *v3 = &LF3DDX11Render::`vftable'; /*0x180021c36*/\n    v3[3] = 0; /*0x180021c3b*/\n    v3[4] = 0; /*0x180021c3f*/\n    v3[6] = 0; /*0x180021c43*/\n    v3[7] = 0; /*0x180021c47*/\n    v3[2] = 0; /*0x180021c4b*/\n    v3[1] = a1; /*0x180021c4e*/\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)a1 + 320LL))(a1); /*0x180021c55*/\n    v4 = sub_180024F70(a1: 200); /*0x180021c61*/\n    v3[5] = sub_180005460(a1: v4); /*0x180021c6e*/\n    return v3; /*0x180021c72*/\n  }\n  else\n  {\n    MessageBoxW( /*0x180021c08*/\n      hWnd: nullptr,\n      lpText: L\"CreateSimpleRender Failed,no license detected!\",\n      lpCaption: L\"Error\",\n      uType: 0x10u);\n    return nullptr; /*0x180021c0e*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x180024f70",
+          "name": "sub_180024F70"
+        },
+        {
+          "addr": "0x180084c68",
+          "name": "??_7LF3DDX11Render@@6B@"
+        },
+        {
+          "addr": "0x180005460",
+          "name": "sub_180005460"
+        },
+        {
+          "addr": "0x18004f2f8",
+          "name": "MessageBoxW"
+        },
+        {
+          "addr": "0x180084b60",
+          "name": "aCreatesimplere_0",
+          "string": "牃慥整楓灭敬敒摮牥䘠楡敬Ɽ潮氠捩湥敳搠瑥捥整Ⅴ"
+        },
+        {
+          "addr": "0x18007ef18",
+          "name": "Caption",
+          "string": "牅潲�"
+        },
+        {
+          "addr": "0x18036d660",
+          "name": "byte_18036D660"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,75 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "addr": "sub_18009CC80",
+      "code": "__int64 __fastcall sub_18009CC80(__int64 a1, const struct cv::Mat *a2, const struct cv::Mat *a3)\n{\n  __int64 v6; // rax\n  __int64 v7; // rcx\n  const struct cv::_OutputArray *v8; // r8\n  const struct cv::_InputArray *v9; // r9\n  __int64 v10; // rax\n  __int64 result; // rax\n  const struct cv::_OutputArray *v12; // r8\n  const struct cv::_InputArray *v13; // r9\n  const struct cv::_OutputArray *v14; // r8\n  const struct cv::_InputArray *v15; // r9\n  char *v16; // rbx\n  _BYTE *v17; // rcx\n  __int64 v18; // rcx\n  __int64 v19; // rax\n  int v20; // r8d\n  __int64 v21; // rcx\n  __int64 v22; // rax\n  int v23; // r8d\n  int v24; // ebx\n  int v25; // r14d\n  int v26; // edx\n  int v27; // r8d\n  int v28; // r9d\n  const struct cv::_OutputArray *v29; // r8\n  const struct cv::_InputArray *v30; // r9\n  char *v31; // rbx\n  __int64 v32; // rcx\n  __int64 v33; // rdx\n  __int64 v34; // rax\n  volatile signed __int32 *v35; // rcx\n  __int64 v36; // rax\n  _DWORD *v37; // rax\n  volatile signed __int32 *v38; // rbx\n  ... [121067 chars total]",
+      "refs": [
+        {
+          "addr": "0x180008380",
+          "name": "sub_180008380"
+        },
+        {
+          "addr": "0x18010f248",
+          "name": "aTargetLostZCoo",
+          "string": "target lost: z-coordinate out of range"
+        },
+        {
+          "addr": "0x180005cc0",
+          "name": "sub_180005CC0"
+        },
+        {
+          "addr": "0x18010f2b8",
+          "name": "aTheTrackerIsIn",
+          "string": "The tracker is invalid, re-enter face detection !!!"
+        },
+        {
+          "addr": "0x1800fd540",
+          "name": "?undistortPoints@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@0000@Z"
+        },
+        {
+          "addr": "0x180035de0",
+          "name": "sub_180035DE0"
+        },
+        {
+          "addr": "0x18010f288",
+          "name": "aTargetLostXOrY",
+          "string": "target lost: x or y coordinate out of range"
+        },
+        {
+          "addr": "0x1800a0d60",
+          "name": "sub_1800A0D60"
+        },
+        {
+          "addr": "0x180034f70",
+          "name": "sub_180034F70"
+        },
+        {
+          "addr": "0x1800fd570",
+          "name": "??0Mat@cv@@QEAA@HHHPEAX_K@Z"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_18009CC80\",\"code\":\"__int64 __fastcall sub_18009CC80(__int64 a1, const struct cv::Mat *a2, const struct cv::Mat *a3)\\n{\\n  __int64 v6; // rax\\n  __int64 v7; // rcx\\n  const struct cv::_OutputArray *v8; // r8\\n  const struct cv::_InputArray *v9; // r9\\n  __int64 v10; // rax\\n  __int64 result; // rax\\n  const struct cv::_OutputArray *v12; // r8\\n  const struct cv::_InputArray *v13; // r9\\n  const struct cv::_OutputArray *v14; // r8\\n  const struct cv::_InputArray *v15; // r9\\n  char *v16; // rbx\\n  _BYTE *v17; // rcx\\n  __int64 v18; // rcx\\n  __int64 v19; // rax\\n  int v20; // r8d\\n  __int64 v21; // rcx\\n  __int64 v22; // rax\\n  int v23; // r8d\\n  int v24; // ebx\\n  int v25; // r14d\\n  int v26; // edx\\n  int v27; // r8d\\n  int v28; // r9d\\n  const struct cv::_OutputArray *v29; // r8\\n  const struct cv::_InputArray *v30; // r9\\n  char *v31; // rbx\\n  __int64 v32; // rcx\\n  __int64 v33; // rdx\\n  __int64 v34; // rax\\n  volatile signed __int32 *v35; // rcx\\n  __int64 v36; // rax\\n  _DWORD *v37; // rax\\n  volatile signed __int32 *v38; // rbx\\n  ... [121067 chars total]\",\"refs\":[{\"addr\":\"0x180008380\",\"name\":\"sub_180008380\"},{\"addr\":\"0x18010f248\",\"name\":\"aTargetLostZCoo\",\"string\":\"target lost: z-coordinate out of range\"},{\"addr\":\"0x180005cc0\",\"name\":\"sub_180005CC0\"},{\"addr\":\"0x18010f2b8\",\"name\":\"aTheTrackerIsIn\",\"string\":\"The tracker is invalid, re-enter face detection !!!\"},{\"addr\":\"0x1800fd540\",\"name\":\"?undistortPoints@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@0000@Z\"},{\"addr\":\"0x180035de0\",\"name\":\"sub_180035DE0\"},{\"addr\":\"0x18010f288\",\"name\":\"aTargetLostXOrY\",\"string\":\"target lost: x or y coordinate out of range\"},{\"addr\":\"0x1800a0d60\",\"name\":\"sub_1800A0D60\"},{\"addr\":\"0x180034f70\",\"name\":\"sub_180034F70\"},{\"addr\":\"0x1800fd570\",\"name\":\"??0Mat@cv@@QEAA@HHHPEAX_K@Z\"}]}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/693d7ac9-d3d2-49de-9ae5-1fdc26361b91.json http://127.0.0.1:53676/output/693d7ac9-d3d2-49de-9ae5-1fdc26361b91.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 128646,
+        "output_id": "693d7ac9-d3d2-49de-9ae5-1fdc26361b91",
+        "download_url": "http://127.0.0.1:53676/output/693d7ac9-d3d2-49de-9ae5-1fdc26361b91.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/693d7ac9-d3d2-49de-9ae5-1fdc26361b91.json http://127.0.0.1:53676/output/693d7ac9-d3d2-49de-9ae5-1fdc26361b91.json"
+      }
+    }
+  },
+  "id": 1
+}

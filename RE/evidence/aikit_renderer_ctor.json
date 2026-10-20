@@ -1,0 +1,27 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18013d570\",\"code\":\"__int64 __fastcall sub_18013D570(__int64 a1, __int64 a2)\\n{\\n  __int64 v4; // rcx\\n\\n  *(_DWORD *)(a1 + 8) = 252; /*0x18013d57a*/\\n  *(_QWORD *)a1 = &AiStereo::StereoGraphicsEngine::`vftable'; /*0x18013d588*/\\n  *(_DWORD *)(a1 + 12) = 252; /*0x18013d58e*/\\n  *(_QWORD *)(a1 + 48) = 0; /*0x18013d59c*/\\n  *(_QWORD *)(a1 + 56) = 0; /*0x18013d5a3*/\\n  *(_OWORD *)(a1 + 64) = 0; /*0x18013d5a7*/\\n  *(_QWORD *)(a1 + 32) = 0; /*0x18013d5ab*/\\n  *(_QWORD *)(a1 + 40) = 0; /*0x18013d5af*/\\n  *(_DWORD *)(a1 + 112) = 252; /*0x18013d5b3*/\\n  *(_DWORD *)(a1 + 116) = 252; /*0x18013d5ba*/\\n  *(_DWORD *)(a1 + 192) = 518; /*0x18013d5c1*/\\n  *(_DWORD *)(a1 + 196) = 518; /*0x18013d5cb*/\\n  *(_DWORD *)(a1 + 200) = 1023611503; /*0x18013d5d5*/\\n  *(_QWORD *)(a1 + 80) = 0; /*0x18013d5ea*/\\n  *(_QWORD *)(a1 + 88) = 0; /*0x18013d5f2*/\\n  *(_QWORD *)(a1 + 96) = 0; /*0x18013d5f6*/\\n  *(_QWORD *)(a1 + 104) = 0; /*0x18013d5fa*/\\n  *(_QWORD *)(a1 + 120) = 0; /*0x18013d5fe*/\\n  *(_QWORD *)(a1 + 128) = 0; /*0x18013d602*/\\n  *(_QWORD *)(a1 + 136) = 0; /*0x18013d609*/\\n  *(_QWORD *)(a1 + 144) = 0; /*0x18013d610*/\\n  *(_QWORD *)(a1 + 152) = 0; /*0x18013d617*/\\n  *(_QWORD *)(a1 + 160) = 0; /*0x18013d61e*/\\n  *(_QWORD *)(a1 + 208) = 0; /*0x18013d625*/\\n  *(_QWORD *)(a1 + 216) = 0; /*0x18013d62c*/\\n  *(_QWORD *)(a1 + 224) = 0; /*0x18013d633*/\\n  *(_QWORD *)(a1 + 232) = 0; /*0x18013d63a*/\\n  *(_OWORD *)(a1 + 240) = 0; /*0x18013d641*/\\n  *(_QWORD *)(a1 + 256) = 0; /*0x18013d653*/\\n  v4 = a1 + 264; /*0x18013d65b*/\\n  *(_DWORD *)v4 = 0; /*0x18013d665*/\\n  *(_QWORD *)(v4 + 8) = 0; /*0x18013d667*/\\n  *(_QWORD *)(v4 + 16) = 0; /*0x18013d66b*/\\n  *(_OWORD *)(v4 + 24) = 0; /*0x18013d66f*/\\n  *(_OWORD *)(v4 + 40) = 0; /*0x18013d673*/\\n  *(_OWORD *)(v4 + 56) = 0; /*0x18013d677*/\\n  *(_QWORD *)(v4 + 72) = 0; /*0x18013d67b*/\\n  Mtx_init_in_situ(a1: (_Mtx_t)v4, a2: 2); /*0x18013d684*/\\n  *(_QWORD *)(a1 + 16) = a2; /*0x18013d68a*/\\n  return a1; /*0x18013d691*/\\n}\",\"refs\":[{\"addr\":\"0x180585938\",\"name\":\"??_7StereoGraphicsEngine@AiStereo@@6B@\"},{\"addr\":\"0x1803bb5d0\",\"name\":\"_Mtx_init_in_situ\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18013d570",
+      "code": "__int64 __fastcall sub_18013D570(__int64 a1, __int64 a2)\n{\n  __int64 v4; // rcx\n\n  *(_DWORD *)(a1 + 8) = 252; /*0x18013d57a*/\n  *(_QWORD *)a1 = &AiStereo::StereoGraphicsEngine::`vftable'; /*0x18013d588*/\n  *(_DWORD *)(a1 + 12) = 252; /*0x18013d58e*/\n  *(_QWORD *)(a1 + 48) = 0; /*0x18013d59c*/\n  *(_QWORD *)(a1 + 56) = 0; /*0x18013d5a3*/\n  *(_OWORD *)(a1 + 64) = 0; /*0x18013d5a7*/\n  *(_QWORD *)(a1 + 32) = 0; /*0x18013d5ab*/\n  *(_QWORD *)(a1 + 40) = 0; /*0x18013d5af*/\n  *(_DWORD *)(a1 + 112) = 252; /*0x18013d5b3*/\n  *(_DWORD *)(a1 + 116) = 252; /*0x18013d5ba*/\n  *(_DWORD *)(a1 + 192) = 518; /*0x18013d5c1*/\n  *(_DWORD *)(a1 + 196) = 518; /*0x18013d5cb*/\n  *(_DWORD *)(a1 + 200) = 1023611503; /*0x18013d5d5*/\n  *(_QWORD *)(a1 + 80) = 0; /*0x18013d5ea*/\n  *(_QWORD *)(a1 + 88) = 0; /*0x18013d5f2*/\n  *(_QWORD *)(a1 + 96) = 0; /*0x18013d5f6*/\n  *(_QWORD *)(a1 + 104) = 0; /*0x18013d5fa*/\n  *(_QWORD *)(a1 + 120) = 0; /*0x18013d5fe*/\n  *(_QWORD *)(a1 + 128) = 0; /*0x18013d602*/\n  *(_QWORD *)(a1 + 136) = 0; /*0x18013d609*/\n  *(_QWORD *)(a1 + 144) = 0; /*0x18013d610*/\n  *(_QWORD *)(a1 + 152) = 0; /*0x18013d617*/\n  *(_QWORD *)(a1 + 160) = 0; /*0x18013d61e*/\n  *(_QWORD *)(a1 + 208) = 0; /*0x18013d625*/\n  *(_QWORD *)(a1 + 216) = 0; /*0x18013d62c*/\n  *(_QWORD *)(a1 + 224) = 0; /*0x18013d633*/\n  *(_QWORD *)(a1 + 232) = 0; /*0x18013d63a*/\n  *(_OWORD *)(a1 + 240) = 0; /*0x18013d641*/\n  *(_QWORD *)(a1 + 256) = 0; /*0x18013d653*/\n  v4 = a1 + 264; /*0x18013d65b*/\n  *(_DWORD *)v4 = 0; /*0x18013d665*/\n  *(_QWORD *)(v4 + 8) = 0; /*0x18013d667*/\n  *(_QWORD *)(v4 + 16) = 0; /*0x18013d66b*/\n  *(_OWORD *)(v4 + 24) = 0; /*0x18013d66f*/\n  *(_OWORD *)(v4 + 40) = 0; /*0x18013d673*/\n  *(_OWORD *)(v4 + 56) = 0; /*0x18013d677*/\n  *(_QWORD *)(v4 + 72) = 0; /*0x18013d67b*/\n  Mtx_init_in_situ(a1: (_Mtx_t)v4, a2: 2); /*0x18013d684*/\n  *(_QWORD *)(a1 + 16) = a2; /*0x18013d68a*/\n  return a1; /*0x18013d691*/\n}",
+      "refs": [
+        {
+          "addr": "0x180585938",
+          "name": "??_7StereoGraphicsEngine@AiStereo@@6B@"
+        },
+        {
+          "addr": "0x1803bb5d0",
+          "name": "_Mtx_init_in_situ"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

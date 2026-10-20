@@ -1,0 +1,1 @@
+DEBUG-MOTION H_CACHE H_GEOMETRY; CPU observations, not exposure/GPU/presentation timestamps; geometry is sampled once per second.

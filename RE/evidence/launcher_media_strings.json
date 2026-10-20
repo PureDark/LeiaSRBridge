@@ -1,0 +1,205 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":46,\"matches\":[{\"addr\":\"0x18001a6d0\",\"string\":\"media_transpose2to3\"},{\"addr\":\"0x18001a750\",\"string\":\"CreateTranspose2File\"},{\"addr\":\"0x18001aa48\",\"string\":\"LoadMediaTransposeEngine cacheDir: \"},{\"addr\":\"0x18001c118\",\"string\":\"ID3D11Texture2D::As\\n\"},{\"addr\":\"0x18001c178\",\"string\":\"ID3D11Device::CreateRenderTargetView\\n\"},{\"addr\":\"0x18001c200\",\"string\":\"media_transpose2to3: TransposeOutput: Failure: \"},{\"addr\":\"0x18001c230\",\"string\":\"D3D11CreateDevice\"},{\"addr\":\"0x18001c248\",\"string\":\"Direct3D Feature Level: \"},{\"addr\":\"0x18001c268\",\"string\":\"Failed to create 3D texture\"},{\"addr\":\"0x18001c288\",\"string\":\"ID3D11Device::CreateTexture2D\"},{\"addr\":\"0x18001c2a8\",\"string\":\"ID3D11Texture2D::As\"},{\"addr\":\"0x18001c2e0\",\"string\":\"Failed to create D3D11 device\\n\"},{\"addr\":\"0x180020e30\",\"string\":\"E:\\\\devops\\\\agent\\\\workspace\\\\p-77070d4eaed140e59334544e4780bb92\\\\src\\\\Modex\\\\build\\\\windows\\\\x64\\\\plugins\\\\media_transpose2to3\\\\Release\\\\media_transpose2to3_plugin.pdb\"},{\"addr\":\"0x1800243c0\",\"string\":\"media_transpose2to3_plugin.dll\"},{\"addr\":\"0x1800243df\",\"string\":\"CreateMediaTranspose\"},{\"addr\":\"0x1800243f4\",\"string\":\"LoadMediaTransposeEngine\"},{\"addr\":\"0x18002440d\",\"string\":\"MediaTranspose2to3PluginCApiRegisterWithRegistrar\"},{\"addr\":\"0x18002443f\",\"string\":\"UnloadMediaTransposeEngine\"},{\"addr\":\"0x180024a72\",\"string\":\"LoadStereoEngine\"},{\"addr\":\"0x180024a86\",\"string\":\"CreateStereoRenderer\"},{\"addr\":\"0x180024a9e\",\"string\":\"UnloadStereoEngine\"},{\"addr\":\"0x18002594e\",\"string\":\"D3D11CreateDevice\"},{\"addr\":\"0x180025960\",\"string\":\"d3d11.dll\"},{\"addr\":\"0x180025b5e\",\"string\":\"_initterm\"},{\"addr\":\"0x180025b6a\",\"string\":\"_initterm_e\"},{\"addr\":\"0x180025ba4\",\"string\":\"_initialize_narrow_environment\"},{\"addr\":\"0x180025bc6\",\"string\":\"_initialize_onexit_table\"},{\"addr\":\"0x180025cf4\",\"string\":\"InitOnceBeginInitialize\"},{\"addr\":\"0x180025d0e\",\"string\":\"InitOnceComplete\"},{\"addr\":\"0x180025edc\",\"string\":\"InitializeSListHead\"},{\"addr\":\"0x180026160\",\"string\":\".?AV<lambda_937a1921f2f507cc40a13de7c10569e5>@@\"},{\"addr\":\"0x1800261e0\",\"string\":\".?AV<lambda_a7e5c5c9b6b04193c20a21573dea4e4a>@@\"},{\"addr\":\"0x180026220\",\"string\":\".?AV<lambda_2bdd03d697e32834e756b08811623228>@@\"},{\"addr\":\"0x1800263a0\",\"string\":\".?AV?$_Binder@U_Unforced@std@@V<lambda_79bf46fda5bef3dc389ab667d467c8a7>@@$$V@std@@\"},{\"addr\":\"0x180026410\",\"string\":\".?AV?$_Binder@U_Unforced@std@@V<lambda_6e55d9a05bfffdbecbb0a35d23d3ca30>@@$$V@std@@\"},{\"addr\":\"0x1800268e0\",\"string\":\".?AVMediaTranspose2to3Plugin@media_transpose2to3@@\"},{\"addr\":\"0x180026c50\",\"string\":\".?AV?$_Func_impl_no_alloc@V<lambda_937a1921f2f507cc40a13de7c10569e5>@@X_J_J_J@std@@\"},{\"addr\":\"0x180026d80\",\"string\":\".?AV?$_Func_impl_no_alloc@V<lambda_2bdd03d697e32834e756b08811623228>@@XPEBE_KV?$function@$$A6AXPEBE_K@Z@std@@@std@@\"},{\"addr\":\"0x180026e10\",\"string\":\".?AV?$_Func_impl_no_alloc@V<lambda_a7e5c5c9b6b04193c20a21573dea4e4a>@@XPEBE_K@std@@\"},{\"addr\":\"0x180026e78\",\"string\":\".?AVIMediaTranspose@gear@@\"},{\"addr\":\"0x180026ea8\",\"string\":\".?AVMediaTranspose@gear@@\"},{\"addr\":\"0x180027030\",\"string\":\".?AVTranspose@@\"},{\"addr\":\"0x180027050\",\"string\":\".?AVTransposeOutput@@\"},{\"addr\":\"0x180027078\",\"string\":\".?AVTransposeFile@@\"},{\"addr\":\"0x180027330\",\"string\":\".?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@V<lambda_6e55d9a05bfffdbecbb0a35d23d3ca30>@@$$V@std@@X$$V@std@@\"},{\"addr\":\"0x1800273c0\",\"string\":\".?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@V<lambda_79bf46fda5bef3dc389ab667d467c8a7>@@$$V@std@@X$$V@std@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 46,
+      "matches": [
+        {
+          "addr": "0x18001a6d0",
+          "string": "media_transpose2to3"
+        },
+        {
+          "addr": "0x18001a750",
+          "string": "CreateTranspose2File"
+        },
+        {
+          "addr": "0x18001aa48",
+          "string": "LoadMediaTransposeEngine cacheDir: "
+        },
+        {
+          "addr": "0x18001c118",
+          "string": "ID3D11Texture2D::As\n"
+        },
+        {
+          "addr": "0x18001c178",
+          "string": "ID3D11Device::CreateRenderTargetView\n"
+        },
+        {
+          "addr": "0x18001c200",
+          "string": "media_transpose2to3: TransposeOutput: Failure: "
+        },
+        {
+          "addr": "0x18001c230",
+          "string": "D3D11CreateDevice"
+        },
+        {
+          "addr": "0x18001c248",
+          "string": "Direct3D Feature Level: "
+        },
+        {
+          "addr": "0x18001c268",
+          "string": "Failed to create 3D texture"
+        },
+        {
+          "addr": "0x18001c288",
+          "string": "ID3D11Device::CreateTexture2D"
+        },
+        {
+          "addr": "0x18001c2a8",
+          "string": "ID3D11Texture2D::As"
+        },
+        {
+          "addr": "0x18001c2e0",
+          "string": "Failed to create D3D11 device\n"
+        },
+        {
+          "addr": "0x180020e30",
+          "string": "E:\\devops\\agent\\workspace\\p-77070d4eaed140e59334544e4780bb92\\src\\Modex\\build\\windows\\x64\\plugins\\media_transpose2to3\\Release\\media_transpose2to3_plugin.pdb"
+        },
+        {
+          "addr": "0x1800243c0",
+          "string": "media_transpose2to3_plugin.dll"
+        },
+        {
+          "addr": "0x1800243df",
+          "string": "CreateMediaTranspose"
+        },
+        {
+          "addr": "0x1800243f4",
+          "string": "LoadMediaTransposeEngine"
+        },
+        {
+          "addr": "0x18002440d",
+          "string": "MediaTranspose2to3PluginCApiRegisterWithRegistrar"
+        },
+        {
+          "addr": "0x18002443f",
+          "string": "UnloadMediaTransposeEngine"
+        },
+        {
+          "addr": "0x180024a72",
+          "string": "LoadStereoEngine"
+        },
+        {
+          "addr": "0x180024a86",
+          "string": "CreateStereoRenderer"
+        },
+        {
+          "addr": "0x180024a9e",
+          "string": "UnloadStereoEngine"
+        },
+        {
+          "addr": "0x18002594e",
+          "string": "D3D11CreateDevice"
+        },
+        {
+          "addr": "0x180025960",
+          "string": "d3d11.dll"
+        },
+        {
+          "addr": "0x180025b5e",
+          "string": "_initterm"
+        },
+        {
+          "addr": "0x180025b6a",
+          "string": "_initterm_e"
+        },
+        {
+          "addr": "0x180025ba4",
+          "string": "_initialize_narrow_environment"
+        },
+        {
+          "addr": "0x180025bc6",
+          "string": "_initialize_onexit_table"
+        },
+        {
+          "addr": "0x180025cf4",
+          "string": "InitOnceBeginInitialize"
+        },
+        {
+          "addr": "0x180025d0e",
+          "string": "InitOnceComplete"
+        },
+        {
+          "addr": "0x180025edc",
+          "string": "InitializeSListHead"
+        },
+        {
+          "addr": "0x180026160",
+          "string": ".?AV<lambda_937a1921f2f507cc40a13de7c10569e5>@@"
+        },
+        {
+          "addr": "0x1800261e0",
+          "string": ".?AV<lambda_a7e5c5c9b6b04193c20a21573dea4e4a>@@"
+        },
+        {
+          "addr": "0x180026220",
+          "string": ".?AV<lambda_2bdd03d697e32834e756b08811623228>@@"
+        },
+        {
+          "addr": "0x1800263a0",
+          "string": ".?AV?$_Binder@U_Unforced@std@@V<lambda_79bf46fda5bef3dc389ab667d467c8a7>@@$$V@std@@"
+        },
+        {
+          "addr": "0x180026410",
+          "string": ".?AV?$_Binder@U_Unforced@std@@V<lambda_6e55d9a05bfffdbecbb0a35d23d3ca30>@@$$V@std@@"
+        },
+        {
+          "addr": "0x1800268e0",
+          "string": ".?AVMediaTranspose2to3Plugin@media_transpose2to3@@"
+        },
+        {
+          "addr": "0x180026c50",
+          "string": ".?AV?$_Func_impl_no_alloc@V<lambda_937a1921f2f507cc40a13de7c10569e5>@@X_J_J_J@std@@"
+        },
+        {
+          "addr": "0x180026d80",
+          "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2bdd03d697e32834e756b08811623228>@@XPEBE_KV?$function@$$A6AXPEBE_K@Z@std@@@std@@"
+        },
+        {
+          "addr": "0x180026e10",
+          "string": ".?AV?$_Func_impl_no_alloc@V<lambda_a7e5c5c9b6b04193c20a21573dea4e4a>@@XPEBE_K@std@@"
+        },
+        {
+          "addr": "0x180026e78",
+          "string": ".?AVIMediaTranspose@gear@@"
+        },
+        {
+          "addr": "0x180026ea8",
+          "string": ".?AVMediaTranspose@gear@@"
+        },
+        {
+          "addr": "0x180027030",
+          "string": ".?AVTranspose@@"
+        },
+        {
+          "addr": "0x180027050",
+          "string": ".?AVTransposeOutput@@"
+        },
+        {
+          "addr": "0x180027078",
+          "string": ".?AVTransposeFile@@"
+        },
+        {
+          "addr": "0x180027330",
+          "string": ".?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@V<lambda_6e55d9a05bfffdbecbb0a35d23d3ca30>@@$$V@std@@X$$V@std@@"
+        },
+        {
+          "addr": "0x1800273c0",
+          "string": ".?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@V<lambda_79bf46fda5bef3dc389ab667d467c8a7>@@$$V@std@@X$$V@std@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

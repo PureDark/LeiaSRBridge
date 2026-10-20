@@ -1,0 +1,8 @@
+C:\Program Files\LeiaSR\Platform\bin\SimulatedRealityCore.dll
+C:\Program Files\LeiaSR\Platform\bin\SimulatedRealityFaceTrackers.dll
+Connected as NonBlockingClientMode, lensPreference=false. No Display/Lens/Camera/Weaver created.
+Subscribed; observing 10 seconds.
+C:\Program Files\LeiaSR\Platform\bin\SimulatedRealityCore.dll
+C:\Program Files\LeiaSR\Platform\bin\SimulatedRealityFaceTrackers.dll
+Observer unsubscribed and context destroyed.
+Callbacks: Head=2359 HeadPose=2359 EyePair=2388

@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_18002F010\",\"code\":\"__int64 sub_18002F010()\\n{\\n  return Xtime_get_ticks() / 10000; /*0x18002f037*/\\n}\",\"refs\":[{\"addr\":\"0x1800b5fe4\",\"name\":\"_Xtime_get_ticks\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_18002F010",
+      "code": "__int64 sub_18002F010()\n{\n  return Xtime_get_ticks() / 10000; /*0x18002f037*/\n}",
+      "refs": [
+        {
+          "addr": "0x1800b5fe4",
+          "name": "_Xtime_get_ticks"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

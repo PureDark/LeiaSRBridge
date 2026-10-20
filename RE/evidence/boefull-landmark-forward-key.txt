@@ -1,0 +1,81 @@
+1801c0000 jbe short loc_1801C0006
+1801c0002 mov rax, [rbx+20h]
+1801c0006 cmp r8, 9
+1801c000a jnz loc_1801C00C8
+1801c0010 mov rcx, [rax]
+1801c0013 sub rcx, r14
+1801c0016 jnz short loc_1801C0023
+1801c0018 movzx ecx, byte ptr [rax+8]
+1801c001c movzx eax, r10b
+1801c0020 sub rcx, rax
+1801c0023 test rcx, rcx
+1801c0026 jnz loc_1801C00C8
+1801c002c mov rax, [rbx+40h]
+1801c0030 mov r14, [rax+10h]
+1801c0034 movd xmm6, r15d
+1801c0039 cvtdq2ps xmm6, xmm6
+1801c003c movd xmm0, dword ptr [rdi+4Ch]
+1801c0041 cvtdq2ps xmm0, xmm0
+1801c0044 divss xmm6, xmm0
+1801c0048 movd xmm7, r13d
+1801c004d cvtdq2ps xmm7, xmm7
+1801c0050 movd xmm0, dword ptr [rdi+48h]
+1801c0055 cvtdq2ps xmm0, xmm0
+1801c0058 divss xmm7, xmm0
+1801c005c xor edi, edi
+1801c005e xchg ax, ax
+1801c0060 movaps xmm0, xmm7
+1801c0063 mulss xmm0, dword ptr [r14+rdi]
+1801c0069 movss dword ptr [rsp+230h+var_200], xmm0
+1801c006f movaps xmm1, xmm6
+1801c0072 mulss xmm1, dword ptr [r14+rdi+4]
+1801c0079 movss dword ptr [rsp+230h+var_200+4], xmm1
+1801c007f mov rdx, [rsi+8]
+1801c0083 cmp rdx, [rsi+10h]
+1801c0087 jz short loc_1801C009D
+1801c0089 unpcklps xmm0, xmm1
+1801c008c movsd [rsp+230h+var_200], xmm0
+1801c0092 movsd qword ptr [rdx], xmm0
+1801c0096 add qword ptr [rsi+8], 8
+1801c009b jmp short loc_1801C00AA
+1801c009d lea r8, [rsp+230h+var_200]
+1801c00a2 mov rcx, rsi
+1801c00a5 call sub_1801BEBA0
+1801c00aa add rdi, 0Ch
+1801c00ae cmp rdi, 15F0h
+1801c00b5 jl short loc_1801C0060
+1801c00b7 mov rdi, [rsp+230h+var_1E0]
+1801c00bc mov r14, 325F6432766E6F63h
+1801c00c6 jmp short loc_1801C0120
+1801c00c8 lea rax, [rbx+20h]
+1801c00cc cmp r9, 0Fh
+1801c00d0 jbe short loc_1801C00D6
+1801c00d2 mov rax, [rbx+20h]
+1801c00d6 cmp r8, 9
+1801c00da jnz short loc_1801C0130
+1801c00dc mov rcx, [rax]
+1801c0219 xor edi, edi
+1801c021b nop dword ptr [rax+rax+00h]
+1801c0220 movaps xmm0, xmm7
+1801c0223 mulss xmm0, dword ptr [r14+rdi]
+1801c0229 movss dword ptr [rsp+230h+var_200], xmm0
+1801c022f movaps xmm1, xmm6
+1801c0232 mulss xmm1, dword ptr [r14+rdi+4]
+1801c0239 movss dword ptr [rsp+230h+var_200+4], xmm1
+1801c023f mov rdx, [rsi+8]
+1801c0243 cmp rdx, [rsi+10h]
+1801c0247 jz short loc_1801C025D
+1801c0249 unpcklps xmm0, xmm1
+1801c024c movsd [rsp+230h+var_200], xmm0
+1801c0252 movsd qword ptr [rdx], xmm0
+1801c0256 add qword ptr [rsi+8], 8
+1801c025b jmp short loc_1801C026A
+1801c025d lea r8, [rsp+230h+var_200]
+1801c0262 mov rcx, rsi
+1801c0265 call sub_1801BEBA0
+1801c026a add rdi, 0Ch
+1801c026e cmp rdi, 15F0h
+1801c0275 jl short loc_1801C0220
+1801c0277 mov rdi, [rsp+230h+var_1E0]
+1801c027c jmp short loc_1801C02D6
+1801c027e lea rax, [rbx+20h]

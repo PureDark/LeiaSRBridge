@@ -1,0 +1,169 @@
+1800b2727 lea rax, [rbp+0E10h+var_E80]
+1800b272b mov [rsp+0F10h+var_EC8], rax
+1800b2730 mov dword ptr [rsp+0F10h+var_ED8], 4
+1800b2738 mov byte ptr [rsp+0F10h+var_EE0], 0
+1800b273d lea rax, [rbp+0E10h+var_E48]
+1800b2741 mov qword ptr [rsp+0F10h+var_EE8], rax
+1800b2746 lea rax, [rbp+0E10h+var_E30]
+1800b274a mov [rsp+0F10h+var_EF0], rax
+1800b274f lea r9, [rbp+0E10h+var_E18]
+1800b2753 lea r8, [rbp+0E10h+var_E00]
+1800b2757 lea rdx, [rsp+0F10h+var_EA8]
+1800b275c lea rcx, [rsp+0F10h+var_ED0]
+1800b2761 call cs:?solvePnP@cv@@YA_NAEBV_InputArray@1@000AEBV_OutputArray@1@1_NH@Z; opencv_world4110
+1800b2767 mov [rsp+0F10h+var_EC0], r14
+1800b276c mov dword ptr [rsp+0F10h+var_ED0], 1010000h
+1800b2774 lea rax, [rbp+0E10h+var_DE0]
+1800b2778 mov [rsp+0F10h+var_EC8], rax
+1800b277d call cs:?noArray@cv@@YAAEBV_InputOutputArray@1@XZ; opencv_world4110
+1800b2783 mov r8, rax
+1800b2786 mov edx, 4
+1800b278b lea rcx, [rsp+0F10h+var_ED0]
+1800b2790 call cs:?norm@cv@@YANAEBV_InputArray@1@H0@Z; opencv_world4110
+1800b2796 movaps xmm10, xmm0
+1800b279a comisd xmm0, cs:qword_18010FEF0
+1800b27a2 jbe loc_1800B2FB5
+1800b27a8 movaps xmm6, xmm0
+1800b27ab mulsd xmm6, cs:qword_18010FFB8
+1800b27b3 movaps xmm0, xmm6; X
+1800b27b6 call cos
+1800b27bb movaps xmm11, xmm0
+1800b27bf mov edi, [rbp+0E10h+var_DE0]
+1800b27c2 shr edi, 0Eh
+1800b27c5 mov r14, [rbp+0E10h+var_D98]
+1800b27c9 mov esi, [rbp+0E10h+var_DD4]
+1800b27cc mov rbx, [rbp+0E10h+var_DA0]
+1800b27d0 and dil, 1
+1800b27d4 jnz short loc_1800B284E
+1800b27d6 cmp dword ptr [rbx], 1
+1800b27d9 jz short loc_1800B284E
+1800b27db movaps xmm0, xmm6; X
+1800b27de call sin
+1800b27e3 movaps xmm9, xmm0
+1800b27e7 movaps xmm8, xmm0
+1800b27eb movaps xmm7, xmm0
+1800b27ee mov r8, [rbp+0E10h+var_DD0]
+1800b27f2 mulsd xmm7, qword ptr [r8]
+1800b27f7 divsd xmm7, xmm10
+1800b27fc cmp dword ptr [rbx+4], 1
+1800b2800 jz short loc_1800B287F
+1800b2802 mov eax, 1
+1800b2807 cdq
+1800b2808 idiv esi
+1800b280a mov ecx, esi
+1800b280c imul ecx, eax
+1800b280f mov edx, 1
+1800b2814 sub edx, ecx
+1800b2816 cdqe
+1800b2818 imul rax, [r14]
+1800b281c movsxd rcx, edx
+1800b281f add rax, r8
+1800b2822 mulsd xmm8, qword ptr [rax+rcx*8]
+1800b2828 divsd xmm8, xmm10
+1800b282d mov ecx, 2
+1800b2832 mov eax, ecx
+1800b2834 cdq
+1800b2835 idiv esi
+1800b2837 imul esi, eax
+1800b283a sub ecx, esi
+1800b283c cdqe
+1800b283e imul rax, [r14]
+1800b2842 movsxd rcx, ecx
+1800b2845 add rax, r8
+1800b2848 lea r8, [rax+rcx*8]
+1800b284c jmp short loc_1800B28C7
+1800b284e movaps xmm0, xmm6; X
+1800b2851 call sin
+1800b2856 movaps xmm9, xmm0
+1800b285a movaps xmm8, xmm0
+1800b285e movaps xmm7, xmm0
+1800b2861 mov r8, [rbp+0E10h+var_DD0]
+1800b2865 mulsd xmm7, qword ptr [r8]
+1800b286a divsd xmm7, xmm10
+1800b286f test dil, dil
+1800b2872 jnz short loc_1800B2897
+1800b2874 cmp dword ptr [rbx], 1
+1800b2877 jz short loc_1800B2897
+1800b2879 cmp dword ptr [rbx+4], 1
+1800b287d jnz short loc_1800B2802
+1800b287f mov r14, [rbp+0E10h+var_D98]
+1800b2883 mov rax, [r14]
+1800b2886 mulsd xmm8, qword ptr [r8+rax]
+1800b288c divsd xmm8, xmm10
+1800b2891 lea r8, [r8+rax*2]
+1800b2895 jmp short loc_1800B28C7
+1800b2897 movaps xmm8, xmm9
+1800b289b mulsd xmm8, qword ptr [r8+8]
+1800b28a1 divsd xmm8, xmm10
+1800b28a6 test dil, dil
+1800b28a9 jnz short loc_1800B28C3
+1800b28ab cmp dword ptr [rbx], 1
+1800b28ae jz short loc_1800B28C3
+1800b28b0 cmp dword ptr [rbx+4], 1
+1800b28b4 jnz loc_1800B282D
+1800b28ba mov rax, [r14]
+1800b28bd lea r8, [r8+rax*2]
+1800b28c1 jmp short loc_1800B28C7
+1800b28c3 add r8, 10h
+1800b28c7 mulsd xmm9, qword ptr [r8]
+1800b28cc divsd xmm9, xmm10
+1800b28d1 movaps xmm6, xmm8
+1800b28d5 mulsd xmm6, xmm8
+1800b28da movaps xmm3, xmm9
+1800b28de mulsd xmm3, xmm8
+1800b28e3 movaps xmm0, xmm7
+1800b28e6 mulsd xmm0, xmm11
+1800b28eb addsd xmm3, xmm0
+1800b28ef addsd xmm3, xmm3
+1800b28f3 movaps xmm2, xmm7
+1800b28f6 mulsd xmm2, xmm7
+1800b28fa addsd xmm2, xmm6
+1800b28fe addsd xmm2, xmm2
+1800b2902 movsd xmm12, cs:qword_18010FFD8
+1800b290b movaps xmm1, xmm12
+1800b290f subsd xmm1, xmm2
+1800b2913 movaps xmm0, xmm3
+1800b2916 call sub_1800DEDE0
+1800b291b mov rbx, [rbp+0E10h+var_E68]
+1800b291f movsd qword ptr [rbx], xmm0
+1800b2923 movaps xmm2, xmm8
+1800b2927 mulsd xmm2, xmm11
+1800b292c movaps xmm0, xmm9
+1800b2930 mulsd xmm0, xmm7
+1800b2934 subsd xmm2, xmm0
+1800b2938 addsd xmm2, xmm2
+1800b293c movaps xmm1, xmm12
+1800b2940 minsd xmm1, xmm2
+1800b2944 movsd xmm0, cs:qword_180110068
+1800b294c maxsd xmm0, xmm1
+1800b2950 call sub_1800DEB50
+1800b2955 mov rdi, [rbp+0E10h+var_E60]
+1800b2959 movsd qword ptr [rdi], xmm0
+1800b295d mulsd xmm8, xmm7
+1800b2962 movaps xmm0, xmm9
+1800b2966 mulsd xmm0, xmm11
+1800b296b addsd xmm8, xmm0
+1800b2970 addsd xmm8, xmm8
+1800b2975 mulsd xmm9, xmm9
+1800b297a addsd xmm9, xmm6
+1800b297f addsd xmm9, xmm9
+1800b2984 movaps xmm1, xmm12
+1800b2988 subsd xmm1, xmm9
+1800b298d movaps xmm0, xmm8
+1800b2991 call sub_1800DEDE0
+1800b2996 mov rax, [rbp+0E10h+var_E58]
+1800b299a movsd qword ptr [rax], xmm0
+1800b299e movsd xmm1, qword ptr [rbx]
+1800b29a2 movsd xmm3, cs:qword_18010FFF0
+1800b29aa divsd xmm1, xmm3
+1800b29ae movsd xmm2, cs:qword_180110020
+1800b29b6 mulsd xmm1, xmm2
+1800b29ba movsd qword ptr [r15], xmm1
+1800b29bf movsd xmm0, qword ptr [rdi]
+1800b29c3 divsd xmm0, xmm3
+1800b29c7 mulsd xmm0, xmm2
+1800b29cb movsd qword ptr [r12], xmm0
+1800b29d1 movsd xmm1, qword ptr [rax]
+1800b29d5 divsd xmm1, xmm3
+1800b29d9 mulsd xmm1, xmm2
+1800b29dd movsd qword ptr [r13+0], xmm1

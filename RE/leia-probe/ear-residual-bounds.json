@@ -1,0 +1,12 @@
+[
+  {
+    "ear": "left_ear_local_mm",
+    "maximum_Linf_mm": 5.993630000489247E-05,
+    "maximum_L2_upper_bound_mm": 9.915146989444189E-05
+  },
+  {
+    "ear": "right_ear_local_mm",
+    "maximum_Linf_mm": 5.997840000304677E-05,
+    "maximum_L2_upper_bound_mm": 9.992499928571154E-05
+  }
+]

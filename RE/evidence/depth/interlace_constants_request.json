@@ -1,0 +1,82 @@
+{
+  "queries": [
+    {
+      "include_disasm": false,
+      "include_basic_blocks": false,
+      "include_callers": false,
+      "include_constants": false,
+      "include_xrefs": false,
+      "include_callees": false,
+      "addr": "0x18005F530",
+      "include_decompile": true,
+      "include_strings": false
+    },
+    {
+      "include_disasm": false,
+      "include_basic_blocks": false,
+      "include_callers": false,
+      "include_constants": false,
+      "include_xrefs": false,
+      "include_callees": false,
+      "addr": "0x180059040",
+      "include_decompile": true,
+      "include_strings": false
+    },
+    {
+      "include_disasm": false,
+      "include_basic_blocks": false,
+      "include_callers": false,
+      "include_constants": false,
+      "include_xrefs": false,
+      "include_callees": false,
+      "addr": "0x18005C8C0",
+      "include_decompile": true,
+      "include_strings": false
+    },
+    {
+      "include_disasm": false,
+      "include_basic_blocks": false,
+      "include_callers": false,
+      "include_constants": false,
+      "include_xrefs": false,
+      "include_callees": false,
+      "addr": "0x18005CC20",
+      "include_decompile": true,
+      "include_strings": false
+    },
+    {
+      "include_disasm": false,
+      "include_basic_blocks": false,
+      "include_callers": false,
+      "include_constants": false,
+      "include_xrefs": false,
+      "include_callees": false,
+      "addr": "0x18005CAF0",
+      "include_decompile": true,
+      "include_strings": false
+    },
+    {
+      "include_disasm": false,
+      "include_basic_blocks": false,
+      "include_callers": false,
+      "include_constants": false,
+      "include_xrefs": false,
+      "include_callees": false,
+      "addr": "0x18005AC10",
+      "include_decompile": true,
+      "include_strings": false
+    },
+    {
+      "include_disasm": false,
+      "include_basic_blocks": false,
+      "include_callers": false,
+      "include_constants": false,
+      "include_xrefs": false,
+      "include_callees": false,
+      "addr": "0x18005B640",
+      "include_decompile": true,
+      "include_strings": false
+    }
+  ],
+  "database": "interlace"
+}

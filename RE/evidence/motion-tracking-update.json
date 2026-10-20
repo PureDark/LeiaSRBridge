@@ -1,0 +1,74 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "addr": "0x1800323C0",
+      "code": "void __fastcall sub_1800323C0(__int64 a1, const struct cv::Mat *a2, const struct cv::Mat *a3)\n{\n  __int64 v6; // rax\n  __int64 v7; // rcx\n  __int64 v8; // rax\n  __int64 v9; // rsi\n  __int64 v10; // rax\n  _QWORD *v11; // r14\n  _QWORD *v12; // r13\n  char *v13; // rbx\n  char *v14; // rdi\n  char *v15; // rax\n  __int64 v16; // rcx\n  int v17; // r13d\n  unsigned __int8 v18; // bl\n  __int64 v19; // rdx\n  __int64 v20; // rsi\n  __int64 v21; // r12\n  unsigned __int64 v22; // r14\n  void *v23; // rax\n  _DWORD *v24; // rdi\n  char *v25; // rdi\n  unsigned __int64 v26; // r14\n  int v27; // esi\n  char *v28; // r8\n  char *v29; // rsi\n  char *v30; // rax\n  char *v31; // rcx\n  unsigned __int64 v32; // r13\n  __int64 v33; // r8\n  int v34; // edi\n  __int64 v35; // rbx\n  double v36; // xmm0_8\n  double v37; // xmm1_8\n  __int64 v38; // rdx\n  double v39; // xmm0_8\n  double v40; // xmm1_8\n  const struct cv::Mat *v41; // rax\n  __int64 v42; // rdx\n  __int64 v43; // rcx\n  __int64 v44; // r8\n  __int64 v45; // rax\n  __... [79196 chars total]",
+      "refs": [
+        {
+          "addr": "0x180008380",
+          "name": "sub_180008380"
+        },
+        {
+          "addr": "0x18010e820",
+          "name": "aExecuteFaceDet",
+          "string": "execute face detect ..."
+        },
+        {
+          "addr": "0x180005cc0",
+          "name": "sub_180005CC0"
+        },
+        {
+          "addr": "0x18010e888",
+          "name": "aStopFlagIsTrue_0",
+          "string": "stop flag is true,detect will exit!!!"
+        },
+        {
+          "addr": "0x1800fd550",
+          "name": "??0Mat@cv@@QEAA@AEBV01@@Z"
+        },
+        {
+          "addr": "0x180035de0",
+          "name": "sub_180035DE0"
+        },
+        {
+          "addr": "0x1800a6bd0",
+          "name": "sub_1800A6BD0"
+        },
+        {
+          "addr": "0x180030510",
+          "name": "sub_180030510"
+        },
+        {
+          "addr": "0x1800c199c",
+          "name": "_invalid_parameter_noinfo_noreturn"
+        },
+        {
+          "addr": "0x1800b819c",
+          "name": "j_j_j__free_base_0"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800323C0\",\"code\":\"void __fastcall sub_1800323C0(__int64 a1, const struct cv::Mat *a2, const struct cv::Mat *a3)\\n{\\n  __int64 v6; // rax\\n  __int64 v7; // rcx\\n  __int64 v8; // rax\\n  __int64 v9; // rsi\\n  __int64 v10; // rax\\n  _QWORD *v11; // r14\\n  _QWORD *v12; // r13\\n  char *v13; // rbx\\n  char *v14; // rdi\\n  char *v15; // rax\\n  __int64 v16; // rcx\\n  int v17; // r13d\\n  unsigned __int8 v18; // bl\\n  __int64 v19; // rdx\\n  __int64 v20; // rsi\\n  __int64 v21; // r12\\n  unsigned __int64 v22; // r14\\n  void *v23; // rax\\n  _DWORD *v24; // rdi\\n  char *v25; // rdi\\n  unsigned __int64 v26; // r14\\n  int v27; // esi\\n  char *v28; // r8\\n  char *v29; // rsi\\n  char *v30; // rax\\n  char *v31; // rcx\\n  unsigned __int64 v32; // r13\\n  __int64 v33; // r8\\n  int v34; // edi\\n  __int64 v35; // rbx\\n  double v36; // xmm0_8\\n  double v37; // xmm1_8\\n  __int64 v38; // rdx\\n  double v39; // xmm0_8\\n  double v40; // xmm1_8\\n  const struct cv::Mat *v41; // rax\\n  __int64 v42; // rdx\\n  __int64 v43; // rcx\\n  __int64 v44; // r8\\n  __int64 v45; // rax\\n  __... [79196 chars total]\",\"refs\":[{\"addr\":\"0x180008380\",\"name\":\"sub_180008380\"},{\"addr\":\"0x18010e820\",\"name\":\"aExecuteFaceDet\",\"string\":\"execute face detect ...\"},{\"addr\":\"0x180005cc0\",\"name\":\"sub_180005CC0\"},{\"addr\":\"0x18010e888\",\"name\":\"aStopFlagIsTrue_0\",\"string\":\"stop flag is true,detect will exit!!!\"},{\"addr\":\"0x1800fd550\",\"name\":\"??0Mat@cv@@QEAA@AEBV01@@Z\"},{\"addr\":\"0x180035de0\",\"name\":\"sub_180035DE0\"},{\"addr\":\"0x1800a6bd0\",\"name\":\"sub_1800A6BD0\"},{\"addr\":\"0x180030510\",\"name\":\"sub_180030510\"},{\"addr\":\"0x1800c199c\",\"name\":\"_invalid_parameter_noinfo_noreturn\"},{\"addr\":\"0x1800b819c\",\"name\":\"j_j_j__free_base_0\"}]}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/dbbcfae6-6d63-4169-83c3-b91c56ee9e28.json http://127.0.0.1:60628/output/dbbcfae6-6d63-4169-83c3-b91c56ee9e28.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 85167,
+        "output_id": "dbbcfae6-6d63-4169-83c3-b91c56ee9e28",
+        "download_url": "http://127.0.0.1:60628/output/dbbcfae6-6d63-4169-83c3-b91c56ee9e28.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/dbbcfae6-6d63-4169-83c3-b91c56ee9e28.json http://127.0.0.1:60628/output/dbbcfae6-6d63-4169-83c3-b91c56ee9e28.json"
+      }
+    }
+  },
+  "id": 1
+}

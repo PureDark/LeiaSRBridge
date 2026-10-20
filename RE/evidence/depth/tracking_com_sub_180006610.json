@@ -1,0 +1,27 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180006610\",\"code\":\"__int64 __fastcall sub_180006610(__int64 a1, __int64 a2)\\n{\\n  xmmword_180015000 = *(_OWORD *)a2; /*0x180006616*/\\n  dword_180015010 = *(_DWORD *)(a2 + 16); /*0x18000664a*/\\n  return 0; /*0x180006652*/\\n}\",\"refs\":[{\"addr\":\"0x180015000\",\"name\":\"xmmword_180015000\"},{\"addr\":\"0x180015010\",\"name\":\"dword_180015010\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180006610",
+      "code": "__int64 __fastcall sub_180006610(__int64 a1, __int64 a2)\n{\n  xmmword_180015000 = *(_OWORD *)a2; /*0x180006616*/\n  dword_180015010 = *(_DWORD *)(a2 + 16); /*0x18000664a*/\n  return 0; /*0x180006652*/\n}",
+      "refs": [
+        {
+          "addr": "0x180015000",
+          "name": "xmmword_180015000"
+        },
+        {
+          "addr": "0x180015010",
+          "name": "dword_180015010"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

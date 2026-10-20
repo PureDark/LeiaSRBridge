@@ -1,0 +1,100 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"data\":[{\"addr\":\"0x18015a770\",\"name\":\"LoadStereoEngine\",\"size\":\"0x3ca\",\"has_type\":true},{\"addr\":\"0x18015ab40\",\"name\":\"CreateStereoRenderer\",\"size\":\"0x28e\",\"has_type\":false},{\"addr\":\"0x18015add0\",\"name\":\"UnloadStereoEngine\",\"size\":\"0x2e8\",\"has_type\":false},{\"addr\":\"0x18015b0c0\",\"name\":\"IsValidLicense\",\"size\":\"0xa8\",\"has_type\":true},{\"addr\":\"0x18015b170\",\"name\":\"YL_GlobalInitStereoEngine\",\"size\":\"0x3ca\",\"has_type\":true},{\"addr\":\"0x18015b540\",\"name\":\"YL_GlobalUninitStereoEngine\",\"size\":\"0x2e8\",\"has_type\":false},{\"addr\":\"0x18015b830\",\"name\":\"YL_CreateStereoRendererEx\",\"size\":\"0x1b0\",\"has_type\":true},{\"addr\":\"0x18015b9e0\",\"name\":\"YL_InitGraphicsDevice\",\"size\":\"0x19\",\"has_type\":true},{\"addr\":\"0x18015ba00\",\"name\":\"YL_SetFrameSize\",\"size\":\"0x14d\",\"has_type\":false},{\"addr\":\"0x18015bb50\",\"name\":\"YL_Render\",\"size\":\"0x14f\",\"has_type\":true},{\"addr\":\"0x18015bca0\",\"name\":\"YL_Render2\",\"size\":\"0x161\",\"has_type\":false},{\"addr\":\"0x18015be10\",\"name\":\"YL_SetParax\",\"size\":\"0x14d\",\"has_type\":false},{\"addr\":\"0x18015bf60\",\"name\":\"YL_Release\",\"size\":\"0x151\",\"has_type\":false}],\"next_offset\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "data": [
+            {
+              "addr": "0x18015a770",
+              "name": "LoadStereoEngine",
+              "size": "0x3ca",
+              "has_type": true
+            },
+            {
+              "addr": "0x18015ab40",
+              "name": "CreateStereoRenderer",
+              "size": "0x28e",
+              "has_type": false
+            },
+            {
+              "addr": "0x18015add0",
+              "name": "UnloadStereoEngine",
+              "size": "0x2e8",
+              "has_type": false
+            },
+            {
+              "addr": "0x18015b0c0",
+              "name": "IsValidLicense",
+              "size": "0xa8",
+              "has_type": true
+            },
+            {
+              "addr": "0x18015b170",
+              "name": "YL_GlobalInitStereoEngine",
+              "size": "0x3ca",
+              "has_type": true
+            },
+            {
+              "addr": "0x18015b540",
+              "name": "YL_GlobalUninitStereoEngine",
+              "size": "0x2e8",
+              "has_type": false
+            },
+            {
+              "addr": "0x18015b830",
+              "name": "YL_CreateStereoRendererEx",
+              "size": "0x1b0",
+              "has_type": true
+            },
+            {
+              "addr": "0x18015b9e0",
+              "name": "YL_InitGraphicsDevice",
+              "size": "0x19",
+              "has_type": true
+            },
+            {
+              "addr": "0x18015ba00",
+              "name": "YL_SetFrameSize",
+              "size": "0x14d",
+              "has_type": false
+            },
+            {
+              "addr": "0x18015bb50",
+              "name": "YL_Render",
+              "size": "0x14f",
+              "has_type": true
+            },
+            {
+              "addr": "0x18015bca0",
+              "name": "YL_Render2",
+              "size": "0x161",
+              "has_type": false
+            },
+            {
+              "addr": "0x18015be10",
+              "name": "YL_SetParax",
+              "size": "0x14d",
+              "has_type": false
+            },
+            {
+              "addr": "0x18015bf60",
+              "name": "YL_Release",
+              "size": "0x151",
+              "has_type": false
+            }
+          ],
+          "next_offset": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

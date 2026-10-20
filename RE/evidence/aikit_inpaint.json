@@ -1,0 +1,86 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18013bcc0\",\"code\":\"char __fastcall sub_18013BCC0(unsigned int *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6)\\n{\\n  void (__fastcall *v10)(__int64, _QWORD, __int64, unsigned int *); // r15\\n  __int64 v11; // rcx\\n  __int64 v12; // rcx\\n  volatile signed __int32 *v13; // rbx\\n  __int128 v15; // [rsp+30h] [rbp-69h]\\n  __int128 v16; // [rsp+50h] [rbp-49h] BYREF\\n  const char *v17; // [rsp+60h] [rbp-39h]\\n  _QWORD v18[2]; // [rsp+70h] [rbp-29h] BYREF\\n  __int64 v19; // [rsp+80h] [rbp-19h] BYREF\\n  int v20; // [rsp+88h] [rbp-11h] BYREF\\n  int v21; // [rsp+8Ch] [rbp-Dh] BYREF\\n  __int128 v22; // [rsp+90h] [rbp-9h] BYREF\\n\\n  v19 = a5; /*0x18013bcf3*/\\n  if ( a5 != 0 ) /*0x18013bcfe*/\\n  {\\n    v22 = 0; /*0x18013bd03*/\\n    (*(void (__fastcall **)(__int64, __int64, __int64 *, _QWORD))(*(_QWORD *)a3 + 264LL))( /*0x18013bd19*/\\n      a1: a3,\\n      a2: 1,\\n      a3: &v19,\\n      a4: 0);\\n    (*(void (__fastcall **)(__int64, __int64, __int128 *))(*(_QWORD *)a3 + 400LL))(a1: a3, a2: v19, a3: &v22); /*0x18013bd2d*/\\n  }\\n  (*(void (__fastcall **)(__int64, __int64, __int64))(*(_QWORD *)a3 + 352LL))(a1: a3, a2: 1, a3: a6); /*0x18013bd41*/\\n  *(_QWORD *)&v22 = a4; /*0x18013bd47*/\\n  v21 = 20; /*0x18013bd4b*/\\n  v20 = 0; /*0x18013bd52*/\\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, unsigned int *, int *, int *))(*(_QWORD *)a3 + 144LL))( /*0x18013bd7d*/\\n    a1: a3,\\n    a2: 0,\\n    a3: 1,\\n    a4: a1 + 8,\\n    a5: &v21,\\n    a6: &v20);\\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, _QWORD))(*(_QWORD *)a3 + 152LL))( /*0x18013bd96*/\\n    a1: a3,\\n    a2: *((_QWORD *)a1 + 5),\\n    a3: 42,\\n    a4: 0);\\n  (*(void (__fastcall **)(__int64, __int64))(*(_QWORD *)a3 + 192LL))(a1: a3, a2: 4); /*0x18013bda7*/\\n  (*(void (__fastcall **)(__int64, _QWORD))(*(_QWORD *)a3 + 136LL))(a1: a3, a2: *((_QWORD *)a1 + 3)); /*0x18013bdb7*/\\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD, _QWORD))(*(_QWORD *)a3 + 88LL))( /*0x18013bdcd*/\\n    a1: a3,\\n    a2: *((_QWORD *)a1 + 1),\\n    a3: 0,\\n    a4: 0);\\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD, _QWORD))(*(_QWORD *)a3 + 72LL))( /*0x18013bde0*/\\n    a1: a3,\\n    a2: *((_QWORD *)a1 + 2),\\n    a3: 0,\\n    a4: 0);\\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, __int128 *))(*(_QWORD *)a3 + 64LL))(a1: a3, a2: 0, a3: 1, a4: &v22); /*0x18013bdf5*/\\n  v10 = *(void (__fastcall **)(__int64, _QWORD, __int64, unsigned int *))(*(_QWORD *)a3 + 80LL); /*0x18013bdfb*/\\n  __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000074*/\\n  v11 = *((_QWORD *)a1 + 6); /*0x18013bdff*/\\n  if ( v11 != 0 ) /*0x18013be06*/\\n  {\\n    *((_QWORD *)a1 + 6) = 0; /*0x18013be08*/\\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)v11 + 16LL))(a1: v11); /*0x18013be13*/\\n  }\\n  if ( __eh34_unwind(0) ) /*0xf1c0000000000068*/\\nunwind_state_0:\\n    __std_terminate(); /*0xf1c0000000000050*/\\n  __eh34_exit_wind_state(0, -1); /*0xf1c000000000006c*/\\n  v10(a1: a3, a2: 0, a3: 1, a4: a1 + 12); /*0x18013be26*/\\n  if ( *((_BYTE *)a1 + 84) != 0 ) /*0x18013be2d*/\\n  {\\n    __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000060*/\\n    v12 = *((_QWORD *)a1 + 7); /*0x18013be33*/\\n    if ( v12 != 0 ) /*0x18013be3a*/\\n    {\\n      *((_QWORD *)a1 + 7) = 0; /*0x18013be3c*/\\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v12 + 16LL))(a1: v12); /*0x18013be47*/\\n    }\\n    if ( __eh34_unwind(0) ) /*0xf1c000000000004c*/\\n      goto unwind_state_0; /*0xf1c000000000004c*/\\n    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000058*/\\n    sub_18013C780(a1, a2); /*0x18013be51*/\\n    if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x18013be77*/\\n                                     + 16LL) )\\n    {\\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18013be80*/\\n      if ( dword_1805C9A98 == -1 ) /*0x18013be8c*/\\n      {\\n        __wind /*0xf1c0000000000040*/\\n        {\\n          xmmword_1805C9820 = 0; /*0x18013be91*/\\n          sub_180116C20(); /*0x18013be98*/\\n          atexit(a1: sub_1803B9F10); /*0x18013bea4*/\\n        }\\n        __unwind\\n        {\\n          sub_1803B3790(a1: &dword_1805C9A98); /*0x1803b7da7*/\\n        }\\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18013beb1*/\\n      }\\n    }\\n    v13 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18013beb6*/\\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18013bec0*/\\n    {\\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18013bec2*/\\n      v13 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18013bec6*/\\n    }\\n    __wind /*0xf1c0000000000028*/\\n    {\\n      v18[0] = xmmword_1805C9820; /*0x18013bed4*/\\n      v18[1] = v13; /*0x18013bed8*/\\n      *(_QWORD *)&v15 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\Core\\\\\\\\Inpating.cpp\\\"; /*0x18013bee3*/\\n      DWORD2(v15) = 349; /*0x18013bee7*/\\n      HIDWORD(v15) = HIDWORD(v16); /*0x18013bef1*/\\n      *(_QWORD *)&v22 = \\\"FXAA->Update the constant buffer\\\"; /*0x18013bf06*/\\n      *((_QWORD *)&v22 + 1) = 32; /*0x18013bf0a*/\\n      v16 = v15; /*0x18013bf16*/\\n      v17 = \\\"AiStereo::Inpating::UpdateConstantBuffer\\\"; /*0x18013bf1f*/\\n      sub_180114050(a1: xmmword_1805C9820, a2: &v16, a3: 2, a4: &v22); /*0x18013bf32*/\\n      if ( v13 != nullptr && _InterlockedExchangeAdd(v13 + 2, 0xFFFFFFFF) == 1 ) /*0x18013bf4e*/\\n      {\\n        (**(void (__fastcall ***)(volatile signed __int32 *))v13)(a1: v13); /*0x18013bf56*/\\n        if ( _InterlockedExchangeAdd(v13 + 3, 0xFFFFFFFF) == 1 ) /*0x18013bf62*/\\n          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v13 + 8LL))(a1: v13); /*0x18013bf6a*/\\n      }\\n    }\\n    __unwind\\n    {\\n      sub_18011BED0(a1: v18); /*0xf1c0000000000020*/\\n    }\\n  }\\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, unsigned int *))(*(_QWORD *)a3 + 128LL))( /*0x18013bf7f*/\\n    a1: a3,\\n    a2: 0,\\n    a3: 1,\\n    a4: a1 + 14);\\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD, _QWORD))(*(_QWORD *)a3 + 96LL))(a1: a3, a2: *a1, a3: 0, a4: 0); /*0x18013bf93*/\\n  return 1; /*0x18013bf98*/\\n}\",\"refs\":[{\"addr\":\"0x1803bb770\",\"name\":\"__imp___std_terminate\"},{\"addr\":\"0x18013c780\",\"name\":\"sub_18013C780\"},{\"addr\":\"0x1803b3838\",\"name\":\"sub_1803B3838\"},{\"addr\":\"0x1805c9a98\",\"name\":\"dword_1805C9A98\"},{\"addr\":\"0x1805c9820\",\"name\":\"xmmword_1805C9820\"},{\"addr\":\"0x180116c20\",\"name\":\"sub_180116C20\"},{\"addr\":\"0x1803b3744\",\"name\":\"atexit\"},{\"addr\":\"0x1803b9f10\",\"name\":\"sub_1803B9F10\"},{\"addr\":\"0x1803b3790\",\"name\":\"sub_1803B3790\"},{\"addr\":\"0x1803b37cc\",\"name\":\"sub_1803B37CC\"},{\"addr\":\"0x1805c973c\",\"name\":\"TlsIndex\"},{\"addr\":\"0x1805852c0\",\"name\":\"aJProjectVsproj_2\",\"string\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\Inpating.cpp\"},{\"addr\":\"0x1805854b0\",\"name\":\"aFxaaUpdateTheC\",\"string\":\"FXAA->Update the constant buffer\"},{\"addr\":\"0x180585480\",\"name\":\"aAistereoInpati\",\"string\":\"AiStereo::Inpating::UpdateConstantBuffer\"},{\"addr\":\"0x180114050\",\"name\":\"sub_180114050\"},{\"addr\":\"0x18011bed0\",\"name\":\"sub_18011BED0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18013bcc0",
+      "code": "char __fastcall sub_18013BCC0(unsigned int *a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6)\n{\n  void (__fastcall *v10)(__int64, _QWORD, __int64, unsigned int *); // r15\n  __int64 v11; // rcx\n  __int64 v12; // rcx\n  volatile signed __int32 *v13; // rbx\n  __int128 v15; // [rsp+30h] [rbp-69h]\n  __int128 v16; // [rsp+50h] [rbp-49h] BYREF\n  const char *v17; // [rsp+60h] [rbp-39h]\n  _QWORD v18[2]; // [rsp+70h] [rbp-29h] BYREF\n  __int64 v19; // [rsp+80h] [rbp-19h] BYREF\n  int v20; // [rsp+88h] [rbp-11h] BYREF\n  int v21; // [rsp+8Ch] [rbp-Dh] BYREF\n  __int128 v22; // [rsp+90h] [rbp-9h] BYREF\n\n  v19 = a5; /*0x18013bcf3*/\n  if ( a5 != 0 ) /*0x18013bcfe*/\n  {\n    v22 = 0; /*0x18013bd03*/\n    (*(void (__fastcall **)(__int64, __int64, __int64 *, _QWORD))(*(_QWORD *)a3 + 264LL))( /*0x18013bd19*/\n      a1: a3,\n      a2: 1,\n      a3: &v19,\n      a4: 0);\n    (*(void (__fastcall **)(__int64, __int64, __int128 *))(*(_QWORD *)a3 + 400LL))(a1: a3, a2: v19, a3: &v22); /*0x18013bd2d*/\n  }\n  (*(void (__fastcall **)(__int64, __int64, __int64))(*(_QWORD *)a3 + 352LL))(a1: a3, a2: 1, a3: a6); /*0x18013bd41*/\n  *(_QWORD *)&v22 = a4; /*0x18013bd47*/\n  v21 = 20; /*0x18013bd4b*/\n  v20 = 0; /*0x18013bd52*/\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, unsigned int *, int *, int *))(*(_QWORD *)a3 + 144LL))( /*0x18013bd7d*/\n    a1: a3,\n    a2: 0,\n    a3: 1,\n    a4: a1 + 8,\n    a5: &v21,\n    a6: &v20);\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, _QWORD))(*(_QWORD *)a3 + 152LL))( /*0x18013bd96*/\n    a1: a3,\n    a2: *((_QWORD *)a1 + 5),\n    a3: 42,\n    a4: 0);\n  (*(void (__fastcall **)(__int64, __int64))(*(_QWORD *)a3 + 192LL))(a1: a3, a2: 4); /*0x18013bda7*/\n  (*(void (__fastcall **)(__int64, _QWORD))(*(_QWORD *)a3 + 136LL))(a1: a3, a2: *((_QWORD *)a1 + 3)); /*0x18013bdb7*/\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD, _QWORD))(*(_QWORD *)a3 + 88LL))( /*0x18013bdcd*/\n    a1: a3,\n    a2: *((_QWORD *)a1 + 1),\n    a3: 0,\n    a4: 0);\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD, _QWORD))(*(_QWORD *)a3 + 72LL))( /*0x18013bde0*/\n    a1: a3,\n    a2: *((_QWORD *)a1 + 2),\n    a3: 0,\n    a4: 0);\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, __int128 *))(*(_QWORD *)a3 + 64LL))(a1: a3, a2: 0, a3: 1, a4: &v22); /*0x18013bdf5*/\n  v10 = *(void (__fastcall **)(__int64, _QWORD, __int64, unsigned int *))(*(_QWORD *)a3 + 80LL); /*0x18013bdfb*/\n  __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000074*/\n  v11 = *((_QWORD *)a1 + 6); /*0x18013bdff*/\n  if ( v11 != 0 ) /*0x18013be06*/\n  {\n    *((_QWORD *)a1 + 6) = 0; /*0x18013be08*/\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)v11 + 16LL))(a1: v11); /*0x18013be13*/\n  }\n  if ( __eh34_unwind(0) ) /*0xf1c0000000000068*/\nunwind_state_0:\n    __std_terminate(); /*0xf1c0000000000050*/\n  __eh34_exit_wind_state(0, -1); /*0xf1c000000000006c*/\n  v10(a1: a3, a2: 0, a3: 1, a4: a1 + 12); /*0x18013be26*/\n  if ( *((_BYTE *)a1 + 84) != 0 ) /*0x18013be2d*/\n  {\n    __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000060*/\n    v12 = *((_QWORD *)a1 + 7); /*0x18013be33*/\n    if ( v12 != 0 ) /*0x18013be3a*/\n    {\n      *((_QWORD *)a1 + 7) = 0; /*0x18013be3c*/\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v12 + 16LL))(a1: v12); /*0x18013be47*/\n    }\n    if ( __eh34_unwind(0) ) /*0xf1c000000000004c*/\n      goto unwind_state_0; /*0xf1c000000000004c*/\n    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000058*/\n    sub_18013C780(a1, a2); /*0x18013be51*/\n    if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x18013be77*/\n                                     + 16LL) )\n    {\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18013be80*/\n      if ( dword_1805C9A98 == -1 ) /*0x18013be8c*/\n      {\n        __wind /*0xf1c0000000000040*/\n        {\n          xmmword_1805C9820 = 0; /*0x18013be91*/\n          sub_180116C20(); /*0x18013be98*/\n          atexit(a1: sub_1803B9F10); /*0x18013bea4*/\n        }\n        __unwind\n        {\n          sub_1803B3790(a1: &dword_1805C9A98); /*0x1803b7da7*/\n        }\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18013beb1*/\n      }\n    }\n    v13 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18013beb6*/\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18013bec0*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18013bec2*/\n      v13 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18013bec6*/\n    }\n    __wind /*0xf1c0000000000028*/\n    {\n      v18[0] = xmmword_1805C9820; /*0x18013bed4*/\n      v18[1] = v13; /*0x18013bed8*/\n      *(_QWORD *)&v15 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\Core\\\\Inpating.cpp\"; /*0x18013bee3*/\n      DWORD2(v15) = 349; /*0x18013bee7*/\n      HIDWORD(v15) = HIDWORD(v16); /*0x18013bef1*/\n      *(_QWORD *)&v22 = \"FXAA->Update the constant buffer\"; /*0x18013bf06*/\n      *((_QWORD *)&v22 + 1) = 32; /*0x18013bf0a*/\n      v16 = v15; /*0x18013bf16*/\n      v17 = \"AiStereo::Inpating::UpdateConstantBuffer\"; /*0x18013bf1f*/\n      sub_180114050(a1: xmmword_1805C9820, a2: &v16, a3: 2, a4: &v22); /*0x18013bf32*/\n      if ( v13 != nullptr && _InterlockedExchangeAdd(v13 + 2, 0xFFFFFFFF) == 1 ) /*0x18013bf4e*/\n      {\n        (**(void (__fastcall ***)(volatile signed __int32 *))v13)(a1: v13); /*0x18013bf56*/\n        if ( _InterlockedExchangeAdd(v13 + 3, 0xFFFFFFFF) == 1 ) /*0x18013bf62*/\n          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v13 + 8LL))(a1: v13); /*0x18013bf6a*/\n      }\n    }\n    __unwind\n    {\n      sub_18011BED0(a1: v18); /*0xf1c0000000000020*/\n    }\n  }\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, unsigned int *))(*(_QWORD *)a3 + 128LL))( /*0x18013bf7f*/\n    a1: a3,\n    a2: 0,\n    a3: 1,\n    a4: a1 + 14);\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD, _QWORD))(*(_QWORD *)a3 + 96LL))(a1: a3, a2: *a1, a3: 0, a4: 0); /*0x18013bf93*/\n  return 1; /*0x18013bf98*/\n}",
+      "refs": [
+        {
+          "addr": "0x1803bb770",
+          "name": "__imp___std_terminate"
+        },
+        {
+          "addr": "0x18013c780",
+          "name": "sub_18013C780"
+        },
+        {
+          "addr": "0x1803b3838",
+          "name": "sub_1803B3838"
+        },
+        {
+          "addr": "0x1805c9a98",
+          "name": "dword_1805C9A98"
+        },
+        {
+          "addr": "0x1805c9820",
+          "name": "xmmword_1805C9820"
+        },
+        {
+          "addr": "0x180116c20",
+          "name": "sub_180116C20"
+        },
+        {
+          "addr": "0x1803b3744",
+          "name": "atexit"
+        },
+        {
+          "addr": "0x1803b9f10",
+          "name": "sub_1803B9F10"
+        },
+        {
+          "addr": "0x1803b3790",
+          "name": "sub_1803B3790"
+        },
+        {
+          "addr": "0x1803b37cc",
+          "name": "sub_1803B37CC"
+        },
+        {
+          "addr": "0x1805c973c",
+          "name": "TlsIndex"
+        },
+        {
+          "addr": "0x1805852c0",
+          "name": "aJProjectVsproj_2",
+          "string": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\Core\\Inpating.cpp"
+        },
+        {
+          "addr": "0x1805854b0",
+          "name": "aFxaaUpdateTheC",
+          "string": "FXAA->Update the constant buffer"
+        },
+        {
+          "addr": "0x180585480",
+          "name": "aAistereoInpati",
+          "string": "AiStereo::Inpating::UpdateConstantBuffer"
+        },
+        {
+          "addr": "0x180114050",
+          "name": "sub_180114050"
+        },
+        {
+          "addr": "0x18011bed0",
+          "name": "sub_18011BED0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

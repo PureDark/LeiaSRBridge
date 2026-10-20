@@ -1,0 +1,47 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"doEyeTrack_3D\",\"code\":\"__int64 __fastcall doEyeTrack_3D(int a1, int a2, int a3, int a4, __int64 a5)\\n{\\n  __int64 v9; // rbx\\n  struct _Mtx_internal_imp_t *v10; // rdi\\n  int v11; // eax\\n  unsigned int v12; // ebx\\n\\n  SetUnhandledExceptionFilter(lpTopLevelExceptionFilter: TopLevelExceptionFilter); /*0x18002a62b*/\\n  v9 = sub_180098700(); /*0x18002a636*/\\n  v10 = (struct _Mtx_internal_imp_t *)(v9 + 544); /*0x18002a639*/\\n  v11 = Mtx_lock(a1: (_Mtx_t)(v9 + 544)); /*0x18002a643*/\\n  if ( v11 != 0 ) /*0x18002a64a*/\\n    std::_Throw_C_error(a1: v11); /*0x18002a6a3*/\\n  if ( *(_BYTE *)(v9 + 536) != 0 ) /*0x18002a656*/\\n    v12 = sub_1800261B0(a1: (int)v9 + 16, a2: a1, a3: a2, a4: a3, a5: a4, a6: a5); /*0x18002a67c*/\\n  else\\n    v12 = 0; /*0x18002a658*/\\n  Mtx_unlock(a1: v10); /*0x18002a681*/\\n  return v12; /*0x18002a686*/\\n}\",\"refs\":[{\"addr\":\"0x1800fd1f8\",\"name\":\"SetUnhandledExceptionFilter\"},{\"addr\":\"0x180029770\",\"name\":\"TopLevelExceptionFilter\"},{\"addr\":\"0x180098700\",\"name\":\"sub_180098700\"},{\"addr\":\"0x1800b5a44\",\"name\":\"_Mtx_lock\"},{\"addr\":\"0x1800b4ebc\",\"name\":\"?_Throw_C_error@std@@YAXH@Z\"},{\"addr\":\"0x1800261b0\",\"name\":\"sub_1800261B0\"},{\"addr\":\"0x1800b5a68\",\"name\":\"_Mtx_unlock\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "doEyeTrack_3D",
+      "code": "__int64 __fastcall doEyeTrack_3D(int a1, int a2, int a3, int a4, __int64 a5)\n{\n  __int64 v9; // rbx\n  struct _Mtx_internal_imp_t *v10; // rdi\n  int v11; // eax\n  unsigned int v12; // ebx\n\n  SetUnhandledExceptionFilter(lpTopLevelExceptionFilter: TopLevelExceptionFilter); /*0x18002a62b*/\n  v9 = sub_180098700(); /*0x18002a636*/\n  v10 = (struct _Mtx_internal_imp_t *)(v9 + 544); /*0x18002a639*/\n  v11 = Mtx_lock(a1: (_Mtx_t)(v9 + 544)); /*0x18002a643*/\n  if ( v11 != 0 ) /*0x18002a64a*/\n    std::_Throw_C_error(a1: v11); /*0x18002a6a3*/\n  if ( *(_BYTE *)(v9 + 536) != 0 ) /*0x18002a656*/\n    v12 = sub_1800261B0(a1: (int)v9 + 16, a2: a1, a3: a2, a4: a3, a5: a4, a6: a5); /*0x18002a67c*/\n  else\n    v12 = 0; /*0x18002a658*/\n  Mtx_unlock(a1: v10); /*0x18002a681*/\n  return v12; /*0x18002a686*/\n}",
+      "refs": [
+        {
+          "addr": "0x1800fd1f8",
+          "name": "SetUnhandledExceptionFilter"
+        },
+        {
+          "addr": "0x180029770",
+          "name": "TopLevelExceptionFilter"
+        },
+        {
+          "addr": "0x180098700",
+          "name": "sub_180098700"
+        },
+        {
+          "addr": "0x1800b5a44",
+          "name": "_Mtx_lock"
+        },
+        {
+          "addr": "0x1800b4ebc",
+          "name": "?_Throw_C_error@std@@YAXH@Z"
+        },
+        {
+          "addr": "0x1800261b0",
+          "name": "sub_1800261B0"
+        },
+        {
+          "addr": "0x1800b5a68",
+          "name": "_Mtx_unlock"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

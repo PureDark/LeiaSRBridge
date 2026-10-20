@@ -1,0 +1,25 @@
+{
+  "result": [
+    {
+      "addr": "0x180038B50",
+      "xrefs": [
+        {
+          "addr": "0x18002a330",
+          "type": "code",
+          "fn": {
+            "addr": "0x18002a130",
+            "name": "setCameraMat_3D",
+            "size": "0x315"
+          }
+        },
+        {
+          "addr": "0x180140168",
+          "type": "data",
+          "fn": null
+        }
+      ],
+      "more": false,
+      "xref_count": 2
+    }
+  ]
+}

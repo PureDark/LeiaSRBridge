@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18001A490\",\"code\":\"__int64 __fastcall sub_18001A490(__int64 a1, _OWORD *a2)\\n{\\n  __int128 v2; // xmm1\\n  __int128 v3; // xmm0\\n  __int128 v4; // xmm1\\n  __int128 v5; // xmm0\\n  __int128 v6; // xmm1\\n  __int128 v7; // xmm0\\n  __int128 v8; // xmm1\\n  __int128 v9; // xmm0\\n  __int128 v10; // xmm1\\n  __int128 v11; // xmm0\\n  __int128 v12; // xmm1\\n  _OWORD v14[13]; // [rsp+20h] [rbp-D8h] BYREF\\n\\n  v2 = a2[1]; /*0x18001a4a6*/\\n  v14[0] = *a2; /*0x18001a4aa*/\\n  v3 = a2[2]; /*0x18001a4ad*/\\n  v14[1] = v2; /*0x18001a4b1*/\\n  v4 = a2[3]; /*0x18001a4b5*/\\n  v14[2] = v3; /*0x18001a4b9*/\\n  v5 = a2[4]; /*0x18001a4bd*/\\n  v14[3] = v4; /*0x18001a4c1*/\\n  v6 = a2[5]; /*0x18001a4c5*/\\n  v14[4] = v5; /*0x18001a4c9*/\\n  v7 = a2[6]; /*0x18001a4cd*/\\n  v14[5] = v6; /*0x18001a4d1*/\\n  v8 = a2[8]; /*0x18001a4d5*/\\n  v14[6] = v7; /*0x18001a4dc*/\\n  v14[7] = a2[7]; /*0x18001a4eb*/\\n  v9 = a2[9]; /*0x18001a4ef*/\\n  v14[8] = v8; /*0x18001a4f6*/\\n  v10 = a2[10]; /*0x18001a4f9*/\\n  v14[9] = v9; /*0x18001a500*/\\n  v11 = a2[11]; /*0x18001a504*/\\n  v14[10] = v10; /*0x18001a50b*/\\n  v12 = a2[12]; /*0x18001a50f*/\\n  v14[11] = v11; /*0x18001a51b*/\\n  v14[12] = v12; /*0x18001a51f*/\\n  return sub_18001BB70(a1: a1 + 560, a2: v14); /*0x18001a528*/\\n}\",\"refs\":[{\"addr\":\"0x18001bb70\",\"name\":\"sub_18001BB70\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18001A490",
+      "code": "__int64 __fastcall sub_18001A490(__int64 a1, _OWORD *a2)\n{\n  __int128 v2; // xmm1\n  __int128 v3; // xmm0\n  __int128 v4; // xmm1\n  __int128 v5; // xmm0\n  __int128 v6; // xmm1\n  __int128 v7; // xmm0\n  __int128 v8; // xmm1\n  __int128 v9; // xmm0\n  __int128 v10; // xmm1\n  __int128 v11; // xmm0\n  __int128 v12; // xmm1\n  _OWORD v14[13]; // [rsp+20h] [rbp-D8h] BYREF\n\n  v2 = a2[1]; /*0x18001a4a6*/\n  v14[0] = *a2; /*0x18001a4aa*/\n  v3 = a2[2]; /*0x18001a4ad*/\n  v14[1] = v2; /*0x18001a4b1*/\n  v4 = a2[3]; /*0x18001a4b5*/\n  v14[2] = v3; /*0x18001a4b9*/\n  v5 = a2[4]; /*0x18001a4bd*/\n  v14[3] = v4; /*0x18001a4c1*/\n  v6 = a2[5]; /*0x18001a4c5*/\n  v14[4] = v5; /*0x18001a4c9*/\n  v7 = a2[6]; /*0x18001a4cd*/\n  v14[5] = v6; /*0x18001a4d1*/\n  v8 = a2[8]; /*0x18001a4d5*/\n  v14[6] = v7; /*0x18001a4dc*/\n  v14[7] = a2[7]; /*0x18001a4eb*/\n  v9 = a2[9]; /*0x18001a4ef*/\n  v14[8] = v8; /*0x18001a4f6*/\n  v10 = a2[10]; /*0x18001a4f9*/\n  v14[9] = v9; /*0x18001a500*/\n  v11 = a2[11]; /*0x18001a504*/\n  v14[10] = v10; /*0x18001a50b*/\n  v12 = a2[12]; /*0x18001a50f*/\n  v14[11] = v11; /*0x18001a51b*/\n  v14[12] = v12; /*0x18001a51f*/\n  return sub_18001BB70(a1: a1 + 560, a2: v14); /*0x18001a528*/\n}",
+      "refs": [
+        {
+          "addr": "0x18001bb70",
+          "name": "sub_18001BB70"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

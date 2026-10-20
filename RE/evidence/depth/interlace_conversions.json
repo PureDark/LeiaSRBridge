@@ -1,0 +1,39 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"input\":\"0x1C00000001\",\"result\":{\"decimal\":\"120259084289\",\"hexadecimal\":\"0x1c00000001\",\"bytes\":\"01 00 00 00 1c 00 00 00\",\"ascii\":null,\"binary\":\"0b1110000000000000000000000000000000001\"},\"error\":null},{\"input\":\"0x180089840\",\"result\":{\"decimal\":\"6443014208\",\"hexadecimal\":\"0x180089840\",\"bytes\":\"40 98 08 80 01 00 00 00\",\"ascii\":null,\"binary\":\"0b110000000000010001001100001000000\"},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "input": "0x1C00000001",
+          "result": {
+            "decimal": "120259084289",
+            "hexadecimal": "0x1c00000001",
+            "bytes": "01 00 00 00 1c 00 00 00",
+            "ascii": null,
+            "binary": "0b1110000000000000000000000000000000001"
+          },
+          "error": null
+        },
+        {
+          "input": "0x180089840",
+          "result": {
+            "decimal": "6443014208",
+            "hexadecimal": "0x180089840",
+            "bytes": "40 98 08 80 01 00 00 00",
+            "ascii": null,
+            "binary": "0b110000000000010001001100001000000"
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

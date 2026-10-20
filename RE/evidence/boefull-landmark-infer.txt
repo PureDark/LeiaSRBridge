@@ -1,0 +1,62 @@
+__int64 __fastcall BoeLandmark::doInfer(__int64 a1)
+{
+  __int64 v2; // rbx
+  void *v3; // rcx
+  __int64 v4; // rbx
+  void *Block[2]; // [rsp+30h] [rbp-48h] BYREF
+  __m128i si128; // [rsp+40h] [rbp-38h]
+
+  if ( *(_QWORD *)(a1 + 32) == 0 ) /*0x1801be790*/
+  {
+    v2 = qword_180917B38; /*0x1801be796*/
+    *(_OWORD *)Block = 0; /*0x1801be7a0*/
+    __eh34_enter_wind_state(-1, 0); /*0xf1c000000000002c*/
+    Block[0] = (void *)sub_1801B82B0(a1: 32); /*0x1801be7b8*/
+    si128 = _mm_load_si128((const __m128i *)&xmmword_180655360); /*0x1801be7c5*/
+    strcpy((char *)Block[0], "Please do init first !"); /*0x1801be7d2*/
+    sub_1801BB350(a1: v2, a2: a1, a3: Block); /*0x1801be7f8*/
+    if ( __eh34_unwind(0) ) /*0xf1c0000000000020*/
+      goto unwind_state_0; /*0xf1c0000000000020*/
+    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000024*/
+    if ( si128.m128i_i64[1] <= 0xFuLL ) /*0x1801be807*/
+      return 0; /*0x1801be807*/
+    v3 = Block[0]; /*0x1801be810*/
+    if ( (unsigned __int64)(si128.m128i_i64[1] + 1) >= 0x1000 ) /*0x1801be81f*/
+    {
+      v3 = *((void **)Block[0] - 1); /*0x1801be829*/
+      if ( (unsigned __int64)((char *)Block[0] - (char *)v3 - 8) > 0x1F ) /*0x1801be838*/
+        invoke_watson(Expression: nullptr, FunctionName: nullptr, FileName: nullptr, LineNo: 0, Reserved: 0); /*0x1801be851*/
+    }
+LABEL_13:
+    j_j_free(Block: v3); /*0x1801be910*/
+    return 0; /*0x1801be917*/
+  }
+  if ( (unsigned __int8)sub_1801BFA50() == 0 ) /*0x1801be85f*/
+  {
+    v4 = qword_180917B38; /*0x1801be865*/
+    *(_OWORD *)Block = 0; /*0x1801be86f*/
+    Block[0] = (void *)sub_1801B82B0(a1: 32); /*0x1801be887*/
+    si128 = _mm_load_si128((const __m128i *)&xmmword_180655350); /*0x1801be894*/
+    strcpy((char *)Block[0], "Failed to landmark !"); /*0x1801be8a1*/
+    __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000018*/
+    sub_1801BB350(a1: v4, a2: a1, a3: Block); /*0x1801be8bc*/
+    if ( __eh34_unwind(0) ) /*0xf1c0000000000004*/
+    {
+unwind_state_0:
+      sub_1801BA080(a1: Block); /*0xf1c0000000000008*/
+      __eh34_propagate_exception_into_caller(0, -1); /*0xf1c000000000000c*/
+    }
+    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000010*/
+    if ( si128.m128i_i64[1] <= 0xFuLL ) /*0x1801be8cb*/
+      return 0; /*0x1801be8cb*/
+    v3 = Block[0]; /*0x1801be8d0*/
+    if ( (unsigned __int64)(si128.m128i_i64[1] + 1) >= 0x1000 ) /*0x1801be8df*/
+    {
+      v3 = *((void **)Block[0] - 1); /*0x1801be8e5*/
+      if ( (unsigned __int64)((char *)Block[0] - (char *)v3 - 8) > 0x1F ) /*0x1801be8f4*/
+        invoke_watson(Expression: nullptr, FunctionName: nullptr, FileName: nullptr, LineNo: 0, Reserved: 0); /*0x1801be909*/
+    }
+    goto LABEL_13; /*0x1801be8f4*/
+  }
+  return 1; /*0x1801be91e*/
+}

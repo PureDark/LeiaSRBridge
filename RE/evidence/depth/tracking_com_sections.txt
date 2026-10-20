@@ -1,0 +1,318 @@
+
+File: RE\inputs\depth\FaceTrackingManagerService.dll
+Format: COFF-x86-64
+Arch: x86_64
+AddressSize: 64bit
+Sections [
+  Section {
+    Number: 1
+    Name: .text (2E 74 65 78 74 00 00 00)
+    VirtualSize: 0x898C
+    VirtualAddress: 0x1000
+    RawDataSize: 35328
+    PointerToRawData: 0x400
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x60000020)
+      IMAGE_SCN_CNT_CODE (0x20)
+      IMAGE_SCN_MEM_EXECUTE (0x20000000)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 2
+    Name: .orpc (2E 6F 72 70 63 00 00 00)
+    VirtualSize: 0x7C
+    VirtualAddress: 0xA000
+    RawDataSize: 512
+    PointerToRawData: 0x8E00
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x60000020)
+      IMAGE_SCN_CNT_CODE (0x20)
+      IMAGE_SCN_MEM_EXECUTE (0x20000000)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 3
+    Name: .rdata (2E 72 64 61 74 61 00 00)
+    VirtualSize: 0x6C2E
+    VirtualAddress: 0xB000
+    RawDataSize: 28160
+    PointerToRawData: 0x9000
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x40000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 4
+    Name: .data (2E 64 61 74 61 00 00 00)
+    VirtualSize: 0x1158
+    VirtualAddress: 0x12000
+    RawDataSize: 3072
+    PointerToRawData: 0xFE00
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0xC0000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+      IMAGE_SCN_MEM_WRITE (0x80000000)
+    ]
+  }
+  Section {
+    Number: 5
+    Name: .pdata (2E 70 64 61 74 61 00 00)
+    VirtualSize: 0x960
+    VirtualAddress: 0x14000
+    RawDataSize: 2560
+    PointerToRawData: 0x10A00
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x40000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 6
+    Name: eye_info (65 79 65 5F 69 6E 66 6F)
+    VirtualSize: 0x14
+    VirtualAddress: 0x15000
+    RawDataSize: 512
+    PointerToRawData: 0x11400
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0xD0000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+      IMAGE_SCN_MEM_SHARED (0x10000000)
+      IMAGE_SCN_MEM_WRITE (0x80000000)
+    ]
+  }
+  Section {
+    Number: 7
+    Name: kalman (6B 61 6C 6D 61 6E 00 00)
+    VirtualSize: 0x18
+    VirtualAddress: 0x16000
+    RawDataSize: 512
+    PointerToRawData: 0x11600
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0xD0000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+      IMAGE_SCN_MEM_SHARED (0x10000000)
+      IMAGE_SCN_MEM_WRITE (0x80000000)
+    ]
+  }
+  Section {
+    Number: 8
+    Name: .rsrc (2E 72 73 72 63 00 00 00)
+    VirtualSize: 0x1948
+    VirtualAddress: 0x17000
+    RawDataSize: 6656
+    PointerToRawData: 0x11800
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x40000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 9
+    Name: .reloc (2E 72 65 6C 6F 63 00 00)
+    VirtualSize: 0x3F4
+    VirtualAddress: 0x19000
+    RawDataSize: 1024
+    PointerToRawData: 0x13200
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x42000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_DISCARDABLE (0x2000000)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+]
+
+File: RE\inputs\depth\tracking\FaceTrackingManagerService.dll
+Format: COFF-x86-64
+Arch: x86_64
+AddressSize: 64bit
+Sections [
+  Section {
+    Number: 1
+    Name: .text (2E 74 65 78 74 00 00 00)
+    VirtualSize: 0xB477
+    VirtualAddress: 0x1000
+    RawDataSize: 46592
+    PointerToRawData: 0x400
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x60000020)
+      IMAGE_SCN_CNT_CODE (0x20)
+      IMAGE_SCN_MEM_EXECUTE (0x20000000)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 2
+    Name: .orpc (2E 6F 72 70 63 00 00 00)
+    VirtualSize: 0x7C
+    VirtualAddress: 0xD000
+    RawDataSize: 512
+    PointerToRawData: 0xBA00
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x60000020)
+      IMAGE_SCN_CNT_CODE (0x20)
+      IMAGE_SCN_MEM_EXECUTE (0x20000000)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 3
+    Name: .rdata (2E 72 64 61 74 61 00 00)
+    VirtualSize: 0x85B4
+    VirtualAddress: 0xE000
+    RawDataSize: 34304
+    PointerToRawData: 0xBC00
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x40000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 4
+    Name: .data (2E 64 61 74 61 00 00 00)
+    VirtualSize: 0x1388
+    VirtualAddress: 0x17000
+    RawDataSize: 3584
+    PointerToRawData: 0x14200
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0xC0000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+      IMAGE_SCN_MEM_WRITE (0x80000000)
+    ]
+  }
+  Section {
+    Number: 5
+    Name: .pdata (2E 70 64 61 74 61 00 00)
+    VirtualSize: 0xBAC
+    VirtualAddress: 0x19000
+    RawDataSize: 3072
+    PointerToRawData: 0x15000
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x40000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 6
+    Name: eye_info (65 79 65 5F 69 6E 66 6F)
+    VirtualSize: 0x14
+    VirtualAddress: 0x1A000
+    RawDataSize: 512
+    PointerToRawData: 0x15C00
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0xD0000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+      IMAGE_SCN_MEM_SHARED (0x10000000)
+      IMAGE_SCN_MEM_WRITE (0x80000000)
+    ]
+  }
+  Section {
+    Number: 7
+    Name: kalman (6B 61 6C 6D 61 6E 00 00)
+    VirtualSize: 0x18
+    VirtualAddress: 0x1B000
+    RawDataSize: 512
+    PointerToRawData: 0x15E00
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0xD0000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+      IMAGE_SCN_MEM_SHARED (0x10000000)
+      IMAGE_SCN_MEM_WRITE (0x80000000)
+    ]
+  }
+  Section {
+    Number: 8
+    Name: .rsrc (2E 72 73 72 63 00 00 00)
+    VirtualSize: 0x19C0
+    VirtualAddress: 0x1C000
+    RawDataSize: 6656
+    PointerToRawData: 0x16000
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x40000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+  Section {
+    Number: 9
+    Name: .reloc (2E 72 65 6C 6F 63 00 00)
+    VirtualSize: 0x440
+    VirtualAddress: 0x1E000
+    RawDataSize: 1536
+    PointerToRawData: 0x17A00
+    PointerToRelocations: 0x0
+    PointerToLineNumbers: 0x0
+    RelocationCount: 0
+    LineNumberCount: 0
+    Characteristics [ (0x42000040)
+      IMAGE_SCN_CNT_INITIALIZED_DATA (0x40)
+      IMAGE_SCN_MEM_DISCARDABLE (0x2000000)
+      IMAGE_SCN_MEM_READ (0x40000000)
+    ]
+  }
+]

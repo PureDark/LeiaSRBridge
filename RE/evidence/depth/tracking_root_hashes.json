@@ -1,0 +1,12 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0A2E51C617B585E53E0733135CCEDE7D5C3D3F30D58BEA23313026641E050858",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\MCU_library.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "24D677EA070FCA322B025FA91823EA1EAA040729DB9EFED5DE2F0FE7855A6118",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\FaceTrackingManagerService.dll"
+  }
+]

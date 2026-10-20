@@ -1,0 +1,172 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"doEyeTrack_3D\",\"xrefs\":[{\"addr\":\"0x14000d699\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000d4d0\",\"name\":\"sub_14000D4D0\",\"size\":\"0x61f\"}},{\"addr\":\"0x14000d699\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000d4d0\",\"name\":\"sub_14000D4D0\",\"size\":\"0x61f\"}},{\"addr\":\"0x140049c04\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":3},{\"addr\":\"initBoeEyeTrack_3D\",\"xrefs\":[{\"addr\":\"0x14000f961\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}},{\"addr\":\"0x14000f961\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}}],\"more\":false,\"xref_count\":2},{\"addr\":\"setCameraMat_3D\",\"xrefs\":[{\"addr\":\"0x14000fb26\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}},{\"addr\":\"0x14000fc80\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}},{\"addr\":\"0x14000fb26\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}},{\"addr\":\"0x14000fc80\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}}],\"more\":false,\"xref_count\":4},{\"addr\":\"releaseBoeEyeTrack_3D\",\"xrefs\":[{\"addr\":\"0x14000fef6\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}},{\"addr\":\"0x14000fef6\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}}],\"more\":false,\"xref_count\":2},{\"addr\":\"0x14003ec28\",\"xrefs\":[{\"addr\":\"0x14000fbdb\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000f920\",\"name\":\"sub_14000F920\",\"size\":\"0x5e3\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x14003ed88\",\"xrefs\":[{\"addr\":\"0x1400020d3\",\"type\":\"data\",\"fn\":{\"addr\":\"0x140002060\",\"name\":\"sub_140002060\",\"size\":\"0x3a5\"}}],\"more\":false,\"xref_count\":1}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "doEyeTrack_3D",
+          "xrefs": [
+            {
+              "addr": "0x14000d699",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000d4d0",
+                "name": "sub_14000D4D0",
+                "size": "0x61f"
+              }
+            },
+            {
+              "addr": "0x14000d699",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000d4d0",
+                "name": "sub_14000D4D0",
+                "size": "0x61f"
+              }
+            },
+            {
+              "addr": "0x140049c04",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 3
+        },
+        {
+          "addr": "initBoeEyeTrack_3D",
+          "xrefs": [
+            {
+              "addr": "0x14000f961",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            },
+            {
+              "addr": "0x14000f961",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        },
+        {
+          "addr": "setCameraMat_3D",
+          "xrefs": [
+            {
+              "addr": "0x14000fb26",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            },
+            {
+              "addr": "0x14000fc80",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            },
+            {
+              "addr": "0x14000fb26",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            },
+            {
+              "addr": "0x14000fc80",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 4
+        },
+        {
+          "addr": "releaseBoeEyeTrack_3D",
+          "xrefs": [
+            {
+              "addr": "0x14000fef6",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            },
+            {
+              "addr": "0x14000fef6",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        },
+        {
+          "addr": "0x14003ec28",
+          "xrefs": [
+            {
+              "addr": "0x14000fbdb",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000f920",
+                "name": "sub_14000F920",
+                "size": "0x5e3"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x14003ed88",
+          "xrefs": [
+            {
+              "addr": "0x1400020d3",
+              "type": "data",
+              "fn": {
+                "addr": "0x140002060",
+                "name": "sub_140002060",
+                "size": "0x3a5"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,75 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "addr": "sub_18009CC80",
+      "code": "__int64 __fastcall sub_18009CC80(__int64 a1, const struct cv::Mat *a2, const struct cv::Mat *a3)\n{\n  __int64 v6; // rax\n  __int64 v7; // rax\n  __int64 result; // rax\n  _BYTE *v9; // rcx\n  __int64 v10; // rax\n  int v11; // r8d\n  __int64 v12; // rax\n  int v13; // r8d\n  int v14; // ebx\n  int v15; // r14d\n  char *v16; // rbx\n  __int64 v17; // rdx\n  __int64 v18; // rax\n  __int64 v19; // rax\n  _DWORD *v20; // rax\n  volatile signed __int32 *v21; // rbx\n  _DWORD *v22; // r12\n  volatile signed __int32 *v23; // rbx\n  __int64 v24; // rax\n  _DWORD *v25; // rax\n  volatile signed __int32 *v26; // rbx\n  _DWORD *v27; // r15\n  volatile signed __int32 *v28; // rbx\n  __int64 v29; // rax\n  __int64 v30; // rdx\n  __int64 v31; // rcx\n  _QWORD *v32; // rbx\n  _QWORD *v33; // r14\n  __int64 v34; // r15\n  _QWORD *v35; // rax\n  __int64 v36; // rcx\n  _QWORD *v37; // rbx\n  _QWORD *v38; // r14\n  __int64 v39; // r15\n  _QWORD *v40; // rax\n  char *v41; // rbx\n  char *v42; // rbx\n  char *v43; // r15\n  char *v44; // r12\n ... [113838 chars total]",
+      "refs": [
+        {
+          "addr": "0x180008380",
+          "name": "sub_180008380"
+        },
+        {
+          "addr": "0x18010f270",
+          "name": "aLandmarkDetect",
+          "string": "landmark detect begin"
+        },
+        {
+          "addr": "0x180005cc0",
+          "name": "sub_180005CC0"
+        },
+        {
+          "addr": "0x18010f2f0",
+          "name": "aStopFlagIsTrue_2",
+          "string": "stop flag is true, landmark detect will exit!!!"
+        },
+        {
+          "addr": "0x1800fd550",
+          "name": "??0Mat@cv@@QEAA@AEBV01@@Z"
+        },
+        {
+          "addr": "0x180035de0",
+          "name": "sub_180035DE0"
+        },
+        {
+          "addr": "0x18010f2b8",
+          "name": "aTheTrackerIsIn",
+          "string": "The tracker is invalid, re-enter face detection !!!"
+        },
+        {
+          "addr": "0x1800a0d60",
+          "name": "sub_1800A0D60"
+        },
+        {
+          "addr": "0x180034f70",
+          "name": "sub_180034F70"
+        },
+        {
+          "addr": "0x1800fd580",
+          "name": "__imp_??1Mat@cv@@QEAA@XZ"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_18009CC80\",\"code\":\"__int64 __fastcall sub_18009CC80(__int64 a1, const struct cv::Mat *a2, const struct cv::Mat *a3)\\n{\\n  __int64 v6; // rax\\n  __int64 v7; // rax\\n  __int64 result; // rax\\n  _BYTE *v9; // rcx\\n  __int64 v10; // rax\\n  int v11; // r8d\\n  __int64 v12; // rax\\n  int v13; // r8d\\n  int v14; // ebx\\n  int v15; // r14d\\n  char *v16; // rbx\\n  __int64 v17; // rdx\\n  __int64 v18; // rax\\n  __int64 v19; // rax\\n  _DWORD *v20; // rax\\n  volatile signed __int32 *v21; // rbx\\n  _DWORD *v22; // r12\\n  volatile signed __int32 *v23; // rbx\\n  __int64 v24; // rax\\n  _DWORD *v25; // rax\\n  volatile signed __int32 *v26; // rbx\\n  _DWORD *v27; // r15\\n  volatile signed __int32 *v28; // rbx\\n  __int64 v29; // rax\\n  __int64 v30; // rdx\\n  __int64 v31; // rcx\\n  _QWORD *v32; // rbx\\n  _QWORD *v33; // r14\\n  __int64 v34; // r15\\n  _QWORD *v35; // rax\\n  __int64 v36; // rcx\\n  _QWORD *v37; // rbx\\n  _QWORD *v38; // r14\\n  __int64 v39; // r15\\n  _QWORD *v40; // rax\\n  char *v41; // rbx\\n  char *v42; // rbx\\n  char *v43; // r15\\n  char *v44; // r12\\n ... [113838 chars total]\",\"refs\":[{\"addr\":\"0x180008380\",\"name\":\"sub_180008380\"},{\"addr\":\"0x18010f270\",\"name\":\"aLandmarkDetect\",\"string\":\"landmark detect begin\"},{\"addr\":\"0x180005cc0\",\"name\":\"sub_180005CC0\"},{\"addr\":\"0x18010f2f0\",\"name\":\"aStopFlagIsTrue_2\",\"string\":\"stop flag is true, landmark detect will exit!!!\"},{\"addr\":\"0x1800fd550\",\"name\":\"??0Mat@cv@@QEAA@AEBV01@@Z\"},{\"addr\":\"0x180035de0\",\"name\":\"sub_180035DE0\"},{\"addr\":\"0x18010f2b8\",\"name\":\"aTheTrackerIsIn\",\"string\":\"The tracker is invalid, re-enter face detection !!!\"},{\"addr\":\"0x1800a0d60\",\"name\":\"sub_1800A0D60\"},{\"addr\":\"0x180034f70\",\"name\":\"sub_180034F70\"},{\"addr\":\"0x1800fd580\",\"name\":\"__imp_??1Mat@cv@@QEAA@XZ\"}]}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/bc1d10bd-83de-42a0-a0db-858ad9070c44.json http://127.0.0.1:54143/output/bc1d10bd-83de-42a0-a0db-858ad9070c44.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 121294,
+        "output_id": "bc1d10bd-83de-42a0-a0db-858ad9070c44",
+        "download_url": "http://127.0.0.1:54143/output/bc1d10bd-83de-42a0-a0db-858ad9070c44.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/bc1d10bd-83de-42a0-a0db-858ad9070c44.json http://127.0.0.1:54143/output/bc1d10bd-83de-42a0-a0db-858ad9070c44.json"
+      }
+    }
+  },
+  "id": 1
+}

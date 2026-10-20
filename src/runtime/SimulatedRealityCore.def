@@ -1,0 +1,5 @@
+LIBRARY SimulatedRealityCore
+EXPORTS
+    ?create@SRContext@SR@@SAPEAV12@W4NetworkMode@12@@Z=TitanLeiaRuntime.?create@SRContext@SR@@SAPEAV12@W4NetworkMode@12@@Z
+    ?initialize@SRContext@SR@@QEAAXXZ=TitanLeiaRuntime.?initialize@SRContext@SR@@QEAAXXZ
+    ?deleteSRContext@SRContext@SR@@SAXPEAV12@@Z=TitanLeiaRuntime.?deleteSRContext@SRContext@SR@@SAXPEAV12@@Z

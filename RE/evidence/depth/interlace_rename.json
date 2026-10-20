@@ -1,0 +1,119 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"func\":[{\"addr\":\"0x180058A00\",\"old\":\"sub_180058A00\",\"name\":\"BOE_MakeFloat3\",\"dir\":\"vibe\"},{\"addr\":\"0x18005E9B0\",\"old\":\"sub_18005E9B0\",\"name\":\"BOE_DX12_DoInterleave\",\"dir\":\"vibe\"},{\"addr\":\"0x1800596C0\",\"old\":\"sub_1800596C0\",\"name\":\"BOE_DX11_DrawOutput\",\"dir\":\"vibe\"},{\"addr\":\"0x18005F530\",\"old\":\"sub_18005F530\",\"name\":\"BOE_MapShaderConstants\",\"dir\":\"vibe\"},{\"addr\":\"0x18005FF20\",\"old\":\"sub_18005FF20\",\"name\":\"BOE_SetRefractParams8_SelectShader21\",\"dir\":\"vibe\"},{\"addr\":\"0x180058D60\",\"old\":\"sub_180058D60\",\"name\":\"BOE_DX11_Init\",\"dir\":\"vibe\"},{\"addr\":\"0x180058EB0\",\"old\":\"sub_180058EB0\",\"name\":\"BOE_DX11_DoInterleave\",\"dir\":\"vibe\"},{\"addr\":\"0x18005DB00\",\"old\":\"sub_18005DB00\",\"name\":\"BOE_DX12_DispatchInterlace\",\"dir\":\"vibe\"},{\"addr\":\"0x18005D900\",\"old\":\"sub_18005D900\",\"name\":\"BOE_DX12_UploadConstants\",\"dir\":\"vibe\"},{\"addr\":\"0x180059270\",\"old\":\"sub_180059270\",\"name\":\"BOE_DX11_DispatchInterlace\",\"dir\":\"vibe\"},{\"addr\":\"0x18005EBD0\",\"old\":\"sub_18005EBD0\",\"name\":\"BOE_SetWholeTransform\",\"dir\":\"vibe\"},{\"addr\":\"0x18005FCE0\",\"old\":\"sub_18005FCE0\",\"name\":\"BOE_SetDeviceParams6\",\"dir\":\"vibe\"},{\"addr\":\"0x18005D6B0\",\"old\":\"sub_18005D6B0\",\"name\":\"BOE_DX12_Init\",\"dir\":\"vibe\"},{\"addr\":\"0x18005F3D0\",\"old\":\"sub_18005F3D0\",\"name\":\"BOE_MapStereoLayout\",\"dir\":\"vibe\"},{\"addr\":\"0x180059040\",\"old\":\"sub_180059040\",\"name\":\"BOE_DX11_UploadConstants\",\"dir\":\"vibe\"},{\"addr\":\"0x18005E380\",\"old\":\"sub_18005E380\",\"name\":\"BOE_DX12_DrawOutput\",\"dir\":\"vibe\"}],\"summary\":{\"total\":16,\"ok\":16,\"failed\":0,\"stopped\":false}}"
+      }
+    ],
+    "structuredContent": {
+      "func": [
+        {
+          "addr": "0x180058A00",
+          "old": "sub_180058A00",
+          "name": "BOE_MakeFloat3",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005E9B0",
+          "old": "sub_18005E9B0",
+          "name": "BOE_DX12_DoInterleave",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x1800596C0",
+          "old": "sub_1800596C0",
+          "name": "BOE_DX11_DrawOutput",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005F530",
+          "old": "sub_18005F530",
+          "name": "BOE_MapShaderConstants",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005FF20",
+          "old": "sub_18005FF20",
+          "name": "BOE_SetRefractParams8_SelectShader21",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180058D60",
+          "old": "sub_180058D60",
+          "name": "BOE_DX11_Init",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180058EB0",
+          "old": "sub_180058EB0",
+          "name": "BOE_DX11_DoInterleave",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005DB00",
+          "old": "sub_18005DB00",
+          "name": "BOE_DX12_DispatchInterlace",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005D900",
+          "old": "sub_18005D900",
+          "name": "BOE_DX12_UploadConstants",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180059270",
+          "old": "sub_180059270",
+          "name": "BOE_DX11_DispatchInterlace",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005EBD0",
+          "old": "sub_18005EBD0",
+          "name": "BOE_SetWholeTransform",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005FCE0",
+          "old": "sub_18005FCE0",
+          "name": "BOE_SetDeviceParams6",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005D6B0",
+          "old": "sub_18005D6B0",
+          "name": "BOE_DX12_Init",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005F3D0",
+          "old": "sub_18005F3D0",
+          "name": "BOE_MapStereoLayout",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180059040",
+          "old": "sub_180059040",
+          "name": "BOE_DX11_UploadConstants",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18005E380",
+          "old": "sub_18005E380",
+          "name": "BOE_DX12_DrawOutput",
+          "dir": "vibe"
+        }
+      ],
+      "summary": {
+        "total": 16,
+        "ok": 16,
+        "failed": 0,
+        "stopped": false
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

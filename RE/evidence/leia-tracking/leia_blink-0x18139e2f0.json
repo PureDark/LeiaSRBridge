@@ -1,0 +1,35 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18139e2f0\",\"code\":\"blink::BlinkContext *__fastcall blink::BlinkContext::BlinkContext(\\n        blink::BlinkContext *this,\\n        const char *a2,\\n        const char *a3,\\n        const char *a4,\\n        const char *a5)\\n{\\n  __int64 *v9; // rdi\\n  __int64 v10; // rbx\\n  void *v11; // rax\\n  void *v12; // rcx\\n  _QWORD v14[18]; // [rsp+30h] [rbp-D8h] BYREF\\n\\n  v14[1] = this; /*0x18139e321*/\\n  *(_QWORD *)this = &blink::BlinkContext::`vftable'; /*0x18139e335*/\\n  v9 = (__int64 *)((char *)this + 8); /*0x18139e338*/\\n  v10 = 0; /*0x18139e33c*/\\n  *((_QWORD *)this + 1) = 0; /*0x18139e33e*/\\n  v11 = operator new(Size: 0x38u); /*0x18139e344*/\\n  v14[0] = v11; /*0x18139e349*/\\n  if ( v11 != nullptr ) /*0x18139e351*/\\n    v10 = sub_18139E3C0(a1: v11, a2, a3, a4, a5); /*0x18139e369*/\\n  if ( v9 == v14 ) /*0x18139e374*/\\n  {\\n    if ( v10 != 0 ) /*0x18139e386*/\\n    {\\n      v12 = (void *)v10; /*0x18139e388*/\\nLABEL_8:\\n      sub_18139F8E0(Block: v12); /*0x18139e38b*/\\n    }\\n  }\\n  else\\n  {\\n    v12 = (void *)*v9; /*0x18139e376*/\\n    *v9 = v10; /*0x18139e379*/\\n    if ( v12 != nullptr ) /*0x18139e37f*/\\n      goto LABEL_8; /*0x18139e37f*/\\n  }\\n  return this; /*0x18139e399*/\\n}\",\"refs\":[{\"addr\":\"0x182d451d8\",\"name\":\"??_7BlinkContext@blink@@6B@\"},{\"addr\":\"0x18188e090\",\"name\":\"??2@YAPEAX_K@Z\"},{\"addr\":\"0x18139e3c0\",\"name\":\"sub_18139E3C0\"},{\"addr\":\"0x18139f8e0\",\"name\":\"sub_18139F8E0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18139e2f0",
+      "code": "blink::BlinkContext *__fastcall blink::BlinkContext::BlinkContext(\n        blink::BlinkContext *this,\n        const char *a2,\n        const char *a3,\n        const char *a4,\n        const char *a5)\n{\n  __int64 *v9; // rdi\n  __int64 v10; // rbx\n  void *v11; // rax\n  void *v12; // rcx\n  _QWORD v14[18]; // [rsp+30h] [rbp-D8h] BYREF\n\n  v14[1] = this; /*0x18139e321*/\n  *(_QWORD *)this = &blink::BlinkContext::`vftable'; /*0x18139e335*/\n  v9 = (__int64 *)((char *)this + 8); /*0x18139e338*/\n  v10 = 0; /*0x18139e33c*/\n  *((_QWORD *)this + 1) = 0; /*0x18139e33e*/\n  v11 = operator new(Size: 0x38u); /*0x18139e344*/\n  v14[0] = v11; /*0x18139e349*/\n  if ( v11 != nullptr ) /*0x18139e351*/\n    v10 = sub_18139E3C0(a1: v11, a2, a3, a4, a5); /*0x18139e369*/\n  if ( v9 == v14 ) /*0x18139e374*/\n  {\n    if ( v10 != 0 ) /*0x18139e386*/\n    {\n      v12 = (void *)v10; /*0x18139e388*/\nLABEL_8:\n      sub_18139F8E0(Block: v12); /*0x18139e38b*/\n    }\n  }\n  else\n  {\n    v12 = (void *)*v9; /*0x18139e376*/\n    *v9 = v10; /*0x18139e379*/\n    if ( v12 != nullptr ) /*0x18139e37f*/\n      goto LABEL_8; /*0x18139e37f*/\n  }\n  return this; /*0x18139e399*/\n}",
+      "refs": [
+        {
+          "addr": "0x182d451d8",
+          "name": "??_7BlinkContext@blink@@6B@"
+        },
+        {
+          "addr": "0x18188e090",
+          "name": "??2@YAPEAX_K@Z"
+        },
+        {
+          "addr": "0x18139e3c0",
+          "name": "sub_18139E3C0"
+        },
+        {
+          "addr": "0x18139f8e0",
+          "name": "sub_18139F8E0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

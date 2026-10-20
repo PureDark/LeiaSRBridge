@@ -1,0 +1,152 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"data\":[{\"addr\":\"0x1800044d0\",\"name\":\"??4HeadTrackerInternal@SR@@QEAAAEAV01@AEBV01@@Z\",\"size\":\"0x4\"},{\"addr\":\"0x180004680\",\"name\":\"??1HeadStream@SR@@QEAA@XZ\",\"size\":\"0x38\"},{\"addr\":\"0x1800047d0\",\"name\":\"?update@HeadPoseStream@SR@@QEAAXAEAUSR_headPose@@@Z\",\"size\":\"0x88\"},{\"addr\":\"0x180018370\",\"name\":\"??0HeadTracker@SR@@QEAA@AEBV01@@Z\",\"size\":\"0x22\"},{\"addr\":\"0x1800183a0\",\"name\":\"??0HeadTracker@SR@@QEAA@XZ\",\"size\":\"0x22\"},{\"addr\":\"0x1800183d0\",\"name\":\"?create@HeadTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z\",\"size\":\"0x1a3\"},{\"addr\":\"0x180018580\",\"name\":\"?createDummy@HeadTrackerInternal@SR@@SAPEAVHeadTracker@2@AEAVSRContext@2@@Z\",\"size\":\"0xe1\"},{\"addr\":\"0x180018670\",\"name\":\"?update@HeadStream@SR@@QEAAXAEAUSR_head@@@Z\",\"size\":\"0xf0\"},{\"addr\":\"0x18001bdf0\",\"name\":\"??0HeadPoseTracker@SR@@QEAA@AEBV01@@Z\",\"size\":\"0x22\"},{\"addr\":\"0x18001be20\",\"name\":\"??0HeadPoseTracker@SR@@QEAA@XZ\",\"size\":\"0x22\"},{\"addr\":\"0x18001be50\",\"name\":\"?create@HeadPoseTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z\",\"size\":\"0xe1\"},{\"addr\":\"0x180025570\",\"name\":\"?setHeadTracker@HeadTrackerServer@SR@@QEAAXPEAVHeadTracker@2@@Z\",\"size\":\"0x6e\"},{\"addr\":\"0x180026d70\",\"name\":\"??0HeadSender@SR@@QEAA@AEBV01@@Z\",\"size\":\"0x16\"},{\"addr\":\"0x180026d90\",\"name\":\"??0HeadTrackerServer@SR@@QEAA@AEBV01@@Z\",\"size\":\"0x62\"},{\"addr\":\"0x180026e00\",\"name\":\"??0HeadTrackerServer@SR@@QEAA@PEAVHeadTracker@1@PEAVNetworkInterface@1@@Z\",\"size\":\"0x55\"},{\"addr\":\"0x180026e60\",\"name\":\"??1HeadTrackerServer@SR@@UEAA@XZ\",\"size\":\"0xec\"},{\"addr\":\"0x180026ff0\",\"name\":\"?create@HeadTrackerServer@SR@@SAPEAV12@PEAVSRContext@2@PEAVNetworkInterface@2@@Z\",\"size\":\"0x81\"},{\"addr\":\"0x180027080\",\"name\":\"?createDummy@HeadTrackerServer@SR@@SAPEAV12@PEAVSRContext@2@PEAVNetworkInterface@2@@Z\",\"size\":\"0x81\"},{\"addr\":\"0x180027110\",\"name\":\"?print@HeadTrackerServer@SR@@UEAAXAEAUSR_packet@@@Z\",\"size\":\"0x5e\"},{\"addr\":\"0x180027170\",\"name\":\"?receive@HeadTrackerServer@SR@@UEAAXAEAUSR_packet@@@Z\",\"size\":\"0x3c1\"},{\"addr\":\"0x180027bc0\",\"name\":\"??0HeadSender@SR@@QEAA@PEAVNetworkInterface@1@_K@Z\",\"size\":\"0x75\"},{\"addr\":\"0x180027c40\",\"name\":\"??1HeadSender@SR@@QEAA@XZ\",\"size\":\"0x3a\"},{\"addr\":\"0x180027f70\",\"name\":\"?accept@HeadSender@SR@@UEAAXAEBUSR_head@@@Z\",\"size\":\"0x9d\"},{\"addr\":\"0x180029f10\",\"name\":\"createHeadListener\",\"size\":\"0x10d\"},{\"addr\":\"0x18002a020\",\"name\":\"createHeadTracker\",\"size\":\"0x5\"},{\"addr\":\"0x18003ca40\",\"name\":\"_Init_thread_header\",\"size\":\"0x67\"}],\"next_offset\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "data": [
+            {
+              "addr": "0x1800044d0",
+              "name": "??4HeadTrackerInternal@SR@@QEAAAEAV01@AEBV01@@Z",
+              "size": "0x4"
+            },
+            {
+              "addr": "0x180004680",
+              "name": "??1HeadStream@SR@@QEAA@XZ",
+              "size": "0x38"
+            },
+            {
+              "addr": "0x1800047d0",
+              "name": "?update@HeadPoseStream@SR@@QEAAXAEAUSR_headPose@@@Z",
+              "size": "0x88"
+            },
+            {
+              "addr": "0x180018370",
+              "name": "??0HeadTracker@SR@@QEAA@AEBV01@@Z",
+              "size": "0x22"
+            },
+            {
+              "addr": "0x1800183a0",
+              "name": "??0HeadTracker@SR@@QEAA@XZ",
+              "size": "0x22"
+            },
+            {
+              "addr": "0x1800183d0",
+              "name": "?create@HeadTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z",
+              "size": "0x1a3"
+            },
+            {
+              "addr": "0x180018580",
+              "name": "?createDummy@HeadTrackerInternal@SR@@SAPEAVHeadTracker@2@AEAVSRContext@2@@Z",
+              "size": "0xe1"
+            },
+            {
+              "addr": "0x180018670",
+              "name": "?update@HeadStream@SR@@QEAAXAEAUSR_head@@@Z",
+              "size": "0xf0"
+            },
+            {
+              "addr": "0x18001bdf0",
+              "name": "??0HeadPoseTracker@SR@@QEAA@AEBV01@@Z",
+              "size": "0x22"
+            },
+            {
+              "addr": "0x18001be20",
+              "name": "??0HeadPoseTracker@SR@@QEAA@XZ",
+              "size": "0x22"
+            },
+            {
+              "addr": "0x18001be50",
+              "name": "?create@HeadPoseTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z",
+              "size": "0xe1"
+            },
+            {
+              "addr": "0x180025570",
+              "name": "?setHeadTracker@HeadTrackerServer@SR@@QEAAXPEAVHeadTracker@2@@Z",
+              "size": "0x6e"
+            },
+            {
+              "addr": "0x180026d70",
+              "name": "??0HeadSender@SR@@QEAA@AEBV01@@Z",
+              "size": "0x16"
+            },
+            {
+              "addr": "0x180026d90",
+              "name": "??0HeadTrackerServer@SR@@QEAA@AEBV01@@Z",
+              "size": "0x62"
+            },
+            {
+              "addr": "0x180026e00",
+              "name": "??0HeadTrackerServer@SR@@QEAA@PEAVHeadTracker@1@PEAVNetworkInterface@1@@Z",
+              "size": "0x55"
+            },
+            {
+              "addr": "0x180026e60",
+              "name": "??1HeadTrackerServer@SR@@UEAA@XZ",
+              "size": "0xec"
+            },
+            {
+              "addr": "0x180026ff0",
+              "name": "?create@HeadTrackerServer@SR@@SAPEAV12@PEAVSRContext@2@PEAVNetworkInterface@2@@Z",
+              "size": "0x81"
+            },
+            {
+              "addr": "0x180027080",
+              "name": "?createDummy@HeadTrackerServer@SR@@SAPEAV12@PEAVSRContext@2@PEAVNetworkInterface@2@@Z",
+              "size": "0x81"
+            },
+            {
+              "addr": "0x180027110",
+              "name": "?print@HeadTrackerServer@SR@@UEAAXAEAUSR_packet@@@Z",
+              "size": "0x5e"
+            },
+            {
+              "addr": "0x180027170",
+              "name": "?receive@HeadTrackerServer@SR@@UEAAXAEAUSR_packet@@@Z",
+              "size": "0x3c1"
+            },
+            {
+              "addr": "0x180027bc0",
+              "name": "??0HeadSender@SR@@QEAA@PEAVNetworkInterface@1@_K@Z",
+              "size": "0x75"
+            },
+            {
+              "addr": "0x180027c40",
+              "name": "??1HeadSender@SR@@QEAA@XZ",
+              "size": "0x3a"
+            },
+            {
+              "addr": "0x180027f70",
+              "name": "?accept@HeadSender@SR@@UEAAXAEBUSR_head@@@Z",
+              "size": "0x9d"
+            },
+            {
+              "addr": "0x180029f10",
+              "name": "createHeadListener",
+              "size": "0x10d"
+            },
+            {
+              "addr": "0x18002a020",
+              "name": "createHeadTracker",
+              "size": "0x5"
+            },
+            {
+              "addr": "0x18003ca40",
+              "name": "_Init_thread_header",
+              "size": "0x67"
+            }
+          ],
+          "next_offset": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

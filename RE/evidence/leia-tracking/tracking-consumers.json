@@ -1,0 +1,51 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x140108E20\",\"xrefs\":[{\"addr\":\"0x1401c3110\",\"type\":\"data\",\"fn\":null},{\"addr\":\"0x1402754d8\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":2},{\"addr\":\"0x140109130\",\"xrefs\":[{\"addr\":\"0x1401c3108\",\"type\":\"data\",\"fn\":null},{\"addr\":\"0x1402754f0\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":2}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x140108E20",
+          "xrefs": [
+            {
+              "addr": "0x1401c3110",
+              "type": "data",
+              "fn": null
+            },
+            {
+              "addr": "0x1402754d8",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        },
+        {
+          "addr": "0x140109130",
+          "xrefs": [
+            {
+              "addr": "0x1401c3108",
+              "type": "data",
+              "fn": null
+            },
+            {
+              "addr": "0x1402754f0",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

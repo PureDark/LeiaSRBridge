@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"motion-sdk\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: BOE_3DET_SDK.dll (motion-sdk)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "motion-sdk",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: BOE_3DET_SDK.dll (motion-sdk)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

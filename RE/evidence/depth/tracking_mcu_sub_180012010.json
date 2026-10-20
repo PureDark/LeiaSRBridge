@@ -1,0 +1,226 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180012010\",\"code\":\"__int64 __fastcall sub_180012010(__int64 a1)\\n{\\n  __int64 v2; // rax\\n  __int64 v3; // rax\\n  __int64 v4; // rax\\n  char v5; // al\\n  __int64 v6; // rax\\n  __int64 v7; // rax\\n  __int64 v8; // rax\\n  __int64 v9; // rdx\\n  __int64 v10; // rdx\\n  __int64 v11; // rax\\n  __int64 v12; // rax\\n  __int64 v13; // rax\\n  __int64 v14; // rax\\n  __int64 v15; // rax\\n  char v16; // [rsp+30h] [rbp-198h]\\n  __int64 v17; // [rsp+38h] [rbp-190h]\\n  __int64 v18; // [rsp+48h] [rbp-180h]\\n  __int64 v19; // [rsp+58h] [rbp-170h]\\n  __int64 v20; // [rsp+70h] [rbp-158h]\\n  __int64 v21; // [rsp+88h] [rbp-140h]\\n  __int64 v22; // [rsp+98h] [rbp-130h]\\n  __int64 v23; // [rsp+A8h] [rbp-120h]\\n  __int64 v24; // [rsp+B8h] [rbp-110h]\\n  __int64 v25; // [rsp+C8h] [rbp-100h]\\n  _BYTE v26[8]; // [rsp+D0h] [rbp-F8h] BYREF\\n  _BYTE v27[16]; // [rsp+D8h] [rbp-F0h] BYREF\\n  _BYTE v28[16]; // [rsp+E8h] [rbp-E0h] BYREF\\n  _BYTE v29[16]; // [rsp+F8h] [rbp-D0h] BYREF\\n  _BYTE v30[16]; // [rsp+108h] [rbp-C0h] BYREF\\n  _BYTE v31[16]; // [rsp+118h] [rbp-B0h] BYREF\\n  _BYTE v32[16]; // [rsp+128h] [rbp-A0h] BYREF\\n  _BYTE v33[16]; // [rsp+138h] [rbp-90h] BYREF\\n  _BYTE v34[32]; // [rsp+148h] [rbp-80h] BYREF\\n  _BYTE v35[32]; // [rsp+168h] [rbp-60h] BYREF\\n  _BYTE v36[32]; // [rsp+188h] [rbp-40h] BYREF\\n  _BYTE v37[8]; // [rsp+1A8h] [rbp-20h] BYREF\\n  _BYTE v38[8]; // [rsp+1B0h] [rbp-18h] BYREF\\n\\n  if ( *(_BYTE *)a1 == 0 ) /*0x18001203b*/\\n    sub_180011C50((_BYTE *)a1); /*0x180012045*/\\n  if ( (unsigned int)sub_180017C60(a1: a1 + 12) == 1 ) /*0x180012061*/\\n    return 0; /*0x180012063*/\\n  *(_DWORD *)(a1 + 4) = 0; /*0x180012072*/\\n  *(_DWORD *)(a1 + 8) = 0; /*0x180012081*/\\n  v17 = sub_180010F60(a1: v35); /*0x180012095*/\\n  sub_180019930(a1: a1 + 2384, a2: v17); /*0x1800120b0*/\\n  std::string::~string(a1: v35); /*0x1800120bd*/\\n  if ( (unsigned __int8)sub_180007EC0(a1: a1 + 2384) != 0 /*0x180012105*/\\n    || (unsigned __int8)sub_18001BAB0(a1: a1 + 2384, a2: &unk_18004D36F) == 0 )\\n  {\\n    v19 = sub_180036BD0(a1: v28, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 180); /*0x180012197*/\\n    __wind /*0xf1c0000000000104*/\\n    {\\n      v4 = sub_18003DF90(a1: v19); /*0x1800121a1*/\\n      sub_18000A770(a1: v4, a2: \\\"FindDevicePort by VID_28E9 PID_018A failed\\\"); /*0x1800121b0*/\\n    }\\n    __unwind\\n    {\\n      sub_180037160(a1: v28); /*0x18004548b*/\\n    }\\n    sub_180037160(a1: v28); /*0x1800121be*/\\n    return 0xFFFFFFFFLL; /*0x1800121c3*/\\n  }\\n  else\\n  {\\n    v18 = sub_180036BD0(a1: v27, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 177); /*0x18001212b*/\\n    __wind /*0xf1c000000000011c*/\\n    {\\n      v2 = sub_18003DF90(a1: v18); /*0x180012135*/\\n      v3 = sub_18000A770(a1: v2, a2: \\\"FindDevicePort by VID_28E9 PID_018A:\\\"); /*0x180012144*/\\n      sub_18001B7D0(a1: v3, a2: a1 + 2384); /*0x18001215e*/\\n    }\\n    __unwind\\n    {\\n      sub_180037160(a1: v27); /*0x180045470*/\\n    }\\n    sub_180037160(a1: v27); /*0x18001216c*/\\n    v5 = sub_180033650(a1: a1 + 344, a2: a1 + 2384, a3: 115200); /*0x1800121fc*/\\n    if ( v5 != 0 ) /*0x180012206*/\\n    {\\n      sub_180019530(a1: v37, a2: a1 + 480); /*0x1800122e2*/\\n      sub_180017820(a1: a1 + 440); /*0x1800122f8*/\\n      std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v37); /*0x180012305*/\\n      sub_180017C80(a1: a1 + 12, a2: 1); /*0x18001231e*/\\n      LOBYTE(v9) = 1; /*0x180012331*/\\n      sub_180017B00(a1: a1 + 176, a2: v9); /*0x180012336*/\\n      sub_18000F170(a1: a1 + 24); /*0x18001234a*/\\n      LOBYTE(v10) = 1; /*0x18001235d*/\\n      sub_180017B00(a1: a1 + 336, a2: v10); /*0x180012362*/\\n      sub_18000F170(a1: a1 + 184); /*0x180012378*/\\n      WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 736), dwMilliseconds: 0); /*0x18001238e*/\\n      sub_180019530(a1: v38, a2: a1 + 480); /*0x1800123ad*/\\n      __wind /*0xf1c00000000000d4*/\\n      {\\n        v11 = sub_180010DF0(a1: v26, a2: 8); /*0x1800123d6*/\\n        sub_180017A30(a1: a1 + 440, a2: v11); /*0x1800123e6*/\\n      }\\n      __unwind\\n      {\\n        std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v38); /*0x1800454c1*/\\n      }\\n      std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v38); /*0x1800123f4*/\\n      if ( WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 736), dwMilliseconds: 0x7D0u) == 258 ) /*0x18001241f*/\\n      {\\n        *(_DWORD *)(a1 + 4) = 0; /*0x180012625*/\\n      }\\n      else\\n      {\\n        v22 = sub_180008410(a1: v36, a2: a1 + 1808); /*0x180012453*/\\n        if ( (unsigned __int8)sub_180010560(a1: v22) == 0 ) /*0x18001246d*/\\n        {\\n          sub_180010E50(a1, a2: 5, a3: 4, a4: 0, a5: (__int64)\\\"serial port version not portable\\\"); /*0x180012495*/\\n          v23 = sub_180036BD0(a1: v30, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 209); /*0x1800124c4*/\\n          __wind /*0xf1c00000000000bc*/\\n          {\\n            v12 = sub_18003DF90(a1: v23); /*0x1800124d4*/\\n            sub_18000A770(a1: v12, a2: \\\"serial port version not portable\\\"); /*0x1800124e3*/\\n          }\\n          __unwind\\n          {\\n            sub_180037160(a1: v30); /*0x1800454dc*/\\n          }\\n          sub_180037160(a1: v30); /*0x1800124f1*/\\n        }\\n        sub_180008270(a1: v34, a2: \\\"Version2=\\\"); /*0x180012505*/\\n        __wind /*0xf1c00000000000a4*/\\n        {\\n          v16 = sub_180010BA0(a1: a1 + 1808, a2: v34); /*0x180012529*/\\n        }\\n        __unwind\\n        {\\n          std::string::~string(a1: v34); /*0x1800454f7*/\\n        }\\n        std::string::~string(a1: v34); /*0x180012535*/\\n        if ( v16 != 0 ) /*0x180012541*/\\n        {\\n          v24 = sub_180036BD0(a1: v31, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 213); /*0x18001256d*/\\n          __wind /*0xf1c000000000008c*/\\n          {\\n            v13 = sub_18003DF90(a1: v24); /*0x18001257d*/\\n            sub_18000A770(a1: v13, a2: \\\"serial port version is portable,protol version 2\\\"); /*0x18001258c*/\\n          }\\n          __unwind\\n          {\\n            sub_180037160(a1: v31); /*0x180045512*/\\n          }\\n          sub_180037160(a1: v31); /*0x18001259a*/\\n          *(_DWORD *)(a1 + 4) = 1; /*0x1800125a7*/\\n        }\\n        else\\n        {\\n          v25 = sub_180036BD0(a1: v32, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 217); /*0x1800125da*/\\n          __wind /*0xf1c0000000000074*/\\n          {\\n            v14 = sub_18003DF90(a1: v25); /*0x1800125ea*/\\n            sub_18000A770(a1: v14, a2: \\\"serial port version is portable,protol version 1\\\"); /*0x1800125f9*/\\n          }\\n          __unwind\\n          {\\n            sub_180037160(a1: v32); /*0x18004552d*/\\n          }\\n          sub_180037160(a1: v32); /*0x180012607*/\\n          *(_DWORD *)(a1 + 4) = 0; /*0x180012614*/\\n        }\\n      }\\n      sub_180010E50(a1, a2: 5, a3: 1, a4: 0, a5: (__int64)\\\"serial port opened\\\"); /*0x18001264e*/\\n      v21 = sub_180036BD0(a1: v33, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 226); /*0x180012677*/\\n      __wind /*0xf1c000000000005c*/\\n      {\\n        v15 = sub_18003DF90(a1: v21); /*0x180012687*/\\n        sub_18000A770(a1: v15, a2: \\\"serial port opened success\\\"); /*0x180012696*/\\n      }\\n      __unwind\\n      {\\n        sub_180037160(a1: v33); /*0x180045548*/\\n      }\\n      sub_180037160(a1: v33); /*0x1800126a4*/\\n      return 0; /*0x1800126a9*/\\n    }\\n    else\\n    {\\n      v20 = sub_180036BD0(a1: v29, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 184); /*0x180012230*/\\n      __wind /*0xf1c00000000000ec*/\\n      {\\n        v6 = sub_18003DF90(a1: v20); /*0x18001223a*/\\n        v7 = sub_18000A770(a1: v6, a2: \\\"Serial port:\\\"); /*0x180012249*/\\n        v8 = sub_18001B7D0(a1: v7, a2: a1 + 2384); /*0x180012263*/\\n        sub_18000A770(a1: v8, a2: \\\" open failed.doCallback(5,0,\\\"); /*0x180012272*/\\n      }\\n      __unwind\\n      {\\n        sub_180037160(a1: v29); /*0x1800454a6*/\\n      }\\n      sub_180037160(a1: v29); /*0x180012280*/\\n      sub_180010E50(a1, a2: 5, a3: 0, a4: 0, a5: (__int64)\\\"serial port open failed\\\"); /*0x1800122a4*/\\n      sub_180017C80(a1: a1 + 12, a2: 0); /*0x1800122ba*/\\n      return 4294967294LL; /*0x1800122bf*/\\n    }\\n  }\\n}\",\"refs\":[{\"addr\":\"0x180011c50\",\"name\":\"sub_180011C50\"},{\"addr\":\"0x180017c60\",\"name\":\"sub_180017C60\"},{\"addr\":\"0x180010f60\",\"name\":\"sub_180010F60\"},{\"addr\":\"0x180019930\",\"name\":\"sub_180019930\"},{\"addr\":\"0x1800081c0\",\"name\":\"??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ\"},{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004da20\",\"name\":\"aDSourceRepos3d_11\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004d9f0\",\"name\":\"aFinddeviceport_2\",\"string\":\"FindDevicePort by VID_28E9 PID_018A failed\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x18004d9b8\",\"name\":\"aDSourceRepos3d_10\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004d990\",\"name\":\"aFinddeviceport_1\",\"string\":\"FindDevicePort by VID_28E9 PID_018A:\"},{\"addr\":\"0x18001b7d0\",\"name\":\"sub_18001B7D0\"},{\"addr\":\"0x180033650\",\"name\":\"sub_180033650\"},{\"addr\":\"0x180019530\",\"name\":\"sub_180019530\"},{\"addr\":\"0x180017820\",\"name\":\"sub_180017820\"},{\"addr\":\"0x180019510\",\"name\":\"??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ\"},{\"addr\":\"0x180017c80\",\"name\":\"sub_180017C80\"},{\"addr\":\"0x180017b00\",\"name\":\"sub_180017B00\"},{\"addr\":\"0x18000f170\",\"name\":\"sub_18000F170\"},{\"addr\":\"0x18004a010\",\"name\":\"__imp_WaitForSingleObject\"},{\"addr\":\"0x180010df0\",\"name\":\"sub_180010DF0\"},{\"addr\":\"0x180017a30\",\"name\":\"sub_180017A30\"},{\"addr\":\"0x180008410\",\"name\":\"sub_180008410\"},{\"addr\":\"0x180010e50\",\"name\":\"sub_180010E50\"},{\"addr\":\"0x18004dad8\",\"name\":\"aSerialPortVers\",\"string\":\"serial port version not portable\"},{\"addr\":\"0x18004db28\",\"name\":\"aDSourceRepos3d_13\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004db00\",\"name\":\"aSerialPortVers_0\",\"string\":\"serial port version not portable\"},{\"addr\":\"0x180010560\",\"name\":\"sub_180010560\"},{\"addr\":\"0x180008270\",\"name\":\"sub_180008270\"},{\"addr\":\"0x18004db60\",\"name\":\"aVersion2\",\"string\":\"Version2=\"},{\"addr\":\"0x180010ba0\",\"name\":\"sub_180010BA0\"},{\"addr\":\"0x18004dba8\",\"name\":\"aDSourceRepos3d_14\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004db70\",\"name\":\"aSerialPortVers_1\",\"string\":\"serial port version is portable,protol version 2\"},{\"addr\":\"0x18004dc18\",\"name\":\"aDSourceRepos3d_15\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004dbe0\",\"name\":\"aSerialPortVers_2\",\"string\":\"serial port version is portable,protol version 1\"},{\"addr\":\"0x18004dc50\",\"name\":\"aSerialPortOpen_0\",\"string\":\"serial port opened\"},{\"addr\":\"0x18004dc88\",\"name\":\"aDSourceRepos3d_16\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004dc68\",\"name\":\"aSerialPortOpen_1\",\"string\":\"serial port opened success\"},{\"addr\":\"0x18004da88\",\"name\":\"aDSourceRepos3d_12\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004da78\",\"name\":\"aSerialPort\",\"string\":\"Serial port:\"},{\"addr\":\"0x18004da58\",\"name\":\"aOpenFailedDoca\",\"string\":\" open failed.doCallback(5,0,\"},{\"addr\":\"0x18004dac0\",\"name\":\"aSerialPortOpen\",\"string\":\"serial port open failed\"},{\"addr\":\"0x180007ec0\",\"name\":\"sub_180007EC0\"},{\"addr\":\"0x18001bab0\",\"name\":\"sub_18001BAB0\"},{\"addr\":\"0x18004d36f\",\"name\":\"unk_18004D36F\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180012010",
+      "code": "__int64 __fastcall sub_180012010(__int64 a1)\n{\n  __int64 v2; // rax\n  __int64 v3; // rax\n  __int64 v4; // rax\n  char v5; // al\n  __int64 v6; // rax\n  __int64 v7; // rax\n  __int64 v8; // rax\n  __int64 v9; // rdx\n  __int64 v10; // rdx\n  __int64 v11; // rax\n  __int64 v12; // rax\n  __int64 v13; // rax\n  __int64 v14; // rax\n  __int64 v15; // rax\n  char v16; // [rsp+30h] [rbp-198h]\n  __int64 v17; // [rsp+38h] [rbp-190h]\n  __int64 v18; // [rsp+48h] [rbp-180h]\n  __int64 v19; // [rsp+58h] [rbp-170h]\n  __int64 v20; // [rsp+70h] [rbp-158h]\n  __int64 v21; // [rsp+88h] [rbp-140h]\n  __int64 v22; // [rsp+98h] [rbp-130h]\n  __int64 v23; // [rsp+A8h] [rbp-120h]\n  __int64 v24; // [rsp+B8h] [rbp-110h]\n  __int64 v25; // [rsp+C8h] [rbp-100h]\n  _BYTE v26[8]; // [rsp+D0h] [rbp-F8h] BYREF\n  _BYTE v27[16]; // [rsp+D8h] [rbp-F0h] BYREF\n  _BYTE v28[16]; // [rsp+E8h] [rbp-E0h] BYREF\n  _BYTE v29[16]; // [rsp+F8h] [rbp-D0h] BYREF\n  _BYTE v30[16]; // [rsp+108h] [rbp-C0h] BYREF\n  _BYTE v31[16]; // [rsp+118h] [rbp-B0h] BYREF\n  _BYTE v32[16]; // [rsp+128h] [rbp-A0h] BYREF\n  _BYTE v33[16]; // [rsp+138h] [rbp-90h] BYREF\n  _BYTE v34[32]; // [rsp+148h] [rbp-80h] BYREF\n  _BYTE v35[32]; // [rsp+168h] [rbp-60h] BYREF\n  _BYTE v36[32]; // [rsp+188h] [rbp-40h] BYREF\n  _BYTE v37[8]; // [rsp+1A8h] [rbp-20h] BYREF\n  _BYTE v38[8]; // [rsp+1B0h] [rbp-18h] BYREF\n\n  if ( *(_BYTE *)a1 == 0 ) /*0x18001203b*/\n    sub_180011C50((_BYTE *)a1); /*0x180012045*/\n  if ( (unsigned int)sub_180017C60(a1: a1 + 12) == 1 ) /*0x180012061*/\n    return 0; /*0x180012063*/\n  *(_DWORD *)(a1 + 4) = 0; /*0x180012072*/\n  *(_DWORD *)(a1 + 8) = 0; /*0x180012081*/\n  v17 = sub_180010F60(a1: v35); /*0x180012095*/\n  sub_180019930(a1: a1 + 2384, a2: v17); /*0x1800120b0*/\n  std::string::~string(a1: v35); /*0x1800120bd*/\n  if ( (unsigned __int8)sub_180007EC0(a1: a1 + 2384) != 0 /*0x180012105*/\n    || (unsigned __int8)sub_18001BAB0(a1: a1 + 2384, a2: &unk_18004D36F) == 0 )\n  {\n    v19 = sub_180036BD0(a1: v28, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 180); /*0x180012197*/\n    __wind /*0xf1c0000000000104*/\n    {\n      v4 = sub_18003DF90(a1: v19); /*0x1800121a1*/\n      sub_18000A770(a1: v4, a2: \"FindDevicePort by VID_28E9 PID_018A failed\"); /*0x1800121b0*/\n    }\n    __unwind\n    {\n      sub_180037160(a1: v28); /*0x18004548b*/\n    }\n    sub_180037160(a1: v28); /*0x1800121be*/\n    return 0xFFFFFFFFLL; /*0x1800121c3*/\n  }\n  else\n  {\n    v18 = sub_180036BD0(a1: v27, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 177); /*0x18001212b*/\n    __wind /*0xf1c000000000011c*/\n    {\n      v2 = sub_18003DF90(a1: v18); /*0x180012135*/\n      v3 = sub_18000A770(a1: v2, a2: \"FindDevicePort by VID_28E9 PID_018A:\"); /*0x180012144*/\n      sub_18001B7D0(a1: v3, a2: a1 + 2384); /*0x18001215e*/\n    }\n    __unwind\n    {\n      sub_180037160(a1: v27); /*0x180045470*/\n    }\n    sub_180037160(a1: v27); /*0x18001216c*/\n    v5 = sub_180033650(a1: a1 + 344, a2: a1 + 2384, a3: 115200); /*0x1800121fc*/\n    if ( v5 != 0 ) /*0x180012206*/\n    {\n      sub_180019530(a1: v37, a2: a1 + 480); /*0x1800122e2*/\n      sub_180017820(a1: a1 + 440); /*0x1800122f8*/\n      std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v37); /*0x180012305*/\n      sub_180017C80(a1: a1 + 12, a2: 1); /*0x18001231e*/\n      LOBYTE(v9) = 1; /*0x180012331*/\n      sub_180017B00(a1: a1 + 176, a2: v9); /*0x180012336*/\n      sub_18000F170(a1: a1 + 24); /*0x18001234a*/\n      LOBYTE(v10) = 1; /*0x18001235d*/\n      sub_180017B00(a1: a1 + 336, a2: v10); /*0x180012362*/\n      sub_18000F170(a1: a1 + 184); /*0x180012378*/\n      WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 736), dwMilliseconds: 0); /*0x18001238e*/\n      sub_180019530(a1: v38, a2: a1 + 480); /*0x1800123ad*/\n      __wind /*0xf1c00000000000d4*/\n      {\n        v11 = sub_180010DF0(a1: v26, a2: 8); /*0x1800123d6*/\n        sub_180017A30(a1: a1 + 440, a2: v11); /*0x1800123e6*/\n      }\n      __unwind\n      {\n        std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v38); /*0x1800454c1*/\n      }\n      std::lock_guard<std::mutex>::~lock_guard<std::mutex>(a1: v38); /*0x1800123f4*/\n      if ( WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 736), dwMilliseconds: 0x7D0u) == 258 ) /*0x18001241f*/\n      {\n        *(_DWORD *)(a1 + 4) = 0; /*0x180012625*/\n      }\n      else\n      {\n        v22 = sub_180008410(a1: v36, a2: a1 + 1808); /*0x180012453*/\n        if ( (unsigned __int8)sub_180010560(a1: v22) == 0 ) /*0x18001246d*/\n        {\n          sub_180010E50(a1, a2: 5, a3: 4, a4: 0, a5: (__int64)\"serial port version not portable\"); /*0x180012495*/\n          v23 = sub_180036BD0(a1: v30, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 209); /*0x1800124c4*/\n          __wind /*0xf1c00000000000bc*/\n          {\n            v12 = sub_18003DF90(a1: v23); /*0x1800124d4*/\n            sub_18000A770(a1: v12, a2: \"serial port version not portable\"); /*0x1800124e3*/\n          }\n          __unwind\n          {\n            sub_180037160(a1: v30); /*0x1800454dc*/\n          }\n          sub_180037160(a1: v30); /*0x1800124f1*/\n        }\n        sub_180008270(a1: v34, a2: \"Version2=\"); /*0x180012505*/\n        __wind /*0xf1c00000000000a4*/\n        {\n          v16 = sub_180010BA0(a1: a1 + 1808, a2: v34); /*0x180012529*/\n        }\n        __unwind\n        {\n          std::string::~string(a1: v34); /*0x1800454f7*/\n        }\n        std::string::~string(a1: v34); /*0x180012535*/\n        if ( v16 != 0 ) /*0x180012541*/\n        {\n          v24 = sub_180036BD0(a1: v31, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 213); /*0x18001256d*/\n          __wind /*0xf1c000000000008c*/\n          {\n            v13 = sub_18003DF90(a1: v24); /*0x18001257d*/\n            sub_18000A770(a1: v13, a2: \"serial port version is portable,protol version 2\"); /*0x18001258c*/\n          }\n          __unwind\n          {\n            sub_180037160(a1: v31); /*0x180045512*/\n          }\n          sub_180037160(a1: v31); /*0x18001259a*/\n          *(_DWORD *)(a1 + 4) = 1; /*0x1800125a7*/\n        }\n        else\n        {\n          v25 = sub_180036BD0(a1: v32, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 217); /*0x1800125da*/\n          __wind /*0xf1c0000000000074*/\n          {\n            v14 = sub_18003DF90(a1: v25); /*0x1800125ea*/\n            sub_18000A770(a1: v14, a2: \"serial port version is portable,protol version 1\"); /*0x1800125f9*/\n          }\n          __unwind\n          {\n            sub_180037160(a1: v32); /*0x18004552d*/\n          }\n          sub_180037160(a1: v32); /*0x180012607*/\n          *(_DWORD *)(a1 + 4) = 0; /*0x180012614*/\n        }\n      }\n      sub_180010E50(a1, a2: 5, a3: 1, a4: 0, a5: (__int64)\"serial port opened\"); /*0x18001264e*/\n      v21 = sub_180036BD0(a1: v33, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 226); /*0x180012677*/\n      __wind /*0xf1c000000000005c*/\n      {\n        v15 = sub_18003DF90(a1: v21); /*0x180012687*/\n        sub_18000A770(a1: v15, a2: \"serial port opened success\"); /*0x180012696*/\n      }\n      __unwind\n      {\n        sub_180037160(a1: v33); /*0x180045548*/\n      }\n      sub_180037160(a1: v33); /*0x1800126a4*/\n      return 0; /*0x1800126a9*/\n    }\n    else\n    {\n      v20 = sub_180036BD0(a1: v29, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 184); /*0x180012230*/\n      __wind /*0xf1c00000000000ec*/\n      {\n        v6 = sub_18003DF90(a1: v20); /*0x18001223a*/\n        v7 = sub_18000A770(a1: v6, a2: \"Serial port:\"); /*0x180012249*/\n        v8 = sub_18001B7D0(a1: v7, a2: a1 + 2384); /*0x180012263*/\n        sub_18000A770(a1: v8, a2: \" open failed.doCallback(5,0,\"); /*0x180012272*/\n      }\n      __unwind\n      {\n        sub_180037160(a1: v29); /*0x1800454a6*/\n      }\n      sub_180037160(a1: v29); /*0x180012280*/\n      sub_180010E50(a1, a2: 5, a3: 0, a4: 0, a5: (__int64)\"serial port open failed\"); /*0x1800122a4*/\n      sub_180017C80(a1: a1 + 12, a2: 0); /*0x1800122ba*/\n      return 4294967294LL; /*0x1800122bf*/\n    }\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x180011c50",
+          "name": "sub_180011C50"
+        },
+        {
+          "addr": "0x180017c60",
+          "name": "sub_180017C60"
+        },
+        {
+          "addr": "0x180010f60",
+          "name": "sub_180010F60"
+        },
+        {
+          "addr": "0x180019930",
+          "name": "sub_180019930"
+        },
+        {
+          "addr": "0x1800081c0",
+          "name": "??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004da20",
+          "name": "aDSourceRepos3d_11",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004d9f0",
+          "name": "aFinddeviceport_2",
+          "string": "FindDevicePort by VID_28E9 PID_018A failed"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x18004d9b8",
+          "name": "aDSourceRepos3d_10",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004d990",
+          "name": "aFinddeviceport_1",
+          "string": "FindDevicePort by VID_28E9 PID_018A:"
+        },
+        {
+          "addr": "0x18001b7d0",
+          "name": "sub_18001B7D0"
+        },
+        {
+          "addr": "0x180033650",
+          "name": "sub_180033650"
+        },
+        {
+          "addr": "0x180019530",
+          "name": "sub_180019530"
+        },
+        {
+          "addr": "0x180017820",
+          "name": "sub_180017820"
+        },
+        {
+          "addr": "0x180019510",
+          "name": "??1?$lock_guard@Vmutex@std@@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x180017c80",
+          "name": "sub_180017C80"
+        },
+        {
+          "addr": "0x180017b00",
+          "name": "sub_180017B00"
+        },
+        {
+          "addr": "0x18000f170",
+          "name": "sub_18000F170"
+        },
+        {
+          "addr": "0x18004a010",
+          "name": "__imp_WaitForSingleObject"
+        },
+        {
+          "addr": "0x180010df0",
+          "name": "sub_180010DF0"
+        },
+        {
+          "addr": "0x180017a30",
+          "name": "sub_180017A30"
+        },
+        {
+          "addr": "0x180008410",
+          "name": "sub_180008410"
+        },
+        {
+          "addr": "0x180010e50",
+          "name": "sub_180010E50"
+        },
+        {
+          "addr": "0x18004dad8",
+          "name": "aSerialPortVers",
+          "string": "serial port version not portable"
+        },
+        {
+          "addr": "0x18004db28",
+          "name": "aDSourceRepos3d_13",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004db00",
+          "name": "aSerialPortVers_0",
+          "string": "serial port version not portable"
+        },
+        {
+          "addr": "0x180010560",
+          "name": "sub_180010560"
+        },
+        {
+          "addr": "0x180008270",
+          "name": "sub_180008270"
+        },
+        {
+          "addr": "0x18004db60",
+          "name": "aVersion2",
+          "string": "Version2="
+        },
+        {
+          "addr": "0x180010ba0",
+          "name": "sub_180010BA0"
+        },
+        {
+          "addr": "0x18004dba8",
+          "name": "aDSourceRepos3d_14",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004db70",
+          "name": "aSerialPortVers_1",
+          "string": "serial port version is portable,protol version 2"
+        },
+        {
+          "addr": "0x18004dc18",
+          "name": "aDSourceRepos3d_15",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004dbe0",
+          "name": "aSerialPortVers_2",
+          "string": "serial port version is portable,protol version 1"
+        },
+        {
+          "addr": "0x18004dc50",
+          "name": "aSerialPortOpen_0",
+          "string": "serial port opened"
+        },
+        {
+          "addr": "0x18004dc88",
+          "name": "aDSourceRepos3d_16",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004dc68",
+          "name": "aSerialPortOpen_1",
+          "string": "serial port opened success"
+        },
+        {
+          "addr": "0x18004da88",
+          "name": "aDSourceRepos3d_12",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004da78",
+          "name": "aSerialPort",
+          "string": "Serial port:"
+        },
+        {
+          "addr": "0x18004da58",
+          "name": "aOpenFailedDoca",
+          "string": " open failed.doCallback(5,0,"
+        },
+        {
+          "addr": "0x18004dac0",
+          "name": "aSerialPortOpen",
+          "string": "serial port open failed"
+        },
+        {
+          "addr": "0x180007ec0",
+          "name": "sub_180007EC0"
+        },
+        {
+          "addr": "0x18001bab0",
+          "name": "sub_18001BAB0"
+        },
+        {
+          "addr": "0x18004d36f",
+          "name": "unk_18004D36F"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

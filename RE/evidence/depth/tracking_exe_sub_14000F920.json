@@ -1,0 +1,170 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_14000F920\",\"code\":\"__int64 __fastcall sub_14000F920(LPVOID lpThreadParameter)\\n{\\n  __int64 v1; // rcx\\n  volatile signed __int32 *v2; // rbx\\n  int v4; // r8d\\n  int v5; // r15d\\n  __int64 *ThreadLocalStoragePointer; // rcx\\n  __int64 v7; // r13\\n  volatile signed __int32 *v8; // rbx\\n  __int64 v9; // rcx\\n  volatile signed __int32 *v10; // rbx\\n  volatile signed __int32 *v11; // rbx\\n  cv *v12; // rcx\\n  _QWORD v13[2]; // [rsp+30h] [rbp-D0h] BYREF\\n  const char *v14; // [rsp+40h] [rbp-C0h]\\n  const char *v15; // [rsp+50h] [rbp-B0h] BYREF\\n  __int64 v16; // [rsp+58h] [rbp-A8h]\\n  int v17; // [rsp+60h] [rbp-A0h] BYREF\\n  __int64 v18; // [rsp+68h] [rbp-98h]\\n  volatile signed __int32 *v19; // [rsp+70h] [rbp-90h]\\n  _QWORD v20[6]; // [rsp+78h] [rbp-88h] BYREF\\n  _QWORD v21[12]; // [rsp+B0h] [rbp-50h] BYREF\\n  _QWORD v22[8]; // [rsp+110h] [rbp+10h] BYREF\\n  __int64 v23; // [rsp+150h] [rbp+50h]\\n  _QWORD v24[8]; // [rsp+160h] [rbp+60h] BYREF\\n  __int64 v25; // [rsp+1A0h] [rbp+A0h]\\n  _QWORD v26[10]; // [rsp+1B0h] [rbp+B0h] BYREF\\n\\n  if ( (unsigned int)initBoeEyeTrack_3D(a1: \\\"./models\\\", a2: \\\"../logs\\\", a3: 3) == 0 ) /*0x14000f969*/\\n  {\\n    if ( dword_1400501CC > *(_DWORD *)(*(_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + 8LL) ) /*0x14000f989*/\\n    {\\n      sub_140034330(a1: &dword_1400501CC); /*0x14000f992*/\\n      if ( dword_1400501CC == -1 ) /*0x14000f99e*/\\n      {\\n        xmmword_1400503C8 = 0; /*0x14000f9a3*/\\n        sub_14000B820(); /*0x14000f9aa*/\\n        sub_140034700(Function: sub_140038DB0); /*0x14000f9b6*/\\n        sub_1400342C0(a1: &dword_1400501CC); /*0x14000f9c3*/\\n      }\\n    }\\n    v2 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000f9c8*/\\n    if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000f9d2*/\\n    {\\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000f9d4*/\\n      v2 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000f9d8*/\\n    }\\n    v18 = xmmword_1400503C8; /*0x14000f9e6*/\\n    v19 = v2; /*0x14000f9eb*/\\n    v15 = (const char *)&unk_14003EBF0; /*0x14000f9f7*/\\n    v16 = 17; /*0x14000f9fc*/\\n    v13[0] = \\\"K:\\\\\\\\Project\\\\\\\\VSProject\\\\\\\\RedMagic\\\\\\\\FaceTracking\\\\\\\\MMFaceTracking2\\\\\\\\main.cpp\\\"; /*0x14000fa0c*/\\n    LODWORD(v13[1]) = 682; /*0x14000fa11*/\\n    v14 = \\\"CaptureAndDisplayFrameThread\\\"; /*0x14000fa28*/\\n    sub_140008E60(a1: xmmword_1400503C8, a2: v13, a3: 4, a4: &v15); /*0x14000fa3d*/\\n    if ( v2 != nullptr && _InterlockedExchangeAdd(v2 + 2, 0xFFFFFFFF) == 1 ) /*0x14000fa57*/\\n    {\\n      (**(void (__fastcall ***)(volatile signed __int32 *))v2)(a1: v2); /*0x14000fa5f*/\\n      if ( _InterlockedExchangeAdd(v2 + 3, 0xFFFFFFFF) == 1 ) /*0x14000fa69*/\\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v2 + 8LL))(a1: v2); /*0x14000fa71*/\\n    }\\n    return 0xFFFFFFFFLL; /*0x14000fa71*/\\n  }\\n  memset(v24, 0, sizeof(v24)); /*0x14000faa1*/\\n  v25 = 0; /*0x14000fab7*/\\n  memset(v22, 0, sizeof(v22)); /*0x14000fac1*/\\n  v23 = 0; /*0x14000fad1*/\\n  memset(v26, 0, sizeof(v26)); /*0x14000fad5*/\\n  if ( (int)sub_14000E9A0(a1: v1, a2: v24, a3: v22, a4: v26) < 0 ) /*0x14000fb0e*/\\n    return 0xFFFFFFFFLL; /*0x14000fb0e*/\\n  v5 = setCameraMat_3D(a1: v24, a2: v22, a3: v26, a4: 0); /*0x14000fb2c*/\\n  v17 = v5; /*0x14000fb2f*/\\n  ThreadLocalStoragePointer = (__int64 *)NtCurrentTeb()->ThreadLocalStoragePointer; /*0x14000fb33*/\\n  v7 = *ThreadLocalStoragePointer; /*0x14000fb44*/\\n  if ( dword_1400501CC > *(_DWORD *)(*ThreadLocalStoragePointer + 8) ) /*0x14000fb51*/\\n  {\\n    sub_140034330(a1: &dword_1400501CC); /*0x14000fb5a*/\\n    if ( dword_1400501CC == -1 ) /*0x14000fb66*/\\n    {\\n      xmmword_1400503C8 = 0; /*0x14000fb6b*/\\n      sub_14000B820(); /*0x14000fb72*/\\n      sub_140034700(Function: sub_140038DB0); /*0x14000fb7e*/\\n      sub_1400342C0(a1: &dword_1400501CC); /*0x14000fb8b*/\\n    }\\n  }\\n  v8 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fb90*/\\n  if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000fb9a*/\\n  {\\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000fb9c*/\\n    v8 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fba0*/\\n  }\\n  v18 = xmmword_1400503C8; /*0x14000fbae*/\\n  v19 = v8; /*0x14000fbb3*/\\n  v13[0] = \\\"K:\\\\\\\\Project\\\\\\\\VSProject\\\\\\\\RedMagic\\\\\\\\FaceTracking\\\\\\\\MMFaceTracking2\\\\\\\\main.cpp\\\"; /*0x14000fbbf*/\\n  LODWORD(v13[1]) = 692; /*0x14000fbc4*/\\n  v15 = \\\"setCameraMat_3D return = {}\\\"; /*0x14000fbe2*/\\n  v16 = 27; /*0x14000fbe7*/\\n  v14 = \\\"CaptureAndDisplayFrameThread\\\"; /*0x14000fbfa*/\\n  sub_140019630(a1: xmmword_1400503C8, a2: (unsigned int)v13, a3: v4, a4: (unsigned int)&v15, a5: (__int64)&v17); /*0x14000fc13*/\\n  if ( v8 != nullptr && _InterlockedExchangeAdd(v8 + 2, 0xFFFFFFFF) == 1 ) /*0x14000fc2d*/\\n  {\\n    (**(void (__fastcall ***)(volatile signed __int32 *))v8)(a1: v8); /*0x14000fc35*/\\n    if ( _InterlockedExchangeAdd(v8 + 3, 0xFFFFFFFF) == 1 ) /*0x14000fc41*/\\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v8 + 8LL))(a1: v8); /*0x14000fc49*/\\n  }\\n  if ( v5 != 1 ) /*0x14000fc50*/\\n  {\\n    if ( (int)sub_14000E9A0(a1: v9, a2: v24, a3: v22, a4: v26) < 0 ) /*0x14000fc68*/\\n      return 0xFFFFFFFFLL; /*0x14000fa9b*/\\n    setCameraMat_3D(a1: v24, a2: v22, a3: v26, a4: 0); /*0x14000fc80*/\\n  }\\n  setFaceAreaTime_3D(); /*0x14000fc86*/\\n  *(__m128i *)v21 = _mm_load_si128((const __m128i *)&xmmword_14003F3E0); /*0x14000fc97*/\\n  *(__m128i *)&v21[2] = _mm_load_si128((const __m128i *)&xmmword_14003F340); /*0x14000fca3*/\\n  *(__m128i *)&v21[4] = _mm_load_si128((const __m128i *)&xmmword_14003F360); /*0x14000fcaf*/\\n  *(__m128i *)&v21[6] = _mm_load_si128((const __m128i *)&xmmword_14003F3F0); /*0x14000fcbb*/\\n  *(__m128i *)&v21[8] = _mm_load_si128((const __m128i *)&xmmword_14003F350); /*0x14000fcc7*/\\n  *(__m128i *)&v21[10] = _mm_load_si128((const __m128i *)&xmmword_14003F370); /*0x14000fcd3*/\\n  setEnableTrackArea_3D(a1: v21); /*0x14000fcdb*/\\n  *(__m128i *)v20 = _mm_load_si128((const __m128i *)&xmmword_14003F320); /*0x14000fce9*/\\n  *(__m128i *)&v20[2] = _mm_load_si128((const __m128i *)&xmmword_14003F330); /*0x14000fcf7*/\\n  *(__m128i *)&v20[4] = _mm_load_si128((const __m128i *)&xmmword_14003F310); /*0x14000fd04*/\\n  setHighConArea_3D(a1: v20); /*0x14000fd0e*/\\n  if ( dword_1400501CC > *(_DWORD *)(v7 + 8) ) /*0x14000fd1e*/\\n  {\\n    sub_140034330(a1: &dword_1400501CC); /*0x14000fd27*/\\n    if ( dword_1400501CC == -1 ) /*0x14000fd32*/\\n    {\\n      xmmword_1400503C8 = 0; /*0x14000fd37*/\\n      sub_14000B820(); /*0x14000fd3e*/\\n      sub_140034700(Function: sub_140038DB0); /*0x14000fd4a*/\\n      sub_1400342C0(a1: &dword_1400501CC); /*0x14000fd57*/\\n    }\\n  }\\n  v10 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fd5c*/\\n  if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000fd66*/\\n  {\\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000fd68*/\\n    v10 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fd6c*/\\n  }\\n  v18 = xmmword_1400503C8; /*0x14000fd7a*/\\n  v19 = v10; /*0x14000fd7f*/\\n  v15 = \\\"open: CaptureAndDisplayFrameThread\\\";\\n  v16 = 34; /*0x14000fd90*/\\n  v13[0] = \\\"K:\\\\\\\\Project\\\\\\\\VSProject\\\\\\\\RedMagic\\\\\\\\FaceTracking\\\\\\\\MMFaceTracking2\\\\\\\\main.cpp\\\"; /*0x14000fd99*/\\n  LODWORD(v13[1]) = 759; /*0x14000fd9e*/\\n  v14 = \\\"CaptureAndDisplayFrameThread\\\"; /*0x14000fdae*/\\n  sub_140008E60(a1: xmmword_1400503C8, a2: v13, a3: 2, a4: &v15); /*0x14000fdc3*/\\n  if ( v10 != nullptr && _InterlockedExchangeAdd(v10 + 2, 0xFFFFFFFF) == 1 ) /*0x14000fdd8*/\\n  {\\n    (**(void (__fastcall ***)(volatile signed __int32 *))v10)(a1: v10); /*0x14000fde0*/\\n    if ( _InterlockedExchangeAdd(v10 + 3, 0xFFFFFFFF) == 1 ) /*0x14000fdec*/\\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v10 + 8LL))(a1: v10); /*0x14000fdf4*/\\n  }\\n  while ( byte_14004D124 != 0 ) /*0x14000fdfe*/\\n    sub_14000D4D0(); /*0x14000fe00*/\\n  if ( dword_1400501CC > *(_DWORD *)(v7 + 8) ) /*0x14000fe18*/\\n  {\\n    sub_140034330(a1: &dword_1400501CC); /*0x14000fe21*/\\n    if ( dword_1400501CC == -1 ) /*0x14000fe2d*/\\n    {\\n      xmmword_1400503C8 = 0; /*0x14000fe32*/\\n      sub_14000B820(); /*0x14000fe39*/\\n      sub_140034700(Function: sub_140038DB0); /*0x14000fe45*/\\n      sub_1400342C0(a1: &dword_1400501CC); /*0x14000fe52*/\\n    }\\n  }\\n  v11 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fe57*/\\n  if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000fe61*/\\n  {\\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000fe63*/\\n    v11 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fe67*/\\n  }\\n  v18 = xmmword_1400503C8; /*0x14000fe75*/\\n  v19 = v11; /*0x14000fe7a*/\\n  v15 = \\\"exit: CaptureAndDisplayFrameThread\\\";\\n  v16 = 34; /*0x14000fe8b*/\\n  v13[0] = \\\"K:\\\\\\\\Project\\\\\\\\VSProject\\\\\\\\RedMagic\\\\\\\\FaceTracking\\\\\\\\MMFaceTracking2\\\\\\\\main.cpp\\\"; /*0x14000fe94*/\\n  LODWORD(v13[1]) = 765; /*0x14000fe99*/\\n  v14 = \\\"CaptureAndDisplayFrameThread\\\"; /*0x14000fea9*/\\n  sub_140008E60(a1: xmmword_1400503C8, a2: v13, a3: 2, a4: &v15); /*0x14000febe*/\\n  if ( v11 != nullptr && _InterlockedExchangeAdd(v11 + 2, 0xFFFFFFFF) == 1 ) /*0x14000fed3*/\\n  {\\n    (**(void (__fastcall ***)(volatile signed __int32 *))v11)(a1: v11); /*0x14000fedb*/\\n    if ( _InterlockedExchangeAdd(v11 + 3, 0xFFFFFFFF) == 1 ) /*0x14000fee5*/\\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v11 + 8LL))(a1: v11); /*0x14000feed*/\\n  }\\n  cv::destroyAllWindows(this: v12); /*0x14000fef0*/\\n  releaseBoeEyeTrack_3D(); /*0x14000fef6*/\\n  return 0; /*0x14000fa79*/\\n}\",\"refs\":[{\"addr\":\"0x140034330\",\"name\":\"sub_140034330\"},{\"addr\":\"0x1400501cc\",\"name\":\"dword_1400501CC\"},{\"addr\":\"0x1400503c8\",\"name\":\"xmmword_1400503C8\"},{\"addr\":\"0x14000b820\",\"name\":\"sub_14000B820\"},{\"addr\":\"0x140034700\",\"name\":\"sub_140034700\"},{\"addr\":\"0x140038db0\",\"name\":\"sub_140038DB0\"},{\"addr\":\"0x1400342c0\",\"name\":\"sub_1400342C0\"},{\"addr\":\"0x14003ebf0\",\"name\":\"unk_14003EBF0\"},{\"addr\":\"0x14003e5e0\",\"name\":\"aKProjectVsproj\",\"string\":\"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"},{\"addr\":\"0x14003ec08\",\"name\":\"aCaptureanddisp\",\"string\":\"CaptureAndDisplayFrameThread\"},{\"addr\":\"0x140008e60\",\"name\":\"sub_140008E60\"},{\"addr\":\"0x140039008\",\"name\":\"initBoeEyeTrack_3D\"},{\"addr\":\"0x14003ebe0\",\"name\":\"aModels\",\"string\":\"./models\"},{\"addr\":\"0x14003ebd8\",\"name\":\"aLogs\",\"string\":\"../logs\"},{\"addr\":\"0x14000e9a0\",\"name\":\"sub_14000E9A0\"},{\"addr\":\"0x140039030\",\"name\":\"setCameraMat_3D\"},{\"addr\":\"0x14003ec28\",\"name\":\"aSetcameramat3d\",\"string\":\"setCameraMat_3D return = {}\"},{\"addr\":\"0x140019630\",\"name\":\"sub_140019630\"},{\"addr\":\"0x140039018\",\"name\":\"setFaceAreaTime_3D\"},{\"addr\":\"0x14003f3e0\",\"name\":\"xmmword_14003F3E0\"},{\"addr\":\"0x14003f340\",\"name\":\"xmmword_14003F340\"},{\"addr\":\"0x14003f360\",\"name\":\"xmmword_14003F360\"},{\"addr\":\"0x14003f3f0\",\"name\":\"xmmword_14003F3F0\"},{\"addr\":\"0x14003f350\",\"name\":\"xmmword_14003F350\"},{\"addr\":\"0x14003f370\",\"name\":\"xmmword_14003F370\"},{\"addr\":\"0x140039028\",\"name\":\"setEnableTrackArea_3D\"},{\"addr\":\"0x14003f320\",\"name\":\"xmmword_14003F320\"},{\"addr\":\"0x14003f330\",\"name\":\"xmmword_14003F330\"},{\"addr\":\"0x14003f310\",\"name\":\"xmmword_14003F310\"},{\"addr\":\"0x140039010\",\"name\":\"setHighConArea_3D\"},{\"addr\":\"0x14003ec48\",\"name\":\"aOpenCaptureand\",\"string\":\"open: CaptureAndDisplayFrameThread\"},{\"addr\":\"0x14000d4d0\",\"name\":\"sub_14000D4D0\"},{\"addr\":\"0x14004d124\",\"name\":\"byte_14004D124\"},{\"addr\":\"0x14003ec70\",\"name\":\"aExitCaptureand\",\"string\":\"exit: CaptureAndDisplayFrameThread\"},{\"addr\":\"0x140039780\",\"name\":\"?destroyAllWindows@cv@@YAXXZ\"},{\"addr\":\"0x140039020\",\"name\":\"releaseBoeEyeTrack_3D\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_14000F920",
+      "code": "__int64 __fastcall sub_14000F920(LPVOID lpThreadParameter)\n{\n  __int64 v1; // rcx\n  volatile signed __int32 *v2; // rbx\n  int v4; // r8d\n  int v5; // r15d\n  __int64 *ThreadLocalStoragePointer; // rcx\n  __int64 v7; // r13\n  volatile signed __int32 *v8; // rbx\n  __int64 v9; // rcx\n  volatile signed __int32 *v10; // rbx\n  volatile signed __int32 *v11; // rbx\n  cv *v12; // rcx\n  _QWORD v13[2]; // [rsp+30h] [rbp-D0h] BYREF\n  const char *v14; // [rsp+40h] [rbp-C0h]\n  const char *v15; // [rsp+50h] [rbp-B0h] BYREF\n  __int64 v16; // [rsp+58h] [rbp-A8h]\n  int v17; // [rsp+60h] [rbp-A0h] BYREF\n  __int64 v18; // [rsp+68h] [rbp-98h]\n  volatile signed __int32 *v19; // [rsp+70h] [rbp-90h]\n  _QWORD v20[6]; // [rsp+78h] [rbp-88h] BYREF\n  _QWORD v21[12]; // [rsp+B0h] [rbp-50h] BYREF\n  _QWORD v22[8]; // [rsp+110h] [rbp+10h] BYREF\n  __int64 v23; // [rsp+150h] [rbp+50h]\n  _QWORD v24[8]; // [rsp+160h] [rbp+60h] BYREF\n  __int64 v25; // [rsp+1A0h] [rbp+A0h]\n  _QWORD v26[10]; // [rsp+1B0h] [rbp+B0h] BYREF\n\n  if ( (unsigned int)initBoeEyeTrack_3D(a1: \"./models\", a2: \"../logs\", a3: 3) == 0 ) /*0x14000f969*/\n  {\n    if ( dword_1400501CC > *(_DWORD *)(*(_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + 8LL) ) /*0x14000f989*/\n    {\n      sub_140034330(a1: &dword_1400501CC); /*0x14000f992*/\n      if ( dword_1400501CC == -1 ) /*0x14000f99e*/\n      {\n        xmmword_1400503C8 = 0; /*0x14000f9a3*/\n        sub_14000B820(); /*0x14000f9aa*/\n        sub_140034700(Function: sub_140038DB0); /*0x14000f9b6*/\n        sub_1400342C0(a1: &dword_1400501CC); /*0x14000f9c3*/\n      }\n    }\n    v2 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000f9c8*/\n    if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000f9d2*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000f9d4*/\n      v2 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000f9d8*/\n    }\n    v18 = xmmword_1400503C8; /*0x14000f9e6*/\n    v19 = v2; /*0x14000f9eb*/\n    v15 = (const char *)&unk_14003EBF0; /*0x14000f9f7*/\n    v16 = 17; /*0x14000f9fc*/\n    v13[0] = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000fa0c*/\n    LODWORD(v13[1]) = 682; /*0x14000fa11*/\n    v14 = \"CaptureAndDisplayFrameThread\"; /*0x14000fa28*/\n    sub_140008E60(a1: xmmword_1400503C8, a2: v13, a3: 4, a4: &v15); /*0x14000fa3d*/\n    if ( v2 != nullptr && _InterlockedExchangeAdd(v2 + 2, 0xFFFFFFFF) == 1 ) /*0x14000fa57*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v2)(a1: v2); /*0x14000fa5f*/\n      if ( _InterlockedExchangeAdd(v2 + 3, 0xFFFFFFFF) == 1 ) /*0x14000fa69*/\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v2 + 8LL))(a1: v2); /*0x14000fa71*/\n    }\n    return 0xFFFFFFFFLL; /*0x14000fa71*/\n  }\n  memset(v24, 0, sizeof(v24)); /*0x14000faa1*/\n  v25 = 0; /*0x14000fab7*/\n  memset(v22, 0, sizeof(v22)); /*0x14000fac1*/\n  v23 = 0; /*0x14000fad1*/\n  memset(v26, 0, sizeof(v26)); /*0x14000fad5*/\n  if ( (int)sub_14000E9A0(a1: v1, a2: v24, a3: v22, a4: v26) < 0 ) /*0x14000fb0e*/\n    return 0xFFFFFFFFLL; /*0x14000fb0e*/\n  v5 = setCameraMat_3D(a1: v24, a2: v22, a3: v26, a4: 0); /*0x14000fb2c*/\n  v17 = v5; /*0x14000fb2f*/\n  ThreadLocalStoragePointer = (__int64 *)NtCurrentTeb()->ThreadLocalStoragePointer; /*0x14000fb33*/\n  v7 = *ThreadLocalStoragePointer; /*0x14000fb44*/\n  if ( dword_1400501CC > *(_DWORD *)(*ThreadLocalStoragePointer + 8) ) /*0x14000fb51*/\n  {\n    sub_140034330(a1: &dword_1400501CC); /*0x14000fb5a*/\n    if ( dword_1400501CC == -1 ) /*0x14000fb66*/\n    {\n      xmmword_1400503C8 = 0; /*0x14000fb6b*/\n      sub_14000B820(); /*0x14000fb72*/\n      sub_140034700(Function: sub_140038DB0); /*0x14000fb7e*/\n      sub_1400342C0(a1: &dword_1400501CC); /*0x14000fb8b*/\n    }\n  }\n  v8 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fb90*/\n  if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000fb9a*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000fb9c*/\n    v8 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fba0*/\n  }\n  v18 = xmmword_1400503C8; /*0x14000fbae*/\n  v19 = v8; /*0x14000fbb3*/\n  v13[0] = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000fbbf*/\n  LODWORD(v13[1]) = 692; /*0x14000fbc4*/\n  v15 = \"setCameraMat_3D return = {}\"; /*0x14000fbe2*/\n  v16 = 27; /*0x14000fbe7*/\n  v14 = \"CaptureAndDisplayFrameThread\"; /*0x14000fbfa*/\n  sub_140019630(a1: xmmword_1400503C8, a2: (unsigned int)v13, a3: v4, a4: (unsigned int)&v15, a5: (__int64)&v17); /*0x14000fc13*/\n  if ( v8 != nullptr && _InterlockedExchangeAdd(v8 + 2, 0xFFFFFFFF) == 1 ) /*0x14000fc2d*/\n  {\n    (**(void (__fastcall ***)(volatile signed __int32 *))v8)(a1: v8); /*0x14000fc35*/\n    if ( _InterlockedExchangeAdd(v8 + 3, 0xFFFFFFFF) == 1 ) /*0x14000fc41*/\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v8 + 8LL))(a1: v8); /*0x14000fc49*/\n  }\n  if ( v5 != 1 ) /*0x14000fc50*/\n  {\n    if ( (int)sub_14000E9A0(a1: v9, a2: v24, a3: v22, a4: v26) < 0 ) /*0x14000fc68*/\n      return 0xFFFFFFFFLL; /*0x14000fa9b*/\n    setCameraMat_3D(a1: v24, a2: v22, a3: v26, a4: 0); /*0x14000fc80*/\n  }\n  setFaceAreaTime_3D(); /*0x14000fc86*/\n  *(__m128i *)v21 = _mm_load_si128((const __m128i *)&xmmword_14003F3E0); /*0x14000fc97*/\n  *(__m128i *)&v21[2] = _mm_load_si128((const __m128i *)&xmmword_14003F340); /*0x14000fca3*/\n  *(__m128i *)&v21[4] = _mm_load_si128((const __m128i *)&xmmword_14003F360); /*0x14000fcaf*/\n  *(__m128i *)&v21[6] = _mm_load_si128((const __m128i *)&xmmword_14003F3F0); /*0x14000fcbb*/\n  *(__m128i *)&v21[8] = _mm_load_si128((const __m128i *)&xmmword_14003F350); /*0x14000fcc7*/\n  *(__m128i *)&v21[10] = _mm_load_si128((const __m128i *)&xmmword_14003F370); /*0x14000fcd3*/\n  setEnableTrackArea_3D(a1: v21); /*0x14000fcdb*/\n  *(__m128i *)v20 = _mm_load_si128((const __m128i *)&xmmword_14003F320); /*0x14000fce9*/\n  *(__m128i *)&v20[2] = _mm_load_si128((const __m128i *)&xmmword_14003F330); /*0x14000fcf7*/\n  *(__m128i *)&v20[4] = _mm_load_si128((const __m128i *)&xmmword_14003F310); /*0x14000fd04*/\n  setHighConArea_3D(a1: v20); /*0x14000fd0e*/\n  if ( dword_1400501CC > *(_DWORD *)(v7 + 8) ) /*0x14000fd1e*/\n  {\n    sub_140034330(a1: &dword_1400501CC); /*0x14000fd27*/\n    if ( dword_1400501CC == -1 ) /*0x14000fd32*/\n    {\n      xmmword_1400503C8 = 0; /*0x14000fd37*/\n      sub_14000B820(); /*0x14000fd3e*/\n      sub_140034700(Function: sub_140038DB0); /*0x14000fd4a*/\n      sub_1400342C0(a1: &dword_1400501CC); /*0x14000fd57*/\n    }\n  }\n  v10 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fd5c*/\n  if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000fd66*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000fd68*/\n    v10 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fd6c*/\n  }\n  v18 = xmmword_1400503C8; /*0x14000fd7a*/\n  v19 = v10; /*0x14000fd7f*/\n  v15 = \"open: CaptureAndDisplayFrameThread\";\n  v16 = 34; /*0x14000fd90*/\n  v13[0] = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000fd99*/\n  LODWORD(v13[1]) = 759; /*0x14000fd9e*/\n  v14 = \"CaptureAndDisplayFrameThread\"; /*0x14000fdae*/\n  sub_140008E60(a1: xmmword_1400503C8, a2: v13, a3: 2, a4: &v15); /*0x14000fdc3*/\n  if ( v10 != nullptr && _InterlockedExchangeAdd(v10 + 2, 0xFFFFFFFF) == 1 ) /*0x14000fdd8*/\n  {\n    (**(void (__fastcall ***)(volatile signed __int32 *))v10)(a1: v10); /*0x14000fde0*/\n    if ( _InterlockedExchangeAdd(v10 + 3, 0xFFFFFFFF) == 1 ) /*0x14000fdec*/\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v10 + 8LL))(a1: v10); /*0x14000fdf4*/\n  }\n  while ( byte_14004D124 != 0 ) /*0x14000fdfe*/\n    sub_14000D4D0(); /*0x14000fe00*/\n  if ( dword_1400501CC > *(_DWORD *)(v7 + 8) ) /*0x14000fe18*/\n  {\n    sub_140034330(a1: &dword_1400501CC); /*0x14000fe21*/\n    if ( dword_1400501CC == -1 ) /*0x14000fe2d*/\n    {\n      xmmword_1400503C8 = 0; /*0x14000fe32*/\n      sub_14000B820(); /*0x14000fe39*/\n      sub_140034700(Function: sub_140038DB0); /*0x14000fe45*/\n      sub_1400342C0(a1: &dword_1400501CC); /*0x14000fe52*/\n    }\n  }\n  v11 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fe57*/\n  if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000fe61*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000fe63*/\n    v11 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000fe67*/\n  }\n  v18 = xmmword_1400503C8; /*0x14000fe75*/\n  v19 = v11; /*0x14000fe7a*/\n  v15 = \"exit: CaptureAndDisplayFrameThread\";\n  v16 = 34; /*0x14000fe8b*/\n  v13[0] = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000fe94*/\n  LODWORD(v13[1]) = 765; /*0x14000fe99*/\n  v14 = \"CaptureAndDisplayFrameThread\"; /*0x14000fea9*/\n  sub_140008E60(a1: xmmword_1400503C8, a2: v13, a3: 2, a4: &v15); /*0x14000febe*/\n  if ( v11 != nullptr && _InterlockedExchangeAdd(v11 + 2, 0xFFFFFFFF) == 1 ) /*0x14000fed3*/\n  {\n    (**(void (__fastcall ***)(volatile signed __int32 *))v11)(a1: v11); /*0x14000fedb*/\n    if ( _InterlockedExchangeAdd(v11 + 3, 0xFFFFFFFF) == 1 ) /*0x14000fee5*/\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v11 + 8LL))(a1: v11); /*0x14000feed*/\n  }\n  cv::destroyAllWindows(this: v12); /*0x14000fef0*/\n  releaseBoeEyeTrack_3D(); /*0x14000fef6*/\n  return 0; /*0x14000fa79*/\n}",
+      "refs": [
+        {
+          "addr": "0x140034330",
+          "name": "sub_140034330"
+        },
+        {
+          "addr": "0x1400501cc",
+          "name": "dword_1400501CC"
+        },
+        {
+          "addr": "0x1400503c8",
+          "name": "xmmword_1400503C8"
+        },
+        {
+          "addr": "0x14000b820",
+          "name": "sub_14000B820"
+        },
+        {
+          "addr": "0x140034700",
+          "name": "sub_140034700"
+        },
+        {
+          "addr": "0x140038db0",
+          "name": "sub_140038DB0"
+        },
+        {
+          "addr": "0x1400342c0",
+          "name": "sub_1400342C0"
+        },
+        {
+          "addr": "0x14003ebf0",
+          "name": "unk_14003EBF0"
+        },
+        {
+          "addr": "0x14003e5e0",
+          "name": "aKProjectVsproj",
+          "string": "K:\\Project\\VSProject\\RedMagic\\FaceTracking\\MMFaceTracking2\\main.cpp"
+        },
+        {
+          "addr": "0x14003ec08",
+          "name": "aCaptureanddisp",
+          "string": "CaptureAndDisplayFrameThread"
+        },
+        {
+          "addr": "0x140008e60",
+          "name": "sub_140008E60"
+        },
+        {
+          "addr": "0x140039008",
+          "name": "initBoeEyeTrack_3D"
+        },
+        {
+          "addr": "0x14003ebe0",
+          "name": "aModels",
+          "string": "./models"
+        },
+        {
+          "addr": "0x14003ebd8",
+          "name": "aLogs",
+          "string": "../logs"
+        },
+        {
+          "addr": "0x14000e9a0",
+          "name": "sub_14000E9A0"
+        },
+        {
+          "addr": "0x140039030",
+          "name": "setCameraMat_3D"
+        },
+        {
+          "addr": "0x14003ec28",
+          "name": "aSetcameramat3d",
+          "string": "setCameraMat_3D return = {}"
+        },
+        {
+          "addr": "0x140019630",
+          "name": "sub_140019630"
+        },
+        {
+          "addr": "0x140039018",
+          "name": "setFaceAreaTime_3D"
+        },
+        {
+          "addr": "0x14003f3e0",
+          "name": "xmmword_14003F3E0"
+        },
+        {
+          "addr": "0x14003f340",
+          "name": "xmmword_14003F340"
+        },
+        {
+          "addr": "0x14003f360",
+          "name": "xmmword_14003F360"
+        },
+        {
+          "addr": "0x14003f3f0",
+          "name": "xmmword_14003F3F0"
+        },
+        {
+          "addr": "0x14003f350",
+          "name": "xmmword_14003F350"
+        },
+        {
+          "addr": "0x14003f370",
+          "name": "xmmword_14003F370"
+        },
+        {
+          "addr": "0x140039028",
+          "name": "setEnableTrackArea_3D"
+        },
+        {
+          "addr": "0x14003f320",
+          "name": "xmmword_14003F320"
+        },
+        {
+          "addr": "0x14003f330",
+          "name": "xmmword_14003F330"
+        },
+        {
+          "addr": "0x14003f310",
+          "name": "xmmword_14003F310"
+        },
+        {
+          "addr": "0x140039010",
+          "name": "setHighConArea_3D"
+        },
+        {
+          "addr": "0x14003ec48",
+          "name": "aOpenCaptureand",
+          "string": "open: CaptureAndDisplayFrameThread"
+        },
+        {
+          "addr": "0x14000d4d0",
+          "name": "sub_14000D4D0"
+        },
+        {
+          "addr": "0x14004d124",
+          "name": "byte_14004D124"
+        },
+        {
+          "addr": "0x14003ec70",
+          "name": "aExitCaptureand",
+          "string": "exit: CaptureAndDisplayFrameThread"
+        },
+        {
+          "addr": "0x140039780",
+          "name": "?destroyAllWindows@cv@@YAXXZ"
+        },
+        {
+          "addr": "0x140039020",
+          "name": "releaseBoeEyeTrack_3D"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

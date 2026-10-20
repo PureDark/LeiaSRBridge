@@ -1,0 +1,1601 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18005E380\",\"asm\":{\"name\":\"sub_18005E380\",\"start_ea\":\"0x18005e380\",\"segment\":\".text\",\"lines\":[{\"addr\":\"18005e380\",\"instruction\":\"mov [rsp+arg_0], rcx\",\"label\":\"sub_18005E380\"},{\"addr\":\"18005e385\",\"instruction\":\"push rsi\"},{\"addr\":\"18005e386\",\"instruction\":\"push rdi\"},{\"addr\":\"18005e387\",\"instruction\":\"sub rsp, 1F8h\"},{\"addr\":\"18005e38e\",\"instruction\":\"mov rax, cs:__security_cookie\",\"refs\":[{\"addr\":\"0x1800a7080\",\"name\":\"__security_cookie\"}]},{\"addr\":\"18005e395\",\"instruction\":\"xor rax, rsp\"},{\"addr\":\"18005e398\",\"instruction\":\"mov [rsp+208h+var_20], rax\"},{\"addr\":\"18005e3a0\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e3a8\",\"instruction\":\"add rax, 180h\"},{\"addr\":\"18005e3ae\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e3b1\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e3b6\",\"instruction\":\"mov [rsp+208h+var_1E0], 0\"},{\"addr\":\"18005e3be\",\"instruction\":\"mov dword ptr [rsp+208h+var_1E8], 0FFFFFFFFh\"},{\"addr\":\"18005e3c6\",\"instruction\":\"mov r9d, 4\"},{\"addr\":\"18005e3cc\",\"instruction\":\"xor r8d, r8d\"},{\"addr\":\"18005e3cf\",\"instruction\":\"mov rdx, rax\"},{\"addr\":\"18005e3d2\",\"instruction\":\"lea rcx, [rsp+208h+var_D8]\"},{\"addr\":\"18005e3da\",\"instruction\":\"call sub_18005B640\",\"refs\":[{\"addr\":\"0x18005b640\",\"name\":\"sub_18005B640\"}]},{\"addr\":\"18005e3df\",\"instruction\":\"lea rcx, [rsp+208h+var_68]\"},{\"addr\":\"18005e3e7\",\"instruction\":\"mov rdi, rcx\"},{\"addr\":\"18005e3ea\",\"instruction\":\"mov rsi, rax\"},{\"addr\":\"18005e3ed\",\"instruction\":\"mov ecx, 20h ; ' '\"},{\"addr\":\"18005e3f2\",\"instruction\":\"rep movsb\"},{\"addr\":\"18005e3f4\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e3fc\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e402\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e405\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e40a\",\"instruction\":\"mov [rsp+208h+var_1D8], rax\"},{\"addr\":\"18005e40f\",\"instruction\":\"mov rax, [rsp+208h+var_1D8]\"},{\"addr\":\"18005e414\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e417\",\"instruction\":\"mov rax, [rax+0D0h]\"},{\"addr\":\"18005e41e\",\"instruction\":\"mov [rsp+208h+var_168], rax\"},{\"addr\":\"18005e426\",\"instruction\":\"lea r8, [rsp+208h+var_68]\"},{\"addr\":\"18005e42e\",\"instruction\":\"mov edx, 1\"},{\"addr\":\"18005e433\",\"instruction\":\"mov rcx, [rsp+208h+var_1D8]\"},{\"addr\":\"18005e438\",\"instruction\":\"call [rsp+208h+var_168]\"},{\"addr\":\"18005e43f\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e447\",\"instruction\":\"cvtsi2ss xmm0, dword ptr [rax+0B8h]\"},{\"addr\":\"18005e44f\",\"instruction\":\"movss [rsp+208h+var_80], xmm0\"},{\"addr\":\"18005e458\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e460\",\"instruction\":\"cvtsi2ss xmm0, dword ptr [rax+0BCh]\"},{\"addr\":\"18005e468\",\"instruction\":\"movss [rsp+208h+var_7C], xmm0\"},{\"addr\":\"18005e471\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e479\",\"instruction\":\"cvtsi2ss xmm0, dword ptr [rax+0C0h]\"},{\"addr\":\"18005e481\",\"instruction\":\"movss [rsp+208h+var_78], xmm0\"},{\"addr\":\"18005e48a\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e492\",\"instruction\":\"cvtsi2ss xmm0, dword ptr [rax+0C4h]\"},{\"addr\":\"18005e49a\",\"instruction\":\"movss [rsp+208h+var_74], xmm0\"},{\"addr\":\"18005e4a3\",\"instruction\":\"xorps xmm0, xmm0\"},{\"addr\":\"18005e4a6\",\"instruction\":\"movss [rsp+208h+var_70], xmm0\"},{\"addr\":\"18005e4af\",\"instruction\":\"movss xmm0, cs:dword_180092040\",\"refs\":[{\"addr\":\"0x180092040\",\"name\":\"dword_180092040\"}]},{\"addr\":\"18005e4b7\",\"instruction\":\"movss [rsp+208h+var_6C], xmm0\"},{\"addr\":\"18005e4c0\",\"instruction\":\"mov [rsp+208h+var_90], 0\"},{\"addr\":\"18005e4cb\",\"instruction\":\"mov [rsp+208h+var_8C], 0\"},{\"addr\":\"18005e4d6\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e4de\",\"instruction\":\"mov eax, [rax+0C0h]\"},{\"addr\":\"18005e4e4\",\"instruction\":\"mov [rsp+208h+var_88], eax\"},{\"addr\":\"18005e4eb\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e4f3\",\"instruction\":\"mov eax, [rax+0C4h]\"},{\"addr\":\"18005e4f9\",\"instruction\":\"mov [rsp+208h+var_84], eax\"},{\"addr\":\"18005e500\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e508\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e50e\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e511\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e516\",\"instruction\":\"mov [rsp+208h+var_1D0], rax\"},{\"addr\":\"18005e51b\",\"instruction\":\"mov rax, [rsp+208h+var_1D0]\"},{\"addr\":\"18005e520\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e523\",\"instruction\":\"mov rax, [rax+0A8h]\"},{\"addr\":\"18005e52a\",\"instruction\":\"mov [rsp+208h+var_160], rax\"},{\"addr\":\"18005e532\",\"instruction\":\"lea r8, [rsp+208h+var_80]\"},{\"addr\":\"18005e53a\",\"instruction\":\"mov edx, 1\"},{\"addr\":\"18005e53f\",\"instruction\":\"mov rcx, [rsp+208h+var_1D0]\"},{\"addr\":\"18005e544\",\"instruction\":\"call [rsp+208h+var_160]\"},{\"addr\":\"18005e54b\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e553\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e559\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e55c\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e561\",\"instruction\":\"mov [rsp+208h+var_1C8], rax\"},{\"addr\":\"18005e566\",\"instruction\":\"mov rax, [rsp+208h+var_1C8]\"},{\"addr\":\"18005e56b\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e56e\",\"instruction\":\"mov rax, [rax+0B0h]\"},{\"addr\":\"18005e575\",\"instruction\":\"mov [rsp+208h+var_158], rax\"},{\"addr\":\"18005e57d\",\"instruction\":\"lea r8, [rsp+208h+var_90]\"},{\"addr\":\"18005e585\",\"instruction\":\"mov edx, 1\"},{\"addr\":\"18005e58a\",\"instruction\":\"mov rcx, [rsp+208h+var_1C8]\"},{\"addr\":\"18005e58f\",\"instruction\":\"call [rsp+208h+var_158]\"},{\"addr\":\"18005e596\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e59e\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e5a4\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e5a7\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e5ac\",\"instruction\":\"mov [rsp+208h+var_1C0], rax\"},{\"addr\":\"18005e5b1\",\"instruction\":\"mov rax, [rsp+208h+var_1C0]\"},{\"addr\":\"18005e5b6\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e5b9\",\"instruction\":\"mov rax, [rax+170h]\"},{\"addr\":\"18005e5c0\",\"instruction\":\"mov [rsp+208h+var_148], rax\"},{\"addr\":\"18005e5c8\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e5d0\",\"instruction\":\"mov rax, [rax+188h]\"},{\"addr\":\"18005e5d7\",\"instruction\":\"mov [rsp+208h+var_150], rax\"},{\"addr\":\"18005e5df\",\"instruction\":\"mov [rsp+208h+var_1E8], 0\"},{\"addr\":\"18005e5e8\",\"instruction\":\"xor r9d, r9d\"},{\"addr\":\"18005e5eb\",\"instruction\":\"mov r8, [rsp+208h+var_150]\"},{\"addr\":\"18005e5f3\",\"instruction\":\"mov edx, 1\"},{\"addr\":\"18005e5f8\",\"instruction\":\"mov rcx, [rsp+208h+var_1C0]\"},{\"addr\":\"18005e5fd\",\"instruction\":\"call [rsp+208h+var_148]\"},{\"addr\":\"18005e604\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e60c\",\"instruction\":\"add rax, 168h\"},{\"addr\":\"18005e612\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e615\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e61a\",\"instruction\":\"mov [rsp+208h+var_28], rax\"},{\"addr\":\"18005e622\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e62a\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e630\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e633\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e638\",\"instruction\":\"mov [rsp+208h+var_1B8], rax\"},{\"addr\":\"18005e63d\",\"instruction\":\"mov rax, [rsp+208h+var_1B8]\"},{\"addr\":\"18005e642\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e645\",\"instruction\":\"mov rax, [rax+0E0h]\"},{\"addr\":\"18005e64c\",\"instruction\":\"mov [rsp+208h+var_138], rax\"},{\"addr\":\"18005e654\",\"instruction\":\"lea r8, [rsp+208h+var_28]\"},{\"addr\":\"18005e65c\",\"instruction\":\"mov edx, 1\"},{\"addr\":\"18005e661\",\"instruction\":\"mov rcx, [rsp+208h+var_1B8]\"},{\"addr\":\"18005e666\",\"instruction\":\"call [rsp+208h+var_138]\"},{\"addr\":\"18005e66d\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e675\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e67b\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e67e\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e683\",\"instruction\":\"mov [rsp+208h+var_1B0], rax\"},{\"addr\":\"18005e688\",\"instruction\":\"mov rax, [rsp+208h+var_1B0]\"},{\"addr\":\"18005e68d\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e690\",\"instruction\":\"mov rax, [rax+0C8h]\"},{\"addr\":\"18005e697\",\"instruction\":\"mov [rsp+208h+var_128], rax\"},{\"addr\":\"18005e69f\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e6a7\",\"instruction\":\"add rax, 148h\"},{\"addr\":\"18005e6ad\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e6b0\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e6b5\",\"instruction\":\"mov [rsp+208h+var_130], rax\"},{\"addr\":\"18005e6bd\",\"instruction\":\"mov rdx, [rsp+208h+var_130]\"},{\"addr\":\"18005e6c5\",\"instruction\":\"mov rcx, [rsp+208h+var_1B0]\"},{\"addr\":\"18005e6ca\",\"instruction\":\"call [rsp+208h+var_128]\"},{\"addr\":\"18005e6d1\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e6d9\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e6df\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e6e2\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e6e7\",\"instruction\":\"mov [rsp+208h+var_1A8], rax\"},{\"addr\":\"18005e6ec\",\"instruction\":\"mov rax, [rsp+208h+var_1A8]\"},{\"addr\":\"18005e6f1\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e6f4\",\"instruction\":\"mov rax, [rax+0F0h]\"},{\"addr\":\"18005e6fb\",\"instruction\":\"mov [rsp+208h+var_118], rax\"},{\"addr\":\"18005e703\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e70b\",\"instruction\":\"add rax, 138h\"},{\"addr\":\"18005e711\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e714\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e719\",\"instruction\":\"mov [rsp+208h+var_120], rax\"},{\"addr\":\"18005e721\",\"instruction\":\"mov rdx, [rsp+208h+var_120]\"},{\"addr\":\"18005e729\",\"instruction\":\"mov rcx, [rsp+208h+var_1A8]\"},{\"addr\":\"18005e72e\",\"instruction\":\"call [rsp+208h+var_118]\"},{\"addr\":\"18005e735\",\"instruction\":\"nop\"},{\"addr\":\"18005e736\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e73e\",\"instruction\":\"add rax, 168h\"},{\"addr\":\"18005e744\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e747\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e74c\",\"instruction\":\"mov [rsp+208h+var_1A0], rax\"},{\"addr\":\"18005e751\",\"instruction\":\"mov rax, [rsp+208h+var_1A0]\"},{\"addr\":\"18005e756\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e759\",\"instruction\":\"mov rax, [rax+50h]\"},{\"addr\":\"18005e75d\",\"instruction\":\"mov [rsp+208h+var_110], rax\"},{\"addr\":\"18005e765\",\"instruction\":\"lea rdx, [rsp+208h+var_E0]\"},{\"addr\":\"18005e76d\",\"instruction\":\"mov rcx, [rsp+208h+var_1A0]\"},{\"addr\":\"18005e772\",\"instruction\":\"call [rsp+208h+var_110]\"},{\"addr\":\"18005e779\",\"instruction\":\"mov rdx, rax\"},{\"addr\":\"18005e77c\",\"instruction\":\"lea rcx, [rsp+208h+var_98]\"},{\"addr\":\"18005e784\",\"instruction\":\"call ??0?$_Callable_base@V_lambda_1c227fbe56a0f1a19f8d431e177777f3_@@$0A@@std@@QEAA@AEBV_lambda_1c227fbe56a0f1a19f8d431e177777f3_@@@Z; std::_Callable_base<_lambda_1c227fbe56a0f1a19f8d431e177777f3_,0>::_Callable_base<_lambda_1c227fbe56a0f1a19f8d431e177777f3_,0>(_lambda_1c227fbe56a0f1a19f8d431e177777f3_ const &)\",\"refs\":[{\"addr\":\"0x180019740\",\"name\":\"??0?$_Callable_base@V_lambda_1c227fbe56a0f1a19f8d431e177777f3_@@$0A@@std@@QEAA@AEBV_lambda_1c227fbe56a0f1a19f8d431e177777f3_@@@Z\"}]},{\"addr\":\"18005e789\",\"instruction\":\"nop\"},{\"addr\":\"18005e78a\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e792\",\"instruction\":\"add rax, 128h\"},{\"addr\":\"18005e798\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e79b\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e7a0\",\"instruction\":\"mov [rsp+208h+var_198], rax\"},{\"addr\":\"18005e7a5\",\"instruction\":\"mov rax, [rsp+208h+var_198]\"},{\"addr\":\"18005e7aa\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e7ad\",\"instruction\":\"mov rax, [rax+78h]\"},{\"addr\":\"18005e7b1\",\"instruction\":\"mov [rsp+208h+var_108], rax\"},{\"addr\":\"18005e7b9\",\"instruction\":\"xor edx, edx\"},{\"addr\":\"18005e7bb\",\"instruction\":\"mov rcx, [rsp+208h+var_198]\"},{\"addr\":\"18005e7c0\",\"instruction\":\"call [rsp+208h+var_108]\"},{\"addr\":\"18005e7c7\",\"instruction\":\"mov r8d, eax\"},{\"addr\":\"18005e7ca\",\"instruction\":\"mov edx, 3\"},{\"addr\":\"18005e7cf\",\"instruction\":\"lea rcx, [rsp+208h+var_98]\"},{\"addr\":\"18005e7d7\",\"instruction\":\"call sub_18005BA20\",\"refs\":[{\"addr\":\"0x18005ba20\",\"name\":\"sub_18005BA20\"}]},{\"addr\":\"18005e7dc\",\"instruction\":\"nop\"},{\"addr\":\"18005e7dd\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e7e5\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e7eb\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e7ee\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e7f3\",\"instruction\":\"mov [rsp+208h+var_188], rax\"},{\"addr\":\"18005e7fb\",\"instruction\":\"mov rax, [rsp+208h+var_188]\"},{\"addr\":\"18005e803\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e806\",\"instruction\":\"mov rax, [rax+100h]\"},{\"addr\":\"18005e80d\",\"instruction\":\"mov [rsp+208h+var_F0], rax\"},{\"addr\":\"18005e815\",\"instruction\":\"mov rax, [rsp+208h+var_98]\"},{\"addr\":\"18005e81d\",\"instruction\":\"mov [rsp+208h+var_100], rax\"},{\"addr\":\"18005e825\",\"instruction\":\"mov rax, [rsp+208h+var_100]\"},{\"addr\":\"18005e82d\",\"instruction\":\"mov [rsp+208h+var_F8], rax\"},{\"addr\":\"18005e835\",\"instruction\":\"mov r8, [rsp+208h+var_F8]\"},{\"addr\":\"18005e83d\",\"instruction\":\"xor edx, edx\"},{\"addr\":\"18005e83f\",\"instruction\":\"mov rcx, [rsp+208h+var_188]\"},{\"addr\":\"18005e847\",\"instruction\":\"call [rsp+208h+var_F0]\"},{\"addr\":\"18005e84e\",\"instruction\":\"nop\"},{\"addr\":\"18005e84f\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e857\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e85d\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e860\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e865\",\"instruction\":\"mov [rsp+208h+var_180], rax\"},{\"addr\":\"18005e86d\",\"instruction\":\"mov rax, [rsp+208h+var_180]\"},{\"addr\":\"18005e875\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e878\",\"instruction\":\"mov rax, [rax+0A0h]\"},{\"addr\":\"18005e87f\",\"instruction\":\"mov [rsp+208h+var_E8], rax\"},{\"addr\":\"18005e887\",\"instruction\":\"mov edx, 4\"},{\"addr\":\"18005e88c\",\"instruction\":\"mov rcx, [rsp+208h+var_180]\"},{\"addr\":\"18005e894\",\"instruction\":\"call [rsp+208h+var_E8]\"},{\"addr\":\"18005e89b\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e8a3\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e8a9\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e8ac\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e8b1\",\"instruction\":\"mov [rsp+208h+var_178], rax\"},{\"addr\":\"18005e8b9\",\"instruction\":\"mov rax, [rsp+208h+var_178]\"},{\"addr\":\"18005e8c1\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e8c4\",\"instruction\":\"mov rax, [rax+60h]\"},{\"addr\":\"18005e8c8\",\"instruction\":\"mov [rsp+208h+var_170], rax\"},{\"addr\":\"18005e8d0\",\"instruction\":\"mov dword ptr [rsp+208h+var_1E8], 0\"},{\"addr\":\"18005e8d8\",\"instruction\":\"xor r9d, r9d\"},{\"addr\":\"18005e8db\",\"instruction\":\"mov r8d, 1\"},{\"addr\":\"18005e8e1\",\"instruction\":\"mov edx, 3\"},{\"addr\":\"18005e8e6\",\"instruction\":\"mov rcx, [rsp+208h+var_178]\"},{\"addr\":\"18005e8ee\",\"instruction\":\"call [rsp+208h+var_170]\"},{\"addr\":\"18005e8f5\",\"instruction\":\"nop\"},{\"addr\":\"18005e8f6\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e8fe\",\"instruction\":\"add rax, 180h\"},{\"addr\":\"18005e904\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e907\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e90c\",\"instruction\":\"mov [rsp+208h+var_1E0], 0\"},{\"addr\":\"18005e914\",\"instruction\":\"mov dword ptr [rsp+208h+var_1E8], 0FFFFFFFFh\"},{\"addr\":\"18005e91c\",\"instruction\":\"xor r9d, r9d\"},{\"addr\":\"18005e91f\",\"instruction\":\"mov r8d, 4\"},{\"addr\":\"18005e925\",\"instruction\":\"mov rdx, rax\"},{\"addr\":\"18005e928\",\"instruction\":\"lea rcx, [rsp+208h+var_B8]\"},{\"addr\":\"18005e930\",\"instruction\":\"call sub_18005B640\",\"refs\":[{\"addr\":\"0x18005b640\",\"name\":\"sub_18005B640\"}]},{\"addr\":\"18005e935\",\"instruction\":\"lea rcx, [rsp+208h+var_48]\"},{\"addr\":\"18005e93d\",\"instruction\":\"mov rdi, rcx\"},{\"addr\":\"18005e940\",\"instruction\":\"mov rsi, rax\"},{\"addr\":\"18005e943\",\"instruction\":\"mov ecx, 20h ; ' '\"},{\"addr\":\"18005e948\",\"instruction\":\"rep movsb\"},{\"addr\":\"18005e94a\",\"instruction\":\"mov rax, [rsp+208h+arg_0]\"},{\"addr\":\"18005e952\",\"instruction\":\"add rax, 130h\"},{\"addr\":\"18005e958\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18005e95b\",\"instruction\":\"call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime\",\"refs\":[{\"addr\":\"0x180005480\",\"name\":\"unknown_libname_11\"}]},{\"addr\":\"18005e960\",\"instruction\":\"mov [rsp+208h+var_190], rax\"},{\"addr\":\"18005e965\",\"instruction\":\"mov rax, [rsp+208h+var_190]\"},{\"addr\":\"18005e96a\",\"instruction\":\"mov rax, [rax]\"},{\"addr\":\"18005e96d\",\"instruction\":\"mov rax, [rax+0D0h]\"},{\"addr\":\"18005e974\",\"instruction\":\"mov [rsp+208h+var_140], rax\"},{\"addr\":\"18005e97c\",\"instruction\":\"lea r8, [rsp+208h+var_48]\"},{\"addr\":\"18005e984\",\"instruction\":\"mov edx, 1\"},{\"addr\":\"18005e989\",\"instruction\":\"mov rcx, [rsp+208h+var_190]\"},{\"addr\":\"18005e98e\",\"instruction\":\"call [rsp+208h+var_140]\"},{\"addr\":\"18005e995\",\"instruction\":\"nop\"},{\"addr\":\"18005e996\",\"instruction\":\"mov rcx, [rsp+208h+var_20]\"},{\"addr\":\"18005e99e\",\"instruction\":\"xor rcx, rsp; StackCookie\",\"comments\":[\"StackCookie\"]},{\"addr\":\"18005e9a1\",\"instruction\":\"call __security_check_cookie\",\"refs\":[{\"addr\":\"0x180067c20\",\"name\":\"__security_check_cookie\"}]},{\"addr\":\"18005e9a6\",\"instruction\":\"add rsp, 1F8h\"},{\"addr\":\"18005e9ad\",\"instruction\":\"pop rdi\"},{\"addr\":\"18005e9ae\",\"instruction\":\"pop rsi\"},{\"addr\":\"18005e9af\",\"instruction\":\"retn\"}],\"stack_frame\":[{\"name\":\"var_1E8\",\"offset\":\"0x20\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_1E0\",\"offset\":\"0x28\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_1D8\",\"offset\":\"0x30\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_1D0\",\"offset\":\"0x38\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_1C8\",\"offset\":\"0x40\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_1C0\",\"offset\":\"0x48\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_1B8\",\"offset\":\"0x50\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_1B0\",\"offset\":\"0x58\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_1A8\",\"offset\":\"0x60\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_1A0\",\"offset\":\"0x68\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_198\",\"offset\":\"0x70\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_190\",\"offset\":\"0x78\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_188\",\"offset\":\"0x80\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_180\",\"offset\":\"0x88\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_178\",\"offset\":\"0x90\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_170\",\"offset\":\"0x98\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_168\",\"offset\":\"0xa0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_160\",\"offset\":\"0xa8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_158\",\"offset\":\"0xb0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_150\",\"offset\":\"0xb8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_148\",\"offset\":\"0xc0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_140\",\"offset\":\"0xc8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_138\",\"offset\":\"0xd0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_130\",\"offset\":\"0xd8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_128\",\"offset\":\"0xe0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_120\",\"offset\":\"0xe8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_118\",\"offset\":\"0xf0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_110\",\"offset\":\"0xf8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_108\",\"offset\":\"0x100\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_100\",\"offset\":\"0x108\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_F8\",\"offset\":\"0x110\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_F0\",\"offset\":\"0x118\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_E8\",\"offset\":\"0x120\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_E0\",\"offset\":\"0x128\",\"size\":\"0x8\",\"type\":\"_BYTE[8]\"},{\"name\":\"var_D8\",\"offset\":\"0x130\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_B8\",\"offset\":\"0x150\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_98\",\"offset\":\"0x170\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_90\",\"offset\":\"0x178\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_8C\",\"offset\":\"0x17c\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_88\",\"offset\":\"0x180\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_84\",\"offset\":\"0x184\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_80\",\"offset\":\"0x188\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_7C\",\"offset\":\"0x18c\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_78\",\"offset\":\"0x190\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_74\",\"offset\":\"0x194\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_70\",\"offset\":\"0x198\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_6C\",\"offset\":\"0x19c\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_68\",\"offset\":\"0x1a0\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_48\",\"offset\":\"0x1c0\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"var_28\",\"offset\":\"0x1e0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_20\",\"offset\":\"0x1e8\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"__return_address\",\"offset\":\"0x208\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"},{\"name\":\"arg_0\",\"offset\":\"0x210\",\"size\":\"0x8\",\"type\":\"_QWORD\"}],\"return_type\":\"__int64\",\"arguments\":[{\"name\":\"arg0\",\"type\":\"__int64\"}]},\"instruction_count\":273,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18005E380",
+      "asm": {
+        "name": "sub_18005E380",
+        "start_ea": "0x18005e380",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "18005e380",
+            "instruction": "mov [rsp+arg_0], rcx",
+            "label": "sub_18005E380"
+          },
+          {
+            "addr": "18005e385",
+            "instruction": "push rsi"
+          },
+          {
+            "addr": "18005e386",
+            "instruction": "push rdi"
+          },
+          {
+            "addr": "18005e387",
+            "instruction": "sub rsp, 1F8h"
+          },
+          {
+            "addr": "18005e38e",
+            "instruction": "mov rax, cs:__security_cookie",
+            "refs": [
+              {
+                "addr": "0x1800a7080",
+                "name": "__security_cookie"
+              }
+            ]
+          },
+          {
+            "addr": "18005e395",
+            "instruction": "xor rax, rsp"
+          },
+          {
+            "addr": "18005e398",
+            "instruction": "mov [rsp+208h+var_20], rax"
+          },
+          {
+            "addr": "18005e3a0",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e3a8",
+            "instruction": "add rax, 180h"
+          },
+          {
+            "addr": "18005e3ae",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e3b1",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e3b6",
+            "instruction": "mov [rsp+208h+var_1E0], 0"
+          },
+          {
+            "addr": "18005e3be",
+            "instruction": "mov dword ptr [rsp+208h+var_1E8], 0FFFFFFFFh"
+          },
+          {
+            "addr": "18005e3c6",
+            "instruction": "mov r9d, 4"
+          },
+          {
+            "addr": "18005e3cc",
+            "instruction": "xor r8d, r8d"
+          },
+          {
+            "addr": "18005e3cf",
+            "instruction": "mov rdx, rax"
+          },
+          {
+            "addr": "18005e3d2",
+            "instruction": "lea rcx, [rsp+208h+var_D8]"
+          },
+          {
+            "addr": "18005e3da",
+            "instruction": "call sub_18005B640",
+            "refs": [
+              {
+                "addr": "0x18005b640",
+                "name": "sub_18005B640"
+              }
+            ]
+          },
+          {
+            "addr": "18005e3df",
+            "instruction": "lea rcx, [rsp+208h+var_68]"
+          },
+          {
+            "addr": "18005e3e7",
+            "instruction": "mov rdi, rcx"
+          },
+          {
+            "addr": "18005e3ea",
+            "instruction": "mov rsi, rax"
+          },
+          {
+            "addr": "18005e3ed",
+            "instruction": "mov ecx, 20h ; ' '"
+          },
+          {
+            "addr": "18005e3f2",
+            "instruction": "rep movsb"
+          },
+          {
+            "addr": "18005e3f4",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e3fc",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e402",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e405",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e40a",
+            "instruction": "mov [rsp+208h+var_1D8], rax"
+          },
+          {
+            "addr": "18005e40f",
+            "instruction": "mov rax, [rsp+208h+var_1D8]"
+          },
+          {
+            "addr": "18005e414",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e417",
+            "instruction": "mov rax, [rax+0D0h]"
+          },
+          {
+            "addr": "18005e41e",
+            "instruction": "mov [rsp+208h+var_168], rax"
+          },
+          {
+            "addr": "18005e426",
+            "instruction": "lea r8, [rsp+208h+var_68]"
+          },
+          {
+            "addr": "18005e42e",
+            "instruction": "mov edx, 1"
+          },
+          {
+            "addr": "18005e433",
+            "instruction": "mov rcx, [rsp+208h+var_1D8]"
+          },
+          {
+            "addr": "18005e438",
+            "instruction": "call [rsp+208h+var_168]"
+          },
+          {
+            "addr": "18005e43f",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e447",
+            "instruction": "cvtsi2ss xmm0, dword ptr [rax+0B8h]"
+          },
+          {
+            "addr": "18005e44f",
+            "instruction": "movss [rsp+208h+var_80], xmm0"
+          },
+          {
+            "addr": "18005e458",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e460",
+            "instruction": "cvtsi2ss xmm0, dword ptr [rax+0BCh]"
+          },
+          {
+            "addr": "18005e468",
+            "instruction": "movss [rsp+208h+var_7C], xmm0"
+          },
+          {
+            "addr": "18005e471",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e479",
+            "instruction": "cvtsi2ss xmm0, dword ptr [rax+0C0h]"
+          },
+          {
+            "addr": "18005e481",
+            "instruction": "movss [rsp+208h+var_78], xmm0"
+          },
+          {
+            "addr": "18005e48a",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e492",
+            "instruction": "cvtsi2ss xmm0, dword ptr [rax+0C4h]"
+          },
+          {
+            "addr": "18005e49a",
+            "instruction": "movss [rsp+208h+var_74], xmm0"
+          },
+          {
+            "addr": "18005e4a3",
+            "instruction": "xorps xmm0, xmm0"
+          },
+          {
+            "addr": "18005e4a6",
+            "instruction": "movss [rsp+208h+var_70], xmm0"
+          },
+          {
+            "addr": "18005e4af",
+            "instruction": "movss xmm0, cs:dword_180092040",
+            "refs": [
+              {
+                "addr": "0x180092040",
+                "name": "dword_180092040"
+              }
+            ]
+          },
+          {
+            "addr": "18005e4b7",
+            "instruction": "movss [rsp+208h+var_6C], xmm0"
+          },
+          {
+            "addr": "18005e4c0",
+            "instruction": "mov [rsp+208h+var_90], 0"
+          },
+          {
+            "addr": "18005e4cb",
+            "instruction": "mov [rsp+208h+var_8C], 0"
+          },
+          {
+            "addr": "18005e4d6",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e4de",
+            "instruction": "mov eax, [rax+0C0h]"
+          },
+          {
+            "addr": "18005e4e4",
+            "instruction": "mov [rsp+208h+var_88], eax"
+          },
+          {
+            "addr": "18005e4eb",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e4f3",
+            "instruction": "mov eax, [rax+0C4h]"
+          },
+          {
+            "addr": "18005e4f9",
+            "instruction": "mov [rsp+208h+var_84], eax"
+          },
+          {
+            "addr": "18005e500",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e508",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e50e",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e511",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e516",
+            "instruction": "mov [rsp+208h+var_1D0], rax"
+          },
+          {
+            "addr": "18005e51b",
+            "instruction": "mov rax, [rsp+208h+var_1D0]"
+          },
+          {
+            "addr": "18005e520",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e523",
+            "instruction": "mov rax, [rax+0A8h]"
+          },
+          {
+            "addr": "18005e52a",
+            "instruction": "mov [rsp+208h+var_160], rax"
+          },
+          {
+            "addr": "18005e532",
+            "instruction": "lea r8, [rsp+208h+var_80]"
+          },
+          {
+            "addr": "18005e53a",
+            "instruction": "mov edx, 1"
+          },
+          {
+            "addr": "18005e53f",
+            "instruction": "mov rcx, [rsp+208h+var_1D0]"
+          },
+          {
+            "addr": "18005e544",
+            "instruction": "call [rsp+208h+var_160]"
+          },
+          {
+            "addr": "18005e54b",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e553",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e559",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e55c",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e561",
+            "instruction": "mov [rsp+208h+var_1C8], rax"
+          },
+          {
+            "addr": "18005e566",
+            "instruction": "mov rax, [rsp+208h+var_1C8]"
+          },
+          {
+            "addr": "18005e56b",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e56e",
+            "instruction": "mov rax, [rax+0B0h]"
+          },
+          {
+            "addr": "18005e575",
+            "instruction": "mov [rsp+208h+var_158], rax"
+          },
+          {
+            "addr": "18005e57d",
+            "instruction": "lea r8, [rsp+208h+var_90]"
+          },
+          {
+            "addr": "18005e585",
+            "instruction": "mov edx, 1"
+          },
+          {
+            "addr": "18005e58a",
+            "instruction": "mov rcx, [rsp+208h+var_1C8]"
+          },
+          {
+            "addr": "18005e58f",
+            "instruction": "call [rsp+208h+var_158]"
+          },
+          {
+            "addr": "18005e596",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e59e",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e5a4",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e5a7",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e5ac",
+            "instruction": "mov [rsp+208h+var_1C0], rax"
+          },
+          {
+            "addr": "18005e5b1",
+            "instruction": "mov rax, [rsp+208h+var_1C0]"
+          },
+          {
+            "addr": "18005e5b6",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e5b9",
+            "instruction": "mov rax, [rax+170h]"
+          },
+          {
+            "addr": "18005e5c0",
+            "instruction": "mov [rsp+208h+var_148], rax"
+          },
+          {
+            "addr": "18005e5c8",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e5d0",
+            "instruction": "mov rax, [rax+188h]"
+          },
+          {
+            "addr": "18005e5d7",
+            "instruction": "mov [rsp+208h+var_150], rax"
+          },
+          {
+            "addr": "18005e5df",
+            "instruction": "mov [rsp+208h+var_1E8], 0"
+          },
+          {
+            "addr": "18005e5e8",
+            "instruction": "xor r9d, r9d"
+          },
+          {
+            "addr": "18005e5eb",
+            "instruction": "mov r8, [rsp+208h+var_150]"
+          },
+          {
+            "addr": "18005e5f3",
+            "instruction": "mov edx, 1"
+          },
+          {
+            "addr": "18005e5f8",
+            "instruction": "mov rcx, [rsp+208h+var_1C0]"
+          },
+          {
+            "addr": "18005e5fd",
+            "instruction": "call [rsp+208h+var_148]"
+          },
+          {
+            "addr": "18005e604",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e60c",
+            "instruction": "add rax, 168h"
+          },
+          {
+            "addr": "18005e612",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e615",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e61a",
+            "instruction": "mov [rsp+208h+var_28], rax"
+          },
+          {
+            "addr": "18005e622",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e62a",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e630",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e633",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e638",
+            "instruction": "mov [rsp+208h+var_1B8], rax"
+          },
+          {
+            "addr": "18005e63d",
+            "instruction": "mov rax, [rsp+208h+var_1B8]"
+          },
+          {
+            "addr": "18005e642",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e645",
+            "instruction": "mov rax, [rax+0E0h]"
+          },
+          {
+            "addr": "18005e64c",
+            "instruction": "mov [rsp+208h+var_138], rax"
+          },
+          {
+            "addr": "18005e654",
+            "instruction": "lea r8, [rsp+208h+var_28]"
+          },
+          {
+            "addr": "18005e65c",
+            "instruction": "mov edx, 1"
+          },
+          {
+            "addr": "18005e661",
+            "instruction": "mov rcx, [rsp+208h+var_1B8]"
+          },
+          {
+            "addr": "18005e666",
+            "instruction": "call [rsp+208h+var_138]"
+          },
+          {
+            "addr": "18005e66d",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e675",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e67b",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e67e",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e683",
+            "instruction": "mov [rsp+208h+var_1B0], rax"
+          },
+          {
+            "addr": "18005e688",
+            "instruction": "mov rax, [rsp+208h+var_1B0]"
+          },
+          {
+            "addr": "18005e68d",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e690",
+            "instruction": "mov rax, [rax+0C8h]"
+          },
+          {
+            "addr": "18005e697",
+            "instruction": "mov [rsp+208h+var_128], rax"
+          },
+          {
+            "addr": "18005e69f",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e6a7",
+            "instruction": "add rax, 148h"
+          },
+          {
+            "addr": "18005e6ad",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e6b0",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e6b5",
+            "instruction": "mov [rsp+208h+var_130], rax"
+          },
+          {
+            "addr": "18005e6bd",
+            "instruction": "mov rdx, [rsp+208h+var_130]"
+          },
+          {
+            "addr": "18005e6c5",
+            "instruction": "mov rcx, [rsp+208h+var_1B0]"
+          },
+          {
+            "addr": "18005e6ca",
+            "instruction": "call [rsp+208h+var_128]"
+          },
+          {
+            "addr": "18005e6d1",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e6d9",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e6df",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e6e2",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e6e7",
+            "instruction": "mov [rsp+208h+var_1A8], rax"
+          },
+          {
+            "addr": "18005e6ec",
+            "instruction": "mov rax, [rsp+208h+var_1A8]"
+          },
+          {
+            "addr": "18005e6f1",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e6f4",
+            "instruction": "mov rax, [rax+0F0h]"
+          },
+          {
+            "addr": "18005e6fb",
+            "instruction": "mov [rsp+208h+var_118], rax"
+          },
+          {
+            "addr": "18005e703",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e70b",
+            "instruction": "add rax, 138h"
+          },
+          {
+            "addr": "18005e711",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e714",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e719",
+            "instruction": "mov [rsp+208h+var_120], rax"
+          },
+          {
+            "addr": "18005e721",
+            "instruction": "mov rdx, [rsp+208h+var_120]"
+          },
+          {
+            "addr": "18005e729",
+            "instruction": "mov rcx, [rsp+208h+var_1A8]"
+          },
+          {
+            "addr": "18005e72e",
+            "instruction": "call [rsp+208h+var_118]"
+          },
+          {
+            "addr": "18005e735",
+            "instruction": "nop"
+          },
+          {
+            "addr": "18005e736",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e73e",
+            "instruction": "add rax, 168h"
+          },
+          {
+            "addr": "18005e744",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e747",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e74c",
+            "instruction": "mov [rsp+208h+var_1A0], rax"
+          },
+          {
+            "addr": "18005e751",
+            "instruction": "mov rax, [rsp+208h+var_1A0]"
+          },
+          {
+            "addr": "18005e756",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e759",
+            "instruction": "mov rax, [rax+50h]"
+          },
+          {
+            "addr": "18005e75d",
+            "instruction": "mov [rsp+208h+var_110], rax"
+          },
+          {
+            "addr": "18005e765",
+            "instruction": "lea rdx, [rsp+208h+var_E0]"
+          },
+          {
+            "addr": "18005e76d",
+            "instruction": "mov rcx, [rsp+208h+var_1A0]"
+          },
+          {
+            "addr": "18005e772",
+            "instruction": "call [rsp+208h+var_110]"
+          },
+          {
+            "addr": "18005e779",
+            "instruction": "mov rdx, rax"
+          },
+          {
+            "addr": "18005e77c",
+            "instruction": "lea rcx, [rsp+208h+var_98]"
+          },
+          {
+            "addr": "18005e784",
+            "instruction": "call ??0?$_Callable_base@V_lambda_1c227fbe56a0f1a19f8d431e177777f3_@@$0A@@std@@QEAA@AEBV_lambda_1c227fbe56a0f1a19f8d431e177777f3_@@@Z; std::_Callable_base<_lambda_1c227fbe56a0f1a19f8d431e177777f3_,0>::_Callable_base<_lambda_1c227fbe56a0f1a19f8d431e177777f3_,0>(_lambda_1c227fbe56a0f1a19f8d431e177777f3_ const &)",
+            "refs": [
+              {
+                "addr": "0x180019740",
+                "name": "??0?$_Callable_base@V_lambda_1c227fbe56a0f1a19f8d431e177777f3_@@$0A@@std@@QEAA@AEBV_lambda_1c227fbe56a0f1a19f8d431e177777f3_@@@Z"
+              }
+            ]
+          },
+          {
+            "addr": "18005e789",
+            "instruction": "nop"
+          },
+          {
+            "addr": "18005e78a",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e792",
+            "instruction": "add rax, 128h"
+          },
+          {
+            "addr": "18005e798",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e79b",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e7a0",
+            "instruction": "mov [rsp+208h+var_198], rax"
+          },
+          {
+            "addr": "18005e7a5",
+            "instruction": "mov rax, [rsp+208h+var_198]"
+          },
+          {
+            "addr": "18005e7aa",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e7ad",
+            "instruction": "mov rax, [rax+78h]"
+          },
+          {
+            "addr": "18005e7b1",
+            "instruction": "mov [rsp+208h+var_108], rax"
+          },
+          {
+            "addr": "18005e7b9",
+            "instruction": "xor edx, edx"
+          },
+          {
+            "addr": "18005e7bb",
+            "instruction": "mov rcx, [rsp+208h+var_198]"
+          },
+          {
+            "addr": "18005e7c0",
+            "instruction": "call [rsp+208h+var_108]"
+          },
+          {
+            "addr": "18005e7c7",
+            "instruction": "mov r8d, eax"
+          },
+          {
+            "addr": "18005e7ca",
+            "instruction": "mov edx, 3"
+          },
+          {
+            "addr": "18005e7cf",
+            "instruction": "lea rcx, [rsp+208h+var_98]"
+          },
+          {
+            "addr": "18005e7d7",
+            "instruction": "call sub_18005BA20",
+            "refs": [
+              {
+                "addr": "0x18005ba20",
+                "name": "sub_18005BA20"
+              }
+            ]
+          },
+          {
+            "addr": "18005e7dc",
+            "instruction": "nop"
+          },
+          {
+            "addr": "18005e7dd",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e7e5",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e7eb",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e7ee",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e7f3",
+            "instruction": "mov [rsp+208h+var_188], rax"
+          },
+          {
+            "addr": "18005e7fb",
+            "instruction": "mov rax, [rsp+208h+var_188]"
+          },
+          {
+            "addr": "18005e803",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e806",
+            "instruction": "mov rax, [rax+100h]"
+          },
+          {
+            "addr": "18005e80d",
+            "instruction": "mov [rsp+208h+var_F0], rax"
+          },
+          {
+            "addr": "18005e815",
+            "instruction": "mov rax, [rsp+208h+var_98]"
+          },
+          {
+            "addr": "18005e81d",
+            "instruction": "mov [rsp+208h+var_100], rax"
+          },
+          {
+            "addr": "18005e825",
+            "instruction": "mov rax, [rsp+208h+var_100]"
+          },
+          {
+            "addr": "18005e82d",
+            "instruction": "mov [rsp+208h+var_F8], rax"
+          },
+          {
+            "addr": "18005e835",
+            "instruction": "mov r8, [rsp+208h+var_F8]"
+          },
+          {
+            "addr": "18005e83d",
+            "instruction": "xor edx, edx"
+          },
+          {
+            "addr": "18005e83f",
+            "instruction": "mov rcx, [rsp+208h+var_188]"
+          },
+          {
+            "addr": "18005e847",
+            "instruction": "call [rsp+208h+var_F0]"
+          },
+          {
+            "addr": "18005e84e",
+            "instruction": "nop"
+          },
+          {
+            "addr": "18005e84f",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e857",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e85d",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e860",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e865",
+            "instruction": "mov [rsp+208h+var_180], rax"
+          },
+          {
+            "addr": "18005e86d",
+            "instruction": "mov rax, [rsp+208h+var_180]"
+          },
+          {
+            "addr": "18005e875",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e878",
+            "instruction": "mov rax, [rax+0A0h]"
+          },
+          {
+            "addr": "18005e87f",
+            "instruction": "mov [rsp+208h+var_E8], rax"
+          },
+          {
+            "addr": "18005e887",
+            "instruction": "mov edx, 4"
+          },
+          {
+            "addr": "18005e88c",
+            "instruction": "mov rcx, [rsp+208h+var_180]"
+          },
+          {
+            "addr": "18005e894",
+            "instruction": "call [rsp+208h+var_E8]"
+          },
+          {
+            "addr": "18005e89b",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e8a3",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e8a9",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e8ac",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e8b1",
+            "instruction": "mov [rsp+208h+var_178], rax"
+          },
+          {
+            "addr": "18005e8b9",
+            "instruction": "mov rax, [rsp+208h+var_178]"
+          },
+          {
+            "addr": "18005e8c1",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e8c4",
+            "instruction": "mov rax, [rax+60h]"
+          },
+          {
+            "addr": "18005e8c8",
+            "instruction": "mov [rsp+208h+var_170], rax"
+          },
+          {
+            "addr": "18005e8d0",
+            "instruction": "mov dword ptr [rsp+208h+var_1E8], 0"
+          },
+          {
+            "addr": "18005e8d8",
+            "instruction": "xor r9d, r9d"
+          },
+          {
+            "addr": "18005e8db",
+            "instruction": "mov r8d, 1"
+          },
+          {
+            "addr": "18005e8e1",
+            "instruction": "mov edx, 3"
+          },
+          {
+            "addr": "18005e8e6",
+            "instruction": "mov rcx, [rsp+208h+var_178]"
+          },
+          {
+            "addr": "18005e8ee",
+            "instruction": "call [rsp+208h+var_170]"
+          },
+          {
+            "addr": "18005e8f5",
+            "instruction": "nop"
+          },
+          {
+            "addr": "18005e8f6",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e8fe",
+            "instruction": "add rax, 180h"
+          },
+          {
+            "addr": "18005e904",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e907",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e90c",
+            "instruction": "mov [rsp+208h+var_1E0], 0"
+          },
+          {
+            "addr": "18005e914",
+            "instruction": "mov dword ptr [rsp+208h+var_1E8], 0FFFFFFFFh"
+          },
+          {
+            "addr": "18005e91c",
+            "instruction": "xor r9d, r9d"
+          },
+          {
+            "addr": "18005e91f",
+            "instruction": "mov r8d, 4"
+          },
+          {
+            "addr": "18005e925",
+            "instruction": "mov rdx, rax"
+          },
+          {
+            "addr": "18005e928",
+            "instruction": "lea rcx, [rsp+208h+var_B8]"
+          },
+          {
+            "addr": "18005e930",
+            "instruction": "call sub_18005B640",
+            "refs": [
+              {
+                "addr": "0x18005b640",
+                "name": "sub_18005B640"
+              }
+            ]
+          },
+          {
+            "addr": "18005e935",
+            "instruction": "lea rcx, [rsp+208h+var_48]"
+          },
+          {
+            "addr": "18005e93d",
+            "instruction": "mov rdi, rcx"
+          },
+          {
+            "addr": "18005e940",
+            "instruction": "mov rsi, rax"
+          },
+          {
+            "addr": "18005e943",
+            "instruction": "mov ecx, 20h ; ' '"
+          },
+          {
+            "addr": "18005e948",
+            "instruction": "rep movsb"
+          },
+          {
+            "addr": "18005e94a",
+            "instruction": "mov rax, [rsp+208h+arg_0]"
+          },
+          {
+            "addr": "18005e952",
+            "instruction": "add rax, 130h"
+          },
+          {
+            "addr": "18005e958",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18005e95b",
+            "instruction": "call unknown_libname_11; Microsoft VisualC v7/14 64bit runtime",
+            "refs": [
+              {
+                "addr": "0x180005480",
+                "name": "unknown_libname_11"
+              }
+            ]
+          },
+          {
+            "addr": "18005e960",
+            "instruction": "mov [rsp+208h+var_190], rax"
+          },
+          {
+            "addr": "18005e965",
+            "instruction": "mov rax, [rsp+208h+var_190]"
+          },
+          {
+            "addr": "18005e96a",
+            "instruction": "mov rax, [rax]"
+          },
+          {
+            "addr": "18005e96d",
+            "instruction": "mov rax, [rax+0D0h]"
+          },
+          {
+            "addr": "18005e974",
+            "instruction": "mov [rsp+208h+var_140], rax"
+          },
+          {
+            "addr": "18005e97c",
+            "instruction": "lea r8, [rsp+208h+var_48]"
+          },
+          {
+            "addr": "18005e984",
+            "instruction": "mov edx, 1"
+          },
+          {
+            "addr": "18005e989",
+            "instruction": "mov rcx, [rsp+208h+var_190]"
+          },
+          {
+            "addr": "18005e98e",
+            "instruction": "call [rsp+208h+var_140]"
+          },
+          {
+            "addr": "18005e995",
+            "instruction": "nop"
+          },
+          {
+            "addr": "18005e996",
+            "instruction": "mov rcx, [rsp+208h+var_20]"
+          },
+          {
+            "addr": "18005e99e",
+            "instruction": "xor rcx, rsp; StackCookie",
+            "comments": [
+              "StackCookie"
+            ]
+          },
+          {
+            "addr": "18005e9a1",
+            "instruction": "call __security_check_cookie",
+            "refs": [
+              {
+                "addr": "0x180067c20",
+                "name": "__security_check_cookie"
+              }
+            ]
+          },
+          {
+            "addr": "18005e9a6",
+            "instruction": "add rsp, 1F8h"
+          },
+          {
+            "addr": "18005e9ad",
+            "instruction": "pop rdi"
+          },
+          {
+            "addr": "18005e9ae",
+            "instruction": "pop rsi"
+          },
+          {
+            "addr": "18005e9af",
+            "instruction": "retn"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "var_1E8",
+            "offset": "0x20",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_1E0",
+            "offset": "0x28",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_1D8",
+            "offset": "0x30",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_1D0",
+            "offset": "0x38",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_1C8",
+            "offset": "0x40",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_1C0",
+            "offset": "0x48",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_1B8",
+            "offset": "0x50",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_1B0",
+            "offset": "0x58",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_1A8",
+            "offset": "0x60",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_1A0",
+            "offset": "0x68",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_198",
+            "offset": "0x70",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_190",
+            "offset": "0x78",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_188",
+            "offset": "0x80",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_180",
+            "offset": "0x88",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_178",
+            "offset": "0x90",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_170",
+            "offset": "0x98",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_168",
+            "offset": "0xa0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_160",
+            "offset": "0xa8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_158",
+            "offset": "0xb0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_150",
+            "offset": "0xb8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_148",
+            "offset": "0xc0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_140",
+            "offset": "0xc8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_138",
+            "offset": "0xd0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_130",
+            "offset": "0xd8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_128",
+            "offset": "0xe0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_120",
+            "offset": "0xe8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_118",
+            "offset": "0xf0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_110",
+            "offset": "0xf8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_108",
+            "offset": "0x100",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_100",
+            "offset": "0x108",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_F8",
+            "offset": "0x110",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_F0",
+            "offset": "0x118",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_E8",
+            "offset": "0x120",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_E0",
+            "offset": "0x128",
+            "size": "0x8",
+            "type": "_BYTE[8]"
+          },
+          {
+            "name": "var_D8",
+            "offset": "0x130",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_B8",
+            "offset": "0x150",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_98",
+            "offset": "0x170",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_90",
+            "offset": "0x178",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_8C",
+            "offset": "0x17c",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_88",
+            "offset": "0x180",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_84",
+            "offset": "0x184",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_80",
+            "offset": "0x188",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_7C",
+            "offset": "0x18c",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_78",
+            "offset": "0x190",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_74",
+            "offset": "0x194",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_70",
+            "offset": "0x198",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_6C",
+            "offset": "0x19c",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_68",
+            "offset": "0x1a0",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_48",
+            "offset": "0x1c0",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "var_28",
+            "offset": "0x1e0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_20",
+            "offset": "0x1e8",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "__return_address",
+            "offset": "0x208",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          },
+          {
+            "name": "arg_0",
+            "offset": "0x210",
+            "size": "0x8",
+            "type": "_QWORD"
+          }
+        ],
+        "return_type": "__int64",
+        "arguments": [
+          {
+            "name": "arg0",
+            "type": "__int64"
+          }
+        ]
+      },
+      "instruction_count": 273,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

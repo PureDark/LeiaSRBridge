@@ -1,0 +1,79 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180038B50\",\"code\":\"__int64 __fastcall sub_180038B50(__int64 a1, __int64 a2, __int64 a3, __int64 a4, unsigned __int8 a5)\\n{\\n  __int64 v9; // rcx\\n  __int64 v10; // rcx\\n  const char *v11; // rax\\n  __int64 v12; // rcx\\n  int v13; // r8d\\n  __int64 v15; // rcx\\n  _QWORD v16[2]; // [rsp+30h] [rbp-50h] BYREF\\n  __int128 v17; // [rsp+40h] [rbp-40h]\\n  __int64 v18; // [rsp+50h] [rbp-30h]\\n  __int128 v19; // [rsp+60h] [rbp-20h] BYREF\\n  __int64 v20; // [rsp+70h] [rbp-10h]\\n  int v21; // [rsp+A8h] [rbp+28h] BYREF\\n\\n  v16[1] = 18; /*0x180038b82*/\\n  v16[0] = \\\"set camera mat ...\\\"; /*0x180038b95*/\\n  v9 = *(_QWORD *)(sub_180008380() + 472); /*0x180038ba5*/\\n  v17 = 0u; /*0x180038bb5*/\\n  v18 = 0; /*0x180038bbd*/\\n  v19 = 0u; /*0x180038bc6*/\\n  v20 = 0; /*0x180038bca*/\\n  sub_180005CC0(a1: v9, a2: &v19, a3: 2, a4: v16); /*0x180038bcf*/\\n  if ( a2 == 0 ) /*0x180038bd7*/\\n  {\\n    v21 = 29; /*0x180038bd9*/\\n    v11 = \\\"{} line {}  E1 is nullptr !!!\\\"; /*0x180038be0*/\\nLABEL_3:\\n    v16[1] = 29; /*0x180038be7*/\\nLABEL_4:\\n    v16[0] = v11; /*0x180038bef*/\\n    v12 = *(_QWORD *)(sub_180008380() + 472); /*0x180038c1e*/\\n    v17 = 0u; /*0x180038c29*/\\n    v18 = 0; /*0x180038c31*/\\n    v19 = 0u; /*0x180038c3a*/\\n    v20 = 0; /*0x180038c3e*/\\n    sub_180028F90( /*0x180038c43*/\\n      a1: v12,\\n      a2: (unsigned int)&v19,\\n      a3: v13,\\n      a4: (unsigned int)v16,\\n      a5: (__int64)\\\"boe3dET::ETCamera::setCameraMat\\\",\\n      a6: (__int64)&v21);\\n    return 0; /*0x180038c4a*/\\n  }\\n  if ( a3 == 0 ) /*0x180038c52*/\\n  {\\n    v21 = 33; /*0x180038c54*/\\n    v11 = \\\"{} line {}  E2 is nullptr !!\\\"; /*0x180038c5b*/\\n    v16[1] = 28; /*0x180038c62*/\\n    goto LABEL_4; /*0x180038c6a*/\\n  }\\n  if ( a4 == 0 ) /*0x180038c6f*/\\n  {\\n    v21 = 37; /*0x180038c71*/\\n    v11 = \\\"{} line {}  E3 is nullptr !!!\\\"; /*0x180038c78*/\\n    goto LABEL_3; /*0x180038c7f*/\\n  }\\n  if ( (unsigned int)sub_180038D30(a1: v10, a2, a3: a1) == 0 ) /*0x180038c91*/\\n  {\\n    v21 = 44; /*0x180038c93*/\\n    v11 = \\\"{} line {}  set left camera inter para error !!!\\\"; /*0x180038c9a*/\\n    v16[1] = 48; /*0x180038ca1*/\\n    goto LABEL_4; /*0x180038ca9*/\\n  }\\n  if ( (unsigned int)sub_180038D30(a1: v15, a2: a3, a3: a1 + 480) == 0 ) /*0x180038cbf*/\\n  {\\n    v21 = 51; /*0x180038cc1*/\\n    v11 = \\\"{} line {}  set right camera inter para error !!!\\\"; /*0x180038cc8*/\\n    v16[1] = 49; /*0x180038ccf*/\\n    goto LABEL_4; /*0x180038cd7*/\\n  }\\n  if ( (unsigned int)sub_180039070(a1, a2: a4, a3: a5) == 0 ) /*0x180038cee*/\\n  {\\n    v21 = 58; /*0x180038cf0*/\\n    v11 = \\\"{} line {}  set camera transpose error !!!\\\"; /*0x180038cf7*/\\n    v16[1] = 42; /*0x180038cfe*/\\n    goto LABEL_4; /*0x180038d06*/\\n  }\\n  return 1; /*0x180038d10*/\\n}\",\"refs\":[{\"addr\":\"0x18010ea10\",\"name\":\"aSetCameraMat\",\"string\":\"set camera mat ...\"},{\"addr\":\"0x180008380\",\"name\":\"sub_180008380\"},{\"addr\":\"0x180005cc0\",\"name\":\"sub_180005CC0\"},{\"addr\":\"0x18010ea28\",\"name\":\"aLineE1IsNullpt\",\"string\":\"{} line {}  E1 is nullptr !!!\"},{\"addr\":\"0x180028f90\",\"name\":\"sub_180028F90\"},{\"addr\":\"0x18010ea48\",\"name\":\"aBoe3detEtcamer\",\"string\":\"boe3dET::ETCamera::setCameraMat\"},{\"addr\":\"0x18010ea88\",\"name\":\"aLineE2IsNullpt_0\",\"string\":\"{} line {}  E2 is nullptr !!\"},{\"addr\":\"0x18010ea68\",\"name\":\"aLineE3IsNullpt\",\"string\":\"{} line {}  E3 is nullptr !!!\"},{\"addr\":\"0x18010eae0\",\"name\":\"aLineSetLeftCam\",\"string\":\"{} line {}  set left camera inter para error !!!\"},{\"addr\":\"0x180038d30\",\"name\":\"sub_180038D30\"},{\"addr\":\"0x18010eaa8\",\"name\":\"aLineSetRightCa\",\"string\":\"{} line {}  set right camera inter para error !!!\"},{\"addr\":\"0x18010eb38\",\"name\":\"aLineSetCameraT\",\"string\":\"{} line {}  set camera transpose error !!!\"},{\"addr\":\"0x180039070\",\"name\":\"sub_180039070\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180038B50",
+      "code": "__int64 __fastcall sub_180038B50(__int64 a1, __int64 a2, __int64 a3, __int64 a4, unsigned __int8 a5)\n{\n  __int64 v9; // rcx\n  __int64 v10; // rcx\n  const char *v11; // rax\n  __int64 v12; // rcx\n  int v13; // r8d\n  __int64 v15; // rcx\n  _QWORD v16[2]; // [rsp+30h] [rbp-50h] BYREF\n  __int128 v17; // [rsp+40h] [rbp-40h]\n  __int64 v18; // [rsp+50h] [rbp-30h]\n  __int128 v19; // [rsp+60h] [rbp-20h] BYREF\n  __int64 v20; // [rsp+70h] [rbp-10h]\n  int v21; // [rsp+A8h] [rbp+28h] BYREF\n\n  v16[1] = 18; /*0x180038b82*/\n  v16[0] = \"set camera mat ...\"; /*0x180038b95*/\n  v9 = *(_QWORD *)(sub_180008380() + 472); /*0x180038ba5*/\n  v17 = 0u; /*0x180038bb5*/\n  v18 = 0; /*0x180038bbd*/\n  v19 = 0u; /*0x180038bc6*/\n  v20 = 0; /*0x180038bca*/\n  sub_180005CC0(a1: v9, a2: &v19, a3: 2, a4: v16); /*0x180038bcf*/\n  if ( a2 == 0 ) /*0x180038bd7*/\n  {\n    v21 = 29; /*0x180038bd9*/\n    v11 = \"{} line {}  E1 is nullptr !!!\"; /*0x180038be0*/\nLABEL_3:\n    v16[1] = 29; /*0x180038be7*/\nLABEL_4:\n    v16[0] = v11; /*0x180038bef*/\n    v12 = *(_QWORD *)(sub_180008380() + 472); /*0x180038c1e*/\n    v17 = 0u; /*0x180038c29*/\n    v18 = 0; /*0x180038c31*/\n    v19 = 0u; /*0x180038c3a*/\n    v20 = 0; /*0x180038c3e*/\n    sub_180028F90( /*0x180038c43*/\n      a1: v12,\n      a2: (unsigned int)&v19,\n      a3: v13,\n      a4: (unsigned int)v16,\n      a5: (__int64)\"boe3dET::ETCamera::setCameraMat\",\n      a6: (__int64)&v21);\n    return 0; /*0x180038c4a*/\n  }\n  if ( a3 == 0 ) /*0x180038c52*/\n  {\n    v21 = 33; /*0x180038c54*/\n    v11 = \"{} line {}  E2 is nullptr !!\"; /*0x180038c5b*/\n    v16[1] = 28; /*0x180038c62*/\n    goto LABEL_4; /*0x180038c6a*/\n  }\n  if ( a4 == 0 ) /*0x180038c6f*/\n  {\n    v21 = 37; /*0x180038c71*/\n    v11 = \"{} line {}  E3 is nullptr !!!\"; /*0x180038c78*/\n    goto LABEL_3; /*0x180038c7f*/\n  }\n  if ( (unsigned int)sub_180038D30(a1: v10, a2, a3: a1) == 0 ) /*0x180038c91*/\n  {\n    v21 = 44; /*0x180038c93*/\n    v11 = \"{} line {}  set left camera inter para error !!!\"; /*0x180038c9a*/\n    v16[1] = 48; /*0x180038ca1*/\n    goto LABEL_4; /*0x180038ca9*/\n  }\n  if ( (unsigned int)sub_180038D30(a1: v15, a2: a3, a3: a1 + 480) == 0 ) /*0x180038cbf*/\n  {\n    v21 = 51; /*0x180038cc1*/\n    v11 = \"{} line {}  set right camera inter para error !!!\"; /*0x180038cc8*/\n    v16[1] = 49; /*0x180038ccf*/\n    goto LABEL_4; /*0x180038cd7*/\n  }\n  if ( (unsigned int)sub_180039070(a1, a2: a4, a3: a5) == 0 ) /*0x180038cee*/\n  {\n    v21 = 58; /*0x180038cf0*/\n    v11 = \"{} line {}  set camera transpose error !!!\"; /*0x180038cf7*/\n    v16[1] = 42; /*0x180038cfe*/\n    goto LABEL_4; /*0x180038d06*/\n  }\n  return 1; /*0x180038d10*/\n}",
+      "refs": [
+        {
+          "addr": "0x18010ea10",
+          "name": "aSetCameraMat",
+          "string": "set camera mat ..."
+        },
+        {
+          "addr": "0x180008380",
+          "name": "sub_180008380"
+        },
+        {
+          "addr": "0x180005cc0",
+          "name": "sub_180005CC0"
+        },
+        {
+          "addr": "0x18010ea28",
+          "name": "aLineE1IsNullpt",
+          "string": "{} line {}  E1 is nullptr !!!"
+        },
+        {
+          "addr": "0x180028f90",
+          "name": "sub_180028F90"
+        },
+        {
+          "addr": "0x18010ea48",
+          "name": "aBoe3detEtcamer",
+          "string": "boe3dET::ETCamera::setCameraMat"
+        },
+        {
+          "addr": "0x18010ea88",
+          "name": "aLineE2IsNullpt_0",
+          "string": "{} line {}  E2 is nullptr !!"
+        },
+        {
+          "addr": "0x18010ea68",
+          "name": "aLineE3IsNullpt",
+          "string": "{} line {}  E3 is nullptr !!!"
+        },
+        {
+          "addr": "0x18010eae0",
+          "name": "aLineSetLeftCam",
+          "string": "{} line {}  set left camera inter para error !!!"
+        },
+        {
+          "addr": "0x180038d30",
+          "name": "sub_180038D30"
+        },
+        {
+          "addr": "0x18010eaa8",
+          "name": "aLineSetRightCa",
+          "string": "{} line {}  set right camera inter para error !!!"
+        },
+        {
+          "addr": "0x18010eb38",
+          "name": "aLineSetCameraT",
+          "string": "{} line {}  set camera transpose error !!!"
+        },
+        {
+          "addr": "0x180039070",
+          "name": "sub_180039070"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

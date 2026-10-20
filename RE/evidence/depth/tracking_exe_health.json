@@ -1,0 +1,25 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"ok\",\"uptime_sec\":2.614,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\FaceTracking.exe.i64\",\"module\":\"FaceTracking.exe\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\FaceTracking.exe\",\"imagebase\":\"0x140000000\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":814}"
+      }
+    ],
+    "structuredContent": {
+      "status": "ok",
+      "uptime_sec": 2.614,
+      "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\FaceTracking.exe.i64",
+      "module": "FaceTracking.exe",
+      "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\FaceTracking.exe",
+      "imagebase": "0x140000000",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 814
+    },
+    "isError": false
+  },
+  "id": 1
+}

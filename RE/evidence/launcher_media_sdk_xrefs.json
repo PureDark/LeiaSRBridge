@@ -1,0 +1,54 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x18001a000\",\"xrefs\":[{\"addr\":\"0x180016cd3\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180016cd3\",\"name\":\"CreateStereoRenderer\",\"size\":\"0x6\"}},{\"addr\":\"0x18002446c\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":2},{\"addr\":\"0x18001a010\",\"xrefs\":[{\"addr\":\"0x180016ccd\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180016ccd\",\"name\":\"LoadStereoEngine\",\"size\":\"0x6\"}}],\"more\":false,\"xref_count\":1}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x18001a000",
+          "xrefs": [
+            {
+              "addr": "0x180016cd3",
+              "type": "data",
+              "fn": {
+                "addr": "0x180016cd3",
+                "name": "CreateStereoRenderer",
+                "size": "0x6"
+              }
+            },
+            {
+              "addr": "0x18002446c",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        },
+        {
+          "addr": "0x18001a010",
+          "xrefs": [
+            {
+              "addr": "0x180016ccd",
+              "type": "data",
+              "fn": {
+                "addr": "0x180016ccd",
+                "name": "LoadStereoEngine",
+                "size": "0x6"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,904 @@
+{
+  "addr": "0x1800B3090",
+  "asm": {
+    "name": "sub_1800B3090",
+    "start_ea": "0x1800b3090",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "1800b3090",
+        "instruction": "mov [rsp-8+arg_18], rbx",
+        "label": "sub_1800B3090"
+      },
+      {
+        "addr": "1800b3095",
+        "instruction": "push rbp"
+      },
+      {
+        "addr": "1800b3096",
+        "instruction": "push rsi"
+      },
+      {
+        "addr": "1800b3097",
+        "instruction": "push rdi"
+      },
+      {
+        "addr": "1800b3098",
+        "instruction": "lea rbp, [rsp-0B0h]"
+      },
+      {
+        "addr": "1800b30a0",
+        "instruction": "sub rsp, 1B0h"
+      },
+      {
+        "addr": "1800b30a7",
+        "instruction": "mov rax, cs:stru_180135178.ExceptionInformation+18h"
+      },
+      {
+        "addr": "1800b30ae",
+        "instruction": "xor rax, rsp"
+      },
+      {
+        "addr": "1800b30b1",
+        "instruction": "mov [rbp+0C0h+var_20], rax"
+      },
+      {
+        "addr": "1800b30b8",
+        "instruction": "mov rdi, r8"
+      },
+      {
+        "addr": "1800b30bb",
+        "instruction": "mov rsi, rdx"
+      },
+      {
+        "addr": "1800b30be",
+        "instruction": "mov rbx, rcx"
+      },
+      {
+        "addr": "1800b30c1",
+        "instruction": "mov [rsp+1C0h+var_148], rdx"
+      },
+      {
+        "addr": "1800b30c6",
+        "instruction": "mov [rbp+0C0h+var_140], r8"
+      },
+      {
+        "addr": "1800b30ca",
+        "instruction": "lea rcx, [rbp+0C0h+var_80]"
+      },
+      {
+        "addr": "1800b30ce",
+        "instruction": "call cs:??0Mat@cv@@QEAA@XZ; opencv_world4110",
+        "refs": [
+          {
+            "addr": "0x1800fd578",
+            "name": "??0Mat@cv@@QEAA@XZ"
+          }
+        ]
+      },
+      {
+        "addr": "1800b30d4",
+        "instruction": "nop"
+      },
+      {
+        "addr": "1800b30d5",
+        "instruction": "lea r9, [rbx+120h]"
+      },
+      {
+        "addr": "1800b30dc",
+        "instruction": "lea r8, [rbx+0C0h]"
+      },
+      {
+        "addr": "1800b30e3",
+        "instruction": "lea rax, [rbp+0C0h+var_80]"
+      },
+      {
+        "addr": "1800b30e7",
+        "instruction": "mov [rsp+1C0h+var_170], rax"
+      },
+      {
+        "addr": "1800b30ec",
+        "instruction": "lea rax, [rbp+0C0h+var_138]"
+      },
+      {
+        "addr": "1800b30f0",
+        "instruction": "mov [rsp+1C0h+var_178], rax"
+      },
+      {
+        "addr": "1800b30f5",
+        "instruction": "lea rax, [rbp+0C0h+var_130]"
+      },
+      {
+        "addr": "1800b30f9",
+        "instruction": "mov [rsp+1C0h+var_180], rax"
+      },
+      {
+        "addr": "1800b30fe",
+        "instruction": "lea rax, [rbp+0C0h+var_128]"
+      },
+      {
+        "addr": "1800b3102",
+        "instruction": "mov [rsp+1C0h+var_188], rax"
+      },
+      {
+        "addr": "1800b3107",
+        "instruction": "lea rax, [rbp+0C0h+var_120]"
+      },
+      {
+        "addr": "1800b310b",
+        "instruction": "mov [rsp+1C0h+var_190], rax"
+      },
+      {
+        "addr": "1800b3110",
+        "instruction": "lea rax, [rsp+1C0h+var_150]"
+      },
+      {
+        "addr": "1800b3115",
+        "instruction": "mov [rsp+1C0h+var_198], rax"
+      },
+      {
+        "addr": "1800b311a",
+        "instruction": "lea rax, [rbp+0C0h+var_118]"
+      },
+      {
+        "addr": "1800b311e",
+        "instruction": "mov [rsp+1C0h+var_1A0], rax"
+      },
+      {
+        "addr": "1800b3123",
+        "instruction": "mov rdx, rsi"
+      },
+      {
+        "addr": "1800b3126",
+        "instruction": "call sub_1800B24E0",
+        "refs": [
+          {
+            "addr": "0x1800b24e0",
+            "name": "sub_1800B24E0"
+          }
+        ]
+      },
+      {
+        "addr": "1800b312b",
+        "instruction": "lea rcx, [rbp+0C0h+var_E0]"
+      },
+      {
+        "addr": "1800b312f",
+        "instruction": "call cs:??0Mat@cv@@QEAA@XZ; opencv_world4110",
+        "refs": [
+          {
+            "addr": "0x1800fd578",
+            "name": "??0Mat@cv@@QEAA@XZ"
+          }
+        ]
+      },
+      {
+        "addr": "1800b3135",
+        "instruction": "nop"
+      },
+      {
+        "addr": "1800b3136",
+        "instruction": "lea r9, [rbx+300h]"
+      },
+      {
+        "addr": "1800b313d",
+        "instruction": "lea r8, [rbx+2A0h]"
+      },
+      {
+        "addr": "1800b3144",
+        "instruction": "lea rax, [rbp+0C0h+var_E0]"
+      },
+      {
+        "addr": "1800b3148",
+        "instruction": "mov [rsp+1C0h+var_170], rax"
+      },
+      {
+        "addr": "1800b314d",
+        "instruction": "lea rax, [rbp+0C0h+var_110]"
+      },
+      {
+        "addr": "1800b3151",
+        "instruction": "mov [rsp+1C0h+var_178], rax"
+      },
+      {
+        "addr": "1800b3156",
+        "instruction": "lea rax, [rbp+0C0h+var_108]"
+      },
+      {
+        "addr": "1800b315a",
+        "instruction": "mov [rsp+1C0h+var_180], rax"
+      },
+      {
+        "addr": "1800b315f",
+        "instruction": "lea rax, [rbp+0C0h+var_100]"
+      },
+      {
+        "addr": "1800b3163",
+        "instruction": "mov [rsp+1C0h+var_188], rax"
+      },
+      {
+        "addr": "1800b3168",
+        "instruction": "lea rax, [rbp+0C0h+var_F8]"
+      },
+      {
+        "addr": "1800b316c",
+        "instruction": "mov [rsp+1C0h+var_190], rax"
+      },
+      {
+        "addr": "1800b3171",
+        "instruction": "lea rax, [rsp+1C0h+var_158]"
+      },
+      {
+        "addr": "1800b3176",
+        "instruction": "mov [rsp+1C0h+var_198], rax"
+      },
+      {
+        "addr": "1800b317b",
+        "instruction": "lea rax, [rbp+0C0h+var_F0]"
+      },
+      {
+        "addr": "1800b317f",
+        "instruction": "mov [rsp+1C0h+var_1A0], rax"
+      },
+      {
+        "addr": "1800b3184",
+        "instruction": "mov rdx, rdi"
+      },
+      {
+        "addr": "1800b3187",
+        "instruction": "call sub_1800B24E0",
+        "refs": [
+          {
+            "addr": "0x1800b24e0",
+            "name": "sub_1800B24E0"
+          }
+        ]
+      },
+      {
+        "addr": "1800b318c",
+        "instruction": "movsd xmm0, [rsp+1C0h+var_158]"
+      },
+      {
+        "addr": "1800b3192",
+        "instruction": "addsd xmm0, [rsp+1C0h+var_150]"
+      },
+      {
+        "addr": "1800b3198",
+        "instruction": "mulsd xmm0, cs:qword_18010FFB8",
+        "refs": [
+          {
+            "addr": "0x18010ffb8",
+            "name": "qword_18010FFB8"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31a0",
+        "instruction": "movsd xmm1, cs:qword_18010FFF8",
+        "refs": [
+          {
+            "addr": "0x18010fff8",
+            "name": "qword_18010FFF8"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31a8",
+        "instruction": "movsd xmm2, cs:qword_180110070",
+        "refs": [
+          {
+            "addr": "0x180110070",
+            "name": "qword_180110070"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31b0",
+        "instruction": "comisd xmm0, xmm2"
+      },
+      {
+        "addr": "1800b31b4",
+        "instruction": "jb short loc_1800B31C5",
+        "refs": [
+          {
+            "addr": "0x1800b31c5",
+            "name": "loc_1800B31C5"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31b6",
+        "instruction": "comisd xmm1, xmm0"
+      },
+      {
+        "addr": "1800b31ba",
+        "instruction": "jb short loc_1800B31C5",
+        "refs": [
+          {
+            "addr": "0x1800b31c5",
+            "name": "loc_1800B31C5"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31bc",
+        "instruction": "mov [rsp+1C0h+var_160], 101h"
+      },
+      {
+        "addr": "1800b31c3",
+        "instruction": "jmp short loc_1800B31E1",
+        "refs": [
+          {
+            "addr": "0x1800b31e1",
+            "name": "loc_1800B31E1"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31c5",
+        "instruction": "comisd xmm2, xmm0",
+        "label": "loc_1800B31C5"
+      },
+      {
+        "addr": "1800b31c9",
+        "instruction": "jbe short loc_1800B31D4",
+        "refs": [
+          {
+            "addr": "0x1800b31d4",
+            "name": "loc_1800B31D4"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31cb",
+        "instruction": "mov [rsp+1C0h+var_160], 100h"
+      },
+      {
+        "addr": "1800b31d2",
+        "instruction": "jmp short loc_1800B31E1",
+        "refs": [
+          {
+            "addr": "0x1800b31e1",
+            "name": "loc_1800B31E1"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31d4",
+        "instruction": "comisd xmm0, xmm1",
+        "label": "loc_1800B31D4"
+      },
+      {
+        "addr": "1800b31d8",
+        "instruction": "jbe short loc_1800B31ED",
+        "refs": [
+          {
+            "addr": "0x1800b31ed",
+            "name": "loc_1800B31ED"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31da",
+        "instruction": "mov [rsp+1C0h+var_160], 1"
+      },
+      {
+        "addr": "1800b31e1",
+        "instruction": "movzx eax, [rsp+1C0h+var_160]",
+        "label": "loc_1800B31E1"
+      },
+      {
+        "addr": "1800b31e6",
+        "instruction": "xchg ax, [rbx+530h]"
+      },
+      {
+        "addr": "1800b31ed",
+        "instruction": "lea rcx, [rbp+0C0h+var_E0]",
+        "label": "loc_1800B31ED"
+      },
+      {
+        "addr": "1800b31f1",
+        "instruction": "call cs:__imp_??1Mat@cv@@QEAA@XZ; opencv_world4110",
+        "refs": [
+          {
+            "addr": "0x1800fd580",
+            "name": "__imp_??1Mat@cv@@QEAA@XZ"
+          }
+        ]
+      },
+      {
+        "addr": "1800b31f7",
+        "instruction": "nop"
+      },
+      {
+        "addr": "1800b31f8",
+        "instruction": "lea rcx, [rbp+0C0h+var_80]"
+      },
+      {
+        "addr": "1800b31fc",
+        "instruction": "call cs:__imp_??1Mat@cv@@QEAA@XZ; opencv_world4110",
+        "refs": [
+          {
+            "addr": "0x1800fd580",
+            "name": "__imp_??1Mat@cv@@QEAA@XZ"
+          }
+        ]
+      },
+      {
+        "addr": "1800b3202",
+        "instruction": "nop"
+      },
+      {
+        "addr": "1800b3203",
+        "instruction": "mov rcx, [rsi]"
+      },
+      {
+        "addr": "1800b3206",
+        "instruction": "xor ebx, ebx"
+      },
+      {
+        "addr": "1800b3208",
+        "instruction": "test rcx, rcx"
+      },
+      {
+        "addr": "1800b320b",
+        "instruction": "jz short loc_1800B3249",
+        "refs": [
+          {
+            "addr": "0x1800b3249",
+            "name": "loc_1800B3249"
+          }
+        ]
+      },
+      {
+        "addr": "1800b320d",
+        "instruction": "mov rdx, [rsi+10h]"
+      },
+      {
+        "addr": "1800b3211",
+        "instruction": "sub rdx, rcx"
+      },
+      {
+        "addr": "1800b3214",
+        "instruction": "and rdx, 0FFFFFFFFFFFFFFF0h"
+      },
+      {
+        "addr": "1800b3218",
+        "instruction": "cmp rdx, 1000h"
+      },
+      {
+        "addr": "1800b321f",
+        "instruction": "jb short loc_1800B3239",
+        "refs": [
+          {
+            "addr": "0x1800b3239",
+            "name": "loc_1800B3239"
+          }
+        ]
+      },
+      {
+        "addr": "1800b3221",
+        "instruction": "add rdx, 27h ; '''"
+      },
+      {
+        "addr": "1800b3225",
+        "instruction": "mov r8, [rcx-8]"
+      },
+      {
+        "addr": "1800b3229",
+        "instruction": "sub rcx, r8"
+      },
+      {
+        "addr": "1800b322c",
+        "instruction": "lea rax, [rcx-8]"
+      },
+      {
+        "addr": "1800b3230",
+        "instruction": "cmp rax, 1Fh"
+      },
+      {
+        "addr": "1800b3234",
+        "instruction": "ja short loc_1800B32AF",
+        "refs": [
+          {
+            "addr": "0x1800b32af",
+            "name": "loc_1800B32AF"
+          }
+        ]
+      },
+      {
+        "addr": "1800b3236",
+        "instruction": "mov rcx, r8; Block",
+        "comments": [
+          "Block"
+        ]
+      },
+      {
+        "addr": "1800b3239",
+        "instruction": "call j_j_j__free_base_0",
+        "label": "loc_1800B3239",
+        "refs": [
+          {
+            "addr": "0x1800b819c",
+            "name": "j_j_j__free_base_0"
+          }
+        ]
+      },
+      {
+        "addr": "1800b323e",
+        "instruction": "mov [rsi], rbx"
+      },
+      {
+        "addr": "1800b3241",
+        "instruction": "mov [rsi+8], rbx"
+      },
+      {
+        "addr": "1800b3245",
+        "instruction": "mov [rsi+10h], rbx"
+      },
+      {
+        "addr": "1800b3249",
+        "instruction": "mov rcx, [rdi]",
+        "label": "loc_1800B3249"
+      },
+      {
+        "addr": "1800b324c",
+        "instruction": "test rcx, rcx"
+      },
+      {
+        "addr": "1800b324f",
+        "instruction": "jz short loc_1800B328D",
+        "refs": [
+          {
+            "addr": "0x1800b328d",
+            "name": "loc_1800B328D"
+          }
+        ]
+      },
+      {
+        "addr": "1800b3251",
+        "instruction": "mov rdx, [rdi+10h]"
+      },
+      {
+        "addr": "1800b3255",
+        "instruction": "sub rdx, rcx"
+      },
+      {
+        "addr": "1800b3258",
+        "instruction": "and rdx, 0FFFFFFFFFFFFFFF0h"
+      },
+      {
+        "addr": "1800b325c",
+        "instruction": "cmp rdx, 1000h"
+      },
+      {
+        "addr": "1800b3263",
+        "instruction": "jb short loc_1800B327D",
+        "refs": [
+          {
+            "addr": "0x1800b327d",
+            "name": "loc_1800B327D"
+          }
+        ]
+      },
+      {
+        "addr": "1800b3265",
+        "instruction": "add rdx, 27h ; '''"
+      },
+      {
+        "addr": "1800b3269",
+        "instruction": "mov r8, [rcx-8]"
+      },
+      {
+        "addr": "1800b326d",
+        "instruction": "sub rcx, r8"
+      },
+      {
+        "addr": "1800b3270",
+        "instruction": "lea rax, [rcx-8]"
+      },
+      {
+        "addr": "1800b3274",
+        "instruction": "cmp rax, 1Fh"
+      },
+      {
+        "addr": "1800b3278",
+        "instruction": "ja short loc_1800B32B5",
+        "refs": [
+          {
+            "addr": "0x1800b32b5",
+            "name": "loc_1800B32B5"
+          }
+        ]
+      },
+      {
+        "addr": "1800b327a",
+        "instruction": "mov rcx, r8; Block",
+        "comments": [
+          "Block"
+        ]
+      },
+      {
+        "addr": "1800b327d",
+        "instruction": "call j_j_j__free_base_0",
+        "label": "loc_1800B327D",
+        "refs": [
+          {
+            "addr": "0x1800b819c",
+            "name": "j_j_j__free_base_0"
+          }
+        ]
+      },
+      {
+        "addr": "1800b3282",
+        "instruction": "mov [rdi], rbx"
+      },
+      {
+        "addr": "1800b3285",
+        "instruction": "mov [rdi+8], rbx"
+      },
+      {
+        "addr": "1800b3289",
+        "instruction": "mov [rdi+10h], rbx"
+      },
+      {
+        "addr": "1800b328d",
+        "instruction": "mov rcx, [rbp+0C0h+var_20]",
+        "label": "loc_1800B328D"
+      },
+      {
+        "addr": "1800b3294",
+        "instruction": "xor rcx, rsp; StackCookie",
+        "comments": [
+          "StackCookie"
+        ]
+      },
+      {
+        "addr": "1800b3297",
+        "instruction": "call __security_check_cookie",
+        "refs": [
+          {
+            "addr": "0x1800b7a50",
+            "name": "__security_check_cookie"
+          }
+        ]
+      },
+      {
+        "addr": "1800b329c",
+        "instruction": "mov rbx, [rsp+1C0h+arg_18]"
+      },
+      {
+        "addr": "1800b32a4",
+        "instruction": "add rsp, 1B0h"
+      },
+      {
+        "addr": "1800b32ab",
+        "instruction": "pop rdi"
+      },
+      {
+        "addr": "1800b32ac",
+        "instruction": "pop rsi"
+      },
+      {
+        "addr": "1800b32ad",
+        "instruction": "pop rbp"
+      },
+      {
+        "addr": "1800b32ae",
+        "instruction": "retn"
+      },
+      {
+        "addr": "1800b32af",
+        "instruction": "call _invalid_parameter_noinfo_noreturn",
+        "label": "loc_1800B32AF",
+        "refs": [
+          {
+            "addr": "0x1800c199c",
+            "name": "_invalid_parameter_noinfo_noreturn"
+          }
+        ]
+      },
+      {
+        "addr": "1800b32b5",
+        "instruction": "call _invalid_parameter_noinfo_noreturn",
+        "label": "loc_1800B32B5",
+        "refs": [
+          {
+            "addr": "0x1800c199c",
+            "name": "_invalid_parameter_noinfo_noreturn"
+          }
+        ]
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "var_1A0",
+        "offset": "0x20",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_198",
+        "offset": "0x28",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_190",
+        "offset": "0x30",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_188",
+        "offset": "0x38",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_180",
+        "offset": "0x40",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_178",
+        "offset": "0x48",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_170",
+        "offset": "0x50",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_160",
+        "offset": "0x60",
+        "size": "0x2",
+        "type": "_WORD"
+      },
+      {
+        "name": "var_158",
+        "offset": "0x68",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_150",
+        "offset": "0x70",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_148",
+        "offset": "0x78",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_140",
+        "offset": "0x80",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "var_138",
+        "offset": "0x88",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_130",
+        "offset": "0x90",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_128",
+        "offset": "0x98",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_120",
+        "offset": "0xa0",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_118",
+        "offset": "0xa8",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_110",
+        "offset": "0xb0",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_108",
+        "offset": "0xb8",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_100",
+        "offset": "0xc0",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_F8",
+        "offset": "0xc8",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_F0",
+        "offset": "0xd0",
+        "size": "0x10",
+        "type": "double[2]"
+      },
+      {
+        "name": "var_E0",
+        "offset": "0xe0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_80",
+        "offset": "0x140",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_20",
+        "offset": "0x1a0",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "__saved_registers",
+        "offset": "0x1c0",
+        "size": "0x8",
+        "type": "_QWORD"
+      },
+      {
+        "name": "__return_address",
+        "offset": "0x1c8",
+        "size": "0x8",
+        "type": "_UNKNOWN *"
+      },
+      {
+        "name": "arg_18",
+        "offset": "0x1e8",
+        "size": "0x8",
+        "type": "_QWORD"
+      }
+    ],
+    "return_type": "void",
+    "arguments": [
+      {
+        "name": "arg0",
+        "type": "__int64"
+      },
+      {
+        "name": "arg1",
+        "type": "__int64"
+      },
+      {
+        "name": "arg2",
+        "type": "__int64"
+      }
+    ]
+  },
+  "instruction_count": 132,
+  "total_instructions": null,
+  "cursor": {
+    "done": true
+  }
+}

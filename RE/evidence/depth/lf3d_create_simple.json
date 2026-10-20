@@ -1,0 +1,43 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"CreateSimpleRender\",\"code\":\"_QWORD *__fastcall CreateSimpleRender(unsigned int a1, __int64 a2)\\n{\\n  _QWORD *v5; // rdi\\n  __int64 v6; // rax\\n  _QWORD *v7; // rbx\\n  int v8; // eax\\n\\n  if ( byte_18036D660 == 0 ) /*0x180023617*/\\n    return nullptr; /*0x180023619*/\\n  v5 = (_QWORD *)sub_180024F70(a1: 48); /*0x180023640*/\\n  *v5 = &LF3DSimpleRender::`vftable'; /*0x180023651*/\\n  v5[1] = 0; /*0x180023654*/\\n  v5[2] = 0; /*0x180023658*/\\n  v5[3] = 0; /*0x18002365c*/\\n  v5[4] = 0; /*0x180023660*/\\n  v6 = sub_180024F70(a1: 200); /*0x180023664*/\\n  v5[5] = sub_180005460(a1: v6); /*0x180023671*/\\n  if ( a1 == 2 ) /*0x180023678*/\\n  {\\n    v7 = (_QWORD *)sub_180024F70(a1: 56); /*0x180023684*/\\n    v7[2] = 0; /*0x180023695*/\\n    *v7 = &LF3DRenderCoreAPI_D3D11::`vftable'; /*0x180023698*/\\n    v7[3] = 0; /*0x18002369b*/\\n    v7[4] = 0; /*0x18002369f*/\\n    v7[5] = 0; /*0x1800236a3*/\\n    v7[6] = 0; /*0x1800236a7*/\\n    v7[1] = a2; /*0x1800236ab*/\\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)a2 + 320LL))(a1: a2); /*0x1800236b2*/\\n  }\\n  else if ( a1 <= 0x11 && (v8 = 133376, _bittest(&v8, a1)) ) /*0x1800236c5*/\\n  {\\n    v7 = (_QWORD *)sub_180024F70(a1: 40); /*0x1800236d4*/\\n    *v7 = &LF3DRenderCoreAPI_OpenGLCoreES::`vftable'; /*0x1800236de*/\\n    v7[1] = 0; /*0x1800236e1*/\\n    v7[2] = 0; /*0x1800236e5*/\\n    *((_DWORD *)v7 + 6) = a1; /*0x1800236e9*/\\n    *(_QWORD *)((char *)v7 + 28) = 0; /*0x1800236ec*/\\n  }\\n  else\\n  {\\n    v7 = nullptr; /*0x1800236f2*/\\n  }\\n  v5[1] = v7; /*0x180023702*/\\n  return v5; /*0x18002361b*/\\n}\",\"refs\":[{\"addr\":\"0x18036d660\",\"name\":\"byte_18036D660\"},{\"addr\":\"0x180024f70\",\"name\":\"sub_180024F70\"},{\"addr\":\"0x180084e48\",\"name\":\"??_7LF3DSimpleRender@@6B@\"},{\"addr\":\"0x180005460\",\"name\":\"sub_180005460\"},{\"addr\":\"0x180084de8\",\"name\":\"??_7LF3DRenderCoreAPI_D3D11@@6B@\"},{\"addr\":\"0x180084e18\",\"name\":\"??_7LF3DRenderCoreAPI_OpenGLCoreES@@6B@\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "CreateSimpleRender",
+      "code": "_QWORD *__fastcall CreateSimpleRender(unsigned int a1, __int64 a2)\n{\n  _QWORD *v5; // rdi\n  __int64 v6; // rax\n  _QWORD *v7; // rbx\n  int v8; // eax\n\n  if ( byte_18036D660 == 0 ) /*0x180023617*/\n    return nullptr; /*0x180023619*/\n  v5 = (_QWORD *)sub_180024F70(a1: 48); /*0x180023640*/\n  *v5 = &LF3DSimpleRender::`vftable'; /*0x180023651*/\n  v5[1] = 0; /*0x180023654*/\n  v5[2] = 0; /*0x180023658*/\n  v5[3] = 0; /*0x18002365c*/\n  v5[4] = 0; /*0x180023660*/\n  v6 = sub_180024F70(a1: 200); /*0x180023664*/\n  v5[5] = sub_180005460(a1: v6); /*0x180023671*/\n  if ( a1 == 2 ) /*0x180023678*/\n  {\n    v7 = (_QWORD *)sub_180024F70(a1: 56); /*0x180023684*/\n    v7[2] = 0; /*0x180023695*/\n    *v7 = &LF3DRenderCoreAPI_D3D11::`vftable'; /*0x180023698*/\n    v7[3] = 0; /*0x18002369b*/\n    v7[4] = 0; /*0x18002369f*/\n    v7[5] = 0; /*0x1800236a3*/\n    v7[6] = 0; /*0x1800236a7*/\n    v7[1] = a2; /*0x1800236ab*/\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)a2 + 320LL))(a1: a2); /*0x1800236b2*/\n  }\n  else if ( a1 <= 0x11 && (v8 = 133376, _bittest(&v8, a1)) ) /*0x1800236c5*/\n  {\n    v7 = (_QWORD *)sub_180024F70(a1: 40); /*0x1800236d4*/\n    *v7 = &LF3DRenderCoreAPI_OpenGLCoreES::`vftable'; /*0x1800236de*/\n    v7[1] = 0; /*0x1800236e1*/\n    v7[2] = 0; /*0x1800236e5*/\n    *((_DWORD *)v7 + 6) = a1; /*0x1800236e9*/\n    *(_QWORD *)((char *)v7 + 28) = 0; /*0x1800236ec*/\n  }\n  else\n  {\n    v7 = nullptr; /*0x1800236f2*/\n  }\n  v5[1] = v7; /*0x180023702*/\n  return v5; /*0x18002361b*/\n}",
+      "refs": [
+        {
+          "addr": "0x18036d660",
+          "name": "byte_18036D660"
+        },
+        {
+          "addr": "0x180024f70",
+          "name": "sub_180024F70"
+        },
+        {
+          "addr": "0x180084e48",
+          "name": "??_7LF3DSimpleRender@@6B@"
+        },
+        {
+          "addr": "0x180005460",
+          "name": "sub_180005460"
+        },
+        {
+          "addr": "0x180084de8",
+          "name": "??_7LF3DRenderCoreAPI_D3D11@@6B@"
+        },
+        {
+          "addr": "0x180084e18",
+          "name": "??_7LF3DRenderCoreAPI_OpenGLCoreES@@6B@"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

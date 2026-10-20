@@ -1,0 +1,135 @@
+void __fastcall sub_1800B3090(__int64 a1, __int64 a2, __int64 a3)
+{
+  __int64 v6; // rcx
+  __int64 v7; // rcx
+  double v8; // xmm0_8
+  _QWORD *v9; // rcx
+  _QWORD *v10; // rcx
+  __int16 v11; // [rsp+60h] [rbp-A0h]
+  double v12; // [rsp+68h] [rbp-98h] BYREF
+  double v13; // [rsp+70h] [rbp-90h] BYREF
+  __int64 v14; // [rsp+78h] [rbp-88h]
+  __int64 v15; // [rsp+80h] [rbp-80h]
+  double v16; // [rsp+88h] [rbp-78h] BYREF
+  double v17; // [rsp+90h] [rbp-70h] BYREF
+  double v18; // [rsp+98h] [rbp-68h] BYREF
+  double v19; // [rsp+A0h] [rbp-60h] BYREF
+  double v20; // [rsp+A8h] [rbp-58h] BYREF
+  double v21; // [rsp+B0h] [rbp-50h] BYREF
+  double v22; // [rsp+B8h] [rbp-48h] BYREF
+  double v23; // [rsp+C0h] [rbp-40h] BYREF
+  double v24; // [rsp+C8h] [rbp-38h] BYREF
+  double v25[2]; // [rsp+D0h] [rbp-30h] BYREF
+  _BYTE v26[96]; // [rsp+E0h] [rbp-20h] BYREF
+  _BYTE v27[96]; // [rsp+140h] [rbp+40h] BYREF
+
+  v14 = a2; /*0x1800b30c1*/
+  v15 = a3; /*0x1800b30c6*/
+  cv::Mat::Mat(this: (cv::Mat *)v27); /*0x1800b30ce*/
+  __wind /*0xf1c0000000000040*/
+  {
+    __wind /*0xf1c0000000000048*/
+    {
+      __wind /*0xf1c0000000000050*/
+      {
+        sub_1800B24E0( /*0x1800b3126*/
+          a1: v6,
+          (void **)a2,
+          a3: a1 + 192,
+          a4: a1 + 288,
+          a5: &v20,
+          a6: &v13,
+          a7: &v19,
+          a8: &v18,
+          a9: &v17,
+          a10: &v16,
+          a11: (__int64)v27);
+        cv::Mat::Mat(this: (cv::Mat *)v26); /*0x1800b312f*/
+        __wind /*0xf1c0000000000004*/
+        {
+          sub_1800B24E0( /*0x1800b3187*/
+            a1: v7,
+            a2: (void **)a3,
+            a3: a1 + 672,
+            a4: a1 + 768,
+            a5: v25,
+            a6: &v12,
+            a7: &v24,
+            a8: &v23,
+            a9: &v22,
+            a10: &v21,
+            a11: (__int64)v26);
+          v8 = (v12 + v13) * 0.5; /*0x1800b3198*/
+          if ( v8 < -8.0 || v8 > 8.0 ) /*0x1800b31ba*/
+          {
+            if ( v8 >= -8.0 ) /*0x1800b31c9*/
+            {
+              if ( v8 <= 8.0 ) /*0x1800b31d8*/
+              {
+LABEL_10:
+                cv::Mat::~Mat(this: (cv::Mat *)v26); /*0x1800b31ed*/
+                cv::Mat::~Mat(this: (cv::Mat *)v27); /*0x1800b31fc*/
+                v9 = *(_QWORD **)a2; /*0x1800b3203*/
+                if ( *(_QWORD *)a2 != 0 ) /*0x1800b320b*/
+                {
+                  if ( ((*(_QWORD *)(a2 + 16) - (_QWORD)v9) & 0xFFFFFFFFFFFFFFF0uLL) >= 0x1000 ) /*0x1800b321f*/
+                  {
+                    if ( (unsigned __int64)v9 - *(v9 - 1) - 8 > 0x1F ) /*0x1800b3234*/
+                      invalid_parameter_noinfo_noreturn(); /*0x1800b32af*/
+                    v9 = (_QWORD *)*(v9 - 1); /*0x1800b3236*/
+                  }
+                  j_j_j__free_base_0(Block: v9); /*0x1800b3239*/
+                  *(_QWORD *)a2 = 0; /*0x1800b323e*/
+                  *(_QWORD *)(a2 + 8) = 0; /*0x1800b3241*/
+                  *(_QWORD *)(a2 + 16) = 0; /*0x1800b3245*/
+                }
+                v10 = *(_QWORD **)a3; /*0x1800b3249*/
+                if ( *(_QWORD *)a3 != 0 ) /*0x1800b324f*/
+                {
+                  if ( ((*(_QWORD *)(a3 + 16) - (_QWORD)v10) & 0xFFFFFFFFFFFFFFF0uLL) >= 0x1000 ) /*0x1800b3263*/
+                  {
+                    if ( (unsigned __int64)v10 - *(v10 - 1) - 8 > 0x1F ) /*0x1800b3278*/
+                      invalid_parameter_noinfo_noreturn(); /*0x1800b32b5*/
+                    v10 = (_QWORD *)*(v10 - 1); /*0x1800b327a*/
+                  }
+                  j_j_j__free_base_0(Block: v10); /*0x1800b327d*/
+                  *(_QWORD *)a3 = 0; /*0x1800b3282*/
+                  *(_QWORD *)(a3 + 8) = 0; /*0x1800b3285*/
+                  *(_QWORD *)(a3 + 16) = 0; /*0x1800b3289*/
+                }
+                return; /*0x1800b3289*/
+              }
+              v11 = 1; /*0x1800b31da*/
+            }
+            else
+            {
+              v11 = 256; /*0x1800b31cb*/
+            }
+          }
+          else
+          {
+            v11 = 257; /*0x1800b31bc*/
+          }
+          *(_WORD *)(a1 + 1328) = v11; /*0x1800b31e6*/
+          goto LABEL_10; /*0x1800b31e6*/
+        }
+        __unwind
+        {
+          cv::Mat::~Mat(this: (cv::Mat *)v26); /*0xf1c0000000000014*/
+        }
+      }
+      __unwind
+      {
+        cv::Mat::~Mat(this: (cv::Mat *)v27); /*0xf1c0000000000020*/
+      }
+    }
+    __unwind
+    {
+      sub_180034EB0(a1: v14); /*0xf1c000000000002c*/
+    }
+  }
+  __unwind
+  {
+    sub_180034EB0(a1: v15); /*0xf1c0000000000038*/
+  }
+}

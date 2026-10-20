@@ -1,0 +1,81 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18000FA20\",\"code\":\"_QWORD *__fastcall sub_18000FA20(__int64 a1)\\n{\\n  __int64 v2; // rax\\n  __int64 Senses; // rax\\n  char *v4; // rdi\\n  _QWORD *v5; // rax\\n  _QWORD *v6; // rbx\\n  __int64 v7; // rax\\n  void *v8; // rcx\\n  __int64 v9; // rax\\n  char *v10; // rax\\n  void *Block[3]; // [rsp+20h] [rbp-79h] BYREF\\n  unsigned __int64 v13; // [rsp+38h] [rbp-61h]\\n  _BYTE v14[16]; // [rsp+40h] [rbp-59h] BYREF\\n  __int64 v15; // [rsp+50h] [rbp-49h]\\n  __int64 v16; // [rsp+58h] [rbp-41h]\\n  void *v17; // [rsp+60h] [rbp-39h] BYREF\\n  _QWORD *v18; // [rsp+68h] [rbp-31h]\\n  __int64 v19; // [rsp+70h] [rbp-29h]\\n  __int64 v20; // [rsp+78h] [rbp-21h]\\n  _BYTE v21[32]; // [rsp+88h] [rbp-11h] BYREF\\n  char v22[72]; // [rsp+A8h] [rbp+Fh] BYREF\\n  void *v23; // [rsp+108h] [rbp+6Fh]\\n\\n  v20 = -2; /*0x18000fa33*/\\n  v2 = sub_180002D10(a1: v22, a2: &qword_1800600A8); /*0x18000fa49*/\\n  Senses = SR::SRContext::getSenses(a1, a2: v2); /*0x18000fa54*/\\n  sub_180002FA0(a1: &v17, a2: Senses); /*0x18000fa61*/\\n  __wind /*0xf1c000000000007c*/\\n  {\\n    v4 = (char *)v17; /*0x18000fa67*/\\n    if ( v17 == v18 ) /*0x18000fa72*/\\n    {\\n      v5 = operator new(Size: 0x1818u); /*0x18000fa7d*/\\n      v6 = v5; /*0x18000fa82*/\\n      v23 = v5; /*0x18000fa85*/\\n      __wind /*0xf1c0000000000070*/\\n      {\\n        if ( v5 != nullptr ) /*0x18000fa8c*/\\n        {\\n          Block[2] = nullptr; /*0x18000fa92*/\\n          v13 = 15; /*0x18000fa9a*/\\n          LOBYTE(Block[0]) = 0; /*0x18000faa2*/\\n          sub_1800038D0(a1: Block, Src: \\\"DimencoUDPTracker\\\", Size: 0x11u); /*0x18000fab7*/\\n          __wind /*0xf1c0000000000064*/\\n          {\\n            v15 = 0; /*0x18000facc*/\\n            v16 = 15; /*0x18000fad4*/\\n            v14[0] = 0; /*0x18000fadc*/\\n            sub_1800038D0(a1: v14, Src: \\\"EyeTracker sense passing along UDP packages to the SR system.\\\", Size: 0x3Du); /*0x18000faf1*/\\n            __wind /*0xf1c0000000000058*/\\n            {\\n              v7 = sub_180002D10(a1: v21, a2: Block); /*0x18000faff*/\\n            }\\n            __unwind\\n            {\\n              sub_180003240(a1: v14); /*0x18003e647*/\\n            }\\n            sub_18000CFA0(a1: v6, a2: v7, a3: v14); /*0x18000fb0f*/\\n            *v6 = &SR::DimencoUDPEyeTracker::`vftable'; /*0x18000fb1b*/\\n          }\\n          __unwind\\n          {\\n            sub_180003240(a1: Block); /*0x18003e637*/\\n          }\\n          if ( v13 >= 0x10 ) /*0x18000fb26*/\\n          {\\n            v8 = Block[0]; /*0x18000fb2b*/\\n            if ( v13 + 1 >= 0x1000 ) /*0x18000fb39*/\\n            {\\n              v8 = *((void **)Block[0] - 1); /*0x18000fb3f*/\\n              if ( (unsigned __int64)((char *)Block[0] - (char *)v8 - 8) > 0x1F ) /*0x18000fb4e*/\\n                invalid_parameter_noinfo_noreturn(); /*0x18000fb50*/\\n            }\\n            j_j_free(Block: v8); /*0x18000fb57*/\\n          }\\n          *v6 = &SR::DimencoUDPEyeTracker::`vftable'; /*0x18000fb5c*/\\n        }\\n        else\\n        {\\n          v6 = nullptr; /*0x18000fb61*/\\n        }\\n      }\\n      __unwind\\n      {\\n        j_j_free(Block: v23); /*0x18003e625*/\\n      }\\n      v9 = sub_180002D10(a1: v21, a2: &qword_1800600A8); /*0x18000fb6e*/\\n      SR::SRContext::addSense(a1, a2: v9, a3: v6); /*0x18000fb7c*/\\n    }\\n    else\\n    {\\n      v6 = (_QWORD *)*(v18 - 1); /*0x18000fb84*/\\n    }\\n  }\\n  __unwind\\n  {\\n    sub_1800032A0(a1: &v17); /*0x18003e607*/\\n  }\\n  if ( v4 != nullptr ) /*0x18000fb8b*/\\n  {\\n    v10 = v4; /*0x18000fb98*/\\n    if ( ((v19 - (_QWORD)v4) & 0xFFFFFFFFFFFFFFF8uLL) >= 0x1000 ) /*0x18000fba2*/\\n    {\\n      v4 = *((char **)v4 - 1); /*0x18000fba8*/\\n      if ( (unsigned __int64)(v10 - v4 - 8) > 0x1F ) /*0x18000fbb7*/\\n        invalid_parameter_noinfo_noreturn(); /*0x18000fbb9*/\\n    }\\n    j_j_free(Block: v4); /*0x18000fbc3*/\\n  }\\n  return v6; /*0x18000fbcb*/\\n}\",\"refs\":[{\"addr\":\"0x180002d10\",\"name\":\"sub_180002D10\"},{\"addr\":\"0x1800600a8\",\"name\":\"qword_1800600A8\"},{\"addr\":\"0x180043528\",\"name\":\"?getSenses@SRContext@SR@@QEAAAEBV?$vector@PEAVSense@SR@@V?$allocator@PEAVSense@SR@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z\"},{\"addr\":\"0x180002fa0\",\"name\":\"sub_180002FA0\"},{\"addr\":\"0x18003c3f8\",\"name\":\"??2@YAPEAX_K@Z\"},{\"addr\":\"0x1800038d0\",\"name\":\"sub_1800038D0\"},{\"addr\":\"0x180045eb8\",\"name\":\"aDimencoudptrac\",\"string\":\"DimencoUDPTracker\"},{\"addr\":\"0x180044c28\",\"name\":\"aEyetrackerSens\",\"string\":\"EyeTracker sense passing along UDP packages to the SR system.\"},{\"addr\":\"0x180003240\",\"name\":\"sub_180003240\"},{\"addr\":\"0x18000cfa0\",\"name\":\"sub_18000CFA0\"},{\"addr\":\"0x180045dc0\",\"name\":\"??_7DimencoUDPEyeTracker@SR@@6B@\"},{\"addr\":\"0x180043788\",\"name\":\"_invalid_parameter_noinfo_noreturn\"},{\"addr\":\"0x18003c434\",\"name\":\"j_j_free\"},{\"addr\":\"0x180043520\",\"name\":\"?addSense@SRContext@SR@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVSense@2@@Z\"},{\"addr\":\"0x1800032a0\",\"name\":\"sub_1800032A0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18000FA20",
+      "code": "_QWORD *__fastcall sub_18000FA20(__int64 a1)\n{\n  __int64 v2; // rax\n  __int64 Senses; // rax\n  char *v4; // rdi\n  _QWORD *v5; // rax\n  _QWORD *v6; // rbx\n  __int64 v7; // rax\n  void *v8; // rcx\n  __int64 v9; // rax\n  char *v10; // rax\n  void *Block[3]; // [rsp+20h] [rbp-79h] BYREF\n  unsigned __int64 v13; // [rsp+38h] [rbp-61h]\n  _BYTE v14[16]; // [rsp+40h] [rbp-59h] BYREF\n  __int64 v15; // [rsp+50h] [rbp-49h]\n  __int64 v16; // [rsp+58h] [rbp-41h]\n  void *v17; // [rsp+60h] [rbp-39h] BYREF\n  _QWORD *v18; // [rsp+68h] [rbp-31h]\n  __int64 v19; // [rsp+70h] [rbp-29h]\n  __int64 v20; // [rsp+78h] [rbp-21h]\n  _BYTE v21[32]; // [rsp+88h] [rbp-11h] BYREF\n  char v22[72]; // [rsp+A8h] [rbp+Fh] BYREF\n  void *v23; // [rsp+108h] [rbp+6Fh]\n\n  v20 = -2; /*0x18000fa33*/\n  v2 = sub_180002D10(a1: v22, a2: &qword_1800600A8); /*0x18000fa49*/\n  Senses = SR::SRContext::getSenses(a1, a2: v2); /*0x18000fa54*/\n  sub_180002FA0(a1: &v17, a2: Senses); /*0x18000fa61*/\n  __wind /*0xf1c000000000007c*/\n  {\n    v4 = (char *)v17; /*0x18000fa67*/\n    if ( v17 == v18 ) /*0x18000fa72*/\n    {\n      v5 = operator new(Size: 0x1818u); /*0x18000fa7d*/\n      v6 = v5; /*0x18000fa82*/\n      v23 = v5; /*0x18000fa85*/\n      __wind /*0xf1c0000000000070*/\n      {\n        if ( v5 != nullptr ) /*0x18000fa8c*/\n        {\n          Block[2] = nullptr; /*0x18000fa92*/\n          v13 = 15; /*0x18000fa9a*/\n          LOBYTE(Block[0]) = 0; /*0x18000faa2*/\n          sub_1800038D0(a1: Block, Src: \"DimencoUDPTracker\", Size: 0x11u); /*0x18000fab7*/\n          __wind /*0xf1c0000000000064*/\n          {\n            v15 = 0; /*0x18000facc*/\n            v16 = 15; /*0x18000fad4*/\n            v14[0] = 0; /*0x18000fadc*/\n            sub_1800038D0(a1: v14, Src: \"EyeTracker sense passing along UDP packages to the SR system.\", Size: 0x3Du); /*0x18000faf1*/\n            __wind /*0xf1c0000000000058*/\n            {\n              v7 = sub_180002D10(a1: v21, a2: Block); /*0x18000faff*/\n            }\n            __unwind\n            {\n              sub_180003240(a1: v14); /*0x18003e647*/\n            }\n            sub_18000CFA0(a1: v6, a2: v7, a3: v14); /*0x18000fb0f*/\n            *v6 = &SR::DimencoUDPEyeTracker::`vftable'; /*0x18000fb1b*/\n          }\n          __unwind\n          {\n            sub_180003240(a1: Block); /*0x18003e637*/\n          }\n          if ( v13 >= 0x10 ) /*0x18000fb26*/\n          {\n            v8 = Block[0]; /*0x18000fb2b*/\n            if ( v13 + 1 >= 0x1000 ) /*0x18000fb39*/\n            {\n              v8 = *((void **)Block[0] - 1); /*0x18000fb3f*/\n              if ( (unsigned __int64)((char *)Block[0] - (char *)v8 - 8) > 0x1F ) /*0x18000fb4e*/\n                invalid_parameter_noinfo_noreturn(); /*0x18000fb50*/\n            }\n            j_j_free(Block: v8); /*0x18000fb57*/\n          }\n          *v6 = &SR::DimencoUDPEyeTracker::`vftable'; /*0x18000fb5c*/\n        }\n        else\n        {\n          v6 = nullptr; /*0x18000fb61*/\n        }\n      }\n      __unwind\n      {\n        j_j_free(Block: v23); /*0x18003e625*/\n      }\n      v9 = sub_180002D10(a1: v21, a2: &qword_1800600A8); /*0x18000fb6e*/\n      SR::SRContext::addSense(a1, a2: v9, a3: v6); /*0x18000fb7c*/\n    }\n    else\n    {\n      v6 = (_QWORD *)*(v18 - 1); /*0x18000fb84*/\n    }\n  }\n  __unwind\n  {\n    sub_1800032A0(a1: &v17); /*0x18003e607*/\n  }\n  if ( v4 != nullptr ) /*0x18000fb8b*/\n  {\n    v10 = v4; /*0x18000fb98*/\n    if ( ((v19 - (_QWORD)v4) & 0xFFFFFFFFFFFFFFF8uLL) >= 0x1000 ) /*0x18000fba2*/\n    {\n      v4 = *((char **)v4 - 1); /*0x18000fba8*/\n      if ( (unsigned __int64)(v10 - v4 - 8) > 0x1F ) /*0x18000fbb7*/\n        invalid_parameter_noinfo_noreturn(); /*0x18000fbb9*/\n    }\n    j_j_free(Block: v4); /*0x18000fbc3*/\n  }\n  return v6; /*0x18000fbcb*/\n}",
+      "refs": [
+        {
+          "addr": "0x180002d10",
+          "name": "sub_180002D10"
+        },
+        {
+          "addr": "0x1800600a8",
+          "name": "qword_1800600A8"
+        },
+        {
+          "addr": "0x180043528",
+          "name": "?getSenses@SRContext@SR@@QEAAAEBV?$vector@PEAVSense@SR@@V?$allocator@PEAVSense@SR@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z"
+        },
+        {
+          "addr": "0x180002fa0",
+          "name": "sub_180002FA0"
+        },
+        {
+          "addr": "0x18003c3f8",
+          "name": "??2@YAPEAX_K@Z"
+        },
+        {
+          "addr": "0x1800038d0",
+          "name": "sub_1800038D0"
+        },
+        {
+          "addr": "0x180045eb8",
+          "name": "aDimencoudptrac",
+          "string": "DimencoUDPTracker"
+        },
+        {
+          "addr": "0x180044c28",
+          "name": "aEyetrackerSens",
+          "string": "EyeTracker sense passing along UDP packages to the SR system."
+        },
+        {
+          "addr": "0x180003240",
+          "name": "sub_180003240"
+        },
+        {
+          "addr": "0x18000cfa0",
+          "name": "sub_18000CFA0"
+        },
+        {
+          "addr": "0x180045dc0",
+          "name": "??_7DimencoUDPEyeTracker@SR@@6B@"
+        },
+        {
+          "addr": "0x180043788",
+          "name": "_invalid_parameter_noinfo_noreturn"
+        },
+        {
+          "addr": "0x18003c434",
+          "name": "j_j_free"
+        },
+        {
+          "addr": "0x180043520",
+          "name": "?addSense@SRContext@SR@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVSense@2@@Z"
+        },
+        {
+          "addr": "0x1800032a0",
+          "name": "sub_1800032A0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

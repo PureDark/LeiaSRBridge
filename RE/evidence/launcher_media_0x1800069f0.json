@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800069f0\",\"code\":\"__int64 __fastcall sub_1800069F0(__int64 a1)\\n{\\n  __int64 v1; // rcx\\n  __int64 result; // rax\\n\\n  v1 = *(_QWORD *)(a1 + 8); /*0x1800069f0*/\\n  if ( v1 != 0 ) /*0x1800069f7*/\\n    return (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v1 + 8LL))(a1: v1); /*0x1800069fc*/\\n  return result; /*0x180006a00*/\\n}\"}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800069f0",
+      "code": "__int64 __fastcall sub_1800069F0(__int64 a1)\n{\n  __int64 v1; // rcx\n  __int64 result; // rax\n\n  v1 = *(_QWORD *)(a1 + 8); /*0x1800069f0*/\n  if ( v1 != 0 ) /*0x1800069f7*/\n    return (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v1 + 8LL))(a1: v1); /*0x1800069fc*/\n  return result; /*0x180006a00*/\n}"
+    },
+    "isError": false
+  },
+  "id": 1
+}

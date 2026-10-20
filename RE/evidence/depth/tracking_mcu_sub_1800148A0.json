@@ -1,0 +1,83 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_1800148A0\",\"code\":\"__int64 __fastcall sub_1800148A0(_BYTE *a1)\\n{\\n  __int64 result; // rax\\n  __int64 v2; // rax\\n  int v3; // [rsp+20h] [rbp-58h] BYREF\\n  __int64 v4; // [rsp+28h] [rbp-50h]\\n  _BYTE *v5; // [rsp+30h] [rbp-48h]\\n  _BYTE *v6; // [rsp+38h] [rbp-40h]\\n  _BYTE v7[8]; // [rsp+40h] [rbp-38h] BYREF\\n  _BYTE v8[8]; // [rsp+48h] [rbp-30h] BYREF\\n  _BYTE v9[16]; // [rsp+50h] [rbp-28h] BYREF\\n  _BYTE *v10; // [rsp+80h] [rbp+8h] BYREF\\n\\n  v10 = a1; /*0x1800148a0*/\\n  while ( 1 ) /*0x1800148c0*/\\n  {\\n    result = (unsigned __int8)*v10; /*0x1800148c0*/\\n    if ( *v10 == 0 ) /*0x1800148c5*/\\n      return result; /*0x180014a9b*/\\n    sub_18000F220(a1: v9, a2: 16); /*0x1800148d5*/\\n    std::unique_lock<std::mutex>::unique_lock<std::mutex>(a1: v9, a2: v10 + 96); /*0x1800148ee*/\\n    __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000030*/\\n    v5 = v10 + 24; /*0x180014900*/\\n    v4 = *(_QWORD *)std::_Iterator_base12::operator=(a1: v7, a2: &v10); /*0x18001491a*/\\n    sub_18001BB20(a1: v5, a2: v9, a3: v4); /*0x18001492e*/\\n    if ( *v10 == 0 ) /*0x180014940*/\\n    {\\n      if ( __eh34_unwind(0) ) /*0xf1c0000000000024*/\\n      {\\nunwind_state_0:\\n        std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v9); /*0xf1c0000000000014*/\\n        __eh34_propagate_exception_into_caller(0, -1); /*0xf1c0000000000018*/\\n      }\\n      __eh34_exit_wind_state(0, -1); /*0xf1c0000000000028*/\\n      return std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v9); /*0x180014947*/\\n    }\\n    while ( (unsigned int)sub_180017C60(a1: v10 + 12) == 1 && (unsigned __int8)sub_180017AE0(a1: v10 + 176) != 0 ) /*0x180014989*/\\n    {\\n      while ( (unsigned int)sub_180017C60(a1: v10 + 12) == 1 /*0x1800149e0*/\\n           && (unsigned __int8)sub_180017AE0(a1: v10 + 176) != 0\\n           && (unsigned __int8)sub_180033C00(a1: v10 + 344) == 0 )\\n      {\\n        v3 = 1; /*0x1800149e4*/\\n        v2 = sub_18001BB60(a1: v8, a2: &v3); /*0x1800149f6*/\\n        sub_18001BB80(a1: v2); /*0x1800149fe*/\\n      }\\n      v6 = v10 + 344; /*0x180014a13*/\\n      dword_180077F74 = sub_180033C60(a1: v10 + 344, a2: &unk_180077F80, a3: 2048); /*0x180014a2f*/\\n      if ( dword_180077F74 > 0 && dword_180077F74 <= 2048 && (unsigned __int8)sub_180012790(a1: v10) != 0 ) /*0x180014a61*/\\n      {\\n        sub_1800115C0(a1: &unk_180077F80, a2: (unsigned int)dword_180077F74); /*0x180014a75*/\\n        sub_1800128C0(a1: v10); /*0x180014a82*/\\n      }\\n    }\\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000010*/\\n      goto unwind_state_0; /*0xf1c0000000000010*/\\n    __eh34_exit_wind_state(0, -1); /*0xf1c000000000001c*/\\n    std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v9); /*0x180014a91*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x18000f220\",\"name\":\"sub_18000F220\"},{\"addr\":\"0x1800195b0\",\"name\":\"??0?$unique_lock@Vmutex@std@@@std@@QEAA@AEAVmutex@1@@Z\"},{\"addr\":\"0x180014b10\",\"name\":\"??4_Iterator_base12@std@@QEAAAEAU01@AEBU01@@Z\"},{\"addr\":\"0x18001bb20\",\"name\":\"sub_18001BB20\"},{\"addr\":\"0x180019580\",\"name\":\"??1?$unique_lock@Vmutex@std@@@std@@QEAA@XZ\"},{\"addr\":\"0x18001bb60\",\"name\":\"sub_18001BB60\"},{\"addr\":\"0x18001bb80\",\"name\":\"sub_18001BB80\"},{\"addr\":\"0x180017c60\",\"name\":\"sub_180017C60\"},{\"addr\":\"0x180017ae0\",\"name\":\"sub_180017AE0\"},{\"addr\":\"0x180033c00\",\"name\":\"sub_180033C00\"},{\"addr\":\"0x180077f74\",\"name\":\"dword_180077F74\"},{\"addr\":\"0x180033c60\",\"name\":\"sub_180033C60\"},{\"addr\":\"0x180077f80\",\"name\":\"unk_180077F80\"},{\"addr\":\"0x1800115c0\",\"name\":\"sub_1800115C0\"},{\"addr\":\"0x1800128c0\",\"name\":\"sub_1800128C0\"},{\"addr\":\"0x180012790\",\"name\":\"sub_180012790\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_1800148A0",
+      "code": "__int64 __fastcall sub_1800148A0(_BYTE *a1)\n{\n  __int64 result; // rax\n  __int64 v2; // rax\n  int v3; // [rsp+20h] [rbp-58h] BYREF\n  __int64 v4; // [rsp+28h] [rbp-50h]\n  _BYTE *v5; // [rsp+30h] [rbp-48h]\n  _BYTE *v6; // [rsp+38h] [rbp-40h]\n  _BYTE v7[8]; // [rsp+40h] [rbp-38h] BYREF\n  _BYTE v8[8]; // [rsp+48h] [rbp-30h] BYREF\n  _BYTE v9[16]; // [rsp+50h] [rbp-28h] BYREF\n  _BYTE *v10; // [rsp+80h] [rbp+8h] BYREF\n\n  v10 = a1; /*0x1800148a0*/\n  while ( 1 ) /*0x1800148c0*/\n  {\n    result = (unsigned __int8)*v10; /*0x1800148c0*/\n    if ( *v10 == 0 ) /*0x1800148c5*/\n      return result; /*0x180014a9b*/\n    sub_18000F220(a1: v9, a2: 16); /*0x1800148d5*/\n    std::unique_lock<std::mutex>::unique_lock<std::mutex>(a1: v9, a2: v10 + 96); /*0x1800148ee*/\n    __eh34_enter_wind_state(-1, 0); /*0xf1c0000000000030*/\n    v5 = v10 + 24; /*0x180014900*/\n    v4 = *(_QWORD *)std::_Iterator_base12::operator=(a1: v7, a2: &v10); /*0x18001491a*/\n    sub_18001BB20(a1: v5, a2: v9, a3: v4); /*0x18001492e*/\n    if ( *v10 == 0 ) /*0x180014940*/\n    {\n      if ( __eh34_unwind(0) ) /*0xf1c0000000000024*/\n      {\nunwind_state_0:\n        std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v9); /*0xf1c0000000000014*/\n        __eh34_propagate_exception_into_caller(0, -1); /*0xf1c0000000000018*/\n      }\n      __eh34_exit_wind_state(0, -1); /*0xf1c0000000000028*/\n      return std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v9); /*0x180014947*/\n    }\n    while ( (unsigned int)sub_180017C60(a1: v10 + 12) == 1 && (unsigned __int8)sub_180017AE0(a1: v10 + 176) != 0 ) /*0x180014989*/\n    {\n      while ( (unsigned int)sub_180017C60(a1: v10 + 12) == 1 /*0x1800149e0*/\n           && (unsigned __int8)sub_180017AE0(a1: v10 + 176) != 0\n           && (unsigned __int8)sub_180033C00(a1: v10 + 344) == 0 )\n      {\n        v3 = 1; /*0x1800149e4*/\n        v2 = sub_18001BB60(a1: v8, a2: &v3); /*0x1800149f6*/\n        sub_18001BB80(a1: v2); /*0x1800149fe*/\n      }\n      v6 = v10 + 344; /*0x180014a13*/\n      dword_180077F74 = sub_180033C60(a1: v10 + 344, a2: &unk_180077F80, a3: 2048); /*0x180014a2f*/\n      if ( dword_180077F74 > 0 && dword_180077F74 <= 2048 && (unsigned __int8)sub_180012790(a1: v10) != 0 ) /*0x180014a61*/\n      {\n        sub_1800115C0(a1: &unk_180077F80, a2: (unsigned int)dword_180077F74); /*0x180014a75*/\n        sub_1800128C0(a1: v10); /*0x180014a82*/\n      }\n    }\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000010*/\n      goto unwind_state_0; /*0xf1c0000000000010*/\n    __eh34_exit_wind_state(0, -1); /*0xf1c000000000001c*/\n    std::unique_lock<std::mutex>::~unique_lock<std::mutex>(a1: v9); /*0x180014a91*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x18000f220",
+          "name": "sub_18000F220"
+        },
+        {
+          "addr": "0x1800195b0",
+          "name": "??0?$unique_lock@Vmutex@std@@@std@@QEAA@AEAVmutex@1@@Z"
+        },
+        {
+          "addr": "0x180014b10",
+          "name": "??4_Iterator_base12@std@@QEAAAEAU01@AEBU01@@Z"
+        },
+        {
+          "addr": "0x18001bb20",
+          "name": "sub_18001BB20"
+        },
+        {
+          "addr": "0x180019580",
+          "name": "??1?$unique_lock@Vmutex@std@@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x18001bb60",
+          "name": "sub_18001BB60"
+        },
+        {
+          "addr": "0x18001bb80",
+          "name": "sub_18001BB80"
+        },
+        {
+          "addr": "0x180017c60",
+          "name": "sub_180017C60"
+        },
+        {
+          "addr": "0x180017ae0",
+          "name": "sub_180017AE0"
+        },
+        {
+          "addr": "0x180033c00",
+          "name": "sub_180033C00"
+        },
+        {
+          "addr": "0x180077f74",
+          "name": "dword_180077F74"
+        },
+        {
+          "addr": "0x180033c60",
+          "name": "sub_180033C60"
+        },
+        {
+          "addr": "0x180077f80",
+          "name": "unk_180077F80"
+        },
+        {
+          "addr": "0x1800115c0",
+          "name": "sub_1800115C0"
+        },
+        {
+          "addr": "0x1800128c0",
+          "name": "sub_1800128C0"
+        },
+        {
+          "addr": "0x180012790",
+          "name": "sub_180012790"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

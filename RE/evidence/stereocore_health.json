@@ -1,0 +1,25 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"ok\",\"uptime_sec\":106.337,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\StereoCore.dll.i64\",\"module\":\"StereoCore.dll\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\StereoCore.dll\",\"imagebase\":\"0x0\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":242}"
+      }
+    ],
+    "structuredContent": {
+      "status": "ok",
+      "uptime_sec": 106.337,
+      "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\StereoCore.dll.i64",
+      "module": "StereoCore.dll",
+      "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\StereoCore.dll",
+      "imagebase": "0x0",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 242
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"query\":\"0x18000f098\",\"value\":\"0x180005e40\"}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "query": "0x18000f098",
+          "value": "0x180005e40"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

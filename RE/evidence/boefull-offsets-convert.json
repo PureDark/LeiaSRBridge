@@ -1,0 +1,86 @@
+{
+  "result": [
+    {
+      "input": "1328",
+      "result": {
+        "decimal": "1328",
+        "hexadecimal": "0x530",
+        "bytes": "30 05",
+        "ascii": null,
+        "binary": "0b10100110000"
+      },
+      "error": null
+    },
+    {
+      "input": "168",
+      "result": null,
+      "error": "Number 168 is too big for 1 bytes"
+    },
+    {
+      "input": "60",
+      "result": {
+        "decimal": "60",
+        "hexadecimal": "0x3c",
+        "bytes": "3c",
+        "ascii": "<",
+        "binary": "0b111100"
+      },
+      "error": null
+    },
+    {
+      "input": "72",
+      "result": {
+        "decimal": "72",
+        "hexadecimal": "0x48",
+        "bytes": "48",
+        "ascii": "H",
+        "binary": "0b1001000"
+      },
+      "error": null
+    },
+    {
+      "input": "84",
+      "result": {
+        "decimal": "84",
+        "hexadecimal": "0x54",
+        "bytes": "54",
+        "ascii": "T",
+        "binary": "0b1010100"
+      },
+      "error": null
+    },
+    {
+      "input": "96",
+      "result": {
+        "decimal": "96",
+        "hexadecimal": "0x60",
+        "bytes": "60",
+        "ascii": "`",
+        "binary": "0b1100000"
+      },
+      "error": null
+    },
+    {
+      "input": "108",
+      "result": {
+        "decimal": "108",
+        "hexadecimal": "0x6c",
+        "bytes": "6c",
+        "ascii": "l",
+        "binary": "0b1101100"
+      },
+      "error": null
+    },
+    {
+      "input": "120",
+      "result": {
+        "decimal": "120",
+        "hexadecimal": "0x78",
+        "bytes": "78",
+        "ascii": "x",
+        "binary": "0b1111000"
+      },
+      "error": null
+    }
+  ]
+}

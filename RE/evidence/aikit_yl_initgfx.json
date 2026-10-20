@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"YL_InitGraphicsDevice\",\"code\":\"char __fastcall YL_InitGraphicsDevice(__int64 a1, __int64 a2, __int64 a3)\\n{\\n  if ( a1 != 0 && a2 != 0 && a3 != 0 ) /*0x18015b9ed*/\\n    return (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)a1 + 8LL))(a1); /*0x18015b9f2*/\\n  else\\n    return 0; /*0x18015b9f6*/\\n}\"}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "YL_InitGraphicsDevice",
+      "code": "char __fastcall YL_InitGraphicsDevice(__int64 a1, __int64 a2, __int64 a3)\n{\n  if ( a1 != 0 && a2 != 0 && a3 != 0 ) /*0x18015b9ed*/\n    return (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)a1 + 8LL))(a1); /*0x18015b9f2*/\n  else\n    return 0; /*0x18015b9f6*/\n}"
+    },
+    "isError": false
+  },
+  "id": 1
+}

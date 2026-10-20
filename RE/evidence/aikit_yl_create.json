@@ -1,0 +1,103 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"YL_CreateStereoRendererEx\",\"code\":\"__int64 YL_CreateStereoRendererEx()\\n{\\n  volatile signed __int32 *v0; // rbx\\n  void *v1; // rbx\\n  _QWORD v3[2]; // [rsp+20h] [rbp-58h] BYREF\\n  __int128 v4; // [rsp+30h] [rbp-48h]\\n  const char *v5; // [rsp+40h] [rbp-38h]\\n  __int128 pExceptionObject; // [rsp+50h] [rbp-28h] BYREF\\n  const char *v7; // [rsp+60h] [rbp-18h]\\n\\n  if ( (unsigned __int8)sub_18014EFD0() == 0 ) /*0x18015b83b*/\\n  {\\n    sub_18010F360(a1: &pExceptionObject, a2: \\\"Illegal License!\\\"); /*0x18015b9c9*/\\n    throw (std::runtime_error *)&pExceptionObject; /*0x18015b9da*/\\n  }\\n  if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x18015b86a*/\\n                                   + 16LL) )\\n  {\\n    sub_1803B3838(a1: &dword_1805C9A98); /*0x18015b873*/\\n    if ( dword_1805C9A98 == -1 ) /*0x18015b87f*/\\n    {\\n      xmmword_1805C9820 = 0; /*0x18015b884*/\\n      sub_180116C20(); /*0x18015b88b*/\\n      atexit(a1: sub_1803B9F10); /*0x18015b897*/\\n      sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015b8a3*/\\n    }\\n  }\\n  v0 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b8a8*/\\n  if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015b8b2*/\\n  {\\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015b8b4*/\\n    v0 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b8b8*/\\n  }\\n  v3[0] = \\\"CreateStereoRenderer\\\"; /*0x18015b8cd*/\\n  v3[1] = 20; /*0x18015b8de*/\\n  *(_QWORD *)&v4 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\YLStereoRendererEx.cpp\\\"; /*0x18015b8f1*/\\n  HIDWORD(v4) = HIDWORD(pExceptionObject); /*0x18015b900*/\\n  v5 = \\\"AiStereo::YL_CreateStereoRendererEx\\\"; /*0x18015b90b*/\\n  DWORD2(v4) = 104; /*0x18015b91c*/\\n  v7 = \\\"AiStereo::YL_CreateStereoRendererEx\\\"; /*0x18015b929*/\\n  pExceptionObject = v4; /*0x18015b92f*/\\n  sub_180114050(a1: xmmword_1805C9820, a2: &pExceptionObject, a3: 2, a4: v3); /*0x18015b934*/\\n  if ( v0 != nullptr && _InterlockedExchangeAdd(v0 + 2, 0xFFFFFFFF) == 1 ) /*0x18015b952*/\\n  {\\n    (**(void (__fastcall ***)(volatile signed __int32 *))v0)(a1: v0); /*0x18015b95a*/\\n    if ( _InterlockedExchangeAdd(v0 + 3, 0xFFFFFFFF) == 1 ) /*0x18015b964*/\\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v0 + 8LL))(a1: v0); /*0x18015b96c*/\\n  }\\n  if ( qword_1805C9EA0 == 0 ) /*0x18015b97c*/\\n    YL_GlobalInitStereoEngine(a1: nullptr); /*0x18015b980*/\\n  v1 = (void *)sub_1803B33B0(Size: 0x158u); /*0x18015b99a*/\\n  memset(a1: v1, Val: 0, Size: 0x158u); /*0x18015b99d*/\\n  return sub_18013D570(a1: v1, a2: qword_1805C9EA0); /*0x18015b9b4*/\\n}\",\"refs\":[{\"addr\":\"0x18010f360\",\"name\":\"sub_18010F360\"},{\"addr\":\"0x180587f28\",\"name\":\"aIllegalLicense\",\"string\":\"Illegal License!\"},{\"addr\":\"0x18014efd0\",\"name\":\"sub_18014EFD0\"},{\"addr\":\"0x1803b3838\",\"name\":\"sub_1803B3838\"},{\"addr\":\"0x1805c9a98\",\"name\":\"dword_1805C9A98\"},{\"addr\":\"0x1805c9820\",\"name\":\"xmmword_1805C9820\"},{\"addr\":\"0x180116c20\",\"name\":\"sub_180116C20\"},{\"addr\":\"0x1803b3744\",\"name\":\"atexit\"},{\"addr\":\"0x1803b9f10\",\"name\":\"sub_1803B9F10\"},{\"addr\":\"0x1803b37cc\",\"name\":\"sub_1803B37CC\"},{\"addr\":\"0x1805c973c\",\"name\":\"TlsIndex\"},{\"addr\":\"0x180587dd8\",\"name\":\"aCreatestereore_0\",\"string\":\"CreateStereoRenderer\"},{\"addr\":\"0x180587e90\",\"name\":\"aJProjectVsproj_9\",\"string\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\YLStereoRendererEx.cpp\"},{\"addr\":\"0x180587f00\",\"name\":\"aAistereoYlCrea\",\"string\":\"AiStereo::YL_CreateStereoRendererEx\"},{\"addr\":\"0x180114050\",\"name\":\"sub_180114050\"},{\"addr\":\"0x18015b170\",\"name\":\"YL_GlobalInitStereoEngine\"},{\"addr\":\"0x1805c9ea0\",\"name\":\"qword_1805C9EA0\"},{\"addr\":\"0x1803b33b0\",\"name\":\"sub_1803B33B0\"},{\"addr\":\"0x1803b49e8\",\"name\":\"memset\"},{\"addr\":\"0x18013d570\",\"name\":\"sub_18013D570\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "YL_CreateStereoRendererEx",
+      "code": "__int64 YL_CreateStereoRendererEx()\n{\n  volatile signed __int32 *v0; // rbx\n  void *v1; // rbx\n  _QWORD v3[2]; // [rsp+20h] [rbp-58h] BYREF\n  __int128 v4; // [rsp+30h] [rbp-48h]\n  const char *v5; // [rsp+40h] [rbp-38h]\n  __int128 pExceptionObject; // [rsp+50h] [rbp-28h] BYREF\n  const char *v7; // [rsp+60h] [rbp-18h]\n\n  if ( (unsigned __int8)sub_18014EFD0() == 0 ) /*0x18015b83b*/\n  {\n    sub_18010F360(a1: &pExceptionObject, a2: \"Illegal License!\"); /*0x18015b9c9*/\n    throw (std::runtime_error *)&pExceptionObject; /*0x18015b9da*/\n  }\n  if ( dword_1805C9A98 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) /*0x18015b86a*/\n                                   + 16LL) )\n  {\n    sub_1803B3838(a1: &dword_1805C9A98); /*0x18015b873*/\n    if ( dword_1805C9A98 == -1 ) /*0x18015b87f*/\n    {\n      xmmword_1805C9820 = 0; /*0x18015b884*/\n      sub_180116C20(); /*0x18015b88b*/\n      atexit(a1: sub_1803B9F10); /*0x18015b897*/\n      sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015b8a3*/\n    }\n  }\n  v0 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b8a8*/\n  if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015b8b2*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015b8b4*/\n    v0 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b8b8*/\n  }\n  v3[0] = \"CreateStereoRenderer\"; /*0x18015b8cd*/\n  v3[1] = 20; /*0x18015b8de*/\n  *(_QWORD *)&v4 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\YLStereoRendererEx.cpp\"; /*0x18015b8f1*/\n  HIDWORD(v4) = HIDWORD(pExceptionObject); /*0x18015b900*/\n  v5 = \"AiStereo::YL_CreateStereoRendererEx\"; /*0x18015b90b*/\n  DWORD2(v4) = 104; /*0x18015b91c*/\n  v7 = \"AiStereo::YL_CreateStereoRendererEx\"; /*0x18015b929*/\n  pExceptionObject = v4; /*0x18015b92f*/\n  sub_180114050(a1: xmmword_1805C9820, a2: &pExceptionObject, a3: 2, a4: v3); /*0x18015b934*/\n  if ( v0 != nullptr && _InterlockedExchangeAdd(v0 + 2, 0xFFFFFFFF) == 1 ) /*0x18015b952*/\n  {\n    (**(void (__fastcall ***)(volatile signed __int32 *))v0)(a1: v0); /*0x18015b95a*/\n    if ( _InterlockedExchangeAdd(v0 + 3, 0xFFFFFFFF) == 1 ) /*0x18015b964*/\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v0 + 8LL))(a1: v0); /*0x18015b96c*/\n  }\n  if ( qword_1805C9EA0 == 0 ) /*0x18015b97c*/\n    YL_GlobalInitStereoEngine(a1: nullptr); /*0x18015b980*/\n  v1 = (void *)sub_1803B33B0(Size: 0x158u); /*0x18015b99a*/\n  memset(a1: v1, Val: 0, Size: 0x158u); /*0x18015b99d*/\n  return sub_18013D570(a1: v1, a2: qword_1805C9EA0); /*0x18015b9b4*/\n}",
+      "refs": [
+        {
+          "addr": "0x18010f360",
+          "name": "sub_18010F360"
+        },
+        {
+          "addr": "0x180587f28",
+          "name": "aIllegalLicense",
+          "string": "Illegal License!"
+        },
+        {
+          "addr": "0x18014efd0",
+          "name": "sub_18014EFD0"
+        },
+        {
+          "addr": "0x1803b3838",
+          "name": "sub_1803B3838"
+        },
+        {
+          "addr": "0x1805c9a98",
+          "name": "dword_1805C9A98"
+        },
+        {
+          "addr": "0x1805c9820",
+          "name": "xmmword_1805C9820"
+        },
+        {
+          "addr": "0x180116c20",
+          "name": "sub_180116C20"
+        },
+        {
+          "addr": "0x1803b3744",
+          "name": "atexit"
+        },
+        {
+          "addr": "0x1803b9f10",
+          "name": "sub_1803B9F10"
+        },
+        {
+          "addr": "0x1803b37cc",
+          "name": "sub_1803B37CC"
+        },
+        {
+          "addr": "0x1805c973c",
+          "name": "TlsIndex"
+        },
+        {
+          "addr": "0x180587dd8",
+          "name": "aCreatestereore_0",
+          "string": "CreateStereoRenderer"
+        },
+        {
+          "addr": "0x180587e90",
+          "name": "aJProjectVsproj_9",
+          "string": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\YLStereoRendererEx.cpp"
+        },
+        {
+          "addr": "0x180587f00",
+          "name": "aAistereoYlCrea",
+          "string": "AiStereo::YL_CreateStereoRendererEx"
+        },
+        {
+          "addr": "0x180114050",
+          "name": "sub_180114050"
+        },
+        {
+          "addr": "0x18015b170",
+          "name": "YL_GlobalInitStereoEngine"
+        },
+        {
+          "addr": "0x1805c9ea0",
+          "name": "qword_1805C9EA0"
+        },
+        {
+          "addr": "0x1803b33b0",
+          "name": "sub_1803B33B0"
+        },
+        {
+          "addr": "0x1803b49e8",
+          "name": "memset"
+        },
+        {
+          "addr": "0x18013d570",
+          "name": "sub_18013D570"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

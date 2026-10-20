@@ -1,0 +1,27 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800069c0\",\"code\":\"_QWORD *__fastcall sub_1800069C0(_QWORD *a1, char a2)\\n{\\n  *a1 = &gear::MediaTranspose::`vftable'; /*0x1800069d0*/\\n  if ( (a2 & 1) != 0 ) /*0x1800069d6*/\\n    j_j_free(Block: a1); /*0x1800069dd*/\\n  return a1; /*0x1800069e5*/\\n}\",\"refs\":[{\"addr\":\"0x18001aa18\",\"name\":\"??_7MediaTranspose@gear@@6B@\"},{\"addr\":\"0x1800172b4\",\"name\":\"j_j_free\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800069c0",
+      "code": "_QWORD *__fastcall sub_1800069C0(_QWORD *a1, char a2)\n{\n  *a1 = &gear::MediaTranspose::`vftable'; /*0x1800069d0*/\n  if ( (a2 & 1) != 0 ) /*0x1800069d6*/\n    j_j_free(Block: a1); /*0x1800069dd*/\n  return a1; /*0x1800069e5*/\n}",
+      "refs": [
+        {
+          "addr": "0x18001aa18",
+          "name": "??_7MediaTranspose@gear@@6B@"
+        },
+        {
+          "addr": "0x1800172b4",
+          "name": "j_j_free"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

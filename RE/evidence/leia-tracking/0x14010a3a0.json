@@ -1,0 +1,73 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "addr": "0x14010a3a0",
+      "code": "__int64 __fastcall sub_14010A3A0(__int64 a1, __int64 a2, _QWORD *a3)\n{\n  _QWORD *v3; // r12\n  __int64 v4; // rcx\n  __int64 v5; // rax\n  size_t v6; // r8\n  _QWORD *v7; // r15\n  size_t v8; // r8\n  __m256 *v9; // rbx\n  int v10; // ebx\n  __m256 *v11; // rdi\n  __int64 v12; // rax\n  void *v13; // rcx\n  void **v14; // rbx\n  int v15; // ebx\n  void **v16; // rdi\n  __int64 v17; // rax\n  __int64 v18; // rax\n  bool v19; // bl\n  __int64 v20; // rax\n  __int64 v21; // rax\n  __int64 v22; // rax\n  _QWORD *v23; // rbx\n  size_t v24; // r8\n  unsigned __int64 v25; // rax\n  __int64 v26; // rdx\n  _QWORD *v27; // rax\n  int v28; // edi\n  __int64 v29; // rax\n  __m256 *v30; // rdx\n  void *v31; // rcx\n  __int64 v32; // rax\n  __int64 v33; // rax\n  bool v34; // bl\n  __int64 v35; // rax\n  __int64 v36; // rax\n  __int64 v37; // rax\n  __int64 v38; // rax\n  _QWORD *v39; // rbx\n  size_t v40; // r8\n  unsigned __int64 v41; // rax\n  __int64 v42; // rdx\n  _QWORD *v43; // rax\n  int v44; // edi\n  __int64 v45; // rax\n  __m256 *... [101817 chars total]",
+      "refs": [
+        {
+          "addr": "0x1401c30a8",
+          "name": "??_7BlinkEyeTracker@@6B@"
+        },
+        {
+          "addr": "0x140152bb0",
+          "name": "sub_140152BB0"
+        },
+        {
+          "addr": "0x14004d1e0",
+          "name": "sub_14004D1E0"
+        },
+        {
+          "addr": "0x1401485e0",
+          "name": "sub_1401485E0"
+        },
+        {
+          "addr": "0x1401bb248",
+          "name": "??0FaceDetectorConfig@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1401bb1f0",
+          "name": "??0Image@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1400c46fe",
+          "name": "memset"
+        },
+        {
+          "addr": "0x140021970",
+          "name": "sub_140021970"
+        },
+        {
+          "addr": "0x1401c3158",
+          "name": "aBlinkparameter",
+          "string": "BlinkParameters"
+        },
+        {
+          "addr": "0x140109250",
+          "name": "sub_140109250"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x14010a3a0\",\"code\":\"__int64 __fastcall sub_14010A3A0(__int64 a1, __int64 a2, _QWORD *a3)\\n{\\n  _QWORD *v3; // r12\\n  __int64 v4; // rcx\\n  __int64 v5; // rax\\n  size_t v6; // r8\\n  _QWORD *v7; // r15\\n  size_t v8; // r8\\n  __m256 *v9; // rbx\\n  int v10; // ebx\\n  __m256 *v11; // rdi\\n  __int64 v12; // rax\\n  void *v13; // rcx\\n  void **v14; // rbx\\n  int v15; // ebx\\n  void **v16; // rdi\\n  __int64 v17; // rax\\n  __int64 v18; // rax\\n  bool v19; // bl\\n  __int64 v20; // rax\\n  __int64 v21; // rax\\n  __int64 v22; // rax\\n  _QWORD *v23; // rbx\\n  size_t v24; // r8\\n  unsigned __int64 v25; // rax\\n  __int64 v26; // rdx\\n  _QWORD *v27; // rax\\n  int v28; // edi\\n  __int64 v29; // rax\\n  __m256 *v30; // rdx\\n  void *v31; // rcx\\n  __int64 v32; // rax\\n  __int64 v33; // rax\\n  bool v34; // bl\\n  __int64 v35; // rax\\n  __int64 v36; // rax\\n  __int64 v37; // rax\\n  __int64 v38; // rax\\n  _QWORD *v39; // rbx\\n  size_t v40; // r8\\n  unsigned __int64 v41; // rax\\n  __int64 v42; // rdx\\n  _QWORD *v43; // rax\\n  int v44; // edi\\n  __int64 v45; // rax\\n  __m256 *... [101817 chars total]\",\"refs\":[{\"addr\":\"0x1401c30a8\",\"name\":\"??_7BlinkEyeTracker@@6B@\"},{\"addr\":\"0x140152bb0\",\"name\":\"sub_140152BB0\"},{\"addr\":\"0x14004d1e0\",\"name\":\"sub_14004D1E0\"},{\"addr\":\"0x1401485e0\",\"name\":\"sub_1401485E0\"},{\"addr\":\"0x1401bb248\",\"name\":\"??0FaceDetectorConfig@blink@@QEAA@XZ\"},{\"addr\":\"0x1401bb1f0\",\"name\":\"??0Image@blink@@QEAA@XZ\"},{\"addr\":\"0x1400c46fe\",\"name\":\"memset\"},{\"addr\":\"0x140021970\",\"name\":\"sub_140021970\"},{\"addr\":\"0x1401c3158\",\"name\":\"aBlinkparameter\",\"string\":\"BlinkParameters\"},{\"addr\":\"0x140109250\",\"name\":\"sub_140109250\"}]}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/1f7e7a3a-3478-4743-9153-d7ff7c853c96.json http://127.0.0.1:56224/output/1f7e7a3a-3478-4743-9153-d7ff7c853c96.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 110051,
+        "output_id": "1f7e7a3a-3478-4743-9153-d7ff7c853c96",
+        "download_url": "http://127.0.0.1:56224/output/1f7e7a3a-3478-4743-9153-d7ff7c853c96.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/1f7e7a3a-3478-4743-9153-d7ff7c853c96.json http://127.0.0.1:56224/output/1f7e7a3a-3478-4743-9153-d7ff7c853c96.json"
+      }
+    }
+  },
+  "id": 1
+}

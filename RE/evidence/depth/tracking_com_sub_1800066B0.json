@@ -1,0 +1,27 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_1800066B0\",\"code\":\"__int64 __fastcall sub_1800066B0(__int64 a1, float a2, float a3, float a4, int a5, int a6)\\n{\\n  *(float *)&xmmword_180015000 = a2; /*0x1800066b8*/\\n  dword_180015010 = a6; /*0x1800066c6*/\\n  *((float *)&xmmword_180015000 + 1) = a3; /*0x1800066ce*/\\n  *((float *)&xmmword_180015000 + 2) = a4; /*0x1800066d6*/\\n  HIDWORD(xmmword_180015000) = a5; /*0x1800066de*/\\n  return 0; /*0x1800066e6*/\\n}\",\"refs\":[{\"addr\":\"0x180015000\",\"name\":\"xmmword_180015000\"},{\"addr\":\"0x180015010\",\"name\":\"dword_180015010\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_1800066B0",
+      "code": "__int64 __fastcall sub_1800066B0(__int64 a1, float a2, float a3, float a4, int a5, int a6)\n{\n  *(float *)&xmmword_180015000 = a2; /*0x1800066b8*/\n  dword_180015010 = a6; /*0x1800066c6*/\n  *((float *)&xmmword_180015000 + 1) = a3; /*0x1800066ce*/\n  *((float *)&xmmword_180015000 + 2) = a4; /*0x1800066d6*/\n  HIDWORD(xmmword_180015000) = a5; /*0x1800066de*/\n  return 0; /*0x1800066e6*/\n}",
+      "refs": [
+        {
+          "addr": "0x180015000",
+          "name": "xmmword_180015000"
+        },
+        {
+          "addr": "0x180015010",
+          "name": "dword_180015010"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

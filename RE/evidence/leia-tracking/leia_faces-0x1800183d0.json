@@ -1,0 +1,59 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800183d0\",\"code\":\"static struct SR::HeadTracker *__fastcall SR::HeadTracker::create(struct SR::SRContext *a1)\\n{\\n  __int64 v2; // rax\\n  __int64 v3; // rax\\n  char *v4; // rbx\\n  __int64 v5; // rsi\\n  __int64 v6; // rax\\n  char *v7; // rax\\n  __int64 v8; // rax\\n  __int64 Senses; // rax\\n  __int64 v10; // rax\\n  __int64 v11; // rax\\n  char *v12; // rax\\n  void *Block; // [rsp+28h] [rbp-60h] BYREF\\n  _QWORD *v15; // [rsp+30h] [rbp-58h]\\n  __int64 v16; // [rsp+38h] [rbp-50h]\\n  _BYTE v17[32]; // [rsp+40h] [rbp-48h] BYREF\\n  _BYTE v18[32]; // [rsp+60h] [rbp-28h] BYREF\\n\\n  if ( *((_QWORD *)a1 + 9) != 0 ) /*0x1800183fa*/\\n  {\\n    v8 = sub_180002D10(a1: v18, a2: &qword_1800600E8); /*0x1800184ad*/\\n    Senses = SR::SRContext::getSenses(a1, a2: v8); /*0x1800184b8*/\\n    sub_180002FA0(a1: &Block, a2: Senses); /*0x1800184c6*/\\n    __wind /*0xf1c0000000000034*/\\n    {\\n      v4 = (char *)Block; /*0x1800184cc*/\\n      if ( Block == v15 ) /*0x1800184d9*/\\n      {\\n        v10 = sub_180026980(a1, a2: *((_QWORD *)a1 + 9)); /*0x1800184e2*/\\n        if ( v10 != 0 ) /*0x1800184ea*/\\n          v5 = v10 + 8; /*0x1800184ec*/\\n        else\\n          v5 = 0; /*0x1800184f2*/\\n        v11 = sub_180002D10(a1: v17, a2: &qword_1800600E8); /*0x180018500*/\\n        SR::SRContext::addSense(a1, a2: v11, a3: v5); /*0x18001850e*/\\n      }\\n      else\\n      {\\n        v5 = *(v15 - 1); /*0x180018516*/\\n      }\\n    }\\n    __unwind\\n    {\\n      sub_1800032A0(a1: &Block); /*0xf1c000000000001c*/\\n    }\\n    if ( v4 != nullptr ) /*0x18001851d*/\\n    {\\n      v12 = v4; /*0x18001852b*/\\n      if ( ((v16 - (_QWORD)v4) & 0xFFFFFFFFFFFFFFF8uLL) >= 0x1000 ) /*0x180018535*/\\n      {\\n        v4 = *((char **)v4 - 1); /*0x18001853b*/\\n        if ( (unsigned __int64)(v12 - v4 - 8) > 0x1F ) /*0x18001854a*/\\n          invalid_parameter_noinfo_noreturn(); /*0x18001854c*/\\n      }\\n      goto LABEL_21; /*0x18001854a*/\\n    }\\n  }\\n  else\\n  {\\n    v2 = sub_180002D10(a1: v17, a2: &qword_1800600E8); /*0x180018404*/\\n    v3 = SR::SRContext::getSenses(a1, a2: v2); /*0x18001840f*/\\n    sub_180002FA0(a1: &Block, a2: v3); /*0x18001841d*/\\n    __wind /*0xf1c000000000004c*/\\n    {\\n      v4 = (char *)Block; /*0x180018423*/\\n      if ( Block == v15 ) /*0x180018430*/\\n      {\\n        v5 = sub_18001A530(a1); /*0x18001843a*/\\n        v6 = sub_180002D10(a1: v18, a2: &qword_1800600E8); /*0x180018449*/\\n        SR::SRContext::addSense(a1, a2: v6, a3: v5); /*0x180018457*/\\n      }\\n      else\\n      {\\n        v5 = *(v15 - 1); /*0x18001845f*/\\n      }\\n    }\\n    __unwind\\n    {\\n      sub_1800032A0(a1: &Block); /*0x18003d917*/\\n    }\\n    if ( v4 != nullptr ) /*0x180018466*/\\n    {\\n      v7 = v4; /*0x180018478*/\\n      if ( ((v16 - (_QWORD)v4) & 0xFFFFFFFFFFFFFFF8uLL) >= 0x1000 ) /*0x180018482*/\\n      {\\n        v4 = *((char **)v4 - 1); /*0x18001848c*/\\n        if ( (unsigned __int64)(v7 - v4 - 8) > 0x1F ) /*0x18001849b*/\\n          invalid_parameter_noinfo_noreturn(); /*0x1800184a1*/\\n      }\\nLABEL_21:\\n      j_j_free(Block: v4); /*0x180018553*/\\n    }\\n  }\\n  return (struct SR::HeadTracker *)v5; /*0x18001855e*/\\n}\",\"refs\":[{\"addr\":\"0x180002d10\",\"name\":\"sub_180002D10\"},{\"addr\":\"0x1800600e8\",\"name\":\"qword_1800600E8\"},{\"addr\":\"0x180043528\",\"name\":\"?getSenses@SRContext@SR@@QEAAAEBV?$vector@PEAVSense@SR@@V?$allocator@PEAVSense@SR@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z\"},{\"addr\":\"0x180002fa0\",\"name\":\"sub_180002FA0\"},{\"addr\":\"0x180026980\",\"name\":\"sub_180026980\"},{\"addr\":\"0x180043520\",\"name\":\"?addSense@SRContext@SR@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVSense@2@@Z\"},{\"addr\":\"0x1800032a0\",\"name\":\"sub_1800032A0\"},{\"addr\":\"0x180043788\",\"name\":\"_invalid_parameter_noinfo_noreturn\"},{\"addr\":\"0x18001a530\",\"name\":\"sub_18001A530\"},{\"addr\":\"0x18003c434\",\"name\":\"j_j_free\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800183d0",
+      "code": "static struct SR::HeadTracker *__fastcall SR::HeadTracker::create(struct SR::SRContext *a1)\n{\n  __int64 v2; // rax\n  __int64 v3; // rax\n  char *v4; // rbx\n  __int64 v5; // rsi\n  __int64 v6; // rax\n  char *v7; // rax\n  __int64 v8; // rax\n  __int64 Senses; // rax\n  __int64 v10; // rax\n  __int64 v11; // rax\n  char *v12; // rax\n  void *Block; // [rsp+28h] [rbp-60h] BYREF\n  _QWORD *v15; // [rsp+30h] [rbp-58h]\n  __int64 v16; // [rsp+38h] [rbp-50h]\n  _BYTE v17[32]; // [rsp+40h] [rbp-48h] BYREF\n  _BYTE v18[32]; // [rsp+60h] [rbp-28h] BYREF\n\n  if ( *((_QWORD *)a1 + 9) != 0 ) /*0x1800183fa*/\n  {\n    v8 = sub_180002D10(a1: v18, a2: &qword_1800600E8); /*0x1800184ad*/\n    Senses = SR::SRContext::getSenses(a1, a2: v8); /*0x1800184b8*/\n    sub_180002FA0(a1: &Block, a2: Senses); /*0x1800184c6*/\n    __wind /*0xf1c0000000000034*/\n    {\n      v4 = (char *)Block; /*0x1800184cc*/\n      if ( Block == v15 ) /*0x1800184d9*/\n      {\n        v10 = sub_180026980(a1, a2: *((_QWORD *)a1 + 9)); /*0x1800184e2*/\n        if ( v10 != 0 ) /*0x1800184ea*/\n          v5 = v10 + 8; /*0x1800184ec*/\n        else\n          v5 = 0; /*0x1800184f2*/\n        v11 = sub_180002D10(a1: v17, a2: &qword_1800600E8); /*0x180018500*/\n        SR::SRContext::addSense(a1, a2: v11, a3: v5); /*0x18001850e*/\n      }\n      else\n      {\n        v5 = *(v15 - 1); /*0x180018516*/\n      }\n    }\n    __unwind\n    {\n      sub_1800032A0(a1: &Block); /*0xf1c000000000001c*/\n    }\n    if ( v4 != nullptr ) /*0x18001851d*/\n    {\n      v12 = v4; /*0x18001852b*/\n      if ( ((v16 - (_QWORD)v4) & 0xFFFFFFFFFFFFFFF8uLL) >= 0x1000 ) /*0x180018535*/\n      {\n        v4 = *((char **)v4 - 1); /*0x18001853b*/\n        if ( (unsigned __int64)(v12 - v4 - 8) > 0x1F ) /*0x18001854a*/\n          invalid_parameter_noinfo_noreturn(); /*0x18001854c*/\n      }\n      goto LABEL_21; /*0x18001854a*/\n    }\n  }\n  else\n  {\n    v2 = sub_180002D10(a1: v17, a2: &qword_1800600E8); /*0x180018404*/\n    v3 = SR::SRContext::getSenses(a1, a2: v2); /*0x18001840f*/\n    sub_180002FA0(a1: &Block, a2: v3); /*0x18001841d*/\n    __wind /*0xf1c000000000004c*/\n    {\n      v4 = (char *)Block; /*0x180018423*/\n      if ( Block == v15 ) /*0x180018430*/\n      {\n        v5 = sub_18001A530(a1); /*0x18001843a*/\n        v6 = sub_180002D10(a1: v18, a2: &qword_1800600E8); /*0x180018449*/\n        SR::SRContext::addSense(a1, a2: v6, a3: v5); /*0x180018457*/\n      }\n      else\n      {\n        v5 = *(v15 - 1); /*0x18001845f*/\n      }\n    }\n    __unwind\n    {\n      sub_1800032A0(a1: &Block); /*0x18003d917*/\n    }\n    if ( v4 != nullptr ) /*0x180018466*/\n    {\n      v7 = v4; /*0x180018478*/\n      if ( ((v16 - (_QWORD)v4) & 0xFFFFFFFFFFFFFFF8uLL) >= 0x1000 ) /*0x180018482*/\n      {\n        v4 = *((char **)v4 - 1); /*0x18001848c*/\n        if ( (unsigned __int64)(v7 - v4 - 8) > 0x1F ) /*0x18001849b*/\n          invalid_parameter_noinfo_noreturn(); /*0x1800184a1*/\n      }\nLABEL_21:\n      j_j_free(Block: v4); /*0x180018553*/\n    }\n  }\n  return (struct SR::HeadTracker *)v5; /*0x18001855e*/\n}",
+      "refs": [
+        {
+          "addr": "0x180002d10",
+          "name": "sub_180002D10"
+        },
+        {
+          "addr": "0x1800600e8",
+          "name": "qword_1800600E8"
+        },
+        {
+          "addr": "0x180043528",
+          "name": "?getSenses@SRContext@SR@@QEAAAEBV?$vector@PEAVSense@SR@@V?$allocator@PEAVSense@SR@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z"
+        },
+        {
+          "addr": "0x180002fa0",
+          "name": "sub_180002FA0"
+        },
+        {
+          "addr": "0x180026980",
+          "name": "sub_180026980"
+        },
+        {
+          "addr": "0x180043520",
+          "name": "?addSense@SRContext@SR@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVSense@2@@Z"
+        },
+        {
+          "addr": "0x1800032a0",
+          "name": "sub_1800032A0"
+        },
+        {
+          "addr": "0x180043788",
+          "name": "_invalid_parameter_noinfo_noreturn"
+        },
+        {
+          "addr": "0x18001a530",
+          "name": "sub_18001A530"
+        },
+        {
+          "addr": "0x18003c434",
+          "name": "j_j_free"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

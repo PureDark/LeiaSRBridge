@@ -1,0 +1,66 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x314bd0\",\"xrefs\":[],\"more\":false,\"xref_count\":0,\"message\":\"No cross-references to this address\"},{\"addr\":\"0x352260\",\"xrefs\":[],\"more\":false,\"xref_count\":0,\"message\":\"No cross-references to this address\"},{\"addr\":\"0x425bc0\",\"xrefs\":[],\"more\":false,\"xref_count\":0,\"message\":\"No cross-references to this address\"},{\"addr\":\"0x3eec00\",\"xrefs\":[],\"more\":false,\"xref_count\":0,\"message\":\"No cross-references to this address\"},{\"addr\":\"0x3cafe0\",\"xrefs\":[],\"more\":false,\"xref_count\":0,\"message\":\"No cross-references to this address\"},{\"addr\":\"0x358cb0\",\"xrefs\":[],\"more\":false,\"xref_count\":0,\"message\":\"No cross-references to this address\"},{\"addr\":\"0x4821d0\",\"xrefs\":[],\"more\":false,\"xref_count\":0,\"message\":\"No cross-references to this address\"}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x314bd0",
+          "xrefs": [],
+          "more": false,
+          "xref_count": 0,
+          "message": "No cross-references to this address"
+        },
+        {
+          "addr": "0x352260",
+          "xrefs": [],
+          "more": false,
+          "xref_count": 0,
+          "message": "No cross-references to this address"
+        },
+        {
+          "addr": "0x425bc0",
+          "xrefs": [],
+          "more": false,
+          "xref_count": 0,
+          "message": "No cross-references to this address"
+        },
+        {
+          "addr": "0x3eec00",
+          "xrefs": [],
+          "more": false,
+          "xref_count": 0,
+          "message": "No cross-references to this address"
+        },
+        {
+          "addr": "0x3cafe0",
+          "xrefs": [],
+          "more": false,
+          "xref_count": 0,
+          "message": "No cross-references to this address"
+        },
+        {
+          "addr": "0x358cb0",
+          "xrefs": [],
+          "more": false,
+          "xref_count": 0,
+          "message": "No cross-references to this address"
+        },
+        {
+          "addr": "0x4821d0",
+          "xrefs": [],
+          "more": false,
+          "xref_count": 0,
+          "message": "No cross-references to this address"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

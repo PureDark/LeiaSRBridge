@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"error\":\"database is required. Pass database=<session_id> with every tool call. Open a session with idb_open or enumerate with idb_list.\"}"
+      }
+    ],
+    "isError": true
+  },
+  "id": 1
+}

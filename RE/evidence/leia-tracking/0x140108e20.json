@@ -1,0 +1,89 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x140108e20\",\"code\":\"__int64 __fastcall sub_140108E20(__int64 a1, __int64 a2, __int64 a3)\\n{\\n  unsigned int *v6; // rax\\n  __int64 result; // rax\\n  __int64 v31; // rax\\n  __int64 v32; // rax\\n  _BYTE v33[16]; // [rsp+38h] [rbp-70h] BYREF\\n  _BYTE v34[24]; // [rsp+48h] [rbp-60h] BYREF\\n  _BYTE v35[64]; // [rsp+60h] [rbp-48h] BYREF\\n  char v36; // [rsp+A0h] [rbp-8h] BYREF\\n\\n  _RDI = a3; /*0x140108e4d*/\\n  _RSI = a2; /*0x140108e50*/\\n  blink::common::BlVector<BlPoint3d>::BlVector<BlPoint3d>(a1: v34); /*0x140108e5a*/\\n  __wind /*0xf1c000000000009c*/\\n  {\\n    blink::FaceDetectorConfig::get_max_number_of_sources(this: (blink::FaceDetectorConfig *)(a1 + 3008)); /*0x140108e68*/\\n    blink::common::BlVector<unsigned int>::BlVector<unsigned int>(a1: v35); /*0x140108e73*/\\n    __wind /*0xf1c0000000000090*/\\n    {\\n      blink::FaceDetectorData::get_face_ids(a1: *(_QWORD *)(a1 + 3376), a2: 0, a3: 1, a4: v35); /*0x140108e8c*/\\n      v6 = (unsigned int *)blink::common::BlVector<unsigned int>::operator[](a1: v35, a2: 0); /*0x140108e99*/\\n      try /*0xf1c0000000000084*/\\n      {\\n        blink::Landmarks3dDetectorData::get_3d_eye_centers( /*0x140108ebd*/\\n          a1: *(_QWORD *)(a1 + 3408),\\n          a2: 0,\\n          a3: *v6,\\n          a4: *(unsigned int *)(a1 + 3048),\\n          a5: v34);\\n      }\\n      catch ( ... )\\n      {\\n        google::LogMessage::LogMessage( /*0x1401abc17*/\\n          this: (google::LogMessage *)v33,\\n          a2: \\\"C:\\\\\\\\actions-runner-2\\\\\\\\_work\\\\\\\\LeiaSR\\\\\\\\LeiaSR\\\\\\\\eyetracker\\\\\\\\src\\\\\\\\FaceLockBlinkEyeTracker.cpp\\\",\\n          a3: 431,\\n          a4: 2);\\n        __wind /*0xf1c0000000000050*/\\n        {\\n          v31 = google::LogMessage::stream(); /*0x1401abc21*/\\n          v32 = sub_140021CF0(a1: v31, a2: \\\"Blinkeye get 3d eye centers failed\\\"); /*0x1401abc31*/\\n          std::ostream::operator<<(a1: v32, a2: sub_140021F10); /*0x1401abc40*/\\n        }\\n        __unwind\\n        {\\n          google::LogMessage::~LogMessage(this: (google::LogMessage *)v33); /*0x1401abc67*/\\n        }\\n        google::LogMessage::~LogMessage(this: (google::LogMessage *)v33); /*0x1401abc4b*/\\n        _RDI = a3; /*0x140108ec6*/\\n        _RSI = a2; /*0x140108ece*/\\n      }\\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 0); /*0x140108ed6*/\\n      __asm /*0x140108ee3*/\\n      {\\n        vmovsd xmm7, qword ptr [rax+10h]\\n        vcvtpd2ps xmm7, xmm7\\n      }\\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 0); /*0x140108ef3*/\\n      __asm /*0x140108ef9*/\\n      {\\n        vmovsd xmm6, qword ptr [rax+8]\\n        vcvtpd2ps xmm6, xmm6\\n      }\\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 0); /*0x140108f09*/\\n      __asm /*0x140108f0f*/\\n      {\\n        vmovsd xmm0, qword ptr [rax]\\n        vxorpd xmm0, xmm0, cs:xmmword_1401FFC90\\n        vcvtsd2ss xmm1, xmm0, xmm0\\n        vmovss dword ptr [rsi], xmm1\\n        vmovss dword ptr [rsi+4], xmm6\\n        vmovss dword ptr [rsi+8], xmm7\\n      }\\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 1); /*0x140108f37*/\\n      __asm /*0x140108f3d*/\\n      {\\n        vmovsd xmm7, qword ptr [rax+10h]\\n        vcvtpd2ps xmm7, xmm7\\n      }\\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 1); /*0x140108f50*/\\n      __asm /*0x140108f56*/\\n      {\\n        vmovsd xmm6, qword ptr [rax+8]\\n        vcvtpd2ps xmm6, xmm6\\n      }\\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 1); /*0x140108f69*/\\n      __asm /*0x140108f6f*/\\n      {\\n        vmovsd xmm0, qword ptr [rax]\\n        vxorpd xmm1, xmm0, cs:xmmword_1401FFC90\\n        vcvtsd2ss xmm2, xmm1, xmm1\\n        vmovss dword ptr [rdi], xmm2\\n        vmovss dword ptr [rdi+4], xmm6\\n        vmovss dword ptr [rdi+8], xmm7\\n      }\\n    }\\n    __unwind\\n    {\\n      blink::common::BlVector<unsigned int>::~BlVector<unsigned int>(a1: v35); /*0x1401abbec*/\\n    }\\n    blink::common::BlVector<unsigned int>::~BlVector<unsigned int>(a1: v35); /*0x140108f92*/\\n    result = blink::common::BlVector<BlPoint3d>::~BlVector<BlPoint3d>(a1: v34); /*0x140108f9e*/\\n  }\\n  __unwind\\n  {\\n    blink::common::BlVector<BlPoint3d>::~BlVector<BlPoint3d>(a1: v34); /*0x1401abbde*/\\n  }\\n  _R11 = &v36; /*0x140108fa4*/\\n  __asm /*0x140108fb4*/\\n  {\\n    vmovaps xmm6, xmmword ptr [r11-10h]\\n    vmovaps xmm7, xmmword ptr [r11-20h]\\n  }\\n  return result; /*0x140108fc0*/\\n}\",\"refs\":[{\"addr\":\"0x1401bb190\",\"name\":\"??0?$BlVector@UBlPoint3d@@@common@blink@@QEAA@XZ\"},{\"addr\":\"0x1401bb230\",\"name\":\"?get_max_number_of_sources@FaceDetectorConfig@blink@@QEBAIXZ\"},{\"addr\":\"0x1401bb160\",\"name\":\"??0?$BlVector@I@common@blink@@QEAA@XZ\"},{\"addr\":\"0x1401bb1d8\",\"name\":\"?get_face_ids@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IW4BlImageFormat@@AEAV?$BlVector@I@common@2@@Z\"},{\"addr\":\"0x1401bb148\",\"name\":\"??A?$BlVector@I@common@blink@@QEAAAEAI_K@Z\"},{\"addr\":\"0x1401bb0d0\",\"name\":\"?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z\"},{\"addr\":\"0x1401bb2a0\",\"name\":\"??0LogMessage@google@@QEAA@PEBDHH@Z\"},{\"addr\":\"0x1401c3220\",\"name\":\"aCActionsRunner_6\",\"string\":\"C:\\\\actions-runner-2\\\\_work\\\\LeiaSR\\\\LeiaSR\\\\eyetracker\\\\src\\\\FaceLockBlinkEyeTracker.cpp\"},{\"addr\":\"0x1401bb288\",\"name\":\"?stream@LogMessage@google@@QEAAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@XZ\"},{\"addr\":\"0x140021cf0\",\"name\":\"sub_140021CF0\"},{\"addr\":\"0x1401c3560\",\"name\":\"aBlinkeyeGet3dE\",\"string\":\"Blinkeye get 3d eye centers failed\"},{\"addr\":\"0x1401ba5a8\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x140021f10\",\"name\":\"sub_140021F10\"},{\"addr\":\"0x1401bb290\",\"name\":\"??1LogMessage@google@@QEAA@XZ\"},{\"addr\":\"0x1401bb180\",\"name\":\"??A?$BlVector@UBlPoint3d@@@common@blink@@QEAAAEAUBlPoint3d@@_K@Z\"},{\"addr\":\"0x1401bb158\",\"name\":\"??1?$BlVector@I@common@blink@@UEAA@XZ\"},{\"addr\":\"0x1401bb188\",\"name\":\"??1?$BlVector@UBlPoint3d@@@common@blink@@UEAA@XZ\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x140108e20",
+      "code": "__int64 __fastcall sub_140108E20(__int64 a1, __int64 a2, __int64 a3)\n{\n  unsigned int *v6; // rax\n  __int64 result; // rax\n  __int64 v31; // rax\n  __int64 v32; // rax\n  _BYTE v33[16]; // [rsp+38h] [rbp-70h] BYREF\n  _BYTE v34[24]; // [rsp+48h] [rbp-60h] BYREF\n  _BYTE v35[64]; // [rsp+60h] [rbp-48h] BYREF\n  char v36; // [rsp+A0h] [rbp-8h] BYREF\n\n  _RDI = a3; /*0x140108e4d*/\n  _RSI = a2; /*0x140108e50*/\n  blink::common::BlVector<BlPoint3d>::BlVector<BlPoint3d>(a1: v34); /*0x140108e5a*/\n  __wind /*0xf1c000000000009c*/\n  {\n    blink::FaceDetectorConfig::get_max_number_of_sources(this: (blink::FaceDetectorConfig *)(a1 + 3008)); /*0x140108e68*/\n    blink::common::BlVector<unsigned int>::BlVector<unsigned int>(a1: v35); /*0x140108e73*/\n    __wind /*0xf1c0000000000090*/\n    {\n      blink::FaceDetectorData::get_face_ids(a1: *(_QWORD *)(a1 + 3376), a2: 0, a3: 1, a4: v35); /*0x140108e8c*/\n      v6 = (unsigned int *)blink::common::BlVector<unsigned int>::operator[](a1: v35, a2: 0); /*0x140108e99*/\n      try /*0xf1c0000000000084*/\n      {\n        blink::Landmarks3dDetectorData::get_3d_eye_centers( /*0x140108ebd*/\n          a1: *(_QWORD *)(a1 + 3408),\n          a2: 0,\n          a3: *v6,\n          a4: *(unsigned int *)(a1 + 3048),\n          a5: v34);\n      }\n      catch ( ... )\n      {\n        google::LogMessage::LogMessage( /*0x1401abc17*/\n          this: (google::LogMessage *)v33,\n          a2: \"C:\\\\actions-runner-2\\\\_work\\\\LeiaSR\\\\LeiaSR\\\\eyetracker\\\\src\\\\FaceLockBlinkEyeTracker.cpp\",\n          a3: 431,\n          a4: 2);\n        __wind /*0xf1c0000000000050*/\n        {\n          v31 = google::LogMessage::stream(); /*0x1401abc21*/\n          v32 = sub_140021CF0(a1: v31, a2: \"Blinkeye get 3d eye centers failed\"); /*0x1401abc31*/\n          std::ostream::operator<<(a1: v32, a2: sub_140021F10); /*0x1401abc40*/\n        }\n        __unwind\n        {\n          google::LogMessage::~LogMessage(this: (google::LogMessage *)v33); /*0x1401abc67*/\n        }\n        google::LogMessage::~LogMessage(this: (google::LogMessage *)v33); /*0x1401abc4b*/\n        _RDI = a3; /*0x140108ec6*/\n        _RSI = a2; /*0x140108ece*/\n      }\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 0); /*0x140108ed6*/\n      __asm /*0x140108ee3*/\n      {\n        vmovsd xmm7, qword ptr [rax+10h]\n        vcvtpd2ps xmm7, xmm7\n      }\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 0); /*0x140108ef3*/\n      __asm /*0x140108ef9*/\n      {\n        vmovsd xmm6, qword ptr [rax+8]\n        vcvtpd2ps xmm6, xmm6\n      }\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 0); /*0x140108f09*/\n      __asm /*0x140108f0f*/\n      {\n        vmovsd xmm0, qword ptr [rax]\n        vxorpd xmm0, xmm0, cs:xmmword_1401FFC90\n        vcvtsd2ss xmm1, xmm0, xmm0\n        vmovss dword ptr [rsi], xmm1\n        vmovss dword ptr [rsi+4], xmm6\n        vmovss dword ptr [rsi+8], xmm7\n      }\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 1); /*0x140108f37*/\n      __asm /*0x140108f3d*/\n      {\n        vmovsd xmm7, qword ptr [rax+10h]\n        vcvtpd2ps xmm7, xmm7\n      }\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 1); /*0x140108f50*/\n      __asm /*0x140108f56*/\n      {\n        vmovsd xmm6, qword ptr [rax+8]\n        vcvtpd2ps xmm6, xmm6\n      }\n      _RAX = blink::common::BlVector<BlPoint3d>::operator[](a1: v34, a2: 1); /*0x140108f69*/\n      __asm /*0x140108f6f*/\n      {\n        vmovsd xmm0, qword ptr [rax]\n        vxorpd xmm1, xmm0, cs:xmmword_1401FFC90\n        vcvtsd2ss xmm2, xmm1, xmm1\n        vmovss dword ptr [rdi], xmm2\n        vmovss dword ptr [rdi+4], xmm6\n        vmovss dword ptr [rdi+8], xmm7\n      }\n    }\n    __unwind\n    {\n      blink::common::BlVector<unsigned int>::~BlVector<unsigned int>(a1: v35); /*0x1401abbec*/\n    }\n    blink::common::BlVector<unsigned int>::~BlVector<unsigned int>(a1: v35); /*0x140108f92*/\n    result = blink::common::BlVector<BlPoint3d>::~BlVector<BlPoint3d>(a1: v34); /*0x140108f9e*/\n  }\n  __unwind\n  {\n    blink::common::BlVector<BlPoint3d>::~BlVector<BlPoint3d>(a1: v34); /*0x1401abbde*/\n  }\n  _R11 = &v36; /*0x140108fa4*/\n  __asm /*0x140108fb4*/\n  {\n    vmovaps xmm6, xmmword ptr [r11-10h]\n    vmovaps xmm7, xmmword ptr [r11-20h]\n  }\n  return result; /*0x140108fc0*/\n}",
+      "refs": [
+        {
+          "addr": "0x1401bb190",
+          "name": "??0?$BlVector@UBlPoint3d@@@common@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1401bb230",
+          "name": "?get_max_number_of_sources@FaceDetectorConfig@blink@@QEBAIXZ"
+        },
+        {
+          "addr": "0x1401bb160",
+          "name": "??0?$BlVector@I@common@blink@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1401bb1d8",
+          "name": "?get_face_ids@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IW4BlImageFormat@@AEAV?$BlVector@I@common@2@@Z"
+        },
+        {
+          "addr": "0x1401bb148",
+          "name": "??A?$BlVector@I@common@blink@@QEAAAEAI_K@Z"
+        },
+        {
+          "addr": "0x1401bb0d0",
+          "name": "?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z"
+        },
+        {
+          "addr": "0x1401bb2a0",
+          "name": "??0LogMessage@google@@QEAA@PEBDHH@Z"
+        },
+        {
+          "addr": "0x1401c3220",
+          "name": "aCActionsRunner_6",
+          "string": "C:\\actions-runner-2\\_work\\LeiaSR\\LeiaSR\\eyetracker\\src\\FaceLockBlinkEyeTracker.cpp"
+        },
+        {
+          "addr": "0x1401bb288",
+          "name": "?stream@LogMessage@google@@QEAAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@XZ"
+        },
+        {
+          "addr": "0x140021cf0",
+          "name": "sub_140021CF0"
+        },
+        {
+          "addr": "0x1401c3560",
+          "name": "aBlinkeyeGet3dE",
+          "string": "Blinkeye get 3d eye centers failed"
+        },
+        {
+          "addr": "0x1401ba5a8",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x140021f10",
+          "name": "sub_140021F10"
+        },
+        {
+          "addr": "0x1401bb290",
+          "name": "??1LogMessage@google@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1401bb180",
+          "name": "??A?$BlVector@UBlPoint3d@@@common@blink@@QEAAAEAUBlPoint3d@@_K@Z"
+        },
+        {
+          "addr": "0x1401bb158",
+          "name": "??1?$BlVector@I@common@blink@@UEAA@XZ"
+        },
+        {
+          "addr": "0x1401bb188",
+          "name": "??1?$BlVector@UBlPoint3d@@@common@blink@@UEAA@XZ"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

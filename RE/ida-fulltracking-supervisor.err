@@ -1,0 +1,8 @@
+INFO:zeromcp.mcp:[MCP] Server started
+INFO:zeromcp.mcp:  Streamable HTTP: http://127.0.0.1:18475/mcp
+INFO:zeromcp.mcp:  SSE: http://127.0.0.1:18475/sse
+INFO:__main__:Spawning idalib worker on 127.0.0.1:54546
+INFO:__main__:Spawning idalib worker on 127.0.0.1:56224
+INFO:__main__:Spawning idalib worker on 127.0.0.1:62545
+INFO:__main__:Spawning idalib worker on 127.0.0.1:55603
+INFO:__main__:Spawning idalib worker on 127.0.0.1:61753

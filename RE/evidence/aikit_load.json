@@ -1,0 +1,1365 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"LoadStereoEngine\",\"addr\":\"0x18015a770\",\"name\":\"LoadStereoEngine\",\"analysis\":{\"size\":\"0x3ca\",\"prototype\":null,\"decompile\":\"__int64 __fastcall LoadStereoEngine(_BYTE *a1)\\n{\\n  _DWORD *v2; // r14\\n  volatile signed __int32 *v3; // rbx\\n  __int64 result; // rax\\n  void *v5; // rbx\\n  volatile signed __int32 *v6; // rbx\\n  _BYTE *v7; // rdx\\n  __int64 v8; // r8\\n  volatile signed __int32 *v9; // rbx\\n  _QWORD v10[2]; // [rsp+20h] [rbp-49h] BYREF\\n  __int128 v11; // [rsp+30h] [rbp-39h]\\n  const char *v12; // [rsp+40h] [rbp-29h]\\n  __int128 v13; // [rsp+50h] [rbp-19h] BYREF\\n  const char *v14; // [rsp+60h] [rbp-9h]\\n  __int128 v15; // [rsp+70h] [rbp+7h] BYREF\\n  __int64 v16; // [rsp+80h] [rbp+17h]\\n  __int64 v17; // [rsp+88h] [rbp+1Fh]\\n\\n  v2 = (_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) + 16LL); /*0x18015a7b7*/\\n  if ( dword_1805C9A98 > *v2 ) /*0x18015a7c3*/\\n  {\\n    sub_1803B3838(a1: &dword_1805C9A98); /*0x18015a7cc*/\\n    if ( dword_1805C9A98 == -1 ) /*0x18015a7d8*/\\n    {\\n      xmmword_1805C9820 = 0; /*0x18015a7dd*/\\n      sub_180116C20(); /*0x18015a7e4*/\\n      atexit(a1: sub_1803B9F10); /*0x18015a7f0*/\\n      sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015a7fc*/\\n    }\\n  }\\n  v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015a801*/\\n  if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015a80b*/\\n  {\\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015a80d*/\\n    v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015a811*/\\n  }\\n  v10[0] = \\\"********* LoadStereoEngine ***********\\\"; /*0x18015a826*/\\n  v10[1] = 38; /*0x18015a83b*/\\n  HIDWORD(v11) = HIDWORD(v13); /*0x18015a84f*/\\n  *(_QWORD *)&v11 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\AiStereoRenderer.cpp\\\"; /*0x18015a85d*/\\n  DWORD2(v11) = 56; /*0x18015a861*/\\n  v12 = \\\"AiStereo::LoadStereoEngine\\\"; /*0x18015a86c*/\\n  v13 = v11; /*0x18015a875*/\\n  v14 = \\\"AiStereo::LoadStereoEngine\\\"; /*0x18015a879*/\\n  result = ((__int64 (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015a87e*/\\n             a1: xmmword_1805C9820,\\n             a2: &v13,\\n             a3: 2,\\n             a4: v10);\\n  if ( v3 != nullptr ) /*0x18015a88d*/\\n  {\\n    result = (unsigned int)_InterlockedExchangeAdd(v3 + 2, 0xFFFFFFFF); /*0x18015a891*/\\n    if ( (_DWORD)result == 1 ) /*0x18015a899*/\\n    {\\n      (**(void (__fastcall ***)(volatile signed __int32 *))v3)(a1: v3); /*0x18015a8a1*/\\n      result = (unsigned int)_InterlockedExchangeAdd(v3 + 3, 0xFFFFFFFF); /*0x18015a8a5*/\\n      if ( (_DWORD)result == 1 ) /*0x18015a8ad*/\\n        result = (*(__int64 (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v3 + 8LL))(a1: v3); /*0x18015a8b5*/\\n    }\\n  }\\n  if ( qword_1805C9E98 == 0 ) /*0x18015a8c0*/\\n  {\\n    v5 = (void *)sub_1803B33B0(Size: 0xA8u); /*0x18015a8db*/\\n    memset(a1: v5, Val: 0, Size: 0xA8u); /*0x18015a8de*/\\n    qword_1805C9E98 = sub_18014CA40(a1: v5); /*0x18015a8eb*/\\n    if ( dword_1805C9A98 > *v2 ) /*0x18015a8fb*/\\n    {\\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18015a904*/\\n      if ( dword_1805C9A98 == -1 ) /*0x18015a90f*/\\n      {\\n        xmmword_1805C9820 = 0; /*0x18015a914*/\\n        sub_180116C20(); /*0x18015a91b*/\\n        atexit(a1: sub_1803B9F10); /*0x18015a927*/\\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015a933*/\\n      }\\n    }\\n    v6 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015a938*/\\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015a942*/\\n    {\\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015a944*/\\n      v6 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015a948*/\\n    }\\n    v10[0] = \\\"Start creating Engine\\\"; /*0x18015a95d*/\\n    v10[1] = 21; /*0x18015a96c*/\\n    HIDWORD(v11) = HIDWORD(v13); /*0x18015a97e*/\\n    *(_QWORD *)&v11 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\AiStereoRenderer.cpp\\\"; /*0x18015a986*/\\n    DWORD2(v11) = 142; /*0x18015a98a*/\\n    v12 = \\\"AiStereo::LoadStereoEngine\\\"; /*0x18015a995*/\\n    v13 = v11; /*0x18015a99e*/\\n    v14 = \\\"AiStereo::LoadStereoEngine\\\"; /*0x18015a9a2*/\\n    ((void (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015a9a7*/\\n      a1: xmmword_1805C9820,\\n      a2: &v13,\\n      a3: 2,\\n      a4: v10);\\n    if ( v6 != nullptr && _InterlockedExchangeAdd(v6 + 2, 0xFFFFFFFF) == 1 ) /*0x18015a9bb*/\\n    {\\n      (**(void (__fastcall ***)(volatile signed __int32 *))v6)(a1: v6); /*0x18015a9c3*/\\n      if ( _InterlockedExchangeAdd(v6 + 3, 0xFFFFFFFF) == 1 ) /*0x18015a9cf*/\\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v6 + 8LL))(a1: v6); /*0x18015a9d7*/\\n    }\\n    v7 = &unk_180582500; /*0x18015a9dd*/\\n    v8 = -1; /*0x18015a9e7*/\\n    if ( a1 != nullptr ) /*0x18015a9ea*/\\n      v7 = a1; /*0x18015a9ea*/\\n    v16 = 0; /*0x18015a9f0*/\\n    v17 = 0; /*0x18015a9f4*/\\n    v15 = 0; /*0x18015a9f8*/\\n    do /*0x18015aa07*/\\n      ++v8; /*0x18015aa00*/\\n    while ( v7[v8] != 0 ); /*0x18015aa07*/\\n    sub_18010EA80(a1: &v15); /*0x18015aa0d*/\\n    (*(void (__fastcall **)(__int64, __int128 *))(*(_QWORD *)qword_1805C9E98 + 8LL))(a1: qword_1805C9E98, a2: &v15); /*0x18015aa20*/\\n    if ( dword_1805C9A98 > *v2 ) /*0x18015aa2c*/\\n    {\\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18015aa35*/\\n      if ( dword_1805C9A98 == -1 ) /*0x18015aa40*/\\n      {\\n        xmmword_1805C9820 = 0; /*0x18015aa45*/\\n        sub_180116C20(); /*0x18015aa4c*/\\n        atexit(a1: sub_1803B9F10); /*0x18015aa58*/\\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015aa64*/\\n      }\\n    }\\n    v9 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015aa69*/\\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015aa73*/\\n    {\\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015aa75*/\\n      v9 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015aa79*/\\n    }\\n    v10[0] = \\\"Engine initialized successfully \\\"; /*0x18015aa8e*/\\n    v10[1] = 32; /*0x18015aa9d*/\\n    HIDWORD(v11) = HIDWORD(v13); /*0x18015aaaf*/\\n    *(_QWORD *)&v11 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\AiStereoRenderer.cpp\\\"; /*0x18015aab7*/\\n    DWORD2(v11) = 145; /*0x18015aabb*/\\n    v12 = \\\"AiStereo::LoadStereoEngine\\\"; /*0x18015aac6*/\\n    v13 = v11; /*0x18015aacf*/\\n    v14 = \\\"AiStereo::LoadStereoEngine\\\"; /*0x18015aad3*/\\n    ((void (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015aad8*/\\n      a1: xmmword_1805C9820,\\n      a2: &v13,\\n      a3: 2,\\n      a4: v10);\\n    if ( v9 != nullptr && _InterlockedExchangeAdd(v9 + 2, 0xFFFFFFFF) == 1 ) /*0x18015aaec*/\\n    {\\n      (**(void (__fastcall ***)(volatile signed __int32 *))v9)(a1: v9); /*0x18015aaf4*/\\n      if ( _InterlockedExchangeAdd(v9 + 3, 0xFFFFFFFF) == 1 ) /*0x18015aafe*/\\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v9 + 8LL))(a1: v9); /*0x18015ab06*/\\n    }\\n    return sub_18010EB70(a1: &v15); /*0x18015ab0d*/\\n  }\\n  return result; /*0x18015ab12*/\\n}\",\"decompile_error\":null,\"disasm\":null,\"xrefs\":{\"to\":[{\"addr\":\"0x18015ad90\",\"type\":\"code\"},{\"addr\":\"0x1805b6bd8\",\"type\":\"data\"},{\"addr\":\"0x1805cf3a4\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x18015a775\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":3,\"from_count\":1},\"callers\":[{\"addr\":\"0x18015ab40\",\"name\":\"CreateStereoRenderer\",\"size\":\"0x28e\"}],\"caller_count\":1,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x1803b3838\",\"name\":\"sub_1803B3838\",\"type\":\"internal\"},{\"addr\":\"0x18010eb70\",\"name\":\"sub_18010EB70\",\"type\":\"internal\"},{\"addr\":\"0x180114050\",\"name\":\"sub_180114050\",\"type\":\"internal\"},{\"addr\":\"0x1803b33b0\",\"name\":\"sub_1803B33B0\",\"type\":\"internal\"},{\"addr\":\"0x18014ca40\",\"name\":\"sub_18014CA40\",\"type\":\"internal\"},{\"addr\":\"0x180116c20\",\"name\":\"sub_180116C20\",\"type\":\"internal\"},{\"addr\":\"0x1803b49e8\",\"name\":\"memset\",\"type\":\"internal\"},{\"addr\":\"0x1803b3744\",\"name\":\"atexit\",\"type\":\"internal\"},{\"addr\":\"0x18010ea80\",\"name\":\"sub_18010EA80\",\"type\":\"internal\"},{\"addr\":\"0x1803b32c0\",\"name\":\"__security_check_cookie\",\"type\":\"internal\"},{\"addr\":\"0x1803b37cc\",\"name\":\"sub_1803B37CC\",\"type\":\"internal\"}],\"callee_count\":11,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x180587ce8\",\"length\":38,\"string\":\"********* LoadStereoEngine ***********\"},{\"addr\":\"0x180587d50\",\"length\":67,\"string\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\AiStereoRenderer.cpp\"},{\"addr\":\"0x180587d98\",\"length\":26,\"string\":\"AiStereo::LoadStereoEngine\"},{\"addr\":\"0x180587d38\",\"length\":21,\"string\":\"Start creating Engine\"},{\"addr\":\"0x180587d10\",\"length\":32,\"string\":\"Engine initialized successfully \"}],\"string_ref_count\":5,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x18015a787\",\"value\":\"0xa0\",\"decimal\":160},{\"addr\":\"0x18015a7ae\",\"value\":\"0x10\",\"decimal\":16},{\"addr\":\"0x18015a7d1\",\"value\":\"0xffffffffffffffff\",\"decimal\":18446744073709551615},{\"addr\":\"0x18015a83b\",\"value\":\"0x26\",\"decimal\":38},{\"addr\":\"0x18015a852\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x18015a861\",\"value\":\"0x38\",\"decimal\":56},{\"addr\":\"0x18015a883\",\"value\":\"0xffffffffffffffff\",\"decimal\":18446744073709551615},{\"addr\":\"0x18015a896\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015a8aa\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015a8b8\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x18015a8c6\",\"value\":\"0xa8\",\"decimal\":168},{\"addr\":\"0x18015a8d2\",\"value\":\"0xa8\",\"decimal\":168},{\"addr\":\"0x18015a96c\",\"value\":\"0x15\",\"decimal\":21},{\"addr\":\"0x18015a974\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x18015a98a\",\"value\":\"0x8e\",\"decimal\":142},{\"addr\":\"0x18015a9b8\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015a9cc\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015aa9d\",\"value\":\"0x20\",\"decimal\":32},{\"addr\":\"0x18015aaa5\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x18015aabb\",\"value\":\"0x91\",\"decimal\":145},{\"addr\":\"0x18015aae9\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015aafb\",\"value\":\"0x1\",\"decimal\":1}],\"constant_count\":22,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x18015a770\",\"end\":\"0x18015a7c5\",\"size\":85,\"type\":0,\"successors\":[\"0x18015a7c5\",\"0x18015a801\"],\"predecessors\":[]},{\"start\":\"0x18015a7c5\",\"end\":\"0x18015a7da\",\"size\":21,\"type\":0,\"successors\":[\"0x18015a7da\",\"0x18015a801\"],\"predecessors\":[\"0x18015a770\"]},{\"start\":\"0x18015a7da\",\"end\":\"0x18015a801\",\"size\":39,\"type\":0,\"successors\":[\"0x18015a801\"],\"predecessors\":[\"0x18015a7c5\"]},{\"start\":\"0x18015a801\",\"end\":\"0x18015a80d\",\"size\":12,\"type\":0,\"successors\":[\"0x18015a80d\",\"0x18015a818\"],\"predecessors\":[\"0x18015a770\",\"0x18015a7c5\",\"0x18015a7da\"]},{\"start\":\"0x18015a80d\",\"end\":\"0x18015a818\",\"size\":11,\"type\":0,\"successors\":[\"0x18015a818\"],\"predecessors\":[\"0x18015a801\"]},{\"start\":\"0x18015a818\",\"end\":\"0x18015a88f\",\"size\":119,\"type\":0,\"successors\":[\"0x18015a88f\",\"0x18015a8b8\"],\"predecessors\":[\"0x18015a801\",\"0x18015a80d\"]},{\"start\":\"0x18015a88f\",\"end\":\"0x18015a89b\",\"size\":12,\"type\":0,\"successors\":[\"0x18015a89b\",\"0x18015a8b8\"],\"predecessors\":[\"0x18015a818\"]},{\"start\":\"0x18015a89b\",\"end\":\"0x18015a8af\",\"size\":20,\"type\":0,\"successors\":[\"0x18015a8af\",\"0x18015a8b8\"],\"predecessors\":[\"0x18015a88f\"]},{\"start\":\"0x18015a8af\",\"end\":\"0x18015a8b8\",\"size\":9,\"type\":0,\"successors\":[\"0x18015a8b8\"],\"predecessors\":[\"0x18015a89b\"]},{\"start\":\"0x18015a8b8\",\"end\":\"0x18015a8c6\",\"size\":14,\"type\":0,\"successors\":[\"0x18015a8c6\",\"0x18015ab12\"],\"predecessors\":[\"0x18015a818\",\"0x18015a88f\",\"0x18015a89b\",\"0x18015a8af\"]},{\"start\":\"0x18015a8c6\",\"end\":\"0x18015a8fd\",\"size\":55,\"type\":0,\"successors\":[\"0x18015a8fd\",\"0x18015a938\"],\"predecessors\":[\"0x18015a8b8\"]},{\"start\":\"0x18015a8fd\",\"end\":\"0x18015a911\",\"size\":20,\"type\":0,\"successors\":[\"0x18015a911\",\"0x18015a938\"],\"predecessors\":[\"0x18015a8c6\"]},{\"start\":\"0x18015a911\",\"end\":\"0x18015a938\",\"size\":39,\"type\":0,\"successors\":[\"0x18015a938\"],\"predecessors\":[\"0x18015a8fd\"]},{\"start\":\"0x18015a938\",\"end\":\"0x18015a944\",\"size\":12,\"type\":0,\"successors\":[\"0x18015a944\",\"0x18015a94f\"],\"predecessors\":[\"0x18015a8c6\",\"0x18015a8fd\",\"0x18015a911\"]},{\"start\":\"0x18015a944\",\"end\":\"0x18015a94f\",\"size\":11,\"type\":0,\"successors\":[\"0x18015a94f\"],\"predecessors\":[\"0x18015a938\"]},{\"start\":\"0x18015a94f\",\"end\":\"0x18015a9b1\",\"size\":98,\"type\":0,\"successors\":[\"0x18015a9b1\",\"0x18015a9da\"],\"predecessors\":[\"0x18015a938\",\"0x18015a944\"]},{\"start\":\"0x18015a9b1\",\"end\":\"0x18015a9bd\",\"size\":12,\"type\":0,\"successors\":[\"0x18015a9bd\",\"0x18015a9da\"],\"predecessors\":[\"0x18015a94f\"]},{\"start\":\"0x18015a9bd\",\"end\":\"0x18015a9d1\",\"size\":20,\"type\":0,\"successors\":[\"0x18015a9d1\",\"0x18015a9da\"],\"predecessors\":[\"0x18015a9b1\"]},{\"start\":\"0x18015a9d1\",\"end\":\"0x18015a9da\",\"size\":9,\"type\":0,\"successors\":[\"0x18015a9da\"],\"predecessors\":[\"0x18015a9bd\"]},{\"start\":\"0x18015a9da\",\"end\":\"0x18015aa00\",\"size\":38,\"type\":0,\"successors\":[\"0x18015aa00\"],\"predecessors\":[\"0x18015a94f\",\"0x18015a9b1\",\"0x18015a9bd\",\"0x18015a9d1\"]},{\"start\":\"0x18015aa00\",\"end\":\"0x18015aa09\",\"size\":9,\"type\":0,\"successors\":[\"0x18015aa09\",\"0x18015aa00\"],\"predecessors\":[\"0x18015a9da\",\"0x18015aa00\"]},{\"start\":\"0x18015aa09\",\"end\":\"0x18015aa2e\",\"size\":37,\"type\":0,\"successors\":[\"0x18015aa2e\",\"0x18015aa69\"],\"predecessors\":[\"0x18015aa00\"]},{\"start\":\"0x18015aa2e\",\"end\":\"0x18015aa42\",\"size\":20,\"type\":0,\"successors\":[\"0x18015aa42\",\"0x18015aa69\"],\"predecessors\":[\"0x18015aa09\"]},{\"start\":\"0x18015aa42\",\"end\":\"0x18015aa69\",\"size\":39,\"type\":0,\"successors\":[\"0x18015aa69\"],\"predecessors\":[\"0x18015aa2e\"]},{\"start\":\"0x18015aa69\",\"end\":\"0x18015aa75\",\"size\":12,\"type\":0,\"successors\":[\"0x18015aa75\",\"0x18015aa80\"],\"predecessors\":[\"0x18015aa09\",\"0x18015aa2e\",\"0x18015aa42\"]},{\"start\":\"0x18015aa75\",\"end\":\"0x18015aa80\",\"size\":11,\"type\":0,\"successors\":[\"0x18015aa80\"],\"predecessors\":[\"0x18015aa69\"]},{\"start\":\"0x18015aa80\",\"end\":\"0x18015aae2\",\"size\":98,\"type\":0,\"successors\":[\"0x18015aae2\",\"0x18015ab09\"],\"predecessors\":[\"0x18015aa69\",\"0x18015aa75\"]},{\"start\":\"0x18015aae2\",\"end\":\"0x18015aaee\",\"size\":12,\"type\":0,\"successors\":[\"0x18015aaee\",\"0x18015ab09\"],\"predecessors\":[\"0x18015aa80\"]},{\"start\":\"0x18015aaee\",\"end\":\"0x18015ab00\",\"size\":18,\"type\":0,\"successors\":[\"0x18015ab00\",\"0x18015ab09\"],\"predecessors\":[\"0x18015aae2\"]},{\"start\":\"0x18015ab00\",\"end\":\"0x18015ab09\",\"size\":9,\"type\":0,\"successors\":[\"0x18015ab09\"],\"predecessors\":[\"0x18015aaee\"]},{\"start\":\"0x18015ab09\",\"end\":\"0x18015ab12\",\"size\":9,\"type\":0,\"successors\":[\"0x18015ab12\"],\"predecessors\":[\"0x18015aa80\",\"0x18015aae2\",\"0x18015aaee\",\"0x18015ab00\"]},{\"start\":\"0x18015ab12\",\"end\":\"0x18015ab3a\",\"size\":40,\"type\":2,\"successors\":[],\"predecessors\":[\"0x18015a8b8\",\"0x18015ab09\"]}],\"basic_block_count\":32,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"YL_GlobalInitStereoEngine\",\"addr\":\"0x18015b170\",\"name\":\"YL_GlobalInitStereoEngine\",\"analysis\":{\"size\":\"0x3ca\",\"prototype\":null,\"decompile\":\"__int64 __fastcall YL_GlobalInitStereoEngine(_BYTE *a1)\\n{\\n  _DWORD *v2; // r14\\n  volatile signed __int32 *v3; // rbx\\n  __int64 result; // rax\\n  void *v5; // rbx\\n  volatile signed __int32 *v6; // rbx\\n  _BYTE *v7; // rdx\\n  __int64 v8; // r8\\n  volatile signed __int32 *v9; // rbx\\n  _QWORD v10[2]; // [rsp+20h] [rbp-49h] BYREF\\n  __int128 v11; // [rsp+30h] [rbp-39h]\\n  const char *v12; // [rsp+40h] [rbp-29h]\\n  __int128 v13; // [rsp+50h] [rbp-19h] BYREF\\n  const char *v14; // [rsp+60h] [rbp-9h]\\n  __int128 v15; // [rsp+70h] [rbp+7h] BYREF\\n  __int64 v16; // [rsp+80h] [rbp+17h]\\n  __int64 v17; // [rsp+88h] [rbp+1Fh]\\n\\n  v2 = (_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) + 16LL); /*0x18015b1b7*/\\n  if ( dword_1805C9A98 > *v2 ) /*0x18015b1c3*/\\n  {\\n    sub_1803B3838(a1: &dword_1805C9A98); /*0x18015b1cc*/\\n    if ( dword_1805C9A98 == -1 ) /*0x18015b1d8*/\\n    {\\n      xmmword_1805C9820 = 0; /*0x18015b1dd*/\\n      sub_180116C20(); /*0x18015b1e4*/\\n      atexit(a1: sub_1803B9F10); /*0x18015b1f0*/\\n      sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015b1fc*/\\n    }\\n  }\\n  v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b201*/\\n  if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015b20b*/\\n  {\\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015b20d*/\\n    v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b211*/\\n  }\\n  v10[0] = \\\"********* LoadStereoEngine ***********\\\"; /*0x18015b226*/\\n  v10[1] = 38; /*0x18015b23b*/\\n  HIDWORD(v11) = HIDWORD(v13); /*0x18015b24f*/\\n  *(_QWORD *)&v11 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\YLStereoRendererEx.cpp\\\"; /*0x18015b25d*/\\n  DWORD2(v11) = 33; /*0x18015b261*/\\n  v12 = \\\"AiStereo::YL_GlobalInitStereoEngine\\\"; /*0x18015b26c*/\\n  v13 = v11; /*0x18015b275*/\\n  v14 = \\\"AiStereo::YL_GlobalInitStereoEngine\\\"; /*0x18015b279*/\\n  result = ((__int64 (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015b27e*/\\n             a1: xmmword_1805C9820,\\n             a2: &v13,\\n             a3: 2,\\n             a4: v10);\\n  if ( v3 != nullptr ) /*0x18015b28d*/\\n  {\\n    result = (unsigned int)_InterlockedExchangeAdd(v3 + 2, 0xFFFFFFFF); /*0x18015b291*/\\n    if ( (_DWORD)result == 1 ) /*0x18015b299*/\\n    {\\n      (**(void (__fastcall ***)(volatile signed __int32 *))v3)(a1: v3); /*0x18015b2a1*/\\n      result = (unsigned int)_InterlockedExchangeAdd(v3 + 3, 0xFFFFFFFF); /*0x18015b2a5*/\\n      if ( (_DWORD)result == 1 ) /*0x18015b2ad*/\\n        result = (*(__int64 (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v3 + 8LL))(a1: v3); /*0x18015b2b5*/\\n    }\\n  }\\n  if ( qword_1805C9EA0 == 0 ) /*0x18015b2c0*/\\n  {\\n    v5 = (void *)sub_1803B33B0(Size: 0xA8u); /*0x18015b2db*/\\n    memset(a1: v5, Val: 0, Size: 0xA8u); /*0x18015b2de*/\\n    qword_1805C9EA0 = sub_18014CA40(a1: v5); /*0x18015b2eb*/\\n    if ( dword_1805C9A98 > *v2 ) /*0x18015b2fb*/\\n    {\\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18015b304*/\\n      if ( dword_1805C9A98 == -1 ) /*0x18015b30f*/\\n      {\\n        xmmword_1805C9820 = 0; /*0x18015b314*/\\n        sub_180116C20(); /*0x18015b31b*/\\n        atexit(a1: sub_1803B9F10); /*0x18015b327*/\\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015b333*/\\n      }\\n    }\\n    v6 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b338*/\\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015b342*/\\n    {\\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015b344*/\\n      v6 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b348*/\\n    }\\n    v10[0] = \\\"Start creating Engine\\\"; /*0x18015b35d*/\\n    v10[1] = 21; /*0x18015b36c*/\\n    HIDWORD(v11) = HIDWORD(v13); /*0x18015b37e*/\\n    *(_QWORD *)&v11 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\YLStereoRendererEx.cpp\\\"; /*0x18015b386*/\\n    DWORD2(v11) = 67; /*0x18015b38a*/\\n    v12 = \\\"AiStereo::YL_GlobalInitStereoEngine\\\"; /*0x18015b395*/\\n    v13 = v11; /*0x18015b39e*/\\n    v14 = \\\"AiStereo::YL_GlobalInitStereoEngine\\\"; /*0x18015b3a2*/\\n    ((void (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015b3a7*/\\n      a1: xmmword_1805C9820,\\n      a2: &v13,\\n      a3: 2,\\n      a4: v10);\\n    if ( v6 != nullptr && _InterlockedExchangeAdd(v6 + 2, 0xFFFFFFFF) == 1 ) /*0x18015b3bb*/\\n    {\\n      (**(void (__fastcall ***)(volatile signed __int32 *))v6)(a1: v6); /*0x18015b3c3*/\\n      if ( _InterlockedExchangeAdd(v6 + 3, 0xFFFFFFFF) == 1 ) /*0x18015b3cf*/\\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v6 + 8LL))(a1: v6); /*0x18015b3d7*/\\n    }\\n    v7 = &unk_180582500; /*0x18015b3dd*/\\n    v8 = -1; /*0x18015b3e7*/\\n    if ( a1 != nullptr ) /*0x18015b3ea*/\\n      v7 = a1; /*0x18015b3ea*/\\n    v16 = 0; /*0x18015b3f0*/\\n    v17 = 0; /*0x18015b3f4*/\\n    v15 = 0; /*0x18015b3f8*/\\n    do /*0x18015b407*/\\n      ++v8; /*0x18015b400*/\\n    while ( v7[v8] != 0 ); /*0x18015b407*/\\n    sub_18010EA80(a1: &v15); /*0x18015b40d*/\\n    (*(void (__fastcall **)(__int64, __int128 *))(*(_QWORD *)qword_1805C9EA0 + 8LL))(a1: qword_1805C9EA0, a2: &v15); /*0x18015b420*/\\n    if ( dword_1805C9A98 > *v2 ) /*0x18015b42c*/\\n    {\\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18015b435*/\\n      if ( dword_1805C9A98 == -1 ) /*0x18015b440*/\\n      {\\n        xmmword_1805C9820 = 0; /*0x18015b445*/\\n        sub_180116C20(); /*0x18015b44c*/\\n        atexit(a1: sub_1803B9F10); /*0x18015b458*/\\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015b464*/\\n      }\\n    }\\n    v9 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b469*/\\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015b473*/\\n    {\\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015b475*/\\n      v9 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b479*/\\n    }\\n    v10[0] = \\\"Engine initialized successfully \\\"; /*0x18015b48e*/\\n    v10[1] = 32; /*0x18015b49d*/\\n    HIDWORD(v11) = HIDWORD(v13); /*0x18015b4af*/\\n    *(_QWORD *)&v11 = \\\"J:\\\\\\\\Project\\\\\\\\VSProjects\\\\\\\\AiStereoKit\\\\\\\\AiSetereoKit\\\\\\\\YLStereoRendererEx.cpp\\\"; /*0x18015b4b7*/\\n    DWORD2(v11) = 70; /*0x18015b4bb*/\\n    v12 = \\\"AiStereo::YL_GlobalInitStereoEngine\\\"; /*0x18015b4c6*/\\n    v13 = v11; /*0x18015b4cf*/\\n    v14 = \\\"AiStereo::YL_GlobalInitStereoEngine\\\"; /*0x18015b4d3*/\\n    ((void (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015b4d8*/\\n      a1: xmmword_1805C9820,\\n      a2: &v13,\\n      a3: 2,\\n      a4: v10);\\n    if ( v9 != nullptr && _InterlockedExchangeAdd(v9 + 2, 0xFFFFFFFF) == 1 ) /*0x18015b4ec*/\\n    {\\n      (**(void (__fastcall ***)(volatile signed __int32 *))v9)(a1: v9); /*0x18015b4f4*/\\n      if ( _InterlockedExchangeAdd(v9 + 3, 0xFFFFFFFF) == 1 ) /*0x18015b4fe*/\\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v9 + 8LL))(a1: v9); /*0x18015b506*/\\n    }\\n    return sub_18010EB70(a1: &v15); /*0x18015b50d*/\\n  }\\n  return result; /*0x18015b512*/\\n}\",\"decompile_error\":null,\"disasm\":null,\"xrefs\":{\"to\":[{\"addr\":\"0x18015b980\",\"type\":\"code\"},{\"addr\":\"0x1805b6bd8\",\"type\":\"data\"},{\"addr\":\"0x1805cf3ec\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x18015b175\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":3,\"from_count\":1},\"callers\":[{\"addr\":\"0x18015b830\",\"name\":\"YL_CreateStereoRendererEx\",\"size\":\"0x1b0\"}],\"caller_count\":1,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x1803b3838\",\"name\":\"sub_1803B3838\",\"type\":\"internal\"},{\"addr\":\"0x18010eb70\",\"name\":\"sub_18010EB70\",\"type\":\"internal\"},{\"addr\":\"0x180114050\",\"name\":\"sub_180114050\",\"type\":\"internal\"},{\"addr\":\"0x1803b33b0\",\"name\":\"sub_1803B33B0\",\"type\":\"internal\"},{\"addr\":\"0x18014ca40\",\"name\":\"sub_18014CA40\",\"type\":\"internal\"},{\"addr\":\"0x180116c20\",\"name\":\"sub_180116C20\",\"type\":\"internal\"},{\"addr\":\"0x1803b49e8\",\"name\":\"memset\",\"type\":\"internal\"},{\"addr\":\"0x1803b3744\",\"name\":\"atexit\",\"type\":\"internal\"},{\"addr\":\"0x18010ea80\",\"name\":\"sub_18010EA80\",\"type\":\"internal\"},{\"addr\":\"0x1803b32c0\",\"name\":\"__security_check_cookie\",\"type\":\"internal\"},{\"addr\":\"0x1803b37cc\",\"name\":\"sub_1803B37CC\",\"type\":\"internal\"}],\"callee_count\":11,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x180587ce8\",\"length\":38,\"string\":\"********* LoadStereoEngine ***********\"},{\"addr\":\"0x180587e90\",\"length\":69,\"string\":\"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\YLStereoRendererEx.cpp\"},{\"addr\":\"0x180587ed8\",\"length\":35,\"string\":\"AiStereo::YL_GlobalInitStereoEngine\"},{\"addr\":\"0x180587d38\",\"length\":21,\"string\":\"Start creating Engine\"},{\"addr\":\"0x180587d10\",\"length\":32,\"string\":\"Engine initialized successfully \"}],\"string_ref_count\":5,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x18015b187\",\"value\":\"0xa0\",\"decimal\":160},{\"addr\":\"0x18015b1ae\",\"value\":\"0x10\",\"decimal\":16},{\"addr\":\"0x18015b1d1\",\"value\":\"0xffffffffffffffff\",\"decimal\":18446744073709551615},{\"addr\":\"0x18015b23b\",\"value\":\"0x26\",\"decimal\":38},{\"addr\":\"0x18015b252\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x18015b261\",\"value\":\"0x21\",\"decimal\":33},{\"addr\":\"0x18015b283\",\"value\":\"0xffffffffffffffff\",\"decimal\":18446744073709551615},{\"addr\":\"0x18015b296\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015b2aa\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015b2b8\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x18015b2c6\",\"value\":\"0xa8\",\"decimal\":168},{\"addr\":\"0x18015b2d2\",\"value\":\"0xa8\",\"decimal\":168},{\"addr\":\"0x18015b36c\",\"value\":\"0x15\",\"decimal\":21},{\"addr\":\"0x18015b374\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x18015b38a\",\"value\":\"0x43\",\"decimal\":67},{\"addr\":\"0x18015b3b8\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015b3cc\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015b49d\",\"value\":\"0x20\",\"decimal\":32},{\"addr\":\"0x18015b4a5\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x18015b4bb\",\"value\":\"0x46\",\"decimal\":70},{\"addr\":\"0x18015b4e9\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18015b4fb\",\"value\":\"0x1\",\"decimal\":1}],\"constant_count\":22,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x18015b170\",\"end\":\"0x18015b1c5\",\"size\":85,\"type\":0,\"successors\":[\"0x18015b1c5\",\"0x18015b201\"],\"predecessors\":[]},{\"start\":\"0x18015b1c5\",\"end\":\"0x18015b1da\",\"size\":21,\"type\":0,\"successors\":[\"0x18015b1da\",\"0x18015b201\"],\"predecessors\":[\"0x18015b170\"]},{\"start\":\"0x18015b1da\",\"end\":\"0x18015b201\",\"size\":39,\"type\":0,\"successors\":[\"0x18015b201\"],\"predecessors\":[\"0x18015b1c5\"]},{\"start\":\"0x18015b201\",\"end\":\"0x18015b20d\",\"size\":12,\"type\":0,\"successors\":[\"0x18015b20d\",\"0x18015b218\"],\"predecessors\":[\"0x18015b170\",\"0x18015b1c5\",\"0x18015b1da\"]},{\"start\":\"0x18015b20d\",\"end\":\"0x18015b218\",\"size\":11,\"type\":0,\"successors\":[\"0x18015b218\"],\"predecessors\":[\"0x18015b201\"]},{\"start\":\"0x18015b218\",\"end\":\"0x18015b28f\",\"size\":119,\"type\":0,\"successors\":[\"0x18015b28f\",\"0x18015b2b8\"],\"predecessors\":[\"0x18015b201\",\"0x18015b20d\"]},{\"start\":\"0x18015b28f\",\"end\":\"0x18015b29b\",\"size\":12,\"type\":0,\"successors\":[\"0x18015b29b\",\"0x18015b2b8\"],\"predecessors\":[\"0x18015b218\"]},{\"start\":\"0x18015b29b\",\"end\":\"0x18015b2af\",\"size\":20,\"type\":0,\"successors\":[\"0x18015b2af\",\"0x18015b2b8\"],\"predecessors\":[\"0x18015b28f\"]},{\"start\":\"0x18015b2af\",\"end\":\"0x18015b2b8\",\"size\":9,\"type\":0,\"successors\":[\"0x18015b2b8\"],\"predecessors\":[\"0x18015b29b\"]},{\"start\":\"0x18015b2b8\",\"end\":\"0x18015b2c6\",\"size\":14,\"type\":0,\"successors\":[\"0x18015b2c6\",\"0x18015b512\"],\"predecessors\":[\"0x18015b218\",\"0x18015b28f\",\"0x18015b29b\",\"0x18015b2af\"]},{\"start\":\"0x18015b2c6\",\"end\":\"0x18015b2fd\",\"size\":55,\"type\":0,\"successors\":[\"0x18015b2fd\",\"0x18015b338\"],\"predecessors\":[\"0x18015b2b8\"]},{\"start\":\"0x18015b2fd\",\"end\":\"0x18015b311\",\"size\":20,\"type\":0,\"successors\":[\"0x18015b311\",\"0x18015b338\"],\"predecessors\":[\"0x18015b2c6\"]},{\"start\":\"0x18015b311\",\"end\":\"0x18015b338\",\"size\":39,\"type\":0,\"successors\":[\"0x18015b338\"],\"predecessors\":[\"0x18015b2fd\"]},{\"start\":\"0x18015b338\",\"end\":\"0x18015b344\",\"size\":12,\"type\":0,\"successors\":[\"0x18015b344\",\"0x18015b34f\"],\"predecessors\":[\"0x18015b2c6\",\"0x18015b2fd\",\"0x18015b311\"]},{\"start\":\"0x18015b344\",\"end\":\"0x18015b34f\",\"size\":11,\"type\":0,\"successors\":[\"0x18015b34f\"],\"predecessors\":[\"0x18015b338\"]},{\"start\":\"0x18015b34f\",\"end\":\"0x18015b3b1\",\"size\":98,\"type\":0,\"successors\":[\"0x18015b3b1\",\"0x18015b3da\"],\"predecessors\":[\"0x18015b338\",\"0x18015b344\"]},{\"start\":\"0x18015b3b1\",\"end\":\"0x18015b3bd\",\"size\":12,\"type\":0,\"successors\":[\"0x18015b3bd\",\"0x18015b3da\"],\"predecessors\":[\"0x18015b34f\"]},{\"start\":\"0x18015b3bd\",\"end\":\"0x18015b3d1\",\"size\":20,\"type\":0,\"successors\":[\"0x18015b3d1\",\"0x18015b3da\"],\"predecessors\":[\"0x18015b3b1\"]},{\"start\":\"0x18015b3d1\",\"end\":\"0x18015b3da\",\"size\":9,\"type\":0,\"successors\":[\"0x18015b3da\"],\"predecessors\":[\"0x18015b3bd\"]},{\"start\":\"0x18015b3da\",\"end\":\"0x18015b400\",\"size\":38,\"type\":0,\"successors\":[\"0x18015b400\"],\"predecessors\":[\"0x18015b34f\",\"0x18015b3b1\",\"0x18015b3bd\",\"0x18015b3d1\"]},{\"start\":\"0x18015b400\",\"end\":\"0x18015b409\",\"size\":9,\"type\":0,\"successors\":[\"0x18015b409\",\"0x18015b400\"],\"predecessors\":[\"0x18015b3da\",\"0x18015b400\"]},{\"start\":\"0x18015b409\",\"end\":\"0x18015b42e\",\"size\":37,\"type\":0,\"successors\":[\"0x18015b42e\",\"0x18015b469\"],\"predecessors\":[\"0x18015b400\"]},{\"start\":\"0x18015b42e\",\"end\":\"0x18015b442\",\"size\":20,\"type\":0,\"successors\":[\"0x18015b442\",\"0x18015b469\"],\"predecessors\":[\"0x18015b409\"]},{\"start\":\"0x18015b442\",\"end\":\"0x18015b469\",\"size\":39,\"type\":0,\"successors\":[\"0x18015b469\"],\"predecessors\":[\"0x18015b42e\"]},{\"start\":\"0x18015b469\",\"end\":\"0x18015b475\",\"size\":12,\"type\":0,\"successors\":[\"0x18015b475\",\"0x18015b480\"],\"predecessors\":[\"0x18015b409\",\"0x18015b42e\",\"0x18015b442\"]},{\"start\":\"0x18015b475\",\"end\":\"0x18015b480\",\"size\":11,\"type\":0,\"successors\":[\"0x18015b480\"],\"predecessors\":[\"0x18015b469\"]},{\"start\":\"0x18015b480\",\"end\":\"0x18015b4e2\",\"size\":98,\"type\":0,\"successors\":[\"0x18015b4e2\",\"0x18015b509\"],\"predecessors\":[\"0x18015b469\",\"0x18015b475\"]},{\"start\":\"0x18015b4e2\",\"end\":\"0x18015b4ee\",\"size\":12,\"type\":0,\"successors\":[\"0x18015b4ee\",\"0x18015b509\"],\"predecessors\":[\"0x18015b480\"]},{\"start\":\"0x18015b4ee\",\"end\":\"0x18015b500\",\"size\":18,\"type\":0,\"successors\":[\"0x18015b500\",\"0x18015b509\"],\"predecessors\":[\"0x18015b4e2\"]},{\"start\":\"0x18015b500\",\"end\":\"0x18015b509\",\"size\":9,\"type\":0,\"successors\":[\"0x18015b509\"],\"predecessors\":[\"0x18015b4ee\"]},{\"start\":\"0x18015b509\",\"end\":\"0x18015b512\",\"size\":9,\"type\":0,\"successors\":[\"0x18015b512\"],\"predecessors\":[\"0x18015b480\",\"0x18015b4e2\",\"0x18015b4ee\",\"0x18015b500\"]},{\"start\":\"0x18015b512\",\"end\":\"0x18015b53a\",\"size\":40,\"type\":2,\"successors\":[],\"predecessors\":[\"0x18015b2b8\",\"0x18015b509\"]}],\"basic_block_count\":32,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "LoadStereoEngine",
+          "addr": "0x18015a770",
+          "name": "LoadStereoEngine",
+          "analysis": {
+            "size": "0x3ca",
+            "prototype": null,
+            "decompile": "__int64 __fastcall LoadStereoEngine(_BYTE *a1)\n{\n  _DWORD *v2; // r14\n  volatile signed __int32 *v3; // rbx\n  __int64 result; // rax\n  void *v5; // rbx\n  volatile signed __int32 *v6; // rbx\n  _BYTE *v7; // rdx\n  __int64 v8; // r8\n  volatile signed __int32 *v9; // rbx\n  _QWORD v10[2]; // [rsp+20h] [rbp-49h] BYREF\n  __int128 v11; // [rsp+30h] [rbp-39h]\n  const char *v12; // [rsp+40h] [rbp-29h]\n  __int128 v13; // [rsp+50h] [rbp-19h] BYREF\n  const char *v14; // [rsp+60h] [rbp-9h]\n  __int128 v15; // [rsp+70h] [rbp+7h] BYREF\n  __int64 v16; // [rsp+80h] [rbp+17h]\n  __int64 v17; // [rsp+88h] [rbp+1Fh]\n\n  v2 = (_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) + 16LL); /*0x18015a7b7*/\n  if ( dword_1805C9A98 > *v2 ) /*0x18015a7c3*/\n  {\n    sub_1803B3838(a1: &dword_1805C9A98); /*0x18015a7cc*/\n    if ( dword_1805C9A98 == -1 ) /*0x18015a7d8*/\n    {\n      xmmword_1805C9820 = 0; /*0x18015a7dd*/\n      sub_180116C20(); /*0x18015a7e4*/\n      atexit(a1: sub_1803B9F10); /*0x18015a7f0*/\n      sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015a7fc*/\n    }\n  }\n  v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015a801*/\n  if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015a80b*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015a80d*/\n    v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015a811*/\n  }\n  v10[0] = \"********* LoadStereoEngine ***********\"; /*0x18015a826*/\n  v10[1] = 38; /*0x18015a83b*/\n  HIDWORD(v11) = HIDWORD(v13); /*0x18015a84f*/\n  *(_QWORD *)&v11 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\AiStereoRenderer.cpp\"; /*0x18015a85d*/\n  DWORD2(v11) = 56; /*0x18015a861*/\n  v12 = \"AiStereo::LoadStereoEngine\"; /*0x18015a86c*/\n  v13 = v11; /*0x18015a875*/\n  v14 = \"AiStereo::LoadStereoEngine\"; /*0x18015a879*/\n  result = ((__int64 (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015a87e*/\n             a1: xmmword_1805C9820,\n             a2: &v13,\n             a3: 2,\n             a4: v10);\n  if ( v3 != nullptr ) /*0x18015a88d*/\n  {\n    result = (unsigned int)_InterlockedExchangeAdd(v3 + 2, 0xFFFFFFFF); /*0x18015a891*/\n    if ( (_DWORD)result == 1 ) /*0x18015a899*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v3)(a1: v3); /*0x18015a8a1*/\n      result = (unsigned int)_InterlockedExchangeAdd(v3 + 3, 0xFFFFFFFF); /*0x18015a8a5*/\n      if ( (_DWORD)result == 1 ) /*0x18015a8ad*/\n        result = (*(__int64 (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v3 + 8LL))(a1: v3); /*0x18015a8b5*/\n    }\n  }\n  if ( qword_1805C9E98 == 0 ) /*0x18015a8c0*/\n  {\n    v5 = (void *)sub_1803B33B0(Size: 0xA8u); /*0x18015a8db*/\n    memset(a1: v5, Val: 0, Size: 0xA8u); /*0x18015a8de*/\n    qword_1805C9E98 = sub_18014CA40(a1: v5); /*0x18015a8eb*/\n    if ( dword_1805C9A98 > *v2 ) /*0x18015a8fb*/\n    {\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18015a904*/\n      if ( dword_1805C9A98 == -1 ) /*0x18015a90f*/\n      {\n        xmmword_1805C9820 = 0; /*0x18015a914*/\n        sub_180116C20(); /*0x18015a91b*/\n        atexit(a1: sub_1803B9F10); /*0x18015a927*/\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015a933*/\n      }\n    }\n    v6 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015a938*/\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015a942*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015a944*/\n      v6 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015a948*/\n    }\n    v10[0] = \"Start creating Engine\"; /*0x18015a95d*/\n    v10[1] = 21; /*0x18015a96c*/\n    HIDWORD(v11) = HIDWORD(v13); /*0x18015a97e*/\n    *(_QWORD *)&v11 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\AiStereoRenderer.cpp\"; /*0x18015a986*/\n    DWORD2(v11) = 142; /*0x18015a98a*/\n    v12 = \"AiStereo::LoadStereoEngine\"; /*0x18015a995*/\n    v13 = v11; /*0x18015a99e*/\n    v14 = \"AiStereo::LoadStereoEngine\"; /*0x18015a9a2*/\n    ((void (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015a9a7*/\n      a1: xmmword_1805C9820,\n      a2: &v13,\n      a3: 2,\n      a4: v10);\n    if ( v6 != nullptr && _InterlockedExchangeAdd(v6 + 2, 0xFFFFFFFF) == 1 ) /*0x18015a9bb*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v6)(a1: v6); /*0x18015a9c3*/\n      if ( _InterlockedExchangeAdd(v6 + 3, 0xFFFFFFFF) == 1 ) /*0x18015a9cf*/\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v6 + 8LL))(a1: v6); /*0x18015a9d7*/\n    }\n    v7 = &unk_180582500; /*0x18015a9dd*/\n    v8 = -1; /*0x18015a9e7*/\n    if ( a1 != nullptr ) /*0x18015a9ea*/\n      v7 = a1; /*0x18015a9ea*/\n    v16 = 0; /*0x18015a9f0*/\n    v17 = 0; /*0x18015a9f4*/\n    v15 = 0; /*0x18015a9f8*/\n    do /*0x18015aa07*/\n      ++v8; /*0x18015aa00*/\n    while ( v7[v8] != 0 ); /*0x18015aa07*/\n    sub_18010EA80(a1: &v15); /*0x18015aa0d*/\n    (*(void (__fastcall **)(__int64, __int128 *))(*(_QWORD *)qword_1805C9E98 + 8LL))(a1: qword_1805C9E98, a2: &v15); /*0x18015aa20*/\n    if ( dword_1805C9A98 > *v2 ) /*0x18015aa2c*/\n    {\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18015aa35*/\n      if ( dword_1805C9A98 == -1 ) /*0x18015aa40*/\n      {\n        xmmword_1805C9820 = 0; /*0x18015aa45*/\n        sub_180116C20(); /*0x18015aa4c*/\n        atexit(a1: sub_1803B9F10); /*0x18015aa58*/\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015aa64*/\n      }\n    }\n    v9 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015aa69*/\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015aa73*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015aa75*/\n      v9 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015aa79*/\n    }\n    v10[0] = \"Engine initialized successfully \"; /*0x18015aa8e*/\n    v10[1] = 32; /*0x18015aa9d*/\n    HIDWORD(v11) = HIDWORD(v13); /*0x18015aaaf*/\n    *(_QWORD *)&v11 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\AiStereoRenderer.cpp\"; /*0x18015aab7*/\n    DWORD2(v11) = 145; /*0x18015aabb*/\n    v12 = \"AiStereo::LoadStereoEngine\"; /*0x18015aac6*/\n    v13 = v11; /*0x18015aacf*/\n    v14 = \"AiStereo::LoadStereoEngine\"; /*0x18015aad3*/\n    ((void (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015aad8*/\n      a1: xmmword_1805C9820,\n      a2: &v13,\n      a3: 2,\n      a4: v10);\n    if ( v9 != nullptr && _InterlockedExchangeAdd(v9 + 2, 0xFFFFFFFF) == 1 ) /*0x18015aaec*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v9)(a1: v9); /*0x18015aaf4*/\n      if ( _InterlockedExchangeAdd(v9 + 3, 0xFFFFFFFF) == 1 ) /*0x18015aafe*/\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v9 + 8LL))(a1: v9); /*0x18015ab06*/\n    }\n    return sub_18010EB70(a1: &v15); /*0x18015ab0d*/\n  }\n  return result; /*0x18015ab12*/\n}",
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x18015ad90",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x1805b6bd8",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x1805cf3a4",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x18015a775",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 3,
+              "from_count": 1
+            },
+            "callers": [
+              {
+                "addr": "0x18015ab40",
+                "name": "CreateStereoRenderer",
+                "size": "0x28e"
+              }
+            ],
+            "caller_count": 1,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x1803b3838",
+                "name": "sub_1803B3838",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18010eb70",
+                "name": "sub_18010EB70",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180114050",
+                "name": "sub_180114050",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b33b0",
+                "name": "sub_1803B33B0",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18014ca40",
+                "name": "sub_18014CA40",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180116c20",
+                "name": "sub_180116C20",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b49e8",
+                "name": "memset",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b3744",
+                "name": "atexit",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18010ea80",
+                "name": "sub_18010EA80",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b32c0",
+                "name": "__security_check_cookie",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b37cc",
+                "name": "sub_1803B37CC",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 11,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x180587ce8",
+                "length": 38,
+                "string": "********* LoadStereoEngine ***********"
+              },
+              {
+                "addr": "0x180587d50",
+                "length": 67,
+                "string": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\AiStereoRenderer.cpp"
+              },
+              {
+                "addr": "0x180587d98",
+                "length": 26,
+                "string": "AiStereo::LoadStereoEngine"
+              },
+              {
+                "addr": "0x180587d38",
+                "length": 21,
+                "string": "Start creating Engine"
+              },
+              {
+                "addr": "0x180587d10",
+                "length": 32,
+                "string": "Engine initialized successfully "
+              }
+            ],
+            "string_ref_count": 5,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x18015a787",
+                "value": "0xa0",
+                "decimal": 160
+              },
+              {
+                "addr": "0x18015a7ae",
+                "value": "0x10",
+                "decimal": 16
+              },
+              {
+                "addr": "0x18015a7d1",
+                "value": "0xffffffffffffffff",
+                "decimal": 18446744073709551615
+              },
+              {
+                "addr": "0x18015a83b",
+                "value": "0x26",
+                "decimal": 38
+              },
+              {
+                "addr": "0x18015a852",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x18015a861",
+                "value": "0x38",
+                "decimal": 56
+              },
+              {
+                "addr": "0x18015a883",
+                "value": "0xffffffffffffffff",
+                "decimal": 18446744073709551615
+              },
+              {
+                "addr": "0x18015a896",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015a8aa",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015a8b8",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x18015a8c6",
+                "value": "0xa8",
+                "decimal": 168
+              },
+              {
+                "addr": "0x18015a8d2",
+                "value": "0xa8",
+                "decimal": 168
+              },
+              {
+                "addr": "0x18015a96c",
+                "value": "0x15",
+                "decimal": 21
+              },
+              {
+                "addr": "0x18015a974",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x18015a98a",
+                "value": "0x8e",
+                "decimal": 142
+              },
+              {
+                "addr": "0x18015a9b8",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015a9cc",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015aa9d",
+                "value": "0x20",
+                "decimal": 32
+              },
+              {
+                "addr": "0x18015aaa5",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x18015aabb",
+                "value": "0x91",
+                "decimal": 145
+              },
+              {
+                "addr": "0x18015aae9",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015aafb",
+                "value": "0x1",
+                "decimal": 1
+              }
+            ],
+            "constant_count": 22,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x18015a770",
+                "end": "0x18015a7c5",
+                "size": 85,
+                "type": 0,
+                "successors": [
+                  "0x18015a7c5",
+                  "0x18015a801"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x18015a7c5",
+                "end": "0x18015a7da",
+                "size": 21,
+                "type": 0,
+                "successors": [
+                  "0x18015a7da",
+                  "0x18015a801"
+                ],
+                "predecessors": [
+                  "0x18015a770"
+                ]
+              },
+              {
+                "start": "0x18015a7da",
+                "end": "0x18015a801",
+                "size": 39,
+                "type": 0,
+                "successors": [
+                  "0x18015a801"
+                ],
+                "predecessors": [
+                  "0x18015a7c5"
+                ]
+              },
+              {
+                "start": "0x18015a801",
+                "end": "0x18015a80d",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015a80d",
+                  "0x18015a818"
+                ],
+                "predecessors": [
+                  "0x18015a770",
+                  "0x18015a7c5",
+                  "0x18015a7da"
+                ]
+              },
+              {
+                "start": "0x18015a80d",
+                "end": "0x18015a818",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x18015a818"
+                ],
+                "predecessors": [
+                  "0x18015a801"
+                ]
+              },
+              {
+                "start": "0x18015a818",
+                "end": "0x18015a88f",
+                "size": 119,
+                "type": 0,
+                "successors": [
+                  "0x18015a88f",
+                  "0x18015a8b8"
+                ],
+                "predecessors": [
+                  "0x18015a801",
+                  "0x18015a80d"
+                ]
+              },
+              {
+                "start": "0x18015a88f",
+                "end": "0x18015a89b",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015a89b",
+                  "0x18015a8b8"
+                ],
+                "predecessors": [
+                  "0x18015a818"
+                ]
+              },
+              {
+                "start": "0x18015a89b",
+                "end": "0x18015a8af",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x18015a8af",
+                  "0x18015a8b8"
+                ],
+                "predecessors": [
+                  "0x18015a88f"
+                ]
+              },
+              {
+                "start": "0x18015a8af",
+                "end": "0x18015a8b8",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015a8b8"
+                ],
+                "predecessors": [
+                  "0x18015a89b"
+                ]
+              },
+              {
+                "start": "0x18015a8b8",
+                "end": "0x18015a8c6",
+                "size": 14,
+                "type": 0,
+                "successors": [
+                  "0x18015a8c6",
+                  "0x18015ab12"
+                ],
+                "predecessors": [
+                  "0x18015a818",
+                  "0x18015a88f",
+                  "0x18015a89b",
+                  "0x18015a8af"
+                ]
+              },
+              {
+                "start": "0x18015a8c6",
+                "end": "0x18015a8fd",
+                "size": 55,
+                "type": 0,
+                "successors": [
+                  "0x18015a8fd",
+                  "0x18015a938"
+                ],
+                "predecessors": [
+                  "0x18015a8b8"
+                ]
+              },
+              {
+                "start": "0x18015a8fd",
+                "end": "0x18015a911",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x18015a911",
+                  "0x18015a938"
+                ],
+                "predecessors": [
+                  "0x18015a8c6"
+                ]
+              },
+              {
+                "start": "0x18015a911",
+                "end": "0x18015a938",
+                "size": 39,
+                "type": 0,
+                "successors": [
+                  "0x18015a938"
+                ],
+                "predecessors": [
+                  "0x18015a8fd"
+                ]
+              },
+              {
+                "start": "0x18015a938",
+                "end": "0x18015a944",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015a944",
+                  "0x18015a94f"
+                ],
+                "predecessors": [
+                  "0x18015a8c6",
+                  "0x18015a8fd",
+                  "0x18015a911"
+                ]
+              },
+              {
+                "start": "0x18015a944",
+                "end": "0x18015a94f",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x18015a94f"
+                ],
+                "predecessors": [
+                  "0x18015a938"
+                ]
+              },
+              {
+                "start": "0x18015a94f",
+                "end": "0x18015a9b1",
+                "size": 98,
+                "type": 0,
+                "successors": [
+                  "0x18015a9b1",
+                  "0x18015a9da"
+                ],
+                "predecessors": [
+                  "0x18015a938",
+                  "0x18015a944"
+                ]
+              },
+              {
+                "start": "0x18015a9b1",
+                "end": "0x18015a9bd",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015a9bd",
+                  "0x18015a9da"
+                ],
+                "predecessors": [
+                  "0x18015a94f"
+                ]
+              },
+              {
+                "start": "0x18015a9bd",
+                "end": "0x18015a9d1",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x18015a9d1",
+                  "0x18015a9da"
+                ],
+                "predecessors": [
+                  "0x18015a9b1"
+                ]
+              },
+              {
+                "start": "0x18015a9d1",
+                "end": "0x18015a9da",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015a9da"
+                ],
+                "predecessors": [
+                  "0x18015a9bd"
+                ]
+              },
+              {
+                "start": "0x18015a9da",
+                "end": "0x18015aa00",
+                "size": 38,
+                "type": 0,
+                "successors": [
+                  "0x18015aa00"
+                ],
+                "predecessors": [
+                  "0x18015a94f",
+                  "0x18015a9b1",
+                  "0x18015a9bd",
+                  "0x18015a9d1"
+                ]
+              },
+              {
+                "start": "0x18015aa00",
+                "end": "0x18015aa09",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015aa09",
+                  "0x18015aa00"
+                ],
+                "predecessors": [
+                  "0x18015a9da",
+                  "0x18015aa00"
+                ]
+              },
+              {
+                "start": "0x18015aa09",
+                "end": "0x18015aa2e",
+                "size": 37,
+                "type": 0,
+                "successors": [
+                  "0x18015aa2e",
+                  "0x18015aa69"
+                ],
+                "predecessors": [
+                  "0x18015aa00"
+                ]
+              },
+              {
+                "start": "0x18015aa2e",
+                "end": "0x18015aa42",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x18015aa42",
+                  "0x18015aa69"
+                ],
+                "predecessors": [
+                  "0x18015aa09"
+                ]
+              },
+              {
+                "start": "0x18015aa42",
+                "end": "0x18015aa69",
+                "size": 39,
+                "type": 0,
+                "successors": [
+                  "0x18015aa69"
+                ],
+                "predecessors": [
+                  "0x18015aa2e"
+                ]
+              },
+              {
+                "start": "0x18015aa69",
+                "end": "0x18015aa75",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015aa75",
+                  "0x18015aa80"
+                ],
+                "predecessors": [
+                  "0x18015aa09",
+                  "0x18015aa2e",
+                  "0x18015aa42"
+                ]
+              },
+              {
+                "start": "0x18015aa75",
+                "end": "0x18015aa80",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x18015aa80"
+                ],
+                "predecessors": [
+                  "0x18015aa69"
+                ]
+              },
+              {
+                "start": "0x18015aa80",
+                "end": "0x18015aae2",
+                "size": 98,
+                "type": 0,
+                "successors": [
+                  "0x18015aae2",
+                  "0x18015ab09"
+                ],
+                "predecessors": [
+                  "0x18015aa69",
+                  "0x18015aa75"
+                ]
+              },
+              {
+                "start": "0x18015aae2",
+                "end": "0x18015aaee",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015aaee",
+                  "0x18015ab09"
+                ],
+                "predecessors": [
+                  "0x18015aa80"
+                ]
+              },
+              {
+                "start": "0x18015aaee",
+                "end": "0x18015ab00",
+                "size": 18,
+                "type": 0,
+                "successors": [
+                  "0x18015ab00",
+                  "0x18015ab09"
+                ],
+                "predecessors": [
+                  "0x18015aae2"
+                ]
+              },
+              {
+                "start": "0x18015ab00",
+                "end": "0x18015ab09",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015ab09"
+                ],
+                "predecessors": [
+                  "0x18015aaee"
+                ]
+              },
+              {
+                "start": "0x18015ab09",
+                "end": "0x18015ab12",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015ab12"
+                ],
+                "predecessors": [
+                  "0x18015aa80",
+                  "0x18015aae2",
+                  "0x18015aaee",
+                  "0x18015ab00"
+                ]
+              },
+              {
+                "start": "0x18015ab12",
+                "end": "0x18015ab3a",
+                "size": 40,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x18015a8b8",
+                  "0x18015ab09"
+                ]
+              }
+            ],
+            "basic_block_count": 32,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "YL_GlobalInitStereoEngine",
+          "addr": "0x18015b170",
+          "name": "YL_GlobalInitStereoEngine",
+          "analysis": {
+            "size": "0x3ca",
+            "prototype": null,
+            "decompile": "__int64 __fastcall YL_GlobalInitStereoEngine(_BYTE *a1)\n{\n  _DWORD *v2; // r14\n  volatile signed __int32 *v3; // rbx\n  __int64 result; // rax\n  void *v5; // rbx\n  volatile signed __int32 *v6; // rbx\n  _BYTE *v7; // rdx\n  __int64 v8; // r8\n  volatile signed __int32 *v9; // rbx\n  _QWORD v10[2]; // [rsp+20h] [rbp-49h] BYREF\n  __int128 v11; // [rsp+30h] [rbp-39h]\n  const char *v12; // [rsp+40h] [rbp-29h]\n  __int128 v13; // [rsp+50h] [rbp-19h] BYREF\n  const char *v14; // [rsp+60h] [rbp-9h]\n  __int128 v15; // [rsp+70h] [rbp+7h] BYREF\n  __int64 v16; // [rsp+80h] [rbp+17h]\n  __int64 v17; // [rsp+88h] [rbp+1Fh]\n\n  v2 = (_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + (unsigned int)TlsIndex) + 16LL); /*0x18015b1b7*/\n  if ( dword_1805C9A98 > *v2 ) /*0x18015b1c3*/\n  {\n    sub_1803B3838(a1: &dword_1805C9A98); /*0x18015b1cc*/\n    if ( dword_1805C9A98 == -1 ) /*0x18015b1d8*/\n    {\n      xmmword_1805C9820 = 0; /*0x18015b1dd*/\n      sub_180116C20(); /*0x18015b1e4*/\n      atexit(a1: sub_1803B9F10); /*0x18015b1f0*/\n      sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015b1fc*/\n    }\n  }\n  v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b201*/\n  if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015b20b*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015b20d*/\n    v3 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b211*/\n  }\n  v10[0] = \"********* LoadStereoEngine ***********\"; /*0x18015b226*/\n  v10[1] = 38; /*0x18015b23b*/\n  HIDWORD(v11) = HIDWORD(v13); /*0x18015b24f*/\n  *(_QWORD *)&v11 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\YLStereoRendererEx.cpp\"; /*0x18015b25d*/\n  DWORD2(v11) = 33; /*0x18015b261*/\n  v12 = \"AiStereo::YL_GlobalInitStereoEngine\"; /*0x18015b26c*/\n  v13 = v11; /*0x18015b275*/\n  v14 = \"AiStereo::YL_GlobalInitStereoEngine\"; /*0x18015b279*/\n  result = ((__int64 (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015b27e*/\n             a1: xmmword_1805C9820,\n             a2: &v13,\n             a3: 2,\n             a4: v10);\n  if ( v3 != nullptr ) /*0x18015b28d*/\n  {\n    result = (unsigned int)_InterlockedExchangeAdd(v3 + 2, 0xFFFFFFFF); /*0x18015b291*/\n    if ( (_DWORD)result == 1 ) /*0x18015b299*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v3)(a1: v3); /*0x18015b2a1*/\n      result = (unsigned int)_InterlockedExchangeAdd(v3 + 3, 0xFFFFFFFF); /*0x18015b2a5*/\n      if ( (_DWORD)result == 1 ) /*0x18015b2ad*/\n        result = (*(__int64 (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v3 + 8LL))(a1: v3); /*0x18015b2b5*/\n    }\n  }\n  if ( qword_1805C9EA0 == 0 ) /*0x18015b2c0*/\n  {\n    v5 = (void *)sub_1803B33B0(Size: 0xA8u); /*0x18015b2db*/\n    memset(a1: v5, Val: 0, Size: 0xA8u); /*0x18015b2de*/\n    qword_1805C9EA0 = sub_18014CA40(a1: v5); /*0x18015b2eb*/\n    if ( dword_1805C9A98 > *v2 ) /*0x18015b2fb*/\n    {\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18015b304*/\n      if ( dword_1805C9A98 == -1 ) /*0x18015b30f*/\n      {\n        xmmword_1805C9820 = 0; /*0x18015b314*/\n        sub_180116C20(); /*0x18015b31b*/\n        atexit(a1: sub_1803B9F10); /*0x18015b327*/\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015b333*/\n      }\n    }\n    v6 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b338*/\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015b342*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015b344*/\n      v6 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b348*/\n    }\n    v10[0] = \"Start creating Engine\"; /*0x18015b35d*/\n    v10[1] = 21; /*0x18015b36c*/\n    HIDWORD(v11) = HIDWORD(v13); /*0x18015b37e*/\n    *(_QWORD *)&v11 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\YLStereoRendererEx.cpp\"; /*0x18015b386*/\n    DWORD2(v11) = 67; /*0x18015b38a*/\n    v12 = \"AiStereo::YL_GlobalInitStereoEngine\"; /*0x18015b395*/\n    v13 = v11; /*0x18015b39e*/\n    v14 = \"AiStereo::YL_GlobalInitStereoEngine\"; /*0x18015b3a2*/\n    ((void (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015b3a7*/\n      a1: xmmword_1805C9820,\n      a2: &v13,\n      a3: 2,\n      a4: v10);\n    if ( v6 != nullptr && _InterlockedExchangeAdd(v6 + 2, 0xFFFFFFFF) == 1 ) /*0x18015b3bb*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v6)(a1: v6); /*0x18015b3c3*/\n      if ( _InterlockedExchangeAdd(v6 + 3, 0xFFFFFFFF) == 1 ) /*0x18015b3cf*/\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v6 + 8LL))(a1: v6); /*0x18015b3d7*/\n    }\n    v7 = &unk_180582500; /*0x18015b3dd*/\n    v8 = -1; /*0x18015b3e7*/\n    if ( a1 != nullptr ) /*0x18015b3ea*/\n      v7 = a1; /*0x18015b3ea*/\n    v16 = 0; /*0x18015b3f0*/\n    v17 = 0; /*0x18015b3f4*/\n    v15 = 0; /*0x18015b3f8*/\n    do /*0x18015b407*/\n      ++v8; /*0x18015b400*/\n    while ( v7[v8] != 0 ); /*0x18015b407*/\n    sub_18010EA80(a1: &v15); /*0x18015b40d*/\n    (*(void (__fastcall **)(__int64, __int128 *))(*(_QWORD *)qword_1805C9EA0 + 8LL))(a1: qword_1805C9EA0, a2: &v15); /*0x18015b420*/\n    if ( dword_1805C9A98 > *v2 ) /*0x18015b42c*/\n    {\n      sub_1803B3838(a1: &dword_1805C9A98); /*0x18015b435*/\n      if ( dword_1805C9A98 == -1 ) /*0x18015b440*/\n      {\n        xmmword_1805C9820 = 0; /*0x18015b445*/\n        sub_180116C20(); /*0x18015b44c*/\n        atexit(a1: sub_1803B9F10); /*0x18015b458*/\n        sub_1803B37CC(a1: &dword_1805C9A98); /*0x18015b464*/\n      }\n    }\n    v9 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b469*/\n    if ( *((_QWORD *)&xmmword_1805C9820 + 1) != 0 ) /*0x18015b473*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1805C9820 + 1) + 8LL)); /*0x18015b475*/\n      v9 = *((volatile signed __int32 **)&xmmword_1805C9820 + 1); /*0x18015b479*/\n    }\n    v10[0] = \"Engine initialized successfully \"; /*0x18015b48e*/\n    v10[1] = 32; /*0x18015b49d*/\n    HIDWORD(v11) = HIDWORD(v13); /*0x18015b4af*/\n    *(_QWORD *)&v11 = \"J:\\\\Project\\\\VSProjects\\\\AiStereoKit\\\\AiSetereoKit\\\\YLStereoRendererEx.cpp\"; /*0x18015b4b7*/\n    DWORD2(v11) = 70; /*0x18015b4bb*/\n    v12 = \"AiStereo::YL_GlobalInitStereoEngine\"; /*0x18015b4c6*/\n    v13 = v11; /*0x18015b4cf*/\n    v14 = \"AiStereo::YL_GlobalInitStereoEngine\"; /*0x18015b4d3*/\n    ((void (__fastcall *)(_QWORD, __int128 *, __int64, _QWORD *))sub_180114050)( /*0x18015b4d8*/\n      a1: xmmword_1805C9820,\n      a2: &v13,\n      a3: 2,\n      a4: v10);\n    if ( v9 != nullptr && _InterlockedExchangeAdd(v9 + 2, 0xFFFFFFFF) == 1 ) /*0x18015b4ec*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v9)(a1: v9); /*0x18015b4f4*/\n      if ( _InterlockedExchangeAdd(v9 + 3, 0xFFFFFFFF) == 1 ) /*0x18015b4fe*/\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v9 + 8LL))(a1: v9); /*0x18015b506*/\n    }\n    return sub_18010EB70(a1: &v15); /*0x18015b50d*/\n  }\n  return result; /*0x18015b512*/\n}",
+            "decompile_error": null,
+            "disasm": null,
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x18015b980",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x1805b6bd8",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x1805cf3ec",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x18015b175",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 3,
+              "from_count": 1
+            },
+            "callers": [
+              {
+                "addr": "0x18015b830",
+                "name": "YL_CreateStereoRendererEx",
+                "size": "0x1b0"
+              }
+            ],
+            "caller_count": 1,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x1803b3838",
+                "name": "sub_1803B3838",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18010eb70",
+                "name": "sub_18010EB70",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180114050",
+                "name": "sub_180114050",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b33b0",
+                "name": "sub_1803B33B0",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18014ca40",
+                "name": "sub_18014CA40",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180116c20",
+                "name": "sub_180116C20",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b49e8",
+                "name": "memset",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b3744",
+                "name": "atexit",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18010ea80",
+                "name": "sub_18010EA80",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b32c0",
+                "name": "__security_check_cookie",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1803b37cc",
+                "name": "sub_1803B37CC",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 11,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x180587ce8",
+                "length": 38,
+                "string": "********* LoadStereoEngine ***********"
+              },
+              {
+                "addr": "0x180587e90",
+                "length": 69,
+                "string": "J:\\Project\\VSProjects\\AiStereoKit\\AiSetereoKit\\YLStereoRendererEx.cpp"
+              },
+              {
+                "addr": "0x180587ed8",
+                "length": 35,
+                "string": "AiStereo::YL_GlobalInitStereoEngine"
+              },
+              {
+                "addr": "0x180587d38",
+                "length": 21,
+                "string": "Start creating Engine"
+              },
+              {
+                "addr": "0x180587d10",
+                "length": 32,
+                "string": "Engine initialized successfully "
+              }
+            ],
+            "string_ref_count": 5,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x18015b187",
+                "value": "0xa0",
+                "decimal": 160
+              },
+              {
+                "addr": "0x18015b1ae",
+                "value": "0x10",
+                "decimal": 16
+              },
+              {
+                "addr": "0x18015b1d1",
+                "value": "0xffffffffffffffff",
+                "decimal": 18446744073709551615
+              },
+              {
+                "addr": "0x18015b23b",
+                "value": "0x26",
+                "decimal": 38
+              },
+              {
+                "addr": "0x18015b252",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x18015b261",
+                "value": "0x21",
+                "decimal": 33
+              },
+              {
+                "addr": "0x18015b283",
+                "value": "0xffffffffffffffff",
+                "decimal": 18446744073709551615
+              },
+              {
+                "addr": "0x18015b296",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015b2aa",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015b2b8",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x18015b2c6",
+                "value": "0xa8",
+                "decimal": 168
+              },
+              {
+                "addr": "0x18015b2d2",
+                "value": "0xa8",
+                "decimal": 168
+              },
+              {
+                "addr": "0x18015b36c",
+                "value": "0x15",
+                "decimal": 21
+              },
+              {
+                "addr": "0x18015b374",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x18015b38a",
+                "value": "0x43",
+                "decimal": 67
+              },
+              {
+                "addr": "0x18015b3b8",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015b3cc",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015b49d",
+                "value": "0x20",
+                "decimal": 32
+              },
+              {
+                "addr": "0x18015b4a5",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x18015b4bb",
+                "value": "0x46",
+                "decimal": 70
+              },
+              {
+                "addr": "0x18015b4e9",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18015b4fb",
+                "value": "0x1",
+                "decimal": 1
+              }
+            ],
+            "constant_count": 22,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x18015b170",
+                "end": "0x18015b1c5",
+                "size": 85,
+                "type": 0,
+                "successors": [
+                  "0x18015b1c5",
+                  "0x18015b201"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x18015b1c5",
+                "end": "0x18015b1da",
+                "size": 21,
+                "type": 0,
+                "successors": [
+                  "0x18015b1da",
+                  "0x18015b201"
+                ],
+                "predecessors": [
+                  "0x18015b170"
+                ]
+              },
+              {
+                "start": "0x18015b1da",
+                "end": "0x18015b201",
+                "size": 39,
+                "type": 0,
+                "successors": [
+                  "0x18015b201"
+                ],
+                "predecessors": [
+                  "0x18015b1c5"
+                ]
+              },
+              {
+                "start": "0x18015b201",
+                "end": "0x18015b20d",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015b20d",
+                  "0x18015b218"
+                ],
+                "predecessors": [
+                  "0x18015b170",
+                  "0x18015b1c5",
+                  "0x18015b1da"
+                ]
+              },
+              {
+                "start": "0x18015b20d",
+                "end": "0x18015b218",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x18015b218"
+                ],
+                "predecessors": [
+                  "0x18015b201"
+                ]
+              },
+              {
+                "start": "0x18015b218",
+                "end": "0x18015b28f",
+                "size": 119,
+                "type": 0,
+                "successors": [
+                  "0x18015b28f",
+                  "0x18015b2b8"
+                ],
+                "predecessors": [
+                  "0x18015b201",
+                  "0x18015b20d"
+                ]
+              },
+              {
+                "start": "0x18015b28f",
+                "end": "0x18015b29b",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015b29b",
+                  "0x18015b2b8"
+                ],
+                "predecessors": [
+                  "0x18015b218"
+                ]
+              },
+              {
+                "start": "0x18015b29b",
+                "end": "0x18015b2af",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x18015b2af",
+                  "0x18015b2b8"
+                ],
+                "predecessors": [
+                  "0x18015b28f"
+                ]
+              },
+              {
+                "start": "0x18015b2af",
+                "end": "0x18015b2b8",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015b2b8"
+                ],
+                "predecessors": [
+                  "0x18015b29b"
+                ]
+              },
+              {
+                "start": "0x18015b2b8",
+                "end": "0x18015b2c6",
+                "size": 14,
+                "type": 0,
+                "successors": [
+                  "0x18015b2c6",
+                  "0x18015b512"
+                ],
+                "predecessors": [
+                  "0x18015b218",
+                  "0x18015b28f",
+                  "0x18015b29b",
+                  "0x18015b2af"
+                ]
+              },
+              {
+                "start": "0x18015b2c6",
+                "end": "0x18015b2fd",
+                "size": 55,
+                "type": 0,
+                "successors": [
+                  "0x18015b2fd",
+                  "0x18015b338"
+                ],
+                "predecessors": [
+                  "0x18015b2b8"
+                ]
+              },
+              {
+                "start": "0x18015b2fd",
+                "end": "0x18015b311",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x18015b311",
+                  "0x18015b338"
+                ],
+                "predecessors": [
+                  "0x18015b2c6"
+                ]
+              },
+              {
+                "start": "0x18015b311",
+                "end": "0x18015b338",
+                "size": 39,
+                "type": 0,
+                "successors": [
+                  "0x18015b338"
+                ],
+                "predecessors": [
+                  "0x18015b2fd"
+                ]
+              },
+              {
+                "start": "0x18015b338",
+                "end": "0x18015b344",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015b344",
+                  "0x18015b34f"
+                ],
+                "predecessors": [
+                  "0x18015b2c6",
+                  "0x18015b2fd",
+                  "0x18015b311"
+                ]
+              },
+              {
+                "start": "0x18015b344",
+                "end": "0x18015b34f",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x18015b34f"
+                ],
+                "predecessors": [
+                  "0x18015b338"
+                ]
+              },
+              {
+                "start": "0x18015b34f",
+                "end": "0x18015b3b1",
+                "size": 98,
+                "type": 0,
+                "successors": [
+                  "0x18015b3b1",
+                  "0x18015b3da"
+                ],
+                "predecessors": [
+                  "0x18015b338",
+                  "0x18015b344"
+                ]
+              },
+              {
+                "start": "0x18015b3b1",
+                "end": "0x18015b3bd",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015b3bd",
+                  "0x18015b3da"
+                ],
+                "predecessors": [
+                  "0x18015b34f"
+                ]
+              },
+              {
+                "start": "0x18015b3bd",
+                "end": "0x18015b3d1",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x18015b3d1",
+                  "0x18015b3da"
+                ],
+                "predecessors": [
+                  "0x18015b3b1"
+                ]
+              },
+              {
+                "start": "0x18015b3d1",
+                "end": "0x18015b3da",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015b3da"
+                ],
+                "predecessors": [
+                  "0x18015b3bd"
+                ]
+              },
+              {
+                "start": "0x18015b3da",
+                "end": "0x18015b400",
+                "size": 38,
+                "type": 0,
+                "successors": [
+                  "0x18015b400"
+                ],
+                "predecessors": [
+                  "0x18015b34f",
+                  "0x18015b3b1",
+                  "0x18015b3bd",
+                  "0x18015b3d1"
+                ]
+              },
+              {
+                "start": "0x18015b400",
+                "end": "0x18015b409",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015b409",
+                  "0x18015b400"
+                ],
+                "predecessors": [
+                  "0x18015b3da",
+                  "0x18015b400"
+                ]
+              },
+              {
+                "start": "0x18015b409",
+                "end": "0x18015b42e",
+                "size": 37,
+                "type": 0,
+                "successors": [
+                  "0x18015b42e",
+                  "0x18015b469"
+                ],
+                "predecessors": [
+                  "0x18015b400"
+                ]
+              },
+              {
+                "start": "0x18015b42e",
+                "end": "0x18015b442",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x18015b442",
+                  "0x18015b469"
+                ],
+                "predecessors": [
+                  "0x18015b409"
+                ]
+              },
+              {
+                "start": "0x18015b442",
+                "end": "0x18015b469",
+                "size": 39,
+                "type": 0,
+                "successors": [
+                  "0x18015b469"
+                ],
+                "predecessors": [
+                  "0x18015b42e"
+                ]
+              },
+              {
+                "start": "0x18015b469",
+                "end": "0x18015b475",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015b475",
+                  "0x18015b480"
+                ],
+                "predecessors": [
+                  "0x18015b409",
+                  "0x18015b42e",
+                  "0x18015b442"
+                ]
+              },
+              {
+                "start": "0x18015b475",
+                "end": "0x18015b480",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x18015b480"
+                ],
+                "predecessors": [
+                  "0x18015b469"
+                ]
+              },
+              {
+                "start": "0x18015b480",
+                "end": "0x18015b4e2",
+                "size": 98,
+                "type": 0,
+                "successors": [
+                  "0x18015b4e2",
+                  "0x18015b509"
+                ],
+                "predecessors": [
+                  "0x18015b469",
+                  "0x18015b475"
+                ]
+              },
+              {
+                "start": "0x18015b4e2",
+                "end": "0x18015b4ee",
+                "size": 12,
+                "type": 0,
+                "successors": [
+                  "0x18015b4ee",
+                  "0x18015b509"
+                ],
+                "predecessors": [
+                  "0x18015b480"
+                ]
+              },
+              {
+                "start": "0x18015b4ee",
+                "end": "0x18015b500",
+                "size": 18,
+                "type": 0,
+                "successors": [
+                  "0x18015b500",
+                  "0x18015b509"
+                ],
+                "predecessors": [
+                  "0x18015b4e2"
+                ]
+              },
+              {
+                "start": "0x18015b500",
+                "end": "0x18015b509",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015b509"
+                ],
+                "predecessors": [
+                  "0x18015b4ee"
+                ]
+              },
+              {
+                "start": "0x18015b509",
+                "end": "0x18015b512",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18015b512"
+                ],
+                "predecessors": [
+                  "0x18015b480",
+                  "0x18015b4e2",
+                  "0x18015b4ee",
+                  "0x18015b500"
+                ]
+              },
+              {
+                "start": "0x18015b512",
+                "end": "0x18015b53a",
+                "size": 40,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x18015b2b8",
+                  "0x18015b509"
+                ]
+              }
+            ],
+            "basic_block_count": 32,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

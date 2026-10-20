@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-21T02:08:05.871279+08:00",
+  "source": "F:/目标软件/ModexLite",
+  "destination": "F:/开发项目/TitanLeiaBridge",
+  "migration_files_sha256_verified": 5012,
+  "sessions_exported": 14,
+  "cmake_configure": "passed",
+  "release_build": "passed",
+  "ctest": "14/14 passed",
+  "binary_pdb_pairs": 9,
+  "client_import_checks": 2,
+  "forwarded_exports": 19,
+  "original_release_sha256": "a2acbce5935903a96960458c67f04ae74996f0ea9aabb1d80b7458fefed75b1a",
+  "generated_binaries_in_git": [],
+  "preview": "http://127.0.0.1:18840/titan-bridge-concept.html",
+  "scope": "Migration and build configuration only; no new hardware or game acceptance."
+}

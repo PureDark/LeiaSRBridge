@@ -1,0 +1,9 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+
+// Token: 0x02000075 RID: 117
+[NativeCppClass]
+internal enum tagINPUT_MESSAGE_DEVICE_TYPE
+{
+
+}

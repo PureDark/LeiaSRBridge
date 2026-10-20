@@ -1,0 +1,504 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1400108DD\",\"asm\":{\"name\":\"sub_1400100A0\",\"start_ea\":\"0x1400108dd\",\"segment\":\".text\",\"lines\":[{\"addr\":\"1400108dd\",\"instruction\":\"call sub_140001300\",\"refs\":[{\"addr\":\"0x140001300\",\"name\":\"sub_140001300\"}]},{\"addr\":\"1400108e2\",\"instruction\":\"mov dword ptr [rsp+610h+var_5B0], 3D851EB8h\"},{\"addr\":\"1400108ea\",\"instruction\":\"lea r9, [rsp+610h+var_5B0]\"},{\"addr\":\"1400108ef\",\"instruction\":\"lea rcx, [rbp+510h+Block]\"},{\"addr\":\"1400108f3\",\"instruction\":\"call sub_140002060\",\"refs\":[{\"addr\":\"0x140002060\",\"name\":\"sub_140002060\"}]},{\"addr\":\"1400108f8\",\"instruction\":\"mov dword ptr [rsp+610h+var_5B0], 1\"},{\"addr\":\"140010900\",\"instruction\":\"lea r9, [rsp+610h+var_5B0]\"},{\"addr\":\"140010905\",\"instruction\":\"lea r8, aShowImg; \\\"show_img\\\"\",\"refs\":[{\"addr\":\"0x14003eda8\",\"name\":\"aShowImg\",\"string\":\"show_img\"}]},{\"addr\":\"14001090c\",\"instruction\":\"lea rdx, aShowKps; \\\"show_kps\\\"\",\"refs\":[{\"addr\":\"0x14003edb8\",\"name\":\"aShowKps\",\"string\":\"show_kps\"}]},{\"addr\":\"140010913\",\"instruction\":\"lea rcx, [rbp+510h+Block]\"},{\"addr\":\"140010917\",\"instruction\":\"call sub_140001CC0\",\"refs\":[{\"addr\":\"0x140001cc0\",\"name\":\"sub_140001CC0\"}]},{\"addr\":\"14001091c\",\"instruction\":\"mov cs:dword_140050154, eax\",\"refs\":[{\"addr\":\"0x140050154\",\"name\":\"dword_140050154\"}]},{\"addr\":\"140010922\",\"instruction\":\"mov dword ptr [rsp+610h+var_5B0], 500h\"},{\"addr\":\"14001092a\",\"instruction\":\"lea r9, [rsp+610h+var_5B0]\"},{\"addr\":\"14001092f\",\"instruction\":\"lea r8, aWidth; \\\"width\\\"\",\"refs\":[{\"addr\":\"0x14003edc4\",\"name\":\"aWidth\",\"string\":\"width\"}]},{\"addr\":\"140010936\",\"instruction\":\"lea rdx, aCameraInfo; \\\"camera_info\\\"\",\"refs\":[{\"addr\":\"0x14003edd0\",\"name\":\"aCameraInfo\",\"string\":\"camera_info\"}]},{\"addr\":\"14001093d\",\"instruction\":\"lea rcx, [rbp+510h+Block]\"},{\"addr\":\"140010941\",\"instruction\":\"call sub_140001CC0\",\"refs\":[{\"addr\":\"0x140001cc0\",\"name\":\"sub_140001CC0\"}]},{\"addr\":\"140010946\",\"instruction\":\"mov cs:dword_14004D12C, eax\",\"refs\":[{\"addr\":\"0x14004d12c\",\"name\":\"dword_14004D12C\"}]},{\"addr\":\"14001094c\",\"instruction\":\"mov dword ptr [rsp+610h+var_5B0], 1E0h\"},{\"addr\":\"140010954\",\"instruction\":\"lea r9, [rsp+610h+var_5B0]\"},{\"addr\":\"140010959\",\"instruction\":\"lea r8, aHeight; \\\"height\\\"\",\"refs\":[{\"addr\":\"0x14003eddc\",\"name\":\"aHeight\",\"string\":\"height\"}]},{\"addr\":\"140010960\",\"instruction\":\"lea rdx, aCameraInfo; \\\"camera_info\\\"\",\"refs\":[{\"addr\":\"0x14003edd0\",\"name\":\"aCameraInfo\",\"string\":\"camera_info\"}]},{\"addr\":\"140010967\",\"instruction\":\"lea rcx, [rbp+510h+Block]\"},{\"addr\":\"14001096b\",\"instruction\":\"call sub_140001CC0\",\"refs\":[{\"addr\":\"0x140001cc0\",\"name\":\"sub_140001CC0\"}]},{\"addr\":\"140010970\",\"instruction\":\"mov cs:dword_14004D128, eax\",\"refs\":[{\"addr\":\"0x14004d128\",\"name\":\"dword_14004D128\"}]},{\"addr\":\"140010976\",\"instruction\":\"mov dword ptr [rsp+610h+var_5B0], 5Ah ; 'Z'\"},{\"addr\":\"14001097e\",\"instruction\":\"lea r9, [rsp+610h+var_5B0]\"},{\"addr\":\"140010983\",\"instruction\":\"lea r8, aFps; \\\"fps\\\"\",\"refs\":[{\"addr\":\"0x14003ede4\",\"name\":\"aFps\",\"string\":\"fps\"}]},{\"addr\":\"14001098a\",\"instruction\":\"lea rdx, aCameraInfo; \\\"camera_info\\\"\",\"refs\":[{\"addr\":\"0x14003edd0\",\"name\":\"aCameraInfo\",\"string\":\"camera_info\"}]},{\"addr\":\"140010991\",\"instruction\":\"lea rcx, [rbp+510h+Block]\"},{\"addr\":\"140010995\",\"instruction\":\"call sub_140001CC0\",\"refs\":[{\"addr\":\"0x140001cc0\",\"name\":\"sub_140001CC0\"}]},{\"addr\":\"14001099a\",\"instruction\":\"mov cs:dword_14004D120, eax\",\"refs\":[{\"addr\":\"0x14004d120\",\"name\":\"dword_14004D120\"}]},{\"addr\":\"1400109a0\",\"instruction\":\"mov r12d, 8\"},{\"addr\":\"1400109a6\",\"instruction\":\"mov eax, [r12+rsi]\"},{\"addr\":\"1400109aa\",\"instruction\":\"cmp cs:dword_1400501CC, eax\",\"refs\":[{\"addr\":\"0x1400501cc\",\"name\":\"dword_1400501CC\"}]},{\"addr\":\"1400109b0\",\"instruction\":\"jle short loc_1400109EF\",\"refs\":[{\"addr\":\"0x1400109ef\",\"name\":\"loc_1400109EF\"}]},{\"addr\":\"1400109b2\",\"instruction\":\"lea rcx, dword_1400501CC\",\"refs\":[{\"addr\":\"0x1400501cc\",\"name\":\"dword_1400501CC\"}]},{\"addr\":\"1400109b9\",\"instruction\":\"call sub_140034330\",\"refs\":[{\"addr\":\"0x140034330\",\"name\":\"sub_140034330\"}]},{\"addr\":\"1400109be\",\"instruction\":\"cmp cs:dword_1400501CC, 0FFFFFFFFh\",\"refs\":[{\"addr\":\"0x1400501cc\",\"name\":\"dword_1400501CC\"}]}],\"stack_frame\":[{\"name\":\"lpMultiByteStr\",\"offset\":\"0x20\",\"size\":\"0x8\",\"type\":\"LPSTR\"},{\"name\":\"cbMultiByte\",\"offset\":\"0x28\",\"size\":\"0x8\",\"type\":\"int[2]\"},{\"name\":\"lpDefaultChar\",\"offset\":\"0x30\",\"size\":\"0x8\",\"type\":\"LPCCH\"},{\"name\":\"lpUsedDefaultChar\",\"offset\":\"0x38\",\"size\":\"0x8\",\"type\":\"LPBOOL\"},{\"name\":\"hWndParent\",\"offset\":\"0x40\",\"size\":\"0x8\",\"type\":\"HWND\"},{\"name\":\"hMenu\",\"offset\":\"0x48\",\"size\":\"0x8\",\"type\":\"HMENU\"},{\"name\":\"hInstance\",\"offset\":\"0x50\",\"size\":\"0x8\",\"type\":\"HINSTANCE\"},{\"name\":\"lpParam\",\"offset\":\"0x58\",\"size\":\"0x8\",\"type\":\"LPVOID\"},{\"name\":\"var_5B0\",\"offset\":\"0x60\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_5A8\",\"offset\":\"0x68\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_5A0\",\"offset\":\"0x70\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_590\",\"offset\":\"0x80\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_580\",\"offset\":\"0x90\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_570\",\"offset\":\"0xa0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_560\",\"offset\":\"0xb0\",\"size\":\"0x10\",\"type\":\"_OWORD\"},{\"name\":\"var_550\",\"offset\":\"0xc0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"WndClass\",\"offset\":\"0xd0\",\"size\":\"0x48\",\"type\":\"WNDCLASSW\"},{\"name\":\"Block\",\"offset\":\"0x120\",\"size\":\"0x10\",\"type\":\"void *[2]\"},{\"name\":\"var_4E0\",\"offset\":\"0x130\",\"size\":\"0x10\",\"type\":\"LPSTR[2]\"},{\"name\":\"var_4D0\",\"offset\":\"0x140\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_4C8\",\"offset\":\"0x148\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_4C0\",\"offset\":\"0x150\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"Msg\",\"offset\":\"0x170\",\"size\":\"0x30\",\"type\":\"struct tagMSG\"},{\"name\":\"Filename\",\"offset\":\"0x1a0\",\"size\":\"0x2\",\"type\":\"WCHAR\"},{\"name\":\"Buffer\",\"offset\":\"0x3b0\",\"size\":\"0x2\",\"type\":\"WCHAR\"},{\"name\":\"var_50\",\"offset\":\"0x5c0\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"__saved_registers\",\"offset\":\"0x610\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"__return_address\",\"offset\":\"0x618\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"}]},\"instruction_count\":40,\"total_instructions\":null,\"cursor\":{\"next\":40}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1400108DD",
+      "asm": {
+        "name": "sub_1400100A0",
+        "start_ea": "0x1400108dd",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "1400108dd",
+            "instruction": "call sub_140001300",
+            "refs": [
+              {
+                "addr": "0x140001300",
+                "name": "sub_140001300"
+              }
+            ]
+          },
+          {
+            "addr": "1400108e2",
+            "instruction": "mov dword ptr [rsp+610h+var_5B0], 3D851EB8h"
+          },
+          {
+            "addr": "1400108ea",
+            "instruction": "lea r9, [rsp+610h+var_5B0]"
+          },
+          {
+            "addr": "1400108ef",
+            "instruction": "lea rcx, [rbp+510h+Block]"
+          },
+          {
+            "addr": "1400108f3",
+            "instruction": "call sub_140002060",
+            "refs": [
+              {
+                "addr": "0x140002060",
+                "name": "sub_140002060"
+              }
+            ]
+          },
+          {
+            "addr": "1400108f8",
+            "instruction": "mov dword ptr [rsp+610h+var_5B0], 1"
+          },
+          {
+            "addr": "140010900",
+            "instruction": "lea r9, [rsp+610h+var_5B0]"
+          },
+          {
+            "addr": "140010905",
+            "instruction": "lea r8, aShowImg; \"show_img\"",
+            "refs": [
+              {
+                "addr": "0x14003eda8",
+                "name": "aShowImg",
+                "string": "show_img"
+              }
+            ]
+          },
+          {
+            "addr": "14001090c",
+            "instruction": "lea rdx, aShowKps; \"show_kps\"",
+            "refs": [
+              {
+                "addr": "0x14003edb8",
+                "name": "aShowKps",
+                "string": "show_kps"
+              }
+            ]
+          },
+          {
+            "addr": "140010913",
+            "instruction": "lea rcx, [rbp+510h+Block]"
+          },
+          {
+            "addr": "140010917",
+            "instruction": "call sub_140001CC0",
+            "refs": [
+              {
+                "addr": "0x140001cc0",
+                "name": "sub_140001CC0"
+              }
+            ]
+          },
+          {
+            "addr": "14001091c",
+            "instruction": "mov cs:dword_140050154, eax",
+            "refs": [
+              {
+                "addr": "0x140050154",
+                "name": "dword_140050154"
+              }
+            ]
+          },
+          {
+            "addr": "140010922",
+            "instruction": "mov dword ptr [rsp+610h+var_5B0], 500h"
+          },
+          {
+            "addr": "14001092a",
+            "instruction": "lea r9, [rsp+610h+var_5B0]"
+          },
+          {
+            "addr": "14001092f",
+            "instruction": "lea r8, aWidth; \"width\"",
+            "refs": [
+              {
+                "addr": "0x14003edc4",
+                "name": "aWidth",
+                "string": "width"
+              }
+            ]
+          },
+          {
+            "addr": "140010936",
+            "instruction": "lea rdx, aCameraInfo; \"camera_info\"",
+            "refs": [
+              {
+                "addr": "0x14003edd0",
+                "name": "aCameraInfo",
+                "string": "camera_info"
+              }
+            ]
+          },
+          {
+            "addr": "14001093d",
+            "instruction": "lea rcx, [rbp+510h+Block]"
+          },
+          {
+            "addr": "140010941",
+            "instruction": "call sub_140001CC0",
+            "refs": [
+              {
+                "addr": "0x140001cc0",
+                "name": "sub_140001CC0"
+              }
+            ]
+          },
+          {
+            "addr": "140010946",
+            "instruction": "mov cs:dword_14004D12C, eax",
+            "refs": [
+              {
+                "addr": "0x14004d12c",
+                "name": "dword_14004D12C"
+              }
+            ]
+          },
+          {
+            "addr": "14001094c",
+            "instruction": "mov dword ptr [rsp+610h+var_5B0], 1E0h"
+          },
+          {
+            "addr": "140010954",
+            "instruction": "lea r9, [rsp+610h+var_5B0]"
+          },
+          {
+            "addr": "140010959",
+            "instruction": "lea r8, aHeight; \"height\"",
+            "refs": [
+              {
+                "addr": "0x14003eddc",
+                "name": "aHeight",
+                "string": "height"
+              }
+            ]
+          },
+          {
+            "addr": "140010960",
+            "instruction": "lea rdx, aCameraInfo; \"camera_info\"",
+            "refs": [
+              {
+                "addr": "0x14003edd0",
+                "name": "aCameraInfo",
+                "string": "camera_info"
+              }
+            ]
+          },
+          {
+            "addr": "140010967",
+            "instruction": "lea rcx, [rbp+510h+Block]"
+          },
+          {
+            "addr": "14001096b",
+            "instruction": "call sub_140001CC0",
+            "refs": [
+              {
+                "addr": "0x140001cc0",
+                "name": "sub_140001CC0"
+              }
+            ]
+          },
+          {
+            "addr": "140010970",
+            "instruction": "mov cs:dword_14004D128, eax",
+            "refs": [
+              {
+                "addr": "0x14004d128",
+                "name": "dword_14004D128"
+              }
+            ]
+          },
+          {
+            "addr": "140010976",
+            "instruction": "mov dword ptr [rsp+610h+var_5B0], 5Ah ; 'Z'"
+          },
+          {
+            "addr": "14001097e",
+            "instruction": "lea r9, [rsp+610h+var_5B0]"
+          },
+          {
+            "addr": "140010983",
+            "instruction": "lea r8, aFps; \"fps\"",
+            "refs": [
+              {
+                "addr": "0x14003ede4",
+                "name": "aFps",
+                "string": "fps"
+              }
+            ]
+          },
+          {
+            "addr": "14001098a",
+            "instruction": "lea rdx, aCameraInfo; \"camera_info\"",
+            "refs": [
+              {
+                "addr": "0x14003edd0",
+                "name": "aCameraInfo",
+                "string": "camera_info"
+              }
+            ]
+          },
+          {
+            "addr": "140010991",
+            "instruction": "lea rcx, [rbp+510h+Block]"
+          },
+          {
+            "addr": "140010995",
+            "instruction": "call sub_140001CC0",
+            "refs": [
+              {
+                "addr": "0x140001cc0",
+                "name": "sub_140001CC0"
+              }
+            ]
+          },
+          {
+            "addr": "14001099a",
+            "instruction": "mov cs:dword_14004D120, eax",
+            "refs": [
+              {
+                "addr": "0x14004d120",
+                "name": "dword_14004D120"
+              }
+            ]
+          },
+          {
+            "addr": "1400109a0",
+            "instruction": "mov r12d, 8"
+          },
+          {
+            "addr": "1400109a6",
+            "instruction": "mov eax, [r12+rsi]"
+          },
+          {
+            "addr": "1400109aa",
+            "instruction": "cmp cs:dword_1400501CC, eax",
+            "refs": [
+              {
+                "addr": "0x1400501cc",
+                "name": "dword_1400501CC"
+              }
+            ]
+          },
+          {
+            "addr": "1400109b0",
+            "instruction": "jle short loc_1400109EF",
+            "refs": [
+              {
+                "addr": "0x1400109ef",
+                "name": "loc_1400109EF"
+              }
+            ]
+          },
+          {
+            "addr": "1400109b2",
+            "instruction": "lea rcx, dword_1400501CC",
+            "refs": [
+              {
+                "addr": "0x1400501cc",
+                "name": "dword_1400501CC"
+              }
+            ]
+          },
+          {
+            "addr": "1400109b9",
+            "instruction": "call sub_140034330",
+            "refs": [
+              {
+                "addr": "0x140034330",
+                "name": "sub_140034330"
+              }
+            ]
+          },
+          {
+            "addr": "1400109be",
+            "instruction": "cmp cs:dword_1400501CC, 0FFFFFFFFh",
+            "refs": [
+              {
+                "addr": "0x1400501cc",
+                "name": "dword_1400501CC"
+              }
+            ]
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "lpMultiByteStr",
+            "offset": "0x20",
+            "size": "0x8",
+            "type": "LPSTR"
+          },
+          {
+            "name": "cbMultiByte",
+            "offset": "0x28",
+            "size": "0x8",
+            "type": "int[2]"
+          },
+          {
+            "name": "lpDefaultChar",
+            "offset": "0x30",
+            "size": "0x8",
+            "type": "LPCCH"
+          },
+          {
+            "name": "lpUsedDefaultChar",
+            "offset": "0x38",
+            "size": "0x8",
+            "type": "LPBOOL"
+          },
+          {
+            "name": "hWndParent",
+            "offset": "0x40",
+            "size": "0x8",
+            "type": "HWND"
+          },
+          {
+            "name": "hMenu",
+            "offset": "0x48",
+            "size": "0x8",
+            "type": "HMENU"
+          },
+          {
+            "name": "hInstance",
+            "offset": "0x50",
+            "size": "0x8",
+            "type": "HINSTANCE"
+          },
+          {
+            "name": "lpParam",
+            "offset": "0x58",
+            "size": "0x8",
+            "type": "LPVOID"
+          },
+          {
+            "name": "var_5B0",
+            "offset": "0x60",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_5A8",
+            "offset": "0x68",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_5A0",
+            "offset": "0x70",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_590",
+            "offset": "0x80",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_580",
+            "offset": "0x90",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_570",
+            "offset": "0xa0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_560",
+            "offset": "0xb0",
+            "size": "0x10",
+            "type": "_OWORD"
+          },
+          {
+            "name": "var_550",
+            "offset": "0xc0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "WndClass",
+            "offset": "0xd0",
+            "size": "0x48",
+            "type": "WNDCLASSW"
+          },
+          {
+            "name": "Block",
+            "offset": "0x120",
+            "size": "0x10",
+            "type": "void *[2]"
+          },
+          {
+            "name": "var_4E0",
+            "offset": "0x130",
+            "size": "0x10",
+            "type": "LPSTR[2]"
+          },
+          {
+            "name": "var_4D0",
+            "offset": "0x140",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_4C8",
+            "offset": "0x148",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_4C0",
+            "offset": "0x150",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "Msg",
+            "offset": "0x170",
+            "size": "0x30",
+            "type": "struct tagMSG"
+          },
+          {
+            "name": "Filename",
+            "offset": "0x1a0",
+            "size": "0x2",
+            "type": "WCHAR"
+          },
+          {
+            "name": "Buffer",
+            "offset": "0x3b0",
+            "size": "0x2",
+            "type": "WCHAR"
+          },
+          {
+            "name": "var_50",
+            "offset": "0x5c0",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "__saved_registers",
+            "offset": "0x610",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "__return_address",
+            "offset": "0x618",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          }
+        ]
+      },
+      "instruction_count": 40,
+      "total_instructions": null,
+      "cursor": {
+        "next": 40
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

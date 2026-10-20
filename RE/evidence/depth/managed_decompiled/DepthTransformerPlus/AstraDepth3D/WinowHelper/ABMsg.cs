@@ -1,0 +1,31 @@
+﻿using System;
+
+namespace AstraDepth3D.WinowHelper
+{
+	// Token: 0x02000022 RID: 34
+	public enum ABMsg
+	{
+		// Token: 0x040000A9 RID: 169
+		ABM_NEW,
+		// Token: 0x040000AA RID: 170
+		ABM_REMOVE,
+		// Token: 0x040000AB RID: 171
+		ABM_QUERYPOS,
+		// Token: 0x040000AC RID: 172
+		ABM_SETPOS,
+		// Token: 0x040000AD RID: 173
+		ABM_GETSTATE,
+		// Token: 0x040000AE RID: 174
+		ABM_GETTASKBARPOS,
+		// Token: 0x040000AF RID: 175
+		ABM_ACTIVATE,
+		// Token: 0x040000B0 RID: 176
+		ABM_GETAUTOHIDEBAR,
+		// Token: 0x040000B1 RID: 177
+		ABM_SETAUTOHIDEBAR,
+		// Token: 0x040000B2 RID: 178
+		ABM_WINDOWPOSCHANGED,
+		// Token: 0x040000B3 RID: 179
+		ABM_SETSTATE
+	}
+}

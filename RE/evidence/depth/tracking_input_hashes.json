@@ -1,0 +1,37 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "752CB438A6D98848F45870C2502EA4FFC886C8DAF14C1EE411AF77518CD328B5",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\BOE_3DET_SDK.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "6E2FC74C886CBA31707C58B7B0A14B97FE2E98F291A2534B6AA363EBF1E1F046",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\boe_ET_Predict.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "85254AD5838FC6D61C68A9EEA1B216D578103239D9432CEF0BE19E0A1CBC37C4",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\FaceTracking.exe"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3132DD6FE285772B327B4AAB99DE5A05C5CFE4376432E9DEFDC2680C465E4604",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\FaceTrackingManagerService.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "128D06823477C829DA59649DEF0F9A103B61CE2668D087102A5086CEAB8E0B0E",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\boe_mcu_mat.ini"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0F1DC81278766475BA63057BD87EADCE16C591CCAC985613416BCDF19DC52277",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\faceTrackingConfig.ini"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "A343E3421685583DE146AA15B8E711FF55B68857051152D45F12D62CF51BA258",
+    "Path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\Runtime_BOE_18NBSDK_ETSP.dll"
+  }
+]

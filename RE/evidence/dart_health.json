@@ -1,0 +1,25 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"ok\",\"uptime_sec\":58.944,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\app.so.i64\",\"module\":\"app.so\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\app.so\",\"imagebase\":\"0x0\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":31764}"
+      }
+    ],
+    "structuredContent": {
+      "status": "ok",
+      "uptime_sec": 58.944,
+      "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\app.so.i64",
+      "module": "app.so",
+      "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\app.so",
+      "imagebase": "0x0",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 31764
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"tracking\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\MCU_library.dll\",\"filename\":\"MCU_library.dll\",\"created_at\":\"2026-10-20T00:59:15.162071\",\"last_accessed\":\"2026-10-20T00:59:15.162071\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_caches\",\"ok\":true,\"ms\":70.38},{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.03}],\"health\":{\"status\":\"ok\",\"uptime_sec\":3.107,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\MCU_library.dll.i64\",\"module\":\"MCU_library.dll\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\MCU_library.dll\",\"imagebase\":\"0x180000000\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":832}},\"message\":\"Binary opened: MCU_library.dll (tracking)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "tracking",
+        "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\MCU_library.dll",
+        "filename": "MCU_library.dll",
+        "created_at": "2026-10-20T00:59:15.162071",
+        "last_accessed": "2026-10-20T00:59:15.162071",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_caches",
+            "ok": true,
+            "ms": 70.38
+          },
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.03
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 3.107,
+          "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\MCU_library.dll.i64",
+          "module": "MCU_library.dll",
+          "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\MCU_library.dll",
+          "imagebase": "0x180000000",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": true,
+          "strings_cache_size": 832
+        }
+      },
+      "message": "Binary opened: MCU_library.dll (tracking)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

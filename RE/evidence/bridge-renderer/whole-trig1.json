@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"?log@@YAMM@Z_0\",\"code\":\"float __fastcall log(float a1)\\n{\\n  return sinf(X: a1); /*0x18005ebc5*/\\n}\",\"refs\":[{\"addr\":\"0x180069025\",\"name\":\"sinf\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "?log@@YAMM@Z_0",
+      "code": "float __fastcall log(float a1)\n{\n  return sinf(X: a1); /*0x18005ebc5*/\n}",
+      "refs": [
+        {
+          "addr": "0x180069025",
+          "name": "sinf"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,332 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800215B0\",\"asm\":{\"name\":\"sub_1800215B0\",\"start_ea\":\"0x1800215b0\",\"segment\":\".text\",\"lines\":[{\"addr\":\"1800215b0\",\"instruction\":\"mov [rsp+arg_10], rbx\",\"label\":\"sub_1800215B0\"},{\"addr\":\"1800215b5\",\"instruction\":\"mov [rsp+arg_18], rsi\"},{\"addr\":\"1800215ba\",\"instruction\":\"push rdi\"},{\"addr\":\"1800215bb\",\"instruction\":\"sub rsp, 70h\"},{\"addr\":\"1800215bf\",\"instruction\":\"mov rax, cs:__security_cookie\",\"refs\":[{\"addr\":\"0x18008e040\",\"name\":\"__security_cookie\"}]},{\"addr\":\"1800215c6\",\"instruction\":\"xor rax, rsp\"},{\"addr\":\"1800215c9\",\"instruction\":\"mov [rsp+78h+var_10], rax\"},{\"addr\":\"1800215ce\",\"instruction\":\"mov rax, [rdx]\"},{\"addr\":\"1800215d1\",\"instruction\":\"mov rbx, rdx\"},{\"addr\":\"1800215d4\",\"instruction\":\"mov rdi, rcx\"},{\"addr\":\"1800215d7\",\"instruction\":\"lea rdx, [rsp+78h+var_40]\"},{\"addr\":\"1800215dc\",\"instruction\":\"mov rcx, rbx\"},{\"addr\":\"1800215df\",\"instruction\":\"call qword ptr [rax+50h]\"},{\"addr\":\"1800215e2\",\"instruction\":\"mov rcx, [rdi+18h]\"},{\"addr\":\"1800215e6\",\"instruction\":\"mov eax, [rsp+78h+var_30]\"},{\"addr\":\"1800215ea\",\"instruction\":\"mov [rsp+78h+var_58], eax\"},{\"addr\":\"1800215ee\",\"instruction\":\"mov [rsp+78h+var_54], 4\"},{\"addr\":\"1800215f7\",\"instruction\":\"mov [rsp+78h+var_4C], 1\"},{\"addr\":\"1800215ff\",\"instruction\":\"test rcx, rcx\"},{\"addr\":\"180021602\",\"instruction\":\"jz short loc_18002160A\",\"refs\":[{\"addr\":\"0x18002160a\",\"name\":\"loc_18002160A\"}]},{\"addr\":\"180021604\",\"instruction\":\"mov rax, [rcx]\"},{\"addr\":\"180021607\",\"instruction\":\"call qword ptr [rax+10h]\"},{\"addr\":\"18002160a\",\"instruction\":\"mov rcx, [rdi+8]\",\"label\":\"loc_18002160A\"},{\"addr\":\"18002160e\",\"instruction\":\"lea r9, [rdi+18h]\"},{\"addr\":\"180021612\",\"instruction\":\"lea r8, [rsp+78h+var_58]\"},{\"addr\":\"180021617\",\"instruction\":\"mov rdx, rbx\"},{\"addr\":\"18002161a\",\"instruction\":\"mov rax, [rcx]\"},{\"addr\":\"18002161d\",\"instruction\":\"call qword ptr [rax+38h]\"},{\"addr\":\"180021620\",\"instruction\":\"test eax, eax\"},{\"addr\":\"180021622\",\"instruction\":\"jns short loc_18002163F\",\"refs\":[{\"addr\":\"0x18002163f\",\"name\":\"loc_18002163F\"}]},{\"addr\":\"180021624\",\"instruction\":\"lea rdx, aCreateshaderre; \\\"CreateShaderResourceView failed\\\"\",\"refs\":[{\"addr\":\"0x180084b38\",\"name\":\"aCreateshaderre\",\"string\":\"CreateShaderResourceView failed\"}]},{\"addr\":\"18002162b\",\"instruction\":\"lea rcx, qword_18008F930\",\"refs\":[{\"addr\":\"0x18008f930\",\"name\":\"qword_18008F930\"}]},{\"addr\":\"180021632\",\"instruction\":\"call sub_180020730\",\"refs\":[{\"addr\":\"0x180020730\",\"name\":\"sub_180020730\"}]},{\"addr\":\"180021637\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"18002163a\",\"instruction\":\"call sub_180021C80\",\"refs\":[{\"addr\":\"0x180021c80\",\"name\":\"sub_180021C80\"}]},{\"addr\":\"18002163f\",\"instruction\":\"mov rcx, [rsp+78h+var_10]\",\"label\":\"loc_18002163F\"},{\"addr\":\"180021644\",\"instruction\":\"xor rcx, rsp; StackCookie\",\"comments\":[\"StackCookie\"]},{\"addr\":\"180021647\",\"instruction\":\"call __security_check_cookie\",\"refs\":[{\"addr\":\"0x180024f50\",\"name\":\"__security_check_cookie\"}]},{\"addr\":\"18002164c\",\"instruction\":\"lea r11, [rsp+78h+var_8]\"},{\"addr\":\"180021651\",\"instruction\":\"mov rbx, [r11+20h]\"},{\"addr\":\"180021655\",\"instruction\":\"mov rsi, [r11+28h]\"},{\"addr\":\"180021659\",\"instruction\":\"mov rsp, r11\"},{\"addr\":\"18002165c\",\"instruction\":\"pop rdi\"},{\"addr\":\"18002165d\",\"instruction\":\"retn\"}],\"stack_frame\":[{\"name\":\"var_58\",\"offset\":\"0x20\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_54\",\"offset\":\"0x24\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_4C\",\"offset\":\"0x2c\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_40\",\"offset\":\"0x38\",\"size\":\"0x10\",\"type\":\"_BYTE[16]\"},{\"name\":\"var_30\",\"offset\":\"0x48\",\"size\":\"0x4\",\"type\":\"_DWORD\"},{\"name\":\"var_10\",\"offset\":\"0x68\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"var_8\",\"offset\":\"0x70\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"__return_address\",\"offset\":\"0x78\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"},{\"name\":\"arg_10\",\"offset\":\"0x90\",\"size\":\"0x8\",\"type\":\"_QWORD\"},{\"name\":\"arg_18\",\"offset\":\"0x98\",\"size\":\"0x8\",\"type\":\"_QWORD\"}],\"return_type\":\"__int64\",\"arguments\":[{\"name\":\"arg0\",\"type\":\"__int64\"},{\"name\":\"arg1\",\"type\":\"__int64\"}]},\"instruction_count\":44,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800215B0",
+      "asm": {
+        "name": "sub_1800215B0",
+        "start_ea": "0x1800215b0",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "1800215b0",
+            "instruction": "mov [rsp+arg_10], rbx",
+            "label": "sub_1800215B0"
+          },
+          {
+            "addr": "1800215b5",
+            "instruction": "mov [rsp+arg_18], rsi"
+          },
+          {
+            "addr": "1800215ba",
+            "instruction": "push rdi"
+          },
+          {
+            "addr": "1800215bb",
+            "instruction": "sub rsp, 70h"
+          },
+          {
+            "addr": "1800215bf",
+            "instruction": "mov rax, cs:__security_cookie",
+            "refs": [
+              {
+                "addr": "0x18008e040",
+                "name": "__security_cookie"
+              }
+            ]
+          },
+          {
+            "addr": "1800215c6",
+            "instruction": "xor rax, rsp"
+          },
+          {
+            "addr": "1800215c9",
+            "instruction": "mov [rsp+78h+var_10], rax"
+          },
+          {
+            "addr": "1800215ce",
+            "instruction": "mov rax, [rdx]"
+          },
+          {
+            "addr": "1800215d1",
+            "instruction": "mov rbx, rdx"
+          },
+          {
+            "addr": "1800215d4",
+            "instruction": "mov rdi, rcx"
+          },
+          {
+            "addr": "1800215d7",
+            "instruction": "lea rdx, [rsp+78h+var_40]"
+          },
+          {
+            "addr": "1800215dc",
+            "instruction": "mov rcx, rbx"
+          },
+          {
+            "addr": "1800215df",
+            "instruction": "call qword ptr [rax+50h]"
+          },
+          {
+            "addr": "1800215e2",
+            "instruction": "mov rcx, [rdi+18h]"
+          },
+          {
+            "addr": "1800215e6",
+            "instruction": "mov eax, [rsp+78h+var_30]"
+          },
+          {
+            "addr": "1800215ea",
+            "instruction": "mov [rsp+78h+var_58], eax"
+          },
+          {
+            "addr": "1800215ee",
+            "instruction": "mov [rsp+78h+var_54], 4"
+          },
+          {
+            "addr": "1800215f7",
+            "instruction": "mov [rsp+78h+var_4C], 1"
+          },
+          {
+            "addr": "1800215ff",
+            "instruction": "test rcx, rcx"
+          },
+          {
+            "addr": "180021602",
+            "instruction": "jz short loc_18002160A",
+            "refs": [
+              {
+                "addr": "0x18002160a",
+                "name": "loc_18002160A"
+              }
+            ]
+          },
+          {
+            "addr": "180021604",
+            "instruction": "mov rax, [rcx]"
+          },
+          {
+            "addr": "180021607",
+            "instruction": "call qword ptr [rax+10h]"
+          },
+          {
+            "addr": "18002160a",
+            "instruction": "mov rcx, [rdi+8]",
+            "label": "loc_18002160A"
+          },
+          {
+            "addr": "18002160e",
+            "instruction": "lea r9, [rdi+18h]"
+          },
+          {
+            "addr": "180021612",
+            "instruction": "lea r8, [rsp+78h+var_58]"
+          },
+          {
+            "addr": "180021617",
+            "instruction": "mov rdx, rbx"
+          },
+          {
+            "addr": "18002161a",
+            "instruction": "mov rax, [rcx]"
+          },
+          {
+            "addr": "18002161d",
+            "instruction": "call qword ptr [rax+38h]"
+          },
+          {
+            "addr": "180021620",
+            "instruction": "test eax, eax"
+          },
+          {
+            "addr": "180021622",
+            "instruction": "jns short loc_18002163F",
+            "refs": [
+              {
+                "addr": "0x18002163f",
+                "name": "loc_18002163F"
+              }
+            ]
+          },
+          {
+            "addr": "180021624",
+            "instruction": "lea rdx, aCreateshaderre; \"CreateShaderResourceView failed\"",
+            "refs": [
+              {
+                "addr": "0x180084b38",
+                "name": "aCreateshaderre",
+                "string": "CreateShaderResourceView failed"
+              }
+            ]
+          },
+          {
+            "addr": "18002162b",
+            "instruction": "lea rcx, qword_18008F930",
+            "refs": [
+              {
+                "addr": "0x18008f930",
+                "name": "qword_18008F930"
+              }
+            ]
+          },
+          {
+            "addr": "180021632",
+            "instruction": "call sub_180020730",
+            "refs": [
+              {
+                "addr": "0x180020730",
+                "name": "sub_180020730"
+              }
+            ]
+          },
+          {
+            "addr": "180021637",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "18002163a",
+            "instruction": "call sub_180021C80",
+            "refs": [
+              {
+                "addr": "0x180021c80",
+                "name": "sub_180021C80"
+              }
+            ]
+          },
+          {
+            "addr": "18002163f",
+            "instruction": "mov rcx, [rsp+78h+var_10]",
+            "label": "loc_18002163F"
+          },
+          {
+            "addr": "180021644",
+            "instruction": "xor rcx, rsp; StackCookie",
+            "comments": [
+              "StackCookie"
+            ]
+          },
+          {
+            "addr": "180021647",
+            "instruction": "call __security_check_cookie",
+            "refs": [
+              {
+                "addr": "0x180024f50",
+                "name": "__security_check_cookie"
+              }
+            ]
+          },
+          {
+            "addr": "18002164c",
+            "instruction": "lea r11, [rsp+78h+var_8]"
+          },
+          {
+            "addr": "180021651",
+            "instruction": "mov rbx, [r11+20h]"
+          },
+          {
+            "addr": "180021655",
+            "instruction": "mov rsi, [r11+28h]"
+          },
+          {
+            "addr": "180021659",
+            "instruction": "mov rsp, r11"
+          },
+          {
+            "addr": "18002165c",
+            "instruction": "pop rdi"
+          },
+          {
+            "addr": "18002165d",
+            "instruction": "retn"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "var_58",
+            "offset": "0x20",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_54",
+            "offset": "0x24",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_4C",
+            "offset": "0x2c",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_40",
+            "offset": "0x38",
+            "size": "0x10",
+            "type": "_BYTE[16]"
+          },
+          {
+            "name": "var_30",
+            "offset": "0x48",
+            "size": "0x4",
+            "type": "_DWORD"
+          },
+          {
+            "name": "var_10",
+            "offset": "0x68",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "var_8",
+            "offset": "0x70",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "__return_address",
+            "offset": "0x78",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          },
+          {
+            "name": "arg_10",
+            "offset": "0x90",
+            "size": "0x8",
+            "type": "_QWORD"
+          },
+          {
+            "name": "arg_18",
+            "offset": "0x98",
+            "size": "0x8",
+            "type": "_QWORD"
+          }
+        ],
+        "return_type": "__int64",
+        "arguments": [
+          {
+            "name": "arg0",
+            "type": "__int64"
+          },
+          {
+            "name": "arg1",
+            "type": "__int64"
+          }
+        ]
+      },
+      "instruction_count": 44,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

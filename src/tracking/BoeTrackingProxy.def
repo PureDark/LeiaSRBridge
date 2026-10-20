@@ -1,0 +1,3 @@
+LIBRARY BOE_3DET_SDK
+EXPORTS
+    doEyeTrack_3D @1

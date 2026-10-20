@@ -1,0 +1,78 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x140001020\",\"code\":\"HHOOK sub_140001020()\\n{\\n  HMODULE LibraryA; // rax\\n  HMODULE v1; // rbx\\n  __int64 (__fastcall *GetDpiForWindow)(); // rax\\n  DWORD CurrentThreadId; // eax\\n  HHOOK result; // rax\\n\\n  dword_140021018 = 1; /*0x14000102d*/\\n  LibraryA = LoadLibraryA(lpLibFileName: \\\"User32.dll\\\"); /*0x140001037*/\\n  v1 = LibraryA; /*0x14000103d*/\\n  if ( LibraryA != nullptr ) /*0x140001043*/\\n  {\\n    GetDpiForWindow = GetProcAddress(hModule: LibraryA, lpProcName: \\\"GetDpiForWindow\\\"); /*0x14000104f*/\\n    if ( GetDpiForWindow != nullptr ) /*0x140001058*/\\n    {\\n      dword_140021040 = 1; /*0x140001061*/\\n      off_140020010 = GetDpiForWindow; /*0x14000106e*/\\n      GetSystemMetricsForDpi = (int (__stdcall *)(int))GetProcAddress(hModule: v1, lpProcName: \\\"GetSystemMetricsForDpi\\\"); /*0x14000107b*/\\n    }\\n  }\\n  CurrentThreadId = GetCurrentThreadId(); /*0x140001082*/\\n  result = SetWindowsHookExW(idHook: 5, lpfn: fn, hmod: nullptr, dwThreadId: CurrentThreadId); /*0x14000109a*/\\n  hhk = result; /*0x1400010a0*/\\n  dword_140021080 = 1; /*0x1400010a7*/\\n  return result; /*0x1400010b1*/\\n}\",\"refs\":[{\"addr\":\"0x140021018\",\"name\":\"dword_140021018\"},{\"addr\":\"0x1400150d8\",\"name\":\"LoadLibraryA\"},{\"addr\":\"0x1400160a0\",\"name\":\"LibFileName\",\"string\":\"User32.dll\"},{\"addr\":\"0x1400150e8\",\"name\":\"GetProcAddress\"},{\"addr\":\"0x1400167e0\",\"name\":\"ProcName\",\"string\":\"GetDpiForWindow\"},{\"addr\":\"0x140021040\",\"name\":\"dword_140021040\"},{\"addr\":\"0x140020010\",\"name\":\"off_140020010\"},{\"addr\":\"0x140020018\",\"name\":\"GetSystemMetricsForDpi\"},{\"addr\":\"0x1400167f0\",\"name\":\"aGetsystemmetri\",\"string\":\"GetSystemMetricsForDpi\"},{\"addr\":\"0x140015088\",\"name\":\"GetCurrentThreadId\"},{\"addr\":\"0x1400153f0\",\"name\":\"SetWindowsHookExW\"},{\"addr\":\"0x14000ff80\",\"name\":\"fn\"},{\"addr\":\"0x140021010\",\"name\":\"hhk\"},{\"addr\":\"0x140021080\",\"name\":\"dword_140021080\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x140001020",
+      "code": "HHOOK sub_140001020()\n{\n  HMODULE LibraryA; // rax\n  HMODULE v1; // rbx\n  __int64 (__fastcall *GetDpiForWindow)(); // rax\n  DWORD CurrentThreadId; // eax\n  HHOOK result; // rax\n\n  dword_140021018 = 1; /*0x14000102d*/\n  LibraryA = LoadLibraryA(lpLibFileName: \"User32.dll\"); /*0x140001037*/\n  v1 = LibraryA; /*0x14000103d*/\n  if ( LibraryA != nullptr ) /*0x140001043*/\n  {\n    GetDpiForWindow = GetProcAddress(hModule: LibraryA, lpProcName: \"GetDpiForWindow\"); /*0x14000104f*/\n    if ( GetDpiForWindow != nullptr ) /*0x140001058*/\n    {\n      dword_140021040 = 1; /*0x140001061*/\n      off_140020010 = GetDpiForWindow; /*0x14000106e*/\n      GetSystemMetricsForDpi = (int (__stdcall *)(int))GetProcAddress(hModule: v1, lpProcName: \"GetSystemMetricsForDpi\"); /*0x14000107b*/\n    }\n  }\n  CurrentThreadId = GetCurrentThreadId(); /*0x140001082*/\n  result = SetWindowsHookExW(idHook: 5, lpfn: fn, hmod: nullptr, dwThreadId: CurrentThreadId); /*0x14000109a*/\n  hhk = result; /*0x1400010a0*/\n  dword_140021080 = 1; /*0x1400010a7*/\n  return result; /*0x1400010b1*/\n}",
+      "refs": [
+        {
+          "addr": "0x140021018",
+          "name": "dword_140021018"
+        },
+        {
+          "addr": "0x1400150d8",
+          "name": "LoadLibraryA"
+        },
+        {
+          "addr": "0x1400160a0",
+          "name": "LibFileName",
+          "string": "User32.dll"
+        },
+        {
+          "addr": "0x1400150e8",
+          "name": "GetProcAddress"
+        },
+        {
+          "addr": "0x1400167e0",
+          "name": "ProcName",
+          "string": "GetDpiForWindow"
+        },
+        {
+          "addr": "0x140021040",
+          "name": "dword_140021040"
+        },
+        {
+          "addr": "0x140020010",
+          "name": "off_140020010"
+        },
+        {
+          "addr": "0x140020018",
+          "name": "GetSystemMetricsForDpi"
+        },
+        {
+          "addr": "0x1400167f0",
+          "name": "aGetsystemmetri",
+          "string": "GetSystemMetricsForDpi"
+        },
+        {
+          "addr": "0x140015088",
+          "name": "GetCurrentThreadId"
+        },
+        {
+          "addr": "0x1400153f0",
+          "name": "SetWindowsHookExW"
+        },
+        {
+          "addr": "0x14000ff80",
+          "name": "fn"
+        },
+        {
+          "addr": "0x140021010",
+          "name": "hhk"
+        },
+        {
+          "addr": "0x140021080",
+          "name": "dword_140021080"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

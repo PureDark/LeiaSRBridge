@@ -1,0 +1,11 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+
+namespace std
+{
+	// Token: 0x0200025F RID: 607
+	[NativeCppClass]
+	internal struct numeric_limits<signed\u0020char>
+	{
+	}
+}

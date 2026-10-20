@@ -1,0 +1,105 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":21,\"matches\":[{\"addr\":\"0x18000f270\",\"string\":\"FaceTracking.exe\"},{\"addr\":\"0x18000f348\",\"string\":\"FaceTracking:\"},{\"addr\":\"0x18000f488\",\"string\":\"FaceTracking.exe 1\"},{\"addr\":\"0x18000f4c8\",\"string\":\"\\\\\\\\.\\\\pipe\\\\YLFaceTrackingPipe\"},{\"addr\":\"0x180011680\",\"string\":\"ISimpleFaceTracking\"},{\"addr\":\"0x180012c00\",\"string\":\"E:\\\\svn\\\\project\\\\TencentGameProject\\\\stereoCameraEyesTracking\\\\FaceTracking\\\\FaceTrackingManagerService\\\\x64\\\\Release\\\\FaceTrackingManagerService.pdb\"},{\"addr\":\"0x1800144fa\",\"string\":\"FaceTrackingManagerService.dll\"},{\"addr\":\"0x18001526e\",\"string\":\"?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ\"},{\"addr\":\"0x180017470\",\"string\":\".?AVCFaceTrackingManagerServiceModule@@\"},{\"addr\":\"0x1800174b0\",\"string\":\".?AV?$CAtlDllModuleT@VCFaceTrackingManagerServiceModule@@@ATL@@\"},{\"addr\":\"0x180017500\",\"string\":\".?AV?$CAtlModuleT@VCFaceTrackingManagerServiceModule@@@ATL@@\"},{\"addr\":\"0x180017550\",\"string\":\".?AU?$CAtlValidateModuleConfiguration@$00VCFaceTrackingManagerServiceModule@@@ATL@@\"},{\"addr\":\"0x1800176a0\",\"string\":\".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@\"},{\"addr\":\"0x180017768\",\"string\":\".?AUISimpleFaceTracking@@\"},{\"addr\":\"0x180017798\",\"string\":\".?AVCSimpleFaceTracking@@\"},{\"addr\":\"0x1800177d0\",\"string\":\".?AV?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@\"},{\"addr\":\"0x180017840\",\"string\":\".?AV?$IDispatchImpl@UISimpleFaceTracking@@$1?IID_ISimpleFaceTracking@@3U_GUID@@B$1?LIBID_FaceTrackingManagerServiceLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@\"},{\"addr\":\"0x1800178f8\",\"string\":\".?AV?$CComObject@VCSimpleFaceTracking@@@ATL@@\"},{\"addr\":\"0x180017940\",\"string\":\".?AV?$CComAggObject@VCSimpleFaceTracking@@@ATL@@\"},{\"addr\":\"0x180017990\",\"string\":\".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@\"},{\"addr\":\"0x1800179e0\",\"string\":\".?AV?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 21,
+      "matches": [
+        {
+          "addr": "0x18000f270",
+          "string": "FaceTracking.exe"
+        },
+        {
+          "addr": "0x18000f348",
+          "string": "FaceTracking:"
+        },
+        {
+          "addr": "0x18000f488",
+          "string": "FaceTracking.exe 1"
+        },
+        {
+          "addr": "0x18000f4c8",
+          "string": "\\\\.\\pipe\\YLFaceTrackingPipe"
+        },
+        {
+          "addr": "0x180011680",
+          "string": "ISimpleFaceTracking"
+        },
+        {
+          "addr": "0x180012c00",
+          "string": "E:\\svn\\project\\TencentGameProject\\stereoCameraEyesTracking\\FaceTracking\\FaceTrackingManagerService\\x64\\Release\\FaceTrackingManagerService.pdb"
+        },
+        {
+          "addr": "0x1800144fa",
+          "string": "FaceTrackingManagerService.dll"
+        },
+        {
+          "addr": "0x18001526e",
+          "string": "?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ"
+        },
+        {
+          "addr": "0x180017470",
+          "string": ".?AVCFaceTrackingManagerServiceModule@@"
+        },
+        {
+          "addr": "0x1800174b0",
+          "string": ".?AV?$CAtlDllModuleT@VCFaceTrackingManagerServiceModule@@@ATL@@"
+        },
+        {
+          "addr": "0x180017500",
+          "string": ".?AV?$CAtlModuleT@VCFaceTrackingManagerServiceModule@@@ATL@@"
+        },
+        {
+          "addr": "0x180017550",
+          "string": ".?AU?$CAtlValidateModuleConfiguration@$00VCFaceTrackingManagerServiceModule@@@ATL@@"
+        },
+        {
+          "addr": "0x1800176a0",
+          "string": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+        },
+        {
+          "addr": "0x180017768",
+          "string": ".?AUISimpleFaceTracking@@"
+        },
+        {
+          "addr": "0x180017798",
+          "string": ".?AVCSimpleFaceTracking@@"
+        },
+        {
+          "addr": "0x1800177d0",
+          "string": ".?AV?$CComCoClass@VCSimpleFaceTracking@@$1?CLSID_SimpleFaceTracking@@3U_GUID@@B@ATL@@"
+        },
+        {
+          "addr": "0x180017840",
+          "string": ".?AV?$IDispatchImpl@UISimpleFaceTracking@@$1?IID_ISimpleFaceTracking@@3U_GUID@@B$1?LIBID_FaceTrackingManagerServiceLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+        },
+        {
+          "addr": "0x1800178f8",
+          "string": ".?AV?$CComObject@VCSimpleFaceTracking@@@ATL@@"
+        },
+        {
+          "addr": "0x180017940",
+          "string": ".?AV?$CComAggObject@VCSimpleFaceTracking@@@ATL@@"
+        },
+        {
+          "addr": "0x180017990",
+          "string": ".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@"
+        },
+        {
+          "addr": "0x1800179e0",
+          "string": ".?AV?$CComContainedObject@VCSimpleFaceTracking@@@ATL@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

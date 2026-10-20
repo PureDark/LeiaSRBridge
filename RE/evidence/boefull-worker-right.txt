@@ -1,0 +1,40 @@
+_QWORD *__fastcall sub_1800A5240(__int64 a1, __int64 a2, __int64 a3, int a4)
+{
+  __int64 v4; // rax
+  int v5; // edi
+  _QWORD *result; // rax
+  __int64 v8; // rdx
+  _QWORD v9[3]; // [rsp+20h] [rbp-38h] BYREF
+  _QWORD v10[4]; // [rsp+38h] [rbp-20h] BYREF
+
+  v4 = *(_QWORD *)(a1 + 8); /*0x1800a524c*/
+  v5 = 0; /*0x1800a5254*/
+  v9[2] = 0; /*0x1800a5259*/
+  v10[2] = 0; /*0x1800a5261*/
+  LODWORD(v9[0]) = 33619968; /*0x1800a5265*/
+  LODWORD(v10[0]) = 16842752; /*0x1800a526d*/
+  v9[1] = v4; /*0x1800a5279*/
+  v10[1] = v4; /*0x1800a527d*/
+  cv::medianBlur(this: (cv *)v10, a2: (const struct cv::_InputArray *)v9, a3: (const struct cv::_OutputArray *)3, a4); /*0x1800a5281*/
+  **(_DWORD **)(a1 + 16) = BoeLandmark::doInfer( /*0x1800a52a5*/
+                             a1: *(_QWORD *)(*(_QWORD *)(a1 + 24) + 32LL),
+                             a2: *(_QWORD *)(a1 + 8),
+                             a3: *(_QWORD *)(a1 + 32),
+                             a4: *(_QWORD *)(a1 + 40));
+  result = *(_QWORD **)(a1 + 32); /*0x1800a52a7*/
+  if ( (__int64)(result[1] - *result) >> 3 != 0 ) /*0x1800a52b9*/
+  {
+    v8 = 0; /*0x1800a52bb*/
+    do /*0x1800a5316*/
+    {
+      ++v5; /*0x1800a52c4*/
+      *(float *)(**(_QWORD **)(a1 + 32) + v8) = (float)**(int **)(a1 + 48) + *(float *)(**(_QWORD **)(a1 + 32) + v8); /*0x1800a52d9*/
+      *(float *)(**(_QWORD **)(a1 + 32) + v8 + 4) = (float)*(int *)(*(_QWORD *)(a1 + 48) + 4LL) /*0x1800a52f7*/
+                                                  + *(float *)(**(_QWORD **)(a1 + 32) + v8 + 4);
+      v8 += 8; /*0x1800a52fd*/
+      result = (_QWORD *)v5; /*0x1800a5310*/
+    }
+    while ( v5 < (unsigned __int64)((__int64)(*(_QWORD *)(*(_QWORD *)(a1 + 32) + 8LL) - **(_QWORD **)(a1 + 32)) >> 3) ); /*0x1800a5316*/
+  }
+  return result; /*0x1800a5318*/
+}

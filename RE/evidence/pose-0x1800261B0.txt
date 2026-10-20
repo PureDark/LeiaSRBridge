@@ -1,0 +1,320 @@
+__int64 __fastcall sub_1800261B0(__int64 a1, int a2, int a3, int a4, int a5, _DWORD *a6)
+{
+  __int64 v10; // rax
+  __int64 v11; // rcx
+  __int64 v12; // rax
+  __int64 result; // rax
+  __int64 v14; // rcx
+  __int64 v15; // rax
+  __int64 v16; // rcx
+  int v17; // eax
+  __int64 v18; // rax
+  __int64 v19; // rcx
+  __int64 v20; // rax
+  __int64 v21; // rcx
+  __int64 v22; // rax
+  __int64 v23; // rcx
+  __int64 v24; // rax
+  __int64 v25; // rax
+  float *v26; // rax
+  float *v27; // rax
+  __int64 v28; // rcx
+  __int64 v29; // rax
+  int v30; // r8d
+  _BYTE v31[32]; // [rsp+0h] [rbp-3E8h] BYREF
+  __int128 v32; // [rsp+40h] [rbp-3A8h] BYREF
+  __int64 v33; // [rsp+50h] [rbp-398h]
+  __int128 v34; // [rsp+60h] [rbp-388h] BYREF
+  __int128 v35; // [rsp+70h] [rbp-378h] BYREF
+  __int128 v36; // [rsp+80h] [rbp-368h] BYREF
+  __int64 v37; // [rsp+90h] [rbp-358h]
+  __int128 v38; // [rsp+A0h] [rbp-348h]
+  __int64 v39; // [rsp+B0h] [rbp-338h]
+  __int128 v40; // [rsp+C0h] [rbp-328h] BYREF
+  __int128 v41; // [rsp+D0h] [rbp-318h] BYREF
+  __int64 v42; // [rsp+E0h] [rbp-308h]
+  __int128 v43; // [rsp+F0h] [rbp-2F8h]
+  __int64 v44; // [rsp+100h] [rbp-2E8h]
+  __int64 v45; // [rsp+110h] [rbp-2D8h]
+  _QWORD v46[22]; // [rsp+120h] [rbp-2C8h] BYREF
+  const std::exception *v47; // [rsp+1D0h] [rbp-218h] BYREF
+  __int128 v48; // [rsp+1E0h] [rbp-208h] BYREF
+  __int64 v49; // [rsp+1F0h] [rbp-1F8h]
+  __int64 v50; // [rsp+200h] [rbp-1E8h]
+  __int128 v51; // [rsp+210h] [rbp-1D8h]
+  __int64 v52; // [rsp+220h] [rbp-1C8h]
+  _BYTE v53[168]; // [rsp+230h] [rbp-1B8h] BYREF
+  _BYTE v54[96]; // [rsp+2E0h] [rbp-108h] BYREF
+  _BYTE v55[96]; // [rsp+340h] [rbp-A8h] BYREF
+
+  v10 = sub_180008380(a1); /*0x1800261e7*/
+  *(_QWORD *)&v34 = "start run eye track ..."; /*0x1800261fe*/
+  *((_QWORD *)&v34 + 1) = 23; /*0x180026203*/
+  v40 = v34; /*0x180026211*/
+  v38 = 0u; /*0x18002621a*/
+  v39 = 0; /*0x180026222*/
+  v36 = 0u; /*0x180026232*/
+  v37 = 0; /*0x180026243*/
+  sub_180005CC0(a1: *(_QWORD *)(v10 + 472), a2: &v36, a3: 2, a4: &v40); /*0x180026268*/
+  __eh34_enter_try_state(-1, 0); /*0xf1c00000000000e0*/
+  if ( *(_BYTE *)(a1 + 240) != 0 ) /*0x180026278*/
+  {
+    v12 = sub_180008380(a1: v11); /*0x18002627a*/
+    *(_QWORD *)&v34 = "stop flag is true, exit eye track !!!"; /*0x18002628b*/
+    *((_QWORD *)&v34 + 1) = 37; /*0x180026290*/
+    v35 = v34; /*0x18002629e*/
+    v32 = 0u; /*0x1800262a4*/
+    v33 = 0; /*0x1800262a9*/
+    v36 = 0u; /*0x1800262b3*/
+    v37 = 0; /*0x1800262c1*/
+    sub_180005CC0(a1: *(_QWORD *)(v12 + 472), a2: &v36, a3: 3, a4: &v35); /*0x1800262e3*/
+    result = 0; /*0x1800262e8*/
+    goto LABEL_30; /*0x1800262ea*/
+  }
+  cv::Mat::Mat(this: (cv::Mat *)v55); /*0x1800262f7*/
+  __wind /*0xf1c00000000000d4*/
+  {
+    cv::Mat::Mat(this: (cv::Mat *)v54); /*0x180026306*/
+    __eh34_enter_wind_state(1, 2); /*0xf1c00000000000cc*/
+    if ( (unsigned int)sub_180025590(a1, a2, a3, a4, a5, a6: (__int64)v55, a7: (__int64)v54) != 0 ) /*0x180026345*/
+    {
+      if ( *(_BYTE *)(a1 + 512) != 1 /*0x180026409*/
+        || (sub_1800323C0(a1, a2: (const struct cv::Mat *)v55, a3: (const struct cv::Mat *)v54), v17 != 0) )
+      {
+        if ( (unsigned int)sub_18009CC80(a1, a2: (const struct cv::Mat *)v55, a3: (const struct cv::Mat *)v54) != 0 ) /*0x180026561*/
+        {
+          *(_QWORD *)&v34 = v46; /*0x1800266c5*/
+          v46[0] = *(_QWORD *)(a1 + 96); /*0x1800266cf*/
+          LODWORD(v46[1]) = *(_DWORD *)(a1 + 104); /*0x1800266db*/
+          *(_QWORD *)((char *)&v46[1] + 4) = *(_QWORD *)(a1 + 108); /*0x1800266e7*/
+          HIDWORD(v46[2]) = *(_DWORD *)(a1 + 116); /*0x1800266f3*/
+          v46[3] = *(_QWORD *)(a1 + 120); /*0x1800266ff*/
+          LODWORD(v46[4]) = *(_DWORD *)(a1 + 128); /*0x18002670e*/
+          *(_OWORD *)((char *)&v46[4] + 4) = *(_OWORD *)(a1 + 132); /*0x18002671c*/
+          *(_OWORD *)((char *)&v46[6] + 4) = *(_OWORD *)(a1 + 148); /*0x18002672b*/
+          WORD2(v46[8]) = *(_WORD *)(a1 + 164); /*0x18002673a*/
+          sub_180027B00(a1: &v46[9], a2: a1 + 168); /*0x180026751*/
+          __wind /*0xf1c0000000000088*/
+          {
+            sub_180027B00(a1: &v46[12], a2: a1 + 192); /*0x180026766*/
+          }
+          __unwind
+          {
+            sub_180027AA0(a1: v34 + 72); /*0x1800e38bb*/
+          }
+          __eh34_enter_wind_state(2, 4); /*0xf1c00000000000a0*/
+          *(_QWORD *)&v34 = v46; /*0x180026774*/
+          if ( *(float *)&v46[6] == *(float *)&v46[5] /*0x1800267cf*/
+            || *((float *)&v46[4] + 1) == *((float *)&v46[5] + 1)
+            || *(float *)&v46[8] == *(float *)&v46[7]
+            || *((float *)&v46[6] + 1) == *((float *)&v46[7] + 1) )
+          {
+            v22 = sub_180008380(a1: v21); /*0x1800267d5*/
+            *(_QWORD *)&v32 = "Monocular camera coordinates are unreliable !!!"; /*0x1800267e9*/
+            *((_QWORD *)&v32 + 1) = 47; /*0x1800267ee*/
+            v43 = 0u; /*0x180026802*/
+            v44 = 0; /*0x18002680a*/
+            v48 = 0u; /*0x18002681a*/
+            v49 = 0; /*0x18002682b*/
+            sub_180005CC0(a1: *(_QWORD *)(v22 + 472), a2: &v48, a3: 1, a4: &v32); /*0x18002684e*/
+            if ( __eh34_unwind(4) ) /*0xf1c000000000007c*/
+              goto unwind_state_4; /*0xf1c000000000007c*/
+            __eh34_exit_wind_state(4, 2); /*0xf1c0000000000080*/
+            sub_1800254E0(a1: v46); /*0x18002685c*/
+            v24 = sub_180008380(a1: v23); /*0x180026861*/
+            *(_QWORD *)&v35 = "The eye tracking coordinates are not reliable !!!"; /*0x180026875*/
+            *((_QWORD *)&v35 + 1) = 49; /*0x18002687a*/
+            v36 = 0u; /*0x18002688e*/
+            v37 = 0; /*0x180026896*/
+            v41 = 0u; /*0x1800268a6*/
+            v42 = 0; /*0x1800268b7*/
+            sub_180005CC0(a1: *(_QWORD *)(v24 + 472), a2: &v41, a3: 1, a4: &v35); /*0x1800268da*/
+            memset(a1: v53, Val: 0, Size: sizeof(v53)); /*0x1800268ef*/
+            qmemcpy(a6, v53, 168); /*0x1800268ff*/
+            *((_WORD *)a6 + 40) = *(_WORD *)(a1 + 164); /*0x18002696b*/
+            *((_QWORD *)a6 + 9) = sub_18002F010(); /*0x18002697d*/
+            if ( __eh34_unwind(2) ) /*0xf1c0000000000068*/
+              goto unwind_state_2; /*0xf1c0000000000068*/
+            __eh34_exit_wind_state(2, 1); /*0xf1c0000000000074*/
+            cv::Mat::~Mat(this: (cv::Mat *)v54); /*0x180026989*/
+            cv::Mat::~Mat(this: (cv::Mat *)v55); /*0x180026998*/
+            result = 0; /*0x18002699e*/
+          }
+          else
+          {
+            v25 = sub_180008380(a1: v21); /*0x1800269a5*/
+            *(_QWORD *)&v35 = "two camera, both cameras are active simultaneously !!!"; /*0x1800269b9*/
+            *((_QWORD *)&v35 + 1) = 54; /*0x1800269be*/
+            v36 = 0u; /*0x1800269d2*/
+            v37 = 0; /*0x1800269da*/
+            v41 = 0u; /*0x1800269ea*/
+            v42 = 0; /*0x1800269fb*/
+            sub_180005CC0(a1: *(_QWORD *)(v25 + 472), a2: &v41, a3: 1, a4: &v35); /*0x180026a1e*/
+            if ( __eh34_unwind(4) ) /*0xf1c0000000000054*/
+            {
+unwind_state_4:
+              sub_1800254E0(a1: v34); /*0xf1c0000000000058*/
+              __eh34_continue_unwinding(4, 2); /*0xf1c000000000005c*/
+            }
+            __eh34_exit_wind_state(4, 2); /*0xf1c0000000000060*/
+            sub_1800254E0(a1: v46); /*0x180026a2c*/
+            *a6 = *(_DWORD *)(a1 + 96); /*0x180026a34*/
+            a6[1] = *(_DWORD *)(a1 + 100); /*0x180026a39*/
+            a6[2] = *(_DWORD *)(a1 + 104); /*0x180026a3f*/
+            a6[3] = *(_DWORD *)(a1 + 108); /*0x180026a45*/
+            a6[4] = *(_DWORD *)(a1 + 112); /*0x180026a4b*/
+            a6[5] = *(_DWORD *)(a1 + 116); /*0x180026a51*/
+            a6[6] = *(_DWORD *)(a1 + 120); /*0x180026a57*/
+            a6[7] = *(_DWORD *)(a1 + 124); /*0x180026a5d*/
+            a6[8] = *(_DWORD *)(a1 + 128); /*0x180026a66*/
+            a6[9] = (int)*(float *)(a1 + 132); /*0x180026a71*/
+            a6[10] = (int)*(float *)(a1 + 136); /*0x180026a7c*/
+            a6[11] = (int)*(float *)(a1 + 140); /*0x180026a87*/
+            a6[12] = (int)*(float *)(a1 + 144); /*0x180026a92*/
+            a6[13] = (int)*(float *)(a1 + 148); /*0x180026a9d*/
+            a6[14] = (int)*(float *)(a1 + 152); /*0x180026aa8*/
+            a6[15] = (int)*(float *)(a1 + 156); /*0x180026ab3*/
+            a6[16] = (int)*(float *)(a1 + 160); /*0x180026abe*/
+            *((_WORD *)a6 + 40) = *(_WORD *)(a1 + 164); /*0x180026ac8*/
+            *((_QWORD *)a6 + 9) = sub_18002F010(); /*0x180026ada*/
+            v26 = *(float **)(a1 + 168); /*0x180026ade*/
+            if ( v26 == *(float **)(a1 + 176) ) /*0x180026aec*/
+            {
+              v50 = 0; /*0x180026b87*/
+              *(_OWORD *)(a6 + 21) = 0; /*0x180026b8f*/
+              *(_OWORD *)(a6 + 25) = 0; /*0x180026b93*/
+              *(_QWORD *)(a6 + 29) = v50; /*0x180026ba0*/
+            }
+            else
+            {
+              a6[21] = (int)*v26; /*0x180026af6*/
+              a6[22] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 4LL); /*0x180026b05*/
+              a6[23] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 8LL); /*0x180026b14*/
+              a6[24] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 12LL); /*0x180026b23*/
+              a6[25] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 16LL); /*0x180026b32*/
+              a6[26] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 20LL); /*0x180026b41*/
+              a6[27] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 24LL); /*0x180026b50*/
+              a6[28] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 28LL); /*0x180026b5f*/
+              a6[29] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 32LL); /*0x180026b6e*/
+              a6[30] = (int)*(float *)(*(_QWORD *)(a1 + 168) + 36LL); /*0x180026b7d*/
+            }
+            v27 = *(float **)(a1 + 192); /*0x180026ba5*/
+            if ( v27 == *(float **)(a1 + 200) ) /*0x180026bb3*/
+            {
+              v45 = 0; /*0x180026c69*/
+              *(_OWORD *)(a6 + 31) = 0; /*0x180026c71*/
+              *(_OWORD *)(a6 + 35) = 0; /*0x180026c75*/
+              *(_QWORD *)(a6 + 39) = v45; /*0x180026c85*/
+            }
+            else
+            {
+              a6[31] = (int)*v27; /*0x180026bbd*/
+              a6[32] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 4LL); /*0x180026bcc*/
+              a6[33] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 8LL); /*0x180026bde*/
+              a6[34] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 12LL); /*0x180026bf0*/
+              a6[35] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 16LL); /*0x180026c02*/
+              a6[36] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 20LL); /*0x180026c14*/
+              a6[37] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 24LL); /*0x180026c26*/
+              a6[38] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 28LL); /*0x180026c38*/
+              a6[39] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 32LL); /*0x180026c4a*/
+              a6[40] = (int)*(float *)(*(_QWORD *)(a1 + 192) + 36LL); /*0x180026c5c*/
+            }
+            cv::Mat::~Mat(this: (cv::Mat *)v54); /*0x180026c95*/
+            cv::Mat::~Mat(this: (cv::Mat *)v55); /*0x180026ca4*/
+            result = 1; /*0x180026cab*/
+            if ( __eh34_unwind(2) ) /*0xf1c00000000000e8*/
+            {
+unwind_state_2:
+              cv::Mat::~Mat(this: (cv::Mat *)v54); /*0xf1c000000000006c*/
+              __eh34_continue_unwinding(2, 1); /*0xf1c0000000000070*/
+            }
+            __eh34_exit_wind_state(2, 1); /*0xf1c00000000000ec*/
+          }
+          goto LABEL_30; /*0x1800269a0*/
+        }
+        v20 = sub_180008380(a1: v19); /*0x180026567*/
+        *(_QWORD *)&v34 = "face detect failed !!!"; /*0x18002657b*/
+        *((_QWORD *)&v34 + 1) = 22; /*0x180026580*/
+        v35 = v34; /*0x18002658e*/
+        v32 = 0u; /*0x180026594*/
+        v33 = 0; /*0x180026599*/
+        v36 = 0u; /*0x1800265a3*/
+        v37 = 0; /*0x1800265b1*/
+        sub_180005CC0(a1: *(_QWORD *)(v20 + 472), a2: &v36, a3: 4, a4: &v35); /*0x1800265d4*/
+        memset(a1: v46, Val: 0, Size: 0xA8u); /*0x1800265e9*/
+        qmemcpy(a6, v46, 168); /*0x1800265f9*/
+        *((_WORD *)a6 + 40) = *(_WORD *)(a1 + 164); /*0x180026665*/
+        *((_QWORD *)a6 + 9) = Xtime_get_ticks() / 10000; /*0x180026695*/
+        if ( __eh34_unwind(2) ) /*0xf1c00000000000a8*/
+          goto unwind_state_2; /*0xf1c00000000000a8*/
+      }
+      else
+      {
+        v18 = sub_180008380(a1: v16); /*0x18002640f*/
+        *(_QWORD *)&v34 = "face detect failed !!!"; /*0x180026423*/
+        *((_QWORD *)&v34 + 1) = 22; /*0x180026428*/
+        v35 = v34; /*0x180026436*/
+        v32 = 0u; /*0x18002643c*/
+        v33 = 0; /*0x180026441*/
+        v36 = 0u; /*0x18002644b*/
+        v37 = 0; /*0x180026459*/
+        sub_180005CC0(a1: *(_QWORD *)(v18 + 472), a2: &v36, a3: 4, a4: &v35); /*0x18002647c*/
+        memset(a1: v46, Val: 0, Size: 0xA8u); /*0x180026491*/
+        qmemcpy(a6, v46, 168); /*0x1800264a1*/
+        *((_WORD *)a6 + 40) = *(_WORD *)(a1 + 164); /*0x18002650d*/
+        *((_QWORD *)a6 + 9) = sub_18002F010(); /*0x18002651f*/
+        if ( __eh34_unwind(2) ) /*0xf1c00000000000b4*/
+          goto unwind_state_2; /*0xf1c00000000000b4*/
+      }
+    }
+    else
+    {
+      v15 = sub_180008380(a1: v14); /*0x18002634b*/
+      *(_QWORD *)&v34 = "image data to cv mat failed  !!!"; /*0x18002635c*/
+      *((_QWORD *)&v34 + 1) = 32; /*0x180026361*/
+      v35 = v34; /*0x18002636f*/
+      v32 = 0u; /*0x180026375*/
+      v33 = 0; /*0x18002637a*/
+      v36 = 0u; /*0x180026384*/
+      v37 = 0; /*0x180026392*/
+      sub_180005CC0(a1: *(_QWORD *)(v15 + 472), a2: &v36, a3: 4, a4: &v35); /*0x1800263b5*/
+      if ( __eh34_unwind(2) ) /*0xf1c00000000000c0*/
+        goto unwind_state_2; /*0xf1c00000000000c0*/
+    }
+    __eh34_exit_wind_state(2, 1); /*0xf1c00000000000ac*/
+    cv::Mat::~Mat(this: (cv::Mat *)v54); /*0x1800266a1*/
+    cv::Mat::~Mat(this: (cv::Mat *)v55); /*0x1800266b0*/
+    result = 0; /*0x1800266b6*/
+  }
+  __unwind
+  {
+    cv::Mat::~Mat(this: (cv::Mat *)v55); /*0xf1c0000000000044*/
+  }
+  if ( __eh34_catch(0) )
+  {
+    if ( __eh34_catch_type(0, &std::exception `RTTI Type Descriptor', &v47) )
+    {
+      *(_QWORD *)&v34 = (*(__int64 (__fastcall **)(const std::exception *))(*(_QWORD *)v47 + 8LL))(a1: v47); /*0x1800e38ea*/
+      *(_QWORD *)&v40 = "Caught an exception: {}";
+      *((_QWORD *)&v40 + 1) = 23; /*0x1800e38fc*/
+      v29 = sub_180008380(a1: v28); /*0x1800e3907*/
+      v38 = 0; /*0x1800e3911*/
+      *(_QWORD *)&v38 = 0; /*0x1800e3918*/
+      DWORD2(v38) = 0; /*0x1800e391f*/
+      v39 = 0; /*0x1800e3925*/
+      v51 = v38; /*0x1800e3942*/
+      v52 = 0; /*0x1800e3951*/
+      sub_1800292A0( /*0x1800e3977*/
+        a1: *(_QWORD *)(v29 + 472),
+        a2: (unsigned int)v31 + 528,
+        a3: v30,
+        a4: (unsigned int)v31 + 192,
+        a5: (__int64)&v34);
+      result = 0; /*0x180026cb2*/
+      __eh34_enter_try_state(-1, 0); /*0xf1c000000000004c*/
+    }
+  }
+LABEL_30:
+  __eh34_exit_try_state(0, -1); /*0xf1c0000000000038*/
+  return result; /*0x180026cb4*/
+}

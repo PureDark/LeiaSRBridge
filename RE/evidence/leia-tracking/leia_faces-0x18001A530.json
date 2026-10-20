@@ -1,0 +1,85 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18001A530\",\"code\":\"SR::Sense *__fastcall sub_18001A530(__int64 a1)\\n{\\n  __int64 v1; // r14\\n  SR::Sense *v2; // rax\\n  SR::Sense *v3; // rdi\\n  _BYTE v5[16]; // [rsp+28h] [rbp-70h] BYREF\\n  __int64 v6; // [rsp+38h] [rbp-60h]\\n  __int64 v7; // [rsp+40h] [rbp-58h]\\n  _QWORD v8[2]; // [rsp+48h] [rbp-50h] BYREF\\n  char v9; // [rsp+58h] [rbp-40h]\\n  SR::Sense *v10; // [rsp+60h] [rbp-38h]\\n  _QWORD *v11; // [rsp+80h] [rbp-18h]\\n  SR::WeaverTracker *v12; // [rsp+A8h] [rbp+10h]\\n\\n  v1 = sub_18000FA20(a1); /*0x18001a551*/\\n  v2 = (SR::Sense *)operator new(Size: 0x2D0u); /*0x18001a559*/\\n  v3 = v2; /*0x18001a55e*/\\n  v12 = v2; /*0x18001a561*/\\n  __eh34_enter_wind_state(-1, 0); /*0xf1c00000000000b0*/\\n  if ( v2 != nullptr ) /*0x18001a56c*/\\n  {\\n    SR::Sense::Sense(this: v2); /*0x18001a575*/\\n    __wind /*0xf1c00000000000a4*/\\n    {\\n      *(_QWORD *)v3 = &SR::FaceLockHeadTracker::`vftable'; /*0x18001a583*/\\n      *((_QWORD *)v3 + 63) = 0; /*0x18001a58d*/\\n      *((_QWORD *)v3 + 64) = 15; /*0x18001a595*/\\n      *((_BYTE *)v3 + 488) = 0; /*0x18001a59d*/\\n      sub_1800038D0(a1: (char *)v3 + 488, Src: \\\"FaceLockHeadTracker\\\", Size: 0x13u); /*0x18001a5ad*/\\n      __wind /*0xf1c0000000000098*/\\n      {\\n        *((_QWORD *)v3 + 67) = 0; /*0x18001a5ba*/\\n        *((_QWORD *)v3 + 68) = 15; /*0x18001a5c2*/\\n        *((_BYTE *)v3 + 520) = 0; /*0x18001a5ca*/\\n        sub_1800038D0( /*0x18001a5da*/\\n          a1: (char *)v3 + 520,\\n          Src: \\\"HeadTracker sense passing along UDP packages to the SR system.\\\",\\n          Size: 0x3Eu);\\n        __wind /*0xf1c000000000008c*/\\n        {\\n          *((_QWORD *)v3 + 69) = 0; /*0x18001a5e0*/\\n          v6 = 0; /*0x18001a5eb*/\\n          v7 = 15; /*0x18001a5f4*/\\n          v5[0] = 0; /*0x18001a5fd*/\\n          sub_1800038D0(a1: v5, Src: &unk_180043F70, Size: 0); /*0x18001a611*/\\n          sub_1800191E0(a1: (char *)v3 + 560, a2: 1, a3: v5); /*0x18001a627*/\\n          __wind /*0xf1c0000000000044*/\\n          {\\n            *((_QWORD *)v3 + 89) = v1; /*0x18001a62d*/\\n            v8[0] = &std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,void (SR::FaceLockHeadTracker::*)(SR_head),SR::FaceLockHeadTracker *,std::_Ph<1> const &>,void,SR_head>::`vftable'; /*0x18001a63b*/\\n            v8[1] = sub_18001A490; /*0x18001a647*/\\n            v9 = (char)v12; /*0x18001a654*/\\n            v10 = v3; /*0x18001a658*/\\n            v11 = v8; /*0x18001a662*/\\n            sub_180013480(a1: v1, a2: v8); /*0x18001a672*/\\n            (*(void (__fastcall **)(__int64))(*(_QWORD *)v1 + 24LL))(a1: v1); /*0x18001a67d*/\\n          }\\n          __unwind\\n          {\\n            sub_1800197A0(a1: (char *)v12 + 560); /*0x18003eece*/\\n          }\\n        }\\n        __unwind\\n        {\\n          sub_180003240(a1: (char *)v12 + 520); /*0x18003ddfe*/\\n        }\\n      }\\n      __unwind\\n      {\\n        sub_180003240(a1: (char *)v12 + 488); /*0x18003ddde*/\\n      }\\n    }\\n    __unwind\\n    {\\n      SR::WeaverTracker::~WeaverTracker(this: v12); /*0x18003ddc7*/\\n    }\\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000080*/\\n      goto unwind_state_0; /*0xf1c0000000000080*/\\n    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000084*/\\n    return v3; /*0x18001a681*/\\n  }\\n  else\\n  {\\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000030*/\\n    {\\nunwind_state_0:\\n      j_j_free(Block: v12); /*0xf1c0000000000034*/\\n      __eh34_propagate_exception_into_caller(0, -1); /*0xf1c0000000000038*/\\n    }\\n    __eh34_exit_wind_state(0, -1); /*0xf1c000000000003c*/\\n    return nullptr; /*0x18001a686*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x18000fa20\",\"name\":\"sub_18000FA20\"},{\"addr\":\"0x18003c3f8\",\"name\":\"??2@YAPEAX_K@Z\"},{\"addr\":\"0x180043510\",\"name\":\"??0Sense@SR@@QEAA@XZ\"},{\"addr\":\"0x180047968\",\"name\":\"??_7FaceLockHeadTracker@SR@@6B@\"},{\"addr\":\"0x1800038d0\",\"name\":\"sub_1800038D0\"},{\"addr\":\"0x1800479a0\",\"name\":\"aFacelockheadtr\",\"string\":\"FaceLockHeadTracker\"},{\"addr\":\"0x1800479b8\",\"name\":\"aHeadtrackerSen\",\"string\":\"HeadTracker sense passing along UDP packages to the SR system.\"},{\"addr\":\"0x180043f70\",\"name\":\"unk_180043F70\"},{\"addr\":\"0x1800191e0\",\"name\":\"sub_1800191E0\"},{\"addr\":\"0x180047a00\",\"name\":\"??_7?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8FaceLockHeadTracker@SR@@EAAXUSR_head@@@ZPEAV34@AEBU?$_Ph@$00@2@@std@@XUSR_head@@@std@@6B@\"},{\"addr\":\"0x18001a490\",\"name\":\"sub_18001A490\"},{\"addr\":\"0x180013480\",\"name\":\"sub_180013480\"},{\"addr\":\"0x1800197a0\",\"name\":\"sub_1800197A0\"},{\"addr\":\"0x180003240\",\"name\":\"sub_180003240\"},{\"addr\":\"0x180003300\",\"name\":\"??1WeaverTracker@SR@@UEAA@XZ\"},{\"addr\":\"0x18003c434\",\"name\":\"j_j_free\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18001A530",
+      "code": "SR::Sense *__fastcall sub_18001A530(__int64 a1)\n{\n  __int64 v1; // r14\n  SR::Sense *v2; // rax\n  SR::Sense *v3; // rdi\n  _BYTE v5[16]; // [rsp+28h] [rbp-70h] BYREF\n  __int64 v6; // [rsp+38h] [rbp-60h]\n  __int64 v7; // [rsp+40h] [rbp-58h]\n  _QWORD v8[2]; // [rsp+48h] [rbp-50h] BYREF\n  char v9; // [rsp+58h] [rbp-40h]\n  SR::Sense *v10; // [rsp+60h] [rbp-38h]\n  _QWORD *v11; // [rsp+80h] [rbp-18h]\n  SR::WeaverTracker *v12; // [rsp+A8h] [rbp+10h]\n\n  v1 = sub_18000FA20(a1); /*0x18001a551*/\n  v2 = (SR::Sense *)operator new(Size: 0x2D0u); /*0x18001a559*/\n  v3 = v2; /*0x18001a55e*/\n  v12 = v2; /*0x18001a561*/\n  __eh34_enter_wind_state(-1, 0); /*0xf1c00000000000b0*/\n  if ( v2 != nullptr ) /*0x18001a56c*/\n  {\n    SR::Sense::Sense(this: v2); /*0x18001a575*/\n    __wind /*0xf1c00000000000a4*/\n    {\n      *(_QWORD *)v3 = &SR::FaceLockHeadTracker::`vftable'; /*0x18001a583*/\n      *((_QWORD *)v3 + 63) = 0; /*0x18001a58d*/\n      *((_QWORD *)v3 + 64) = 15; /*0x18001a595*/\n      *((_BYTE *)v3 + 488) = 0; /*0x18001a59d*/\n      sub_1800038D0(a1: (char *)v3 + 488, Src: \"FaceLockHeadTracker\", Size: 0x13u); /*0x18001a5ad*/\n      __wind /*0xf1c0000000000098*/\n      {\n        *((_QWORD *)v3 + 67) = 0; /*0x18001a5ba*/\n        *((_QWORD *)v3 + 68) = 15; /*0x18001a5c2*/\n        *((_BYTE *)v3 + 520) = 0; /*0x18001a5ca*/\n        sub_1800038D0( /*0x18001a5da*/\n          a1: (char *)v3 + 520,\n          Src: \"HeadTracker sense passing along UDP packages to the SR system.\",\n          Size: 0x3Eu);\n        __wind /*0xf1c000000000008c*/\n        {\n          *((_QWORD *)v3 + 69) = 0; /*0x18001a5e0*/\n          v6 = 0; /*0x18001a5eb*/\n          v7 = 15; /*0x18001a5f4*/\n          v5[0] = 0; /*0x18001a5fd*/\n          sub_1800038D0(a1: v5, Src: &unk_180043F70, Size: 0); /*0x18001a611*/\n          sub_1800191E0(a1: (char *)v3 + 560, a2: 1, a3: v5); /*0x18001a627*/\n          __wind /*0xf1c0000000000044*/\n          {\n            *((_QWORD *)v3 + 89) = v1; /*0x18001a62d*/\n            v8[0] = &std::_Func_impl_no_alloc<std::_Binder<std::_Unforced,void (SR::FaceLockHeadTracker::*)(SR_head),SR::FaceLockHeadTracker *,std::_Ph<1> const &>,void,SR_head>::`vftable'; /*0x18001a63b*/\n            v8[1] = sub_18001A490; /*0x18001a647*/\n            v9 = (char)v12; /*0x18001a654*/\n            v10 = v3; /*0x18001a658*/\n            v11 = v8; /*0x18001a662*/\n            sub_180013480(a1: v1, a2: v8); /*0x18001a672*/\n            (*(void (__fastcall **)(__int64))(*(_QWORD *)v1 + 24LL))(a1: v1); /*0x18001a67d*/\n          }\n          __unwind\n          {\n            sub_1800197A0(a1: (char *)v12 + 560); /*0x18003eece*/\n          }\n        }\n        __unwind\n        {\n          sub_180003240(a1: (char *)v12 + 520); /*0x18003ddfe*/\n        }\n      }\n      __unwind\n      {\n        sub_180003240(a1: (char *)v12 + 488); /*0x18003ddde*/\n      }\n    }\n    __unwind\n    {\n      SR::WeaverTracker::~WeaverTracker(this: v12); /*0x18003ddc7*/\n    }\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000080*/\n      goto unwind_state_0; /*0xf1c0000000000080*/\n    __eh34_exit_wind_state(0, -1); /*0xf1c0000000000084*/\n    return v3; /*0x18001a681*/\n  }\n  else\n  {\n    if ( __eh34_unwind(0) ) /*0xf1c0000000000030*/\n    {\nunwind_state_0:\n      j_j_free(Block: v12); /*0xf1c0000000000034*/\n      __eh34_propagate_exception_into_caller(0, -1); /*0xf1c0000000000038*/\n    }\n    __eh34_exit_wind_state(0, -1); /*0xf1c000000000003c*/\n    return nullptr; /*0x18001a686*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x18000fa20",
+          "name": "sub_18000FA20"
+        },
+        {
+          "addr": "0x18003c3f8",
+          "name": "??2@YAPEAX_K@Z"
+        },
+        {
+          "addr": "0x180043510",
+          "name": "??0Sense@SR@@QEAA@XZ"
+        },
+        {
+          "addr": "0x180047968",
+          "name": "??_7FaceLockHeadTracker@SR@@6B@"
+        },
+        {
+          "addr": "0x1800038d0",
+          "name": "sub_1800038D0"
+        },
+        {
+          "addr": "0x1800479a0",
+          "name": "aFacelockheadtr",
+          "string": "FaceLockHeadTracker"
+        },
+        {
+          "addr": "0x1800479b8",
+          "name": "aHeadtrackerSen",
+          "string": "HeadTracker sense passing along UDP packages to the SR system."
+        },
+        {
+          "addr": "0x180043f70",
+          "name": "unk_180043F70"
+        },
+        {
+          "addr": "0x1800191e0",
+          "name": "sub_1800191E0"
+        },
+        {
+          "addr": "0x180047a00",
+          "name": "??_7?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8FaceLockHeadTracker@SR@@EAAXUSR_head@@@ZPEAV34@AEBU?$_Ph@$00@2@@std@@XUSR_head@@@std@@6B@"
+        },
+        {
+          "addr": "0x18001a490",
+          "name": "sub_18001A490"
+        },
+        {
+          "addr": "0x180013480",
+          "name": "sub_180013480"
+        },
+        {
+          "addr": "0x1800197a0",
+          "name": "sub_1800197A0"
+        },
+        {
+          "addr": "0x180003240",
+          "name": "sub_180003240"
+        },
+        {
+          "addr": "0x180003300",
+          "name": "??1WeaverTracker@SR@@UEAA@XZ"
+        },
+        {
+          "addr": "0x18003c434",
+          "name": "j_j_free"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"6442478096\",\"code\":\"__int64 __fastcall sub_180006A10(__int64 a1)\\n{\\n  __int64 result; // rax\\n  __int64 v2; // rcx\\n\\n  result = a1; /*0x180006a10*/\\n  v2 = *(_QWORD *)(a1 + 8); /*0x180006a13*/\\n  if ( v2 != 0 ) /*0x180006a1a*/\\n  {\\n    *(_QWORD *)(result + 8) = 0; /*0x180006a1c*/\\n    return (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v2 + 48LL))(a1: v2); /*0x180006a27*/\\n  }\\n  return result; /*0x180006a2b*/\\n}\"}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "6442478096",
+      "code": "__int64 __fastcall sub_180006A10(__int64 a1)\n{\n  __int64 result; // rax\n  __int64 v2; // rcx\n\n  result = a1; /*0x180006a10*/\n  v2 = *(_QWORD *)(a1 + 8); /*0x180006a13*/\n  if ( v2 != 0 ) /*0x180006a1a*/\n  {\n    *(_QWORD *)(result + 8) = 0; /*0x180006a1c*/\n    return (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v2 + 48LL))(a1: v2); /*0x180006a27*/\n  }\n  return result; /*0x180006a2b*/\n}"
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,11 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+
+namespace std
+{
+	// Token: 0x020002FF RID: 767
+	[NativeCppClass]
+	internal struct _WChar_traits<char16_t>
+	{
+	}
+}

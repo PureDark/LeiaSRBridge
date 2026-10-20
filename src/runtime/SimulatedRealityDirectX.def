@@ -1,0 +1,5 @@
+LIBRARY SimulatedRealityDirectX
+EXPORTS
+    ?CreateDX12Weaver@SR@@YA?AW4WeaverErrorCode@@PEAVSRContext@1@PEAUID3D12Device@@PEAUHWND__@@PEAPEAVIDX12Weaver1@1@@Z=TitanLeiaRuntime.?CreateDX12Weaver@SR@@YA?AW4WeaverErrorCode@@PEAVSRContext@1@PEAUID3D12Device@@PEAUHWND__@@PEAPEAVIDX12Weaver1@1@@Z
+    ?CreateDX11Weaver@SR@@YA?AW4WeaverErrorCode@@PEAVSRContext@1@PEAUID3D11DeviceContext@@PEAUHWND__@@PEAPEAVIDX11Weaver1@1@@Z=TitanLeiaRuntime.?CreateDX11Weaver@SR@@YA?AW4WeaverErrorCode@@PEAVSRContext@1@PEAUID3D11DeviceContext@@PEAUHWND__@@PEAPEAVIDX11Weaver1@1@@Z
+    ?CreateDX9Weaver@SR@@YA?AW4WeaverErrorCode@@PEAVSRContext@1@PEAUIDirect3DDevice9@@PEAUHWND__@@PEAPEAVIDX9Weaver1@1@@Z=TitanLeiaRuntime.?CreateDX9Weaver@SR@@YA?AW4WeaverErrorCode@@PEAVSRContext@1@PEAUIDirect3DDevice9@@PEAUHWND__@@PEAPEAVIDX9Weaver1@1@@Z

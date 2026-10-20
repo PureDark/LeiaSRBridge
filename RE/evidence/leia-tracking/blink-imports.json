@@ -1,0 +1,352 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"data\":[{\"addr\":\"0x1401bb068\",\"imported_name\":\"??0FaceDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVFaceDetectorConfig@1@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb070\",\"imported_name\":\"?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb078\",\"imported_name\":\"?estimate@HeadPoseDetector@blink@@QEAA?AW4BlStatus@@AEAVFaceDetectorData@2@AEAVHeadPoseDetectorData@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb080\",\"imported_name\":\"?get_minimal_face_size@FaceDetector@blink@@QEBAIXZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb088\",\"imported_name\":\"?estimate@FaceDetector@blink@@QEAA?AW4BlStatus@@AEAV?$BlVector@UImage@blink@@@common@2@AEAVFaceDetectorData@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb090\",\"imported_name\":\"?start_tracking@FaceDetector@blink@@QEAA?AW4BlStatus@@II@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb098\",\"imported_name\":\"?reset_tracking@FaceDetector@blink@@QEAA?AW4BlStatus@@I@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0a0\",\"imported_name\":\"??0HeadPoseDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVHeadPoseDetectorConfig@1@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0a8\",\"imported_name\":\"??0HeadPoseDetectorData@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0b0\",\"imported_name\":\"??0BlinkDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVBlinkDetectorConfig@1@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0b8\",\"imported_name\":\"?estimate@BlinkDetector@blink@@QEAA?AW4BlStatus@@AEAVFaceDetectorData@2@AEAVBlinkDetectorData@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0c0\",\"imported_name\":\"?estimate@Landmarks3dDetector@blink@@QEAA?AW4BlStatus@@AEAVHeadPoseDetectorData@2@AEAVLandmarks3dDetectorData@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0c8\",\"imported_name\":\"??0Landmarks3dDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVLandmarks3dDetectorConfig@1@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0d0\",\"imported_name\":\"?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0d8\",\"imported_name\":\"??0Landmarks3dDetectorData@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0e0\",\"imported_name\":\"?get_blink_probability@BlinkDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@M@common@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0e8\",\"imported_name\":\"??0BlinkDetectorData@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0f0\",\"imported_name\":\"??1BlinkDetectorConfig@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb0f8\",\"imported_name\":\"??0BlinkDetectorConfig@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb100\",\"imported_name\":\"?at@?$BlVector@UImage@blink@@@common@blink@@QEAAAEAUImage@3@_K@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb108\",\"imported_name\":\"?push_back@?$BlVector@UImage@blink@@@common@blink@@QEAAXAEBUImage@3@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb110\",\"imported_name\":\"??1?$BlVector@UImage@blink@@@common@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb118\",\"imported_name\":\"??0?$BlVector@UImage@blink@@@common@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb120\",\"imported_name\":\"??0?$BlVector@UImage@blink@@@common@blink@@QEAA@_K@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb128\",\"imported_name\":\"??1?$BlMap@W4BlEyeState@@M@common@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb130\",\"imported_name\":\"??0?$BlMap@W4BlEyeState@@M@common@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb138\",\"imported_name\":\"?end@?$BlVector@I@common@blink@@QEAAPEAIXZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb140\",\"imported_name\":\"?begin@?$BlVector@I@common@blink@@QEAAPEAIXZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb148\",\"imported_name\":\"??A?$BlVector@I@common@blink@@QEAAAEAI_K@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb150\",\"imported_name\":\"?size@?$BlVector@I@common@blink@@QEBA_KXZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb158\",\"imported_name\":\"??1?$BlVector@I@common@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb160\",\"imported_name\":\"??0?$BlVector@I@common@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb168\",\"imported_name\":\"??A?$BlVector@M@common@blink@@QEAAAEAM_K@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb170\",\"imported_name\":\"??1?$BlVector@M@common@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb178\",\"imported_name\":\"??0?$BlVector@M@common@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb180\",\"imported_name\":\"??A?$BlVector@UBlPoint3d@@@common@blink@@QEAAAEAUBlPoint3d@@_K@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb188\",\"imported_name\":\"??1?$BlVector@UBlPoint3d@@@common@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb190\",\"imported_name\":\"??0?$BlVector@UBlPoint3d@@@common@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb198\",\"imported_name\":\"?at@?$BlVector@UBlPoint2d@@@common@blink@@QEAAAEAUBlPoint2d@@_K@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1a0\",\"imported_name\":\"??A?$BlVector@UBlPoint2d@@@common@blink@@QEAAAEAUBlPoint2d@@_K@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1a8\",\"imported_name\":\"?size@?$BlVector@UBlPoint2d@@@common@blink@@QEBA_KXZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1b0\",\"imported_name\":\"??1?$BlVector@UBlPoint2d@@@common@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1b8\",\"imported_name\":\"??0?$BlVector@UBlPoint2d@@@common@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1c0\",\"imported_name\":\"?get_eye_centers@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint2d@@@common@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1c8\",\"imported_name\":\"?get_landmarks@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@W4BlLandmarksType@@AEAV?$BlVector@UBlPoint2d@@@common@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1d0\",\"imported_name\":\"?get_face_bounding_box@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlBoundingBox@@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1d8\",\"imported_name\":\"?get_face_ids@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IW4BlImageFormat@@AEAV?$BlVector@I@common@2@@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1e0\",\"imported_name\":\"??1FaceDetectorData@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1e8\",\"imported_name\":\"??0FaceDetectorData@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1f0\",\"imported_name\":\"??0Image@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb1f8\",\"imported_name\":\"??1Landmarks3dDetectorConfig@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb200\",\"imported_name\":\"??0Landmarks3dDetectorConfig@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb208\",\"imported_name\":\"??1HeadPoseDetectorConfig@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb210\",\"imported_name\":\"??0HeadPoseDetectorConfig@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb218\",\"imported_name\":\"?get_max_num_of_faces@FaceDetectorConfig@blink@@QEBAIXZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb220\",\"imported_name\":\"?set_max_num_of_faces@FaceDetectorConfig@blink@@QEAAXI@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb228\",\"imported_name\":\"?get_detection_mode@FaceDetectorConfig@blink@@QEBA?AW4BlDetectionMode@@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb230\",\"imported_name\":\"?get_max_number_of_sources@FaceDetectorConfig@blink@@QEBAIXZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb238\",\"imported_name\":\"?set_max_number_of_sources@FaceDetectorConfig@blink@@QEAAXI@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb240\",\"imported_name\":\"??1FaceDetectorConfig@blink@@UEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb248\",\"imported_name\":\"??0FaceDetectorConfig@blink@@QEAA@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb250\",\"imported_name\":\"?status@BlException@exception@blink@@QEBA?AW4BlStatus@@XZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb258\",\"imported_name\":\"?what@BlException@exception@blink@@QEBAPEBDXZ\",\"module\":\"blink\"},{\"addr\":\"0x1401bb260\",\"imported_name\":\"?set_use_error_codes@BlinkContext@blink@@QEAAX_N@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb268\",\"imported_name\":\"?set_logger_file@BlinkContext@blink@@QEAA?AW4BlStatus@@PEBD@Z\",\"module\":\"blink\"},{\"addr\":\"0x1401bb270\",\"imported_name\":\"??0BlinkContext@blink@@QEAA@PEBD000@Z\",\"module\":\"blink\"}],\"next_offset\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "data": [
+            {
+              "addr": "0x1401bb068",
+              "imported_name": "??0FaceDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVFaceDetectorConfig@1@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb070",
+              "imported_name": "?get_head_pose@HeadPoseDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlHeadPose@@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb078",
+              "imported_name": "?estimate@HeadPoseDetector@blink@@QEAA?AW4BlStatus@@AEAVFaceDetectorData@2@AEAVHeadPoseDetectorData@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb080",
+              "imported_name": "?get_minimal_face_size@FaceDetector@blink@@QEBAIXZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb088",
+              "imported_name": "?estimate@FaceDetector@blink@@QEAA?AW4BlStatus@@AEAV?$BlVector@UImage@blink@@@common@2@AEAVFaceDetectorData@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb090",
+              "imported_name": "?start_tracking@FaceDetector@blink@@QEAA?AW4BlStatus@@II@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb098",
+              "imported_name": "?reset_tracking@FaceDetector@blink@@QEAA?AW4BlStatus@@I@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0a0",
+              "imported_name": "??0HeadPoseDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVHeadPoseDetectorConfig@1@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0a8",
+              "imported_name": "??0HeadPoseDetectorData@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0b0",
+              "imported_name": "??0BlinkDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVBlinkDetectorConfig@1@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0b8",
+              "imported_name": "?estimate@BlinkDetector@blink@@QEAA?AW4BlStatus@@AEAVFaceDetectorData@2@AEAVBlinkDetectorData@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0c0",
+              "imported_name": "?estimate@Landmarks3dDetector@blink@@QEAA?AW4BlStatus@@AEAVHeadPoseDetectorData@2@AEAVLandmarks3dDetectorData@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0c8",
+              "imported_name": "??0Landmarks3dDetector@blink@@QEAA@AEAVBlinkContext@1@AEBVLandmarks3dDetectorConfig@1@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0d0",
+              "imported_name": "?get_3d_eye_centers@Landmarks3dDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint3d@@@common@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0d8",
+              "imported_name": "??0Landmarks3dDetectorData@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0e0",
+              "imported_name": "?get_blink_probability@BlinkDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@M@common@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0e8",
+              "imported_name": "??0BlinkDetectorData@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0f0",
+              "imported_name": "??1BlinkDetectorConfig@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb0f8",
+              "imported_name": "??0BlinkDetectorConfig@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb100",
+              "imported_name": "?at@?$BlVector@UImage@blink@@@common@blink@@QEAAAEAUImage@3@_K@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb108",
+              "imported_name": "?push_back@?$BlVector@UImage@blink@@@common@blink@@QEAAXAEBUImage@3@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb110",
+              "imported_name": "??1?$BlVector@UImage@blink@@@common@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb118",
+              "imported_name": "??0?$BlVector@UImage@blink@@@common@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb120",
+              "imported_name": "??0?$BlVector@UImage@blink@@@common@blink@@QEAA@_K@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb128",
+              "imported_name": "??1?$BlMap@W4BlEyeState@@M@common@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb130",
+              "imported_name": "??0?$BlMap@W4BlEyeState@@M@common@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb138",
+              "imported_name": "?end@?$BlVector@I@common@blink@@QEAAPEAIXZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb140",
+              "imported_name": "?begin@?$BlVector@I@common@blink@@QEAAPEAIXZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb148",
+              "imported_name": "??A?$BlVector@I@common@blink@@QEAAAEAI_K@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb150",
+              "imported_name": "?size@?$BlVector@I@common@blink@@QEBA_KXZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb158",
+              "imported_name": "??1?$BlVector@I@common@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb160",
+              "imported_name": "??0?$BlVector@I@common@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb168",
+              "imported_name": "??A?$BlVector@M@common@blink@@QEAAAEAM_K@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb170",
+              "imported_name": "??1?$BlVector@M@common@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb178",
+              "imported_name": "??0?$BlVector@M@common@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb180",
+              "imported_name": "??A?$BlVector@UBlPoint3d@@@common@blink@@QEAAAEAUBlPoint3d@@_K@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb188",
+              "imported_name": "??1?$BlVector@UBlPoint3d@@@common@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb190",
+              "imported_name": "??0?$BlVector@UBlPoint3d@@@common@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb198",
+              "imported_name": "?at@?$BlVector@UBlPoint2d@@@common@blink@@QEAAAEAUBlPoint2d@@_K@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1a0",
+              "imported_name": "??A?$BlVector@UBlPoint2d@@@common@blink@@QEAAAEAUBlPoint2d@@_K@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1a8",
+              "imported_name": "?size@?$BlVector@UBlPoint2d@@@common@blink@@QEBA_KXZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1b0",
+              "imported_name": "??1?$BlVector@UBlPoint2d@@@common@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1b8",
+              "imported_name": "??0?$BlVector@UBlPoint2d@@@common@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1c0",
+              "imported_name": "?get_eye_centers@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAV?$BlVector@UBlPoint2d@@@common@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1c8",
+              "imported_name": "?get_landmarks@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@W4BlLandmarksType@@AEAV?$BlVector@UBlPoint2d@@@common@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1d0",
+              "imported_name": "?get_face_bounding_box@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IIW4BlImageFormat@@AEAUBlBoundingBox@@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1d8",
+              "imported_name": "?get_face_ids@FaceDetectorData@blink@@QEBA?AW4BlStatus@@IW4BlImageFormat@@AEAV?$BlVector@I@common@2@@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1e0",
+              "imported_name": "??1FaceDetectorData@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1e8",
+              "imported_name": "??0FaceDetectorData@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1f0",
+              "imported_name": "??0Image@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb1f8",
+              "imported_name": "??1Landmarks3dDetectorConfig@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb200",
+              "imported_name": "??0Landmarks3dDetectorConfig@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb208",
+              "imported_name": "??1HeadPoseDetectorConfig@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb210",
+              "imported_name": "??0HeadPoseDetectorConfig@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb218",
+              "imported_name": "?get_max_num_of_faces@FaceDetectorConfig@blink@@QEBAIXZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb220",
+              "imported_name": "?set_max_num_of_faces@FaceDetectorConfig@blink@@QEAAXI@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb228",
+              "imported_name": "?get_detection_mode@FaceDetectorConfig@blink@@QEBA?AW4BlDetectionMode@@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb230",
+              "imported_name": "?get_max_number_of_sources@FaceDetectorConfig@blink@@QEBAIXZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb238",
+              "imported_name": "?set_max_number_of_sources@FaceDetectorConfig@blink@@QEAAXI@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb240",
+              "imported_name": "??1FaceDetectorConfig@blink@@UEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb248",
+              "imported_name": "??0FaceDetectorConfig@blink@@QEAA@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb250",
+              "imported_name": "?status@BlException@exception@blink@@QEBA?AW4BlStatus@@XZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb258",
+              "imported_name": "?what@BlException@exception@blink@@QEBAPEBDXZ",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb260",
+              "imported_name": "?set_use_error_codes@BlinkContext@blink@@QEAAX_N@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb268",
+              "imported_name": "?set_logger_file@BlinkContext@blink@@QEAA?AW4BlStatus@@PEBD@Z",
+              "module": "blink"
+            },
+            {
+              "addr": "0x1401bb270",
+              "imported_name": "??0BlinkContext@blink@@QEAA@PEBD000@Z",
+              "module": "blink"
+            }
+          ],
+          "next_offset": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

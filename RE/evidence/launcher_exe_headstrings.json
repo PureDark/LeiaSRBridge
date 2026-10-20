@@ -1,0 +1,321 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":75,\"matches\":[{\"addr\":\"0x1400159a0\",\"string\":\"unknown exception\"},{\"addr\":\"0x1400159d8\",\"string\":\"bad array new length\"},{\"addr\":\"0x1400159f0\",\"string\":\"string too long\"},{\"addr\":\"0x140015a60\",\"string\":\"vector too long\"},{\"addr\":\"0x140015a70\",\"string\":\"\\\\flutter_assets\"},{\"addr\":\"0x140015a90\",\"string\":\"\\\\icudtl.dat\"},{\"addr\":\"0x140015aa8\",\"string\":\"\\\\app.so\"},{\"addr\":\"0x140015ae0\",\"string\":\"\\\\crashpad_handler.exe\"},{\"addr\":\"0x140015b10\",\"string\":\"client_extension.dll\"},{\"addr\":\"0x140015b30\",\"string\":\"CreateBuglyAgent\"},{\"addr\":\"0x140015b68\",\"string\":\"592fff8d79\"},{\"addr\":\"0x140015b80\",\"string\":\"c3a4d15c-b089-4963-b5e3-1a914a9cd227\"},{\"addr\":\"0x140015bd0\",\"string\":\"1.6.1.76\"},{\"addr\":\"0x140015be8\",\"string\":\"com.inlab.modex\"},{\"addr\":\"0x140015c08\",\"string\":\"modex\"},{\"addr\":\"0x140015c20\",\"string\":\"\\\\bugly_extra_handler.dll\"},{\"addr\":\"0x140015c60\",\"string\":\"Modex_pid\"},{\"addr\":\"0x140015c70\",\"string\":\"is_pop_dialog\"},{\"addr\":\"0x140015c80\",\"string\":\"FLUTTER_RUNNER_WIN32_WINDOW\"},{\"addr\":\"0x140015cb8\",\"string\":\"ModexLiteRunOnlyOneInstance\"},{\"addr\":\"0x140015d00\",\"string\":\"ModexLite\"},{\"addr\":\"0x140015d68\",\"string\":\"CONOUT$\"},{\"addr\":\"0x140015e10\",\"string\":\"GetTaskbarHeight: \"},{\"addr\":\"0x140015e24\",\"string\":\"DPI: \"},{\"addr\":\"0x140015e30\",\"string\":\", wndWidth: \"},{\"addr\":\"0x140015e40\",\"string\":\"wndHeight: \"},{\"addr\":\"0x140015e50\",\"string\":\"MDT_RAW_DPI: \"},{\"addr\":\"0x140015e60\",\"string\":\", uDpiX: \"},{\"addr\":\"0x140015e70\",\"string\":\"pDpiX: \"},{\"addr\":\"0x140015e90\",\"string\":\"Extracted directory path: \"},{\"addr\":\"0x140015ec8\",\"string\":\"Failed to get local time\"},{\"addr\":\"0x140015f10\",\"string\":\"%04d-%02d-%02d\"},{\"addr\":\"0x140015f20\",\"string\":\".main.log\"},{\"addr\":\"0x140015f30\",\"string\":\"Extracted directory path 2: \"},{\"addr\":\"0x140015f90\",\"string\":\"FLUTTER_RUNNER_WIN32_WINDOW\"},{\"addr\":\"0x140015fd0\",\"string\":\"Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Themes\\\\Personalize\"},{\"addr\":\"0x140016050\",\"string\":\"AppsUseLightTheme\"},{\"addr\":\"0x1400160a0\",\"string\":\"User32.dll\"},{\"addr\":\"0x1400160b0\",\"string\":\"EnableNonClientDpiScaling\"},{\"addr\":\"0x1400162f0\",\"string\":\"Cannot get plugin registrar on an engine that isn't running; call Run first.\"},{\"addr\":\"0x140016360\",\"string\":\"Failed to create view controller.\"},{\"addr\":\"0x140016388\",\"string\":\"dev.flutter/channel-buffers\"},{\"addr\":\"0x1400163a4\",\"string\":\"resize\"},{\"addr\":\"0x1400163b0\",\"string\":\"overflow\"},{\"addr\":\"0x1400163c0\",\"string\":\"map/set too long\"},{\"addr\":\"0x140016430\",\"string\":\"Error: Response can be set only once. Ignoring duplicate response.\"},{\"addr\":\"0x140016480\",\"string\":\"Warning: Failed to respond to a message. This is a memory leak.\"},{\"addr\":\"0x1400164c0\",\"string\":\" and it can be called exactly once. Ignoring duplicate result.\"},{\"addr\":\"0x140016500\",\"string\":\"Error: Only one of Success, Error, or NotImplemented can be called,\"},{\"addr\":\"0x140016548\",\"string\":\"Attempting to register unknown texture variant.\"},{\"addr\":\"0x140016628\",\"string\":\"bad variant access\"},{\"addr\":\"0x140016640\",\"string\":\"unknown\"},{\"addr\":\"0x140016670\",\"string\":\"Invalid read in StandardCodecByteStreamReader\"},{\"addr\":\"0x140016700\",\"string\":\"Custom types require codec extensions.\"},{\"addr\":\"0x140016728\",\"string\":\"Unhandled custom type in StandardCodecSerializer::WriteValue. \"},{\"addr\":\"0x140016768\",\"string\":\"Unknown type in StandardCodecSerializer::ReadValueOfType: \"},{\"addr\":\"0x1400167a8\",\"string\":\"Invalid method call; method name is not a string.\"},{\"addr\":\"0x1400167e0\",\"string\":\"GetDpiForWindow\"},{\"addr\":\"0x1400167f0\",\"string\":\"GetSystemMetricsForDpi\"},{\"addr\":\"0x140016808\",\"string\":\"FLUTTERVIEW\"},{\"addr\":\"0x140016820\",\"string\":\"BitsDojoWindow\"},{\"addr\":\"0x140016850\",\"string\":\"bitsdojo/window\"},{\"addr\":\"0x140016880\",\"string\":\"dragAppWindow\"},{\"addr\":\"0x1400168f8\",\"string\":\"Unable to construct method call from message on channel \"},{\"addr\":\"0x1400172e7\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x1400172f5\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x140017305\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x140017313\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x140017325\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x140017333\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x140017343\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x140017351\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x1400174d7\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x1400175d7\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"},{\"addr\":\"0x140017657\",\"string\":\"\\u0007\\b\\t\\n\\u000b\"}],\"cursor\":{\"next\":75}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 75,
+      "matches": [
+        {
+          "addr": "0x1400159a0",
+          "string": "unknown exception"
+        },
+        {
+          "addr": "0x1400159d8",
+          "string": "bad array new length"
+        },
+        {
+          "addr": "0x1400159f0",
+          "string": "string too long"
+        },
+        {
+          "addr": "0x140015a60",
+          "string": "vector too long"
+        },
+        {
+          "addr": "0x140015a70",
+          "string": "\\flutter_assets"
+        },
+        {
+          "addr": "0x140015a90",
+          "string": "\\icudtl.dat"
+        },
+        {
+          "addr": "0x140015aa8",
+          "string": "\\app.so"
+        },
+        {
+          "addr": "0x140015ae0",
+          "string": "\\crashpad_handler.exe"
+        },
+        {
+          "addr": "0x140015b10",
+          "string": "client_extension.dll"
+        },
+        {
+          "addr": "0x140015b30",
+          "string": "CreateBuglyAgent"
+        },
+        {
+          "addr": "0x140015b68",
+          "string": "592fff8d79"
+        },
+        {
+          "addr": "0x140015b80",
+          "string": "c3a4d15c-b089-4963-b5e3-1a914a9cd227"
+        },
+        {
+          "addr": "0x140015bd0",
+          "string": "1.6.1.76"
+        },
+        {
+          "addr": "0x140015be8",
+          "string": "com.inlab.modex"
+        },
+        {
+          "addr": "0x140015c08",
+          "string": "modex"
+        },
+        {
+          "addr": "0x140015c20",
+          "string": "\\bugly_extra_handler.dll"
+        },
+        {
+          "addr": "0x140015c60",
+          "string": "Modex_pid"
+        },
+        {
+          "addr": "0x140015c70",
+          "string": "is_pop_dialog"
+        },
+        {
+          "addr": "0x140015c80",
+          "string": "FLUTTER_RUNNER_WIN32_WINDOW"
+        },
+        {
+          "addr": "0x140015cb8",
+          "string": "ModexLiteRunOnlyOneInstance"
+        },
+        {
+          "addr": "0x140015d00",
+          "string": "ModexLite"
+        },
+        {
+          "addr": "0x140015d68",
+          "string": "CONOUT$"
+        },
+        {
+          "addr": "0x140015e10",
+          "string": "GetTaskbarHeight: "
+        },
+        {
+          "addr": "0x140015e24",
+          "string": "DPI: "
+        },
+        {
+          "addr": "0x140015e30",
+          "string": ", wndWidth: "
+        },
+        {
+          "addr": "0x140015e40",
+          "string": "wndHeight: "
+        },
+        {
+          "addr": "0x140015e50",
+          "string": "MDT_RAW_DPI: "
+        },
+        {
+          "addr": "0x140015e60",
+          "string": ", uDpiX: "
+        },
+        {
+          "addr": "0x140015e70",
+          "string": "pDpiX: "
+        },
+        {
+          "addr": "0x140015e90",
+          "string": "Extracted directory path: "
+        },
+        {
+          "addr": "0x140015ec8",
+          "string": "Failed to get local time"
+        },
+        {
+          "addr": "0x140015f10",
+          "string": "%04d-%02d-%02d"
+        },
+        {
+          "addr": "0x140015f20",
+          "string": ".main.log"
+        },
+        {
+          "addr": "0x140015f30",
+          "string": "Extracted directory path 2: "
+        },
+        {
+          "addr": "0x140015f90",
+          "string": "FLUTTER_RUNNER_WIN32_WINDOW"
+        },
+        {
+          "addr": "0x140015fd0",
+          "string": "Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize"
+        },
+        {
+          "addr": "0x140016050",
+          "string": "AppsUseLightTheme"
+        },
+        {
+          "addr": "0x1400160a0",
+          "string": "User32.dll"
+        },
+        {
+          "addr": "0x1400160b0",
+          "string": "EnableNonClientDpiScaling"
+        },
+        {
+          "addr": "0x1400162f0",
+          "string": "Cannot get plugin registrar on an engine that isn't running; call Run first."
+        },
+        {
+          "addr": "0x140016360",
+          "string": "Failed to create view controller."
+        },
+        {
+          "addr": "0x140016388",
+          "string": "dev.flutter/channel-buffers"
+        },
+        {
+          "addr": "0x1400163a4",
+          "string": "resize"
+        },
+        {
+          "addr": "0x1400163b0",
+          "string": "overflow"
+        },
+        {
+          "addr": "0x1400163c0",
+          "string": "map/set too long"
+        },
+        {
+          "addr": "0x140016430",
+          "string": "Error: Response can be set only once. Ignoring duplicate response."
+        },
+        {
+          "addr": "0x140016480",
+          "string": "Warning: Failed to respond to a message. This is a memory leak."
+        },
+        {
+          "addr": "0x1400164c0",
+          "string": " and it can be called exactly once. Ignoring duplicate result."
+        },
+        {
+          "addr": "0x140016500",
+          "string": "Error: Only one of Success, Error, or NotImplemented can be called,"
+        },
+        {
+          "addr": "0x140016548",
+          "string": "Attempting to register unknown texture variant."
+        },
+        {
+          "addr": "0x140016628",
+          "string": "bad variant access"
+        },
+        {
+          "addr": "0x140016640",
+          "string": "unknown"
+        },
+        {
+          "addr": "0x140016670",
+          "string": "Invalid read in StandardCodecByteStreamReader"
+        },
+        {
+          "addr": "0x140016700",
+          "string": "Custom types require codec extensions."
+        },
+        {
+          "addr": "0x140016728",
+          "string": "Unhandled custom type in StandardCodecSerializer::WriteValue. "
+        },
+        {
+          "addr": "0x140016768",
+          "string": "Unknown type in StandardCodecSerializer::ReadValueOfType: "
+        },
+        {
+          "addr": "0x1400167a8",
+          "string": "Invalid method call; method name is not a string."
+        },
+        {
+          "addr": "0x1400167e0",
+          "string": "GetDpiForWindow"
+        },
+        {
+          "addr": "0x1400167f0",
+          "string": "GetSystemMetricsForDpi"
+        },
+        {
+          "addr": "0x140016808",
+          "string": "FLUTTERVIEW"
+        },
+        {
+          "addr": "0x140016820",
+          "string": "BitsDojoWindow"
+        },
+        {
+          "addr": "0x140016850",
+          "string": "bitsdojo/window"
+        },
+        {
+          "addr": "0x140016880",
+          "string": "dragAppWindow"
+        },
+        {
+          "addr": "0x1400168f8",
+          "string": "Unable to construct method call from message on channel "
+        },
+        {
+          "addr": "0x1400172e7",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x1400172f5",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x140017305",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x140017313",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x140017325",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x140017333",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x140017343",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x140017351",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x1400174d7",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x1400175d7",
+          "string": "\u0007\b\t\n\u000b"
+        },
+        {
+          "addr": "0x140017657",
+          "string": "\u0007\b\t\n\u000b"
+        }
+      ],
+      "cursor": {
+        "next": 75
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

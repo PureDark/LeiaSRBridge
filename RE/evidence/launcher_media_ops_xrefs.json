@@ -1,0 +1,110 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x18001a6f8\",\"xrefs\":[{\"addr\":\"0x180004f2a\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180004eb0\",\"name\":\"sub_180004EB0\",\"size\":\"0x962\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x18001c268\",\"xrefs\":[{\"addr\":\"0x18000c708\",\"type\":\"data\",\"fn\":{\"addr\":\"0x18000c500\",\"name\":\"sub_18000C500\",\"size\":\"0x26c\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x18001c300\",\"xrefs\":[{\"addr\":\"0x18000bd68\",\"type\":\"data\",\"fn\":{\"addr\":\"0x18000b940\",\"name\":\"sub_18000B940\",\"size\":\"0x6fa\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"CreateMediaTranspose\",\"xrefs\":[{\"addr\":\"0x18000bd74\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18000b940\",\"name\":\"sub_18000B940\",\"size\":\"0x6fa\"}},{\"addr\":\"0x18000cfb5\",\"type\":\"code\",\"fn\":{\"addr\":\"0x18000ce20\",\"name\":\"sub_18000CE20\",\"size\":\"0x2d0\"}},{\"addr\":\"0x180022060\",\"type\":\"data\",\"fn\":null},{\"addr\":\"0x180022070\",\"type\":\"data\",\"fn\":null},{\"addr\":\"0x180024398\",\"type\":\"data\",\"fn\":null},{\"addr\":\"0x180028570\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":6}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x18001a6f8",
+          "xrefs": [
+            {
+              "addr": "0x180004f2a",
+              "type": "data",
+              "fn": {
+                "addr": "0x180004eb0",
+                "name": "sub_180004EB0",
+                "size": "0x962"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x18001c268",
+          "xrefs": [
+            {
+              "addr": "0x18000c708",
+              "type": "data",
+              "fn": {
+                "addr": "0x18000c500",
+                "name": "sub_18000C500",
+                "size": "0x26c"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x18001c300",
+          "xrefs": [
+            {
+              "addr": "0x18000bd68",
+              "type": "data",
+              "fn": {
+                "addr": "0x18000b940",
+                "name": "sub_18000B940",
+                "size": "0x6fa"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "CreateMediaTranspose",
+          "xrefs": [
+            {
+              "addr": "0x18000bd74",
+              "type": "code",
+              "fn": {
+                "addr": "0x18000b940",
+                "name": "sub_18000B940",
+                "size": "0x6fa"
+              }
+            },
+            {
+              "addr": "0x18000cfb5",
+              "type": "code",
+              "fn": {
+                "addr": "0x18000ce20",
+                "name": "sub_18000CE20",
+                "size": "0x2d0"
+              }
+            },
+            {
+              "addr": "0x180022060",
+              "type": "data",
+              "fn": null
+            },
+            {
+              "addr": "0x180022070",
+              "type": "data",
+              "fn": null
+            },
+            {
+              "addr": "0x180024398",
+              "type": "data",
+              "fn": null
+            },
+            {
+              "addr": "0x180028570",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 6
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

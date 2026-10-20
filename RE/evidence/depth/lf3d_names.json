@@ -1,0 +1,785 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"kind\":\"names\",\"data\":[{\"kind\":\"name\",\"addr\":\"0x180021be0\",\"name\":\"CreateDX11Render\",\"segment\":\".text\",\"is_function\":true,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180022500\",\"name\":\"CreateGLCoreRender\",\"segment\":\".text\",\"is_function\":true,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180022590\",\"name\":\"CreateGLESRender\",\"segment\":\".text\",\"is_function\":true,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180022620\",\"name\":\"LoadLicenseFromFile\",\"segment\":\".text\",\"is_function\":true,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800228d0\",\"name\":\"LoadLicenseFromBuffer\",\"segment\":\".text\",\"is_function\":true,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180022b50\",\"name\":\"DestorySimpleRenderInstance\",\"segment\":\".text\",\"is_function\":true,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180022b80\",\"name\":\"GetLensInfo\",\"segment\":\".text\",\"is_function\":true,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180023600\",\"name\":\"CreateSimpleRender\",\"segment\":\".text\",\"is_function\":true,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18007ef60\",\"name\":\"??_7RenderCore_D3D11@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18007ef90\",\"name\":\"??_7RenderCore_D3D11_2dz@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18007efc0\",\"name\":\"??_7RenderCore_D3D11_Compensation156@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18007eff0\",\"name\":\"??_7RenderCore_D3D11_Compensation650@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18007f420\",\"name\":\"??_7RenderCore_OpenGLCoreES@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18007f468\",\"name\":\"??_7RenderCore_OpenGLCoreES_2dz@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180080a90\",\"name\":\"??_7RenderCore_OpenGLCoreES_Compensation650@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180080c28\",\"name\":\"aLensParam\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180080c60\",\"name\":\"aLensInfo\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180080ce8\",\"name\":\"aLensSize\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180084bc8\",\"name\":\"??_7ILF3DBaseRender@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180084c68\",\"name\":\"??_7LF3DDX11Render@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180084d08\",\"name\":\"??_7LF3DGLRender@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180084db8\",\"name\":\"??_7LF3DRenderCoreAPI@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180084de8\",\"name\":\"??_7LF3DRenderCoreAPI_D3D11@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180084e18\",\"name\":\"??_7LF3DRenderCoreAPI_OpenGLCoreES@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180084e48\",\"name\":\"??_7LF3DSimpleRender@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085ec0\",\"name\":\"??_R1A@?0A@EA@RenderCore_D3D11@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085ee8\",\"name\":\"??_R3RenderCore_D3D11@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085f00\",\"name\":\"??_R2RenderCore_D3D11@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085f10\",\"name\":\"??_R4RenderCore_D3D11@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085f38\",\"name\":\"??_R4RenderCore_D3D11_2dz@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085f60\",\"name\":\"??_R3RenderCore_D3D11_2dz@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085f78\",\"name\":\"??_R1A@?0A@EA@RenderCore_D3D11_2dz@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085fa0\",\"name\":\"??_R2RenderCore_D3D11_2dz@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085fb8\",\"name\":\"??_R4RenderCore_D3D11_Compensation156@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085fe0\",\"name\":\"??_R2RenderCore_D3D11_Compensation156@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180085ff8\",\"name\":\"??_R3RenderCore_D3D11_Compensation156@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086010\",\"name\":\"??_R1A@?0A@EA@RenderCore_D3D11_Compensation156@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086038\",\"name\":\"??_R3RenderCore_D3D11_Compensation650@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086050\",\"name\":\"??_R4RenderCore_D3D11_Compensation650@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086078\",\"name\":\"??_R2RenderCore_D3D11_Compensation650@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086090\",\"name\":\"??_R1A@?0A@EA@RenderCore_D3D11_Compensation650@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800860b8\",\"name\":\"??_R3RenderCore_OpenGLCoreES@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800860d0\",\"name\":\"??_R4RenderCore_OpenGLCoreES@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800860f8\",\"name\":\"??_R2RenderCore_OpenGLCoreES@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086108\",\"name\":\"??_R1A@?0A@EA@RenderCore_OpenGLCoreES@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086130\",\"name\":\"??_R4RenderCore_OpenGLCoreES_2dz@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086158\",\"name\":\"??_R2RenderCore_OpenGLCoreES_2dz@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086170\",\"name\":\"??_R1A@?0A@EA@RenderCore_OpenGLCoreES_2dz@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086198\",\"name\":\"??_R3RenderCore_OpenGLCoreES_2dz@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800861b0\",\"name\":\"??_R2RenderCore_OpenGLCoreES_Compensation650@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800861c8\",\"name\":\"??_R4RenderCore_OpenGLCoreES_Compensation650@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800861f0\",\"name\":\"??_R3RenderCore_OpenGLCoreES_Compensation650@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180086208\",\"name\":\"??_R1A@?0A@EA@RenderCore_OpenGLCoreES_Compensation650@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087170\",\"name\":\"??_R3LF3DDX11Render@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087188\",\"name\":\"??_R3ILF3DBaseRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800871a0\",\"name\":\"??_R1A@?0A@EA@LF3DDX11Render@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800871c8\",\"name\":\"??_R2ILF3DBaseRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800871d8\",\"name\":\"??_R4ILF3DBaseRender@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087200\",\"name\":\"??_R4LF3DDX11Render@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087228\",\"name\":\"??_R2LF3DDX11Render@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087240\",\"name\":\"??_R1A@?0A@EA@ILF3DBaseRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087268\",\"name\":\"??_R3LF3DGLRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087280\",\"name\":\"??_R4LF3DGLRender@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800872a8\",\"name\":\"??_R2LF3DGLRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800872c0\",\"name\":\"??_R1A@?0A@EA@LF3DGLRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800872e8\",\"name\":\"??_R3LF3DRenderCoreAPI_D3D11@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087300\",\"name\":\"??_R2LF3DRenderCoreAPI@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087310\",\"name\":\"??_R1A@?0A@EA@LF3DRenderCoreAPI_D3D11@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087338\",\"name\":\"??_R2LF3DRenderCoreAPI_D3D11@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087350\",\"name\":\"??_R4LF3DRenderCoreAPI_D3D11@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087378\",\"name\":\"??_R4LF3DRenderCoreAPI@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800873a0\",\"name\":\"??_R3LF3DRenderCoreAPI@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800873b8\",\"name\":\"??_R1A@?0A@EA@LF3DRenderCoreAPI@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800873e0\",\"name\":\"??_R4LF3DRenderCoreAPI_OpenGLCoreES@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087408\",\"name\":\"??_R2LF3DRenderCoreAPI_OpenGLCoreES@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087420\",\"name\":\"??_R3LF3DRenderCoreAPI_OpenGLCoreES@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087438\",\"name\":\"??_R1A@?0A@EA@LF3DRenderCoreAPI_OpenGLCoreES@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087460\",\"name\":\"??_R2LF3DSimpleRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x180087478\",\"name\":\"??_R1A@?0A@EA@LF3DSimpleRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800874a0\",\"name\":\"??_R4LF3DSimpleRender@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1800874c8\",\"name\":\"??_R3LF3DSimpleRender@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008ef50\",\"name\":\"??_R0?AVRenderCore_D3D11@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008ef78\",\"name\":\"??_R0?AVRenderCore_D3D11_2dz@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008efa8\",\"name\":\"??_R0?AVRenderCore_D3D11_Compensation156@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008efe0\",\"name\":\"??_R0?AVRenderCore_D3D11_Compensation650@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f018\",\"name\":\"??_R0?AVRenderCore_OpenGLCoreES@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f048\",\"name\":\"??_R0?AVRenderCore_OpenGLCoreES_2dz@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f080\",\"name\":\"??_R0?AVRenderCore_OpenGLCoreES_Compensation650@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f5b8\",\"name\":\"??_R0?AVILF3DBaseRender@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f5e0\",\"name\":\"??_R0?AVLF3DDX11Render@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f608\",\"name\":\"??_R0?AVLF3DGLRender@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f630\",\"name\":\"??_R0?AVLF3DRenderCoreAPI_D3D11@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f660\",\"name\":\"??_R0?AVLF3DRenderCoreAPI@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f688\",\"name\":\"??_R0?AVLF3DRenderCoreAPI_OpenGLCoreES@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18008f6c0\",\"name\":\"??_R0?AVLF3DSimpleRender@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false}],\"next_offset\":null,\"total\":95,\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "kind": "names",
+          "data": [
+            {
+              "kind": "name",
+              "addr": "0x180021be0",
+              "name": "CreateDX11Render",
+              "segment": ".text",
+              "is_function": true,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180022500",
+              "name": "CreateGLCoreRender",
+              "segment": ".text",
+              "is_function": true,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180022590",
+              "name": "CreateGLESRender",
+              "segment": ".text",
+              "is_function": true,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180022620",
+              "name": "LoadLicenseFromFile",
+              "segment": ".text",
+              "is_function": true,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800228d0",
+              "name": "LoadLicenseFromBuffer",
+              "segment": ".text",
+              "is_function": true,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180022b50",
+              "name": "DestorySimpleRenderInstance",
+              "segment": ".text",
+              "is_function": true,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180022b80",
+              "name": "GetLensInfo",
+              "segment": ".text",
+              "is_function": true,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180023600",
+              "name": "CreateSimpleRender",
+              "segment": ".text",
+              "is_function": true,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18007ef60",
+              "name": "??_7RenderCore_D3D11@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18007ef90",
+              "name": "??_7RenderCore_D3D11_2dz@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18007efc0",
+              "name": "??_7RenderCore_D3D11_Compensation156@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18007eff0",
+              "name": "??_7RenderCore_D3D11_Compensation650@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18007f420",
+              "name": "??_7RenderCore_OpenGLCoreES@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18007f468",
+              "name": "??_7RenderCore_OpenGLCoreES_2dz@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180080a90",
+              "name": "??_7RenderCore_OpenGLCoreES_Compensation650@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180080c28",
+              "name": "aLensParam",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180080c60",
+              "name": "aLensInfo",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180080ce8",
+              "name": "aLensSize",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180084bc8",
+              "name": "??_7ILF3DBaseRender@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180084c68",
+              "name": "??_7LF3DDX11Render@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180084d08",
+              "name": "??_7LF3DGLRender@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180084db8",
+              "name": "??_7LF3DRenderCoreAPI@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180084de8",
+              "name": "??_7LF3DRenderCoreAPI_D3D11@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180084e18",
+              "name": "??_7LF3DRenderCoreAPI_OpenGLCoreES@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180084e48",
+              "name": "??_7LF3DSimpleRender@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085ec0",
+              "name": "??_R1A@?0A@EA@RenderCore_D3D11@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085ee8",
+              "name": "??_R3RenderCore_D3D11@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085f00",
+              "name": "??_R2RenderCore_D3D11@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085f10",
+              "name": "??_R4RenderCore_D3D11@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085f38",
+              "name": "??_R4RenderCore_D3D11_2dz@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085f60",
+              "name": "??_R3RenderCore_D3D11_2dz@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085f78",
+              "name": "??_R1A@?0A@EA@RenderCore_D3D11_2dz@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085fa0",
+              "name": "??_R2RenderCore_D3D11_2dz@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085fb8",
+              "name": "??_R4RenderCore_D3D11_Compensation156@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085fe0",
+              "name": "??_R2RenderCore_D3D11_Compensation156@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180085ff8",
+              "name": "??_R3RenderCore_D3D11_Compensation156@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086010",
+              "name": "??_R1A@?0A@EA@RenderCore_D3D11_Compensation156@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086038",
+              "name": "??_R3RenderCore_D3D11_Compensation650@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086050",
+              "name": "??_R4RenderCore_D3D11_Compensation650@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086078",
+              "name": "??_R2RenderCore_D3D11_Compensation650@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086090",
+              "name": "??_R1A@?0A@EA@RenderCore_D3D11_Compensation650@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800860b8",
+              "name": "??_R3RenderCore_OpenGLCoreES@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800860d0",
+              "name": "??_R4RenderCore_OpenGLCoreES@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800860f8",
+              "name": "??_R2RenderCore_OpenGLCoreES@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086108",
+              "name": "??_R1A@?0A@EA@RenderCore_OpenGLCoreES@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086130",
+              "name": "??_R4RenderCore_OpenGLCoreES_2dz@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086158",
+              "name": "??_R2RenderCore_OpenGLCoreES_2dz@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086170",
+              "name": "??_R1A@?0A@EA@RenderCore_OpenGLCoreES_2dz@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086198",
+              "name": "??_R3RenderCore_OpenGLCoreES_2dz@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800861b0",
+              "name": "??_R2RenderCore_OpenGLCoreES_Compensation650@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800861c8",
+              "name": "??_R4RenderCore_OpenGLCoreES_Compensation650@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800861f0",
+              "name": "??_R3RenderCore_OpenGLCoreES_Compensation650@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180086208",
+              "name": "??_R1A@?0A@EA@RenderCore_OpenGLCoreES_Compensation650@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087170",
+              "name": "??_R3LF3DDX11Render@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087188",
+              "name": "??_R3ILF3DBaseRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800871a0",
+              "name": "??_R1A@?0A@EA@LF3DDX11Render@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800871c8",
+              "name": "??_R2ILF3DBaseRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800871d8",
+              "name": "??_R4ILF3DBaseRender@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087200",
+              "name": "??_R4LF3DDX11Render@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087228",
+              "name": "??_R2LF3DDX11Render@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087240",
+              "name": "??_R1A@?0A@EA@ILF3DBaseRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087268",
+              "name": "??_R3LF3DGLRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087280",
+              "name": "??_R4LF3DGLRender@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800872a8",
+              "name": "??_R2LF3DGLRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800872c0",
+              "name": "??_R1A@?0A@EA@LF3DGLRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800872e8",
+              "name": "??_R3LF3DRenderCoreAPI_D3D11@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087300",
+              "name": "??_R2LF3DRenderCoreAPI@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087310",
+              "name": "??_R1A@?0A@EA@LF3DRenderCoreAPI_D3D11@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087338",
+              "name": "??_R2LF3DRenderCoreAPI_D3D11@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087350",
+              "name": "??_R4LF3DRenderCoreAPI_D3D11@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087378",
+              "name": "??_R4LF3DRenderCoreAPI@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800873a0",
+              "name": "??_R3LF3DRenderCoreAPI@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800873b8",
+              "name": "??_R1A@?0A@EA@LF3DRenderCoreAPI@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800873e0",
+              "name": "??_R4LF3DRenderCoreAPI_OpenGLCoreES@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087408",
+              "name": "??_R2LF3DRenderCoreAPI_OpenGLCoreES@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087420",
+              "name": "??_R3LF3DRenderCoreAPI_OpenGLCoreES@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087438",
+              "name": "??_R1A@?0A@EA@LF3DRenderCoreAPI_OpenGLCoreES@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087460",
+              "name": "??_R2LF3DSimpleRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x180087478",
+              "name": "??_R1A@?0A@EA@LF3DSimpleRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800874a0",
+              "name": "??_R4LF3DSimpleRender@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1800874c8",
+              "name": "??_R3LF3DSimpleRender@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008ef50",
+              "name": "??_R0?AVRenderCore_D3D11@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008ef78",
+              "name": "??_R0?AVRenderCore_D3D11_2dz@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008efa8",
+              "name": "??_R0?AVRenderCore_D3D11_Compensation156@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008efe0",
+              "name": "??_R0?AVRenderCore_D3D11_Compensation650@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f018",
+              "name": "??_R0?AVRenderCore_OpenGLCoreES@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f048",
+              "name": "??_R0?AVRenderCore_OpenGLCoreES_2dz@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f080",
+              "name": "??_R0?AVRenderCore_OpenGLCoreES_Compensation650@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f5b8",
+              "name": "??_R0?AVILF3DBaseRender@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f5e0",
+              "name": "??_R0?AVLF3DDX11Render@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f608",
+              "name": "??_R0?AVLF3DGLRender@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f630",
+              "name": "??_R0?AVLF3DRenderCoreAPI_D3D11@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f660",
+              "name": "??_R0?AVLF3DRenderCoreAPI@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f688",
+              "name": "??_R0?AVLF3DRenderCoreAPI_OpenGLCoreES@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18008f6c0",
+              "name": "??_R0?AVLF3DSimpleRender@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            }
+          ],
+          "next_offset": null,
+          "total": 95,
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

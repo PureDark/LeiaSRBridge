@@ -1,0 +1,235 @@
+{
+  "native": {
+    "path": "F:\\\u76ee\u6807\u8f6f\u4ef6\\ModexLite\\RE\\inputs\\depth\\LF3DRenderCore.dll",
+    "base": "0x180000000",
+    "clr_rva": "0x0",
+    "exports": [
+      {
+        "name": "CreateDX11Render",
+        "ordinal": 1,
+        "va": "0x180021be0"
+      },
+      {
+        "name": "CreateGLCoreRender",
+        "ordinal": 2,
+        "va": "0x180022500"
+      },
+      {
+        "name": "CreateGLESRender",
+        "ordinal": 3,
+        "va": "0x180022590"
+      },
+      {
+        "name": "CreateSimpleRender",
+        "ordinal": 4,
+        "va": "0x180023600"
+      },
+      {
+        "name": "DestorySimpleRenderInstance",
+        "ordinal": 5,
+        "va": "0x180022b50"
+      },
+      {
+        "name": "GetLensInfo",
+        "ordinal": 6,
+        "va": "0x180022b80"
+      },
+      {
+        "name": "LoadLicenseFromBuffer",
+        "ordinal": 7,
+        "va": "0x1800228d0"
+      },
+      {
+        "name": "LoadLicenseFromFile",
+        "ordinal": 8,
+        "va": "0x180022620"
+      },
+      {
+        "name": "VersionNumber",
+        "ordinal": 9,
+        "va": "0x180022610"
+      }
+    ],
+    "vtables": {
+      "LF3DDX11Render": [
+        {
+          "slot": 0,
+          "va": "0x180021460"
+        },
+        {
+          "slot": 1,
+          "va": "0x180021530"
+        },
+        {
+          "slot": 2,
+          "va": "0x1800215b0"
+        },
+        {
+          "slot": 3,
+          "va": "0x180021660"
+        },
+        {
+          "slot": 4,
+          "va": "0x1800218a0"
+        },
+        {
+          "slot": 5,
+          "va": "0x1800218d0"
+        },
+        {
+          "slot": 6,
+          "va": "0x180021940"
+        },
+        {
+          "slot": 7,
+          "va": "0x180021950"
+        },
+        {
+          "slot": 8,
+          "va": "0x1800219b0"
+        },
+        {
+          "slot": 9,
+          "va": "0x1800219e0"
+        },
+        {
+          "slot": 10,
+          "va": "0x18000cb00"
+        },
+        {
+          "slot": 11,
+          "va": "0x18000cb00"
+        },
+        {
+          "slot": 12,
+          "va": "0x18000cb00"
+        },
+        {
+          "slot": 13,
+          "va": "0x1800219f0"
+        },
+        {
+          "slot": 14,
+          "va": "0x1800219f0"
+        },
+        {
+          "slot": 15,
+          "va": "0x180021a00"
+        },
+        {
+          "slot": 16,
+          "va": "0x180021a10"
+        },
+        {
+          "slot": 17,
+          "va": "0x180021a30"
+        },
+        {
+          "slot": 18,
+          "va": "0x180021b40"
+        }
+      ],
+      "LF3DSimpleRender": [
+        {
+          "slot": 0,
+          "va": "0x180023410"
+        },
+        {
+          "slot": 1,
+          "va": "0x1800234c0"
+        },
+        {
+          "slot": 2,
+          "va": "0x1800234d0"
+        },
+        {
+          "slot": 3,
+          "va": "0x1800234f0"
+        },
+        {
+          "slot": 4,
+          "va": "0x1800218a0"
+        },
+        {
+          "slot": 5,
+          "va": "0x1800218d0"
+        },
+        {
+          "slot": 6,
+          "va": "0x180021940"
+        },
+        {
+          "slot": 7,
+          "va": "0x180021950"
+        },
+        {
+          "slot": 8,
+          "va": "0x1800219b0"
+        },
+        {
+          "slot": 9,
+          "va": "0x1800219e0"
+        },
+        {
+          "slot": 10,
+          "va": "0x18000cb00"
+        },
+        {
+          "slot": 11,
+          "va": "0x18000cb00"
+        }
+      ],
+      "RenderCore_D3D11": [
+        {
+          "slot": 0,
+          "va": "0x180005e40"
+        },
+        {
+          "slot": 1,
+          "va": "0x1800063b0"
+        },
+        {
+          "slot": 2,
+          "va": "0x1800063c0"
+        },
+        {
+          "slot": 3,
+          "va": "0x180006400"
+        },
+        {
+          "slot": 4,
+          "va": "0x180006430"
+        }
+      ],
+      "LF3DRenderCoreAPI_D3D11": [
+        {
+          "slot": 0,
+          "va": "0x180022cf0"
+        },
+        {
+          "slot": 1,
+          "va": "0x180022da0"
+        },
+        {
+          "slot": 2,
+          "va": "0x180022e20"
+        },
+        {
+          "slot": 3,
+          "va": "0x1800215b0"
+        },
+        {
+          "slot": 4,
+          "va": "0x180022f30"
+        }
+      ]
+    }
+  },
+  "wrapper": {
+    "path": "F:\\\u76ee\u6807\u8f6f\u4ef6\\ModexLite\\RE\\inputs\\depth\\LF3DRenderCoreForCSharp.dll",
+    "base": "0x180000000",
+    "clr_rva": "0x5250",
+    "exports": [],
+    "vtables": {}
+  }
+}

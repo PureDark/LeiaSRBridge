@@ -1,0 +1,43 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180006BF0\",\"code\":\"__int64 __fastcall sub_180006BF0(__int64 a1, float a2, float a3, float a4, int a5, int a6, int a7)\\n{\\n  dword_18001600C = a5; /*0x180006bf8*/\\n  dword_180016000 = LODWORD(a2); /*0x180006c06*/\\n  dword_180016014 = a7; /*0x180006c14*/\\n  dword_180016004 = LODWORD(a3); /*0x180006c1c*/\\n  dword_180016008 = LODWORD(a4); /*0x180006c24*/\\n  dword_180016010 = a6; /*0x180006c2c*/\\n  return 0; /*0x180006c34*/\\n}\",\"refs\":[{\"addr\":\"0x18001600c\",\"name\":\"dword_18001600C\"},{\"addr\":\"0x180016000\",\"name\":\"dword_180016000\"},{\"addr\":\"0x180016014\",\"name\":\"dword_180016014\"},{\"addr\":\"0x180016004\",\"name\":\"dword_180016004\"},{\"addr\":\"0x180016008\",\"name\":\"dword_180016008\"},{\"addr\":\"0x180016010\",\"name\":\"dword_180016010\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180006BF0",
+      "code": "__int64 __fastcall sub_180006BF0(__int64 a1, float a2, float a3, float a4, int a5, int a6, int a7)\n{\n  dword_18001600C = a5; /*0x180006bf8*/\n  dword_180016000 = LODWORD(a2); /*0x180006c06*/\n  dword_180016014 = a7; /*0x180006c14*/\n  dword_180016004 = LODWORD(a3); /*0x180006c1c*/\n  dword_180016008 = LODWORD(a4); /*0x180006c24*/\n  dword_180016010 = a6; /*0x180006c2c*/\n  return 0; /*0x180006c34*/\n}",
+      "refs": [
+        {
+          "addr": "0x18001600c",
+          "name": "dword_18001600C"
+        },
+        {
+          "addr": "0x180016000",
+          "name": "dword_180016000"
+        },
+        {
+          "addr": "0x180016014",
+          "name": "dword_180016014"
+        },
+        {
+          "addr": "0x180016004",
+          "name": "dword_180016004"
+        },
+        {
+          "addr": "0x180016008",
+          "name": "dword_180016008"
+        },
+        {
+          "addr": "0x180016010",
+          "name": "dword_180016010"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

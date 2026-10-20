@@ -1,0 +1,2 @@
+I20261020 23:32:52.555434 24976 logging.cpp:159] Fully connected SR device "Device" (monitor: 811160121, fpc: VN022519ET0014), first connected at time: 2 days, 08:21:00.951
+I20261020 23:32:52.556434 24976 logging.cpp:159] Pushed DeviceConnectedAndReady event

@@ -1,0 +1,22 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x18001aa40\",\"ty\":\"u64le\",\"value\":6442478096}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x18001aa40",
+          "ty": "u64le",
+          "value": 6442478096
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,72 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"input\":\"6442478016\",\"result\":{\"decimal\":\"6442478016\",\"hexadecimal\":\"0x1800069c0\",\"bytes\":\"c0 69 00 80 01\",\"ascii\":null,\"binary\":\"0b110000000000000000110100111000000\"},\"error\":null},{\"input\":\"6442478064\",\"result\":{\"decimal\":\"6442478064\",\"hexadecimal\":\"0x1800069f0\",\"bytes\":\"f0 69 00 80 01\",\"ascii\":null,\"binary\":\"0b110000000000000000110100111110000\"},\"error\":null},{\"input\":\"6442478128\",\"result\":{\"decimal\":\"6442478128\",\"hexadecimal\":\"0x180006a30\",\"bytes\":\"30 6a 00 80 01\",\"ascii\":null,\"binary\":\"0b110000000000000000110101000110000\"},\"error\":null},{\"input\":\"6442478192\",\"result\":{\"decimal\":\"6442478192\",\"hexadecimal\":\"0x180006a70\",\"bytes\":\"70 6a 00 80 01\",\"ascii\":null,\"binary\":\"0b110000000000000000110101001110000\"},\"error\":null},{\"input\":\"6442478160\",\"result\":{\"decimal\":\"6442478160\",\"hexadecimal\":\"0x180006a50\",\"bytes\":\"50 6a 00 80 01\",\"ascii\":null,\"binary\":\"0b110000000000000000110101001010000\"},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "input": "6442478016",
+          "result": {
+            "decimal": "6442478016",
+            "hexadecimal": "0x1800069c0",
+            "bytes": "c0 69 00 80 01",
+            "ascii": null,
+            "binary": "0b110000000000000000110100111000000"
+          },
+          "error": null
+        },
+        {
+          "input": "6442478064",
+          "result": {
+            "decimal": "6442478064",
+            "hexadecimal": "0x1800069f0",
+            "bytes": "f0 69 00 80 01",
+            "ascii": null,
+            "binary": "0b110000000000000000110100111110000"
+          },
+          "error": null
+        },
+        {
+          "input": "6442478128",
+          "result": {
+            "decimal": "6442478128",
+            "hexadecimal": "0x180006a30",
+            "bytes": "30 6a 00 80 01",
+            "ascii": null,
+            "binary": "0b110000000000000000110101000110000"
+          },
+          "error": null
+        },
+        {
+          "input": "6442478192",
+          "result": {
+            "decimal": "6442478192",
+            "hexadecimal": "0x180006a70",
+            "bytes": "70 6a 00 80 01",
+            "ascii": null,
+            "binary": "0b110000000000000000110101001110000"
+          },
+          "error": null
+        },
+        {
+          "input": "6442478160",
+          "result": {
+            "decimal": "6442478160",
+            "hexadecimal": "0x180006a50",
+            "bytes": "50 6a 00 80 01",
+            "ascii": null,
+            "binary": "0b110000000000000000110101001010000"
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180017210\",\"code\":\"__int64 __fastcall sub_180017210(__int64 a1, char *a2, int a3)\\n{\\n  unsigned int v4; // [rsp+20h] [rbp-38h]\\n  char v5; // [rsp+38h] [rbp-20h] BYREF\\n  char v6; // [rsp+39h] [rbp-1Fh]\\n  char v7; // [rsp+3Ah] [rbp-1Eh]\\n  char v8; // [rsp+3Bh] [rbp-1Dh]\\n  char v9; // [rsp+3Ch] [rbp-1Ch]\\n  char v10; // [rsp+3Dh] [rbp-1Bh]\\n  char v11; // [rsp+3Eh] [rbp-1Ah]\\n  char v12; // [rsp+3Fh] [rbp-19h]\\n  char v13; // [rsp+40h] [rbp-18h]\\n\\n  if ( *(_DWORD *)(a1 + 4) != 1 || *a2 == 9 || a2[1] == 13 ) /*0x180017271*/\\n  {\\n    v5 = 1; /*0x180017280*/\\n    v6 = a3 + 1; /*0x180017294*/\\n    v7 = 0; /*0x1800172ba*/\\n    v8 = *a2; /*0x1800172da*/\\n    v9 = a2[1]; /*0x1800172f9*/\\n    if ( a3 <= 2 ) /*0x180017302*/\\n    {\\n      v10 = v9 ^ v8 ^ v7 ^ v6 ^ v5; /*0x1800173eb*/\\n    }\\n    else\\n    {\\n      v10 = a2[2]; /*0x180017323*/\\n      v11 = v10 ^ v9 ^ v8 ^ v7 ^ v6 ^ v5; /*0x18001738e*/\\n    }\\n    v4 = a3 + 4; /*0x1800173f6*/\\n  }\\n  else\\n  {\\n    v5 = -15; /*0x180017408*/\\n    v6 = a3 + 3; /*0x18001741d*/\\n    v7 = 0; /*0x180017443*/\\n    v8 = *a2; /*0x180017463*/\\n    v9 = *(_BYTE *)(a1 + 8); /*0x180017479*/\\n    v10 = a2[1]; /*0x180017498*/\\n    if ( a3 <= 2 ) /*0x1800174a1*/\\n    {\\n      v11 = v10 ^ v9 ^ v8 ^ v7 ^ v6 ^ v5; /*0x1800175b8*/\\n      v12 = -2; /*0x1800175c5*/\\n    }\\n    else\\n    {\\n      v11 = a2[2]; /*0x1800174c2*/\\n      v12 = v11 ^ v10 ^ v9 ^ v8 ^ v7 ^ v6 ^ v5; /*0x18001753d*/\\n      v13 = -2; /*0x18001754a*/\\n    }\\n    v4 = a3 + 6; /*0x1800175d1*/\\n  }\\n  sub_180017600(a1, a2: &v5, a3: v4); /*0x1800175e4*/\\n  return 1; /*0x1800175ee*/\\n}\",\"refs\":[{\"addr\":\"0x180017600\",\"name\":\"sub_180017600\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180017210",
+      "code": "__int64 __fastcall sub_180017210(__int64 a1, char *a2, int a3)\n{\n  unsigned int v4; // [rsp+20h] [rbp-38h]\n  char v5; // [rsp+38h] [rbp-20h] BYREF\n  char v6; // [rsp+39h] [rbp-1Fh]\n  char v7; // [rsp+3Ah] [rbp-1Eh]\n  char v8; // [rsp+3Bh] [rbp-1Dh]\n  char v9; // [rsp+3Ch] [rbp-1Ch]\n  char v10; // [rsp+3Dh] [rbp-1Bh]\n  char v11; // [rsp+3Eh] [rbp-1Ah]\n  char v12; // [rsp+3Fh] [rbp-19h]\n  char v13; // [rsp+40h] [rbp-18h]\n\n  if ( *(_DWORD *)(a1 + 4) != 1 || *a2 == 9 || a2[1] == 13 ) /*0x180017271*/\n  {\n    v5 = 1; /*0x180017280*/\n    v6 = a3 + 1; /*0x180017294*/\n    v7 = 0; /*0x1800172ba*/\n    v8 = *a2; /*0x1800172da*/\n    v9 = a2[1]; /*0x1800172f9*/\n    if ( a3 <= 2 ) /*0x180017302*/\n    {\n      v10 = v9 ^ v8 ^ v7 ^ v6 ^ v5; /*0x1800173eb*/\n    }\n    else\n    {\n      v10 = a2[2]; /*0x180017323*/\n      v11 = v10 ^ v9 ^ v8 ^ v7 ^ v6 ^ v5; /*0x18001738e*/\n    }\n    v4 = a3 + 4; /*0x1800173f6*/\n  }\n  else\n  {\n    v5 = -15; /*0x180017408*/\n    v6 = a3 + 3; /*0x18001741d*/\n    v7 = 0; /*0x180017443*/\n    v8 = *a2; /*0x180017463*/\n    v9 = *(_BYTE *)(a1 + 8); /*0x180017479*/\n    v10 = a2[1]; /*0x180017498*/\n    if ( a3 <= 2 ) /*0x1800174a1*/\n    {\n      v11 = v10 ^ v9 ^ v8 ^ v7 ^ v6 ^ v5; /*0x1800175b8*/\n      v12 = -2; /*0x1800175c5*/\n    }\n    else\n    {\n      v11 = a2[2]; /*0x1800174c2*/\n      v12 = v11 ^ v10 ^ v9 ^ v8 ^ v7 ^ v6 ^ v5; /*0x18001753d*/\n      v13 = -2; /*0x18001754a*/\n    }\n    v4 = a3 + 6; /*0x1800175d1*/\n  }\n  sub_180017600(a1, a2: &v5, a3: v4); /*0x1800175e4*/\n  return 1; /*0x1800175ee*/\n}",
+      "refs": [
+        {
+          "addr": "0x180017600",
+          "name": "sub_180017600"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

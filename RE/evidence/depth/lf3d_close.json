@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"lf3d\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: LF3DRenderCore.dll (lf3d)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "lf3d",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: LF3DRenderCore.dll (lf3d)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,39 @@
+Test project F:/目标软件/ModexLite/TitanLeiaBridge/build
+    Start 1: PortableTracking
+1/1 Test #1: PortableTracking .................***Failed    0.28 sec
+write shared position without camera: HRESULT=8002000E
+FAIL: write shared position without camera
+COM member 1610612736 QueryInterface parameters=2 vtable=0
+COM member 1610612737 AddRef parameters=0 vtable=4
+COM member 1610612738 Release parameters=0 vtable=8
+COM member 1610678272 GetTypeInfoCount parameters=1 vtable=12
+COM member 1610678273 GetTypeInfo parameters=3 vtable=16
+COM member 1610678274 GetIDsOfNames parameters=5 vtable=20
+COM member 1610678275 Invoke parameters=8 vtable=24
+COM member 1 Open parameters=0 vtable=56
+COM member 2 SetEyeInfo parameters=1 vtable=64
+COM member 3 GetEyeInfo parameters=1 vtable=72
+COM member 4 SetEyeInfo2 parameters=5 vtable=80
+COM member 5 Close parameters=0 vtable=88
+COM member 6 GetPosition parameters=5 vtable=96
+COM member 7 OpenLens parameters=0 vtable=104
+COM member 8 CloseLens parameters=0 vtable=112
+COM member 9 ResetKalmanParam parameters=6 vtable=120
+COM member 10 GetKalmanParam parameters=6 vtable=128
+COM member 11 StartCamera parameters=0 vtable=136
+COM member 12 StopCamera parameters=0 vtable=144
+Traceback (most recent call last):
+  File "F:\Ŀ������\ModexLite\TitanLeiaBridge\tools\test_portable_tracking.py", line 13, in <module>
+    subprocess.run([str(a.test.resolve()),str(directory)],check=True)
+  File "D:\Coding\IDA Professional 9.4\python311\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['F:\\Ŀ������\\ModexLite\\TitanLeiaBridge\\build\\tests\\PortableTrackingSmoke.exe', 'F:\\Ŀ������\\ModexLite\\TitanLeiaBridge\\build\\package\\vendor\\eyetracking']' returned non-zero exit status 1.
+
+
+0% tests passed, 1 tests failed out of 1
+
+Total Test time (real) =   0.29 sec
+
+The following tests FAILED:
+	  1 - PortableTracking (Failed)
+Errors while running CTest

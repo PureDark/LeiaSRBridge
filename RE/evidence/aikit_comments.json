@@ -1,0 +1,26 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x180137000\"},{\"addr\":\"0x1801405f0\"},{\"addr\":\"0x18013ecc0\"}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x180137000"
+        },
+        {
+          "addr": "0x1801405f0"
+        },
+        {
+          "addr": "0x18013ecc0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

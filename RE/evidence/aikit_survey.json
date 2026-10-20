@@ -1,0 +1,595 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "metadata": {
+        "path": "F:\\目标软件\\ModexLite\\RE\\inputs\\AiSetereoKit.dll.i64",
+        "module": "AiSetereoKit.dll",
+        "arch": "64",
+        "base_address": "0x180000000",
+        "image_size": "0x603000",
+        "md5": "24093c0dbcb6478f4bdc7c5e07c4ec3d",
+        "sha256": "c3cd9fd7085a076a4ff4cd2f80816027c096785cd8395c191b3738ddd528d639"
+      },
+      "statistics": {
+        "total_functions": 11537,
+        "named_functions": 147,
+        "library_functions": 204,
+        "unnamed_functions": 11186,
+        "total_strings": 54764,
+        "total_segments": 5
+      },
+      "segments": [
+        {
+          "name": ".text",
+          "start": "0x180001000",
+          "end": "0x1803bb000",
+          "size": "0x3ba000",
+          "permissions": "rx"
+        },
+        {
+          "name": ".idata",
+          "start": "0x1803bb000",
+          "end": "0x1803bbf28",
+          "size": "0xf28",
+          "permissions": "r"
+        },
+        {
+          "name": ".rdata",
+          "start": "0x1803bbf28",
+          "end": "0x1805bc000",
+          "size": "0x2000d8",
+          "permissions": "r"
+        },
+        {
+          "name": ".data",
+          "start": "0x1805bc000",
+          "end": "0x1805cb000",
+          "size": "0xf000",
+          "permissions": "rw"
+        },
+        {
+          "name": ".pdata",
+          "start": "0x1805cb000",
+          "end": "0x1805f4000",
+          "size": "0x29000",
+          "permissions": "r"
+        }
+      ],
+      "entrypoints": [
+        {
+          "addr": "0x18015ab40",
+          "name": "CreateStereoRenderer",
+          "ordinal": 1
+        },
+        {
+          "addr": "0x18015b0c0",
+          "name": "IsValidLicense",
+          "ordinal": 2
+        },
+        {
+          "addr": "0x18015a770",
+          "name": "LoadStereoEngine",
+          "ordinal": 3
+        },
+        {
+          "addr": "0x18015add0",
+          "name": "UnloadStereoEngine",
+          "ordinal": 4
+        },
+        {
+          "addr": "0x18015b830",
+          "name": "YL_CreateStereoRendererEx",
+          "ordinal": 5
+        },
+        {
+          "addr": "0x18015b170",
+          "name": "YL_GlobalInitStereoEngine",
+          "ordinal": 6
+        },
+        {
+          "addr": "0x18015b540",
+          "name": "YL_GlobalUninitStereoEngine",
+          "ordinal": 7
+        },
+        {
+          "addr": "0x18015b9e0",
+          "name": "YL_InitGraphicsDevice",
+          "ordinal": 8
+        },
+        {
+          "addr": "0x18015bf60",
+          "name": "YL_Release",
+          "ordinal": 9
+        },
+        {
+          "addr": "0x18015bb50",
+          "name": "YL_Render",
+          "ordinal": 10
+        }
+      ],
+      "interesting_strings": [
+        {
+          "addr": "0x1803c3740",
+          "string": "ssl\\statem\\statem_srvr.c",
+          "xref_count": 194
+        },
+        {
+          "addr": "0x1803c7628",
+          "string": "ssl\\statem\\statem_clnt.c",
+          "xref_count": 186
+        },
+        {
+          "addr": "0x1803cb5f0",
+          "string": "ssl\\statem\\extensions_clnt.c",
+          "xref_count": 131
+        },
+        {
+          "addr": "0x1803cb080",
+          "string": "ssl\\statem\\extensions_srvr.c",
+          "xref_count": 123
+        },
+        {
+          "addr": "0x1803bd0f8",
+          "string": "ssl\\ssl_lib.c",
+          "xref_count": 109
+        },
+        {
+          "addr": "0x1803ce0f0",
+          "string": "crypto\\evp\\evp_enc.c",
+          "xref_count": 92
+        },
+        {
+          "addr": "0x1803d6e98",
+          "string": "crypto\\params.c",
+          "xref_count": 91
+        },
+        {
+          "addr": "0x1803c2d04",
+          "string": "digest",
+          "xref_count": 88
+        },
+        {
+          "addr": "0x1803fd0a8",
+          "string": "crypto\\ec\\ec_lib.c",
+          "xref_count": 80
+        },
+        {
+          "addr": "0x1803feb10",
+          "string": "crypto\\provider_core.c",
+          "xref_count": 78
+        }
+      ],
+      "interesting_functions": [
+        {
+          "addr": "0x1801f4190",
+          "name": "sub_1801F4190",
+          "size": 279,
+          "xref_count": 6239,
+          "callee_count": 4,
+          "type": "complex"
+        },
+        {
+          "addr": "0x1801f42b0",
+          "name": "sub_1801F42B0",
+          "size": 343,
+          "xref_count": 5335,
+          "callee_count": 6,
+          "type": "complex"
+        },
+        {
+          "addr": "0x1801f4410",
+          "name": "sub_1801F4410",
+          "size": 38,
+          "xref_count": 3764,
+          "callee_count": 2,
+          "type": "complex"
+        },
+        {
+          "addr": "0x1801efc30",
+          "name": "sub_1801EFC30",
+          "size": 48,
+          "xref_count": 1951,
+          "callee_count": 1,
+          "type": "wrapper"
+        },
+        {
+          "addr": "0x18014c9c0",
+          "name": "sub_18014C9C0",
+          "size": 6,
+          "xref_count": 733,
+          "callee_count": 0,
+          "type": "thunk"
+        },
+        {
+          "addr": "0x1801e4950",
+          "name": "sub_1801E4950",
+          "size": 13,
+          "xref_count": 679,
+          "callee_count": 0,
+          "type": "leaf"
+        },
+        {
+          "addr": "0x1801f0000",
+          "name": "sub_1801F0000",
+          "size": 62,
+          "xref_count": 590,
+          "callee_count": 3,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180164380",
+          "name": "sub_180164380",
+          "size": 157,
+          "xref_count": 572,
+          "callee_count": 3,
+          "type": "complex"
+        },
+        {
+          "addr": "0x18010e0e0",
+          "name": "sub_18010E0E0",
+          "size": 5,
+          "xref_count": 507,
+          "callee_count": 0,
+          "type": "thunk"
+        },
+        {
+          "addr": "0x1801e4c80",
+          "name": "sub_1801E4C80",
+          "size": 28,
+          "xref_count": 491,
+          "callee_count": 0,
+          "type": "leaf"
+        }
+      ],
+      "imports_by_category": {
+        "crypto": [
+          {
+            "addr": "0x1803bbca0",
+            "name": "??1PartialShape@ov@@QEAA@XZ",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbca8",
+            "name": "??0PartialShape@ov@@QEAA@AEBVShape@1@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbcb0",
+            "name": "??AShape@ov@@QEAAAEA_K_J@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbcc8",
+            "name": "??0PartialShape@ov@@QEAA@AEBV01@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbcd0",
+            "name": "??1Shape@ov@@QEAA@XZ",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbce0",
+            "name": "??0Shape@ov@@QEAA@AEBV?$initializer_list@_K@std@@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbce8",
+            "name": "??0Shape@ov@@QEAA@AEBV?$vector@_KV?$allocator@_K@std@@@std@@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbcf8",
+            "name": "??0Shape@ov@@QEAA@AEBV01@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd58",
+            "name": "?reshape@Model@ov@@QEAAXAEBV?$map@V?$Output@VNode@ov@@@ov@@VPartialShape@2@U?$less@V?$Output@VNode@ov@@@ov@@@std@@V?$allocator@U?$pair@$$CBV?$Output@VNode@ov@@@ov@@VPartialShape@2@@std@@@5@@std@@AEBV?$unordered_map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VPartialShape@ov@@U?$hash@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@U?$equal_to@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VPartialShape@ov@@@std@@@2@@4@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbe58",
+            "name": "?hash@DiscreteTypeInfo@ov@@QEAA_KXZ",
+            "module": "openvino"
+          }
+        ],
+        "network": [
+          {
+            "addr": "0x1803bb7e0",
+            "name": "WSASocketA",
+            "module": "WS2_32"
+          },
+          {
+            "addr": "0x1803bb888",
+            "name": "closesocket",
+            "module": "WS2_32"
+          },
+          {
+            "addr": "0x1803bb848",
+            "name": "connect",
+            "module": "WS2_32"
+          },
+          {
+            "addr": "0x1803bb830",
+            "name": "ioctlsocket",
+            "module": "WS2_32"
+          },
+          {
+            "addr": "0x1803bb840",
+            "name": "recv",
+            "module": "WS2_32"
+          },
+          {
+            "addr": "0x1803bb828",
+            "name": "recvfrom",
+            "module": "WS2_32"
+          },
+          {
+            "addr": "0x1803bb860",
+            "name": "send",
+            "module": "WS2_32"
+          },
+          {
+            "addr": "0x1803bb7c0",
+            "name": "sendto",
+            "module": "WS2_32"
+          },
+          {
+            "addr": "0x1803bb858",
+            "name": "socket",
+            "module": "WS2_32"
+          }
+        ],
+        "file_io": [
+          {
+            "addr": "0x1803bb0c0",
+            "name": "GetFileInformationByHandleEx",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb0c8",
+            "name": "AreFileApisANSI",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb0d0",
+            "name": "GetFileAttributesExW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb0d8",
+            "name": "CreateFileW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb0e0",
+            "name": "CreateDirectoryW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb140",
+            "name": "GetSystemTimeAsFileTime",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb160",
+            "name": "GetFileType",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb1c0",
+            "name": "GetSystemDirectoryA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb1d0",
+            "name": "FindNextFileW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1803bb1d8",
+            "name": "FindFirstFileW",
+            "module": "KERNEL32"
+          }
+        ],
+        "process": [
+          {
+            "addr": "0x1803bbc98",
+            "name": "?set_element_type@InputTensorInfo@preprocess@ov@@QEAAAEAV123@AEBVType@element@3@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbcb8",
+            "name": "?set_layout@InputTensorInfo@preprocess@ov@@QEAAAEAV123@AEBVLayout@3@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbcc0",
+            "name": "?set_color_format@InputTensorInfo@preprocess@ov@@QEAAAEAV123@AEBW4ColorFormat@23@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd20",
+            "name": "?convert_element_type@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBVType@element@3@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd38",
+            "name": "?convert_color@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBW4ColorFormat@23@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd60",
+            "name": "?scale@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBV?$vector@MV?$allocator@M@std@@@std@@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd70",
+            "name": "?mean@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBV?$vector@MV?$allocator@M@std@@@std@@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd78",
+            "name": "?convert_layout@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBVLayout@3@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd80",
+            "name": "?tensor@InputInfo@preprocess@ov@@QEAAAEAVInputTensorInfo@23@XZ",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd90",
+            "name": "?preprocess@InputInfo@0ov@@QEAAAEAVPreProcessSteps@02@XZ",
+            "module": "openvino"
+          }
+        ],
+        "registry": [
+          {
+            "addr": "0x1803bb000",
+            "name": "RegOpenKeyExA",
+            "module": "ADVAPI32"
+          },
+          {
+            "addr": "0x1803bb028",
+            "name": "RegisterEventSourceW",
+            "module": "ADVAPI32"
+          },
+          {
+            "addr": "0x1803bb030",
+            "name": "DeregisterEventSource",
+            "module": "ADVAPI32"
+          },
+          {
+            "addr": "0x1803bb038",
+            "name": "RegQueryValueExA",
+            "module": "ADVAPI32"
+          },
+          {
+            "addr": "0x1803bb040",
+            "name": "RegQueryValueExW",
+            "module": "ADVAPI32"
+          },
+          {
+            "addr": "0x1803bb048",
+            "name": "RegOpenKeyExW",
+            "module": "ADVAPI32"
+          },
+          {
+            "addr": "0x1803bb050",
+            "name": "RegCloseKey",
+            "module": "ADVAPI32"
+          },
+          {
+            "addr": "0x1803bb058",
+            "name": "RegEnumValueW",
+            "module": "ADVAPI32"
+          },
+          {
+            "addr": "0x1803bb4e8",
+            "name": "?_Xregex_error@std@@YAXW4error_type@regex_constants@1@@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x1803bb678",
+            "name": "SetupDiOpenDevRegKey",
+            "module": "SETUPAPI"
+          }
+        ],
+        "other": [
+          {
+            "addr": "0x1803bbc90",
+            "name": "??0InferRequest@ov@@QEAA@XZ",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbcd8",
+            "name": "??1?$Output@VNode@ov@@@ov@@QEAA@XZ",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbcf0",
+            "name": "?input@Model@ov@@QEAA?AV?$Output@VNode@ov@@@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd00",
+            "name": "??0Layout@ov@@QEAA@PEBD@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd08",
+            "name": "??M?$Output@VNode@ov@@@ov@@QEBA_NAEBV01@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd10",
+            "name": "??0?$Output@VNode@ov@@@ov@@QEAA@$$QEAV01@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd18",
+            "name": "??0Any@ov@@QEAA@$$QEAV01@@Z",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd28",
+            "name": "?input@Model@ov@@QEAA?AV?$Output@VNode@ov@@@2@XZ",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd30",
+            "name": "??0Any@ov@@QEAA@XZ",
+            "module": "openvino"
+          },
+          {
+            "addr": "0x1803bbd40",
+            "name": "??1Layout@ov@@QEAA@XZ",
+            "module": "openvino"
+          }
+        ]
+      },
+      "call_graph_summary": {
+        "total_edges": 66453,
+        "max_depth_estimate": null,
+        "root_functions": [
+          "sub_18000196D",
+          "sub_180001F1D",
+          "sub_180001FFD",
+          "sub_1800022DD",
+          "sub_180002510",
+          "sub_180002AD0",
+          "sub_1800033FD",
+          "sub_1800034DD",
+          "sub_1800035C0",
+          "sub_1800035CD"
+        ],
+        "leaf_functions_count": 1868
+      },
+      "_note": "Binary has 11537 functions; xref analysis was limited to the first 10000 for performance."
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"metadata\":{\"path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\AiSetereoKit.dll.i64\",\"module\":\"AiSetereoKit.dll\",\"arch\":\"64\",\"base_address\":\"0x180000000\",\"image_size\":\"0x603000\",\"md5\":\"24093c0dbcb6478f4bdc7c5e07c4ec3d\",\"sha256\":\"c3cd9fd7085a076a4ff4cd2f80816027c096785cd8395c191b3738ddd528d639\"},\"statistics\":{\"total_functions\":11537,\"named_functions\":147,\"library_functions\":204,\"unnamed_functions\":11186,\"total_strings\":54764,\"total_segments\":5},\"segments\":[{\"name\":\".text\",\"start\":\"0x180001000\",\"end\":\"0x1803bb000\",\"size\":\"0x3ba000\",\"permissions\":\"rx\"},{\"name\":\".idata\",\"start\":\"0x1803bb000\",\"end\":\"0x1803bbf28\",\"size\":\"0xf28\",\"permissions\":\"r\"},{\"name\":\".rdata\",\"start\":\"0x1803bbf28\",\"end\":\"0x1805bc000\",\"size\":\"0x2000d8\",\"permissions\":\"r\"},{\"name\":\".data\",\"start\":\"0x1805bc000\",\"end\":\"0x1805cb000\",\"size\":\"0xf000\",\"permissions\":\"rw\"},{\"name\":\".pdata\",\"start\":\"0x1805cb000\",\"end\":\"0x1805f4000\",\"size\":\"0x29000\",\"permissions\":\"r\"}],\"entrypoints\":[{\"addr\":\"0x18015ab40\",\"name\":\"CreateStereoRenderer\",\"ordinal\":1},{\"addr\":\"0x18015b0c0\",\"name\":\"IsValidLicense\",\"ordinal\":2},{\"addr\":\"0x18015a770\",\"name\":\"LoadStereoEngine\",\"ordinal\":3},{\"addr\":\"0x18015add0\",\"name\":\"UnloadStereoEngine\",\"ordinal\":4},{\"addr\":\"0x18015b830\",\"name\":\"YL_CreateStereoRendererEx\",\"ordinal\":5},{\"addr\":\"0x18015b170\",\"name\":\"YL_GlobalInitStereoEngine\",\"ordinal\":6},{\"addr\":\"0x18015b540\",\"name\":\"YL_GlobalUninitStereoEngine\",\"ordinal\":7},{\"addr\":\"0x18015b9e0\",\"name\":\"YL_InitGraphicsDevice\",\"ordinal\":8},{\"addr\":\"0x18015bf60\",\"name\":\"YL_Release\",\"ordinal\":9},{\"addr\":\"0x18015bb50\",\"name\":\"YL_Render\",\"ordinal\":10}],\"interesting_strings\":[{\"addr\":\"0x1803c3740\",\"string\":\"ssl\\\\statem\\\\statem_srvr.c\",\"xref_count\":194},{\"addr\":\"0x1803c7628\",\"string\":\"ssl\\\\statem\\\\statem_clnt.c\",\"xref_count\":186},{\"addr\":\"0x1803cb5f0\",\"string\":\"ssl\\\\statem\\\\extensions_clnt.c\",\"xref_count\":131},{\"addr\":\"0x1803cb080\",\"string\":\"ssl\\\\statem\\\\extensions_srvr.c\",\"xref_count\":123},{\"addr\":\"0x1803bd0f8\",\"string\":\"ssl\\\\ssl_lib.c\",\"xref_count\":109},{\"addr\":\"0x1803ce0f0\",\"string\":\"crypto\\\\evp\\\\evp_enc.c\",\"xref_count\":92},{\"addr\":\"0x1803d6e98\",\"string\":\"crypto\\\\params.c\",\"xref_count\":91},{\"addr\":\"0x1803c2d04\",\"string\":\"digest\",\"xref_count\":88},{\"addr\":\"0x1803fd0a8\",\"string\":\"crypto\\\\ec\\\\ec_lib.c\",\"xref_count\":80},{\"addr\":\"0x1803feb10\",\"string\":\"crypto\\\\provider_core.c\",\"xref_count\":78}],\"interesting_functions\":[{\"addr\":\"0x1801f4190\",\"name\":\"sub_1801F4190\",\"size\":279,\"xref_count\":6239,\"callee_count\":4,\"type\":\"complex\"},{\"addr\":\"0x1801f42b0\",\"name\":\"sub_1801F42B0\",\"size\":343,\"xref_count\":5335,\"callee_count\":6,\"type\":\"complex\"},{\"addr\":\"0x1801f4410\",\"name\":\"sub_1801F4410\",\"size\":38,\"xref_count\":3764,\"callee_count\":2,\"type\":\"complex\"},{\"addr\":\"0x1801efc30\",\"name\":\"sub_1801EFC30\",\"size\":48,\"xref_count\":1951,\"callee_count\":1,\"type\":\"wrapper\"},{\"addr\":\"0x18014c9c0\",\"name\":\"sub_18014C9C0\",\"size\":6,\"xref_count\":733,\"callee_count\":0,\"type\":\"thunk\"},{\"addr\":\"0x1801e4950\",\"name\":\"sub_1801E4950\",\"size\":13,\"xref_count\":679,\"callee_count\":0,\"type\":\"leaf\"},{\"addr\":\"0x1801f0000\",\"name\":\"sub_1801F0000\",\"size\":62,\"xref_count\":590,\"callee_count\":3,\"type\":\"complex\"},{\"addr\":\"0x180164380\",\"name\":\"sub_180164380\",\"size\":157,\"xref_count\":572,\"callee_count\":3,\"type\":\"complex\"},{\"addr\":\"0x18010e0e0\",\"name\":\"sub_18010E0E0\",\"size\":5,\"xref_count\":507,\"callee_count\":0,\"type\":\"thunk\"},{\"addr\":\"0x1801e4c80\",\"name\":\"sub_1801E4C80\",\"size\":28,\"xref_count\":491,\"callee_count\":0,\"type\":\"leaf\"}],\"imports_by_category\":{\"crypto\":[{\"addr\":\"0x1803bbca0\",\"name\":\"??1PartialShape@ov@@QEAA@XZ\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbca8\",\"name\":\"??0PartialShape@ov@@QEAA@AEBVShape@1@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbcb0\",\"name\":\"??AShape@ov@@QEAAAEA_K_J@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbcc8\",\"name\":\"??0PartialShape@ov@@QEAA@AEBV01@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbcd0\",\"name\":\"??1Shape@ov@@QEAA@XZ\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbce0\",\"name\":\"??0Shape@ov@@QEAA@AEBV?$initializer_list@_K@std@@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbce8\",\"name\":\"??0Shape@ov@@QEAA@AEBV?$vector@_KV?$allocator@_K@std@@@std@@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbcf8\",\"name\":\"??0Shape@ov@@QEAA@AEBV01@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd58\",\"name\":\"?reshape@Model@ov@@QEAAXAEBV?$map@V?$Output@VNode@ov@@@ov@@VPartialShape@2@U?$less@V?$Output@VNode@ov@@@ov@@@std@@V?$allocator@U?$pair@$$CBV?$Output@VNode@ov@@@ov@@VPartialShape@2@@std@@@5@@std@@AEBV?$unordered_map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VPartialShape@ov@@U?$hash@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@U?$equal_to@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VPartialShape@ov@@@std@@@2@@4@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbe58\",\"name\":\"?hash@DiscreteTypeInfo@ov@@QEAA_KXZ\",\"module\":\"openvino\"}],\"network\":[{\"addr\":\"0x1803bb7e0\",\"name\":\"WSASocketA\",\"module\":\"WS2_32\"},{\"addr\":\"0x1803bb888\",\"name\":\"closesocket\",\"module\":\"WS2_32\"},{\"addr\":\"0x1803bb848\",\"name\":\"connect\",\"module\":\"WS2_32\"},{\"addr\":\"0x1803bb830\",\"name\":\"ioctlsocket\",\"module\":\"WS2_32\"},{\"addr\":\"0x1803bb840\",\"name\":\"recv\",\"module\":\"WS2_32\"},{\"addr\":\"0x1803bb828\",\"name\":\"recvfrom\",\"module\":\"WS2_32\"},{\"addr\":\"0x1803bb860\",\"name\":\"send\",\"module\":\"WS2_32\"},{\"addr\":\"0x1803bb7c0\",\"name\":\"sendto\",\"module\":\"WS2_32\"},{\"addr\":\"0x1803bb858\",\"name\":\"socket\",\"module\":\"WS2_32\"}],\"file_io\":[{\"addr\":\"0x1803bb0c0\",\"name\":\"GetFileInformationByHandleEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb0c8\",\"name\":\"AreFileApisANSI\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb0d0\",\"name\":\"GetFileAttributesExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb0d8\",\"name\":\"CreateFileW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb0e0\",\"name\":\"CreateDirectoryW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb140\",\"name\":\"GetSystemTimeAsFileTime\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb160\",\"name\":\"GetFileType\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb1c0\",\"name\":\"GetSystemDirectoryA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb1d0\",\"name\":\"FindNextFileW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1803bb1d8\",\"name\":\"FindFirstFileW\",\"module\":\"KERNEL32\"}],\"process\":[{\"addr\":\"0x1803bbc98\",\"name\":\"?set_element_type@InputTensorInfo@preprocess@ov@@QEAAAEAV123@AEBVType@element@3@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbcb8\",\"name\":\"?set_layout@InputTensorInfo@preprocess@ov@@QEAAAEAV123@AEBVLayout@3@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbcc0\",\"name\":\"?set_color_format@InputTensorInfo@preprocess@ov@@QEAAAEAV123@AEBW4ColorFormat@23@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd20\",\"name\":\"?convert_element_type@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBVType@element@3@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd38\",\"name\":\"?convert_color@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBW4ColorFormat@23@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd60\",\"name\":\"?scale@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBV?$vector@MV?$allocator@M@std@@@std@@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd70\",\"name\":\"?mean@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBV?$vector@MV?$allocator@M@std@@@std@@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd78\",\"name\":\"?convert_layout@PreProcessSteps@preprocess@ov@@QEAAAEAV123@AEBVLayout@3@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd80\",\"name\":\"?tensor@InputInfo@preprocess@ov@@QEAAAEAVInputTensorInfo@23@XZ\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd90\",\"name\":\"?preprocess@InputInfo@0ov@@QEAAAEAVPreProcessSteps@02@XZ\",\"module\":\"openvino\"}],\"registry\":[{\"addr\":\"0x1803bb000\",\"name\":\"RegOpenKeyExA\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x1803bb028\",\"name\":\"RegisterEventSourceW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x1803bb030\",\"name\":\"DeregisterEventSource\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x1803bb038\",\"name\":\"RegQueryValueExA\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x1803bb040\",\"name\":\"RegQueryValueExW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x1803bb048\",\"name\":\"RegOpenKeyExW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x1803bb050\",\"name\":\"RegCloseKey\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x1803bb058\",\"name\":\"RegEnumValueW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x1803bb4e8\",\"name\":\"?_Xregex_error@std@@YAXW4error_type@regex_constants@1@@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x1803bb678\",\"name\":\"SetupDiOpenDevRegKey\",\"module\":\"SETUPAPI\"}],\"other\":[{\"addr\":\"0x1803bbc90\",\"name\":\"??0InferRequest@ov@@QEAA@XZ\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbcd8\",\"name\":\"??1?$Output@VNode@ov@@@ov@@QEAA@XZ\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbcf0\",\"name\":\"?input@Model@ov@@QEAA?AV?$Output@VNode@ov@@@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd00\",\"name\":\"??0Layout@ov@@QEAA@PEBD@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd08\",\"name\":\"??M?$Output@VNode@ov@@@ov@@QEBA_NAEBV01@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd10\",\"name\":\"??0?$Output@VNode@ov@@@ov@@QEAA@$$QEAV01@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd18\",\"name\":\"??0Any@ov@@QEAA@$$QEAV01@@Z\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd28\",\"name\":\"?input@Model@ov@@QEAA?AV?$Output@VNode@ov@@@2@XZ\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd30\",\"name\":\"??0Any@ov@@QEAA@XZ\",\"module\":\"openvino\"},{\"addr\":\"0x1803bbd40\",\"name\":\"??1Layout@ov@@QEAA@XZ\",\"module\":\"openvino\"}]},\"call_graph_summary\":{\"total_edges\":66453,\"max_depth_estimate\":null,\"root_functions\":[\"sub_18000196D\",\"sub_180001F1D\",\"sub_180001FFD\",\"sub_1800022DD\",\"sub_180002510\",\"sub_180002AD0\",\"sub_1800033FD\",\"sub_1800034DD\",\"sub_1800035C0\",\"sub_1800035CD\"],\"leaf_functions_count\":1868},\"_note\":\"Binary has 11537 functions; xref analysis was limited to the first 10000 for performance.\"}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/5a7682a8-85b0-4ce5-add3-c05bb5f655c0.json http://127.0.0.1:57427/output/5a7682a8-85b0-4ce5-add3-c05bb5f655c0.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 50784,
+        "output_id": "5a7682a8-85b0-4ce5-add3-c05bb5f655c0",
+        "download_url": "http://127.0.0.1:57427/output/5a7682a8-85b0-4ce5-add3-c05bb5f655c0.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/5a7682a8-85b0-4ce5-add3-c05bb5f655c0.json http://127.0.0.1:57427/output/5a7682a8-85b0-4ce5-add3-c05bb5f655c0.json"
+      }
+    }
+  },
+  "id": 1
+}

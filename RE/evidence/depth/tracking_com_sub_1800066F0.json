@@ -1,0 +1,83 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_1800066F0\",\"code\":\"__int64 __fastcall sub_1800066F0(__int64 a1)\\n{\\n  bool v1; // zf\\n  __int128 v3; // xmm1\\n  void *v4; // rcx\\n  __int64 v5; // rcx\\n  void *v6; // rdx\\n  __int64 v7; // rax\\n  void *v8; // rcx\\n  unsigned int v9; // ebx\\n  BOOL v10; // eax\\n  __int64 v11; // rax\\n  void *v12; // rcx\\n  signed int LastError; // eax\\n  DWORD ExitCode; // [rsp+20h] [rbp-48h] BYREF\\n  struct _RTL_CRITICAL_SECTION CriticalSection; // [rsp+28h] [rbp-40h] BYREF\\n\\n  v1 = *(_QWORD *)(a1 + 80) == 0; /*0x180006709*/\\n  v3 = *(_OWORD *)(a1 + 112); /*0x180006715*/\\n  *(_OWORD *)&CriticalSection.DebugInfo = *(_OWORD *)(a1 + 96); /*0x180006719*/\\n  CriticalSection.SpinCount = *(_QWORD *)(a1 + 128); /*0x180006726*/\\n  *(_OWORD *)&CriticalSection.OwningThread = v3; /*0x18000672c*/\\n  if ( v1 || (v4 = *(void **)(a1 + 88)) == nullptr ) /*0x18000673e*/\\n  {\\n    v9 = -2147024890; /*0x180006851*/\\n    goto LABEL_14; /*0x180006851*/\\n  }\\n  if ( !GetExitCodeProcess(hProcess: v4, lpExitCode: &ExitCode) || ExitCode != 259 ) /*0x18000675b*/\\n    goto LABEL_8; /*0x18000675b*/\\n  SetEvent(hEvent: *(HANDLE *)(a1 + 80)); /*0x180006761*/\\n  if ( WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 88), dwMilliseconds: 0x3E8u) == 0 ) /*0x180006778*/\\n  {\\n    v5 = std::cout; /*0x18000677a*/\\n    v6 = &unk_18000C0C8; /*0x180006781*/\\nLABEL_7:\\n    v7 = sub_180006DE0(a1: v5, a2: v6); /*0x180006788*/\\n    std::ostream::operator<<(a1: v7, a2: sub_180007040); /*0x180006797*/\\nLABEL_8:\\n    CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x18000679d*/\\n    v8 = *(void **)(a1 + 80); /*0x1800067a7*/\\n    v9 = 0; /*0x1800067ab*/\\n    *(_QWORD *)(a1 + 88) = 0; /*0x1800067ad*/\\n    ResetEvent(hEvent: v8); /*0x1800067b1*/\\n    CloseHandle(hObject: *(HANDLE *)(a1 + 80)); /*0x1800067bb*/\\n    *(_QWORD *)(a1 + 80) = 0; /*0x1800067c1*/\\n    dword_180015010 = 0; /*0x1800067c5*/\\n    goto LABEL_14; /*0x1800067cb*/\\n  }\\n  v10 = TerminateProcess(hProcess: *(HANDLE *)(a1 + 88), uExitCode: 0); /*0x1800067d6*/\\n  v5 = std::cout; /*0x1800067dc*/\\n  if ( v10 ) /*0x1800067e5*/\\n  {\\n    v6 = &unk_18000C0E0; /*0x1800067e7*/\\n    goto LABEL_7; /*0x1800067ee*/\\n  }\\n  v11 = sub_180006DE0(a1: std::cout, a2: &unk_18000C100); /*0x1800067f7*/\\n  std::ostream::operator<<(a1: v11, a2: sub_180007040); /*0x180006806*/\\n  CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x180006810*/\\n  v12 = *(void **)(a1 + 80); /*0x180006816*/\\n  *(_QWORD *)(a1 + 88) = 0; /*0x18000681c*/\\n  ResetEvent(hEvent: v12); /*0x180006820*/\\n  CloseHandle(hObject: *(HANDLE *)(a1 + 80)); /*0x18000682a*/\\n  *(_QWORD *)(a1 + 80) = 0; /*0x180006830*/\\n  dword_180015010 = 0; /*0x180006834*/\\n  LastError = GetLastError(); /*0x18000683a*/\\n  v9 = LastError; /*0x180006840*/\\n  if ( LastError > 0 ) /*0x180006844*/\\n    v9 = (unsigned __int16)LastError | 0x80070000; /*0x180006849*/\\nLABEL_14:\\n  DeleteCriticalSection(lpCriticalSection: &CriticalSection); /*0x180006856*/\\n  return v9; /*0x180006863*/\\n}\",\"refs\":[{\"addr\":\"0x18000b0d0\",\"name\":\"GetExitCodeProcess\"},{\"addr\":\"0x18000b130\",\"name\":\"SetEvent\"},{\"addr\":\"0x18000b1c0\",\"name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x18000c0c8\",\"name\":\"unk_18000C0C8\"},{\"addr\":\"0x180006de0\",\"name\":\"sub_180006DE0\"},{\"addr\":\"0x18000b1e0\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x180007040\",\"name\":\"sub_180007040\"},{\"addr\":\"0x18000b0a0\",\"name\":\"CloseHandle\"},{\"addr\":\"0x18000b0b0\",\"name\":\"ResetEvent\"},{\"addr\":\"0x180015010\",\"name\":\"dword_180015010\"},{\"addr\":\"0x18000b0b8\",\"name\":\"WaitForSingleObject\"},{\"addr\":\"0x18000b0c8\",\"name\":\"TerminateProcess\"},{\"addr\":\"0x18000c0e0\",\"name\":\"unk_18000C0E0\"},{\"addr\":\"0x18000c100\",\"name\":\"unk_18000C100\"},{\"addr\":\"0x18000b120\",\"name\":\"GetLastError\"},{\"addr\":\"0x18000b110\",\"name\":\"DeleteCriticalSection\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_1800066F0",
+      "code": "__int64 __fastcall sub_1800066F0(__int64 a1)\n{\n  bool v1; // zf\n  __int128 v3; // xmm1\n  void *v4; // rcx\n  __int64 v5; // rcx\n  void *v6; // rdx\n  __int64 v7; // rax\n  void *v8; // rcx\n  unsigned int v9; // ebx\n  BOOL v10; // eax\n  __int64 v11; // rax\n  void *v12; // rcx\n  signed int LastError; // eax\n  DWORD ExitCode; // [rsp+20h] [rbp-48h] BYREF\n  struct _RTL_CRITICAL_SECTION CriticalSection; // [rsp+28h] [rbp-40h] BYREF\n\n  v1 = *(_QWORD *)(a1 + 80) == 0; /*0x180006709*/\n  v3 = *(_OWORD *)(a1 + 112); /*0x180006715*/\n  *(_OWORD *)&CriticalSection.DebugInfo = *(_OWORD *)(a1 + 96); /*0x180006719*/\n  CriticalSection.SpinCount = *(_QWORD *)(a1 + 128); /*0x180006726*/\n  *(_OWORD *)&CriticalSection.OwningThread = v3; /*0x18000672c*/\n  if ( v1 || (v4 = *(void **)(a1 + 88)) == nullptr ) /*0x18000673e*/\n  {\n    v9 = -2147024890; /*0x180006851*/\n    goto LABEL_14; /*0x180006851*/\n  }\n  if ( !GetExitCodeProcess(hProcess: v4, lpExitCode: &ExitCode) || ExitCode != 259 ) /*0x18000675b*/\n    goto LABEL_8; /*0x18000675b*/\n  SetEvent(hEvent: *(HANDLE *)(a1 + 80)); /*0x180006761*/\n  if ( WaitForSingleObject(hHandle: *(HANDLE *)(a1 + 88), dwMilliseconds: 0x3E8u) == 0 ) /*0x180006778*/\n  {\n    v5 = std::cout; /*0x18000677a*/\n    v6 = &unk_18000C0C8; /*0x180006781*/\nLABEL_7:\n    v7 = sub_180006DE0(a1: v5, a2: v6); /*0x180006788*/\n    std::ostream::operator<<(a1: v7, a2: sub_180007040); /*0x180006797*/\nLABEL_8:\n    CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x18000679d*/\n    v8 = *(void **)(a1 + 80); /*0x1800067a7*/\n    v9 = 0; /*0x1800067ab*/\n    *(_QWORD *)(a1 + 88) = 0; /*0x1800067ad*/\n    ResetEvent(hEvent: v8); /*0x1800067b1*/\n    CloseHandle(hObject: *(HANDLE *)(a1 + 80)); /*0x1800067bb*/\n    *(_QWORD *)(a1 + 80) = 0; /*0x1800067c1*/\n    dword_180015010 = 0; /*0x1800067c5*/\n    goto LABEL_14; /*0x1800067cb*/\n  }\n  v10 = TerminateProcess(hProcess: *(HANDLE *)(a1 + 88), uExitCode: 0); /*0x1800067d6*/\n  v5 = std::cout; /*0x1800067dc*/\n  if ( v10 ) /*0x1800067e5*/\n  {\n    v6 = &unk_18000C0E0; /*0x1800067e7*/\n    goto LABEL_7; /*0x1800067ee*/\n  }\n  v11 = sub_180006DE0(a1: std::cout, a2: &unk_18000C100); /*0x1800067f7*/\n  std::ostream::operator<<(a1: v11, a2: sub_180007040); /*0x180006806*/\n  CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x180006810*/\n  v12 = *(void **)(a1 + 80); /*0x180006816*/\n  *(_QWORD *)(a1 + 88) = 0; /*0x18000681c*/\n  ResetEvent(hEvent: v12); /*0x180006820*/\n  CloseHandle(hObject: *(HANDLE *)(a1 + 80)); /*0x18000682a*/\n  *(_QWORD *)(a1 + 80) = 0; /*0x180006830*/\n  dword_180015010 = 0; /*0x180006834*/\n  LastError = GetLastError(); /*0x18000683a*/\n  v9 = LastError; /*0x180006840*/\n  if ( LastError > 0 ) /*0x180006844*/\n    v9 = (unsigned __int16)LastError | 0x80070000; /*0x180006849*/\nLABEL_14:\n  DeleteCriticalSection(lpCriticalSection: &CriticalSection); /*0x180006856*/\n  return v9; /*0x180006863*/\n}",
+      "refs": [
+        {
+          "addr": "0x18000b0d0",
+          "name": "GetExitCodeProcess"
+        },
+        {
+          "addr": "0x18000b130",
+          "name": "SetEvent"
+        },
+        {
+          "addr": "0x18000b1c0",
+          "name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x18000c0c8",
+          "name": "unk_18000C0C8"
+        },
+        {
+          "addr": "0x180006de0",
+          "name": "sub_180006DE0"
+        },
+        {
+          "addr": "0x18000b1e0",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x180007040",
+          "name": "sub_180007040"
+        },
+        {
+          "addr": "0x18000b0a0",
+          "name": "CloseHandle"
+        },
+        {
+          "addr": "0x18000b0b0",
+          "name": "ResetEvent"
+        },
+        {
+          "addr": "0x180015010",
+          "name": "dword_180015010"
+        },
+        {
+          "addr": "0x18000b0b8",
+          "name": "WaitForSingleObject"
+        },
+        {
+          "addr": "0x18000b0c8",
+          "name": "TerminateProcess"
+        },
+        {
+          "addr": "0x18000c0e0",
+          "name": "unk_18000C0E0"
+        },
+        {
+          "addr": "0x18000c100",
+          "name": "unk_18000C100"
+        },
+        {
+          "addr": "0x18000b120",
+          "name": "GetLastError"
+        },
+        {
+          "addr": "0x18000b110",
+          "name": "DeleteCriticalSection"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

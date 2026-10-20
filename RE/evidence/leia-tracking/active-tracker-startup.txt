@@ -1,0 +1,72 @@
+I20261020 23:32:47.389411  8436 main.cpp:1429] Eye Tracker Version: 1.11.0.35453
+E20261020 23:32:47.389411  8436 FilePaths.cpp:437] Can't find C:\ProgramData/Simulated Reality/Eye Tracker\resources\ft_user.ini
+E20261020 23:32:47.390408  8436 FilePaths.cpp:444] Can't find C:\ProgramData/Simulated Reality/Eye Tracker\resources\calibration.yml
+E20261020 23:32:47.390408  8436 FilePaths.cpp:466] Can't find all config files in the override location.
+E20261020 23:32:47.390408  8436 FilePaths.cpp:320] Can't find C:\ProgramData/Simulated Reality/Eye Tracker\resources\intrinsics.yml
+E20261020 23:32:47.390408  8436 FilePaths.cpp:327] Can't find C:\ProgramData/Simulated Reality/Eye Tracker\resources\extrinsics.yml
+E20261020 23:32:47.390408  8436 FilePaths.cpp:334] Can't find C:\ProgramData/Simulated Reality/Eye Tracker\resources\Tracker2DisplayTransform.ini
+E20261020 23:32:47.390408  8436 FilePaths.cpp:479] Can't find all calibration files in the override location.
+I20261020 23:32:53.392894  8436 FilePaths.cpp:415] ft_user.ini at: C:\Program Files\LeiaSR\Tracker\products\ET\ft_user.ini
+I20261020 23:32:53.392894  8436 FilePaths.cpp:416] calibration.yml at: C:\Program Files\LeiaSR\Tracker\products\ET\calibration.yml
+I20261020 23:32:53.392894  8436 FilePaths.cpp:417] instrincics.ini at: C:\ProgramData/Simulated Reality\Devices\VN022519ET0014\intrinsics.yml
+I20261020 23:32:53.392894  8436 FilePaths.cpp:418] extrinsics.ini at: C:\ProgramData/Simulated Reality\Devices\VN022519ET0014\extrinsics.yml
+I20261020 23:32:53.392894  8436 FilePaths.cpp:419] Tracker2DisplayTransform.ini at: C:\ProgramData/Simulated Reality\Devices\VN022519ET0014\Tracker2DisplayTransform.ini
+E20261020 23:32:53.392894  8436 FilePaths.cpp:214] Passed assertion tests
+I20261020 23:32:53.406402  8436 Calibration.cpp:164] m is[478.0312395209841, 0, 323.1601601802874;
+I20261020 23:32:53.433492  8436 MonoStereoSensorCamera.cpp:40] DeviceDisconnectedException thrown while checking whether camera with VIDPID: "VID_4E80&PID_20D7" is present, message: "No devices found for deviceID: VID_4E80&PID_20D7, 0 errors occured while reading 395 device instance IDs, of which the last error has Windows code (dec): 0". Camera is considered not present.
+I20261020 23:32:53.433492  8436 MonoStereoSensorCamera.cpp:148]  Camera with PIDVID=VID_4E80&PID_20D7 not found
+I20261020 23:32:53.436497  8436 MonoStereoSensorCamera.cpp:153]  Camera with PIDVID=VID_04E8&PID_20D7 found, using this one
+I20261020 23:32:53.436497  8436 MonoStereoSensorCamera.cpp:194] MonoStereoSensorCamera  (VID_04E8&PID_20D7&MI_00_1L) is the left half of a side-by-side stereo camera
+I20261020 23:32:53.444950  8436 MonoStereoSensorCamera.cpp:294] Camera is already enabled
+I20261020 23:32:53.588078  8436 FaceLockBlinkEyeTracker.cpp:131]  Current max_num_of_faces: 1
+I20261020 23:32:53.588078  8436 FaceLockBlinkEyeTracker.cpp:132]  Current detection mode: 0
+I20261020 23:32:53.816809  8436 FaceLockBlinkEyeTracker.cpp:154]  Current minimal face size: 0
+I20261020 23:32:53.877532  8436 MonoStereoSensorCamera.cpp:40] DeviceDisconnectedException thrown while checking whether camera with VIDPID: "VID_4E80&PID_20D7" is present, message: "No devices found for deviceID: VID_4E80&PID_20D7, 0 errors occured while reading 395 device instance IDs, of which the last error has Windows code (dec): 0". Camera is considered not present.
+I20261020 23:32:53.877532  8436 MonoStereoSensorCamera.cpp:148]  Camera with PIDVID=VID_4E80&PID_20D7 not found
+I20261020 23:32:53.879534  8436 MonoStereoSensorCamera.cpp:153]  Camera with PIDVID=VID_04E8&PID_20D7 found, using this one
+I20261020 23:32:53.879534  8436 MonoStereoSensorCamera.cpp:194] MonoStereoSensorCamera  (VID_04E8&PID_20D7&MI_00_1R) is the right half of a side-by-side stereo camera
+I20261020 23:32:53.896040  8436 FaceLockBlinkEyeTracker.cpp:131]  Current max_num_of_faces: 1
+I20261020 23:32:53.896040  8436 FaceLockBlinkEyeTracker.cpp:132]  Current detection mode: 0
+I20261020 23:32:54.071692  8436 FaceLockBlinkEyeTracker.cpp:154]  Current minimal face size: 0
+I20261020 23:32:54.110241  8436 Syncer.cpp:40] Camera frame rate is capped at 0 fps
+I20261020 23:32:54.110241  8436 MultiCameraController.cpp:11] inside MultiCameraController m is[478.0312395209841, 0, 323.1601601802874;
+I20261020 23:32:54.112241  8436 FaceLockBlinkEyeTracker.cpp:1102] Leader camera
+I20261020 23:32:54.112241  8436 FaceLockBlinkEyeTracker.cpp:1108] Destructing camera
+I20261020 23:33:16.171523 31304 FrameGrabber.cpp:149] Camera wasPaused
+W20261020 23:33:16.171523 31304 MonoStereoSensorCamera.cpp:766] Left half: Unpausing image capture
+I20261020 23:33:16.171523 52696 FrameGrabber.cpp:149] Camera wasPaused
+W20261020 23:33:16.171523 52696 MonoStereoSensorCamera.cpp:785] Right half of stereo sensor does not need to react to unpausing
+I20261020 23:33:16.178689 31304 MonoStereoSensorCamera.cpp:294] Camera is already enabled
+I20261020 23:33:16.178689 31304 MediaFoundationCamera.cpp:131] Start MediaFoundation camera with serial VID_04E8&PID_20D7&MI_00_1L
+I20261020 23:33:16.178689 31304 MediaFoundationCamera.cpp:147] startCapture (VID_04E8&PID_20D7&MI_00_1L)...................
+I20261020 23:33:16.186741 31304 MediaFoundationCamera.cpp:311] MediaFoundation searching for : VID_04E8&PID_20D7&MI_00
+I20261020 23:33:16.186741 31304 MediaFoundationCamera.cpp:328] MediaFoundation available device: \\?\USB#VID_04E8&PID_20D7&MI_00#8&2939E249&0&0000#{E5323777-F976-4F5B-9B55-B94699C46E44}\GLOBAL
+I20261020 23:33:16.186741 31304 MediaFoundationCamera.cpp:334] Starting sourceReader
+I20261020 23:33:16.312748 31304 MediaFoundationCamera.cpp:559] Device activated
+I20261020 23:33:16.373380 33204 MediaFoundationCamera.cpp:985] MF_SOURCE_READERF_STREAMTICK
+I20261020 23:33:16.373380 33204 MediaFoundationCamera.cpp:1011] Signalling streaming ok
+I20261020 23:33:16.378404 31304 MediaFoundationCamera.cpp:683] Streaming started. restart=0
+I20261020 23:33:16.527993 31304 MediaFoundationCamera.cpp:394] Setting Exposure=-6. Range -11 to -3 default=-6
+I20261020 23:33:16.550011 31304 MediaFoundationCamera.cpp:436] Setting Brightness=DEFAULT. Range -128 to 127 default=0
+I20261020 23:33:16.560525 31304 MediaFoundationCamera.cpp:436] Setting Contrast=DEFAULT. Range 0 to 127 default=32
+I20261020 23:33:16.571036 31304 MediaFoundationCamera.cpp:436] Setting Gain=1. Range 1 to 128 default=1
+I20261020 23:33:16.584548 31304 MediaFoundationCamera.cpp:436] Setting BacklightCompensation=DEFAULT. Range 1 to 127 default=4
+W20261020 23:33:16.585618  8020 MediaFoundationCamera.cpp:1035]  OnReadSample called while processing, waiting until previous call ended
+I20261020 23:33:16.594617 31304 MediaFoundationCamera.cpp:436] Setting Gamma=DEFAULT. Range 100 to 300 default=100
+I20261020 23:33:16.608573 31304 MediaFoundationCamera.cpp:436] Setting Sharpness=0. Range 0 to 127 default=2
+I20261020 23:33:16.613574 31304 MediaFoundationCamera.cpp:456] Setting Saturation NOT SUPPORTED
+I20261020 23:33:16.613574 31304 MediaFoundationCamera.cpp:530] Saturation is set to: 0
+I20261020 23:33:16.613574 31304 MediaFoundationCamera.cpp:415] Setting Focus NOT SUPPORTED
+I20261020 23:33:16.613574 31304 MediaFoundationCamera.cpp:415] Setting Zoom NOT SUPPORTED
+I20261020 23:33:16.619079 31304 MediaFoundationCamera.cpp:478] Setting PowerLine=DEFAULT. Range 0 to 3 default=1
+I20261020 23:33:16.624584 31304 MediaFoundationCamera.cpp:456] Setting Whitebalance NOT SUPPORTED
+I20261020 23:33:16.629590 31304 MediaFoundationCamera.cpp:436] Setting Hue=0. Range 0 to 1 default=0
+I20261020 23:33:16.635090 31304 MediaFoundationCamera.cpp:498] Setting WhitebalanceComponent NOT SUPPORTED
+I20261020 23:33:16.635090 31304 MediaFoundationCamera.cpp:357] Device friendly name: 3D Stereo WebCam
+I20261020 23:33:16.687405 31304 MediaFoundationCamera.cpp:174] MediaFoundation camera hasHueControl=1 hasIrisControl=1 hasBacklightControl=1
+I20261020 23:33:16.688405 31304 MediaFoundationCamera.cpp:195] Start writeJPEGImagesToSharedMemoryThread
+W20261020 23:33:16.710520 31304 MonoStereoSensorCamera.cpp:572] First frame after after unpause. It took 0.54s
+W20261020 23:33:19.648814  3440 FaceLockBlinkEyeTracker.cpp:702] 0 looking for face with ROI[114 x 138 from (322, 297)]
+W20261020 23:33:19.648814  3440 FaceLockBlinkEyeTracker.cpp:717] 0 testing faceID0 with ROI [144 x 144 from (294, 325)] hasIntersection=1
+W20261020 23:33:19.648814  3440 FaceLockBlinkEyeTracker.cpp:702] 1 looking for face with ROI[117 x 141 from (381, 309)]
+W20261020 23:33:19.648814  3440 FaceLockBlinkEyeTracker.cpp:717] 1 testing faceID0 with ROI [148 x 141 from (348, 338)] hasIntersection=1

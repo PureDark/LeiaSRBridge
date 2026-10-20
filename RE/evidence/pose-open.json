@@ -1,0 +1,48 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"pose\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\BOE_3DET_SDK.dll.i64\",\"filename\":\"BOE_3DET_SDK.dll.i64\",\"created_at\":\"2026-10-21T01:24:15.351761\",\"last_accessed\":\"2026-10-21T01:24:15.351761\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.01}],\"health\":{\"status\":\"ok\",\"uptime_sec\":9.47,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\BOE_3DET_SDK.dll.i64\",\"module\":\"BOE_3DET_SDK.dll\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\BOE_3DET_SDK.dll\",\"imagebase\":\"0x180000000\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":false,\"strings_cache_size\":0}},\"message\":\"Binary opened: BOE_3DET_SDK.dll.i64 (pose)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "pose",
+        "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\BOE_3DET_SDK.dll.i64",
+        "filename": "BOE_3DET_SDK.dll.i64",
+        "created_at": "2026-10-21T01:24:15.351761",
+        "last_accessed": "2026-10-21T01:24:15.351761",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.01
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 9.47,
+          "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\BOE_3DET_SDK.dll.i64",
+          "module": "BOE_3DET_SDK.dll",
+          "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\BOE_3DET_SDK.dll",
+          "imagebase": "0x180000000",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": false,
+          "strings_cache_size": 0
+        }
+      },
+      "message": "Binary opened: BOE_3DET_SDK.dll.i64 (pose)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

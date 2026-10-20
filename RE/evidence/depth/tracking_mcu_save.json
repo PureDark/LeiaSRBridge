@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":true,\"path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\MCU_library.dll.i64\"}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\MCU_library.dll.i64"
+    },
+    "isError": false
+  },
+  "id": 1
+}

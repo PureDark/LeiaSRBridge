@@ -1,0 +1,294 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "result": [
+        {
+          "target": "0x180005900",
+          "addr": "0x180005900",
+          "name": "sub_180005900",
+          "analysis": {
+            "size": "0xe6",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180005900(float *a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  __int64 v4; // rdx\n  float v5; // xmm0_4\n  float v6; // xmm0_4\n\n  v4 = *((unsigned int *)a1 + 28); /*0x18000590a*/\n  a1[39] = a1[29]; /*0x180005915*/\n  a1[40] = a1[30]; /*0x18000591e*/\n  a1[41] = a1[31]; /*0x180005927*/\n  a1[42] = a1[32]; /*0x180005933*/\n  a1[43] = a1[33]; /*0x18000593f*/\n  a1[44] = a1[34]; /*0x18000594b*/\n  *((_DWORD *)a1 + 38) = v4; /*0x180005951*/\n  if ( (_DWORD)v4 != 0 ) /*0x180005959*/\n    v5 = a1[4]; /*0x180005962*/\n  else\n    v5 = a1[3]; /*0x18000595b*/\n  v6 = 0.3333333333333333 / v5; /*0x180005981*/\n  **(float **)a1 = v6; /*0x180005985*/\n  *(float *)(*(_QWORD *)a1 + 28LL) = a1[4] / (float)(a1[9] * a1[3]); /*0x1800059a2*/\n  *(_DWORD *)(*(_QWORD *)a1 + 36LL) = 0; /*0x1800059aa*/\n  *(float *)(*(_QWORD *)a1 + 20LL) = a1[7]; /*0x1800059b8*/\n  *(float *)(*(_QWORD *)a1 + 40LL) = a1[25]; /*0x1800059c2*/\n  *(float *)(*(_QWORD *)a1 + 44LL) = a1[26]; /*0x1800059cc*/\n  *(float *)(*(_QWORD *... [1119 chars total]",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180005900  sub rsp, 38h",
+                "180005904  mov eax, [rcx+74h]",
+                "180005907  mov r8, rcx",
+                "18000590a  mov edx, [rcx+70h]",
+                "18000590d  movsd xmm1, cs:qword_180084EE8",
+                "180005915  mov [rcx+9Ch], eax",
+                "18000591b  mov eax, [rcx+78h]",
+                "18000591e  mov [rcx+0A0h], eax",
+                "180005924  mov eax, [rcx+7Ch]",
+                "180005927  mov [rcx+0A4h], eax"
+              ],
+              "instruction_count": 55,
+              "truncated": false
+            },
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x18000F8A0",
+          "addr": "0x18000f8a0",
+          "name": "sub_18000F8A0",
+          "analysis": {
+            "size": "0x6a4",
+            "prototype": null,
+            "decompile": "char __fastcall sub_18000F8A0(__int64 a1, _QWORD *a2)\n{\n  _QWORD *v2; // rsi\n  int v4; // eax\n  __int64 cchWideChar; // r15\n  __int64 v6; // rdi\n  WCHAR *lpWideCharStr; // rbx\n  _QWORD *v8; // rax\n  __int128 *v9; // rdx\n  __int64 v10; // rax\n  __int64 v11; // rsi\n  unsigned __int64 v12; // rdx\n  __int64 v13; // rcx\n  unsigned __int64 v14; // rdx\n  __int64 v15; // rcx\n  unsigned __int64 v17; // rbx\n  char *v18; // r8\n  __int64 v19; // rdx\n  __int128 *v20; // rdx\n  char *v21; // r8\n  char *v22; // rdx\n  _QWORD *v23; // rdx\n  char v24; // di\n  __int64 v25; // rax\n  __int64 v26; // rax\n  __int64 v27; // rax\n  __int64 v28; // rax\n  __int64 v29; // rax\n  __int64 v30; // rax\n  __int64 v31; // rdx\n  __int64 v32; // rcx\n  __int64 v33; // rdx\n  __int64 v34; // rcx\n  unsigned __int64 v35; // rdx\n  __int64 v36; // rcx\n  unsigned __int64 v37; // rdx\n  __int64 v38; // rcx\n  unsigned __int64 v39; // rdx\n  __int64 v40; // rcx\n  unsigned __int64 v41; // rdx\n  __int64 v42; // rcx\n  _QWORD *v43; // rbx\n ... [14131 chars total]",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "18000f8a0  mov [rsp-8+arg_10], rbx",
+                "18000f8a5  mov [rsp-8+arg_18], rsi",
+                "18000f8aa  push rbp",
+                "18000f8ab  push rdi",
+                "18000f8ac  push r12",
+                "18000f8ae  push r14",
+                "18000f8b0  push r15",
+                "18000f8b2  lea rbp, [rsp-2900h]",
+                "18000f8ba  mov eax, 2A00h",
+                "18000f8bf  call __alloca_probe"
+              ],
+              "instruction_count": 410,
+              "truncated": false
+            },
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1800059F0",
+          "addr": "0x1800059f0",
+          "name": "sub_1800059F0",
+          "analysis": {
+            "size": "0x448",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_1800059F0(float *a1, __int64 a2, __int64 a3, __int64 a4, char a5)\n{\n  float v6; // xmm12_4\n  double v7; // xmm0_8\n  float v8; // xmm7_4\n  float v9; // xmm8_4\n  float v10; // xmm13_4\n  float v11; // xmm14_4\n  float v12; // xmm8_4\n  float v13; // xmm13_4\n  double v14; // xmm9_8\n  float v15; // xmm10_4\n  float v16; // xmm11_4\n  double v17; // xmm7_8\n  float v18; // xmm2_4\n  float v19; // xmm0_4\n  float v20; // xmm1_4\n  float v21; // xmm13_4\n  double v22; // xmm0_8\n  double v23; // xmm1_8\n  float v24; // xmm0_4\n  __int64 result; // rax\n  float v26; // xmm8_4\n  double v27; // xmm0_8\n  int v28; // xmm7_4\n  float v29; // xmm0_4\n  int v30; // edi\n  double v31; // xmm6_8\n  float v32; // xmm0_4\n  float v33; // xmm1_4\n  float v34; // xmm0_4\n  float v35; // [rsp+C8h] [rbp+10h]\n\n  v6 = sub_18004B9EC() * a1[23]; /*0x180005a5f*/\n  v7 = sub_18004B9EC(); /*0x180005a78*/\n  v8 = a1[2]; /*0x180005a89*/\n  v9 = a1[10]; /*0x180005a8e*/\n  v10 = 1.0; /*0x180005a94*/\n  v35 = v8; /*0x18000... [3718 chars total]",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "1800059f0  mov rax, rsp",
+                "1800059f3  mov [rax+20h], rbx",
+                "1800059f7  movss dword ptr [rax+18h], xmm2",
+                "1800059fc  push rdi",
+                "1800059fd  sub rsp, 0B0h",
+                "180005a04  movaps xmmword ptr [rax-18h], xmm6",
+                "180005a08  xorps xmm0, xmm0",
+                "180005a0b  movaps xmmword ptr [rax-28h], xmm7",
+                "180005a0f  movaps xmm6, xmm3",
+                "180005a12  cvtss2sd xmm0, xmm1"
+              ],
+              "instruction_count": 236,
+              "truncated": false
+            },
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1800219B0",
+          "addr": "0x1800219b0",
+          "name": "sub_1800219B0",
+          "analysis": {
+            "size": "0x2f",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_1800219B0(__int64 a1, int a2, int a3, int a4, char a5, int a6)\n{\n  __int64 *v6; // rbx\n  __int64 result; // rax\n\n  v6 = *(__int64 **)(a1 + 40); /*0x1800219b6*/\n  sub_1800059F0(a1: (_DWORD)v6, a2, a3, a4, a5); /*0x1800219c6*/\n  result = *v6; /*0x1800219cb*/\n  *(_DWORD *)(*v6 + 60) = a6; /*0x1800219d4*/\n  return result; /*0x1800219d9*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "1800219b0  push rbx",
+                "1800219b2  sub rsp, 30h",
+                "1800219b6  mov rbx, [rcx+28h]",
+                "1800219ba  movzx eax, [rsp+38h+arg_20]",
+                "1800219bf  mov rcx, rbx",
+                "1800219c2  mov [rsp+38h+var_18], al",
+                "1800219c6  call sub_1800059F0",
+                "1800219cb  mov rax, [rbx]",
+                "1800219ce  movss xmm0, [rsp+38h+arg_28]",
+                "1800219d4  movss dword ptr [rax+3Ch], xmm0"
+              ],
+              "instruction_count": 13,
+              "truncated": false
+            },
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180006280",
+          "addr": "0x180006280",
+          "name": "sub_180006280",
+          "analysis": {
+            "size": "0x125",
+            "prototype": null,
+            "decompile": "char __fastcall sub_180006280(__int64 a1, __int64 a2, __int64 *a3, __int64 a4, __int64 a5)\n{\n  __int64 v5; // rax\n  char result; // al\n  int v10; // [rsp+40h] [rbp+8h] BYREF\n  __int64 v11; // [rsp+48h] [rbp+10h] BYREF\n\n  v11 = a2; /*0x18000628b*/\n  v5 = *a3; /*0x180006294*/\n  v10 = 20; /*0x18000629d*/\n  LODWORD(v11) = 0; /*0x1800062a8*/\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, __int64, int *, __int64 *))(v5 + 144))( /*0x1800062cf*/\n    a1: a3,\n    a2: 0,\n    a3: 1,\n    a4: a1 + 104,\n    a5: &v10,\n    a6: &v11);\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, _QWORD))(*a3 + 152))( /*0x1800062e8*/\n    a1: a3,\n    a2: *(_QWORD *)(a1 + 112),\n    a3: 42,\n    a4: 0);\n  (*(void (__fastcall **)(__int64 *, __int64))(*a3 + 192))(a1: a3, a2: 4); /*0x1800062f9*/\n  (*(void (__fastcall **)(__int64 *, _QWORD))(*a3 + 136))(a1: a3, a2: *(_QWORD *)(a1 + 96)); /*0x180006309*/\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, __int64))(*a3 + 80))(a1: a3, a2: 0, a3: 1, a4: a1 + 128);... [1816 chars total]",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180006280  mov r11, rsp",
+                "180006283  mov [r11+18h], rbx",
+                "180006287  mov [r11+20h], rsi",
+                "18000628b  mov [r11+10h], rdx",
+                "18000628f  push rdi",
+                "180006290  sub rsp, 30h",
+                "180006294  mov rax, [r8]",
+                "180006297  mov rsi, rcx",
+                "18000629a  mov rdi, r8",
+                "18000629d  mov [rsp+38h+arg_0], 14h"
+              ],
+              "instruction_count": 82,
+              "truncated": false
+            },
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1800215B0",
+          "addr": "0x1800215b0",
+          "name": "sub_1800215B0",
+          "analysis": {
+            "size": "0xae",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_1800215B0(__int64 a1, __int64 a2)\n{\n  __int64 v4; // rcx\n  __int64 result; // rax\n  __int64 v6; // rax\n  int v7; // [rsp+20h] [rbp-58h] BYREF\n  __int64 v8; // [rsp+24h] [rbp-54h]\n  int v9; // [rsp+2Ch] [rbp-4Ch]\n  _BYTE v10[16]; // [rsp+38h] [rbp-40h] BYREF\n  int v11; // [rsp+48h] [rbp-30h]\n\n  (*(void (__fastcall **)(__int64, _BYTE *))(*(_QWORD *)a2 + 80LL))(a1: a2, a2: v10); /*0x1800215df*/\n  v4 = *(_QWORD *)(a1 + 24); /*0x1800215e2*/\n  v7 = v11; /*0x1800215ea*/\n  v8 = 4; /*0x1800215ee*/\n  v9 = 1; /*0x1800215f7*/\n  if ( v4 != 0 ) /*0x180021602*/\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)v4 + 16LL))(a1: v4); /*0x180021607*/\n  result = (*(__int64 (__fastcall **)(_QWORD, __int64, int *, __int64))(**(_QWORD **)(a1 + 8) + 56LL))( /*0x18002161d*/\n             a1: *(_QWORD *)(a1 + 8),\n             a2,\n             a3: &v7,\n             a4: a1 + 24);\n  if ( (int)result < 0 ) /*0x180021622*/\n  {\n    v6 = sub_180020730(a1: &qword_18008F930, a2: \"CreateShaderResourc... [1120 chars total]",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "1800215b0  mov [rsp+arg_10], rbx",
+                "1800215b5  mov [rsp+arg_18], rsi",
+                "1800215ba  push rdi",
+                "1800215bb  sub rsp, 70h",
+                "1800215bf  mov rax, cs:__security_cookie",
+                "1800215c6  xor rax, rsp",
+                "1800215c9  mov [rsp+78h+var_10], rax",
+                "1800215ce  mov rax, [rdx]",
+                "1800215d1  mov rbx, rdx",
+                "1800215d4  mov rdi, rcx"
+              ],
+              "instruction_count": 44,
+              "truncated": false
+            },
+            "xrefs": null,
+            "callers": null,
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": null,
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": null,
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": null,
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": null,
+            "basic_block_count": 0,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"result\":[{\"target\":\"0x180005900\",\"addr\":\"0x180005900\",\"name\":\"sub_180005900\",\"analysis\":{\"size\":\"0xe6\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180005900(float *a1, __int64 a2, __int64 a3, __int64 a4)\\n{\\n  __int64 v4; // rdx\\n  float v5; // xmm0_4\\n  float v6; // xmm0_4\\n\\n  v4 = *((unsigned int *)a1 + 28); /*0x18000590a*/\\n  a1[39] = a1[29]; /*0x180005915*/\\n  a1[40] = a1[30]; /*0x18000591e*/\\n  a1[41] = a1[31]; /*0x180005927*/\\n  a1[42] = a1[32]; /*0x180005933*/\\n  a1[43] = a1[33]; /*0x18000593f*/\\n  a1[44] = a1[34]; /*0x18000594b*/\\n  *((_DWORD *)a1 + 38) = v4; /*0x180005951*/\\n  if ( (_DWORD)v4 != 0 ) /*0x180005959*/\\n    v5 = a1[4]; /*0x180005962*/\\n  else\\n    v5 = a1[3]; /*0x18000595b*/\\n  v6 = 0.3333333333333333 / v5; /*0x180005981*/\\n  **(float **)a1 = v6; /*0x180005985*/\\n  *(float *)(*(_QWORD *)a1 + 28LL) = a1[4] / (float)(a1[9] * a1[3]); /*0x1800059a2*/\\n  *(_DWORD *)(*(_QWORD *)a1 + 36LL) = 0; /*0x1800059aa*/\\n  *(float *)(*(_QWORD *)a1 + 20LL) = a1[7]; /*0x1800059b8*/\\n  *(float *)(*(_QWORD *)a1 + 40LL) = a1[25]; /*0x1800059c2*/\\n  *(float *)(*(_QWORD *)a1 + 44LL) = a1[26]; /*0x1800059cc*/\\n  *(float *)(*(_QWORD *... [1119 chars total]\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180005900  sub rsp, 38h\",\"180005904  mov eax, [rcx+74h]\",\"180005907  mov r8, rcx\",\"18000590a  mov edx, [rcx+70h]\",\"18000590d  movsd xmm1, cs:qword_180084EE8\",\"180005915  mov [rcx+9Ch], eax\",\"18000591b  mov eax, [rcx+78h]\",\"18000591e  mov [rcx+0A0h], eax\",\"180005924  mov eax, [rcx+7Ch]\",\"180005927  mov [rcx+0A4h], eax\"],\"instruction_count\":55,\"truncated\":false},\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x18000F8A0\",\"addr\":\"0x18000f8a0\",\"name\":\"sub_18000F8A0\",\"analysis\":{\"size\":\"0x6a4\",\"prototype\":null,\"decompile\":\"char __fastcall sub_18000F8A0(__int64 a1, _QWORD *a2)\\n{\\n  _QWORD *v2; // rsi\\n  int v4; // eax\\n  __int64 cchWideChar; // r15\\n  __int64 v6; // rdi\\n  WCHAR *lpWideCharStr; // rbx\\n  _QWORD *v8; // rax\\n  __int128 *v9; // rdx\\n  __int64 v10; // rax\\n  __int64 v11; // rsi\\n  unsigned __int64 v12; // rdx\\n  __int64 v13; // rcx\\n  unsigned __int64 v14; // rdx\\n  __int64 v15; // rcx\\n  unsigned __int64 v17; // rbx\\n  char *v18; // r8\\n  __int64 v19; // rdx\\n  __int128 *v20; // rdx\\n  char *v21; // r8\\n  char *v22; // rdx\\n  _QWORD *v23; // rdx\\n  char v24; // di\\n  __int64 v25; // rax\\n  __int64 v26; // rax\\n  __int64 v27; // rax\\n  __int64 v28; // rax\\n  __int64 v29; // rax\\n  __int64 v30; // rax\\n  __int64 v31; // rdx\\n  __int64 v32; // rcx\\n  __int64 v33; // rdx\\n  __int64 v34; // rcx\\n  unsigned __int64 v35; // rdx\\n  __int64 v36; // rcx\\n  unsigned __int64 v37; // rdx\\n  __int64 v38; // rcx\\n  unsigned __int64 v39; // rdx\\n  __int64 v40; // rcx\\n  unsigned __int64 v41; // rdx\\n  __int64 v42; // rcx\\n  _QWORD *v43; // rbx\\n ... [14131 chars total]\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"18000f8a0  mov [rsp-8+arg_10], rbx\",\"18000f8a5  mov [rsp-8+arg_18], rsi\",\"18000f8aa  push rbp\",\"18000f8ab  push rdi\",\"18000f8ac  push r12\",\"18000f8ae  push r14\",\"18000f8b0  push r15\",\"18000f8b2  lea rbp, [rsp-2900h]\",\"18000f8ba  mov eax, 2A00h\",\"18000f8bf  call __alloca_probe\"],\"instruction_count\":410,\"truncated\":false},\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1800059F0\",\"addr\":\"0x1800059f0\",\"name\":\"sub_1800059F0\",\"analysis\":{\"size\":\"0x448\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_1800059F0(float *a1, __int64 a2, __int64 a3, __int64 a4, char a5)\\n{\\n  float v6; // xmm12_4\\n  double v7; // xmm0_8\\n  float v8; // xmm7_4\\n  float v9; // xmm8_4\\n  float v10; // xmm13_4\\n  float v11; // xmm14_4\\n  float v12; // xmm8_4\\n  float v13; // xmm13_4\\n  double v14; // xmm9_8\\n  float v15; // xmm10_4\\n  float v16; // xmm11_4\\n  double v17; // xmm7_8\\n  float v18; // xmm2_4\\n  float v19; // xmm0_4\\n  float v20; // xmm1_4\\n  float v21; // xmm13_4\\n  double v22; // xmm0_8\\n  double v23; // xmm1_8\\n  float v24; // xmm0_4\\n  __int64 result; // rax\\n  float v26; // xmm8_4\\n  double v27; // xmm0_8\\n  int v28; // xmm7_4\\n  float v29; // xmm0_4\\n  int v30; // edi\\n  double v31; // xmm6_8\\n  float v32; // xmm0_4\\n  float v33; // xmm1_4\\n  float v34; // xmm0_4\\n  float v35; // [rsp+C8h] [rbp+10h]\\n\\n  v6 = sub_18004B9EC() * a1[23]; /*0x180005a5f*/\\n  v7 = sub_18004B9EC(); /*0x180005a78*/\\n  v8 = a1[2]; /*0x180005a89*/\\n  v9 = a1[10]; /*0x180005a8e*/\\n  v10 = 1.0; /*0x180005a94*/\\n  v35 = v8; /*0x18000... [3718 chars total]\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"1800059f0  mov rax, rsp\",\"1800059f3  mov [rax+20h], rbx\",\"1800059f7  movss dword ptr [rax+18h], xmm2\",\"1800059fc  push rdi\",\"1800059fd  sub rsp, 0B0h\",\"180005a04  movaps xmmword ptr [rax-18h], xmm6\",\"180005a08  xorps xmm0, xmm0\",\"180005a0b  movaps xmmword ptr [rax-28h], xmm7\",\"180005a0f  movaps xmm6, xmm3\",\"180005a12  cvtss2sd xmm0, xmm1\"],\"instruction_count\":236,\"truncated\":false},\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1800219B0\",\"addr\":\"0x1800219b0\",\"name\":\"sub_1800219B0\",\"analysis\":{\"size\":\"0x2f\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_1800219B0(__int64 a1, int a2, int a3, int a4, char a5, int a6)\\n{\\n  __int64 *v6; // rbx\\n  __int64 result; // rax\\n\\n  v6 = *(__int64 **)(a1 + 40); /*0x1800219b6*/\\n  sub_1800059F0(a1: (_DWORD)v6, a2, a3, a4, a5); /*0x1800219c6*/\\n  result = *v6; /*0x1800219cb*/\\n  *(_DWORD *)(*v6 + 60) = a6; /*0x1800219d4*/\\n  return result; /*0x1800219d9*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"1800219b0  push rbx\",\"1800219b2  sub rsp, 30h\",\"1800219b6  mov rbx, [rcx+28h]\",\"1800219ba  movzx eax, [rsp+38h+arg_20]\",\"1800219bf  mov rcx, rbx\",\"1800219c2  mov [rsp+38h+var_18], al\",\"1800219c6  call sub_1800059F0\",\"1800219cb  mov rax, [rbx]\",\"1800219ce  movss xmm0, [rsp+38h+arg_28]\",\"1800219d4  movss dword ptr [rax+3Ch], xmm0\"],\"instruction_count\":13,\"truncated\":false},\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180006280\",\"addr\":\"0x180006280\",\"name\":\"sub_180006280\",\"analysis\":{\"size\":\"0x125\",\"prototype\":null,\"decompile\":\"char __fastcall sub_180006280(__int64 a1, __int64 a2, __int64 *a3, __int64 a4, __int64 a5)\\n{\\n  __int64 v5; // rax\\n  char result; // al\\n  int v10; // [rsp+40h] [rbp+8h] BYREF\\n  __int64 v11; // [rsp+48h] [rbp+10h] BYREF\\n\\n  v11 = a2; /*0x18000628b*/\\n  v5 = *a3; /*0x180006294*/\\n  v10 = 20; /*0x18000629d*/\\n  LODWORD(v11) = 0; /*0x1800062a8*/\\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, __int64, int *, __int64 *))(v5 + 144))( /*0x1800062cf*/\\n    a1: a3,\\n    a2: 0,\\n    a3: 1,\\n    a4: a1 + 104,\\n    a5: &v10,\\n    a6: &v11);\\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, _QWORD))(*a3 + 152))( /*0x1800062e8*/\\n    a1: a3,\\n    a2: *(_QWORD *)(a1 + 112),\\n    a3: 42,\\n    a4: 0);\\n  (*(void (__fastcall **)(__int64 *, __int64))(*a3 + 192))(a1: a3, a2: 4); /*0x1800062f9*/\\n  (*(void (__fastcall **)(__int64 *, _QWORD))(*a3 + 136))(a1: a3, a2: *(_QWORD *)(a1 + 96)); /*0x180006309*/\\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, __int64))(*a3 + 80))(a1: a3, a2: 0, a3: 1, a4: a1 + 128);... [1816 chars total]\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180006280  mov r11, rsp\",\"180006283  mov [r11+18h], rbx\",\"180006287  mov [r11+20h], rsi\",\"18000628b  mov [r11+10h], rdx\",\"18000628f  push rdi\",\"180006290  sub rsp, 30h\",\"180006294  mov rax, [r8]\",\"180006297  mov rsi, rcx\",\"18000629a  mov rdi, r8\",\"18000629d  mov [rsp+38h+arg_0], 14h\"],\"instruction_count\":82,\"truncated\":false},\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1800215B0\",\"addr\":\"0x1800215b0\",\"name\":\"sub_1800215B0\",\"analysis\":{\"size\":\"0xae\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_1800215B0(__int64 a1, __int64 a2)\\n{\\n  __int64 v4; // rcx\\n  __int64 result; // rax\\n  __int64 v6; // rax\\n  int v7; // [rsp+20h] [rbp-58h] BYREF\\n  __int64 v8; // [rsp+24h] [rbp-54h]\\n  int v9; // [rsp+2Ch] [rbp-4Ch]\\n  _BYTE v10[16]; // [rsp+38h] [rbp-40h] BYREF\\n  int v11; // [rsp+48h] [rbp-30h]\\n\\n  (*(void (__fastcall **)(__int64, _BYTE *))(*(_QWORD *)a2 + 80LL))(a1: a2, a2: v10); /*0x1800215df*/\\n  v4 = *(_QWORD *)(a1 + 24); /*0x1800215e2*/\\n  v7 = v11; /*0x1800215ea*/\\n  v8 = 4; /*0x1800215ee*/\\n  v9 = 1; /*0x1800215f7*/\\n  if ( v4 != 0 ) /*0x180021602*/\\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)v4 + 16LL))(a1: v4); /*0x180021607*/\\n  result = (*(__int64 (__fastcall **)(_QWORD, __int64, int *, __int64))(**(_QWORD **)(a1 + 8) + 56LL))( /*0x18002161d*/\\n             a1: *(_QWORD *)(a1 + 8),\\n             a2,\\n             a3: &v7,\\n             a4: a1 + 24);\\n  if ( (int)result < 0 ) /*0x180021622*/\\n  {\\n    v6 = sub_180020730(a1: &qword_18008F930, a2: \\\"CreateShaderResourc... [1120 chars total]\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"1800215b0  mov [rsp+arg_10], rbx\",\"1800215b5  mov [rsp+arg_18], rsi\",\"1800215ba  push rdi\",\"1800215bb  sub rsp, 70h\",\"1800215bf  mov rax, cs:__security_cookie\",\"1800215c6  xor rax, rsp\",\"1800215c9  mov [rsp+78h+var_10], rax\",\"1800215ce  mov rax, [rdx]\",\"1800215d1  mov rbx, rdx\",\"1800215d4  mov rdi, rcx\"],\"instruction_count\":44,\"truncated\":false},\"xrefs\":null,\"callers\":null,\"caller_count\":0,\"callers_truncated\":false,\"callees\":null,\"callee_count\":0,\"callees_truncated\":false,\"strings\":null,\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":null,\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":null,\"basic_block_count\":0,\"basic_blocks_truncated\":false},\"error\":null}]}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/74b80874-8b6a-4940-8a60-ba624364ba30.json http://127.0.0.1:60951/output/74b80874-8b6a-4940-8a60-ba624364ba30.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 55814,
+        "output_id": "74b80874-8b6a-4940-8a60-ba624364ba30",
+        "download_url": "http://127.0.0.1:60951/output/74b80874-8b6a-4940-8a60-ba624364ba30.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/74b80874-8b6a-4940-8a60-ba624364ba30.json http://127.0.0.1:60951/output/74b80874-8b6a-4940-8a60-ba624364ba30.json"
+      }
+    }
+  },
+  "id": 1
+}

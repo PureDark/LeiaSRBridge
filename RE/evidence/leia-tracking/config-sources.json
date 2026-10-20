@@ -1,0 +1,22 @@
+[
+  {
+    "path": "C:\\Program Files\\LeiaSR\\Tracker\\products\\ET\\ft_user.ini",
+    "sha256": "951079941fd3d343a7ded03c7acd7101c53b02f1bcd16e689fef0c61e6d616fc"
+  },
+  {
+    "path": "C:\\Program Files\\LeiaSR\\Tracker\\products\\ET\\calibration.yml",
+    "sha256": "a4e89d2c2b1276946665a8138e0a1be1a6843fd960f4151f4e16b4c153dca861"
+  },
+  {
+    "path": "C:\\ProgramData\\Simulated Reality\\Devices\\VN022519ET0014\\Tracker2DisplayTransform.ini",
+    "sha256": "7e54310864bb38251667889d4a38c5b8a7cb6427563b960df19a48bc81501eb4"
+  },
+  {
+    "path": "C:\\ProgramData\\Simulated Reality\\Devices\\VN022519ET0014\\intrinsics.yml",
+    "sha256": "fc339becbdbc4a60195293cca5091d71862b8f41a996e453201e0741ba30ac1b"
+  },
+  {
+    "path": "C:\\ProgramData\\Simulated Reality\\Devices\\VN022519ET0014\\extrinsics.yml",
+    "sha256": "aae6512ed4dd5fcd74b924d72343a017c29793a3ec9d72af0aed7f3e488365d6"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "data": [
+        {
+          "addr": "0x1401ba0b0",
+          "imported_name": "?GetNumOfCameras@BusManager@FlyCapture2@@UEAA?AVError@2@PEAI@Z",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0b8",
+          "imported_name": "?GetData@Image@FlyCapture2@@UEAAPEAEXZ",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0c0",
+          "imported_name": "??0Error@FlyCapture2@@QEAA@XZ",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0c8",
+          "imported_name": "??1Error@FlyCapture2@@UEAA@XZ",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0d0",
+          "imported_name": "?PrintErrorTrace@Error@FlyCapture2@@UEBAXXZ",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0d8",
+          "imported_name": "??0Camera@FlyCapture2@@QEAA@XZ",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0e0",
+          "imported_name": "??1Camera@FlyCapture2@@UEAA@XZ",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0e8",
+          "imported_name": "??0BusManager@FlyCapture2@@QEAA@XZ",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0f0",
+          "imported_name": "??1BusManager@FlyCapture2@@UEAA@XZ",
+          "module": "FlyCapture2_v140"
+        },
+        {
+          "addr": "0x1401ba0f8",
+          "imported_name": "?GetMetadata@Image@FlyCapture2@@UEBA?AUImageMetadata@2@XZ",
+          "module": "FlyCapture2_v140"
+        }
+      ],
+      "next_offset": null
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"data\":[{\"addr\":\"0x1401ba0b0\",\"imported_name\":\"?GetNumOfCameras@BusManager@FlyCapture2@@UEAA?AVError@2@PEAI@Z\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0b8\",\"imported_name\":\"?GetData@Image@FlyCapture2@@UEAAPEAEXZ\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0c0\",\"imported_name\":\"??0Error@FlyCapture2@@QEAA@XZ\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0c8\",\"imported_name\":\"??1Error@FlyCapture2@@UEAA@XZ\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0d0\",\"imported_name\":\"?PrintErrorTrace@Error@FlyCapture2@@UEBAXXZ\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0d8\",\"imported_name\":\"??0Camera@FlyCapture2@@QEAA@XZ\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0e0\",\"imported_name\":\"??1Camera@FlyCapture2@@UEAA@XZ\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0e8\",\"imported_name\":\"??0BusManager@FlyCapture2@@QEAA@XZ\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0f0\",\"imported_name\":\"??1BusManager@FlyCapture2@@UEAA@XZ\",\"module\":\"FlyCapture2_v140\"},{\"addr\":\"0x1401ba0f8\",\"imported_name\":\"?GetMetadata@Image@FlyCapture2@@UEBA?AUImageMetadata@2@XZ\",\"module\":\"FlyCapture2_v140\"}],\"next_offset\":null}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/65a66a6a-6182-4aeb-b8a8-d7e1a0d484eb.json http://127.0.0.1:56224/output/65a66a6a-6182-4aeb-b8a8-d7e1a0d484eb.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 84894,
+        "output_id": "65a66a6a-6182-4aeb-b8a8-d7e1a0d484eb",
+        "download_url": "http://127.0.0.1:56224/output/65a66a6a-6182-4aeb-b8a8-d7e1a0d484eb.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/65a66a6a-6182-4aeb-b8a8-d7e1a0d484eb.json http://127.0.0.1:56224/output/65a66a6a-6182-4aeb-b8a8-d7e1a0d484eb.json"
+      }
+    }
+  },
+  "id": 1
+}

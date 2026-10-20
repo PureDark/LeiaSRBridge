@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{A6DA5F84-11DC-4BB8-A867-09FDC0B99B6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DepthTransformerPlus</RootNamespace>
+    <AssemblyName>DepthTransformerPlus</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>DepthTransformerPlus.ico</ApplicationIcon>
+    <StartupObject>AstraDepth3D.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Fleck" />
+    <Reference Include="Hardcodet.NotifyIcon.Wpf" />
+    <Reference Include="Microsoft.Win32.TaskScheduler" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="NLog" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SharpDX" />
+    <Reference Include="SharpDX.D3DCompiler" />
+    <Reference Include="SharpDX.Direct3D11" />
+    <Reference Include="SharpDX.DXGI" />
+    <Reference Include="SharpDX.Mathematics" />
+    <Reference Include="SharpDX.XInput" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="Windows.Foundation.FoundationContract" />
+    <Reference Include="Windows.Foundation.UniversalApiContract" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AstraDepth3D\AiStereoEngineLoading.cs" />
+    <Compile Include="AstraDepth3D\App.cs" />
+    <Compile Include="AstraDepth3D\AsyncDebouncer.cs" />
+    <Compile Include="AstraDepth3D\BOEStereoRender\FaceTrackingUpdater.cs" />
+    <Compile Include="AstraDepth3D\BOEStereoRender\FrameCopy.cs" />
+    <Compile Include="AstraDepth3D\BOEStereoRender\MCUSdk.cs" />
+    <Compile Include="AstraDepth3D\BOEStereoRender\Shader.cs" />
+    <Compile Include="AstraDepth3D\BOEStereoRender\StatusCallback.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\BasicCapture.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\BasicCaptureAsync.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\BasicCaptureDXGI.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\BasicCaptureDXGIAsync.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\BasicCaptureDXGISafe.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\BasicCaptureSafe.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\BasicSampleApplication.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\CaptureState.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\CaptureStateDXGI.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\CommonTypes.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\DisplayManager.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\DUPL_RETURN.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\FormatRecognition.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\FrameConvert.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\FRAME_DATA.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\ICapture.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\ShaderData.cs" />
+    <Compile Include="AstraDepth3D\CaptureSampleCore\VERTEX.cs" />
+    <Compile Include="AstraDepth3D\Composition\WindowsRuntimeHelpers\CaptureHelper.cs" />
+    <Compile Include="AstraDepth3D\Composition\WindowsRuntimeHelpers\CompositionHelper.cs" />
+    <Compile Include="AstraDepth3D\Composition\WindowsRuntimeHelpers\CoreMessagingHelper.cs" />
+    <Compile Include="AstraDepth3D\Composition\WindowsRuntimeHelpers\Direct3D11Helper.cs" />
+    <Compile Include="AstraDepth3D\Dumper\CrashDumper.cs" />
+    <Compile Include="AstraDepth3D\EventBus\LocalEnumeration.cs" />
+    <Compile Include="AstraDepth3D\EventBus\LocalEventArgs.cs" />
+    <Compile Include="AstraDepth3D\EventBus\LocalEventPublisher.cs" />
+    <Compile Include="AstraDepth3D\FaceTrackingNotification.cs" />
+    <Compile Include="AstraDepth3D\GlobalStatusManager.cs" />
+    <Compile Include="AstraDepth3D\InterwaveNotification.cs" />
+    <Compile Include="AstraDepth3D\MainWindow.cs" />
+    <Compile Include="AstraDepth3D\MessageWindow.cs" />
+    <Compile Include="AstraDepth3D\MonitorEnumerationHelper.cs" />
+    <Compile Include="AstraDepth3D\MonitorGuide.cs" />
+    <Compile Include="AstraDepth3D\MonitorInfo.cs" />
+    <Compile Include="AstraDepth3D\MyMessageBox.cs" />
+    <Compile Include="AstraDepth3D\PersistentContextMenu.cs" />
+    <Compile Include="AstraDepth3D\PrallaxWindow.cs" />
+    <Compile Include="AstraDepth3D\Properties\Resources.cs" />
+    <Compile Include="AstraDepth3D\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="AstraDepth3D\ScreenCaptureWindow.cs" />
+    <Compile Include="AstraDepth3D\Settings.cs" />
+    <Compile Include="AstraDepth3D\TaskExtensions.cs" />
+    <Compile Include="AstraDepth3D\Tracker\Facetracker.cs" />
+    <Compile Include="AstraDepth3D\WebSocketModule\TencentProtocolHandler.cs" />
+    <Compile Include="AstraDepth3D\WebSocketModule\WebSocketClient.cs" />
+    <Compile Include="AstraDepth3D\WebSocketModule\WebSocketFleck.cs" />
+    <Compile Include="AstraDepth3D\WebSocketModule\YLProtocolHandler.cs" />
+    <Compile Include="AstraDepth3D\WindowEnumerationHelper.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\ComRegistrar.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\Edid.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\EdidData.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\EdidDetail.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\HotkeyConfig.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\HotkeyPressedEventArgs.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\IniFile.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\JsonTools.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\LowLevelHotkey.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\MessageHelp.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\MonitorFullInfo.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\MonitorHelper.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\NLogService.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\PowerSetting.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\RegistrySingleFactory.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\ReorderHandler.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\ScreenRotationHelper.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\SecureDesktopDetector.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\SettingsTools.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\User32.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\VirtualKeyCodes.cs" />
+    <Compile Include="AstraDepth3D\WindowHelper\WerDumpConfigurator.cs" />
+    <Compile Include="AstraDepth3D\WinowHelper\ABEdge.cs" />
+    <Compile Include="AstraDepth3D\WinowHelper\ABMsg.cs" />
+    <Compile Include="AstraDepth3D\WinowHelper\ABNotify.cs" />
+    <Compile Include="AstraDepth3D\WinowHelper\APIWrapper.cs" />
+    <Compile Include="AstraDepth3D\WinowHelper\APPBARDATA.cs" />
+    <Compile Include="AstraDepth3D\WinowHelper\RECT.cs" />
+    <Compile Include="AstraDepth3D\WMI\GamepadController.cs" />
+    <Compile Include="AstraDepth3D\WMI\WMIButtonReceiveEvent.cs" />
+    <Compile Include="BOEReasterTest\LoadBoeMCUDll.cs" />
+    <Compile Include="FaceTrackingManagerServiceLib\ISimpleFaceTracking.cs" />
+    <Compile Include="FaceTrackingManagerServiceLib\SimpleFaceTracking.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NativeIntegerAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AstraDepth3D\Properties\Resources.resources" />
+    <EmbeddedResource Include="DepthTransformerPlus.g.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AiStereoKitCSharp\AiStereoKitCSharp.csproj">
+      <Project>{A6DA5F84-11DC-4BB8-A867-09FDC0B99B69}</Project>
+      <Name>AiStereoKitCSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOEInterleaving\BOEInterleaving.csproj">
+      <Project>{A6DA5F84-11DC-4BB8-A867-09FDC0B99B6A}</Project>
+      <Name>BOEInterleaving</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOERenderWapper\BOERenderWapper.csproj">
+      <Project>{A6DA5F84-11DC-4BB8-A867-09FDC0B99B6B}</Project>
+      <Name>BOERenderWapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="AstraDepth3D\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

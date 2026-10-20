@@ -1,0 +1,19 @@
+{
+  "addr": "sub_1800B1DA0",
+  "code": "char __fastcall sub_1800B1DA0(__int64 a1, double a2)\n{\n  __int64 v3; // rcx\n  int v4; // r8d\n  _QWORD v5[2]; // [rsp+30h] [rbp-58h] BYREF\n  __int128 v6; // [rsp+40h] [rbp-48h]\n  __int64 v7; // [rsp+50h] [rbp-38h]\n  __int128 v8; // [rsp+60h] [rbp-28h] BYREF\n  __int64 v9; // [rsp+70h] [rbp-18h]\n  double v10; // [rsp+98h] [rbp+10h] BYREF\n\n  v10 = a2; /*0x1800b1da0*/\n  if ( a2 <= 0.0 || a2 > 600.0 ) /*0x1800b1dbe*/\n  {\n    v5[1] = 37; /*0x1800b1dd9*/\n    v5[0] = \"y = {}, z = {}\"; /*0x1800b1de2*/\n    v6 = 0u; /*0x1800b1e08*/\n    v7 = 0; /*0x1800b1e12*/\n    v3 = *(_QWORD *)(sub_180008380(a1) + 472); /*0x1800b1e2a*/\n    v8 = 0u; /*0x1800b1e31*/\n    v9 = 0; /*0x1800b1e36*/\n    sub_1800B4830(a1: v3, a2: (unsigned int)&v8, a3: v4, a4: (unsigned int)v5, a5: (__int64)&v10); /*0x1800b1e3c*/\n    return 0; /*0x1800b1e41*/\n  }\n  else\n  {\n    *(double *)(a1 + 1184) = a2; /*0x1800b1dc0*/\n    return 1; /*0x1800b1dc8*/\n  }\n}",
+  "refs": [
+    {
+      "addr": "0x18010fdd0",
+      "name": "aXYZ",
+      "string": "x = {}, y = {}, z = {}"
+    },
+    {
+      "addr": "0x180008380",
+      "name": "sub_180008380"
+    },
+    {
+      "addr": "0x1800b4830",
+      "name": "sub_1800B4830"
+    }
+  ]
+}

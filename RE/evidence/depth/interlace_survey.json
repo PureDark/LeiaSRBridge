@@ -1,0 +1,1649 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"metadata\":{\"path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\interlaceSDK.dll.i64\",\"module\":\"interlaceSDK.dll\",\"arch\":\"64\",\"base_address\":\"0x180000000\",\"image_size\":\"0xc6000\",\"md5\":\"bb7d1f748b7bcaab71e2de5b542b2858\",\"sha256\":\"380a9194a5c2ab42cf1f70a2b3c383f9b340b3b292ac72177350aa0dae56cc6f\"},\"statistics\":{\"total_functions\":3091,\"named_functions\":65,\"library_functions\":242,\"unnamed_functions\":2784,\"total_strings\":1262,\"total_segments\":5},\"segments\":[{\"name\":\".text\",\"start\":\"0x180001000\",\"end\":\"0x18006e000\",\"size\":\"0x6d000\",\"permissions\":\"rx\"},{\"name\":\".idata\",\"start\":\"0x18006e000\",\"end\":\"0x18006e830\",\"size\":\"0x830\",\"permissions\":\"r\"},{\"name\":\".rdata\",\"start\":\"0x18006e830\",\"end\":\"0x1800a7000\",\"size\":\"0x387d0\",\"permissions\":\"r\"},{\"name\":\".data\",\"start\":\"0x1800a7000\",\"end\":\"0x1800bb000\",\"size\":\"0x14000\",\"permissions\":\"rw\"},{\"name\":\".pdata\",\"start\":\"0x1800bb000\",\"end\":\"0x1800c4000\",\"size\":\"0x9000\",\"permissions\":\"r\"}],\"entrypoints\":[{\"addr\":\"0x180060580\",\"name\":\"BOE_Interleaving_doInterleave\",\"ordinal\":1},{\"addr\":\"0x1800602a0\",\"name\":\"BOE_Interleaving_initSDK\",\"ordinal\":2},{\"addr\":\"0x1800604a0\",\"name\":\"BOE_Interleaving_releaseSDK\",\"ordinal\":3},{\"addr\":\"0x180060520\",\"name\":\"BOE_Interleaving_setDeviceParam\",\"ordinal\":4},{\"addr\":\"0x180060550\",\"name\":\"BOE_Interleaving_setRefractDeviceParam\",\"ordinal\":5},{\"addr\":\"0x1800604f0\",\"name\":\"BOE_Interleaving_setWholeParam\",\"ordinal\":6},{\"addr\":\"0x180068520\",\"name\":\"DllEntryPoint\",\"ordinal\":6442878240}],\"interesting_strings\":[{\"addr\":\"0x180090570\",\"string\":\"invalid format string\",\"xref_count\":9},{\"addr\":\"0x18006eab4\",\"string\":\"tTyY1\",\"xref_count\":8},{\"addr\":\"0x18006f500\",\"string\":\"string too long\",\"xref_count\":8},{\"addr\":\"0x1800905e8\",\"string\":\"invalid type specifier\",\"xref_count\":7},{\"addr\":\"0x180090810\",\"string\":\"0123456789ABCDEF\",\"xref_count\":6},{\"addr\":\"0x180090db0\",\"string\":\"00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899\",\"xref_count\":6},{\"addr\":\"0x180090e88\",\"string\":\"0123456789abcdef\",\"xref_count\":6},{\"addr\":\"0x180090290\",\"string\":\"too large exponent\",\"xref_count\":5},{\"addr\":\"0x1800903a8\",\"string\":\"Rethrowing unknown exception in logger\",\"xref_count\":5},{\"addr\":\"0x18006f1f0\",\"string\":\"C:\\\\ws\\\\glog-0.4.0\\\\src\\\\logging.cc\",\"xref_count\":4},{\"addr\":\"0x180090650\",\"string\":\"number is too big\",\"xref_count\":4},{\"addr\":\"0x180090720\",\"string\":\"unordered_map/set too long\",\"xref_count\":4},{\"addr\":\"0x180090788\",\"string\":\"invalid hash bucket count\",\"xref_count\":4},{\"addr\":\"0x180090828\",\"string\":\"negative width\",\"xref_count\":4},{\"addr\":\"0x180090838\",\"string\":\"negative precision\",\"xref_count\":4}],\"interesting_functions\":[{\"addr\":\"0x180008710\",\"name\":\"sub_180008710\",\"size\":39,\"xref_count\":431,\"callee_count\":2,\"type\":\"complex\"},{\"addr\":\"0x1800087d0\",\"name\":\"sub_1800087D0\",\"size\":87,\"xref_count\":285,\"callee_count\":4,\"type\":\"complex\"},{\"addr\":\"0x180005890\",\"name\":\"sub_180005890\",\"size\":27,\"xref_count\":221,\"callee_count\":0,\"type\":\"leaf\"},{\"addr\":\"0x18000a140\",\"name\":\"sub_18000A140\",\"size\":72,\"xref_count\":175,\"callee_count\":2,\"type\":\"complex\"},{\"addr\":\"0x180068ee0\",\"name\":\"__CxxFrameHandler4\",\"size\":6,\"xref_count\":128,\"callee_count\":0,\"type\":\"thunk\"},{\"addr\":\"0x18002bd90\",\"name\":\"sub_18002BD90\",\"size\":72,\"xref_count\":106,\"callee_count\":2,\"type\":\"complex\"},{\"addr\":\"0x180067c40\",\"name\":\"sub_180067C40\",\"size\":59,\"xref_count\":104,\"callee_count\":4,\"type\":\"complex\"},{\"addr\":\"0x180009d90\",\"name\":\"sub_180009D90\",\"size\":27,\"xref_count\":101,\"callee_count\":1,\"type\":\"wrapper\"},{\"addr\":\"0x18001b320\",\"name\":\"sub_18001B320\",\"size\":99,\"xref_count\":100,\"callee_count\":3,\"type\":\"complex\"},{\"addr\":\"0x18000d6c0\",\"name\":\"sub_18000D6C0\",\"size\":63,\"xref_count\":97,\"callee_count\":1,\"type\":\"wrapper\"},{\"addr\":\"0x1800205d0\",\"name\":\"sub_1800205D0\",\"size\":35,\"xref_count\":96,\"callee_count\":1,\"type\":\"wrapper\"},{\"addr\":\"0x180004600\",\"name\":\"sub_180004600\",\"size\":6,\"xref_count\":94,\"callee_count\":0,\"type\":\"thunk\"},{\"addr\":\"0x180008b00\",\"name\":\"sub_180008B00\",\"size\":55,\"xref_count\":90,\"callee_count\":1,\"type\":\"wrapper\"},{\"addr\":\"0x180006ff0\",\"name\":\"sub_180006FF0\",\"size\":985,\"xref_count\":80,\"callee_count\":23,\"type\":\"dispatcher\"},{\"addr\":\"0x180014060\",\"name\":\"sub_180014060\",\"size\":56,\"xref_count\":80,\"callee_count\":0,\"type\":\"leaf\"}],\"imports_by_category\":{\"crypto\":[],\"network\":[],\"file_io\":[{\"addr\":\"0x18006e000\",\"name\":\"GetModuleFileNameA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e028\",\"name\":\"WriteFile\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e050\",\"name\":\"GetFileAttributesA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e060\",\"name\":\"GetPrivateProfileIntA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e078\",\"name\":\"GetTempPathA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0a8\",\"name\":\"GetWindowsDirectoryA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0c0\",\"name\":\"GetSystemTimeAsFileTime\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0f0\",\"name\":\"CreateDirectoryW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e140\",\"name\":\"GetFileInformationByHandleEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e158\",\"name\":\"AreFileApisANSI\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e160\",\"name\":\"GetFileAttributesExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e180\",\"name\":\"FindFirstFileW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e190\",\"name\":\"CreateFileW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e758\",\"name\":\"fclose\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e770\",\"name\":\"_filelengthi64\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e788\",\"name\":\"fwrite\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e790\",\"name\":\"_fileno\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"}],\"process\":[{\"addr\":\"0x18006e030\",\"name\":\"GetCurrentThreadId\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e058\",\"name\":\"GetCurrentProcessId\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0c8\",\"name\":\"GetCurrentProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e110\",\"name\":\"RtlVirtualUnwind\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e130\",\"name\":\"TerminateProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e138\",\"name\":\"IsProcessorFeaturePresent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e690\",\"name\":\"terminate\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6c8\",\"name\":\"_execute_onexit_table\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"}],\"registry\":[{\"addr\":\"0x18006e6d0\",\"name\":\"_register_onexit_function\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"}],\"other\":[{\"addr\":\"0x18006e008\",\"name\":\"GetConsoleScreenBufferInfo\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e010\",\"name\":\"SetConsoleTextAttribute\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e018\",\"name\":\"GetStdHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e020\",\"name\":\"WriteConsoleA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e038\",\"name\":\"Sleep\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e040\",\"name\":\"GetConsoleMode\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e048\",\"name\":\"GetTimeZoneInformation\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e068\",\"name\":\"MultiByteToWideChar\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e070\",\"name\":\"WideCharToMultiByte\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e080\",\"name\":\"OutputDebugStringA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e088\",\"name\":\"InitializeCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e090\",\"name\":\"EnterCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e098\",\"name\":\"LeaveCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0a0\",\"name\":\"DeleteCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0b0\",\"name\":\"GetComputerNameA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0b8\",\"name\":\"RtlCaptureStackBackTrace\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0d0\",\"name\":\"SleepConditionVariableSRW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0d8\",\"name\":\"LocalFree\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0e0\",\"name\":\"FormatMessageA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0e8\",\"name\":\"GetLocaleInfoEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e0f8\",\"name\":\"RtlCaptureContext\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e100\",\"name\":\"AcquireSRWLockExclusive\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e108\",\"name\":\"RtlLookupFunctionEntry\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e118\",\"name\":\"UnhandledExceptionFilter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e120\",\"name\":\"ReleaseSRWLockExclusive\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e128\",\"name\":\"SetUnhandledExceptionFilter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e148\",\"name\":\"GetLastError\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e150\",\"name\":\"CloseHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e168\",\"name\":\"IsDebuggerPresent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e170\",\"name\":\"QueryPerformanceCounter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e178\",\"name\":\"InitializeSListHead\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e188\",\"name\":\"FindClose\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e198\",\"name\":\"WakeAllConditionVariable\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18006e820\",\"name\":\"CoInitializeEx\",\"module\":\"ole32\"},{\"addr\":\"0x18006e1a8\",\"name\":\"?_Getcvt@_Locinfo@std@@QEBA?AU_Cvtvec@@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1b0\",\"name\":\"_Cnd_signal\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1b8\",\"name\":\"?_Throw_Cpp_error@std@@YAXH@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1c0\",\"name\":\"?_Init@locale@std@@CAPEAV_Locimp@12@_N@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1c8\",\"name\":\"?_Xout_of_range@std@@YAXPEBD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1d0\",\"name\":\"?_Xbad_function_call@std@@YAXXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1d8\",\"name\":\"?id@?$numpunct@D@std@@2V0locale@2@A\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1e0\",\"name\":\"_Mtx_lock\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1e8\",\"name\":\"_Thrd_id\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1f0\",\"name\":\"_Xtime_get_ticks\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e1f8\",\"name\":\"_Thrd_join\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e200\",\"name\":\"_Mtx_unlock\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e208\",\"name\":\"?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA_N_N@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e210\",\"name\":\"??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e218\",\"name\":\"?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e220\",\"name\":\"?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e228\",\"name\":\"?snextc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e230\",\"name\":\"?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD0@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e238\",\"name\":\"??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e240\",\"name\":\"?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e248\",\"name\":\"?_Getcat@?$ctype@_W@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e250\",\"name\":\"?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e258\",\"name\":\"?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e260\",\"name\":\"?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e268\",\"name\":\"?setg@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e270\",\"name\":\"?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e278\",\"name\":\"?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e280\",\"name\":\"?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e288\",\"name\":\"??0?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e290\",\"name\":\"??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e298\",\"name\":\"??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2a0\",\"name\":\"?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2a8\",\"name\":\"?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2b0\",\"name\":\"?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2b8\",\"name\":\"?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2c0\",\"name\":\"?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2c8\",\"name\":\"?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2d0\",\"name\":\"?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2d8\",\"name\":\"?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2e0\",\"name\":\"?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2e8\",\"name\":\"??1?$basic_istream@DU?$char_traits@D@std@@@std@@UEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2f0\",\"name\":\"?c_str@?$_Yarn@D@std@@QEBAPEBDXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e2f8\",\"name\":\"??Bios_base@std@@QEBA_NXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e300\",\"name\":\"??1facet@locale@std@@MEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e308\",\"name\":\"??0facet@locale@std@@IEAA@_K@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e310\",\"name\":\"?_Decref@facet@locale@std@@UEAAPEAV_Facet_base@3@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e318\",\"name\":\"?_Incref@facet@locale@std@@UEAAXXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e320\",\"name\":\"?_Gettrue@_Locinfo@std@@QEBAPEBDXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e328\",\"name\":\"?_Getfalse@_Locinfo@std@@QEBAPEBDXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e330\",\"name\":\"?_Getlconv@_Locinfo@std@@QEBAPEBUlconv@@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e338\",\"name\":\"??1_Locinfo@std@@QEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e340\",\"name\":\"??0_Locinfo@std@@QEAA@PEBD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e348\",\"name\":\"?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e350\",\"name\":\"?pbase@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e358\",\"name\":\"??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e360\",\"name\":\"??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e368\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e370\",\"name\":\"?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e378\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@M@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e380\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@N@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e388\",\"name\":\"?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@PEAV32@@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e390\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e398\",\"name\":\"?pbackfail@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHH@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3a0\",\"name\":\"?seekoff@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3a8\",\"name\":\"?seekpos@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3b0\",\"name\":\"?underflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3b8\",\"name\":\"?good@ios_base@std@@QEBA_NXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3c0\",\"name\":\"?flags@ios_base@std@@QEBAHXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3c8\",\"name\":\"?width@ios_base@std@@QEBA_JXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3d0\",\"name\":\"?width@ios_base@std@@QEAA_J_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3d8\",\"name\":\"?getloc@ios_base@std@@QEBA?AVlocale@2@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3e0\",\"name\":\"??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3e8\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@PEBX@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3f0\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e3f8\",\"name\":\"?flush@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e400\",\"name\":\"?put@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@_W@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e408\",\"name\":\"?sputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAA_JPEB_W_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e410\",\"name\":\"?sputc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAAG_W@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e418\",\"name\":\"?widen@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBA_WD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e420\",\"name\":\"?fill@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBA_WXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e428\",\"name\":\"?rdbuf@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBAPEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@2@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e430\",\"name\":\"?setstate@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAAXH_N@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e438\",\"name\":\"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e440\",\"name\":\"?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e448\",\"name\":\"?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e450\",\"name\":\"?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e458\",\"name\":\"?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e460\",\"name\":\"?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e468\",\"name\":\"?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e470\",\"name\":\"?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e478\",\"name\":\"?_Osfx@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAXXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e480\",\"name\":\"?tie@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBAPEAV?$basic_ostream@_WU?$char_traits@_W@std@@@2@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e488\",\"name\":\"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e490\",\"name\":\"?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e498\",\"name\":\"?_Syserror_map@std@@YAPEBDH@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4a0\",\"name\":\"?_Xlength_error@std@@YAXPEBD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4a8\",\"name\":\"?_Winerror_map@std@@YAHH@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4b0\",\"name\":\"?_Id_cnt@id@locale@std@@0HA\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4b8\",\"name\":\"?id@?$ctype@_W@std@@2V0locale@2@A\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4c0\",\"name\":\"?wcout@std@@3V?$basic_ostream@_WU?$char_traits@_W@std@@@1@A\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4c8\",\"name\":\"?_Xbad_alloc@std@@YAXXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4d0\",\"name\":\"?uncaught_exception@std@@YA_NXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4d8\",\"name\":\"?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4e0\",\"name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4e8\",\"name\":\"??0_Lockit@std@@QEAA@H@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4f0\",\"name\":\"??1_Lockit@std@@QEAA@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e4f8\",\"name\":\"?widen@?$ctype@_W@std@@QEBA_WD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e500\",\"name\":\"?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18006e7e0\",\"name\":\"D3D12SerializeVersionedRootSignature\",\"module\":\"d3d12\"},{\"addr\":\"0x18006e7f0\",\"name\":\"SymInitialize\",\"module\":\"dbghelp\"},{\"addr\":\"0x18006e7f8\",\"name\":\"SymCleanup\",\"module\":\"dbghelp\"},{\"addr\":\"0x18006e800\",\"name\":\"SymSetOptions\",\"module\":\"dbghelp\"},{\"addr\":\"0x18006e808\",\"name\":\"UnDecorateSymbolName\",\"module\":\"dbghelp\"},{\"addr\":\"0x18006e810\",\"name\":\"SymFromAddr\",\"module\":\"dbghelp\"},{\"addr\":\"0x18006e598\",\"name\":\"__CxxFrameHandler4\",\"module\":\"VCRUNTIME140_1\"},{\"addr\":\"0x18006e510\",\"name\":\"memchr\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e518\",\"name\":\"memmove\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e520\",\"name\":\"_CxxThrowException\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e528\",\"name\":\"_purecall\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e530\",\"name\":\"__CxxFrameHandler3\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e538\",\"name\":\"__std_type_info_destroy_list\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e540\",\"name\":\"__C_specific_handler\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e548\",\"name\":\"__std_exception_copy\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e550\",\"name\":\"__current_exception_context\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e558\",\"name\":\"__current_exception\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e560\",\"name\":\"strrchr\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e568\",\"name\":\"strchr\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e570\",\"name\":\"__std_exception_destroy\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e578\",\"name\":\"memset\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e580\",\"name\":\"memcpy\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e588\",\"name\":\"memcmp\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18006e5f8\",\"name\":\"free\",\"module\":\"api-ms-win-crt-heap-l1-1-0\"},{\"addr\":\"0x18006e600\",\"name\":\"_callnewh\",\"module\":\"api-ms-win-crt-heap-l1-1-0\"},{\"addr\":\"0x18006e608\",\"name\":\"calloc\",\"module\":\"api-ms-win-crt-heap-l1-1-0\"},{\"addr\":\"0x18006e610\",\"name\":\"malloc\",\"module\":\"api-ms-win-crt-heap-l1-1-0\"},{\"addr\":\"0x18006e688\",\"name\":\"_invoke_watson\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e698\",\"name\":\"_errno\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6a0\",\"name\":\"_invalid_parameter_noinfo_noreturn\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6a8\",\"name\":\"_initterm_e\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6b0\",\"name\":\"_initterm\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6b8\",\"name\":\"_cexit\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6c0\",\"name\":\"_crt_atexit\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6d8\",\"name\":\"_initialize_onexit_table\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6e0\",\"name\":\"_initialize_narrow_environment\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6e8\",\"name\":\"_configure_narrow_argv\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6f0\",\"name\":\"_seh_filter_dll\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e6f8\",\"name\":\"strerror_s\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e700\",\"name\":\"abort\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e708\",\"name\":\"perror\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e710\",\"name\":\"signal\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e718\",\"name\":\"_getpid\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18006e7c0\",\"name\":\"_localtime64_s\",\"module\":\"api-ms-win-crt-time-l1-1-0\"},{\"addr\":\"0x18006e7c8\",\"name\":\"_gmtime64_s\",\"module\":\"api-ms-win-crt-time-l1-1-0\"},{\"addr\":\"0x18006e7d0\",\"name\":\"strftime\",\"module\":\"api-ms-win-crt-time-l1-1-0\"},{\"addr\":\"0x18006e728\",\"name\":\"_write\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e730\",\"name\":\"_close\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e738\",\"name\":\"_popen\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e740\",\"name\":\"_pclose\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e748\",\"name\":\"__acrt_iob_func\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e750\",\"name\":\"fflush\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e760\",\"name\":\"_sopen_dispatch\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e768\",\"name\":\"__stdio_common_vsprintf\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e778\",\"name\":\"_fsopen\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e780\",\"name\":\"__stdio_common_vfprintf\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e798\",\"name\":\"__stdio_common_vsnprintf_s\",\"module\":\"api-ms-win-crt-stdio-l1-1-0\"},{\"addr\":\"0x18006e630\",\"name\":\"sinf\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e638\",\"name\":\"_dclass\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e640\",\"name\":\"_ldsign\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e648\",\"name\":\"_fdclass\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e650\",\"name\":\"ceilf\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e658\",\"name\":\"_fdsign\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e660\",\"name\":\"_ldclass\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e668\",\"name\":\"cosf\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e670\",\"name\":\"_dsign\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e678\",\"name\":\"_fdopen\",\"module\":\"api-ms-win-crt-math-l1-1-0\"},{\"addr\":\"0x18006e5d0\",\"name\":\"rename\",\"module\":\"api-ms-win-crt-filesystem-l1-1-0\"},{\"addr\":\"0x18006e5d8\",\"name\":\"_unlink\",\"module\":\"api-ms-win-crt-filesystem-l1-1-0\"},{\"addr\":\"0x18006e5e0\",\"name\":\"_mkdir\",\"module\":\"api-ms-win-crt-filesystem-l1-1-0\"},{\"addr\":\"0x18006e5e8\",\"name\":\"remove\",\"module\":\"api-ms-win-crt-filesystem-l1-1-0\"},{\"addr\":\"0x18006e5b8\",\"name\":\"getenv_s\",\"module\":\"api-ms-win-crt-environment-l1-1-0\"},{\"addr\":\"0x18006e5c0\",\"name\":\"getenv\",\"module\":\"api-ms-win-crt-environment-l1-1-0\"},{\"addr\":\"0x18006e7a8\",\"name\":\"isdigit\",\"module\":\"api-ms-win-crt-string-l1-1-0\"},{\"addr\":\"0x18006e7b0\",\"name\":\"strncpy\",\"module\":\"api-ms-win-crt-string-l1-1-0\"},{\"addr\":\"0x18006e5a8\",\"name\":\"strtol\",\"module\":\"api-ms-win-crt-convert-l1-1-0\"},{\"addr\":\"0x18006e620\",\"name\":\"___lc_codepage_func\",\"module\":\"api-ms-win-crt-locale-l1-1-0\"}]},\"call_graph_summary\":{\"total_edges\":10332,\"max_depth_estimate\":null,\"root_functions\":[\"sub_180001000\",\"sub_180001C10\",\"sub_180001C40\",\"sub_180001C70\",\"sub_180001CA0\",\"sub_1800028B0\",\"sub_1800028E0\",\"sub_180002910\",\"sub_180002940\",\"sub_180002970\",\"sub_1800029A0\",\"sub_1800029D0\",\"sub_1800035E0\",\"sub_180003610\",\"sub_180003640\",\"sub_180003660\",\"sub_1800036A0\",\"sub_1800036E0\",\"sub_180003710\",\"sub_1800037A0\",\"sub_180003830\",\"sub_180003890\",\"sub_180003920\",\"sub_1800039E0\",\"sub_180003A70\",\"sub_180003AD0\",\"sub_180003B20\",\"sub_180003B70\",\"sub_180003BC0\",\"sub_180003C10\",\"sub_180003CA0\",\"sub_180003D30\",\"sub_180003D80\",\"sub_180003DD0\",\"sub_180003E30\",\"sub_180003E70\",\"sub_180003EB0\",\"sub_180003EE0\",\"sub_180003F10\",\"sub_180003F70\",\"sub_180003F90\",\"sub_180003FD0\",\"sub_180003FE0\",\"sub_180004030\",\"sub_1800040C0\",\"sub_1800040E8\",\"sub_1800042D0\",\"sub_180004350\",\"sub_1800043F0\",\"sub_1800044C0\",\"unknown_libname_8\",\"sub_180004950\",\"?equivalent@error_category@std@@UEBA_NAEBVerror_code@2@H@Z\",\"sub_180004C70\",\"sub_180004D60\",\"sub_180004F20\",\"sub_180004F30\",\"sub_180004F80\",\"sub_180004FE0\",\"sub_180004FF0\",\"sub_1800050D0\",\"sub_180005280\",\"sub_180005A70\",\"sub_180005D70\",\"sub_180005E00\",\"sub_1800073D0\",\"sub_180007D30\",\"unknown_libname_24\",\"sub_18000E670\",\"sub_180012200\",\"unknown_libname_29\",\"sub_1800123E0\",\"sub_180013EF0\",\"sub_1800140A0\",\"sub_180014660\",\"sub_180014710\",\"sub_1800147D0\",\"sub_180014890\",\"sub_180014960\",\"sub_1800151B0\",\"sub_180015390\",\"sub_1800155A0\",\"sub_180016230\",\"sub_180016330\",\"sub_180016450\",\"sub_18001F940\",\"sub_18001FAD0\",\"sub_18001FC60\",\"sub_1800200F0\",\"unknown_libname_36\",\"unknown_libname_37\",\"unknown_libname_38\",\"unknown_libname_39\",\"unknown_libname_40\",\"sub_180022390\",\"sub_1800225F0\",\"sub_1800229A0\",\"sub_180022AD0\",\"sub_180022BD0\",\"sub_180022FF0\"],\"leaf_functions_count\":481}}"
+      }
+    ],
+    "structuredContent": {
+      "metadata": {
+        "path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\interlaceSDK.dll.i64",
+        "module": "interlaceSDK.dll",
+        "arch": "64",
+        "base_address": "0x180000000",
+        "image_size": "0xc6000",
+        "md5": "bb7d1f748b7bcaab71e2de5b542b2858",
+        "sha256": "380a9194a5c2ab42cf1f70a2b3c383f9b340b3b292ac72177350aa0dae56cc6f"
+      },
+      "statistics": {
+        "total_functions": 3091,
+        "named_functions": 65,
+        "library_functions": 242,
+        "unnamed_functions": 2784,
+        "total_strings": 1262,
+        "total_segments": 5
+      },
+      "segments": [
+        {
+          "name": ".text",
+          "start": "0x180001000",
+          "end": "0x18006e000",
+          "size": "0x6d000",
+          "permissions": "rx"
+        },
+        {
+          "name": ".idata",
+          "start": "0x18006e000",
+          "end": "0x18006e830",
+          "size": "0x830",
+          "permissions": "r"
+        },
+        {
+          "name": ".rdata",
+          "start": "0x18006e830",
+          "end": "0x1800a7000",
+          "size": "0x387d0",
+          "permissions": "r"
+        },
+        {
+          "name": ".data",
+          "start": "0x1800a7000",
+          "end": "0x1800bb000",
+          "size": "0x14000",
+          "permissions": "rw"
+        },
+        {
+          "name": ".pdata",
+          "start": "0x1800bb000",
+          "end": "0x1800c4000",
+          "size": "0x9000",
+          "permissions": "r"
+        }
+      ],
+      "entrypoints": [
+        {
+          "addr": "0x180060580",
+          "name": "BOE_Interleaving_doInterleave",
+          "ordinal": 1
+        },
+        {
+          "addr": "0x1800602a0",
+          "name": "BOE_Interleaving_initSDK",
+          "ordinal": 2
+        },
+        {
+          "addr": "0x1800604a0",
+          "name": "BOE_Interleaving_releaseSDK",
+          "ordinal": 3
+        },
+        {
+          "addr": "0x180060520",
+          "name": "BOE_Interleaving_setDeviceParam",
+          "ordinal": 4
+        },
+        {
+          "addr": "0x180060550",
+          "name": "BOE_Interleaving_setRefractDeviceParam",
+          "ordinal": 5
+        },
+        {
+          "addr": "0x1800604f0",
+          "name": "BOE_Interleaving_setWholeParam",
+          "ordinal": 6
+        },
+        {
+          "addr": "0x180068520",
+          "name": "DllEntryPoint",
+          "ordinal": 6442878240
+        }
+      ],
+      "interesting_strings": [
+        {
+          "addr": "0x180090570",
+          "string": "invalid format string",
+          "xref_count": 9
+        },
+        {
+          "addr": "0x18006eab4",
+          "string": "tTyY1",
+          "xref_count": 8
+        },
+        {
+          "addr": "0x18006f500",
+          "string": "string too long",
+          "xref_count": 8
+        },
+        {
+          "addr": "0x1800905e8",
+          "string": "invalid type specifier",
+          "xref_count": 7
+        },
+        {
+          "addr": "0x180090810",
+          "string": "0123456789ABCDEF",
+          "xref_count": 6
+        },
+        {
+          "addr": "0x180090db0",
+          "string": "00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899",
+          "xref_count": 6
+        },
+        {
+          "addr": "0x180090e88",
+          "string": "0123456789abcdef",
+          "xref_count": 6
+        },
+        {
+          "addr": "0x180090290",
+          "string": "too large exponent",
+          "xref_count": 5
+        },
+        {
+          "addr": "0x1800903a8",
+          "string": "Rethrowing unknown exception in logger",
+          "xref_count": 5
+        },
+        {
+          "addr": "0x18006f1f0",
+          "string": "C:\\ws\\glog-0.4.0\\src\\logging.cc",
+          "xref_count": 4
+        },
+        {
+          "addr": "0x180090650",
+          "string": "number is too big",
+          "xref_count": 4
+        },
+        {
+          "addr": "0x180090720",
+          "string": "unordered_map/set too long",
+          "xref_count": 4
+        },
+        {
+          "addr": "0x180090788",
+          "string": "invalid hash bucket count",
+          "xref_count": 4
+        },
+        {
+          "addr": "0x180090828",
+          "string": "negative width",
+          "xref_count": 4
+        },
+        {
+          "addr": "0x180090838",
+          "string": "negative precision",
+          "xref_count": 4
+        }
+      ],
+      "interesting_functions": [
+        {
+          "addr": "0x180008710",
+          "name": "sub_180008710",
+          "size": 39,
+          "xref_count": 431,
+          "callee_count": 2,
+          "type": "complex"
+        },
+        {
+          "addr": "0x1800087d0",
+          "name": "sub_1800087D0",
+          "size": 87,
+          "xref_count": 285,
+          "callee_count": 4,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180005890",
+          "name": "sub_180005890",
+          "size": 27,
+          "xref_count": 221,
+          "callee_count": 0,
+          "type": "leaf"
+        },
+        {
+          "addr": "0x18000a140",
+          "name": "sub_18000A140",
+          "size": 72,
+          "xref_count": 175,
+          "callee_count": 2,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180068ee0",
+          "name": "__CxxFrameHandler4",
+          "size": 6,
+          "xref_count": 128,
+          "callee_count": 0,
+          "type": "thunk"
+        },
+        {
+          "addr": "0x18002bd90",
+          "name": "sub_18002BD90",
+          "size": 72,
+          "xref_count": 106,
+          "callee_count": 2,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180067c40",
+          "name": "sub_180067C40",
+          "size": 59,
+          "xref_count": 104,
+          "callee_count": 4,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180009d90",
+          "name": "sub_180009D90",
+          "size": 27,
+          "xref_count": 101,
+          "callee_count": 1,
+          "type": "wrapper"
+        },
+        {
+          "addr": "0x18001b320",
+          "name": "sub_18001B320",
+          "size": 99,
+          "xref_count": 100,
+          "callee_count": 3,
+          "type": "complex"
+        },
+        {
+          "addr": "0x18000d6c0",
+          "name": "sub_18000D6C0",
+          "size": 63,
+          "xref_count": 97,
+          "callee_count": 1,
+          "type": "wrapper"
+        },
+        {
+          "addr": "0x1800205d0",
+          "name": "sub_1800205D0",
+          "size": 35,
+          "xref_count": 96,
+          "callee_count": 1,
+          "type": "wrapper"
+        },
+        {
+          "addr": "0x180004600",
+          "name": "sub_180004600",
+          "size": 6,
+          "xref_count": 94,
+          "callee_count": 0,
+          "type": "thunk"
+        },
+        {
+          "addr": "0x180008b00",
+          "name": "sub_180008B00",
+          "size": 55,
+          "xref_count": 90,
+          "callee_count": 1,
+          "type": "wrapper"
+        },
+        {
+          "addr": "0x180006ff0",
+          "name": "sub_180006FF0",
+          "size": 985,
+          "xref_count": 80,
+          "callee_count": 23,
+          "type": "dispatcher"
+        },
+        {
+          "addr": "0x180014060",
+          "name": "sub_180014060",
+          "size": 56,
+          "xref_count": 80,
+          "callee_count": 0,
+          "type": "leaf"
+        }
+      ],
+      "imports_by_category": {
+        "crypto": [],
+        "network": [],
+        "file_io": [
+          {
+            "addr": "0x18006e000",
+            "name": "GetModuleFileNameA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e028",
+            "name": "WriteFile",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e050",
+            "name": "GetFileAttributesA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e060",
+            "name": "GetPrivateProfileIntA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e078",
+            "name": "GetTempPathA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0a8",
+            "name": "GetWindowsDirectoryA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0c0",
+            "name": "GetSystemTimeAsFileTime",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0f0",
+            "name": "CreateDirectoryW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e140",
+            "name": "GetFileInformationByHandleEx",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e158",
+            "name": "AreFileApisANSI",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e160",
+            "name": "GetFileAttributesExW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e180",
+            "name": "FindFirstFileW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e190",
+            "name": "CreateFileW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e758",
+            "name": "fclose",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e770",
+            "name": "_filelengthi64",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e788",
+            "name": "fwrite",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e790",
+            "name": "_fileno",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          }
+        ],
+        "process": [
+          {
+            "addr": "0x18006e030",
+            "name": "GetCurrentThreadId",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e058",
+            "name": "GetCurrentProcessId",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0c8",
+            "name": "GetCurrentProcess",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e110",
+            "name": "RtlVirtualUnwind",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e130",
+            "name": "TerminateProcess",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e138",
+            "name": "IsProcessorFeaturePresent",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e690",
+            "name": "terminate",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6c8",
+            "name": "_execute_onexit_table",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          }
+        ],
+        "registry": [
+          {
+            "addr": "0x18006e6d0",
+            "name": "_register_onexit_function",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          }
+        ],
+        "other": [
+          {
+            "addr": "0x18006e008",
+            "name": "GetConsoleScreenBufferInfo",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e010",
+            "name": "SetConsoleTextAttribute",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e018",
+            "name": "GetStdHandle",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e020",
+            "name": "WriteConsoleA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e038",
+            "name": "Sleep",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e040",
+            "name": "GetConsoleMode",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e048",
+            "name": "GetTimeZoneInformation",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e068",
+            "name": "MultiByteToWideChar",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e070",
+            "name": "WideCharToMultiByte",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e080",
+            "name": "OutputDebugStringA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e088",
+            "name": "InitializeCriticalSection",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e090",
+            "name": "EnterCriticalSection",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e098",
+            "name": "LeaveCriticalSection",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0a0",
+            "name": "DeleteCriticalSection",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0b0",
+            "name": "GetComputerNameA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0b8",
+            "name": "RtlCaptureStackBackTrace",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0d0",
+            "name": "SleepConditionVariableSRW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0d8",
+            "name": "LocalFree",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0e0",
+            "name": "FormatMessageA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0e8",
+            "name": "GetLocaleInfoEx",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e0f8",
+            "name": "RtlCaptureContext",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e100",
+            "name": "AcquireSRWLockExclusive",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e108",
+            "name": "RtlLookupFunctionEntry",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e118",
+            "name": "UnhandledExceptionFilter",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e120",
+            "name": "ReleaseSRWLockExclusive",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e128",
+            "name": "SetUnhandledExceptionFilter",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e148",
+            "name": "GetLastError",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e150",
+            "name": "CloseHandle",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e168",
+            "name": "IsDebuggerPresent",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e170",
+            "name": "QueryPerformanceCounter",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e178",
+            "name": "InitializeSListHead",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e188",
+            "name": "FindClose",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e198",
+            "name": "WakeAllConditionVariable",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x18006e820",
+            "name": "CoInitializeEx",
+            "module": "ole32"
+          },
+          {
+            "addr": "0x18006e1a8",
+            "name": "?_Getcvt@_Locinfo@std@@QEBA?AU_Cvtvec@@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1b0",
+            "name": "_Cnd_signal",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1b8",
+            "name": "?_Throw_Cpp_error@std@@YAXH@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1c0",
+            "name": "?_Init@locale@std@@CAPEAV_Locimp@12@_N@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1c8",
+            "name": "?_Xout_of_range@std@@YAXPEBD@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1d0",
+            "name": "?_Xbad_function_call@std@@YAXXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1d8",
+            "name": "?id@?$numpunct@D@std@@2V0locale@2@A",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1e0",
+            "name": "_Mtx_lock",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1e8",
+            "name": "_Thrd_id",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1f0",
+            "name": "_Xtime_get_ticks",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e1f8",
+            "name": "_Thrd_join",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e200",
+            "name": "_Mtx_unlock",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e208",
+            "name": "?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA_N_N@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e210",
+            "name": "??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e218",
+            "name": "?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e220",
+            "name": "?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e228",
+            "name": "?snextc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e230",
+            "name": "?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD0@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e238",
+            "name": "??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e240",
+            "name": "?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e248",
+            "name": "?_Getcat@?$ctype@_W@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e250",
+            "name": "?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e258",
+            "name": "?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e260",
+            "name": "?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e268",
+            "name": "?setg@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e270",
+            "name": "?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e278",
+            "name": "?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e280",
+            "name": "?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e288",
+            "name": "??0?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e290",
+            "name": "??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e298",
+            "name": "??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2a0",
+            "name": "?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2a8",
+            "name": "?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2b0",
+            "name": "?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2b8",
+            "name": "?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2c0",
+            "name": "?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2c8",
+            "name": "?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2d0",
+            "name": "?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2d8",
+            "name": "?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2e0",
+            "name": "?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2e8",
+            "name": "??1?$basic_istream@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2f0",
+            "name": "?c_str@?$_Yarn@D@std@@QEBAPEBDXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e2f8",
+            "name": "??Bios_base@std@@QEBA_NXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e300",
+            "name": "??1facet@locale@std@@MEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e308",
+            "name": "??0facet@locale@std@@IEAA@_K@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e310",
+            "name": "?_Decref@facet@locale@std@@UEAAPEAV_Facet_base@3@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e318",
+            "name": "?_Incref@facet@locale@std@@UEAAXXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e320",
+            "name": "?_Gettrue@_Locinfo@std@@QEBAPEBDXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e328",
+            "name": "?_Getfalse@_Locinfo@std@@QEBAPEBDXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e330",
+            "name": "?_Getlconv@_Locinfo@std@@QEBAPEBUlconv@@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e338",
+            "name": "??1_Locinfo@std@@QEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e340",
+            "name": "??0_Locinfo@std@@QEAA@PEBD@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e348",
+            "name": "?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e350",
+            "name": "?pbase@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e358",
+            "name": "??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e360",
+            "name": "??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e368",
+            "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e370",
+            "name": "?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e378",
+            "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@M@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e380",
+            "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@N@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e388",
+            "name": "?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@PEAV32@@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e390",
+            "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e398",
+            "name": "?pbackfail@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHH@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3a0",
+            "name": "?seekoff@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3a8",
+            "name": "?seekpos@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3b0",
+            "name": "?underflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3b8",
+            "name": "?good@ios_base@std@@QEBA_NXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3c0",
+            "name": "?flags@ios_base@std@@QEBAHXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3c8",
+            "name": "?width@ios_base@std@@QEBA_JXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3d0",
+            "name": "?width@ios_base@std@@QEAA_J_J@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3d8",
+            "name": "?getloc@ios_base@std@@QEBA?AVlocale@2@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3e0",
+            "name": "??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3e8",
+            "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@PEBX@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3f0",
+            "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e3f8",
+            "name": "?flush@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e400",
+            "name": "?put@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@_W@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e408",
+            "name": "?sputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAA_JPEB_W_J@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e410",
+            "name": "?sputc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAAG_W@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e418",
+            "name": "?widen@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBA_WD@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e420",
+            "name": "?fill@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBA_WXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e428",
+            "name": "?rdbuf@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBAPEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@2@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e430",
+            "name": "?setstate@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAAXH_N@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e438",
+            "name": "?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e440",
+            "name": "?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e448",
+            "name": "?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e450",
+            "name": "?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e458",
+            "name": "?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e460",
+            "name": "?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e468",
+            "name": "?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e470",
+            "name": "?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e478",
+            "name": "?_Osfx@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAXXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e480",
+            "name": "?tie@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBAPEAV?$basic_ostream@_WU?$char_traits@_W@std@@@2@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e488",
+            "name": "?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e490",
+            "name": "?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e498",
+            "name": "?_Syserror_map@std@@YAPEBDH@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4a0",
+            "name": "?_Xlength_error@std@@YAXPEBD@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4a8",
+            "name": "?_Winerror_map@std@@YAHH@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4b0",
+            "name": "?_Id_cnt@id@locale@std@@0HA",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4b8",
+            "name": "?id@?$ctype@_W@std@@2V0locale@2@A",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4c0",
+            "name": "?wcout@std@@3V?$basic_ostream@_WU?$char_traits@_W@std@@@1@A",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4c8",
+            "name": "?_Xbad_alloc@std@@YAXXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4d0",
+            "name": "?uncaught_exception@std@@YA_NXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4d8",
+            "name": "?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4e0",
+            "name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4e8",
+            "name": "??0_Lockit@std@@QEAA@H@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4f0",
+            "name": "??1_Lockit@std@@QEAA@XZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e4f8",
+            "name": "?widen@?$ctype@_W@std@@QEBA_WD@Z",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e500",
+            "name": "?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ",
+            "module": "MSVCP140"
+          },
+          {
+            "addr": "0x18006e7e0",
+            "name": "D3D12SerializeVersionedRootSignature",
+            "module": "d3d12"
+          },
+          {
+            "addr": "0x18006e7f0",
+            "name": "SymInitialize",
+            "module": "dbghelp"
+          },
+          {
+            "addr": "0x18006e7f8",
+            "name": "SymCleanup",
+            "module": "dbghelp"
+          },
+          {
+            "addr": "0x18006e800",
+            "name": "SymSetOptions",
+            "module": "dbghelp"
+          },
+          {
+            "addr": "0x18006e808",
+            "name": "UnDecorateSymbolName",
+            "module": "dbghelp"
+          },
+          {
+            "addr": "0x18006e810",
+            "name": "SymFromAddr",
+            "module": "dbghelp"
+          },
+          {
+            "addr": "0x18006e598",
+            "name": "__CxxFrameHandler4",
+            "module": "VCRUNTIME140_1"
+          },
+          {
+            "addr": "0x18006e510",
+            "name": "memchr",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e518",
+            "name": "memmove",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e520",
+            "name": "_CxxThrowException",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e528",
+            "name": "_purecall",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e530",
+            "name": "__CxxFrameHandler3",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e538",
+            "name": "__std_type_info_destroy_list",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e540",
+            "name": "__C_specific_handler",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e548",
+            "name": "__std_exception_copy",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e550",
+            "name": "__current_exception_context",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e558",
+            "name": "__current_exception",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e560",
+            "name": "strrchr",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e568",
+            "name": "strchr",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e570",
+            "name": "__std_exception_destroy",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e578",
+            "name": "memset",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e580",
+            "name": "memcpy",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e588",
+            "name": "memcmp",
+            "module": "VCRUNTIME140"
+          },
+          {
+            "addr": "0x18006e5f8",
+            "name": "free",
+            "module": "api-ms-win-crt-heap-l1-1-0"
+          },
+          {
+            "addr": "0x18006e600",
+            "name": "_callnewh",
+            "module": "api-ms-win-crt-heap-l1-1-0"
+          },
+          {
+            "addr": "0x18006e608",
+            "name": "calloc",
+            "module": "api-ms-win-crt-heap-l1-1-0"
+          },
+          {
+            "addr": "0x18006e610",
+            "name": "malloc",
+            "module": "api-ms-win-crt-heap-l1-1-0"
+          },
+          {
+            "addr": "0x18006e688",
+            "name": "_invoke_watson",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e698",
+            "name": "_errno",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6a0",
+            "name": "_invalid_parameter_noinfo_noreturn",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6a8",
+            "name": "_initterm_e",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6b0",
+            "name": "_initterm",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6b8",
+            "name": "_cexit",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6c0",
+            "name": "_crt_atexit",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6d8",
+            "name": "_initialize_onexit_table",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6e0",
+            "name": "_initialize_narrow_environment",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6e8",
+            "name": "_configure_narrow_argv",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6f0",
+            "name": "_seh_filter_dll",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e6f8",
+            "name": "strerror_s",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e700",
+            "name": "abort",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e708",
+            "name": "perror",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e710",
+            "name": "signal",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e718",
+            "name": "_getpid",
+            "module": "api-ms-win-crt-runtime-l1-1-0"
+          },
+          {
+            "addr": "0x18006e7c0",
+            "name": "_localtime64_s",
+            "module": "api-ms-win-crt-time-l1-1-0"
+          },
+          {
+            "addr": "0x18006e7c8",
+            "name": "_gmtime64_s",
+            "module": "api-ms-win-crt-time-l1-1-0"
+          },
+          {
+            "addr": "0x18006e7d0",
+            "name": "strftime",
+            "module": "api-ms-win-crt-time-l1-1-0"
+          },
+          {
+            "addr": "0x18006e728",
+            "name": "_write",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e730",
+            "name": "_close",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e738",
+            "name": "_popen",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e740",
+            "name": "_pclose",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e748",
+            "name": "__acrt_iob_func",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e750",
+            "name": "fflush",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e760",
+            "name": "_sopen_dispatch",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e768",
+            "name": "__stdio_common_vsprintf",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e778",
+            "name": "_fsopen",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e780",
+            "name": "__stdio_common_vfprintf",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e798",
+            "name": "__stdio_common_vsnprintf_s",
+            "module": "api-ms-win-crt-stdio-l1-1-0"
+          },
+          {
+            "addr": "0x18006e630",
+            "name": "sinf",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e638",
+            "name": "_dclass",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e640",
+            "name": "_ldsign",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e648",
+            "name": "_fdclass",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e650",
+            "name": "ceilf",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e658",
+            "name": "_fdsign",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e660",
+            "name": "_ldclass",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e668",
+            "name": "cosf",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e670",
+            "name": "_dsign",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e678",
+            "name": "_fdopen",
+            "module": "api-ms-win-crt-math-l1-1-0"
+          },
+          {
+            "addr": "0x18006e5d0",
+            "name": "rename",
+            "module": "api-ms-win-crt-filesystem-l1-1-0"
+          },
+          {
+            "addr": "0x18006e5d8",
+            "name": "_unlink",
+            "module": "api-ms-win-crt-filesystem-l1-1-0"
+          },
+          {
+            "addr": "0x18006e5e0",
+            "name": "_mkdir",
+            "module": "api-ms-win-crt-filesystem-l1-1-0"
+          },
+          {
+            "addr": "0x18006e5e8",
+            "name": "remove",
+            "module": "api-ms-win-crt-filesystem-l1-1-0"
+          },
+          {
+            "addr": "0x18006e5b8",
+            "name": "getenv_s",
+            "module": "api-ms-win-crt-environment-l1-1-0"
+          },
+          {
+            "addr": "0x18006e5c0",
+            "name": "getenv",
+            "module": "api-ms-win-crt-environment-l1-1-0"
+          },
+          {
+            "addr": "0x18006e7a8",
+            "name": "isdigit",
+            "module": "api-ms-win-crt-string-l1-1-0"
+          },
+          {
+            "addr": "0x18006e7b0",
+            "name": "strncpy",
+            "module": "api-ms-win-crt-string-l1-1-0"
+          },
+          {
+            "addr": "0x18006e5a8",
+            "name": "strtol",
+            "module": "api-ms-win-crt-convert-l1-1-0"
+          },
+          {
+            "addr": "0x18006e620",
+            "name": "___lc_codepage_func",
+            "module": "api-ms-win-crt-locale-l1-1-0"
+          }
+        ]
+      },
+      "call_graph_summary": {
+        "total_edges": 10332,
+        "max_depth_estimate": null,
+        "root_functions": [
+          "sub_180001000",
+          "sub_180001C10",
+          "sub_180001C40",
+          "sub_180001C70",
+          "sub_180001CA0",
+          "sub_1800028B0",
+          "sub_1800028E0",
+          "sub_180002910",
+          "sub_180002940",
+          "sub_180002970",
+          "sub_1800029A0",
+          "sub_1800029D0",
+          "sub_1800035E0",
+          "sub_180003610",
+          "sub_180003640",
+          "sub_180003660",
+          "sub_1800036A0",
+          "sub_1800036E0",
+          "sub_180003710",
+          "sub_1800037A0",
+          "sub_180003830",
+          "sub_180003890",
+          "sub_180003920",
+          "sub_1800039E0",
+          "sub_180003A70",
+          "sub_180003AD0",
+          "sub_180003B20",
+          "sub_180003B70",
+          "sub_180003BC0",
+          "sub_180003C10",
+          "sub_180003CA0",
+          "sub_180003D30",
+          "sub_180003D80",
+          "sub_180003DD0",
+          "sub_180003E30",
+          "sub_180003E70",
+          "sub_180003EB0",
+          "sub_180003EE0",
+          "sub_180003F10",
+          "sub_180003F70",
+          "sub_180003F90",
+          "sub_180003FD0",
+          "sub_180003FE0",
+          "sub_180004030",
+          "sub_1800040C0",
+          "sub_1800040E8",
+          "sub_1800042D0",
+          "sub_180004350",
+          "sub_1800043F0",
+          "sub_1800044C0",
+          "unknown_libname_8",
+          "sub_180004950",
+          "?equivalent@error_category@std@@UEBA_NAEBVerror_code@2@H@Z",
+          "sub_180004C70",
+          "sub_180004D60",
+          "sub_180004F20",
+          "sub_180004F30",
+          "sub_180004F80",
+          "sub_180004FE0",
+          "sub_180004FF0",
+          "sub_1800050D0",
+          "sub_180005280",
+          "sub_180005A70",
+          "sub_180005D70",
+          "sub_180005E00",
+          "sub_1800073D0",
+          "sub_180007D30",
+          "unknown_libname_24",
+          "sub_18000E670",
+          "sub_180012200",
+          "unknown_libname_29",
+          "sub_1800123E0",
+          "sub_180013EF0",
+          "sub_1800140A0",
+          "sub_180014660",
+          "sub_180014710",
+          "sub_1800147D0",
+          "sub_180014890",
+          "sub_180014960",
+          "sub_1800151B0",
+          "sub_180015390",
+          "sub_1800155A0",
+          "sub_180016230",
+          "sub_180016330",
+          "sub_180016450",
+          "sub_18001F940",
+          "sub_18001FAD0",
+          "sub_18001FC60",
+          "sub_1800200F0",
+          "unknown_libname_36",
+          "unknown_libname_37",
+          "unknown_libname_38",
+          "unknown_libname_39",
+          "unknown_libname_40",
+          "sub_180022390",
+          "sub_1800225F0",
+          "sub_1800229A0",
+          "sub_180022AD0",
+          "sub_180022BD0",
+          "sub_180022FF0"
+        ],
+        "leaf_functions_count": 481
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

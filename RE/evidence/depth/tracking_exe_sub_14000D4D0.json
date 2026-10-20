@@ -1,0 +1,149 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_14000D4D0\",\"code\":\"__int64 sub_14000D4D0()\\n{\\n  int v0; // ebx\\n  __int64 v1; // rax\\n  __int64 v3; // rax\\n  __int64 v4; // rax\\n  unsigned int v5; // r14d\\n  unsigned int v6; // r12d\\n  int v7; // esi\\n  int v8; // r15d\\n  unsigned int v9; // edi\\n  __int64 v10; // rbx\\n  __int64 v11; // r13\\n  __m128i si128; // xmm6\\n  int v13; // edx\\n  DWORD TickCount; // eax\\n  int v15; // edx\\n  __m128i v16; // [rsp+40h] [rbp-C0h] BYREF\\n  __int128 v17; // [rsp+50h] [rbp-B0h]\\n  __int128 v18; // [rsp+60h] [rbp-A0h] BYREF\\n  __int128 v19; // [rsp+70h] [rbp-90h]\\n  int v20; // [rsp+80h] [rbp-80h]\\n  int v21; // [rsp+84h] [rbp-7Ch]\\n  unsigned int v22; // [rsp+88h] [rbp-78h]\\n  int v23; // [rsp+8Ch] [rbp-74h]\\n  int v24; // [rsp+90h] [rbp-70h]\\n  int v25; // [rsp+94h] [rbp-6Ch]\\n  int v26; // [rsp+98h] [rbp-68h]\\n  int v27; // [rsp+9Ch] [rbp-64h]\\n  __m128i v28; // [rsp+A0h] [rbp-60h] BYREF\\n  __int128 v29; // [rsp+B0h] [rbp-50h]\\n  _BYTE v30[96]; // [rsp+C0h] [rbp-40h] BYREF\\n  __int64 v31; // [rsp+120h] [rbp+20h] BYREF\\n  __int64 v32; // [rsp+128h] [rbp+28h] BYREF\\n  void *v33; // [rsp+130h] [rbp+30h] BYREF\\n  __int128 v34; // [rsp+140h] [rbp+40h] BYREF\\n  __int128 v35; // [rsp+150h] [rbp+50h]\\n  __int128 v36; // [rsp+160h] [rbp+60h]\\n  __int128 v37; // [rsp+170h] [rbp+70h]\\n  __int128 v38; // [rsp+180h] [rbp+80h]\\n  __int128 v39; // [rsp+190h] [rbp+90h]\\n  int v40; // [rsp+1A0h] [rbp+A0h] BYREF\\n  int v41; // [rsp+1A4h] [rbp+A4h] BYREF\\n  int v42; // [rsp+1A8h] [rbp+A8h] BYREF\\n  __int64 v43; // [rsp+1B0h] [rbp+B0h] BYREF\\n  _DWORD v44[21]; // [rsp+1C0h] [rbp+C0h] BYREF\\n  __int64 v45; // [rsp+214h] [rbp+114h]\\n  unsigned int v46; // [rsp+21Ch] [rbp+11Ch]\\n  unsigned int v47; // [rsp+220h] [rbp+120h]\\n  int v48; // [rsp+23Ch] [rbp+13Ch]\\n  unsigned int v49; // [rsp+240h] [rbp+140h]\\n  int v50; // [rsp+244h] [rbp+144h]\\n  unsigned int v51; // [rsp+248h] [rbp+148h]\\n\\n  if ( qword_140050188 == 0 ) /*0x14000d50f*/\\n    return 2147500037LL; /*0x14000d50f*/\\n  v32 = 0; /*0x14000d517*/\\n  v41 = 0; /*0x14000d51b*/\\n  v40 = 0; /*0x14000d521*/\\n  v43 = 0; /*0x14000d527*/\\n  v0 = (*(__int64 (__fastcall **)(__int64, __int64, _QWORD, int *, int *, __int64 *, __int64 *))(*(_QWORD *)qword_140050188 /*0x14000d564*/\\n                                                                                               + 72LL))(\\n         a1: qword_140050188,\\n         a2: 4294967292LL,\\n         a3: 0,\\n         a4: &v41,\\n         a5: &v40,\\n         a6: &v43,\\n         a7: &v32);\\n  if ( v0 < 0 ) /*0x14000d568*/\\n  {\\nLABEL_25:\\n    if ( v32 != 0 ) /*0x14000daba*/\\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v32 + 16LL))(a1: v32); /*0x14000dabf*/\\n    return (unsigned int)v0; /*0x14000dabf*/\\n  }\\n  if ( v32 != 0 ) /*0x14000d575*/\\n  {\\n    v31 = 0; /*0x14000d57b*/\\n    v33 = nullptr; /*0x14000d57f*/\\n    v42 = 0; /*0x14000d583*/\\n    v0 = (*(__int64 (__fastcall **)(__int64, __int64 *))(*(_QWORD *)v32 + 328LL))(a1: v32, a2: &v31); /*0x14000d596*/\\n    v20 = v0; /*0x14000d598*/\\n    if ( v0 >= 0 ) /*0x14000d59d*/\\n    {\\n      v0 = (*(__int64 (__fastcall **)(__int64, void **, _QWORD, int *))(*(_QWORD *)v31 + 24LL))( /*0x14000d5b7*/\\n             a1: v31,\\n             a2: &v33,\\n             a3: 0,\\n             a4: &v42);\\n      v20 = v0; /*0x14000d5b9*/\\n    }\\n    v34 = 0; /*0x14000d5bf*/\\n    v35 = 0; /*0x14000d5c3*/\\n    v36 = 0; /*0x14000d5c7*/\\n    v37 = 0; /*0x14000d5cb*/\\n    v38 = 0; /*0x14000d5cf*/\\n    v39 = 0; /*0x14000d5d6*/\\n    cv::Mat::Mat(this: (cv::Mat *)&v34); /*0x14000d5e1*/\\n    if ( v0 >= 0 ) /*0x14000d5ea*/\\n    {\\n      if ( memcmp(Buf1: &xmmword_140050168, Buf2: \\\"NV12\\\", Size: 0x10u) == 0 ) /*0x14000d60b*/\\n      {\\n        v1 = cv::Mat::Mat(this: (cv::Mat *)v30, a2: dword_140050150, a3: dword_140050148, a4: 0, a5: v33, a6: 0); /*0x14000d62f*/\\n        cv::Mat::operator=(a1: &v34, a2: v1); /*0x14000d63d*/\\n        cv::Mat::~Mat(this: (cv::Mat *)v30); /*0x14000d648*/\\n      }\\n      if ( cv::Mat::empty(this: (cv::Mat *)&v34) ) /*0x14000d652*/\\n      {\\n        cv::Mat::~Mat(this: (cv::Mat *)&v34); /*0x14000d660*/\\n        return 2147500037LL; /*0x14000d66b*/\\n      }\\n      if ( (unsigned int)doEyeTrack_3D( /*0x14000d6a1*/\\n                           a1: v35,\\n                           a2: HIDWORD(v34),\\n                           a3: DWORD2(v34),\\n                           a4: (((int)v34 >> 3) & 0x1FFu) + 1,\\n                           a5: v44) == 0 )\\n      {\\n        v3 = sub_1400114A0(a1: std::cout, a2: &unk_14003E8E8); /*0x14000d6b1*/\\n        std::ostream::operator<<(a1: v3, a2: sub_140011890); /*0x14000d6c0*/\\n      }\\n      (*(void (__fastcall **)(LPVOID))(*(_QWORD *)ppv + 80LL))(a1: ppv); /*0x14000d6fc*/\\n      if ( dword_140050154 == 2 ) /*0x14000d706*/\\n      {\\n        if ( cv::Mat::empty(this: (cv::Mat *)&v34) ) /*0x14000d710*/\\n        {\\n          v4 = sub_1400114A0(a1: std::cerr, a2: &unk_14003E900); /*0x14000d728*/\\n          std::ostream::operator<<(a1: v4, a2: sub_140011890); /*0x14000d737*/\\n        }\\n        v5 = v44[9]; /*0x14000d73d*/\\n        v6 = v44[10]; /*0x14000d744*/\\n        v7 = v44[11]; /*0x14000d74b*/\\n        v8 = v44[12]; /*0x14000d751*/\\n        v9 = v46; /*0x14000d758*/\\n        v10 = v47; /*0x14000d75e*/\\n        v24 = v44[13]; /*0x14000d76a*/\\n        v25 = v44[14]; /*0x14000d773*/\\n        v26 = v44[15]; /*0x14000d77c*/\\n        v27 = v44[16]; /*0x14000d785*/\\n        v23 = v48; /*0x14000d78e*/\\n        v22 = v49; /*0x14000d797*/\\n        v21 = v50; /*0x14000d7a0*/\\n        v11 = v51; /*0x14000d7a3*/\\n        si128 = _mm_load_si128((const __m128i *)&xmmword_14003F2C0); /*0x14000d7aa*/\\n        v16 = si128; /*0x14000d7b2*/\\n        v17 = 0; /*0x14000d7ba*/\\n        *(_QWORD *)&v19 = 0; /*0x14000d7c1*/\\n        LODWORD(v18) = 50397184; /*0x14000d7c6*/\\n        *((_QWORD *)&v18 + 1) = &v34; /*0x14000d7d2*/\\n        cv::circle(a1: &v18, a2: v45, a3: 2, a4: &v16, a5: -1, a6: 8, a7: 0); /*0x14000d80e*/\\n        v16 = si128; /*0x14000d814*/\\n        v17 = 0; /*0x14000d81c*/\\n        *(_QWORD *)&v19 = 0; /*0x14000d823*/\\n        LODWORD(v18) = 50397184; /*0x14000d828*/\\n        *((_QWORD *)&v18 + 1) = &v34; /*0x14000d834*/\\n        cv::circle(a1: &v18, a2: (v10 << 32) | v9, a3: 2, a4: &v16, a5: -1, a6: 8, a7: 0); /*0x14000d868*/\\n        v28 = si128; /*0x14000d86e*/\\n        v29 = 0; /*0x14000d875*/\\n        *(_QWORD *)&v17 = 0; /*0x14000d879*/\\n        v16.m128i_i32[0] = 50397184; /*0x14000d87e*/\\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000d88a*/\\n        *(_QWORD *)&v18 = __PAIR64__(v6, v5); /*0x14000d88f*/\\n        DWORD2(v18) = v7 - v5; /*0x14000d89c*/\\n        HIDWORD(v18) = v8 - v6; /*0x14000d8a3*/\\n        cv::rectangle(a1: &v16, a2: &v18, a3: &v28, a4: 2, a5: 8, a6: 0); /*0x14000d8c8*/\\n        LODWORD(v10) = SHIDWORD(v34) / 2; /*0x14000d8d6*/\\n        v28 = si128; /*0x14000d8d8*/\\n        v29 = 0; /*0x14000d8df*/\\n        *(_QWORD *)&v17 = 0; /*0x14000d8e3*/\\n        v16.m128i_i32[0] = 50397184; /*0x14000d8e8*/\\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000d8f4*/\\n        cv::circle( /*0x14000d928*/\\n          a1: &v16,\\n          a2: (v11 << 32) | (unsigned int)(SHIDWORD(v34) / 2 + v21),\\n          a3: 2,\\n          a4: &v28,\\n          a5: -1,\\n          a6: 8,\\n          a7: 0);\\n        v28 = si128; /*0x14000d92e*/\\n        v29 = 0; /*0x14000d935*/\\n        *(_QWORD *)&v17 = 0; /*0x14000d939*/\\n        v16.m128i_i32[0] = 50397184; /*0x14000d93e*/\\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000d94a*/\\n        cv::circle( /*0x14000d981*/\\n          a1: &v16,\\n          a2: ((unsigned __int64)v22 << 32) | (unsigned int)(v10 + v23),\\n          a3: 2,\\n          a4: &v28,\\n          a5: -1,\\n          a6: 8,\\n          a7: 0);\\n        v28 = si128; /*0x14000d987*/\\n        v29 = 0; /*0x14000d98e*/\\n        *(_QWORD *)&v17 = 0; /*0x14000d992*/\\n        v16.m128i_i32[0] = 50397184; /*0x14000d997*/\\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000d9a3*/\\n        LODWORD(v18) = v24 + v10; /*0x14000d9ae*/\\n        DWORD1(v18) = v25; /*0x14000d9b5*/\\n        DWORD2(v18) = v26 - v24; /*0x14000d9be*/\\n        HIDWORD(v18) = v27 - v25; /*0x14000d9c7*/\\n        cv::rectangle(a1: &v16, a2: &v18, a3: &v28, a4: 2, a5: 8, a6: 0); /*0x14000d9eb*/\\n        *(_QWORD *)&v17 = 0; /*0x14000d9f1*/\\n        v16.m128i_i32[0] = 16842752; /*0x14000d9f6*/\\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000da02*/\\n        v18 = 0; /*0x14000da0a*/\\n        v19 = 0; /*0x14000da12*/\\n        sub_140004290(a1: &v18, a2: \\\"Eye Tracking\\\", a3: 12); /*0x14000da2a*/\\n        cv::imshow(a1: &v18, a2: &v16); /*0x14000da3a*/\\n        sub_1400044B0(a1: &v18); /*0x14000da46*/\\n        cv::waitKey(this: (cv *)0xA, a2: v13); /*0x14000da50*/\\n        v0 = v20; /*0x14000da56*/\\n      }\\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v31 + 32LL))(a1: v31); /*0x14000da60*/\\n      ++dword_140050164; /*0x14000da63*/\\n      TickCount = GetTickCount(); /*0x14000da69*/\\n      v15 = dword_140050180; /*0x14000da6f*/\\n      if ( dword_140050180 == 0 ) /*0x14000da77*/\\n      {\\n        v15 = TickCount; /*0x14000da79*/\\n        dword_140050180 = TickCount; /*0x14000da7b*/\\n      }\\n      if ( TickCount - v15 >= 0x3E8 ) /*0x14000da8b*/\\n      {\\n        dword_140050164 = 0; /*0x14000da8d*/\\n        dword_140050180 = TickCount; /*0x14000da93*/\\n      }\\n    }\\n    if ( v31 != 0 ) /*0x14000daa0*/\\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v31 + 16LL))(a1: v31); /*0x14000daa5*/\\n    cv::Mat::~Mat(this: (cv::Mat *)&v34); /*0x14000daad*/\\n    goto LABEL_25; /*0x14000daad*/\\n  }\\n  return (unsigned int)v0; /*0x14000dac4*/\\n}\",\"refs\":[{\"addr\":\"0x140050188\",\"name\":\"qword_140050188\"},{\"addr\":\"0x140039788\",\"name\":\"??0Mat@cv@@QEAA@XZ\"},{\"addr\":\"0x1400397c8\",\"name\":\"??0Mat@cv@@QEAA@HHHPEAX_K@Z\"},{\"addr\":\"0x140050150\",\"name\":\"dword_140050150\"},{\"addr\":\"0x140050148\",\"name\":\"dword_140050148\"},{\"addr\":\"0x140039798\",\"name\":\"??4Mat@cv@@QEAAAEAV01@$$QEAV01@@Z\"},{\"addr\":\"0x140039790\",\"name\":\"__imp_??1Mat@cv@@QEAA@XZ\"},{\"addr\":\"0x140036245\",\"name\":\"memcmp\"},{\"addr\":\"0x140050168\",\"name\":\"xmmword_140050168\"},{\"addr\":\"0x14003bec0\",\"name\":\"aNv12\",\"string\":\"NV12\"},{\"addr\":\"0x1400397a0\",\"name\":\"?empty@Mat@cv@@QEBA_NXZ\"},{\"addr\":\"0x1400114a0\",\"name\":\"sub_1400114A0\"},{\"addr\":\"0x1400392e8\",\"name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x14003e8e8\",\"name\":\"unk_14003E8E8\"},{\"addr\":\"0x1400393a0\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x140011890\",\"name\":\"sub_140011890\"},{\"addr\":\"0x140039000\",\"name\":\"doEyeTrack_3D\"},{\"addr\":\"0x140050190\",\"name\":\"ppv\"},{\"addr\":\"0x140039300\",\"name\":\"?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x14003e900\",\"name\":\"unk_14003E900\"},{\"addr\":\"0x14003f2c0\",\"name\":\"xmmword_14003F2C0\"},{\"addr\":\"0x1400397c0\",\"name\":\"?circle@cv@@YAXAEBV_InputOutputArray@1@V?$Point_@H@1@HAEBV?$Scalar_@N@1@HHH@Z\"},{\"addr\":\"0x1400397b0\",\"name\":\"?rectangle@cv@@YAXAEBV_InputOutputArray@1@V?$Rect_@H@1@AEBV?$Scalar_@N@1@HHH@Z\"},{\"addr\":\"0x140004290\",\"name\":\"sub_140004290\"},{\"addr\":\"0x14003e918\",\"name\":\"aEyeTracking\",\"string\":\"Eye Tracking\"},{\"addr\":\"0x1400397a8\",\"name\":\"?imshow@cv@@YAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV_InputArray@1@@Z\"},{\"addr\":\"0x1400044b0\",\"name\":\"sub_1400044B0\"},{\"addr\":\"0x1400397b8\",\"name\":\"?waitKey@cv@@YAHH@Z\"},{\"addr\":\"0x140050154\",\"name\":\"dword_140050154\"},{\"addr\":\"0x140050164\",\"name\":\"dword_140050164\"},{\"addr\":\"0x140039128\",\"name\":\"GetTickCount\"},{\"addr\":\"0x140050180\",\"name\":\"dword_140050180\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_14000D4D0",
+      "code": "__int64 sub_14000D4D0()\n{\n  int v0; // ebx\n  __int64 v1; // rax\n  __int64 v3; // rax\n  __int64 v4; // rax\n  unsigned int v5; // r14d\n  unsigned int v6; // r12d\n  int v7; // esi\n  int v8; // r15d\n  unsigned int v9; // edi\n  __int64 v10; // rbx\n  __int64 v11; // r13\n  __m128i si128; // xmm6\n  int v13; // edx\n  DWORD TickCount; // eax\n  int v15; // edx\n  __m128i v16; // [rsp+40h] [rbp-C0h] BYREF\n  __int128 v17; // [rsp+50h] [rbp-B0h]\n  __int128 v18; // [rsp+60h] [rbp-A0h] BYREF\n  __int128 v19; // [rsp+70h] [rbp-90h]\n  int v20; // [rsp+80h] [rbp-80h]\n  int v21; // [rsp+84h] [rbp-7Ch]\n  unsigned int v22; // [rsp+88h] [rbp-78h]\n  int v23; // [rsp+8Ch] [rbp-74h]\n  int v24; // [rsp+90h] [rbp-70h]\n  int v25; // [rsp+94h] [rbp-6Ch]\n  int v26; // [rsp+98h] [rbp-68h]\n  int v27; // [rsp+9Ch] [rbp-64h]\n  __m128i v28; // [rsp+A0h] [rbp-60h] BYREF\n  __int128 v29; // [rsp+B0h] [rbp-50h]\n  _BYTE v30[96]; // [rsp+C0h] [rbp-40h] BYREF\n  __int64 v31; // [rsp+120h] [rbp+20h] BYREF\n  __int64 v32; // [rsp+128h] [rbp+28h] BYREF\n  void *v33; // [rsp+130h] [rbp+30h] BYREF\n  __int128 v34; // [rsp+140h] [rbp+40h] BYREF\n  __int128 v35; // [rsp+150h] [rbp+50h]\n  __int128 v36; // [rsp+160h] [rbp+60h]\n  __int128 v37; // [rsp+170h] [rbp+70h]\n  __int128 v38; // [rsp+180h] [rbp+80h]\n  __int128 v39; // [rsp+190h] [rbp+90h]\n  int v40; // [rsp+1A0h] [rbp+A0h] BYREF\n  int v41; // [rsp+1A4h] [rbp+A4h] BYREF\n  int v42; // [rsp+1A8h] [rbp+A8h] BYREF\n  __int64 v43; // [rsp+1B0h] [rbp+B0h] BYREF\n  _DWORD v44[21]; // [rsp+1C0h] [rbp+C0h] BYREF\n  __int64 v45; // [rsp+214h] [rbp+114h]\n  unsigned int v46; // [rsp+21Ch] [rbp+11Ch]\n  unsigned int v47; // [rsp+220h] [rbp+120h]\n  int v48; // [rsp+23Ch] [rbp+13Ch]\n  unsigned int v49; // [rsp+240h] [rbp+140h]\n  int v50; // [rsp+244h] [rbp+144h]\n  unsigned int v51; // [rsp+248h] [rbp+148h]\n\n  if ( qword_140050188 == 0 ) /*0x14000d50f*/\n    return 2147500037LL; /*0x14000d50f*/\n  v32 = 0; /*0x14000d517*/\n  v41 = 0; /*0x14000d51b*/\n  v40 = 0; /*0x14000d521*/\n  v43 = 0; /*0x14000d527*/\n  v0 = (*(__int64 (__fastcall **)(__int64, __int64, _QWORD, int *, int *, __int64 *, __int64 *))(*(_QWORD *)qword_140050188 /*0x14000d564*/\n                                                                                               + 72LL))(\n         a1: qword_140050188,\n         a2: 4294967292LL,\n         a3: 0,\n         a4: &v41,\n         a5: &v40,\n         a6: &v43,\n         a7: &v32);\n  if ( v0 < 0 ) /*0x14000d568*/\n  {\nLABEL_25:\n    if ( v32 != 0 ) /*0x14000daba*/\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v32 + 16LL))(a1: v32); /*0x14000dabf*/\n    return (unsigned int)v0; /*0x14000dabf*/\n  }\n  if ( v32 != 0 ) /*0x14000d575*/\n  {\n    v31 = 0; /*0x14000d57b*/\n    v33 = nullptr; /*0x14000d57f*/\n    v42 = 0; /*0x14000d583*/\n    v0 = (*(__int64 (__fastcall **)(__int64, __int64 *))(*(_QWORD *)v32 + 328LL))(a1: v32, a2: &v31); /*0x14000d596*/\n    v20 = v0; /*0x14000d598*/\n    if ( v0 >= 0 ) /*0x14000d59d*/\n    {\n      v0 = (*(__int64 (__fastcall **)(__int64, void **, _QWORD, int *))(*(_QWORD *)v31 + 24LL))( /*0x14000d5b7*/\n             a1: v31,\n             a2: &v33,\n             a3: 0,\n             a4: &v42);\n      v20 = v0; /*0x14000d5b9*/\n    }\n    v34 = 0; /*0x14000d5bf*/\n    v35 = 0; /*0x14000d5c3*/\n    v36 = 0; /*0x14000d5c7*/\n    v37 = 0; /*0x14000d5cb*/\n    v38 = 0; /*0x14000d5cf*/\n    v39 = 0; /*0x14000d5d6*/\n    cv::Mat::Mat(this: (cv::Mat *)&v34); /*0x14000d5e1*/\n    if ( v0 >= 0 ) /*0x14000d5ea*/\n    {\n      if ( memcmp(Buf1: &xmmword_140050168, Buf2: \"NV12\", Size: 0x10u) == 0 ) /*0x14000d60b*/\n      {\n        v1 = cv::Mat::Mat(this: (cv::Mat *)v30, a2: dword_140050150, a3: dword_140050148, a4: 0, a5: v33, a6: 0); /*0x14000d62f*/\n        cv::Mat::operator=(a1: &v34, a2: v1); /*0x14000d63d*/\n        cv::Mat::~Mat(this: (cv::Mat *)v30); /*0x14000d648*/\n      }\n      if ( cv::Mat::empty(this: (cv::Mat *)&v34) ) /*0x14000d652*/\n      {\n        cv::Mat::~Mat(this: (cv::Mat *)&v34); /*0x14000d660*/\n        return 2147500037LL; /*0x14000d66b*/\n      }\n      if ( (unsigned int)doEyeTrack_3D( /*0x14000d6a1*/\n                           a1: v35,\n                           a2: HIDWORD(v34),\n                           a3: DWORD2(v34),\n                           a4: (((int)v34 >> 3) & 0x1FFu) + 1,\n                           a5: v44) == 0 )\n      {\n        v3 = sub_1400114A0(a1: std::cout, a2: &unk_14003E8E8); /*0x14000d6b1*/\n        std::ostream::operator<<(a1: v3, a2: sub_140011890); /*0x14000d6c0*/\n      }\n      (*(void (__fastcall **)(LPVOID))(*(_QWORD *)ppv + 80LL))(a1: ppv); /*0x14000d6fc*/\n      if ( dword_140050154 == 2 ) /*0x14000d706*/\n      {\n        if ( cv::Mat::empty(this: (cv::Mat *)&v34) ) /*0x14000d710*/\n        {\n          v4 = sub_1400114A0(a1: std::cerr, a2: &unk_14003E900); /*0x14000d728*/\n          std::ostream::operator<<(a1: v4, a2: sub_140011890); /*0x14000d737*/\n        }\n        v5 = v44[9]; /*0x14000d73d*/\n        v6 = v44[10]; /*0x14000d744*/\n        v7 = v44[11]; /*0x14000d74b*/\n        v8 = v44[12]; /*0x14000d751*/\n        v9 = v46; /*0x14000d758*/\n        v10 = v47; /*0x14000d75e*/\n        v24 = v44[13]; /*0x14000d76a*/\n        v25 = v44[14]; /*0x14000d773*/\n        v26 = v44[15]; /*0x14000d77c*/\n        v27 = v44[16]; /*0x14000d785*/\n        v23 = v48; /*0x14000d78e*/\n        v22 = v49; /*0x14000d797*/\n        v21 = v50; /*0x14000d7a0*/\n        v11 = v51; /*0x14000d7a3*/\n        si128 = _mm_load_si128((const __m128i *)&xmmword_14003F2C0); /*0x14000d7aa*/\n        v16 = si128; /*0x14000d7b2*/\n        v17 = 0; /*0x14000d7ba*/\n        *(_QWORD *)&v19 = 0; /*0x14000d7c1*/\n        LODWORD(v18) = 50397184; /*0x14000d7c6*/\n        *((_QWORD *)&v18 + 1) = &v34; /*0x14000d7d2*/\n        cv::circle(a1: &v18, a2: v45, a3: 2, a4: &v16, a5: -1, a6: 8, a7: 0); /*0x14000d80e*/\n        v16 = si128; /*0x14000d814*/\n        v17 = 0; /*0x14000d81c*/\n        *(_QWORD *)&v19 = 0; /*0x14000d823*/\n        LODWORD(v18) = 50397184; /*0x14000d828*/\n        *((_QWORD *)&v18 + 1) = &v34; /*0x14000d834*/\n        cv::circle(a1: &v18, a2: (v10 << 32) | v9, a3: 2, a4: &v16, a5: -1, a6: 8, a7: 0); /*0x14000d868*/\n        v28 = si128; /*0x14000d86e*/\n        v29 = 0; /*0x14000d875*/\n        *(_QWORD *)&v17 = 0; /*0x14000d879*/\n        v16.m128i_i32[0] = 50397184; /*0x14000d87e*/\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000d88a*/\n        *(_QWORD *)&v18 = __PAIR64__(v6, v5); /*0x14000d88f*/\n        DWORD2(v18) = v7 - v5; /*0x14000d89c*/\n        HIDWORD(v18) = v8 - v6; /*0x14000d8a3*/\n        cv::rectangle(a1: &v16, a2: &v18, a3: &v28, a4: 2, a5: 8, a6: 0); /*0x14000d8c8*/\n        LODWORD(v10) = SHIDWORD(v34) / 2; /*0x14000d8d6*/\n        v28 = si128; /*0x14000d8d8*/\n        v29 = 0; /*0x14000d8df*/\n        *(_QWORD *)&v17 = 0; /*0x14000d8e3*/\n        v16.m128i_i32[0] = 50397184; /*0x14000d8e8*/\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000d8f4*/\n        cv::circle( /*0x14000d928*/\n          a1: &v16,\n          a2: (v11 << 32) | (unsigned int)(SHIDWORD(v34) / 2 + v21),\n          a3: 2,\n          a4: &v28,\n          a5: -1,\n          a6: 8,\n          a7: 0);\n        v28 = si128; /*0x14000d92e*/\n        v29 = 0; /*0x14000d935*/\n        *(_QWORD *)&v17 = 0; /*0x14000d939*/\n        v16.m128i_i32[0] = 50397184; /*0x14000d93e*/\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000d94a*/\n        cv::circle( /*0x14000d981*/\n          a1: &v16,\n          a2: ((unsigned __int64)v22 << 32) | (unsigned int)(v10 + v23),\n          a3: 2,\n          a4: &v28,\n          a5: -1,\n          a6: 8,\n          a7: 0);\n        v28 = si128; /*0x14000d987*/\n        v29 = 0; /*0x14000d98e*/\n        *(_QWORD *)&v17 = 0; /*0x14000d992*/\n        v16.m128i_i32[0] = 50397184; /*0x14000d997*/\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000d9a3*/\n        LODWORD(v18) = v24 + v10; /*0x14000d9ae*/\n        DWORD1(v18) = v25; /*0x14000d9b5*/\n        DWORD2(v18) = v26 - v24; /*0x14000d9be*/\n        HIDWORD(v18) = v27 - v25; /*0x14000d9c7*/\n        cv::rectangle(a1: &v16, a2: &v18, a3: &v28, a4: 2, a5: 8, a6: 0); /*0x14000d9eb*/\n        *(_QWORD *)&v17 = 0; /*0x14000d9f1*/\n        v16.m128i_i32[0] = 16842752; /*0x14000d9f6*/\n        v16.m128i_i64[1] = (__int64)&v34; /*0x14000da02*/\n        v18 = 0; /*0x14000da0a*/\n        v19 = 0; /*0x14000da12*/\n        sub_140004290(a1: &v18, a2: \"Eye Tracking\", a3: 12); /*0x14000da2a*/\n        cv::imshow(a1: &v18, a2: &v16); /*0x14000da3a*/\n        sub_1400044B0(a1: &v18); /*0x14000da46*/\n        cv::waitKey(this: (cv *)0xA, a2: v13); /*0x14000da50*/\n        v0 = v20; /*0x14000da56*/\n      }\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v31 + 32LL))(a1: v31); /*0x14000da60*/\n      ++dword_140050164; /*0x14000da63*/\n      TickCount = GetTickCount(); /*0x14000da69*/\n      v15 = dword_140050180; /*0x14000da6f*/\n      if ( dword_140050180 == 0 ) /*0x14000da77*/\n      {\n        v15 = TickCount; /*0x14000da79*/\n        dword_140050180 = TickCount; /*0x14000da7b*/\n      }\n      if ( TickCount - v15 >= 0x3E8 ) /*0x14000da8b*/\n      {\n        dword_140050164 = 0; /*0x14000da8d*/\n        dword_140050180 = TickCount; /*0x14000da93*/\n      }\n    }\n    if ( v31 != 0 ) /*0x14000daa0*/\n      (*(void (__fastcall **)(__int64))(*(_QWORD *)v31 + 16LL))(a1: v31); /*0x14000daa5*/\n    cv::Mat::~Mat(this: (cv::Mat *)&v34); /*0x14000daad*/\n    goto LABEL_25; /*0x14000daad*/\n  }\n  return (unsigned int)v0; /*0x14000dac4*/\n}",
+      "refs": [
+        {
+          "addr": "0x140050188",
+          "name": "qword_140050188"
+        },
+        {
+          "addr": "0x140039788",
+          "name": "??0Mat@cv@@QEAA@XZ"
+        },
+        {
+          "addr": "0x1400397c8",
+          "name": "??0Mat@cv@@QEAA@HHHPEAX_K@Z"
+        },
+        {
+          "addr": "0x140050150",
+          "name": "dword_140050150"
+        },
+        {
+          "addr": "0x140050148",
+          "name": "dword_140050148"
+        },
+        {
+          "addr": "0x140039798",
+          "name": "??4Mat@cv@@QEAAAEAV01@$$QEAV01@@Z"
+        },
+        {
+          "addr": "0x140039790",
+          "name": "__imp_??1Mat@cv@@QEAA@XZ"
+        },
+        {
+          "addr": "0x140036245",
+          "name": "memcmp"
+        },
+        {
+          "addr": "0x140050168",
+          "name": "xmmword_140050168"
+        },
+        {
+          "addr": "0x14003bec0",
+          "name": "aNv12",
+          "string": "NV12"
+        },
+        {
+          "addr": "0x1400397a0",
+          "name": "?empty@Mat@cv@@QEBA_NXZ"
+        },
+        {
+          "addr": "0x1400114a0",
+          "name": "sub_1400114A0"
+        },
+        {
+          "addr": "0x1400392e8",
+          "name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x14003e8e8",
+          "name": "unk_14003E8E8"
+        },
+        {
+          "addr": "0x1400393a0",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x140011890",
+          "name": "sub_140011890"
+        },
+        {
+          "addr": "0x140039000",
+          "name": "doEyeTrack_3D"
+        },
+        {
+          "addr": "0x140050190",
+          "name": "ppv"
+        },
+        {
+          "addr": "0x140039300",
+          "name": "?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x14003e900",
+          "name": "unk_14003E900"
+        },
+        {
+          "addr": "0x14003f2c0",
+          "name": "xmmword_14003F2C0"
+        },
+        {
+          "addr": "0x1400397c0",
+          "name": "?circle@cv@@YAXAEBV_InputOutputArray@1@V?$Point_@H@1@HAEBV?$Scalar_@N@1@HHH@Z"
+        },
+        {
+          "addr": "0x1400397b0",
+          "name": "?rectangle@cv@@YAXAEBV_InputOutputArray@1@V?$Rect_@H@1@AEBV?$Scalar_@N@1@HHH@Z"
+        },
+        {
+          "addr": "0x140004290",
+          "name": "sub_140004290"
+        },
+        {
+          "addr": "0x14003e918",
+          "name": "aEyeTracking",
+          "string": "Eye Tracking"
+        },
+        {
+          "addr": "0x1400397a8",
+          "name": "?imshow@cv@@YAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV_InputArray@1@@Z"
+        },
+        {
+          "addr": "0x1400044b0",
+          "name": "sub_1400044B0"
+        },
+        {
+          "addr": "0x1400397b8",
+          "name": "?waitKey@cv@@YAHH@Z"
+        },
+        {
+          "addr": "0x140050154",
+          "name": "dword_140050154"
+        },
+        {
+          "addr": "0x140050164",
+          "name": "dword_140050164"
+        },
+        {
+          "addr": "0x140039128",
+          "name": "GetTickCount"
+        },
+        {
+          "addr": "0x140050180",
+          "name": "dword_140050180"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

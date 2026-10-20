@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity type="win32" name="TitanLeiaBridge.PortableTracking" version="0.1.1.0" processorArchitecture="amd64"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3"><security><requestedPrivileges><requestedExecutionLevel level="asInvoker" uiAccess="false"/></requestedPrivileges></security></trustInfo>
+  <asmv3:application><asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2020/WindowsSettings"><heapType>SegmentHeap</heapType></asmv3:windowsSettings></asmv3:application>
+  <file name="FaceTrackingManagerService.dll">
+    <comClass clsid="{D98A272F-DE1C-4E73-A1D0-A93A8F068B4B}" threadingModel="Neutral" tlbid="{E136F17E-F67B-457F-9020-DA10237D7C82}"/>
+    <typelib tlbid="{E136F17E-F67B-457F-9020-DA10237D7C82}" version="1.0" helpdir="" resourceid="1" flags="HASDISKIMAGE"/>
+  </file>
+</assembly>

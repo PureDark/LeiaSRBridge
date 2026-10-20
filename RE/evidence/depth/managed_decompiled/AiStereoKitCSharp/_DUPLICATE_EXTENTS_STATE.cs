@@ -1,0 +1,9 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+
+// Token: 0x020000EE RID: 238
+[NativeCppClass]
+internal enum _DUPLICATE_EXTENTS_STATE
+{
+
+}

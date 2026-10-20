@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"dart\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\app.so\",\"filename\":\"app.so\",\"created_at\":\"2026-10-20T00:41:20.187692\",\"last_accessed\":\"2026-10-20T00:41:20.187692\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_caches\",\"ok\":true,\"ms\":3745.19},{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.01}],\"health\":{\"status\":\"ok\",\"uptime_sec\":44.22,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\app.so.i64\",\"module\":\"app.so\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\app.so\",\"imagebase\":\"0x0\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":31764}},\"message\":\"Binary opened: app.so (dart)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "dart",
+        "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\app.so",
+        "filename": "app.so",
+        "created_at": "2026-10-20T00:41:20.187692",
+        "last_accessed": "2026-10-20T00:41:20.187692",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_caches",
+            "ok": true,
+            "ms": 3745.19
+          },
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.01
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 44.22,
+          "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\app.so.i64",
+          "module": "app.so",
+          "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\app.so",
+          "imagebase": "0x0",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": true,
+          "strings_cache_size": 31764
+        }
+      },
+      "message": "Binary opened: app.so (dart)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,47 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x180060650\",\"code\":\"__int64 __fastcall sub_180060650(__int64 a1)\\n{\\n  __int64 v1; // rax\\n  void *v3; // [rsp+28h] [rbp-30h]\\n  __int64 v4; // [rsp+30h] [rbp-28h]\\n  __int64 v5; // [rsp+40h] [rbp-18h]\\n\\n  v3 = (void *)sub_180067C40(Size: 0x190u); /*0x18006066b*/\\n  __wind /*0xf1c000000000001c*/\\n  {\\n    if ( v3 != nullptr ) /*0x180060676*/\\n      v4 = sub_1800607B0(a1: v3); /*0x180060682*/\\n    else\\n      v4 = 0; /*0x180060689*/\\n    v5 = v4; /*0x180060697*/\\n  }\\n  __unwind\\n  {\\n    j_j_free(Block: v3); /*0x18006d102*/\\n  }\\n  sub_180005890(a1, a2: 16); /*0x1800606b0*/\\n  sub_180016B10(a1); /*0x1800606ba*/\\n  v1 = unknown_libname_12(a1: v5 + 16); /*0x1800606db*/\\n  sub_1800290E0(a1, a2: v1, a3: v5); /*0x1800606ed*/\\n  return a1; /*0x1800606f7*/\\n}\",\"refs\":[{\"addr\":\"0x180067c40\",\"name\":\"sub_180067C40\"},{\"addr\":\"0x1800607b0\",\"name\":\"sub_1800607B0\"},{\"addr\":\"0x1800680b4\",\"name\":\"j_j_free\"},{\"addr\":\"0x180005890\",\"name\":\"sub_180005890\"},{\"addr\":\"0x180016b10\",\"name\":\"sub_180016B10\"},{\"addr\":\"0x1800057f0\",\"name\":\"unknown_libname_12\"},{\"addr\":\"0x1800290e0\",\"name\":\"sub_1800290E0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x180060650",
+      "code": "__int64 __fastcall sub_180060650(__int64 a1)\n{\n  __int64 v1; // rax\n  void *v3; // [rsp+28h] [rbp-30h]\n  __int64 v4; // [rsp+30h] [rbp-28h]\n  __int64 v5; // [rsp+40h] [rbp-18h]\n\n  v3 = (void *)sub_180067C40(Size: 0x190u); /*0x18006066b*/\n  __wind /*0xf1c000000000001c*/\n  {\n    if ( v3 != nullptr ) /*0x180060676*/\n      v4 = sub_1800607B0(a1: v3); /*0x180060682*/\n    else\n      v4 = 0; /*0x180060689*/\n    v5 = v4; /*0x180060697*/\n  }\n  __unwind\n  {\n    j_j_free(Block: v3); /*0x18006d102*/\n  }\n  sub_180005890(a1, a2: 16); /*0x1800606b0*/\n  sub_180016B10(a1); /*0x1800606ba*/\n  v1 = unknown_libname_12(a1: v5 + 16); /*0x1800606db*/\n  sub_1800290E0(a1, a2: v1, a3: v5); /*0x1800606ed*/\n  return a1; /*0x1800606f7*/\n}",
+      "refs": [
+        {
+          "addr": "0x180067c40",
+          "name": "sub_180067C40"
+        },
+        {
+          "addr": "0x1800607b0",
+          "name": "sub_1800607B0"
+        },
+        {
+          "addr": "0x1800680b4",
+          "name": "j_j_free"
+        },
+        {
+          "addr": "0x180005890",
+          "name": "sub_180005890"
+        },
+        {
+          "addr": "0x180016b10",
+          "name": "sub_180016B10"
+        },
+        {
+          "addr": "0x1800057f0",
+          "name": "unknown_libname_12"
+        },
+        {
+          "addr": "0x1800290e0",
+          "name": "sub_1800290E0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

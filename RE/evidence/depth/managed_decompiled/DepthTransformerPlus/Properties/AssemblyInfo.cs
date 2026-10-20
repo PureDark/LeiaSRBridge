@@ -1,0 +1,45 @@
+﻿using System;
+using System.Diagnostics;
+using System.Reflection;
+using System.Resources;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
+using System.Windows;
+using System.Windows.Resources;
+
+[assembly: AssemblyVersion("1.1.30.166")]
+[assembly: AssemblyTitle("DepthTransformerPlus")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("Tencent")]
+[assembly: AssemblyProduct("DepthTransformerPlus")]
+[assembly: AssemblyCopyright("COPYRIGHT ©️ 2011-2026 TENCENT. ALL RIGHTS RESERVED.")]
+[assembly: AssemblyTrademark("")]
+[assembly: ComVisible(false)]
+[assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]
+[assembly: AssemblyFileVersion("1.1.30.166")]
+[assembly: Guid("A344C7B4-9BD0-4179-93B7-0981F0562D63")]
+[assembly: NeutralResourcesLanguage("zh-CN")]
+[assembly: AssemblyAssociatedContentFile("notosans-bold.ttf")]
+[assembly: AssemblyAssociatedContentFile("notosans-bolditalic.ttf")]
+[assembly: AssemblyAssociatedContentFile("notosans-italic.ttf")]
+[assembly: AssemblyAssociatedContentFile("notosans-regular.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-black.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-blackitalic.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-bold.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-bolditalic.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-italic.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-light.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-lightitalic.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-medium.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-mediumitalic.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-regular.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-thin.ttf")]
+[assembly: AssemblyAssociatedContentFile("roboto-thinitalic.ttf")]
+[assembly: AssemblyAssociatedContentFile("robotocondensed-bold.ttf")]
+[assembly: AssemblyAssociatedContentFile("robotocondensed-bolditalic.ttf")]
+[assembly: AssemblyAssociatedContentFile("robotocondensed-italic.ttf")]
+[assembly: AssemblyAssociatedContentFile("robotocondensed-light.ttf")]
+[assembly: AssemblyAssociatedContentFile("robotocondensed-lightitalic.ttf")]
+[assembly: AssemblyAssociatedContentFile("robotocondensed-regular.ttf")]

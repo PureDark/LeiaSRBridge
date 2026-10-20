@@ -1,0 +1,111 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"metadata\":{\"path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\app.so.i64\",\"module\":\"app.so\",\"arch\":\"64\",\"base_address\":\"0x0\",\"image_size\":\"0xbd0090\",\"md5\":\"99d3cc354f8f44a2b0977413286c75f6\",\"sha256\":\"0cf08f3f4c535e5466c2feeb489d0229431b6fa001b926087423ec574cebf458\"},\"statistics\":{\"total_functions\":15200,\"named_functions\":25,\"library_functions\":0,\"unnamed_functions\":15175,\"total_strings\":31764,\"total_segments\":7},\"segments\":[{\"name\":\"LOAD\",\"start\":\"0x0\",\"end\":\"0x200\",\"size\":\"0x200\",\"permissions\":\"r\"},{\"name\":\".rodata\",\"start\":\"0x200\",\"end\":\"0x585930\",\"size\":\"0x585730\",\"permissions\":\"r\"},{\"name\":\".eh_frame\",\"start\":\"0x585930\",\"end\":\"0x585972\",\"size\":\"0x42\",\"permissions\":\"r\"},{\"name\":\"LOAD\",\"start\":\"0x585972\",\"end\":\"0x585ac8\",\"size\":\"0x156\",\"permissions\":\"r\"},{\"name\":\".text\",\"start\":\"0x588000\",\"end\":\"0xbcf900\",\"size\":\"0x647900\",\"permissions\":\"rx\"},{\"name\":\".bss\",\"start\":\"0xbd0000\",\"end\":\"0xbd0030\",\"size\":\"0x30\",\"permissions\":\"rw\"},{\"name\":\"LOAD\",\"start\":\"0xbd0030\",\"end\":\"0xbd0090\",\"size\":\"0x60\",\"permissions\":\"rw\"}],\"entrypoints\":[{\"addr\":\"0x588000\",\"name\":\"_kDartVmSnapshotInstructions\",\"ordinal\":5799936},{\"addr\":\"0x58e600\",\"name\":\"_kDartIsolateSnapshotInstructions\",\"ordinal\":5826048},{\"addr\":\"0x200\",\"name\":\"_kDartVmSnapshotData\",\"ordinal\":512},{\"addr\":\"0x8c40\",\"name\":\"_kDartIsolateSnapshotData\",\"ordinal\":35904},{\"addr\":\"0x1c8\",\"name\":\"_kDartSnapshotBuildId\",\"ordinal\":456}],\"_note\":\"Binary has 15200 functions; xref analysis was limited to the first 10000 for performance.\"}"
+      }
+    ],
+    "structuredContent": {
+      "metadata": {
+        "path": "F:\\目标软件\\ModexLite\\RE\\inputs\\app.so.i64",
+        "module": "app.so",
+        "arch": "64",
+        "base_address": "0x0",
+        "image_size": "0xbd0090",
+        "md5": "99d3cc354f8f44a2b0977413286c75f6",
+        "sha256": "0cf08f3f4c535e5466c2feeb489d0229431b6fa001b926087423ec574cebf458"
+      },
+      "statistics": {
+        "total_functions": 15200,
+        "named_functions": 25,
+        "library_functions": 0,
+        "unnamed_functions": 15175,
+        "total_strings": 31764,
+        "total_segments": 7
+      },
+      "segments": [
+        {
+          "name": "LOAD",
+          "start": "0x0",
+          "end": "0x200",
+          "size": "0x200",
+          "permissions": "r"
+        },
+        {
+          "name": ".rodata",
+          "start": "0x200",
+          "end": "0x585930",
+          "size": "0x585730",
+          "permissions": "r"
+        },
+        {
+          "name": ".eh_frame",
+          "start": "0x585930",
+          "end": "0x585972",
+          "size": "0x42",
+          "permissions": "r"
+        },
+        {
+          "name": "LOAD",
+          "start": "0x585972",
+          "end": "0x585ac8",
+          "size": "0x156",
+          "permissions": "r"
+        },
+        {
+          "name": ".text",
+          "start": "0x588000",
+          "end": "0xbcf900",
+          "size": "0x647900",
+          "permissions": "rx"
+        },
+        {
+          "name": ".bss",
+          "start": "0xbd0000",
+          "end": "0xbd0030",
+          "size": "0x30",
+          "permissions": "rw"
+        },
+        {
+          "name": "LOAD",
+          "start": "0xbd0030",
+          "end": "0xbd0090",
+          "size": "0x60",
+          "permissions": "rw"
+        }
+      ],
+      "entrypoints": [
+        {
+          "addr": "0x588000",
+          "name": "_kDartVmSnapshotInstructions",
+          "ordinal": 5799936
+        },
+        {
+          "addr": "0x58e600",
+          "name": "_kDartIsolateSnapshotInstructions",
+          "ordinal": 5826048
+        },
+        {
+          "addr": "0x200",
+          "name": "_kDartVmSnapshotData",
+          "ordinal": 512
+        },
+        {
+          "addr": "0x8c40",
+          "name": "_kDartIsolateSnapshotData",
+          "ordinal": 35904
+        },
+        {
+          "addr": "0x1c8",
+          "name": "_kDartSnapshotBuildId",
+          "ordinal": 456
+        }
+      ],
+      "_note": "Binary has 15200 functions; xref analysis was limited to the first 10000 for performance."
+    },
+    "isError": false
+  },
+  "id": 1
+}

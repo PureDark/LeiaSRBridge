@@ -1,0 +1,773 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"data\":[{\"addr\":\"0x18000b048\",\"imported_name\":\"GetModuleFileNameW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b050\",\"imported_name\":\"GetModuleHandleW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b058\",\"imported_name\":\"GetProcAddress\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b060\",\"imported_name\":\"LoadLibraryExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b068\",\"imported_name\":\"LoadResource\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b070\",\"imported_name\":\"SizeofResource\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b078\",\"imported_name\":\"FindResourceW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b080\",\"imported_name\":\"lstrcmpiW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b088\",\"imported_name\":\"MultiByteToWideChar\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b090\",\"imported_name\":\"GetThreadLocale\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b098\",\"imported_name\":\"SetThreadLocale\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0a0\",\"imported_name\":\"CloseHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0a8\",\"imported_name\":\"FreeLibrary\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0b0\",\"imported_name\":\"ResetEvent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0b8\",\"imported_name\":\"WaitForSingleObject\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0c0\",\"imported_name\":\"CreateEventW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0c8\",\"imported_name\":\"TerminateProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0d0\",\"imported_name\":\"GetExitCodeProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0d8\",\"imported_name\":\"CreateProcessW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0e0\",\"imported_name\":\"CreateJobObjectW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0e8\",\"imported_name\":\"AssignProcessToJobObject\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0f0\",\"imported_name\":\"SetInformationJobObject\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b0f8\",\"imported_name\":\"LeaveCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b100\",\"imported_name\":\"EnterCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b108\",\"imported_name\":\"EncodePointer\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b110\",\"imported_name\":\"DeleteCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b118\",\"imported_name\":\"InitializeCriticalSectionEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b120\",\"imported_name\":\"GetLastError\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b128\",\"imported_name\":\"RaiseException\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b130\",\"imported_name\":\"SetEvent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b138\",\"imported_name\":\"DecodePointer\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b140\",\"imported_name\":\"InitializeSListHead\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b148\",\"imported_name\":\"GetSystemTimeAsFileTime\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b150\",\"imported_name\":\"GetCurrentThreadId\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b158\",\"imported_name\":\"GetCurrentProcessId\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b160\",\"imported_name\":\"QueryPerformanceCounter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b168\",\"imported_name\":\"IsProcessorFeaturePresent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b170\",\"imported_name\":\"GetCurrentProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b178\",\"imported_name\":\"SetUnhandledExceptionFilter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b180\",\"imported_name\":\"UnhandledExceptionFilter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b188\",\"imported_name\":\"RtlVirtualUnwind\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b190\",\"imported_name\":\"RtlLookupFunctionEntry\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b198\",\"imported_name\":\"RtlCaptureContext\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b1a0\",\"imported_name\":\"OutputDebugStringW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b1a8\",\"imported_name\":\"IsDebuggerPresent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x18000b388\",\"imported_name\":\"CharNextW\",\"module\":\"USER32\"},{\"addr\":\"0x18000b000\",\"imported_name\":\"RegQueryInfoKeyW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x18000b008\",\"imported_name\":\"RegOpenKeyExW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x18000b010\",\"imported_name\":\"RegEnumKeyExW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x18000b018\",\"imported_name\":\"RegDeleteValueW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x18000b020\",\"imported_name\":\"RegDeleteKeyW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x18000b028\",\"imported_name\":\"RegCreateKeyExW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x18000b030\",\"imported_name\":\"RegCloseKey\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x18000b038\",\"imported_name\":\"RegSetValueExW\",\"module\":\"ADVAPI32\"},{\"addr\":\"0x18000b4e0\",\"imported_name\":\"CoCreateInstance\",\"module\":\"ole32\"},{\"addr\":\"0x18000b4e8\",\"imported_name\":\"CoTaskMemFree\",\"module\":\"ole32\"},{\"addr\":\"0x18000b4f0\",\"imported_name\":\"CoCreateFreeThreadedMarshaler\",\"module\":\"ole32\"},{\"addr\":\"0x18000b4f8\",\"imported_name\":\"CoTaskMemRealloc\",\"module\":\"ole32\"},{\"addr\":\"0x18000b500\",\"imported_name\":\"StringFromGUID2\",\"module\":\"ole32\"},{\"addr\":\"0x18000b508\",\"imported_name\":\"CoTaskMemAlloc\",\"module\":\"ole32\"},{\"addr\":\"0x18000b258\",\"imported_name\":\"LPSAFEARRAY_UserUnmarshal64\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b260\",\"imported_name\":\"LPSAFEARRAY_UserMarshal64\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b268\",\"imported_name\":\"BSTR_UserSize64\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b270\",\"imported_name\":\"LPSAFEARRAY_UserSize64\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b298\",\"imported_name\":\"BSTR_UserFree64\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2a0\",\"imported_name\":\"BSTR_UserUnmarshal64\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2a8\",\"imported_name\":\"LPSAFEARRAY_UserFree64\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b310\",\"imported_name\":\"BSTR_UserMarshal64\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2b8\",\"imported_name\":\"SysAllocString\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2b0\",\"imported_name\":\"SysFreeString\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2c0\",\"imported_name\":\"SysStringLen\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2d0\",\"imported_name\":\"LoadTypeLib\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2e8\",\"imported_name\":\"LoadRegTypeLib\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2d8\",\"imported_name\":\"RegisterTypeLib\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2e0\",\"imported_name\":\"UnRegisterTypeLib\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2c8\",\"imported_name\":\"VarUI4FromStr\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2f0\",\"imported_name\":\"__imp_BSTR_UserSize\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b2f8\",\"imported_name\":\"__imp_BSTR_UserMarshal\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b300\",\"imported_name\":\"__imp_BSTR_UserUnmarshal\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b308\",\"imported_name\":\"__imp_BSTR_UserFree\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b290\",\"imported_name\":\"__imp_LPSAFEARRAY_UserSize\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b288\",\"imported_name\":\"__imp_LPSAFEARRAY_UserMarshal\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b280\",\"imported_name\":\"__imp_LPSAFEARRAY_UserUnmarshal\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b278\",\"imported_name\":\"__imp_LPSAFEARRAY_UserFree\",\"module\":\"OLEAUT32\"},{\"addr\":\"0x18000b1b8\",\"imported_name\":\"?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b1c0\",\"imported_name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b1c8\",\"imported_name\":\"?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b1d0\",\"imported_name\":\"?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b1d8\",\"imported_name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b1e0\",\"imported_name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b1e8\",\"imported_name\":\"?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b1f0\",\"imported_name\":\"?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b1f8\",\"imported_name\":\"?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b200\",\"imported_name\":\"?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b208\",\"imported_name\":\"?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b210\",\"imported_name\":\"?uncaught_exception@std@@YA_NXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b218\",\"imported_name\":\"?good@ios_base@std@@QEBA_NXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b220\",\"imported_name\":\"?flags@ios_base@std@@QEBAHXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b228\",\"imported_name\":\"?width@ios_base@std@@QEBA_JXZ\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b230\",\"imported_name\":\"?width@ios_base@std@@QEAA_J_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b238\",\"imported_name\":\"?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b240\",\"imported_name\":\"?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b248\",\"imported_name\":\"?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z\",\"module\":\"MSVCP140\"},{\"addr\":\"0x18000b320\",\"imported_name\":\"NdrDllGetClassObject\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b328\",\"imported_name\":\"NdrDllCanUnloadNow\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b330\",\"imported_name\":\"NdrDllRegisterProxy\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b338\",\"imported_name\":\"NdrCStdStubBuffer2_Release\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b340\",\"imported_name\":\"NdrStubForwardingFunction\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b348\",\"imported_name\":\"NdrOleFree\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b350\",\"imported_name\":\"NdrOleAllocate\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b358\",\"imported_name\":\"NdrStubCall3\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b360\",\"imported_name\":\"NdrDllUnregisterProxy\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b368\",\"imported_name\":\"IUnknown_Release_Proxy\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b370\",\"imported_name\":\"IUnknown_AddRef_Proxy\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b378\",\"imported_name\":\"IUnknown_QueryInterface_Proxy\",\"module\":\"RPCRT4\"},{\"addr\":\"0x18000b398\",\"imported_name\":\"__std_type_info_destroy_list\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3a0\",\"imported_name\":\"__std_exception_copy\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3a8\",\"imported_name\":\"__C_specific_handler\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3b0\",\"imported_name\":\"__current_exception_context\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3b8\",\"imported_name\":\"__current_exception\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3c0\",\"imported_name\":\"memcmp\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3c8\",\"imported_name\":\"wcsrchr\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3d0\",\"imported_name\":\"_purecall\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3d8\",\"imported_name\":\"memcpy\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3e0\",\"imported_name\":\"wcsstr\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3e8\",\"imported_name\":\"memset\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3f0\",\"imported_name\":\"_CxxThrowException\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b3f8\",\"imported_name\":\"__std_terminate\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b400\",\"imported_name\":\"__std_exception_destroy\",\"module\":\"VCRUNTIME140\"},{\"addr\":\"0x18000b410\",\"imported_name\":\"__CxxFrameHandler4\",\"module\":\"VCRUNTIME140_1\"},{\"addr\":\"0x18000b420\",\"imported_name\":\"free\",\"module\":\"api-ms-win-crt-heap-l1-1-0\"},{\"addr\":\"0x18000b428\",\"imported_name\":\"_recalloc\",\"module\":\"api-ms-win-crt-heap-l1-1-0\"},{\"addr\":\"0x18000b430\",\"imported_name\":\"malloc\",\"module\":\"api-ms-win-crt-heap-l1-1-0\"},{\"addr\":\"0x18000b438\",\"imported_name\":\"_callnewh\",\"module\":\"api-ms-win-crt-heap-l1-1-0\"},{\"addr\":\"0x18000b448\",\"imported_name\":\"_initterm_e\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b450\",\"imported_name\":\"_initterm\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b458\",\"imported_name\":\"_cexit\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b460\",\"imported_name\":\"_initialize_narrow_environment\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b468\",\"imported_name\":\"_configure_narrow_argv\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b470\",\"imported_name\":\"_seh_filter_dll\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b478\",\"imported_name\":\"terminate\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b480\",\"imported_name\":\"_crt_atexit\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b488\",\"imported_name\":\"_execute_onexit_table\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b490\",\"imported_name\":\"_initialize_onexit_table\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b498\",\"imported_name\":\"_register_onexit_function\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b4a0\",\"imported_name\":\"_invalid_parameter_noinfo\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b4a8\",\"imported_name\":\"_errno\",\"module\":\"api-ms-win-crt-runtime-l1-1-0\"},{\"addr\":\"0x18000b4b8\",\"imported_name\":\"wcscat_s\",\"module\":\"api-ms-win-crt-string-l1-1-0\"},{\"addr\":\"0x18000b4c0\",\"imported_name\":\"wcsncpy_s\",\"module\":\"api-ms-win-crt-string-l1-1-0\"},{\"addr\":\"0x18000b4c8\",\"imported_name\":\"wcscpy_s\",\"module\":\"api-ms-win-crt-string-l1-1-0\"},{\"addr\":\"0x18000b4d0\",\"imported_name\":\"_wcsnicmp\",\"module\":\"api-ms-win-crt-string-l1-1-0\"}],\"next_offset\":null}"
+      }
+    ],
+    "structuredContent": {
+      "data": [
+        {
+          "addr": "0x18000b048",
+          "imported_name": "GetModuleFileNameW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b050",
+          "imported_name": "GetModuleHandleW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b058",
+          "imported_name": "GetProcAddress",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b060",
+          "imported_name": "LoadLibraryExW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b068",
+          "imported_name": "LoadResource",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b070",
+          "imported_name": "SizeofResource",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b078",
+          "imported_name": "FindResourceW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b080",
+          "imported_name": "lstrcmpiW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b088",
+          "imported_name": "MultiByteToWideChar",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b090",
+          "imported_name": "GetThreadLocale",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b098",
+          "imported_name": "SetThreadLocale",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0a0",
+          "imported_name": "CloseHandle",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0a8",
+          "imported_name": "FreeLibrary",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0b0",
+          "imported_name": "ResetEvent",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0b8",
+          "imported_name": "WaitForSingleObject",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0c0",
+          "imported_name": "CreateEventW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0c8",
+          "imported_name": "TerminateProcess",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0d0",
+          "imported_name": "GetExitCodeProcess",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0d8",
+          "imported_name": "CreateProcessW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0e0",
+          "imported_name": "CreateJobObjectW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0e8",
+          "imported_name": "AssignProcessToJobObject",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0f0",
+          "imported_name": "SetInformationJobObject",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b0f8",
+          "imported_name": "LeaveCriticalSection",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b100",
+          "imported_name": "EnterCriticalSection",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b108",
+          "imported_name": "EncodePointer",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b110",
+          "imported_name": "DeleteCriticalSection",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b118",
+          "imported_name": "InitializeCriticalSectionEx",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b120",
+          "imported_name": "GetLastError",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b128",
+          "imported_name": "RaiseException",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b130",
+          "imported_name": "SetEvent",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b138",
+          "imported_name": "DecodePointer",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b140",
+          "imported_name": "InitializeSListHead",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b148",
+          "imported_name": "GetSystemTimeAsFileTime",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b150",
+          "imported_name": "GetCurrentThreadId",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b158",
+          "imported_name": "GetCurrentProcessId",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b160",
+          "imported_name": "QueryPerformanceCounter",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b168",
+          "imported_name": "IsProcessorFeaturePresent",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b170",
+          "imported_name": "GetCurrentProcess",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b178",
+          "imported_name": "SetUnhandledExceptionFilter",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b180",
+          "imported_name": "UnhandledExceptionFilter",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b188",
+          "imported_name": "RtlVirtualUnwind",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b190",
+          "imported_name": "RtlLookupFunctionEntry",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b198",
+          "imported_name": "RtlCaptureContext",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b1a0",
+          "imported_name": "OutputDebugStringW",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b1a8",
+          "imported_name": "IsDebuggerPresent",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x18000b388",
+          "imported_name": "CharNextW",
+          "module": "USER32"
+        },
+        {
+          "addr": "0x18000b000",
+          "imported_name": "RegQueryInfoKeyW",
+          "module": "ADVAPI32"
+        },
+        {
+          "addr": "0x18000b008",
+          "imported_name": "RegOpenKeyExW",
+          "module": "ADVAPI32"
+        },
+        {
+          "addr": "0x18000b010",
+          "imported_name": "RegEnumKeyExW",
+          "module": "ADVAPI32"
+        },
+        {
+          "addr": "0x18000b018",
+          "imported_name": "RegDeleteValueW",
+          "module": "ADVAPI32"
+        },
+        {
+          "addr": "0x18000b020",
+          "imported_name": "RegDeleteKeyW",
+          "module": "ADVAPI32"
+        },
+        {
+          "addr": "0x18000b028",
+          "imported_name": "RegCreateKeyExW",
+          "module": "ADVAPI32"
+        },
+        {
+          "addr": "0x18000b030",
+          "imported_name": "RegCloseKey",
+          "module": "ADVAPI32"
+        },
+        {
+          "addr": "0x18000b038",
+          "imported_name": "RegSetValueExW",
+          "module": "ADVAPI32"
+        },
+        {
+          "addr": "0x18000b4e0",
+          "imported_name": "CoCreateInstance",
+          "module": "ole32"
+        },
+        {
+          "addr": "0x18000b4e8",
+          "imported_name": "CoTaskMemFree",
+          "module": "ole32"
+        },
+        {
+          "addr": "0x18000b4f0",
+          "imported_name": "CoCreateFreeThreadedMarshaler",
+          "module": "ole32"
+        },
+        {
+          "addr": "0x18000b4f8",
+          "imported_name": "CoTaskMemRealloc",
+          "module": "ole32"
+        },
+        {
+          "addr": "0x18000b500",
+          "imported_name": "StringFromGUID2",
+          "module": "ole32"
+        },
+        {
+          "addr": "0x18000b508",
+          "imported_name": "CoTaskMemAlloc",
+          "module": "ole32"
+        },
+        {
+          "addr": "0x18000b258",
+          "imported_name": "LPSAFEARRAY_UserUnmarshal64",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b260",
+          "imported_name": "LPSAFEARRAY_UserMarshal64",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b268",
+          "imported_name": "BSTR_UserSize64",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b270",
+          "imported_name": "LPSAFEARRAY_UserSize64",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b298",
+          "imported_name": "BSTR_UserFree64",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2a0",
+          "imported_name": "BSTR_UserUnmarshal64",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2a8",
+          "imported_name": "LPSAFEARRAY_UserFree64",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b310",
+          "imported_name": "BSTR_UserMarshal64",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2b8",
+          "imported_name": "SysAllocString",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2b0",
+          "imported_name": "SysFreeString",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2c0",
+          "imported_name": "SysStringLen",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2d0",
+          "imported_name": "LoadTypeLib",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2e8",
+          "imported_name": "LoadRegTypeLib",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2d8",
+          "imported_name": "RegisterTypeLib",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2e0",
+          "imported_name": "UnRegisterTypeLib",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2c8",
+          "imported_name": "VarUI4FromStr",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2f0",
+          "imported_name": "__imp_BSTR_UserSize",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b2f8",
+          "imported_name": "__imp_BSTR_UserMarshal",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b300",
+          "imported_name": "__imp_BSTR_UserUnmarshal",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b308",
+          "imported_name": "__imp_BSTR_UserFree",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b290",
+          "imported_name": "__imp_LPSAFEARRAY_UserSize",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b288",
+          "imported_name": "__imp_LPSAFEARRAY_UserMarshal",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b280",
+          "imported_name": "__imp_LPSAFEARRAY_UserUnmarshal",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b278",
+          "imported_name": "__imp_LPSAFEARRAY_UserFree",
+          "module": "OLEAUT32"
+        },
+        {
+          "addr": "0x18000b1b8",
+          "imported_name": "?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b1c0",
+          "imported_name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b1c8",
+          "imported_name": "?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b1d0",
+          "imported_name": "?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b1d8",
+          "imported_name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b1e0",
+          "imported_name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b1e8",
+          "imported_name": "?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b1f0",
+          "imported_name": "?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b1f8",
+          "imported_name": "?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b200",
+          "imported_name": "?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b208",
+          "imported_name": "?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b210",
+          "imported_name": "?uncaught_exception@std@@YA_NXZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b218",
+          "imported_name": "?good@ios_base@std@@QEBA_NXZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b220",
+          "imported_name": "?flags@ios_base@std@@QEBAHXZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b228",
+          "imported_name": "?width@ios_base@std@@QEBA_JXZ",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b230",
+          "imported_name": "?width@ios_base@std@@QEAA_J_J@Z",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b238",
+          "imported_name": "?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b240",
+          "imported_name": "?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b248",
+          "imported_name": "?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z",
+          "module": "MSVCP140"
+        },
+        {
+          "addr": "0x18000b320",
+          "imported_name": "NdrDllGetClassObject",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b328",
+          "imported_name": "NdrDllCanUnloadNow",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b330",
+          "imported_name": "NdrDllRegisterProxy",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b338",
+          "imported_name": "NdrCStdStubBuffer2_Release",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b340",
+          "imported_name": "NdrStubForwardingFunction",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b348",
+          "imported_name": "NdrOleFree",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b350",
+          "imported_name": "NdrOleAllocate",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b358",
+          "imported_name": "NdrStubCall3",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b360",
+          "imported_name": "NdrDllUnregisterProxy",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b368",
+          "imported_name": "IUnknown_Release_Proxy",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b370",
+          "imported_name": "IUnknown_AddRef_Proxy",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b378",
+          "imported_name": "IUnknown_QueryInterface_Proxy",
+          "module": "RPCRT4"
+        },
+        {
+          "addr": "0x18000b398",
+          "imported_name": "__std_type_info_destroy_list",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3a0",
+          "imported_name": "__std_exception_copy",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3a8",
+          "imported_name": "__C_specific_handler",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3b0",
+          "imported_name": "__current_exception_context",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3b8",
+          "imported_name": "__current_exception",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3c0",
+          "imported_name": "memcmp",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3c8",
+          "imported_name": "wcsrchr",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3d0",
+          "imported_name": "_purecall",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3d8",
+          "imported_name": "memcpy",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3e0",
+          "imported_name": "wcsstr",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3e8",
+          "imported_name": "memset",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3f0",
+          "imported_name": "_CxxThrowException",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b3f8",
+          "imported_name": "__std_terminate",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b400",
+          "imported_name": "__std_exception_destroy",
+          "module": "VCRUNTIME140"
+        },
+        {
+          "addr": "0x18000b410",
+          "imported_name": "__CxxFrameHandler4",
+          "module": "VCRUNTIME140_1"
+        },
+        {
+          "addr": "0x18000b420",
+          "imported_name": "free",
+          "module": "api-ms-win-crt-heap-l1-1-0"
+        },
+        {
+          "addr": "0x18000b428",
+          "imported_name": "_recalloc",
+          "module": "api-ms-win-crt-heap-l1-1-0"
+        },
+        {
+          "addr": "0x18000b430",
+          "imported_name": "malloc",
+          "module": "api-ms-win-crt-heap-l1-1-0"
+        },
+        {
+          "addr": "0x18000b438",
+          "imported_name": "_callnewh",
+          "module": "api-ms-win-crt-heap-l1-1-0"
+        },
+        {
+          "addr": "0x18000b448",
+          "imported_name": "_initterm_e",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b450",
+          "imported_name": "_initterm",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b458",
+          "imported_name": "_cexit",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b460",
+          "imported_name": "_initialize_narrow_environment",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b468",
+          "imported_name": "_configure_narrow_argv",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b470",
+          "imported_name": "_seh_filter_dll",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b478",
+          "imported_name": "terminate",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b480",
+          "imported_name": "_crt_atexit",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b488",
+          "imported_name": "_execute_onexit_table",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b490",
+          "imported_name": "_initialize_onexit_table",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b498",
+          "imported_name": "_register_onexit_function",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b4a0",
+          "imported_name": "_invalid_parameter_noinfo",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b4a8",
+          "imported_name": "_errno",
+          "module": "api-ms-win-crt-runtime-l1-1-0"
+        },
+        {
+          "addr": "0x18000b4b8",
+          "imported_name": "wcscat_s",
+          "module": "api-ms-win-crt-string-l1-1-0"
+        },
+        {
+          "addr": "0x18000b4c0",
+          "imported_name": "wcsncpy_s",
+          "module": "api-ms-win-crt-string-l1-1-0"
+        },
+        {
+          "addr": "0x18000b4c8",
+          "imported_name": "wcscpy_s",
+          "module": "api-ms-win-crt-string-l1-1-0"
+        },
+        {
+          "addr": "0x18000b4d0",
+          "imported_name": "_wcsnicmp",
+          "module": "api-ms-win-crt-string-l1-1-0"
+        }
+      ],
+      "next_offset": null
+    },
+    "isError": false
+  },
+  "id": 1
+}

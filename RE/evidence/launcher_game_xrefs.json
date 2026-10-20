@@ -1,0 +1,81 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x180016888\",\"xrefs\":[{\"addr\":\"0x18000875b\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180008440\",\"name\":\"sub_180008440\",\"size\":\"0x8d2\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x1800168c0\",\"xrefs\":[{\"addr\":\"0x1800088b8\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180008440\",\"name\":\"sub_180008440\",\"size\":\"0x8d2\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x1800170f8\",\"xrefs\":[{\"addr\":\"0x180008d56\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180008d20\",\"name\":\"sub_180008D20\",\"size\":\"0x650\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x180017618\",\"xrefs\":[{\"addr\":\"0x180007aa3\",\"type\":\"data\",\"fn\":{\"addr\":\"0x1800079f0\",\"name\":\"sub_1800079F0\",\"size\":\"0x106\"}}],\"more\":false,\"xref_count\":1}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x180016888",
+          "xrefs": [
+            {
+              "addr": "0x18000875b",
+              "type": "data",
+              "fn": {
+                "addr": "0x180008440",
+                "name": "sub_180008440",
+                "size": "0x8d2"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x1800168c0",
+          "xrefs": [
+            {
+              "addr": "0x1800088b8",
+              "type": "data",
+              "fn": {
+                "addr": "0x180008440",
+                "name": "sub_180008440",
+                "size": "0x8d2"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x1800170f8",
+          "xrefs": [
+            {
+              "addr": "0x180008d56",
+              "type": "data",
+              "fn": {
+                "addr": "0x180008d20",
+                "name": "sub_180008D20",
+                "size": "0x650"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x180017618",
+          "xrefs": [
+            {
+              "addr": "0x180007aa3",
+              "type": "data",
+              "fn": {
+                "addr": "0x1800079f0",
+                "name": "sub_1800079F0",
+                "size": "0x106"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

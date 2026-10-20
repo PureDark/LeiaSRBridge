@@ -1,0 +1,12 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+
+namespace <CppImplementationDetails>
+{
+	// Token: 0x0200020D RID: 525
+	[NativeCppClass]
+	[UnsafeValueType]
+	internal struct $ArrayType$$$BY0P@$$CBD
+	{
+	}
+}

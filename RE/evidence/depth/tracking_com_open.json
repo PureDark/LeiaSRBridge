@@ -1,0 +1,129 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180006270\",\"code\":\"__int64 __fastcall sub_180006270(__int64 a1)\\n{\\n  __int128 v2; // xmm1\\n  ULONG_PTR v3; // xmm0_8\\n  void *v4; // rcx\\n  unsigned int v5; // ebx\\n  __int64 v6; // rax\\n  HANDLE JobObjectW; // rbx\\n  HANDLE EventW; // r12\\n  __int64 v9; // rax\\n  __int64 v10; // rax\\n  wchar_t *v11; // rax\\n  __int64 v12; // rax\\n  __int64 v13; // rcx\\n  WCHAR *v14; // rax\\n  __int64 v15; // rax\\n  WCHAR *v16; // rcx\\n  __int64 v17; // rdi\\n  __int64 v18; // rax\\n  char *v19; // r8\\n  WCHAR v20; // dx\\n  WCHAR *v21; // rax\\n  signed int LastError; // eax\\n  struct _PROCESS_INFORMATION ProcessInformation; // [rsp+50h] [rbp-B0h] BYREF\\n  DWORD ExitCode; // [rsp+68h] [rbp-98h] BYREF\\n  struct _RTL_CRITICAL_SECTION CriticalSection; // [rsp+70h] [rbp-90h] BYREF\\n  int JobObjectInformation; // [rsp+A0h] [rbp-60h] BYREF\\n  __int128 v28; // [rsp+A4h] [rbp-5Ch]\\n  __int128 v29; // [rsp+B4h] [rbp-4Ch]\\n  __int128 v30; // [rsp+C4h] [rbp-3Ch]\\n  __int128 v31; // [rsp+D4h] [rbp-2Ch]\\n  __int128 v32; // [rsp+E4h] [rbp-1Ch]\\n  __int128 v33; // [rsp+F4h] [rbp-Ch]\\n  __int128 v34; // [rsp+104h] [rbp+4h]\\n  __int128 v35; // [rsp+114h] [rbp+14h]\\n  __int64 v36; // [rsp+124h] [rbp+24h]\\n  int v37; // [rsp+12Ch] [rbp+2Ch]\\n  struct _STARTUPINFOW StartupInfo; // [rsp+130h] [rbp+30h] BYREF\\n  wchar_t Filename[264]; // [rsp+1A0h] [rbp+A0h] BYREF\\n\\n  v2 = *(_OWORD *)(a1 + 112); /*0x1800062ab*/\\n  *(_OWORD *)&CriticalSection.DebugInfo = *(_OWORD *)(a1 + 96); /*0x1800062af*/\\n  v3 = *(_QWORD *)(a1 + 128); /*0x1800062b4*/\\n  v4 = *(void **)(a1 + 88); /*0x1800062bc*/\\n  CriticalSection.SpinCount = v3; /*0x1800062c0*/\\n  *(_OWORD *)&CriticalSection.OwningThread = v2; /*0x1800062c5*/\\n  if ( v4 != nullptr ) /*0x1800062cc*/\\n  {\\n    if ( GetExitCodeProcess(hProcess: v4, lpExitCode: &ExitCode) && ExitCode == 259 ) /*0x1800062e5*/\\n    {\\n      v5 = -2147024713; /*0x1800062e7*/\\n      goto LABEL_36; /*0x1800062ec*/\\n    }\\n    CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x1800062f5*/\\n    *(_QWORD *)(a1 + 88) = 0; /*0x1800062fb*/\\n  }\\n  v6 = sub_180006DE0(a1: std::cout, a2: \\\"COM:open facetracking\\\"); /*0x18000630d*/\\n  std::ostream::operator<<(a1: v6, a2: sub_180007040); /*0x18000631c*/\\n  dword_180015010 = 0; /*0x180006325*/\\n  xmmword_180015000 = 0; /*0x18000632b*/\\n  if ( *(_QWORD *)(a1 + 72) == 0 ) /*0x180006336*/\\n  {\\n    JobObjectW = CreateJobObjectW(lpJobAttributes: nullptr, lpName: nullptr); /*0x180006342*/\\n    if ( JobObjectW == nullptr ) /*0x180006348*/\\n    {\\nLABEL_10:\\n      *(_QWORD *)(a1 + 72) = 0; /*0x1800063a5*/\\n      v5 = -2147467259; /*0x1800063a9*/\\n      goto LABEL_36; /*0x1800063ae*/\\n    }\\n    JobObjectInformation = 0; /*0x18000634d*/\\n    v28 = 0; /*0x180006356*/\\n    HIDWORD(v28) = 0x2000; /*0x180006360*/\\n    v36 = 0; /*0x18000636c*/\\n    v37 = 0; /*0x180006373*/\\n    v29 = 0; /*0x180006376*/\\n    v30 = 0; /*0x18000637a*/\\n    v31 = 0; /*0x18000637e*/\\n    v32 = 0; /*0x180006382*/\\n    v33 = 0; /*0x180006386*/\\n    v34 = 0; /*0x18000638a*/\\n    v35 = 0; /*0x18000638e*/\\n    if ( !SetInformationJobObject( /*0x18000639a*/\\n            hJob: JobObjectW,\\n            JobObjectInformationClass: JobObjectExtendedLimitInformation,\\n            lpJobObjectInformation: &JobObjectInformation,\\n            cbJobObjectInformationLength: 0x90u) )\\n    {\\n      CloseHandle(hObject: JobObjectW); /*0x18000639f*/\\n      goto LABEL_10; /*0x18000639f*/\\n    }\\n    *(_QWORD *)(a1 + 72) = JobObjectW; /*0x1800063b3*/\\n  }\\n  v5 = 1; /*0x1800063b7*/\\n  EventW = CreateEventW( /*0x1800063d0*/\\n             lpEventAttributes: nullptr,\\n             bManualReset: true,\\n             bInitialState: false,\\n             lpName: L\\\"Global\\\\\\\\FaceTrackingExitEvent\\\");\\n  if ( EventW != nullptr )\\n  {\\n    StartupInfo.cb = 104; /*0x180006434*/\\n    memset(&StartupInfo.lpReserved, 0, 96); /*0x180006443*/\\n    if ( GetModuleFileNameW(hModule: qword_180012A50, lpFilename: Filename, nSize: 0x104u) != 0 ) /*0x180006466*/\\n    {\\n      v11 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x180006478*/\\n      if ( v11 != nullptr ) /*0x180006480*/\\n      {\\n        v11[1] = 0; /*0x1800064aa*/\\n        v13 = 260; /*0x1800064ae*/\\n        v14 = Filename; /*0x1800064b1*/\\n        do /*0x1800064c4*/\\n        {\\n          if ( *v14 == 0 ) /*0x1800064bb*/\\n            break; /*0x1800064bb*/\\n          ++v14; /*0x1800064bd*/\\n          --v13; /*0x1800064c1*/\\n        }\\n        while ( v13 != 0 ); /*0x1800064c4*/\\n        v15 = 260 - v13; /*0x1800064c9*/\\n        if ( v13 != 0 ) /*0x1800064cf*/\\n        {\\n          v16 = &Filename[v15]; /*0x1800064dc*/\\n          v17 = 260 - v15; /*0x1800064e0*/\\n          if ( 260 != v15 ) /*0x1800064e0*/\\n          {\\n            v18 = 2147483646; /*0x1800064ec*/\\n            v19 = (char *)((char *)L\\\"FaceTracking.exe\\\" - (char *)v16); /*0x1800064f1*/\\n            do /*0x180006510*/\\n            {\\n              if ( v18 == 0 ) /*0x1800064f7*/\\n                break; /*0x1800064f7*/\\n              v20 = *(WCHAR *)((char *)v16 + (_QWORD)v19); /*0x1800064f9*/\\n              if ( v20 == 0 ) /*0x180006501*/\\n                break; /*0x180006501*/\\n              *v16 = v20; /*0x180006503*/\\n              --v18; /*0x180006506*/\\n              ++v16; /*0x180006509*/\\n              --v17; /*0x18000650d*/\\n            }\\n            while ( v17 != 0 ); /*0x180006510*/\\n          }\\n          v21 = v16 - 1; /*0x180006515*/\\n          if ( v17 != 0 ) /*0x180006519*/\\n            v21 = v16; /*0x180006519*/\\n          *v21 = 0; /*0x18000651d*/\\n        }\\n        if ( CreateProcessW( /*0x180006554*/\\n               lpApplicationName: nullptr,\\n               lpCommandLine: Filename,\\n               lpProcessAttributes: nullptr,\\n               lpThreadAttributes: nullptr,\\n               bInheritHandles: false,\\n               dwCreationFlags: 0,\\n               lpEnvironment: nullptr,\\n               lpCurrentDirectory: nullptr,\\n               lpStartupInfo: &StartupInfo,\\n               lpProcessInformation: &ProcessInformation) )\\n        {\\n          if ( AssignProcessToJobObject(hJob: *(HANDLE *)(a1 + 72), hProcess: ProcessInformation.hProcess) ) /*0x180006587*/\\n          {\\n            CloseHandle(hObject: ProcessInformation.hThread); /*0x1800065bc*/\\n            v5 = 0; /*0x1800065c7*/\\n            *(_QWORD *)(a1 + 88) = ProcessInformation.hProcess; /*0x1800065c9*/\\n            *(_QWORD *)(a1 + 80) = EventW; /*0x1800065cd*/\\n          }\\n          else\\n          {\\n            CloseHandle(hObject: ProcessInformation.hProcess); /*0x180006596*/\\n            CloseHandle(hObject: ProcessInformation.hThread); /*0x1800065a1*/\\n            CloseHandle(hObject: EventW); /*0x1800065aa*/\\n            v5 = -2147467259; /*0x1800065b0*/\\n          }\\n        }\\n        else\\n        {\\n          CloseHandle(hObject: EventW); /*0x180006561*/\\n          LastError = GetLastError(); /*0x180006567*/\\n          v5 = LastError; /*0x18000656d*/\\n          if ( LastError > 0 ) /*0x180006571*/\\n            v5 = (unsigned __int16)LastError | 0x80070000; /*0x180006576*/\\n        }\\n      }\\n      else\\n      {\\n        v12 = sub_180006DE0(a1: std::cout, a2: \\\"COM:GetModuleFileNameW failed\\\"); /*0x180006490*/\\n        std::ostream::operator<<(a1: v12, a2: sub_180007040); /*0x18000649f*/\\n      }\\n    }\\n  }\\n  else\\n  {\\n    v5 = GetLastError(); /*0x1800063ec*/\\n    v9 = sub_180006DE0(a1: std::cerr, a2: \\\"CreateEvent failed: \\\");\\n    v10 = std::ostream::operator<<(a1: v9, a2: v5); /*0x1800063f8*/\\n    sub_180006DE0(a1: v10, a2: L\\\"\\\\n\\\"); /*0x180006408*/\\n    if ( (int)v5 > 0 ) /*0x18000640f*/\\n      v5 = (unsigned __int16)v5 | 0x80070000; /*0x180006418*/\\n  }\\nLABEL_36:\\n  DeleteCriticalSection(lpCriticalSection: &CriticalSection); /*0x1800065d1*/\\n  return v5; /*0x1800065de*/\\n}\",\"refs\":[{\"addr\":\"0x18000b0d0\",\"name\":\"GetExitCodeProcess\"},{\"addr\":\"0x18000b0a0\",\"name\":\"CloseHandle\"},{\"addr\":\"0x180006de0\",\"name\":\"sub_180006DE0\"},{\"addr\":\"0x18000b1c0\",\"name\":\"?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x18000c0b0\",\"name\":\"aComOpenFacetra\",\"string\":\"COM:open facetracking\"},{\"addr\":\"0x18000b1e0\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\"},{\"addr\":\"0x180007040\",\"name\":\"sub_180007040\"},{\"addr\":\"0x180015010\",\"name\":\"dword_180015010\"},{\"addr\":\"0x180015000\",\"name\":\"xmmword_180015000\"},{\"addr\":\"0x18000b0e0\",\"name\":\"CreateJobObjectW\"},{\"addr\":\"0x18000b0f0\",\"name\":\"SetInformationJobObject\"},{\"addr\":\"0x18000b0c0\",\"name\":\"CreateEventW\"},{\"addr\":\"0x18000c010\",\"name\":\"Name\",\"string\":\"\\u6c47\\u626f\\u6c61\\u465c\\u6361\\u5465\\u6172\\u6b63\\u6e69\\u4567\\u6978\\u4574\\u6576\\u746e\"},{\"addr\":\"0x180009456\",\"name\":\"wcsrchr\"},{\"addr\":\"0x18000c088\",\"name\":\"aFacetrackingEx\",\"string\":\"\\u6146\\u6563\\u7254\\u6361\\u696b\\u676e\\u652e\\u6578\"},{\"addr\":\"0x18000b0e8\",\"name\":\"AssignProcessToJobObject\"},{\"addr\":\"0x18000b120\",\"name\":\"GetLastError\"},{\"addr\":\"0x18000b0d8\",\"name\":\"CreateProcessW\"},{\"addr\":\"0x18000c068\",\"name\":\"aComGetmodulefi\",\"string\":\"COM:GetModuleFileNameW failed\"},{\"addr\":\"0x18000b048\",\"name\":\"GetModuleFileNameW\"},{\"addr\":\"0x180012a50\",\"name\":\"qword_180012A50\"},{\"addr\":\"0x18000b1b8\",\"name\":\"?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A\"},{\"addr\":\"0x18000c050\",\"name\":\"aCreateeventFai\",\"string\":\"CreateEvent failed: \"},{\"addr\":\"0x18000b1d8\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z\"},{\"addr\":\"0x18000c04c\",\"name\":\"asc_18000C04C\",\"string\":\"\\ufffd\"},{\"addr\":\"0x18000b110\",\"name\":\"DeleteCriticalSection\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180006270",
+      "code": "__int64 __fastcall sub_180006270(__int64 a1)\n{\n  __int128 v2; // xmm1\n  ULONG_PTR v3; // xmm0_8\n  void *v4; // rcx\n  unsigned int v5; // ebx\n  __int64 v6; // rax\n  HANDLE JobObjectW; // rbx\n  HANDLE EventW; // r12\n  __int64 v9; // rax\n  __int64 v10; // rax\n  wchar_t *v11; // rax\n  __int64 v12; // rax\n  __int64 v13; // rcx\n  WCHAR *v14; // rax\n  __int64 v15; // rax\n  WCHAR *v16; // rcx\n  __int64 v17; // rdi\n  __int64 v18; // rax\n  char *v19; // r8\n  WCHAR v20; // dx\n  WCHAR *v21; // rax\n  signed int LastError; // eax\n  struct _PROCESS_INFORMATION ProcessInformation; // [rsp+50h] [rbp-B0h] BYREF\n  DWORD ExitCode; // [rsp+68h] [rbp-98h] BYREF\n  struct _RTL_CRITICAL_SECTION CriticalSection; // [rsp+70h] [rbp-90h] BYREF\n  int JobObjectInformation; // [rsp+A0h] [rbp-60h] BYREF\n  __int128 v28; // [rsp+A4h] [rbp-5Ch]\n  __int128 v29; // [rsp+B4h] [rbp-4Ch]\n  __int128 v30; // [rsp+C4h] [rbp-3Ch]\n  __int128 v31; // [rsp+D4h] [rbp-2Ch]\n  __int128 v32; // [rsp+E4h] [rbp-1Ch]\n  __int128 v33; // [rsp+F4h] [rbp-Ch]\n  __int128 v34; // [rsp+104h] [rbp+4h]\n  __int128 v35; // [rsp+114h] [rbp+14h]\n  __int64 v36; // [rsp+124h] [rbp+24h]\n  int v37; // [rsp+12Ch] [rbp+2Ch]\n  struct _STARTUPINFOW StartupInfo; // [rsp+130h] [rbp+30h] BYREF\n  wchar_t Filename[264]; // [rsp+1A0h] [rbp+A0h] BYREF\n\n  v2 = *(_OWORD *)(a1 + 112); /*0x1800062ab*/\n  *(_OWORD *)&CriticalSection.DebugInfo = *(_OWORD *)(a1 + 96); /*0x1800062af*/\n  v3 = *(_QWORD *)(a1 + 128); /*0x1800062b4*/\n  v4 = *(void **)(a1 + 88); /*0x1800062bc*/\n  CriticalSection.SpinCount = v3; /*0x1800062c0*/\n  *(_OWORD *)&CriticalSection.OwningThread = v2; /*0x1800062c5*/\n  if ( v4 != nullptr ) /*0x1800062cc*/\n  {\n    if ( GetExitCodeProcess(hProcess: v4, lpExitCode: &ExitCode) && ExitCode == 259 ) /*0x1800062e5*/\n    {\n      v5 = -2147024713; /*0x1800062e7*/\n      goto LABEL_36; /*0x1800062ec*/\n    }\n    CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x1800062f5*/\n    *(_QWORD *)(a1 + 88) = 0; /*0x1800062fb*/\n  }\n  v6 = sub_180006DE0(a1: std::cout, a2: \"COM:open facetracking\"); /*0x18000630d*/\n  std::ostream::operator<<(a1: v6, a2: sub_180007040); /*0x18000631c*/\n  dword_180015010 = 0; /*0x180006325*/\n  xmmword_180015000 = 0; /*0x18000632b*/\n  if ( *(_QWORD *)(a1 + 72) == 0 ) /*0x180006336*/\n  {\n    JobObjectW = CreateJobObjectW(lpJobAttributes: nullptr, lpName: nullptr); /*0x180006342*/\n    if ( JobObjectW == nullptr ) /*0x180006348*/\n    {\nLABEL_10:\n      *(_QWORD *)(a1 + 72) = 0; /*0x1800063a5*/\n      v5 = -2147467259; /*0x1800063a9*/\n      goto LABEL_36; /*0x1800063ae*/\n    }\n    JobObjectInformation = 0; /*0x18000634d*/\n    v28 = 0; /*0x180006356*/\n    HIDWORD(v28) = 0x2000; /*0x180006360*/\n    v36 = 0; /*0x18000636c*/\n    v37 = 0; /*0x180006373*/\n    v29 = 0; /*0x180006376*/\n    v30 = 0; /*0x18000637a*/\n    v31 = 0; /*0x18000637e*/\n    v32 = 0; /*0x180006382*/\n    v33 = 0; /*0x180006386*/\n    v34 = 0; /*0x18000638a*/\n    v35 = 0; /*0x18000638e*/\n    if ( !SetInformationJobObject( /*0x18000639a*/\n            hJob: JobObjectW,\n            JobObjectInformationClass: JobObjectExtendedLimitInformation,\n            lpJobObjectInformation: &JobObjectInformation,\n            cbJobObjectInformationLength: 0x90u) )\n    {\n      CloseHandle(hObject: JobObjectW); /*0x18000639f*/\n      goto LABEL_10; /*0x18000639f*/\n    }\n    *(_QWORD *)(a1 + 72) = JobObjectW; /*0x1800063b3*/\n  }\n  v5 = 1; /*0x1800063b7*/\n  EventW = CreateEventW( /*0x1800063d0*/\n             lpEventAttributes: nullptr,\n             bManualReset: true,\n             bInitialState: false,\n             lpName: L\"Global\\\\FaceTrackingExitEvent\");\n  if ( EventW != nullptr )\n  {\n    StartupInfo.cb = 104; /*0x180006434*/\n    memset(&StartupInfo.lpReserved, 0, 96); /*0x180006443*/\n    if ( GetModuleFileNameW(hModule: qword_180012A50, lpFilename: Filename, nSize: 0x104u) != 0 ) /*0x180006466*/\n    {\n      v11 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x180006478*/\n      if ( v11 != nullptr ) /*0x180006480*/\n      {\n        v11[1] = 0; /*0x1800064aa*/\n        v13 = 260; /*0x1800064ae*/\n        v14 = Filename; /*0x1800064b1*/\n        do /*0x1800064c4*/\n        {\n          if ( *v14 == 0 ) /*0x1800064bb*/\n            break; /*0x1800064bb*/\n          ++v14; /*0x1800064bd*/\n          --v13; /*0x1800064c1*/\n        }\n        while ( v13 != 0 ); /*0x1800064c4*/\n        v15 = 260 - v13; /*0x1800064c9*/\n        if ( v13 != 0 ) /*0x1800064cf*/\n        {\n          v16 = &Filename[v15]; /*0x1800064dc*/\n          v17 = 260 - v15; /*0x1800064e0*/\n          if ( 260 != v15 ) /*0x1800064e0*/\n          {\n            v18 = 2147483646; /*0x1800064ec*/\n            v19 = (char *)((char *)L\"FaceTracking.exe\" - (char *)v16); /*0x1800064f1*/\n            do /*0x180006510*/\n            {\n              if ( v18 == 0 ) /*0x1800064f7*/\n                break; /*0x1800064f7*/\n              v20 = *(WCHAR *)((char *)v16 + (_QWORD)v19); /*0x1800064f9*/\n              if ( v20 == 0 ) /*0x180006501*/\n                break; /*0x180006501*/\n              *v16 = v20; /*0x180006503*/\n              --v18; /*0x180006506*/\n              ++v16; /*0x180006509*/\n              --v17; /*0x18000650d*/\n            }\n            while ( v17 != 0 ); /*0x180006510*/\n          }\n          v21 = v16 - 1; /*0x180006515*/\n          if ( v17 != 0 ) /*0x180006519*/\n            v21 = v16; /*0x180006519*/\n          *v21 = 0; /*0x18000651d*/\n        }\n        if ( CreateProcessW( /*0x180006554*/\n               lpApplicationName: nullptr,\n               lpCommandLine: Filename,\n               lpProcessAttributes: nullptr,\n               lpThreadAttributes: nullptr,\n               bInheritHandles: false,\n               dwCreationFlags: 0,\n               lpEnvironment: nullptr,\n               lpCurrentDirectory: nullptr,\n               lpStartupInfo: &StartupInfo,\n               lpProcessInformation: &ProcessInformation) )\n        {\n          if ( AssignProcessToJobObject(hJob: *(HANDLE *)(a1 + 72), hProcess: ProcessInformation.hProcess) ) /*0x180006587*/\n          {\n            CloseHandle(hObject: ProcessInformation.hThread); /*0x1800065bc*/\n            v5 = 0; /*0x1800065c7*/\n            *(_QWORD *)(a1 + 88) = ProcessInformation.hProcess; /*0x1800065c9*/\n            *(_QWORD *)(a1 + 80) = EventW; /*0x1800065cd*/\n          }\n          else\n          {\n            CloseHandle(hObject: ProcessInformation.hProcess); /*0x180006596*/\n            CloseHandle(hObject: ProcessInformation.hThread); /*0x1800065a1*/\n            CloseHandle(hObject: EventW); /*0x1800065aa*/\n            v5 = -2147467259; /*0x1800065b0*/\n          }\n        }\n        else\n        {\n          CloseHandle(hObject: EventW); /*0x180006561*/\n          LastError = GetLastError(); /*0x180006567*/\n          v5 = LastError; /*0x18000656d*/\n          if ( LastError > 0 ) /*0x180006571*/\n            v5 = (unsigned __int16)LastError | 0x80070000; /*0x180006576*/\n        }\n      }\n      else\n      {\n        v12 = sub_180006DE0(a1: std::cout, a2: \"COM:GetModuleFileNameW failed\"); /*0x180006490*/\n        std::ostream::operator<<(a1: v12, a2: sub_180007040); /*0x18000649f*/\n      }\n    }\n  }\n  else\n  {\n    v5 = GetLastError(); /*0x1800063ec*/\n    v9 = sub_180006DE0(a1: std::cerr, a2: \"CreateEvent failed: \");\n    v10 = std::ostream::operator<<(a1: v9, a2: v5); /*0x1800063f8*/\n    sub_180006DE0(a1: v10, a2: L\"\\n\"); /*0x180006408*/\n    if ( (int)v5 > 0 ) /*0x18000640f*/\n      v5 = (unsigned __int16)v5 | 0x80070000; /*0x180006418*/\n  }\nLABEL_36:\n  DeleteCriticalSection(lpCriticalSection: &CriticalSection); /*0x1800065d1*/\n  return v5; /*0x1800065de*/\n}",
+      "refs": [
+        {
+          "addr": "0x18000b0d0",
+          "name": "GetExitCodeProcess"
+        },
+        {
+          "addr": "0x18000b0a0",
+          "name": "CloseHandle"
+        },
+        {
+          "addr": "0x180006de0",
+          "name": "sub_180006DE0"
+        },
+        {
+          "addr": "0x18000b1c0",
+          "name": "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x18000c0b0",
+          "name": "aComOpenFacetra",
+          "string": "COM:open facetracking"
+        },
+        {
+          "addr": "0x18000b1e0",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+        },
+        {
+          "addr": "0x180007040",
+          "name": "sub_180007040"
+        },
+        {
+          "addr": "0x180015010",
+          "name": "dword_180015010"
+        },
+        {
+          "addr": "0x180015000",
+          "name": "xmmword_180015000"
+        },
+        {
+          "addr": "0x18000b0e0",
+          "name": "CreateJobObjectW"
+        },
+        {
+          "addr": "0x18000b0f0",
+          "name": "SetInformationJobObject"
+        },
+        {
+          "addr": "0x18000b0c0",
+          "name": "CreateEventW"
+        },
+        {
+          "addr": "0x18000c010",
+          "name": "Name",
+          "string": "汇扯污䙜捡呥慲正湩䕧楸䕴敶瑮"
+        },
+        {
+          "addr": "0x180009456",
+          "name": "wcsrchr"
+        },
+        {
+          "addr": "0x18000c088",
+          "name": "aFacetrackingEx",
+          "string": "慆散牔捡楫杮攮數"
+        },
+        {
+          "addr": "0x18000b0e8",
+          "name": "AssignProcessToJobObject"
+        },
+        {
+          "addr": "0x18000b120",
+          "name": "GetLastError"
+        },
+        {
+          "addr": "0x18000b0d8",
+          "name": "CreateProcessW"
+        },
+        {
+          "addr": "0x18000c068",
+          "name": "aComGetmodulefi",
+          "string": "COM:GetModuleFileNameW failed"
+        },
+        {
+          "addr": "0x18000b048",
+          "name": "GetModuleFileNameW"
+        },
+        {
+          "addr": "0x180012a50",
+          "name": "qword_180012A50"
+        },
+        {
+          "addr": "0x18000b1b8",
+          "name": "?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"
+        },
+        {
+          "addr": "0x18000c050",
+          "name": "aCreateeventFai",
+          "string": "CreateEvent failed: "
+        },
+        {
+          "addr": "0x18000b1d8",
+          "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z"
+        },
+        {
+          "addr": "0x18000c04c",
+          "name": "asc_18000C04C",
+          "string": "�"
+        },
+        {
+          "addr": "0x18000b110",
+          "name": "DeleteCriticalSection"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

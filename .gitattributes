@@ -1,0 +1,16 @@
+* text=auto
+*.cpp text eol=lf
+*.h text eol=lf
+*.hlsl text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+*.md text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.png binary
+*.pdf binary
+*.dxbc binary
+docs/agent-history/raw/*.jsonl -text
+# Preserve forensic evidence and exported session bytes exactly.
+RE/** -text
+docs/agent-history/** -text

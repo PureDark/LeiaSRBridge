@@ -1,0 +1,146 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800604A0\",\"asm\":{\"name\":\"BOE_Interleaving_releaseSDK\",\"start_ea\":\"0x1800604a0\",\"segment\":\".text\",\"lines\":[{\"addr\":\"1800604a0\",\"instruction\":\"sub rsp, 38h\",\"label\":\"BOE_Interleaving_releaseSDK\",\"comments\":[\"; Exported entry   3. BOE_Interleaving_releaseSDK\"]},{\"addr\":\"1800604a4\",\"instruction\":\"mov r8d, 31h ; '1'\"},{\"addr\":\"1800604aa\",\"instruction\":\"lea rdx, aDProjectsEyemc_13; \\\"D:\\\\\\\\projects\\\\\\\\eyemcuinterleavingsdk-mas\\\"...\",\"refs\":[{\"addr\":\"0x18008fe40\",\"name\":\"aDProjectsEyemc_13\",\"string\":\"D:\\\\projects\\\\eyemcuinterleavingsdk-master0414\\\\interlaceSDK\\\\interleaving_interface.cpp\"}]},{\"addr\":\"1800604b1\",\"instruction\":\"lea rcx, [rsp+38h+var_18]\"},{\"addr\":\"1800604b6\",\"instruction\":\"call sub_180061390\",\"refs\":[{\"addr\":\"0x180061390\",\"name\":\"sub_180061390\"}]},{\"addr\":\"1800604bb\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"1800604be\",\"instruction\":\"call sub_180065B20\",\"refs\":[{\"addr\":\"0x180065b20\",\"name\":\"sub_180065B20\"}]},{\"addr\":\"1800604c3\",\"instruction\":\"lea rdx, aCalledBoeMcuRe; \\\"called BOE_MCU_releaseMCU\\\"\",\"refs\":[{\"addr\":\"0x18008fdb8\",\"name\":\"aCalledBoeMcuRe\",\"string\":\"called BOE_MCU_releaseMCU\"}]},{\"addr\":\"1800604ca\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"1800604cd\",\"instruction\":\"call sub_180006FF0\",\"refs\":[{\"addr\":\"0x180006ff0\",\"name\":\"sub_180006FF0\"}]},{\"addr\":\"1800604d2\",\"instruction\":\"lea rcx, [rsp+38h+var_18]\"},{\"addr\":\"1800604d7\",\"instruction\":\"call sub_180061580\",\"refs\":[{\"addr\":\"0x180061580\",\"name\":\"sub_180061580\"}]},{\"addr\":\"1800604dc\",\"instruction\":\"nop\"},{\"addr\":\"1800604dd\",\"instruction\":\"add rsp, 38h\"},{\"addr\":\"1800604e1\",\"instruction\":\"retn\"}],\"stack_frame\":[{\"name\":\"var_18\",\"offset\":\"0x20\",\"size\":\"0x1\",\"type\":\"_BYTE\"},{\"name\":\"__return_address\",\"offset\":\"0x38\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"}],\"return_type\":\"__int64\",\"arguments\":[]},\"instruction_count\":15,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800604A0",
+      "asm": {
+        "name": "BOE_Interleaving_releaseSDK",
+        "start_ea": "0x1800604a0",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "1800604a0",
+            "instruction": "sub rsp, 38h",
+            "label": "BOE_Interleaving_releaseSDK",
+            "comments": [
+              "; Exported entry   3. BOE_Interleaving_releaseSDK"
+            ]
+          },
+          {
+            "addr": "1800604a4",
+            "instruction": "mov r8d, 31h ; '1'"
+          },
+          {
+            "addr": "1800604aa",
+            "instruction": "lea rdx, aDProjectsEyemc_13; \"D:\\\\projects\\\\eyemcuinterleavingsdk-mas\"...",
+            "refs": [
+              {
+                "addr": "0x18008fe40",
+                "name": "aDProjectsEyemc_13",
+                "string": "D:\\projects\\eyemcuinterleavingsdk-master0414\\interlaceSDK\\interleaving_interface.cpp"
+              }
+            ]
+          },
+          {
+            "addr": "1800604b1",
+            "instruction": "lea rcx, [rsp+38h+var_18]"
+          },
+          {
+            "addr": "1800604b6",
+            "instruction": "call sub_180061390",
+            "refs": [
+              {
+                "addr": "0x180061390",
+                "name": "sub_180061390"
+              }
+            ]
+          },
+          {
+            "addr": "1800604bb",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "1800604be",
+            "instruction": "call sub_180065B20",
+            "refs": [
+              {
+                "addr": "0x180065b20",
+                "name": "sub_180065B20"
+              }
+            ]
+          },
+          {
+            "addr": "1800604c3",
+            "instruction": "lea rdx, aCalledBoeMcuRe; \"called BOE_MCU_releaseMCU\"",
+            "refs": [
+              {
+                "addr": "0x18008fdb8",
+                "name": "aCalledBoeMcuRe",
+                "string": "called BOE_MCU_releaseMCU"
+              }
+            ]
+          },
+          {
+            "addr": "1800604ca",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "1800604cd",
+            "instruction": "call sub_180006FF0",
+            "refs": [
+              {
+                "addr": "0x180006ff0",
+                "name": "sub_180006FF0"
+              }
+            ]
+          },
+          {
+            "addr": "1800604d2",
+            "instruction": "lea rcx, [rsp+38h+var_18]"
+          },
+          {
+            "addr": "1800604d7",
+            "instruction": "call sub_180061580",
+            "refs": [
+              {
+                "addr": "0x180061580",
+                "name": "sub_180061580"
+              }
+            ]
+          },
+          {
+            "addr": "1800604dc",
+            "instruction": "nop"
+          },
+          {
+            "addr": "1800604dd",
+            "instruction": "add rsp, 38h"
+          },
+          {
+            "addr": "1800604e1",
+            "instruction": "retn"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "var_18",
+            "offset": "0x20",
+            "size": "0x1",
+            "type": "_BYTE"
+          },
+          {
+            "name": "__return_address",
+            "offset": "0x38",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          }
+        ],
+        "return_type": "__int64",
+        "arguments": []
+      },
+      "instruction_count": 15,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

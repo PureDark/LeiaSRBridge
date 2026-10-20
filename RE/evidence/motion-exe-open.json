@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"motion-exe\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\FaceTracking.exe\",\"filename\":\"FaceTracking.exe\",\"created_at\":\"2026-10-20T02:43:15.066579\",\"last_accessed\":\"2026-10-20T02:43:15.066579\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_caches\",\"ok\":true,\"ms\":65.52},{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.02}],\"health\":{\"status\":\"ok\",\"uptime_sec\":0.9,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\FaceTracking.exe.i64\",\"module\":\"FaceTracking.exe\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\depth\\\\tracking\\\\FaceTracking.exe\",\"imagebase\":\"0x140000000\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":814}},\"message\":\"Binary opened: FaceTracking.exe (motion-exe)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "motion-exe",
+        "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\FaceTracking.exe",
+        "filename": "FaceTracking.exe",
+        "created_at": "2026-10-20T02:43:15.066579",
+        "last_accessed": "2026-10-20T02:43:15.066579",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_caches",
+            "ok": true,
+            "ms": 65.52
+          },
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.02
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 0.9,
+          "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\FaceTracking.exe.i64",
+          "module": "FaceTracking.exe",
+          "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\depth\\tracking\\FaceTracking.exe",
+          "imagebase": "0x140000000",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": true,
+          "strings_cache_size": 814
+        }
+      },
+      "message": "Binary opened: FaceTracking.exe (motion-exe)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

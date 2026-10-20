@@ -1,0 +1,57 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"BOE_MCU_releaseSDK\",\"code\":\"__int64 BOE_MCU_releaseSDK()\\n{\\n  __int64 v0; // rax\\n  __int64 v1; // rax\\n  __int64 v2; // rax\\n  _BYTE v4[24]; // [rsp+20h] [rbp-18h] BYREF\\n\\n  v0 = sub_180036BD0(a1: v4, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\MCU_library\\\\\\\\mcu_interface.cpp\\\", a3: 37); /*0x180035536*/\\n  v1 = sub_18003DF90(a1: v0); /*0x18003553e*/\\n  sub_18000A770(a1: v1, a2: \\\"called BOE_MCU_releaseMCU\\\"); /*0x18003554d*/\\n  sub_180037160(a1: v4); /*0x180035557*/\\n  sub_180007650(); /*0x18003555c*/\\n  v2 = sub_180035340(); /*0x180035561*/\\n  return sub_180011EF0(a1: v2); /*0x18003556e*/\\n}\",\"refs\":[{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004f898\",\"name\":\"aDSourceRepos3d_82\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004f878\",\"name\":\"aCalledBoeMcuRe\",\"string\":\"called BOE_MCU_releaseMCU\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x180007650\",\"name\":\"sub_180007650\"},{\"addr\":\"0x180035340\",\"name\":\"sub_180035340\"},{\"addr\":\"0x180011ef0\",\"name\":\"sub_180011EF0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "BOE_MCU_releaseSDK",
+      "code": "__int64 BOE_MCU_releaseSDK()\n{\n  __int64 v0; // rax\n  __int64 v1; // rax\n  __int64 v2; // rax\n  _BYTE v4[24]; // [rsp+20h] [rbp-18h] BYREF\n\n  v0 = sub_180036BD0(a1: v4, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\", a3: 37); /*0x180035536*/\n  v1 = sub_18003DF90(a1: v0); /*0x18003553e*/\n  sub_18000A770(a1: v1, a2: \"called BOE_MCU_releaseMCU\"); /*0x18003554d*/\n  sub_180037160(a1: v4); /*0x180035557*/\n  sub_180007650(); /*0x18003555c*/\n  v2 = sub_180035340(); /*0x180035561*/\n  return sub_180011EF0(a1: v2); /*0x18003556e*/\n}",
+      "refs": [
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004f898",
+          "name": "aDSourceRepos3d_82",
+          "string": "D:\\source\\repos\\3DResolution\\MCU_library\\mcu_interface.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004f878",
+          "name": "aCalledBoeMcuRe",
+          "string": "called BOE_MCU_releaseMCU"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x180007650",
+          "name": "sub_180007650"
+        },
+        {
+          "addr": "0x180035340",
+          "name": "sub_180035340"
+        },
+        {
+          "addr": "0x180011ef0",
+          "name": "sub_180011EF0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

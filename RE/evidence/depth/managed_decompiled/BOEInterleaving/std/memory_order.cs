@@ -1,0 +1,12 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+
+namespace std
+{
+	// Token: 0x0200016B RID: 363
+	[NativeCppClass]
+	internal enum memory_order
+	{
+
+	}
+}

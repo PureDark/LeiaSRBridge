@@ -1,0 +1,177 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":39,\"matches\":[{\"addr\":\"0x140015be8\",\"string\":\"com.inlab.modex\"},{\"addr\":\"0x140015c08\",\"string\":\"modex\"},{\"addr\":\"0x140015c60\",\"string\":\"Modex_pid\"},{\"addr\":\"0x140015cb8\",\"string\":\"ModexLiteRunOnlyOneInstance\"},{\"addr\":\"0x140015d00\",\"string\":\"ModexLite\"},{\"addr\":\"0x1400162f0\",\"string\":\"Cannot get plugin registrar on an engine that isn't running; call Run first.\"},{\"addr\":\"0x1400167a8\",\"string\":\"Invalid method call; method name is not a string.\"},{\"addr\":\"0x1400168f8\",\"string\":\"Unable to construct method call from message on channel \"},{\"addr\":\"0x14001a7f0\",\"string\":\"E:\\\\devops\\\\agent\\\\workspace\\\\p-77070d4eaed140e59334544e4780bb92\\\\src\\\\Modex\\\\build\\\\windows\\\\x64\\\\runner\\\\Release\\\\modex_lite.pdb\"},{\"addr\":\"0x14001cde2\",\"string\":\"modex_lite.exe\"},{\"addr\":\"0x14001daaa\",\"string\":\"GameMonitorPluginCApiRegisterWithRegistrar\"},{\"addr\":\"0x14001dad6\",\"string\":\"game_monitor_plugin.dll\"},{\"addr\":\"0x14001dd3e\",\"string\":\"FlutterDesktopEngineCreate\"},{\"addr\":\"0x14001dd5c\",\"string\":\"FlutterDesktopEngineDestroy\"},{\"addr\":\"0x14001dd7a\",\"string\":\"FlutterDesktopEngineReloadSystemFonts\"},{\"addr\":\"0x14001dda2\",\"string\":\"FlutterDesktopEngineGetPluginRegistrar\"},{\"addr\":\"0x14001ddcc\",\"string\":\"FlutterDesktopEngineGetMessenger\"},{\"addr\":\"0x14001ddf0\",\"string\":\"FlutterDesktopEngineSetNextFrameCallback\"},{\"addr\":\"0x14001e208\",\"string\":\"GetCurrentProcessId\"},{\"addr\":\"0x14001e300\",\"string\":\"GetProcessHeap\"},{\"addr\":\"0x14001e3c0\",\"string\":\"GetWindowThreadProcessId\"},{\"addr\":\"0x14001e3dc\",\"string\":\"SetProcessDpiAwarenessContext\"},{\"addr\":\"0x14001f9b2\",\"string\":\"_set_fmode\"},{\"addr\":\"0x14001fa18\",\"string\":\"_set_new_mode\"},{\"addr\":\"0x14001fa28\",\"string\":\"__p__commode\"},{\"addr\":\"0x14001fc80\",\"string\":\"GetCurrentProcess\"},{\"addr\":\"0x14001fc94\",\"string\":\"TerminateProcess\"},{\"addr\":\"0x14001fca8\",\"string\":\"IsProcessorFeaturePresent\"},{\"addr\":\"0x140020220\",\"string\":\".?AV<lambda_d2b41933cf9deb51a206d93d9630e53d>@@\"},{\"addr\":\"0x140020260\",\"string\":\".?AV<lambda_2bdd03d697e32834e756b08811623228>@@\"},{\"addr\":\"0x140020688\",\"string\":\".?AVFlutterEngine@flutter@@\"},{\"addr\":\"0x140020820\",\"string\":\".?AV?$MethodCall@VEncodableValue@flutter@@@flutter@@\"},{\"addr\":\"0x140020ad0\",\"string\":\".?AVStandardMethodCodec@flutter@@\"},{\"addr\":\"0x140020b10\",\"string\":\".?AV?$MethodCodec@VEncodableValue@flutter@@@flutter@@\"},{\"addr\":\"0x140020bf0\",\"string\":\".?AV?$MethodResult@VEncodableValue@flutter@@@flutter@@\"},{\"addr\":\"0x140020c70\",\"string\":\".?AV?$_Func_base@XAEBV?$MethodCall@VEncodableValue@flutter@@@flutter@@V?$unique_ptr@V?$MethodResult@VEncodableValue@flutter@@@flutter@@U?$default_delete@V?$MethodResult@VEncodableValue@flutter@@@flutter@@@std@@@std@@@std@@\"},{\"addr\":\"0x140020db0\",\"string\":\".?AV?$EngineMethodResult@VEncodableValue@flutter@@@flutter@@\"},{\"addr\":\"0x140020e00\",\"string\":\".?AV?$_Func_impl_no_alloc@V<lambda_d2b41933cf9deb51a206d93d9630e53d>@@XAEBV?$MethodCall@VEncodableValue@flutter@@@flutter@@V?$unique_ptr@V?$MethodResult@VEncodableValue@flutter@@@flutter@@U?$default_delete@V?$MethodResult@VEncodableValue@flutter@@@flutter@@@std@@@std@@@std@@\"},{\"addr\":\"0x140020f30\",\"string\":\".?AV?$_Func_impl_no_alloc@V<lambda_2bdd03d697e32834e756b08811623228>@@XPEBE_KV?$function@$$A6AXPEBE_K@Z@std@@@std@@\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 39,
+      "matches": [
+        {
+          "addr": "0x140015be8",
+          "string": "com.inlab.modex"
+        },
+        {
+          "addr": "0x140015c08",
+          "string": "modex"
+        },
+        {
+          "addr": "0x140015c60",
+          "string": "Modex_pid"
+        },
+        {
+          "addr": "0x140015cb8",
+          "string": "ModexLiteRunOnlyOneInstance"
+        },
+        {
+          "addr": "0x140015d00",
+          "string": "ModexLite"
+        },
+        {
+          "addr": "0x1400162f0",
+          "string": "Cannot get plugin registrar on an engine that isn't running; call Run first."
+        },
+        {
+          "addr": "0x1400167a8",
+          "string": "Invalid method call; method name is not a string."
+        },
+        {
+          "addr": "0x1400168f8",
+          "string": "Unable to construct method call from message on channel "
+        },
+        {
+          "addr": "0x14001a7f0",
+          "string": "E:\\devops\\agent\\workspace\\p-77070d4eaed140e59334544e4780bb92\\src\\Modex\\build\\windows\\x64\\runner\\Release\\modex_lite.pdb"
+        },
+        {
+          "addr": "0x14001cde2",
+          "string": "modex_lite.exe"
+        },
+        {
+          "addr": "0x14001daaa",
+          "string": "GameMonitorPluginCApiRegisterWithRegistrar"
+        },
+        {
+          "addr": "0x14001dad6",
+          "string": "game_monitor_plugin.dll"
+        },
+        {
+          "addr": "0x14001dd3e",
+          "string": "FlutterDesktopEngineCreate"
+        },
+        {
+          "addr": "0x14001dd5c",
+          "string": "FlutterDesktopEngineDestroy"
+        },
+        {
+          "addr": "0x14001dd7a",
+          "string": "FlutterDesktopEngineReloadSystemFonts"
+        },
+        {
+          "addr": "0x14001dda2",
+          "string": "FlutterDesktopEngineGetPluginRegistrar"
+        },
+        {
+          "addr": "0x14001ddcc",
+          "string": "FlutterDesktopEngineGetMessenger"
+        },
+        {
+          "addr": "0x14001ddf0",
+          "string": "FlutterDesktopEngineSetNextFrameCallback"
+        },
+        {
+          "addr": "0x14001e208",
+          "string": "GetCurrentProcessId"
+        },
+        {
+          "addr": "0x14001e300",
+          "string": "GetProcessHeap"
+        },
+        {
+          "addr": "0x14001e3c0",
+          "string": "GetWindowThreadProcessId"
+        },
+        {
+          "addr": "0x14001e3dc",
+          "string": "SetProcessDpiAwarenessContext"
+        },
+        {
+          "addr": "0x14001f9b2",
+          "string": "_set_fmode"
+        },
+        {
+          "addr": "0x14001fa18",
+          "string": "_set_new_mode"
+        },
+        {
+          "addr": "0x14001fa28",
+          "string": "__p__commode"
+        },
+        {
+          "addr": "0x14001fc80",
+          "string": "GetCurrentProcess"
+        },
+        {
+          "addr": "0x14001fc94",
+          "string": "TerminateProcess"
+        },
+        {
+          "addr": "0x14001fca8",
+          "string": "IsProcessorFeaturePresent"
+        },
+        {
+          "addr": "0x140020220",
+          "string": ".?AV<lambda_d2b41933cf9deb51a206d93d9630e53d>@@"
+        },
+        {
+          "addr": "0x140020260",
+          "string": ".?AV<lambda_2bdd03d697e32834e756b08811623228>@@"
+        },
+        {
+          "addr": "0x140020688",
+          "string": ".?AVFlutterEngine@flutter@@"
+        },
+        {
+          "addr": "0x140020820",
+          "string": ".?AV?$MethodCall@VEncodableValue@flutter@@@flutter@@"
+        },
+        {
+          "addr": "0x140020ad0",
+          "string": ".?AVStandardMethodCodec@flutter@@"
+        },
+        {
+          "addr": "0x140020b10",
+          "string": ".?AV?$MethodCodec@VEncodableValue@flutter@@@flutter@@"
+        },
+        {
+          "addr": "0x140020bf0",
+          "string": ".?AV?$MethodResult@VEncodableValue@flutter@@@flutter@@"
+        },
+        {
+          "addr": "0x140020c70",
+          "string": ".?AV?$_Func_base@XAEBV?$MethodCall@VEncodableValue@flutter@@@flutter@@V?$unique_ptr@V?$MethodResult@VEncodableValue@flutter@@@flutter@@U?$default_delete@V?$MethodResult@VEncodableValue@flutter@@@flutter@@@std@@@std@@@std@@"
+        },
+        {
+          "addr": "0x140020db0",
+          "string": ".?AV?$EngineMethodResult@VEncodableValue@flutter@@@flutter@@"
+        },
+        {
+          "addr": "0x140020e00",
+          "string": ".?AV?$_Func_impl_no_alloc@V<lambda_d2b41933cf9deb51a206d93d9630e53d>@@XAEBV?$MethodCall@VEncodableValue@flutter@@@flutter@@V?$unique_ptr@V?$MethodResult@VEncodableValue@flutter@@@flutter@@U?$default_delete@V?$MethodResult@VEncodableValue@flutter@@@flutter@@@std@@@std@@@std@@"
+        },
+        {
+          "addr": "0x140020f30",
+          "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2bdd03d697e32834e756b08811623228>@@XPEBE_KV?$function@$$A6AXPEBE_K@Z@std@@@std@@"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

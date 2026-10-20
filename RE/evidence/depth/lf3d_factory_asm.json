@@ -1,0 +1,280 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x180021BE0\",\"asm\":{\"name\":\"CreateDX11Render\",\"start_ea\":\"0x180021be0\",\"segment\":\".text\",\"lines\":[{\"addr\":\"180021be0\",\"instruction\":\"push rdi\",\"label\":\"CreateDX11Render\",\"comments\":[\"; Exported entry   1. CreateDX11Render\"]},{\"addr\":\"180021be2\",\"instruction\":\"sub rsp, 20h\"},{\"addr\":\"180021be6\",\"instruction\":\"cmp cs:byte_18036D660, 0\",\"refs\":[{\"addr\":\"0x18036d660\",\"name\":\"byte_18036D660\"}]},{\"addr\":\"180021bed\",\"instruction\":\"mov rdi, rcx\"},{\"addr\":\"180021bf0\",\"instruction\":\"jnz short loc_180021C16\",\"refs\":[{\"addr\":\"0x180021c16\",\"name\":\"loc_180021C16\"}]},{\"addr\":\"180021bf2\",\"instruction\":\"mov r9d, 10h; uType\",\"comments\":[\"uType\"]},{\"addr\":\"180021bf8\",\"instruction\":\"lea r8, Caption; \\\"Error\\\"\",\"refs\":[{\"addr\":\"0x18007ef18\",\"name\":\"Caption\",\"string\":\"\\u7245\\u6f72\\ufffd\"}]},{\"addr\":\"180021bff\",\"instruction\":\"lea rdx, aCreatesimplere_0; \\\"CreateSimpleRender Failed,no license de\\\"...\",\"refs\":[{\"addr\":\"0x180084b60\",\"name\":\"aCreatesimplere_0\",\"string\":\"\\u7243\\u6165\\u6574\\u6953\\u706d\\u656c\\u6552\\u646e\\u7265\\u4620\\u6961\\u656c\\u2c64\\u6f6e\\u6c20\\u6369\\u6e65\\u6573\\u6420\\u7465\\u6365\\u6574\\u2164\"}]},{\"addr\":\"180021c06\",\"instruction\":\"xor ecx, ecx; hWnd\",\"comments\":[\"hWnd\"]},{\"addr\":\"180021c08\",\"instruction\":\"call cs:MessageBoxW; USER32\",\"refs\":[{\"addr\":\"0x18004f2f8\",\"name\":\"MessageBoxW\"}]},{\"addr\":\"180021c0e\",\"instruction\":\"xor eax, eax\"},{\"addr\":\"180021c10\",\"instruction\":\"add rsp, 20h\"},{\"addr\":\"180021c14\",\"instruction\":\"pop rdi\"},{\"addr\":\"180021c15\",\"instruction\":\"retn\"},{\"addr\":\"180021c16\",\"instruction\":\"mov ecx, 40h ; '@'\",\"label\":\"loc_180021C16\"},{\"addr\":\"180021c1b\",\"instruction\":\"mov [rsp+28h+arg_0], rbx\"},{\"addr\":\"180021c20\",\"instruction\":\"call sub_180024F70\",\"refs\":[{\"addr\":\"0x180024f70\",\"name\":\"sub_180024F70\"}]},{\"addr\":\"180021c25\",\"instruction\":\"mov rbx, rax\"},{\"addr\":\"180021c28\",\"instruction\":\"mov rcx, rdi\"},{\"addr\":\"180021c2b\",\"instruction\":\"lea rax, ??_7LF3DDX11Render@@6B@; const LF3DDX11Render::`vftable'\",\"refs\":[{\"addr\":\"0x180084c68\",\"name\":\"??_7LF3DDX11Render@@6B@\"}]},{\"addr\":\"180021c32\",\"instruction\":\"lea rdx, [rbx+10h]\"},{\"addr\":\"180021c36\",\"instruction\":\"mov [rbx], rax\"},{\"addr\":\"180021c39\",\"instruction\":\"xor eax, eax\"},{\"addr\":\"180021c3b\",\"instruction\":\"mov [rbx+18h], rax\"},{\"addr\":\"180021c3f\",\"instruction\":\"mov [rbx+20h], rax\"},{\"addr\":\"180021c43\",\"instruction\":\"mov [rbx+30h], rax\"},{\"addr\":\"180021c47\",\"instruction\":\"mov [rbx+38h], rax\"},{\"addr\":\"180021c4b\",\"instruction\":\"mov [rdx], rax\"},{\"addr\":\"180021c4e\",\"instruction\":\"mov [rbx+8], rdi\"},{\"addr\":\"180021c52\",\"instruction\":\"mov r8, [rdi]\"},{\"addr\":\"180021c55\",\"instruction\":\"call qword ptr [r8+140h]\"},{\"addr\":\"180021c5c\",\"instruction\":\"mov ecx, 0C8h\"},{\"addr\":\"180021c61\",\"instruction\":\"call sub_180024F70\",\"refs\":[{\"addr\":\"0x180024f70\",\"name\":\"sub_180024F70\"}]},{\"addr\":\"180021c66\",\"instruction\":\"mov rcx, rax\"},{\"addr\":\"180021c69\",\"instruction\":\"call sub_180005460\",\"refs\":[{\"addr\":\"0x180005460\",\"name\":\"sub_180005460\"}]},{\"addr\":\"180021c6e\",\"instruction\":\"mov [rbx+28h], rax\"},{\"addr\":\"180021c72\",\"instruction\":\"mov rax, rbx\"},{\"addr\":\"180021c75\",\"instruction\":\"mov rbx, [rsp+28h+arg_0]\"},{\"addr\":\"180021c7a\",\"instruction\":\"add rsp, 20h\"},{\"addr\":\"180021c7e\",\"instruction\":\"pop rdi\"},{\"addr\":\"180021c7f\",\"instruction\":\"retn\"}],\"stack_frame\":[{\"name\":\"__return_address\",\"offset\":\"0x28\",\"size\":\"0x8\",\"type\":\"_UNKNOWN *\"},{\"name\":\"arg_0\",\"offset\":\"0x30\",\"size\":\"0x8\",\"type\":\"_QWORD\"}],\"return_type\":\"_QWORD *\",\"arguments\":[{\"name\":\"arg0\",\"type\":\"__int64\"}]},\"instruction_count\":41,\"total_instructions\":null,\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x180021BE0",
+      "asm": {
+        "name": "CreateDX11Render",
+        "start_ea": "0x180021be0",
+        "segment": ".text",
+        "lines": [
+          {
+            "addr": "180021be0",
+            "instruction": "push rdi",
+            "label": "CreateDX11Render",
+            "comments": [
+              "; Exported entry   1. CreateDX11Render"
+            ]
+          },
+          {
+            "addr": "180021be2",
+            "instruction": "sub rsp, 20h"
+          },
+          {
+            "addr": "180021be6",
+            "instruction": "cmp cs:byte_18036D660, 0",
+            "refs": [
+              {
+                "addr": "0x18036d660",
+                "name": "byte_18036D660"
+              }
+            ]
+          },
+          {
+            "addr": "180021bed",
+            "instruction": "mov rdi, rcx"
+          },
+          {
+            "addr": "180021bf0",
+            "instruction": "jnz short loc_180021C16",
+            "refs": [
+              {
+                "addr": "0x180021c16",
+                "name": "loc_180021C16"
+              }
+            ]
+          },
+          {
+            "addr": "180021bf2",
+            "instruction": "mov r9d, 10h; uType",
+            "comments": [
+              "uType"
+            ]
+          },
+          {
+            "addr": "180021bf8",
+            "instruction": "lea r8, Caption; \"Error\"",
+            "refs": [
+              {
+                "addr": "0x18007ef18",
+                "name": "Caption",
+                "string": "牅潲�"
+              }
+            ]
+          },
+          {
+            "addr": "180021bff",
+            "instruction": "lea rdx, aCreatesimplere_0; \"CreateSimpleRender Failed,no license de\"...",
+            "refs": [
+              {
+                "addr": "0x180084b60",
+                "name": "aCreatesimplere_0",
+                "string": "牃慥整楓灭敬敒摮牥䘠楡敬Ɽ潮氠捩湥敳搠瑥捥整Ⅴ"
+              }
+            ]
+          },
+          {
+            "addr": "180021c06",
+            "instruction": "xor ecx, ecx; hWnd",
+            "comments": [
+              "hWnd"
+            ]
+          },
+          {
+            "addr": "180021c08",
+            "instruction": "call cs:MessageBoxW; USER32",
+            "refs": [
+              {
+                "addr": "0x18004f2f8",
+                "name": "MessageBoxW"
+              }
+            ]
+          },
+          {
+            "addr": "180021c0e",
+            "instruction": "xor eax, eax"
+          },
+          {
+            "addr": "180021c10",
+            "instruction": "add rsp, 20h"
+          },
+          {
+            "addr": "180021c14",
+            "instruction": "pop rdi"
+          },
+          {
+            "addr": "180021c15",
+            "instruction": "retn"
+          },
+          {
+            "addr": "180021c16",
+            "instruction": "mov ecx, 40h ; '@'",
+            "label": "loc_180021C16"
+          },
+          {
+            "addr": "180021c1b",
+            "instruction": "mov [rsp+28h+arg_0], rbx"
+          },
+          {
+            "addr": "180021c20",
+            "instruction": "call sub_180024F70",
+            "refs": [
+              {
+                "addr": "0x180024f70",
+                "name": "sub_180024F70"
+              }
+            ]
+          },
+          {
+            "addr": "180021c25",
+            "instruction": "mov rbx, rax"
+          },
+          {
+            "addr": "180021c28",
+            "instruction": "mov rcx, rdi"
+          },
+          {
+            "addr": "180021c2b",
+            "instruction": "lea rax, ??_7LF3DDX11Render@@6B@; const LF3DDX11Render::`vftable'",
+            "refs": [
+              {
+                "addr": "0x180084c68",
+                "name": "??_7LF3DDX11Render@@6B@"
+              }
+            ]
+          },
+          {
+            "addr": "180021c32",
+            "instruction": "lea rdx, [rbx+10h]"
+          },
+          {
+            "addr": "180021c36",
+            "instruction": "mov [rbx], rax"
+          },
+          {
+            "addr": "180021c39",
+            "instruction": "xor eax, eax"
+          },
+          {
+            "addr": "180021c3b",
+            "instruction": "mov [rbx+18h], rax"
+          },
+          {
+            "addr": "180021c3f",
+            "instruction": "mov [rbx+20h], rax"
+          },
+          {
+            "addr": "180021c43",
+            "instruction": "mov [rbx+30h], rax"
+          },
+          {
+            "addr": "180021c47",
+            "instruction": "mov [rbx+38h], rax"
+          },
+          {
+            "addr": "180021c4b",
+            "instruction": "mov [rdx], rax"
+          },
+          {
+            "addr": "180021c4e",
+            "instruction": "mov [rbx+8], rdi"
+          },
+          {
+            "addr": "180021c52",
+            "instruction": "mov r8, [rdi]"
+          },
+          {
+            "addr": "180021c55",
+            "instruction": "call qword ptr [r8+140h]"
+          },
+          {
+            "addr": "180021c5c",
+            "instruction": "mov ecx, 0C8h"
+          },
+          {
+            "addr": "180021c61",
+            "instruction": "call sub_180024F70",
+            "refs": [
+              {
+                "addr": "0x180024f70",
+                "name": "sub_180024F70"
+              }
+            ]
+          },
+          {
+            "addr": "180021c66",
+            "instruction": "mov rcx, rax"
+          },
+          {
+            "addr": "180021c69",
+            "instruction": "call sub_180005460",
+            "refs": [
+              {
+                "addr": "0x180005460",
+                "name": "sub_180005460"
+              }
+            ]
+          },
+          {
+            "addr": "180021c6e",
+            "instruction": "mov [rbx+28h], rax"
+          },
+          {
+            "addr": "180021c72",
+            "instruction": "mov rax, rbx"
+          },
+          {
+            "addr": "180021c75",
+            "instruction": "mov rbx, [rsp+28h+arg_0]"
+          },
+          {
+            "addr": "180021c7a",
+            "instruction": "add rsp, 20h"
+          },
+          {
+            "addr": "180021c7e",
+            "instruction": "pop rdi"
+          },
+          {
+            "addr": "180021c7f",
+            "instruction": "retn"
+          }
+        ],
+        "stack_frame": [
+          {
+            "name": "__return_address",
+            "offset": "0x28",
+            "size": "0x8",
+            "type": "_UNKNOWN *"
+          },
+          {
+            "name": "arg_0",
+            "offset": "0x30",
+            "size": "0x8",
+            "type": "_QWORD"
+          }
+        ],
+        "return_type": "_QWORD *",
+        "arguments": [
+          {
+            "name": "arg0",
+            "type": "__int64"
+          }
+        ]
+      },
+      "instruction_count": 41,
+      "total_instructions": null,
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

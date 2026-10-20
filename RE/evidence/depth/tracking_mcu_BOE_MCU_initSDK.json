@@ -1,0 +1,82 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"BOE_MCU_initSDK\",\"code\":\"__int64 __fastcall BOE_MCU_initSDK(__int64 a1, unsigned int a2)\\n{\\n  __int64 v2; // rax\\n  __int64 v3; // rax\\n  __int64 v4; // rax\\n  __int64 v5; // rax\\n  __int64 v6; // rax\\n  __int64 v7; // rax\\n  __int64 v8; // rax\\n  unsigned int v10; // [rsp+20h] [rbp-48h]\\n  _BYTE v11[16]; // [rsp+28h] [rbp-40h] BYREF\\n  _BYTE v12[16]; // [rsp+38h] [rbp-30h] BYREF\\n  _BYTE v13[32]; // [rsp+48h] [rbp-20h] BYREF\\n\\n  v2 = sub_180036BD0(a1: v11, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\MCU_library\\\\\\\\mcu_interface.cpp\\\", a3: 28); /*0x18003544f*/\\n  v3 = sub_18003DF90(a1: v2); /*0x180035457*/\\n  sub_18000A770(a1: v3, a2: \\\"called BOE_MCU_initMCU,first init log\\\"); /*0x180035466*/\\n  sub_180037160(a1: v11); /*0x180035470*/\\n  sub_180007410(a1: \\\"mculog\\\", a2: a1, a3: a2); /*0x180035486*/\\n  v4 = sub_180036BD0(a1: v12, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\MCU_library\\\\\\\\mcu_interface.cpp\\\", a3: 30); /*0x18003549d*/\\n  v5 = sub_18003DF90(a1: v4); /*0x1800354a5*/\\n  sub_18000A770(a1: v5, a2: \\\"BOE_MCU_initMCU:init log finished,begin init mcu\\\"); /*0x1800354b4*/\\n  sub_180037160(a1: v12); /*0x1800354be*/\\n  v6 = sub_180035340(); /*0x1800354c3*/\\n  v10 = sub_180011C50(a1: v6); /*0x1800354d0*/\\n  v7 = sub_180036BD0(a1: v13, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\MCU_library\\\\\\\\mcu_interface.cpp\\\", a3: 32); /*0x1800354e6*/\\n  v8 = sub_18003DF90(a1: v7); /*0x1800354ee*/\\n  sub_18000A770(a1: v8, a2: \\\"BOE_MCU_initMCU:init mcu finished,BOE_MCU_initMCU finished\\\"); /*0x1800354fd*/\\n  sub_180037160(a1: v13); /*0x180035507*/\\n  return v10; /*0x180035510*/\\n}\",\"refs\":[{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004f738\",\"name\":\"aDSourceRepos3d_79\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004f710\",\"name\":\"aCalledBoeMcuIn\",\"string\":\"called BOE_MCU_initMCU,first init log\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x180007410\",\"name\":\"sub_180007410\"},{\"addr\":\"0x18004f774\",\"name\":\"aMculog\",\"string\":\"mculog\"},{\"addr\":\"0x18004f7b8\",\"name\":\"aDSourceRepos3d_80\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\"},{\"addr\":\"0x18004f780\",\"name\":\"aBoeMcuInitmcuI\",\"string\":\"BOE_MCU_initMCU:init log finished,begin init mcu\"},{\"addr\":\"0x180035340\",\"name\":\"sub_180035340\"},{\"addr\":\"0x180011c50\",\"name\":\"sub_180011C50\"},{\"addr\":\"0x18004f838\",\"name\":\"aDSourceRepos3d_81\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\"},{\"addr\":\"0x18004f7f8\",\"name\":\"aBoeMcuInitmcuI_0\",\"string\":\"BOE_MCU_initMCU:init mcu finished,BOE_MCU_initMCU finished\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "BOE_MCU_initSDK",
+      "code": "__int64 __fastcall BOE_MCU_initSDK(__int64 a1, unsigned int a2)\n{\n  __int64 v2; // rax\n  __int64 v3; // rax\n  __int64 v4; // rax\n  __int64 v5; // rax\n  __int64 v6; // rax\n  __int64 v7; // rax\n  __int64 v8; // rax\n  unsigned int v10; // [rsp+20h] [rbp-48h]\n  _BYTE v11[16]; // [rsp+28h] [rbp-40h] BYREF\n  _BYTE v12[16]; // [rsp+38h] [rbp-30h] BYREF\n  _BYTE v13[32]; // [rsp+48h] [rbp-20h] BYREF\n\n  v2 = sub_180036BD0(a1: v11, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\", a3: 28); /*0x18003544f*/\n  v3 = sub_18003DF90(a1: v2); /*0x180035457*/\n  sub_18000A770(a1: v3, a2: \"called BOE_MCU_initMCU,first init log\"); /*0x180035466*/\n  sub_180037160(a1: v11); /*0x180035470*/\n  sub_180007410(a1: \"mculog\", a2: a1, a3: a2); /*0x180035486*/\n  v4 = sub_180036BD0(a1: v12, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\", a3: 30); /*0x18003549d*/\n  v5 = sub_18003DF90(a1: v4); /*0x1800354a5*/\n  sub_18000A770(a1: v5, a2: \"BOE_MCU_initMCU:init log finished,begin init mcu\"); /*0x1800354b4*/\n  sub_180037160(a1: v12); /*0x1800354be*/\n  v6 = sub_180035340(); /*0x1800354c3*/\n  v10 = sub_180011C50(a1: v6); /*0x1800354d0*/\n  v7 = sub_180036BD0(a1: v13, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\MCU_library\\\\mcu_interface.cpp\", a3: 32); /*0x1800354e6*/\n  v8 = sub_18003DF90(a1: v7); /*0x1800354ee*/\n  sub_18000A770(a1: v8, a2: \"BOE_MCU_initMCU:init mcu finished,BOE_MCU_initMCU finished\"); /*0x1800354fd*/\n  sub_180037160(a1: v13); /*0x180035507*/\n  return v10; /*0x180035510*/\n}",
+      "refs": [
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004f738",
+          "name": "aDSourceRepos3d_79",
+          "string": "D:\\source\\repos\\3DResolution\\MCU_library\\mcu_interface.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004f710",
+          "name": "aCalledBoeMcuIn",
+          "string": "called BOE_MCU_initMCU,first init log"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x180007410",
+          "name": "sub_180007410"
+        },
+        {
+          "addr": "0x18004f774",
+          "name": "aMculog",
+          "string": "mculog"
+        },
+        {
+          "addr": "0x18004f7b8",
+          "name": "aDSourceRepos3d_80",
+          "string": "D:\\source\\repos\\3DResolution\\MCU_library\\mcu_interface.cpp"
+        },
+        {
+          "addr": "0x18004f780",
+          "name": "aBoeMcuInitmcuI",
+          "string": "BOE_MCU_initMCU:init log finished,begin init mcu"
+        },
+        {
+          "addr": "0x180035340",
+          "name": "sub_180035340"
+        },
+        {
+          "addr": "0x180011c50",
+          "name": "sub_180011C50"
+        },
+        {
+          "addr": "0x18004f838",
+          "name": "aDSourceRepos3d_81",
+          "string": "D:\\source\\repos\\3DResolution\\MCU_library\\mcu_interface.cpp"
+        },
+        {
+          "addr": "0x18004f7f8",
+          "name": "aBoeMcuInitmcuI_0",
+          "string": "BOE_MCU_initMCU:init mcu finished,BOE_MCU_initMCU finished"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

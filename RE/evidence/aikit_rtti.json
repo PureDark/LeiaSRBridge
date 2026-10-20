@@ -1,0 +1,73 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"kind\":\"names\",\"data\":[{\"kind\":\"name\",\"addr\":\"0x180585938\",\"name\":\"??_7StereoGraphicsEngine@AiStereo@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18058cb30\",\"name\":\"??_R3StereoGraphicsEngine@AiStereo@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18058cb70\",\"name\":\"??_R2StereoGraphicsEngine@AiStereo@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18058cba0\",\"name\":\"??_R1A@?0A@EA@StereoGraphicsEngine@AiStereo@@8\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x18058cbc8\",\"name\":\"??_R4StereoGraphicsEngine@AiStereo@@6B@\",\"segment\":\".rdata\",\"is_function\":false,\"is_import\":false},{\"kind\":\"name\",\"addr\":\"0x1805c6600\",\"name\":\"??_R0?AVStereoGraphicsEngine@AiStereo@@@8\",\"segment\":\".data\",\"is_function\":false,\"is_import\":false}],\"next_offset\":null,\"total\":6,\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "kind": "names",
+          "data": [
+            {
+              "kind": "name",
+              "addr": "0x180585938",
+              "name": "??_7StereoGraphicsEngine@AiStereo@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18058cb30",
+              "name": "??_R3StereoGraphicsEngine@AiStereo@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18058cb70",
+              "name": "??_R2StereoGraphicsEngine@AiStereo@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18058cba0",
+              "name": "??_R1A@?0A@EA@StereoGraphicsEngine@AiStereo@@8",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x18058cbc8",
+              "name": "??_R4StereoGraphicsEngine@AiStereo@@6B@",
+              "segment": ".rdata",
+              "is_function": false,
+              "is_import": false
+            },
+            {
+              "kind": "name",
+              "addr": "0x1805c6600",
+              "name": "??_R0?AVStereoGraphicsEngine@AiStereo@@@8",
+              "segment": ".data",
+              "is_function": false,
+              "is_import": false
+            }
+          ],
+          "next_offset": null,
+          "total": 6,
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

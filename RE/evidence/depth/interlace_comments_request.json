@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "addr": "0x1800602A0",
+      "comment": "Recovered from BOEInterleaving C++/CLI wrapper plus native branches. dxVersion 11/12. Calibration arrays are 6,6,8 doubles. Global renderer at unk_1800BA758; no public per-instance handle. Native DX12 requires non-null inputResource; managed wrapper always passes null and actual app uses DX11.",
+      "scope": "func"
+    },
+    {
+      "addr": "0x180060580",
+      "comment": "x/y/z are float in XMM0/1/2 (assembly verified). DX11: context, outputRTV, inputSRV. DX12: commandList, outputResource, pointer-to-CPU-RTV-handle; input fixed at init. Returns 1 regardless of virtual method result.",
+      "scope": "func"
+    },
+    {
+      "addr": "0x1800604A0",
+      "comment": "Examined complete assembly: logs only; no global renderer reset or resource release visible in this export.",
+      "scope": "func"
+    },
+    {
+      "addr": "0x18005E380",
+      "comment": "Output ResourceBarrier assumes COMMON -> RENDER_TARGET -> COMMON. Uses output resource plus CPU RTV handle from call. Sets own viewport/scissor/heap/root/PSO; DrawInstanced(3,1,0,0). This is not drop-in compatible with Leia host-owned already-bound RENDER_TARGET.",
+      "scope": "func"
+    },
+    {
+      "addr": "0x18005D900",
+      "comment": "Maps same upload resource self+368 every call and copies 80 bytes. Multi-pass and frames in flight require external synchronization or a redesigned allocation path.",
+      "scope": "func"
+    },
+    {
+      "addr": "0x18005F530",
+      "comment": "Recovered 80-byte cb layout from DXBC shader2.1 at 0x180089840 size 23656. Inputs are packed stereo plus transformed eye and panel optics, no depth. Native setter of refract params selects shader2.1.",
+      "scope": "func"
+    }
+  ],
+  "database": "interlace"
+}

@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"launcher\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\media_transpose2to3_plugin.dll\",\"filename\":\"media_transpose2to3_plugin.dll\",\"created_at\":\"2026-10-20T00:38:51.489898\",\"last_accessed\":\"2026-10-20T00:38:51.489898\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_caches\",\"ok\":true,\"ms\":25.2},{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.01}],\"health\":{\"status\":\"ok\",\"uptime_sec\":2.359,\"idb_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\media_transpose2to3_plugin.dll.i64\",\"module\":\"media_transpose2to3_plugin.dll\",\"input_path\":\"F:\\\\\\u76ee\\u6807\\u8f6f\\u4ef6\\\\ModexLite\\\\RE\\\\inputs\\\\media_transpose2to3_plugin.dll\",\"imagebase\":\"0x180000000\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":537}},\"message\":\"Binary opened: media_transpose2to3_plugin.dll (launcher)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "launcher",
+        "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\media_transpose2to3_plugin.dll",
+        "filename": "media_transpose2to3_plugin.dll",
+        "created_at": "2026-10-20T00:38:51.489898",
+        "last_accessed": "2026-10-20T00:38:51.489898",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_caches",
+            "ok": true,
+            "ms": 25.2
+          },
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.01
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 2.359,
+          "idb_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\media_transpose2to3_plugin.dll.i64",
+          "module": "media_transpose2to3_plugin.dll",
+          "input_path": "F:\\目标软件\\ModexLite\\RE\\inputs\\media_transpose2to3_plugin.dll",
+          "imagebase": "0x180000000",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": true,
+          "strings_cache_size": 537
+        }
+      },
+      "message": "Binary opened: media_transpose2to3_plugin.dll (launcher)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

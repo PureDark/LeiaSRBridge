@@ -1,0 +1,55 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18001be50\",\"code\":\"static struct SR::HeadPoseTracker *__fastcall SR::HeadPoseTracker::create(struct SR::SRContext *a1)\\n{\\n  __int64 v2; // rax\\n  __int64 Senses; // rax\\n  char *v4; // rbx\\n  __int64 v5; // rdi\\n  __int64 v6; // rax\\n  char *v7; // rax\\n  void *Block; // [rsp+28h] [rbp-60h] BYREF\\n  _QWORD *v10; // [rsp+30h] [rbp-58h]\\n  __int64 v11; // [rsp+38h] [rbp-50h]\\n  __int64 v12; // [rsp+40h] [rbp-48h] BYREF\\n  char v13[32]; // [rsp+60h] [rbp-28h] BYREF\\n\\n  v2 = sub_180002D10(a1: &v12, a2: &qword_180060128); /*0x18001be79*/\\n  Senses = SR::SRContext::getSenses(a1, a2: v2); /*0x18001be84*/\\n  sub_180002FA0(a1: &Block, a2: Senses); /*0x18001be92*/\\n  __wind /*0xf1c000000000001c*/\\n  {\\n    v4 = (char *)Block; /*0x18001be98*/\\n    if ( Block == v10 ) /*0x18001bea5*/\\n    {\\n      v5 = sub_18001DA00(a1); /*0x18001beaf*/\\n      v6 = sub_180002D10(a1: v13, a2: &qword_180060128); /*0x18001bebe*/\\n      SR::SRContext::addSense(a1, a2: v6, a3: v5); /*0x18001becc*/\\n    }\\n    else\\n    {\\n      v5 = *(v10 - 1); /*0x18001bed4*/\\n    }\\n  }\\n  __unwind\\n  {\\n    sub_1800032A0(a1: &Block); /*0x18003d917*/\\n  }\\n  if ( v4 != nullptr ) /*0x18001bedb*/\\n  {\\n    v7 = v4; /*0x18001bee9*/\\n    if ( ((v11 - (_QWORD)v4) & 0xFFFFFFFFFFFFFFF8uLL) >= 0x1000 ) /*0x18001bef3*/\\n    {\\n      v4 = *((char **)v4 - 1); /*0x18001bef9*/\\n      if ( (unsigned __int64)(v7 - v4 - 8) > 0x1F ) /*0x18001bf08*/\\n        invalid_parameter_noinfo_noreturn(); /*0x18001bf0a*/\\n    }\\n    j_j_free(Block: v4); /*0x18001bf14*/\\n  }\\n  return (struct SR::HeadPoseTracker *)v5; /*0x18001bf1c*/\\n}\",\"refs\":[{\"addr\":\"0x180002d10\",\"name\":\"sub_180002D10\"},{\"addr\":\"0x180060128\",\"name\":\"qword_180060128\"},{\"addr\":\"0x180043528\",\"name\":\"?getSenses@SRContext@SR@@QEAAAEBV?$vector@PEAVSense@SR@@V?$allocator@PEAVSense@SR@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z\"},{\"addr\":\"0x180002fa0\",\"name\":\"sub_180002FA0\"},{\"addr\":\"0x18001da00\",\"name\":\"sub_18001DA00\"},{\"addr\":\"0x180043520\",\"name\":\"?addSense@SRContext@SR@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVSense@2@@Z\"},{\"addr\":\"0x1800032a0\",\"name\":\"sub_1800032A0\"},{\"addr\":\"0x180043788\",\"name\":\"_invalid_parameter_noinfo_noreturn\"},{\"addr\":\"0x18003c434\",\"name\":\"j_j_free\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18001be50",
+      "code": "static struct SR::HeadPoseTracker *__fastcall SR::HeadPoseTracker::create(struct SR::SRContext *a1)\n{\n  __int64 v2; // rax\n  __int64 Senses; // rax\n  char *v4; // rbx\n  __int64 v5; // rdi\n  __int64 v6; // rax\n  char *v7; // rax\n  void *Block; // [rsp+28h] [rbp-60h] BYREF\n  _QWORD *v10; // [rsp+30h] [rbp-58h]\n  __int64 v11; // [rsp+38h] [rbp-50h]\n  __int64 v12; // [rsp+40h] [rbp-48h] BYREF\n  char v13[32]; // [rsp+60h] [rbp-28h] BYREF\n\n  v2 = sub_180002D10(a1: &v12, a2: &qword_180060128); /*0x18001be79*/\n  Senses = SR::SRContext::getSenses(a1, a2: v2); /*0x18001be84*/\n  sub_180002FA0(a1: &Block, a2: Senses); /*0x18001be92*/\n  __wind /*0xf1c000000000001c*/\n  {\n    v4 = (char *)Block; /*0x18001be98*/\n    if ( Block == v10 ) /*0x18001bea5*/\n    {\n      v5 = sub_18001DA00(a1); /*0x18001beaf*/\n      v6 = sub_180002D10(a1: v13, a2: &qword_180060128); /*0x18001bebe*/\n      SR::SRContext::addSense(a1, a2: v6, a3: v5); /*0x18001becc*/\n    }\n    else\n    {\n      v5 = *(v10 - 1); /*0x18001bed4*/\n    }\n  }\n  __unwind\n  {\n    sub_1800032A0(a1: &Block); /*0x18003d917*/\n  }\n  if ( v4 != nullptr ) /*0x18001bedb*/\n  {\n    v7 = v4; /*0x18001bee9*/\n    if ( ((v11 - (_QWORD)v4) & 0xFFFFFFFFFFFFFFF8uLL) >= 0x1000 ) /*0x18001bef3*/\n    {\n      v4 = *((char **)v4 - 1); /*0x18001bef9*/\n      if ( (unsigned __int64)(v7 - v4 - 8) > 0x1F ) /*0x18001bf08*/\n        invalid_parameter_noinfo_noreturn(); /*0x18001bf0a*/\n    }\n    j_j_free(Block: v4); /*0x18001bf14*/\n  }\n  return (struct SR::HeadPoseTracker *)v5; /*0x18001bf1c*/\n}",
+      "refs": [
+        {
+          "addr": "0x180002d10",
+          "name": "sub_180002D10"
+        },
+        {
+          "addr": "0x180060128",
+          "name": "qword_180060128"
+        },
+        {
+          "addr": "0x180043528",
+          "name": "?getSenses@SRContext@SR@@QEAAAEBV?$vector@PEAVSense@SR@@V?$allocator@PEAVSense@SR@@@std@@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z"
+        },
+        {
+          "addr": "0x180002fa0",
+          "name": "sub_180002FA0"
+        },
+        {
+          "addr": "0x18001da00",
+          "name": "sub_18001DA00"
+        },
+        {
+          "addr": "0x180043520",
+          "name": "?addSense@SRContext@SR@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVSense@2@@Z"
+        },
+        {
+          "addr": "0x1800032a0",
+          "name": "sub_1800032A0"
+        },
+        {
+          "addr": "0x180043788",
+          "name": "_invalid_parameter_noinfo_noreturn"
+        },
+        {
+          "addr": "0x18003c434",
+          "name": "j_j_free"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

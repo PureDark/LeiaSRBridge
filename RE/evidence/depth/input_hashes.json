@@ -1,0 +1,77 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "FD5986A80C410EDF0D9D3F5307B4235359413772BA45ACAF48C264D43D962C32",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\DepthTransformerPlus.exe"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "210DB14BEC1E24844E7700F58BD9ADB1BF0A661B607E64B58633A86AFAAAA20B",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\DepthTransformerPlus.pdb"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "60687E56508633C4726453B83B444E7D0F38892891BD2EF6ABAC4EF27DFE9EA0",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\DepthTransformerPlus.exe.config"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "221D31EA87B15A297C86AEEE8CF736F51B336C40D7FB035C61082BB732C4E796",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\BOEInterleaving.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "DC5335140E290AABD95EF6CD221D06E5EFC045F531744FE36A99F2D7481E523F",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\BOEInterleaving.pdb"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "2FA4A3795218C2B6E85C6C647975972460BDA4B44FAFB983448AF7703807758B",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\BOERenderWapper.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "D8AE92FCE20ACE6ABD228CF565840AAB46698B310B10EA41950EEA3EFB56E216",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\BOERenderWapper.pdb"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "380A9194A5C2AB42CF1F70A2B3C383F9B340B3B292AC72177350AA0DAE56CC6F",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\interlaceSDK.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3EF8D67F55FFB9E071C9A5E40D022A799413B642C5EAB5DC7150B5B4D9AC27F1",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\LF3DRenderCore.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "6024F4B38F86B48A592579CE1060082721634AD6A49A08D31D657DE5FF6E1B10",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\LF3DRenderCoreForCSharp.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "24D677EA070FCA322B025FA91823EA1EAA040729DB9EFED5DE2F0FE7855A6118",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\FaceTrackingManagerService.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0A2E51C617B585E53E0733135CCEDE7D5C3D3F30D58BEA23313026641E050858",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\MCU_library.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "6BD7813AB3DCF62EEFFAC03366F8DEE92A90D9545392E8899683C499EC8A9627",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\StereoscopicDisplayList.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4A72D560FF506B89B291BE901D1084F452C7EA6D8634529BB22BDC13ACCC6F18",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\config.ini"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "A48A440782D55BD726A14DE4C3DF5F27F718494BC0035DEDCE88C7CC853F5A1C",
+    "Path": "C:\\Program Files (x86)\\DepthTransformerPlus\\AiStereoKitCSharp.dll"
+  }
+]

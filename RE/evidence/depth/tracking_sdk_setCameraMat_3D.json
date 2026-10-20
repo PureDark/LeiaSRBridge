@@ -1,0 +1,93 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"setCameraMat_3D\",\"code\":\"__int64 __fastcall setCameraMat_3D(__int64 a1, __int64 a2, __int64 a3, char a4)\\n{\\n  __int64 v8; // r14\\n  int v9; // eax\\n  __int64 v10; // rcx\\n  __int64 v11; // rcx\\n  __int64 v12; // rcx\\n  int v13; // eax\\n  __int64 v14; // rcx\\n  __int64 v15; // rax\\n  __int64 v16; // rcx\\n  _DWORD v18[4]; // [rsp+30h] [rbp-19h] BYREF\\n  _QWORD v19[2]; // [rsp+40h] [rbp-9h] BYREF\\n  __int128 v20; // [rsp+50h] [rbp+7h]\\n  __int64 v21; // [rsp+60h] [rbp+17h]\\n  __int128 v22; // [rsp+70h] [rbp+27h] BYREF\\n  __int64 v23; // [rsp+80h] [rbp+37h]\\n\\n  SetUnhandledExceptionFilter(lpTopLevelExceptionFilter: TopLevelExceptionFilter); /*0x18002a169*/\\n  v8 = sub_180098700(); /*0x18002a174*/\\n  v9 = Mtx_lock(a1: (_Mtx_t)(v8 + 544)); /*0x18002a17e*/\\n  if ( v9 != 0 ) /*0x18002a185*/\\n    std::_Throw_C_error(a1: v9); /*0x18002a43f*/\\n  if ( *(_BYTE *)(v8 + 536) != 0 ) /*0x18002a196*/\\n  {\\n    if ( a1 != 0 ) /*0x18002a1a2*/\\n    {\\n      if ( a2 != 0 ) /*0x18002a221*/\\n      {\\n        if ( a3 != 0 ) /*0x18002a2a0*/\\n        {\\n          v13 = sub_180038AC0(); /*0x18002a31a*/\\n          if ( (unsigned int)sub_180038B50(a1: v13, a2: a1, a3: a2, a4: a3, a5: a4) != 0 ) /*0x18002a337*/\\n          {\\n            v15 = sub_180008380(); /*0x18002a3b0*/\\n            v19[1] = 35; /*0x18002a3b7*/\\n            v19[0] = \\\"set camera mat successful, exit ...\\\"; /*0x18002a3ca*/\\n            v16 = *(_QWORD *)(v15 + 472); /*0x18002a3da*/\\n            v20 = 0u; /*0x18002a3ea*/\\n            v21 = 0; /*0x18002a3f2*/\\n            v22 = 0u; /*0x18002a3fb*/\\n            v23 = 0; /*0x18002a3ff*/\\n            sub_180005CC0(a1: v16, a2: &v22, a3: 2, a4: v19); /*0x18002a404*/\\n            LODWORD(a3) = 1; /*0x18002a409*/\\n          }\\n          else\\n          {\\n            v18[0] = 62; /*0x18002a340*/\\n            v19[0] = \\\"{} line {}  set camera mat error !!!\\\"; /*0x18002a347*/\\n            v19[1] = 36; /*0x18002a34b*/\\n            LODWORD(a3) = 0; /*0x18002a360*/\\n            v14 = *(_QWORD *)(sub_180008380() + 472); /*0x18002a37c*/\\n            v20 = 0u; /*0x18002a38f*/\\n            v21 = 0; /*0x18002a397*/\\n            v22 = 0u; /*0x18002a3a0*/\\n            v23 = 0; /*0x18002a3a4*/\\n            sub_180028940( /*0x18002a3a9*/\\n              a1: v14,\\n              a2: (unsigned int)&v22,\\n              a3: 4,\\n              a4: (unsigned int)v19,\\n              a5: (__int64)\\\"boe3dET::DoWork::setCameraMat\\\",\\n              a6: (__int64)v18);\\n          }\\n        }\\n        else\\n        {\\n          v18[0] = 56; /*0x18002a2a9*/\\n          v19[0] = \\\"{} line {}  E3 is nullptr !!!\\\"; /*0x18002a2b0*/\\n          v19[1] = 29; /*0x18002a2b4*/\\n          v12 = *(_QWORD *)(sub_180008380() + 472); /*0x18002a2e7*/\\n          v20 = 0u; /*0x18002a2f6*/\\n          v21 = 0; /*0x18002a2fe*/\\n          v22 = 0u; /*0x18002a307*/\\n          v23 = 0; /*0x18002a30b*/\\n          sub_180028940( /*0x18002a310*/\\n            a1: v12,\\n            a2: (unsigned int)&v22,\\n            a3: 4,\\n            a4: (unsigned int)v19,\\n            a5: (__int64)\\\"boe3dET::DoWork::setCameraMat\\\",\\n            a6: (__int64)v18);\\n        }\\n      }\\n      else\\n      {\\n        v18[0] = 52; /*0x18002a22a*/\\n        v19[0] = \\\"{} line {}  E2 is nullptr !!!\\\"; /*0x18002a231*/\\n        v19[1] = 29; /*0x18002a235*/\\n        LODWORD(a3) = 0; /*0x18002a24a*/\\n        v11 = *(_QWORD *)(sub_180008380() + 472); /*0x18002a266*/\\n        v20 = 0u; /*0x18002a279*/\\n        v21 = 0; /*0x18002a281*/\\n        v22 = 0u; /*0x18002a28a*/\\n        v23 = 0; /*0x18002a28e*/\\n        sub_180028940( /*0x18002a293*/\\n          a1: v11,\\n          a2: (unsigned int)&v22,\\n          a3: 4,\\n          a4: (unsigned int)v19,\\n          a5: (__int64)\\\"boe3dET::DoWork::setCameraMat\\\",\\n          a6: (__int64)v18);\\n      }\\n    }\\n    else\\n    {\\n      v18[0] = 48; /*0x18002a1ab*/\\n      v19[0] = \\\"{} line {}  E1 is nullptr !!!\\\"; /*0x18002a1b2*/\\n      v19[1] = 29; /*0x18002a1b6*/\\n      LODWORD(a3) = 0; /*0x18002a1cb*/\\n      v10 = *(_QWORD *)(sub_180008380() + 472); /*0x18002a1e7*/\\n      v20 = 0u; /*0x18002a1fa*/\\n      v21 = 0; /*0x18002a202*/\\n      v22 = 0u; /*0x18002a20b*/\\n      v23 = 0; /*0x18002a20f*/\\n      sub_180028940( /*0x18002a214*/\\n        a1: v10,\\n        a2: (unsigned int)&v22,\\n        a3: 4,\\n        a4: (unsigned int)v19,\\n        a5: (__int64)\\\"boe3dET::DoWork::setCameraMat\\\",\\n        a6: (__int64)v18);\\n    }\\n  }\\n  else\\n  {\\n    LODWORD(a3) = 0; /*0x18002a198*/\\n  }\\n  Mtx_unlock(a1: (_Mtx_t)(v8 + 544)); /*0x18002a415*/\\n  return (unsigned int)a3; /*0x18002a41a*/\\n}\",\"refs\":[{\"addr\":\"0x1800fd1f8\",\"name\":\"SetUnhandledExceptionFilter\"},{\"addr\":\"0x180029770\",\"name\":\"TopLevelExceptionFilter\"},{\"addr\":\"0x180098700\",\"name\":\"sub_180098700\"},{\"addr\":\"0x1800b5a44\",\"name\":\"_Mtx_lock\"},{\"addr\":\"0x1800b4ebc\",\"name\":\"?_Throw_C_error@std@@YAXH@Z\"},{\"addr\":\"0x180038ac0\",\"name\":\"sub_180038AC0\"},{\"addr\":\"0x180008380\",\"name\":\"sub_180008380\"},{\"addr\":\"0x18010f038\",\"name\":\"aSetCameraMatSu\",\"string\":\"set camera mat successful, exit ...\"},{\"addr\":\"0x180005cc0\",\"name\":\"sub_180005CC0\"},{\"addr\":\"0x18010f060\",\"name\":\"aLineSetCameraM\",\"string\":\"{} line {}  set camera mat error !!!\"},{\"addr\":\"0x180028940\",\"name\":\"sub_180028940\"},{\"addr\":\"0x18010f018\",\"name\":\"aBoe3detDoworkS\",\"string\":\"boe3dET::DoWork::setCameraMat\"},{\"addr\":\"0x180038b50\",\"name\":\"sub_180038B50\"},{\"addr\":\"0x18010ea68\",\"name\":\"aLineE3IsNullpt\",\"string\":\"{} line {}  E3 is nullptr !!!\"},{\"addr\":\"0x18010eff8\",\"name\":\"aLineE2IsNullpt\",\"string\":\"{} line {}  E2 is nullptr !!!\"},{\"addr\":\"0x18010ea28\",\"name\":\"aLineE1IsNullpt\",\"string\":\"{} line {}  E1 is nullptr !!!\"},{\"addr\":\"0x1800b5a68\",\"name\":\"_Mtx_unlock\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "setCameraMat_3D",
+      "code": "__int64 __fastcall setCameraMat_3D(__int64 a1, __int64 a2, __int64 a3, char a4)\n{\n  __int64 v8; // r14\n  int v9; // eax\n  __int64 v10; // rcx\n  __int64 v11; // rcx\n  __int64 v12; // rcx\n  int v13; // eax\n  __int64 v14; // rcx\n  __int64 v15; // rax\n  __int64 v16; // rcx\n  _DWORD v18[4]; // [rsp+30h] [rbp-19h] BYREF\n  _QWORD v19[2]; // [rsp+40h] [rbp-9h] BYREF\n  __int128 v20; // [rsp+50h] [rbp+7h]\n  __int64 v21; // [rsp+60h] [rbp+17h]\n  __int128 v22; // [rsp+70h] [rbp+27h] BYREF\n  __int64 v23; // [rsp+80h] [rbp+37h]\n\n  SetUnhandledExceptionFilter(lpTopLevelExceptionFilter: TopLevelExceptionFilter); /*0x18002a169*/\n  v8 = sub_180098700(); /*0x18002a174*/\n  v9 = Mtx_lock(a1: (_Mtx_t)(v8 + 544)); /*0x18002a17e*/\n  if ( v9 != 0 ) /*0x18002a185*/\n    std::_Throw_C_error(a1: v9); /*0x18002a43f*/\n  if ( *(_BYTE *)(v8 + 536) != 0 ) /*0x18002a196*/\n  {\n    if ( a1 != 0 ) /*0x18002a1a2*/\n    {\n      if ( a2 != 0 ) /*0x18002a221*/\n      {\n        if ( a3 != 0 ) /*0x18002a2a0*/\n        {\n          v13 = sub_180038AC0(); /*0x18002a31a*/\n          if ( (unsigned int)sub_180038B50(a1: v13, a2: a1, a3: a2, a4: a3, a5: a4) != 0 ) /*0x18002a337*/\n          {\n            v15 = sub_180008380(); /*0x18002a3b0*/\n            v19[1] = 35; /*0x18002a3b7*/\n            v19[0] = \"set camera mat successful, exit ...\"; /*0x18002a3ca*/\n            v16 = *(_QWORD *)(v15 + 472); /*0x18002a3da*/\n            v20 = 0u; /*0x18002a3ea*/\n            v21 = 0; /*0x18002a3f2*/\n            v22 = 0u; /*0x18002a3fb*/\n            v23 = 0; /*0x18002a3ff*/\n            sub_180005CC0(a1: v16, a2: &v22, a3: 2, a4: v19); /*0x18002a404*/\n            LODWORD(a3) = 1; /*0x18002a409*/\n          }\n          else\n          {\n            v18[0] = 62; /*0x18002a340*/\n            v19[0] = \"{} line {}  set camera mat error !!!\"; /*0x18002a347*/\n            v19[1] = 36; /*0x18002a34b*/\n            LODWORD(a3) = 0; /*0x18002a360*/\n            v14 = *(_QWORD *)(sub_180008380() + 472); /*0x18002a37c*/\n            v20 = 0u; /*0x18002a38f*/\n            v21 = 0; /*0x18002a397*/\n            v22 = 0u; /*0x18002a3a0*/\n            v23 = 0; /*0x18002a3a4*/\n            sub_180028940( /*0x18002a3a9*/\n              a1: v14,\n              a2: (unsigned int)&v22,\n              a3: 4,\n              a4: (unsigned int)v19,\n              a5: (__int64)\"boe3dET::DoWork::setCameraMat\",\n              a6: (__int64)v18);\n          }\n        }\n        else\n        {\n          v18[0] = 56; /*0x18002a2a9*/\n          v19[0] = \"{} line {}  E3 is nullptr !!!\"; /*0x18002a2b0*/\n          v19[1] = 29; /*0x18002a2b4*/\n          v12 = *(_QWORD *)(sub_180008380() + 472); /*0x18002a2e7*/\n          v20 = 0u; /*0x18002a2f6*/\n          v21 = 0; /*0x18002a2fe*/\n          v22 = 0u; /*0x18002a307*/\n          v23 = 0; /*0x18002a30b*/\n          sub_180028940( /*0x18002a310*/\n            a1: v12,\n            a2: (unsigned int)&v22,\n            a3: 4,\n            a4: (unsigned int)v19,\n            a5: (__int64)\"boe3dET::DoWork::setCameraMat\",\n            a6: (__int64)v18);\n        }\n      }\n      else\n      {\n        v18[0] = 52; /*0x18002a22a*/\n        v19[0] = \"{} line {}  E2 is nullptr !!!\"; /*0x18002a231*/\n        v19[1] = 29; /*0x18002a235*/\n        LODWORD(a3) = 0; /*0x18002a24a*/\n        v11 = *(_QWORD *)(sub_180008380() + 472); /*0x18002a266*/\n        v20 = 0u; /*0x18002a279*/\n        v21 = 0; /*0x18002a281*/\n        v22 = 0u; /*0x18002a28a*/\n        v23 = 0; /*0x18002a28e*/\n        sub_180028940( /*0x18002a293*/\n          a1: v11,\n          a2: (unsigned int)&v22,\n          a3: 4,\n          a4: (unsigned int)v19,\n          a5: (__int64)\"boe3dET::DoWork::setCameraMat\",\n          a6: (__int64)v18);\n      }\n    }\n    else\n    {\n      v18[0] = 48; /*0x18002a1ab*/\n      v19[0] = \"{} line {}  E1 is nullptr !!!\"; /*0x18002a1b2*/\n      v19[1] = 29; /*0x18002a1b6*/\n      LODWORD(a3) = 0; /*0x18002a1cb*/\n      v10 = *(_QWORD *)(sub_180008380() + 472); /*0x18002a1e7*/\n      v20 = 0u; /*0x18002a1fa*/\n      v21 = 0; /*0x18002a202*/\n      v22 = 0u; /*0x18002a20b*/\n      v23 = 0; /*0x18002a20f*/\n      sub_180028940( /*0x18002a214*/\n        a1: v10,\n        a2: (unsigned int)&v22,\n        a3: 4,\n        a4: (unsigned int)v19,\n        a5: (__int64)\"boe3dET::DoWork::setCameraMat\",\n        a6: (__int64)v18);\n    }\n  }\n  else\n  {\n    LODWORD(a3) = 0; /*0x18002a198*/\n  }\n  Mtx_unlock(a1: (_Mtx_t)(v8 + 544)); /*0x18002a415*/\n  return (unsigned int)a3; /*0x18002a41a*/\n}",
+      "refs": [
+        {
+          "addr": "0x1800fd1f8",
+          "name": "SetUnhandledExceptionFilter"
+        },
+        {
+          "addr": "0x180029770",
+          "name": "TopLevelExceptionFilter"
+        },
+        {
+          "addr": "0x180098700",
+          "name": "sub_180098700"
+        },
+        {
+          "addr": "0x1800b5a44",
+          "name": "_Mtx_lock"
+        },
+        {
+          "addr": "0x1800b4ebc",
+          "name": "?_Throw_C_error@std@@YAXH@Z"
+        },
+        {
+          "addr": "0x180038ac0",
+          "name": "sub_180038AC0"
+        },
+        {
+          "addr": "0x180008380",
+          "name": "sub_180008380"
+        },
+        {
+          "addr": "0x18010f038",
+          "name": "aSetCameraMatSu",
+          "string": "set camera mat successful, exit ..."
+        },
+        {
+          "addr": "0x180005cc0",
+          "name": "sub_180005CC0"
+        },
+        {
+          "addr": "0x18010f060",
+          "name": "aLineSetCameraM",
+          "string": "{} line {}  set camera mat error !!!"
+        },
+        {
+          "addr": "0x180028940",
+          "name": "sub_180028940"
+        },
+        {
+          "addr": "0x18010f018",
+          "name": "aBoe3detDoworkS",
+          "string": "boe3dET::DoWork::setCameraMat"
+        },
+        {
+          "addr": "0x180038b50",
+          "name": "sub_180038B50"
+        },
+        {
+          "addr": "0x18010ea68",
+          "name": "aLineE3IsNullpt",
+          "string": "{} line {}  E3 is nullptr !!!"
+        },
+        {
+          "addr": "0x18010eff8",
+          "name": "aLineE2IsNullpt",
+          "string": "{} line {}  E2 is nullptr !!!"
+        },
+        {
+          "addr": "0x18010ea28",
+          "name": "aLineE1IsNullpt",
+          "string": "{} line {}  E1 is nullptr !!!"
+        },
+        {
+          "addr": "0x1800b5a68",
+          "name": "_Mtx_unlock"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

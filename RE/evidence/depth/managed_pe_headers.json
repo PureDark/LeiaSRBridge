@@ -1,0 +1,56 @@
+[
+  {
+    "file": "AiStereoKitCSharp.dll",
+    "machine": "0x8664",
+    "clr_rva": "0x6338",
+    "clr_size": 72
+  },
+  {
+    "file": "BOEInterleaving.dll",
+    "machine": "0x8664",
+    "clr_rva": "0x6300",
+    "clr_size": 72
+  },
+  {
+    "file": "BOERenderWapper.dll",
+    "machine": "0x8664",
+    "clr_rva": "0x8c98",
+    "clr_size": 72
+  },
+  {
+    "file": "DepthTransformerPlus.exe",
+    "machine": "0x8664",
+    "clr_rva": "0x2000",
+    "clr_size": 72
+  },
+  {
+    "file": "FaceTrackingManagerService.dll",
+    "machine": "0x8664",
+    "clr_rva": "0x0",
+    "clr_size": 0
+  },
+  {
+    "file": "interlaceSDK.dll",
+    "machine": "0x8664",
+    "clr_rva": "0x0",
+    "clr_size": 0
+  },
+  {
+    "file": "LF3DRenderCore.dll",
+    "machine": "0x8664",
+    "clr_rva": "0x0",
+    "clr_size": 0
+  },
+  {
+    "file": "LF3DRenderCoreForCSharp.dll",
+    "machine": "0x8664",
+    "clr_rva": "0x5250",
+    "clr_size": 72
+  },
+  {
+    "file": "MCU_library.dll",
+    "machine": "0x8664",
+    "clr_rva": "0x0",
+    "clr_size": 0
+  }
+]

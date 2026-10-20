@@ -1,0 +1,49 @@
+180026a04 lea r9, [rsp+3E8h+var_378]
+180026a09 mov r8d, 1
+180026a0f lea rdx, [rsp+3E8h+var_318]
+180026a17 mov rcx, [rax+1D8h]
+180026a1e call sub_180005CC0
+180026a23 nop
+180026a24 lea rcx, [rsp+3E8h+var_2C8]
+180026a2c call sub_1800254E0
+180026a31 mov eax, [rbx+60h]
+180026a34 mov [rdi], eax
+180026a36 mov eax, [rbx+64h]
+180026a39 mov [rdi+4], eax
+180026a3c mov eax, [rbx+68h]
+180026a3f mov [rdi+8], eax
+180026a42 mov eax, [rbx+6Ch]
+180026a45 mov [rdi+0Ch], eax
+180026a48 mov eax, [rbx+70h]
+180026a4b mov [rdi+10h], eax
+180026a4e mov eax, [rbx+74h]
+180026a51 mov [rdi+14h], eax
+180026a54 mov eax, [rbx+78h]
+180026a57 mov [rdi+18h], eax
+180026a5a mov eax, [rbx+7Ch]
+180026a5d mov [rdi+1Ch], eax
+180026a60 mov eax, [rbx+80h]
+180026a66 mov [rdi+20h], eax
+180026a69 cvttss2si eax, dword ptr [rbx+84h]
+180026a71 mov [rdi+24h], eax
+180026a74 cvttss2si eax, dword ptr [rbx+88h]
+180026a7c mov [rdi+28h], eax
+180026a7f cvttss2si eax, dword ptr [rbx+8Ch]
+180026a87 mov [rdi+2Ch], eax
+180026a8a cvttss2si eax, dword ptr [rbx+90h]
+180026a92 mov [rdi+30h], eax
+180026a95 cvttss2si eax, dword ptr [rbx+94h]
+180026a9d mov [rdi+34h], eax
+180026aa0 cvttss2si eax, dword ptr [rbx+98h]
+180026aa8 mov [rdi+38h], eax
+180026aab cvttss2si eax, dword ptr [rbx+9Ch]
+180026ab3 mov [rdi+3Ch], eax
+180026ab6 cvttss2si eax, dword ptr [rbx+0A0h]
+180026abe mov [rdi+40h], eax
+180026ac1 movzx eax, byte ptr [rbx+0A4h]
+180026ac8 mov [rdi+50h], al
+180026acb movzx eax, byte ptr [rbx+0A5h]
+180026ad2 mov [rdi+51h], al
+180026ad5 call sub_18002F010
+180026ada mov [rdi+48h], rax
+180026ade mov rax, [rbx+0A8h]

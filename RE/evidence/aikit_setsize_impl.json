@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18013ebe0\",\"code\":\"__int64 __fastcall sub_18013EBE0(__int64 a1, int a2, int a3)\\n{\\n  __int64 result; // rax\\n  float v7; // xmm0_4\\n\\n  if ( *(_QWORD *)(a1 + 40) != 0 ) /*0x18013ebfc*/\\n  {\\n    *(_DWORD *)(a1 + 260) = 1065353216; /*0x18013ec00*/\\n    *(_DWORD *)(a1 + 256) = 0; /*0x18013ec0d*/\\n    *(_QWORD *)(a1 + 240) = 0; /*0x18013ec16*/\\n    *(float *)(a1 + 248) = (float)a2; /*0x18013ec27*/\\n    *(float *)(a1 + 252) = (float)a3; /*0x18013ec2f*/\\n  }\\n  sub_18013F930(a1, (unsigned int)a2, (unsigned int)a3); /*0x18013ec3c*/\\n  result = *(_QWORD *)(a1 + 208); /*0x18013ec41*/\\n  if ( result != 0 ) /*0x18013ec4b*/\\n  {\\n    *(_BYTE *)(result + 84) = 1; /*0x18013ec60*/\\n    v7 = 1.0 / (double)a2; /*0x18013ec70*/\\n    *(float *)(result + 64) = v7; /*0x18013ec78*/\\n    *(float *)(result + 68) = 1.0 / (double)a3; /*0x18013ec81*/\\n  }\\n  return result; /*0x18013ec86*/\\n}\",\"refs\":[{\"addr\":\"0x18013f930\",\"name\":\"sub_18013F930\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18013ebe0",
+      "code": "__int64 __fastcall sub_18013EBE0(__int64 a1, int a2, int a3)\n{\n  __int64 result; // rax\n  float v7; // xmm0_4\n\n  if ( *(_QWORD *)(a1 + 40) != 0 ) /*0x18013ebfc*/\n  {\n    *(_DWORD *)(a1 + 260) = 1065353216; /*0x18013ec00*/\n    *(_DWORD *)(a1 + 256) = 0; /*0x18013ec0d*/\n    *(_QWORD *)(a1 + 240) = 0; /*0x18013ec16*/\n    *(float *)(a1 + 248) = (float)a2; /*0x18013ec27*/\n    *(float *)(a1 + 252) = (float)a3; /*0x18013ec2f*/\n  }\n  sub_18013F930(a1, (unsigned int)a2, (unsigned int)a3); /*0x18013ec3c*/\n  result = *(_QWORD *)(a1 + 208); /*0x18013ec41*/\n  if ( result != 0 ) /*0x18013ec4b*/\n  {\n    *(_BYTE *)(result + 84) = 1; /*0x18013ec60*/\n    v7 = 1.0 / (double)a2; /*0x18013ec70*/\n    *(float *)(result + 64) = v7; /*0x18013ec78*/\n    *(float *)(result + 68) = 1.0 / (double)a3; /*0x18013ec81*/\n  }\n  return result; /*0x18013ec86*/\n}",
+      "refs": [
+        {
+          "addr": "0x18013f930",
+          "name": "sub_18013F930"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

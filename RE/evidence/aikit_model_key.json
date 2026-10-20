@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"aYl1102\",\"value\":\"YL1102\"}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "aYl1102",
+          "value": "YL1102"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

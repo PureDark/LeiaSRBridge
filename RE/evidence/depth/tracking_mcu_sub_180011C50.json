@@ -1,0 +1,117 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"sub_180011C50\",\"code\":\"__int64 __fastcall sub_180011C50(_BYTE *a1)\\n{\\n  __int64 v1; // rax\\n  __int64 v3; // rax\\n  __int64 v4; // rax\\n  __int64 v5; // rax\\n  __int64 v6; // [rsp+28h] [rbp-D0h]\\n  __int64 v7; // [rsp+30h] [rbp-C8h]\\n  _BYTE *v8; // [rsp+38h] [rbp-C0h] BYREF\\n  __int64 v9; // [rsp+40h] [rbp-B8h]\\n  _BYTE *v10; // [rsp+48h] [rbp-B0h] BYREF\\n  __int64 v11; // [rsp+50h] [rbp-A8h]\\n  __int64 v12; // [rsp+58h] [rbp-A0h]\\n  __int64 v13; // [rsp+60h] [rbp-98h]\\n  __int64 v14; // [rsp+68h] [rbp-90h]\\n  __int64 v15; // [rsp+70h] [rbp-88h]\\n  _BYTE v16[16]; // [rsp+78h] [rbp-80h] BYREF\\n  _BYTE v17[16]; // [rsp+88h] [rbp-70h] BYREF\\n  _BYTE v18[16]; // [rsp+98h] [rbp-60h] BYREF\\n  _BYTE v19[16]; // [rsp+A8h] [rbp-50h] BYREF\\n  _BYTE v20[16]; // [rsp+B8h] [rbp-40h] BYREF\\n  _BYTE v21[48]; // [rsp+C8h] [rbp-30h] BYREF\\n\\n  if ( *a1 != 0 ) /*0x180011c69*/\\n  {\\n    v6 = sub_180036BD0(a1: v16, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 137); /*0x180011c8c*/\\n    __wind /*0xf1c000000000005c*/\\n    {\\n      v1 = sub_18003DF90(a1: v6); /*0x180011c96*/\\n      sub_18000A770(a1: v1, a2: \\\"if (m_inited)  return true; MCU already inited,do no need call init again\\\"); /*0x180011ca5*/\\n    }\\n    __unwind\\n    {\\n      sub_180037160(a1: v16); /*0x1800453fd*/\\n    }\\n    sub_180037160(a1: v16); /*0x180011cb0*/\\n    return 0; /*0x180011cb5*/\\n  }\\n  else\\n  {\\n    *a1 = 1; /*0x180011cc4*/\\n    v7 = sub_180010F60(a1: v21); /*0x180011cd4*/\\n    sub_180019930(a1: a1 + 2384, a2: v7); /*0x180011cef*/\\n    std::string::~string(a1: v21); /*0x180011cfc*/\\n    v8 = a1; /*0x180011d09*/\\n    v9 = std::make_pair<unsigned char,Concurrency::details::_CancellationTokenState * &>( /*0x180011d27*/\\n           a1: v17,\\n           a2: sub_1800148A0,\\n           a3: &v8);\\n    sub_18000ECC0(a1: a1 + 2344, a2: v9); /*0x180011d42*/\\n    sub_18000EC90(a1: v17); /*0x180011d4f*/\\n    v10 = a1; /*0x180011d5c*/\\n    v11 = std::make_pair<unsigned char,Concurrency::details::_CancellationTokenState * &>( /*0x180011d7a*/\\n            a1: v18,\\n            a2: sub_180014B30,\\n            a3: &v10);\\n    sub_18000ECC0(a1: a1 + 2360, a2: v11); /*0x180011d95*/\\n    sub_18000EC90(a1: v18); /*0x180011da2*/\\n    if ( (unsigned __int8)sub_180007EC0(a1: a1 + 2384) != 0 /*0x180011dea*/\\n      || (unsigned __int8)sub_18001BAB0(a1: a1 + 2384, a2: &unk_18004D363) == 0 )\\n    {\\n      v14 = sub_180036BD0(a1: v20, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 149); /*0x180011e8f*/\\n      v15 = v14; /*0x180011e99*/\\n      __wind /*0xf1c000000000002c*/\\n      {\\n        v5 = sub_18003DF90(a1: v15); /*0x180011ea3*/\\n        sub_18000A770(a1: v5, a2: \\\"FindDevicePort by VID_28E9 PID_018A failed\\\"); /*0x180011eb2*/\\n      }\\n      __unwind\\n      {\\n        sub_180037160(a1: v20); /*0x180045433*/\\n      }\\n      sub_180037160(a1: v20); /*0x180011ec0*/\\n      sub_180017C80(a1: a1 + 12, a2: 0); /*0x180011ed6*/\\n    }\\n    else\\n    {\\n      v12 = sub_180036BD0(a1: v19, a2: \\\"D:\\\\\\\\source\\\\\\\\repos\\\\\\\\3DResolution\\\\\\\\common\\\\\\\\MCUManager.cpp\\\", a3: 145); /*0x180011e0a*/\\n      v13 = v12; /*0x180011e14*/\\n      __wind /*0xf1c0000000000044*/\\n      {\\n        v3 = sub_18003DF90(a1: v13); /*0x180011e1e*/\\n        v4 = sub_18000A770(a1: v3, a2: \\\"FindDevicePort by VID_28E9 PID_018A:\\\"); /*0x180011e2d*/\\n        sub_18001B7D0(a1: v4, a2: a1 + 2384); /*0x180011e47*/\\n      }\\n      __unwind\\n      {\\n        sub_180037160(a1: v19); /*0x180045418*/\\n      }\\n      sub_180037160(a1: v19); /*0x180011e55*/\\n      sub_180017C80(a1: a1 + 12, a2: 2); /*0x180011e6e*/\\n    }\\n    return 0; /*0x180011edb*/\\n  }\\n}\",\"refs\":[{\"addr\":\"0x180036bd0\",\"name\":\"sub_180036BD0\"},{\"addr\":\"0x18004d7e8\",\"name\":\"aDSourceRepos3d_6\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18003df90\",\"name\":\"sub_18003DF90\"},{\"addr\":\"0x18000a770\",\"name\":\"sub_18000A770\"},{\"addr\":\"0x18004d820\",\"name\":\"aIfMInitedRetur\",\"string\":\"if (m_inited)  return true; MCU already inited,do no need call init again\"},{\"addr\":\"0x180037160\",\"name\":\"sub_180037160\"},{\"addr\":\"0x180010f60\",\"name\":\"sub_180010F60\"},{\"addr\":\"0x180019930\",\"name\":\"sub_180019930\"},{\"addr\":\"0x1800081c0\",\"name\":\"??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ\"},{\"addr\":\"0x18001ba60\",\"name\":\"??$make_pair@EAEAPEAV_CancellationTokenState@details@Concurrency@@@std@@YA?AU?$pair@EPEAV_CancellationTokenState@details@Concurrency@@@0@$$QEAEAEAPEAV_CancellationTokenState@details@Concurrency@@@Z\"},{\"addr\":\"0x1800148a0\",\"name\":\"sub_1800148A0\"},{\"addr\":\"0x18000ecc0\",\"name\":\"sub_18000ECC0\"},{\"addr\":\"0x18000ec90\",\"name\":\"sub_18000EC90\"},{\"addr\":\"0x180014b30\",\"name\":\"sub_180014B30\"},{\"addr\":\"0x18004d900\",\"name\":\"aDSourceRepos3d_8\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004d8d0\",\"name\":\"aFinddeviceport_0\",\"string\":\"FindDevicePort by VID_28E9 PID_018A failed\"},{\"addr\":\"0x180017c80\",\"name\":\"sub_180017C80\"},{\"addr\":\"0x18004d898\",\"name\":\"aDSourceRepos3d_7\",\"string\":\"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\"},{\"addr\":\"0x18004d870\",\"name\":\"aFinddeviceport\",\"string\":\"FindDevicePort by VID_28E9 PID_018A:\"},{\"addr\":\"0x18001b7d0\",\"name\":\"sub_18001B7D0\"},{\"addr\":\"0x180007ec0\",\"name\":\"sub_180007EC0\"},{\"addr\":\"0x18001bab0\",\"name\":\"sub_18001BAB0\"},{\"addr\":\"0x18004d363\",\"name\":\"unk_18004D363\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "sub_180011C50",
+      "code": "__int64 __fastcall sub_180011C50(_BYTE *a1)\n{\n  __int64 v1; // rax\n  __int64 v3; // rax\n  __int64 v4; // rax\n  __int64 v5; // rax\n  __int64 v6; // [rsp+28h] [rbp-D0h]\n  __int64 v7; // [rsp+30h] [rbp-C8h]\n  _BYTE *v8; // [rsp+38h] [rbp-C0h] BYREF\n  __int64 v9; // [rsp+40h] [rbp-B8h]\n  _BYTE *v10; // [rsp+48h] [rbp-B0h] BYREF\n  __int64 v11; // [rsp+50h] [rbp-A8h]\n  __int64 v12; // [rsp+58h] [rbp-A0h]\n  __int64 v13; // [rsp+60h] [rbp-98h]\n  __int64 v14; // [rsp+68h] [rbp-90h]\n  __int64 v15; // [rsp+70h] [rbp-88h]\n  _BYTE v16[16]; // [rsp+78h] [rbp-80h] BYREF\n  _BYTE v17[16]; // [rsp+88h] [rbp-70h] BYREF\n  _BYTE v18[16]; // [rsp+98h] [rbp-60h] BYREF\n  _BYTE v19[16]; // [rsp+A8h] [rbp-50h] BYREF\n  _BYTE v20[16]; // [rsp+B8h] [rbp-40h] BYREF\n  _BYTE v21[48]; // [rsp+C8h] [rbp-30h] BYREF\n\n  if ( *a1 != 0 ) /*0x180011c69*/\n  {\n    v6 = sub_180036BD0(a1: v16, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 137); /*0x180011c8c*/\n    __wind /*0xf1c000000000005c*/\n    {\n      v1 = sub_18003DF90(a1: v6); /*0x180011c96*/\n      sub_18000A770(a1: v1, a2: \"if (m_inited)  return true; MCU already inited,do no need call init again\"); /*0x180011ca5*/\n    }\n    __unwind\n    {\n      sub_180037160(a1: v16); /*0x1800453fd*/\n    }\n    sub_180037160(a1: v16); /*0x180011cb0*/\n    return 0; /*0x180011cb5*/\n  }\n  else\n  {\n    *a1 = 1; /*0x180011cc4*/\n    v7 = sub_180010F60(a1: v21); /*0x180011cd4*/\n    sub_180019930(a1: a1 + 2384, a2: v7); /*0x180011cef*/\n    std::string::~string(a1: v21); /*0x180011cfc*/\n    v8 = a1; /*0x180011d09*/\n    v9 = std::make_pair<unsigned char,Concurrency::details::_CancellationTokenState * &>( /*0x180011d27*/\n           a1: v17,\n           a2: sub_1800148A0,\n           a3: &v8);\n    sub_18000ECC0(a1: a1 + 2344, a2: v9); /*0x180011d42*/\n    sub_18000EC90(a1: v17); /*0x180011d4f*/\n    v10 = a1; /*0x180011d5c*/\n    v11 = std::make_pair<unsigned char,Concurrency::details::_CancellationTokenState * &>( /*0x180011d7a*/\n            a1: v18,\n            a2: sub_180014B30,\n            a3: &v10);\n    sub_18000ECC0(a1: a1 + 2360, a2: v11); /*0x180011d95*/\n    sub_18000EC90(a1: v18); /*0x180011da2*/\n    if ( (unsigned __int8)sub_180007EC0(a1: a1 + 2384) != 0 /*0x180011dea*/\n      || (unsigned __int8)sub_18001BAB0(a1: a1 + 2384, a2: &unk_18004D363) == 0 )\n    {\n      v14 = sub_180036BD0(a1: v20, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 149); /*0x180011e8f*/\n      v15 = v14; /*0x180011e99*/\n      __wind /*0xf1c000000000002c*/\n      {\n        v5 = sub_18003DF90(a1: v15); /*0x180011ea3*/\n        sub_18000A770(a1: v5, a2: \"FindDevicePort by VID_28E9 PID_018A failed\"); /*0x180011eb2*/\n      }\n      __unwind\n      {\n        sub_180037160(a1: v20); /*0x180045433*/\n      }\n      sub_180037160(a1: v20); /*0x180011ec0*/\n      sub_180017C80(a1: a1 + 12, a2: 0); /*0x180011ed6*/\n    }\n    else\n    {\n      v12 = sub_180036BD0(a1: v19, a2: \"D:\\\\source\\\\repos\\\\3DResolution\\\\common\\\\MCUManager.cpp\", a3: 145); /*0x180011e0a*/\n      v13 = v12; /*0x180011e14*/\n      __wind /*0xf1c0000000000044*/\n      {\n        v3 = sub_18003DF90(a1: v13); /*0x180011e1e*/\n        v4 = sub_18000A770(a1: v3, a2: \"FindDevicePort by VID_28E9 PID_018A:\"); /*0x180011e2d*/\n        sub_18001B7D0(a1: v4, a2: a1 + 2384); /*0x180011e47*/\n      }\n      __unwind\n      {\n        sub_180037160(a1: v19); /*0x180045418*/\n      }\n      sub_180037160(a1: v19); /*0x180011e55*/\n      sub_180017C80(a1: a1 + 12, a2: 2); /*0x180011e6e*/\n    }\n    return 0; /*0x180011edb*/\n  }\n}",
+      "refs": [
+        {
+          "addr": "0x180036bd0",
+          "name": "sub_180036BD0"
+        },
+        {
+          "addr": "0x18004d7e8",
+          "name": "aDSourceRepos3d_6",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18003df90",
+          "name": "sub_18003DF90"
+        },
+        {
+          "addr": "0x18000a770",
+          "name": "sub_18000A770"
+        },
+        {
+          "addr": "0x18004d820",
+          "name": "aIfMInitedRetur",
+          "string": "if (m_inited)  return true; MCU already inited,do no need call init again"
+        },
+        {
+          "addr": "0x180037160",
+          "name": "sub_180037160"
+        },
+        {
+          "addr": "0x180010f60",
+          "name": "sub_180010F60"
+        },
+        {
+          "addr": "0x180019930",
+          "name": "sub_180019930"
+        },
+        {
+          "addr": "0x1800081c0",
+          "name": "??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ"
+        },
+        {
+          "addr": "0x18001ba60",
+          "name": "??$make_pair@EAEAPEAV_CancellationTokenState@details@Concurrency@@@std@@YA?AU?$pair@EPEAV_CancellationTokenState@details@Concurrency@@@0@$$QEAEAEAPEAV_CancellationTokenState@details@Concurrency@@@Z"
+        },
+        {
+          "addr": "0x1800148a0",
+          "name": "sub_1800148A0"
+        },
+        {
+          "addr": "0x18000ecc0",
+          "name": "sub_18000ECC0"
+        },
+        {
+          "addr": "0x18000ec90",
+          "name": "sub_18000EC90"
+        },
+        {
+          "addr": "0x180014b30",
+          "name": "sub_180014B30"
+        },
+        {
+          "addr": "0x18004d900",
+          "name": "aDSourceRepos3d_8",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004d8d0",
+          "name": "aFinddeviceport_0",
+          "string": "FindDevicePort by VID_28E9 PID_018A failed"
+        },
+        {
+          "addr": "0x180017c80",
+          "name": "sub_180017C80"
+        },
+        {
+          "addr": "0x18004d898",
+          "name": "aDSourceRepos3d_7",
+          "string": "D:\\source\\repos\\3DResolution\\common\\MCUManager.cpp"
+        },
+        {
+          "addr": "0x18004d870",
+          "name": "aFinddeviceport",
+          "string": "FindDevicePort by VID_28E9 PID_018A:"
+        },
+        {
+          "addr": "0x18001b7d0",
+          "name": "sub_18001B7D0"
+        },
+        {
+          "addr": "0x180007ec0",
+          "name": "sub_180007EC0"
+        },
+        {
+          "addr": "0x18001bab0",
+          "name": "sub_18001BAB0"
+        },
+        {
+          "addr": "0x18004d363",
+          "name": "unk_18004D363"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

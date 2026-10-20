@@ -1,0 +1,71 @@
+{
+  "batch": {
+    "func": [
+      {
+        "addr": "0x180058A00",
+        "name": "BOE_MakeFloat3"
+      },
+      {
+        "addr": "0x18005E9B0",
+        "name": "BOE_DX12_DoInterleave"
+      },
+      {
+        "addr": "0x1800596C0",
+        "name": "BOE_DX11_DrawOutput"
+      },
+      {
+        "addr": "0x18005F530",
+        "name": "BOE_MapShaderConstants"
+      },
+      {
+        "addr": "0x18005FF20",
+        "name": "BOE_SetRefractParams8_SelectShader21"
+      },
+      {
+        "addr": "0x180058D60",
+        "name": "BOE_DX11_Init"
+      },
+      {
+        "addr": "0x180058EB0",
+        "name": "BOE_DX11_DoInterleave"
+      },
+      {
+        "addr": "0x18005DB00",
+        "name": "BOE_DX12_DispatchInterlace"
+      },
+      {
+        "addr": "0x18005D900",
+        "name": "BOE_DX12_UploadConstants"
+      },
+      {
+        "addr": "0x180059270",
+        "name": "BOE_DX11_DispatchInterlace"
+      },
+      {
+        "addr": "0x18005EBD0",
+        "name": "BOE_SetWholeTransform"
+      },
+      {
+        "addr": "0x18005FCE0",
+        "name": "BOE_SetDeviceParams6"
+      },
+      {
+        "addr": "0x18005D6B0",
+        "name": "BOE_DX12_Init"
+      },
+      {
+        "addr": "0x18005F3D0",
+        "name": "BOE_MapStereoLayout"
+      },
+      {
+        "addr": "0x180059040",
+        "name": "BOE_DX11_UploadConstants"
+      },
+      {
+        "addr": "0x18005E380",
+        "name": "BOE_DX12_DrawOutput"
+      }
+    ]
+  },
+  "database": "interlace"
+}

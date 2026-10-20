@@ -1,0 +1,37 @@
+{
+  "result": [
+    {
+      "input": "0x15F0",
+      "result": {
+        "decimal": "5616",
+        "hexadecimal": "0x15f0",
+        "bytes": "f0 15 00 00",
+        "ascii": null,
+        "binary": "0b1010111110000"
+      },
+      "error": null
+    },
+    {
+      "input": "0xC",
+      "result": {
+        "decimal": "12",
+        "hexadecimal": "0xc",
+        "bytes": "0c 00 00 00",
+        "ascii": null,
+        "binary": "0b1100"
+      },
+      "error": null
+    },
+    {
+      "input": "168",
+      "result": {
+        "decimal": "168",
+        "hexadecimal": "0xa8",
+        "bytes": "a8 00 00 00",
+        "ascii": null,
+        "binary": "0b10101000"
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+// Token: 0x020002FA RID: 762
+[UnsafeValueType]
+[NativeCppClass]
+[StructLayout(LayoutKind.Sequential, Size = 52)]
+internal struct D3D11_DEPTH_STENCIL_DESC
+{
+	// Token: 0x0400036A RID: 874
+	private int <alignment\u0020member>;
+}
