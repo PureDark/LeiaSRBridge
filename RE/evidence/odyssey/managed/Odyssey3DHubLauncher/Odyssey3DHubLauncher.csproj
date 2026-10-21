@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{F5CDE49E-1747-4A03-A2E8-D91D1F9D67DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Odyssey3DHubLauncher</RootNamespace>
+    <AssemblyName>Odyssey3DHubLauncher</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Odyssey3DHubLauncher.ico</ApplicationIcon>
+    <StartupObject>zwPUaUuLKSGOriGrzlBxgeiKDNtI</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Win32.SystemEvents" />
+    <Reference Include="nBwAyJxJQOGhrWNwwhaUMFFnKISH" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SevenZipSharp">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Configuration.ConfigurationManager" />
+    <Reference Include="System.Diagnostics.FileVersionInfo" />
+    <Reference Include="System.Diagnostics.Process" />
+    <Reference Include="System.Drawing.Common" />
+    <Reference Include="System.Drawing.Primitives" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.ZipFile" />
+    <Reference Include="System.IO.FileSystem.DriveInfo" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.NetworkInformation" />
+    <Reference Include="System.Net.Primitives" />
+    <Reference Include="System.Net.Requests" />
+    <Reference Include="System.Net.WebProxy" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Private.CoreLib" />
+    <Reference Include="System.Private.Uri" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Security.Cryptography" />
+    <Reference Include="System.Text.Encodings.Web" />
+    <Reference Include="System.Text.Json" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Thread" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-gS$7m8.cs" />
+    <Compile Include="-mC9IzTsZ%x~a-sH5Q.cs" />
+    <Compile Include="-Module-.cs" />
+    <Compile Include="6{-b-(=-ka80.cs" />
+    <Compile Include="ConfusedByAttribute.cs" />
+    <Compile Include="CzaAXAFATfvifwvRxtxTqGQhziuGA.cs" />
+    <Compile Include="D=Vus@--sq!M)j&amp;F,-CKRKw-(.cs" />
+    <Compile Include="erfwpPqaSBGMGNgwbeWxlaEnjlhZ.cs" />
+    <Compile Include="G1%((--HGz$T+${-!A;9FFGS-.cs" />
+    <Compile Include="hBCFqbujwNyVwfHHKbLsgbMXUKzvA.cs" />
+    <Compile Include="HguQrrqAzNjvgpBOjYDJUyCadcCg.cs" />
+    <Compile Include="OtezsJymnPqGJTOeAJsyhcWyBGhdb.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SkKfqCAMGuknAIVXhOfsGDUBJNCAd.cs" />
+    <Compile Include="Updater\Common\Module.cs" />
+    <Compile Include="Updater\Service\DownloadStatus.cs" />
+    <Compile Include="wpK--A;)M-^90('e-aAH7tDE%.cs" />
+    <Compile Include="zwPUaUuLKSGOriGrzlBxgeiKDNtI.cs" />
+    <Compile Include="`nX!HJqQl!-f`){RYEJA&amp;NS3'.cs" />
+    <Compile Include="​⁬‭⁫‫⁯‌‭​‏‍‌⁯⁭⁬‫‮‎⁫⁯‬⁭‏⁯‏‍‏‮‭‍‌‪⁭‮‮​​⁭‍⁫‮.cs" />
+    <Compile Include="‍⁪⁪⁭⁯⁮‮⁯‏‌⁬⁪‏‬⁭‏⁯‎‮‏⁭​‮⁭‪⁫‬⁬⁬⁯‍‮⁬⁮‏‪‌‪‭‫‮.cs" />
+    <Compile Include="‏‌⁯‭​‎‌⁭‌​‌‫⁭‏​‫⁯‫‎‬⁫⁫‪​​‎‎​‬⁭‎⁭‫⁪‫‍⁭‬‬‬‮.cs" />
+    <Compile Include="‏‎‍‍‎‬‬‍⁫⁭⁬‎‫⁮‭⁯‪‭‮‪⁪⁮‫‮⁭⁫‏‏‏⁮⁪‍‌​⁬‍⁮‬‫⁮‮.cs" />
+    <Compile Include="‏‬‌‭‪⁯‎‪‎⁪⁪⁬⁭​‬‍⁭⁭​⁭‍⁮‍⁬⁫⁪‮⁫⁯‎⁮​​‮⁪‮‌‬​‮‮.cs" />
+    <Compile Include="‏⁭‏‮⁮‮‪⁬‍‪‬‫​⁮‮⁪⁪‎‏‬⁬⁫‮‬‏⁪⁪‬⁭‮‬⁪‌⁫​⁬⁮‍⁬‮.cs" />
+    <Compile Include="‪‏⁯⁬‪‎⁬‎⁮⁭‬‮⁮‏‭‫‬⁭⁬‭⁪⁮⁭‮⁭‬⁭‎⁮‮‬‌‮⁫⁪​‏‫‪‍‮.cs" />
+    <Compile Include="‪⁭‬‫‬‭‎‭‫‭‬‮​⁭​‪‫‏⁪‏⁭⁫‫‏‏‌⁬⁬‫⁬‮‭‮‎⁬‏‏​‬‌‮.cs" />
+    <Compile Include="‪⁭‮⁮‎‏‮⁯⁪⁯‫‭‪‭‫‭‪‮‏‬‏‪⁭⁯‫⁭⁯⁭⁪‭‎‎⁫‭‮⁪⁮‭⁭⁬‮.cs" />
+    <Compile Include="‬‮‫‍‎​⁮⁭‬‫⁫‍‪‍⁪‌‫⁬‬‬‮‍⁯⁫‭‌⁬⁮‌‬⁫‪⁪‍⁬‬​⁪⁭⁯‮.cs" />
+    <Compile Include="‬⁪⁭‬‫‫‌‌​⁪⁫⁫‪⁭‏‫⁪⁪⁬‍‏‭‫‌‪‎‍‮⁮‭‏⁯​⁪‮⁪‭⁯‮‭‮.cs" />
+    <Compile Include="‬⁫‌‎‎‏⁪‏⁯‬⁮⁯‪‍‫⁮⁬⁪‭⁭‮⁮‫⁭​⁫‮‍‮​‫⁮‬‭⁪‮⁪⁭⁫‏‮.cs" />
+    <Compile Include="‬⁬​‏‎‍⁮⁫‎⁪⁯‍​⁬‎‍‏⁮‏⁪‬⁮⁪‬‭⁬‬⁫‮‭⁯‌⁪‬⁫‪‬⁫‭‪‮.cs" />
+    <Compile Include="‮​‪‭‬‎‎‫⁭​⁪⁮⁪‎⁬‍⁬‭⁮‮‌‬⁮⁬⁮‎⁪‪‏‫⁬⁪⁭⁫‭‍⁮‬‎⁬‮.cs" />
+    <Compile Include="‮‬‬‮‮⁪⁯‍​‍‬‌⁫⁫⁮‭‌‏⁮‮‫‫​‭‪‌⁮‪‍‪‍‪‬‪‫‎⁪​‫‎‮.cs" />
+    <Compile Include="‮‭⁮‭‮‎⁫‪‏‬‮‭‮⁯‫‎‭⁭⁮⁬⁫‪‮​⁭‎⁬​⁭‪⁪⁬‮​‬‏⁮‎‌⁪‮.cs" />
+    <Compile Include="⁪‭‭⁭‭‪‏⁪‭‏⁬​⁮‭⁮‭‎‌⁯‮⁯⁪‌⁮‮⁭‬⁮‬⁪‏‍‭‫​‬⁯⁬​‪‮.cs" />
+    <Compile Include="⁪⁮⁬‭⁪‭‬‬⁬‍‍‫‍‌‮‏‎⁪‏⁬‍‎‌⁫‬⁭‬​⁬‮⁭‫⁮⁫‫‬⁬‍‬⁪‮.cs" />
+    <Compile Include="⁫‍⁪‮‬‌‮⁮‏‫​⁮‎⁫⁪‍⁮‪‬‌‏‮‪‪​‬‪⁪‍‮⁭⁮⁫⁫⁬‭⁬​‏‎‮.cs" />
+    <Compile Include="⁫‪‮⁪‍⁬⁬⁪‌‍​‭‪⁯‪⁬‫‬⁯‫⁯‪‍⁪⁫‪‏‍‭⁪‬​‪‮‬‮⁮‮⁫‮‮.cs" />
+    <Compile Include="⁫‫‪⁭⁯‍⁯‌‮‍⁫‫‏⁪‍⁭⁯‌‮⁫‭⁫‌⁪‌⁫‫‌⁮‌‍‪‮⁯‏⁪⁮‪‍‬‮.cs" />
+    <Compile Include="⁫‬‍‌‭‬‫‍⁮⁯‍‎‫‮‭⁭⁬​⁮‫‍‌⁮⁭‫‮‏‫‎​⁬‭‪‭‎⁬​⁭‏⁫‮.cs" />
+    <Compile Include="⁫⁯⁮‬‮‮‮‪⁫​⁯‎‬⁪​​⁮‎⁭‪⁮‍‏‏⁪‬‮‭⁮⁫⁫‭​⁪⁮⁮‎⁭⁫⁮‮.cs" />
+    <Compile Include="⁭‪‍‭⁭‭‬⁬⁮‍⁭‫⁯‎‫‏‎‬‬‍‎⁭‮‍⁯‪‭⁭⁭‪‮​⁭‮⁮‭‎‎⁫‏‮.cs" />
+    <Compile Include="⁮​‏‎‬⁬⁭⁫⁭‮‪‫⁬⁭‌⁬‮⁪⁮‍‮‌‮‫‎⁬⁭​‪⁬‏​‬⁯⁮‎‪‌‪⁯‮.cs" />
+    <Compile Include="⁮‍‌‌‍‬⁬⁫‮⁮‬‭⁮‍‎‌‪⁪⁬‌⁬‎​‫‭‪‍⁮⁭⁪‎‍‪⁫‮⁬‭‭‎⁬‮.cs" />
+    <Compile Include="⁮‏‪‍⁯‎⁪⁪⁬⁪‮⁪‫‏‫⁮⁬⁫‍⁬‫‭⁫​⁯‌‮⁬⁫‌​⁪⁭‮⁮‭⁪‬‎‮.cs" />
+    <Compile Include="⁮‫⁭‎⁬‍‏‌‌‪‭⁯‪‏​⁯‌‫‌‬‪⁭‌‫⁭‭⁮⁭​‮‮‬⁯‬​‪‬​‫⁭‮.cs" />
+    <Compile Include="⁮‬‏⁮‍⁭‏⁫‎‫⁪‬‮‪⁬​⁪‏⁯‮‎‮​‬‭‏​‌⁬​⁬​‪⁯‍‮‫⁪‍⁪‮.cs" />
+    <Compile Include="⁮‭‬‭‏‬⁭⁬‏‫‮‭⁯‭‫‏‬‭‌‫‭‬⁬​⁮​‪‌‮⁮⁬⁭‬‫‬‌⁬‏⁮‮‮.cs" />
+    <Compile Include="⁮‭⁫‭⁫‏‏⁫⁭⁭⁬⁫‎⁬⁯⁬⁭‎⁮⁬‬‭⁫‭‌‍⁭‪‪‪⁯‏‭⁪⁮‬‪⁭‭‌‮.cs" />
+    <Compile Include="⁮‮‭⁭⁪⁫⁬‬‬‏⁭⁫‍‭⁯⁫⁫⁮​⁯‮‎⁬‪‌‫‫⁫​‮​​⁯‪‎⁮​‎‍‌‮.cs" />
+    <Compile Include="⁯‍‫‮⁫⁬‍‍‮⁮⁬‍⁬‎‭‮‬‏‍⁮‍‪⁪‌⁬⁮⁭‌⁯‌‭‫⁬⁫‬⁬⁪‌‌⁫‮.cs" />
+    <Compile Include="⁯⁪⁫⁯⁭⁭‎⁪‮⁯‪‭​‍‪⁫‌‌‌‍‎‬⁪⁭​⁬‬‍⁫‎‏‬⁭​⁫⁫‭‍‏‬‮.cs" />
+    <Compile Include="⁯⁯‬‌‫‫⁮‎⁮‪‌⁬‮⁭⁭⁭‌⁮⁮⁭⁮‪⁫‫‮⁮⁯⁪‌⁭‬‭‬‫‪‏‮‫⁪‭‮.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

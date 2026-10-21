@@ -25,7 +25,9 @@ def main():
         'logs','settings.ini','games.txt','boe_mcu_mat.ini','*.log','*.tmp','verification','manifest.json'))
     # README changes alone do not trigger the EXE's POST_BUILD copy.
     shutil.copy2(root/'README.zh-CN.md',package/'README.zh-CN.md')
-    for name in ('msvcp140.dll','vcruntime140.dll','vcruntime140_1.dll'):
+    (package/'docs').mkdir(exist_ok=True)
+    shutil.copy2(root/'docs/ODYSSEY.zh-CN.md',package/'docs/ODYSSEY.zh-CN.md')
+    for name in ('msvcp140.dll','vcruntime140.dll','vcruntime140_1.dll','concrt140.dll','msvcp140_atomic_wait.dll'):
         shutil.copy2(args.crt/name,package/name)
         # Normal game loading uses runtime on PATH, not our EXE's directory.
         shutil.copy2(args.crt/name,package/'runtime'/name)
@@ -46,6 +48,10 @@ def main():
     write_json(package/'vendor/provenance.json',provenance)
     verification=package/'verification';verification.mkdir()
     shutil.copy2(root/'RE/bridge_rotation_0.4.0.md',verification/'rotation.md')
+    shutil.copy2(root/'RE/odyssey_hub_compatibility.md',verification/'odyssey-compatibility.md')
+    shutil.copy2(root/'RE/evidence/odyssey/hub-live-mock-device.log',verification/'odyssey-hub-mock.log')
+    shutil.copy2(root/'RE/evidence/odyssey/hub-live-mock.json',verification/'odyssey-hub-mock.json')
+    shutil.copytree(build/'verification-ui',verification/'ui')
     shutil.copy2(test_log,verification/'test.log')
     shutil.copy2(build/'Testing/Temporary/LastTest.log',verification/'test-details.log')
     shutil.copy2(source/'logs/StereoTest-offline.log',verification/'StereoTest-offline.log')
@@ -70,7 +76,7 @@ def main():
         'result_proxy_filter_bypass':False,'head_pose':'stereo subpixel facial geometry; Rodrigues radians',
         'mcu_sha256':sha(package/'vendor/MCU_library.dll')})
     manifest={'product':'TitanLeiaBridge','version':version,'sdk':'1.34.10',
-        'architecture':'x64','graphics':'DX12','protocol':3,
+        'architecture':'x64','graphics':'DX11 legacy / DX12 legacy and modern','protocol':3,
         'packagedAtUtc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'files':[{'file':p.relative_to(package).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p)}
                  for p in sorted(package.rglob('*')) if p.is_file()]}

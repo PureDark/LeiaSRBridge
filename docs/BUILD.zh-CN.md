@@ -1,6 +1,6 @@
 # 构建与目录约定
 
-项目根目录现为 `F:\开发项目\TitanLeiaBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。运行时行为和版本仍为 0.4.0。
+项目根目录现为 `F:\开发项目\TitanLeiaBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.7.0，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
 
 ## 配置、编译、测试
 
@@ -17,6 +17,22 @@ ctest --preset release
 也可运行 `./build.ps1` 完成以上三个步骤。`-BuildDirectory` 支持单独输出目录，`-Preset` 支持本机预设。测试总日志保存在 `build/full-tracking-tests.log`，详细日志在 `build/Testing/Temporary/LastTest.log`。可执行文件在 `build/package/`，PDB 在 `build/symbols/`。
 
 CMake 自动查找 Python 和 Windows SDK 的 `mt.exe`，也可通过缓存变量 `Python3_EXECUTABLE`、`PORTABLE_PYTHON`、`PORTABLE_MT` 显式设置路径。
+
+## 界面构建
+
+正式界面模板在 `src/app/ui/index.html.in`，CMake 填入版本后通过 Windows 资源嵌入 EXE。`WebUi.cpp` 静态链接微软 WebView2 loader，使用系统安装的 WebView2 Runtime。用户不需要 Node.js、Python 或 HTTP 服务；UI 缓存放在 `%LOCALAPPDATA%/TitanLeiaBridge/WebView2`，不写入项目和发布包。
+
+首次克隆运行 `./tools/setup_webview2.ps1`，下载并校验官方 SDK 1.0.4258.31，保存在忽略入库的 `dependencies/WebView2/sdk`。本机已有该依赖。可通过 `WEBVIEW2_SDK` 指定解压位置。nlohmann/json 3.12.0 单头文件及 MIT 许可证随源码保存。
+
+`tools/generate_app_icon.py` 根据设计稿双色圆形几何生成透明 SVG/PNG/ICO，使用 Python 标准库。图标作为源资源入库，不属于编译产物。
+
+`UiDesign` 检查原稿 CSS 逐字保留与图标 alpha；`WebUi` 在隔离目录用 `--mock --ui-test` 验证实际 WebView2 DOM、真实 IPC 调参和保存，截图位于 `build/verification-ui`。它不打开 MCU、摄像头或游戏。`AppControls` 验证全局快捷键及跨进程设置恢复。模拟模式的本机测试命令不会在正常设备模式启用。
+
+动画边界可另外运行 `node tools/test_viz_motion.cjs` 验证：直接执行正式页面中的动画逻辑，覆盖 147 组极端位置、显示范围及旋转跨 ±180° 的插值。Node.js 只用于该开发检查，程序本身不需要。
+
+启动功能：`Startup.cpp` 管理当前用户 Run 项；`StartupSmoke` 在隔离 HKCU 路径验证 Unicode/空格路径、跨进程保留、版本迁移、取消及无关项保留。依据 [Windows Run 文档](https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys)，命令长度限制为 260 个字符，超长路径会明确报错。测试不写真实 Run 项。
+
+`BrokerStartupSmoke` 将真实 broker 与测试专用 provider 链接，验证首次 USB 未就绪、释放资源、延迟成功及退出打断等待，不加载厂商驱动。`WebUi` 检查自启动开关和模拟模式不写系统设置，`AppControls` 检查重复后台启动退出。
 
 ## 本地依赖
 
@@ -47,7 +63,7 @@ python -B tools/prepare_vendor.py '<厂商目录>' dependencies/vendor --mt '<Wi
 
 ## 开发记录与设计
 
-- `design/titan-bridge-concept.html`：独立 HTML 交互设计稿，可直接用浏览器打开；PNG 是设计预览。
+- `design/titan-bridge-opus5.5.html`：本次采用的界面设计稿；原文件和 PNG 均保留。`titan-bridge-concept.html` 是早期方案。
 - `RE/`：原有逆向报告、证据、工具和探针源码；历史记录中的旧路径不改写。
 - `docs/agent-history/`：主会话与 13 个子 Agent 的 JSONL 快照、文本版及附件，纳入 Git。
 - `docs/migration/inventory.json`：迁移前的 5,012 个文件及哈希，已在目标目录逐个核验。随后旧 build 移到归档目录，少量构建脚本已按新布局修改。

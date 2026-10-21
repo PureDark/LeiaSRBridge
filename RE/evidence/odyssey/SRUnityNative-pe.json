@@ -1,0 +1,163 @@
+{
+  "imports": {
+    "SimulatedRealityDirectX.dll": [
+      "?enableLateLatching@DX11WeaverBase@SR@@QEAAX_N@Z",
+      "?getCrosstalkStaticFactor@DX11WeaverBase@SR@@QEBAMXZ",
+      "?setLatencyInFrames@PredictingDX12Weaver@SR@@QEAAX_K@Z",
+      "?getLatency@PredictingDX12Weaver@SR@@QEAA_KXZ",
+      "?setLatency@PredictingDX12Weaver@SR@@QEAAX_K@Z",
+      "??1PredictingDX12Weaver@SR@@QEAA@XZ",
+      "??0PredictingDX12Weaver@SR@@QEAA@AEAVSRContext@1@PEAUID3D12Device@@PEAUID3D12CommandAllocator@@PEAUID3D12CommandQueue@@PEAUID3D12Resource@@4PEAUHWND__@@@Z",
+      "?weave@DX12WeaverBase@SR@@QEAAXII@Z",
+      "?canWeave@DX12WeaverBase@SR@@QEAA_NXZ",
+      "?getCrosstalkDynamicFactor@DX12WeaverBase@SR@@QEBAMXZ",
+      "?setCrosstalkDynamicFactor@DX12WeaverBase@SR@@QEAAXM@Z",
+      "?getCrosstalkStaticFactor@DX12WeaverBase@SR@@QEBAMXZ",
+      "?setCrosstalkStaticFactor@DX12WeaverBase@SR@@QEAAXM@Z",
+      "?getACTMode@DX12WeaverBase@SR@@QEBA?AW4WeaverACTMode@@XZ",
+      "?setACTMode@DX12WeaverBase@SR@@QEAAXW4WeaverACTMode@@@Z",
+      "?setCommandList@DX12WeaverBase@SR@@QEAAXPEAUID3D12GraphicsCommandList@@@Z",
+      "?getFrameBuffer@DX11WeaverBase@SR@@QEAAPEAUID3D11RenderTargetView@@XZ",
+      "?isLateLatchingEnabled@DX11WeaverBase@SR@@QEBA_NXZ",
+      "?setACTMode@DX11WeaverBase@SR@@QEAAXW4WeaverACTMode@@@Z",
+      "?setCrosstalkDynamicFactor@DX11WeaverBase@SR@@QEAAXM@Z",
+      "?getCrosstalkDynamicFactor@DX11WeaverBase@SR@@QEBAMXZ",
+      "?canWeave@DX11WeaverBase@SR@@QEAA_NXZ",
+      "?weave@DX11WeaverBase@SR@@QEAAXII@Z",
+      "??0PredictingDX11Weaver@SR@@QEAA@AEAVSRContext@1@PEAUID3D11Device@@PEAUID3D11DeviceContext@@IIPEAUHWND__@@@Z",
+      "??0PredictingDX11Weaver@SR@@QEAA@AEAVSRContext@1@PEAUID3D11Device@@PEAUID3D11DeviceContext@@IIW4DXGI_FORMAT@@PEAUHWND__@@@Z",
+      "??1PredictingDX11Weaver@SR@@QEAA@XZ",
+      "?setLatency@PredictingDX11Weaver@SR@@QEAAX_K@Z",
+      "?getLatency@PredictingDX11Weaver@SR@@QEAA_KXZ",
+      "?setLatencyInFrames@PredictingDX11Weaver@SR@@QEAAX_K@Z",
+      "?getACTMode@DX11WeaverBase@SR@@QEBA?AW4WeaverACTMode@@XZ",
+      "?setCrosstalkStaticFactor@DX11WeaverBase@SR@@QEAAXM@Z"
+    ],
+    "D3DCOMPILER_47.dll": [
+      "D3DCompile"
+    ],
+    "SimulatedRealityCore.dll": [
+      "?initialize@SRContext@SR@@QEAAXXZ"
+    ],
+    "opencv_world343.dll": [
+      "?deallocate@String@cv@@AEAAXXZ"
+    ],
+    "KERNEL32.dll": [
+      "GetSystemTimeAsFileTime",
+      "GetCurrentThreadId",
+      "GetCurrentProcessId",
+      "QueryPerformanceCounter",
+      "TerminateProcess",
+      "GetCurrentProcess",
+      "GetModuleHandleW",
+      "IsProcessorFeaturePresent",
+      "DisableThreadLibraryCalls",
+      "SetUnhandledExceptionFilter",
+      "UnhandledExceptionFilter",
+      "IsDebuggerPresent",
+      "RtlVirtualUnwind",
+      "RtlLookupFunctionEntry",
+      "RtlCaptureContext",
+      "CreateEventA",
+      "WaitForSingleObject",
+      "GetStartupInfoW",
+      "InitializeSListHead"
+    ],
+    "MSVCP140.dll": [
+      "?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ",
+      "?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ",
+      "?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ",
+      "?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ",
+      "?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z",
+      "?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z",
+      "?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z",
+      "?width@ios_base@std@@QEAA_J_J@Z",
+      "?width@ios_base@std@@QEBA_JXZ",
+      "?flags@ios_base@std@@QEBAHXZ",
+      "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_N@Z",
+      "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z",
+      "?good@ios_base@std@@QEBA_NXZ",
+      "?_W_Getmonths@_Locinfo@std@@QEBAPEBGXZ",
+      "?_W_Getdays@_Locinfo@std@@QEBAPEBGXZ",
+      "?_Getcvt@_Locinfo@std@@QEBA?AU_Cvtvec@@XZ",
+      "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@M@Z",
+      "?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ",
+      "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z",
+      "?_Xbad_alloc@std@@YAXXZ",
+      "?_Xlength_error@std@@YAXPEBD@Z",
+      "?_Xout_of_range@std@@YAXPEBD@Z",
+      "?uncaught_exception@std@@YA_NXZ",
+      "_Mbrtowc"
+    ],
+    "d3d12.dll": [
+      "D3D12SerializeRootSignature"
+    ],
+    "VCRUNTIME140.dll": [
+      "__C_specific_handler",
+      "__current_exception",
+      "__std_type_info_destroy_list",
+      "_purecall",
+      "__std_terminate",
+      "__std_exception_copy",
+      "__std_exception_destroy",
+      "_CxxThrowException",
+      "memset",
+      "memcpy",
+      "memmove",
+      "__current_exception_context"
+    ],
+    "VCRUNTIME140_1.dll": [
+      "__CxxFrameHandler4"
+    ],
+    "api-ms-win-crt-runtime-l1-1-0.dll": [
+      "_initterm_e",
+      "_crt_atexit",
+      "_invalid_parameter_noinfo_noreturn",
+      "_initialize_narrow_environment",
+      "_initterm",
+      "_cexit",
+      "_configure_narrow_argv",
+      "_seh_filter_dll",
+      "_execute_onexit_table",
+      "_initialize_onexit_table",
+      "terminate",
+      "_register_onexit_function",
+      "_crt_at_quick_exit"
+    ],
+    "api-ms-win-crt-stdio-l1-1-0.dll": [
+      "__acrt_iob_func",
+      "__stdio_common_vfprintf",
+      "__stdio_common_vsprintf",
+      "__stdio_common_vsprintf_s"
+    ],
+    "api-ms-win-crt-heap-l1-1-0.dll": [
+      "calloc",
+      "malloc",
+      "free",
+      "_callnewh"
+    ]
+  },
+  "exports": {
+    "DestroyWeaver": null,
+    "EnableLateLatching": null,
+    "GetACTMode": null,
+    "GetCrosstalkDynamicFactor": null,
+    "GetCrosstalkStaticFactor": null,
+    "GetLatency": null,
+    "GetNativeGraphicsEvent": null,
+    "GetWeaverEnabled": null,
+    "IsLateLatchingEnabled": null,
+    "SetACTMode": null,
+    "SetCrosstalkDynamicFactor": null,
+    "SetCrosstalkStaticFactor": null,
+    "SetLatency": null,
+    "SetLatencyInFrames": null,
+    "SetUnityWindowHandle": null,
+    "SetWeaverContextPtr": null,
+    "SetWeaverOutputResolution": null,
+    "SetWeaverRenderTextureFormat": null,
+    "SetWeaverResourcePtr": null,
+    "UnityPluginLoad": null,
+    "UnityPluginUnload": null
+  }
+}

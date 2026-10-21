@@ -1,0 +1,27 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x1800010f0\",\"code\":\"_QWORD *__fastcall Odyssey3DSDK::ViewMappingFactory::create_instance(_QWORD *a1)\\n{\\n  _QWORD *v2; // rax\\n\\n  v2 = (_QWORD *)sub_180004690(Size: 8u); /*0x1800010fe*/\\n  if ( v2 != nullptr ) /*0x180001106*/\\n  {\\n    *v2 = &Odyssey3DSDK::LeiaViewMappingFactory::`vftable'; /*0x18000110f*/\\n    *a1 = v2; /*0x180001112*/\\n  }\\n  else\\n  {\\n    *a1 = 0; /*0x18000111e*/\\n  }\\n  return a1; /*0x180001118*/\\n}\",\"refs\":[{\"addr\":\"0x180004690\",\"name\":\"sub_180004690\"},{\"addr\":\"0x1800065a0\",\"name\":\"??_7LeiaViewMappingFactory@Odyssey3DSDK@@6B@\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x1800010f0",
+      "code": "_QWORD *__fastcall Odyssey3DSDK::ViewMappingFactory::create_instance(_QWORD *a1)\n{\n  _QWORD *v2; // rax\n\n  v2 = (_QWORD *)sub_180004690(Size: 8u); /*0x1800010fe*/\n  if ( v2 != nullptr ) /*0x180001106*/\n  {\n    *v2 = &Odyssey3DSDK::LeiaViewMappingFactory::`vftable'; /*0x18000110f*/\n    *a1 = v2; /*0x180001112*/\n  }\n  else\n  {\n    *a1 = 0; /*0x18000111e*/\n  }\n  return a1; /*0x180001118*/\n}",
+      "refs": [
+        {
+          "addr": "0x180004690",
+          "name": "sub_180004690"
+        },
+        {
+          "addr": "0x1800065a0",
+          "name": "??_7LeiaViewMappingFactory@Odyssey3DSDK@@6B@"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,2 @@
+This directory satisfies SRUnity runtime discovery.
+TitanOdysseyHook routes SR DLL loads to the parent runtime directory.

@@ -223,9 +223,6 @@ bool Renderer::Record(const WeaveRequest& request, const Snapshot* snapshot, std
     if (!request.commandList || !request.inputSbs || !impl_->device) {
         error = "Missing command list, SBS texture, or D3D12 device"; return false;
     }
-    if (request.readSrgb || request.writeSrgb) {
-        error = "Explicit SRGB shader conversion is unsupported in this SDK 1.34.10 test build"; return false;
-    }
     if (request.commandList->GetType() != D3D12_COMMAND_LIST_TYPE_DIRECT) {
         error = "Weave requires a direct graphics command list"; return false;
     }
@@ -279,7 +276,7 @@ bool Renderer::Record(const WeaveRequest& request, const Snapshot* snapshot, std
     ID3D12DescriptorHeap* heaps[] = {state.descriptors.Get()};
     list->SetDescriptorHeaps(1, heaps);
     list->SetGraphicsRoot32BitConstants(0, 20, &constants, 0);
-    const float origin[4] = {vp.TopLeftX, vp.TopLeftY, 0, 0};
+    const float origin[4] = {vp.TopLeftX, vp.TopLeftY, request.readSrgb ? 1.f : 0.f, request.writeSrgb ? 1.f : 0.f};
     list->SetGraphicsRoot32BitConstants(1, 4, origin, 0);
     list->SetGraphicsRootDescriptorTable(2, input);
     list->RSSetViewports(1, &vp);

@@ -1,0 +1,45 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"query\":\"??0LeiaTrackedSBSMapper@Odyssey3DSDK@@QEAA@XZ\",\"fn\":{\"addr\":\"0x180001400\",\"name\":\"??0LeiaTrackedSBSMapper@Odyssey3DSDK@@QEAA@XZ\",\"size\":\"0xe\"},\"error\":null},{\"query\":\"??1LeiaTrackedSBSMapper@Odyssey3DSDK@@UEAA@XZ\",\"fn\":null,\"error\":\"Not found\"},{\"query\":\"??_7LeiaTrackedSBSMapper@Odyssey3DSDK@@6B@\",\"fn\":null,\"error\":\"Not a function\"},{\"query\":\"?create_instance@ViewMappingFactory@Odyssey3DSDK@@SA?AV?$unique_ptr@VViewMappingFactory@Odyssey3DSDK@@U?$default_delete@VViewMappingFactory@Odyssey3DSDK@@@std@@@std@@XZ\",\"fn\":{\"addr\":\"0x1800010f0\",\"name\":\"?create_instance@ViewMappingFactory@Odyssey3DSDK@@SA?AV?$unique_ptr@VViewMappingFactory@Odyssey3DSDK@@U?$default_delete@VViewMappingFactory@Odyssey3DSDK@@@std@@@std@@XZ\",\"size\":\"0x3e\"},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "query": "??0LeiaTrackedSBSMapper@Odyssey3DSDK@@QEAA@XZ",
+          "fn": {
+            "addr": "0x180001400",
+            "name": "??0LeiaTrackedSBSMapper@Odyssey3DSDK@@QEAA@XZ",
+            "size": "0xe"
+          },
+          "error": null
+        },
+        {
+          "query": "??1LeiaTrackedSBSMapper@Odyssey3DSDK@@UEAA@XZ",
+          "fn": null,
+          "error": "Not found"
+        },
+        {
+          "query": "??_7LeiaTrackedSBSMapper@Odyssey3DSDK@@6B@",
+          "fn": null,
+          "error": "Not a function"
+        },
+        {
+          "query": "?create_instance@ViewMappingFactory@Odyssey3DSDK@@SA?AV?$unique_ptr@VViewMappingFactory@Odyssey3DSDK@@U?$default_delete@VViewMappingFactory@Odyssey3DSDK@@@std@@@std@@XZ",
+          "fn": {
+            "addr": "0x1800010f0",
+            "name": "?create_instance@ViewMappingFactory@Odyssey3DSDK@@SA?AV?$unique_ptr@VViewMappingFactory@Odyssey3DSDK@@U?$default_delete@VViewMappingFactory@Odyssey3DSDK@@@std@@@std@@XZ",
+            "size": "0x3e"
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

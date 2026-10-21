@@ -3,3 +3,12 @@ EXPORTS
     ?create@SRContext@SR@@SAPEAV12@W4NetworkMode@12@@Z=TitanLeiaRuntime.?create@SRContext@SR@@SAPEAV12@W4NetworkMode@12@@Z
     ?initialize@SRContext@SR@@QEAAXXZ=TitanLeiaRuntime.?initialize@SRContext@SR@@QEAAXXZ
     ?deleteSRContext@SRContext@SR@@SAXPEAV12@@Z=TitanLeiaRuntime.?deleteSRContext@SRContext@SR@@SAXPEAV12@@Z
+    ??0SRContext@SR@@QEAA@W4NetworkMode@01@@Z=TitanLeiaRuntime.??0SRContext@SR@@QEAA@W4NetworkMode@01@@Z
+    ??0SystemEventListener@SR@@QEAA@XZ=TitanLeiaRuntime.??0SystemEventListener@SR@@QEAA@XZ
+    ??1SRContext@SR@@UEAA@XZ=TitanLeiaRuntime.??1SRContext@SR@@UEAA@XZ
+    ?create@SystemSense@SR@@SAPEAV12@AEAVSRContext@2@@Z=TitanLeiaRuntime.?create@SystemSense@SR@@SAPEAV12@AEAVSRContext@2@@Z
+    ?print@SRContext@SR@@UEAAXAEAUSR_packet@@@Z=TitanLeiaRuntime.?print@SRContext@SR@@UEAAXAEAUSR_packet@@@Z
+    ?receive@SRContext@SR@@UEAAXAEAUSR_packet@@@Z=TitanLeiaRuntime.?receive@SRContext@SR@@UEAAXAEAUSR_packet@@@Z
+    ?stopListening@SystemEventStream@SR@@QEAAXXZ=TitanLeiaRuntime.?stopListening@SystemEventStream@SR@@QEAAXXZ
+    ??1ServerNotAvailableException@SR@@UEAA@XZ=TitanLeiaRuntime.??1ServerNotAvailableException@SR@@UEAA@XZ
+    ?create@SRContext@SR@@SAPEAV12@_NW4NetworkMode@12@@Z=TitanLeiaRuntime.?create@SRContext@SR@@SAPEAV12@_NW4NetworkMode@12@@Z

@@ -1,3 +1,4 @@
 LIBRARY SimulatedRealityDisplays
 EXPORTS
     ?create@SwitchableLensHint@SR@@SAPEAV12@AEAVSRContext@2@@Z=TitanLeiaRuntime.?create@SwitchableLensHint@SR@@SAPEAV12@AEAVSRContext@2@@Z
+    ?create@Display@SR@@SAPEAV12@AEAVSRContext@2@@Z=TitanLeiaRuntime.?create@Display@SR@@SAPEAV12@AEAVSRContext@2@@Z

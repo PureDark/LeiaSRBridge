@@ -1,0 +1,6 @@
+#pragma comment(linker, "/export:createHeadTracker=TitanLeiaRuntime.createHeadTracker")
+#pragma comment(linker, "/export:createHeadListener=TitanLeiaRuntime.createHeadListener")
+#pragma comment(linker, "/export:deleteHeadListener=TitanLeiaRuntime.deleteHeadListener")
+#pragma comment(linker, "/export:createEyeTracker=TitanLeiaRuntime.createEyeTracker")
+#pragma comment(linker, "/export:createEyePairListener=TitanLeiaRuntime.createEyePairListener")
+#pragma comment(linker, "/export:deleteEyePairListener=TitanLeiaRuntime.deleteEyePairListener")

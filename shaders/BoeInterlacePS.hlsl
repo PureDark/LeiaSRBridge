@@ -2,7 +2,7 @@
 // Vendor DLL SHA256: 380a9194a5c2ab42cf1f70a2b3c383f9b340b3b292ac72177350aa0dae56cc6f
 Texture2D<float4> InputTexture : register(t0);
 cbuffer OpticalConstants : register(b0) { uint4 Constants[5]; };
-cbuffer PixelOrigin : register(b1) { float2 ViewportOrigin; uint2 OriginPadding; };
+#include "ColorConversion.hlsli"
 float4 main(float4 position : SV_Position) : SV_Target {
 uint4 threadId=uint4(uint2(max(position.xy-ViewportOrigin,0.0)),0,0);
 precise uint4 r0=0;
@@ -138,7 +138,7 @@ r4.x=((r4.yyyy >> uint4(0x00000001u,0x00000001u,0x00000001u,0x00000001u))).x;
 // mov r4.w, l(0x00000000)
 r4.w=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).w;
 // ld_indexable(texture2d)(float,float,float,float) r4.x, r4.xzww, t0.xyzw
-r4.x=(asuint(InputTexture.Load((asint(r4.xzww)).xyz)).xyzw).x;
+r4.x=(asuint(ReadInput((asint(r4.xzww)).xyz)).xyzw).x;
 // else
 } else {
 // lt r3.z, r0.z, r1.w
@@ -200,23 +200,23 @@ r11.xy=(asuint(min(asint(r7.xyxx),asint(r7.zwzz)))).xy;
 // mov r9.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r9.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r3.w, r9.xyzw, t0.yzwx
-r3.w=(asuint(InputTexture.Load((asint(r9.xyzw)).xyz)).yzwx).w;
+r3.w=(asuint(ReadInput((asint(r9.xyzw)).xyz)).yzwx).w;
 // mov r8.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r8.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r5.w, r8.xyzw, t0.yzwx
-r5.w=(asuint(InputTexture.Load((asint(r8.xyzw)).xyz)).yzwx).w;
+r5.w=(asuint(ReadInput((asint(r8.xyzw)).xyz)).yzwx).w;
 // add r3.w, r3.w, r5.w
 r3.w=(asuint(asfloat(r3.wwww) + asfloat(r5.wwww))).w;
 // mov r10.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r10.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r5.w, r10.xyzw, t0.yzwx
-r5.w=(asuint(InputTexture.Load((asint(r10.xyzw)).xyz)).yzwx).w;
+r5.w=(asuint(ReadInput((asint(r10.xyzw)).xyz)).yzwx).w;
 // add r3.w, r3.w, r5.w
 r3.w=(asuint(asfloat(r3.wwww) + asfloat(r5.wwww))).w;
 // mov r11.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r11.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r5.w, r11.xyzw, t0.yzwx
-r5.w=(asuint(InputTexture.Load((asint(r11.xyzw)).xyz)).yzwx).w;
+r5.w=(asuint(ReadInput((asint(r11.xyzw)).xyz)).yzwx).w;
 // add r3.w, r3.w, r5.w
 r3.w=(asuint(asfloat(r3.wwww) + asfloat(r5.wwww))).w;
 // mul r5.w, r3.w, l(0x3e800000)
@@ -242,23 +242,23 @@ r7.xy=(asuint(min(asint(r7.xyxx),asint(r5.xyxx)))).xy;
 // mov r9.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r9.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r3.z, r9.xyzw, t0.yzxw
-r3.z=(asuint(InputTexture.Load((asint(r9.xyzw)).xyz)).yzxw).z;
+r3.z=(asuint(ReadInput((asint(r9.xyzw)).xyz)).yzxw).z;
 // mov r8.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r8.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r5.x, r8.xyzw, t0.xyzw
-r5.x=(asuint(InputTexture.Load((asint(r8.xyzw)).xyz)).xyzw).x;
+r5.x=(asuint(ReadInput((asint(r8.xyzw)).xyz)).xyzw).x;
 // add r3.z, r3.z, r5.x
 r3.z=(asuint(asfloat(r3.zzzz) + asfloat(r5.xxxx))).z;
 // mov r6.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r6.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r5.x, r6.xyzw, t0.xyzw
-r5.x=(asuint(InputTexture.Load((asint(r6.xyzw)).xyz)).xyzw).x;
+r5.x=(asuint(ReadInput((asint(r6.xyzw)).xyz)).xyzw).x;
 // add r3.z, r3.z, r5.x
 r3.z=(asuint(asfloat(r3.zzzz) + asfloat(r5.xxxx))).z;
 // mov r7.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r7.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r5.x, r7.xyzw, t0.xyzw
-r5.x=(asuint(InputTexture.Load((asint(r7.xyzw)).xyz)).xyzw).x;
+r5.x=(asuint(ReadInput((asint(r7.xyzw)).xyz)).xyzw).x;
 // add r3.z, r3.z, r5.x
 r3.z=(asuint(asfloat(r3.zzzz) + asfloat(r5.xxxx))).z;
 // mul r5.x, r3.z, l(0x3e800000)
@@ -355,7 +355,7 @@ r5.z=((r5.yyyy >> uint4(0x00000001u,0x00000001u,0x00000001u,0x00000001u))).z;
 // mov r5.w, l(0x00000000)
 r5.w=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).w;
 // ld_indexable(texture2d)(float,float,float,float) r4.x, r5.xzww, t0.xyzw
-r4.x=(asuint(InputTexture.Load((asint(r5.xzww)).xyz)).xyzw).x;
+r4.x=(asuint(ReadInput((asint(r5.xzww)).xyz)).xyzw).x;
 // else
 } else {
 // lt r0.z, r0.z, r1.w
@@ -425,7 +425,7 @@ r6.y=((r7.wwww & r6.yyyy)).y;
 // if_nz r6.y
 if ((r6.yyyy).x!=0) {
 // ld_indexable(texture2d)(float,float,float,float) r5.y, r5.xyzw, t0.yxzw
-r5.y=(asuint(InputTexture.Load((asint(r5.xyzw)).xyz)).yxzw).y;
+r5.y=(asuint(ReadInput((asint(r5.xyzw)).xyz)).yxzw).y;
 // mad r7.x, r5.y, l(0x3de38e39), r7.x
 r7.x=(asuint(mad(asfloat(r5.yyyy),asfloat(uint4(0x3de38e39u,0x3de38e39u,0x3de38e39u,0x3de38e39u)),asfloat(r7.xxxx)))).x;
 // endif
@@ -479,7 +479,7 @@ r6.y=((r7.wwww & r6.yyyy)).y;
 // if_nz r6.y
 if ((r6.yyyy).x!=0) {
 // ld_indexable(texture2d)(float,float,float,float) r5.y, r5.xyzw, t0.yxzw
-r5.y=(asuint(InputTexture.Load((asint(r5.xyzw)).xyz)).yxzw).y;
+r5.y=(asuint(ReadInput((asint(r5.xyzw)).xyz)).yxzw).y;
 // mad r7.x, r5.y, l(0x3de38e39), r7.x
 r7.x=(asuint(mad(asfloat(r5.yyyy),asfloat(uint4(0x3de38e39u,0x3de38e39u,0x3de38e39u,0x3de38e39u)),asfloat(r7.xxxx)))).x;
 // endif
@@ -654,7 +654,7 @@ r2.x=((r2.yyyy >> uint4(0x00000001u,0x00000001u,0x00000001u,0x00000001u))).x;
 // mov r2.w, l(0x00000000)
 r2.w=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).w;
 // ld_indexable(texture2d)(float,float,float,float) r4.y, r2.xzww, t0.xyzw
-r4.y=(asuint(InputTexture.Load((asint(r2.xzww)).xyz)).xyzw).y;
+r4.y=(asuint(ReadInput((asint(r2.xzww)).xyz)).xyzw).y;
 // else
 } else {
 // lt r1.y, r1.x, r0.x
@@ -716,23 +716,23 @@ r9.xy=(asuint(min(asint(r3.xzxx),asint(r9.xyxx)))).xy;
 // mov r7.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r7.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r1.w, r7.xyzw, t0.xzwy
-r1.w=(asuint(InputTexture.Load((asint(r7.xyzw)).xyz)).xzwy).w;
+r1.w=(asuint(ReadInput((asint(r7.xyzw)).xyz)).xzwy).w;
 // mov r6.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r6.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r2.w, r6.xyzw, t0.xzwy
-r2.w=(asuint(InputTexture.Load((asint(r6.xyzw)).xyz)).xzwy).w;
+r2.w=(asuint(ReadInput((asint(r6.xyzw)).xyz)).xzwy).w;
 // add r1.w, r1.w, r2.w
 r1.w=(asuint(asfloat(r1.wwww) + asfloat(r2.wwww))).w;
 // mov r8.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r8.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r2.w, r8.xyzw, t0.xzwy
-r2.w=(asuint(InputTexture.Load((asint(r8.xyzw)).xyz)).xzwy).w;
+r2.w=(asuint(ReadInput((asint(r8.xyzw)).xyz)).xzwy).w;
 // add r1.w, r1.w, r2.w
 r1.w=(asuint(asfloat(r1.wwww) + asfloat(r2.wwww))).w;
 // mov r9.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r9.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r2.w, r9.xyzw, t0.xzwy
-r2.w=(asuint(InputTexture.Load((asint(r9.xyzw)).xyz)).xzwy).w;
+r2.w=(asuint(ReadInput((asint(r9.xyzw)).xyz)).xzwy).w;
 // add r1.w, r1.w, r2.w
 r1.w=(asuint(asfloat(r1.wwww) + asfloat(r2.wwww))).w;
 // mul r2.w, r1.w, l(0x3e800000)
@@ -758,23 +758,23 @@ r8.xy=(asuint(min(asint(r3.xzxx),asint(r2.xyxx)))).xy;
 // mov r7.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r7.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r1.y, r7.xyzw, t0.xyzw
-r1.y=(asuint(InputTexture.Load((asint(r7.xyzw)).xyz)).xyzw).y;
+r1.y=(asuint(ReadInput((asint(r7.xyzw)).xyz)).xyzw).y;
 // mov r6.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r6.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r2.x, r6.xyzw, t0.yxzw
-r2.x=(asuint(InputTexture.Load((asint(r6.xyzw)).xyz)).yxzw).x;
+r2.x=(asuint(ReadInput((asint(r6.xyzw)).xyz)).yxzw).x;
 // add r1.y, r1.y, r2.x
 r1.y=(asuint(asfloat(r1.yyyy) + asfloat(r2.xxxx))).y;
 // mov r5.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r5.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r2.x, r5.xyzw, t0.yxzw
-r2.x=(asuint(InputTexture.Load((asint(r5.xyzw)).xyz)).yxzw).x;
+r2.x=(asuint(ReadInput((asint(r5.xyzw)).xyz)).yxzw).x;
 // add r1.y, r1.y, r2.x
 r1.y=(asuint(asfloat(r1.yyyy) + asfloat(r2.xxxx))).y;
 // mov r8.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r8.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r2.x, r8.xyzw, t0.yxzw
-r2.x=(asuint(InputTexture.Load((asint(r8.xyzw)).xyz)).yxzw).x;
+r2.x=(asuint(ReadInput((asint(r8.xyzw)).xyz)).yxzw).x;
 // add r1.y, r1.y, r2.x
 r1.y=(asuint(asfloat(r1.yyyy) + asfloat(r2.xxxx))).y;
 // mul r2.x, r1.y, l(0x3e800000)
@@ -871,7 +871,7 @@ r2.z=((r2.yyyy >> uint4(0x00000001u,0x00000001u,0x00000001u,0x00000001u))).z;
 // mov r2.w, l(0x00000000)
 r2.w=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).w;
 // ld_indexable(texture2d)(float,float,float,float) r4.y, r2.xzww, t0.xyzw
-r4.y=(asuint(InputTexture.Load((asint(r2.xzww)).xyz)).xyzw).y;
+r4.y=(asuint(ReadInput((asint(r2.xzww)).xyz)).xyzw).y;
 // else
 } else {
 // lt r0.x, r1.x, r0.x
@@ -939,7 +939,7 @@ r3.z=((r5.wwww & r3.zzzz)).z;
 // if_nz r3.z
 if ((r3.zzzz).x!=0) {
 // ld_indexable(texture2d)(float,float,float,float) r2.y, r2.xyzw, t0.xyzw
-r2.y=(asuint(InputTexture.Load((asint(r2.xyzw)).xyz)).xyzw).y;
+r2.y=(asuint(ReadInput((asint(r2.xyzw)).xyz)).xyzw).y;
 // mad r5.x, r2.y, l(0x3de38e39), r5.x
 r5.x=(asuint(mad(asfloat(r2.yyyy),asfloat(uint4(0x3de38e39u,0x3de38e39u,0x3de38e39u,0x3de38e39u)),asfloat(r5.xxxx)))).x;
 // endif
@@ -991,7 +991,7 @@ r3.z=((r5.wwww & r3.zzzz)).z;
 // if_nz r3.z
 if ((r3.zzzz).x!=0) {
 // ld_indexable(texture2d)(float,float,float,float) r2.y, r2.xyzw, t0.xyzw
-r2.y=(asuint(InputTexture.Load((asint(r2.xyzw)).xyz)).xyzw).y;
+r2.y=(asuint(ReadInput((asint(r2.xyzw)).xyz)).xyzw).y;
 // mad r5.x, r2.y, l(0x3de38e39), r5.x
 r5.x=(asuint(mad(asfloat(r2.yyyy),asfloat(uint4(0x3de38e39u,0x3de38e39u,0x3de38e39u,0x3de38e39u)),asfloat(r5.xxxx)))).x;
 // endif
@@ -1102,7 +1102,7 @@ r2.x=((r2.yyyy >> uint4(0x00000001u,0x00000001u,0x00000001u,0x00000001u))).x;
 // mov r2.w, l(0x00000000)
 r2.w=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).w;
 // ld_indexable(texture2d)(float,float,float,float) r4.z, r2.xzww, t0.xyzw
-r4.z=(asuint(InputTexture.Load((asint(r2.xzww)).xyz)).xyzw).z;
+r4.z=(asuint(ReadInput((asint(r2.xzww)).xyz)).xyzw).z;
 // else
 } else {
 // lt r0.x, r1.z, r0.y
@@ -1164,23 +1164,23 @@ r8.xy=(asuint(min(asint(r1.xyxx),asint(r8.xyxx)))).xy;
 // mov r6.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r6.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r0.z, r6.xyzw, t0.xyzw
-r0.z=(asuint(InputTexture.Load((asint(r6.xyzw)).xyz)).xyzw).z;
+r0.z=(asuint(ReadInput((asint(r6.xyzw)).xyz)).xyzw).z;
 // mov r5.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r5.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r1.w, r5.xyzw, t0.xywz
-r1.w=(asuint(InputTexture.Load((asint(r5.xyzw)).xyz)).xywz).w;
+r1.w=(asuint(ReadInput((asint(r5.xyzw)).xyz)).xywz).w;
 // add r0.z, r0.z, r1.w
 r0.z=(asuint(asfloat(r0.zzzz) + asfloat(r1.wwww))).z;
 // mov r7.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r7.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r1.w, r7.xyzw, t0.xywz
-r1.w=(asuint(InputTexture.Load((asint(r7.xyzw)).xyz)).xywz).w;
+r1.w=(asuint(ReadInput((asint(r7.xyzw)).xyz)).xywz).w;
 // add r0.z, r0.z, r1.w
 r0.z=(asuint(asfloat(r0.zzzz) + asfloat(r1.wwww))).z;
 // mov r8.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r8.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r1.w, r8.xyzw, t0.xywz
-r1.w=(asuint(InputTexture.Load((asint(r8.xyzw)).xyz)).xywz).w;
+r1.w=(asuint(ReadInput((asint(r8.xyzw)).xyz)).xywz).w;
 // add r0.z, r0.z, r1.w
 r0.z=(asuint(asfloat(r0.zzzz) + asfloat(r1.wwww))).z;
 // mul r1.w, r0.z, l(0x3e800000)
@@ -1206,23 +1206,23 @@ r2.xy=(asuint(min(asint(r1.xyxx),asint(r2.xyxx)))).xy;
 // mov r6.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r6.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r0.x, r6.xyzw, t0.zxyw
-r0.x=(asuint(InputTexture.Load((asint(r6.xyzw)).xyz)).zxyw).x;
+r0.x=(asuint(ReadInput((asint(r6.xyzw)).xyz)).zxyw).x;
 // mov r5.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r5.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r1.x, r5.xyzw, t0.zxyw
-r1.x=(asuint(InputTexture.Load((asint(r5.xyzw)).xyz)).zxyw).x;
+r1.x=(asuint(ReadInput((asint(r5.xyzw)).xyz)).zxyw).x;
 // add r0.x, r0.x, r1.x
 r0.x=(asuint(asfloat(r0.xxxx) + asfloat(r1.xxxx))).x;
 // mov r3.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r3.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r1.x, r3.xyzw, t0.zxyw
-r1.x=(asuint(InputTexture.Load((asint(r3.xyzw)).xyz)).zxyw).x;
+r1.x=(asuint(ReadInput((asint(r3.xyzw)).xyz)).zxyw).x;
 // add r0.x, r0.x, r1.x
 r0.x=(asuint(asfloat(r0.xxxx) + asfloat(r1.xxxx))).x;
 // mov r2.zw, l(0x00000000,0x00000000,0x00000000,0x00000000)
 r2.zw=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).zw;
 // ld_indexable(texture2d)(float,float,float,float) r1.x, r2.xyzw, t0.zxyw
-r1.x=(asuint(InputTexture.Load((asint(r2.xyzw)).xyz)).zxyw).x;
+r1.x=(asuint(ReadInput((asint(r2.xyzw)).xyz)).zxyw).x;
 // add r0.x, r0.x, r1.x
 r0.x=(asuint(asfloat(r0.xxxx) + asfloat(r1.xxxx))).x;
 // mul r1.x, r0.x, l(0x3e800000)
@@ -1319,7 +1319,7 @@ r2.z=((r2.yyyy >> uint4(0x00000001u,0x00000001u,0x00000001u,0x00000001u))).z;
 // mov r2.w, l(0x00000000)
 r2.w=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).w;
 // ld_indexable(texture2d)(float,float,float,float) r4.z, r2.xzww, t0.xyzw
-r4.z=(asuint(InputTexture.Load((asint(r2.xzww)).xyz)).xyzw).z;
+r4.z=(asuint(ReadInput((asint(r2.xzww)).xyz)).xyzw).z;
 // else
 } else {
 // lt r0.x, r1.z, r0.y
@@ -1389,7 +1389,7 @@ r1.y=((r3.zzzz & r1.yyyy)).y;
 // if_nz r1.y
 if ((r1.yyyy).x!=0) {
 // ld_indexable(texture2d)(float,float,float,float) r1.y, r2.xyzw, t0.xzyw
-r1.y=(asuint(InputTexture.Load((asint(r2.xyzw)).xyz)).xzyw).y;
+r1.y=(asuint(ReadInput((asint(r2.xyzw)).xyz)).xzyw).y;
 // mad r5.x, r1.y, l(0x3de38e39), r5.x
 r5.x=(asuint(mad(asfloat(r1.yyyy),asfloat(uint4(0x3de38e39u,0x3de38e39u,0x3de38e39u,0x3de38e39u)),asfloat(r5.xxxx)))).x;
 // endif
@@ -1443,7 +1443,7 @@ r2.y=((r3.zzzz & r2.yyyy)).y;
 // if_nz r2.y
 if ((r2.yyyy).x!=0) {
 // ld_indexable(texture2d)(float,float,float,float) r1.y, r1.xyzw, t0.xzyw
-r1.y=(asuint(InputTexture.Load((asint(r1.xyzw)).xyz)).xzyw).y;
+r1.y=(asuint(ReadInput((asint(r1.xyzw)).xyz)).xzyw).y;
 // mad r5.x, r1.y, l(0x3de38e39), r5.x
 r5.x=(asuint(mad(asfloat(r1.yyyy),asfloat(uint4(0x3de38e39u,0x3de38e39u,0x3de38e39u,0x3de38e39u)),asfloat(r5.xxxx)))).x;
 // endif
@@ -1542,6 +1542,6 @@ r4.z=(uint4(0x00000000u,0x00000000u,0x00000000u,0x00000000u)).z;
 // mov r4.w, l(0x3f800000)
 r4.w=(uint4(0x3f800000u,0x3f800000u,0x3f800000u,0x3f800000u)).w;
 // store_uav_typed u0.xyzw, vThreadID.xyyy, r4.xyzw
-return asfloat(r4.xyzw);
+return ConvertOutput(asfloat(r4.xyzw));
 // ret
 }

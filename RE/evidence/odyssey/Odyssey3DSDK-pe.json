@@ -1,0 +1,169 @@
+{
+  "file": "Odyssey3DSDK.dll",
+  "sha256": "2676acb8429932fdd13acd1772db0cb5bd4c510da1cd9f835c80bf2cd6f3b187",
+  "imports": {
+    "SimulatedRealityDirectX.dll": [
+      "?setInputFrameBuffer@DX12WeaverBase@SR@@QEAAXPEAUID3D12Resource@@@Z",
+      "??0PredictingDX11Weaver@SR@@QEAA@AEAVSRContext@1@PEAUID3D11Device@@PEAUID3D11DeviceContext@@IIPEAUHWND__@@@Z",
+      "?getFrameBuffer@DX12WeaverBase@SR@@QEAAPEAUID3D12Resource@@XZ",
+      "?setInputFrameBuffer@DX12WeaverBase@SR@@QEAAXPEAUID3D12Resource@@W4DXGI_FORMAT@@@Z",
+      "?setOutputFrameBuffer@DX12WeaverBase@SR@@QEAAXPEAUID3D12Resource@@@Z",
+      "?getFrameBuffer@DX11WeaverBase@SR@@QEAAPEAUID3D11RenderTargetView@@XZ",
+      "??1PredictingDX12Weaver@SR@@QEAA@XZ",
+      "?setCommandList@DX12WeaverBase@SR@@QEAAXPEAUID3D12GraphicsCommandList@@@Z",
+      "??1PredictingDX11Weaver@SR@@QEAA@XZ",
+      "?weave@DX11WeaverBase@SR@@QEAAXII@Z",
+      "??0PredictingDX12Weaver@SR@@QEAA@AEAVSRContext@1@PEAUID3D12Device@@PEAUID3D12CommandAllocator@@PEAUID3D12CommandQueue@@PEAUID3D12Resource@@4PEAUHWND__@@@Z",
+      "?setWindowHandle@DX12WeaverBase@SR@@QEAAXPEAUHWND__@@@Z",
+      "?weave@DX11WeaverBase@SR@@QEAAXIIII@Z",
+      "?setInputFrameBuffer@DX11WeaverBase@SR@@QEAAXPEAUID3D11ShaderResourceView@@@Z",
+      "?setContext@DX11WeaverBase@SR@@QEAAXPEAUID3D11DeviceContext@@@Z",
+      "?setWindowHandle@DX11WeaverBase@SR@@QEAAXPEAUHWND__@@@Z",
+      "?enableLateLatching@DX11WeaverBase@SR@@QEAAX_N@Z",
+      "?isLateLatchingEnabled@DX11WeaverBase@SR@@QEBA_NXZ",
+      "?weave@DX12WeaverBase@SR@@QEAAXIIII@Z"
+    ],
+    "SimulatedRealityCore.dll": [
+      "?deleteSRContext@SRContext@SR@@SAXPEAV12@@Z",
+      "??0SystemEventListener@SR@@QEAA@XZ",
+      "?stopListening@SystemEventStream@SR@@QEAAXXZ",
+      "?create@SystemSense@SR@@SAPEAV12@AEAVSRContext@2@@Z",
+      "?initialize@SRContext@SR@@QEAAXXZ",
+      "?create@SRContext@SR@@SAPEAV12@_NW4NetworkMode@12@@Z"
+    ],
+    "SimulatedRealityFaceTrackers.dll": [
+      "?stopListening@EyePairStream@SR@@QEAAXXZ",
+      "?create@EyeTracker@SR@@SAPEAV12@AEAVSRContext@2@@Z"
+    ],
+    "SimulatedRealityDisplays.dll": [
+      "?create@Display@SR@@SAPEAV12@AEAVSRContext@2@@Z",
+      "?create@SwitchableLensHint@SR@@SAPEAV12@AEAVSRContext@2@@Z"
+    ],
+    "USER32.dll": [
+      "MonitorFromWindow",
+      "MonitorFromPoint"
+    ],
+    "MSVCP140.dll": [
+      "?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A",
+      "?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A",
+      "?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z",
+      "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_K@Z",
+      "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z",
+      "?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z",
+      "?_Syserror_map@std@@YAPEBDH@Z",
+      "?_Xlength_error@std@@YAXPEBD@Z",
+      "?_Throw_Cpp_error@std@@YAXH@Z",
+      "_Cnd_do_broadcast_at_thread_exit",
+      "_Cnd_signal",
+      "_Cnd_broadcast",
+      "_Cnd_wait",
+      "_Mtx_unlock",
+      "_Mtx_lock",
+      "_Thrd_id",
+      "_Thrd_join",
+      "?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ",
+      "?uncaught_exceptions@std@@YAHXZ",
+      "?good@ios_base@std@@QEBA_NXZ",
+      "?flags@ios_base@std@@QEBAHXZ",
+      "?width@ios_base@std@@QEBA_JXZ",
+      "?width@ios_base@std@@QEAA_J_J@Z",
+      "?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z",
+      "?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z",
+      "?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z",
+      "?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ",
+      "?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ",
+      "?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ",
+      "?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ"
+    ],
+    "MSVCP140_ATOMIC_WAIT.dll": [
+      "__std_atomic_notify_all_direct",
+      "__std_atomic_wait_direct"
+    ],
+    "VCRUNTIME140.dll": [
+      "_CxxThrowException",
+      "_purecall",
+      "__std_type_info_destroy_list",
+      "__std_terminate",
+      "__RTDynamicCast",
+      "memcpy",
+      "memset",
+      "__C_specific_handler",
+      "__std_exception_copy",
+      "__std_exception_destroy",
+      "__current_exception_context",
+      "__current_exception"
+    ],
+    "VCRUNTIME140_1.dll": [
+      "__CxxFrameHandler4"
+    ],
+    "api-ms-win-crt-heap-l1-1-0.dll": [
+      "_callnewh",
+      "malloc",
+      "free"
+    ],
+    "api-ms-win-crt-string-l1-1-0.dll": [
+      "strlen"
+    ],
+    "api-ms-win-crt-runtime-l1-1-0.dll": [
+      "_initterm_e",
+      "_invoke_watson",
+      "abort",
+      "_initterm",
+      "_cexit",
+      "_execute_onexit_table",
+      "_initialize_onexit_table",
+      "_initialize_narrow_environment",
+      "_configure_narrow_argv",
+      "_seh_filter_dll",
+      "_beginthreadex",
+      "terminate"
+    ],
+    "KERNEL32.dll": [
+      "InitializeSListHead",
+      "DisableThreadLibraryCalls",
+      "GetSystemTimeAsFileTime",
+      "GetCurrentThreadId",
+      "GetCurrentProcessId",
+      "QueryPerformanceCounter",
+      "TerminateProcess",
+      "GetCurrentProcess",
+      "RtlCaptureContext",
+      "IsProcessorFeaturePresent",
+      "SetUnhandledExceptionFilter",
+      "UnhandledExceptionFilter",
+      "IsDebuggerPresent",
+      "RtlVirtualUnwind",
+      "RtlLookupFunctionEntry"
+    ]
+  },
+  "exports": {
+    "??0LeiaTrackedSBSMapper@Odyssey3DSDK@@QEAA@XZ": null,
+    "??0LeiaViewMappingFactory@Odyssey3DSDK@@QEAA@XZ": null,
+    "??0SBSMapper@Odyssey3DSDK@@QEAA@XZ": null,
+    "??0SBSMapperD3D11@Odyssey3DSDK@@QEAA@XZ": null,
+    "??0SBSMapperD3D12@Odyssey3DSDK@@QEAA@XZ": null,
+    "??0ViewMappingContext@Odyssey3DSDK@@QEAA@XZ": null,
+    "??0ViewMappingFactory@Odyssey3DSDK@@QEAA@XZ": null,
+    "??1LeiaTrackedSBSMapper@Odyssey3DSDK@@UEAA@XZ": null,
+    "??1LeiaViewMappingFactory@Odyssey3DSDK@@UEAA@XZ": null,
+    "??1SBSMapper@Odyssey3DSDK@@UEAA@XZ": null,
+    "??1SBSMapperD3D11@Odyssey3DSDK@@UEAA@XZ": null,
+    "??1SBSMapperD3D12@Odyssey3DSDK@@UEAA@XZ": null,
+    "??1ViewMappingContext@Odyssey3DSDK@@UEAA@XZ": null,
+    "??1ViewMappingFactory@Odyssey3DSDK@@UEAA@XZ": null,
+    "??_7LeiaTrackedSBSMapper@Odyssey3DSDK@@6B@": null,
+    "??_7LeiaViewMappingFactory@Odyssey3DSDK@@6B@": null,
+    "??_7SBSMapper@Odyssey3DSDK@@6B@": null,
+    "??_7SBSMapperD3D11@Odyssey3DSDK@@6B@": null,
+    "??_7SBSMapperD3D12@Odyssey3DSDK@@6B@": null,
+    "??_7ViewMappingContext@Odyssey3DSDK@@6B@": null,
+    "??_7ViewMappingFactory@Odyssey3DSDK@@6B@": null,
+    "?create_instance@ViewMappingFactory@Odyssey3DSDK@@SA?AV?$unique_ptr@VViewMappingFactory@Odyssey3DSDK@@U?$default_delete@VViewMappingFactory@Odyssey3DSDK@@@std@@@std@@XZ": null,
+    "?create_sbs_mapper_dx11@LeiaViewMappingFactory@Odyssey3DSDK@@UEAA?AV?$shared_ptr@VSBSMapperD3D11@Odyssey3DSDK@@@std@@PEAVViewMappingContext@2@PEAUID3D11Device@@PEAUID3D11DeviceContext@@HHPEAUHWND__@@@Z": null,
+    "?create_sbs_mapper_dx12@LeiaViewMappingFactory@Odyssey3DSDK@@UEAA?AV?$shared_ptr@VSBSMapperD3D12@Odyssey3DSDK@@@std@@PEAVViewMappingContext@2@PEAUID3D12Device@@PEAUID3D12CommandAllocator@@PEAUID3D12CommandQueue@@PEAUID3D12Resource@@4PEAUHWND__@@@Z": null,
+    "?create_view_mapping@LeiaViewMappingFactory@Odyssey3DSDK@@UEAA?AV?$unique_ptr@VViewMappingContext@Odyssey3DSDK@@U?$default_delete@VViewMappingContext@Odyssey3DSDK@@@std@@@std@@XZ": null,
+    "?get_version@Odyssey3DSDK@@YAAEBUVersionInfo@1@XZ": null,
+    "create_odyssey3d_factory_instance": null,
+    "destroy_odyssey3d_factory_instance": null
+  }
+}

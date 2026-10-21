@@ -1,4 +1,7 @@
 #include "render/Renderer.h"
+#ifdef TITAN_LEGACY_TEST
+#include "LegacyFixture.h"
+#endif
 #include "render/OpticalConstants.h"
 #include <d3d12sdklayers.h>
 #include <dxgi1_6.h>
@@ -115,7 +118,7 @@ int main(int argc, char** argv) {
         ComPtr<ID3D12GraphicsCommandList> list;
         Check(device->CreateCommandList(0,D3D12_COMMAND_LIST_TYPE_DIRECT,allocator.Get(),nullptr,IID_PPV_ARGS(&list)),"CreateList");
         constexpr UINT width=64, height=32, inputWidth=128, passes=6;
-        auto input=Texture(device.Get(),inputWidth,height,D3D12_RESOURCE_FLAG_NONE,D3D12_RESOURCE_STATE_COPY_DEST);
+        auto input=Texture(device.Get(),inputWidth,height,D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS,D3D12_RESOURCE_STATE_COPY_DEST);
         auto inDesc=input->GetDesc(); D3D12_PLACED_SUBRESOURCE_FOOTPRINT inFoot{}; UINT64 uploadSize{};
         device->GetCopyableFootprints(&inDesc,0,1,0,&inFoot,nullptr,nullptr,&uploadSize);
         auto upload=Buffer(device.Get(),uploadSize,D3D12_HEAP_TYPE_UPLOAD);
@@ -163,8 +166,12 @@ int main(int argc, char** argv) {
         const auto rtvStride=device->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_RTV);
         std::array<ComPtr<ID3D12Resource>,passes> expected,actual;
         std::array<Readback,passes> expectedRead,actualRead;
-        const std::array<Snapshot,passes> samples={Calibration(-53,32,600,0),Calibration(80,-20,720,0),
+        std::array<Snapshot,passes> samples={Calibration(-53,32,600,0),Calibration(80,-20,720,0),
             Calibration(12,6,550,1),Calibration(1,2,250,0),Calibration(-5,-8,850,1),Calibration(0,0,600,0)};
+#ifdef TITAN_LEGACY_TEST
+        for(auto& sample:samples)sample=samples[0];
+        LegacyFixture fixtureLegacy(samples[0]);
+#endif
         {
             Renderer renderer(device.Get());
             for (UINT pass=0;pass<passes;++pass) {
@@ -197,8 +204,21 @@ int main(int argc, char** argv) {
                 request.inputFormat=request.outputFormat=DXGI_FORMAT_R8G8B8A8_UNORM;
                 request.viewport={8,6,static_cast<float>(width),static_cast<float>(height),0,1};
                 request.scissor={10,8,static_cast<LONG>(width+6),static_cast<LONG>(height+4)};
+#ifdef TITAN_COLOR_TEST
+                request.readSrgb=pass==passes-1;
+#endif
                 std::string error;
+#ifdef TITAN_LEGACY_TEST
+                SR::PredictingDX12Weaver legacy(*fixtureLegacy.context,device.Get(),allocator.Get(),queue.Get(),input.Get(),actual[pass].Get(),nullptr);
+                Require(legacy.canWeave(),"legacy canWeave");
+                legacy.setLatency(40000);Require(legacy.getLatency()==40000,"legacy latency ABI");
+                legacy.setCommandList(list.Get());
+                Barrier(list.Get(),input.Get(),D3D12_RESOURCE_STATE_PIXEL_SHADER_RESOURCE,D3D12_RESOURCE_STATE_UNORDERED_ACCESS);
+                legacy.weave(width,height,8,6);
+                Barrier(list.Get(),input.Get(),D3D12_RESOURCE_STATE_UNORDERED_ACCESS,D3D12_RESOURCE_STATE_PIXEL_SHADER_RESOURCE);
+#else
                 if (!renderer.Record(request,pass==passes-1?nullptr:&samples[pass],error)) throw std::runtime_error(error);
+#endif
                 Barrier(list.Get(),actual[pass].Get(),D3D12_RESOURCE_STATE_RENDER_TARGET,D3D12_RESOURCE_STATE_COPY_SOURCE);
                 CopyReadback(list.Get(),actual[pass].Get(),actualRead[pass]);
             }
@@ -216,15 +236,27 @@ int main(int argc, char** argv) {
             Check(expectedRead[pass].resource->Map(0,nullptr,reinterpret_cast<void**>(&b)),"Map expected");
             for (UINT y=0;y<height+12;++y) for (UINT x=0;x<width+16;++x) for (UINT c=0;c<4;++c) {
                 unsigned expectedByte=0;
+#ifdef TITAN_LEGACY_TEST
+                if (x>=8&&x<width+8&&y>=6&&y<height+6) {
+                    if (false) {
+#else
                 if (x>=10&&x<width+6&&y>=8&&y<height+4) {
                     if (pass==passes-1) {
+#endif
                         UINT ix=x-8,iy=y-6;
                         expectedByte=c==0?(ix*17+iy*3)%251:c==1?(ix*5+iy*19)%253:c==2?(ix*13+iy*7)%255:255;
                     } else expectedByte=b[expectedRead[pass].footprint.Offset+(y-6)*expectedRead[pass].footprint.Footprint.RowPitch+(x-8)*4+c];
                 }
+#ifdef TITAN_COLOR_TEST
+                if(pass==passes-1&&c<3){double value=expectedByte/255.0;value=value<=0.04045?value/12.92:std::pow((value+0.055)/1.055,2.4);expectedByte=static_cast<unsigned>(std::round(value*255));}
+#endif
                 unsigned actualByte=a[actualRead[pass].footprint.Offset+y*actualRead[pass].footprint.Footprint.RowPitch+x*4+c];
                 const unsigned diff=actualByte>expectedByte?actualByte-expectedByte:expectedByte-actualByte;
+#ifdef TITAN_COLOR_TEST
+                if (diff > (pass==passes-1?1u:0u)) {
+#else
                 if (diff) {
+#endif
                     if (passMismatches < 3) std::cout << "pass " << pass << " at " << x << ',' << y << ',' << c << ": expected " << expectedByte << ", actual " << actualByte << '\n';
                     ++passMismatches; ++mismatches;maxDifference=std::max(maxDifference,diff);
                 }++compared;

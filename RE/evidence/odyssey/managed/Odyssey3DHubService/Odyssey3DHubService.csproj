@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{F5CDE49E-1747-4A03-A2E8-D91D1F9D67E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Odyssey3DHubService</RootNamespace>
+    <AssemblyName>Odyssey3DHubService</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Odyssey3DHubService.ico</ApplicationIcon>
+    <StartupObject>Odyssey3DHub.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GameLauncher.Lib" />
+    <Reference Include="Hardcodet.NotifyIcon.Wpf">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\Hardcodet.NotifyIcon.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedCuda">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\ManagedCuda.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives" />
+    <Reference Include="Microsoft.Win32.Registry" />
+    <Reference Include="Microsoft.Win32.SystemEvents" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.TypeConverter" />
+    <Reference Include="System.Configuration.ConfigurationManager" />
+    <Reference Include="System.Console" />
+    <Reference Include="System.Diagnostics.FileVersionInfo" />
+    <Reference Include="System.Diagnostics.Process" />
+    <Reference Include="System.Drawing.Common" />
+    <Reference Include="System.Drawing.Primitives" />
+    <Reference Include="System.IO.Pipes" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Management">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Thread" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Odyssey3DHubService.10.cs" />
+    <Compile Include="..\Odyssey3DHubService.11.cs" />
+    <Compile Include="..\Odyssey3DHubService.12.cs" />
+    <Compile Include="..\Odyssey3DHubService.13.cs" />
+    <Compile Include="..\Odyssey3DHubService.14.cs" />
+    <Compile Include="..\Odyssey3DHubService.15.cs" />
+    <Compile Include="..\Odyssey3DHubService.16.cs" />
+    <Compile Include="..\Odyssey3DHubService.2.cs" />
+    <Compile Include="..\Odyssey3DHubService.3.cs" />
+    <Compile Include="..\Odyssey3DHubService.4.cs" />
+    <Compile Include="..\Odyssey3DHubService.5.cs" />
+    <Compile Include="..\Odyssey3DHubService.6.cs" />
+    <Compile Include="..\Odyssey3DHubService.7.cs" />
+    <Compile Include="..\Odyssey3DHubService.8.cs" />
+    <Compile Include="..\Odyssey3DHubService.9.cs" />
+    <Compile Include="..\Odyssey3DHubService.Designer.cs">
+      <DependentUpon>Odyssey3DHubService.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="-PrivateImplementationDetails-{3775CED9-\0057D359-365F-4587-A5BB-CA7237C6FD6F.cs" />
+    <Compile Include="Odyssey3DHub\App.cs" />
+    <Compile Include="Odyssey3DHub\CommandExtensions.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\AboutDialog.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\BaseDialog.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\CheckBoxDialog.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\ConversionDialog.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\ConversionDialogForOnlySBS.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\HelpDialog.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\NineSliceImage.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\Odyssey3DHubDialogResult.cs" />
+    <Compile Include="Odyssey3DHub\Dialogs\OkDialog.cs" />
+    <Compile Include="Odyssey3DHub\MainWindow.cs" />
+    <Compile Include="Odyssey3DHub\RelayCommand.cs" />
+    <Compile Include="Odyssey3DHub\ViewModels\Converters.cs" />
+    <Compile Include="Odyssey3DHub\ViewModels\InverseBooleanConverter.cs" />
+    <Compile Include="Odyssey3DHub\ViewModels\OpacityConverter.cs" />
+    <Compile Include="Odyssey3DHub\ViewModels\RadioStateToImageConverter.cs" />
+    <Compile Include="Odyssey3DHub\ViewModels\TrayVM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="​.cs" />
+    <Compile Include="‐.cs" />
+    <Compile Include="‑.cs" />
+    <Compile Include="‒.cs" />
+    <Compile Include="–.cs" />
+    <Compile Include="—.cs" />
+    <Compile Include="―.cs" />
+    <Compile Include="•.cs" />
+    <Compile Include="․.cs" />
+    <Compile Include="‥.cs" />
+    <Compile Include="‧.cs" />
+    <Compile Include="‪.cs" />
+    <Compile Include="‫.cs" />
+    <Compile Include="‬.cs" />
+    <Compile Include="‭.cs" />
+    <Compile Include="‮.cs" />
+    <Compile Include="′.cs" />
+    <Compile Include="″.cs" />
+    <Compile Include="‵.cs" />
+    <Compile Include="‶.cs" />
+    <Compile Include="‾.cs" />
+    <Compile Include="⁇.cs" />
+    <Compile Include="⁈.cs" />
+    <Compile Include="⁉.2.cs" />
+    <Compile Include="⁉.cs" />
+    <Compile Include="⁊.2.cs" />
+    <Compile Include="⁊.cs" />
+    <Compile Include="⁋.cs" />
+    <Compile Include="⁌.2.cs" />
+    <Compile Include="⁌.cs" />
+    <Compile Include="⁍.cs" />
+    <Compile Include="⁐.cs" />
+    <Compile Include="⁑.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Odyssey3DHubService.g.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Odyssey3DHubService.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Odyssey3DHubService.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

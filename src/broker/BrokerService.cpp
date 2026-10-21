@@ -188,8 +188,22 @@ struct BrokerService::Impl {
             initial.status = ProviderStatus::Initializing;
             wcsncpy_s(initial.message, L"Initializing the monitor provider.", _TRUNCATE);
             Publish(initial);
-            const bool initialized = provider.Initialize();
+            bool initialized = provider.Initialize();
             Publish(provider.State());
+            // USB enumeration may finish after Windows has launched login apps.
+            // Retry only transient absence/ownership failures, after releasing all handles.
+            while(!initialized&&!options.mock &&
+                (provider.State().status==ProviderStatus::NoDevice||provider.State().status==ProviderStatus::Busy)){
+                Snapshot waiting=provider.State();provider.Shutdown();
+                waiting.calibrationValid=waiting.eyePositionValid=waiting.eyePairValid=waiting.headPoseValid=waiting.lensEnabled=0;
+                bool stop=false;
+                for(int i=0;i<20;++i){
+                    Publish(waiting);AnyEligibleLensClient();
+                    if(WaitForSingleObject(stopEvent,250)!=WAIT_TIMEOUT){stop=true;break;}
+                }
+                if(stop)break;
+                initialized=provider.Initialize();Publish(provider.State());
+            }
             if (initialized) {
                 PollTimer pollTimer;
                 Log(pollTimer.HighResolution() ? L"Eye polling: 4 ms high-resolution wait (not sensor frame rate)." :

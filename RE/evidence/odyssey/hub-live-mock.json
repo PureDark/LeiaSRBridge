@@ -1,0 +1,23 @@
+{
+  "mode": "synthetic broker, no hardware",
+  "hubServicePid": 19068,
+  "hubUiPid": 52624,
+  "clients": [
+    {
+      "pid": 19068,
+      "lensRequest": 0,
+      "creationTime": 134369966999995583,
+      "heartbeatTick": 215699312,
+      "lastWeaveTick": 0,
+      "windowHandle": 0
+    },
+    {
+      "pid": 52624,
+      "lensRequest": 1,
+      "creationTime": 134369967003442724,
+      "heartbeatTick": 215699375,
+      "lastWeaveTick": 215680828,
+      "windowHandle": 5443414
+    }
+  ]
+}

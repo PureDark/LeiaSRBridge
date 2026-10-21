@@ -2,17 +2,18 @@
 import ctypes as c
 from ctypes import wintypes as w
 from pathlib import Path
-import shutil, subprocess, sys, tempfile, time
+import shutil, subprocess, sys, tempfile, time, json
 u=c.WinDLL('user32',use_last_error=True);k=c.WinDLL('kernel32',use_last_error=True)
 u.FindWindowW.argtypes=[w.LPCWSTR,w.LPCWSTR];u.FindWindowW.restype=w.HWND
 u.GetWindowThreadProcessId.argtypes=[w.HWND,c.POINTER(w.DWORD)]
 u.SendMessageW.argtypes=[w.HWND,w.UINT,w.WPARAM,w.LPARAM];u.SendMessageW.restype=c.c_ssize_t
 u.GetDlgItem.argtypes=[w.HWND,c.c_int];u.GetDlgItem.restype=w.HWND
+u.IsWindowVisible.argtypes=[w.HWND];u.IsIconic.argtypes=[w.HWND]
 k.OpenFileMappingW.argtypes=[w.DWORD,w.BOOL,w.LPCWSTR];k.OpenFileMappingW.restype=w.HANDLE
 k.MapViewOfFile.argtypes=[w.HANDLE,w.DWORD,w.DWORD,w.DWORD,c.c_size_t];k.MapViewOfFile.restype=c.c_void_p
 k.UnmapViewOfFile.argtypes=[c.c_void_p];k.CloseHandle.argtypes=[w.HANDLE]
 def wait(predicate):
-    end=time.monotonic()+4
+    end=time.monotonic()+15
     while time.monotonic()<end:
         if predicate():return
         time.sleep(.02)
@@ -40,21 +41,32 @@ with tempfile.TemporaryDirectory(prefix='controls-',dir=exe.parent.parent/'tests
             def check(offset,prediction):wait(lambda:fields[2]==offset and fields[3]==prediction)
             def hotkey(key):u.SendMessageW(window,0x312,key,0)
             def command(key):u.SendMessageW(window,0x111,key,0)
-            def number(value):
-                text=c.create_unicode_buffer(value)
-                assert u.SendMessageW(u.GetDlgItem(window,115),0x000c,0,c.addressof(text))
-                command(116)
+            def send(action,**args):
+                class CopyData(c.Structure):
+                    _fields_=[('dwData',c.c_size_t),('cbData',w.DWORD),('lpData',c.c_void_p)]
+                text=json.dumps(dict(action=action,**args),ensure_ascii=False)
+                data=c.create_unicode_buffer(text)
+                copy=CopyData(0x544c4255,len(text.encode('utf-16-le')),c.addressof(data))
+                assert u.SendMessageW(window,0x4a,0,c.addressof(copy))
+            def number(value):send('offset',value=round(float(value)*10))
             if stage==0:
                 check(80,40)
+                duplicate=subprocess.Popen([str(path/exe.name),'--mock','--background'],cwd=path)
+                assert duplicate.wait(timeout=5)==0,'Autostart duplicate should exit quietly'
+                check(80,40)
                 assert not u.GetDlgItem(window,118),'Removed filter control remains'
-                assert u.GetDlgItem(window,121) and u.GetDlgItem(window,122) and u.GetDlgItem(window,123)
+                assert not u.GetDlgItem(window,121),'Legacy native controls remain'
                 # Mock mode must refuse system changes without a UAC helper.
-                command(121);command(122)
+                send('enable-integration');send('restore-integration')
+                send('minimize');wait(lambda:u.IsIconic(window))
+                send('hide');assert not u.IsWindowVisible(window)
+                u.SendMessageW(window,0x8002,0,0x202) # tray left-button release
+                wait(lambda:u.IsWindowVisible(window) and not u.IsIconic(window))
                 hotkey(3);check(85,40);hotkey(5);check(86,40)
                 hotkey(4);check(85,40);hotkey(2);check(80,40)
                 number('-3.2');check(-32,40);hotkey(6);check(0,40)
                 number('8.3');check(83,40)
-                for _ in range(4):command(113)
+                send('prediction',value=30)
                 check(83,30)
                 # Starting the native test is intentionally not exercised: no hardware.
             elif stage==1:

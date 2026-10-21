@@ -124,6 +124,24 @@ bool LoadAll(HANDLE process, DWORD pid, const std::filesystem::path& directory, 
     for (auto file : files) if (!LoadRemote(process, pid, directory / file, debugPump, error, cancel)) return false;
     return true;
 }
+bool LoadOdyssey(HANDLE process,DWORD pid,const std::filesystem::path& directory,std::wstring& error,const std::atomic<bool>* cancel,bool debugPump){
+    const auto file=directory/L"TitanOdysseyHook.dll";
+    if(!LoadRemote(process,pid,file,debugPump,error,cancel))return false;
+    HMODULE local=LoadLibraryExW(file.c_str(),nullptr,DONT_RESOLVE_DLL_REFERENCES);
+    if(!local){error=L"Cannot inspect Odyssey hook";return false;}
+    auto init=GetProcAddress(local,"TitanOdysseyInitialize");
+    const auto rva=reinterpret_cast<uintptr_t>(init)-reinterpret_cast<uintptr_t>(local);
+    FreeLibrary(local);if(!init){error=L"Missing Odyssey initialization export";return false;}
+    uintptr_t base{};for(const auto& module:Modules(pid))if(Fold(module.name)==L"titanodysseyhook.dll")base=module.base;
+    if(!base){error=L"Odyssey hook was not loaded";return false;}
+    Handle thread(CreateRemoteThread(process,nullptr,0,reinterpret_cast<LPTHREAD_START_ROUTINE>(base+rva),nullptr,0,nullptr));
+    if(!thread){error=WindowsError(GetLastError());return false;}
+    const auto until=GetTickCount64()+15000;
+    while(WaitForSingleObject(thread.get(),0)==WAIT_TIMEOUT&&GetTickCount64()<until){if(debugPump){DEBUG_EVENT event{};if(WaitForDebugEvent(&event,20))ContinueEvent(event);}else WaitForSingleObject(thread.get(),20);}
+    DWORD code{};if(WaitForSingleObject(thread.get(),0)!=WAIT_OBJECT_0||!GetExitCodeThread(thread.get(),&code)||code!=1){error=L"Odyssey hooks failed to initialize; see runtime log";return false;}
+    return true;
+}
+
 } // namespace
 
 std::wstring WindowsError(DWORD error) {
@@ -147,14 +165,14 @@ std::vector<ProcessInfo> Processes() {
     }
     return result;
 }
-bool InjectRuntime(DWORD pid, const std::filesystem::path& directory, std::wstring& error, const std::atomic<bool>* cancel) {
+bool InjectRuntime(DWORD pid, const std::filesystem::path& directory, std::wstring& error, const std::atomic<bool>* cancel, bool odyssey) {
     Handle process(OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ | PROCESS_VM_WRITE |
         PROCESS_VM_OPERATION | PROCESS_CREATE_THREAD | SYNCHRONIZE, FALSE, pid));
     if (!process) { error = WindowsError(GetLastError()); return false; }
-    return LoadAll(process.get(), pid, directory, false, error, cancel);
+    return LoadAll(process.get(), pid, directory, false, error, cancel)&&(!odyssey||LoadOdyssey(process.get(),pid,directory,error,cancel,false));
 }
 bool LaunchWithRuntime(const std::filesystem::path& executable, const std::wstring& arguments,
-    const std::filesystem::path& directory, DWORD& pid, std::wstring& error, const std::atomic<bool>* cancel) {
+    const std::filesystem::path& directory, DWORD& pid, std::wstring& error, const std::atomic<bool>* cancel, bool odyssey) {
     pid = 0;
     if (cancel && cancel->load()) { error = L"Launch cancelled."; return false; }
     std::wstring command = L"\"" + executable.wstring() + L"\"";
@@ -164,7 +182,13 @@ bool LaunchWithRuntime(const std::filesystem::path& executable, const std::wstri
     const auto cwd = executable.parent_path().wstring();
     if (!CreateProcessW(executable.c_str(), command.data(), nullptr, nullptr, FALSE, DEBUG_ONLY_THIS_PROCESS,
         nullptr, cwd.c_str(), &startup, &info)) { error = WindowsError(GetLastError()); return false; }
-    Handle process(info.hProcess), mainThread(info.hThread);
+    Handle process(info.hProcess),mainThread(info.hThread);
+    if(!PrepareCreatedProcess(info,directory,error,cancel,odyssey,true))return false;
+    pid=info.dwProcessId;return true;
+}
+bool PrepareCreatedProcess(const PROCESS_INFORMATION& info,const std::filesystem::path& directory,
+    std::wstring& error,const std::atomic<bool>* cancel,bool odyssey,bool resume){
+    const HANDLE process=info.hProcess, mainThread=info.hThread;
     // Keep the default kill-on-debugger-exit behavior until successful detach.
     // A loader crash must not leave our newly launched child suspended forever.
     bool breakpoint{}, exited{}, patchInstalled{};
@@ -173,11 +197,11 @@ bool LaunchWithRuntime(const std::filesystem::path& executable, const std::wstri
     auto patchByte = [&](BYTE value) {
         DWORD oldProtection{}; SIZE_T written{};
         void* address = reinterpret_cast<void*>(entryPoint);
-        if (!VirtualProtectEx(process.get(), address, 1, PAGE_EXECUTE_READWRITE, &oldProtection)) return false;
-        const bool writtenOk = WriteProcessMemory(process.get(), address, &value, 1, &written) && written == 1;
+        if (!VirtualProtectEx(process, address, 1, PAGE_EXECUTE_READWRITE, &oldProtection)) return false;
+        const bool writtenOk = WriteProcessMemory(process, address, &value, 1, &written) && written == 1;
         DWORD ignored{};
-        VirtualProtectEx(process.get(), address, 1, oldProtection, &ignored);
-        FlushInstructionCache(process.get(), address, 1);
+        VirtualProtectEx(process, address, 1, oldProtection, &ignored);
+        FlushInstructionCache(process, address, 1);
         return writtenOk;
     };
     const auto deadline = GetTickCount64() + 20000;
@@ -188,12 +212,12 @@ bool LaunchWithRuntime(const std::filesystem::path& executable, const std::wstri
         if (event.dwDebugEventCode == CREATE_PROCESS_DEBUG_EVENT) {
             const auto base = reinterpret_cast<uintptr_t>(event.u.CreateProcessInfo.lpBaseOfImage);
             IMAGE_DOS_HEADER dos{}; IMAGE_NT_HEADERS64 nt{}; SIZE_T read{};
-            if (ReadProcessMemory(process.get(), reinterpret_cast<void*>(base), &dos, sizeof(dos), &read) &&
+            if (ReadProcessMemory(process, reinterpret_cast<void*>(base), &dos, sizeof(dos), &read) &&
                 dos.e_magic == IMAGE_DOS_SIGNATURE && dos.e_lfanew > 0 &&
-                ReadProcessMemory(process.get(), reinterpret_cast<void*>(base + dos.e_lfanew), &nt, sizeof(nt), &read) &&
+                ReadProcessMemory(process, reinterpret_cast<void*>(base + dos.e_lfanew), &nt, sizeof(nt), &read) &&
                 nt.Signature == IMAGE_NT_SIGNATURE && nt.FileHeader.Machine == IMAGE_FILE_MACHINE_AMD64) {
                 entryPoint = base + nt.OptionalHeader.AddressOfEntryPoint;
-                if (ReadProcessMemory(process.get(), reinterpret_cast<void*>(entryPoint), &entryByte, 1, &read))
+                if (ReadProcessMemory(process, reinterpret_cast<void*>(entryPoint), &entryByte, 1, &read))
                     patchInstalled = patchByte(0xCC);
             }
         }
@@ -203,10 +227,10 @@ bool LaunchWithRuntime(const std::filesystem::path& executable, const std::wstri
             // The ntdll startup breakpoint can still hold the loader lock.
             // Reach the actual PE entrypoint before running a loader thread.
             CONTEXT context{}; context.ContextFlags = CONTEXT_CONTROL;
-            if (patchByte(entryByte) && GetThreadContext(mainThread.get(), &context)) {
+            if (patchByte(entryByte) && GetThreadContext(mainThread, &context)) {
                 context.Rip = entryPoint;
-                if (SetThreadContext(mainThread.get(), &context))
-                    breakpoint = SuspendThread(mainThread.get()) != static_cast<DWORD>(-1);
+                if (SetThreadContext(mainThread, &context))
+                    breakpoint = SuspendThread(mainThread) != static_cast<DWORD>(-1);
             }
             patchInstalled = false;
         }
@@ -215,11 +239,12 @@ bool LaunchWithRuntime(const std::filesystem::path& executable, const std::wstri
     }
     if (!breakpoint) {
         error = exited ? L"Game exited during startup." : L"Game entrypoint breakpoint timed out.";
-        if (!exited) TerminateProcess(process.get(), 1);
+        if (!exited) TerminateProcess(process, 1);
         DebugActiveProcessStop(info.dwProcessId);
         return false;
     }
-    bool ok = LoadAll(process.get(), info.dwProcessId, directory, true, error, cancel);
+    bool ok = LoadAll(process, info.dwProcessId, directory, true, error, cancel);
+    if(ok&&odyssey)ok=LoadOdyssey(process,info.dwProcessId,directory,error,cancel,true);
     // Drain remaining loader/thread debug events before detaching.
     DEBUG_EVENT event{};
     while (WaitForDebugEvent(&event, 0)) ContinueEvent(event);
@@ -227,11 +252,10 @@ bool LaunchWithRuntime(const std::filesystem::path& executable, const std::wstri
         const auto detachError = GetLastError();
         error += L" Could not detach startup loader: " + WindowsError(detachError); ok = false;
     }
-    if (!ok || (cancel && cancel->load())) { TerminateProcess(process.get(), 1); return false; }
-    if (ResumeThread(mainThread.get()) == static_cast<DWORD>(-1)) {
-        error = WindowsError(GetLastError()); TerminateProcess(process.get(), 1); return false;
+    if (!ok || (cancel && cancel->load())) { TerminateProcess(process, 1); return false; }
+    if (resume && ResumeThread(mainThread) == static_cast<DWORD>(-1)) {
+        error = WindowsError(GetLastError()); TerminateProcess(process, 1); return false;
     }
-    pid = info.dwProcessId;
     return true;
 }
 } // namespace titan::app

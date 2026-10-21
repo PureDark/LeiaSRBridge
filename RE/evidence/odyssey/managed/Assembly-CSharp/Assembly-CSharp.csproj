@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5CDE49E-1747-4A03-A2E8-D91D1F9D67DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass" />
+    <Reference Include="Coffee.UIEffect" />
+    <Reference Include="DeepCloner" />
+    <Reference Include="DOTween" />
+    <Reference Include="FuzzySharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\Odyssey 3D Hub\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs" />
+    <Reference Include="SoftMask" />
+    <Reference Include="SRUnityInternal" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Unity.Addressables" />
+    <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime" />
+    <Reference Include="Unity.ResourceManager" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.ImageConversionModule" />
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="UnityEngine.JSONSerializeModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="UnityEngine.UIModule" />
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule" />
+    <Reference Include="UnityEngine.VideoModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-{9F09017B-\a.cs" />
+    <Compile Include="a.cs" />
+    <Compile Include="ActiveIdleTransition.cs" />
+    <Compile Include="AllFilter.cs" />
+    <Compile Include="AngleCalculator.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="ba.cs" />
+    <Compile Include="BackgroundBackButton.cs" />
+    <Compile Include="BackgroundBlur.cs" />
+    <Compile Include="BarController.cs" />
+    <Compile Include="BaseCustomButton.cs" />
+    <Compile Include="BaseFilter.cs" />
+    <Compile Include="BaseGameItem.cs" />
+    <Compile Include="BasicSample.cs" />
+    <Compile Include="bb.cs" />
+    <Compile Include="bd.cs" />
+    <Compile Include="bl.cs" />
+    <Compile Include="bm.cs" />
+    <Compile Include="bn.cs" />
+    <Compile Include="CanvasSampleOpenFileImage.cs" />
+    <Compile Include="CanvasSampleOpenFileText.cs" />
+    <Compile Include="CanvasSampleOpenFileTextMultiple.cs" />
+    <Compile Include="CanvasSampleSaveFileImage.cs" />
+    <Compile Include="CanvasSampleSaveFileText.cs" />
+    <Compile Include="cc.cs" />
+    <Compile Include="ClickableText.cs" />
+    <Compile Include="cn.cs" />
+    <Compile Include="cq.cs" />
+    <Compile Include="cr.cs" />
+    <Compile Include="cs.cs" />
+    <Compile Include="CustemItemLanguageButton.cs" />
+    <Compile Include="CustomButton.cs" />
+    <Compile Include="CustomScrollBar.cs" />
+    <Compile Include="CustomSelectable.cs" />
+    <Compile Include="CustomShade.cs" />
+    <Compile Include="de.cs" />
+    <Compile Include="dm.cs" />
+    <Compile Include="dn.cs" />
+    <Compile Include="do.cs" />
+    <Compile Include="dp.cs" />
+    <Compile Include="dq.cs" />
+    <Compile Include="dr.cs" />
+    <Compile Include="ds.cs" />
+    <Compile Include="dt.cs" />
+    <Compile Include="ea.cs" />
+    <Compile Include="eb.cs" />
+    <Compile Include="ec.cs" />
+    <Compile Include="ed.cs" />
+    <Compile Include="EdgeLightEffect.cs" />
+    <Compile Include="ee.cs" />
+    <Compile Include="ef.cs" />
+    <Compile Include="EffectCustomButton.cs" />
+    <Compile Include="EncryptHelper.cs" />
+    <Compile Include="EyeTrackingInput.cs" />
+    <Compile Include="FadeOutWithContentPosition.cs" />
+    <Compile Include="FavoriteFilter.cs" />
+    <Compile Include="FilterBar.cs" />
+    <Compile Include="FocussingFrameRotation.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="GameInfo.cs" />
+    <Compile Include="GameInfoPopup.cs" />
+    <Compile Include="GameItem.cs" />
+    <Compile Include="GameItemMenu.cs" />
+    <Compile Include="GameItemReference.cs" />
+    <Compile Include="GameScanHelper.cs" />
+    <Compile Include="GameScanPopup.cs" />
+    <Compile Include="GamesVM.cs" />
+    <Compile Include="GlassShaderParamsSetter.cs" />
+    <Compile Include="GuidePopup.cs" />
+    <Compile Include="HomeToggleHover.cs" />
+    <Compile Include="IdleThumbnailChanger.cs" />
+    <Compile Include="ImageInfo.cs" />
+    <Compile Include="InfoBar.cs" />
+    <Compile Include="InstalledFilter.cs" />
+    <Compile Include="IntroOutroAnimation.cs" />
+    <Compile Include="ItemRecent.cs" />
+    <Compile Include="ItemTab.cs" />
+    <Compile Include="LandRotation.cs" />
+    <Compile Include="LanguageHelper.cs" />
+    <Compile Include="LayeredPopupBehaviour.cs" />
+    <Compile Include="LeiaDebugGUI.cs" />
+    <Compile Include="LeiaEventCamera.cs" />
+    <Compile Include="LeiaLoft\Examples\DestroyTimer.cs" />
+    <Compile Include="LeiaLoft\Examples\TrafficMovement.cs" />
+    <Compile Include="LeiaMedia.cs" />
+    <Compile Include="LeiaPluginHelper.cs" />
+    <Compile Include="LeiaUnity\CameraCalculatedParams.cs" />
+    <Compile Include="LeiaUnity\CameraUIOverlay.cs" />
+    <Compile Include="LeiaUnity\CompileDefineUtil.cs" />
+    <Compile Include="LeiaUnity\Diagnostics\SDKStringData.cs" />
+    <Compile Include="LeiaUnity\Examples\AutoFocusSampleUI.cs" />
+    <Compile Include="LeiaUnity\Examples\CameraRigBoundary.cs" />
+    <Compile Include="LeiaUnity\Examples\CameraRigMouseRotation.cs" />
+    <Compile Include="LeiaUnity\Examples\CameraRigMouseVerticalPan.cs" />
+    <Compile Include="LeiaUnity\Examples\CameraRigMouseWheelZoom.cs" />
+    <Compile Include="LeiaUnity\Examples\CameraRigMovementArrowKeys.cs" />
+    <Compile Include="LeiaUnity\Examples\CameraRigMovementMouse.cs" />
+    <Compile Include="LeiaUnity\Examples\CameraRigTouchRotation.cs" />
+    <Compile Include="LeiaUnity\Examples\CameraRigTouchScreenPinchToZoom.cs" />
+    <Compile Include="LeiaUnity\Examples\TrafficSpawner.cs" />
+    <Compile Include="LeiaUnity\Eye.cs" />
+    <Compile Include="LeiaUnity\FaceTrackingStateEngine.cs" />
+    <Compile Include="LeiaUnity\Head.cs" />
+    <Compile Include="LeiaUnity\IReleasable.cs" />
+    <Compile Include="LeiaUnity\LeiaBoundsData.cs" />
+    <Compile Include="LeiaUnity\LeiaCameraBounds.cs" />
+    <Compile Include="LeiaUnity\LeiaCameraData.cs" />
+    <Compile Include="LeiaUnity\LeiaDepthFocus.cs" />
+    <Compile Include="LeiaUnity\LeiaDisplay.cs" />
+    <Compile Include="LeiaUnity\LeiaDisplayUtils.cs" />
+    <Compile Include="LeiaUnity\LeiaFocus.cs" />
+    <Compile Include="LeiaUnity\LeiaRaycastFocus.cs" />
+    <Compile Include="LeiaUnity\LeiaRemote.cs" />
+    <Compile Include="LeiaUnity\LeiaRemoteUIHandler.cs" />
+    <Compile Include="LeiaUnity\LeiaTargetFocus.cs" />
+    <Compile Include="LeiaUnity\LeiaUtils.cs" />
+    <Compile Include="LeiaUnity\LogLevel.cs" />
+    <Compile Include="LeiaUnity\LogUtil.cs" />
+    <Compile Include="LeiaUnity\MinMaxPair.cs" />
+    <Compile Include="LeiaUnity\RenderPipelineUtils.cs" />
+    <Compile Include="LeiaUnity\RenderTrackingDevice.cs" />
+    <Compile Include="LeiaUnity\Singleton.cs" />
+    <Compile Include="LeiaUnity\UnityCameraParams.cs" />
+    <Compile Include="LightEffect.cs" />
+    <Compile Include="ListViewLanguageScript.cs" />
+    <Compile Include="LoadingGamePopup.cs" />
+    <Compile Include="m.cs" />
+    <Compile Include="MainArea.cs" />
+    <Compile Include="MainPanelCanvas.cs" />
+    <Compile Include="MaskableToggle.cs" />
+    <Compile Include="MatchRectTransform.cs" />
+    <Compile Include="MenuBar.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="MouseCursor.cs" />
+    <Compile Include="MultilingualText.cs" />
+    <Compile Include="NestedScrollRect.cs" />
+    <Compile Include="NestedVerticalScrollRect.cs" />
+    <Compile Include="NonObfuscatable\GameStatus.cs" />
+    <Compile Include="NonObfuscatable\GameTier.cs" />
+    <Compile Include="Odyssey3DHubIPCManager.cs" />
+    <Compile Include="Odyssey3DHubUI\Helper\RegistryHelper.cs" />
+    <Compile Include="Odyssey3DHubUI\Helper\RootObject.cs" />
+    <Compile Include="Odyssey3DHubUI\Helper\SingleInstanceHelper.cs" />
+    <Compile Include="Odyssey3DHubUI\Helper\UserAgreements.cs" />
+    <Compile Include="PanelLight.cs" />
+    <Compile Include="PanelRotation.cs" />
+    <Compile Include="PatchNoteHelper.cs" />
+    <Compile Include="PatchNoteInfo.cs" />
+    <Compile Include="PatchNotePopup.cs" />
+    <Compile Include="Popup.cs" />
+    <Compile Include="PopupGameLoadingLanguageScript.cs" />
+    <Compile Include="PopupGuideLanguageScript.cs" />
+    <Compile Include="PopupInformationLanguageScript.cs" />
+    <Compile Include="PopupLoadingLanguageScript.cs" />
+    <Compile Include="PopupManager.cs" />
+    <Compile Include="PopupScrollReset.cs" />
+    <Compile Include="PopupSettingsLanguageScript.cs" />
+    <Compile Include="PopupUnregisterGameLanguageScript.cs" />
+    <Compile Include="PopupVersionInfoLanguageScript.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RayReceiver.cs" />
+    <Compile Include="RecentViewArea.cs" />
+    <Compile Include="RegistryInfo.cs" />
+    <Compile Include="RenameAttribute.cs" />
+    <Compile Include="ResultViewLanguageScript.cs" />
+    <Compile Include="RootNestedVerticalScrollRect.cs" />
+    <Compile Include="ScrollButtonGroup.cs" />
+    <Compile Include="SearchBar.cs" />
+    <Compile Include="SearchPopup.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsPopup.cs" />
+    <Compile Include="SettingsVM.cs" />
+    <Compile Include="SharedMemoryManager.cs" />
+    <Compile Include="SimulatedRealityCamera.cs" />
+    <Compile Include="SimulatedRealityCameraSettings.cs" />
+    <Compile Include="SimulatedRealityHeadRig.cs" />
+    <Compile Include="SoftMaskController.cs" />
+    <Compile Include="SoftMasking\Samples\Draggable.cs" />
+    <Compile Include="SoftMasking\Samples\HorizontalFovSetter.cs" />
+    <Compile Include="SoftMasking\Samples\Item.cs" />
+    <Compile Include="SoftMasking\Samples\ItemsGenerator.cs" />
+    <Compile Include="SoftMasking\Samples\MaskPainter.cs" />
+    <Compile Include="SoftMasking\Samples\Minimap.cs" />
+    <Compile Include="SoftMasking\Samples\PaintedMask.cs" />
+    <Compile Include="SoftMasking\Samples\RectManipulator.cs" />
+    <Compile Include="SoftMasking\Samples\ShowOnHover.cs" />
+    <Compile Include="SoftMasking\Samples\SoftMaskSampleChooser.cs" />
+    <Compile Include="SoftMasking\Samples\SoftMaskToggler.cs" />
+    <Compile Include="SoftMasking\Samples\Tooltip.cs" />
+    <Compile Include="SRDisplayDefinition.cs" />
+    <Compile Include="SRProjectSettings.cs" />
+    <Compile Include="SRUnity\CompositorCameraHook.cs" />
+    <Compile Include="SRUnity\ISimulatedRealityModule.cs" />
+    <Compile Include="SRUnity\SimulatedRealityModule.cs" />
+    <Compile Include="SRUnity\SRCompositor.cs" />
+    <Compile Include="SRUnity\SRContextChangeReason.cs" />
+    <Compile Include="SRUnity\SRCore.cs" />
+    <Compile Include="SRUnity\SREyes.cs" />
+    <Compile Include="SRUnity\SRHead.cs" />
+    <Compile Include="SRUnity\SRRender.cs" />
+    <Compile Include="SRUnity\SrRenderModeHint.cs" />
+    <Compile Include="SRUnity\SRUtility.cs" />
+    <Compile Include="SRUnity\SRWeaver.cs" />
+    <Compile Include="SRUnity\SystemHandler.cs" />
+    <Compile Include="SteamAppID.cs" />
+    <Compile Include="SupportFilter.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NativeIntegerAttribute.cs" />
+    <Compile Include="TabViewArea.cs" />
+    <Compile Include="ThumbnailView.cs" />
+    <Compile Include="ThumbnailViewContent.cs" />
+    <Compile Include="ThumbnailViewLanguageScript.cs" />
+    <Compile Include="ToggleButton.cs" />
+    <Compile Include="TopBarLanguageScript.cs" />
+    <Compile Include="UnregisterGamePopup.cs" />
+    <Compile Include="UpcomingFilter.cs" />
+    <Compile Include="UserGameInfo.cs" />
+    <Compile Include="UserGameInfoList.cs" />
+    <Compile Include="VersionInfoPopup.cs" />
+    <Compile Include="Versions.cs" />
+    <Compile Include="VersionsVM.cs" />
+    <Compile Include="ViewArea.cs" />
+    <Compile Include="ViewAreaController.cs" />
+    <Compile Include="ViewAreaLanguageScript.cs" />
+    <Compile Include="ViewContent.cs" />
+    <Compile Include="ViewGameItem.cs" />
+    <Compile Include="z.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,9 @@
+[03:05:06] DeviceStatusChecker - Initialize - TxBridge Initialize
+[03:05:08] DeviceStatusChecker - FirstCheckConnection - IsDeviceReady : True, IsDeviceProxyReady : True, IsPowerOn : True
+[03:05:08] DeviceStatusChecker - FirstCheckConnection - USB connected
+[03:05:08] DeviceStatusChecker - Initialize - TxBridge first connection status - USB Connection : True | VideoCable : True | Is3DMode : False | PIP Mode : False | Pivot Mode : False | IsPrimaryMonitor : True | IsNativeResolution : True
+[03:05:08] DeviceStatusChecker - Initialize - Run Device Status monitors
+[03:05:08] DeviceStatusChecker - LeiaEventMonitoring - LeiaEventMonitoring : LensOff! - Is3DMode : false
+[03:05:08] DeviceStatusChecker - CheckAllDeviceStatus - Device Status : Normal
+[03:05:33] DeviceStatusChecker - LeiaEventMonitoring - LeiaEventMonitoring : LensOn! - Is3DMode : true
+[03:06:29] DeviceStatusChecker - LeiaEventMonitoring - LeiaEventMonitoring : LensOff! - Is3DMode : false

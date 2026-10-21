@@ -1,0 +1,95 @@
+{
+  "file": "txBridge.dll",
+  "sha256": "272f798f8f95b37d8a3133af8dcb24a467d646fcd59396922538e7488b5c2aa9",
+  "imports": {
+    "KERNEL32.dll": [
+      "CreateMutexA"
+    ],
+    "MSVCP140.dll": [
+      "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z"
+    ],
+    "WS2_32.dll": [
+      "#111"
+    ],
+    "VCRUNTIME140_1.dll": [
+      "__CxxFrameHandler4"
+    ],
+    "VCRUNTIME140.dll": [
+      "__std_exception_copy"
+    ],
+    "api-ms-win-crt-stdio-l1-1-0.dll": [
+      "__stdio_common_vsprintf"
+    ],
+    "api-ms-win-crt-runtime-l1-1-0.dll": [
+      "_cexit"
+    ],
+    "api-ms-win-crt-string-l1-1-0.dll": [
+      "strncmp"
+    ],
+    "api-ms-win-crt-heap-l1-1-0.dll": [
+      "malloc"
+    ]
+  },
+  "exports": {
+    "dataBridge_connect": null,
+    "dataBridge_disconnect": null,
+    "dataBridge_get3dFlag": null,
+    "dataBridge_getDeviceProxyRespondingFlag": null,
+    "dataBridge_getDeviceRespondingFlag": null,
+    "dataBridge_getFirmwareUpgradePendingState": null,
+    "dataBridge_getPipOnFlag": null,
+    "dataBridge_getPivotOnFlag": null,
+    "dataBridge_getPowerStateFlag": null,
+    "dataBridge_getVideoCablePluggedFlag": null,
+    "dataBridge_logOn_py": null,
+    "dataBridge_recvAppLogRx": null,
+    "dataBridge_recvAppLogRx_py": null,
+    "dataBridge_recvAppLogTx": null,
+    "dataBridge_recvAppLogTx_py": null,
+    "dataBridge_sendDevicProxyQuery": null,
+    "dataBridge_sendDeviceQuery": null,
+    "dataBridge_sendText": null,
+    "dataBridge_set3dFlag": null,
+    "dataBridge_set3dFlag_py": null,
+    "dataBridge_wait3dModeChangeNotification": null,
+    "dataBridge_waitCableConnectionChangeNotification": null,
+    "dataBridge_waitDeviceProxyReadyNotification": null,
+    "dataBridge_waitDeviceReadyNotification": null,
+    "dataBridge_waitFirmwareUpdateTriggerNotification": null,
+    "dataBridge_waitPipChangeNotification": null,
+    "dataBridge_waitPivotChangeNotification": null,
+    "dataBridge_waitPowerStateChangeNotification": null,
+    "dataBridge_waitSrcChangeNotification": null,
+    "dataBridge_waitSrcChangeNotification_py": null,
+    "txBridge_connect": null,
+    "txBridge_destroyOldProcess_ifNeeded": null,
+    "txBridge_disconnect": null,
+    "txBridge_get3dFlag": null,
+    "txBridge_getDeviceProxyRespondingFlag": null,
+    "txBridge_getDeviceRespondingFlag": null,
+    "txBridge_getFirmwareUpgradePendingState": null,
+    "txBridge_getPipOnFlag": null,
+    "txBridge_getPivotOnFlag": null,
+    "txBridge_getPowerStateFlag": null,
+    "txBridge_getVersion": null,
+    "txBridge_getVideoCablePluggedFlag": null,
+    "txBridge_killProxy": null,
+    "txBridge_recvAppLogRx_py": null,
+    "txBridge_recvAppLogTx_py": null,
+    "txBridge_sendDevicProxyQuery": null,
+    "txBridge_sendDeviceQuery": null,
+    "txBridge_sendText": null,
+    "txBridge_set3dFlag": null,
+    "txBridge_set3dFlag_py": null,
+    "txBridge_spawnProxy": null,
+    "txBridge_spawnProxyConsoleWindow": null,
+    "txBridge_wait3dModeChangeNotification": null,
+    "txBridge_waitCableConnectionChangeNotification": null,
+    "txBridge_waitDeviceProxyReadyNotification": null,
+    "txBridge_waitDeviceReadyNotification": null,
+    "txBridge_waitFirmwareUpdateTriggerNotification": null,
+    "txBridge_waitPipChangeNotification": null,
+    "txBridge_waitPivotChangeNotification": null,
+    "txBridge_waitPowerStateChangeNotification": null
+  }
+}

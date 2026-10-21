@@ -1,0 +1,7 @@
+#pragma comment(linker, "/export:newSRContext=TitanLeiaRuntime.newSRContext")
+#pragma comment(linker, "/export:newSRContextLensPreference=TitanLeiaRuntime.newSRContextLensPreference")
+#pragma comment(linker, "/export:initializeSRContext=TitanLeiaRuntime.initializeSRContext")
+#pragma comment(linker, "/export:deleteSRContext=TitanLeiaRuntime.deleteSRContext")
+#pragma comment(linker, "/export:createSystemSense=TitanLeiaRuntime.createSystemSense")
+#pragma comment(linker, "/export:createSystemEventListener=TitanLeiaRuntime.createSystemEventListener")
+#pragma comment(linker, "/export:deleteSystemEventListener=TitanLeiaRuntime.deleteSystemEventListener")

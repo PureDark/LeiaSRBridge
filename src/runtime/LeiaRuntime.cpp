@@ -12,12 +12,16 @@
 #include <sr/sense/headtracker/headposetracker.h>
 #include <sr/sense/eyetracker/eyetracker.h>
 #include <sr/weaver/dx12weaver.h>
+#include <sr/sense/system/systemsense.h>
+#include <sr/world/display/display.h>
 #include <sr/weaver/dx11weaver.h>
 #include <sr/weaver/dx9weaver.h>
 #include <sr/weaver/glweaver.h>
 #include "IpcClient.h"
 #include "RecordingSnapshot.h"
 #include "render/Renderer.h"
+#include "render/Renderer11.h"
+#include "sr/utility/exception.h"
 #include "render/OpticalConstants.h"
 #include "common/PoseMath.h"
 #include <wrl/client.h>
@@ -28,7 +32,10 @@
 #include <stdexcept>
 
 using Microsoft::WRL::ComPtr;
-namespace SR { namespace {
+namespace SR {
+SRContext* SRContext::create(bool,NetworkMode mode){return create(mode);}
+ServerNotAvailableException::ServerNotAvailableException():Exception("TitanLeiaBridge is unavailable"){} namespace {
+void ReleaseLegacyDisplay(SRContext*);
 bool MeasuredPair(const titan::Snapshot&,bool,uint64_t,bool,SR_eyePair&,SR_point3d&);
 }}
 
@@ -206,6 +213,7 @@ SRContext::SRContext(NetworkMode networkMode) : mode(networkMode) {
 SRContext* SRContext::create(NetworkMode mode) { return new SRContext(mode); }
 void SRContext::deleteSRContext(SRContext* context) { delete context; }
 SRContext::~SRContext() {
+    ReleaseLegacyDisplay(this);
     std::shared_ptr<ContextState> state;
     {
         std::lock_guard lock(contextMutex);
@@ -283,7 +291,11 @@ WeaverErrorCode CreateGLWeaver(SRContext&, HWND, IGLWeaver1** weaver) {
 }
 
 #include "HeadTracking.inl"
+#include "LegacyWeavers.inl"
+#include "OdysseySenses.inl"
 }
+
+#include "CApi.inl"
 
 extern "C" __declspec(dllexport) unsigned __cdecl TitanLeiaRuntimeVersion() noexcept { return titan::kProtocolVersion; }
 
