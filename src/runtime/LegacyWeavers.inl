@@ -80,7 +80,28 @@ public:
     ID3D12GraphicsCommandList* list{};
     DXGI_FORMAT format{DXGI_FORMAT_UNKNOWN};
     titan::render::Renderer renderer;
-    Impl(std::shared_ptr<ContextState> s,ID3D12Device* d):LegacyState(std::move(s)),renderer(d){}
+    bool firstWeave{true};
+    ComPtr<ID3D12InfoQueue> diagnostic;
+    UINT64 diagnosticIndex{};
+    void Diagnostics() {
+        if(!diagnostic)return;
+        const auto count=diagnostic->GetNumStoredMessagesAllowedByRetrievalFilter();
+        if(count<diagnosticIndex)diagnosticIndex=0;
+        for(;diagnosticIndex<count;++diagnosticIndex) {
+            SIZE_T size{};
+            if(FAILED(diagnostic->GetMessage(diagnosticIndex,nullptr,&size)))continue;
+            std::vector<unsigned char> bytes(size);
+            auto* msg=reinterpret_cast<D3D12_MESSAGE*>(bytes.data());
+            if(SUCCEEDED(diagnostic->GetMessage(diagnosticIndex,msg,&size)) && msg->Severity<=D3D12_MESSAGE_SEVERITY_ERROR)
+                titan::RuntimeLog(msg->pDescription);
+        }
+    }
+    Impl(std::shared_ptr<ContextState> s,ID3D12Device* d):LegacyState(std::move(s)),renderer(d){
+        wchar_t debug[8]{};
+        if(GetEnvironmentVariableW(L"TITAN_D3D12_DIAGNOSTICS",debug,8)==1 && debug[0]==L'1')
+            d->QueryInterface(IID_PPV_ARGS(&diagnostic));
+        titan::RuntimeLog("Legacy DX12 weaver created");
+    }
 };
 DX12WeaverBase::DX12WeaverBase()=default;
 DX12WeaverBase::~DX12WeaverBase()=default;
@@ -109,15 +130,34 @@ bool DX12WeaverBase::canWeave(unsigned w,unsigned h,unsigned,unsigned){return ca
 void DX12WeaverBase::weave(unsigned w,unsigned h){weave(w,h,0,0);}
 void DX12WeaverBase::weave(unsigned w,unsigned h,unsigned x,unsigned y){
     if(!pimpl||!pimpl->list||!pimpl->input||!pimpl->output){if(pimpl)pimpl->Result(false,false,"Legacy DX12 weave requires command list, SBS input and output resource");return;}
+    if(pimpl->firstWeave){
+        pimpl->firstWeave=false;
+        const auto in=pimpl->input->GetDesc(),out=pimpl->output->GetDesc();
+        std::ostringstream info;info << "Legacy DX12 first weave: input=" << in.Width << 'x' << in.Height
+            << " format=" << in.Format << " view=" << pimpl->format << " flags=" << in.Flags
+            << " output=" << out.Width << 'x' << out.Height << " format=" << out.Format
+            << " viewport=" << w << 'x' << h;
+        titan::RuntimeLog(info.str().c_str());
+    }
+    pimpl->Diagnostics();
     titan::Snapshot live{},s{};const bool liveValid=pimpl->Snapshot(live);bool usable{};std::string error;
     if(!titan::SelectRecordingSnapshot(pimpl->list,liveValid?&live:nullptr,s,usable,error)){pimpl->Result(false,false,error);return;}
     titan::render::WeaveRequest r{};r.commandList=pimpl->list;r.inputSbs=pimpl->input.Get();r.inputFormat=pimpl->format;r.outputFormat=LegacyFormat(pimpl->output->GetDesc().Format);r.readSrgb=pimpl->readSrgb;r.writeSrgb=pimpl->writeSrgb;
     r.viewport={static_cast<float>(x),static_cast<float>(y),static_cast<float>(w),static_cast<float>(h),0,1};r.scissor={static_cast<LONG>(x),static_cast<LONG>(y),static_cast<LONG>(x+w),static_cast<LONG>(y+h)};
-    // Deprecated SDK contract: input enters/leaves in UAV, target is already bound in RT state.
-    D3D12_RESOURCE_BARRIER barrier{};barrier.Type=D3D12_RESOURCE_BARRIER_TYPE_TRANSITION;barrier.Transition={pimpl->input.Get(),D3D12_RESOURCE_BARRIER_ALL_SUBRESOURCES,D3D12_RESOURCE_STATE_UNORDERED_ACCESS,D3D12_RESOURCE_STATE_PIXEL_SHADER_RESOURCE};
+    // The deprecated SDK documents UAV input. Native Odyssey (Stellar Blade)
+    // instead supplies an RT-only texture left in RENDER_TARGET state, verified
+    // with the D3D12 debug layer. Keep the UAV contract when supported and use
+    // the native RT contract only for RT-only inputs; restore it after weaving.
+    const auto flags=pimpl->input->GetDesc().Flags;
+    D3D12_RESOURCE_STATES hostState{};
+    if(flags&D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS)hostState=D3D12_RESOURCE_STATE_UNORDERED_ACCESS;
+    else if(flags&D3D12_RESOURCE_FLAG_ALLOW_RENDER_TARGET)hostState=D3D12_RESOURCE_STATE_RENDER_TARGET;
+    else {pimpl->Result(false,false,"Legacy DX12 input supports neither UAV nor render-target contract");return;}
+    D3D12_RESOURCE_BARRIER barrier{};barrier.Type=D3D12_RESOURCE_BARRIER_TYPE_TRANSITION;barrier.Transition={pimpl->input.Get(),D3D12_RESOURCE_BARRIER_ALL_SUBRESOURCES,hostState,D3D12_RESOURCE_STATE_PIXEL_SHADER_RESOURCE};
     pimpl->list->ResourceBarrier(1,&barrier);
     const bool ok=pimpl->renderer.Record(r,usable?&s:nullptr,error);
     std::swap(barrier.Transition.StateBefore,barrier.Transition.StateAfter);pimpl->list->ResourceBarrier(1,&barrier);
+    pimpl->Diagnostics();
     pimpl->Result(ok,usable,error);
 }
 void DX12WeaverBase::weave(ID3D12GraphicsCommandList* l,unsigned w,unsigned h){setCommandList(l);weave(w,h);}

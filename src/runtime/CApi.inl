@@ -1,5 +1,12 @@
 // C ABI consumed by SRUnityInternal and Odyssey3DHubService.
+#include "LegacyTrackingFallback.h"
 namespace {
+SR_point3d LegacyCenter(const std::shared_ptr<titan::IpcClient>& client) {
+    titan::Snapshot snapshot{};
+    SR_point3d center{0,0,600};
+    if(client->SnapshotForWeave(snapshot)) SR::DisplayPoint(snapshot,snapshot.eye,center);
+    return titan::legacy::SafeCenter(center);
+}
 struct CSystemListener final : SR::SystemEventListener {
     void(*callback)(SR_systemEvent);std::shared_ptr<SR::SystemEventStream> stream;
     explicit CSystemListener(void(*cb)(SR_systemEvent)):callback(cb){}
@@ -8,15 +15,20 @@ struct CSystemListener final : SR::SystemEventListener {
 };
 struct CHeadListener final : SR::HeadListener {
     void(*callback)(SR_head);std::shared_ptr<SR::HeadStream> stream;
+    std::shared_ptr<titan::IpcClient> client=titan::IpcClient::Connect();
     explicit CHeadListener(void(*cb)(SR_head)):callback(cb){}
     ~CHeadListener(){if(stream)stream->stopListening();}
-    void accept(const SR_head& e)override{callback(e);}
+    // Legacy Unity consumers copy these values straight into camera transforms.
+    // Keep unknown/NaN semantics in the modern C++ streams, but never poison a
+    // Unity transform when the camera has no face or briefly loses tracking.
+    void accept(const SR_head& e)override{callback(titan::legacy::SafeHead(e,LegacyCenter(client)));}
 };
 struct CEyeListener final : SR::EyePairListener {
     void(*callback)(SR_eyePair);std::shared_ptr<SR::EyePairStream> stream;
+    std::shared_ptr<titan::IpcClient> client=titan::IpcClient::Connect();
     explicit CEyeListener(void(*cb)(SR_eyePair)):callback(cb){}
     ~CEyeListener(){if(stream)stream->stopListening();}
-    void accept(const SR_eyePair& e)override{callback(e);}
+    void accept(const SR_eyePair& e)override{callback(titan::legacy::SafeEyes(e,LegacyCenter(client)));}
 };
 template<class F> auto CBoundary(F&& f)noexcept->decltype(f()) {try{return f();}catch(const std::exception& e){titan::RuntimeLog(e.what());}catch(...){titan::RuntimeLog("Leia C ABI operation failed");}if constexpr(!std::is_void_v<decltype(f())>)return {};}
 }

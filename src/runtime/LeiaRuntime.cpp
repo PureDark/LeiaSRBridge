@@ -12,6 +12,8 @@
 #include <sr/sense/headtracker/headposetracker.h>
 #include <sr/sense/eyetracker/eyetracker.h>
 #include <sr/weaver/dx12weaver.h>
+#include <d3d12sdklayers.h>
+#include <sstream>
 #include <sr/sense/system/systemsense.h>
 #include <sr/world/display/display.h>
 #include <sr/weaver/dx11weaver.h>
@@ -29,11 +31,12 @@
 #include <cmath>
 #include <limits>
 #include <map>
+#include <condition_variable>
+#include <chrono>
 #include <stdexcept>
 
 using Microsoft::WRL::ComPtr;
 namespace SR {
-SRContext* SRContext::create(bool,NetworkMode mode){return create(mode);}
 ServerNotAvailableException::ServerNotAvailableException():Exception("TitanLeiaBridge is unavailable"){} namespace {
 void ReleaseLegacyDisplay(SRContext*);
 bool MeasuredPair(const titan::Snapshot&,bool,uint64_t,bool,SR_eyePair&,SR_point3d&);
@@ -44,6 +47,19 @@ struct ContextState {
     std::shared_ptr<titan::IpcClient> client;
     std::atomic<bool> alive{true};
     std::atomic<bool> started{};
+    bool legacyStartup{};
+    std::mutex startupMutex;
+    std::condition_variable startupChanged;
+    bool initialized{};
+    void CompleteStartup() {
+        { std::lock_guard lock(startupMutex); initialized = true; }
+        startupChanged.notify_all();
+    }
+    void WaitForLegacyStartup() {
+        std::unique_lock lock(startupMutex);
+        if (!startupChanged.wait_for(lock, std::chrono::seconds(2), [this] { return initialized || !alive.load(); }))
+            titan::RuntimeLog("Legacy lens query timed out waiting for context initialization");
+    }
 };
 std::mutex contextMutex;
 std::map<SR::SRContext*, std::shared_ptr<ContextState>> contexts;
@@ -69,11 +85,20 @@ public:
     void disable() override {
         if (requested_.exchange(false)) state_->client->RemoveLensRequest();
     }
-    bool isEnabled() override { return state_->client->IsLensEnabled(); }
+    bool isEnabled() override {
+        // Native Odyssey starts LensHintQuery before publishing its wait event.
+        // An immediate local answer exposes the game's startup race. Defer
+        // the first answer until context initialization completes. Synchronize
+        // only background queries of the legacy create(bool, mode) context.
+        if (state_->legacyStartup && GetCurrentThreadId() != creatorThread_)
+            state_->WaitForLegacyStartup();
+        return state_->client->IsLensEnabled();
+    }
     bool isEnabledByPreference() override { return requested_.load() || state_->client->IsLensEnabled(); }
 private:
     std::shared_ptr<ContextState> state_;
     std::atomic<bool> requested_{};
+    const DWORD creatorThread_ = GetCurrentThreadId();
 };
 
 class Dx12Weaver final : public SR::IDX12Weaver1 {
@@ -211,6 +236,11 @@ SRContext::SRContext(NetworkMode networkMode) : mode(networkMode) {
     titan::RuntimeLog("Created SDK 1.34.10 x64 compatibility context; Head/HeadPose rotation from stereo face geometry; measured eyes; estimated ears; local observation timestamps; no late latching");
 }
 SRContext* SRContext::create(NetworkMode mode) { return new SRContext(mode); }
+SRContext* SRContext::create(bool, NetworkMode mode) {
+    auto* context = create(mode);
+    FindContext(context)->legacyStartup = true;
+    return context;
+}
 void SRContext::deleteSRContext(SRContext* context) { delete context; }
 SRContext::~SRContext() {
     ReleaseLegacyDisplay(this);
@@ -220,7 +250,7 @@ SRContext::~SRContext() {
         auto found = contexts.find(this);
         if (found != contexts.end()) { state = found->second; contexts.erase(found); }
     }
-    if (state) state->alive = false;
+    if (state) { state->alive = false; state->startupChanged.notify_all(); }
     stopAllSenses();
     deleteAllSenses();
 }
@@ -230,6 +260,7 @@ void SRContext::initialize() {
     if (!state->client->SnapshotForWeave(snapshot))
         throw std::runtime_error("TitanLeiaBridge optical calibration/eye observation is unavailable");
     startAllSenses();
+    state->CompleteStartup();
 }
 void SRContext::addSense(std::string identifier, Sense* sense) { senses[identifier].push_back(sense); }
 void SRContext::removeSense(std::string identifier, Sense* sense) {

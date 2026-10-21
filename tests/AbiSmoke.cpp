@@ -138,6 +138,34 @@ template<class Predicate> void WaitFor(Predicate predicate,const char* failure){
     Require(predicate(),failure);
 }
 
+void VerifyLegacyLensStartup(HMODULE core, HMODULE displays) {
+    const auto initialize = Symbol<void(*)(SR::SRContext*)>(core, "?initialize@SRContext@SR@@QEAAXXZ");
+    const auto createLens = Symbol<decltype(&SR::SwitchableLensHint::create)>(displays, "?create@SwitchableLensHint@SR@@SAPEAV12@AEAVSRContext@2@@Z");
+    // Reproduce Odyssey's ordering: start a lens-query worker, publish its
+    // synchronization object, then initialize the legacy context. Returning
+    // from the query before initialize exposes a null-event dereference.
+    const auto createLegacy = Symbol<SR::SRContext*(*)(bool, SR::SRContext::NetworkMode)>(core,
+        "?create@SRContext@SR@@SAPEAV12@_NW4NetworkMode@12@@Z");
+    auto* legacyContext = createLegacy(false, SR::SRContext::NonBlockingClientMode);
+    auto* legacyLens = createLens(*legacyContext);
+    auto before = GetTickCount64();
+    legacyLens->isEnabled();
+    Require(GetTickCount64() - before < 100,
+        "Same-thread pre-initialize query must not wait for itself");
+    std::atomic<bool> queryStarted{}, queryReturned{};
+    std::thread query([&] { queryStarted = true; legacyLens->isEnabled(); queryReturned = true; });
+    while (!queryStarted) Sleep(1);
+    Sleep(50);
+    const bool premature = queryReturned;
+    try { initialize(legacyContext); } catch (...) { query.join(); throw; }
+    query.join();
+    Require(!premature && queryReturned, "Legacy background lens query did not synchronize startup");
+    // Repeated queries after initialize must remain non-blocking.
+    before = GetTickCount64(); legacyLens->isEnabled();
+    Require(GetTickCount64() - before < 100, "Initialized lens query was delayed");
+    Symbol<void(*)(SR::SRContext*)>(core, "?deleteSRContext@SRContext@SR@@SAXPEAV12@@Z")(legacyContext);
+}
+
 }
 
 int wmain(int argc, wchar_t** argv) {
@@ -145,7 +173,6 @@ int wmain(int argc, wchar_t** argv) {
         const auto runtimeDirectory = argc > 1 ? std::filesystem::absolute(argv[1]) : std::filesystem::current_path();
         SetDefaultDllDirectories(LOAD_LIBRARY_SEARCH_DEFAULT_DIRS);
         Require(AddDllDirectory(runtimeDirectory.c_str()) != nullptr, "Cannot add adapter DLL directory");
-        MockBroker broker;
         const auto load = [&runtimeDirectory](const wchar_t* name) {
             return LoadLibraryExW((runtimeDirectory / name).c_str(), nullptr,
                 LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR | LOAD_LIBRARY_SEARCH_DEFAULT_DIRS);
@@ -172,6 +199,14 @@ int wmain(int argc, wchar_t** argv) {
         Symbol<void(*)()>(faces,"??1EyePairStream@SR@@QEAA@XZ");
         Symbol<void(*)()>(faces,"?update@EyePairStream@SR@@QEAAXUSR_eyePair@@@Z");
 
+        // Optional real-broker check does not create a mock mapping or request
+        // the lens, so it can validate startup while a game remains open.
+        if (argc > 2 && std::wstring(argv[2]) == L"--live-lens") {
+            VerifyLegacyLensStartup(core, displays);
+            std::puts("Legacy lens startup synchronization passed (live broker)");
+            return 0;
+        }
+        MockBroker broker;
         auto* context = create(SR::SRContext::NonBlockingClientMode);
         auto* secondContext = create(SR::SRContext::StandaloneMode);
         Require(context && context->mode == SR::SRContext::NonBlockingClientMode, "SRContext header/layout mismatch");
@@ -195,6 +230,7 @@ int wmain(int argc, wchar_t** argv) {
         const auto deadline = GetTickCount64() + 1000;
         while (broker.ClientCount() != 1 && GetTickCount64() < deadline) Sleep(10);
         Require(broker.ClientCount() == 1, "Runtime did not recover an expired client lease");
+        VerifyLegacyLensStartup(core, displays);
         initialize(context);
         auto* lens = createLens(*context);
         Require(lens && createLens(*context) == lens, "Lens factory/lifetime mismatch");

@@ -3,6 +3,8 @@
 #include <winternl.h>
 #include <TlHelp32.h>
 #include <MinHook.h>
+#include <d3d12.h>
+#include <d3d12sdklayers.h>
 #include <algorithm>
 #include <cwctype>
 #include <map>
@@ -16,7 +18,9 @@ LdrLoad realLoad{};
 decltype(&CreateProcessW) realCreate{};
 decltype(&CreateRemoteThread) realRemote{};
 decltype(&RegOpenKeyExW) realOpen{};
+decltype(&RegOpenKeyExA) realOpenA{};
 decltype(&RegQueryValueExW) realQuery{};
+decltype(&RegQueryValueExA) realQueryA{};
 decltype(&RegCloseKey) realClose{};
 decltype(&DisplayConfigGetDeviceInfo) realDisplay{};
 std::mutex keyMutex;
@@ -51,6 +55,27 @@ LSTATUS WINAPI Open(HKEY key,LPCWSTR sub,DWORD options,REGSAM access,PHKEY out){
         if(status==ERROR_SUCCESS){std::lock_guard lock(keyMutex);keys[*out]=true;}return status;
     }
     return realOpen(key,sub,options,access,out);
+}
+LSTATUS WINAPI OpenA(HKEY key,LPCSTR sub,DWORD options,REGSAM access,PHKEY out){
+    if(key==HKEY_LOCAL_MACHINE&&sub&&_stricmp(sub,"software\\dimenco\\simulated reality")==0){
+        auto status=realOpenA(HKEY_CURRENT_USER,"Software",0,KEY_READ,out);
+        if(status==ERROR_SUCCESS){std::lock_guard lock(keyMutex);keys[*out]=true;}
+        Log(L"Leia registry path redirected (ANSI)");return status;
+    }
+    return realOpenA(key,sub,options,access,out);
+}
+LSTATUS WINAPI QueryA(HKEY key,LPCSTR name,LPDWORD reserved,LPDWORD type,LPBYTE data,LPDWORD bytes){
+    bool ours{};{std::lock_guard lock(keyMutex);ours=keys.count(key)!=0;}
+    if(ours&&(!name||!*name)){
+        if(!bytes)return ERROR_INVALID_PARAMETER;
+        auto value=directory.wstring();
+        const int needed=WideCharToMultiByte(CP_ACP,0,value.c_str(),-1,nullptr,0,nullptr,nullptr);
+        if(!needed)return GetLastError();
+        if(type)*type=REG_SZ;DWORD capacity=*bytes;*bytes=static_cast<DWORD>(needed);
+        if(!data)return ERROR_SUCCESS;if(capacity<static_cast<DWORD>(needed))return ERROR_MORE_DATA;
+        return WideCharToMultiByte(CP_ACP,0,value.c_str(),-1,reinterpret_cast<char*>(data),needed,nullptr,nullptr)?ERROR_SUCCESS:GetLastError();
+    }
+    return realQueryA(key,name,reserved,type,data,bytes);
 }
 LSTATUS WINAPI Query(HKEY key,LPCWSTR name,LPDWORD reserved,LPDWORD type,LPBYTE data,LPDWORD bytes){
     bool ours{};{std::lock_guard lock(keyMutex);ours=keys.count(key)!=0;}
@@ -157,11 +182,24 @@ extern "C" __declspec(dllexport) DWORD WINAPI TitanOdysseyInitialize(void*){
     static bool initialized{};if(initialized)return 1;
     HMODULE self{};GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS|GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT,reinterpret_cast<LPCWSTR>(&TitanOdysseyInitialize),&self);
     wchar_t path[32768]{};GetModuleFileNameW(self,path,32768);directory=std::filesystem::path(path).parent_path();
+    std::error_code logError;std::filesystem::create_directories(directory.parent_path()/L"logs",logError);
+    // Process-local opt-in; must precede host D3D12 device creation.
+    wchar_t debug[8]{};
+    if(GetEnvironmentVariableW(L"TITAN_D3D12_DIAGNOSTICS",debug,8)==1 && debug[0]==L'1') {
+        auto d3d=LoadLibraryW(L"d3d12.dll");
+        auto getDebug=d3d?reinterpret_cast<decltype(&D3D12GetDebugInterface)>(GetProcAddress(d3d,"D3D12GetDebugInterface")):nullptr;
+        ID3D12Debug* layer{};
+        if(getDebug && SUCCEEDED(getDebug(IID_PPV_ARGS(&layer)))) {
+            layer->EnableDebugLayer();layer->Release();Log(L"D3D12 diagnostic layer enabled");
+        } else Log(L"D3D12 diagnostic layer unavailable");
+    }
     if(MH_Initialize()!=MH_OK)return 0;
     const bool ok=Hook(L"ntdll.dll","LdrLoadDll",reinterpret_cast<void*>(&Load),reinterpret_cast<void**>(&realLoad))&&
         Hook(L"kernel32.dll","CreateProcessW",reinterpret_cast<void*>(&Create),reinterpret_cast<void**>(&realCreate))&&
         Hook(L"kernel32.dll","CreateRemoteThread",reinterpret_cast<void*>(&Remote),reinterpret_cast<void**>(&realRemote))&&
         Hook(L"advapi32.dll","RegOpenKeyExW",reinterpret_cast<void*>(&Open),reinterpret_cast<void**>(&realOpen))&&
+        Hook(L"advapi32.dll","RegOpenKeyExA",reinterpret_cast<void*>(&OpenA),reinterpret_cast<void**>(&realOpenA))&&
+        Hook(L"advapi32.dll","RegQueryValueExA",reinterpret_cast<void*>(&QueryA),reinterpret_cast<void**>(&realQueryA))&&
         Hook(L"advapi32.dll","RegQueryValueExW",reinterpret_cast<void*>(&Query),reinterpret_cast<void**>(&realQuery))&&
         Hook(L"advapi32.dll","RegCloseKey",reinterpret_cast<void*>(&Close),reinterpret_cast<void**>(&realClose))&&
         Hook(L"user32.dll","DisplayConfigGetDeviceInfo",reinterpret_cast<void*>(&Display),reinterpret_cast<void**>(&realDisplay));

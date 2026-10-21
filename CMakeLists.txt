@@ -107,6 +107,10 @@ add_custom_command(TARGET TitanLeiaBridge POST_BUILD
 
 include(CTest)
 if(BUILD_TESTING)
+  add_executable(LegacyTrackingFallbackSmoke tests/LegacyTrackingFallbackSmoke.cpp)
+  target_include_directories(LegacyTrackingFallbackSmoke PRIVATE src "${LEIA_SDK_ROOT}/include")
+  output_in(LegacyTrackingFallbackSmoke "${TEST_DIR}")
+  add_test(NAME LegacyTrackingFallback COMMAND LegacyTrackingFallbackSmoke)
   add_executable(HeadPoseSmoke tests/HeadPoseSmoke.cpp)
   target_include_directories(HeadPoseSmoke PRIVATE src)
   target_include_directories(HeadPoseSmoke SYSTEM PRIVATE "${LEIA_SDK_ROOT}/third_party/OpenCV/include")
@@ -205,6 +209,22 @@ target_include_directories(TitanMinHook PUBLIC third_party/minhook/include)
 add_library(TitanOdysseyHook SHARED src/odyssey/OdysseyHook.cpp)
 target_link_libraries(TitanOdysseyHook PRIVATE TitanMinHook TitanInjector advapi32 user32)
 output_in(TitanOdysseyHook "${RUNTIME_DIR}")
+# Older native Odyssey Unreal clients require the original bin layout and
+# preload five internal backends even though all used APIs are public SR APIs.
+add_library(TitanOdysseyPreload SHARED src/odyssey/PreloadPlaceholder.cpp)
+output_in(TitanOdysseyPreload "${RUNTIME_DIR}/bin")
+foreach(alias DimencoWeaving SimulatedRealityCameras realsense2 glog LeapC)
+  add_custom_command(TARGET TitanOdysseyPreload POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different "$<TARGET_FILE:TitanOdysseyPreload>" "${RUNTIME_DIR}/bin/${alias}.dll")
+endforeach()
+foreach(module Core DirectX Displays FaceTrackers OpenGL)
+  add_custom_command(TARGET SimulatedReality${module} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory "${RUNTIME_DIR}/bin"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different "$<TARGET_FILE:SimulatedReality${module}>" "${RUNTIME_DIR}/bin/SimulatedReality${module}.dll")
+endforeach()
+add_custom_command(TARGET TitanOdysseyPreload POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different "${OPENCV_RUNTIME}" "${RUNTIME_DIR}/bin/opencv_world343.dll")
+
 add_library(TitanOdysseyDevice SHARED src/odyssey/DeviceProxy.cpp)
 target_include_directories(TitanOdysseyDevice PRIVATE src)
 target_link_libraries(TitanOdysseyDevice PRIVATE user32)
@@ -212,7 +232,7 @@ set_target_properties(TitanOdysseyDevice PROPERTIES OUTPUT_NAME txBridge)
 output_in(TitanOdysseyDevice "${RUNTIME_DIR}/odyssey")
 file(MAKE_DIRECTORY "${RUNTIME_DIR}/bin" "${PACKAGE_DIR}/logs")
 configure_file(third_party/minhook/LICENSE.txt "${PACKAGE_DIR}/licenses/MinHook.txt" COPYONLY)
-add_dependencies(TitanLeiaBridge TitanOdysseyHook TitanOdysseyDevice)
+add_dependencies(TitanLeiaBridge TitanOdysseyHook TitanOdysseyDevice TitanOdysseyPreload)
 
 foreach(module Core Displays FaceTrackers)
   target_sources(SimulatedReality${module} PRIVATE src/runtime/${module}CForward.cpp)
@@ -292,4 +312,12 @@ if(BUILD_TESTING)
   output_in(BrokerStartupSmoke "${TEST_DIR}")
   add_test(NAME BrokerStartup COMMAND BrokerStartupSmoke)
   set_tests_properties(BrokerStartup PROPERTIES RUN_SERIAL TRUE TIMEOUT 15)
+endif()
+
+if(BUILD_TESTING)
+  # Integration probe with the running broker; records only, never submits GPU work.
+  add_executable(LegacyResourceStateSmoke tests/LegacyResourceStateSmoke.cpp)
+  target_include_directories(LegacyResourceStateSmoke SYSTEM PRIVATE "${LEIA_SDK_ROOT}/include" "${LEIA_SDK_ROOT}/third_party/OpenCV/include")
+  target_link_libraries(LegacyResourceStateSmoke PRIVATE d3d12 dxgi SimulatedRealityCore SimulatedRealityDirectX "${LEIA_SDK_ROOT}/third_party/OpenCV/lib/x64/opencv_world343.lib")
+  output_in(LegacyResourceStateSmoke "${TEST_DIR}")
 endif()
