@@ -4,6 +4,8 @@
 
 面向京东方（BOE）裸眼 3D 显示器的独立 LeiaSR 转接器，支持使用兼容 BOE / DepthTransformerPlus 底层方案的显示器，包括泰坦军团、雷神；ViewX 暂不支持。支持 SDK 1.34.10、Windows x64，含现代 DX12 与 Odyssey 使用的旧版 DX11/DX12 接口。直接使用 FallenFlower3D 和 YakuzaVRMod 已生成的左右眼图像，不修改游戏或 mod 文件。
 
+本机项目目录：`F:\开发项目\LeiaSRBridge`；局域网共享：`\\PUREDARK-GAMING\LeiaSRBridge`。共享权限与账户不变，其他电脑请更新项目工作目录。
+
 ## 显示器兼容性
 
 支持范围以 **BOE / DepthTransformerPlus 的设备控制、眼位追踪和交织方案兼容**为准，不限显示器品牌；仅使用京东方裸眼 3D 面板，并不足以确认兼容。

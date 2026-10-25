@@ -1,6 +1,14 @@
 # 构建与目录约定
 
-项目名为 LeiaSRBridge；为保留当前局域网共享与开发路径，仓库根目录仍为 `F:\开发项目\TitanLeiaBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.9.1，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
+项目名为 LeiaSRBridge，仓库根目录为 `F:\开发项目\LeiaSRBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.9.1，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
+
+## 项目目录与局域网共享
+
+- 本机目录：F:\开发项目\LeiaSRBridge。
+- 局域网共享：\\PUREDARK-GAMING\LeiaSRBridge；也可通过本机当前局域网地址 \\192.168.3.42\LeiaSRBridge 访问。
+- 共享沿用原 PureDark、TitanBridgeShare 账户及读写权限，账户密码未改动。另一台电脑上的项目目录、映射盘目标和 Agent 工作目录需改为新共享地址。
+- 旧目录 F:\开发项目\TitanLeiaBridge 和旧共享已移除，不保留别名。
+- 2026-10-25 目录迁移时，将原 build 归档到 artifacts/build-before-directory-rename-20261025，并在新路径重新配置和构建。旧发行包和历史研究记录保留原证据路径，不作为当前构建配置使用。
 
 ## 配置、编译、测试
 
