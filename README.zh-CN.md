@@ -1,13 +1,28 @@
-# TitanLeiaBridge 0.8.3
+# Stereo3DBridge 0.9.0
 
 开发者入口：[构建、目录与打包说明](docs/BUILD.zh-CN.md) · [Agent 开发记录](docs/agent-history/README.md) · [HTML 设计稿](design/titan-bridge-opus5.5.html)
 
-泰坦军团 M27E6V-3D / BOE 后端的独立 LeiaSR 转接器，支持 SDK 1.34.10、Windows x64，含现代 DX12 与 Odyssey 使用的旧版 DX11/DX12 接口。直接使用 FallenFlower3D 和 YakuzaVRMod 已生成的左右眼图像，不修改游戏或 mod 文件。
+面向兼容 BOE / DepthTransformerPlus 底层方案的独立 LeiaSR 转接器；目前已实机验证泰坦军团 M27E6V-3D。支持 SDK 1.34.10、Windows x64，含现代 DX12 与 Odyssey 使用的旧版 DX11/DX12 接口。直接使用 FallenFlower3D 和 YakuzaVRMod 已生成的左右眼图像，不修改游戏或 mod 文件。
 
 ## 本版变更
 
+- 项目更名为 **Stereo3DBridge**：主程序 Stereo3DBridge.exe，独立交织测试 Stereo3DBridgeTest.exe，CMake 项目、界面、托盘、图标资源、日志和发行包使用新名称。
+- 旧版设置、游戏列表和免列表接入配置保持兼容；保留旧程序名转发入口，旧快捷方式仍可使用。详见下方升级说明。
+- 适配目标为兼容的 BOE / DepthTransformerPlus 底层方案，并不表示任意版本或型号均已验证。
+
+## 从 TitanLeiaBridge 升级
+
+1. 退出旧桥接程序、Hub 和游戏，将新版包内文件覆盖到**原来的安装目录**。保留 settings.ini、games.txt 和 vendor 目录结构，无需重填水平补偿、预测、运行模式或游戏列表。
+2. 启动 Stereo3DBridge.exe。旧 TitanLeiaBridge.exe 现在是兼容启动器，会将参数转交给新程序；旧快捷方式或已登记的旧 EXE 路径仍有效。
+3. 同目录的旧自启动命令会自动改为新 EXE。旧 Run 条目名称及 Windows 启动审批状态保留，避免把用户在 Windows 中禁用的自启动重新启用；新安装使用 Stereo3DBridge 条目。关闭自启动会清除本程序的新旧条目。
+4. 原目录内 runtime 路径不变时，已有免列表接入继续识别，无需因改名再次提权。若换到其他目录，仍须在系统接入中更新路径一次，并重新启用自启动来更新位置。
+
+主日志改为 logs/Stereo3DBridge.log，旧日志不删除。为兼容已登记的免列表接入、旧客户端和设备组件，内部保留 TitanLeiaRuntime.dll、原有 IPC/窗口类名、WebView 缓存和 Software\\TitanLeiaBridge\\RuntimeIntegration 注册表标识。它们属于兼容协议，不是遗漏的界面名称。历史发行包、逆向证据、设计原稿和 Agent 原始记录保留当时名称。
+
+## 推荐单眼尺寸
+
 - 原生 LeiaSR 预览的概览与诊断页显示原厂 SDK 推荐视图纹理宽高（px），每秒刷新；查询不可用时显示“暂不可用”。桥接模式不显示此项。
-- Bridge 的 getRecommendedViewsTextureWidth / Height 返回主显示器原生宽高（Windows 显示目标首选模式）各除以 2，作为推荐单眼尺寸；例如 3840 × 2160 屏返回 1920 × 1080，左右并排纹理为 3840 × 1080，不使用桌面尺寸或 DPI 缩放后的尺寸；无法查询时返回 0。仍按既有使用要求，将泰坦屏设为主显示器。
+- Bridge 的 getRecommendedViewsTextureWidth / Height 返回主显示器原生宽高（Windows 显示目标首选模式）各除以 2，作为推荐单眼尺寸；例如 3840 × 2160 屏返回 1920 × 1080，左右并排纹理为 3840 × 1080，不使用桌面尺寸或 DPI 缩放后的尺寸；无法查询时返回 0。仍按既有使用要求，将兼容屏设为主显示器。
 
 ## 0.8.1 无人脸回退
 
@@ -19,7 +34,7 @@
 
 - 首页头部示意现在统一镜像显示转头、歪头及左右眼标记；位移方向与范围保持原样。
 - 新增“更多 → 原生 LeiaSR 预览”：真实 LeiaSR / Odyssey 显示器可直接读取原厂头姿与双眼位置。此模式不启动 BOE 设备、不创建桥接共享状态、不接管游戏、不进行交织，也不请求开启镜片。
-- 原生预览不应用泰坦的水平补偿或预测，切换模式后会记住选择；从同一菜单可“切回泰坦桥接”。命令行也可使用 TitanLeiaBridge.exe --native-preview 或 --bridge-mode。
+- 原生预览不应用桥接的水平补偿或预测，切换模式后会记住选择；从同一菜单可“切回设备桥接”。命令行也可使用 Stereo3DBridge.exe --native-preview 或 --bridge-mode。
 - 原生预览要求已安装并运行官方 LeiaSR 服务。按官方注册路径加载 DLL，不从桥接 PATH 寻找运行库。已有系统免列表接入配置不会被自动改变；若要让其他游戏也恢复原厂路径，请在桥接模式的系统接入设置中显式恢复。
 - 保留已同步的原生 Odyssey 初始化和 legacy DX12 输入修复。
 
@@ -46,7 +61,7 @@
 ## 0.5.0 保留功能
 
 - 新增 **Odyssey 兼容启动**：进程内拦截显示器识别、三星设备代理及 LeiaSR 路径，接入 Hub 3D 界面和游戏模块。已验证实际 Hub 在模拟设备下通过检测并持续交织；实体屏效果及真实游戏尚待测试。
-- 先将泰坦屏设为主显示器、原生分辨率、横屏和 SDR，退出原厂 Hub 的界面和后台服务，再从桥接器“更多 → Odyssey 3D Hub 兼容启动”打开。无需为 Hub 启用系统免列表接入。详见 [Odyssey 测试步骤](docs/ODYSSEY.zh-CN.md)。
+- 先将兼容屏设为主显示器、原生分辨率、横屏和 SDR，退出原厂 Hub 的界面和后台服务，再从桥接器“更多 → Odyssey 3D Hub 兼容启动”打开。无需为 Hub 启用系统免列表接入。详见 [Odyssey 测试步骤](docs/ODYSSEY.zh-CN.md)。
 - 新增旧版 weaver、C ABI、设备事件与显示尺寸接口；补齐 sRGB 读写转换。MCU 标定保持不变，既有 +8.0 mm / 40 ms 默认参数继续使用。
 
 ## 保留的功能
@@ -67,11 +82,11 @@
 
 ## 使用
 
-1. 退出游戏和旧版桥接程序，把新包完整解压到可写目录，例如 `D:\TitanLeiaBridge`。迁移旧目录的 `games.txt`；后续升级也可以迁移 `settings.ini`。不要用旧 DLL 覆盖新包。
-2. 不需要 DepthTransformerPlus，不需要注册 COM。关闭其他占用该屏 MCU 或摄像头的 3D 程序，再运行 `TitanLeiaBridge.exe`。
+1. 退出游戏和旧版桥接程序，把新包完整解压到可写目录，例如 `D:\Stereo3DBridge`。迁移旧目录的 `games.txt`；后续升级也可以迁移 `settings.ini`。不要用旧 DLL 覆盖新包。
+2. 不需要 DepthTransformerPlus，不需要注册 COM。关闭其他占用该屏 MCU 或摄像头的 3D 程序，再运行 `Stereo3DBridge.exe`。
 3. 首次点击 **“启用免列表接入”**，允许 Windows 管理员提示；“免列表接入”显示“已启用”后，完全退出并重新打开 Steam 等游戏启动器。若启动器仍使用旧环境，注销并重新登录 Windows。这一步只配置一次，更换桥接目录/升级到新目录后再点一次。
 4. 等待设备和校准就绪，点击“后台运行”，随后正常启动游戏，游戏内选择 **LeiaSR**。不需要添加游戏列表。头追需要在 mod 内开启其头部跟随选项，桥接器不会修改 mod 设置。
-5. 关闭桥接窗口会隐藏到托盘；用右上角“更多 → 退出转接器”或托盘右键“退出”才能结束后台。之后使用时只需先启动桥接；可用 `TitanLeiaBridge.exe --background` 直接隐藏运行。
+5. 关闭桥接窗口会隐藏到托盘；用右上角“更多 → 退出转接器”或托盘右键“退出”才能结束后台。之后使用时只需先启动桥接；可用 `Stereo3DBridge.exe --background` 直接隐藏运行。
 
 配置作用于系统 PATH 中的桥接 runtime 路径，不覆盖原厂 DLL、不注册伪 SR Service、不停止原厂服务。配置会保留到显式恢复；桥接退出后，已选择桥接运行库的新游戏需要后台重新运行才能取得设备，不能自动切到原厂。
 
@@ -85,13 +100,13 @@ Windows 已加载的同名 DLL、游戏目录中的 DLL 或自定义搜索路径
 
 ## 开机后自动可用
 
-1. 将程序固定放在可写目录，例如 `D:\TitanLeiaBridge`。退出旧版和游戏后升级文件；保持相同路径可沿用系统接入和自启动登记。
+1. 将程序固定放在可写目录，例如 `D:\Stereo3DBridge`。退出旧版和游戏后升级文件；保持相同路径可沿用系统接入和自启动登记。
 2. 在“更多 → 系统接入与启动”启用免列表接入，首次接受管理员提示；之后该项应显示“已启用”。首次配置后重启 Steam 等启动器，或重新登录 Windows。
 3. 打开同一抽屉中的“开机自启动”。以后登录 Windows 后程序会在托盘运行，直接正常启动游戏即可，不需要每天再点“启用”。
 
 两项设置独立保存：关闭自启动不会恢复原厂接入；恢复原厂接入也不会关闭自启动。如果升级解压到另一个版本目录，需要在新目录重新启用免列表接入一次，并打开自启动开关以更新启动路径。Windows“启动应用”中手动禁用此程序时，需要在那里重新允许运行。
 
-自启动使用 `HKCU\Software\Microsoft\Windows\CurrentVersion\Run` 中的 `TitanLeiaBridge` 项，命令为带引号的 EXE 绝对路径加 `--background`，不使用管理员任务或每次登录的提权脚本。启动文件位置以注册表为准，不随 `settings.ini` 迁移自动启用。免列表接入仍使用原有持久系统 PATH 配置，启动时只读取，不重新写入。
+新安装的自启动使用 `HKCU\Software\Microsoft\Windows\CurrentVersion\Run` 中的 `Stereo3DBridge` 项（旧版升级继续使用 TitanLeiaBridge 项并更新命令），命令为带引号的 EXE 绝对路径加 `--background`，不使用管理员任务或每次登录的提权脚本。启动文件位置以注册表为准，不随 `settings.ini` 迁移自动启用。免列表接入仍使用原有持久系统 PATH 配置，启动时只读取，不重新写入。
 
 ## 调节与保存
 
@@ -120,7 +135,7 @@ SDK `orientation` 使用与已检查的 Leia 实现一致的 **Rodrigues 旋转�
 
 双眼和同帧中心均应用相同的水平预测平移及全局固定补偿，再应用设备标定；不会因预测人为改变 IPD。`createRaw` 使用相同的厂商滤波结果与标定/固定补偿，仅省略桥接层预测，不代表原始相机数据。旋转不应用水平平移补偿或 40 ms 位置预测。有效旋转时，双耳为中心加旋转后的左右各 70 mm；仅双眼有效时保留沿双眼轴的耳位估算。
 
-位置单位为毫米，原点在显示坐标系，轴为右 / 上 / 朝向观看者。完整双眼使用 SDK 调用完成的本地观察时间，**不是传感器帧号或曝光时间**，不支持 late latching。超过 250 ms、进程退出、设备失效或眼位丢失时，双眼/耳位返回 NaN，保留光学显示的保持/默认回退。SDK 不再返回时不会靠 broker 轮询刷新双眼时间。完整通道尚未连接时，仅原有 COM 中心可用于显示和位置跟随；完整通道曾连接后退出则不会继续使用遗留 COM 值冒充新位置。
+位置单位为毫米，原点在显示坐标系，轴为右 / 上 / 朝向观看者。完整双眼使用 SDK 调用完成的本地观察时间，**不是传感器帧号或曝光时间**，不支持 late latching。超过 250 ms、眼追进程退出或眼位丢失时，设备仍可用则向游戏提供保持/默认眼位及合成双眼/耳位，合成分量时间为 0；设备真正不可用时 C++ 接口仍返回 NaN 并报告失联。SDK 不再返回时不会靠 broker 轮询刷新双眼时间。完整通道尚未连接时，仅原有 COM 中心可用于显示和位置跟随；完整通道曾连接后退出则不会继续使用遗留 COM 值冒充新位置。
 
 旋转有独立有效位和观察时间；新眼位或后台心跳不会续期旧旋转。面部点缺失、几何退化、双目点不匹配或超过 250 ms 时 orientation 返回 NaN。未知原厂版本只停用私有浮点读取/旋转，不阻止原有双眼转发。当前没有虹膜／瞳孔或视线模型，因此不发布注视点屏幕坐标。
 
@@ -128,7 +143,7 @@ SDK `orientation` 使用与已检查的 Leia 实现一致的 **Rodrigues 旋转�
 
 概览页“交织测试”保留静态网格/圆盘和分眼图案，采用相同的全局偏移和预测，不再自动关闭预测。把窗口移到目标屏后按 Enter；1/2/3 切换图案，Esc 退出。以目标屏原生分辨率、SDR 运行。它不另开摄像头或 MCU，也不写标定。
 
-必要日志在 `logs/TitanLeiaBridge.log`、`logs/runtime-<PID>.log` 和 `logs/StereoTest.log`；接入配置失败详情在 `logs/RuntimeIntegration.log`。原厂组件也可能产生自己的日志。
+必要日志在 `logs/Stereo3DBridge.log`、`logs/runtime-<PID>.log` 和 `logs/StereoTest.log`；接入配置失败详情在 `logs/RuntimeIntegration.log`。原厂组件也可能产生自己的日志。
 
 ## 验证
 

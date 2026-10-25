@@ -181,7 +181,7 @@ public:
         std::lock_guard lock(feed_->mutex);
         for(auto& weak:feed_->streams)if(auto stream=weak.lock())stream->close();
     }
-    std::string getName() override{return "TitanLeiaBridge tracking";}
+    std::string getName() override{return "Stereo3DBridge tracking";}
     std::string getDescription() override{return feed_->raw?
         "BOE eyes without bridge prediction; synthetic optical fallback has time=0":
         "Display-space eyes/center in mm; Rodrigues radians; estimated 140 mm ears; synthetic fallback has time=0";}
@@ -229,7 +229,7 @@ template<class Tracker> Tracker* GetPositionSense(SRContext& context,const char*
     context.addSense(identifier,sense.get());return sense.release();
 }
 }
-HeadTracker* HeadTracker::create(SRContext& context){return GetPositionSense<HeadPosition>(context,"TitanLeiaBridge.Head");}
-HeadPoseTracker* HeadPoseTracker::create(SRContext& context){return GetPositionSense<PosePosition>(context,"TitanLeiaBridge.HeadPose");}
-EyeTracker* EyeTracker::create(SRContext& context){return GetPositionSense<EyePosition>(context,"TitanLeiaBridge.Eyes");}
-EyeTracker* EyeTracker::createRaw(SRContext& context){return GetPositionSense<EyePosition>(context,"TitanLeiaBridge.RawEyes",true);}
+HeadTracker* HeadTracker::create(SRContext& context){return GetPositionSense<HeadPosition>(context,"Stereo3DBridge.Head");}
+HeadPoseTracker* HeadPoseTracker::create(SRContext& context){return GetPositionSense<PosePosition>(context,"Stereo3DBridge.HeadPose");}
+EyeTracker* EyeTracker::create(SRContext& context){return GetPositionSense<EyePosition>(context,"Stereo3DBridge.Eyes");}
+EyeTracker* EyeTracker::createRaw(SRContext& context){return GetPositionSense<EyePosition>(context,"Stereo3DBridge.RawEyes",true);}

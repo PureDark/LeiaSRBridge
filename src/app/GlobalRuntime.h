@@ -14,6 +14,7 @@ struct GlobalRuntimeStatus {
 struct GlobalRuntimeRegistryStore {
     HKEY root = HKEY_LOCAL_MACHINE;
     std::wstring environmentKey = L"SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Environment";
+    // Persistent compatibility key: retain ownership of pre-rename PATH entries.
     std::wstring ownershipKey = L"Software\\TitanLeiaBridge\\RuntimeIntegration";
     bool broadcast = true;
 };

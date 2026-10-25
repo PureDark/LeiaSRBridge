@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Titan Bridge</title>
+<title>Stereo3DBridge</title>
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:">
 <style>
   :root {
@@ -419,7 +419,7 @@
 <div class="window" id="win">
   <div class="titlebar">
     <span class="mark"><i></i><i></i></span>
-    <span>Titan Bridge</span>
+    <span>Stereo3DBridge</span>
     <span class="spacer"></span>
     <button class="winbtn" title="最小化" data-action="minimize">
       <svg width="10" height="10"><path d="M0 5h10" stroke="currentColor"/></svg>
@@ -554,7 +554,7 @@
           <button class="link" data-action="keys">快捷键</button>
           <button class="link" data-action="guide">使用说明</button>
         </div>
-        <span>v@TITAN_UI_VERSION@ · SDK 1.34.10 · x64 · DX11 / DX12</span>
+        <span>v@STEREO3D_UI_VERSION@ · SDK 1.34.10 · x64 · DX11 / DX12</span>
       </div>
     </section>
 
@@ -1283,7 +1283,7 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     Object.assign(state, data.state);
     Object.assign(pose, data.pose);
     const changed = keys => keys.some(k => JSON.stringify(old[k]) !== JSON.stringify(state[k]));
-    $("#previewModeLabel").textContent = state.nativePreview ? "切回泰坦桥接" : "原生 LeiaSR 预览";
+    $("#previewModeLabel").textContent = state.nativePreview ? "切回设备桥接" : "原生 LeiaSR 预览";
     $("#tuningHeader").style.display = state.nativePreview ? "none" : "";
     $("#tuningCard").style.display = state.nativePreview ? "none" : "";
     $('[data-page="games"]').style.display = state.nativePreview ? "none" : "";

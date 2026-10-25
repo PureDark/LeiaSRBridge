@@ -70,8 +70,8 @@ struct DeviceState {
         hr = device->CreateDescriptorHeap(&heap, IID_PPV_ARGS(&descriptors));
         if (FAILED(hr)) return Error(error, "CreateDescriptorHeap", hr);
         descriptorStride = device->GetDescriptorHandleIncrementSize(heap.Type);
-        root->SetName(L"TitanLeiaBridge immutable root signature");
-        descriptors->SetName(L"TitanLeiaBridge immutable input SRV heap");
+        root->SetName(L"Stereo3DBridge immutable root signature");
+        descriptors->SetName(L"Stereo3DBridge immutable input SRV heap");
         return true;
     }
 
@@ -142,7 +142,7 @@ struct DeviceState {
         ComPtr<ID3D12PipelineState> created;
         HRESULT hr = device->CreateGraphicsPipelineState(&desc, IID_PPV_ARGS(&created));
         if (FAILED(hr)) return Error(error, "CreateGraphicsPipelineState(interlace)", hr);
-        created->SetName(stereo ? L"TitanLeiaBridge BOE optical PS" : L"TitanLeiaBridge left eye fallback PS");
+        created->SetName(stereo ? L"Stereo3DBridge BOE optical PS" : L"Stereo3DBridge left eye fallback PS");
         pipeline = created.Get();
         pipelines.emplace(key, std::move(created));
         return true;

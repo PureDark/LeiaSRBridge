@@ -194,7 +194,7 @@ std::wstring Validate(const std::filesystem::path& runtime) {
         throw std::runtime_error("Missing bridge identity export");
     for (const auto* module : {L"Core", L"DirectX", L"Displays", L"FaceTrackers", L"OpenGL"})
         if (!PeFile(runtime / (std::wstring(L"SimulatedReality") + module + L".dll")).BridgeExport(true))
-            throw std::runtime_error("Runtime is not a Titan bridge forwarder");
+            throw std::runtime_error("Runtime is not a Stereo3DBridge forwarder");
     PeFile dependency(runtime / L"opencv_world343.dll");
     return Normalized(path);
 }

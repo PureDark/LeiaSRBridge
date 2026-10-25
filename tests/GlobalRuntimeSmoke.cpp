@@ -30,7 +30,7 @@ std::wstring Get(const std::wstring& keyPath, const wchar_t* name, DWORD* type =
 struct Fixture {
     std::wstring key = L"Software\\TitanLeiaBridgeTests\\GlobalRuntime-" + std::to_wstring(GetCurrentProcessId());
     fs::path folder = fs::temp_directory_path() / (L"TitanLeiaGlobalRuntime-" + std::to_wstring(GetCurrentProcessId()));
-    GlobalRuntimeRegistryStore store{HKEY_CURRENT_USER, key + L"\\Environment", key + L"\\Owner", false};
+    GlobalRuntimeRegistryStore store{HKEY_CURRENT_USER, key + L"\\Environment", key + L"\\Software\\TitanLeiaBridge\\RuntimeIntegration", false};
     Fixture() {
         folder=fs::absolute(folder).lexically_normal();
         Require(fs::equivalent(folder.parent_path(),fs::temp_directory_path()) &&
@@ -72,6 +72,12 @@ int wmain(int argc, wchar_t** argv) {
             "fresh disable does not create ownership");
         const std::wstring baseline = L"%SystemRoot%\\system32;C:\\Other;;\"C:\\Space Dir\";";
         Put(fixture.store.environmentKey, L"Path", baseline, REG_EXPAND_SZ);
+        // Pre-rename registration must be recognized without rewriting PATH or asking for elevation.
+        Require(GlobalRuntimeRegistryStore{}.ownershipKey==L"Software\\TitanLeiaBridge\\RuntimeIntegration","legacy ownership identity retained");
+        Put(fixture.store.ownershipKey,L"ManagedPath",first.wstring());
+        Put(fixture.store.environmentKey,L"Path",first.wstring()+L";"+baseline,REG_EXPAND_SZ);
+        Require(ReadGlobalRuntimeStatus(first,fixture.store).enabled,"recognize pre-rename integration");
+        Require(Get(fixture.store.environmentKey,L"Path")==first.wstring()+L";"+baseline,"read preserves legacy PATH");
         Require(ConfigureGlobalRuntime(first, true, error, fixture.store), "enable");
         DWORD type{};
         Require(Get(fixture.store.environmentKey, L"Path", &type) == first.wstring() + L";" + baseline &&

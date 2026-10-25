@@ -4,6 +4,7 @@
   const send=(action,extra={})=>chrome.webview.postMessage({action,...extra});
   const wait=ms=>new Promise(r=>setTimeout(r,ms));
   try {
+    if(document.title!=="Stereo3DBridge")throw Error("Product title not renamed");
     for(let i=0;i<40&&!$('#heroChip').textContent.includes('原生 LeiaSR');++i)await wait(100);
     if(!$('#heroChip').textContent.includes('原生 LeiaSR'))throw Error('Native mode banner missing');
     for(const id of ['#tuningHeader','#tuningCard','[data-page="games"]','[data-action="sheet-odyssey"]'])

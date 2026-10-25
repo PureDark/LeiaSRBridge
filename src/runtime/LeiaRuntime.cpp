@@ -39,7 +39,7 @@
 
 using Microsoft::WRL::ComPtr;
 namespace SR {
-ServerNotAvailableException::ServerNotAvailableException():Exception("TitanLeiaBridge is unavailable"){} namespace {
+ServerNotAvailableException::ServerNotAvailableException():Exception("Stereo3DBridge is unavailable"){} namespace {
 void ReleaseLegacyDisplay(SRContext*);
 SR_head TrackingFrame(const titan::Snapshot&,bool,uint64_t,bool);
 }}
@@ -77,7 +77,7 @@ class Lens final : public SR::SwitchableLensHint {
 public:
     explicit Lens(std::shared_ptr<ContextState> state) : state_(std::move(state)) {}
     ~Lens() override { disable(); }
-    std::string getName() override { return "TitanLeiaBridge BOE lens"; }
+    std::string getName() override { return "Stereo3DBridge BOE lens"; }
     std::string getDescription() override { return "Foreground and active-weave gated shared lens lease"; }
     void start() override {}
     void stop() override { disable(); }
@@ -181,7 +181,7 @@ public:
             const bool recorded = renderer_.Record(request_, usable ? &selected : nullptr, error);
             state_->client->MarkWeave(window_, usable && recorded);
             if (!recorded) {
-                Fail(error.empty() ? "TitanLeiaBridge weave failed" : error.c_str()); return;
+                Fail(error.empty() ? "Stereo3DBridge weave failed" : error.c_str()); return;
             }
             if (!usable && !reportedFallback_) titan::RuntimeLog("Broker/optical data unavailable: rendering left-eye fallback and disabling lens lease");
             reportedFallback_ = !usable;
@@ -259,7 +259,7 @@ void SRContext::initialize() {
     auto state = FindContext(this);
     titan::Snapshot snapshot{};
     if (!state->client->SnapshotForWeave(snapshot))
-        throw std::runtime_error("TitanLeiaBridge optical calibration/eye observation is unavailable");
+        throw std::runtime_error("Stereo3DBridge optical calibration/eye observation is unavailable");
     startAllSenses();
     state->CompleteStartup();
 }
@@ -281,10 +281,10 @@ void SRContext::receive(SR_packet&) {}
 void SRContext::print(SR_packet&) {}
 
 SwitchableLensHint* SwitchableLensHint::create(SRContext& context) {
-    auto& entries = context.getSenses("TitanLeiaBridge.Lens");
+    auto& entries = context.getSenses("Stereo3DBridge.Lens");
     if (!entries.empty()) return static_cast<SwitchableLensHint*>(entries.front());
     auto hint = std::make_unique<Lens>(FindContext(&context));
-    context.addSense("TitanLeiaBridge.Lens", hint.get());
+    context.addSense("Stereo3DBridge.Lens", hint.get());
     return hint.release();
 }
 

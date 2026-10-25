@@ -40,7 +40,7 @@ bool CheckExisting(DWORD pid, const std::filesystem::path& directory, bool& load
         if (!ours && !shim) continue;
         std::error_code ec;
         if (!std::filesystem::equivalent(module.path, directory / module.name, ec)) {
-            error = L"A different Leia runtime is already loaded. Close the game and launch it from TitanLeiaBridge.";
+            error = L"A different Leia runtime is already loaded. Close the game and launch it from Stereo3DBridge.";
             return false;
         }
         if (ours) runtimeFound = true;

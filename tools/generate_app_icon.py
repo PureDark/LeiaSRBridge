@@ -30,7 +30,7 @@ ico=bytearray(struct.pack('<HHH',0,1,len(sizes)))
 for size,data in zip(sizes,images):
     ico.extend(struct.pack('<BBBBHHII',size%256,size%256,0,0,1,32,len(data),offset));offset+=len(data)
 ico.extend(b''.join(images))
-(root/'src/app/resources/TitanBridge.ico').write_bytes(ico)
+(root/'src/app/resources/Stereo3DBridge.ico').write_bytes(ico)
 (root/'src/app/resources/TitanBridge.png').write_bytes(images[-1])
 (root/'src/app/resources/TitanBridge.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><clipPath id="l"><circle cx="9" cy="12" r="6"/></clipPath></defs><circle cx="9" cy="12" r="6" fill="#EE6B4D"/><circle cx="15" cy="12" r="6" fill="#1AA39B"/><circle cx="15" cy="12" r="6" clip-path="url(#l)" fill="#18442F"/></svg>\n')
 

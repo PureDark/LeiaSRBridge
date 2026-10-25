@@ -36,7 +36,7 @@ class BridgeSystem final : public SystemSense {
                         if(!batch.empty())events.emplace_back(std::move(stream),std::move(batch));
                     }
                 }
-                for(auto& [stream,batch]:events)for(auto type:batch){if(stopped.load())break;try{const auto now=GetTickCount64();stream->update({ObservationTime(now,now),type,"TitanLeiaBridge device state"});}catch(...){stream->close();}}
+                for(auto& [stream,batch]:events)for(auto type:batch){if(stopped.load())break;try{const auto now=GetTickCount64();stream->update({ObservationTime(now,now),type,"Stereo3DBridge device state"});}catch(...){stream->close();}}
                 Sleep(20);
             }
         }
@@ -45,7 +45,7 @@ class BridgeSystem final : public SystemSense {
 public:
     explicit BridgeSystem(std::shared_ptr<ContextState> c):feed_(std::make_shared<Feed>(std::move(c))){}
     ~BridgeSystem()override{stop();std::lock_guard lock(feed_->mutex);for(auto& e:feed_->entries)if(auto s=e.stream.lock())s->close();}
-    std::string getName()override{return "TitanLeiaBridge system";}
+    std::string getName()override{return "Stereo3DBridge system";}
     std::string getDescription()override{return "Live broker readiness, lens and virtual viewer availability";}
     void start()override{if(feed_->stopped.exchange(false)){try{worker_=std::thread([feed=feed_]{feed->Run();});}catch(...){feed_->stopped=true;throw;}}}
     void stop()override{feed_->stopped=true;if(worker_.joinable()){if(worker_.get_id()==std::this_thread::get_id())worker_.detach();else worker_.join();}}
@@ -76,8 +76,8 @@ std::mutex displayMutex;
 void ReleaseLegacyDisplay(SRContext* c){std::lock_guard lock(displayMutex);displayObjects.erase(c);}
 }
 SystemSense* SystemSense::create(SRContext& context){
-    const auto& entries=context.getSenses("TitanLeiaBridge.System");if(!entries.empty())return static_cast<SystemSense*>(entries.front());
-    auto state=FindContext(&context);auto sense=std::make_unique<BridgeSystem>(state);if(state->started.load())sense->start();context.addSense("TitanLeiaBridge.System",sense.get());return sense.release();
+    const auto& entries=context.getSenses("Stereo3DBridge.System");if(!entries.empty())return static_cast<SystemSense*>(entries.front());
+    auto state=FindContext(&context);auto sense=std::make_unique<BridgeSystem>(state);if(state->started.load())sense->start();context.addSense("Stereo3DBridge.System",sense.get());return sense.release();
 }
 WorldObject::WorldObject():parent(nullptr),relativePosition(0,0,0){}
 WorldObject::WorldObject(WorldObject* value):parent(value),relativePosition(0,0,0){}

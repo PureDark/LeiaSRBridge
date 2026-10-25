@@ -4,6 +4,7 @@
 #include <type_traits>
 
 namespace titan {
+// Stable IPC names allow pre-rename clients and the renamed broker to coexist.
 inline constexpr wchar_t kMappingName[] = L"Local\\TitanLeiaBridge.State.v3";
 inline constexpr wchar_t kBrokerMutexName[] = L"Local\\TitanLeiaBridge.Broker.v1";
 inline constexpr std::uint32_t kProtocolMagic = 0x544C4231;
