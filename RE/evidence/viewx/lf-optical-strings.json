@@ -1,0 +1,421 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":100,\"matches\":[{\"addr\":\"0x180071fd0\",\"string\":\" + actualcoord.y * tilt) * pitch + center;\\n\"},{\"addr\":\"0x180072000\",\"string\":\"\\tnuv.z = (actualcoord.x + shift_Norm +i * (PixelOffset + subp)\"},{\"addr\":\"0x1800722a0\",\"string\":\"\\treturn vec2(iView, bias);\\n\"},{\"addr\":\"0x180072378\",\"string\":\"\\tfloat nokor = z - iView * 1.0;\\n\"},{\"addr\":\"0x1800723a0\",\"string\":\"\\tiView =  clamp(iView, 0.0, total- 1.0) * z_left;\\n\"},{\"addr\":\"0x1800723d8\",\"string\":\"   float iView = floor(z);\\n\"},{\"addr\":\"0x180072578\",\"string\":\"uniform highp float pitch;\\n\"},{\"addr\":\"0x180072698\",\"string\":\"uniform highp float PixelOffset;\\n\"},{\"addr\":\"0x180072a80\",\"string\":\"\\tnuv.z = (actualcoord.x + shift_Norm + i * (PixelOffset + subp)\"},{\"addr\":\"0x180072ac0\",\"string\":\"(tex_sampler_0, vec2(xin, uvz.y)).r;\\n\\t\\td1 = invView * d1 + (1.0-invView) * (1.0 - d1);\\n\\t\\td1 = d1*(seg.x-0.5)*fDpt_;\\n\\t\\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\\n\\t\\txtemp = min(xtemp, abs(((seg.x - 0.5) * fDpt_)/(loop/1.2)));\\n\\t\\txin = xin + xtemp * sn;\\n\\t }\\n\\txtemp = uvz.x + d1 - d3;\\n\\txtemp = 1.0-abs(1.0-xtemp);\\n\\treturn vec3(xtemp-0.5, uvz.y,seg.y);\\n}\\n\"},{\"addr\":\"0x180072c30\",\"string\":\"vec3 texArr(vec3 uvz,float m,float n,float z_l_,float dD3_,float fDpt_)\\n{\\n\\tvec2 seg = segment(uvz, m, n, z_l_);\\n\\tfloat d1;\\n\\tfloat xtemp;\\n\\tfloat invView =0.0;\\n\\tfloat sn = sign(seg.x-0.5);\\n\\tfloat d3 = dD3_;\\n\\tfloat loop =3.0;\\n\\td3 = d3*(seg.x-0.5)*fDpt_;\\n\\tfloat xin = uvz.x - d3;\\n\\tfor (float i=0.0;i<loop;i++){\\n\\t\\td1 = \"},{\"addr\":\"0x180072f40\",\"string\":\"Failed to create shader resource view\"},{\"addr\":\"0x180073284\",\"string\":\"PixelOffset\"},{\"addr\":\"0x1800732e2\",\"string\":\"pitch\"},{\"addr\":\"0x18007476f\",\"string\":\"DX11 pixel shader for LF3DRender\\r\\n* \"},{\"addr\":\"0x180075409\",\"string\":\"DX11 pixel shader for LF3DRender\\r\\n* \"},{\"addr\":\"0x18007565a\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER\\r\\n{\\r\\n    float PixelOffset;\\r\\n    float widthProp;\\r\\n    float heightProp;\\r\\n    float startXProp;\\r\\n    float startYProp;\\r\\n    float center;\\r\\n    float shift_Norm;\\r\\n    float tilt;\\r\\n    float pitch;\\r\\n    float subp;\\r\\n    float s;\\r\\n    int ri, bi;\\r\\n    float columns;\\r\\n    float rows;\\r\\n    float z_l;\\r\\n};\\r\\n\\r\\n//--------------------------------------------------------------------------------------\\r\\n//texArr function\\r\\n//--------------------------------------------------------------------------------------\\r\\nfloat2 texArr(float3 uvz, float m, float n)\\r\\n{\\r\\n\\t// decide which section to take from based on the z.\\r\\n    float z = floor(uvz.z * m * n);\\r\\n    z = clamp(z, 0.0, m * n - 1.0) * z_l;\\r\\n    float x = (fmod(z, m) + uvz.x) / m;\\r\\n#if _UNITY_PROJ_\\r\\n    float y = (floor(z / m) + uvz.y) / n;\\r\\n#else\\r\\n    float y = 1.0-(floor(z / m) + uvz.y) / n;\\r\\n#endif\\r\\n    return float2(x, y);\\r\\n}\\r\\n\\r\\nfloat4 mapping(float2 texcoord,float2 actualcoord,float i,float s_){\\r\\n    float3 nuv = float3(texcoord, 0.0);\\r\\n    nuv.z = (actualcoord.x + shift_Norm + (float) i * (PixelOffset + subp) + actualcoord.y * tilt) * pitch + center;\\r\\n    nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\r\\n    float sign_s = (1.0 - sign(rows - 1.0)) * s_ + sign(rows - 1.0) * (1.0 - s_);\\r\\n    nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\r\\n    return myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\r\\n}\\r\\n\\r\\n// \"},{\"addr\":\"0x180075bf3\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n    //float3 nuv = float3(input.tex, 0.0f);\\r\\n    float2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n    /*\\r\\n    float4 rgb[3];\\r\\n    for (int i = 0; i < 3; i++)\\r\\n    {\\r\\n        nuv.z = (actual.x + shift_Norm + (float) i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n        nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\r\\n        float sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\r\\n        nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x180076144\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x180076358\",\"string\":\" PixelOffset\\r\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x1800763b2\",\"string\":\"PixelOffset\\r\\n*/\"},{\"addr\":\"0x1800789c0\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER\\r\\n{\\r\\n    float PixelOffset;\\r\\n    float widthProp;\\r\\n    float heightProp;\\r\\n    float startXProp;\\r\\n    float startYProp;\\r\\n    float center;\\r\\n    float shift_Norm;\\r\\n    float tilt;\\r\\n    float pitch;\\r\\n    float subp;\\r\\n    float s;\\r\\n    int ri, bi;\\r\\n    float columns;\\r\\n    float rows;\\r\\n    float z_l;\\r\\n};\\r\\n\\r\\n//--------------------------------------------------------------------------------------\\r\\n//texArr function\\r\\n//--------------------------------------------------------------------------------------\\r\\nfloat2 texArr(float3 uvz, float m, float n)\\r\\n{\\r\\n\\t// decide which section to take from based on the z.\\r\\n    float z = floor(uvz.z * m * n);\\r\\n    z = clamp(z, 0.0, m * n - 1.0) * z_l;\\r\\n    float x = (fmod(z, m) + uvz.x) / m;\\r\\n#if _UNITY_PROJ_\\r\\n    float y = (floor(z / m) + uvz.y) / n;\\r\\n#else\\r\\n    float y = 1.0-(floor(z / m) + uvz.y) / n;\\r\\n#endif\\r\\n    return float2(x, y);\\r\\n}\\r\\n\\r\\nfloat4 mapping(float2 texcoord,float2 actualcoord,float i,float s_){\\r\\n    float3 nuv = float3(texcoord, 0.0);\\r\\n    nuv.z = (actualcoord.x + shift_Norm + (float) i * (PixelOffset + subp) + actualcoord.y * tilt) * pitch + center;\\r\\n    nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\r\\n    float sign_s = (1.0 - sign(rows - 1.0)) * s_ + sign(rows - 1.0) * (1.0 - s_);\\r\\n    nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\r\\n    return myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\r\\n}\\r\\n\\r\\n// \"},{\"addr\":\"0x180078f59\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n    //float3 nuv = float3(input.tex, 0.0f);\\r\\n    float2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n    /*\\r\\n    float4 rgb[3];\\r\\n    for (int i = 0; i < 3; i++)\\r\\n    {\\r\\n        nuv.z = (actual.x + shift_Norm + (float) i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n        nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\r\\n        float sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\r\\n        nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x1800794aa\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x1800796be\",\"string\":\" PixelOffset\\r\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x180079718\",\"string\":\"PixelOffset\\r\\n*/\"},{\"addr\":\"0x18007a3d0\",\"string\":\"PixelOffset\"},{\"addr\":\"0x18007a4c8\",\"string\":\"pitch\"},{\"addr\":\"0x18007fbd4\",\"string\":\"PixelOffset\"},{\"addr\":\"0x18007fc4e\",\"string\":\"pitch\"},{\"addr\":\"0x1800812ab\",\"string\":\"DX11 pixel shader for LF3DRender\\r\\n* \"},{\"addr\":\"0x180081f3d\",\"string\":\"DX11 pixel shader for LF3DRender\\r\\n* \"},{\"addr\":\"0x18008216d\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER\\r\\n{\\r\\n\\tfloat PixelOffset;\\r\\n\\tfloat widthProp;\\r\\n\\tfloat heightProp;\\r\\n\\tfloat startXProp;\\r\\n\\tfloat startYProp;\\r\\n\\tfloat center;\\r\\n\\tfloat shift_Norm;\\r\\n\\tfloat tilt;\\r\\n\\tfloat pitch;\\r\\n\\tfloat subp;\\r\\n\\tfloat s;\\r\\n\\tint\\tri, bi;\\r\\n\\tfloat columns;\\r\\n\\tfloat rows;\\r\\n\\tfloat z_l;\\t\\r\\n\\tfloat fDpt;\\r\\n\\tfloat dD3;\\r\\n};\\r\\n\\r\\n//--------------------------------------------------------------------------------------\\r\\n//texArr function\\r\\n//--------------------------------------------------------------------------------------\\r\\nfloat2 texArr(float3 uvz)\\r\\n{\\r\\n\\tfloat d1;\\r\\n\\tfloat xtemp;\\r\\n\\tfloat invView = 0.0;\\r\\n\\tfloat sn = sign(uvz.z - 0.5);\\r\\n\\tfloat d3 = dD3;\\r\\n\\tfloat loop = 3.0;\\r\\n\\td3 = d3 * (uvz.z - 0.5) * fDpt;\\r\\n\\tfloat xin = uvz.x - d3;\\r\\n\\tfor (float i = 0.0; i < loop; i++) {\\r\\n\\t\\td1 = myShaderTexture.Sample(mySampleType, float2(xin, uvz.y)).r;\\r\\n\\t\\td1 = invView * d1 + (1.0 - invView) * (1.0 - d1);\\r\\n\\t\\td1 = d1 * (uvz.z - 0.5) * fDpt;\\r\\n\\t\\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\\r\\n\\t\\txtemp = min(xtemp, abs(((uvz.z - 0.5) * fDpt) / (loop / 1.2)));\\r\\n\\t\\txin = xin + xtemp * sn;\\r\\n\\t}\\r\\n\\txtemp = uvz.x + d1 - d3;\\r\\n\\txtemp = 1.0 - abs(1.0 - xtemp);\\r\\n\\treturn float2(xtemp - 0.5, uvz.y);\\r\\n}\\r\\n\\r\\n// \"},{\"addr\":\"0x18008260f\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\r\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n\\tfloat4 rgb[3];\\r\\n\\r\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\t\\t\\r\\n\\t\\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n\\t\\tnuv.z =1.0 - fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\tfloat sign_s = s;\\t\\t\\r\\n\\t\\tif (columns >= 0.0) {\\r\\n\\t\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t\\tnuv.z = floor(nuv.z * 2.0 * 1.0);\\r\\n\\t\\t\\tnuv.z = clamp(nuv.z, 0.0, 2.0 * 1.0 - 1.0) * z_l;\\r\\n\\t\\t}\\r\\n\\t\\telse {\\r\\n\\t\\t\\tsign_s = 1.0 - s;\\r\\n\\t\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t}\\r\\n\\t\\t\\r\\n\\t\\tfloat2 result = texArr(float3(nuv.x * 0.5f + 0.5f, nuv.y, nuv.z));\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x180082a9c\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x180083e0a\",\"string\":\"invView\"},{\"addr\":\"0x1800852db\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER\\r\\n{\\r\\n\\tfloat PixelOffset;\\r\\n\\tfloat widthProp;\\r\\n\\tfloat heightProp;\\r\\n\\tfloat startXProp;\\r\\n\\tfloat startYProp;\\r\\n\\tfloat center;\\r\\n\\tfloat shift_Norm;\\r\\n\\tfloat tilt;\\r\\n\\tfloat pitch;\\r\\n\\tfloat subp;\\r\\n\\tfloat s;\\r\\n\\tint\\tri, bi;\\r\\n\\tfloat columns;\\r\\n\\tfloat rows;\\r\\n\\tfloat z_l;\\t\\r\\n\\tfloat fDpt;\\r\\n\\tfloat dD3;\\r\\n};\\r\\n\\r\\n//--------------------------------------------------------------------------------------\\r\\n//texArr function\\r\\n//--------------------------------------------------------------------------------------\\r\\nfloat2 texArr(float3 uvz)\\r\\n{\\r\\n\\tfloat d1;\\r\\n\\tfloat xtemp;\\r\\n\\tfloat invView = 0.0;\\r\\n\\tfloat sn = sign(uvz.z - 0.5);\\r\\n\\tfloat d3 = dD3;\\r\\n\\tfloat loop = 3.0;\\r\\n\\td3 = d3 * (uvz.z - 0.5) * fDpt;\\r\\n\\tfloat xin = uvz.x - d3;\\r\\n\\tfor (float i = 0.0; i < loop; i++) {\\r\\n\\t\\td1 = myShaderTexture.Sample(mySampleType, float2(xin, uvz.y)).r;\\r\\n\\t\\td1 = invView * d1 + (1.0 - invView) * (1.0 - d1);\\r\\n\\t\\td1 = d1 * (uvz.z - 0.5) * fDpt;\\r\\n\\t\\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\\r\\n\\t\\txtemp = min(xtemp, abs(((uvz.z - 0.5) * fDpt) / (loop / 1.2)));\\r\\n\\t\\txin = xin + xtemp * sn;\\r\\n\\t}\\r\\n\\txtemp = uvz.x + d1 - d3;\\r\\n\\txtemp = 1.0 - abs(1.0 - xtemp);\\r\\n\\treturn float2(xtemp - 0.5, uvz.y);\\r\\n}\\r\\n\\r\\n// \"},{\"addr\":\"0x18008577d\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\r\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n\\tfloat4 rgb[3];\\r\\n\\r\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\t\\t\\r\\n\\t\\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n\\t\\tnuv.z =1.0 - fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\tfloat sign_s = s;\\t\\t\\r\\n\\t\\tif (columns >= 0.0) {\\r\\n\\t\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t\\tnuv.z = floor(nuv.z * 2.0 * 1.0);\\r\\n\\t\\t\\tnuv.z = clamp(nuv.z, 0.0, 2.0 * 1.0 - 1.0) * z_l;\\r\\n\\t\\t}\\r\\n\\t\\telse {\\r\\n\\t\\t\\tsign_s = 1.0 - s;\\r\\n\\t\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t}\\r\\n\\t\\t\\r\\n\\t\\tfloat2 result = texArr(float3(nuv.x * 0.5f + 0.5f, nuv.y, nuv.z));\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x180085c0a\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x180086d04\",\"string\":\"PixelOffset\"},{\"addr\":\"0x180086dfc\",\"string\":\"pitch\"},{\"addr\":\"0x180087dcc\",\"string\":\"PixelOffset\"},{\"addr\":\"0x180087e2a\",\"string\":\"pitch\"},{\"addr\":\"0x180089525\",\"string\":\"DX11 pixel shader for LF3DRender,\"},{\"addr\":\"0x18008a19f\",\"string\":\"DX11 pixel shader for LF3DRender,\"},{\"addr\":\"0x18008a429\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER:register(b0)\\r\\n{\\r\\n\\tfloat PixelOffset;\\r\\n\\tfloat widthProp;\\r\\n\\tfloat heightProp;\\r\\n\\tfloat startXProp;\\r\\n\\tfloat startYProp;\\r\\n\\tfloat center, shift_Norm, tilt, pitch,subp,s;\\r\\n\\tint\\tri;\\r\\n\\tint bi;\\r\\n\\tfloat columns;\\r\\n\\tfloat rows;\\r\\n\\tfloat z_l;\\r\\n\\tfloat cColumns;//_c_row\\r\\n\\tfloat cRows;//_c_col\\r\\n\\tfloat cEffect;\\r\\n\\tfloat picnum;\\r\\n\\tfloat kz;\\r\\n\\tfloat kx;\\t\\r\\n};\\r\\n\\r\\n/*\\r\\nfunc:texArr function\\r\\nm:\"},{\"addr\":\"0x18008a8d5\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n\\t\\r\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\r\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n\\r\\n\\tfloat4 comOffset;\\r\\n\\tfloat m;\\t\\r\\n\\tfloat3 comnuv = float3(actual, picnum);\\r\\n\\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\r\\n\\tm = (kz * comOffset.r + (1.0 - kz) * comOffset.g);\\r\\n\\r\\n\\tfloat4 rgb[3];\\t\\t\\r\\n\\r\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\r\\n\\t\\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * kx * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\r\\n\\t\\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\r\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\tnuv.z = floor(nuv.z * columns * rows);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x18008adf0\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x18008b006\",\"string\":\" PixelOffset\\r\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x18008b060\",\"string\":\"PixelOffset\\r\\n* \\r\\n*  \"},{\"addr\":\"0x18008b084\",\"string\":\"\\r\\n* nuv.z = picnum;\\r\\n* comOffset = _comtex.Sample(mySampleType, texArr(nuv, cColumns, cRows));\\r\\n* \"},{\"addr\":\"0x18008b0ea\",\"string\":\"\\r\\n* float3 comnuv = float3(input.tex, picnum);\\t\\r\\n* comOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\r\\n*/\\r\\n\"},{\"addr\":\"0x18008be1e\",\"string\":\"comOffset\"},{\"addr\":\"0x18008d9af\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER:register(b0)\\r\\n{\\r\\n\\tfloat PixelOffset;\\r\\n\\tfloat widthProp;\\r\\n\\tfloat heightProp;\\r\\n\\tfloat startXProp;\\r\\n\\tfloat startYProp;\\r\\n\\tfloat center, shift_Norm, tilt, pitch,subp,s;\\r\\n\\tint\\tri;\\r\\n\\tint bi;\\r\\n\\tfloat columns;\\r\\n\\tfloat rows;\\r\\n\\tfloat z_l;\\r\\n\\tfloat cColumns;//_c_row\\r\\n\\tfloat cRows;//_c_col\\r\\n\\tfloat cEffect;\\r\\n\\tfloat picnum;\\r\\n\\tfloat kz;\\r\\n\\tfloat kx;\\t\\r\\n};\\r\\n\\r\\n/*\\r\\nfunc:texArr function\\r\\nm:\"},{\"addr\":\"0x18008de5b\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n\\t\\r\\n\\tfloat3 nuv = float3(input.tex, 0.0f);\\r\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n\\r\\n\\tfloat4 comOffset;\\r\\n\\tfloat m;\\t\\r\\n\\tfloat3 comnuv = float3(actual, picnum);\\r\\n\\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\r\\n\\tm = (kz * comOffset.r + (1.0 - kz) * comOffset.g);\\r\\n\\r\\n\\tfloat4 rgb[3];\\t\\t\\r\\n\\r\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\r\\n\\t\\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * kx * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\r\\n\\t\\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\r\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\tnuv.z = floor(nuv.z * columns * rows);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x18008e376\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x18008e58c\",\"string\":\" PixelOffset\\r\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x18008e5e6\",\"string\":\"PixelOffset\\r\\n* \\r\\n*  \"},{\"addr\":\"0x18008e60a\",\"string\":\"\\r\\n* nuv.z = picnum;\\r\\n* comOffset = _comtex.Sample(mySampleType, texArr(nuv, cColumns, cRows));\\r\\n* \"},{\"addr\":\"0x18008e670\",\"string\":\"\\r\\n* float3 comnuv = float3(input.tex, picnum);\\t\\r\\n* comOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\r\\n*/\\r\\n\"},{\"addr\":\"0x18008f3a4\",\"string\":\"PixelOffset\"},{\"addr\":\"0x18008f49c\",\"string\":\"pitch\"},{\"addr\":\"0x18009084c\",\"string\":\"PixelOffset\"},{\"addr\":\"0x1800908aa\",\"string\":\"pitch\"},{\"addr\":\"0x180093285\",\"string\":\"DX11 pixel shader for LF3DRender,\"},{\"addr\":\"0x180093eff\",\"string\":\"DX11 pixel shader for LF3DRender,\"},{\"addr\":\"0x18009418d\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER:register(b0)\\r\\n{\\r\\n\\tfloat PixelOffset;\\r\\n\\tfloat widthProp;\\r\\n\\tfloat heightProp;\\r\\n\\tfloat startXProp;\\r\\n\\tfloat startYProp;\\r\\n\\tfloat center, shift_Norm, tilt, pitch,subp,s;\\r\\n\\tint\\tri,bi;\\t\\r\\n\\tfloat columns;\\r\\n\\tfloat rows;\\r\\n\\tfloat z_l;\\t\\t\\r\\n\\tfloat cColumns;//_c_row\\r\\n\\tfloat cRows;//_c_col\\r\\n\\tfloat cEffect;//_c_effect\\r\\n\\tfloat Keye;\\r\\n\\tfloat kl;\\r\\n\\tfloat _c_pos;\\r\\n};\\r\\n\\r\\n/*\\r\\nfunc:texArr function\\r\\nm:\"},{\"addr\":\"0x18009433a\",\"string\":\"\\r\\n*/\\r\\n\\r\\nfloat2 texArr(float3 uvz,float m,float n)\\r\\n{\\r\\n\\t// decide which section to take from based on the z.\\r\\n\\tfloat z = uvz.z;// floor(uvz.z * 2.0 * 1.0);\\r\\n\\tz = clamp(z, 0.0, m * n - 1.0) * z_l;\\r\\n\\tfloat x = (fmod(z, m) + uvz.x) / m;\\r\\n\\t//float y = (floor(z / m) + uvz.y) / n;\\t\\r\\n#if _UNITY_PROJ_\\r\\n    float y = (floor(z / m) + uvz.y) / n;\\r\\n#else\\r\\n    float y = 1.0 - (floor(z / m) + uvz.y) / n;\\r\\n#endif\\r\\n\\treturn float2(x, y);   \\r\\n}\\r\\n\\r\\n//float2 texArr2(float3 uvz, float m, float n)\\r\\n//{\\r\\n//\\t// decide which section to take from based on the z.\\r\\n//    float z = uvz.z; // floor(uvz.z * 2.0 * 1.0);\\r\\n//    z = clamp(z, 0.0, m * n - 1.0) * z_l;\\r\\n//    float x = (fmod(z, m) + uvz.x) / m;\\r\\n//\\t//float y = (floor(z / m) + uvz.y) / n;\\r\\n//    float y = 1.0 - (floor(z / m) + uvz.y) / n;\\r\\n//    return float2(x, y);\\r\\n//}\\r\\n\\r\\nfloat4 mapping(float2 texcoord, float2 actualcoord,float m_, float i, float s_)\\r\\n{\\r\\n    float3 nuv = float3(texcoord, 0.0f);\\r\\n    nuv.z = (actualcoord.x + ((m_ - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float) i * (PixelOffset + subp) + actualcoord.y * tilt) * pitch + center;\\r\\n    nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\r\\n    float sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\r\\n    nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n    nuv.z = floor(nuv.z * columns * rows);\\r\\n\\treturn myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\r\\n}\\r\\n\\r\\n// \"},{\"addr\":\"0x1800948ff\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n\\t//float3 nuv = float3(input.tex, 0.0f);\\r\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n\\r\\n\\tfloat4 comOffset;\\r\\n\\tfloat m;\\t\\r\\n\\tfloat3 comnuv = float3(actual, _c_pos);\\r\\n\\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));   \\r\\n\\tm = (kl + 1.0 - Keye) * comOffset.r + (Keye - kl) * comOffset.g;\\r\\n\\r\\n\\t/*\\r\\n\\tfloat4 rgb[3];\\t\\r\\n\\r\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\r\\n\\t\\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\r\\n\\t\\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\r\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\tnuv.z = floor(nuv.z * columns * rows);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x180094d07\",\"string\":\"\\r\\n\\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\\r\\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\r\\n\\t}\\t\\r\\n    return float4(rgb[ri].r, rgb[1].g, rgb[bi].b, rgb[1].a);\\r\\n*/\\r\\n\\t//return float4(m, m, m,1.0);\\r\\n    //return comOffset;\\r\\n\\t\\r\\n\\t\\r\\n\\t //20250825 \"},{\"addr\":\"0x180094f64\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x180095177\",\"string\":\" PixelOffset\\r\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x1800951d1\",\"string\":\"PixelOffset\\r\\n* \\r\\n* \"},{\"addr\":\"0x1800951f4\",\"string\":\"\\r\\n* nuv.z = _c_pos;\\r\\n* comOffset = _comtex.Sample(mySampleType, texArr(nuv, cColumns, cRows));\\r\\n* \"},{\"addr\":\"0x18009525a\",\"string\":\"\\r\\n* float3 comnuv = float3(actual, _c_pos);\\r\\n* comOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\r\\n*/\\r\\n\"},{\"addr\":\"0x180095efe\",\"string\":\"comOffset\"},{\"addr\":\"0x180099d13\",\"string\":\"\\r\\n\\r\\ncbuffer PS_CONSTANT_BUFFER:register(b0)\\r\\n{\\r\\n\\tfloat PixelOffset;\\r\\n\\tfloat widthProp;\\r\\n\\tfloat heightProp;\\r\\n\\tfloat startXProp;\\r\\n\\tfloat startYProp;\\r\\n\\tfloat center, shift_Norm, tilt, pitch,subp,s;\\r\\n\\tint\\tri,bi;\\t\\r\\n\\tfloat columns;\\r\\n\\tfloat rows;\\r\\n\\tfloat z_l;\\t\\t\\r\\n\\tfloat cColumns;//_c_row\\r\\n\\tfloat cRows;//_c_col\\r\\n\\tfloat cEffect;//_c_effect\\r\\n\\tfloat Keye;\\r\\n\\tfloat kl;\\r\\n\\tfloat _c_pos;\\r\\n};\\r\\n\\r\\n/*\\r\\nfunc:texArr function\\r\\nm:\"},{\"addr\":\"0x180099ec0\",\"string\":\"\\r\\n*/\\r\\n\\r\\nfloat2 texArr(float3 uvz,float m,float n)\\r\\n{\\r\\n\\t// decide which section to take from based on the z.\\r\\n\\tfloat z = uvz.z;// floor(uvz.z * 2.0 * 1.0);\\r\\n\\tz = clamp(z, 0.0, m * n - 1.0) * z_l;\\r\\n\\tfloat x = (fmod(z, m) + uvz.x) / m;\\r\\n\\t//float y = (floor(z / m) + uvz.y) / n;\\t\\r\\n#if _UNITY_PROJ_\\r\\n    float y = (floor(z / m) + uvz.y) / n;\\r\\n#else\\r\\n    float y = 1.0 - (floor(z / m) + uvz.y) / n;\\r\\n#endif\\r\\n\\treturn float2(x, y);   \\r\\n}\\r\\n\\r\\n//float2 texArr2(float3 uvz, float m, float n)\\r\\n//{\\r\\n//\\t// decide which section to take from based on the z.\\r\\n//    float z = uvz.z; // floor(uvz.z * 2.0 * 1.0);\\r\\n//    z = clamp(z, 0.0, m * n - 1.0) * z_l;\\r\\n//    float x = (fmod(z, m) + uvz.x) / m;\\r\\n//\\t//float y = (floor(z / m) + uvz.y) / n;\\r\\n//    float y = 1.0 - (floor(z / m) + uvz.y) / n;\\r\\n//    return float2(x, y);\\r\\n//}\\r\\n\\r\\nfloat4 mapping(float2 texcoord, float2 actualcoord,float m_, float i, float s_)\\r\\n{\\r\\n    float3 nuv = float3(texcoord, 0.0f);\\r\\n    nuv.z = (actualcoord.x + ((m_ - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float) i * (PixelOffset + subp) + actualcoord.y * tilt) * pitch + center;\\r\\n    nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\r\\n    float sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\r\\n    nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n    nuv.z = floor(nuv.z * columns * rows);\\r\\n\\treturn myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\r\\n}\\r\\n\\r\\n// \"},{\"addr\":\"0x18009a485\",\"string\":\"\\r\\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\\r\\n{\\r\\n\\t//float3 nuv = float3(input.tex, 0.0f);\\r\\n\\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\\r\\n\\r\\n\\tfloat4 comOffset;\\r\\n\\tfloat m;\\t\\r\\n\\tfloat3 comnuv = float3(actual, _c_pos);\\r\\n\\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));   \\r\\n\\tm = (kl + 1.0 - Keye) * comOffset.r + (Keye - kl) * comOffset.g;\\r\\n\\r\\n\\t/*\\r\\n\\tfloat4 rgb[3];\\t\\r\\n\\r\\n\\tfor (int i = 0; i < 3; i++) {\\t\\t\\r\\n\\t\\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\\r\\n\\t\\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\\r\\n\\t\\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\\r\\n\\t\\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\\r\\n\\t\\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\\r\\n\\t\\tnuv.z = floor(nuv.z * columns * rows);\\r\\n\\t\\t // Sample\"},{\"addr\":\"0x18009a88d\",\"string\":\"\\r\\n\\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\\r\\n\\t\\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\\r\\n\\t}\\t\\r\\n    return float4(rgb[ri].r, rgb[1].g, rgb[bi].b, rgb[1].a);\\r\\n*/\\r\\n\\t//return float4(m, m, m,1.0);\\r\\n    //return comOffset;\\r\\n\\t\\r\\n\\t\\r\\n\\t //20250825 \"},{\"addr\":\"0x18009aaea\",\"string\":\"@vojin\\r\\n* Pixel shader==\"},{\"addr\":\"0x18009acfd\",\"string\":\" PixelOffset\\r\\n* 1.0f / 3.0f / ScreenWidth\"},{\"addr\":\"0x18009ad57\",\"string\":\"PixelOffset\\r\\n* \\r\\n* \"},{\"addr\":\"0x18009ad7a\",\"string\":\"\\r\\n* nuv.z = _c_pos;\\r\\n* comOffset = _comtex.Sample(mySampleType, texArr(nuv, cColumns, cRows));\\r\\n* \"},{\"addr\":\"0x18009ade0\",\"string\":\"\\r\\n* float3 comnuv = float3(actual, _c_pos);\\r\\n* comOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\\r\\n*/\\r\\n\"},{\"addr\":\"0x18009bb04\",\"string\":\"PixelOffset\"},{\"addr\":\"0x18009bbfc\",\"string\":\"pitch\"},{\"addr\":\"0x18009d6b0\",\"string\":\"PixelOffset\"},{\"addr\":\"0x18009d71c\",\"string\":\"pitch\"},{\"addr\":\"0x18009d960\",\"string\":\"Lens_param\"},{\"addr\":\"0x18009d998\",\"string\":\"lens_info\"},{\"addr\":\"0x18009d9d8\",\"string\":\"eyetracking_calibration\"},{\"addr\":\"0x18009d9f0\",\"string\":\"offsetXb\"},{\"addr\":\"0x18009da80\",\"string\":\"pixel_size\"},{\"addr\":\"0x18009da94\",\"string\":\"dpitch\"},{\"addr\":\"0x18009dad0\",\"string\":\"photo_offsetx\"},{\"addr\":\"0x18009dd28\",\"string\":\"glPixelStoref\"},{\"addr\":\"0x18009dd38\",\"string\":\"glPixelStorei\"},{\"addr\":\"0x18009dd58\",\"string\":\"glReadPixels\"},{\"addr\":\"0x18009de68\",\"string\":\"glViewport\"}],\"cursor\":{\"next\":100}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 100,
+      "matches": [
+        {
+          "addr": "0x180071fd0",
+          "string": " + actualcoord.y * tilt) * pitch + center;\n"
+        },
+        {
+          "addr": "0x180072000",
+          "string": "\tnuv.z = (actualcoord.x + shift_Norm +i * (PixelOffset + subp)"
+        },
+        {
+          "addr": "0x1800722a0",
+          "string": "\treturn vec2(iView, bias);\n"
+        },
+        {
+          "addr": "0x180072378",
+          "string": "\tfloat nokor = z - iView * 1.0;\n"
+        },
+        {
+          "addr": "0x1800723a0",
+          "string": "\tiView =  clamp(iView, 0.0, total- 1.0) * z_left;\n"
+        },
+        {
+          "addr": "0x1800723d8",
+          "string": "   float iView = floor(z);\n"
+        },
+        {
+          "addr": "0x180072578",
+          "string": "uniform highp float pitch;\n"
+        },
+        {
+          "addr": "0x180072698",
+          "string": "uniform highp float PixelOffset;\n"
+        },
+        {
+          "addr": "0x180072a80",
+          "string": "\tnuv.z = (actualcoord.x + shift_Norm + i * (PixelOffset + subp)"
+        },
+        {
+          "addr": "0x180072ac0",
+          "string": "(tex_sampler_0, vec2(xin, uvz.y)).r;\n\t\td1 = invView * d1 + (1.0-invView) * (1.0 - d1);\n\t\td1 = d1*(seg.x-0.5)*fDpt_;\n\t\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\n\t\txtemp = min(xtemp, abs(((seg.x - 0.5) * fDpt_)/(loop/1.2)));\n\t\txin = xin + xtemp * sn;\n\t }\n\txtemp = uvz.x + d1 - d3;\n\txtemp = 1.0-abs(1.0-xtemp);\n\treturn vec3(xtemp-0.5, uvz.y,seg.y);\n}\n"
+        },
+        {
+          "addr": "0x180072c30",
+          "string": "vec3 texArr(vec3 uvz,float m,float n,float z_l_,float dD3_,float fDpt_)\n{\n\tvec2 seg = segment(uvz, m, n, z_l_);\n\tfloat d1;\n\tfloat xtemp;\n\tfloat invView =0.0;\n\tfloat sn = sign(seg.x-0.5);\n\tfloat d3 = dD3_;\n\tfloat loop =3.0;\n\td3 = d3*(seg.x-0.5)*fDpt_;\n\tfloat xin = uvz.x - d3;\n\tfor (float i=0.0;i<loop;i++){\n\t\td1 = "
+        },
+        {
+          "addr": "0x180072f40",
+          "string": "Failed to create shader resource view"
+        },
+        {
+          "addr": "0x180073284",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x1800732e2",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x18007476f",
+          "string": "DX11 pixel shader for LF3DRender\r\n* "
+        },
+        {
+          "addr": "0x180075409",
+          "string": "DX11 pixel shader for LF3DRender\r\n* "
+        },
+        {
+          "addr": "0x18007565a",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER\r\n{\r\n    float PixelOffset;\r\n    float widthProp;\r\n    float heightProp;\r\n    float startXProp;\r\n    float startYProp;\r\n    float center;\r\n    float shift_Norm;\r\n    float tilt;\r\n    float pitch;\r\n    float subp;\r\n    float s;\r\n    int ri, bi;\r\n    float columns;\r\n    float rows;\r\n    float z_l;\r\n};\r\n\r\n//--------------------------------------------------------------------------------------\r\n//texArr function\r\n//--------------------------------------------------------------------------------------\r\nfloat2 texArr(float3 uvz, float m, float n)\r\n{\r\n\t// decide which section to take from based on the z.\r\n    float z = floor(uvz.z * m * n);\r\n    z = clamp(z, 0.0, m * n - 1.0) * z_l;\r\n    float x = (fmod(z, m) + uvz.x) / m;\r\n#if _UNITY_PROJ_\r\n    float y = (floor(z / m) + uvz.y) / n;\r\n#else\r\n    float y = 1.0-(floor(z / m) + uvz.y) / n;\r\n#endif\r\n    return float2(x, y);\r\n}\r\n\r\nfloat4 mapping(float2 texcoord,float2 actualcoord,float i,float s_){\r\n    float3 nuv = float3(texcoord, 0.0);\r\n    nuv.z = (actualcoord.x + shift_Norm + (float) i * (PixelOffset + subp) + actualcoord.y * tilt) * pitch + center;\r\n    nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\r\n    float sign_s = (1.0 - sign(rows - 1.0)) * s_ + sign(rows - 1.0) * (1.0 - s_);\r\n    nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\r\n    return myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\r\n}\r\n\r\n// "
+        },
+        {
+          "addr": "0x180075bf3",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n    //float3 nuv = float3(input.tex, 0.0f);\r\n    float2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n    /*\r\n    float4 rgb[3];\r\n    for (int i = 0; i < 3; i++)\r\n    {\r\n        nuv.z = (actual.x + shift_Norm + (float) i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n        nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\r\n        float sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\r\n        nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x180076144",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x180076358",
+          "string": " PixelOffset\r\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x1800763b2",
+          "string": "PixelOffset\r\n*/"
+        },
+        {
+          "addr": "0x1800789c0",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER\r\n{\r\n    float PixelOffset;\r\n    float widthProp;\r\n    float heightProp;\r\n    float startXProp;\r\n    float startYProp;\r\n    float center;\r\n    float shift_Norm;\r\n    float tilt;\r\n    float pitch;\r\n    float subp;\r\n    float s;\r\n    int ri, bi;\r\n    float columns;\r\n    float rows;\r\n    float z_l;\r\n};\r\n\r\n//--------------------------------------------------------------------------------------\r\n//texArr function\r\n//--------------------------------------------------------------------------------------\r\nfloat2 texArr(float3 uvz, float m, float n)\r\n{\r\n\t// decide which section to take from based on the z.\r\n    float z = floor(uvz.z * m * n);\r\n    z = clamp(z, 0.0, m * n - 1.0) * z_l;\r\n    float x = (fmod(z, m) + uvz.x) / m;\r\n#if _UNITY_PROJ_\r\n    float y = (floor(z / m) + uvz.y) / n;\r\n#else\r\n    float y = 1.0-(floor(z / m) + uvz.y) / n;\r\n#endif\r\n    return float2(x, y);\r\n}\r\n\r\nfloat4 mapping(float2 texcoord,float2 actualcoord,float i,float s_){\r\n    float3 nuv = float3(texcoord, 0.0);\r\n    nuv.z = (actualcoord.x + shift_Norm + (float) i * (PixelOffset + subp) + actualcoord.y * tilt) * pitch + center;\r\n    nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\r\n    float sign_s = (1.0 - sign(rows - 1.0)) * s_ + sign(rows - 1.0) * (1.0 - s_);\r\n    nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\r\n    return myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\r\n}\r\n\r\n// "
+        },
+        {
+          "addr": "0x180078f59",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n    //float3 nuv = float3(input.tex, 0.0f);\r\n    float2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n    /*\r\n    float4 rgb[3];\r\n    for (int i = 0; i < 3; i++)\r\n    {\r\n        nuv.z = (actual.x + shift_Norm + (float) i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n        nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\r\n        float sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\r\n        nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x1800794aa",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x1800796be",
+          "string": " PixelOffset\r\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x180079718",
+          "string": "PixelOffset\r\n*/"
+        },
+        {
+          "addr": "0x18007a3d0",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x18007a4c8",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x18007fbd4",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x18007fc4e",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x1800812ab",
+          "string": "DX11 pixel shader for LF3DRender\r\n* "
+        },
+        {
+          "addr": "0x180081f3d",
+          "string": "DX11 pixel shader for LF3DRender\r\n* "
+        },
+        {
+          "addr": "0x18008216d",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER\r\n{\r\n\tfloat PixelOffset;\r\n\tfloat widthProp;\r\n\tfloat heightProp;\r\n\tfloat startXProp;\r\n\tfloat startYProp;\r\n\tfloat center;\r\n\tfloat shift_Norm;\r\n\tfloat tilt;\r\n\tfloat pitch;\r\n\tfloat subp;\r\n\tfloat s;\r\n\tint\tri, bi;\r\n\tfloat columns;\r\n\tfloat rows;\r\n\tfloat z_l;\t\r\n\tfloat fDpt;\r\n\tfloat dD3;\r\n};\r\n\r\n//--------------------------------------------------------------------------------------\r\n//texArr function\r\n//--------------------------------------------------------------------------------------\r\nfloat2 texArr(float3 uvz)\r\n{\r\n\tfloat d1;\r\n\tfloat xtemp;\r\n\tfloat invView = 0.0;\r\n\tfloat sn = sign(uvz.z - 0.5);\r\n\tfloat d3 = dD3;\r\n\tfloat loop = 3.0;\r\n\td3 = d3 * (uvz.z - 0.5) * fDpt;\r\n\tfloat xin = uvz.x - d3;\r\n\tfor (float i = 0.0; i < loop; i++) {\r\n\t\td1 = myShaderTexture.Sample(mySampleType, float2(xin, uvz.y)).r;\r\n\t\td1 = invView * d1 + (1.0 - invView) * (1.0 - d1);\r\n\t\td1 = d1 * (uvz.z - 0.5) * fDpt;\r\n\t\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\r\n\t\txtemp = min(xtemp, abs(((uvz.z - 0.5) * fDpt) / (loop / 1.2)));\r\n\t\txin = xin + xtemp * sn;\r\n\t}\r\n\txtemp = uvz.x + d1 - d3;\r\n\txtemp = 1.0 - abs(1.0 - xtemp);\r\n\treturn float2(xtemp - 0.5, uvz.y);\r\n}\r\n\r\n// "
+        },
+        {
+          "addr": "0x18008260f",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n\tfloat3 nuv = float3(input.tex, 0.0f);\r\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n\tfloat4 rgb[3];\r\n\r\n\tfor (int i = 0; i < 3; i++) {\t\t\t\t\r\n\t\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n\t\tnuv.z =1.0 - fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\tfloat sign_s = s;\t\t\r\n\t\tif (columns >= 0.0) {\r\n\t\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t\tnuv.z = floor(nuv.z * 2.0 * 1.0);\r\n\t\t\tnuv.z = clamp(nuv.z, 0.0, 2.0 * 1.0 - 1.0) * z_l;\r\n\t\t}\r\n\t\telse {\r\n\t\t\tsign_s = 1.0 - s;\r\n\t\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t}\r\n\t\t\r\n\t\tfloat2 result = texArr(float3(nuv.x * 0.5f + 0.5f, nuv.y, nuv.z));\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x180082a9c",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x180083e0a",
+          "string": "invView"
+        },
+        {
+          "addr": "0x1800852db",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER\r\n{\r\n\tfloat PixelOffset;\r\n\tfloat widthProp;\r\n\tfloat heightProp;\r\n\tfloat startXProp;\r\n\tfloat startYProp;\r\n\tfloat center;\r\n\tfloat shift_Norm;\r\n\tfloat tilt;\r\n\tfloat pitch;\r\n\tfloat subp;\r\n\tfloat s;\r\n\tint\tri, bi;\r\n\tfloat columns;\r\n\tfloat rows;\r\n\tfloat z_l;\t\r\n\tfloat fDpt;\r\n\tfloat dD3;\r\n};\r\n\r\n//--------------------------------------------------------------------------------------\r\n//texArr function\r\n//--------------------------------------------------------------------------------------\r\nfloat2 texArr(float3 uvz)\r\n{\r\n\tfloat d1;\r\n\tfloat xtemp;\r\n\tfloat invView = 0.0;\r\n\tfloat sn = sign(uvz.z - 0.5);\r\n\tfloat d3 = dD3;\r\n\tfloat loop = 3.0;\r\n\td3 = d3 * (uvz.z - 0.5) * fDpt;\r\n\tfloat xin = uvz.x - d3;\r\n\tfor (float i = 0.0; i < loop; i++) {\r\n\t\td1 = myShaderTexture.Sample(mySampleType, float2(xin, uvz.y)).r;\r\n\t\td1 = invView * d1 + (1.0 - invView) * (1.0 - d1);\r\n\t\td1 = d1 * (uvz.z - 0.5) * fDpt;\r\n\t\txtemp = max(0.0, sn * (uvz.x - (xin - d1 + d3)));\r\n\t\txtemp = min(xtemp, abs(((uvz.z - 0.5) * fDpt) / (loop / 1.2)));\r\n\t\txin = xin + xtemp * sn;\r\n\t}\r\n\txtemp = uvz.x + d1 - d3;\r\n\txtemp = 1.0 - abs(1.0 - xtemp);\r\n\treturn float2(xtemp - 0.5, uvz.y);\r\n}\r\n\r\n// "
+        },
+        {
+          "addr": "0x18008577d",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n\tfloat3 nuv = float3(input.tex, 0.0f);\r\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n\tfloat4 rgb[3];\r\n\r\n\tfor (int i = 0; i < 3; i++) {\t\t\t\t\r\n\t\tnuv.z = (actual.x + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n\t\tnuv.z =1.0 - fmod(nuv.z + ceil(abs(nuv.z)), 1.0f);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\tfloat sign_s = s;\t\t\r\n\t\tif (columns >= 0.0) {\r\n\t\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t\tnuv.z = floor(nuv.z * 2.0 * 1.0);\r\n\t\t\tnuv.z = clamp(nuv.z, 0.0, 2.0 * 1.0 - 1.0) * z_l;\r\n\t\t}\r\n\t\telse {\r\n\t\t\tsign_s = 1.0 - s;\r\n\t\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t}\r\n\t\t\r\n\t\tfloat2 result = texArr(float3(nuv.x * 0.5f + 0.5f, nuv.y, nuv.z));\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x180085c0a",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x180086d04",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x180086dfc",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x180087dcc",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x180087e2a",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x180089525",
+          "string": "DX11 pixel shader for LF3DRender,"
+        },
+        {
+          "addr": "0x18008a19f",
+          "string": "DX11 pixel shader for LF3DRender,"
+        },
+        {
+          "addr": "0x18008a429",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER:register(b0)\r\n{\r\n\tfloat PixelOffset;\r\n\tfloat widthProp;\r\n\tfloat heightProp;\r\n\tfloat startXProp;\r\n\tfloat startYProp;\r\n\tfloat center, shift_Norm, tilt, pitch,subp,s;\r\n\tint\tri;\r\n\tint bi;\r\n\tfloat columns;\r\n\tfloat rows;\r\n\tfloat z_l;\r\n\tfloat cColumns;//_c_row\r\n\tfloat cRows;//_c_col\r\n\tfloat cEffect;\r\n\tfloat picnum;\r\n\tfloat kz;\r\n\tfloat kx;\t\r\n};\r\n\r\n/*\r\nfunc:texArr function\r\nm:"
+        },
+        {
+          "addr": "0x18008a8d5",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n\t\r\n\tfloat3 nuv = float3(input.tex, 0.0f);\r\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n\r\n\tfloat4 comOffset;\r\n\tfloat m;\t\r\n\tfloat3 comnuv = float3(actual, picnum);\r\n\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\r\n\tm = (kz * comOffset.r + (1.0 - kz) * comOffset.g);\r\n\r\n\tfloat4 rgb[3];\t\t\r\n\r\n\tfor (int i = 0; i < 3; i++) {\t\t\r\n\t\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * kx * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\r\n\t\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\r\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\tnuv.z = floor(nuv.z * columns * rows);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18008adf0",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x18008b006",
+          "string": " PixelOffset\r\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x18008b060",
+          "string": "PixelOffset\r\n* \r\n*  "
+        },
+        {
+          "addr": "0x18008b084",
+          "string": "\r\n* nuv.z = picnum;\r\n* comOffset = _comtex.Sample(mySampleType, texArr(nuv, cColumns, cRows));\r\n* "
+        },
+        {
+          "addr": "0x18008b0ea",
+          "string": "\r\n* float3 comnuv = float3(input.tex, picnum);\t\r\n* comOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\r\n*/\r\n"
+        },
+        {
+          "addr": "0x18008be1e",
+          "string": "comOffset"
+        },
+        {
+          "addr": "0x18008d9af",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER:register(b0)\r\n{\r\n\tfloat PixelOffset;\r\n\tfloat widthProp;\r\n\tfloat heightProp;\r\n\tfloat startXProp;\r\n\tfloat startYProp;\r\n\tfloat center, shift_Norm, tilt, pitch,subp,s;\r\n\tint\tri;\r\n\tint bi;\r\n\tfloat columns;\r\n\tfloat rows;\r\n\tfloat z_l;\r\n\tfloat cColumns;//_c_row\r\n\tfloat cRows;//_c_col\r\n\tfloat cEffect;\r\n\tfloat picnum;\r\n\tfloat kz;\r\n\tfloat kx;\t\r\n};\r\n\r\n/*\r\nfunc:texArr function\r\nm:"
+        },
+        {
+          "addr": "0x18008de5b",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n\t\r\n\tfloat3 nuv = float3(input.tex, 0.0f);\r\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n\r\n\tfloat4 comOffset;\r\n\tfloat m;\t\r\n\tfloat3 comnuv = float3(actual, picnum);\r\n\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\r\n\tm = (kz * comOffset.r + (1.0 - kz) * comOffset.g);\r\n\r\n\tfloat4 rgb[3];\t\t\r\n\r\n\tfor (int i = 0; i < 3; i++) {\t\t\r\n\t\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * kx * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\r\n\t\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\r\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\tnuv.z = floor(nuv.z * columns * rows);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18008e376",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x18008e58c",
+          "string": " PixelOffset\r\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x18008e5e6",
+          "string": "PixelOffset\r\n* \r\n*  "
+        },
+        {
+          "addr": "0x18008e60a",
+          "string": "\r\n* nuv.z = picnum;\r\n* comOffset = _comtex.Sample(mySampleType, texArr(nuv, cColumns, cRows));\r\n* "
+        },
+        {
+          "addr": "0x18008e670",
+          "string": "\r\n* float3 comnuv = float3(input.tex, picnum);\t\r\n* comOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\r\n*/\r\n"
+        },
+        {
+          "addr": "0x18008f3a4",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x18008f49c",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x18009084c",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x1800908aa",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x180093285",
+          "string": "DX11 pixel shader for LF3DRender,"
+        },
+        {
+          "addr": "0x180093eff",
+          "string": "DX11 pixel shader for LF3DRender,"
+        },
+        {
+          "addr": "0x18009418d",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER:register(b0)\r\n{\r\n\tfloat PixelOffset;\r\n\tfloat widthProp;\r\n\tfloat heightProp;\r\n\tfloat startXProp;\r\n\tfloat startYProp;\r\n\tfloat center, shift_Norm, tilt, pitch,subp,s;\r\n\tint\tri,bi;\t\r\n\tfloat columns;\r\n\tfloat rows;\r\n\tfloat z_l;\t\t\r\n\tfloat cColumns;//_c_row\r\n\tfloat cRows;//_c_col\r\n\tfloat cEffect;//_c_effect\r\n\tfloat Keye;\r\n\tfloat kl;\r\n\tfloat _c_pos;\r\n};\r\n\r\n/*\r\nfunc:texArr function\r\nm:"
+        },
+        {
+          "addr": "0x18009433a",
+          "string": "\r\n*/\r\n\r\nfloat2 texArr(float3 uvz,float m,float n)\r\n{\r\n\t// decide which section to take from based on the z.\r\n\tfloat z = uvz.z;// floor(uvz.z * 2.0 * 1.0);\r\n\tz = clamp(z, 0.0, m * n - 1.0) * z_l;\r\n\tfloat x = (fmod(z, m) + uvz.x) / m;\r\n\t//float y = (floor(z / m) + uvz.y) / n;\t\r\n#if _UNITY_PROJ_\r\n    float y = (floor(z / m) + uvz.y) / n;\r\n#else\r\n    float y = 1.0 - (floor(z / m) + uvz.y) / n;\r\n#endif\r\n\treturn float2(x, y);   \r\n}\r\n\r\n//float2 texArr2(float3 uvz, float m, float n)\r\n//{\r\n//\t// decide which section to take from based on the z.\r\n//    float z = uvz.z; // floor(uvz.z * 2.0 * 1.0);\r\n//    z = clamp(z, 0.0, m * n - 1.0) * z_l;\r\n//    float x = (fmod(z, m) + uvz.x) / m;\r\n//\t//float y = (floor(z / m) + uvz.y) / n;\r\n//    float y = 1.0 - (floor(z / m) + uvz.y) / n;\r\n//    return float2(x, y);\r\n//}\r\n\r\nfloat4 mapping(float2 texcoord, float2 actualcoord,float m_, float i, float s_)\r\n{\r\n    float3 nuv = float3(texcoord, 0.0f);\r\n    nuv.z = (actualcoord.x + ((m_ - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float) i * (PixelOffset + subp) + actualcoord.y * tilt) * pitch + center;\r\n    nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\r\n    float sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\r\n    nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n    nuv.z = floor(nuv.z * columns * rows);\r\n\treturn myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\r\n}\r\n\r\n// "
+        },
+        {
+          "addr": "0x1800948ff",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n\t//float3 nuv = float3(input.tex, 0.0f);\r\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n\r\n\tfloat4 comOffset;\r\n\tfloat m;\t\r\n\tfloat3 comnuv = float3(actual, _c_pos);\r\n\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));   \r\n\tm = (kl + 1.0 - Keye) * comOffset.r + (Keye - kl) * comOffset.g;\r\n\r\n\t/*\r\n\tfloat4 rgb[3];\t\r\n\r\n\tfor (int i = 0; i < 3; i++) {\t\t\r\n\t\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\r\n\t\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\r\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\tnuv.z = floor(nuv.z * columns * rows);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x180094d07",
+          "string": "\r\n\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\r\n\t\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\r\n\t}\t\r\n    return float4(rgb[ri].r, rgb[1].g, rgb[bi].b, rgb[1].a);\r\n*/\r\n\t//return float4(m, m, m,1.0);\r\n    //return comOffset;\r\n\t\r\n\t\r\n\t //20250825 "
+        },
+        {
+          "addr": "0x180094f64",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x180095177",
+          "string": " PixelOffset\r\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x1800951d1",
+          "string": "PixelOffset\r\n* \r\n* "
+        },
+        {
+          "addr": "0x1800951f4",
+          "string": "\r\n* nuv.z = _c_pos;\r\n* comOffset = _comtex.Sample(mySampleType, texArr(nuv, cColumns, cRows));\r\n* "
+        },
+        {
+          "addr": "0x18009525a",
+          "string": "\r\n* float3 comnuv = float3(actual, _c_pos);\r\n* comOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\r\n*/\r\n"
+        },
+        {
+          "addr": "0x180095efe",
+          "string": "comOffset"
+        },
+        {
+          "addr": "0x180099d13",
+          "string": "\r\n\r\ncbuffer PS_CONSTANT_BUFFER:register(b0)\r\n{\r\n\tfloat PixelOffset;\r\n\tfloat widthProp;\r\n\tfloat heightProp;\r\n\tfloat startXProp;\r\n\tfloat startYProp;\r\n\tfloat center, shift_Norm, tilt, pitch,subp,s;\r\n\tint\tri,bi;\t\r\n\tfloat columns;\r\n\tfloat rows;\r\n\tfloat z_l;\t\t\r\n\tfloat cColumns;//_c_row\r\n\tfloat cRows;//_c_col\r\n\tfloat cEffect;//_c_effect\r\n\tfloat Keye;\r\n\tfloat kl;\r\n\tfloat _c_pos;\r\n};\r\n\r\n/*\r\nfunc:texArr function\r\nm:"
+        },
+        {
+          "addr": "0x180099ec0",
+          "string": "\r\n*/\r\n\r\nfloat2 texArr(float3 uvz,float m,float n)\r\n{\r\n\t// decide which section to take from based on the z.\r\n\tfloat z = uvz.z;// floor(uvz.z * 2.0 * 1.0);\r\n\tz = clamp(z, 0.0, m * n - 1.0) * z_l;\r\n\tfloat x = (fmod(z, m) + uvz.x) / m;\r\n\t//float y = (floor(z / m) + uvz.y) / n;\t\r\n#if _UNITY_PROJ_\r\n    float y = (floor(z / m) + uvz.y) / n;\r\n#else\r\n    float y = 1.0 - (floor(z / m) + uvz.y) / n;\r\n#endif\r\n\treturn float2(x, y);   \r\n}\r\n\r\n//float2 texArr2(float3 uvz, float m, float n)\r\n//{\r\n//\t// decide which section to take from based on the z.\r\n//    float z = uvz.z; // floor(uvz.z * 2.0 * 1.0);\r\n//    z = clamp(z, 0.0, m * n - 1.0) * z_l;\r\n//    float x = (fmod(z, m) + uvz.x) / m;\r\n//\t//float y = (floor(z / m) + uvz.y) / n;\r\n//    float y = 1.0 - (floor(z / m) + uvz.y) / n;\r\n//    return float2(x, y);\r\n//}\r\n\r\nfloat4 mapping(float2 texcoord, float2 actualcoord,float m_, float i, float s_)\r\n{\r\n    float3 nuv = float3(texcoord, 0.0f);\r\n    nuv.z = (actualcoord.x + ((m_ - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float) i * (PixelOffset + subp) + actualcoord.y * tilt) * pitch + center;\r\n    nuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\r\n    float sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\r\n    nuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n    nuv.z = floor(nuv.z * columns * rows);\r\n\treturn myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\r\n}\r\n\r\n// "
+        },
+        {
+          "addr": "0x18009a485",
+          "string": "\r\nfloat4 TexturePsMain(tPinputtype input) : SV_TARGET\r\n{\r\n\t//float3 nuv = float3(input.tex, 0.0f);\r\n\tfloat2 actual = float2(input.tex.x * widthProp + startXProp, input.tex.y * heightProp + startYProp);\r\n\r\n\tfloat4 comOffset;\r\n\tfloat m;\t\r\n\tfloat3 comnuv = float3(actual, _c_pos);\r\n\tcomOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));   \r\n\tm = (kl + 1.0 - Keye) * comOffset.r + (Keye - kl) * comOffset.g;\r\n\r\n\t/*\r\n\tfloat4 rgb[3];\t\r\n\r\n\tfor (int i = 0; i < 3; i++) {\t\t\r\n\t\tnuv.z = (actual.x + ((m - 0.5) * 2.0) * cEffect * z_l + shift_Norm + (float)i * (PixelOffset + subp) + actual.y * tilt) * pitch + center;\r\n\t\tnuv.z = fmod(nuv.z + ceil(abs(nuv.z)), 1.0);\r\n\t\tfloat sign_s = (1.0 - sign(rows - 1.0)) * s + sign(rows - 1.0) * (1.0 - s);\r\n\t\tnuv.z = (1.0 - sign_s) * nuv.z + sign_s * (1.0 - nuv.z);\r\n\t\t//nuv.z = (1.0f - s) * nuv.z + s * (1.0f - nuv.z);\r\n\t\tnuv.z = floor(nuv.z * columns * rows);\r\n\t\t // Sample"
+        },
+        {
+          "addr": "0x18009a88d",
+          "string": "\r\n\t //textureColor = myShaderTexture.Sample(mySampleType, input.tex);\r\n\t\trgb[i] = myShaderTexture.Sample(mySampleType, texArr(nuv, columns, rows));\r\n\t}\t\r\n    return float4(rgb[ri].r, rgb[1].g, rgb[bi].b, rgb[1].a);\r\n*/\r\n\t//return float4(m, m, m,1.0);\r\n    //return comOffset;\r\n\t\r\n\t\r\n\t //20250825 "
+        },
+        {
+          "addr": "0x18009aaea",
+          "string": "@vojin\r\n* Pixel shader=="
+        },
+        {
+          "addr": "0x18009acfd",
+          "string": " PixelOffset\r\n* 1.0f / 3.0f / ScreenWidth"
+        },
+        {
+          "addr": "0x18009ad57",
+          "string": "PixelOffset\r\n* \r\n* "
+        },
+        {
+          "addr": "0x18009ad7a",
+          "string": "\r\n* nuv.z = _c_pos;\r\n* comOffset = _comtex.Sample(mySampleType, texArr(nuv, cColumns, cRows));\r\n* "
+        },
+        {
+          "addr": "0x18009ade0",
+          "string": "\r\n* float3 comnuv = float3(actual, _c_pos);\r\n* comOffset = _comtex.Sample(mySampleType, texArr(comnuv, cColumns, cRows));\r\n*/\r\n"
+        },
+        {
+          "addr": "0x18009bb04",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x18009bbfc",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x18009d6b0",
+          "string": "PixelOffset"
+        },
+        {
+          "addr": "0x18009d71c",
+          "string": "pitch"
+        },
+        {
+          "addr": "0x18009d960",
+          "string": "Lens_param"
+        },
+        {
+          "addr": "0x18009d998",
+          "string": "lens_info"
+        },
+        {
+          "addr": "0x18009d9d8",
+          "string": "eyetracking_calibration"
+        },
+        {
+          "addr": "0x18009d9f0",
+          "string": "offsetXb"
+        },
+        {
+          "addr": "0x18009da80",
+          "string": "pixel_size"
+        },
+        {
+          "addr": "0x18009da94",
+          "string": "dpitch"
+        },
+        {
+          "addr": "0x18009dad0",
+          "string": "photo_offsetx"
+        },
+        {
+          "addr": "0x18009dd28",
+          "string": "glPixelStoref"
+        },
+        {
+          "addr": "0x18009dd38",
+          "string": "glPixelStorei"
+        },
+        {
+          "addr": "0x18009dd58",
+          "string": "glReadPixels"
+        },
+        {
+          "addr": "0x18009de68",
+          "string": "glViewport"
+        }
+      ],
+      "cursor": {
+        "next": 100
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

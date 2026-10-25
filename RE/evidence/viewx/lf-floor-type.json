@@ -1,0 +1,26 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"edit\":{\"addr\":\"0x18005EE50\",\"kind\":\"function\",\"signature\":\"double __cdecl floor(double x);\"},\"kind\":\"function\",\"ok\":true}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "edit": {
+            "addr": "0x18005EE50",
+            "kind": "function",
+            "signature": "double __cdecl floor(double x);"
+          },
+          "kind": "function",
+          "ok": true
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,905 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"metadata\":{\"path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\TitanLeiaBridge\\\\RE\\\\inputs\\\\viewx\\\\depth\\\\LF3DRenderCore.dll.i64\",\"module\":\"LF3DRenderCore.dll\",\"arch\":\"64\",\"base_address\":\"0x180000000\",\"image_size\":\"0x395000\",\"md5\":\"5444d71dc82d3da18c2ccb9720a9834d\",\"sha256\":\"a5d7fcc775fbd64f6ba231407ebc5fb3e2dccc2f5a73fc5e83b79c3314c60474\"},\"statistics\":{\"total_functions\":1740,\"named_functions\":24,\"library_functions\":116,\"unnamed_functions\":1600,\"total_strings\":2898,\"total_segments\":6},\"segments\":[{\"name\":\".text\",\"start\":\"0x180001000\",\"end\":\"0x180064000\",\"size\":\"0x63000\",\"permissions\":\"rx\"},{\"name\":\".idata\",\"start\":\"0x180064000\",\"end\":\"0x1800642f8\",\"size\":\"0x2f8\",\"permissions\":\"r\"},{\"name\":\".rdata\",\"start\":\"0x1800642f8\",\"end\":\"0x1800ad000\",\"size\":\"0x48d08\",\"permissions\":\"r\"},{\"name\":\".data\",\"start\":\"0x1800ad000\",\"end\":\"0x18038d000\",\"size\":\"0x2e0000\",\"permissions\":\"rw\"},{\"name\":\".pdata\",\"start\":\"0x18038d000\",\"end\":\"0x180392000\",\"size\":\"0x5000\",\"permissions\":\"r\"},{\"name\":\".fptable\",\"start\":\"0x180392000\",\"end\":\"0x180393000\",\"size\":\"0x1000\",\"permissions\":\"rw\"}],\"entrypoints\":[{\"addr\":\"0x180022240\",\"name\":\"CreateDX11Render\",\"ordinal\":1},{\"addr\":\"0x180024db0\",\"name\":\"CreateGLCoreRender\",\"ordinal\":2},{\"addr\":\"0x180024e10\",\"name\":\"CreateGLESRender\",\"ordinal\":3},{\"addr\":\"0x180036e10\",\"name\":\"CreateSimpleRender\",\"ordinal\":4},{\"addr\":\"0x180035e10\",\"name\":\"DestorySimpleRenderInstance\",\"ordinal\":5},{\"addr\":\"0x180035e40\",\"name\":\"GetLensInfo\",\"ordinal\":6},{\"addr\":\"0x180005810\",\"name\":\"LoadLicenseFromBuffer\",\"ordinal\":7},{\"addr\":\"0x180005810\",\"name\":\"LoadLicenseFromFile\",\"ordinal\":8},{\"addr\":\"0x180035e00\",\"name\":\"VersionNumber\",\"ordinal\":9},{\"addr\":\"0x18003935c\",\"name\":\"DllEntryPoint\",\"ordinal\":6442685276}],\"interesting_strings\":[{\"addr\":\"0x1800a1c68\",\"string\":\"outofmem\",\"xref_count\":23},{\"addr\":\"0x180072ef8\",\"string\":\"ios_base::badbit set\",\"xref_count\":14},{\"addr\":\"0x1800a1e10\",\"string\":\"too large\",\"xref_count\":14},{\"addr\":\"0x180072f10\",\"string\":\"ios_base::failbit set\",\"xref_count\":13},{\"addr\":\"0x180072f28\",\"string\":\"ios_base::eofbit set\",\"xref_count\":13},{\"addr\":\"0x180072f88\",\"string\":\"Error\",\"xref_count\":9},{\"addr\":\"0x18009d750\",\"string\":\"Could not compiled shader!\",\"xref_count\":7},{\"addr\":\"0x180071e38\",\"string\":\"#endif \\n\",\"xref_count\":5},{\"addr\":\"0x180071ed8\",\"string\":\"#ifdef REDUCE_CROSSTALK \\n\",\"xref_count\":5},{\"addr\":\"0x180072ee8\",\"string\":\"bad locale name\",\"xref_count\":5},{\"addr\":\"0x18009d590\",\"string\":\"fragColor\",\"xref_count\":5},{\"addr\":\"0x18009d9d8\",\"string\":\"eyetracking_calibration\",\"xref_count\":5},{\"addr\":\"0x1800a1648\",\"string\":\"assert json failed\",\"xref_count\":5},{\"addr\":\"0x18006b980\",\"string\":\"EnumSystemLocalesEx\",\"xref_count\":4},{\"addr\":\"0x18006b9d0\",\"string\":\"GetLocaleInfoEx\",\"xref_count\":4}],\"interesting_functions\":[{\"addr\":\"0x180004850\",\"name\":\"sub_180004850\",\"size\":5,\"xref_count\":329,\"callee_count\":0,\"type\":\"thunk\"},{\"addr\":\"0x180004b00\",\"name\":\"sub_180004B00\",\"size\":113,\"xref_count\":260,\"callee_count\":2,\"type\":\"complex\"},{\"addr\":\"0x1800389cc\",\"name\":\"sub_1800389CC\",\"size\":5,\"xref_count\":211,\"callee_count\":0,\"type\":\"thunk\"},{\"addr\":\"0x18004ce70\",\"name\":\"sub_18004CE70\",\"size\":60,\"xref_count\":193,\"callee_count\":4,\"type\":\"complex\"},{\"addr\":\"0x1800414dc\",\"name\":\"sub_1800414DC\",\"size\":35,\"xref_count\":167,\"callee_count\":1,\"type\":\"wrapper\"},{\"addr\":\"0x180060970\",\"name\":\"sub_180060970\",\"size\":1645,\"xref_count\":150,\"callee_count\":0,\"type\":\"leaf\"},{\"addr\":\"0x180025df0\",\"name\":\"sub_180025DF0\",\"size\":119,\"xref_count\":148,\"callee_count\":0,\"type\":\"leaf\"},{\"addr\":\"0x180041500\",\"name\":\"sub_180041500\",\"size\":5,\"xref_count\":138,\"callee_count\":0,\"type\":\"thunk\"},{\"addr\":\"0x18003ecb4\",\"name\":\"sub_18003ECB4\",\"size\":71,\"xref_count\":113,\"callee_count\":3,\"type\":\"complex\"},{\"addr\":\"0x18003b06c\",\"name\":\"sub_18003B06C\",\"size\":25,\"xref_count\":112,\"callee_count\":2,\"type\":\"complex\"},{\"addr\":\"0x180004b80\",\"name\":\"sub_180004B80\",\"size\":373,\"xref_count\":110,\"callee_count\":9,\"type\":\"complex\"},{\"addr\":\"0x180025ff0\",\"name\":\"sub_180025FF0\",\"size\":162,\"xref_count\":91,\"callee_count\":2,\"type\":\"complex\"},{\"addr\":\"0x180061010\",\"name\":\"sub_180061010\",\"size\":904,\"xref_count\":78,\"callee_count\":0,\"type\":\"leaf\"},{\"addr\":\"0x1800047e0\",\"name\":\"sub_1800047E0\",\"size\":109,\"xref_count\":74,\"callee_count\":1,\"type\":\"complex\"},{\"addr\":\"0x180038990\",\"name\":\"sub_180038990\",\"size\":60,\"xref_count\":67,\"callee_count\":4,\"type\":\"complex\"}],\"imports_by_category\":{\"crypto\":[],\"network\":[],\"file_io\":[{\"addr\":\"0x180064028\",\"name\":\"SetEndOfFile\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064120\",\"name\":\"GetSystemTimeAsFileTime\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064138\",\"name\":\"RtlPcToFileHeader\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064190\",\"name\":\"ReadFile\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641a8\",\"name\":\"GetModuleFileNameW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641c8\",\"name\":\"GetFileType\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641d0\",\"name\":\"GetFileSizeEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641d8\",\"name\":\"SetFilePointerEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641e0\",\"name\":\"FlushFileBuffers\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641e8\",\"name\":\"WriteFile\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064270\",\"name\":\"FindFirstFileExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064278\",\"name\":\"FindNextFileW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800642c8\",\"name\":\"CreateFileW\",\"module\":\"KERNEL32\"}],\"process\":[{\"addr\":\"0x1800640c0\",\"name\":\"RtlVirtualUnwind\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640d8\",\"name\":\"GetCurrentProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640e0\",\"name\":\"TerminateProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640e8\",\"name\":\"IsProcessorFeaturePresent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064110\",\"name\":\"GetCurrentProcessId\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064118\",\"name\":\"GetCurrentThreadId\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064198\",\"name\":\"ExitProcess\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064228\",\"name\":\"VirtualProtect\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800642b8\",\"name\":\"GetProcessHeap\",\"module\":\"KERNEL32\"}],\"registry\":[],\"other\":[{\"addr\":\"0x1800642d8\",\"name\":\"wglGetProcAddress\",\"module\":\"OPENGL32\"},{\"addr\":\"0x180064000\",\"name\":\"LoadLibraryExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064008\",\"name\":\"MultiByteToWideChar\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064010\",\"name\":\"LoadLibraryA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064018\",\"name\":\"GetProcAddress\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064020\",\"name\":\"FreeLibrary\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064030\",\"name\":\"WriteConsoleW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064038\",\"name\":\"HeapSize\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064040\",\"name\":\"WideCharToMultiByte\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064048\",\"name\":\"EnterCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064050\",\"name\":\"LeaveCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064058\",\"name\":\"InitializeCriticalSectionEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064060\",\"name\":\"DeleteCriticalSection\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064068\",\"name\":\"EncodePointer\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064070\",\"name\":\"DecodePointer\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064078\",\"name\":\"LCMapStringEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064080\",\"name\":\"GetStringTypeW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064088\",\"name\":\"GetCPInfo\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064090\",\"name\":\"ReleaseSRWLockExclusive\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064098\",\"name\":\"AcquireSRWLockExclusive\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640a0\",\"name\":\"WakeAllConditionVariable\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640a8\",\"name\":\"SleepConditionVariableSRW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640b0\",\"name\":\"RtlCaptureContext\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640b8\",\"name\":\"RtlLookupFunctionEntry\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640c8\",\"name\":\"UnhandledExceptionFilter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640d0\",\"name\":\"SetUnhandledExceptionFilter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640f0\",\"name\":\"IsDebuggerPresent\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800640f8\",\"name\":\"GetStartupInfoW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064100\",\"name\":\"GetModuleHandleW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064108\",\"name\":\"QueryPerformanceCounter\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064128\",\"name\":\"InitializeSListHead\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064130\",\"name\":\"RtlUnwindEx\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064140\",\"name\":\"RaiseException\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064148\",\"name\":\"InterlockedFlushSList\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064150\",\"name\":\"GetLastError\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064158\",\"name\":\"SetLastError\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064160\",\"name\":\"InitializeCriticalSectionAndSpinCount\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064168\",\"name\":\"TlsAlloc\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064170\",\"name\":\"TlsGetValue\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064178\",\"name\":\"TlsSetValue\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064180\",\"name\":\"TlsFree\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064188\",\"name\":\"RtlUnwind\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641a0\",\"name\":\"GetModuleHandleExW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641b0\",\"name\":\"HeapFree\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641b8\",\"name\":\"HeapAlloc\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641c0\",\"name\":\"GetStdHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641f0\",\"name\":\"GetConsoleOutputCP\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800641f8\",\"name\":\"GetConsoleMode\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064200\",\"name\":\"CloseHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064208\",\"name\":\"FlsAlloc\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064210\",\"name\":\"FlsGetValue\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064218\",\"name\":\"FlsSetValue\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064220\",\"name\":\"FlsFree\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064230\",\"name\":\"LCMapStringW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064238\",\"name\":\"GetLocaleInfoW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064240\",\"name\":\"IsValidLocale\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064248\",\"name\":\"GetUserDefaultLCID\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064250\",\"name\":\"EnumSystemLocalesW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064258\",\"name\":\"ReadConsoleW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064260\",\"name\":\"HeapReAlloc\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064268\",\"name\":\"FindClose\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064280\",\"name\":\"IsValidCodePage\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064288\",\"name\":\"GetACP\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064290\",\"name\":\"GetOEMCP\",\"module\":\"KERNEL32\"},{\"addr\":\"0x180064298\",\"name\":\"GetCommandLineA\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800642a0\",\"name\":\"GetCommandLineW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800642a8\",\"name\":\"GetEnvironmentStringsW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800642b0\",\"name\":\"FreeEnvironmentStringsW\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800642c0\",\"name\":\"SetStdHandle\",\"module\":\"KERNEL32\"},{\"addr\":\"0x1800642e8\",\"name\":\"MessageBoxW\",\"module\":\"USER32\"}]},\"call_graph_summary\":{\"total_edges\":6785,\"max_depth_estimate\":null,\"root_functions\":[\"sub_180001000\",\"sub_180001090\",\"sub_180001118\",\"sub_180001138\",\"sub_180001168\",\"sub_1800011B8\",\"sub_180001200\",\"sub_180001220\",\"sub_18000122C\",\"sub_180001238\",\"sub_180001268\",\"sub_1800012B8\",\"sub_1800012F0\",\"sub_180001310\",\"sub_18000131C\",\"sub_180001410\",\"??1agent@Concurrency@@UEAA@XZ\",\"nullsub_2\",\"sub_180001490\",\"sub_180001530\",\"sub_180001570\",\"sub_180005160\",\"sub_1800057A0\",\"sub_1800057F0\",\"sub_180005820\",\"sub_180005850\",\"sub_180005890\",\"sub_1800058A0\",\"sub_1800058E0\",\"sub_180005AF0\",\"sub_180005B40\",\"sub_180005BA0\",\"sub_180005BF0\",\"sub_180005C00\",\"sub_180005C80\",\"sub_180005D00\",\"sub_180005D40\",\"sub_180005E10\",\"?_Decref@facet@locale@std@@UEAAPEAV_Facet_base@3@XZ\",\"sub_180005E40\",\"sub_180006010\",\"sub_180006020\",\"sub_180006070\",\"sub_180006080\",\"sub_1800060D0\",\"?do_widen@?$ctype@D@std@@MEBAPEBDPEBD0PEAD@Z\",\"?do_narrow@?$ctype@D@std@@MEBAPEBDPEBD0DPEAD@Z\",\"sub_180006120\",\"sub_180006280\",\"sub_1800062E0\",\"sub_180006880\",\"sub_1800068C0\",\"sub_1800068F0\",\"sub_180006ED0\",\"sub_180006F00\",\"sub_1800072F0\",\"sub_1800073E0\",\"sub_180007420\",\"sub_180007430\",\"sub_180007470\",\"sub_1800074A0\",\"sub_180007630\",\"sub_180007670\",\"sub_1800076B0\",\"sub_180007700\",\"sub_1800078C0\",\"sub_180007AE0\",\"sub_180007C50\",\"sub_180008F20\",\"sub_180008F60\",\"sub_180008FF0\",\"sub_180009080\",\"sub_18000A0C0\",\"sub_18000A100\",\"sub_18000A150\",\"sub_18000A260\",\"sub_18000A410\",\"sub_18000A450\",\"sub_18000A500\",\"sub_18000A530\",\"sub_18000AC10\",\"sub_18000C230\",\"sub_18000C570\",\"sub_18000C5A0\",\"sub_18000C5F0\",\"sub_18000C710\",\"sub_18000C7F0\",\"sub_18000C8F0\",\"sub_18000CA20\",\"sub_18000CBD0\",\"sub_18000CE40\",\"sub_18000CEB0\",\"sub_18000CFA0\",\"sub_18000D140\",\"sub_18000D160\",\"sub_18000D360\",\"sub_18000D480\",\"sub_18000D610\",\"sub_18000D670\",\"sub_18000D6D0\"],\"leaf_functions_count\":740}}"
+      }
+    ],
+    "structuredContent": {
+      "metadata": {
+        "path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\viewx\\depth\\LF3DRenderCore.dll.i64",
+        "module": "LF3DRenderCore.dll",
+        "arch": "64",
+        "base_address": "0x180000000",
+        "image_size": "0x395000",
+        "md5": "5444d71dc82d3da18c2ccb9720a9834d",
+        "sha256": "a5d7fcc775fbd64f6ba231407ebc5fb3e2dccc2f5a73fc5e83b79c3314c60474"
+      },
+      "statistics": {
+        "total_functions": 1740,
+        "named_functions": 24,
+        "library_functions": 116,
+        "unnamed_functions": 1600,
+        "total_strings": 2898,
+        "total_segments": 6
+      },
+      "segments": [
+        {
+          "name": ".text",
+          "start": "0x180001000",
+          "end": "0x180064000",
+          "size": "0x63000",
+          "permissions": "rx"
+        },
+        {
+          "name": ".idata",
+          "start": "0x180064000",
+          "end": "0x1800642f8",
+          "size": "0x2f8",
+          "permissions": "r"
+        },
+        {
+          "name": ".rdata",
+          "start": "0x1800642f8",
+          "end": "0x1800ad000",
+          "size": "0x48d08",
+          "permissions": "r"
+        },
+        {
+          "name": ".data",
+          "start": "0x1800ad000",
+          "end": "0x18038d000",
+          "size": "0x2e0000",
+          "permissions": "rw"
+        },
+        {
+          "name": ".pdata",
+          "start": "0x18038d000",
+          "end": "0x180392000",
+          "size": "0x5000",
+          "permissions": "r"
+        },
+        {
+          "name": ".fptable",
+          "start": "0x180392000",
+          "end": "0x180393000",
+          "size": "0x1000",
+          "permissions": "rw"
+        }
+      ],
+      "entrypoints": [
+        {
+          "addr": "0x180022240",
+          "name": "CreateDX11Render",
+          "ordinal": 1
+        },
+        {
+          "addr": "0x180024db0",
+          "name": "CreateGLCoreRender",
+          "ordinal": 2
+        },
+        {
+          "addr": "0x180024e10",
+          "name": "CreateGLESRender",
+          "ordinal": 3
+        },
+        {
+          "addr": "0x180036e10",
+          "name": "CreateSimpleRender",
+          "ordinal": 4
+        },
+        {
+          "addr": "0x180035e10",
+          "name": "DestorySimpleRenderInstance",
+          "ordinal": 5
+        },
+        {
+          "addr": "0x180035e40",
+          "name": "GetLensInfo",
+          "ordinal": 6
+        },
+        {
+          "addr": "0x180005810",
+          "name": "LoadLicenseFromBuffer",
+          "ordinal": 7
+        },
+        {
+          "addr": "0x180005810",
+          "name": "LoadLicenseFromFile",
+          "ordinal": 8
+        },
+        {
+          "addr": "0x180035e00",
+          "name": "VersionNumber",
+          "ordinal": 9
+        },
+        {
+          "addr": "0x18003935c",
+          "name": "DllEntryPoint",
+          "ordinal": 6442685276
+        }
+      ],
+      "interesting_strings": [
+        {
+          "addr": "0x1800a1c68",
+          "string": "outofmem",
+          "xref_count": 23
+        },
+        {
+          "addr": "0x180072ef8",
+          "string": "ios_base::badbit set",
+          "xref_count": 14
+        },
+        {
+          "addr": "0x1800a1e10",
+          "string": "too large",
+          "xref_count": 14
+        },
+        {
+          "addr": "0x180072f10",
+          "string": "ios_base::failbit set",
+          "xref_count": 13
+        },
+        {
+          "addr": "0x180072f28",
+          "string": "ios_base::eofbit set",
+          "xref_count": 13
+        },
+        {
+          "addr": "0x180072f88",
+          "string": "Error",
+          "xref_count": 9
+        },
+        {
+          "addr": "0x18009d750",
+          "string": "Could not compiled shader!",
+          "xref_count": 7
+        },
+        {
+          "addr": "0x180071e38",
+          "string": "#endif \n",
+          "xref_count": 5
+        },
+        {
+          "addr": "0x180071ed8",
+          "string": "#ifdef REDUCE_CROSSTALK \n",
+          "xref_count": 5
+        },
+        {
+          "addr": "0x180072ee8",
+          "string": "bad locale name",
+          "xref_count": 5
+        },
+        {
+          "addr": "0x18009d590",
+          "string": "fragColor",
+          "xref_count": 5
+        },
+        {
+          "addr": "0x18009d9d8",
+          "string": "eyetracking_calibration",
+          "xref_count": 5
+        },
+        {
+          "addr": "0x1800a1648",
+          "string": "assert json failed",
+          "xref_count": 5
+        },
+        {
+          "addr": "0x18006b980",
+          "string": "EnumSystemLocalesEx",
+          "xref_count": 4
+        },
+        {
+          "addr": "0x18006b9d0",
+          "string": "GetLocaleInfoEx",
+          "xref_count": 4
+        }
+      ],
+      "interesting_functions": [
+        {
+          "addr": "0x180004850",
+          "name": "sub_180004850",
+          "size": 5,
+          "xref_count": 329,
+          "callee_count": 0,
+          "type": "thunk"
+        },
+        {
+          "addr": "0x180004b00",
+          "name": "sub_180004B00",
+          "size": 113,
+          "xref_count": 260,
+          "callee_count": 2,
+          "type": "complex"
+        },
+        {
+          "addr": "0x1800389cc",
+          "name": "sub_1800389CC",
+          "size": 5,
+          "xref_count": 211,
+          "callee_count": 0,
+          "type": "thunk"
+        },
+        {
+          "addr": "0x18004ce70",
+          "name": "sub_18004CE70",
+          "size": 60,
+          "xref_count": 193,
+          "callee_count": 4,
+          "type": "complex"
+        },
+        {
+          "addr": "0x1800414dc",
+          "name": "sub_1800414DC",
+          "size": 35,
+          "xref_count": 167,
+          "callee_count": 1,
+          "type": "wrapper"
+        },
+        {
+          "addr": "0x180060970",
+          "name": "sub_180060970",
+          "size": 1645,
+          "xref_count": 150,
+          "callee_count": 0,
+          "type": "leaf"
+        },
+        {
+          "addr": "0x180025df0",
+          "name": "sub_180025DF0",
+          "size": 119,
+          "xref_count": 148,
+          "callee_count": 0,
+          "type": "leaf"
+        },
+        {
+          "addr": "0x180041500",
+          "name": "sub_180041500",
+          "size": 5,
+          "xref_count": 138,
+          "callee_count": 0,
+          "type": "thunk"
+        },
+        {
+          "addr": "0x18003ecb4",
+          "name": "sub_18003ECB4",
+          "size": 71,
+          "xref_count": 113,
+          "callee_count": 3,
+          "type": "complex"
+        },
+        {
+          "addr": "0x18003b06c",
+          "name": "sub_18003B06C",
+          "size": 25,
+          "xref_count": 112,
+          "callee_count": 2,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180004b80",
+          "name": "sub_180004B80",
+          "size": 373,
+          "xref_count": 110,
+          "callee_count": 9,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180025ff0",
+          "name": "sub_180025FF0",
+          "size": 162,
+          "xref_count": 91,
+          "callee_count": 2,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180061010",
+          "name": "sub_180061010",
+          "size": 904,
+          "xref_count": 78,
+          "callee_count": 0,
+          "type": "leaf"
+        },
+        {
+          "addr": "0x1800047e0",
+          "name": "sub_1800047E0",
+          "size": 109,
+          "xref_count": 74,
+          "callee_count": 1,
+          "type": "complex"
+        },
+        {
+          "addr": "0x180038990",
+          "name": "sub_180038990",
+          "size": 60,
+          "xref_count": 67,
+          "callee_count": 4,
+          "type": "complex"
+        }
+      ],
+      "imports_by_category": {
+        "crypto": [],
+        "network": [],
+        "file_io": [
+          {
+            "addr": "0x180064028",
+            "name": "SetEndOfFile",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064120",
+            "name": "GetSystemTimeAsFileTime",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064138",
+            "name": "RtlPcToFileHeader",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064190",
+            "name": "ReadFile",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641a8",
+            "name": "GetModuleFileNameW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641c8",
+            "name": "GetFileType",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641d0",
+            "name": "GetFileSizeEx",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641d8",
+            "name": "SetFilePointerEx",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641e0",
+            "name": "FlushFileBuffers",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641e8",
+            "name": "WriteFile",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064270",
+            "name": "FindFirstFileExW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064278",
+            "name": "FindNextFileW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800642c8",
+            "name": "CreateFileW",
+            "module": "KERNEL32"
+          }
+        ],
+        "process": [
+          {
+            "addr": "0x1800640c0",
+            "name": "RtlVirtualUnwind",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640d8",
+            "name": "GetCurrentProcess",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640e0",
+            "name": "TerminateProcess",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640e8",
+            "name": "IsProcessorFeaturePresent",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064110",
+            "name": "GetCurrentProcessId",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064118",
+            "name": "GetCurrentThreadId",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064198",
+            "name": "ExitProcess",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064228",
+            "name": "VirtualProtect",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800642b8",
+            "name": "GetProcessHeap",
+            "module": "KERNEL32"
+          }
+        ],
+        "registry": [],
+        "other": [
+          {
+            "addr": "0x1800642d8",
+            "name": "wglGetProcAddress",
+            "module": "OPENGL32"
+          },
+          {
+            "addr": "0x180064000",
+            "name": "LoadLibraryExW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064008",
+            "name": "MultiByteToWideChar",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064010",
+            "name": "LoadLibraryA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064018",
+            "name": "GetProcAddress",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064020",
+            "name": "FreeLibrary",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064030",
+            "name": "WriteConsoleW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064038",
+            "name": "HeapSize",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064040",
+            "name": "WideCharToMultiByte",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064048",
+            "name": "EnterCriticalSection",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064050",
+            "name": "LeaveCriticalSection",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064058",
+            "name": "InitializeCriticalSectionEx",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064060",
+            "name": "DeleteCriticalSection",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064068",
+            "name": "EncodePointer",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064070",
+            "name": "DecodePointer",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064078",
+            "name": "LCMapStringEx",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064080",
+            "name": "GetStringTypeW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064088",
+            "name": "GetCPInfo",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064090",
+            "name": "ReleaseSRWLockExclusive",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064098",
+            "name": "AcquireSRWLockExclusive",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640a0",
+            "name": "WakeAllConditionVariable",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640a8",
+            "name": "SleepConditionVariableSRW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640b0",
+            "name": "RtlCaptureContext",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640b8",
+            "name": "RtlLookupFunctionEntry",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640c8",
+            "name": "UnhandledExceptionFilter",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640d0",
+            "name": "SetUnhandledExceptionFilter",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640f0",
+            "name": "IsDebuggerPresent",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800640f8",
+            "name": "GetStartupInfoW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064100",
+            "name": "GetModuleHandleW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064108",
+            "name": "QueryPerformanceCounter",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064128",
+            "name": "InitializeSListHead",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064130",
+            "name": "RtlUnwindEx",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064140",
+            "name": "RaiseException",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064148",
+            "name": "InterlockedFlushSList",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064150",
+            "name": "GetLastError",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064158",
+            "name": "SetLastError",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064160",
+            "name": "InitializeCriticalSectionAndSpinCount",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064168",
+            "name": "TlsAlloc",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064170",
+            "name": "TlsGetValue",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064178",
+            "name": "TlsSetValue",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064180",
+            "name": "TlsFree",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064188",
+            "name": "RtlUnwind",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641a0",
+            "name": "GetModuleHandleExW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641b0",
+            "name": "HeapFree",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641b8",
+            "name": "HeapAlloc",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641c0",
+            "name": "GetStdHandle",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641f0",
+            "name": "GetConsoleOutputCP",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800641f8",
+            "name": "GetConsoleMode",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064200",
+            "name": "CloseHandle",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064208",
+            "name": "FlsAlloc",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064210",
+            "name": "FlsGetValue",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064218",
+            "name": "FlsSetValue",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064220",
+            "name": "FlsFree",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064230",
+            "name": "LCMapStringW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064238",
+            "name": "GetLocaleInfoW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064240",
+            "name": "IsValidLocale",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064248",
+            "name": "GetUserDefaultLCID",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064250",
+            "name": "EnumSystemLocalesW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064258",
+            "name": "ReadConsoleW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064260",
+            "name": "HeapReAlloc",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064268",
+            "name": "FindClose",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064280",
+            "name": "IsValidCodePage",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064288",
+            "name": "GetACP",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064290",
+            "name": "GetOEMCP",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x180064298",
+            "name": "GetCommandLineA",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800642a0",
+            "name": "GetCommandLineW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800642a8",
+            "name": "GetEnvironmentStringsW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800642b0",
+            "name": "FreeEnvironmentStringsW",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800642c0",
+            "name": "SetStdHandle",
+            "module": "KERNEL32"
+          },
+          {
+            "addr": "0x1800642e8",
+            "name": "MessageBoxW",
+            "module": "USER32"
+          }
+        ]
+      },
+      "call_graph_summary": {
+        "total_edges": 6785,
+        "max_depth_estimate": null,
+        "root_functions": [
+          "sub_180001000",
+          "sub_180001090",
+          "sub_180001118",
+          "sub_180001138",
+          "sub_180001168",
+          "sub_1800011B8",
+          "sub_180001200",
+          "sub_180001220",
+          "sub_18000122C",
+          "sub_180001238",
+          "sub_180001268",
+          "sub_1800012B8",
+          "sub_1800012F0",
+          "sub_180001310",
+          "sub_18000131C",
+          "sub_180001410",
+          "??1agent@Concurrency@@UEAA@XZ",
+          "nullsub_2",
+          "sub_180001490",
+          "sub_180001530",
+          "sub_180001570",
+          "sub_180005160",
+          "sub_1800057A0",
+          "sub_1800057F0",
+          "sub_180005820",
+          "sub_180005850",
+          "sub_180005890",
+          "sub_1800058A0",
+          "sub_1800058E0",
+          "sub_180005AF0",
+          "sub_180005B40",
+          "sub_180005BA0",
+          "sub_180005BF0",
+          "sub_180005C00",
+          "sub_180005C80",
+          "sub_180005D00",
+          "sub_180005D40",
+          "sub_180005E10",
+          "?_Decref@facet@locale@std@@UEAAPEAV_Facet_base@3@XZ",
+          "sub_180005E40",
+          "sub_180006010",
+          "sub_180006020",
+          "sub_180006070",
+          "sub_180006080",
+          "sub_1800060D0",
+          "?do_widen@?$ctype@D@std@@MEBAPEBDPEBD0PEAD@Z",
+          "?do_narrow@?$ctype@D@std@@MEBAPEBDPEBD0DPEAD@Z",
+          "sub_180006120",
+          "sub_180006280",
+          "sub_1800062E0",
+          "sub_180006880",
+          "sub_1800068C0",
+          "sub_1800068F0",
+          "sub_180006ED0",
+          "sub_180006F00",
+          "sub_1800072F0",
+          "sub_1800073E0",
+          "sub_180007420",
+          "sub_180007430",
+          "sub_180007470",
+          "sub_1800074A0",
+          "sub_180007630",
+          "sub_180007670",
+          "sub_1800076B0",
+          "sub_180007700",
+          "sub_1800078C0",
+          "sub_180007AE0",
+          "sub_180007C50",
+          "sub_180008F20",
+          "sub_180008F60",
+          "sub_180008FF0",
+          "sub_180009080",
+          "sub_18000A0C0",
+          "sub_18000A100",
+          "sub_18000A150",
+          "sub_18000A260",
+          "sub_18000A410",
+          "sub_18000A450",
+          "sub_18000A500",
+          "sub_18000A530",
+          "sub_18000AC10",
+          "sub_18000C230",
+          "sub_18000C570",
+          "sub_18000C5A0",
+          "sub_18000C5F0",
+          "sub_18000C710",
+          "sub_18000C7F0",
+          "sub_18000C8F0",
+          "sub_18000CA20",
+          "sub_18000CBD0",
+          "sub_18000CE40",
+          "sub_18000CEB0",
+          "sub_18000CFA0",
+          "sub_18000D140",
+          "sub_18000D160",
+          "sub_18000D360",
+          "sub_18000D480",
+          "sub_18000D610",
+          "sub_18000D670",
+          "sub_18000D6D0"
+        ],
+        "leaf_functions_count": 740
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

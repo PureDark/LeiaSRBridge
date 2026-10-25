@@ -1,0 +1,39 @@
+{
+  "old_shader_bytes": 27824,
+  "new_shader_bytes": 34648,
+  "old_sha256": "c00daf38fa20792439c0d29dc153131d12fe3f3b394cd8e4bdea8941310a3b60",
+  "new_sha256": "100ae6db1a8f91871c17579e5f161d07d4fe076d281298499804feee53748638",
+  "identical": false,
+  "chunks": {
+    "OSGN": {
+      "old_bytes": 44,
+      "new_bytes": 44,
+      "same": true
+    },
+    "ISGN": {
+      "old_bytes": 80,
+      "new_bytes": 80,
+      "same": true
+    },
+    "STAT": {
+      "old_bytes": 116,
+      "new_bytes": 116,
+      "same": false
+    },
+    "RDEF": {
+      "old_bytes": 768,
+      "new_bytes": 768,
+      "same": false
+    },
+    "SHDR": {
+      "old_bytes": 2648,
+      "new_bytes": 3328,
+      "same": false
+    },
+    "SPDB": {
+      "old_bytes": 24064,
+      "new_bytes": 30208,
+      "same": false
+    }
+  }
+}

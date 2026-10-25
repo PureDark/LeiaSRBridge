@@ -1,0 +1,80 @@
+{
+  "identity": [
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\Depth Transformer.exe",
+      "sha256": "d279d3c05de65ad32b1947d444359dcc02a954764efb232308f496760676137b",
+      "copy_equal": true,
+      "bytes": 19796520
+    },
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\LF3DRenderCore.dll",
+      "sha256": "a5d7fcc775fbd64f6ba231407ebc5fb3e2dccc2f5a73fc5e83b79c3314c60474",
+      "copy_equal": true,
+      "bytes": 732672
+    },
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\LF3DRenderCoreForCSharp.dll",
+      "sha256": "0760472823bd55192f91c94881e504bb6dedcbd2aba3a5ab2895eb1ed288a991",
+      "copy_equal": true,
+      "bytes": 67072
+    },
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\FaceTrackingManagerService.dll",
+      "sha256": "24d677ea070fca322b025fa91823ea1eaa040729db9efed5de2f0fe7855a6118",
+      "copy_equal": true,
+      "bytes": 79360
+    },
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\AiSetereoKit.dll",
+      "sha256": "59de1ebf68790af70db48c702ea47a7f3615a0242e71642bb33ce14ca3751baf",
+      "copy_equal": true,
+      "bytes": 6481920
+    },
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\StereoDetector.dll",
+      "sha256": "5d26c1fa024f01fb5fb77b407c65a2ff52ed6656c0cabbed4fefdd068e602b8d",
+      "copy_equal": true,
+      "bytes": 7149056
+    },
+    {
+      "path": "C:\\Program Files (x86)\\3D Spatial Gateway\\AiSetereoKit.dll",
+      "sha256": "c3cd9fd7085a076a4ff4cd2f80816027c096785cd8395c191b3738ddd528d639",
+      "copy_equal": true,
+      "bytes": 6271488
+    },
+    {
+      "path": "C:\\Program Files (x86)\\3D Spatial Gateway\\3DSpatialGateway.exe",
+      "sha256": "2521abcbe162bf3ceacbc498288c3a90e216f354602095ebdf8e776ca390fdcb",
+      "copy_equal": true,
+      "bytes": 154152
+    },
+    {
+      "path": "C:\\Program Files (x86)\\3D Spatial Gateway\\media_transpose2to3_plugin.dll",
+      "sha256": "bb646ca1600a4a82ff56976f58c1ebeee531072ef73f663e96a7faa2ef1620c0",
+      "copy_equal": true,
+      "bytes": 165888
+    }
+  ],
+  "presence": [
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\FaceTracking.exe",
+      "exists": false
+    },
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\MCU_library.dll",
+      "exists": false
+    },
+    {
+      "path": "C:\\Program Files\\Depth Transformer\\interlaceSDK.dll",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\PureDark\\AppData\\LocalLow\\ylkj\\deviceConfig.bin",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\PureDark\\AppData\\LocalLow\\ylkj\\Textures\\CpMatrix.png",
+      "exists": false
+    }
+  ]
+}

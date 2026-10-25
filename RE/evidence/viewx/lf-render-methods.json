@@ -1,0 +1,1108 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"0x180021800\",\"addr\":\"0x180021800\",\"name\":\"sub_180021800\",\"analysis\":{\"size\":\"0x354\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180021800(_QWORD *a1, __int64 a2)\\n{\\n  __int64 v4; // r8\\n  bool v5; // si\\n  void *v6; // rcx\\n  __int64 v7; // rax\\n  int v8; // ecx\\n  __int64 v9; // rax\\n  __int64 v10; // rbx\\n  __int64 v11; // rax\\n  __int64 v12; // rax\\n  __int64 result; // rax\\n  __int64 v14; // rax\\n  _DWORD *v15; // rcx\\n  __int64 v16; // [rsp+30h] [rbp-168h]\\n  __int64 v17; // [rsp+30h] [rbp-168h]\\n  int v18; // [rsp+3Ch] [rbp-15Ch]\\n  _QWORD v19[2]; // [rsp+40h] [rbp-158h] BYREF\\n  _DWORD v20[40]; // [rsp+50h] [rbp-148h] BYREF\\n  void **v21; // [rsp+F0h] [rbp-A8h] BYREF\\n  __int128 v22; // [rsp+150h] [rbp-48h] BYREF\\n  __int64 v23; // [rsp+160h] [rbp-38h]\\n  unsigned __int64 v24; // [rsp+168h] [rbp-30h]\\n\\n  v22 = 0; /*0x18002182c*/\\n  v23 = 0; /*0x180021833*/\\n  v24 = 0; /*0x180021837*/\\n  v4 = -1; /*0x18002183b*/\\n  do /*0x180021849*/\\n    ++v4; /*0x180021842*/\\n  while ( *(_BYTE *)(a2 + v4) != 0 ); /*0x180021849*/\\n  sub_180004A40(a1: &v22, a2); /*0x180021853*/\\n  v5 = v23 != 0; /*0x180021860*/\\n  if ( v24 > 0xF ) /*0x180021870*/\\n  {\\n    v6 = (void *)v22; /*0x180021875*/\\n    if ( v24 + 1 >= 0x1000 ) /*0x180021887*/\\n    {\\n      v6 = *(void **)(v22 - 8); /*0x18002188d*/\\n      if ( (unsigned __int64)(v22 - (_QWORD)v6 - 8) > 0x1F ) /*0x18002189c*/\\n      {\\n        sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x180021b4e*/\\n        JUMPOUT(0x180021B53LL); /*0x180021b53*/\\n      }\\n    }\\n    sub_1800389CC(lpMem: v6); /*0x1800218a2*/\\n  }\\n  if ( v5 ) /*0x1800218aa*/\\n  {\\n    sub_18000C250(a1: v19, a2); /*0x1800218b8*/\\n    if ( *(_DWORD *)((char *)v20 + *(int *)(v19[0] + 4LL)) == 0 ) /*0x1800218cc*/\\n    {\\n      v7 = sub_180006B50(a1: &qword_1800AE9B0, a2: \\\"find compensation texture!\\\"); /*0x1800218dc*/\\n      sub_180006E30(a1: v7); /*0x1800218e4*/\\n      if ( (int)sub_180021FA0(a1: v8, a2: a1[1], a3: a1[2], a4: a2, a5: (__int64)(a1 + 4)) < 0 ) /*0x180021904*/\\n      {\\n        v9 = sub_180006B50(a1: &qword_1800AEBA0, a2: \\\"LoadPNGToTexture failed!\\\"); /*0x180021914*/\\n        sub_180006E30(a1: v9); /*0x18002191c*/\\n        a1[4] = 0; /*0x180021921*/\\n      }\\n    }\\n    *(_QWORD *)((char *)v19 + *(int *)(v19[0] + 4LL)) = &std::ifstream::`vftable'; /*0x180021934*/\\n    *(int *)((char *)&v18 + *(int *)(v19[0] + 4LL)) = *(_DWORD *)(v19[0] + 4LL) - 176; /*0x180021948*/\\n    sub_18000D180(a1: v20); /*0x180021951*/\\n    *(_QWORD *)((char *)v19 + *(int *)(v19[0] + 4LL)) = &std::istream::`vftable'; /*0x180021966*/\\n    *(int *)((char *)&v18 + *(int *)(v19[0] + 4LL)) = *(_DWORD *)(v19[0] + 4LL) - 24; /*0x180021977*/\\n    v21 = &std::ios_base::`vftable'; /*0x180021982*/\\n    sub_180037DEC(a1: &v21); /*0x180021992*/\\n  }\\n  v10 = a1[4]; /*0x180021998*/\\n  v11 = sub_180006B50(a1: &qword_1800AE9B0, a2: \\\"m_d3dComtex\\\"); /*0x1800219aa*/\\n  v12 = sub_1800222C0(a1: v11, a2: v10); /*0x1800219b5*/\\n  result = sub_180006E30(a1: v12); /*0x1800219bd*/\\n  if ( a1[6] == 0 ) /*0x1800219c7*/\\n  {\\n    if ( a1[4] != 0 ) /*0x1800219d2*/\\n    {\\n      v14 = sub_180006B50(a1: &qword_1800AE9B0, a2: &unk_1800A18C8); /*0x1800219e6*/\\n      sub_180006E30(a1: v14); /*0x1800219ee*/\\n      v16 = sub_180038990(a1: 232); /*0x1800219fd*/\\n      *(_DWORD *)(v16 + 16) = 1065353216; /*0x180021a02*/\\n      *(_QWORD *)(v16 + 20) = 1065353216; /*0x180021a09*/\\n      *(_DWORD *)(v16 + 28) = 0; /*0x180021a11*/\\n      *(_DWORD *)(v16 + 72) = 1065353216; /*0x180021a14*/\\n      *(_QWORD *)(v16 + 80) = 0; /*0x180021a1b*/\\n      *(_QWORD *)(v16 + 88) = 0; /*0x180021a1f*/\\n      *(_QWORD *)(v16 + 96) = 0; /*0x180021a23*/\\n      *(_QWORD *)(v16 + 104) = 0; /*0x180021a27*/\\n      *(_QWORD *)(v16 + 112) = 0; /*0x180021a2b*/\\n      *(_DWORD *)(v16 + 8) = 0; /*0x180021a2f*/\\n      *(_QWORD *)(v16 + 120) = 0; /*0x180021a32*/\\n      *(_QWORD *)(v16 + 128) = 0; /*0x180021a36*/\\n      *(_QWORD *)(v16 + 136) = 0; /*0x180021a3d*/\\n      *(_QWORD *)v16 = &RenderCore_D3D11_Compensation650::`vftable'; /*0x180021a4b*/\\n      *(_DWORD *)(v16 + 148) = 1065353216; /*0x180021a4e*/\\n      *(_QWORD *)(v16 + 152) = 1065353216; /*0x180021a58*/\\n      *(_DWORD *)(v16 + 160) = 0; /*0x180021a63*/\\n      *(_DWORD *)(v16 + 204) = 1065353216; /*0x180021a69*/\\n      a1[6] = v16; /*0x180021a73*/\\n      sub_180006690(a1: v16, a2: a1[1], a3: a1[4]); /*0x180021a82*/\\n      v15 = (_DWORD *)a1[5]; /*0x180021a87*/\\n      v15[39] = 1; /*0x180021a8b*/\\n      *(_DWORD *)(*(_QWORD *)v15 + 72LL) = 0x40000000; /*0x180021a98*/\\n      *(_DWORD *)(*(_QWORD *)v15 + 76LL) = 1077936128; /*0x180021aa2*/\\n      sub_180005240(); /*0x180021aa9*/\\n    }\\n    else\\n    {\\n      v17 = sub_180038990(a1: 144); /*0x180021aba*/\\n      *(_QWORD *)v17 = &RenderCore_D3D11::`vftable'; /*0x180021ac6*/\\n      *(_DWORD *)(v17 + 16) = 1065353216; /*0x180021ac9*/\\n      *(_QWORD *)(v17 + 20) = 1065353216; /*0x180021ad0*/\\n      *(_DWORD *)(v17 + 28) = 0; /*0x180021ad8*/\\n      *(_DWORD *)(v17 + 72) = 1065353216; /*0x180021adb*/\\n      *(_QWORD *)(v17 + 80) = 0; /*0x180021ae2*/\\n      *(_QWORD *)(v17 + 88) = 0; /*0x180021ae6*/\\n      *(_QWORD *)(v17 + 96) = 0; /*0x180021aea*/\\n      *(_QWORD *)(v17 + 104) = 0; /*0x180021aee*/\\n      *(_QWORD *)(v17 + 112) = 0; /*0x180021af2*/\\n      *(_DWORD *)(v17 + 8) = 0; /*0x180021af6*/\\n      *(_QWORD *)(v17 + 120) = 0; /*0x180021af9*/\\n      *(_QWORD *)(v17 + 128) = 0; /*0x180021afd*/\\n      *(_QWORD *)(v17 + 136) = 0; /*0x180021b04*/\\n      a1[6] = v17; /*0x180021b0b*/\\n    }\\n    return sub_180006320(a1: a1[6], a2: a1[1]); /*0x180021b17*/\\n  }\\n  return result; /*0x180021b1c*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180021800  mov r11, rsp\",\"180021803  mov [r11+18h], rbx\",\"180021807  push rbp\",\"180021808  push rsi\",\"180021809  push rdi\",\"18002180a  sub rsp, 180h\",\"180021811  mov rax, cs:__security_cookie\",\"180021818  xor rax, rsp\",\"18002181b  mov [rsp+198h+var_28], rax\",\"180021823  mov rbx, rdx\",\"180021826  mov rdi, rcx\",\"180021829  xorps xmm0, xmm0\",\"18002182c  movups xmmword ptr [r11-48h], xmm0\",\"180021831  xor ebp, ebp\",\"180021833  mov [r11-38h], rbp\",\"180021837  mov [r11-30h], rbp\",\"18002183b  mov r8, 0FFFFFFFFFFFFFFFFh\",\"180021842  inc r8\",\"180021845  cmp [rdx+r8], bpl\",\"180021849  jnz short loc_180021842\",\"18002184b  lea rcx, [rsp+198h+var_48]\",\"180021853  call sub_180004A40\",\"180021858  cmp [rsp+198h+var_38], rbp\",\"180021860  setnz sil\",\"180021864  mov rdx, [rsp+198h+var_30]\",\"18002186c  cmp rdx, 0Fh\",\"180021870  jbe short loc_1800218A7\",\"180021872  inc rdx\",\"180021875  mov rcx, qword ptr [rsp+198h+var_48]\",\"18002187d  mov rax, rcx\",\"180021880  cmp rdx, 1000h\",\"180021887  jb short loc_1800218A2\",\"180021889  add rdx, 27h ; '''\",\"18002188d  mov rcx, [rcx-8]; lpMem\",\"180021891  sub rax, rcx\",\"180021894  sub rax, 8\",\"180021898  cmp rax, 1Fh\",\"18002189c  ja loc_180021B3F\",\"1800218a2  call sub_1800389CC\",\"1800218a7  test sil, sil\",\"1800218aa  jz loc_180021998\",\"1800218b0  mov rdx, rbx\",\"1800218b3  lea rcx, [rsp+198h+var_158]\",\"1800218b8  call sub_18000C250\",\"1800218bd  nop\",\"1800218be  mov rax, [rsp+198h+var_158]\",\"1800218c3  movsxd rcx, dword ptr [rax+4]\",\"1800218c7  cmp [rsp+rcx+198h+var_148], 0\",\"1800218cc  jnz short loc_180021924\",\"1800218ce  lea rdx, aFindCompensati; \\\"find compensation texture!\\\"\",\"1800218d5  lea rcx, qword_1800AE9B0\",\"1800218dc  call sub_180006B50\",\"1800218e1  mov rcx, rax\",\"1800218e4  call sub_180006E30\",\"1800218e9  lea rsi, [rdi+20h]\",\"1800218ed  mov [rsp+198h+var_178], rsi\",\"1800218f2  mov r9, rbx\",\"1800218f5  mov r8, [rdi+10h]\",\"1800218f9  mov rdx, [rdi+8]\",\"1800218fd  call sub_180021FA0\",\"180021902  test eax, eax\",\"180021904  jns short loc_180021924\",\"180021906  lea rdx, aLoadpngtotextu; \\\"LoadPNGToTexture failed!\\\"\",\"18002190d  lea rcx, qword_1800AEBA0\",\"180021914  call sub_180006B50\",\"180021919  mov rcx, rax\",\"18002191c  call sub_180006E30\",\"180021921  mov [rsi], rbp\",\"180021924  mov rax, [rsp+198h+var_158]\",\"180021929  movsxd rcx, dword ptr [rax+4]\",\"18002192d  lea rax, ??_7?$basic_ifstream@DU?$char_traits@D@std@@@std@@6B@; const std::ifstream::`vftable'\",\"180021934  mov [rsp+rcx+198h+var_158], rax\",\"180021939  mov rax, [rsp+198h+var_158]\",\"18002193e  movsxd rcx, dword ptr [rax+4]\",\"180021942  lea edx, [rcx-0B0h]\",\"180021948  mov [rsp+rcx+198h+var_15C], edx\",\"18002194c  lea rcx, [rsp+198h+var_148]\",\"180021951  call sub_18000D180\",\"180021956  mov rax, [rsp+198h+var_158]\",\"18002195b  movsxd rcx, dword ptr [rax+4]\",\"18002195f  lea rax, ??_7?$basic_istream@DU?$char_traits@D@std@@@std@@6B@; const std::istream::`vftable'\",\"180021966  mov [rsp+rcx+198h+var_158], rax\",\"18002196b  mov rax, [rsp+198h+var_158]\",\"180021970  movsxd rcx, dword ptr [rax+4]\",\"180021974  lea edx, [rcx-18h]\",\"180021977  mov [rsp+rcx+198h+var_15C], edx\",\"18002197b  lea rax, ??_7ios_base@std@@6B@; const std::ios_base::`vftable'\",\"180021982  mov [rsp+198h+var_A8], rax\",\"18002198a  lea rcx, [rsp+198h+var_A8]\",\"180021992  call sub_180037DEC\"],\"instruction_count\":90,\"truncated\":true},\"xrefs\":{\"to\":[{\"addr\":\"0x1800a1a48\",\"type\":\"data\"},{\"addr\":\"0x18038e260\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180021803\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180021fa0\",\"name\":\"sub_180021FA0\",\"type\":\"internal\"},{\"addr\":\"0x18000c250\",\"name\":\"sub_18000C250\",\"type\":\"internal\"},{\"addr\":\"0x180038990\",\"name\":\"sub_180038990\",\"type\":\"internal\"},{\"addr\":\"0x18003ecb4\",\"name\":\"sub_18003ECB4\",\"type\":\"internal\"},{\"addr\":\"0x1800222c0\",\"name\":\"sub_1800222C0\",\"type\":\"internal\"},{\"addr\":\"0x180006690\",\"name\":\"sub_180006690\",\"type\":\"internal\"},{\"addr\":\"0x180006320\",\"name\":\"sub_180006320\",\"type\":\"internal\"},{\"addr\":\"0x180006e30\",\"name\":\"sub_180006E30\",\"type\":\"internal\"},{\"addr\":\"0x1800389cc\",\"name\":\"sub_1800389CC\",\"type\":\"internal\"},{\"addr\":\"0x180037dec\",\"name\":\"sub_180037DEC\",\"type\":\"internal\"},{\"addr\":\"0x18000d180\",\"name\":\"sub_18000D180\",\"type\":\"internal\"},{\"addr\":\"0x180005240\",\"name\":\"sub_180005240\",\"type\":\"internal\"},{\"addr\":\"0x180004a40\",\"name\":\"sub_180004A40\",\"type\":\"internal\"},{\"addr\":\"0x180038970\",\"name\":\"__security_check_cookie\",\"type\":\"internal\"},{\"addr\":\"0x180006b50\",\"name\":\"sub_180006B50\",\"type\":\"internal\"}],\"callee_count\":15,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x1800a1878\",\"length\":26,\"string\":\"find compensation texture!\"},{\"addr\":\"0x1800a1898\",\"length\":24,\"string\":\"LoadPNGToTexture failed!\"},{\"addr\":\"0x1800a18b8\",\"length\":11,\"string\":\"m_d3dComtex\"}],\"string_ref_count\":3,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x18002180a\",\"value\":\"0x180\",\"decimal\":384},{\"addr\":\"0x18002183b\",\"value\":\"0xffffffffffffffff\",\"decimal\":18446744073709551615},{\"addr\":\"0x18002186c\",\"value\":\"0xf\",\"decimal\":15},{\"addr\":\"0x180021880\",\"value\":\"0x1000\",\"decimal\":4096},{\"addr\":\"0x180021889\",\"value\":\"0x27\",\"decimal\":39},{\"addr\":\"0x180021894\",\"value\":\"0x8\",\"decimal\":8},{\"addr\":\"0x180021898\",\"value\":\"0x1f\",\"decimal\":31},{\"addr\":\"0x1800218c7\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x1800219c2\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x1800219cd\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x1800219f3\",\"value\":\"0xe8\",\"decimal\":232},{\"addr\":\"0x180021a02\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021a09\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021a14\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021a4e\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021a58\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021a69\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021a8b\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x180021a98\",\"value\":\"0x40000000\",\"decimal\":1073741824},{\"addr\":\"0x180021aa2\",\"value\":\"0x40400000\",\"decimal\":1077936128},{\"addr\":\"0x180021ab0\",\"value\":\"0x90\",\"decimal\":144},{\"addr\":\"0x180021ac9\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021ad0\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021adb\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021b34\",\"value\":\"0x180\",\"decimal\":384}],\"constant_count\":25,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180021800\",\"end\":\"0x180021842\",\"size\":66,\"type\":0,\"successors\":[\"0x180021842\"],\"predecessors\":[]},{\"start\":\"0x180021842\",\"end\":\"0x18002184b\",\"size\":9,\"type\":0,\"successors\":[\"0x18002184b\",\"0x180021842\"],\"predecessors\":[\"0x180021800\",\"0x180021842\"]},{\"start\":\"0x18002184b\",\"end\":\"0x180021872\",\"size\":39,\"type\":0,\"successors\":[\"0x180021872\",\"0x1800218a7\"],\"predecessors\":[\"0x180021842\"]},{\"start\":\"0x180021872\",\"end\":\"0x180021889\",\"size\":23,\"type\":0,\"successors\":[\"0x180021889\",\"0x1800218a2\"],\"predecessors\":[\"0x18002184b\"]},{\"start\":\"0x180021889\",\"end\":\"0x1800218a2\",\"size\":25,\"type\":0,\"successors\":[\"0x1800218a2\",\"0x180021b3f\"],\"predecessors\":[\"0x180021872\"]},{\"start\":\"0x1800218a2\",\"end\":\"0x1800218a7\",\"size\":5,\"type\":0,\"successors\":[\"0x1800218a7\"],\"predecessors\":[\"0x180021872\",\"0x180021889\"]},{\"start\":\"0x1800218a7\",\"end\":\"0x1800218b0\",\"size\":9,\"type\":0,\"successors\":[\"0x1800218b0\",\"0x180021998\"],\"predecessors\":[\"0x18002184b\",\"0x1800218a2\"]},{\"start\":\"0x1800218b0\",\"end\":\"0x1800218ce\",\"size\":30,\"type\":0,\"successors\":[\"0x1800218ce\",\"0x180021924\"],\"predecessors\":[\"0x1800218a7\"]},{\"start\":\"0x1800218ce\",\"end\":\"0x180021906\",\"size\":56,\"type\":0,\"successors\":[\"0x180021906\",\"0x180021924\"],\"predecessors\":[\"0x1800218b0\"]},{\"start\":\"0x180021906\",\"end\":\"0x180021924\",\"size\":30,\"type\":0,\"successors\":[\"0x180021924\"],\"predecessors\":[\"0x1800218ce\"]},{\"start\":\"0x180021924\",\"end\":\"0x180021998\",\"size\":116,\"type\":0,\"successors\":[\"0x180021998\"],\"predecessors\":[\"0x1800218b0\",\"0x1800218ce\",\"0x180021906\"]},{\"start\":\"0x180021998\",\"end\":\"0x1800219cd\",\"size\":53,\"type\":0,\"successors\":[\"0x1800219cd\",\"0x180021b1c\"],\"predecessors\":[\"0x1800218a7\",\"0x180021924\"]},{\"start\":\"0x1800219cd\",\"end\":\"0x1800219d8\",\"size\":11,\"type\":0,\"successors\":[\"0x1800219d8\",\"0x180021ab0\"],\"predecessors\":[\"0x180021998\"]},{\"start\":\"0x1800219d8\",\"end\":\"0x180021ab0\",\"size\":216,\"type\":0,\"successors\":[\"0x180021b0f\"],\"predecessors\":[\"0x1800219cd\"]},{\"start\":\"0x180021ab0\",\"end\":\"0x180021b0f\",\"size\":95,\"type\":0,\"successors\":[\"0x180021b0f\"],\"predecessors\":[\"0x1800219cd\"]},{\"start\":\"0x180021b0f\",\"end\":\"0x180021b1c\",\"size\":13,\"type\":0,\"successors\":[\"0x180021b1c\"],\"predecessors\":[\"0x1800219d8\",\"0x180021ab0\"]},{\"start\":\"0x180021b1c\",\"end\":\"0x180021b3f\",\"size\":35,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180021998\",\"0x180021b0f\"]},{\"start\":\"0x180021b3f\",\"end\":\"0x180021b53\",\"size\":20,\"type\":4,\"successors\":[],\"predecessors\":[\"0x180021889\"]}],\"basic_block_count\":18,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180021c40\",\"addr\":\"0x180021c40\",\"name\":\"sub_180021C40\",\"analysis\":{\"size\":\"0x6e\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180021C40(__int64 a1, __int64 a2, unsigned __int8 a3, unsigned __int8 a4)\\n{\\n  __int64 v7; // r8\\n  __int128 v9; // [rsp+20h] [rbp-28h] BYREF\\n  __int64 v10; // [rsp+30h] [rbp-18h]\\n  __int64 v11; // [rsp+38h] [rbp-10h]\\n\\n  v10 = 0; /*0x180021c58*/\\n  v9 = 0; /*0x180021c5d*/\\n  v11 = 0; /*0x180021c62*/\\n  v7 = -1; /*0x180021c6e*/\\n  do /*0x180021c7c*/\\n    ++v7; /*0x180021c75*/\\n  while ( *(_BYTE *)(a2 + v7) != 0 ); /*0x180021c7c*/\\n  sub_180004A40(a1: &v9, a2); /*0x180021c83*/\\n  return ((__int64 (__fastcall *)(_QWORD, __int128 *, _QWORD, _QWORD))sub_180004FD0)( /*0x180021c9e*/\\n           a1: *(_QWORD *)(a1 + 40),\\n           a2: &v9,\\n           a3,\\n           a4);\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180021c40  mov [rsp+arg_8], rbx\",\"180021c45  mov [rsp+arg_10], rsi\",\"180021c4a  push rdi\",\"180021c4b  sub rsp, 40h\",\"180021c4f  xor eax, eax\",\"180021c51  xorps xmm0, xmm0\",\"180021c54  movzx edi, r8b\",\"180021c58  mov [rsp+48h+var_18], rax\",\"180021c5d  movups [rsp+48h+var_28], xmm0\",\"180021c62  mov [rsp+48h+var_10], rax\",\"180021c67  movzx ebx, r9b\",\"180021c6b  mov rsi, rcx\",\"180021c6e  mov r8, 0FFFFFFFFFFFFFFFFh\",\"180021c75  inc r8\",\"180021c78  cmp [rdx+r8], al\",\"180021c7c  jnz short loc_180021C75\",\"180021c7e  lea rcx, [rsp+48h+var_28]\",\"180021c83  call sub_180004A40\",\"180021c88  mov rcx, [rsi+28h]\",\"180021c8c  lea rdx, [rsp+48h+var_28]\",\"180021c91  movzx r9d, bl\",\"180021c95  movzx r8d, dil\",\"180021c99  call sub_180004FD0\",\"180021c9e  mov rbx, [rsp+48h+arg_8]\",\"180021ca3  mov rsi, [rsp+48h+arg_10]\",\"180021ca8  add rsp, 40h\",\"180021cac  pop rdi\",\"180021cad  retn\"],\"instruction_count\":28,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x1800a1a60\",\"type\":\"data\"},{\"addr\":\"0x1800a23e0\",\"type\":\"data\"},{\"addr\":\"0x18038e278\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180021c45\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":3,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180004fd0\",\"name\":\"sub_180004FD0\",\"type\":\"internal\"},{\"addr\":\"0x180004a40\",\"name\":\"sub_180004A40\",\"type\":\"internal\"}],\"callee_count\":2,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180021c4b\",\"value\":\"0x40\",\"decimal\":64},{\"addr\":\"0x180021c6e\",\"value\":\"0xffffffffffffffff\",\"decimal\":18446744073709551615},{\"addr\":\"0x180021ca8\",\"value\":\"0x40\",\"decimal\":64}],\"constant_count\":3,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180021c40\",\"end\":\"0x180021c75\",\"size\":53,\"type\":0,\"successors\":[\"0x180021c75\"],\"predecessors\":[]},{\"start\":\"0x180021c75\",\"end\":\"0x180021c7e\",\"size\":9,\"type\":0,\"successors\":[\"0x180021c7e\",\"0x180021c75\"],\"predecessors\":[\"0x180021c40\",\"0x180021c75\"]},{\"start\":\"0x180021c7e\",\"end\":\"0x180021cae\",\"size\":48,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180021c75\"]}],\"basic_block_count\":3,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180021d20\",\"addr\":\"0x180021d20\",\"name\":\"sub_180021D20\",\"analysis\":{\"size\":\"0x2f\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180021D20(__int64 a1, int a2, int a3, int a4, char a5, int a6)\\n{\\n  __int64 *v6; // rbx\\n  __int64 result; // rax\\n\\n  v6 = *(__int64 **)(a1 + 40); /*0x180021d26*/\\n  sub_180005340(a1: (_DWORD)v6, a2, a3, a4, a5); /*0x180021d36*/\\n  result = *v6; /*0x180021d3b*/\\n  *(_DWORD *)(*v6 + 60) = a6; /*0x180021d44*/\\n  return result; /*0x180021d49*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180021d20  push rbx\",\"180021d22  sub rsp, 30h\",\"180021d26  mov rbx, [rcx+28h]\",\"180021d2a  movzx eax, [rsp+38h+arg_20]\",\"180021d2f  mov rcx, rbx\",\"180021d32  mov [rsp+38h+var_18], al\",\"180021d36  call sub_180005340\",\"180021d3b  mov rax, [rbx]\",\"180021d3e  movss xmm0, [rsp+38h+arg_28]\",\"180021d44  movss dword ptr [rax+3Ch], xmm0\",\"180021d49  add rsp, 30h\",\"180021d4d  pop rbx\",\"180021d4e  retn\"],\"instruction_count\":13,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x1800a1a78\",\"type\":\"data\"},{\"addr\":\"0x1800a23f8\",\"type\":\"data\"},{\"addr\":\"0x18038e284\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180021d22\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":3,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180005340\",\"name\":\"sub_180005340\",\"type\":\"internal\"}],\"callee_count\":1,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180021d22\",\"value\":\"0x30\",\"decimal\":48},{\"addr\":\"0x180021d49\",\"value\":\"0x30\",\"decimal\":48}],\"constant_count\":2,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180021d20\",\"end\":\"0x180021d4f\",\"size\":47,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180021db0\",\"addr\":\"0x180021db0\",\"name\":\"sub_180021DB0\",\"analysis\":{\"size\":\"0x10d\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180021DB0(__int64 a1, int a2)\\n{\\n  __int64 *v2; // rax\\n  __int64 v5; // rdx\\n  __int64 v6; // [rsp+40h] [rbp+8h]\\n\\n  v2 = *(__int64 **)(a1 + 40); /*0x180021db6*/\\n  if ( *(float *)(*v2 + 56) > 0.0 ) /*0x180021dcb*/\\n    return sub_180006740(a1: *(_QWORD *)(a1 + 48), a2, a3: *(_QWORD *)(a1 + 16), a4: *(_QWORD *)(a1 + 24), a5: *v2); /*0x180021dde*/\\n  if ( *(_QWORD *)(a1 + 56) == 0 ) /*0x180021dee*/\\n  {\\n    v6 = sub_180038990(a1: 216); /*0x180021e00*/\\n    *(_DWORD *)(v6 + 16) = 1065353216; /*0x180021e0c*/\\n    *(_QWORD *)(v6 + 20) = 1065353216; /*0x180021e13*/\\n    *(_DWORD *)(v6 + 28) = 0; /*0x180021e1b*/\\n    *(_DWORD *)(v6 + 72) = 1065353216; /*0x180021e1e*/\\n    *(_QWORD *)v6 = &RenderCore_D3D11_2dz::`vftable'; /*0x180021e25*/\\n    *(_QWORD *)(v6 + 80) = 0; /*0x180021e2b*/\\n    *(_QWORD *)(v6 + 88) = 0; /*0x180021e2f*/\\n    *(_QWORD *)(v6 + 96) = 0; /*0x180021e33*/\\n    *(_QWORD *)(v6 + 104) = 0; /*0x180021e37*/\\n    *(_QWORD *)(v6 + 112) = 0; /*0x180021e3b*/\\n    *(_DWORD *)(v6 + 8) = 0; /*0x180021e3f*/\\n    *(_QWORD *)(v6 + 120) = 0; /*0x180021e42*/\\n    *(_QWORD *)(v6 + 128) = 0; /*0x180021e46*/\\n    *(_QWORD *)(v6 + 136) = 0; /*0x180021e4d*/\\n    *(_DWORD *)(v6 + 148) = 1065353216; /*0x180021e54*/\\n    *(_QWORD *)(v6 + 152) = 1065353216; /*0x180021e5e*/\\n    *(_DWORD *)(v6 + 160) = 0; /*0x180021e69*/\\n    *(_DWORD *)(v6 + 204) = 1065353216; /*0x180021e6f*/\\n    *(_DWORD *)(v6 + 208) = 1022739087; /*0x180021e79*/\\n    *(_DWORD *)(v6 + 212) = 1056964608; /*0x180021e83*/\\n    v5 = *(_QWORD *)(a1 + 8); /*0x180021e8d*/\\n    *(_QWORD *)(a1 + 56) = v6; /*0x180021e91*/\\n    sub_180006320(a1: v6, a2: v5); /*0x180021e95*/\\n  }\\n  return sub_180006740( /*0x180021de3*/\\n           a1: *(_QWORD *)(a1 + 56),\\n           a2,\\n           a3: *(_QWORD *)(a1 + 16),\\n           a4: *(_QWORD *)(a1 + 24),\\n           a5: **(_QWORD **)(a1 + 40));\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180021db0  push rbx\",\"180021db2  sub rsp, 30h\",\"180021db6  mov rax, [rcx+28h]\",\"180021dba  mov rbx, rcx\",\"180021dbd  xorps xmm0, xmm0\",\"180021dc0  mov rcx, [rax]\",\"180021dc3  movss xmm1, dword ptr [rcx+38h]\",\"180021dc8  comiss xmm1, xmm0\",\"180021dcb  jbe short loc_180021DE9\",\"180021dcd  mov r9, [rbx+18h]\",\"180021dd1  mov r8, [rbx+10h]\",\"180021dd5  mov [rsp+38h+var_18], rcx\",\"180021dda  mov rcx, [rbx+30h]\",\"180021dde  call sub_180006740\",\"180021de3  add rsp, 30h\",\"180021de7  pop rbx\",\"180021de8  retn\",\"180021de9  cmp qword ptr [rbx+38h], 0\",\"180021dee  jnz loc_180021E9A\",\"180021df4  mov ecx, 0D8h\",\"180021df9  call sub_180038990\",\"180021dfe  xor edx, edx\",\"180021e00  mov [rsp+38h+arg_0], rax\",\"180021e05  lea rcx, ??_7RenderCore_D3D11_2dz@@6B@; const RenderCore_D3D11_2dz::`vftable'\",\"180021e0c  mov dword ptr [rax+10h], 3F800000h\",\"180021e13  mov qword ptr [rax+14h], 3F800000h\",\"180021e1b  mov [rax+1Ch], edx\",\"180021e1e  mov dword ptr [rax+48h], 3F800000h\",\"180021e25  mov [rax], rcx\",\"180021e28  mov rcx, rax\",\"180021e2b  mov [rax+50h], rdx\",\"180021e2f  mov [rax+58h], rdx\",\"180021e33  mov [rax+60h], rdx\",\"180021e37  mov [rax+68h], rdx\",\"180021e3b  mov [rax+70h], rdx\",\"180021e3f  mov [rax+8], edx\",\"180021e42  mov [rax+78h], rdx\",\"180021e46  mov [rax+80h], rdx\",\"180021e4d  mov [rax+88h], rdx\",\"180021e54  mov dword ptr [rax+94h], 3F800000h\",\"180021e5e  mov qword ptr [rax+98h], 3F800000h\",\"180021e69  mov [rax+0A0h], edx\",\"180021e6f  mov dword ptr [rax+0CCh], 3F800000h\",\"180021e79  mov dword ptr [rax+0D0h], 3CF5C28Fh\",\"180021e83  mov dword ptr [rax+0D4h], 3F000000h\",\"180021e8d  mov rdx, [rbx+8]\",\"180021e91  mov [rbx+38h], rax\",\"180021e95  call sub_180006320\",\"180021e9a  mov rax, [rbx+28h]\",\"180021e9e  mov r9, [rbx+18h]\",\"180021ea2  mov r8, [rbx+10h]\",\"180021ea6  mov rcx, [rax]\",\"180021ea9  mov [rsp+38h+var_18], rcx\",\"180021eae  mov rcx, [rbx+38h]\",\"180021eb2  call sub_180006740\",\"180021eb7  add rsp, 30h\",\"180021ebb  pop rbx\",\"180021ebc  retn\"],\"instruction_count\":58,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x1800a1ac8\",\"type\":\"data\"},{\"addr\":\"0x18038e290\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180021db2\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180038990\",\"name\":\"sub_180038990\",\"type\":\"internal\"},{\"addr\":\"0x180006320\",\"name\":\"sub_180006320\",\"type\":\"internal\"},{\"addr\":\"0x180006740\",\"name\":\"sub_180006740\",\"type\":\"internal\"}],\"callee_count\":3,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180021db2\",\"value\":\"0x30\",\"decimal\":48},{\"addr\":\"0x180021de3\",\"value\":\"0x30\",\"decimal\":48},{\"addr\":\"0x180021de9\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x180021df4\",\"value\":\"0xd8\",\"decimal\":216},{\"addr\":\"0x180021e0c\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021e13\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021e1e\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021e54\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021e5e\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021e6f\",\"value\":\"0x3f800000\",\"decimal\":1065353216},{\"addr\":\"0x180021e79\",\"value\":\"0x3cf5c28f\",\"decimal\":1022739087},{\"addr\":\"0x180021e83\",\"value\":\"0x3f000000\",\"decimal\":1056964608},{\"addr\":\"0x180021eb7\",\"value\":\"0x30\",\"decimal\":48}],\"constant_count\":13,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180021db0\",\"end\":\"0x180021dcd\",\"size\":29,\"type\":0,\"successors\":[\"0x180021dcd\",\"0x180021de9\"],\"predecessors\":[]},{\"start\":\"0x180021dcd\",\"end\":\"0x180021de9\",\"size\":28,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180021db0\"]},{\"start\":\"0x180021de9\",\"end\":\"0x180021df4\",\"size\":11,\"type\":0,\"successors\":[\"0x180021df4\",\"0x180021e9a\"],\"predecessors\":[\"0x180021db0\"]},{\"start\":\"0x180021df4\",\"end\":\"0x180021e9a\",\"size\":166,\"type\":0,\"successors\":[\"0x180021e9a\"],\"predecessors\":[\"0x180021de9\"]},{\"start\":\"0x180021e9a\",\"end\":\"0x180021ebd\",\"size\":35,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180021de9\",\"0x180021df4\"]}],\"basic_block_count\":5,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "0x180021800",
+          "addr": "0x180021800",
+          "name": "sub_180021800",
+          "analysis": {
+            "size": "0x354",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180021800(_QWORD *a1, __int64 a2)\n{\n  __int64 v4; // r8\n  bool v5; // si\n  void *v6; // rcx\n  __int64 v7; // rax\n  int v8; // ecx\n  __int64 v9; // rax\n  __int64 v10; // rbx\n  __int64 v11; // rax\n  __int64 v12; // rax\n  __int64 result; // rax\n  __int64 v14; // rax\n  _DWORD *v15; // rcx\n  __int64 v16; // [rsp+30h] [rbp-168h]\n  __int64 v17; // [rsp+30h] [rbp-168h]\n  int v18; // [rsp+3Ch] [rbp-15Ch]\n  _QWORD v19[2]; // [rsp+40h] [rbp-158h] BYREF\n  _DWORD v20[40]; // [rsp+50h] [rbp-148h] BYREF\n  void **v21; // [rsp+F0h] [rbp-A8h] BYREF\n  __int128 v22; // [rsp+150h] [rbp-48h] BYREF\n  __int64 v23; // [rsp+160h] [rbp-38h]\n  unsigned __int64 v24; // [rsp+168h] [rbp-30h]\n\n  v22 = 0; /*0x18002182c*/\n  v23 = 0; /*0x180021833*/\n  v24 = 0; /*0x180021837*/\n  v4 = -1; /*0x18002183b*/\n  do /*0x180021849*/\n    ++v4; /*0x180021842*/\n  while ( *(_BYTE *)(a2 + v4) != 0 ); /*0x180021849*/\n  sub_180004A40(a1: &v22, a2); /*0x180021853*/\n  v5 = v23 != 0; /*0x180021860*/\n  if ( v24 > 0xF ) /*0x180021870*/\n  {\n    v6 = (void *)v22; /*0x180021875*/\n    if ( v24 + 1 >= 0x1000 ) /*0x180021887*/\n    {\n      v6 = *(void **)(v22 - 8); /*0x18002188d*/\n      if ( (unsigned __int64)(v22 - (_QWORD)v6 - 8) > 0x1F ) /*0x18002189c*/\n      {\n        sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x180021b4e*/\n        JUMPOUT(0x180021B53LL); /*0x180021b53*/\n      }\n    }\n    sub_1800389CC(lpMem: v6); /*0x1800218a2*/\n  }\n  if ( v5 ) /*0x1800218aa*/\n  {\n    sub_18000C250(a1: v19, a2); /*0x1800218b8*/\n    if ( *(_DWORD *)((char *)v20 + *(int *)(v19[0] + 4LL)) == 0 ) /*0x1800218cc*/\n    {\n      v7 = sub_180006B50(a1: &qword_1800AE9B0, a2: \"find compensation texture!\"); /*0x1800218dc*/\n      sub_180006E30(a1: v7); /*0x1800218e4*/\n      if ( (int)sub_180021FA0(a1: v8, a2: a1[1], a3: a1[2], a4: a2, a5: (__int64)(a1 + 4)) < 0 ) /*0x180021904*/\n      {\n        v9 = sub_180006B50(a1: &qword_1800AEBA0, a2: \"LoadPNGToTexture failed!\"); /*0x180021914*/\n        sub_180006E30(a1: v9); /*0x18002191c*/\n        a1[4] = 0; /*0x180021921*/\n      }\n    }\n    *(_QWORD *)((char *)v19 + *(int *)(v19[0] + 4LL)) = &std::ifstream::`vftable'; /*0x180021934*/\n    *(int *)((char *)&v18 + *(int *)(v19[0] + 4LL)) = *(_DWORD *)(v19[0] + 4LL) - 176; /*0x180021948*/\n    sub_18000D180(a1: v20); /*0x180021951*/\n    *(_QWORD *)((char *)v19 + *(int *)(v19[0] + 4LL)) = &std::istream::`vftable'; /*0x180021966*/\n    *(int *)((char *)&v18 + *(int *)(v19[0] + 4LL)) = *(_DWORD *)(v19[0] + 4LL) - 24; /*0x180021977*/\n    v21 = &std::ios_base::`vftable'; /*0x180021982*/\n    sub_180037DEC(a1: &v21); /*0x180021992*/\n  }\n  v10 = a1[4]; /*0x180021998*/\n  v11 = sub_180006B50(a1: &qword_1800AE9B0, a2: \"m_d3dComtex\"); /*0x1800219aa*/\n  v12 = sub_1800222C0(a1: v11, a2: v10); /*0x1800219b5*/\n  result = sub_180006E30(a1: v12); /*0x1800219bd*/\n  if ( a1[6] == 0 ) /*0x1800219c7*/\n  {\n    if ( a1[4] != 0 ) /*0x1800219d2*/\n    {\n      v14 = sub_180006B50(a1: &qword_1800AE9B0, a2: &unk_1800A18C8); /*0x1800219e6*/\n      sub_180006E30(a1: v14); /*0x1800219ee*/\n      v16 = sub_180038990(a1: 232); /*0x1800219fd*/\n      *(_DWORD *)(v16 + 16) = 1065353216; /*0x180021a02*/\n      *(_QWORD *)(v16 + 20) = 1065353216; /*0x180021a09*/\n      *(_DWORD *)(v16 + 28) = 0; /*0x180021a11*/\n      *(_DWORD *)(v16 + 72) = 1065353216; /*0x180021a14*/\n      *(_QWORD *)(v16 + 80) = 0; /*0x180021a1b*/\n      *(_QWORD *)(v16 + 88) = 0; /*0x180021a1f*/\n      *(_QWORD *)(v16 + 96) = 0; /*0x180021a23*/\n      *(_QWORD *)(v16 + 104) = 0; /*0x180021a27*/\n      *(_QWORD *)(v16 + 112) = 0; /*0x180021a2b*/\n      *(_DWORD *)(v16 + 8) = 0; /*0x180021a2f*/\n      *(_QWORD *)(v16 + 120) = 0; /*0x180021a32*/\n      *(_QWORD *)(v16 + 128) = 0; /*0x180021a36*/\n      *(_QWORD *)(v16 + 136) = 0; /*0x180021a3d*/\n      *(_QWORD *)v16 = &RenderCore_D3D11_Compensation650::`vftable'; /*0x180021a4b*/\n      *(_DWORD *)(v16 + 148) = 1065353216; /*0x180021a4e*/\n      *(_QWORD *)(v16 + 152) = 1065353216; /*0x180021a58*/\n      *(_DWORD *)(v16 + 160) = 0; /*0x180021a63*/\n      *(_DWORD *)(v16 + 204) = 1065353216; /*0x180021a69*/\n      a1[6] = v16; /*0x180021a73*/\n      sub_180006690(a1: v16, a2: a1[1], a3: a1[4]); /*0x180021a82*/\n      v15 = (_DWORD *)a1[5]; /*0x180021a87*/\n      v15[39] = 1; /*0x180021a8b*/\n      *(_DWORD *)(*(_QWORD *)v15 + 72LL) = 0x40000000; /*0x180021a98*/\n      *(_DWORD *)(*(_QWORD *)v15 + 76LL) = 1077936128; /*0x180021aa2*/\n      sub_180005240(); /*0x180021aa9*/\n    }\n    else\n    {\n      v17 = sub_180038990(a1: 144); /*0x180021aba*/\n      *(_QWORD *)v17 = &RenderCore_D3D11::`vftable'; /*0x180021ac6*/\n      *(_DWORD *)(v17 + 16) = 1065353216; /*0x180021ac9*/\n      *(_QWORD *)(v17 + 20) = 1065353216; /*0x180021ad0*/\n      *(_DWORD *)(v17 + 28) = 0; /*0x180021ad8*/\n      *(_DWORD *)(v17 + 72) = 1065353216; /*0x180021adb*/\n      *(_QWORD *)(v17 + 80) = 0; /*0x180021ae2*/\n      *(_QWORD *)(v17 + 88) = 0; /*0x180021ae6*/\n      *(_QWORD *)(v17 + 96) = 0; /*0x180021aea*/\n      *(_QWORD *)(v17 + 104) = 0; /*0x180021aee*/\n      *(_QWORD *)(v17 + 112) = 0; /*0x180021af2*/\n      *(_DWORD *)(v17 + 8) = 0; /*0x180021af6*/\n      *(_QWORD *)(v17 + 120) = 0; /*0x180021af9*/\n      *(_QWORD *)(v17 + 128) = 0; /*0x180021afd*/\n      *(_QWORD *)(v17 + 136) = 0; /*0x180021b04*/\n      a1[6] = v17; /*0x180021b0b*/\n    }\n    return sub_180006320(a1: a1[6], a2: a1[1]); /*0x180021b17*/\n  }\n  return result; /*0x180021b1c*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180021800  mov r11, rsp",
+                "180021803  mov [r11+18h], rbx",
+                "180021807  push rbp",
+                "180021808  push rsi",
+                "180021809  push rdi",
+                "18002180a  sub rsp, 180h",
+                "180021811  mov rax, cs:__security_cookie",
+                "180021818  xor rax, rsp",
+                "18002181b  mov [rsp+198h+var_28], rax",
+                "180021823  mov rbx, rdx",
+                "180021826  mov rdi, rcx",
+                "180021829  xorps xmm0, xmm0",
+                "18002182c  movups xmmword ptr [r11-48h], xmm0",
+                "180021831  xor ebp, ebp",
+                "180021833  mov [r11-38h], rbp",
+                "180021837  mov [r11-30h], rbp",
+                "18002183b  mov r8, 0FFFFFFFFFFFFFFFFh",
+                "180021842  inc r8",
+                "180021845  cmp [rdx+r8], bpl",
+                "180021849  jnz short loc_180021842",
+                "18002184b  lea rcx, [rsp+198h+var_48]",
+                "180021853  call sub_180004A40",
+                "180021858  cmp [rsp+198h+var_38], rbp",
+                "180021860  setnz sil",
+                "180021864  mov rdx, [rsp+198h+var_30]",
+                "18002186c  cmp rdx, 0Fh",
+                "180021870  jbe short loc_1800218A7",
+                "180021872  inc rdx",
+                "180021875  mov rcx, qword ptr [rsp+198h+var_48]",
+                "18002187d  mov rax, rcx",
+                "180021880  cmp rdx, 1000h",
+                "180021887  jb short loc_1800218A2",
+                "180021889  add rdx, 27h ; '''",
+                "18002188d  mov rcx, [rcx-8]; lpMem",
+                "180021891  sub rax, rcx",
+                "180021894  sub rax, 8",
+                "180021898  cmp rax, 1Fh",
+                "18002189c  ja loc_180021B3F",
+                "1800218a2  call sub_1800389CC",
+                "1800218a7  test sil, sil",
+                "1800218aa  jz loc_180021998",
+                "1800218b0  mov rdx, rbx",
+                "1800218b3  lea rcx, [rsp+198h+var_158]",
+                "1800218b8  call sub_18000C250",
+                "1800218bd  nop",
+                "1800218be  mov rax, [rsp+198h+var_158]",
+                "1800218c3  movsxd rcx, dword ptr [rax+4]",
+                "1800218c7  cmp [rsp+rcx+198h+var_148], 0",
+                "1800218cc  jnz short loc_180021924",
+                "1800218ce  lea rdx, aFindCompensati; \"find compensation texture!\"",
+                "1800218d5  lea rcx, qword_1800AE9B0",
+                "1800218dc  call sub_180006B50",
+                "1800218e1  mov rcx, rax",
+                "1800218e4  call sub_180006E30",
+                "1800218e9  lea rsi, [rdi+20h]",
+                "1800218ed  mov [rsp+198h+var_178], rsi",
+                "1800218f2  mov r9, rbx",
+                "1800218f5  mov r8, [rdi+10h]",
+                "1800218f9  mov rdx, [rdi+8]",
+                "1800218fd  call sub_180021FA0",
+                "180021902  test eax, eax",
+                "180021904  jns short loc_180021924",
+                "180021906  lea rdx, aLoadpngtotextu; \"LoadPNGToTexture failed!\"",
+                "18002190d  lea rcx, qword_1800AEBA0",
+                "180021914  call sub_180006B50",
+                "180021919  mov rcx, rax",
+                "18002191c  call sub_180006E30",
+                "180021921  mov [rsi], rbp",
+                "180021924  mov rax, [rsp+198h+var_158]",
+                "180021929  movsxd rcx, dword ptr [rax+4]",
+                "18002192d  lea rax, ??_7?$basic_ifstream@DU?$char_traits@D@std@@@std@@6B@; const std::ifstream::`vftable'",
+                "180021934  mov [rsp+rcx+198h+var_158], rax",
+                "180021939  mov rax, [rsp+198h+var_158]",
+                "18002193e  movsxd rcx, dword ptr [rax+4]",
+                "180021942  lea edx, [rcx-0B0h]",
+                "180021948  mov [rsp+rcx+198h+var_15C], edx",
+                "18002194c  lea rcx, [rsp+198h+var_148]",
+                "180021951  call sub_18000D180",
+                "180021956  mov rax, [rsp+198h+var_158]",
+                "18002195b  movsxd rcx, dword ptr [rax+4]",
+                "18002195f  lea rax, ??_7?$basic_istream@DU?$char_traits@D@std@@@std@@6B@; const std::istream::`vftable'",
+                "180021966  mov [rsp+rcx+198h+var_158], rax",
+                "18002196b  mov rax, [rsp+198h+var_158]",
+                "180021970  movsxd rcx, dword ptr [rax+4]",
+                "180021974  lea edx, [rcx-18h]",
+                "180021977  mov [rsp+rcx+198h+var_15C], edx",
+                "18002197b  lea rax, ??_7ios_base@std@@6B@; const std::ios_base::`vftable'",
+                "180021982  mov [rsp+198h+var_A8], rax",
+                "18002198a  lea rcx, [rsp+198h+var_A8]",
+                "180021992  call sub_180037DEC"
+              ],
+              "instruction_count": 90,
+              "truncated": true
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800a1a48",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038e260",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180021803",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180021fa0",
+                "name": "sub_180021FA0",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18000c250",
+                "name": "sub_18000C250",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180038990",
+                "name": "sub_180038990",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18003ecb4",
+                "name": "sub_18003ECB4",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1800222c0",
+                "name": "sub_1800222C0",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180006690",
+                "name": "sub_180006690",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180006320",
+                "name": "sub_180006320",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180006e30",
+                "name": "sub_180006E30",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1800389cc",
+                "name": "sub_1800389CC",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180037dec",
+                "name": "sub_180037DEC",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18000d180",
+                "name": "sub_18000D180",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180005240",
+                "name": "sub_180005240",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180004a40",
+                "name": "sub_180004A40",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180038970",
+                "name": "__security_check_cookie",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180006b50",
+                "name": "sub_180006B50",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 15,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x1800a1878",
+                "length": 26,
+                "string": "find compensation texture!"
+              },
+              {
+                "addr": "0x1800a1898",
+                "length": 24,
+                "string": "LoadPNGToTexture failed!"
+              },
+              {
+                "addr": "0x1800a18b8",
+                "length": 11,
+                "string": "m_d3dComtex"
+              }
+            ],
+            "string_ref_count": 3,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x18002180a",
+                "value": "0x180",
+                "decimal": 384
+              },
+              {
+                "addr": "0x18002183b",
+                "value": "0xffffffffffffffff",
+                "decimal": 18446744073709551615
+              },
+              {
+                "addr": "0x18002186c",
+                "value": "0xf",
+                "decimal": 15
+              },
+              {
+                "addr": "0x180021880",
+                "value": "0x1000",
+                "decimal": 4096
+              },
+              {
+                "addr": "0x180021889",
+                "value": "0x27",
+                "decimal": 39
+              },
+              {
+                "addr": "0x180021894",
+                "value": "0x8",
+                "decimal": 8
+              },
+              {
+                "addr": "0x180021898",
+                "value": "0x1f",
+                "decimal": 31
+              },
+              {
+                "addr": "0x1800218c7",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x1800219c2",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x1800219cd",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x1800219f3",
+                "value": "0xe8",
+                "decimal": 232
+              },
+              {
+                "addr": "0x180021a02",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021a09",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021a14",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021a4e",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021a58",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021a69",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021a8b",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x180021a98",
+                "value": "0x40000000",
+                "decimal": 1073741824
+              },
+              {
+                "addr": "0x180021aa2",
+                "value": "0x40400000",
+                "decimal": 1077936128
+              },
+              {
+                "addr": "0x180021ab0",
+                "value": "0x90",
+                "decimal": 144
+              },
+              {
+                "addr": "0x180021ac9",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021ad0",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021adb",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021b34",
+                "value": "0x180",
+                "decimal": 384
+              }
+            ],
+            "constant_count": 25,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180021800",
+                "end": "0x180021842",
+                "size": 66,
+                "type": 0,
+                "successors": [
+                  "0x180021842"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x180021842",
+                "end": "0x18002184b",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18002184b",
+                  "0x180021842"
+                ],
+                "predecessors": [
+                  "0x180021800",
+                  "0x180021842"
+                ]
+              },
+              {
+                "start": "0x18002184b",
+                "end": "0x180021872",
+                "size": 39,
+                "type": 0,
+                "successors": [
+                  "0x180021872",
+                  "0x1800218a7"
+                ],
+                "predecessors": [
+                  "0x180021842"
+                ]
+              },
+              {
+                "start": "0x180021872",
+                "end": "0x180021889",
+                "size": 23,
+                "type": 0,
+                "successors": [
+                  "0x180021889",
+                  "0x1800218a2"
+                ],
+                "predecessors": [
+                  "0x18002184b"
+                ]
+              },
+              {
+                "start": "0x180021889",
+                "end": "0x1800218a2",
+                "size": 25,
+                "type": 0,
+                "successors": [
+                  "0x1800218a2",
+                  "0x180021b3f"
+                ],
+                "predecessors": [
+                  "0x180021872"
+                ]
+              },
+              {
+                "start": "0x1800218a2",
+                "end": "0x1800218a7",
+                "size": 5,
+                "type": 0,
+                "successors": [
+                  "0x1800218a7"
+                ],
+                "predecessors": [
+                  "0x180021872",
+                  "0x180021889"
+                ]
+              },
+              {
+                "start": "0x1800218a7",
+                "end": "0x1800218b0",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x1800218b0",
+                  "0x180021998"
+                ],
+                "predecessors": [
+                  "0x18002184b",
+                  "0x1800218a2"
+                ]
+              },
+              {
+                "start": "0x1800218b0",
+                "end": "0x1800218ce",
+                "size": 30,
+                "type": 0,
+                "successors": [
+                  "0x1800218ce",
+                  "0x180021924"
+                ],
+                "predecessors": [
+                  "0x1800218a7"
+                ]
+              },
+              {
+                "start": "0x1800218ce",
+                "end": "0x180021906",
+                "size": 56,
+                "type": 0,
+                "successors": [
+                  "0x180021906",
+                  "0x180021924"
+                ],
+                "predecessors": [
+                  "0x1800218b0"
+                ]
+              },
+              {
+                "start": "0x180021906",
+                "end": "0x180021924",
+                "size": 30,
+                "type": 0,
+                "successors": [
+                  "0x180021924"
+                ],
+                "predecessors": [
+                  "0x1800218ce"
+                ]
+              },
+              {
+                "start": "0x180021924",
+                "end": "0x180021998",
+                "size": 116,
+                "type": 0,
+                "successors": [
+                  "0x180021998"
+                ],
+                "predecessors": [
+                  "0x1800218b0",
+                  "0x1800218ce",
+                  "0x180021906"
+                ]
+              },
+              {
+                "start": "0x180021998",
+                "end": "0x1800219cd",
+                "size": 53,
+                "type": 0,
+                "successors": [
+                  "0x1800219cd",
+                  "0x180021b1c"
+                ],
+                "predecessors": [
+                  "0x1800218a7",
+                  "0x180021924"
+                ]
+              },
+              {
+                "start": "0x1800219cd",
+                "end": "0x1800219d8",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x1800219d8",
+                  "0x180021ab0"
+                ],
+                "predecessors": [
+                  "0x180021998"
+                ]
+              },
+              {
+                "start": "0x1800219d8",
+                "end": "0x180021ab0",
+                "size": 216,
+                "type": 0,
+                "successors": [
+                  "0x180021b0f"
+                ],
+                "predecessors": [
+                  "0x1800219cd"
+                ]
+              },
+              {
+                "start": "0x180021ab0",
+                "end": "0x180021b0f",
+                "size": 95,
+                "type": 0,
+                "successors": [
+                  "0x180021b0f"
+                ],
+                "predecessors": [
+                  "0x1800219cd"
+                ]
+              },
+              {
+                "start": "0x180021b0f",
+                "end": "0x180021b1c",
+                "size": 13,
+                "type": 0,
+                "successors": [
+                  "0x180021b1c"
+                ],
+                "predecessors": [
+                  "0x1800219d8",
+                  "0x180021ab0"
+                ]
+              },
+              {
+                "start": "0x180021b1c",
+                "end": "0x180021b3f",
+                "size": 35,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180021998",
+                  "0x180021b0f"
+                ]
+              },
+              {
+                "start": "0x180021b3f",
+                "end": "0x180021b53",
+                "size": 20,
+                "type": 4,
+                "successors": [],
+                "predecessors": [
+                  "0x180021889"
+                ]
+              }
+            ],
+            "basic_block_count": 18,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180021c40",
+          "addr": "0x180021c40",
+          "name": "sub_180021C40",
+          "analysis": {
+            "size": "0x6e",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180021C40(__int64 a1, __int64 a2, unsigned __int8 a3, unsigned __int8 a4)\n{\n  __int64 v7; // r8\n  __int128 v9; // [rsp+20h] [rbp-28h] BYREF\n  __int64 v10; // [rsp+30h] [rbp-18h]\n  __int64 v11; // [rsp+38h] [rbp-10h]\n\n  v10 = 0; /*0x180021c58*/\n  v9 = 0; /*0x180021c5d*/\n  v11 = 0; /*0x180021c62*/\n  v7 = -1; /*0x180021c6e*/\n  do /*0x180021c7c*/\n    ++v7; /*0x180021c75*/\n  while ( *(_BYTE *)(a2 + v7) != 0 ); /*0x180021c7c*/\n  sub_180004A40(a1: &v9, a2); /*0x180021c83*/\n  return ((__int64 (__fastcall *)(_QWORD, __int128 *, _QWORD, _QWORD))sub_180004FD0)( /*0x180021c9e*/\n           a1: *(_QWORD *)(a1 + 40),\n           a2: &v9,\n           a3,\n           a4);\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180021c40  mov [rsp+arg_8], rbx",
+                "180021c45  mov [rsp+arg_10], rsi",
+                "180021c4a  push rdi",
+                "180021c4b  sub rsp, 40h",
+                "180021c4f  xor eax, eax",
+                "180021c51  xorps xmm0, xmm0",
+                "180021c54  movzx edi, r8b",
+                "180021c58  mov [rsp+48h+var_18], rax",
+                "180021c5d  movups [rsp+48h+var_28], xmm0",
+                "180021c62  mov [rsp+48h+var_10], rax",
+                "180021c67  movzx ebx, r9b",
+                "180021c6b  mov rsi, rcx",
+                "180021c6e  mov r8, 0FFFFFFFFFFFFFFFFh",
+                "180021c75  inc r8",
+                "180021c78  cmp [rdx+r8], al",
+                "180021c7c  jnz short loc_180021C75",
+                "180021c7e  lea rcx, [rsp+48h+var_28]",
+                "180021c83  call sub_180004A40",
+                "180021c88  mov rcx, [rsi+28h]",
+                "180021c8c  lea rdx, [rsp+48h+var_28]",
+                "180021c91  movzx r9d, bl",
+                "180021c95  movzx r8d, dil",
+                "180021c99  call sub_180004FD0",
+                "180021c9e  mov rbx, [rsp+48h+arg_8]",
+                "180021ca3  mov rsi, [rsp+48h+arg_10]",
+                "180021ca8  add rsp, 40h",
+                "180021cac  pop rdi",
+                "180021cad  retn"
+              ],
+              "instruction_count": 28,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800a1a60",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x1800a23e0",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038e278",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180021c45",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 3,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180004fd0",
+                "name": "sub_180004FD0",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180004a40",
+                "name": "sub_180004A40",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 2,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180021c4b",
+                "value": "0x40",
+                "decimal": 64
+              },
+              {
+                "addr": "0x180021c6e",
+                "value": "0xffffffffffffffff",
+                "decimal": 18446744073709551615
+              },
+              {
+                "addr": "0x180021ca8",
+                "value": "0x40",
+                "decimal": 64
+              }
+            ],
+            "constant_count": 3,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180021c40",
+                "end": "0x180021c75",
+                "size": 53,
+                "type": 0,
+                "successors": [
+                  "0x180021c75"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x180021c75",
+                "end": "0x180021c7e",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x180021c7e",
+                  "0x180021c75"
+                ],
+                "predecessors": [
+                  "0x180021c40",
+                  "0x180021c75"
+                ]
+              },
+              {
+                "start": "0x180021c7e",
+                "end": "0x180021cae",
+                "size": 48,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180021c75"
+                ]
+              }
+            ],
+            "basic_block_count": 3,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180021d20",
+          "addr": "0x180021d20",
+          "name": "sub_180021D20",
+          "analysis": {
+            "size": "0x2f",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180021D20(__int64 a1, int a2, int a3, int a4, char a5, int a6)\n{\n  __int64 *v6; // rbx\n  __int64 result; // rax\n\n  v6 = *(__int64 **)(a1 + 40); /*0x180021d26*/\n  sub_180005340(a1: (_DWORD)v6, a2, a3, a4, a5); /*0x180021d36*/\n  result = *v6; /*0x180021d3b*/\n  *(_DWORD *)(*v6 + 60) = a6; /*0x180021d44*/\n  return result; /*0x180021d49*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180021d20  push rbx",
+                "180021d22  sub rsp, 30h",
+                "180021d26  mov rbx, [rcx+28h]",
+                "180021d2a  movzx eax, [rsp+38h+arg_20]",
+                "180021d2f  mov rcx, rbx",
+                "180021d32  mov [rsp+38h+var_18], al",
+                "180021d36  call sub_180005340",
+                "180021d3b  mov rax, [rbx]",
+                "180021d3e  movss xmm0, [rsp+38h+arg_28]",
+                "180021d44  movss dword ptr [rax+3Ch], xmm0",
+                "180021d49  add rsp, 30h",
+                "180021d4d  pop rbx",
+                "180021d4e  retn"
+              ],
+              "instruction_count": 13,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800a1a78",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x1800a23f8",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038e284",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180021d22",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 3,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180005340",
+                "name": "sub_180005340",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 1,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180021d22",
+                "value": "0x30",
+                "decimal": 48
+              },
+              {
+                "addr": "0x180021d49",
+                "value": "0x30",
+                "decimal": 48
+              }
+            ],
+            "constant_count": 2,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180021d20",
+                "end": "0x180021d4f",
+                "size": 47,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180021db0",
+          "addr": "0x180021db0",
+          "name": "sub_180021DB0",
+          "analysis": {
+            "size": "0x10d",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180021DB0(__int64 a1, int a2)\n{\n  __int64 *v2; // rax\n  __int64 v5; // rdx\n  __int64 v6; // [rsp+40h] [rbp+8h]\n\n  v2 = *(__int64 **)(a1 + 40); /*0x180021db6*/\n  if ( *(float *)(*v2 + 56) > 0.0 ) /*0x180021dcb*/\n    return sub_180006740(a1: *(_QWORD *)(a1 + 48), a2, a3: *(_QWORD *)(a1 + 16), a4: *(_QWORD *)(a1 + 24), a5: *v2); /*0x180021dde*/\n  if ( *(_QWORD *)(a1 + 56) == 0 ) /*0x180021dee*/\n  {\n    v6 = sub_180038990(a1: 216); /*0x180021e00*/\n    *(_DWORD *)(v6 + 16) = 1065353216; /*0x180021e0c*/\n    *(_QWORD *)(v6 + 20) = 1065353216; /*0x180021e13*/\n    *(_DWORD *)(v6 + 28) = 0; /*0x180021e1b*/\n    *(_DWORD *)(v6 + 72) = 1065353216; /*0x180021e1e*/\n    *(_QWORD *)v6 = &RenderCore_D3D11_2dz::`vftable'; /*0x180021e25*/\n    *(_QWORD *)(v6 + 80) = 0; /*0x180021e2b*/\n    *(_QWORD *)(v6 + 88) = 0; /*0x180021e2f*/\n    *(_QWORD *)(v6 + 96) = 0; /*0x180021e33*/\n    *(_QWORD *)(v6 + 104) = 0; /*0x180021e37*/\n    *(_QWORD *)(v6 + 112) = 0; /*0x180021e3b*/\n    *(_DWORD *)(v6 + 8) = 0; /*0x180021e3f*/\n    *(_QWORD *)(v6 + 120) = 0; /*0x180021e42*/\n    *(_QWORD *)(v6 + 128) = 0; /*0x180021e46*/\n    *(_QWORD *)(v6 + 136) = 0; /*0x180021e4d*/\n    *(_DWORD *)(v6 + 148) = 1065353216; /*0x180021e54*/\n    *(_QWORD *)(v6 + 152) = 1065353216; /*0x180021e5e*/\n    *(_DWORD *)(v6 + 160) = 0; /*0x180021e69*/\n    *(_DWORD *)(v6 + 204) = 1065353216; /*0x180021e6f*/\n    *(_DWORD *)(v6 + 208) = 1022739087; /*0x180021e79*/\n    *(_DWORD *)(v6 + 212) = 1056964608; /*0x180021e83*/\n    v5 = *(_QWORD *)(a1 + 8); /*0x180021e8d*/\n    *(_QWORD *)(a1 + 56) = v6; /*0x180021e91*/\n    sub_180006320(a1: v6, a2: v5); /*0x180021e95*/\n  }\n  return sub_180006740( /*0x180021de3*/\n           a1: *(_QWORD *)(a1 + 56),\n           a2,\n           a3: *(_QWORD *)(a1 + 16),\n           a4: *(_QWORD *)(a1 + 24),\n           a5: **(_QWORD **)(a1 + 40));\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180021db0  push rbx",
+                "180021db2  sub rsp, 30h",
+                "180021db6  mov rax, [rcx+28h]",
+                "180021dba  mov rbx, rcx",
+                "180021dbd  xorps xmm0, xmm0",
+                "180021dc0  mov rcx, [rax]",
+                "180021dc3  movss xmm1, dword ptr [rcx+38h]",
+                "180021dc8  comiss xmm1, xmm0",
+                "180021dcb  jbe short loc_180021DE9",
+                "180021dcd  mov r9, [rbx+18h]",
+                "180021dd1  mov r8, [rbx+10h]",
+                "180021dd5  mov [rsp+38h+var_18], rcx",
+                "180021dda  mov rcx, [rbx+30h]",
+                "180021dde  call sub_180006740",
+                "180021de3  add rsp, 30h",
+                "180021de7  pop rbx",
+                "180021de8  retn",
+                "180021de9  cmp qword ptr [rbx+38h], 0",
+                "180021dee  jnz loc_180021E9A",
+                "180021df4  mov ecx, 0D8h",
+                "180021df9  call sub_180038990",
+                "180021dfe  xor edx, edx",
+                "180021e00  mov [rsp+38h+arg_0], rax",
+                "180021e05  lea rcx, ??_7RenderCore_D3D11_2dz@@6B@; const RenderCore_D3D11_2dz::`vftable'",
+                "180021e0c  mov dword ptr [rax+10h], 3F800000h",
+                "180021e13  mov qword ptr [rax+14h], 3F800000h",
+                "180021e1b  mov [rax+1Ch], edx",
+                "180021e1e  mov dword ptr [rax+48h], 3F800000h",
+                "180021e25  mov [rax], rcx",
+                "180021e28  mov rcx, rax",
+                "180021e2b  mov [rax+50h], rdx",
+                "180021e2f  mov [rax+58h], rdx",
+                "180021e33  mov [rax+60h], rdx",
+                "180021e37  mov [rax+68h], rdx",
+                "180021e3b  mov [rax+70h], rdx",
+                "180021e3f  mov [rax+8], edx",
+                "180021e42  mov [rax+78h], rdx",
+                "180021e46  mov [rax+80h], rdx",
+                "180021e4d  mov [rax+88h], rdx",
+                "180021e54  mov dword ptr [rax+94h], 3F800000h",
+                "180021e5e  mov qword ptr [rax+98h], 3F800000h",
+                "180021e69  mov [rax+0A0h], edx",
+                "180021e6f  mov dword ptr [rax+0CCh], 3F800000h",
+                "180021e79  mov dword ptr [rax+0D0h], 3CF5C28Fh",
+                "180021e83  mov dword ptr [rax+0D4h], 3F000000h",
+                "180021e8d  mov rdx, [rbx+8]",
+                "180021e91  mov [rbx+38h], rax",
+                "180021e95  call sub_180006320",
+                "180021e9a  mov rax, [rbx+28h]",
+                "180021e9e  mov r9, [rbx+18h]",
+                "180021ea2  mov r8, [rbx+10h]",
+                "180021ea6  mov rcx, [rax]",
+                "180021ea9  mov [rsp+38h+var_18], rcx",
+                "180021eae  mov rcx, [rbx+38h]",
+                "180021eb2  call sub_180006740",
+                "180021eb7  add rsp, 30h",
+                "180021ebb  pop rbx",
+                "180021ebc  retn"
+              ],
+              "instruction_count": 58,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800a1ac8",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038e290",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180021db2",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180038990",
+                "name": "sub_180038990",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180006320",
+                "name": "sub_180006320",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180006740",
+                "name": "sub_180006740",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 3,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180021db2",
+                "value": "0x30",
+                "decimal": 48
+              },
+              {
+                "addr": "0x180021de3",
+                "value": "0x30",
+                "decimal": 48
+              },
+              {
+                "addr": "0x180021de9",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x180021df4",
+                "value": "0xd8",
+                "decimal": 216
+              },
+              {
+                "addr": "0x180021e0c",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021e13",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021e1e",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021e54",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021e5e",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021e6f",
+                "value": "0x3f800000",
+                "decimal": 1065353216
+              },
+              {
+                "addr": "0x180021e79",
+                "value": "0x3cf5c28f",
+                "decimal": 1022739087
+              },
+              {
+                "addr": "0x180021e83",
+                "value": "0x3f000000",
+                "decimal": 1056964608
+              },
+              {
+                "addr": "0x180021eb7",
+                "value": "0x30",
+                "decimal": 48
+              }
+            ],
+            "constant_count": 13,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180021db0",
+                "end": "0x180021dcd",
+                "size": 29,
+                "type": 0,
+                "successors": [
+                  "0x180021dcd",
+                  "0x180021de9"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x180021dcd",
+                "end": "0x180021de9",
+                "size": 28,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180021db0"
+                ]
+              },
+              {
+                "start": "0x180021de9",
+                "end": "0x180021df4",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x180021df4",
+                  "0x180021e9a"
+                ],
+                "predecessors": [
+                  "0x180021db0"
+                ]
+              },
+              {
+                "start": "0x180021df4",
+                "end": "0x180021e9a",
+                "size": 166,
+                "type": 0,
+                "successors": [
+                  "0x180021e9a"
+                ],
+                "predecessors": [
+                  "0x180021de9"
+                ]
+              },
+              {
+                "start": "0x180021e9a",
+                "end": "0x180021ebd",
+                "size": 35,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180021de9",
+                  "0x180021df4"
+                ]
+              }
+            ],
+            "basic_block_count": 5,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

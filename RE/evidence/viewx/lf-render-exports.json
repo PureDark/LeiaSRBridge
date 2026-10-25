@@ -1,0 +1,845 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"CreateDX11Render\",\"addr\":\"0x180022240\",\"name\":\"CreateDX11Render\",\"analysis\":{\"size\":\"0x75\",\"prototype\":null,\"decompile\":\"_QWORD *__fastcall CreateDX11Render(__int64 a1)\\n{\\n  _QWORD *v2; // rdi\\n  __int64 v3; // rax\\n\\n  v2 = (_QWORD *)sub_180038990(a1: 64); /*0x180022257*/\\n  *v2 = &LF3DDX11Render::`vftable'; /*0x180022265*/\\n  v2[3] = 0; /*0x18002226a*/\\n  v2[4] = 0; /*0x18002226e*/\\n  v2[6] = 0; /*0x180022272*/\\n  v2[7] = 0; /*0x180022276*/\\n  v2[2] = 0; /*0x18002227a*/\\n  v2[1] = a1; /*0x18002227d*/\\n  (*(void (__fastcall **)(__int64))(*(_QWORD *)a1 + 320LL))(a1); /*0x18002228e*/\\n  v3 = sub_180038990(a1: 208); /*0x180022296*/\\n  v2[5] = sub_180004DB0(a1: v3); /*0x1800222a8*/\\n  return v2; /*0x1800222a3*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180022240  mov [rsp+arg_0], rbx\",\"180022245  push rdi\",\"180022246  sub rsp, 20h\",\"18002224a  mov rbx, rcx\",\"18002224d  mov ecx, 40h ; '@'\",\"180022252  call sub_180038990\",\"180022257  mov rdi, rax\",\"18002225a  lea rax, ??_7LF3DDX11Render@@6B@; const LF3DDX11Render::`vftable'\",\"180022261  lea rdx, [rdi+10h]\",\"180022265  mov [rdi], rax\",\"180022268  xor eax, eax\",\"18002226a  mov [rdi+18h], rax\",\"18002226e  mov [rdi+20h], rax\",\"180022272  mov [rdi+30h], rax\",\"180022276  mov [rdi+38h], rax\",\"18002227a  mov [rdx], rax\",\"18002227d  mov [rdi+8], rbx\",\"180022281  mov rcx, [rbx]\",\"180022284  mov r8, [rcx+140h]\",\"18002228b  mov rcx, rbx\",\"18002228e  call r8\",\"180022291  mov ecx, 0D0h\",\"180022296  call sub_180038990\",\"18002229b  mov rcx, rax\",\"18002229e  call sub_180004DB0\",\"1800222a3  mov rbx, [rsp+28h+arg_0]\",\"1800222a8  mov [rdi+28h], rax\",\"1800222ac  mov rax, rdi\",\"1800222af  add rsp, 20h\",\"1800222b3  pop rdi\",\"1800222b4  retn\"],\"instruction_count\":31,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x1800ac428\",\"type\":\"data\"},{\"addr\":\"0x18038e2f0\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180022245\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180038990\",\"name\":\"sub_180038990\",\"type\":\"internal\"},{\"addr\":\"0x180004db0\",\"name\":\"sub_180004DB0\",\"type\":\"internal\"}],\"callee_count\":2,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180022246\",\"value\":\"0x20\",\"decimal\":32},{\"addr\":\"0x18002224d\",\"value\":\"0x40\",\"decimal\":64},{\"addr\":\"0x180022291\",\"value\":\"0xd0\",\"decimal\":208},{\"addr\":\"0x1800222af\",\"value\":\"0x20\",\"decimal\":32}],\"constant_count\":4,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180022240\",\"end\":\"0x1800222b5\",\"size\":117,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"CreateSimpleRender\",\"addr\":\"0x180036e10\",\"name\":\"CreateSimpleRender\",\"analysis\":{\"size\":\"0xf5\",\"prototype\":null,\"decompile\":\"_QWORD *__fastcall CreateSimpleRender(unsigned int a1, __int64 a2)\\n{\\n  _QWORD *v4; // rdi\\n  __int64 v5; // rax\\n  _QWORD *v6; // rbx\\n  int v7; // eax\\n  __int64 v8; // rax\\n\\n  v4 = (_QWORD *)sub_180038990(a1: 48); /*0x180036e33*/\\n  *v4 = &LF3DSimpleRender::`vftable'; /*0x180036e44*/\\n  v4[1] = 0; /*0x180036e47*/\\n  v4[2] = 0; /*0x180036e4b*/\\n  v4[3] = 0; /*0x180036e4f*/\\n  v4[4] = 0; /*0x180036e53*/\\n  v5 = sub_180038990(a1: 208); /*0x180036e57*/\\n  v4[5] = sub_180004DB0(a1: v5); /*0x180036e64*/\\n  if ( a1 == 2 ) /*0x180036e6b*/\\n  {\\n    v6 = (_QWORD *)sub_180038990(a1: 56); /*0x180036e77*/\\n    v6[2] = 0; /*0x180036e85*/\\n    *v6 = &LF3DRenderCoreAPI_D3D11::`vftable'; /*0x180036e88*/\\n    v6[3] = 0; /*0x180036e8b*/\\n    v6[4] = 0; /*0x180036e8f*/\\n    v6[5] = 0; /*0x180036e93*/\\n    v6[6] = 0; /*0x180036e97*/\\n    v6[1] = a2; /*0x180036e9b*/\\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)a2 + 320LL))(a1: a2); /*0x180036eac*/\\n    v4[1] = v6; /*0x180036eaf*/\\n  }\\n  else if ( a1 <= 0x11 && (v7 = 133376, _bittest(&v7, a1)) ) /*0x180036ebf*/\\n  {\\n    v8 = sub_180038990(a1: 32); /*0x180036ec9*/\\n    *(_QWORD *)v8 = &LF3DRenderCoreAPI_OpenGLCoreES::`vftable'; /*0x180036ed5*/\\n    *(_QWORD *)(v8 + 8) = 0; /*0x180036ed8*/\\n    *(_DWORD *)(v8 + 16) = a1; /*0x180036edc*/\\n    *(_QWORD *)(v8 + 20) = 0; /*0x180036edf*/\\n    v4[1] = v8; /*0x180036ee3*/\\n  }\\n  else\\n  {\\n    v4[1] = 0; /*0x180036ee9*/\\n  }\\n  return v4; /*0x180036eed*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180036e10  mov [rsp+arg_0], rbx\",\"180036e15  mov [rsp+arg_8], rbp\",\"180036e1a  mov [rsp+arg_10], rsi\",\"180036e1f  push rdi\",\"180036e20  sub rsp, 20h\",\"180036e24  mov ebx, ecx\",\"180036e26  mov rsi, rdx\",\"180036e29  mov ecx, 30h ; '0'\",\"180036e2e  call sub_180038990\",\"180036e33  mov rdi, rax\",\"180036e36  xor ebp, ebp\",\"180036e38  lea rax, ??_7LF3DSimpleRender@@6B@; const LF3DSimpleRender::`vftable'\",\"180036e3f  mov ecx, 0D0h\",\"180036e44  mov [rdi], rax\",\"180036e47  mov [rdi+8], rbp\",\"180036e4b  mov [rdi+10h], rbp\",\"180036e4f  mov [rdi+18h], rbp\",\"180036e53  mov [rdi+20h], rbp\",\"180036e57  call sub_180038990\",\"180036e5c  mov rcx, rax\",\"180036e5f  call sub_180004DB0\",\"180036e64  mov [rdi+28h], rax\",\"180036e68  cmp ebx, 2\",\"180036e6b  jnz short loc_180036EB5\",\"180036e6d  mov ecx, 38h ; '8'\",\"180036e72  call sub_180038990\",\"180036e77  mov rbx, rax\",\"180036e7a  lea rax, ??_7LF3DRenderCoreAPI_D3D11@@6B@; const LF3DRenderCoreAPI_D3D11::`vftable'\",\"180036e81  lea rdx, [rbx+10h]\",\"180036e85  mov [rdx], rbp\",\"180036e88  mov [rbx], rax\",\"180036e8b  mov [rbx+18h], rbp\",\"180036e8f  mov [rbx+20h], rbp\",\"180036e93  mov [rbx+28h], rbp\",\"180036e97  mov [rbx+30h], rbp\",\"180036e9b  mov [rbx+8], rsi\",\"180036e9f  mov rcx, [rsi]\",\"180036ea2  mov r8, [rcx+140h]\",\"180036ea9  mov rcx, rsi\",\"180036eac  call r8\",\"180036eaf  mov [rdi+8], rbx\",\"180036eb3  jmp short loc_180036EED\",\"180036eb5  cmp ebx, 11h\",\"180036eb8  ja short loc_180036EE9\",\"180036eba  mov eax, 20900h\",\"180036ebf  bt eax, ebx\",\"180036ec2  jnb short loc_180036EE9\",\"180036ec4  mov ecx, 20h ; ' '\",\"180036ec9  call sub_180038990\",\"180036ece  lea rcx, ??_7LF3DRenderCoreAPI_OpenGLCoreES@@6B@; const LF3DRenderCoreAPI_OpenGLCoreES::`vftable'\",\"180036ed5  mov [rax], rcx\",\"180036ed8  mov [rax+8], rbp\",\"180036edc  mov [rax+10h], ebx\",\"180036edf  mov [rax+14h], rbp\",\"180036ee3  mov [rdi+8], rax\",\"180036ee7  jmp short loc_180036EED\",\"180036ee9  mov [rdi+8], rbp\",\"180036eed  mov rbx, [rsp+28h+arg_0]\",\"180036ef2  mov rax, rdi\",\"180036ef5  mov rbp, [rsp+28h+arg_8]\",\"180036efa  mov rsi, [rsp+28h+arg_10]\",\"180036eff  add rsp, 20h\",\"180036f03  pop rdi\",\"180036f04  retn\"],\"instruction_count\":64,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x1800ac428\",\"type\":\"data\"},{\"addr\":\"0x18038edd0\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180036e15\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180038990\",\"name\":\"sub_180038990\",\"type\":\"internal\"},{\"addr\":\"0x180004db0\",\"name\":\"sub_180004DB0\",\"type\":\"internal\"}],\"callee_count\":2,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180036e20\",\"value\":\"0x20\",\"decimal\":32},{\"addr\":\"0x180036e29\",\"value\":\"0x30\",\"decimal\":48},{\"addr\":\"0x180036e3f\",\"value\":\"0xd0\",\"decimal\":208},{\"addr\":\"0x180036e68\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x180036e6d\",\"value\":\"0x38\",\"decimal\":56},{\"addr\":\"0x180036eb5\",\"value\":\"0x11\",\"decimal\":17},{\"addr\":\"0x180036eba\",\"value\":\"0x20900\",\"decimal\":133376},{\"addr\":\"0x180036ec4\",\"value\":\"0x20\",\"decimal\":32},{\"addr\":\"0x180036eff\",\"value\":\"0x20\",\"decimal\":32}],\"constant_count\":9,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180036e10\",\"end\":\"0x180036e6d\",\"size\":93,\"type\":0,\"successors\":[\"0x180036e6d\",\"0x180036eb5\"],\"predecessors\":[]},{\"start\":\"0x180036e6d\",\"end\":\"0x180036eb5\",\"size\":72,\"type\":0,\"successors\":[\"0x180036eed\"],\"predecessors\":[\"0x180036e10\"]},{\"start\":\"0x180036eb5\",\"end\":\"0x180036eba\",\"size\":5,\"type\":0,\"successors\":[\"0x180036eba\",\"0x180036ee9\"],\"predecessors\":[\"0x180036e10\"]},{\"start\":\"0x180036eba\",\"end\":\"0x180036ec4\",\"size\":10,\"type\":0,\"successors\":[\"0x180036ec4\",\"0x180036ee9\"],\"predecessors\":[\"0x180036eb5\"]},{\"start\":\"0x180036ec4\",\"end\":\"0x180036ee9\",\"size\":37,\"type\":0,\"successors\":[\"0x180036eed\"],\"predecessors\":[\"0x180036eba\"]},{\"start\":\"0x180036ee9\",\"end\":\"0x180036eed\",\"size\":4,\"type\":0,\"successors\":[\"0x180036eed\"],\"predecessors\":[\"0x180036eb5\",\"0x180036eba\"]},{\"start\":\"0x180036eed\",\"end\":\"0x180036f05\",\"size\":24,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180036e6d\",\"0x180036ec4\",\"0x180036ee9\"]}],\"basic_block_count\":7,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"GetLensInfo\",\"addr\":\"0x180035e40\",\"name\":\"GetLensInfo\",\"analysis\":{\"size\":\"0x156\",\"prototype\":null,\"decompile\":\"__int64 __fastcall GetLensInfo(__int64 a1, int a2, int a3, __int64 a4)\\n{\\n  void *v8; // rdi\\n  _DWORD *v9; // rcx\\n  __int64 v10; // r8\\n  __int64 result; // rax\\n  void *v12; // rcx\\n  __int128 v13; // [rsp+30h] [rbp-58h] BYREF\\n  __int64 v14; // [rsp+40h] [rbp-48h]\\n  unsigned __int64 v15; // [rsp+48h] [rbp-40h]\\n\\n  v8 = (void *)sub_180038990(a1: 172); /*0x180035e73*/\\n  sub_180004F00(a1: v8); /*0x180035e76*/\\n  v9[35] = 90; /*0x180035e7b*/\\n  v9[36] = 127; /*0x180035e88*/\\n  v10 = -1; /*0x180035e92*/\\n  v9[37] = 165; /*0x180035e99*/\\n  v9[38] = 105; /*0x180035ea3*/\\n  v9[39] = 247; /*0x180035ead*/\\n  v9[40] = 61; /*0x180035eb7*/\\n  v9[41] = 232; /*0x180035ec1*/\\n  v9[42] = 150; /*0x180035ecb*/\\n  v13 = 0; /*0x180035ed5*/\\n  v14 = 0; /*0x180035eda*/\\n  v15 = 0; /*0x180035ee3*/\\n  do /*0x180035ef8*/\\n    ++v10; /*0x180035ef0*/\\n  while ( *(_BYTE *)(a1 + v10) != 0 ); /*0x180035ef8*/\\n  sub_180004A40(a1: &v13, a2: a1); /*0x180035f02*/\\n  sub_180010540(a1: (_DWORD)v8, a2: (unsigned int)&v13, a3: a2, a4: a3, a5: a4); /*0x180035f1a*/\\n  result = sub_1800389CC(lpMem: v8); /*0x180035f27*/\\n  if ( v15 > 0xF ) /*0x180035f35*/\\n  {\\n    v12 = (void *)v13; /*0x180035f37*/\\n    if ( v15 + 1 >= 0x1000 ) /*0x180035f49*/\\n    {\\n      v12 = *(void **)(v13 - 8); /*0x180035f4b*/\\n      if ( (unsigned __int64)(v13 - (_QWORD)v12 - 8) > 0x1F ) /*0x180035f5e*/\\n      {\\n        sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x180035f90*/\\n        JUMPOUT(0x180035F95LL); /*0x180035f95*/\\n      }\\n    }\\n    return sub_1800389CC(lpMem: v12); /*0x180035f60*/\\n  }\\n  return result; /*0x180035f65*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180035e40  push rbx\",\"180035e42  push rbp\",\"180035e43  push rsi\",\"180035e44  push rdi\",\"180035e45  push r14\",\"180035e47  sub rsp, 60h\",\"180035e4b  mov rax, cs:__security_cookie\",\"180035e52  xor rax, rsp\",\"180035e55  mov [rsp+88h+var_38], rax\",\"180035e5a  mov rbx, rcx\",\"180035e5d  mov r14, r9\",\"180035e60  mov ecx, 0ACh\",\"180035e65  mov rbp, r8\",\"180035e68  mov rsi, rdx\",\"180035e6b  call sub_180038990\",\"180035e70  mov rcx, rax\",\"180035e73  mov rdi, rax\",\"180035e76  call sub_180004F00\",\"180035e7b  mov dword ptr [rcx+8Ch], 5Ah ; 'Z'\",\"180035e85  xorps xmm0, xmm0\",\"180035e88  mov dword ptr [rcx+90h], 7Fh\",\"180035e92  mov r8, 0FFFFFFFFFFFFFFFFh\",\"180035e99  mov dword ptr [rcx+94h], 0A5h\",\"180035ea3  mov dword ptr [rcx+98h], 69h ; 'i'\",\"180035ead  mov dword ptr [rcx+9Ch], 0F7h\",\"180035eb7  mov dword ptr [rcx+0A0h], 3Dh ; '='\",\"180035ec1  mov dword ptr [rcx+0A4h], 0E8h\",\"180035ecb  mov dword ptr [rcx+0A8h], 96h\",\"180035ed5  movups [rsp+88h+var_58], xmm0\",\"180035eda  mov [rsp+88h+var_48], 0\",\"180035ee3  mov [rsp+88h+var_40], 0\",\"180035eec  nop dword ptr [rax+00h]\",\"180035ef0  inc r8\",\"180035ef3  cmp byte ptr [rbx+r8], 0\",\"180035ef8  jnz short loc_180035EF0\",\"180035efa  mov rdx, rbx\",\"180035efd  lea rcx, [rsp+88h+var_58]\",\"180035f02  call sub_180004A40\",\"180035f07  mov r9, rbp\",\"180035f0a  mov [rsp+88h+var_68], r14\",\"180035f0f  mov r8, rsi\",\"180035f12  lea rdx, [rsp+88h+var_58]\",\"180035f17  mov rcx, rdi\",\"180035f1a  call sub_180010540\",\"180035f1f  mov edx, 0ACh\",\"180035f24  mov rcx, rdi; lpMem\",\"180035f27  call sub_1800389CC\",\"180035f2c  mov rdx, [rsp+88h+var_40]\",\"180035f31  cmp rdx, 0Fh\",\"180035f35  jbe short loc_180035F65\",\"180035f37  mov rcx, qword ptr [rsp+88h+var_58]\",\"180035f3c  inc rdx\",\"180035f3f  mov rax, rcx\",\"180035f42  cmp rdx, 1000h\",\"180035f49  jb short loc_180035F60\",\"180035f4b  mov rcx, [rcx-8]; lpMem\",\"180035f4f  add rdx, 27h ; '''\",\"180035f53  sub rax, rcx\",\"180035f56  sub rax, 8\",\"180035f5a  cmp rax, 1Fh\",\"180035f5e  ja short loc_180035F7D\",\"180035f60  call sub_1800389CC\",\"180035f65  mov rcx, [rsp+88h+var_38]\",\"180035f6a  xor rcx, rsp; StackCookie\",\"180035f6d  call __security_check_cookie\",\"180035f72  add rsp, 60h\",\"180035f76  pop r14\",\"180035f78  pop rdi\",\"180035f79  pop rsi\",\"180035f7a  pop rbp\"],\"instruction_count\":70,\"truncated\":true},\"xrefs\":{\"to\":[{\"addr\":\"0x1800ac428\",\"type\":\"data\"},{\"addr\":\"0x18038ed1c\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180035e42\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180004f00\",\"name\":\"sub_180004F00\",\"type\":\"internal\"},{\"addr\":\"0x180038990\",\"name\":\"sub_180038990\",\"type\":\"internal\"},{\"addr\":\"0x18003ecb4\",\"name\":\"sub_18003ECB4\",\"type\":\"internal\"},{\"addr\":\"0x180010540\",\"name\":\"sub_180010540\",\"type\":\"internal\"},{\"addr\":\"0x1800389cc\",\"name\":\"sub_1800389CC\",\"type\":\"internal\"},{\"addr\":\"0x180004a40\",\"name\":\"sub_180004A40\",\"type\":\"internal\"},{\"addr\":\"0x180038970\",\"name\":\"__security_check_cookie\",\"type\":\"internal\"}],\"callee_count\":7,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180035e47\",\"value\":\"0x60\",\"decimal\":96},{\"addr\":\"0x180035e60\",\"value\":\"0xac\",\"decimal\":172},{\"addr\":\"0x180035e7b\",\"value\":\"0x5a\",\"decimal\":90},{\"addr\":\"0x180035e88\",\"value\":\"0x7f\",\"decimal\":127},{\"addr\":\"0x180035e92\",\"value\":\"0xffffffffffffffff\",\"decimal\":18446744073709551615},{\"addr\":\"0x180035e99\",\"value\":\"0xa5\",\"decimal\":165},{\"addr\":\"0x180035ea3\",\"value\":\"0x69\",\"decimal\":105},{\"addr\":\"0x180035ead\",\"value\":\"0xf7\",\"decimal\":247},{\"addr\":\"0x180035eb7\",\"value\":\"0x3d\",\"decimal\":61},{\"addr\":\"0x180035ec1\",\"value\":\"0xe8\",\"decimal\":232},{\"addr\":\"0x180035ecb\",\"value\":\"0x96\",\"decimal\":150},{\"addr\":\"0x180035eda\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x180035ee3\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x180035ef3\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x180035f1f\",\"value\":\"0xac\",\"decimal\":172},{\"addr\":\"0x180035f31\",\"value\":\"0xf\",\"decimal\":15},{\"addr\":\"0x180035f42\",\"value\":\"0x1000\",\"decimal\":4096},{\"addr\":\"0x180035f4f\",\"value\":\"0x27\",\"decimal\":39},{\"addr\":\"0x180035f56\",\"value\":\"0x8\",\"decimal\":8},{\"addr\":\"0x180035f5a\",\"value\":\"0x1f\",\"decimal\":31},{\"addr\":\"0x180035f72\",\"value\":\"0x60\",\"decimal\":96},{\"addr\":\"0x180035f80\",\"value\":\"0x0\",\"decimal\":0}],\"constant_count\":22,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180035e40\",\"end\":\"0x180035ef0\",\"size\":176,\"type\":0,\"successors\":[\"0x180035ef0\"],\"predecessors\":[]},{\"start\":\"0x180035ef0\",\"end\":\"0x180035efa\",\"size\":10,\"type\":0,\"successors\":[\"0x180035efa\",\"0x180035ef0\"],\"predecessors\":[\"0x180035e40\",\"0x180035ef0\"]},{\"start\":\"0x180035efa\",\"end\":\"0x180035f37\",\"size\":61,\"type\":0,\"successors\":[\"0x180035f37\",\"0x180035f65\"],\"predecessors\":[\"0x180035ef0\"]},{\"start\":\"0x180035f37\",\"end\":\"0x180035f4b\",\"size\":20,\"type\":0,\"successors\":[\"0x180035f4b\",\"0x180035f60\"],\"predecessors\":[\"0x180035efa\"]},{\"start\":\"0x180035f4b\",\"end\":\"0x180035f60\",\"size\":21,\"type\":0,\"successors\":[\"0x180035f60\",\"0x180035f7d\"],\"predecessors\":[\"0x180035f37\"]},{\"start\":\"0x180035f60\",\"end\":\"0x180035f65\",\"size\":5,\"type\":0,\"successors\":[\"0x180035f65\"],\"predecessors\":[\"0x180035f37\",\"0x180035f4b\"]},{\"start\":\"0x180035f65\",\"end\":\"0x180035f7d\",\"size\":24,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180035efa\",\"0x180035f60\"]},{\"start\":\"0x180035f7d\",\"end\":\"0x180035f95\",\"size\":24,\"type\":4,\"successors\":[],\"predecessors\":[\"0x180035f4b\"]}],\"basic_block_count\":8,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"VersionNumber\",\"addr\":\"0x180035e00\",\"name\":\"VersionNumber\",\"analysis\":{\"size\":\"0x6\",\"prototype\":null,\"decompile\":\"__int64 VersionNumber()\\n{\\n  return 7; /*0x180035e05*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180035e00  mov eax, 7\",\"180035e05  retn\"],\"instruction_count\":2,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x1800ac428\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180035e05\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":1,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[],\"callee_count\":0,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180035e00\",\"value\":\"0x7\",\"decimal\":7}],\"constant_count\":1,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180035e00\",\"end\":\"0x180035e06\",\"size\":6,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "CreateDX11Render",
+          "addr": "0x180022240",
+          "name": "CreateDX11Render",
+          "analysis": {
+            "size": "0x75",
+            "prototype": null,
+            "decompile": "_QWORD *__fastcall CreateDX11Render(__int64 a1)\n{\n  _QWORD *v2; // rdi\n  __int64 v3; // rax\n\n  v2 = (_QWORD *)sub_180038990(a1: 64); /*0x180022257*/\n  *v2 = &LF3DDX11Render::`vftable'; /*0x180022265*/\n  v2[3] = 0; /*0x18002226a*/\n  v2[4] = 0; /*0x18002226e*/\n  v2[6] = 0; /*0x180022272*/\n  v2[7] = 0; /*0x180022276*/\n  v2[2] = 0; /*0x18002227a*/\n  v2[1] = a1; /*0x18002227d*/\n  (*(void (__fastcall **)(__int64))(*(_QWORD *)a1 + 320LL))(a1); /*0x18002228e*/\n  v3 = sub_180038990(a1: 208); /*0x180022296*/\n  v2[5] = sub_180004DB0(a1: v3); /*0x1800222a8*/\n  return v2; /*0x1800222a3*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180022240  mov [rsp+arg_0], rbx",
+                "180022245  push rdi",
+                "180022246  sub rsp, 20h",
+                "18002224a  mov rbx, rcx",
+                "18002224d  mov ecx, 40h ; '@'",
+                "180022252  call sub_180038990",
+                "180022257  mov rdi, rax",
+                "18002225a  lea rax, ??_7LF3DDX11Render@@6B@; const LF3DDX11Render::`vftable'",
+                "180022261  lea rdx, [rdi+10h]",
+                "180022265  mov [rdi], rax",
+                "180022268  xor eax, eax",
+                "18002226a  mov [rdi+18h], rax",
+                "18002226e  mov [rdi+20h], rax",
+                "180022272  mov [rdi+30h], rax",
+                "180022276  mov [rdi+38h], rax",
+                "18002227a  mov [rdx], rax",
+                "18002227d  mov [rdi+8], rbx",
+                "180022281  mov rcx, [rbx]",
+                "180022284  mov r8, [rcx+140h]",
+                "18002228b  mov rcx, rbx",
+                "18002228e  call r8",
+                "180022291  mov ecx, 0D0h",
+                "180022296  call sub_180038990",
+                "18002229b  mov rcx, rax",
+                "18002229e  call sub_180004DB0",
+                "1800222a3  mov rbx, [rsp+28h+arg_0]",
+                "1800222a8  mov [rdi+28h], rax",
+                "1800222ac  mov rax, rdi",
+                "1800222af  add rsp, 20h",
+                "1800222b3  pop rdi",
+                "1800222b4  retn"
+              ],
+              "instruction_count": 31,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800ac428",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038e2f0",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180022245",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180038990",
+                "name": "sub_180038990",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180004db0",
+                "name": "sub_180004DB0",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 2,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180022246",
+                "value": "0x20",
+                "decimal": 32
+              },
+              {
+                "addr": "0x18002224d",
+                "value": "0x40",
+                "decimal": 64
+              },
+              {
+                "addr": "0x180022291",
+                "value": "0xd0",
+                "decimal": 208
+              },
+              {
+                "addr": "0x1800222af",
+                "value": "0x20",
+                "decimal": 32
+              }
+            ],
+            "constant_count": 4,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180022240",
+                "end": "0x1800222b5",
+                "size": 117,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "CreateSimpleRender",
+          "addr": "0x180036e10",
+          "name": "CreateSimpleRender",
+          "analysis": {
+            "size": "0xf5",
+            "prototype": null,
+            "decompile": "_QWORD *__fastcall CreateSimpleRender(unsigned int a1, __int64 a2)\n{\n  _QWORD *v4; // rdi\n  __int64 v5; // rax\n  _QWORD *v6; // rbx\n  int v7; // eax\n  __int64 v8; // rax\n\n  v4 = (_QWORD *)sub_180038990(a1: 48); /*0x180036e33*/\n  *v4 = &LF3DSimpleRender::`vftable'; /*0x180036e44*/\n  v4[1] = 0; /*0x180036e47*/\n  v4[2] = 0; /*0x180036e4b*/\n  v4[3] = 0; /*0x180036e4f*/\n  v4[4] = 0; /*0x180036e53*/\n  v5 = sub_180038990(a1: 208); /*0x180036e57*/\n  v4[5] = sub_180004DB0(a1: v5); /*0x180036e64*/\n  if ( a1 == 2 ) /*0x180036e6b*/\n  {\n    v6 = (_QWORD *)sub_180038990(a1: 56); /*0x180036e77*/\n    v6[2] = 0; /*0x180036e85*/\n    *v6 = &LF3DRenderCoreAPI_D3D11::`vftable'; /*0x180036e88*/\n    v6[3] = 0; /*0x180036e8b*/\n    v6[4] = 0; /*0x180036e8f*/\n    v6[5] = 0; /*0x180036e93*/\n    v6[6] = 0; /*0x180036e97*/\n    v6[1] = a2; /*0x180036e9b*/\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)a2 + 320LL))(a1: a2); /*0x180036eac*/\n    v4[1] = v6; /*0x180036eaf*/\n  }\n  else if ( a1 <= 0x11 && (v7 = 133376, _bittest(&v7, a1)) ) /*0x180036ebf*/\n  {\n    v8 = sub_180038990(a1: 32); /*0x180036ec9*/\n    *(_QWORD *)v8 = &LF3DRenderCoreAPI_OpenGLCoreES::`vftable'; /*0x180036ed5*/\n    *(_QWORD *)(v8 + 8) = 0; /*0x180036ed8*/\n    *(_DWORD *)(v8 + 16) = a1; /*0x180036edc*/\n    *(_QWORD *)(v8 + 20) = 0; /*0x180036edf*/\n    v4[1] = v8; /*0x180036ee3*/\n  }\n  else\n  {\n    v4[1] = 0; /*0x180036ee9*/\n  }\n  return v4; /*0x180036eed*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180036e10  mov [rsp+arg_0], rbx",
+                "180036e15  mov [rsp+arg_8], rbp",
+                "180036e1a  mov [rsp+arg_10], rsi",
+                "180036e1f  push rdi",
+                "180036e20  sub rsp, 20h",
+                "180036e24  mov ebx, ecx",
+                "180036e26  mov rsi, rdx",
+                "180036e29  mov ecx, 30h ; '0'",
+                "180036e2e  call sub_180038990",
+                "180036e33  mov rdi, rax",
+                "180036e36  xor ebp, ebp",
+                "180036e38  lea rax, ??_7LF3DSimpleRender@@6B@; const LF3DSimpleRender::`vftable'",
+                "180036e3f  mov ecx, 0D0h",
+                "180036e44  mov [rdi], rax",
+                "180036e47  mov [rdi+8], rbp",
+                "180036e4b  mov [rdi+10h], rbp",
+                "180036e4f  mov [rdi+18h], rbp",
+                "180036e53  mov [rdi+20h], rbp",
+                "180036e57  call sub_180038990",
+                "180036e5c  mov rcx, rax",
+                "180036e5f  call sub_180004DB0",
+                "180036e64  mov [rdi+28h], rax",
+                "180036e68  cmp ebx, 2",
+                "180036e6b  jnz short loc_180036EB5",
+                "180036e6d  mov ecx, 38h ; '8'",
+                "180036e72  call sub_180038990",
+                "180036e77  mov rbx, rax",
+                "180036e7a  lea rax, ??_7LF3DRenderCoreAPI_D3D11@@6B@; const LF3DRenderCoreAPI_D3D11::`vftable'",
+                "180036e81  lea rdx, [rbx+10h]",
+                "180036e85  mov [rdx], rbp",
+                "180036e88  mov [rbx], rax",
+                "180036e8b  mov [rbx+18h], rbp",
+                "180036e8f  mov [rbx+20h], rbp",
+                "180036e93  mov [rbx+28h], rbp",
+                "180036e97  mov [rbx+30h], rbp",
+                "180036e9b  mov [rbx+8], rsi",
+                "180036e9f  mov rcx, [rsi]",
+                "180036ea2  mov r8, [rcx+140h]",
+                "180036ea9  mov rcx, rsi",
+                "180036eac  call r8",
+                "180036eaf  mov [rdi+8], rbx",
+                "180036eb3  jmp short loc_180036EED",
+                "180036eb5  cmp ebx, 11h",
+                "180036eb8  ja short loc_180036EE9",
+                "180036eba  mov eax, 20900h",
+                "180036ebf  bt eax, ebx",
+                "180036ec2  jnb short loc_180036EE9",
+                "180036ec4  mov ecx, 20h ; ' '",
+                "180036ec9  call sub_180038990",
+                "180036ece  lea rcx, ??_7LF3DRenderCoreAPI_OpenGLCoreES@@6B@; const LF3DRenderCoreAPI_OpenGLCoreES::`vftable'",
+                "180036ed5  mov [rax], rcx",
+                "180036ed8  mov [rax+8], rbp",
+                "180036edc  mov [rax+10h], ebx",
+                "180036edf  mov [rax+14h], rbp",
+                "180036ee3  mov [rdi+8], rax",
+                "180036ee7  jmp short loc_180036EED",
+                "180036ee9  mov [rdi+8], rbp",
+                "180036eed  mov rbx, [rsp+28h+arg_0]",
+                "180036ef2  mov rax, rdi",
+                "180036ef5  mov rbp, [rsp+28h+arg_8]",
+                "180036efa  mov rsi, [rsp+28h+arg_10]",
+                "180036eff  add rsp, 20h",
+                "180036f03  pop rdi",
+                "180036f04  retn"
+              ],
+              "instruction_count": 64,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800ac428",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038edd0",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180036e15",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180038990",
+                "name": "sub_180038990",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180004db0",
+                "name": "sub_180004DB0",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 2,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180036e20",
+                "value": "0x20",
+                "decimal": 32
+              },
+              {
+                "addr": "0x180036e29",
+                "value": "0x30",
+                "decimal": 48
+              },
+              {
+                "addr": "0x180036e3f",
+                "value": "0xd0",
+                "decimal": 208
+              },
+              {
+                "addr": "0x180036e68",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x180036e6d",
+                "value": "0x38",
+                "decimal": 56
+              },
+              {
+                "addr": "0x180036eb5",
+                "value": "0x11",
+                "decimal": 17
+              },
+              {
+                "addr": "0x180036eba",
+                "value": "0x20900",
+                "decimal": 133376
+              },
+              {
+                "addr": "0x180036ec4",
+                "value": "0x20",
+                "decimal": 32
+              },
+              {
+                "addr": "0x180036eff",
+                "value": "0x20",
+                "decimal": 32
+              }
+            ],
+            "constant_count": 9,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180036e10",
+                "end": "0x180036e6d",
+                "size": 93,
+                "type": 0,
+                "successors": [
+                  "0x180036e6d",
+                  "0x180036eb5"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x180036e6d",
+                "end": "0x180036eb5",
+                "size": 72,
+                "type": 0,
+                "successors": [
+                  "0x180036eed"
+                ],
+                "predecessors": [
+                  "0x180036e10"
+                ]
+              },
+              {
+                "start": "0x180036eb5",
+                "end": "0x180036eba",
+                "size": 5,
+                "type": 0,
+                "successors": [
+                  "0x180036eba",
+                  "0x180036ee9"
+                ],
+                "predecessors": [
+                  "0x180036e10"
+                ]
+              },
+              {
+                "start": "0x180036eba",
+                "end": "0x180036ec4",
+                "size": 10,
+                "type": 0,
+                "successors": [
+                  "0x180036ec4",
+                  "0x180036ee9"
+                ],
+                "predecessors": [
+                  "0x180036eb5"
+                ]
+              },
+              {
+                "start": "0x180036ec4",
+                "end": "0x180036ee9",
+                "size": 37,
+                "type": 0,
+                "successors": [
+                  "0x180036eed"
+                ],
+                "predecessors": [
+                  "0x180036eba"
+                ]
+              },
+              {
+                "start": "0x180036ee9",
+                "end": "0x180036eed",
+                "size": 4,
+                "type": 0,
+                "successors": [
+                  "0x180036eed"
+                ],
+                "predecessors": [
+                  "0x180036eb5",
+                  "0x180036eba"
+                ]
+              },
+              {
+                "start": "0x180036eed",
+                "end": "0x180036f05",
+                "size": 24,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180036e6d",
+                  "0x180036ec4",
+                  "0x180036ee9"
+                ]
+              }
+            ],
+            "basic_block_count": 7,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "GetLensInfo",
+          "addr": "0x180035e40",
+          "name": "GetLensInfo",
+          "analysis": {
+            "size": "0x156",
+            "prototype": null,
+            "decompile": "__int64 __fastcall GetLensInfo(__int64 a1, int a2, int a3, __int64 a4)\n{\n  void *v8; // rdi\n  _DWORD *v9; // rcx\n  __int64 v10; // r8\n  __int64 result; // rax\n  void *v12; // rcx\n  __int128 v13; // [rsp+30h] [rbp-58h] BYREF\n  __int64 v14; // [rsp+40h] [rbp-48h]\n  unsigned __int64 v15; // [rsp+48h] [rbp-40h]\n\n  v8 = (void *)sub_180038990(a1: 172); /*0x180035e73*/\n  sub_180004F00(a1: v8); /*0x180035e76*/\n  v9[35] = 90; /*0x180035e7b*/\n  v9[36] = 127; /*0x180035e88*/\n  v10 = -1; /*0x180035e92*/\n  v9[37] = 165; /*0x180035e99*/\n  v9[38] = 105; /*0x180035ea3*/\n  v9[39] = 247; /*0x180035ead*/\n  v9[40] = 61; /*0x180035eb7*/\n  v9[41] = 232; /*0x180035ec1*/\n  v9[42] = 150; /*0x180035ecb*/\n  v13 = 0; /*0x180035ed5*/\n  v14 = 0; /*0x180035eda*/\n  v15 = 0; /*0x180035ee3*/\n  do /*0x180035ef8*/\n    ++v10; /*0x180035ef0*/\n  while ( *(_BYTE *)(a1 + v10) != 0 ); /*0x180035ef8*/\n  sub_180004A40(a1: &v13, a2: a1); /*0x180035f02*/\n  sub_180010540(a1: (_DWORD)v8, a2: (unsigned int)&v13, a3: a2, a4: a3, a5: a4); /*0x180035f1a*/\n  result = sub_1800389CC(lpMem: v8); /*0x180035f27*/\n  if ( v15 > 0xF ) /*0x180035f35*/\n  {\n    v12 = (void *)v13; /*0x180035f37*/\n    if ( v15 + 1 >= 0x1000 ) /*0x180035f49*/\n    {\n      v12 = *(void **)(v13 - 8); /*0x180035f4b*/\n      if ( (unsigned __int64)(v13 - (_QWORD)v12 - 8) > 0x1F ) /*0x180035f5e*/\n      {\n        sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x180035f90*/\n        JUMPOUT(0x180035F95LL); /*0x180035f95*/\n      }\n    }\n    return sub_1800389CC(lpMem: v12); /*0x180035f60*/\n  }\n  return result; /*0x180035f65*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180035e40  push rbx",
+                "180035e42  push rbp",
+                "180035e43  push rsi",
+                "180035e44  push rdi",
+                "180035e45  push r14",
+                "180035e47  sub rsp, 60h",
+                "180035e4b  mov rax, cs:__security_cookie",
+                "180035e52  xor rax, rsp",
+                "180035e55  mov [rsp+88h+var_38], rax",
+                "180035e5a  mov rbx, rcx",
+                "180035e5d  mov r14, r9",
+                "180035e60  mov ecx, 0ACh",
+                "180035e65  mov rbp, r8",
+                "180035e68  mov rsi, rdx",
+                "180035e6b  call sub_180038990",
+                "180035e70  mov rcx, rax",
+                "180035e73  mov rdi, rax",
+                "180035e76  call sub_180004F00",
+                "180035e7b  mov dword ptr [rcx+8Ch], 5Ah ; 'Z'",
+                "180035e85  xorps xmm0, xmm0",
+                "180035e88  mov dword ptr [rcx+90h], 7Fh",
+                "180035e92  mov r8, 0FFFFFFFFFFFFFFFFh",
+                "180035e99  mov dword ptr [rcx+94h], 0A5h",
+                "180035ea3  mov dword ptr [rcx+98h], 69h ; 'i'",
+                "180035ead  mov dword ptr [rcx+9Ch], 0F7h",
+                "180035eb7  mov dword ptr [rcx+0A0h], 3Dh ; '='",
+                "180035ec1  mov dword ptr [rcx+0A4h], 0E8h",
+                "180035ecb  mov dword ptr [rcx+0A8h], 96h",
+                "180035ed5  movups [rsp+88h+var_58], xmm0",
+                "180035eda  mov [rsp+88h+var_48], 0",
+                "180035ee3  mov [rsp+88h+var_40], 0",
+                "180035eec  nop dword ptr [rax+00h]",
+                "180035ef0  inc r8",
+                "180035ef3  cmp byte ptr [rbx+r8], 0",
+                "180035ef8  jnz short loc_180035EF0",
+                "180035efa  mov rdx, rbx",
+                "180035efd  lea rcx, [rsp+88h+var_58]",
+                "180035f02  call sub_180004A40",
+                "180035f07  mov r9, rbp",
+                "180035f0a  mov [rsp+88h+var_68], r14",
+                "180035f0f  mov r8, rsi",
+                "180035f12  lea rdx, [rsp+88h+var_58]",
+                "180035f17  mov rcx, rdi",
+                "180035f1a  call sub_180010540",
+                "180035f1f  mov edx, 0ACh",
+                "180035f24  mov rcx, rdi; lpMem",
+                "180035f27  call sub_1800389CC",
+                "180035f2c  mov rdx, [rsp+88h+var_40]",
+                "180035f31  cmp rdx, 0Fh",
+                "180035f35  jbe short loc_180035F65",
+                "180035f37  mov rcx, qword ptr [rsp+88h+var_58]",
+                "180035f3c  inc rdx",
+                "180035f3f  mov rax, rcx",
+                "180035f42  cmp rdx, 1000h",
+                "180035f49  jb short loc_180035F60",
+                "180035f4b  mov rcx, [rcx-8]; lpMem",
+                "180035f4f  add rdx, 27h ; '''",
+                "180035f53  sub rax, rcx",
+                "180035f56  sub rax, 8",
+                "180035f5a  cmp rax, 1Fh",
+                "180035f5e  ja short loc_180035F7D",
+                "180035f60  call sub_1800389CC",
+                "180035f65  mov rcx, [rsp+88h+var_38]",
+                "180035f6a  xor rcx, rsp; StackCookie",
+                "180035f6d  call __security_check_cookie",
+                "180035f72  add rsp, 60h",
+                "180035f76  pop r14",
+                "180035f78  pop rdi",
+                "180035f79  pop rsi",
+                "180035f7a  pop rbp"
+              ],
+              "instruction_count": 70,
+              "truncated": true
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800ac428",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038ed1c",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180035e42",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180004f00",
+                "name": "sub_180004F00",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180038990",
+                "name": "sub_180038990",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18003ecb4",
+                "name": "sub_18003ECB4",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180010540",
+                "name": "sub_180010540",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1800389cc",
+                "name": "sub_1800389CC",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180004a40",
+                "name": "sub_180004A40",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180038970",
+                "name": "__security_check_cookie",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 7,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180035e47",
+                "value": "0x60",
+                "decimal": 96
+              },
+              {
+                "addr": "0x180035e60",
+                "value": "0xac",
+                "decimal": 172
+              },
+              {
+                "addr": "0x180035e7b",
+                "value": "0x5a",
+                "decimal": 90
+              },
+              {
+                "addr": "0x180035e88",
+                "value": "0x7f",
+                "decimal": 127
+              },
+              {
+                "addr": "0x180035e92",
+                "value": "0xffffffffffffffff",
+                "decimal": 18446744073709551615
+              },
+              {
+                "addr": "0x180035e99",
+                "value": "0xa5",
+                "decimal": 165
+              },
+              {
+                "addr": "0x180035ea3",
+                "value": "0x69",
+                "decimal": 105
+              },
+              {
+                "addr": "0x180035ead",
+                "value": "0xf7",
+                "decimal": 247
+              },
+              {
+                "addr": "0x180035eb7",
+                "value": "0x3d",
+                "decimal": 61
+              },
+              {
+                "addr": "0x180035ec1",
+                "value": "0xe8",
+                "decimal": 232
+              },
+              {
+                "addr": "0x180035ecb",
+                "value": "0x96",
+                "decimal": 150
+              },
+              {
+                "addr": "0x180035eda",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x180035ee3",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x180035ef3",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x180035f1f",
+                "value": "0xac",
+                "decimal": 172
+              },
+              {
+                "addr": "0x180035f31",
+                "value": "0xf",
+                "decimal": 15
+              },
+              {
+                "addr": "0x180035f42",
+                "value": "0x1000",
+                "decimal": 4096
+              },
+              {
+                "addr": "0x180035f4f",
+                "value": "0x27",
+                "decimal": 39
+              },
+              {
+                "addr": "0x180035f56",
+                "value": "0x8",
+                "decimal": 8
+              },
+              {
+                "addr": "0x180035f5a",
+                "value": "0x1f",
+                "decimal": 31
+              },
+              {
+                "addr": "0x180035f72",
+                "value": "0x60",
+                "decimal": 96
+              },
+              {
+                "addr": "0x180035f80",
+                "value": "0x0",
+                "decimal": 0
+              }
+            ],
+            "constant_count": 22,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180035e40",
+                "end": "0x180035ef0",
+                "size": 176,
+                "type": 0,
+                "successors": [
+                  "0x180035ef0"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x180035ef0",
+                "end": "0x180035efa",
+                "size": 10,
+                "type": 0,
+                "successors": [
+                  "0x180035efa",
+                  "0x180035ef0"
+                ],
+                "predecessors": [
+                  "0x180035e40",
+                  "0x180035ef0"
+                ]
+              },
+              {
+                "start": "0x180035efa",
+                "end": "0x180035f37",
+                "size": 61,
+                "type": 0,
+                "successors": [
+                  "0x180035f37",
+                  "0x180035f65"
+                ],
+                "predecessors": [
+                  "0x180035ef0"
+                ]
+              },
+              {
+                "start": "0x180035f37",
+                "end": "0x180035f4b",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x180035f4b",
+                  "0x180035f60"
+                ],
+                "predecessors": [
+                  "0x180035efa"
+                ]
+              },
+              {
+                "start": "0x180035f4b",
+                "end": "0x180035f60",
+                "size": 21,
+                "type": 0,
+                "successors": [
+                  "0x180035f60",
+                  "0x180035f7d"
+                ],
+                "predecessors": [
+                  "0x180035f37"
+                ]
+              },
+              {
+                "start": "0x180035f60",
+                "end": "0x180035f65",
+                "size": 5,
+                "type": 0,
+                "successors": [
+                  "0x180035f65"
+                ],
+                "predecessors": [
+                  "0x180035f37",
+                  "0x180035f4b"
+                ]
+              },
+              {
+                "start": "0x180035f65",
+                "end": "0x180035f7d",
+                "size": 24,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180035efa",
+                  "0x180035f60"
+                ]
+              },
+              {
+                "start": "0x180035f7d",
+                "end": "0x180035f95",
+                "size": 24,
+                "type": 4,
+                "successors": [],
+                "predecessors": [
+                  "0x180035f4b"
+                ]
+              }
+            ],
+            "basic_block_count": 8,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "VersionNumber",
+          "addr": "0x180035e00",
+          "name": "VersionNumber",
+          "analysis": {
+            "size": "0x6",
+            "prototype": null,
+            "decompile": "__int64 VersionNumber()\n{\n  return 7; /*0x180035e05*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180035e00  mov eax, 7",
+                "180035e05  retn"
+              ],
+              "instruction_count": 2,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800ac428",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180035e05",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 1,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [],
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180035e00",
+                "value": "0x7",
+                "decimal": 7
+              }
+            ],
+            "constant_count": 1,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180035e00",
+                "end": "0x180035e06",
+                "size": 6,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

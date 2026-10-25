@@ -1,0 +1,44 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"edit\":{\"addr\":\"0x180021D20\",\"kind\":\"function\",\"signature\":\"void __fastcall LF_DX11_UpdateEyeInfo(void *self, float x, float y, float z, bool enabled, float zl, float zr);\"},\"kind\":\"function\",\"ok\":true},{\"edit\":{\"addr\":\"0x180005340\",\"kind\":\"function\",\"signature\":\"void __fastcall LF_UpdateEyeConstants(void *self, float x, float y, float z, bool enabled);\"},\"kind\":\"function\",\"ok\":true},{\"edit\":{\"addr\":\"0x18005EE50\",\"kind\":\"function\",\"signature\":\"double __cdecl round(double x);\"},\"kind\":\"function\",\"ok\":true}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "edit": {
+            "addr": "0x180021D20",
+            "kind": "function",
+            "signature": "void __fastcall LF_DX11_UpdateEyeInfo(void *self, float x, float y, float z, bool enabled, float zl, float zr);"
+          },
+          "kind": "function",
+          "ok": true
+        },
+        {
+          "edit": {
+            "addr": "0x180005340",
+            "kind": "function",
+            "signature": "void __fastcall LF_UpdateEyeConstants(void *self, float x, float y, float z, bool enabled);"
+          },
+          "kind": "function",
+          "ok": true
+        },
+        {
+          "edit": {
+            "addr": "0x18005EE50",
+            "kind": "function",
+            "signature": "double __cdecl round(double x);"
+          },
+          "kind": "function",
+          "ok": true
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

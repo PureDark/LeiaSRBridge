@@ -1,0 +1,161 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"0x18000FEC0\",\"code\":\"char __fastcall sub_18000FEC0(__int64 a1, _QWORD *a2)\\n{\\n  _QWORD *v2; // rsi\\n  int v4; // eax\\n  __int64 cchWideChar; // r15\\n  __int64 v6; // rdi\\n  WCHAR *lpWideCharStr; // rbx\\n  _QWORD *v8; // rax\\n  _QWORD *v9; // rdx\\n  __int64 v10; // rsi\\n  void *v11; // r8\\n  void *v12; // rcx\\n  unsigned __int64 v14; // rbx\\n  char *v15; // r8\\n  __int64 v16; // rdx\\n  __int128 *v17; // rdx\\n  char *v18; // r8\\n  char *v19; // rdx\\n  _QWORD *v20; // rdx\\n  char v21; // di\\n  __int64 v22; // rax\\n  __int64 v23; // rax\\n  __int64 v24; // rax\\n  __int64 v25; // rax\\n  __int64 v26; // rax\\n  _QWORD *v27; // rax\\n  void *v28; // rcx\\n  LPVOID *v29; // rbx\\n  void *v30; // rbx\\n  void *v31; // rcx\\n  LPVOID v32[2]; // [rsp+30h] [rbp-D0h] BYREF\\n  LPVOID v33; // [rsp+40h] [rbp-C0h] BYREF\\n  int v34; // [rsp+48h] [rbp-B8h]\\n  LPVOID v35[2]; // [rsp+50h] [rbp-B0h]\\n  __int64 v36; // [rsp+60h] [rbp-A0h]\\n  __int128 v37; // [rsp+70h] [rbp-90h] BYREF\\n  __int64 v38; // [rsp+80h] [rbp-80h]\\n  unsigned __int64 v39; // [rsp+88h] [rbp-78h]\\n  _QWORD v40[4]; // [rsp+90h] [rbp-70h] BYREF\\n  LPVOID lpMem[3]; // [rsp+B0h] [rbp-50h] BYREF\\n  unsigned __int64 v42; // [rsp+C8h] [rbp-38h]\\n  _QWORD v43[4]; // [rsp+D0h] [rbp-30h] BYREF\\n  _BYTE v44[40]; // [rsp+F0h] [rbp-10h] BYREF\\n  LPVOID v45[5]; // [rsp+118h] [rbp+18h] BYREF\\n  _QWORD v46[9]; // [rsp+140h] [rbp+40h] BYREF\\n  char v47[40]; // [rsp+188h] [rbp+88h] BYREF\\n  _BYTE v48[32]; // [rsp+1B0h] [rbp+B0h] BYREF\\n  _BYTE v49[32]; // [rsp+1D0h] [rbp+D0h] BYREF\\n  char v50; // [rsp+1F0h] [rbp+F0h] BYREF\\n  char v51[10239]; // [rsp+1F1h] [rbp+F1h] BYREF\\n\\n  v2 = a2; /*0x18000fef8*/\\n  if ( a2[3] > 0xFu ) /*0x18000ff06*/\\n    v2 = (_QWORD *)*a2; /*0x18000ff08*/\\n  v4 = MultiByteToWideChar( /*0x18000ff29*/\\n         CodePage: 0xFDE9u,\\n         dwFlags: 0,\\n         lpMultiByteStr: \\\"rb\\\",\\n         cbMultiByte: 2,\\n         lpWideCharStr: nullptr,\\n         cchWideChar: 0);\\n  cchWideChar = v4; /*0x18000ff2f*/\\n  v6 = -1; /*0x18000ff32*/\\n  if ( v4 != 0 ) /*0x18000ff3b*/\\n  {\\n    lpWideCharStr = (WCHAR *)sub_180038A00(a1: saturated_mul(v4 + 1LL, 2u)); /*0x18000ff67*/\\n    MultiByteToWideChar(CodePage: 0xFDE9u, dwFlags: 0, lpMultiByteStr: \\\"rb\\\", cbMultiByte: 2, lpWideCharStr, cchWideChar); /*0x18000ff88*/\\n    lpWideCharStr[cchWideChar] = 0; /*0x18000ff8e*/\\n    sub_18000A2E0(a1: v43, a2: lpWideCharStr); /*0x18000ff9a*/\\n    qmemcpy(v40, v43, sizeof(v40)); /*0x18000ffa3*/\\n  }\\n  else\\n  {\\n    sub_18000A2E0(a1: v40, a2: &unk_18009D868); /*0x18000ff48*/\\n  }\\n  v8 = (_QWORD *)sub_18000A160(a1: lpMem, a2: v2); /*0x18000ffb6*/\\n  v9 = v40; /*0x18000ffbb*/\\n  if ( v40[3] > 7u ) /*0x18000ffc4*/\\n    v9 = (_QWORD *)v40[0]; /*0x18000ffc4*/\\n  if ( v8[3] > 7u ) /*0x18000ffce*/\\n    v8 = (_QWORD *)*v8; /*0x18000ffd0*/\\n  v10 = sub_1800473A0(a1: v8, a2: v9); /*0x18000ffdb*/\\n  if ( v42 > 7 ) /*0x18000ffe6*/\\n  {\\n    v11 = lpMem[0]; /*0x18000fff0*/\\n    if ( 2 * v42 + 2 >= 0x1000 ) /*0x18000fffe*/\\n    {\\n      v11 = *((void **)lpMem[0] - 1); /*0x180010004*/\\n      if ( (unsigned __int64)((char *)lpMem[0] - (char *)v11 - 8) > 0x1F ) /*0x180010013*/\\n      {\\nLABEL_48:\\n        sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x180010499*/\\n        goto LABEL_49; /*0x1800104a8*/\\n      }\\n    }\\n    sub_1800389CC(lpMem: v11); /*0x18001001c*/\\n  }\\n  lpMem[2] = nullptr; /*0x180010021*/\\n  v42 = 7; /*0x180010025*/\\n  LOWORD(lpMem[0]) = 0; /*0x18001002d*/\\n  if ( v40[3] > 7u ) /*0x18001003a*/\\n  {\\n    v12 = (void *)v40[0]; /*0x180010044*/\\n    if ( (unsigned __int64)(2LL * v40[3] + 2) >= 0x1000 ) /*0x180010052*/\\n    {\\n      v12 = *(void **)(v40[0] - 8LL); /*0x180010058*/\\n      if ( (unsigned __int64)(v40[0] - (_QWORD)v12 - 8LL) > 0x1F ) /*0x180010067*/\\n      {\\nLABEL_49:\\n        sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x1800104ae*/\\n        JUMPOUT(0x1800104C2LL); /*0x1800104c2*/\\n      }\\n    }\\n    sub_1800389CC(lpMem: v12); /*0x18001006d*/\\n  }\\n  v40[2] = 0; /*0x180010072*/\\n  v40[3] = 7; /*0x180010076*/\\n  LOWORD(v40[0]) = 0; /*0x18001007e*/\\n  if ( v10 == 0 ) /*0x180010086*/\\n    return 0; /*0x18001008a*/\\n  v50 = 0; /*0x18001008f*/\\n  sub_180061010(a1: v51, a2: 0, a3: 10239); /*0x1800100a5*/\\n  v14 = sub_180046D90(a1: &v50, a2: 1, a3: 10240, a4: v10); /*0x1800100c4*/\\n  sub_180041C18(a1: v10); /*0x1800100ca*/\\n  v16 = 0; /*0x1800100cf*/\\n  if ( v14 != 0 ) /*0x1800100d5*/\\n  {\\n    v15 = &v50; /*0x1800100d7*/\\n    do /*0x180010111*/\\n    {\\n      *v15 = (*v15 ^ *(_BYTE *)(a1 + 4LL * ((int)v16 % 8) + 140)) - 20; /*0x180010103*/\\n      v16 = (unsigned int)(v16 + 1); /*0x180010106*/\\n      ++v15; /*0x180010108*/\\n    }\\n    while ( (int)v16 < v14 ); /*0x180010111*/\\n  }\\n  sub_180016ED0(a1: v44, a2: v16, a3: v15); /*0x180010117*/\\n  LOBYTE(v34) = 0; /*0x18001011d*/\\n  v34 &= ~0x100u; /*0x180010122*/\\n  *(_OWORD *)v35 = 0; /*0x18001012d*/\\n  v36 = 0; /*0x180010133*/\\n  v37 = 0; /*0x180010138*/\\n  v38 = 0; /*0x18001013d*/\\n  v39 = 0; /*0x180010141*/\\n  do /*0x180010157*/\\n    ++v6; /*0x180010150*/\\n  while ( v51[v6 - 1] != 0 ); /*0x180010157*/\\n  sub_180004A40(a1: &v37, a2: &v50); /*0x180010168*/\\n  v17 = &v37; /*0x18001016e*/\\n  if ( v39 > 0xF ) /*0x180010178*/\\n    v17 = (__int128 *)v37; /*0x180010178*/\\n  v18 = (char *)v17 + v38; /*0x180010182*/\\n  v19 = (char *)&v37; /*0x180010185*/\\n  if ( v39 > 0xF ) /*0x18001018f*/\\n    v19 = (char *)v37; /*0x18001018f*/\\n  sub_18000E840(a1: v46, a2: v19, a3: v18 - v19); /*0x18001019c*/\\n  v20 = v46; /*0x1800101a1*/\\n  if ( v46[3] > 0xFu ) /*0x1800101aa*/\\n    v20 = (_QWORD *)v46[0]; /*0x1800101aa*/\\n  if ( (unsigned __int8)sub_180016FC0(a1: v44, a2: v20, a3: (char *)v20 + v46[2], a4: &v33) != 0 ) /*0x1800101c6*/\\n  {\\n    v22 = sub_180020320(a1: &v33, a2: \\\"key\\\", a3: \\\"\\\"); /*0x1800101e3*/\\n    sub_18001FAB0(a1: v22, a2: v49); /*0x1800101f2*/\\n    v23 = sub_180020320(a1: &v33, a2: \\\"Lens_param\\\", a3: \\\"\\\"); /*0x18001020b*/\\n    sub_18001FAB0(a1: v23, a2: v43); /*0x180010217*/\\n    v24 = sub_180020320(a1: &v33, a2: \\\"cam_param\\\", a3: \\\"\\\"); /*0x180010230*/\\n    sub_18001FAB0(a1: v24, a2: v48); /*0x18001023f*/\\n    v25 = sub_180020320(a1: &v33, a2: \\\"fit_curve\\\", a3: \\\"\\\"); /*0x180010258*/\\n    sub_18001FAB0(a1: v25, a2: v40); /*0x180010264*/\\n    v26 = sub_180020320(a1: &v33, a2: \\\"days\\\", a3: \\\"\\\"); /*0x18001027d*/\\n    sub_18001FAB0(a1: v26, a2: lpMem); /*0x180010289*/\\n    v32[1] = nullptr; /*0x180010294*/\\n    v27 = (_QWORD *)sub_180038990(a1: 80); /*0x18001029e*/\\n    *v27 = v27; /*0x1800102a3*/\\n    v27[1] = v27; /*0x1800102a6*/\\n    v27[2] = v27; /*0x1800102aa*/\\n    *((_WORD *)v27 + 12) = 257; /*0x1800102ae*/\\n    v32[0] = v27; /*0x1800102b4*/\\n    sub_18000A580(a1: v32, a2: v43); /*0x1800102c2*/\\n    v21 = sub_180010B50(a1, a2: v32); /*0x1800102d4*/\\n    sub_18000E150(a1: v32, a2: v32, a3: *((_QWORD *)v32[0] + 1)); /*0x1800102ea*/\\n    sub_1800389CC(lpMem: v32[0]); /*0x1800102f9*/\\n    sub_180004B00(a1: lpMem); /*0x180010303*/\\n    sub_180004B00(a1: v40); /*0x18001030d*/\\n    sub_180004B00(a1: v48); /*0x18001031a*/\\n    sub_180004B00(a1: v43); /*0x180010324*/\\n    sub_180004B00(a1: v49); /*0x180010331*/\\n  }\\n  else\\n  {\\n    v21 = 0; /*0x1800101c8*/\\n  }\\n  if ( v39 > 0xF ) /*0x18001033f*/\\n  {\\n    v28 = (void *)v37; /*0x180010344*/\\n    if ( v39 + 1 < 0x1000 || (v28 = *(void **)(v37 - 8), (unsigned __int64)(v37 - (_QWORD)v28 - 8) <= 0x1F) ) /*0x180010368*/\\n    {\\n      sub_1800389CC(lpMem: v28); /*0x18001036e*/\\n      goto LABEL_38; /*0x18001036e*/\\n    }\\n    sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x180010493*/\\n    goto LABEL_48; /*0x180010493*/\\n  }\\nLABEL_38:\\n  v38 = 0; /*0x180010373*/\\n  v39 = 15; /*0x180010377*/\\n  LOBYTE(v37) = 0; /*0x18001037f*/\\n  if ( (unsigned __int8)v34 == 4 ) /*0x18001038e*/\\n  {\\n    if ( (v34 & 0x100) != 0 ) /*0x1800103d8*/\\n      sub_180041500(lpMem: v33); /*0x1800103df*/\\n  }\\n  else if ( (unsigned int)(unsigned __int8)v34 - 6 <= 1 ) /*0x180010393*/\\n  {\\n    v29 = (LPVOID *)v33; /*0x18001039a*/\\n    if ( v33 != nullptr ) /*0x1800103a2*/\\n    {\\n      sub_180020A00(a1: v33, a2: v33, a3: *(_QWORD *)(*(_QWORD *)v33 + 8LL)); /*0x1800103b1*/\\n      sub_1800389CC(lpMem: *v29); /*0x1800103be*/\\n      sub_1800389CC(lpMem: v29); /*0x1800103cb*/\\n    }\\n  }\\n  v33 = nullptr; /*0x1800103e4*/\\n  v30 = v35[0]; /*0x1800103e9*/\\n  if ( v35[0] != nullptr ) /*0x1800103f1*/\\n  {\\n    sub_180038B2C(a1: v35[0], a2: 32, a3: 3, a4: sub_180004850); /*0x180010408*/\\n    sub_1800389CC(lpMem: v30); /*0x180010416*/\\n  }\\n  sub_180004B00(a1: v47); /*0x180010423*/\\n  sub_180004B00(a1: v46); /*0x18001042c*/\\n  sub_1800110A0(a1: v45); /*0x180010435*/\\n  v31 = v45[0]; /*0x18001043a*/\\n  v45[0] = nullptr; /*0x18001043e*/\\n  sub_1800389CC(lpMem: v31); /*0x180010447*/\\n  sub_180010FC0(a1: v44); /*0x180010450*/\\n  return v21; /*0x180010459*/\\n}\",\"refs\":[{\"addr\":\"0x180064008\",\"name\":\"MultiByteToWideChar\"},{\"addr\":\"0x18009d958\",\"name\":\"MultiByteStr\",\"string\":\"rb\"},{\"addr\":\"0x180038a00\",\"name\":\"sub_180038A00\"},{\"addr\":\"0x18000a2e0\",\"name\":\"sub_18000A2E0\"},{\"addr\":\"0x18009d868\",\"name\":\"unk_18009D868\"},{\"addr\":\"0x18000a160\",\"name\":\"sub_18000A160\"},{\"addr\":\"0x1800473a0\",\"name\":\"sub_1800473A0\"},{\"addr\":\"0x18003ecb4\",\"name\":\"sub_18003ECB4\"},{\"addr\":\"0x1800389cc\",\"name\":\"sub_1800389CC\"},{\"addr\":\"0x180061010\",\"name\":\"sub_180061010\"},{\"addr\":\"0x180046d90\",\"name\":\"sub_180046D90\"},{\"addr\":\"0x180041c18\",\"name\":\"sub_180041C18\"},{\"addr\":\"0x180016ed0\",\"name\":\"sub_180016ED0\"},{\"addr\":\"0x180004a40\",\"name\":\"sub_180004A40\"},{\"addr\":\"0x18000e840\",\"name\":\"sub_18000E840\"},{\"addr\":\"0x180020320\",\"name\":\"sub_180020320\"},{\"addr\":\"0x18009d95c\",\"name\":\"aKey\",\"string\":\"key\"},{\"addr\":\"0x18001fab0\",\"name\":\"sub_18001FAB0\"},{\"addr\":\"0x18009d960\",\"name\":\"aLensParam\",\"string\":\"Lens_param\"},{\"addr\":\"0x18009d970\",\"name\":\"aCamParam\",\"string\":\"cam_param\"},{\"addr\":\"0x18009d980\",\"name\":\"aFitCurve\",\"string\":\"fit_curve\"},{\"addr\":\"0x18009d98c\",\"name\":\"aDays\",\"string\":\"days\"},{\"addr\":\"0x180038990\",\"name\":\"sub_180038990\"},{\"addr\":\"0x18000a580\",\"name\":\"sub_18000A580\"},{\"addr\":\"0x180010b50\",\"name\":\"sub_180010B50\"},{\"addr\":\"0x18000e150\",\"name\":\"sub_18000E150\"},{\"addr\":\"0x180004b00\",\"name\":\"sub_180004B00\"},{\"addr\":\"0x180016fc0\",\"name\":\"sub_180016FC0\"},{\"addr\":\"0x180041500\",\"name\":\"sub_180041500\"},{\"addr\":\"0x180020a00\",\"name\":\"sub_180020A00\"},{\"addr\":\"0x180038b2c\",\"name\":\"sub_180038B2C\"},{\"addr\":\"0x180004850\",\"name\":\"sub_180004850\"},{\"addr\":\"0x1800110a0\",\"name\":\"sub_1800110A0\"},{\"addr\":\"0x180010fc0\",\"name\":\"sub_180010FC0\"}]}"
+      }
+    ],
+    "structuredContent": {
+      "addr": "0x18000FEC0",
+      "code": "char __fastcall sub_18000FEC0(__int64 a1, _QWORD *a2)\n{\n  _QWORD *v2; // rsi\n  int v4; // eax\n  __int64 cchWideChar; // r15\n  __int64 v6; // rdi\n  WCHAR *lpWideCharStr; // rbx\n  _QWORD *v8; // rax\n  _QWORD *v9; // rdx\n  __int64 v10; // rsi\n  void *v11; // r8\n  void *v12; // rcx\n  unsigned __int64 v14; // rbx\n  char *v15; // r8\n  __int64 v16; // rdx\n  __int128 *v17; // rdx\n  char *v18; // r8\n  char *v19; // rdx\n  _QWORD *v20; // rdx\n  char v21; // di\n  __int64 v22; // rax\n  __int64 v23; // rax\n  __int64 v24; // rax\n  __int64 v25; // rax\n  __int64 v26; // rax\n  _QWORD *v27; // rax\n  void *v28; // rcx\n  LPVOID *v29; // rbx\n  void *v30; // rbx\n  void *v31; // rcx\n  LPVOID v32[2]; // [rsp+30h] [rbp-D0h] BYREF\n  LPVOID v33; // [rsp+40h] [rbp-C0h] BYREF\n  int v34; // [rsp+48h] [rbp-B8h]\n  LPVOID v35[2]; // [rsp+50h] [rbp-B0h]\n  __int64 v36; // [rsp+60h] [rbp-A0h]\n  __int128 v37; // [rsp+70h] [rbp-90h] BYREF\n  __int64 v38; // [rsp+80h] [rbp-80h]\n  unsigned __int64 v39; // [rsp+88h] [rbp-78h]\n  _QWORD v40[4]; // [rsp+90h] [rbp-70h] BYREF\n  LPVOID lpMem[3]; // [rsp+B0h] [rbp-50h] BYREF\n  unsigned __int64 v42; // [rsp+C8h] [rbp-38h]\n  _QWORD v43[4]; // [rsp+D0h] [rbp-30h] BYREF\n  _BYTE v44[40]; // [rsp+F0h] [rbp-10h] BYREF\n  LPVOID v45[5]; // [rsp+118h] [rbp+18h] BYREF\n  _QWORD v46[9]; // [rsp+140h] [rbp+40h] BYREF\n  char v47[40]; // [rsp+188h] [rbp+88h] BYREF\n  _BYTE v48[32]; // [rsp+1B0h] [rbp+B0h] BYREF\n  _BYTE v49[32]; // [rsp+1D0h] [rbp+D0h] BYREF\n  char v50; // [rsp+1F0h] [rbp+F0h] BYREF\n  char v51[10239]; // [rsp+1F1h] [rbp+F1h] BYREF\n\n  v2 = a2; /*0x18000fef8*/\n  if ( a2[3] > 0xFu ) /*0x18000ff06*/\n    v2 = (_QWORD *)*a2; /*0x18000ff08*/\n  v4 = MultiByteToWideChar( /*0x18000ff29*/\n         CodePage: 0xFDE9u,\n         dwFlags: 0,\n         lpMultiByteStr: \"rb\",\n         cbMultiByte: 2,\n         lpWideCharStr: nullptr,\n         cchWideChar: 0);\n  cchWideChar = v4; /*0x18000ff2f*/\n  v6 = -1; /*0x18000ff32*/\n  if ( v4 != 0 ) /*0x18000ff3b*/\n  {\n    lpWideCharStr = (WCHAR *)sub_180038A00(a1: saturated_mul(v4 + 1LL, 2u)); /*0x18000ff67*/\n    MultiByteToWideChar(CodePage: 0xFDE9u, dwFlags: 0, lpMultiByteStr: \"rb\", cbMultiByte: 2, lpWideCharStr, cchWideChar); /*0x18000ff88*/\n    lpWideCharStr[cchWideChar] = 0; /*0x18000ff8e*/\n    sub_18000A2E0(a1: v43, a2: lpWideCharStr); /*0x18000ff9a*/\n    qmemcpy(v40, v43, sizeof(v40)); /*0x18000ffa3*/\n  }\n  else\n  {\n    sub_18000A2E0(a1: v40, a2: &unk_18009D868); /*0x18000ff48*/\n  }\n  v8 = (_QWORD *)sub_18000A160(a1: lpMem, a2: v2); /*0x18000ffb6*/\n  v9 = v40; /*0x18000ffbb*/\n  if ( v40[3] > 7u ) /*0x18000ffc4*/\n    v9 = (_QWORD *)v40[0]; /*0x18000ffc4*/\n  if ( v8[3] > 7u ) /*0x18000ffce*/\n    v8 = (_QWORD *)*v8; /*0x18000ffd0*/\n  v10 = sub_1800473A0(a1: v8, a2: v9); /*0x18000ffdb*/\n  if ( v42 > 7 ) /*0x18000ffe6*/\n  {\n    v11 = lpMem[0]; /*0x18000fff0*/\n    if ( 2 * v42 + 2 >= 0x1000 ) /*0x18000fffe*/\n    {\n      v11 = *((void **)lpMem[0] - 1); /*0x180010004*/\n      if ( (unsigned __int64)((char *)lpMem[0] - (char *)v11 - 8) > 0x1F ) /*0x180010013*/\n      {\nLABEL_48:\n        sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x180010499*/\n        goto LABEL_49; /*0x1800104a8*/\n      }\n    }\n    sub_1800389CC(lpMem: v11); /*0x18001001c*/\n  }\n  lpMem[2] = nullptr; /*0x180010021*/\n  v42 = 7; /*0x180010025*/\n  LOWORD(lpMem[0]) = 0; /*0x18001002d*/\n  if ( v40[3] > 7u ) /*0x18001003a*/\n  {\n    v12 = (void *)v40[0]; /*0x180010044*/\n    if ( (unsigned __int64)(2LL * v40[3] + 2) >= 0x1000 ) /*0x180010052*/\n    {\n      v12 = *(void **)(v40[0] - 8LL); /*0x180010058*/\n      if ( (unsigned __int64)(v40[0] - (_QWORD)v12 - 8LL) > 0x1F ) /*0x180010067*/\n      {\nLABEL_49:\n        sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x1800104ae*/\n        JUMPOUT(0x1800104C2LL); /*0x1800104c2*/\n      }\n    }\n    sub_1800389CC(lpMem: v12); /*0x18001006d*/\n  }\n  v40[2] = 0; /*0x180010072*/\n  v40[3] = 7; /*0x180010076*/\n  LOWORD(v40[0]) = 0; /*0x18001007e*/\n  if ( v10 == 0 ) /*0x180010086*/\n    return 0; /*0x18001008a*/\n  v50 = 0; /*0x18001008f*/\n  sub_180061010(a1: v51, a2: 0, a3: 10239); /*0x1800100a5*/\n  v14 = sub_180046D90(a1: &v50, a2: 1, a3: 10240, a4: v10); /*0x1800100c4*/\n  sub_180041C18(a1: v10); /*0x1800100ca*/\n  v16 = 0; /*0x1800100cf*/\n  if ( v14 != 0 ) /*0x1800100d5*/\n  {\n    v15 = &v50; /*0x1800100d7*/\n    do /*0x180010111*/\n    {\n      *v15 = (*v15 ^ *(_BYTE *)(a1 + 4LL * ((int)v16 % 8) + 140)) - 20; /*0x180010103*/\n      v16 = (unsigned int)(v16 + 1); /*0x180010106*/\n      ++v15; /*0x180010108*/\n    }\n    while ( (int)v16 < v14 ); /*0x180010111*/\n  }\n  sub_180016ED0(a1: v44, a2: v16, a3: v15); /*0x180010117*/\n  LOBYTE(v34) = 0; /*0x18001011d*/\n  v34 &= ~0x100u; /*0x180010122*/\n  *(_OWORD *)v35 = 0; /*0x18001012d*/\n  v36 = 0; /*0x180010133*/\n  v37 = 0; /*0x180010138*/\n  v38 = 0; /*0x18001013d*/\n  v39 = 0; /*0x180010141*/\n  do /*0x180010157*/\n    ++v6; /*0x180010150*/\n  while ( v51[v6 - 1] != 0 ); /*0x180010157*/\n  sub_180004A40(a1: &v37, a2: &v50); /*0x180010168*/\n  v17 = &v37; /*0x18001016e*/\n  if ( v39 > 0xF ) /*0x180010178*/\n    v17 = (__int128 *)v37; /*0x180010178*/\n  v18 = (char *)v17 + v38; /*0x180010182*/\n  v19 = (char *)&v37; /*0x180010185*/\n  if ( v39 > 0xF ) /*0x18001018f*/\n    v19 = (char *)v37; /*0x18001018f*/\n  sub_18000E840(a1: v46, a2: v19, a3: v18 - v19); /*0x18001019c*/\n  v20 = v46; /*0x1800101a1*/\n  if ( v46[3] > 0xFu ) /*0x1800101aa*/\n    v20 = (_QWORD *)v46[0]; /*0x1800101aa*/\n  if ( (unsigned __int8)sub_180016FC0(a1: v44, a2: v20, a3: (char *)v20 + v46[2], a4: &v33) != 0 ) /*0x1800101c6*/\n  {\n    v22 = sub_180020320(a1: &v33, a2: \"key\", a3: \"\"); /*0x1800101e3*/\n    sub_18001FAB0(a1: v22, a2: v49); /*0x1800101f2*/\n    v23 = sub_180020320(a1: &v33, a2: \"Lens_param\", a3: \"\"); /*0x18001020b*/\n    sub_18001FAB0(a1: v23, a2: v43); /*0x180010217*/\n    v24 = sub_180020320(a1: &v33, a2: \"cam_param\", a3: \"\"); /*0x180010230*/\n    sub_18001FAB0(a1: v24, a2: v48); /*0x18001023f*/\n    v25 = sub_180020320(a1: &v33, a2: \"fit_curve\", a3: \"\"); /*0x180010258*/\n    sub_18001FAB0(a1: v25, a2: v40); /*0x180010264*/\n    v26 = sub_180020320(a1: &v33, a2: \"days\", a3: \"\"); /*0x18001027d*/\n    sub_18001FAB0(a1: v26, a2: lpMem); /*0x180010289*/\n    v32[1] = nullptr; /*0x180010294*/\n    v27 = (_QWORD *)sub_180038990(a1: 80); /*0x18001029e*/\n    *v27 = v27; /*0x1800102a3*/\n    v27[1] = v27; /*0x1800102a6*/\n    v27[2] = v27; /*0x1800102aa*/\n    *((_WORD *)v27 + 12) = 257; /*0x1800102ae*/\n    v32[0] = v27; /*0x1800102b4*/\n    sub_18000A580(a1: v32, a2: v43); /*0x1800102c2*/\n    v21 = sub_180010B50(a1, a2: v32); /*0x1800102d4*/\n    sub_18000E150(a1: v32, a2: v32, a3: *((_QWORD *)v32[0] + 1)); /*0x1800102ea*/\n    sub_1800389CC(lpMem: v32[0]); /*0x1800102f9*/\n    sub_180004B00(a1: lpMem); /*0x180010303*/\n    sub_180004B00(a1: v40); /*0x18001030d*/\n    sub_180004B00(a1: v48); /*0x18001031a*/\n    sub_180004B00(a1: v43); /*0x180010324*/\n    sub_180004B00(a1: v49); /*0x180010331*/\n  }\n  else\n  {\n    v21 = 0; /*0x1800101c8*/\n  }\n  if ( v39 > 0xF ) /*0x18001033f*/\n  {\n    v28 = (void *)v37; /*0x180010344*/\n    if ( v39 + 1 < 0x1000 || (v28 = *(void **)(v37 - 8), (unsigned __int64)(v37 - (_QWORD)v28 - 8) <= 0x1F) ) /*0x180010368*/\n    {\n      sub_1800389CC(lpMem: v28); /*0x18001036e*/\n      goto LABEL_38; /*0x18001036e*/\n    }\n    sub_18003ECB4(a1: 0, a2: 0, a3: 0, a4: 0, a5: 0); /*0x180010493*/\n    goto LABEL_48; /*0x180010493*/\n  }\nLABEL_38:\n  v38 = 0; /*0x180010373*/\n  v39 = 15; /*0x180010377*/\n  LOBYTE(v37) = 0; /*0x18001037f*/\n  if ( (unsigned __int8)v34 == 4 ) /*0x18001038e*/\n  {\n    if ( (v34 & 0x100) != 0 ) /*0x1800103d8*/\n      sub_180041500(lpMem: v33); /*0x1800103df*/\n  }\n  else if ( (unsigned int)(unsigned __int8)v34 - 6 <= 1 ) /*0x180010393*/\n  {\n    v29 = (LPVOID *)v33; /*0x18001039a*/\n    if ( v33 != nullptr ) /*0x1800103a2*/\n    {\n      sub_180020A00(a1: v33, a2: v33, a3: *(_QWORD *)(*(_QWORD *)v33 + 8LL)); /*0x1800103b1*/\n      sub_1800389CC(lpMem: *v29); /*0x1800103be*/\n      sub_1800389CC(lpMem: v29); /*0x1800103cb*/\n    }\n  }\n  v33 = nullptr; /*0x1800103e4*/\n  v30 = v35[0]; /*0x1800103e9*/\n  if ( v35[0] != nullptr ) /*0x1800103f1*/\n  {\n    sub_180038B2C(a1: v35[0], a2: 32, a3: 3, a4: sub_180004850); /*0x180010408*/\n    sub_1800389CC(lpMem: v30); /*0x180010416*/\n  }\n  sub_180004B00(a1: v47); /*0x180010423*/\n  sub_180004B00(a1: v46); /*0x18001042c*/\n  sub_1800110A0(a1: v45); /*0x180010435*/\n  v31 = v45[0]; /*0x18001043a*/\n  v45[0] = nullptr; /*0x18001043e*/\n  sub_1800389CC(lpMem: v31); /*0x180010447*/\n  sub_180010FC0(a1: v44); /*0x180010450*/\n  return v21; /*0x180010459*/\n}",
+      "refs": [
+        {
+          "addr": "0x180064008",
+          "name": "MultiByteToWideChar"
+        },
+        {
+          "addr": "0x18009d958",
+          "name": "MultiByteStr",
+          "string": "rb"
+        },
+        {
+          "addr": "0x180038a00",
+          "name": "sub_180038A00"
+        },
+        {
+          "addr": "0x18000a2e0",
+          "name": "sub_18000A2E0"
+        },
+        {
+          "addr": "0x18009d868",
+          "name": "unk_18009D868"
+        },
+        {
+          "addr": "0x18000a160",
+          "name": "sub_18000A160"
+        },
+        {
+          "addr": "0x1800473a0",
+          "name": "sub_1800473A0"
+        },
+        {
+          "addr": "0x18003ecb4",
+          "name": "sub_18003ECB4"
+        },
+        {
+          "addr": "0x1800389cc",
+          "name": "sub_1800389CC"
+        },
+        {
+          "addr": "0x180061010",
+          "name": "sub_180061010"
+        },
+        {
+          "addr": "0x180046d90",
+          "name": "sub_180046D90"
+        },
+        {
+          "addr": "0x180041c18",
+          "name": "sub_180041C18"
+        },
+        {
+          "addr": "0x180016ed0",
+          "name": "sub_180016ED0"
+        },
+        {
+          "addr": "0x180004a40",
+          "name": "sub_180004A40"
+        },
+        {
+          "addr": "0x18000e840",
+          "name": "sub_18000E840"
+        },
+        {
+          "addr": "0x180020320",
+          "name": "sub_180020320"
+        },
+        {
+          "addr": "0x18009d95c",
+          "name": "aKey",
+          "string": "key"
+        },
+        {
+          "addr": "0x18001fab0",
+          "name": "sub_18001FAB0"
+        },
+        {
+          "addr": "0x18009d960",
+          "name": "aLensParam",
+          "string": "Lens_param"
+        },
+        {
+          "addr": "0x18009d970",
+          "name": "aCamParam",
+          "string": "cam_param"
+        },
+        {
+          "addr": "0x18009d980",
+          "name": "aFitCurve",
+          "string": "fit_curve"
+        },
+        {
+          "addr": "0x18009d98c",
+          "name": "aDays",
+          "string": "days"
+        },
+        {
+          "addr": "0x180038990",
+          "name": "sub_180038990"
+        },
+        {
+          "addr": "0x18000a580",
+          "name": "sub_18000A580"
+        },
+        {
+          "addr": "0x180010b50",
+          "name": "sub_180010B50"
+        },
+        {
+          "addr": "0x18000e150",
+          "name": "sub_18000E150"
+        },
+        {
+          "addr": "0x180004b00",
+          "name": "sub_180004B00"
+        },
+        {
+          "addr": "0x180016fc0",
+          "name": "sub_180016FC0"
+        },
+        {
+          "addr": "0x180041500",
+          "name": "sub_180041500"
+        },
+        {
+          "addr": "0x180020a00",
+          "name": "sub_180020A00"
+        },
+        {
+          "addr": "0x180038b2c",
+          "name": "sub_180038B2C"
+        },
+        {
+          "addr": "0x180004850",
+          "name": "sub_180004850"
+        },
+        {
+          "addr": "0x1800110a0",
+          "name": "sub_1800110A0"
+        },
+        {
+          "addr": "0x180010fc0",
+          "name": "sub_180010FC0"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

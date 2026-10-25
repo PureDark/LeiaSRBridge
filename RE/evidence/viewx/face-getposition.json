@@ -1,0 +1,69 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x180015000\",\"xrefs\":[{\"addr\":\"0x18000632b\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"size\":\"0x399\"}},{\"addr\":\"0x180006616\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006610\",\"name\":\"sub_180006610\",\"size\":\"0x43\"}},{\"addr\":\"0x180006660\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006660\",\"name\":\"sub_180006660\",\"size\":\"0x43\"}},{\"addr\":\"0x1800066b8\",\"type\":\"data\",\"fn\":{\"addr\":\"0x1800066b0\",\"name\":\"sub_1800066B0\",\"size\":\"0x37\"}},{\"addr\":\"0x180006880\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006880\",\"name\":\"sub_180006880\",\"size\":\"0x4b\"}}],\"more\":false,\"xref_count\":5}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x180015000",
+          "xrefs": [
+            {
+              "addr": "0x18000632b",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006270",
+                "name": "sub_180006270",
+                "size": "0x399"
+              }
+            },
+            {
+              "addr": "0x180006616",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006610",
+                "name": "sub_180006610",
+                "size": "0x43"
+              }
+            },
+            {
+              "addr": "0x180006660",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006660",
+                "name": "sub_180006660",
+                "size": "0x43"
+              }
+            },
+            {
+              "addr": "0x1800066b8",
+              "type": "data",
+              "fn": {
+                "addr": "0x1800066b0",
+                "name": "sub_1800066B0",
+                "size": "0x37"
+              }
+            },
+            {
+              "addr": "0x180006880",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006880",
+                "name": "sub_180006880",
+                "size": "0x4b"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 5
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

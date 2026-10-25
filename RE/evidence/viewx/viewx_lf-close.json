@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"viewx_lf\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: LF3DRenderCore.dll (viewx_lf)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "viewx_lf",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: LF3DRenderCore.dll (viewx_lf)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

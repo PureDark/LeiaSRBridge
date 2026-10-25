@@ -1,0 +1,1749 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"0x180004FD0\",\"addr\":\"0x180004fd0\",\"name\":\"sub_180004FD0\",\"analysis\":{\"size\":\"0x190\",\"prototype\":\"__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD)\",\"decompile\":\"__int64 __fastcall sub_180004FD0(__int64 a1, __int64 a2, char a3, char a4)\\n{\\n  _OWORD *v8; // rbx\\n  _DWORD *v9; // rcx\\n  int v10; // r8d\\n  _BYTE v12[32]; // [rsp+30h] [rbp-48h] BYREF\\n\\n  sub_180004980(a1: v12); /*0x180005009*/\\n  v8 = (_OWORD *)sub_180038990(a1: 172); /*0x180005019*/\\n  sub_180004F00(a1: v8); /*0x180005024*/\\n  v9[35] = 90; /*0x180005029*/\\n  v9[36] = 127; /*0x180005033*/\\n  v9[37] = 165; /*0x18000503d*/\\n  v9[38] = 105; /*0x180005047*/\\n  v9[39] = 247; /*0x180005051*/\\n  v9[40] = 61; /*0x18000505b*/\\n  v9[41] = 232; /*0x180005065*/\\n  v9[42] = 150; /*0x18000506f*/\\n  if ( (unsigned __int8)sub_18000FEC0(a1: v9, a2: v12) != 0 ) /*0x18000508a*/\\n  {\\n    *(_OWORD *)(a1 + 16) = *v8; /*0x18000508f*/\\n    *(_OWORD *)(a1 + 32) = v8[1]; /*0x180005097*/\\n    *(_OWORD *)(a1 + 48) = v8[2]; /*0x18000509f*/\\n    *(_OWORD *)(a1 + 64) = v8[3]; /*0x1800050a7*/\\n    *(_OWORD *)(a1 + 80) = v8[4]; /*0x1800050af*/\\n    *(_OWORD *)(a1 + 96) = v8[5]; /*0x1800050b7*/\\n    *(_OWORD *)(a1 + 112) = v8[6]; /*0x1800050bf*/\\n    *(_OWORD *)(a1 + 128) = v8[7]; /*0x1800050c7*/\\n    *(_QWORD *)(a1 + 144) = *((_QWORD *)v8 + 16); /*0x1800050d6*/\\n    *(_DWORD *)(a1 + 152) = *((_DWORD *)v8 + 34); /*0x1800050e4*/\\n  }\\n  if ( a3 != 0 ) /*0x1800050ed*/\\n    *(float *)(a1 + 16) = *(float *)(a1 + 148) + *(float *)(a1 + 16); /*0x1800050fc*/\\n  if ( a4 != 0 ) /*0x180005104*/\\n  {\\n    v10 = *(_DWORD *)(a1 + 112); /*0x180005106*/\\n    *(_DWORD *)(a1 + 112) = *(_DWORD *)(a1 + 116); /*0x18000510d*/\\n    *(_DWORD *)(a1 + 116) = v10; /*0x180005110*/\\n  }\\n  sub_180005240(a1); /*0x180005117*/\\n  sub_1800389CC(lpMem: v8); /*0x180005125*/\\n  sub_180004B00(a1: v12); /*0x180005130*/\\n  return sub_180004B00(a1: a2); /*0x18000513e*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180004fd0  mov [rsp+arg_10], rbx\",\"180004fd5  mov [rsp+arg_18], rbp\",\"180004fda  push rsi\",\"180004fdb  push rdi\",\"180004fdc  push r14\",\"180004fde  sub rsp, 60h\",\"180004fe2  mov rax, cs:__security_cookie\",\"180004fe9  xor rax, rsp\",\"180004fec  mov [rsp+78h+var_28], rax\",\"180004ff1  movzx ebp, r9b\",\"180004ff5  movzx r14d, r8b\",\"180004ff9  mov rsi, rdx\",\"180004ffc  mov rdi, rcx\",\"180004fff  mov [rsp+78h+var_50], rdx\",\"180005004  lea rcx, [rsp+78h+var_48]\",\"180005009  call sub_180004980\",\"18000500e  nop\",\"18000500f  mov ecx, 0ACh\",\"180005014  call sub_180038990\",\"180005019  mov rbx, rax\",\"18000501c  mov [rsp+78h+var_58], rax\",\"180005021  mov rcx, rax\",\"180005024  call sub_180004F00\",\"180005029  mov dword ptr [rcx+8Ch], 5Ah ; 'Z'\",\"180005033  mov dword ptr [rcx+90h], 7Fh\",\"18000503d  mov dword ptr [rcx+94h], 0A5h\",\"180005047  mov dword ptr [rcx+98h], 69h ; 'i'\",\"180005051  mov dword ptr [rcx+9Ch], 0F7h\",\"18000505b  mov dword ptr [rcx+0A0h], 3Dh ; '='\",\"180005065  mov dword ptr [rcx+0A4h], 0E8h\",\"18000506f  mov dword ptr [rcx+0A8h], 96h\",\"180005079  mov [rsp+78h+var_58], rcx\",\"18000507e  lea rdx, [rsp+78h+var_48]\",\"180005083  call sub_18000FEC0\",\"180005088  test al, al\",\"18000508a  jz short loc_1800050EA\",\"18000508c  movups xmm0, xmmword ptr [rbx]\",\"18000508f  movups xmmword ptr [rdi+10h], xmm0\",\"180005093  movups xmm1, xmmword ptr [rbx+10h]\",\"180005097  movups xmmword ptr [rdi+20h], xmm1\",\"18000509b  movups xmm0, xmmword ptr [rbx+20h]\",\"18000509f  movups xmmword ptr [rdi+30h], xmm0\",\"1800050a3  movups xmm1, xmmword ptr [rbx+30h]\",\"1800050a7  movups xmmword ptr [rdi+40h], xmm1\",\"1800050ab  movups xmm0, xmmword ptr [rbx+40h]\",\"1800050af  movups xmmword ptr [rdi+50h], xmm0\",\"1800050b3  movups xmm1, xmmword ptr [rbx+50h]\",\"1800050b7  movups xmmword ptr [rdi+60h], xmm1\",\"1800050bb  movups xmm0, xmmword ptr [rbx+60h]\",\"1800050bf  movups xmmword ptr [rdi+70h], xmm0\",\"1800050c3  movups xmm1, xmmword ptr [rbx+70h]\",\"1800050c7  movups xmmword ptr [rdi+80h], xmm1\",\"1800050ce  movsd xmm0, qword ptr [rbx+80h]\",\"1800050d6  movsd qword ptr [rdi+90h], xmm0\",\"1800050de  mov eax, [rbx+88h]\",\"1800050e4  mov [rdi+98h], eax\",\"1800050ea  test r14b, r14b\",\"1800050ed  jz short loc_180005101\",\"1800050ef  movss xmm0, dword ptr [rdi+94h]\",\"1800050f7  addss xmm0, dword ptr [rdi+10h]\",\"1800050fc  movss dword ptr [rdi+10h], xmm0\",\"180005101  test bpl, bpl\",\"180005104  jz short loc_180005114\",\"180005106  mov r8d, [rdi+70h]\",\"18000510a  mov eax, [rdi+74h]\",\"18000510d  mov [rdi+70h], eax\",\"180005110  mov [rdi+74h], r8d\",\"180005114  mov rcx, rdi\",\"180005117  call sub_180005240\",\"18000511c  nop\",\"18000511d  mov edx, 0ACh\",\"180005122  mov rcx, rbx; lpMem\",\"180005125  call sub_1800389CC\",\"18000512a  nop\",\"18000512b  lea rcx, [rsp+78h+var_48]\",\"180005130  call sub_180004B00\",\"180005135  nop\",\"180005136  mov rcx, rsi\",\"180005139  call sub_180004B00\",\"18000513e  mov rcx, [rsp+78h+var_28]\",\"180005143  xor rcx, rsp; StackCookie\",\"180005146  call __security_check_cookie\",\"18000514b  lea r11, [rsp+78h+var_18]\",\"180005150  mov rbx, [r11+30h]\",\"180005154  mov rbp, [r11+38h]\",\"180005158  mov rsp, r11\",\"18000515b  pop r14\",\"18000515d  pop rdi\",\"18000515e  pop rsi\",\"18000515f  retn\"],\"instruction_count\":90,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x180021c99\",\"type\":\"code\"},{\"addr\":\"0x180024ae9\",\"type\":\"code\"},{\"addr\":\"0x18038d1f8\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180004fd5\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":3,\"from_count\":1},\"callers\":[{\"addr\":\"0x180021c40\",\"name\":\"sub_180021C40\",\"size\":\"0x6e\"},{\"addr\":\"0x180024a90\",\"name\":\"sub_180024A90\",\"size\":\"0x6e\"}],\"caller_count\":2,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180004f00\",\"name\":\"sub_180004F00\",\"type\":\"internal\"},{\"addr\":\"0x180038990\",\"name\":\"sub_180038990\",\"type\":\"internal\"},{\"addr\":\"0x180004b00\",\"name\":\"sub_180004B00\",\"type\":\"internal\"},{\"addr\":\"0x18000fec0\",\"name\":\"sub_18000FEC0\",\"type\":\"internal\"},{\"addr\":\"0x1800389cc\",\"name\":\"sub_1800389CC\",\"type\":\"internal\"},{\"addr\":\"0x180005240\",\"name\":\"sub_180005240\",\"type\":\"internal\"},{\"addr\":\"0x180004980\",\"name\":\"sub_180004980\",\"type\":\"internal\"},{\"addr\":\"0x180038970\",\"name\":\"__security_check_cookie\",\"type\":\"internal\"}],\"callee_count\":8,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180004fde\",\"value\":\"0x60\",\"decimal\":96},{\"addr\":\"0x18000500f\",\"value\":\"0xac\",\"decimal\":172},{\"addr\":\"0x180005029\",\"value\":\"0x5a\",\"decimal\":90},{\"addr\":\"0x180005033\",\"value\":\"0x7f\",\"decimal\":127},{\"addr\":\"0x18000503d\",\"value\":\"0xa5\",\"decimal\":165},{\"addr\":\"0x180005047\",\"value\":\"0x69\",\"decimal\":105},{\"addr\":\"0x180005051\",\"value\":\"0xf7\",\"decimal\":247},{\"addr\":\"0x18000505b\",\"value\":\"0x3d\",\"decimal\":61},{\"addr\":\"0x180005065\",\"value\":\"0xe8\",\"decimal\":232},{\"addr\":\"0x18000506f\",\"value\":\"0x96\",\"decimal\":150},{\"addr\":\"0x18000511d\",\"value\":\"0xac\",\"decimal\":172}],\"constant_count\":11,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180004fd0\",\"end\":\"0x18000508c\",\"size\":188,\"type\":0,\"successors\":[\"0x18000508c\",\"0x1800050ea\"],\"predecessors\":[]},{\"start\":\"0x18000508c\",\"end\":\"0x1800050ea\",\"size\":94,\"type\":0,\"successors\":[\"0x1800050ea\"],\"predecessors\":[\"0x180004fd0\"]},{\"start\":\"0x1800050ea\",\"end\":\"0x1800050ef\",\"size\":5,\"type\":0,\"successors\":[\"0x1800050ef\",\"0x180005101\"],\"predecessors\":[\"0x180004fd0\",\"0x18000508c\"]},{\"start\":\"0x1800050ef\",\"end\":\"0x180005101\",\"size\":18,\"type\":0,\"successors\":[\"0x180005101\"],\"predecessors\":[\"0x1800050ea\"]},{\"start\":\"0x180005101\",\"end\":\"0x180005106\",\"size\":5,\"type\":0,\"successors\":[\"0x180005106\",\"0x180005114\"],\"predecessors\":[\"0x1800050ea\",\"0x1800050ef\"]},{\"start\":\"0x180005106\",\"end\":\"0x180005114\",\"size\":14,\"type\":0,\"successors\":[\"0x180005114\"],\"predecessors\":[\"0x180005101\"]},{\"start\":\"0x180005114\",\"end\":\"0x180005160\",\"size\":76,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180005101\",\"0x180005106\"]}],\"basic_block_count\":7,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180005340\",\"addr\":\"0x180005340\",\"name\":\"sub_180005340\",\"analysis\":{\"size\":\"0x432\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180005340(float *a1, __int64 a2, __int64 a3, __int64 a4, char a5)\\n{\\n  float v6; // xmm11_4\\n  double v7; // xmm0_8\\n  float v8; // xmm2_4\\n  float v9; // xmm6_4\\n  float v10; // xmm12_4\\n  float v11; // xmm13_4\\n  float v12; // xmm12_4\\n  float v13; // xmm9_4\\n  double v14; // xmm6_8\\n  float v15; // xmm10_4\\n  double v16; // xmm0_8\\n  float v17; // xmm7_4\\n  double v18; // xmm8_8\\n  float v19; // xmm2_4\\n  float v20; // xmm0_4\\n  double v21; // xmm4_8\\n  float v22; // xmm0_4\\n  float v23; // xmm12_4\\n  double v24; // xmm1_8\\n  float v25; // xmm0_4\\n  __int64 result; // rax\\n  float v27; // xmm8_4\\n  double v28; // xmm0_8\\n  int v29; // xmm7_4\\n  float v30; // xmm1_4\\n  int v31; // edi\\n  double v32; // xmm6_8\\n  float v33; // xmm1_4\\n  float v34; // xmm0_4\\n  float v35; // [rsp+C8h] [rbp+10h]\\n\\n  v6 = sub_18005EE50() * a1[25]; /*0x1800053b4*/\\n  v7 = sub_18005EE50(); /*0x1800053cd*/\\n  v8 = a1[4]; /*0x1800053de*/\\n  v9 = a1[12]; /*0x1800053e3*/\\n  v10 = 1.0; /*0x1800053e8*/\\n  v35 = v8; /*0x1800053fa*/\\n  v11 = v7; /*0x180005403*/\\n  if ( a5 != 0 ) /*0x180005408*/\\n  {\\n    v12 = a1[19]; /*0x180005417*/\\n    v13 = a1[18]; /*0x180005426*/\\n    v14 = 1.0 / a1[11]; /*0x18000542c*/\\n    v15 = a1[5]; /*0x180005436*/\\n    sub_18005E680(); /*0x18000543f*/\\n    v16 = sub_18005E8D0(); /*0x180005444*/\\n    v17 = a1[7]; /*0x180005449*/\\n    v18 = v16; /*0x18000544e*/\\n    v19 = sub_18005EE50() * a1[26]; /*0x18000548d*/\\n    v20 = (float)((float)((float)((float)((float)(v19 - a1[16]) * v12) / v11) / v13) / v15) * fabs(v14) * a1[23] + v35; /*0x1800054c9*/\\n    v21 = v20 /*0x180005549*/\\n        + (1.0 / v11 - 1.0 / a1[20]) * v12 * ((float)((float)(v13 * v15) * 0.5) - v17 / v18 * 0.5) / v13 / v15 * a1[24];\\n    v22 = (float)(v6 - a1[15]) * v12; /*0x18000554d*/\\n    v23 = (float)((float)(v12 + v11) * v17) / v11; /*0x18000556a*/\\n    v8 = (float)v21 + (float)((float)((float)((float)(v22 / v11) / v13) / v15) * a1[22]); /*0x180005579*/\\n    v24 = 25.39999961853027 / (v23 * v18); /*0x180005586*/\\n    v10 = (float)(v23 / v13) / v15; /*0x18000559d*/\\n    v9 = v24 + a1[21]; /*0x1800055ac*/\\n  }\\n  *(float *)(*(_QWORD *)a1 + 24LL) = v8; /*0x1800055b7*/\\n  sub_18005E680(); /*0x1800055c8*/\\n  v25 = sub_18005E8D0() * (float)((float)(a1[5] / a1[10]) * v9); /*0x1800055f2*/\\n  *(float *)(*(_QWORD *)a1 + 32LL) = v25; /*0x1800055f6*/\\n  result = *((unsigned int *)a1 + 39); /*0x1800055fb*/\\n  if ( (_DWORD)result == 1 ) /*0x180005604*/\\n  {\\n    *(float *)(*(_QWORD *)a1 + 80LL) = v10; /*0x180005610*/\\n    v27 = (v6 - 0.0) / 130.0; /*0x180005622*/\\n    v28 = sub_18005EF10(); /*0x18000562b*/\\n    v29 = LODWORD(v28); /*0x180005630*/\\n    sub_1800412C0(); /*0x180005645*/\\n    v30 = sub_180041330(); /*0x18000565d*/\\n    *(float *)(*(_QWORD *)a1 + 84LL) = v27; /*0x180005661*/\\n    *(_DWORD *)(*(_QWORD *)a1 + 88LL) = v29; /*0x18000566a*/\\n    result = *(_QWORD *)a1; /*0x18000566f*/\\n    *(float *)(*(_QWORD *)a1 + 92LL) = v30; /*0x180005672*/\\n  }\\n  else if ( (_DWORD)result == 2 ) /*0x18000567f*/\\n  {\\n    if ( v6 >= 0.0 ) /*0x18000568c*/\\n      v31 = v6 > 0.0; /*0x18000569b*/\\n    else\\n      v31 = -1; /*0x18000568e*/\\n    v32 = sub_18005EE50(); /*0x1800056bc*/\\n    sub_1800412C0(); /*0x1800056ce*/\\n    v33 = sub_180041330(); /*0x180005701*/\\n    v34 = v32 + 1.0 - ((float)(v11 / 100.0) - 4.5); /*0x18000571a*/\\n    *(float *)(*(_QWORD *)a1 + 96LL) = v33 + (float)((v31 + 1) / 2); /*0x18000571e*/\\n    *(float *)(*(_QWORD *)a1 + 100LL) = v34; /*0x180005726*/\\n    *(float *)(*(_QWORD *)a1 + 104LL) = fabs(v6) / 130.0; /*0x18000572e*/\\n    result = *(_QWORD *)a1; /*0x180005734*/\\n    *(float *)(*(_QWORD *)a1 + 80LL) = v10; /*0x180005737*/\\n  }\\n  return result; /*0x18000573d*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180005340  mov rax, rsp\",\"180005343  mov [rax+20h], rbx\",\"180005347  movss dword ptr [rax+18h], xmm2\",\"18000534c  push rdi\",\"18000534d  sub rsp, 0B0h\",\"180005354  movaps xmmword ptr [rax-18h], xmm6\",\"180005358  xorps xmm0, xmm0\",\"18000535b  movaps xmmword ptr [rax-28h], xmm7\",\"18000535f  movaps xmm6, xmm3\",\"180005362  movaps xmmword ptr [rax-38h], xmm8\",\"180005367  mov rbx, rcx\",\"18000536a  cvtss2sd xmm0, xmm1\",\"18000536e  movaps xmmword ptr [rax-68h], xmm11\",\"180005373  mulsd xmm0, cs:qword_1800A24C8\",\"18000537b  movaps xmmword ptr [rax-78h], xmm12\",\"180005380  movaps [rsp+0B8h+var_88], xmm13\",\"180005386  movaps [rsp+0B8h+var_98], xmm15\",\"18000538c  divsd xmm0, cs:qword_1800A2480\",\"180005394  mov [rax+8], rsi\",\"180005398  call sub_18005EE50\",\"18000539d  movss xmm1, dword ptr [rbx+64h]\",\"1800053a2  xorps xmm11, xmm11\",\"1800053a6  cvtps2pd xmm1, xmm1\",\"1800053a9  mulsd xmm0, xmm1\",\"1800053ad  xorps xmm1, xmm1\",\"1800053b0  cvtss2sd xmm1, xmm6\",\"1800053b4  cvtsd2ss xmm11, xmm0\",\"1800053b9  mulsd xmm1, cs:qword_1800A24C8\",\"1800053c1  movss xmm0, dword ptr [rbx+44h]\",\"1800053c6  cvtps2pd xmm0, xmm0\",\"1800053c9  addsd xmm0, xmm1\",\"1800053cd  call sub_18005EE50\",\"1800053d2  cmp [rsp+0B8h+arg_20], 0\",\"1800053da  xorps xmm13, xmm13\",\"1800053de  movss xmm2, dword ptr [rbx+10h]\",\"1800053e3  movss xmm6, dword ptr [rbx+30h]\",\"1800053e8  movss xmm12, cs:dword_1800A2460\",\"1800053f1  movsd xmm15, cs:qword_1800A2478\",\"1800053fa  movss [rsp+0B8h+arg_8], xmm2\",\"180005403  cvtsd2ss xmm13, xmm0\",\"180005408  jz loc_1800055B0\",\"18000540e  movss xmm0, dword ptr [rbx+2Ch]\",\"180005413  movaps xmm6, xmm15\",\"180005417  movss xmm12, dword ptr [rbx+4Ch]\",\"18000541d  cvtps2pd xmm0, xmm0\",\"180005420  movaps [rsp+0B8h+var_48], xmm9\",\"180005426  movss xmm9, dword ptr [rbx+48h]\",\"18000542c  divsd xmm6, xmm0\",\"180005430  movaps [rsp+0B8h+var_58], xmm10\",\"180005436  movss xmm10, dword ptr [rbx+14h]\",\"18000543c  movaps xmm0, xmm6\",\"18000543f  call sub_18005E680\",\"180005444  call sub_18005E8D0\",\"180005449  movss xmm7, dword ptr [rbx+1Ch]\",\"18000544e  movaps xmm8, xmm0\",\"180005452  movss xmm0, [rsp+0B8h+arg_10]\",\"18000545b  cvtps2pd xmm0, xmm0\",\"18000545e  mulsd xmm0, cs:qword_1800A24C8\",\"180005466  call sub_18005EE50\",\"18000546b  movss xmm1, dword ptr [rbx+68h]\",\"180005470  xorps xmm2, xmm2\",\"180005473  andps xmm6, cs:xmmword_1800A2710\",\"18000547a  cvtps2pd xmm1, xmm1\",\"18000547d  mulsd xmm0, xmm1\",\"180005481  movss xmm1, [rsp+0B8h+arg_8]\",\"18000548a  cvtps2pd xmm1, xmm1\",\"18000548d  cvtsd2ss xmm2, xmm0\",\"180005491  movss xmm0, dword ptr [rbx+5Ch]\",\"180005496  subss xmm2, dword ptr [rbx+40h]\",\"18000549b  cvtps2pd xmm0, xmm0\",\"18000549e  mulss xmm2, xmm12\",\"1800054a3  divss xmm2, xmm13\",\"1800054a8  divss xmm2, xmm9\",\"1800054ad  divss xmm2, xmm10\",\"1800054b2  cvtps2pd xmm3, xmm2\",\"1800054b5  movaps xmm2, xmm15\",\"1800054b9  mulsd xmm3, xmm6\",\"1800054bd  mulsd xmm3, xmm0\",\"1800054c1  addsd xmm3, xmm1\",\"1800054c5  cvtps2pd xmm1, xmm13\",\"1800054c9  cvtpd2ps xmm0, xmm3\",\"1800054cd  movaps xmm3, xmm15\",\"1800054d1  cvtps2pd xmm4, xmm0\",\"1800054d4  movss xmm0, dword ptr [rbx+50h]\",\"1800054d9  cvtps2pd xmm0, xmm0\",\"1800054dc  divsd xmm3, xmm1\",\"1800054e0  divsd xmm2, xmm0\",\"1800054e4  cvtps2pd xmm0, xmm12\",\"1800054e8  subsd xmm3, xmm2\",\"1800054ec  movaps xmm1, xmm9\",\"1800054f0  mulss xmm1, xmm10\",\"1800054f5  mulss xmm1, cs:dword_1800A245C\",\"1800054fd  mulsd xmm3, xmm0\",\"180005501  cvtps2pd xmm0, xmm7\",\"180005504  cvtps2pd xmm2, xmm1\",\"180005507  divsd xmm0, xmm8\",\"18000550c  cvtps2pd xmm1, xmm10\",\"180005510  mulsd xmm0, cs:qword_1800A2470\",\"180005518  subsd xmm2, xmm0\",\"18000551c  cvtps2pd xmm0, xmm9\",\"180005520  mulsd xmm3, xmm2\",\"180005524  divsd xmm3, xmm0\",\"180005528  movss xmm0, dword ptr [rbx+60h]\",\"18000552d  cvtps2pd xmm0, xmm0\",\"180005530  divsd xmm3, xmm1\",\"180005534  movsd xmm1, cs:qword_1800A24B0\",\"18000553c  mulsd xmm3, xmm0\",\"180005540  movaps xmm0, xmm11\",\"180005544  subss xmm0, dword ptr [rbx+3Ch]\",\"180005549  addsd xmm4, xmm3\",\"18000554d  mulss xmm0, xmm12\",\"180005552  addss xmm12, xmm13\",\"180005557  cvtpd2ps xmm2, xmm4\",\"18000555b  divss xmm0, xmm13\",\"180005560  mulss xmm12, xmm7\",\"180005565  divss xmm0, xmm9\",\"18000556a  divss xmm12, xmm13\",\"18000556f  divss xmm0, xmm10\",\"180005574  mulss xmm0, dword ptr [rbx+58h]\",\"180005579  addss xmm2, xmm0\"],\"instruction_count\":120,\"truncated\":true},\"xrefs\":{\"to\":[{\"addr\":\"0x180005331\",\"type\":\"code\"},{\"addr\":\"0x180021d36\",\"type\":\"code\"},{\"addr\":\"0x180024b86\",\"type\":\"code\"},{\"addr\":\"0x1800a6730\",\"type\":\"data\"},{\"addr\":\"0x1800a6768\",\"type\":\"data\"},{\"addr\":\"0x18038d210\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180005343\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":6,\"from_count\":1},\"callers\":[{\"addr\":\"0x180005240\",\"name\":\"sub_180005240\",\"size\":\"0xfb\"},{\"addr\":\"0x180021d20\",\"name\":\"sub_180021D20\",\"size\":\"0x2f\"},{\"addr\":\"0x180024b70\",\"name\":\"sub_180024B70\",\"size\":\"0x2f\"}],\"caller_count\":3,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x18005ef10\",\"name\":\"sub_18005EF10\",\"type\":\"internal\"},{\"addr\":\"0x18005ee50\",\"name\":\"sub_18005EE50\",\"type\":\"internal\"},{\"addr\":\"0x18005e8d0\",\"name\":\"sub_18005E8D0\",\"type\":\"internal\"},{\"addr\":\"0x180041330\",\"name\":\"sub_180041330\",\"type\":\"internal\"},{\"addr\":\"0x18005e680\",\"name\":\"sub_18005E680\",\"type\":\"internal\"},{\"addr\":\"0x1800412c0\",\"name\":\"sub_1800412C0\",\"type\":\"internal\"}],\"callee_count\":6,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x18000534d\",\"value\":\"0xb0\",\"decimal\":176},{\"addr\":\"0x1800053d2\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x180005601\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18000567c\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x18000568e\",\"value\":\"0xffffffffffffffff\",\"decimal\":18446744073709551615},{\"addr\":\"0x1800056f7\",\"value\":\"0x1\",\"decimal\":1}],\"constant_count\":6,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180005340\",\"end\":\"0x180005394\",\"size\":84,\"type\":0,\"successors\":[\"0x180005394\"],\"predecessors\":[]},{\"start\":\"0x180005394\",\"end\":\"0x18000540e\",\"size\":122,\"type\":0,\"successors\":[\"0x18000540e\",\"0x1800055b0\"],\"predecessors\":[\"0x180005340\"]},{\"start\":\"0x18000540e\",\"end\":\"0x180005420\",\"size\":18,\"type\":0,\"successors\":[\"0x180005420\"],\"predecessors\":[\"0x180005394\"]},{\"start\":\"0x180005420\",\"end\":\"0x1800055b0\",\"size\":400,\"type\":0,\"successors\":[\"0x1800055b0\"],\"predecessors\":[\"0x18000540e\"]},{\"start\":\"0x1800055b0\",\"end\":\"0x180005606\",\"size\":86,\"type\":0,\"successors\":[\"0x180005606\",\"0x18000567c\"],\"predecessors\":[\"0x180005394\",\"0x180005420\"]},{\"start\":\"0x180005606\",\"end\":\"0x18000567c\",\"size\":118,\"type\":0,\"successors\":[\"0x18000573d\"],\"predecessors\":[\"0x1800055b0\"]},{\"start\":\"0x18000567c\",\"end\":\"0x180005685\",\"size\":9,\"type\":0,\"successors\":[\"0x180005685\",\"0x18000573d\"],\"predecessors\":[\"0x1800055b0\"]},{\"start\":\"0x180005685\",\"end\":\"0x18000568e\",\"size\":9,\"type\":0,\"successors\":[\"0x18000568e\",\"0x180005695\"],\"predecessors\":[\"0x18000567c\"]},{\"start\":\"0x18000568e\",\"end\":\"0x180005695\",\"size\":7,\"type\":0,\"successors\":[\"0x18000569f\"],\"predecessors\":[\"0x180005685\"]},{\"start\":\"0x180005695\",\"end\":\"0x18000569f\",\"size\":10,\"type\":0,\"successors\":[\"0x18000569f\"],\"predecessors\":[\"0x180005685\"]},{\"start\":\"0x18000569f\",\"end\":\"0x18000573d\",\"size\":158,\"type\":0,\"successors\":[\"0x18000573d\"],\"predecessors\":[\"0x18000568e\",\"0x180005695\"]},{\"start\":\"0x18000573d\",\"end\":\"0x180005772\",\"size\":53,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180005606\",\"0x18000567c\",\"0x18000569f\"]}],\"basic_block_count\":12,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180005240\",\"addr\":\"0x180005240\",\"name\":\"sub_180005240\",\"analysis\":{\"size\":\"0xfb\",\"prototype\":\"__int64 __fastcall(_QWORD)\",\"decompile\":\"__int64 __fastcall sub_180005240(float *a1, __int64 a2, __int64 a3, __int64 a4)\\n{\\n  int v4; // edx\\n  float v5; // xmm0_4\\n  float v6; // xmm0_4\\n\\n  v4 = *((_DWORD *)a1 + 30); /*0x18000524a*/\\n  a1[41] = a1[31]; /*0x180005255*/\\n  a1[42] = a1[32]; /*0x180005261*/\\n  a1[43] = a1[33]; /*0x18000526d*/\\n  a1[44] = a1[34]; /*0x180005279*/\\n  a1[45] = a1[35]; /*0x180005285*/\\n  a1[46] = a1[36]; /*0x180005291*/\\n  *((_DWORD *)a1 + 40) = v4; /*0x180005297*/\\n  if ( v4 != 0 ) /*0x18000529f*/\\n    v5 = a1[6]; /*0x1800052b0*/\\n  else\\n    v5 = a1[5]; /*0x1800052a1*/\\n  v6 = 0.3333333333333333 / v5; /*0x1800052d7*/\\n  **(float **)a1 = v6; /*0x1800052db*/\\n  *(float *)(*(_QWORD *)a1 + 28LL) = a1[6] / (float)(a1[11] * a1[5]); /*0x1800052f7*/\\n  *(_DWORD *)(*(_QWORD *)a1 + 36LL) = 0; /*0x1800052ff*/\\n  *(float *)(*(_QWORD *)a1 + 20LL) = a1[9]; /*0x18000530d*/\\n  *(float *)(*(_QWORD *)a1 + 40LL) = a1[27]; /*0x180005317*/\\n  *(float *)(*(_QWORD *)a1 + 44LL) = a1[28]; /*0x180005321*/\\n  *(float *)(*(_QWORD *)a1 + 48LL) = a1[29]; /*0x18000532b*/\\n  return sub_180005340(a1, a2: (__int64)(a1 + 5), a3: (__int64)a1, a4, a5: 0); /*0x180005336*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180005240  sub rsp, 38h\",\"180005244  mov eax, [rcx+7Ch]\",\"180005247  mov r8, rcx\",\"18000524a  mov edx, [rcx+78h]\",\"18000524d  movsd xmm1, cs:qword_1800A2468\",\"180005255  mov [rcx+0A4h], eax\",\"18000525b  mov eax, [rcx+80h]\",\"180005261  mov [rcx+0A8h], eax\",\"180005267  mov eax, [rcx+84h]\",\"18000526d  mov [rcx+0ACh], eax\",\"180005273  mov eax, [rcx+88h]\",\"180005279  mov [rcx+0B0h], eax\",\"18000527f  mov eax, [rcx+8Ch]\",\"180005285  mov [rcx+0B4h], eax\",\"18000528b  mov eax, [rcx+90h]\",\"180005291  mov [rcx+0B8h], eax\",\"180005297  mov [rcx+0A0h], edx\",\"18000529d  test edx, edx\",\"18000529f  jnz short loc_1800052B0\",\"1800052a1  movss xmm0, dword ptr [rcx+14h]\",\"1800052a6  lea rdx, [rcx+14h]\",\"1800052aa  add rcx, 18h\",\"1800052ae  jmp short loc_1800052BD\",\"1800052b0  movss xmm0, dword ptr [rcx+18h]\",\"1800052b5  lea rdx, [r8+14h]\",\"1800052b9  add rcx, 18h\",\"1800052bd  mov rax, [r8]\",\"1800052c0  xorps xmm2, xmm2\",\"1800052c3  movss xmm3, cs:dword_1800A24E4\",\"1800052cb  cvtps2pd xmm0, xmm0\",\"1800052ce  mov [rsp+38h+var_18], 0\",\"1800052d3  divsd xmm1, xmm0\",\"1800052d7  cvtpd2ps xmm0, xmm1\",\"1800052db  movss dword ptr [rax], xmm0\",\"1800052df  movss xmm0, dword ptr [rcx]\",\"1800052e3  movss xmm1, dword ptr [r8+2Ch]\",\"1800052e9  mulss xmm1, dword ptr [rdx]\",\"1800052ed  mov rax, [r8]\",\"1800052f0  divss xmm0, xmm1\",\"1800052f4  xorps xmm1, xmm1\",\"1800052f7  movss dword ptr [rax+1Ch], xmm0\",\"1800052fc  mov rax, [r8]\",\"1800052ff  mov dword ptr [rax+24h], 0\",\"180005306  mov rcx, [r8]\",\"180005309  mov eax, [r8+24h]\",\"18000530d  mov [rcx+14h], eax\",\"180005310  mov rcx, [r8]\",\"180005313  mov eax, [r8+6Ch]\",\"180005317  mov [rcx+28h], eax\",\"18000531a  mov rcx, [r8]\",\"18000531d  mov eax, [r8+70h]\",\"180005321  mov [rcx+2Ch], eax\",\"180005324  mov rcx, [r8]\",\"180005327  mov eax, [r8+74h]\",\"18000532b  mov [rcx+30h], eax\",\"18000532e  mov rcx, r8\",\"180005331  call sub_180005340\",\"180005336  add rsp, 38h\",\"18000533a  retn\"],\"instruction_count\":59,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x180005117\",\"type\":\"code\"},{\"addr\":\"0x180021aa9\",\"type\":\"code\"},{\"addr\":\"0x180036d76\",\"type\":\"code\"},{\"addr\":\"0x18038d204\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180005244\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":4,\"from_count\":1},\"callers\":[{\"addr\":\"0x180004fd0\",\"name\":\"sub_180004FD0\",\"size\":\"0x190\"},{\"addr\":\"0x180021800\",\"name\":\"sub_180021800\",\"size\":\"0x354\"},{\"addr\":\"0x180036d30\",\"name\":\"sub_180036D30\",\"size\":\"0x51\"}],\"caller_count\":3,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180005340\",\"name\":\"sub_180005340\",\"type\":\"internal\"}],\"callee_count\":1,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180005240\",\"value\":\"0x38\",\"decimal\":56},{\"addr\":\"0x1800052aa\",\"value\":\"0x18\",\"decimal\":24},{\"addr\":\"0x1800052b9\",\"value\":\"0x18\",\"decimal\":24},{\"addr\":\"0x1800052ce\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x1800052ff\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x180005336\",\"value\":\"0x38\",\"decimal\":56}],\"constant_count\":6,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180005240\",\"end\":\"0x1800052a1\",\"size\":97,\"type\":0,\"successors\":[\"0x1800052a1\",\"0x1800052b0\"],\"predecessors\":[]},{\"start\":\"0x1800052a1\",\"end\":\"0x1800052b0\",\"size\":15,\"type\":0,\"successors\":[\"0x1800052bd\"],\"predecessors\":[\"0x180005240\"]},{\"start\":\"0x1800052b0\",\"end\":\"0x1800052bd\",\"size\":13,\"type\":0,\"successors\":[\"0x1800052bd\"],\"predecessors\":[\"0x180005240\"]},{\"start\":\"0x1800052bd\",\"end\":\"0x18000533b\",\"size\":126,\"type\":2,\"successors\":[],\"predecessors\":[\"0x1800052a1\",\"0x1800052b0\"]}],\"basic_block_count\":4,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180006320\",\"addr\":\"0x180006320\",\"name\":\"sub_180006320\",\"analysis\":{\"size\":\"0x2a8\",\"prototype\":\"__int64 __fastcall(_QWORD, _QWORD)\",\"decompile\":\"char __fastcall sub_180006320(_DWORD *a1, __int64 *a2)\\n{\\n  __int64 v4; // rax\\n  __int64 v5; // rax\\n  __m128i si128; // xmm1\\n  __m128i v7; // xmm0\\n  __int64 v8; // rax\\n  __int64 v9; // rax\\n  __int64 v10; // rax\\n  _QWORD v12[2]; // [rsp+30h] [rbp-D0h] BYREF\\n  _QWORD v13[4]; // [rsp+40h] [rbp-C0h] BYREF\\n  __m256i v14; // [rsp+60h] [rbp-A0h]\\n  _QWORD v15[3]; // [rsp+88h] [rbp-78h] BYREF\\n  _QWORD v16[4]; // [rsp+A0h] [rbp-60h] BYREF\\n  __m256i v17; // [rsp+C0h] [rbp-40h] BYREF\\n  __m256i v18; // [rsp+E0h] [rbp-20h]\\n  __m128i v19; // [rsp+100h] [rbp+0h]\\n  _DWORD v20[6]; // [rsp+110h] [rbp+10h] BYREF\\n\\n  if ( (*(int (__fastcall **)(__int64 *, void *, __int64, _QWORD, _DWORD *))(*a2 + 96))( /*0x18000636c*/\\n         a1: a2,\\n         a2: &unk_18007B760,\\n         a3: 16512,\\n         a4: 0,\\n         a5: a1 + 20) < 0 )\\n    return 0; /*0x18000636c*/\\n  if ( (*(unsigned __int8 (__fastcall **)(_DWORD *, __int64 *))(*(_QWORD *)a1 + 16LL))(a1, a2) == 0 ) /*0x180006380*/\\n    return 0; /*0x180006380*/\\n  *(__int64 *)((char *)&v17.m256i_i64[1] + 4) = 6; /*0x180006388*/\\n  v17.m256i_i32[2] = 0; /*0x180006397*/\\n  v17.m256i_i64[0] = (__int64)\\\"myPOSITION\\\"; /*0x18000639a*/\\n  v18.m256i_i64[0] = (__int64)\\\"myTEXCOORD\\\"; /*0x1800063ae*/\\n  v4 = *a2; /*0x1800063b9*/\\n  *(__int64 *)((char *)&v17.m256i_i64[2] + 4) = 0; /*0x1800063c6*/\\n  v17.m256i_i32[7] = 0; /*0x1800063cd*/\\n  v18.m256i_i32[2] = 0; /*0x1800063d0*/\\n  *(__int64 *)((char *)&v18.m256i_i64[1] + 4) = 16; /*0x1800063d3*/\\n  *(__int64 *)((char *)&v18.m256i_i64[2] + 4) = 12; /*0x1800063db*/\\n  v18.m256i_i32[7] = 0; /*0x1800063e3*/\\n  if ( (*(int (__fastcall **)(__int64 *, __m256i *, __int64, void *, __int64, _DWORD *))(v4 + 88))( /*0x1800063f4*/\\n         a1: a2,\\n         a2: &v17,\\n         a3: 2,\\n         a4: &unk_18007B760,\\n         a5: 16512,\\n         a6: a1 + 24) < 0 )\\n    return 0; /*0x1800063f4*/\\n  v5 = *a2; /*0x180006420*/\\n  *(__m128i *)((char *)&v14.m256i_u64[1] + 4) = _mm_load_si128((const __m128i *)&xmmword_1800A26F0); /*0x180006423*/\\n  v14.m256i_i32[0] = 0; /*0x180006428*/\\n  *(__m128i *)v17.m256i_i8 = _mm_load_si128((const __m128i *)&xmmword_1800A2600); /*0x18000642c*/\\n  *(__int64 *)((char *)v14.m256i_i64 + 4) = 0x100000001LL; /*0x180006430*/\\n  v14.m256i_i32[7] = -8388609; /*0x180006445*/\\n  *(_OWORD *)&v17.m256i_u64[2] = *(_OWORD *)v14.m256i_i8; /*0x180006452*/\\n  *(_OWORD *)v18.m256i_i8 = *(_OWORD *)&v14.m256i_u64[2]; /*0x180006456*/\\n  v18.m256i_i32[4] = 2139095039; /*0x18000645a*/\\n  if ( (*(int (__fastcall **)(__int64 *, __m256i *, _DWORD *))(v5 + 184))(a1: a2, a2: &v17, a3: a1 + 32) < 0 ) /*0x180006467*/\\n    return 0; /*0x180006467*/\\n  si128 = _mm_load_si128((const __m128i *)&xmmword_1800A25C0); /*0x180006479*/\\n  *(__m128i *)v17.m256i_i8 = _mm_load_si128((const __m128i *)&xmmword_1800A2510); /*0x180006485*/\\n  v7 = _mm_load_si128((const __m128i *)&xmmword_1800A2730); /*0x18000648e*/\\n  a1[2] = 6; /*0x18000649a*/\\n  v12[0] = &v17; /*0x1800064a4*/\\n  v8 = *a2; /*0x1800064a9*/\\n  *(__m128i *)v18.m256i_i8 = v7; /*0x1800064ac*/\\n  *(__m128i *)&v17.m256i_u64[2] = si128; /*0x1800064b8*/\\n  v19 = _mm_load_si128((const __m128i *)&xmmword_1800A25B0); /*0x1800064c4*/\\n  *(__m128i *)&v18.m256i_u64[2] = _mm_load_si128((const __m128i *)&xmmword_1800A26E0); /*0x1800064c8*/\\n  v20[0] = 0; /*0x1800064cc*/\\n  v20[1] = 1; /*0x1800064cf*/\\n  v20[2] = 2; /*0x1800064d6*/\\n  v20[3] = 1; /*0x1800064dd*/\\n  v20[4] = 3; /*0x1800064e4*/\\n  v20[5] = 2; /*0x1800064eb*/\\n  v16[0] = 80; /*0x1800064f2*/\\n  v16[1] = 1; /*0x1800064fa*/\\n  v16[2] = 0; /*0x180006502*/\\n  v12[1] = 0; /*0x180006506*/\\n  if ( (*(int (__fastcall **)(__int64 *, _QWORD *, _QWORD *, _DWORD *))(v8 + 24))(a1: a2, a2: v16, a3: v12, a4: a1 + 26) < 0 ) /*0x180006510*/\\n    return 0; /*0x180006510*/\\n  v15[0] = 24; /*0x18000651a*/\\n  v13[0] = v20; /*0x180006522*/\\n  v9 = *a2; /*0x18000652b*/\\n  *(_OWORD *)&v15[1] = 2u; /*0x180006537*/\\n  v13[1] = 0; /*0x180006546*/\\n  if ( (*(int (__fastcall **)(__int64 *, _QWORD *, _QWORD *, _DWORD *))(v9 + 24))(a1: a2, a2: v15, a3: v13, a4: a1 + 28) < 0 ) /*0x180006550*/\\n    return 0; /*0x180006550*/\\n  v10 = *a2; /*0x180006552*/\\n  v15[0] = 0x200000080LL; /*0x180006567*/\\n  LODWORD(v15[1]) = 4; /*0x180006571*/\\n  *(_QWORD *)((char *)&v15[1] + 4) = 0x10000; /*0x180006578*/\\n  if ( (*(int (__fastcall **)(__int64 *, _QWORD *, _QWORD, _DWORD *))(v10 + 24))(a1: a2, a2: v15, a3: 0, a4: a1 + 30) < 0 ) /*0x180006585*/\\n  {\\n    MessageBoxW(hWnd: nullptr, lpText: L\\\"device->CreateBuffer\\\", lpCaption: L\\\"Error\\\", uType: 0x10u); /*0x18000659d*/\\n    return 0; /*0x1800065c3*/\\n  }\\n  return 1; /*0x1800065a5*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180006320  mov [rsp-8+arg_10], rbx\",\"180006325  push rbp\",\"180006326  push rsi\",\"180006327  push rdi\",\"180006328  lea rbp, [rsp-30h]\",\"18000632d  sub rsp, 130h\",\"180006334  mov rax, cs:__security_cookie\",\"18000633b  xor rax, rsp\",\"18000633e  mov [rbp+40h+var_18], rax\",\"180006342  mov rbx, rdx\",\"180006345  mov rdi, rcx\",\"180006348  lea rdx, [rcx+50h]\",\"18000634c  xor r9d, r9d\",\"18000634f  mov [rsp+140h+var_120], rdx\",\"180006354  mov r8d, 4080h\",\"18000635a  lea rdx, unk_18007B760\",\"180006361  mov rcx, rbx\",\"180006364  mov rax, [rbx]\",\"180006367  call qword ptr [rax+60h]\",\"18000636a  test eax, eax\",\"18000636c  js loc_1800065A3\",\"180006372  mov rax, [rdi]\",\"180006375  mov rdx, rbx\",\"180006378  mov rcx, rdi\",\"18000637b  call qword ptr [rax+10h]\",\"18000637e  test al, al\",\"180006380  jz loc_1800065A3\",\"180006386  xor esi, esi\",\"180006388  mov qword ptr [rbp+40h+var_80+0Ch], 6\",\"180006390  lea rax, aMyposition; \\\"myPOSITION\\\"\",\"180006397  mov dword ptr [rbp+40h+var_80+8], esi\",\"18000639a  mov qword ptr [rbp+40h+var_80], rax\",\"18000639e  lea rcx, [rdi+60h]\",\"1800063a2  mov [rsp+140h+var_118], rcx\",\"1800063a7  lea rax, aMytexcoord; \\\"myTEXCOORD\\\"\",\"1800063ae  mov qword ptr [rbp+40h+var_60], rax\",\"1800063b2  lea r9, unk_18007B760\",\"1800063b9  mov rax, [rbx]\",\"1800063bc  lea rdx, [rbp+40h+var_80]\",\"1800063c0  mov r8d, 2\",\"1800063c6  mov [rbp+40h+var_6C], rsi\",\"1800063ca  mov rcx, rbx\",\"1800063cd  mov [rbp+40h+var_64], esi\",\"1800063d0  mov dword ptr [rbp+40h+var_60+8], esi\",\"1800063d3  mov qword ptr [rbp+40h+var_60+0Ch], 10h\",\"1800063db  mov qword ptr [rbp+40h+var_50+4], 0Ch\",\"1800063e3  mov dword ptr [rbp+40h+var_50+0Ch], esi\",\"1800063e6  mov [rsp+140h+var_120], 4080h\",\"1800063ef  call qword ptr [rax+58h]\",\"1800063f2  test eax, eax\",\"1800063f4  js loc_1800065A3\",\"1800063fa  movdqa xmm1, cs:xmmword_1800A2600\",\"180006402  lea r8, [rdi+80h]\",\"180006409  movdqa xmm0, cs:xmmword_1800A26F0\",\"180006411  lea rdx, [rbp+40h+var_80]\",\"180006415  movss xmm2, cs:dword_1800A24EC\",\"18000641d  mov rcx, rbx\",\"180006420  mov rax, [rbx]\",\"180006423  movups [rsp+140h+var_E0+0Ch], xmm0\",\"180006428  mov dword ptr [rsp+140h+var_E0], esi\",\"18000642c  movups [rbp+40h+var_80], xmm1\",\"180006430  mov dword ptr [rsp+140h+var_E0+4], 1\",\"180006438  mov dword ptr [rsp+140h+var_E0+8], 1\",\"180006440  movups xmm0, [rsp+140h+var_E0]\",\"180006445  mov [rsp+140h+var_C4], 0FF7FFFFFh\",\"18000644d  movups xmm1, xmmword ptr [rsp+70h]\",\"180006452  movups xmmword ptr [rbp-30h], xmm0\",\"180006456  movups [rbp+40h+var_60], xmm1\",\"18000645a  movss dword ptr [rbp+40h+var_50], xmm2\",\"18000645f  call qword ptr [rax+0B8h]\",\"180006465  test eax, eax\",\"180006467  js loc_1800065A3\",\"18000646d  movdqa xmm0, cs:xmmword_1800A2510\",\"180006475  lea rax, [rbp+40h+var_80]\",\"180006479  movdqa xmm1, cs:xmmword_1800A25C0\",\"180006481  lea r9, [rdi+68h]\",\"180006485  movaps [rbp+40h+var_80], xmm0\",\"180006489  lea r8, [rsp+140h+var_110]\",\"18000648e  movdqa xmm0, cs:xmmword_1800A2730\",\"180006496  lea rdx, [rbp+40h+var_A0]\",\"18000649a  mov dword ptr [rdi+8], 6\",\"1800064a1  mov rcx, rbx\",\"1800064a4  mov [rsp+140h+var_110], rax\",\"1800064a9  mov rax, [rbx]\",\"1800064ac  movaps [rbp+40h+var_60], xmm0\",\"1800064b0  movdqa xmm0, cs:xmmword_1800A25B0\",\"1800064b8  movaps xmmword ptr [rbp-30h], xmm1\",\"1800064bc  movdqa xmm1, cs:xmmword_1800A26E0\",\"1800064c4  movaps [rbp+40h+var_40], xmm0\",\"1800064c8  movaps [rbp+40h+var_50], xmm1\",\"1800064cc  mov [rbp+40h+var_30], esi\",\"1800064cf  mov [rbp+40h+var_2C], 1\",\"1800064d6  mov [rbp+40h+var_28], 2\",\"1800064dd  mov [rbp+40h+var_24], 1\",\"1800064e4  mov [rbp+40h+var_20], 3\",\"1800064eb  mov [rbp+40h+var_1C], 2\",\"1800064f2  mov [rbp+40h+var_A0], 50h ; 'P'\",\"1800064fa  mov [rbp+40h+var_98], 1\",\"180006502  mov [rbp+40h+var_90], rsi\",\"180006506  mov [rsp+140h+var_108], rsi\",\"18000650b  call qword ptr [rax+18h]\",\"18000650e  test eax, eax\",\"180006510  js loc_1800065A3\",\"180006516  lea rax, [rbp+40h+var_30]\",\"18000651a  mov [rbp+40h+var_B8], 18h\",\"180006522  mov [rsp+140h+var_100], rax\",\"180006527  lea r9, [rdi+70h]\",\"18000652b  mov rax, [rbx]\",\"18000652e  lea r8, [rsp+140h+var_100]\",\"180006533  lea rdx, [rbp+40h+var_B8]\",\"180006537  mov [rbp+40h+var_B0], 2\",\"18000653f  mov rcx, rbx\",\"180006542  mov [rbp+40h+var_A8], rsi\",\"180006546  mov [rsp+140h+var_F8], rsi\",\"18000654b  call qword ptr [rax+18h]\",\"18000654e  test eax, eax\",\"180006550  js short loc_1800065A3\",\"180006552  mov rax, [rbx]\",\"180006555  lea r9, [rdi+78h]\",\"180006559  xor r8d, r8d\"],\"instruction_count\":120,\"truncated\":true},\"xrefs\":{\"to\":[{\"addr\":\"0x180021b17\",\"type\":\"code\"},{\"addr\":\"0x180021e95\",\"type\":\"code\"},{\"addr\":\"0x180036358\",\"type\":\"code\"},{\"addr\":\"0x18003663d\",\"type\":\"code\"},{\"addr\":\"0x18038d3b4\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180006325\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":5,\"from_count\":1},\"callers\":[{\"addr\":\"0x180021800\",\"name\":\"sub_180021800\",\"size\":\"0x354\"},{\"addr\":\"0x180021db0\",\"name\":\"sub_180021DB0\",\"size\":\"0x10d\"},{\"addr\":\"0x180036080\",\"name\":\"sub_180036080\",\"size\":\"0x319\"},{\"addr\":\"0x180036560\",\"name\":\"sub_180036560\",\"size\":\"0x106\"}],\"caller_count\":4,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x1800642e8\",\"name\":\"MessageBoxW\",\"type\":\"external\"},{\"addr\":\"0x180038970\",\"name\":\"__security_check_cookie\",\"type\":\"internal\"}],\"callee_count\":2,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x180072f68\",\"length\":10,\"string\":\"myPOSITION\"},{\"addr\":\"0x180072f78\",\"length\":10,\"string\":\"myTEXCOORD\"}],\"string_ref_count\":2,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x18000632d\",\"value\":\"0x130\",\"decimal\":304},{\"addr\":\"0x180006354\",\"value\":\"0x4080\",\"decimal\":16512},{\"addr\":\"0x180006388\",\"value\":\"0x6\",\"decimal\":6},{\"addr\":\"0x1800063c0\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x1800063d3\",\"value\":\"0x10\",\"decimal\":16},{\"addr\":\"0x1800063db\",\"value\":\"0xc\",\"decimal\":12},{\"addr\":\"0x1800063e6\",\"value\":\"0x4080\",\"decimal\":16512},{\"addr\":\"0x180006430\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x180006438\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x180006445\",\"value\":\"0xffffffffff7fffff\",\"decimal\":18446744073701163007},{\"addr\":\"0x18000649a\",\"value\":\"0x6\",\"decimal\":6},{\"addr\":\"0x1800064cf\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x1800064d6\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x1800064dd\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x1800064e4\",\"value\":\"0x3\",\"decimal\":3},{\"addr\":\"0x1800064eb\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x1800064f2\",\"value\":\"0x50\",\"decimal\":80},{\"addr\":\"0x1800064fa\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18000651a\",\"value\":\"0x18\",\"decimal\":24},{\"addr\":\"0x180006537\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x18000655c\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x180006567\",\"value\":\"0x80\",\"decimal\":128},{\"addr\":\"0x180006571\",\"value\":\"0x4\",\"decimal\":4},{\"addr\":\"0x180006578\",\"value\":\"0x10000\",\"decimal\":65536},{\"addr\":\"0x180006587\",\"value\":\"0x10\",\"decimal\":16},{\"addr\":\"0x1800065b9\",\"value\":\"0x130\",\"decimal\":304},{\"addr\":\"0x1800065c4\",\"value\":\"0x1\",\"decimal\":1}],\"constant_count\":27,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180006320\",\"end\":\"0x180006372\",\"size\":82,\"type\":0,\"successors\":[\"0x180006372\",\"0x1800065a3\"],\"predecessors\":[]},{\"start\":\"0x180006372\",\"end\":\"0x180006386\",\"size\":20,\"type\":0,\"successors\":[\"0x180006386\",\"0x1800065a3\"],\"predecessors\":[\"0x180006320\"]},{\"start\":\"0x180006386\",\"end\":\"0x1800063fa\",\"size\":116,\"type\":0,\"successors\":[\"0x1800063fa\",\"0x1800065a3\"],\"predecessors\":[\"0x180006372\"]},{\"start\":\"0x1800063fa\",\"end\":\"0x18000646d\",\"size\":115,\"type\":0,\"successors\":[\"0x18000646d\",\"0x1800065a3\"],\"predecessors\":[\"0x180006386\"]},{\"start\":\"0x18000646d\",\"end\":\"0x180006516\",\"size\":169,\"type\":0,\"successors\":[\"0x180006516\",\"0x1800065a3\"],\"predecessors\":[\"0x1800063fa\"]},{\"start\":\"0x180006516\",\"end\":\"0x180006552\",\"size\":60,\"type\":0,\"successors\":[\"0x180006552\",\"0x1800065a3\"],\"predecessors\":[\"0x18000646d\"]},{\"start\":\"0x180006552\",\"end\":\"0x180006587\",\"size\":53,\"type\":0,\"successors\":[\"0x180006587\",\"0x1800065c4\"],\"predecessors\":[\"0x180006516\"]},{\"start\":\"0x180006587\",\"end\":\"0x1800065a3\",\"size\":28,\"type\":0,\"successors\":[\"0x1800065a3\"],\"predecessors\":[\"0x180006552\"]},{\"start\":\"0x1800065a3\",\"end\":\"0x1800065a5\",\"size\":2,\"type\":0,\"successors\":[\"0x1800065a5\"],\"predecessors\":[\"0x180006320\",\"0x180006372\",\"0x180006386\",\"0x1800063fa\",\"0x18000646d\",\"0x180006516\",\"0x180006587\"]},{\"start\":\"0x1800065a5\",\"end\":\"0x1800065c4\",\"size\":31,\"type\":2,\"successors\":[],\"predecessors\":[\"0x1800065a3\",\"0x1800065c4\"]},{\"start\":\"0x1800065c4\",\"end\":\"0x1800065c8\",\"size\":4,\"type\":0,\"successors\":[\"0x1800065a5\"],\"predecessors\":[\"0x180006552\"]}],\"basic_block_count\":11,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180006740\",\"addr\":\"0x180006740\",\"name\":\"sub_180006740\",\"analysis\":{\"size\":\"0x125\",\"prototype\":null,\"decompile\":\"char __fastcall sub_180006740(__int64 a1, __int64 a2, __int64 *a3, __int64 a4, __int64 a5)\\n{\\n  __int64 v5; // rax\\n  char result; // al\\n  int v10; // [rsp+40h] [rbp+8h] BYREF\\n  __int64 v11; // [rsp+48h] [rbp+10h] BYREF\\n\\n  v11 = a2; /*0x18000674b*/\\n  v5 = *a3; /*0x180006754*/\\n  v10 = 20; /*0x18000675d*/\\n  LODWORD(v11) = 0; /*0x180006768*/\\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, __int64, int *, __int64 *))(v5 + 144))( /*0x18000678f*/\\n    a1: a3,\\n    a2: 0,\\n    a3: 1,\\n    a4: a1 + 104,\\n    a5: &v10,\\n    a6: &v11);\\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, _QWORD))(*a3 + 152))( /*0x1800067a8*/\\n    a1: a3,\\n    a2: *(_QWORD *)(a1 + 112),\\n    a3: 42,\\n    a4: 0);\\n  (*(void (__fastcall **)(__int64 *, __int64))(*a3 + 192))(a1: a3, a2: 4); /*0x1800067b9*/\\n  (*(void (__fastcall **)(__int64 *, _QWORD))(*a3 + 136))(a1: a3, a2: *(_QWORD *)(a1 + 96)); /*0x1800067c9*/\\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, __int64))(*a3 + 80))(a1: a3, a2: 0, a3: 1, a4: a1 + 128); /*0x1800067e4*/\\n  (*(void (__fastcall **)(__int64 *, _QWORD, _QWORD, _QWORD))(*a3 + 88))(a1: a3, a2: *(_QWORD *)(a1 + 80), a3: 0, a4: 0); /*0x1800067f7*/\\n  (*(void (__fastcall **)(__int64 *, _QWORD, _QWORD, _QWORD))(*a3 + 72))(a1: a3, a2: *(_QWORD *)(a1 + 88), a3: 0, a4: 0); /*0x18000680a*/\\n  (*(void (__fastcall **)(__int64, __int64 *, __int64))(*(_QWORD *)a1 + 24LL))(a1, a2: a3, a3: a4); /*0x180006819*/\\n  result = (*(__int64 (__fastcall **)(__int64, __int64 *, __int64))(*(_QWORD *)a1 + 32LL))(a1, a2: a3, a3: a5); /*0x18000682a*/\\n  if ( result != 0 ) /*0x18000682f*/\\n  {\\n    (*(void (__fastcall **)(__int64 *, _QWORD, _QWORD, _QWORD))(*a3 + 96))( /*0x180006850*/\\n      a1: a3,\\n      a2: *(unsigned int *)(a1 + 8),\\n      a3: 0,\\n      a4: 0);\\n    return 1; /*0x180006858*/\\n  }\\n  return result; /*0x180006831*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180006740  mov r11, rsp\",\"180006743  mov [r11+18h], rbx\",\"180006747  mov [r11+20h], rsi\",\"18000674b  mov [r11+10h], rdx\",\"18000674f  push rdi\",\"180006750  sub rsp, 30h\",\"180006754  mov rax, [r8]\",\"180006757  mov rsi, rcx\",\"18000675a  mov rdi, r8\",\"18000675d  mov [rsp+38h+arg_0], 14h\",\"180006765  mov rbx, r9\",\"180006768  mov dword ptr [rsp+38h+arg_8], 0\",\"180006770  lea r9, [rcx+68h]\",\"180006774  xor edx, edx\",\"180006776  lea rcx, [r11+10h]\",\"18000677a  mov r8d, 1\",\"180006780  mov [r11-10h], rcx\",\"180006784  lea rcx, [r11+8]\",\"180006788  mov [r11-18h], rcx\",\"18000678c  mov rcx, rdi\",\"18000678f  call qword ptr [rax+90h]\",\"180006795  mov rax, [rdi]\",\"180006798  xor r9d, r9d\",\"18000679b  mov rdx, [rsi+70h]\",\"18000679f  mov r8d, 2Ah ; '*'\",\"1800067a5  mov rcx, rdi\",\"1800067a8  call qword ptr [rax+98h]\",\"1800067ae  mov rax, [rdi]\",\"1800067b1  mov edx, 4\",\"1800067b6  mov rcx, rdi\",\"1800067b9  call qword ptr [rax+0C0h]\",\"1800067bf  mov rax, [rdi]\",\"1800067c2  mov rcx, rdi\",\"1800067c5  mov rdx, [rsi+60h]\",\"1800067c9  call qword ptr [rax+88h]\",\"1800067cf  mov rax, [rdi]\",\"1800067d2  lea r9, [rsi+80h]\",\"1800067d9  xor edx, edx\",\"1800067db  mov r8d, 1\",\"1800067e1  mov rcx, rdi\",\"1800067e4  call qword ptr [rax+50h]\",\"1800067e7  mov rax, [rdi]\",\"1800067ea  xor r9d, r9d\",\"1800067ed  mov rdx, [rsi+50h]\",\"1800067f1  xor r8d, r8d\",\"1800067f4  mov rcx, rdi\",\"1800067f7  call qword ptr [rax+58h]\",\"1800067fa  mov rax, [rdi]\",\"1800067fd  xor r9d, r9d\",\"180006800  mov rdx, [rsi+58h]\",\"180006804  xor r8d, r8d\",\"180006807  mov rcx, rdi\",\"18000680a  call qword ptr [rax+48h]\",\"18000680d  mov rax, [rsi]\",\"180006810  mov r8, rbx\",\"180006813  mov rdx, rdi\",\"180006816  mov rcx, rsi\",\"180006819  call qword ptr [rax+18h]\",\"18000681c  mov rax, [rsi]\",\"18000681f  mov rdx, rdi\",\"180006822  mov r8, [rsp+38h+arg_20]\",\"180006827  mov rcx, rsi\",\"18000682a  call qword ptr [rax+20h]\",\"18000682d  test al, al\",\"18000682f  jnz short loc_180006841\",\"180006831  mov rbx, [rsp+38h+arg_10]\",\"180006836  mov rsi, [rsp+38h+arg_18]\",\"18000683b  add rsp, 30h\",\"18000683f  pop rdi\",\"180006840  retn\",\"180006841  mov rax, [rdi]\",\"180006844  xor r9d, r9d\",\"180006847  mov edx, [rsi+8]\",\"18000684a  xor r8d, r8d\",\"18000684d  mov rcx, rdi\",\"180006850  call qword ptr [rax+60h]\",\"180006853  mov rbx, [rsp+38h+arg_10]\",\"180006858  mov al, 1\",\"18000685a  mov rsi, [rsp+38h+arg_18]\",\"18000685f  add rsp, 30h\",\"180006863  pop rdi\",\"180006864  retn\"],\"instruction_count\":82,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x180021dde\",\"type\":\"code\"},{\"addr\":\"0x180021eb2\",\"type\":\"code\"},{\"addr\":\"0x180036656\",\"type\":\"code\"},{\"addr\":\"0x18038d3d8\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180006743\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":4,\"from_count\":1},\"callers\":[{\"addr\":\"0x180021db0\",\"name\":\"sub_180021DB0\",\"size\":\"0x10d\"},{\"addr\":\"0x180036560\",\"name\":\"sub_180036560\",\"size\":\"0x106\"}],\"caller_count\":2,\"callers_truncated\":false,\"callees\":[],\"callee_count\":0,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180006750\",\"value\":\"0x30\",\"decimal\":48},{\"addr\":\"0x18000675d\",\"value\":\"0x14\",\"decimal\":20},{\"addr\":\"0x180006768\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x18000677a\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18000679f\",\"value\":\"0x2a\",\"decimal\":42},{\"addr\":\"0x1800067b1\",\"value\":\"0x4\",\"decimal\":4},{\"addr\":\"0x1800067db\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18000683b\",\"value\":\"0x30\",\"decimal\":48},{\"addr\":\"0x180006858\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x18000685f\",\"value\":\"0x30\",\"decimal\":48}],\"constant_count\":10,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180006740\",\"end\":\"0x180006831\",\"size\":241,\"type\":0,\"successors\":[\"0x180006831\",\"0x180006841\"],\"predecessors\":[]},{\"start\":\"0x180006831\",\"end\":\"0x180006841\",\"size\":16,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180006740\"]},{\"start\":\"0x180006841\",\"end\":\"0x180006865\",\"size\":36,\"type\":2,\"successors\":[],\"predecessors\":[\"0x180006740\"]}],\"basic_block_count\":3,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "0x180004FD0",
+          "addr": "0x180004fd0",
+          "name": "sub_180004FD0",
+          "analysis": {
+            "size": "0x190",
+            "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+            "decompile": "__int64 __fastcall sub_180004FD0(__int64 a1, __int64 a2, char a3, char a4)\n{\n  _OWORD *v8; // rbx\n  _DWORD *v9; // rcx\n  int v10; // r8d\n  _BYTE v12[32]; // [rsp+30h] [rbp-48h] BYREF\n\n  sub_180004980(a1: v12); /*0x180005009*/\n  v8 = (_OWORD *)sub_180038990(a1: 172); /*0x180005019*/\n  sub_180004F00(a1: v8); /*0x180005024*/\n  v9[35] = 90; /*0x180005029*/\n  v9[36] = 127; /*0x180005033*/\n  v9[37] = 165; /*0x18000503d*/\n  v9[38] = 105; /*0x180005047*/\n  v9[39] = 247; /*0x180005051*/\n  v9[40] = 61; /*0x18000505b*/\n  v9[41] = 232; /*0x180005065*/\n  v9[42] = 150; /*0x18000506f*/\n  if ( (unsigned __int8)sub_18000FEC0(a1: v9, a2: v12) != 0 ) /*0x18000508a*/\n  {\n    *(_OWORD *)(a1 + 16) = *v8; /*0x18000508f*/\n    *(_OWORD *)(a1 + 32) = v8[1]; /*0x180005097*/\n    *(_OWORD *)(a1 + 48) = v8[2]; /*0x18000509f*/\n    *(_OWORD *)(a1 + 64) = v8[3]; /*0x1800050a7*/\n    *(_OWORD *)(a1 + 80) = v8[4]; /*0x1800050af*/\n    *(_OWORD *)(a1 + 96) = v8[5]; /*0x1800050b7*/\n    *(_OWORD *)(a1 + 112) = v8[6]; /*0x1800050bf*/\n    *(_OWORD *)(a1 + 128) = v8[7]; /*0x1800050c7*/\n    *(_QWORD *)(a1 + 144) = *((_QWORD *)v8 + 16); /*0x1800050d6*/\n    *(_DWORD *)(a1 + 152) = *((_DWORD *)v8 + 34); /*0x1800050e4*/\n  }\n  if ( a3 != 0 ) /*0x1800050ed*/\n    *(float *)(a1 + 16) = *(float *)(a1 + 148) + *(float *)(a1 + 16); /*0x1800050fc*/\n  if ( a4 != 0 ) /*0x180005104*/\n  {\n    v10 = *(_DWORD *)(a1 + 112); /*0x180005106*/\n    *(_DWORD *)(a1 + 112) = *(_DWORD *)(a1 + 116); /*0x18000510d*/\n    *(_DWORD *)(a1 + 116) = v10; /*0x180005110*/\n  }\n  sub_180005240(a1); /*0x180005117*/\n  sub_1800389CC(lpMem: v8); /*0x180005125*/\n  sub_180004B00(a1: v12); /*0x180005130*/\n  return sub_180004B00(a1: a2); /*0x18000513e*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180004fd0  mov [rsp+arg_10], rbx",
+                "180004fd5  mov [rsp+arg_18], rbp",
+                "180004fda  push rsi",
+                "180004fdb  push rdi",
+                "180004fdc  push r14",
+                "180004fde  sub rsp, 60h",
+                "180004fe2  mov rax, cs:__security_cookie",
+                "180004fe9  xor rax, rsp",
+                "180004fec  mov [rsp+78h+var_28], rax",
+                "180004ff1  movzx ebp, r9b",
+                "180004ff5  movzx r14d, r8b",
+                "180004ff9  mov rsi, rdx",
+                "180004ffc  mov rdi, rcx",
+                "180004fff  mov [rsp+78h+var_50], rdx",
+                "180005004  lea rcx, [rsp+78h+var_48]",
+                "180005009  call sub_180004980",
+                "18000500e  nop",
+                "18000500f  mov ecx, 0ACh",
+                "180005014  call sub_180038990",
+                "180005019  mov rbx, rax",
+                "18000501c  mov [rsp+78h+var_58], rax",
+                "180005021  mov rcx, rax",
+                "180005024  call sub_180004F00",
+                "180005029  mov dword ptr [rcx+8Ch], 5Ah ; 'Z'",
+                "180005033  mov dword ptr [rcx+90h], 7Fh",
+                "18000503d  mov dword ptr [rcx+94h], 0A5h",
+                "180005047  mov dword ptr [rcx+98h], 69h ; 'i'",
+                "180005051  mov dword ptr [rcx+9Ch], 0F7h",
+                "18000505b  mov dword ptr [rcx+0A0h], 3Dh ; '='",
+                "180005065  mov dword ptr [rcx+0A4h], 0E8h",
+                "18000506f  mov dword ptr [rcx+0A8h], 96h",
+                "180005079  mov [rsp+78h+var_58], rcx",
+                "18000507e  lea rdx, [rsp+78h+var_48]",
+                "180005083  call sub_18000FEC0",
+                "180005088  test al, al",
+                "18000508a  jz short loc_1800050EA",
+                "18000508c  movups xmm0, xmmword ptr [rbx]",
+                "18000508f  movups xmmword ptr [rdi+10h], xmm0",
+                "180005093  movups xmm1, xmmword ptr [rbx+10h]",
+                "180005097  movups xmmword ptr [rdi+20h], xmm1",
+                "18000509b  movups xmm0, xmmword ptr [rbx+20h]",
+                "18000509f  movups xmmword ptr [rdi+30h], xmm0",
+                "1800050a3  movups xmm1, xmmword ptr [rbx+30h]",
+                "1800050a7  movups xmmword ptr [rdi+40h], xmm1",
+                "1800050ab  movups xmm0, xmmword ptr [rbx+40h]",
+                "1800050af  movups xmmword ptr [rdi+50h], xmm0",
+                "1800050b3  movups xmm1, xmmword ptr [rbx+50h]",
+                "1800050b7  movups xmmword ptr [rdi+60h], xmm1",
+                "1800050bb  movups xmm0, xmmword ptr [rbx+60h]",
+                "1800050bf  movups xmmword ptr [rdi+70h], xmm0",
+                "1800050c3  movups xmm1, xmmword ptr [rbx+70h]",
+                "1800050c7  movups xmmword ptr [rdi+80h], xmm1",
+                "1800050ce  movsd xmm0, qword ptr [rbx+80h]",
+                "1800050d6  movsd qword ptr [rdi+90h], xmm0",
+                "1800050de  mov eax, [rbx+88h]",
+                "1800050e4  mov [rdi+98h], eax",
+                "1800050ea  test r14b, r14b",
+                "1800050ed  jz short loc_180005101",
+                "1800050ef  movss xmm0, dword ptr [rdi+94h]",
+                "1800050f7  addss xmm0, dword ptr [rdi+10h]",
+                "1800050fc  movss dword ptr [rdi+10h], xmm0",
+                "180005101  test bpl, bpl",
+                "180005104  jz short loc_180005114",
+                "180005106  mov r8d, [rdi+70h]",
+                "18000510a  mov eax, [rdi+74h]",
+                "18000510d  mov [rdi+70h], eax",
+                "180005110  mov [rdi+74h], r8d",
+                "180005114  mov rcx, rdi",
+                "180005117  call sub_180005240",
+                "18000511c  nop",
+                "18000511d  mov edx, 0ACh",
+                "180005122  mov rcx, rbx; lpMem",
+                "180005125  call sub_1800389CC",
+                "18000512a  nop",
+                "18000512b  lea rcx, [rsp+78h+var_48]",
+                "180005130  call sub_180004B00",
+                "180005135  nop",
+                "180005136  mov rcx, rsi",
+                "180005139  call sub_180004B00",
+                "18000513e  mov rcx, [rsp+78h+var_28]",
+                "180005143  xor rcx, rsp; StackCookie",
+                "180005146  call __security_check_cookie",
+                "18000514b  lea r11, [rsp+78h+var_18]",
+                "180005150  mov rbx, [r11+30h]",
+                "180005154  mov rbp, [r11+38h]",
+                "180005158  mov rsp, r11",
+                "18000515b  pop r14",
+                "18000515d  pop rdi",
+                "18000515e  pop rsi",
+                "18000515f  retn"
+              ],
+              "instruction_count": 90,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x180021c99",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180024ae9",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x18038d1f8",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180004fd5",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 3,
+              "from_count": 1
+            },
+            "callers": [
+              {
+                "addr": "0x180021c40",
+                "name": "sub_180021C40",
+                "size": "0x6e"
+              },
+              {
+                "addr": "0x180024a90",
+                "name": "sub_180024A90",
+                "size": "0x6e"
+              }
+            ],
+            "caller_count": 2,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180004f00",
+                "name": "sub_180004F00",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180038990",
+                "name": "sub_180038990",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180004b00",
+                "name": "sub_180004B00",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18000fec0",
+                "name": "sub_18000FEC0",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1800389cc",
+                "name": "sub_1800389CC",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180005240",
+                "name": "sub_180005240",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180004980",
+                "name": "sub_180004980",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180038970",
+                "name": "__security_check_cookie",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 8,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180004fde",
+                "value": "0x60",
+                "decimal": 96
+              },
+              {
+                "addr": "0x18000500f",
+                "value": "0xac",
+                "decimal": 172
+              },
+              {
+                "addr": "0x180005029",
+                "value": "0x5a",
+                "decimal": 90
+              },
+              {
+                "addr": "0x180005033",
+                "value": "0x7f",
+                "decimal": 127
+              },
+              {
+                "addr": "0x18000503d",
+                "value": "0xa5",
+                "decimal": 165
+              },
+              {
+                "addr": "0x180005047",
+                "value": "0x69",
+                "decimal": 105
+              },
+              {
+                "addr": "0x180005051",
+                "value": "0xf7",
+                "decimal": 247
+              },
+              {
+                "addr": "0x18000505b",
+                "value": "0x3d",
+                "decimal": 61
+              },
+              {
+                "addr": "0x180005065",
+                "value": "0xe8",
+                "decimal": 232
+              },
+              {
+                "addr": "0x18000506f",
+                "value": "0x96",
+                "decimal": 150
+              },
+              {
+                "addr": "0x18000511d",
+                "value": "0xac",
+                "decimal": 172
+              }
+            ],
+            "constant_count": 11,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180004fd0",
+                "end": "0x18000508c",
+                "size": 188,
+                "type": 0,
+                "successors": [
+                  "0x18000508c",
+                  "0x1800050ea"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x18000508c",
+                "end": "0x1800050ea",
+                "size": 94,
+                "type": 0,
+                "successors": [
+                  "0x1800050ea"
+                ],
+                "predecessors": [
+                  "0x180004fd0"
+                ]
+              },
+              {
+                "start": "0x1800050ea",
+                "end": "0x1800050ef",
+                "size": 5,
+                "type": 0,
+                "successors": [
+                  "0x1800050ef",
+                  "0x180005101"
+                ],
+                "predecessors": [
+                  "0x180004fd0",
+                  "0x18000508c"
+                ]
+              },
+              {
+                "start": "0x1800050ef",
+                "end": "0x180005101",
+                "size": 18,
+                "type": 0,
+                "successors": [
+                  "0x180005101"
+                ],
+                "predecessors": [
+                  "0x1800050ea"
+                ]
+              },
+              {
+                "start": "0x180005101",
+                "end": "0x180005106",
+                "size": 5,
+                "type": 0,
+                "successors": [
+                  "0x180005106",
+                  "0x180005114"
+                ],
+                "predecessors": [
+                  "0x1800050ea",
+                  "0x1800050ef"
+                ]
+              },
+              {
+                "start": "0x180005106",
+                "end": "0x180005114",
+                "size": 14,
+                "type": 0,
+                "successors": [
+                  "0x180005114"
+                ],
+                "predecessors": [
+                  "0x180005101"
+                ]
+              },
+              {
+                "start": "0x180005114",
+                "end": "0x180005160",
+                "size": 76,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180005101",
+                  "0x180005106"
+                ]
+              }
+            ],
+            "basic_block_count": 7,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180005340",
+          "addr": "0x180005340",
+          "name": "sub_180005340",
+          "analysis": {
+            "size": "0x432",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180005340(float *a1, __int64 a2, __int64 a3, __int64 a4, char a5)\n{\n  float v6; // xmm11_4\n  double v7; // xmm0_8\n  float v8; // xmm2_4\n  float v9; // xmm6_4\n  float v10; // xmm12_4\n  float v11; // xmm13_4\n  float v12; // xmm12_4\n  float v13; // xmm9_4\n  double v14; // xmm6_8\n  float v15; // xmm10_4\n  double v16; // xmm0_8\n  float v17; // xmm7_4\n  double v18; // xmm8_8\n  float v19; // xmm2_4\n  float v20; // xmm0_4\n  double v21; // xmm4_8\n  float v22; // xmm0_4\n  float v23; // xmm12_4\n  double v24; // xmm1_8\n  float v25; // xmm0_4\n  __int64 result; // rax\n  float v27; // xmm8_4\n  double v28; // xmm0_8\n  int v29; // xmm7_4\n  float v30; // xmm1_4\n  int v31; // edi\n  double v32; // xmm6_8\n  float v33; // xmm1_4\n  float v34; // xmm0_4\n  float v35; // [rsp+C8h] [rbp+10h]\n\n  v6 = sub_18005EE50() * a1[25]; /*0x1800053b4*/\n  v7 = sub_18005EE50(); /*0x1800053cd*/\n  v8 = a1[4]; /*0x1800053de*/\n  v9 = a1[12]; /*0x1800053e3*/\n  v10 = 1.0; /*0x1800053e8*/\n  v35 = v8; /*0x1800053fa*/\n  v11 = v7; /*0x180005403*/\n  if ( a5 != 0 ) /*0x180005408*/\n  {\n    v12 = a1[19]; /*0x180005417*/\n    v13 = a1[18]; /*0x180005426*/\n    v14 = 1.0 / a1[11]; /*0x18000542c*/\n    v15 = a1[5]; /*0x180005436*/\n    sub_18005E680(); /*0x18000543f*/\n    v16 = sub_18005E8D0(); /*0x180005444*/\n    v17 = a1[7]; /*0x180005449*/\n    v18 = v16; /*0x18000544e*/\n    v19 = sub_18005EE50() * a1[26]; /*0x18000548d*/\n    v20 = (float)((float)((float)((float)((float)(v19 - a1[16]) * v12) / v11) / v13) / v15) * fabs(v14) * a1[23] + v35; /*0x1800054c9*/\n    v21 = v20 /*0x180005549*/\n        + (1.0 / v11 - 1.0 / a1[20]) * v12 * ((float)((float)(v13 * v15) * 0.5) - v17 / v18 * 0.5) / v13 / v15 * a1[24];\n    v22 = (float)(v6 - a1[15]) * v12; /*0x18000554d*/\n    v23 = (float)((float)(v12 + v11) * v17) / v11; /*0x18000556a*/\n    v8 = (float)v21 + (float)((float)((float)((float)(v22 / v11) / v13) / v15) * a1[22]); /*0x180005579*/\n    v24 = 25.39999961853027 / (v23 * v18); /*0x180005586*/\n    v10 = (float)(v23 / v13) / v15; /*0x18000559d*/\n    v9 = v24 + a1[21]; /*0x1800055ac*/\n  }\n  *(float *)(*(_QWORD *)a1 + 24LL) = v8; /*0x1800055b7*/\n  sub_18005E680(); /*0x1800055c8*/\n  v25 = sub_18005E8D0() * (float)((float)(a1[5] / a1[10]) * v9); /*0x1800055f2*/\n  *(float *)(*(_QWORD *)a1 + 32LL) = v25; /*0x1800055f6*/\n  result = *((unsigned int *)a1 + 39); /*0x1800055fb*/\n  if ( (_DWORD)result == 1 ) /*0x180005604*/\n  {\n    *(float *)(*(_QWORD *)a1 + 80LL) = v10; /*0x180005610*/\n    v27 = (v6 - 0.0) / 130.0; /*0x180005622*/\n    v28 = sub_18005EF10(); /*0x18000562b*/\n    v29 = LODWORD(v28); /*0x180005630*/\n    sub_1800412C0(); /*0x180005645*/\n    v30 = sub_180041330(); /*0x18000565d*/\n    *(float *)(*(_QWORD *)a1 + 84LL) = v27; /*0x180005661*/\n    *(_DWORD *)(*(_QWORD *)a1 + 88LL) = v29; /*0x18000566a*/\n    result = *(_QWORD *)a1; /*0x18000566f*/\n    *(float *)(*(_QWORD *)a1 + 92LL) = v30; /*0x180005672*/\n  }\n  else if ( (_DWORD)result == 2 ) /*0x18000567f*/\n  {\n    if ( v6 >= 0.0 ) /*0x18000568c*/\n      v31 = v6 > 0.0; /*0x18000569b*/\n    else\n      v31 = -1; /*0x18000568e*/\n    v32 = sub_18005EE50(); /*0x1800056bc*/\n    sub_1800412C0(); /*0x1800056ce*/\n    v33 = sub_180041330(); /*0x180005701*/\n    v34 = v32 + 1.0 - ((float)(v11 / 100.0) - 4.5); /*0x18000571a*/\n    *(float *)(*(_QWORD *)a1 + 96LL) = v33 + (float)((v31 + 1) / 2); /*0x18000571e*/\n    *(float *)(*(_QWORD *)a1 + 100LL) = v34; /*0x180005726*/\n    *(float *)(*(_QWORD *)a1 + 104LL) = fabs(v6) / 130.0; /*0x18000572e*/\n    result = *(_QWORD *)a1; /*0x180005734*/\n    *(float *)(*(_QWORD *)a1 + 80LL) = v10; /*0x180005737*/\n  }\n  return result; /*0x18000573d*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180005340  mov rax, rsp",
+                "180005343  mov [rax+20h], rbx",
+                "180005347  movss dword ptr [rax+18h], xmm2",
+                "18000534c  push rdi",
+                "18000534d  sub rsp, 0B0h",
+                "180005354  movaps xmmword ptr [rax-18h], xmm6",
+                "180005358  xorps xmm0, xmm0",
+                "18000535b  movaps xmmword ptr [rax-28h], xmm7",
+                "18000535f  movaps xmm6, xmm3",
+                "180005362  movaps xmmword ptr [rax-38h], xmm8",
+                "180005367  mov rbx, rcx",
+                "18000536a  cvtss2sd xmm0, xmm1",
+                "18000536e  movaps xmmword ptr [rax-68h], xmm11",
+                "180005373  mulsd xmm0, cs:qword_1800A24C8",
+                "18000537b  movaps xmmword ptr [rax-78h], xmm12",
+                "180005380  movaps [rsp+0B8h+var_88], xmm13",
+                "180005386  movaps [rsp+0B8h+var_98], xmm15",
+                "18000538c  divsd xmm0, cs:qword_1800A2480",
+                "180005394  mov [rax+8], rsi",
+                "180005398  call sub_18005EE50",
+                "18000539d  movss xmm1, dword ptr [rbx+64h]",
+                "1800053a2  xorps xmm11, xmm11",
+                "1800053a6  cvtps2pd xmm1, xmm1",
+                "1800053a9  mulsd xmm0, xmm1",
+                "1800053ad  xorps xmm1, xmm1",
+                "1800053b0  cvtss2sd xmm1, xmm6",
+                "1800053b4  cvtsd2ss xmm11, xmm0",
+                "1800053b9  mulsd xmm1, cs:qword_1800A24C8",
+                "1800053c1  movss xmm0, dword ptr [rbx+44h]",
+                "1800053c6  cvtps2pd xmm0, xmm0",
+                "1800053c9  addsd xmm0, xmm1",
+                "1800053cd  call sub_18005EE50",
+                "1800053d2  cmp [rsp+0B8h+arg_20], 0",
+                "1800053da  xorps xmm13, xmm13",
+                "1800053de  movss xmm2, dword ptr [rbx+10h]",
+                "1800053e3  movss xmm6, dword ptr [rbx+30h]",
+                "1800053e8  movss xmm12, cs:dword_1800A2460",
+                "1800053f1  movsd xmm15, cs:qword_1800A2478",
+                "1800053fa  movss [rsp+0B8h+arg_8], xmm2",
+                "180005403  cvtsd2ss xmm13, xmm0",
+                "180005408  jz loc_1800055B0",
+                "18000540e  movss xmm0, dword ptr [rbx+2Ch]",
+                "180005413  movaps xmm6, xmm15",
+                "180005417  movss xmm12, dword ptr [rbx+4Ch]",
+                "18000541d  cvtps2pd xmm0, xmm0",
+                "180005420  movaps [rsp+0B8h+var_48], xmm9",
+                "180005426  movss xmm9, dword ptr [rbx+48h]",
+                "18000542c  divsd xmm6, xmm0",
+                "180005430  movaps [rsp+0B8h+var_58], xmm10",
+                "180005436  movss xmm10, dword ptr [rbx+14h]",
+                "18000543c  movaps xmm0, xmm6",
+                "18000543f  call sub_18005E680",
+                "180005444  call sub_18005E8D0",
+                "180005449  movss xmm7, dword ptr [rbx+1Ch]",
+                "18000544e  movaps xmm8, xmm0",
+                "180005452  movss xmm0, [rsp+0B8h+arg_10]",
+                "18000545b  cvtps2pd xmm0, xmm0",
+                "18000545e  mulsd xmm0, cs:qword_1800A24C8",
+                "180005466  call sub_18005EE50",
+                "18000546b  movss xmm1, dword ptr [rbx+68h]",
+                "180005470  xorps xmm2, xmm2",
+                "180005473  andps xmm6, cs:xmmword_1800A2710",
+                "18000547a  cvtps2pd xmm1, xmm1",
+                "18000547d  mulsd xmm0, xmm1",
+                "180005481  movss xmm1, [rsp+0B8h+arg_8]",
+                "18000548a  cvtps2pd xmm1, xmm1",
+                "18000548d  cvtsd2ss xmm2, xmm0",
+                "180005491  movss xmm0, dword ptr [rbx+5Ch]",
+                "180005496  subss xmm2, dword ptr [rbx+40h]",
+                "18000549b  cvtps2pd xmm0, xmm0",
+                "18000549e  mulss xmm2, xmm12",
+                "1800054a3  divss xmm2, xmm13",
+                "1800054a8  divss xmm2, xmm9",
+                "1800054ad  divss xmm2, xmm10",
+                "1800054b2  cvtps2pd xmm3, xmm2",
+                "1800054b5  movaps xmm2, xmm15",
+                "1800054b9  mulsd xmm3, xmm6",
+                "1800054bd  mulsd xmm3, xmm0",
+                "1800054c1  addsd xmm3, xmm1",
+                "1800054c5  cvtps2pd xmm1, xmm13",
+                "1800054c9  cvtpd2ps xmm0, xmm3",
+                "1800054cd  movaps xmm3, xmm15",
+                "1800054d1  cvtps2pd xmm4, xmm0",
+                "1800054d4  movss xmm0, dword ptr [rbx+50h]",
+                "1800054d9  cvtps2pd xmm0, xmm0",
+                "1800054dc  divsd xmm3, xmm1",
+                "1800054e0  divsd xmm2, xmm0",
+                "1800054e4  cvtps2pd xmm0, xmm12",
+                "1800054e8  subsd xmm3, xmm2",
+                "1800054ec  movaps xmm1, xmm9",
+                "1800054f0  mulss xmm1, xmm10",
+                "1800054f5  mulss xmm1, cs:dword_1800A245C",
+                "1800054fd  mulsd xmm3, xmm0",
+                "180005501  cvtps2pd xmm0, xmm7",
+                "180005504  cvtps2pd xmm2, xmm1",
+                "180005507  divsd xmm0, xmm8",
+                "18000550c  cvtps2pd xmm1, xmm10",
+                "180005510  mulsd xmm0, cs:qword_1800A2470",
+                "180005518  subsd xmm2, xmm0",
+                "18000551c  cvtps2pd xmm0, xmm9",
+                "180005520  mulsd xmm3, xmm2",
+                "180005524  divsd xmm3, xmm0",
+                "180005528  movss xmm0, dword ptr [rbx+60h]",
+                "18000552d  cvtps2pd xmm0, xmm0",
+                "180005530  divsd xmm3, xmm1",
+                "180005534  movsd xmm1, cs:qword_1800A24B0",
+                "18000553c  mulsd xmm3, xmm0",
+                "180005540  movaps xmm0, xmm11",
+                "180005544  subss xmm0, dword ptr [rbx+3Ch]",
+                "180005549  addsd xmm4, xmm3",
+                "18000554d  mulss xmm0, xmm12",
+                "180005552  addss xmm12, xmm13",
+                "180005557  cvtpd2ps xmm2, xmm4",
+                "18000555b  divss xmm0, xmm13",
+                "180005560  mulss xmm12, xmm7",
+                "180005565  divss xmm0, xmm9",
+                "18000556a  divss xmm12, xmm13",
+                "18000556f  divss xmm0, xmm10",
+                "180005574  mulss xmm0, dword ptr [rbx+58h]",
+                "180005579  addss xmm2, xmm0"
+              ],
+              "instruction_count": 120,
+              "truncated": true
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x180005331",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180021d36",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180024b86",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x1800a6730",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x1800a6768",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038d210",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180005343",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 6,
+              "from_count": 1
+            },
+            "callers": [
+              {
+                "addr": "0x180005240",
+                "name": "sub_180005240",
+                "size": "0xfb"
+              },
+              {
+                "addr": "0x180021d20",
+                "name": "sub_180021D20",
+                "size": "0x2f"
+              },
+              {
+                "addr": "0x180024b70",
+                "name": "sub_180024B70",
+                "size": "0x2f"
+              }
+            ],
+            "caller_count": 3,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x18005ef10",
+                "name": "sub_18005EF10",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18005ee50",
+                "name": "sub_18005EE50",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18005e8d0",
+                "name": "sub_18005E8D0",
+                "type": "internal"
+              },
+              {
+                "addr": "0x180041330",
+                "name": "sub_180041330",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18005e680",
+                "name": "sub_18005E680",
+                "type": "internal"
+              },
+              {
+                "addr": "0x1800412c0",
+                "name": "sub_1800412C0",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 6,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x18000534d",
+                "value": "0xb0",
+                "decimal": 176
+              },
+              {
+                "addr": "0x1800053d2",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x180005601",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18000567c",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x18000568e",
+                "value": "0xffffffffffffffff",
+                "decimal": 18446744073709551615
+              },
+              {
+                "addr": "0x1800056f7",
+                "value": "0x1",
+                "decimal": 1
+              }
+            ],
+            "constant_count": 6,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180005340",
+                "end": "0x180005394",
+                "size": 84,
+                "type": 0,
+                "successors": [
+                  "0x180005394"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x180005394",
+                "end": "0x18000540e",
+                "size": 122,
+                "type": 0,
+                "successors": [
+                  "0x18000540e",
+                  "0x1800055b0"
+                ],
+                "predecessors": [
+                  "0x180005340"
+                ]
+              },
+              {
+                "start": "0x18000540e",
+                "end": "0x180005420",
+                "size": 18,
+                "type": 0,
+                "successors": [
+                  "0x180005420"
+                ],
+                "predecessors": [
+                  "0x180005394"
+                ]
+              },
+              {
+                "start": "0x180005420",
+                "end": "0x1800055b0",
+                "size": 400,
+                "type": 0,
+                "successors": [
+                  "0x1800055b0"
+                ],
+                "predecessors": [
+                  "0x18000540e"
+                ]
+              },
+              {
+                "start": "0x1800055b0",
+                "end": "0x180005606",
+                "size": 86,
+                "type": 0,
+                "successors": [
+                  "0x180005606",
+                  "0x18000567c"
+                ],
+                "predecessors": [
+                  "0x180005394",
+                  "0x180005420"
+                ]
+              },
+              {
+                "start": "0x180005606",
+                "end": "0x18000567c",
+                "size": 118,
+                "type": 0,
+                "successors": [
+                  "0x18000573d"
+                ],
+                "predecessors": [
+                  "0x1800055b0"
+                ]
+              },
+              {
+                "start": "0x18000567c",
+                "end": "0x180005685",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x180005685",
+                  "0x18000573d"
+                ],
+                "predecessors": [
+                  "0x1800055b0"
+                ]
+              },
+              {
+                "start": "0x180005685",
+                "end": "0x18000568e",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x18000568e",
+                  "0x180005695"
+                ],
+                "predecessors": [
+                  "0x18000567c"
+                ]
+              },
+              {
+                "start": "0x18000568e",
+                "end": "0x180005695",
+                "size": 7,
+                "type": 0,
+                "successors": [
+                  "0x18000569f"
+                ],
+                "predecessors": [
+                  "0x180005685"
+                ]
+              },
+              {
+                "start": "0x180005695",
+                "end": "0x18000569f",
+                "size": 10,
+                "type": 0,
+                "successors": [
+                  "0x18000569f"
+                ],
+                "predecessors": [
+                  "0x180005685"
+                ]
+              },
+              {
+                "start": "0x18000569f",
+                "end": "0x18000573d",
+                "size": 158,
+                "type": 0,
+                "successors": [
+                  "0x18000573d"
+                ],
+                "predecessors": [
+                  "0x18000568e",
+                  "0x180005695"
+                ]
+              },
+              {
+                "start": "0x18000573d",
+                "end": "0x180005772",
+                "size": 53,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180005606",
+                  "0x18000567c",
+                  "0x18000569f"
+                ]
+              }
+            ],
+            "basic_block_count": 12,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180005240",
+          "addr": "0x180005240",
+          "name": "sub_180005240",
+          "analysis": {
+            "size": "0xfb",
+            "prototype": "__int64 __fastcall(_QWORD)",
+            "decompile": "__int64 __fastcall sub_180005240(float *a1, __int64 a2, __int64 a3, __int64 a4)\n{\n  int v4; // edx\n  float v5; // xmm0_4\n  float v6; // xmm0_4\n\n  v4 = *((_DWORD *)a1 + 30); /*0x18000524a*/\n  a1[41] = a1[31]; /*0x180005255*/\n  a1[42] = a1[32]; /*0x180005261*/\n  a1[43] = a1[33]; /*0x18000526d*/\n  a1[44] = a1[34]; /*0x180005279*/\n  a1[45] = a1[35]; /*0x180005285*/\n  a1[46] = a1[36]; /*0x180005291*/\n  *((_DWORD *)a1 + 40) = v4; /*0x180005297*/\n  if ( v4 != 0 ) /*0x18000529f*/\n    v5 = a1[6]; /*0x1800052b0*/\n  else\n    v5 = a1[5]; /*0x1800052a1*/\n  v6 = 0.3333333333333333 / v5; /*0x1800052d7*/\n  **(float **)a1 = v6; /*0x1800052db*/\n  *(float *)(*(_QWORD *)a1 + 28LL) = a1[6] / (float)(a1[11] * a1[5]); /*0x1800052f7*/\n  *(_DWORD *)(*(_QWORD *)a1 + 36LL) = 0; /*0x1800052ff*/\n  *(float *)(*(_QWORD *)a1 + 20LL) = a1[9]; /*0x18000530d*/\n  *(float *)(*(_QWORD *)a1 + 40LL) = a1[27]; /*0x180005317*/\n  *(float *)(*(_QWORD *)a1 + 44LL) = a1[28]; /*0x180005321*/\n  *(float *)(*(_QWORD *)a1 + 48LL) = a1[29]; /*0x18000532b*/\n  return sub_180005340(a1, a2: (__int64)(a1 + 5), a3: (__int64)a1, a4, a5: 0); /*0x180005336*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180005240  sub rsp, 38h",
+                "180005244  mov eax, [rcx+7Ch]",
+                "180005247  mov r8, rcx",
+                "18000524a  mov edx, [rcx+78h]",
+                "18000524d  movsd xmm1, cs:qword_1800A2468",
+                "180005255  mov [rcx+0A4h], eax",
+                "18000525b  mov eax, [rcx+80h]",
+                "180005261  mov [rcx+0A8h], eax",
+                "180005267  mov eax, [rcx+84h]",
+                "18000526d  mov [rcx+0ACh], eax",
+                "180005273  mov eax, [rcx+88h]",
+                "180005279  mov [rcx+0B0h], eax",
+                "18000527f  mov eax, [rcx+8Ch]",
+                "180005285  mov [rcx+0B4h], eax",
+                "18000528b  mov eax, [rcx+90h]",
+                "180005291  mov [rcx+0B8h], eax",
+                "180005297  mov [rcx+0A0h], edx",
+                "18000529d  test edx, edx",
+                "18000529f  jnz short loc_1800052B0",
+                "1800052a1  movss xmm0, dword ptr [rcx+14h]",
+                "1800052a6  lea rdx, [rcx+14h]",
+                "1800052aa  add rcx, 18h",
+                "1800052ae  jmp short loc_1800052BD",
+                "1800052b0  movss xmm0, dword ptr [rcx+18h]",
+                "1800052b5  lea rdx, [r8+14h]",
+                "1800052b9  add rcx, 18h",
+                "1800052bd  mov rax, [r8]",
+                "1800052c0  xorps xmm2, xmm2",
+                "1800052c3  movss xmm3, cs:dword_1800A24E4",
+                "1800052cb  cvtps2pd xmm0, xmm0",
+                "1800052ce  mov [rsp+38h+var_18], 0",
+                "1800052d3  divsd xmm1, xmm0",
+                "1800052d7  cvtpd2ps xmm0, xmm1",
+                "1800052db  movss dword ptr [rax], xmm0",
+                "1800052df  movss xmm0, dword ptr [rcx]",
+                "1800052e3  movss xmm1, dword ptr [r8+2Ch]",
+                "1800052e9  mulss xmm1, dword ptr [rdx]",
+                "1800052ed  mov rax, [r8]",
+                "1800052f0  divss xmm0, xmm1",
+                "1800052f4  xorps xmm1, xmm1",
+                "1800052f7  movss dword ptr [rax+1Ch], xmm0",
+                "1800052fc  mov rax, [r8]",
+                "1800052ff  mov dword ptr [rax+24h], 0",
+                "180005306  mov rcx, [r8]",
+                "180005309  mov eax, [r8+24h]",
+                "18000530d  mov [rcx+14h], eax",
+                "180005310  mov rcx, [r8]",
+                "180005313  mov eax, [r8+6Ch]",
+                "180005317  mov [rcx+28h], eax",
+                "18000531a  mov rcx, [r8]",
+                "18000531d  mov eax, [r8+70h]",
+                "180005321  mov [rcx+2Ch], eax",
+                "180005324  mov rcx, [r8]",
+                "180005327  mov eax, [r8+74h]",
+                "18000532b  mov [rcx+30h], eax",
+                "18000532e  mov rcx, r8",
+                "180005331  call sub_180005340",
+                "180005336  add rsp, 38h",
+                "18000533a  retn"
+              ],
+              "instruction_count": 59,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x180005117",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180021aa9",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180036d76",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x18038d204",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180005244",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 4,
+              "from_count": 1
+            },
+            "callers": [
+              {
+                "addr": "0x180004fd0",
+                "name": "sub_180004FD0",
+                "size": "0x190"
+              },
+              {
+                "addr": "0x180021800",
+                "name": "sub_180021800",
+                "size": "0x354"
+              },
+              {
+                "addr": "0x180036d30",
+                "name": "sub_180036D30",
+                "size": "0x51"
+              }
+            ],
+            "caller_count": 3,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180005340",
+                "name": "sub_180005340",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 1,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180005240",
+                "value": "0x38",
+                "decimal": 56
+              },
+              {
+                "addr": "0x1800052aa",
+                "value": "0x18",
+                "decimal": 24
+              },
+              {
+                "addr": "0x1800052b9",
+                "value": "0x18",
+                "decimal": 24
+              },
+              {
+                "addr": "0x1800052ce",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x1800052ff",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x180005336",
+                "value": "0x38",
+                "decimal": 56
+              }
+            ],
+            "constant_count": 6,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180005240",
+                "end": "0x1800052a1",
+                "size": 97,
+                "type": 0,
+                "successors": [
+                  "0x1800052a1",
+                  "0x1800052b0"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x1800052a1",
+                "end": "0x1800052b0",
+                "size": 15,
+                "type": 0,
+                "successors": [
+                  "0x1800052bd"
+                ],
+                "predecessors": [
+                  "0x180005240"
+                ]
+              },
+              {
+                "start": "0x1800052b0",
+                "end": "0x1800052bd",
+                "size": 13,
+                "type": 0,
+                "successors": [
+                  "0x1800052bd"
+                ],
+                "predecessors": [
+                  "0x180005240"
+                ]
+              },
+              {
+                "start": "0x1800052bd",
+                "end": "0x18000533b",
+                "size": 126,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x1800052a1",
+                  "0x1800052b0"
+                ]
+              }
+            ],
+            "basic_block_count": 4,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180006320",
+          "addr": "0x180006320",
+          "name": "sub_180006320",
+          "analysis": {
+            "size": "0x2a8",
+            "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+            "decompile": "char __fastcall sub_180006320(_DWORD *a1, __int64 *a2)\n{\n  __int64 v4; // rax\n  __int64 v5; // rax\n  __m128i si128; // xmm1\n  __m128i v7; // xmm0\n  __int64 v8; // rax\n  __int64 v9; // rax\n  __int64 v10; // rax\n  _QWORD v12[2]; // [rsp+30h] [rbp-D0h] BYREF\n  _QWORD v13[4]; // [rsp+40h] [rbp-C0h] BYREF\n  __m256i v14; // [rsp+60h] [rbp-A0h]\n  _QWORD v15[3]; // [rsp+88h] [rbp-78h] BYREF\n  _QWORD v16[4]; // [rsp+A0h] [rbp-60h] BYREF\n  __m256i v17; // [rsp+C0h] [rbp-40h] BYREF\n  __m256i v18; // [rsp+E0h] [rbp-20h]\n  __m128i v19; // [rsp+100h] [rbp+0h]\n  _DWORD v20[6]; // [rsp+110h] [rbp+10h] BYREF\n\n  if ( (*(int (__fastcall **)(__int64 *, void *, __int64, _QWORD, _DWORD *))(*a2 + 96))( /*0x18000636c*/\n         a1: a2,\n         a2: &unk_18007B760,\n         a3: 16512,\n         a4: 0,\n         a5: a1 + 20) < 0 )\n    return 0; /*0x18000636c*/\n  if ( (*(unsigned __int8 (__fastcall **)(_DWORD *, __int64 *))(*(_QWORD *)a1 + 16LL))(a1, a2) == 0 ) /*0x180006380*/\n    return 0; /*0x180006380*/\n  *(__int64 *)((char *)&v17.m256i_i64[1] + 4) = 6; /*0x180006388*/\n  v17.m256i_i32[2] = 0; /*0x180006397*/\n  v17.m256i_i64[0] = (__int64)\"myPOSITION\"; /*0x18000639a*/\n  v18.m256i_i64[0] = (__int64)\"myTEXCOORD\"; /*0x1800063ae*/\n  v4 = *a2; /*0x1800063b9*/\n  *(__int64 *)((char *)&v17.m256i_i64[2] + 4) = 0; /*0x1800063c6*/\n  v17.m256i_i32[7] = 0; /*0x1800063cd*/\n  v18.m256i_i32[2] = 0; /*0x1800063d0*/\n  *(__int64 *)((char *)&v18.m256i_i64[1] + 4) = 16; /*0x1800063d3*/\n  *(__int64 *)((char *)&v18.m256i_i64[2] + 4) = 12; /*0x1800063db*/\n  v18.m256i_i32[7] = 0; /*0x1800063e3*/\n  if ( (*(int (__fastcall **)(__int64 *, __m256i *, __int64, void *, __int64, _DWORD *))(v4 + 88))( /*0x1800063f4*/\n         a1: a2,\n         a2: &v17,\n         a3: 2,\n         a4: &unk_18007B760,\n         a5: 16512,\n         a6: a1 + 24) < 0 )\n    return 0; /*0x1800063f4*/\n  v5 = *a2; /*0x180006420*/\n  *(__m128i *)((char *)&v14.m256i_u64[1] + 4) = _mm_load_si128((const __m128i *)&xmmword_1800A26F0); /*0x180006423*/\n  v14.m256i_i32[0] = 0; /*0x180006428*/\n  *(__m128i *)v17.m256i_i8 = _mm_load_si128((const __m128i *)&xmmword_1800A2600); /*0x18000642c*/\n  *(__int64 *)((char *)v14.m256i_i64 + 4) = 0x100000001LL; /*0x180006430*/\n  v14.m256i_i32[7] = -8388609; /*0x180006445*/\n  *(_OWORD *)&v17.m256i_u64[2] = *(_OWORD *)v14.m256i_i8; /*0x180006452*/\n  *(_OWORD *)v18.m256i_i8 = *(_OWORD *)&v14.m256i_u64[2]; /*0x180006456*/\n  v18.m256i_i32[4] = 2139095039; /*0x18000645a*/\n  if ( (*(int (__fastcall **)(__int64 *, __m256i *, _DWORD *))(v5 + 184))(a1: a2, a2: &v17, a3: a1 + 32) < 0 ) /*0x180006467*/\n    return 0; /*0x180006467*/\n  si128 = _mm_load_si128((const __m128i *)&xmmword_1800A25C0); /*0x180006479*/\n  *(__m128i *)v17.m256i_i8 = _mm_load_si128((const __m128i *)&xmmword_1800A2510); /*0x180006485*/\n  v7 = _mm_load_si128((const __m128i *)&xmmword_1800A2730); /*0x18000648e*/\n  a1[2] = 6; /*0x18000649a*/\n  v12[0] = &v17; /*0x1800064a4*/\n  v8 = *a2; /*0x1800064a9*/\n  *(__m128i *)v18.m256i_i8 = v7; /*0x1800064ac*/\n  *(__m128i *)&v17.m256i_u64[2] = si128; /*0x1800064b8*/\n  v19 = _mm_load_si128((const __m128i *)&xmmword_1800A25B0); /*0x1800064c4*/\n  *(__m128i *)&v18.m256i_u64[2] = _mm_load_si128((const __m128i *)&xmmword_1800A26E0); /*0x1800064c8*/\n  v20[0] = 0; /*0x1800064cc*/\n  v20[1] = 1; /*0x1800064cf*/\n  v20[2] = 2; /*0x1800064d6*/\n  v20[3] = 1; /*0x1800064dd*/\n  v20[4] = 3; /*0x1800064e4*/\n  v20[5] = 2; /*0x1800064eb*/\n  v16[0] = 80; /*0x1800064f2*/\n  v16[1] = 1; /*0x1800064fa*/\n  v16[2] = 0; /*0x180006502*/\n  v12[1] = 0; /*0x180006506*/\n  if ( (*(int (__fastcall **)(__int64 *, _QWORD *, _QWORD *, _DWORD *))(v8 + 24))(a1: a2, a2: v16, a3: v12, a4: a1 + 26) < 0 ) /*0x180006510*/\n    return 0; /*0x180006510*/\n  v15[0] = 24; /*0x18000651a*/\n  v13[0] = v20; /*0x180006522*/\n  v9 = *a2; /*0x18000652b*/\n  *(_OWORD *)&v15[1] = 2u; /*0x180006537*/\n  v13[1] = 0; /*0x180006546*/\n  if ( (*(int (__fastcall **)(__int64 *, _QWORD *, _QWORD *, _DWORD *))(v9 + 24))(a1: a2, a2: v15, a3: v13, a4: a1 + 28) < 0 ) /*0x180006550*/\n    return 0; /*0x180006550*/\n  v10 = *a2; /*0x180006552*/\n  v15[0] = 0x200000080LL; /*0x180006567*/\n  LODWORD(v15[1]) = 4; /*0x180006571*/\n  *(_QWORD *)((char *)&v15[1] + 4) = 0x10000; /*0x180006578*/\n  if ( (*(int (__fastcall **)(__int64 *, _QWORD *, _QWORD, _DWORD *))(v10 + 24))(a1: a2, a2: v15, a3: 0, a4: a1 + 30) < 0 ) /*0x180006585*/\n  {\n    MessageBoxW(hWnd: nullptr, lpText: L\"device->CreateBuffer\", lpCaption: L\"Error\", uType: 0x10u); /*0x18000659d*/\n    return 0; /*0x1800065c3*/\n  }\n  return 1; /*0x1800065a5*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180006320  mov [rsp-8+arg_10], rbx",
+                "180006325  push rbp",
+                "180006326  push rsi",
+                "180006327  push rdi",
+                "180006328  lea rbp, [rsp-30h]",
+                "18000632d  sub rsp, 130h",
+                "180006334  mov rax, cs:__security_cookie",
+                "18000633b  xor rax, rsp",
+                "18000633e  mov [rbp+40h+var_18], rax",
+                "180006342  mov rbx, rdx",
+                "180006345  mov rdi, rcx",
+                "180006348  lea rdx, [rcx+50h]",
+                "18000634c  xor r9d, r9d",
+                "18000634f  mov [rsp+140h+var_120], rdx",
+                "180006354  mov r8d, 4080h",
+                "18000635a  lea rdx, unk_18007B760",
+                "180006361  mov rcx, rbx",
+                "180006364  mov rax, [rbx]",
+                "180006367  call qword ptr [rax+60h]",
+                "18000636a  test eax, eax",
+                "18000636c  js loc_1800065A3",
+                "180006372  mov rax, [rdi]",
+                "180006375  mov rdx, rbx",
+                "180006378  mov rcx, rdi",
+                "18000637b  call qword ptr [rax+10h]",
+                "18000637e  test al, al",
+                "180006380  jz loc_1800065A3",
+                "180006386  xor esi, esi",
+                "180006388  mov qword ptr [rbp+40h+var_80+0Ch], 6",
+                "180006390  lea rax, aMyposition; \"myPOSITION\"",
+                "180006397  mov dword ptr [rbp+40h+var_80+8], esi",
+                "18000639a  mov qword ptr [rbp+40h+var_80], rax",
+                "18000639e  lea rcx, [rdi+60h]",
+                "1800063a2  mov [rsp+140h+var_118], rcx",
+                "1800063a7  lea rax, aMytexcoord; \"myTEXCOORD\"",
+                "1800063ae  mov qword ptr [rbp+40h+var_60], rax",
+                "1800063b2  lea r9, unk_18007B760",
+                "1800063b9  mov rax, [rbx]",
+                "1800063bc  lea rdx, [rbp+40h+var_80]",
+                "1800063c0  mov r8d, 2",
+                "1800063c6  mov [rbp+40h+var_6C], rsi",
+                "1800063ca  mov rcx, rbx",
+                "1800063cd  mov [rbp+40h+var_64], esi",
+                "1800063d0  mov dword ptr [rbp+40h+var_60+8], esi",
+                "1800063d3  mov qword ptr [rbp+40h+var_60+0Ch], 10h",
+                "1800063db  mov qword ptr [rbp+40h+var_50+4], 0Ch",
+                "1800063e3  mov dword ptr [rbp+40h+var_50+0Ch], esi",
+                "1800063e6  mov [rsp+140h+var_120], 4080h",
+                "1800063ef  call qword ptr [rax+58h]",
+                "1800063f2  test eax, eax",
+                "1800063f4  js loc_1800065A3",
+                "1800063fa  movdqa xmm1, cs:xmmword_1800A2600",
+                "180006402  lea r8, [rdi+80h]",
+                "180006409  movdqa xmm0, cs:xmmword_1800A26F0",
+                "180006411  lea rdx, [rbp+40h+var_80]",
+                "180006415  movss xmm2, cs:dword_1800A24EC",
+                "18000641d  mov rcx, rbx",
+                "180006420  mov rax, [rbx]",
+                "180006423  movups [rsp+140h+var_E0+0Ch], xmm0",
+                "180006428  mov dword ptr [rsp+140h+var_E0], esi",
+                "18000642c  movups [rbp+40h+var_80], xmm1",
+                "180006430  mov dword ptr [rsp+140h+var_E0+4], 1",
+                "180006438  mov dword ptr [rsp+140h+var_E0+8], 1",
+                "180006440  movups xmm0, [rsp+140h+var_E0]",
+                "180006445  mov [rsp+140h+var_C4], 0FF7FFFFFh",
+                "18000644d  movups xmm1, xmmword ptr [rsp+70h]",
+                "180006452  movups xmmword ptr [rbp-30h], xmm0",
+                "180006456  movups [rbp+40h+var_60], xmm1",
+                "18000645a  movss dword ptr [rbp+40h+var_50], xmm2",
+                "18000645f  call qword ptr [rax+0B8h]",
+                "180006465  test eax, eax",
+                "180006467  js loc_1800065A3",
+                "18000646d  movdqa xmm0, cs:xmmword_1800A2510",
+                "180006475  lea rax, [rbp+40h+var_80]",
+                "180006479  movdqa xmm1, cs:xmmword_1800A25C0",
+                "180006481  lea r9, [rdi+68h]",
+                "180006485  movaps [rbp+40h+var_80], xmm0",
+                "180006489  lea r8, [rsp+140h+var_110]",
+                "18000648e  movdqa xmm0, cs:xmmword_1800A2730",
+                "180006496  lea rdx, [rbp+40h+var_A0]",
+                "18000649a  mov dword ptr [rdi+8], 6",
+                "1800064a1  mov rcx, rbx",
+                "1800064a4  mov [rsp+140h+var_110], rax",
+                "1800064a9  mov rax, [rbx]",
+                "1800064ac  movaps [rbp+40h+var_60], xmm0",
+                "1800064b0  movdqa xmm0, cs:xmmword_1800A25B0",
+                "1800064b8  movaps xmmword ptr [rbp-30h], xmm1",
+                "1800064bc  movdqa xmm1, cs:xmmword_1800A26E0",
+                "1800064c4  movaps [rbp+40h+var_40], xmm0",
+                "1800064c8  movaps [rbp+40h+var_50], xmm1",
+                "1800064cc  mov [rbp+40h+var_30], esi",
+                "1800064cf  mov [rbp+40h+var_2C], 1",
+                "1800064d6  mov [rbp+40h+var_28], 2",
+                "1800064dd  mov [rbp+40h+var_24], 1",
+                "1800064e4  mov [rbp+40h+var_20], 3",
+                "1800064eb  mov [rbp+40h+var_1C], 2",
+                "1800064f2  mov [rbp+40h+var_A0], 50h ; 'P'",
+                "1800064fa  mov [rbp+40h+var_98], 1",
+                "180006502  mov [rbp+40h+var_90], rsi",
+                "180006506  mov [rsp+140h+var_108], rsi",
+                "18000650b  call qword ptr [rax+18h]",
+                "18000650e  test eax, eax",
+                "180006510  js loc_1800065A3",
+                "180006516  lea rax, [rbp+40h+var_30]",
+                "18000651a  mov [rbp+40h+var_B8], 18h",
+                "180006522  mov [rsp+140h+var_100], rax",
+                "180006527  lea r9, [rdi+70h]",
+                "18000652b  mov rax, [rbx]",
+                "18000652e  lea r8, [rsp+140h+var_100]",
+                "180006533  lea rdx, [rbp+40h+var_B8]",
+                "180006537  mov [rbp+40h+var_B0], 2",
+                "18000653f  mov rcx, rbx",
+                "180006542  mov [rbp+40h+var_A8], rsi",
+                "180006546  mov [rsp+140h+var_F8], rsi",
+                "18000654b  call qword ptr [rax+18h]",
+                "18000654e  test eax, eax",
+                "180006550  js short loc_1800065A3",
+                "180006552  mov rax, [rbx]",
+                "180006555  lea r9, [rdi+78h]",
+                "180006559  xor r8d, r8d"
+              ],
+              "instruction_count": 120,
+              "truncated": true
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x180021b17",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180021e95",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180036358",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x18003663d",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x18038d3b4",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180006325",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 5,
+              "from_count": 1
+            },
+            "callers": [
+              {
+                "addr": "0x180021800",
+                "name": "sub_180021800",
+                "size": "0x354"
+              },
+              {
+                "addr": "0x180021db0",
+                "name": "sub_180021DB0",
+                "size": "0x10d"
+              },
+              {
+                "addr": "0x180036080",
+                "name": "sub_180036080",
+                "size": "0x319"
+              },
+              {
+                "addr": "0x180036560",
+                "name": "sub_180036560",
+                "size": "0x106"
+              }
+            ],
+            "caller_count": 4,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x1800642e8",
+                "name": "MessageBoxW",
+                "type": "external"
+              },
+              {
+                "addr": "0x180038970",
+                "name": "__security_check_cookie",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 2,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x180072f68",
+                "length": 10,
+                "string": "myPOSITION"
+              },
+              {
+                "addr": "0x180072f78",
+                "length": 10,
+                "string": "myTEXCOORD"
+              }
+            ],
+            "string_ref_count": 2,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x18000632d",
+                "value": "0x130",
+                "decimal": 304
+              },
+              {
+                "addr": "0x180006354",
+                "value": "0x4080",
+                "decimal": 16512
+              },
+              {
+                "addr": "0x180006388",
+                "value": "0x6",
+                "decimal": 6
+              },
+              {
+                "addr": "0x1800063c0",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x1800063d3",
+                "value": "0x10",
+                "decimal": 16
+              },
+              {
+                "addr": "0x1800063db",
+                "value": "0xc",
+                "decimal": 12
+              },
+              {
+                "addr": "0x1800063e6",
+                "value": "0x4080",
+                "decimal": 16512
+              },
+              {
+                "addr": "0x180006430",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x180006438",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x180006445",
+                "value": "0xffffffffff7fffff",
+                "decimal": 18446744073701163007
+              },
+              {
+                "addr": "0x18000649a",
+                "value": "0x6",
+                "decimal": 6
+              },
+              {
+                "addr": "0x1800064cf",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x1800064d6",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x1800064dd",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x1800064e4",
+                "value": "0x3",
+                "decimal": 3
+              },
+              {
+                "addr": "0x1800064eb",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x1800064f2",
+                "value": "0x50",
+                "decimal": 80
+              },
+              {
+                "addr": "0x1800064fa",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18000651a",
+                "value": "0x18",
+                "decimal": 24
+              },
+              {
+                "addr": "0x180006537",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x18000655c",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x180006567",
+                "value": "0x80",
+                "decimal": 128
+              },
+              {
+                "addr": "0x180006571",
+                "value": "0x4",
+                "decimal": 4
+              },
+              {
+                "addr": "0x180006578",
+                "value": "0x10000",
+                "decimal": 65536
+              },
+              {
+                "addr": "0x180006587",
+                "value": "0x10",
+                "decimal": 16
+              },
+              {
+                "addr": "0x1800065b9",
+                "value": "0x130",
+                "decimal": 304
+              },
+              {
+                "addr": "0x1800065c4",
+                "value": "0x1",
+                "decimal": 1
+              }
+            ],
+            "constant_count": 27,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180006320",
+                "end": "0x180006372",
+                "size": 82,
+                "type": 0,
+                "successors": [
+                  "0x180006372",
+                  "0x1800065a3"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x180006372",
+                "end": "0x180006386",
+                "size": 20,
+                "type": 0,
+                "successors": [
+                  "0x180006386",
+                  "0x1800065a3"
+                ],
+                "predecessors": [
+                  "0x180006320"
+                ]
+              },
+              {
+                "start": "0x180006386",
+                "end": "0x1800063fa",
+                "size": 116,
+                "type": 0,
+                "successors": [
+                  "0x1800063fa",
+                  "0x1800065a3"
+                ],
+                "predecessors": [
+                  "0x180006372"
+                ]
+              },
+              {
+                "start": "0x1800063fa",
+                "end": "0x18000646d",
+                "size": 115,
+                "type": 0,
+                "successors": [
+                  "0x18000646d",
+                  "0x1800065a3"
+                ],
+                "predecessors": [
+                  "0x180006386"
+                ]
+              },
+              {
+                "start": "0x18000646d",
+                "end": "0x180006516",
+                "size": 169,
+                "type": 0,
+                "successors": [
+                  "0x180006516",
+                  "0x1800065a3"
+                ],
+                "predecessors": [
+                  "0x1800063fa"
+                ]
+              },
+              {
+                "start": "0x180006516",
+                "end": "0x180006552",
+                "size": 60,
+                "type": 0,
+                "successors": [
+                  "0x180006552",
+                  "0x1800065a3"
+                ],
+                "predecessors": [
+                  "0x18000646d"
+                ]
+              },
+              {
+                "start": "0x180006552",
+                "end": "0x180006587",
+                "size": 53,
+                "type": 0,
+                "successors": [
+                  "0x180006587",
+                  "0x1800065c4"
+                ],
+                "predecessors": [
+                  "0x180006516"
+                ]
+              },
+              {
+                "start": "0x180006587",
+                "end": "0x1800065a3",
+                "size": 28,
+                "type": 0,
+                "successors": [
+                  "0x1800065a3"
+                ],
+                "predecessors": [
+                  "0x180006552"
+                ]
+              },
+              {
+                "start": "0x1800065a3",
+                "end": "0x1800065a5",
+                "size": 2,
+                "type": 0,
+                "successors": [
+                  "0x1800065a5"
+                ],
+                "predecessors": [
+                  "0x180006320",
+                  "0x180006372",
+                  "0x180006386",
+                  "0x1800063fa",
+                  "0x18000646d",
+                  "0x180006516",
+                  "0x180006587"
+                ]
+              },
+              {
+                "start": "0x1800065a5",
+                "end": "0x1800065c4",
+                "size": 31,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x1800065a3",
+                  "0x1800065c4"
+                ]
+              },
+              {
+                "start": "0x1800065c4",
+                "end": "0x1800065c8",
+                "size": 4,
+                "type": 0,
+                "successors": [
+                  "0x1800065a5"
+                ],
+                "predecessors": [
+                  "0x180006552"
+                ]
+              }
+            ],
+            "basic_block_count": 11,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180006740",
+          "addr": "0x180006740",
+          "name": "sub_180006740",
+          "analysis": {
+            "size": "0x125",
+            "prototype": null,
+            "decompile": "char __fastcall sub_180006740(__int64 a1, __int64 a2, __int64 *a3, __int64 a4, __int64 a5)\n{\n  __int64 v5; // rax\n  char result; // al\n  int v10; // [rsp+40h] [rbp+8h] BYREF\n  __int64 v11; // [rsp+48h] [rbp+10h] BYREF\n\n  v11 = a2; /*0x18000674b*/\n  v5 = *a3; /*0x180006754*/\n  v10 = 20; /*0x18000675d*/\n  LODWORD(v11) = 0; /*0x180006768*/\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, __int64, int *, __int64 *))(v5 + 144))( /*0x18000678f*/\n    a1: a3,\n    a2: 0,\n    a3: 1,\n    a4: a1 + 104,\n    a5: &v10,\n    a6: &v11);\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, _QWORD))(*a3 + 152))( /*0x1800067a8*/\n    a1: a3,\n    a2: *(_QWORD *)(a1 + 112),\n    a3: 42,\n    a4: 0);\n  (*(void (__fastcall **)(__int64 *, __int64))(*a3 + 192))(a1: a3, a2: 4); /*0x1800067b9*/\n  (*(void (__fastcall **)(__int64 *, _QWORD))(*a3 + 136))(a1: a3, a2: *(_QWORD *)(a1 + 96)); /*0x1800067c9*/\n  (*(void (__fastcall **)(__int64 *, _QWORD, __int64, __int64))(*a3 + 80))(a1: a3, a2: 0, a3: 1, a4: a1 + 128); /*0x1800067e4*/\n  (*(void (__fastcall **)(__int64 *, _QWORD, _QWORD, _QWORD))(*a3 + 88))(a1: a3, a2: *(_QWORD *)(a1 + 80), a3: 0, a4: 0); /*0x1800067f7*/\n  (*(void (__fastcall **)(__int64 *, _QWORD, _QWORD, _QWORD))(*a3 + 72))(a1: a3, a2: *(_QWORD *)(a1 + 88), a3: 0, a4: 0); /*0x18000680a*/\n  (*(void (__fastcall **)(__int64, __int64 *, __int64))(*(_QWORD *)a1 + 24LL))(a1, a2: a3, a3: a4); /*0x180006819*/\n  result = (*(__int64 (__fastcall **)(__int64, __int64 *, __int64))(*(_QWORD *)a1 + 32LL))(a1, a2: a3, a3: a5); /*0x18000682a*/\n  if ( result != 0 ) /*0x18000682f*/\n  {\n    (*(void (__fastcall **)(__int64 *, _QWORD, _QWORD, _QWORD))(*a3 + 96))( /*0x180006850*/\n      a1: a3,\n      a2: *(unsigned int *)(a1 + 8),\n      a3: 0,\n      a4: 0);\n    return 1; /*0x180006858*/\n  }\n  return result; /*0x180006831*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180006740  mov r11, rsp",
+                "180006743  mov [r11+18h], rbx",
+                "180006747  mov [r11+20h], rsi",
+                "18000674b  mov [r11+10h], rdx",
+                "18000674f  push rdi",
+                "180006750  sub rsp, 30h",
+                "180006754  mov rax, [r8]",
+                "180006757  mov rsi, rcx",
+                "18000675a  mov rdi, r8",
+                "18000675d  mov [rsp+38h+arg_0], 14h",
+                "180006765  mov rbx, r9",
+                "180006768  mov dword ptr [rsp+38h+arg_8], 0",
+                "180006770  lea r9, [rcx+68h]",
+                "180006774  xor edx, edx",
+                "180006776  lea rcx, [r11+10h]",
+                "18000677a  mov r8d, 1",
+                "180006780  mov [r11-10h], rcx",
+                "180006784  lea rcx, [r11+8]",
+                "180006788  mov [r11-18h], rcx",
+                "18000678c  mov rcx, rdi",
+                "18000678f  call qword ptr [rax+90h]",
+                "180006795  mov rax, [rdi]",
+                "180006798  xor r9d, r9d",
+                "18000679b  mov rdx, [rsi+70h]",
+                "18000679f  mov r8d, 2Ah ; '*'",
+                "1800067a5  mov rcx, rdi",
+                "1800067a8  call qword ptr [rax+98h]",
+                "1800067ae  mov rax, [rdi]",
+                "1800067b1  mov edx, 4",
+                "1800067b6  mov rcx, rdi",
+                "1800067b9  call qword ptr [rax+0C0h]",
+                "1800067bf  mov rax, [rdi]",
+                "1800067c2  mov rcx, rdi",
+                "1800067c5  mov rdx, [rsi+60h]",
+                "1800067c9  call qword ptr [rax+88h]",
+                "1800067cf  mov rax, [rdi]",
+                "1800067d2  lea r9, [rsi+80h]",
+                "1800067d9  xor edx, edx",
+                "1800067db  mov r8d, 1",
+                "1800067e1  mov rcx, rdi",
+                "1800067e4  call qword ptr [rax+50h]",
+                "1800067e7  mov rax, [rdi]",
+                "1800067ea  xor r9d, r9d",
+                "1800067ed  mov rdx, [rsi+50h]",
+                "1800067f1  xor r8d, r8d",
+                "1800067f4  mov rcx, rdi",
+                "1800067f7  call qword ptr [rax+58h]",
+                "1800067fa  mov rax, [rdi]",
+                "1800067fd  xor r9d, r9d",
+                "180006800  mov rdx, [rsi+58h]",
+                "180006804  xor r8d, r8d",
+                "180006807  mov rcx, rdi",
+                "18000680a  call qword ptr [rax+48h]",
+                "18000680d  mov rax, [rsi]",
+                "180006810  mov r8, rbx",
+                "180006813  mov rdx, rdi",
+                "180006816  mov rcx, rsi",
+                "180006819  call qword ptr [rax+18h]",
+                "18000681c  mov rax, [rsi]",
+                "18000681f  mov rdx, rdi",
+                "180006822  mov r8, [rsp+38h+arg_20]",
+                "180006827  mov rcx, rsi",
+                "18000682a  call qword ptr [rax+20h]",
+                "18000682d  test al, al",
+                "18000682f  jnz short loc_180006841",
+                "180006831  mov rbx, [rsp+38h+arg_10]",
+                "180006836  mov rsi, [rsp+38h+arg_18]",
+                "18000683b  add rsp, 30h",
+                "18000683f  pop rdi",
+                "180006840  retn",
+                "180006841  mov rax, [rdi]",
+                "180006844  xor r9d, r9d",
+                "180006847  mov edx, [rsi+8]",
+                "18000684a  xor r8d, r8d",
+                "18000684d  mov rcx, rdi",
+                "180006850  call qword ptr [rax+60h]",
+                "180006853  mov rbx, [rsp+38h+arg_10]",
+                "180006858  mov al, 1",
+                "18000685a  mov rsi, [rsp+38h+arg_18]",
+                "18000685f  add rsp, 30h",
+                "180006863  pop rdi",
+                "180006864  retn"
+              ],
+              "instruction_count": 82,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x180021dde",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180021eb2",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180036656",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x18038d3d8",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180006743",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 4,
+              "from_count": 1
+            },
+            "callers": [
+              {
+                "addr": "0x180021db0",
+                "name": "sub_180021DB0",
+                "size": "0x10d"
+              },
+              {
+                "addr": "0x180036560",
+                "name": "sub_180036560",
+                "size": "0x106"
+              }
+            ],
+            "caller_count": 2,
+            "callers_truncated": false,
+            "callees": [],
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180006750",
+                "value": "0x30",
+                "decimal": 48
+              },
+              {
+                "addr": "0x18000675d",
+                "value": "0x14",
+                "decimal": 20
+              },
+              {
+                "addr": "0x180006768",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x18000677a",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18000679f",
+                "value": "0x2a",
+                "decimal": 42
+              },
+              {
+                "addr": "0x1800067b1",
+                "value": "0x4",
+                "decimal": 4
+              },
+              {
+                "addr": "0x1800067db",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18000683b",
+                "value": "0x30",
+                "decimal": 48
+              },
+              {
+                "addr": "0x180006858",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x18000685f",
+                "value": "0x30",
+                "decimal": 48
+              }
+            ],
+            "constant_count": 10,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180006740",
+                "end": "0x180006831",
+                "size": 241,
+                "type": 0,
+                "successors": [
+                  "0x180006831",
+                  "0x180006841"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x180006831",
+                "end": "0x180006841",
+                "size": 16,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180006740"
+                ]
+              },
+              {
+                "start": "0x180006841",
+                "end": "0x180006865",
+                "size": 36,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x180006740"
+                ]
+              }
+            ],
+            "basic_block_count": 3,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

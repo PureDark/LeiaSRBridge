@@ -1,0 +1,94 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"0x18000c088\",\"xrefs\":[{\"addr\":\"0x1800064e5\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"size\":\"0x399\"}}],\"more\":false,\"xref_count\":1},{\"addr\":\"0x18000b0d8\",\"xrefs\":[{\"addr\":\"0x180006554\",\"type\":\"code\",\"fn\":{\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"size\":\"0x399\"}},{\"addr\":\"0x180006a17\",\"type\":\"code\",\"fn\":{\"addr\":\"0x1800068d0\",\"name\":\"sub_1800068D0\",\"size\":\"0x189\"}},{\"addr\":\"0x180006ba7\",\"type\":\"code\",\"fn\":{\"addr\":\"0x180006a60\",\"name\":\"sub_180006A60\",\"size\":\"0x189\"}},{\"addr\":\"0x180006554\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"size\":\"0x399\"}},{\"addr\":\"0x180006a17\",\"type\":\"data\",\"fn\":{\"addr\":\"0x1800068d0\",\"name\":\"sub_1800068D0\",\"size\":\"0x189\"}},{\"addr\":\"0x180006ba7\",\"type\":\"data\",\"fn\":{\"addr\":\"0x180006a60\",\"name\":\"sub_180006A60\",\"size\":\"0x189\"}}],\"more\":false,\"xref_count\":6}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "0x18000c088",
+          "xrefs": [
+            {
+              "addr": "0x1800064e5",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006270",
+                "name": "sub_180006270",
+                "size": "0x399"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 1
+        },
+        {
+          "addr": "0x18000b0d8",
+          "xrefs": [
+            {
+              "addr": "0x180006554",
+              "type": "code",
+              "fn": {
+                "addr": "0x180006270",
+                "name": "sub_180006270",
+                "size": "0x399"
+              }
+            },
+            {
+              "addr": "0x180006a17",
+              "type": "code",
+              "fn": {
+                "addr": "0x1800068d0",
+                "name": "sub_1800068D0",
+                "size": "0x189"
+              }
+            },
+            {
+              "addr": "0x180006ba7",
+              "type": "code",
+              "fn": {
+                "addr": "0x180006a60",
+                "name": "sub_180006A60",
+                "size": "0x189"
+              }
+            },
+            {
+              "addr": "0x180006554",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006270",
+                "name": "sub_180006270",
+                "size": "0x399"
+              }
+            },
+            {
+              "addr": "0x180006a17",
+              "type": "data",
+              "fn": {
+                "addr": "0x1800068d0",
+                "name": "sub_1800068D0",
+                "size": "0x189"
+              }
+            },
+            {
+              "addr": "0x180006ba7",
+              "type": "data",
+              "fn": {
+                "addr": "0x180006a60",
+                "name": "sub_180006A60",
+                "size": "0x189"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 6
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

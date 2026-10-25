@@ -1,0 +1,7 @@
+{
+  "source": "RE\\inputs\\viewx\\depth\\LF3DRenderCore.dll",
+  "va": "0x180073000",
+  "size": 34648,
+  "sha256": "100ae6db1a8f91871c17579e5f161d07d4fe076d281298499804feee53748638",
+  "verified_create_function": "0x180006880"
+}

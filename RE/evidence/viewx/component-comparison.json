@@ -1,0 +1,58 @@
+[
+  {
+    "component": "gateway-ai",
+    "old": {
+      "path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\AiSetereoKit.dll",
+      "bytes": 6271488,
+      "sha256": "c3cd9fd7085a076a4ff4cd2f80816027c096785cd8395c191b3738ddd528d639"
+    },
+    "new": {
+      "path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\viewx\\gateway\\AiSetereoKit.dll",
+      "bytes": 6271488,
+      "sha256": "c3cd9fd7085a076a4ff4cd2f80816027c096785cd8395c191b3738ddd528d639"
+    },
+    "identical": true
+  },
+  {
+    "component": "root-com",
+    "old": {
+      "path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\depth\\FaceTrackingManagerService.dll",
+      "bytes": 79360,
+      "sha256": "24d677ea070fca322b025fa91823ea1eaa040729db9efed5de2f0fe7855a6118"
+    },
+    "new": {
+      "path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\viewx\\depth\\FaceTrackingManagerService.dll",
+      "bytes": 79360,
+      "sha256": "24d677ea070fca322b025fa91823ea1eaa040729db9efed5de2f0fe7855a6118"
+    },
+    "identical": true
+  },
+  {
+    "component": "bridge-com",
+    "old": {
+      "path": "F:\\开发项目\\TitanLeiaBridge\\dependencies\\vendor\\eyetracking\\FaceTrackingManagerService.dll",
+      "bytes": 98304,
+      "sha256": "3132dd6fe285772b327b4aab99de5a05c5cfe4376432e9defdc2680c465e4604"
+    },
+    "new": {
+      "path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\viewx\\depth\\FaceTrackingManagerService.dll",
+      "bytes": 79360,
+      "sha256": "24d677ea070fca322b025fa91823ea1eaa040729db9efed5de2f0fe7855a6118"
+    },
+    "identical": false
+  },
+  {
+    "component": "lf3d",
+    "old": {
+      "path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\depth\\LF3DRenderCore.dll",
+      "bytes": 600064,
+      "sha256": "3ef8d67f55ffb9e071c9a5e40d022a799413b642c5eab5dc7150b5b4d9ac27f1"
+    },
+    "new": {
+      "path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\viewx\\depth\\LF3DRenderCore.dll",
+      "bytes": 732672,
+      "sha256": "a5d7fcc775fbd64f6ba231407ebc5fb3e2dccc2f5a73fc5e83b79c3314c60474"
+    },
+    "identical": false
+  }
+]

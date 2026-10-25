@@ -1,0 +1,65 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"func\":[{\"addr\":\"0x180021800\",\"old\":\"sub_180021800\",\"name\":\"ViewX_DX11_Initialize\",\"dir\":\"vibe\"},{\"addr\":\"0x180021C40\",\"old\":\"sub_180021C40\",\"name\":\"ViewX_DX11_LoadDeviceConfig\",\"dir\":\"vibe\"},{\"addr\":\"0x180021D20\",\"old\":\"sub_180021D20\",\"name\":\"ViewX_DX11_UpdateEyeInfo\",\"dir\":\"vibe\"},{\"addr\":\"0x180021DB0\",\"old\":\"sub_180021DB0\",\"name\":\"ViewX_DX11_Draw\",\"dir\":\"vibe\"},{\"addr\":\"0x180005340\",\"old\":\"sub_180005340\",\"name\":\"ViewX_UpdateEyeConstants\",\"dir\":\"vibe\"},{\"addr\":\"0x180006880\",\"old\":\"sub_180006880\",\"name\":\"ViewX_CreateDefaultPixelShader\",\"dir\":\"vibe\"},{\"addr\":\"0x18000FEC0\",\"old\":\"sub_18000FEC0\",\"name\":\"ViewX_ReadDeviceConfig\",\"dir\":\"vibe\"}],\"summary\":{\"total\":7,\"ok\":7,\"failed\":0,\"stopped\":false}}"
+      }
+    ],
+    "structuredContent": {
+      "func": [
+        {
+          "addr": "0x180021800",
+          "old": "sub_180021800",
+          "name": "ViewX_DX11_Initialize",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180021C40",
+          "old": "sub_180021C40",
+          "name": "ViewX_DX11_LoadDeviceConfig",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180021D20",
+          "old": "sub_180021D20",
+          "name": "ViewX_DX11_UpdateEyeInfo",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180021DB0",
+          "old": "sub_180021DB0",
+          "name": "ViewX_DX11_Draw",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180005340",
+          "old": "sub_180005340",
+          "name": "ViewX_UpdateEyeConstants",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x180006880",
+          "old": "sub_180006880",
+          "name": "ViewX_CreateDefaultPixelShader",
+          "dir": "vibe"
+        },
+        {
+          "addr": "0x18000FEC0",
+          "old": "sub_18000FEC0",
+          "name": "ViewX_ReadDeviceConfig",
+          "dir": "vibe"
+        }
+      ],
+      "summary": {
+        "total": 7,
+        "ok": 7,
+        "failed": 0,
+        "stopped": false
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

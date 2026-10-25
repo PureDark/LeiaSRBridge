@@ -1,0 +1,45 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"n\":6,\"matches\":[{\"addr\":\"0x18000b8b0\",\"string\":\"Software\"},{\"addr\":\"0x18000bb30\",\"string\":\"HKCU\\r\\n{\\tSoftware\\r\\n\\t{\\r\\n\\t\\tClasses\"},{\"addr\":\"0x18000c010\",\"string\":\"Global\\\\FaceTrackingExitEvent\"},{\"addr\":\"0x18000c088\",\"string\":\"FaceTracking.exe\"},{\"addr\":\"0x180010dca\",\"string\":\"DecodePointer\"},{\"addr\":\"0x180010e32\",\"string\":\"EncodePointer\"}],\"cursor\":{\"done\":true}}"
+      }
+    ],
+    "structuredContent": {
+      "n": 6,
+      "matches": [
+        {
+          "addr": "0x18000b8b0",
+          "string": "Software"
+        },
+        {
+          "addr": "0x18000bb30",
+          "string": "HKCU\r\n{\tSoftware\r\n\t{\r\n\t\tClasses"
+        },
+        {
+          "addr": "0x18000c010",
+          "string": "Global\\FaceTrackingExitEvent"
+        },
+        {
+          "addr": "0x18000c088",
+          "string": "FaceTracking.exe"
+        },
+        {
+          "addr": "0x180010dca",
+          "string": "DecodePointer"
+        },
+        {
+          "addr": "0x180010e32",
+          "string": "EncodePointer"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "isError": false
+  },
+  "id": 1
+}

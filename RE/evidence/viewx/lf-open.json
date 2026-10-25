@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"viewx_lf\",\"input_path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\TitanLeiaBridge\\\\RE\\\\inputs\\\\viewx\\\\depth\\\\LF3DRenderCore.dll\",\"filename\":\"LF3DRenderCore.dll\",\"created_at\":\"2026-10-25T18:42:18.159728\",\"last_accessed\":\"2026-10-25T18:42:18.159728\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_caches\",\"ok\":true,\"ms\":134.86},{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.01}],\"health\":{\"status\":\"ok\",\"uptime_sec\":70.928,\"idb_path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\TitanLeiaBridge\\\\RE\\\\inputs\\\\viewx\\\\depth\\\\LF3DRenderCore.dll.i64\",\"module\":\"LF3DRenderCore.dll\",\"input_path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\TitanLeiaBridge\\\\RE\\\\inputs\\\\viewx\\\\depth\\\\LF3DRenderCore.dll\",\"imagebase\":\"0x180000000\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":2898}},\"message\":\"Binary opened: LF3DRenderCore.dll (viewx_lf)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "viewx_lf",
+        "input_path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\viewx\\depth\\LF3DRenderCore.dll",
+        "filename": "LF3DRenderCore.dll",
+        "created_at": "2026-10-25T18:42:18.159728",
+        "last_accessed": "2026-10-25T18:42:18.159728",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_caches",
+            "ok": true,
+            "ms": 134.86
+          },
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.01
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 70.928,
+          "idb_path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\viewx\\depth\\LF3DRenderCore.dll.i64",
+          "module": "LF3DRenderCore.dll",
+          "input_path": "F:\\开发项目\\TitanLeiaBridge\\RE\\inputs\\viewx\\depth\\LF3DRenderCore.dll",
+          "imagebase": "0x180000000",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": true,
+          "strings_cache_size": 2898
+        }
+      },
+      "message": "Binary opened: LF3DRenderCore.dll (viewx_lf)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

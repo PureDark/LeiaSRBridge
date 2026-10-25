@@ -1,0 +1,328 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"0x180006610\",\"addr\":\"0x180006610\",\"name\":\"sub_180006610\",\"analysis\":{\"size\":\"0x43\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180006610(__int64 a1, __int64 a2)\\n{\\n  xmmword_180015000 = *(_OWORD *)a2; /*0x180006616*/\\n  dword_180015010 = *(_DWORD *)(a2 + 16); /*0x18000664a*/\\n  return 0; /*0x180006652*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180006610  movss xmm0, dword ptr [rdx]\",\"180006614  xor eax, eax\",\"180006616  movss dword ptr cs:xmmword_180015000, xmm0\",\"18000661e  movss xmm1, dword ptr [rdx+4]\",\"180006623  movss dword ptr cs:xmmword_180015000+4, xmm1\",\"18000662b  movss xmm0, dword ptr [rdx+8]\",\"180006630  movss dword ptr cs:xmmword_180015000+8, xmm0\",\"180006638  movss xmm1, dword ptr [rdx+0Ch]\",\"18000663d  movss dword ptr cs:xmmword_180015000+0Ch, xmm1\",\"180006645  movss xmm0, dword ptr [rdx+10h]\",\"18000664a  movss cs:dword_180015010, xmm0\",\"180006652  retn\"],\"instruction_count\":12,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x18000bd70\",\"type\":\"data\"},{\"addr\":\"0x18000be30\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180006614\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[],\"callee_count\":0,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[],\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180006610\",\"end\":\"0x180006653\",\"size\":67,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180006660\",\"addr\":\"0x180006660\",\"name\":\"sub_180006660\",\"analysis\":{\"size\":\"0x43\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180006660(__int64 a1, __int64 a2)\\n{\\n  *(_OWORD *)a2 = xmmword_180015000; /*0x18000666a*/\\n  *(_DWORD *)(a2 + 16) = dword_180015010; /*0x18000669d*/\\n  return 0; /*0x1800066a2*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180006660  movss xmm0, dword ptr cs:xmmword_180015000\",\"180006668  xor eax, eax\",\"18000666a  movss dword ptr [rdx], xmm0\",\"18000666e  movss xmm1, dword ptr cs:xmmword_180015000+4\",\"180006676  movss dword ptr [rdx+4], xmm1\",\"18000667b  movss xmm0, dword ptr cs:xmmword_180015000+8\",\"180006683  movss dword ptr [rdx+8], xmm0\",\"180006688  movss xmm1, dword ptr cs:xmmword_180015000+0Ch\",\"180006690  movss dword ptr [rdx+0Ch], xmm1\",\"180006695  movss xmm0, cs:dword_180015010\",\"18000669d  movss dword ptr [rdx+10h], xmm0\",\"1800066a2  retn\"],\"instruction_count\":12,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x18000bd78\",\"type\":\"data\"},{\"addr\":\"0x18000be38\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180006668\",\"type\":\"code\"},{\"addr\":\"0x180015000\",\"type\":\"data\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":2},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[],\"callee_count\":0,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[],\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180006660\",\"end\":\"0x1800066a3\",\"size\":67,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1800066B0\",\"addr\":\"0x1800066b0\",\"name\":\"sub_1800066B0\",\"analysis\":{\"size\":\"0x37\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_1800066B0(__int64 a1, float a2, float a3, float a4, int a5, int a6)\\n{\\n  *(float *)&xmmword_180015000 = a2; /*0x1800066b8*/\\n  dword_180015010 = a6; /*0x1800066c6*/\\n  *((float *)&xmmword_180015000 + 1) = a3; /*0x1800066ce*/\\n  *((float *)&xmmword_180015000 + 2) = a4; /*0x1800066d6*/\\n  HIDWORD(xmmword_180015000) = a5; /*0x1800066de*/\\n  return 0; /*0x1800066e6*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"1800066b0  movss xmm0, [rsp+arg_20]\",\"1800066b6  xor eax, eax\",\"1800066b8  movss dword ptr cs:xmmword_180015000, xmm1\",\"1800066c0  movss xmm1, [rsp+arg_28]\",\"1800066c6  movss cs:dword_180015010, xmm1\",\"1800066ce  movss dword ptr cs:xmmword_180015000+4, xmm2\",\"1800066d6  movss dword ptr cs:xmmword_180015000+8, xmm3\",\"1800066de  movss dword ptr cs:xmmword_180015000+0Ch, xmm0\",\"1800066e6  retn\"],\"instruction_count\":9,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x18000bd80\",\"type\":\"data\"},{\"addr\":\"0x18000be40\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x1800066b6\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[],\"callee_count\":0,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[],\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x1800066b0\",\"end\":\"0x1800066e7\",\"size\":55,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180006880\",\"addr\":\"0x180006880\",\"name\":\"sub_180006880\",\"analysis\":{\"size\":\"0x4b\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180006880(__int64 a1, _DWORD *a2, _DWORD *a3, _DWORD *a4, _DWORD *a5, _DWORD *a6)\\n{\\n  *a2 = xmmword_180015000; /*0x18000688d*/\\n  *a3 = DWORD1(xmmword_180015000); /*0x180006899*/\\n  *a4 = DWORD2(xmmword_180015000); /*0x1800068a6*/\\n  *a5 = HIDWORD(xmmword_180015000); /*0x1800068b3*/\\n  *a6 = dword_180015010; /*0x1800068c4*/\\n  return 0; /*0x1800068ca*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180006880  movss xmm0, dword ptr cs:xmmword_180015000\",\"180006888  mov rax, [rsp+arg_20]\",\"18000688d  movss dword ptr [rdx], xmm0\",\"180006891  movss xmm1, dword ptr cs:xmmword_180015000+4\",\"180006899  movss dword ptr [r8], xmm1\",\"18000689e  movss xmm0, dword ptr cs:xmmword_180015000+8\",\"1800068a6  movss dword ptr [r9], xmm0\",\"1800068ab  movss xmm1, dword ptr cs:xmmword_180015000+0Ch\",\"1800068b3  movss dword ptr [rax], xmm1\",\"1800068b7  mov rax, [rsp+arg_28]\",\"1800068bc  movss xmm0, cs:dword_180015010\",\"1800068c4  movss dword ptr [rax], xmm0\",\"1800068c8  xor eax, eax\",\"1800068ca  retn\"],\"instruction_count\":14,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x18000bd90\",\"type\":\"data\"},{\"addr\":\"0x18000be50\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180006888\",\"type\":\"code\"},{\"addr\":\"0x180015000\",\"type\":\"data\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":2},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[],\"callee_count\":0,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[],\"constant_count\":0,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180006880\",\"end\":\"0x1800068cb\",\"size\":75,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "0x180006610",
+          "addr": "0x180006610",
+          "name": "sub_180006610",
+          "analysis": {
+            "size": "0x43",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180006610(__int64 a1, __int64 a2)\n{\n  xmmword_180015000 = *(_OWORD *)a2; /*0x180006616*/\n  dword_180015010 = *(_DWORD *)(a2 + 16); /*0x18000664a*/\n  return 0; /*0x180006652*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180006610  movss xmm0, dword ptr [rdx]",
+                "180006614  xor eax, eax",
+                "180006616  movss dword ptr cs:xmmword_180015000, xmm0",
+                "18000661e  movss xmm1, dword ptr [rdx+4]",
+                "180006623  movss dword ptr cs:xmmword_180015000+4, xmm1",
+                "18000662b  movss xmm0, dword ptr [rdx+8]",
+                "180006630  movss dword ptr cs:xmmword_180015000+8, xmm0",
+                "180006638  movss xmm1, dword ptr [rdx+0Ch]",
+                "18000663d  movss dword ptr cs:xmmword_180015000+0Ch, xmm1",
+                "180006645  movss xmm0, dword ptr [rdx+10h]",
+                "18000664a  movss cs:dword_180015010, xmm0",
+                "180006652  retn"
+              ],
+              "instruction_count": 12,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x18000bd70",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18000be30",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180006614",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [],
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [],
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180006610",
+                "end": "0x180006653",
+                "size": 67,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180006660",
+          "addr": "0x180006660",
+          "name": "sub_180006660",
+          "analysis": {
+            "size": "0x43",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180006660(__int64 a1, __int64 a2)\n{\n  *(_OWORD *)a2 = xmmword_180015000; /*0x18000666a*/\n  *(_DWORD *)(a2 + 16) = dword_180015010; /*0x18000669d*/\n  return 0; /*0x1800066a2*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180006660  movss xmm0, dword ptr cs:xmmword_180015000",
+                "180006668  xor eax, eax",
+                "18000666a  movss dword ptr [rdx], xmm0",
+                "18000666e  movss xmm1, dword ptr cs:xmmword_180015000+4",
+                "180006676  movss dword ptr [rdx+4], xmm1",
+                "18000667b  movss xmm0, dword ptr cs:xmmword_180015000+8",
+                "180006683  movss dword ptr [rdx+8], xmm0",
+                "180006688  movss xmm1, dword ptr cs:xmmword_180015000+0Ch",
+                "180006690  movss dword ptr [rdx+0Ch], xmm1",
+                "180006695  movss xmm0, cs:dword_180015010",
+                "18000669d  movss dword ptr [rdx+10h], xmm0",
+                "1800066a2  retn"
+              ],
+              "instruction_count": 12,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x18000bd78",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18000be38",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180006668",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180015000",
+                  "type": "data"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 2
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [],
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [],
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180006660",
+                "end": "0x1800066a3",
+                "size": 67,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1800066B0",
+          "addr": "0x1800066b0",
+          "name": "sub_1800066B0",
+          "analysis": {
+            "size": "0x37",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_1800066B0(__int64 a1, float a2, float a3, float a4, int a5, int a6)\n{\n  *(float *)&xmmword_180015000 = a2; /*0x1800066b8*/\n  dword_180015010 = a6; /*0x1800066c6*/\n  *((float *)&xmmword_180015000 + 1) = a3; /*0x1800066ce*/\n  *((float *)&xmmword_180015000 + 2) = a4; /*0x1800066d6*/\n  HIDWORD(xmmword_180015000) = a5; /*0x1800066de*/\n  return 0; /*0x1800066e6*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "1800066b0  movss xmm0, [rsp+arg_20]",
+                "1800066b6  xor eax, eax",
+                "1800066b8  movss dword ptr cs:xmmword_180015000, xmm1",
+                "1800066c0  movss xmm1, [rsp+arg_28]",
+                "1800066c6  movss cs:dword_180015010, xmm1",
+                "1800066ce  movss dword ptr cs:xmmword_180015000+4, xmm2",
+                "1800066d6  movss dword ptr cs:xmmword_180015000+8, xmm3",
+                "1800066de  movss dword ptr cs:xmmword_180015000+0Ch, xmm0",
+                "1800066e6  retn"
+              ],
+              "instruction_count": 9,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x18000bd80",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18000be40",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x1800066b6",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [],
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [],
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x1800066b0",
+                "end": "0x1800066e7",
+                "size": 55,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180006880",
+          "addr": "0x180006880",
+          "name": "sub_180006880",
+          "analysis": {
+            "size": "0x4b",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180006880(__int64 a1, _DWORD *a2, _DWORD *a3, _DWORD *a4, _DWORD *a5, _DWORD *a6)\n{\n  *a2 = xmmword_180015000; /*0x18000688d*/\n  *a3 = DWORD1(xmmword_180015000); /*0x180006899*/\n  *a4 = DWORD2(xmmword_180015000); /*0x1800068a6*/\n  *a5 = HIDWORD(xmmword_180015000); /*0x1800068b3*/\n  *a6 = dword_180015010; /*0x1800068c4*/\n  return 0; /*0x1800068ca*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180006880  movss xmm0, dword ptr cs:xmmword_180015000",
+                "180006888  mov rax, [rsp+arg_20]",
+                "18000688d  movss dword ptr [rdx], xmm0",
+                "180006891  movss xmm1, dword ptr cs:xmmword_180015000+4",
+                "180006899  movss dword ptr [r8], xmm1",
+                "18000689e  movss xmm0, dword ptr cs:xmmword_180015000+8",
+                "1800068a6  movss dword ptr [r9], xmm0",
+                "1800068ab  movss xmm1, dword ptr cs:xmmword_180015000+0Ch",
+                "1800068b3  movss dword ptr [rax], xmm1",
+                "1800068b7  mov rax, [rsp+arg_28]",
+                "1800068bc  movss xmm0, cs:dword_180015010",
+                "1800068c4  movss dword ptr [rax], xmm0",
+                "1800068c8  xor eax, eax",
+                "1800068ca  retn"
+              ],
+              "instruction_count": 14,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x18000bd90",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18000be50",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180006888",
+                  "type": "code"
+                },
+                {
+                  "addr": "0x180015000",
+                  "type": "data"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 2
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [],
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [],
+            "constant_count": 0,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180006880",
+                "end": "0x1800068cb",
+                "size": 75,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

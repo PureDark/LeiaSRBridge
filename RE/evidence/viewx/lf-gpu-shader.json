@@ -1,0 +1,476 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"0x180006880\",\"addr\":\"0x180006880\",\"name\":\"sub_180006880\",\"analysis\":{\"size\":\"0x33\",\"prototype\":null,\"decompile\":\"bool __fastcall sub_180006880(__int64 a1, __int64 a2)\\n{\\n  return (*(int (__fastcall **)(__int64, void *, __int64, _QWORD, __int64))(*(_QWORD *)a2 + 120LL))( /*0x1800068ae*/\\n           a1: a2,\\n           a2: &unk_180073000,\\n           a3: 34648,\\n           a4: 0,\\n           a5: a1 + 88) >= 0;\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180006880  sub rsp, 38h\",\"180006884  mov rax, [rdx]\",\"180006887  add rcx, 58h ; 'X'\",\"18000688b  mov r10, rdx\",\"18000688e  mov [rsp+38h+var_18], rcx\",\"180006893  mov rcx, r10\",\"180006896  lea rdx, unk_180073000\",\"18000689d  xor r9d, r9d\",\"1800068a0  mov r8d, 8758h\",\"1800068a6  call qword ptr [rax+78h]\",\"1800068a9  test eax, eax\",\"1800068ab  setns al\",\"1800068ae  add rsp, 38h\",\"1800068b2  retn\"],\"instruction_count\":14,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x180072fe0\",\"type\":\"data\"},{\"addr\":\"0x18038d3e4\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180006884\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[],\"callee_count\":0,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180006880\",\"value\":\"0x38\",\"decimal\":56},{\"addr\":\"0x180006887\",\"value\":\"0x58\",\"decimal\":88},{\"addr\":\"0x1800068a0\",\"value\":\"0x8758\",\"decimal\":34648},{\"addr\":\"0x1800068ae\",\"value\":\"0x38\",\"decimal\":56}],\"constant_count\":4,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180006880\",\"end\":\"0x1800068b3\",\"size\":51,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x1800068F0\",\"addr\":\"0x1800068f0\",\"name\":\"sub_1800068F0\",\"analysis\":{\"size\":\"0x138\",\"prototype\":null,\"decompile\":\"char __fastcall sub_1800068F0(__int64 a1, __int64 a2, _DWORD *a3)\\n{\\n  _OWORD *v3; // rbx\\n  _QWORD *v4; // rsi\\n  _OWORD *v6; // rax\\n  _OWORD *v8; // [rsp+30h] [rbp-18h] BYREF\\n\\n  v3 = (_OWORD *)(a1 + 12); /*0x180006902*/\\n  *(_DWORD *)(a1 + 12) = *a3; /*0x180006906*/\\n  v4 = (_QWORD *)(a1 + 120); /*0x180006908*/\\n  *(_DWORD *)(a1 + 16) = a3[1]; /*0x180006913*/\\n  *(_DWORD *)(a1 + 20) = a3[2]; /*0x180006920*/\\n  *(_DWORD *)(a1 + 24) = a3[3]; /*0x180006927*/\\n  *(_DWORD *)(a1 + 28) = a3[4]; /*0x18000692e*/\\n  *(_DWORD *)(a1 + 32) = a3[5]; /*0x180006935*/\\n  *(_DWORD *)(a1 + 36) = a3[6]; /*0x18000693c*/\\n  *(_DWORD *)(a1 + 40) = a3[7]; /*0x180006943*/\\n  *(_DWORD *)(a1 + 44) = a3[8]; /*0x18000694a*/\\n  *(_DWORD *)(a1 + 48) = a3[9]; /*0x180006951*/\\n  *(_DWORD *)(a1 + 52) = a3[10]; /*0x180006958*/\\n  *(_DWORD *)(a1 + 56) = a3[11]; /*0x18000695f*/\\n  *(_DWORD *)(a1 + 60) = a3[12]; /*0x180006966*/\\n  *(_DWORD *)(a1 + 64) = a3[13]; /*0x18000696d*/\\n  *(_DWORD *)(a1 + 68) = a3[14]; /*0x180006974*/\\n  *(_DWORD *)(a1 + 72) = a3[15]; /*0x18000697e*/\\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD, __int64, _DWORD, _OWORD **))(*(_QWORD *)a2 + 112LL))( /*0x18000699c*/\\n    a1: a2,\\n    a2: *(_QWORD *)(a1 + 120),\\n    a3: 0,\\n    a4: 4,\\n    a5: 0,\\n    a6: &v8);\\n  v6 = v8; /*0x18000699f*/\\n  if ( v8 == nullptr ) /*0x1800069a7*/\\n    goto LABEL_5; /*0x1800069a7*/\\n  if ( v3 == nullptr ) /*0x1800069ac*/\\n  {\\n    *v8 = 0; /*0x1800069d1*/\\n    v6[1] = 0; /*0x1800069d4*/\\n    v6[2] = 0; /*0x1800069d8*/\\n    v6[3] = 0; /*0x1800069dc*/\\nLABEL_5:\\n    *(_DWORD *)sub_1800414DC() = 22; /*0x1800069e0*/\\n    invalid_parameter_noinfo(); /*0x1800069eb*/\\n    goto LABEL_6; /*0x1800069eb*/\\n  }\\n  *v8 = *v3; /*0x1800069b1*/\\n  v6[1] = v3[1]; /*0x1800069b8*/\\n  v6[2] = v3[2]; /*0x1800069c0*/\\n  v6[3] = v3[3]; /*0x1800069c8*/\\nLABEL_6:\\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD))(*(_QWORD *)a2 + 120LL))(a1: a2, a2: *v4, a3: 0); /*0x1800069f0*/\\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, _QWORD *))(*(_QWORD *)a2 + 128LL))(a1: a2, a2: 0, a3: 1, a4: v4); /*0x180006a10*/\\n  return 1; /*0x180006a16*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"1800068f0  mov [rsp+arg_0], rbx\",\"1800068f5  mov [rsp+arg_8], rsi\",\"1800068fa  push rdi\",\"1800068fb  sub rsp, 40h\",\"1800068ff  mov eax, [r8]\",\"180006902  lea rbx, [rcx+0Ch]\",\"180006906  mov [rbx], eax\",\"180006908  lea rsi, [rcx+78h]\",\"18000690c  mov eax, [r8+4]\",\"180006910  mov rdi, rdx\",\"180006913  mov [rcx+10h], eax\",\"180006916  mov r9d, 4\",\"18000691c  mov eax, [r8+8]\",\"180006920  mov [rcx+14h], eax\",\"180006923  mov eax, [r8+0Ch]\",\"180006927  mov [rcx+18h], eax\",\"18000692a  mov eax, [r8+10h]\",\"18000692e  mov [rcx+1Ch], eax\",\"180006931  mov eax, [r8+14h]\",\"180006935  mov [rcx+20h], eax\",\"180006938  mov eax, [r8+18h]\",\"18000693c  mov [rcx+24h], eax\",\"18000693f  mov eax, [r8+1Ch]\",\"180006943  mov [rcx+28h], eax\",\"180006946  mov eax, [r8+20h]\",\"18000694a  mov [rcx+2Ch], eax\",\"18000694d  mov eax, [r8+24h]\",\"180006951  mov [rcx+30h], eax\",\"180006954  mov eax, [r8+28h]\",\"180006958  mov [rcx+34h], eax\",\"18000695b  mov eax, [r8+2Ch]\",\"18000695f  mov [rcx+38h], eax\",\"180006962  mov eax, [r8+30h]\",\"180006966  mov [rcx+3Ch], eax\",\"180006969  mov eax, [r8+34h]\",\"18000696d  mov [rcx+40h], eax\",\"180006970  mov eax, [r8+38h]\",\"180006974  mov [rcx+44h], eax\",\"180006977  mov eax, [r8+3Ch]\",\"18000697b  xor r8d, r8d\",\"18000697e  mov [rcx+48h], eax\",\"180006981  lea rcx, [rsp+48h+var_18]\",\"180006986  mov rax, [rdx]\",\"180006989  mov rdx, [rsi]\",\"18000698c  mov [rsp+48h+var_20], rcx\",\"180006991  mov rcx, rdi\",\"180006994  mov [rsp+48h+var_28], 0\",\"18000699c  call qword ptr [rax+70h]\",\"18000699f  mov rax, [rsp+48h+var_18]\",\"1800069a4  test rax, rax\",\"1800069a7  jz short loc_1800069E0\",\"1800069a9  test rbx, rbx\",\"1800069ac  jz short loc_1800069CE\",\"1800069ae  movups xmm0, xmmword ptr [rbx]\",\"1800069b1  movups xmmword ptr [rax], xmm0\",\"1800069b4  movups xmm1, xmmword ptr [rbx+10h]\",\"1800069b8  movups xmmword ptr [rax+10h], xmm1\",\"1800069bc  movups xmm0, xmmword ptr [rbx+20h]\",\"1800069c0  movups xmmword ptr [rax+20h], xmm0\",\"1800069c4  movups xmm1, xmmword ptr [rbx+30h]\",\"1800069c8  movups xmmword ptr [rax+30h], xmm1\",\"1800069cc  jmp short loc_1800069F0\",\"1800069ce  xorps xmm0, xmm0\",\"1800069d1  movups xmmword ptr [rax], xmm0\",\"1800069d4  movups xmmword ptr [rax+10h], xmm0\",\"1800069d8  movups xmmword ptr [rax+20h], xmm0\",\"1800069dc  movups xmmword ptr [rax+30h], xmm0\",\"1800069e0  call sub_1800414DC\",\"1800069e5  mov dword ptr [rax], 16h\",\"1800069eb  call _invalid_parameter_noinfo\",\"1800069f0  mov rax, [rdi]\",\"1800069f3  xor r8d, r8d\",\"1800069f6  mov rdx, [rsi]\",\"1800069f9  mov rcx, rdi\",\"1800069fc  call qword ptr [rax+78h]\",\"1800069ff  mov rax, [rdi]\",\"180006a02  mov r9, rsi\",\"180006a05  xor edx, edx\",\"180006a07  mov r8d, 1\",\"180006a0d  mov rcx, rdi\",\"180006a10  call qword ptr [rax+80h]\",\"180006a16  mov rbx, [rsp+48h+arg_0]\",\"180006a1b  mov al, 1\",\"180006a1d  mov rsi, [rsp+48h+arg_8]\",\"180006a22  add rsp, 40h\",\"180006a26  pop rdi\",\"180006a27  retn\"],\"instruction_count\":87,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x180072ff0\",\"type\":\"data\"},{\"addr\":\"0x18038d3fc\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x1800068f5\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":2,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x1800414dc\",\"name\":\"sub_1800414DC\",\"type\":\"internal\"},{\"addr\":\"0x18003ec94\",\"name\":\"_invalid_parameter_noinfo\",\"type\":\"internal\"}],\"callee_count\":2,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x1800068fb\",\"value\":\"0x40\",\"decimal\":64},{\"addr\":\"0x180006916\",\"value\":\"0x4\",\"decimal\":4},{\"addr\":\"0x180006994\",\"value\":\"0x0\",\"decimal\":0},{\"addr\":\"0x1800069e5\",\"value\":\"0x16\",\"decimal\":22},{\"addr\":\"0x180006a07\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x180006a1b\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x180006a22\",\"value\":\"0x40\",\"decimal\":64}],\"constant_count\":7,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x1800068f0\",\"end\":\"0x1800069a9\",\"size\":185,\"type\":0,\"successors\":[\"0x1800069a9\",\"0x1800069e0\"],\"predecessors\":[]},{\"start\":\"0x1800069a9\",\"end\":\"0x1800069ae\",\"size\":5,\"type\":0,\"successors\":[\"0x1800069ae\",\"0x1800069ce\"],\"predecessors\":[\"0x1800068f0\"]},{\"start\":\"0x1800069ae\",\"end\":\"0x1800069ce\",\"size\":32,\"type\":0,\"successors\":[\"0x1800069f0\"],\"predecessors\":[\"0x1800069a9\"]},{\"start\":\"0x1800069ce\",\"end\":\"0x1800069e0\",\"size\":18,\"type\":0,\"successors\":[\"0x1800069e0\"],\"predecessors\":[\"0x1800069a9\"]},{\"start\":\"0x1800069e0\",\"end\":\"0x1800069f0\",\"size\":16,\"type\":0,\"successors\":[\"0x1800069f0\"],\"predecessors\":[\"0x1800068f0\",\"0x1800069ce\"]},{\"start\":\"0x1800069f0\",\"end\":\"0x180006a28\",\"size\":56,\"type\":2,\"successors\":[],\"predecessors\":[\"0x1800069ae\",\"0x1800069e0\"]}],\"basic_block_count\":6,\"basic_blocks_truncated\":false},\"error\":null},{\"target\":\"0x180021D20\",\"addr\":\"0x180021d20\",\"name\":\"sub_180021D20\",\"analysis\":{\"size\":\"0x2f\",\"prototype\":\"void __fastcall(void *self, float x, float y, float z, bool enabled, float zl, float zr)\",\"decompile\":\"void __fastcall sub_180021D20(void *self, float x, float y, float z, bool enabled, float zl, float zr)\\n{\\n  void *v7; // rbx\\n\\n  v7 = *((void **)self + 5); /*0x180021d26*/\\n  sub_180005340(self: v7, x, y, z, enabled); /*0x180021d36*/\\n  *(float *)(*(_QWORD *)v7 + 60LL) = zl; /*0x180021d44*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180021d20  push rbx\",\"180021d22  sub rsp, 30h\",\"180021d26  mov rbx, [rcx+28h]\",\"180021d2a  movzx eax, [rsp+38h+enabled]\",\"180021d2f  mov rcx, rbx\",\"180021d32  mov [rsp+38h+var_18], al\",\"180021d36  call sub_180005340\",\"180021d3b  mov rax, [rbx]\",\"180021d3e  movss xmm0, [rsp+38h+zl]\",\"180021d44  movss dword ptr [rax+3Ch], xmm0\",\"180021d49  add rsp, 30h\",\"180021d4d  pop rbx\",\"180021d4e  retn\"],\"instruction_count\":13,\"truncated\":false},\"xrefs\":{\"to\":[{\"addr\":\"0x1800a1a78\",\"type\":\"data\"},{\"addr\":\"0x1800a23f8\",\"type\":\"data\"},{\"addr\":\"0x18038e284\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180021d22\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":3,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x180005340\",\"name\":\"sub_180005340\",\"type\":\"internal\"}],\"callee_count\":1,\"callees_truncated\":false,\"strings\":[],\"string_ref_count\":0,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x180021d22\",\"value\":\"0x30\",\"decimal\":48},{\"addr\":\"0x180021d49\",\"value\":\"0x30\",\"decimal\":48}],\"constant_count\":2,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180021d20\",\"end\":\"0x180021d4f\",\"size\":47,\"type\":2,\"successors\":[],\"predecessors\":[]}],\"basic_block_count\":1,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "0x180006880",
+          "addr": "0x180006880",
+          "name": "sub_180006880",
+          "analysis": {
+            "size": "0x33",
+            "prototype": null,
+            "decompile": "bool __fastcall sub_180006880(__int64 a1, __int64 a2)\n{\n  return (*(int (__fastcall **)(__int64, void *, __int64, _QWORD, __int64))(*(_QWORD *)a2 + 120LL))( /*0x1800068ae*/\n           a1: a2,\n           a2: &unk_180073000,\n           a3: 34648,\n           a4: 0,\n           a5: a1 + 88) >= 0;\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180006880  sub rsp, 38h",
+                "180006884  mov rax, [rdx]",
+                "180006887  add rcx, 58h ; 'X'",
+                "18000688b  mov r10, rdx",
+                "18000688e  mov [rsp+38h+var_18], rcx",
+                "180006893  mov rcx, r10",
+                "180006896  lea rdx, unk_180073000",
+                "18000689d  xor r9d, r9d",
+                "1800068a0  mov r8d, 8758h",
+                "1800068a6  call qword ptr [rax+78h]",
+                "1800068a9  test eax, eax",
+                "1800068ab  setns al",
+                "1800068ae  add rsp, 38h",
+                "1800068b2  retn"
+              ],
+              "instruction_count": 14,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x180072fe0",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038d3e4",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180006884",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [],
+            "callee_count": 0,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180006880",
+                "value": "0x38",
+                "decimal": 56
+              },
+              {
+                "addr": "0x180006887",
+                "value": "0x58",
+                "decimal": 88
+              },
+              {
+                "addr": "0x1800068a0",
+                "value": "0x8758",
+                "decimal": 34648
+              },
+              {
+                "addr": "0x1800068ae",
+                "value": "0x38",
+                "decimal": 56
+              }
+            ],
+            "constant_count": 4,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180006880",
+                "end": "0x1800068b3",
+                "size": 51,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x1800068F0",
+          "addr": "0x1800068f0",
+          "name": "sub_1800068F0",
+          "analysis": {
+            "size": "0x138",
+            "prototype": null,
+            "decompile": "char __fastcall sub_1800068F0(__int64 a1, __int64 a2, _DWORD *a3)\n{\n  _OWORD *v3; // rbx\n  _QWORD *v4; // rsi\n  _OWORD *v6; // rax\n  _OWORD *v8; // [rsp+30h] [rbp-18h] BYREF\n\n  v3 = (_OWORD *)(a1 + 12); /*0x180006902*/\n  *(_DWORD *)(a1 + 12) = *a3; /*0x180006906*/\n  v4 = (_QWORD *)(a1 + 120); /*0x180006908*/\n  *(_DWORD *)(a1 + 16) = a3[1]; /*0x180006913*/\n  *(_DWORD *)(a1 + 20) = a3[2]; /*0x180006920*/\n  *(_DWORD *)(a1 + 24) = a3[3]; /*0x180006927*/\n  *(_DWORD *)(a1 + 28) = a3[4]; /*0x18000692e*/\n  *(_DWORD *)(a1 + 32) = a3[5]; /*0x180006935*/\n  *(_DWORD *)(a1 + 36) = a3[6]; /*0x18000693c*/\n  *(_DWORD *)(a1 + 40) = a3[7]; /*0x180006943*/\n  *(_DWORD *)(a1 + 44) = a3[8]; /*0x18000694a*/\n  *(_DWORD *)(a1 + 48) = a3[9]; /*0x180006951*/\n  *(_DWORD *)(a1 + 52) = a3[10]; /*0x180006958*/\n  *(_DWORD *)(a1 + 56) = a3[11]; /*0x18000695f*/\n  *(_DWORD *)(a1 + 60) = a3[12]; /*0x180006966*/\n  *(_DWORD *)(a1 + 64) = a3[13]; /*0x18000696d*/\n  *(_DWORD *)(a1 + 68) = a3[14]; /*0x180006974*/\n  *(_DWORD *)(a1 + 72) = a3[15]; /*0x18000697e*/\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD, __int64, _DWORD, _OWORD **))(*(_QWORD *)a2 + 112LL))( /*0x18000699c*/\n    a1: a2,\n    a2: *(_QWORD *)(a1 + 120),\n    a3: 0,\n    a4: 4,\n    a5: 0,\n    a6: &v8);\n  v6 = v8; /*0x18000699f*/\n  if ( v8 == nullptr ) /*0x1800069a7*/\n    goto LABEL_5; /*0x1800069a7*/\n  if ( v3 == nullptr ) /*0x1800069ac*/\n  {\n    *v8 = 0; /*0x1800069d1*/\n    v6[1] = 0; /*0x1800069d4*/\n    v6[2] = 0; /*0x1800069d8*/\n    v6[3] = 0; /*0x1800069dc*/\nLABEL_5:\n    *(_DWORD *)sub_1800414DC() = 22; /*0x1800069e0*/\n    invalid_parameter_noinfo(); /*0x1800069eb*/\n    goto LABEL_6; /*0x1800069eb*/\n  }\n  *v8 = *v3; /*0x1800069b1*/\n  v6[1] = v3[1]; /*0x1800069b8*/\n  v6[2] = v3[2]; /*0x1800069c0*/\n  v6[3] = v3[3]; /*0x1800069c8*/\nLABEL_6:\n  (*(void (__fastcall **)(__int64, _QWORD, _QWORD))(*(_QWORD *)a2 + 120LL))(a1: a2, a2: *v4, a3: 0); /*0x1800069f0*/\n  (*(void (__fastcall **)(__int64, _QWORD, __int64, _QWORD *))(*(_QWORD *)a2 + 128LL))(a1: a2, a2: 0, a3: 1, a4: v4); /*0x180006a10*/\n  return 1; /*0x180006a16*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "1800068f0  mov [rsp+arg_0], rbx",
+                "1800068f5  mov [rsp+arg_8], rsi",
+                "1800068fa  push rdi",
+                "1800068fb  sub rsp, 40h",
+                "1800068ff  mov eax, [r8]",
+                "180006902  lea rbx, [rcx+0Ch]",
+                "180006906  mov [rbx], eax",
+                "180006908  lea rsi, [rcx+78h]",
+                "18000690c  mov eax, [r8+4]",
+                "180006910  mov rdi, rdx",
+                "180006913  mov [rcx+10h], eax",
+                "180006916  mov r9d, 4",
+                "18000691c  mov eax, [r8+8]",
+                "180006920  mov [rcx+14h], eax",
+                "180006923  mov eax, [r8+0Ch]",
+                "180006927  mov [rcx+18h], eax",
+                "18000692a  mov eax, [r8+10h]",
+                "18000692e  mov [rcx+1Ch], eax",
+                "180006931  mov eax, [r8+14h]",
+                "180006935  mov [rcx+20h], eax",
+                "180006938  mov eax, [r8+18h]",
+                "18000693c  mov [rcx+24h], eax",
+                "18000693f  mov eax, [r8+1Ch]",
+                "180006943  mov [rcx+28h], eax",
+                "180006946  mov eax, [r8+20h]",
+                "18000694a  mov [rcx+2Ch], eax",
+                "18000694d  mov eax, [r8+24h]",
+                "180006951  mov [rcx+30h], eax",
+                "180006954  mov eax, [r8+28h]",
+                "180006958  mov [rcx+34h], eax",
+                "18000695b  mov eax, [r8+2Ch]",
+                "18000695f  mov [rcx+38h], eax",
+                "180006962  mov eax, [r8+30h]",
+                "180006966  mov [rcx+3Ch], eax",
+                "180006969  mov eax, [r8+34h]",
+                "18000696d  mov [rcx+40h], eax",
+                "180006970  mov eax, [r8+38h]",
+                "180006974  mov [rcx+44h], eax",
+                "180006977  mov eax, [r8+3Ch]",
+                "18000697b  xor r8d, r8d",
+                "18000697e  mov [rcx+48h], eax",
+                "180006981  lea rcx, [rsp+48h+var_18]",
+                "180006986  mov rax, [rdx]",
+                "180006989  mov rdx, [rsi]",
+                "18000698c  mov [rsp+48h+var_20], rcx",
+                "180006991  mov rcx, rdi",
+                "180006994  mov [rsp+48h+var_28], 0",
+                "18000699c  call qword ptr [rax+70h]",
+                "18000699f  mov rax, [rsp+48h+var_18]",
+                "1800069a4  test rax, rax",
+                "1800069a7  jz short loc_1800069E0",
+                "1800069a9  test rbx, rbx",
+                "1800069ac  jz short loc_1800069CE",
+                "1800069ae  movups xmm0, xmmword ptr [rbx]",
+                "1800069b1  movups xmmword ptr [rax], xmm0",
+                "1800069b4  movups xmm1, xmmword ptr [rbx+10h]",
+                "1800069b8  movups xmmword ptr [rax+10h], xmm1",
+                "1800069bc  movups xmm0, xmmword ptr [rbx+20h]",
+                "1800069c0  movups xmmword ptr [rax+20h], xmm0",
+                "1800069c4  movups xmm1, xmmword ptr [rbx+30h]",
+                "1800069c8  movups xmmword ptr [rax+30h], xmm1",
+                "1800069cc  jmp short loc_1800069F0",
+                "1800069ce  xorps xmm0, xmm0",
+                "1800069d1  movups xmmword ptr [rax], xmm0",
+                "1800069d4  movups xmmword ptr [rax+10h], xmm0",
+                "1800069d8  movups xmmword ptr [rax+20h], xmm0",
+                "1800069dc  movups xmmword ptr [rax+30h], xmm0",
+                "1800069e0  call sub_1800414DC",
+                "1800069e5  mov dword ptr [rax], 16h",
+                "1800069eb  call _invalid_parameter_noinfo",
+                "1800069f0  mov rax, [rdi]",
+                "1800069f3  xor r8d, r8d",
+                "1800069f6  mov rdx, [rsi]",
+                "1800069f9  mov rcx, rdi",
+                "1800069fc  call qword ptr [rax+78h]",
+                "1800069ff  mov rax, [rdi]",
+                "180006a02  mov r9, rsi",
+                "180006a05  xor edx, edx",
+                "180006a07  mov r8d, 1",
+                "180006a0d  mov rcx, rdi",
+                "180006a10  call qword ptr [rax+80h]",
+                "180006a16  mov rbx, [rsp+48h+arg_0]",
+                "180006a1b  mov al, 1",
+                "180006a1d  mov rsi, [rsp+48h+arg_8]",
+                "180006a22  add rsp, 40h",
+                "180006a26  pop rdi",
+                "180006a27  retn"
+              ],
+              "instruction_count": 87,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x180072ff0",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038d3fc",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x1800068f5",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 2,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x1800414dc",
+                "name": "sub_1800414DC",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18003ec94",
+                "name": "_invalid_parameter_noinfo",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 2,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x1800068fb",
+                "value": "0x40",
+                "decimal": 64
+              },
+              {
+                "addr": "0x180006916",
+                "value": "0x4",
+                "decimal": 4
+              },
+              {
+                "addr": "0x180006994",
+                "value": "0x0",
+                "decimal": 0
+              },
+              {
+                "addr": "0x1800069e5",
+                "value": "0x16",
+                "decimal": 22
+              },
+              {
+                "addr": "0x180006a07",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x180006a1b",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x180006a22",
+                "value": "0x40",
+                "decimal": 64
+              }
+            ],
+            "constant_count": 7,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x1800068f0",
+                "end": "0x1800069a9",
+                "size": 185,
+                "type": 0,
+                "successors": [
+                  "0x1800069a9",
+                  "0x1800069e0"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x1800069a9",
+                "end": "0x1800069ae",
+                "size": 5,
+                "type": 0,
+                "successors": [
+                  "0x1800069ae",
+                  "0x1800069ce"
+                ],
+                "predecessors": [
+                  "0x1800068f0"
+                ]
+              },
+              {
+                "start": "0x1800069ae",
+                "end": "0x1800069ce",
+                "size": 32,
+                "type": 0,
+                "successors": [
+                  "0x1800069f0"
+                ],
+                "predecessors": [
+                  "0x1800069a9"
+                ]
+              },
+              {
+                "start": "0x1800069ce",
+                "end": "0x1800069e0",
+                "size": 18,
+                "type": 0,
+                "successors": [
+                  "0x1800069e0"
+                ],
+                "predecessors": [
+                  "0x1800069a9"
+                ]
+              },
+              {
+                "start": "0x1800069e0",
+                "end": "0x1800069f0",
+                "size": 16,
+                "type": 0,
+                "successors": [
+                  "0x1800069f0"
+                ],
+                "predecessors": [
+                  "0x1800068f0",
+                  "0x1800069ce"
+                ]
+              },
+              {
+                "start": "0x1800069f0",
+                "end": "0x180006a28",
+                "size": 56,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x1800069ae",
+                  "0x1800069e0"
+                ]
+              }
+            ],
+            "basic_block_count": 6,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        },
+        {
+          "target": "0x180021D20",
+          "addr": "0x180021d20",
+          "name": "sub_180021D20",
+          "analysis": {
+            "size": "0x2f",
+            "prototype": "void __fastcall(void *self, float x, float y, float z, bool enabled, float zl, float zr)",
+            "decompile": "void __fastcall sub_180021D20(void *self, float x, float y, float z, bool enabled, float zl, float zr)\n{\n  void *v7; // rbx\n\n  v7 = *((void **)self + 5); /*0x180021d26*/\n  sub_180005340(self: v7, x, y, z, enabled); /*0x180021d36*/\n  *(float *)(*(_QWORD *)v7 + 60LL) = zl; /*0x180021d44*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180021d20  push rbx",
+                "180021d22  sub rsp, 30h",
+                "180021d26  mov rbx, [rcx+28h]",
+                "180021d2a  movzx eax, [rsp+38h+enabled]",
+                "180021d2f  mov rcx, rbx",
+                "180021d32  mov [rsp+38h+var_18], al",
+                "180021d36  call sub_180005340",
+                "180021d3b  mov rax, [rbx]",
+                "180021d3e  movss xmm0, [rsp+38h+zl]",
+                "180021d44  movss dword ptr [rax+3Ch], xmm0",
+                "180021d49  add rsp, 30h",
+                "180021d4d  pop rbx",
+                "180021d4e  retn"
+              ],
+              "instruction_count": 13,
+              "truncated": false
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x1800a1a78",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x1800a23f8",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18038e284",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180021d22",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 3,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x180005340",
+                "name": "sub_180005340",
+                "type": "internal"
+              }
+            ],
+            "callee_count": 1,
+            "callees_truncated": false,
+            "strings": [],
+            "string_ref_count": 0,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x180021d22",
+                "value": "0x30",
+                "decimal": 48
+              },
+              {
+                "addr": "0x180021d49",
+                "value": "0x30",
+                "decimal": 48
+              }
+            ],
+            "constant_count": 2,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180021d20",
+                "end": "0x180021d4f",
+                "size": 47,
+                "type": 2,
+                "successors": [],
+                "predecessors": []
+              }
+            ],
+            "basic_block_count": 1,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

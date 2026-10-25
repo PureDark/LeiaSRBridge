@@ -1,0 +1,28 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"input\":\"34648\",\"result\":{\"decimal\":\"34648\",\"hexadecimal\":\"0x8758\",\"bytes\":\"58 87 00 00\",\"ascii\":null,\"binary\":\"0b1000011101011000\"},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "input": "34648",
+          "result": {
+            "decimal": "34648",
+            "hexadecimal": "0x8758",
+            "bytes": "58 87 00 00",
+            "ascii": null,
+            "binary": "0b1000011101011000"
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

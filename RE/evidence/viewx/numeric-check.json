@@ -1,0 +1,55 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"input\":\"0x180073000\",\"result\":{\"decimal\":\"6442921984\",\"hexadecimal\":\"0x180073000\",\"bytes\":\"00 30 07 80 01\",\"ascii\":null,\"binary\":\"0b110000000000001110011000000000000\"},\"error\":null},{\"input\":\"34648\",\"result\":null,\"error\":\"Number 34648 is too big for 2 bytes\"},{\"input\":\"0x180089840\",\"result\":{\"decimal\":\"6443014208\",\"hexadecimal\":\"0x180089840\",\"bytes\":\"40 98 08 80 01\",\"ascii\":null,\"binary\":\"0b110000000000010001001100001000000\"},\"error\":null},{\"input\":\"23656\",\"result\":{\"decimal\":\"23656\",\"hexadecimal\":\"0x5c68\",\"bytes\":\"68 5c\",\"ascii\":\"h\\\\\",\"binary\":\"0b101110001101000\"},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "input": "0x180073000",
+          "result": {
+            "decimal": "6442921984",
+            "hexadecimal": "0x180073000",
+            "bytes": "00 30 07 80 01",
+            "ascii": null,
+            "binary": "0b110000000000001110011000000000000"
+          },
+          "error": null
+        },
+        {
+          "input": "34648",
+          "result": null,
+          "error": "Number 34648 is too big for 2 bytes"
+        },
+        {
+          "input": "0x180089840",
+          "result": {
+            "decimal": "6443014208",
+            "hexadecimal": "0x180089840",
+            "bytes": "40 98 08 80 01",
+            "ascii": null,
+            "binary": "0b110000000000010001001100001000000"
+          },
+          "error": null
+        },
+        {
+          "input": "23656",
+          "result": {
+            "decimal": "23656",
+            "hexadecimal": "0x5c68",
+            "bytes": "68 5c",
+            "ascii": "h\\",
+            "binary": "0b101110001101000"
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

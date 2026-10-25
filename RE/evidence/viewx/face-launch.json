@@ -1,0 +1,859 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"target\":\"0x180006270\",\"addr\":\"0x180006270\",\"name\":\"sub_180006270\",\"analysis\":{\"size\":\"0x399\",\"prototype\":null,\"decompile\":\"__int64 __fastcall sub_180006270(__int64 a1)\\n{\\n  __int128 v2; // xmm1\\n  ULONG_PTR v3; // xmm0_8\\n  void *v4; // rcx\\n  unsigned int v5; // ebx\\n  __int64 v6; // rax\\n  HANDLE JobObjectW; // rbx\\n  HANDLE EventW; // r12\\n  __int64 v9; // rax\\n  __int64 v10; // rax\\n  wchar_t *v11; // rax\\n  __int64 v12; // rax\\n  __int64 v13; // rcx\\n  WCHAR *v14; // rax\\n  __int64 v15; // rax\\n  WCHAR *v16; // rcx\\n  __int64 v17; // rdi\\n  __int64 v18; // rax\\n  char *v19; // r8\\n  WCHAR v20; // dx\\n  WCHAR *v21; // rax\\n  signed int LastError; // eax\\n  struct _PROCESS_INFORMATION ProcessInformation; // [rsp+50h] [rbp-B0h] BYREF\\n  DWORD ExitCode; // [rsp+68h] [rbp-98h] BYREF\\n  struct _RTL_CRITICAL_SECTION CriticalSection; // [rsp+70h] [rbp-90h] BYREF\\n  int JobObjectInformation; // [rsp+A0h] [rbp-60h] BYREF\\n  __int128 v28; // [rsp+A4h] [rbp-5Ch]\\n  __int128 v29; // [rsp+B4h] [rbp-4Ch]\\n  __int128 v30; // [rsp+C4h] [rbp-3Ch]\\n  __int128 v31; // [rsp+D4h] [rbp-2Ch]\\n  __int128 v32; // [rsp+E4h] [rbp-1Ch]\\n  __int128 v33; // [rsp+F4h] [rbp-Ch]\\n  __int128 v34; // [rsp+104h] [rbp+4h]\\n  __int128 v35; // [rsp+114h] [rbp+14h]\\n  __int64 v36; // [rsp+124h] [rbp+24h]\\n  int v37; // [rsp+12Ch] [rbp+2Ch]\\n  struct _STARTUPINFOW StartupInfo; // [rsp+130h] [rbp+30h] BYREF\\n  wchar_t Filename[264]; // [rsp+1A0h] [rbp+A0h] BYREF\\n\\n  v2 = *(_OWORD *)(a1 + 112); /*0x1800062ab*/\\n  *(_OWORD *)&CriticalSection.DebugInfo = *(_OWORD *)(a1 + 96); /*0x1800062af*/\\n  v3 = *(_QWORD *)(a1 + 128); /*0x1800062b4*/\\n  v4 = *(void **)(a1 + 88); /*0x1800062bc*/\\n  CriticalSection.SpinCount = v3; /*0x1800062c0*/\\n  *(_OWORD *)&CriticalSection.OwningThread = v2; /*0x1800062c5*/\\n  if ( v4 != nullptr ) /*0x1800062cc*/\\n  {\\n    if ( GetExitCodeProcess(hProcess: v4, lpExitCode: &ExitCode) && ExitCode == 259 ) /*0x1800062e5*/\\n    {\\n      v5 = -2147024713; /*0x1800062e7*/\\n      goto LABEL_36; /*0x1800062ec*/\\n    }\\n    CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x1800062f5*/\\n    *(_QWORD *)(a1 + 88) = 0; /*0x1800062fb*/\\n  }\\n  v6 = sub_180006DE0(a1: std::cout, a2: \\\"COM:open facetracking\\\"); /*0x18000630d*/\\n  std::ostream::operator<<(a1: v6, a2: sub_180007040); /*0x18000631c*/\\n  dword_180015010 = 0; /*0x180006325*/\\n  xmmword_180015000 = 0; /*0x18000632b*/\\n  if ( *(_QWORD *)(a1 + 72) == 0 ) /*0x180006336*/\\n  {\\n    JobObjectW = CreateJobObjectW(lpJobAttributes: nullptr, lpName: nullptr); /*0x180006342*/\\n    if ( JobObjectW == nullptr ) /*0x180006348*/\\n    {\\nLABEL_10:\\n      *(_QWORD *)(a1 + 72) = 0; /*0x1800063a5*/\\n      v5 = -2147467259; /*0x1800063a9*/\\n      goto LABEL_36; /*0x1800063ae*/\\n    }\\n    JobObjectInformation = 0; /*0x18000634d*/\\n    v28 = 0; /*0x180006356*/\\n    HIDWORD(v28) = 0x2000; /*0x180006360*/\\n    v36 = 0; /*0x18000636c*/\\n    v37 = 0; /*0x180006373*/\\n    v29 = 0; /*0x180006376*/\\n    v30 = 0; /*0x18000637a*/\\n    v31 = 0; /*0x18000637e*/\\n    v32 = 0; /*0x180006382*/\\n    v33 = 0; /*0x180006386*/\\n    v34 = 0; /*0x18000638a*/\\n    v35 = 0; /*0x18000638e*/\\n    if ( !SetInformationJobObject( /*0x18000639a*/\\n            hJob: JobObjectW,\\n            JobObjectInformationClass: JobObjectExtendedLimitInformation,\\n            lpJobObjectInformation: &JobObjectInformation,\\n            cbJobObjectInformationLength: 0x90u) )\\n    {\\n      CloseHandle(hObject: JobObjectW); /*0x18000639f*/\\n      goto LABEL_10; /*0x18000639f*/\\n    }\\n    *(_QWORD *)(a1 + 72) = JobObjectW; /*0x1800063b3*/\\n  }\\n  v5 = 1; /*0x1800063b7*/\\n  EventW = CreateEventW( /*0x1800063d0*/\\n             lpEventAttributes: nullptr,\\n             bManualReset: true,\\n             bInitialState: false,\\n             lpName: L\\\"Global\\\\\\\\FaceTrackingExitEvent\\\");\\n  if ( EventW != nullptr )\\n  {\\n    StartupInfo.cb = 104; /*0x180006434*/\\n    memset(&StartupInfo.lpReserved, 0, 96); /*0x180006443*/\\n    if ( GetModuleFileNameW(hModule: qword_180012A50, lpFilename: Filename, nSize: 0x104u) != 0 ) /*0x180006466*/\\n    {\\n      v11 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x180006478*/\\n      if ( v11 != nullptr ) /*0x180006480*/\\n      {\\n        v11[1] = 0; /*0x1800064aa*/\\n        v13 = 260; /*0x1800064ae*/\\n        v14 = Filename; /*0x1800064b1*/\\n        do /*0x1800064c4*/\\n        {\\n          if ( *v14 == 0 ) /*0x1800064bb*/\\n            break; /*0x1800064bb*/\\n          ++v14; /*0x1800064bd*/\\n          --v13; /*0x1800064c1*/\\n        }\\n        while ( v13 != 0 ); /*0x1800064c4*/\\n        v15 = 260 - v13; /*0x1800064c9*/\\n        if ( v13 != 0 ) /*0x1800064cf*/\\n        {\\n          v16 = &Filename[v15]; /*0x1800064dc*/\\n          v17 = 260 - v15; /*0x1800064e0*/\\n          if ( 260 != v15 ) /*0x1800064e0*/\\n          {\\n            v18 = 2147483646; /*0x1800064ec*/\\n            v19 = (char *)((char *)L\\\"FaceTracking.exe\\\" - (char *)v16); /*0x1800064f1*/\\n            do /*0x180006510*/\\n            {\\n              if ( v18 == 0 ) /*0x1800064f7*/\\n                break; /*0x1800064f7*/\\n              v20 = *(WCHAR *)((char *)v16 + (_QWORD)v19); /*0x1800064f9*/\\n              if ( v20 == 0 ) /*0x180006501*/\\n                break; /*0x180006501*/\\n              *v16 = v20; /*0x180006503*/\\n              --v18; /*0x180006506*/\\n              ++v16; /*0x180006509*/\\n              --v17; /*0x18000650d*/\\n            }\\n            while ( v17 != 0 ); /*0x180006510*/\\n          }\\n          v21 = v16 - 1; /*0x180006515*/\\n          if ( v17 != 0 ) /*0x180006519*/\\n            v21 = v16; /*0x180006519*/\\n          *v21 = 0; /*0x18000651d*/\\n        }\\n        if ( CreateProcessW( /*0x180006554*/\\n               lpApplicationName: nullptr,\\n               lpCommandLine: Filename,\\n               lpProcessAttributes: nullptr,\\n               lpThreadAttributes: nullptr,\\n               bInheritHandles: false,\\n               dwCreationFlags: 0,\\n               lpEnvironment: nullptr,\\n               lpCurrentDirectory: nullptr,\\n               lpStartupInfo: &StartupInfo,\\n               lpProcessInformation: &ProcessInformation) )\\n        {\\n          if ( AssignProcessToJobObject(hJob: *(HANDLE *)(a1 + 72), hProcess: ProcessInformation.hProcess) ) /*0x180006587*/\\n          {\\n            CloseHandle(hObject: ProcessInformation.hThread); /*0x1800065bc*/\\n            v5 = 0; /*0x1800065c7*/\\n            *(_QWORD *)(a1 + 88) = ProcessInformation.hProcess; /*0x1800065c9*/\\n            *(_QWORD *)(a1 + 80) = EventW; /*0x1800065cd*/\\n          }\\n          else\\n          {\\n            CloseHandle(hObject: ProcessInformation.hProcess); /*0x180006596*/\\n            CloseHandle(hObject: ProcessInformation.hThread); /*0x1800065a1*/\\n            CloseHandle(hObject: EventW); /*0x1800065aa*/\\n            v5 = -2147467259; /*0x1800065b0*/\\n          }\\n        }\\n        else\\n        {\\n          CloseHandle(hObject: EventW); /*0x180006561*/\\n          LastError = GetLastError(); /*0x180006567*/\\n          v5 = LastError; /*0x18000656d*/\\n          if ( LastError > 0 ) /*0x180006571*/\\n            v5 = (unsigned __int16)LastError | 0x80070000; /*0x180006576*/\\n        }\\n      }\\n      else\\n      {\\n        v12 = sub_180006DE0(a1: std::cout, a2: \\\"COM:GetModuleFileNameW failed\\\"); /*0x180006490*/\\n        std::ostream::operator<<(a1: v12, a2: sub_180007040); /*0x18000649f*/\\n      }\\n    }\\n  }\\n  else\\n  {\\n    v5 = GetLastError(); /*0x1800063ec*/\\n    v9 = sub_180006DE0(a1: std::cerr, a2: \\\"CreateEvent failed: \\\");\\n    v10 = std::ostream::operator<<(a1: v9, a2: v5); /*0x1800063f8*/\\n    sub_180006DE0(a1: v10, a2: L\\\"\\\\n\\\"); /*0x180006408*/\\n    if ( (int)v5 > 0 ) /*0x18000640f*/\\n      v5 = (unsigned __int16)v5 | 0x80070000; /*0x180006418*/\\n  }\\nLABEL_36:\\n  DeleteCriticalSection(lpCriticalSection: &CriticalSection); /*0x1800065d1*/\\n  return v5; /*0x1800065de*/\\n}\",\"decompile_error\":null,\"disasm\":{\"lines\":[\"180006270  mov [rsp-8+arg_8], rbx\",\"180006275  mov [rsp-8+arg_10], rsi\",\"18000627a  push rbp\",\"18000627b  push rdi\",\"18000627c  push r12\",\"18000627e  push r14\",\"180006280  push r15\",\"180006282  lea rbp, [rsp-2C0h]\",\"18000628a  sub rsp, 3C0h\",\"180006291  mov rax, cs:__security_cookie\",\"180006298  xor rax, rsp\",\"18000629b  mov [rbp+2E0h+var_30], rax\",\"1800062a2  movups xmm0, xmmword ptr [rcx+60h]\",\"1800062a6  mov r14, rcx\",\"1800062a9  xor esi, esi\",\"1800062ab  movups xmm1, xmmword ptr [rcx+70h]\",\"1800062af  movups xmmword ptr [rsp+3E0h+CriticalSection.DebugInfo], xmm0\",\"1800062b4  movsd xmm0, qword ptr [rcx+80h]\",\"1800062bc  mov rcx, [rcx+58h]; hProcess\",\"1800062c0  movsd [rbp+2E0h+CriticalSection.SpinCount], xmm0\",\"1800062c5  movups xmmword ptr [rbp+2E0h+CriticalSection.OwningThread], xmm1\",\"1800062c9  test rcx, rcx\",\"1800062cc  jz short loc_1800062FF\",\"1800062ce  lea rdx, [rsp+3E0h+ExitCode]; lpExitCode\",\"1800062d3  call cs:GetExitCodeProcess; KERNEL32\",\"1800062d9  test eax, eax\",\"1800062db  jz short loc_1800062F1\",\"1800062dd  cmp [rsp+3E0h+ExitCode], 103h\",\"1800062e5  jnz short loc_1800062F1\",\"1800062e7  mov ebx, 800700B7h\",\"1800062ec  jmp loc_1800065D1\",\"1800062f1  mov rcx, [r14+58h]; hObject\",\"1800062f5  call cs:CloseHandle; KERNEL32\",\"1800062fb  mov [r14+58h], rsi\",\"1800062ff  mov rcx, cs:?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A; MSVCP140\",\"180006306  lea rdx, aComOpenFacetra; \\\"COM:open facetracking\\\"\",\"18000630d  call sub_180006DE0\",\"180006312  mov rcx, rax\",\"180006315  lea rdx, sub_180007040\",\"18000631c  call cs:??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z; MSVCP140\",\"180006322  xorps xmm0, xmm0\",\"180006325  mov cs:dword_180015010, esi\",\"18000632b  movups cs:xmmword_180015000, xmm0\",\"180006332  cmp [r14+48h], rsi\",\"180006336  jnz short loc_1800063B7\",\"180006338  xor edx, edx; lpName\",\"18000633a  xor ecx, ecx; lpJobAttributes\",\"18000633c  call cs:CreateJobObjectW; KERNEL32\",\"180006342  mov rbx, rax\",\"180006345  test rax, rax\",\"180006348  jz short loc_1800063A5\",\"18000634a  xorps xmm0, xmm0\",\"18000634d  mov [rbp+2E0h+JobObjectInformation], esi\",\"180006350  xor eax, eax\",\"180006352  lea r8, [rbp+2E0h+JobObjectInformation]; lpJobObjectInformation\",\"180006356  movups [rbp+2E0h+var_33C], xmm0\",\"18000635a  mov r9d, 90h; cbJobObjectInformationLength\",\"180006360  mov dword ptr [rbp+2E0h+var_33C+0Ch], 2000h\",\"180006367  mov edx, 9; JobObjectInformationClass\",\"18000636c  mov [rbp+2E0h+var_2BC], rax\",\"180006370  mov rcx, rbx; hJob\",\"180006373  mov [rbp+2E0h+var_2B4], eax\",\"180006376  movups [rbp+2E0h+var_32C], xmm0\",\"18000637a  movups [rbp+2E0h+var_31C], xmm0\",\"18000637e  movups [rbp+2E0h+var_30C], xmm0\",\"180006382  movups [rbp+2E0h+var_2FC], xmm0\",\"180006386  movups [rbp+2E0h+var_2EC], xmm0\",\"18000638a  movups [rbp+2E0h+var_2DC], xmm0\",\"18000638e  movups [rbp+2E0h+var_2CC], xmm0\",\"180006392  call cs:SetInformationJobObject; KERNEL32\",\"180006398  test eax, eax\",\"18000639a  jnz short loc_1800063B3\",\"18000639c  mov rcx, rbx; hObject\",\"18000639f  call cs:CloseHandle; KERNEL32\",\"1800063a5  mov [r14+48h], rsi\",\"1800063a9  mov ebx, 80004005h\",\"1800063ae  jmp loc_1800065D1\",\"1800063b3  mov [r14+48h], rbx\",\"1800063b7  mov ebx, 1\",\"1800063bc  lea r9, Name; \\\"Global\\\\\\\\FaceTrackingExitEvent\\\"\",\"1800063c3  mov edx, ebx; bManualReset\",\"1800063c5  xor r8d, r8d; bInitialState\",\"1800063c8  xor ecx, ecx; lpEventAttributes\",\"1800063ca  call cs:CreateEventW; KERNEL32\",\"1800063d0  mov r12, rax\",\"1800063d3  test rax, rax\",\"1800063d6  jnz short loc_180006423\",\"1800063d8  call cs:GetLastError; KERNEL32\",\"1800063de  mov rcx, cs:?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A; MSVCP140\",\"1800063e5  lea rdx, aCreateeventFai; \\\"CreateEvent failed: \\\"\",\"1800063ec  mov ebx, eax\",\"1800063ee  call sub_180006DE0\",\"1800063f3  mov rcx, rax\",\"1800063f6  mov edx, ebx\",\"1800063f8  call cs:??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z; MSVCP140\",\"1800063fe  mov rcx, rax\",\"180006401  lea rdx, asc_18000C04C; \\\"\\\\n\\\"\",\"180006408  call sub_180006DE0\",\"18000640d  test ebx, ebx\",\"18000640f  jle loc_1800065D1\",\"180006415  movzx ebx, bx\",\"180006418  or ebx, 80070000h\",\"18000641e  jmp loc_1800065D1\",\"180006423  mov rcx, cs:qword_180012A50; hModule\",\"18000642a  lea rdx, [rbp+2E0h+Filename]; lpFilename\",\"180006431  xorps xmm0, xmm0\",\"180006434  mov [rbp+2E0h+StartupInfo.cb], 68h ; 'h'\",\"18000643b  mov edi, 104h\",\"180006440  mov r8d, edi; nSize\",\"180006443  movups xmmword ptr [rbp+2E0h+StartupInfo.lpReserved], xmm0\",\"180006447  movups xmmword ptr [rbp+2E0h+StartupInfo.lpTitle], xmm0\",\"18000644b  movups xmmword ptr [rbp+2E0h+StartupInfo.dwXSize], xmm0\",\"18000644f  movups xmmword ptr [rbp+2E0h+StartupInfo.dwFillAttribute], xmm0\",\"180006453  movups xmmword ptr [rbp+2E0h+StartupInfo.lpReserved2], xmm0\",\"180006457  movups xmmword ptr [rbp+2E0h+StartupInfo.hStdOutput], xmm0\",\"18000645e  call cs:GetModuleFileNameW; KERNEL32\",\"180006464  test eax, eax\",\"180006466  jz loc_1800065D1\",\"18000646c  mov edx, 5Ch ; '\\\\'; Ch\",\"180006471  lea rcx, [rbp+2E0h+Filename]; Str\",\"180006478  call wcsrchr\",\"18000647d  test rax, rax\",\"180006480  jnz short loc_1800064AA\",\"180006482  mov rcx, cs:?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A; MSVCP140\",\"180006489  lea rdx, aComGetmodulefi; \\\"COM:GetModuleFileNameW failed\\\"\",\"180006490  call sub_180006DE0\",\"180006495  mov rcx, rax\",\"180006498  lea rdx, sub_180007040\",\"18000649f  call cs:??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z; MSVCP140\",\"1800064a5  jmp loc_1800065D1\",\"1800064aa  mov [rax+2], si\",\"1800064ae  mov rcx, rdi\",\"1800064b1  lea rax, [rbp+2E0h+Filename]\",\"1800064b8  cmp [rax], si\",\"1800064bb  jz short loc_1800064C6\",\"1800064bd  add rax, 2\",\"1800064c1  sub rcx, rbx\",\"1800064c4  jnz short loc_1800064B8\",\"1800064c6  mov rax, rdi\",\"1800064c9  sub rax, rcx\",\"1800064cc  test rcx, rcx\",\"1800064cf  cmovz rax, rsi\",\"1800064d3  jz short loc_180006520\",\"1800064d5  lea rcx, [rbp+2E0h+Filename]\",\"1800064dc  lea rcx, [rcx+rax*2]\",\"1800064e0  sub rdi, rax\",\"1800064e3  jz short loc_180006512\",\"1800064e5  lea r8, aFacetrackingEx; \\\"FaceTracking.exe\\\"\",\"1800064ec  mov eax, 7FFFFFFEh\",\"1800064f1  sub r8, rcx\",\"1800064f4  test rax, rax\",\"1800064f7  jz short loc_180006512\",\"1800064f9  movzx edx, word ptr [r8+rcx]\",\"1800064fe  test dx, dx\",\"180006501  jz short loc_180006512\",\"180006503  mov [rcx], dx\",\"180006506  dec rax\",\"180006509  add rcx, 2\",\"18000650d  sub rdi, rbx\",\"180006510  jnz short loc_1800064F4\"],\"instruction_count\":160,\"truncated\":true},\"xrefs\":{\"to\":[{\"addr\":\"0x18000bd68\",\"type\":\"data\"},{\"addr\":\"0x18000be28\",\"type\":\"data\"},{\"addr\":\"0x1800144b0\",\"type\":\"data\"}],\"from\":[{\"addr\":\"0x180006275\",\"type\":\"code\"}],\"to_truncated\":false,\"from_truncated\":false,\"to_count\":3,\"from_count\":1},\"callers\":[],\"caller_count\":0,\"callers_truncated\":false,\"callees\":[{\"addr\":\"0x18000b0a0\",\"name\":\"CloseHandle\",\"type\":\"external\"},{\"addr\":\"0x18000b048\",\"name\":\"GetModuleFileNameW\",\"type\":\"external\"},{\"addr\":\"0x18000b1d8\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z\",\"type\":\"external\"},{\"addr\":\"0x180006de0\",\"name\":\"sub_180006DE0\",\"type\":\"internal\"},{\"addr\":\"0x18000b0f0\",\"name\":\"SetInformationJobObject\",\"type\":\"external\"},{\"addr\":\"0x18000b0e8\",\"name\":\"AssignProcessToJobObject\",\"type\":\"external\"},{\"addr\":\"0x18000b0d0\",\"name\":\"GetExitCodeProcess\",\"type\":\"external\"},{\"addr\":\"0x180009456\",\"name\":\"wcsrchr\",\"type\":\"internal\"},{\"addr\":\"0x18000b110\",\"name\":\"DeleteCriticalSection\",\"type\":\"external\"},{\"addr\":\"0x18000b0d8\",\"name\":\"CreateProcessW\",\"type\":\"external\"},{\"addr\":\"0x18000b0e0\",\"name\":\"CreateJobObjectW\",\"type\":\"external\"},{\"addr\":\"0x18000b120\",\"name\":\"GetLastError\",\"type\":\"external\"},{\"addr\":\"0x180008890\",\"name\":\"__security_check_cookie\",\"type\":\"internal\"},{\"addr\":\"0x18000b1e0\",\"name\":\"??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z\",\"type\":\"external\"},{\"addr\":\"0x18000b0c0\",\"name\":\"CreateEventW\",\"type\":\"external\"}],\"callee_count\":15,\"callees_truncated\":false,\"strings\":[{\"addr\":\"0x18000c0b0\",\"length\":21,\"string\":\"COM:open facetracking\"},{\"addr\":\"0x18000c050\",\"length\":20,\"string\":\"CreateEvent failed: \"},{\"addr\":\"0x18000c068\",\"length\":29,\"string\":\"COM:GetModuleFileNameW failed\"}],\"string_ref_count\":3,\"strings_truncated\":false,\"constants\":[{\"addr\":\"0x18000628a\",\"value\":\"0x3c0\",\"decimal\":960},{\"addr\":\"0x1800062dd\",\"value\":\"0x103\",\"decimal\":259},{\"addr\":\"0x1800062e7\",\"value\":\"0xffffffff800700b7\",\"decimal\":18446744071562526903},{\"addr\":\"0x18000635a\",\"value\":\"0x90\",\"decimal\":144},{\"addr\":\"0x180006360\",\"value\":\"0x2000\",\"decimal\":8192},{\"addr\":\"0x180006367\",\"value\":\"0x9\",\"decimal\":9},{\"addr\":\"0x1800063a9\",\"value\":\"0xffffffff80004005\",\"decimal\":18446744071562084357},{\"addr\":\"0x1800063b7\",\"value\":\"0x1\",\"decimal\":1},{\"addr\":\"0x180006418\",\"value\":\"0xffffffff80070000\",\"decimal\":18446744071562526720},{\"addr\":\"0x180006434\",\"value\":\"0x68\",\"decimal\":104},{\"addr\":\"0x18000643b\",\"value\":\"0x104\",\"decimal\":260},{\"addr\":\"0x18000646c\",\"value\":\"0x5c\",\"decimal\":92},{\"addr\":\"0x1800064bd\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x1800064ec\",\"value\":\"0x7ffffffe\",\"decimal\":2147483646},{\"addr\":\"0x180006509\",\"value\":\"0x2\",\"decimal\":2},{\"addr\":\"0x180006576\",\"value\":\"0xffffffff80070000\",\"decimal\":18446744071562526720},{\"addr\":\"0x1800065b0\",\"value\":\"0xffffffff80004005\",\"decimal\":18446744071562084357}],\"constant_count\":17,\"constants_truncated\":false,\"basic_blocks\":[{\"start\":\"0x180006270\",\"end\":\"0x1800062ce\",\"size\":94,\"type\":0,\"successors\":[\"0x1800062ce\",\"0x1800062ff\"],\"predecessors\":[]},{\"start\":\"0x1800062ce\",\"end\":\"0x1800062dd\",\"size\":15,\"type\":0,\"successors\":[\"0x1800062dd\",\"0x1800062f1\"],\"predecessors\":[\"0x180006270\"]},{\"start\":\"0x1800062dd\",\"end\":\"0x1800062e7\",\"size\":10,\"type\":0,\"successors\":[\"0x1800062e7\",\"0x1800062f1\"],\"predecessors\":[\"0x1800062ce\"]},{\"start\":\"0x1800062e7\",\"end\":\"0x1800062f1\",\"size\":10,\"type\":0,\"successors\":[\"0x1800065d1\"],\"predecessors\":[\"0x1800062dd\"]},{\"start\":\"0x1800062f1\",\"end\":\"0x1800062ff\",\"size\":14,\"type\":0,\"successors\":[\"0x1800062ff\"],\"predecessors\":[\"0x1800062ce\",\"0x1800062dd\"]},{\"start\":\"0x1800062ff\",\"end\":\"0x180006338\",\"size\":57,\"type\":0,\"successors\":[\"0x180006338\",\"0x1800063b7\"],\"predecessors\":[\"0x180006270\",\"0x1800062f1\"]},{\"start\":\"0x180006338\",\"end\":\"0x18000634a\",\"size\":18,\"type\":0,\"successors\":[\"0x18000634a\",\"0x1800063a5\"],\"predecessors\":[\"0x1800062ff\"]},{\"start\":\"0x18000634a\",\"end\":\"0x18000639c\",\"size\":82,\"type\":0,\"successors\":[\"0x18000639c\",\"0x1800063b3\"],\"predecessors\":[\"0x180006338\"]},{\"start\":\"0x18000639c\",\"end\":\"0x1800063a5\",\"size\":9,\"type\":0,\"successors\":[\"0x1800063a5\"],\"predecessors\":[\"0x18000634a\"]},{\"start\":\"0x1800063a5\",\"end\":\"0x1800063b3\",\"size\":14,\"type\":0,\"successors\":[\"0x1800065d1\"],\"predecessors\":[\"0x180006338\",\"0x18000639c\"]},{\"start\":\"0x1800063b3\",\"end\":\"0x1800063b7\",\"size\":4,\"type\":0,\"successors\":[\"0x1800063b7\"],\"predecessors\":[\"0x18000634a\"]},{\"start\":\"0x1800063b7\",\"end\":\"0x1800063d8\",\"size\":33,\"type\":0,\"successors\":[\"0x1800063d8\",\"0x180006423\"],\"predecessors\":[\"0x1800062ff\",\"0x1800063b3\"]},{\"start\":\"0x1800063d8\",\"end\":\"0x180006415\",\"size\":61,\"type\":0,\"successors\":[\"0x180006415\",\"0x1800065d1\"],\"predecessors\":[\"0x1800063b7\"]},{\"start\":\"0x180006415\",\"end\":\"0x180006423\",\"size\":14,\"type\":0,\"successors\":[\"0x1800065d1\"],\"predecessors\":[\"0x1800063d8\"]},{\"start\":\"0x180006423\",\"end\":\"0x18000646c\",\"size\":73,\"type\":0,\"successors\":[\"0x18000646c\",\"0x1800065d1\"],\"predecessors\":[\"0x1800063b7\"]},{\"start\":\"0x18000646c\",\"end\":\"0x180006482\",\"size\":22,\"type\":0,\"successors\":[\"0x180006482\",\"0x1800064aa\"],\"predecessors\":[\"0x180006423\"]},{\"start\":\"0x180006482\",\"end\":\"0x1800064aa\",\"size\":40,\"type\":0,\"successors\":[\"0x1800065d1\"],\"predecessors\":[\"0x18000646c\"]},{\"start\":\"0x1800064aa\",\"end\":\"0x1800064b8\",\"size\":14,\"type\":0,\"successors\":[\"0x1800064b8\"],\"predecessors\":[\"0x18000646c\"]},{\"start\":\"0x1800064b8\",\"end\":\"0x1800064bd\",\"size\":5,\"type\":0,\"successors\":[\"0x1800064bd\",\"0x1800064c6\"],\"predecessors\":[\"0x1800064aa\",\"0x1800064bd\"]},{\"start\":\"0x1800064bd\",\"end\":\"0x1800064c6\",\"size\":9,\"type\":0,\"successors\":[\"0x1800064b8\",\"0x1800064c6\"],\"predecessors\":[\"0x1800064b8\"]},{\"start\":\"0x1800064c6\",\"end\":\"0x1800064d5\",\"size\":15,\"type\":0,\"successors\":[\"0x1800064d5\",\"0x180006520\"],\"predecessors\":[\"0x1800064b8\",\"0x1800064bd\"]},{\"start\":\"0x1800064d5\",\"end\":\"0x1800064e5\",\"size\":16,\"type\":0,\"successors\":[\"0x1800064e5\",\"0x180006512\"],\"predecessors\":[\"0x1800064c6\"]},{\"start\":\"0x1800064e5\",\"end\":\"0x1800064f4\",\"size\":15,\"type\":0,\"successors\":[\"0x1800064f4\"],\"predecessors\":[\"0x1800064d5\"]},{\"start\":\"0x1800064f4\",\"end\":\"0x1800064f9\",\"size\":5,\"type\":0,\"successors\":[\"0x1800064f9\",\"0x180006512\"],\"predecessors\":[\"0x1800064e5\",\"0x180006503\"]},{\"start\":\"0x1800064f9\",\"end\":\"0x180006503\",\"size\":10,\"type\":0,\"successors\":[\"0x180006503\",\"0x180006512\"],\"predecessors\":[\"0x1800064f4\"]},{\"start\":\"0x180006503\",\"end\":\"0x180006512\",\"size\":15,\"type\":0,\"successors\":[\"0x1800064f4\",\"0x180006512\"],\"predecessors\":[\"0x1800064f9\"]},{\"start\":\"0x180006512\",\"end\":\"0x180006520\",\"size\":14,\"type\":0,\"successors\":[\"0x180006520\"],\"predecessors\":[\"0x1800064d5\",\"0x1800064f4\",\"0x1800064f9\",\"0x180006503\"]},{\"start\":\"0x180006520\",\"end\":\"0x18000655e\",\"size\":62,\"type\":0,\"successors\":[\"0x18000655e\",\"0x18000657e\"],\"predecessors\":[\"0x1800064c6\",\"0x180006512\"]},{\"start\":\"0x18000655e\",\"end\":\"0x180006573\",\"size\":21,\"type\":0,\"successors\":[\"0x180006573\",\"0x1800065d1\"],\"predecessors\":[\"0x180006520\"]},{\"start\":\"0x180006573\",\"end\":\"0x18000657e\",\"size\":11,\"type\":0,\"successors\":[\"0x1800065d1\"],\"predecessors\":[\"0x18000655e\"]},{\"start\":\"0x18000657e\",\"end\":\"0x180006591\",\"size\":19,\"type\":0,\"successors\":[\"0x180006591\",\"0x1800065b7\"],\"predecessors\":[\"0x180006520\"]},{\"start\":\"0x180006591\",\"end\":\"0x1800065b7\",\"size\":38,\"type\":0,\"successors\":[\"0x1800065d1\"],\"predecessors\":[\"0x18000657e\"]},{\"start\":\"0x1800065b7\",\"end\":\"0x1800065d1\",\"size\":26,\"type\":0,\"successors\":[\"0x1800065d1\"],\"predecessors\":[\"0x18000657e\"]},{\"start\":\"0x1800065d1\",\"end\":\"0x180006609\",\"size\":56,\"type\":2,\"successors\":[],\"predecessors\":[\"0x1800062e7\",\"0x1800063a5\",\"0x1800063d8\",\"0x180006415\",\"0x180006423\",\"0x180006482\",\"0x18000655e\",\"0x180006573\",\"0x180006591\",\"0x1800065b7\"]}],\"basic_block_count\":34,\"basic_blocks_truncated\":false},\"error\":null}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "target": "0x180006270",
+          "addr": "0x180006270",
+          "name": "sub_180006270",
+          "analysis": {
+            "size": "0x399",
+            "prototype": null,
+            "decompile": "__int64 __fastcall sub_180006270(__int64 a1)\n{\n  __int128 v2; // xmm1\n  ULONG_PTR v3; // xmm0_8\n  void *v4; // rcx\n  unsigned int v5; // ebx\n  __int64 v6; // rax\n  HANDLE JobObjectW; // rbx\n  HANDLE EventW; // r12\n  __int64 v9; // rax\n  __int64 v10; // rax\n  wchar_t *v11; // rax\n  __int64 v12; // rax\n  __int64 v13; // rcx\n  WCHAR *v14; // rax\n  __int64 v15; // rax\n  WCHAR *v16; // rcx\n  __int64 v17; // rdi\n  __int64 v18; // rax\n  char *v19; // r8\n  WCHAR v20; // dx\n  WCHAR *v21; // rax\n  signed int LastError; // eax\n  struct _PROCESS_INFORMATION ProcessInformation; // [rsp+50h] [rbp-B0h] BYREF\n  DWORD ExitCode; // [rsp+68h] [rbp-98h] BYREF\n  struct _RTL_CRITICAL_SECTION CriticalSection; // [rsp+70h] [rbp-90h] BYREF\n  int JobObjectInformation; // [rsp+A0h] [rbp-60h] BYREF\n  __int128 v28; // [rsp+A4h] [rbp-5Ch]\n  __int128 v29; // [rsp+B4h] [rbp-4Ch]\n  __int128 v30; // [rsp+C4h] [rbp-3Ch]\n  __int128 v31; // [rsp+D4h] [rbp-2Ch]\n  __int128 v32; // [rsp+E4h] [rbp-1Ch]\n  __int128 v33; // [rsp+F4h] [rbp-Ch]\n  __int128 v34; // [rsp+104h] [rbp+4h]\n  __int128 v35; // [rsp+114h] [rbp+14h]\n  __int64 v36; // [rsp+124h] [rbp+24h]\n  int v37; // [rsp+12Ch] [rbp+2Ch]\n  struct _STARTUPINFOW StartupInfo; // [rsp+130h] [rbp+30h] BYREF\n  wchar_t Filename[264]; // [rsp+1A0h] [rbp+A0h] BYREF\n\n  v2 = *(_OWORD *)(a1 + 112); /*0x1800062ab*/\n  *(_OWORD *)&CriticalSection.DebugInfo = *(_OWORD *)(a1 + 96); /*0x1800062af*/\n  v3 = *(_QWORD *)(a1 + 128); /*0x1800062b4*/\n  v4 = *(void **)(a1 + 88); /*0x1800062bc*/\n  CriticalSection.SpinCount = v3; /*0x1800062c0*/\n  *(_OWORD *)&CriticalSection.OwningThread = v2; /*0x1800062c5*/\n  if ( v4 != nullptr ) /*0x1800062cc*/\n  {\n    if ( GetExitCodeProcess(hProcess: v4, lpExitCode: &ExitCode) && ExitCode == 259 ) /*0x1800062e5*/\n    {\n      v5 = -2147024713; /*0x1800062e7*/\n      goto LABEL_36; /*0x1800062ec*/\n    }\n    CloseHandle(hObject: *(HANDLE *)(a1 + 88)); /*0x1800062f5*/\n    *(_QWORD *)(a1 + 88) = 0; /*0x1800062fb*/\n  }\n  v6 = sub_180006DE0(a1: std::cout, a2: \"COM:open facetracking\"); /*0x18000630d*/\n  std::ostream::operator<<(a1: v6, a2: sub_180007040); /*0x18000631c*/\n  dword_180015010 = 0; /*0x180006325*/\n  xmmword_180015000 = 0; /*0x18000632b*/\n  if ( *(_QWORD *)(a1 + 72) == 0 ) /*0x180006336*/\n  {\n    JobObjectW = CreateJobObjectW(lpJobAttributes: nullptr, lpName: nullptr); /*0x180006342*/\n    if ( JobObjectW == nullptr ) /*0x180006348*/\n    {\nLABEL_10:\n      *(_QWORD *)(a1 + 72) = 0; /*0x1800063a5*/\n      v5 = -2147467259; /*0x1800063a9*/\n      goto LABEL_36; /*0x1800063ae*/\n    }\n    JobObjectInformation = 0; /*0x18000634d*/\n    v28 = 0; /*0x180006356*/\n    HIDWORD(v28) = 0x2000; /*0x180006360*/\n    v36 = 0; /*0x18000636c*/\n    v37 = 0; /*0x180006373*/\n    v29 = 0; /*0x180006376*/\n    v30 = 0; /*0x18000637a*/\n    v31 = 0; /*0x18000637e*/\n    v32 = 0; /*0x180006382*/\n    v33 = 0; /*0x180006386*/\n    v34 = 0; /*0x18000638a*/\n    v35 = 0; /*0x18000638e*/\n    if ( !SetInformationJobObject( /*0x18000639a*/\n            hJob: JobObjectW,\n            JobObjectInformationClass: JobObjectExtendedLimitInformation,\n            lpJobObjectInformation: &JobObjectInformation,\n            cbJobObjectInformationLength: 0x90u) )\n    {\n      CloseHandle(hObject: JobObjectW); /*0x18000639f*/\n      goto LABEL_10; /*0x18000639f*/\n    }\n    *(_QWORD *)(a1 + 72) = JobObjectW; /*0x1800063b3*/\n  }\n  v5 = 1; /*0x1800063b7*/\n  EventW = CreateEventW( /*0x1800063d0*/\n             lpEventAttributes: nullptr,\n             bManualReset: true,\n             bInitialState: false,\n             lpName: L\"Global\\\\FaceTrackingExitEvent\");\n  if ( EventW != nullptr )\n  {\n    StartupInfo.cb = 104; /*0x180006434*/\n    memset(&StartupInfo.lpReserved, 0, 96); /*0x180006443*/\n    if ( GetModuleFileNameW(hModule: qword_180012A50, lpFilename: Filename, nSize: 0x104u) != 0 ) /*0x180006466*/\n    {\n      v11 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x180006478*/\n      if ( v11 != nullptr ) /*0x180006480*/\n      {\n        v11[1] = 0; /*0x1800064aa*/\n        v13 = 260; /*0x1800064ae*/\n        v14 = Filename; /*0x1800064b1*/\n        do /*0x1800064c4*/\n        {\n          if ( *v14 == 0 ) /*0x1800064bb*/\n            break; /*0x1800064bb*/\n          ++v14; /*0x1800064bd*/\n          --v13; /*0x1800064c1*/\n        }\n        while ( v13 != 0 ); /*0x1800064c4*/\n        v15 = 260 - v13; /*0x1800064c9*/\n        if ( v13 != 0 ) /*0x1800064cf*/\n        {\n          v16 = &Filename[v15]; /*0x1800064dc*/\n          v17 = 260 - v15; /*0x1800064e0*/\n          if ( 260 != v15 ) /*0x1800064e0*/\n          {\n            v18 = 2147483646; /*0x1800064ec*/\n            v19 = (char *)((char *)L\"FaceTracking.exe\" - (char *)v16); /*0x1800064f1*/\n            do /*0x180006510*/\n            {\n              if ( v18 == 0 ) /*0x1800064f7*/\n                break; /*0x1800064f7*/\n              v20 = *(WCHAR *)((char *)v16 + (_QWORD)v19); /*0x1800064f9*/\n              if ( v20 == 0 ) /*0x180006501*/\n                break; /*0x180006501*/\n              *v16 = v20; /*0x180006503*/\n              --v18; /*0x180006506*/\n              ++v16; /*0x180006509*/\n              --v17; /*0x18000650d*/\n            }\n            while ( v17 != 0 ); /*0x180006510*/\n          }\n          v21 = v16 - 1; /*0x180006515*/\n          if ( v17 != 0 ) /*0x180006519*/\n            v21 = v16; /*0x180006519*/\n          *v21 = 0; /*0x18000651d*/\n        }\n        if ( CreateProcessW( /*0x180006554*/\n               lpApplicationName: nullptr,\n               lpCommandLine: Filename,\n               lpProcessAttributes: nullptr,\n               lpThreadAttributes: nullptr,\n               bInheritHandles: false,\n               dwCreationFlags: 0,\n               lpEnvironment: nullptr,\n               lpCurrentDirectory: nullptr,\n               lpStartupInfo: &StartupInfo,\n               lpProcessInformation: &ProcessInformation) )\n        {\n          if ( AssignProcessToJobObject(hJob: *(HANDLE *)(a1 + 72), hProcess: ProcessInformation.hProcess) ) /*0x180006587*/\n          {\n            CloseHandle(hObject: ProcessInformation.hThread); /*0x1800065bc*/\n            v5 = 0; /*0x1800065c7*/\n            *(_QWORD *)(a1 + 88) = ProcessInformation.hProcess; /*0x1800065c9*/\n            *(_QWORD *)(a1 + 80) = EventW; /*0x1800065cd*/\n          }\n          else\n          {\n            CloseHandle(hObject: ProcessInformation.hProcess); /*0x180006596*/\n            CloseHandle(hObject: ProcessInformation.hThread); /*0x1800065a1*/\n            CloseHandle(hObject: EventW); /*0x1800065aa*/\n            v5 = -2147467259; /*0x1800065b0*/\n          }\n        }\n        else\n        {\n          CloseHandle(hObject: EventW); /*0x180006561*/\n          LastError = GetLastError(); /*0x180006567*/\n          v5 = LastError; /*0x18000656d*/\n          if ( LastError > 0 ) /*0x180006571*/\n            v5 = (unsigned __int16)LastError | 0x80070000; /*0x180006576*/\n        }\n      }\n      else\n      {\n        v12 = sub_180006DE0(a1: std::cout, a2: \"COM:GetModuleFileNameW failed\"); /*0x180006490*/\n        std::ostream::operator<<(a1: v12, a2: sub_180007040); /*0x18000649f*/\n      }\n    }\n  }\n  else\n  {\n    v5 = GetLastError(); /*0x1800063ec*/\n    v9 = sub_180006DE0(a1: std::cerr, a2: \"CreateEvent failed: \");\n    v10 = std::ostream::operator<<(a1: v9, a2: v5); /*0x1800063f8*/\n    sub_180006DE0(a1: v10, a2: L\"\\n\"); /*0x180006408*/\n    if ( (int)v5 > 0 ) /*0x18000640f*/\n      v5 = (unsigned __int16)v5 | 0x80070000; /*0x180006418*/\n  }\nLABEL_36:\n  DeleteCriticalSection(lpCriticalSection: &CriticalSection); /*0x1800065d1*/\n  return v5; /*0x1800065de*/\n}",
+            "decompile_error": null,
+            "disasm": {
+              "lines": [
+                "180006270  mov [rsp-8+arg_8], rbx",
+                "180006275  mov [rsp-8+arg_10], rsi",
+                "18000627a  push rbp",
+                "18000627b  push rdi",
+                "18000627c  push r12",
+                "18000627e  push r14",
+                "180006280  push r15",
+                "180006282  lea rbp, [rsp-2C0h]",
+                "18000628a  sub rsp, 3C0h",
+                "180006291  mov rax, cs:__security_cookie",
+                "180006298  xor rax, rsp",
+                "18000629b  mov [rbp+2E0h+var_30], rax",
+                "1800062a2  movups xmm0, xmmword ptr [rcx+60h]",
+                "1800062a6  mov r14, rcx",
+                "1800062a9  xor esi, esi",
+                "1800062ab  movups xmm1, xmmword ptr [rcx+70h]",
+                "1800062af  movups xmmword ptr [rsp+3E0h+CriticalSection.DebugInfo], xmm0",
+                "1800062b4  movsd xmm0, qword ptr [rcx+80h]",
+                "1800062bc  mov rcx, [rcx+58h]; hProcess",
+                "1800062c0  movsd [rbp+2E0h+CriticalSection.SpinCount], xmm0",
+                "1800062c5  movups xmmword ptr [rbp+2E0h+CriticalSection.OwningThread], xmm1",
+                "1800062c9  test rcx, rcx",
+                "1800062cc  jz short loc_1800062FF",
+                "1800062ce  lea rdx, [rsp+3E0h+ExitCode]; lpExitCode",
+                "1800062d3  call cs:GetExitCodeProcess; KERNEL32",
+                "1800062d9  test eax, eax",
+                "1800062db  jz short loc_1800062F1",
+                "1800062dd  cmp [rsp+3E0h+ExitCode], 103h",
+                "1800062e5  jnz short loc_1800062F1",
+                "1800062e7  mov ebx, 800700B7h",
+                "1800062ec  jmp loc_1800065D1",
+                "1800062f1  mov rcx, [r14+58h]; hObject",
+                "1800062f5  call cs:CloseHandle; KERNEL32",
+                "1800062fb  mov [r14+58h], rsi",
+                "1800062ff  mov rcx, cs:?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A; MSVCP140",
+                "180006306  lea rdx, aComOpenFacetra; \"COM:open facetracking\"",
+                "18000630d  call sub_180006DE0",
+                "180006312  mov rcx, rax",
+                "180006315  lea rdx, sub_180007040",
+                "18000631c  call cs:??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z; MSVCP140",
+                "180006322  xorps xmm0, xmm0",
+                "180006325  mov cs:dword_180015010, esi",
+                "18000632b  movups cs:xmmword_180015000, xmm0",
+                "180006332  cmp [r14+48h], rsi",
+                "180006336  jnz short loc_1800063B7",
+                "180006338  xor edx, edx; lpName",
+                "18000633a  xor ecx, ecx; lpJobAttributes",
+                "18000633c  call cs:CreateJobObjectW; KERNEL32",
+                "180006342  mov rbx, rax",
+                "180006345  test rax, rax",
+                "180006348  jz short loc_1800063A5",
+                "18000634a  xorps xmm0, xmm0",
+                "18000634d  mov [rbp+2E0h+JobObjectInformation], esi",
+                "180006350  xor eax, eax",
+                "180006352  lea r8, [rbp+2E0h+JobObjectInformation]; lpJobObjectInformation",
+                "180006356  movups [rbp+2E0h+var_33C], xmm0",
+                "18000635a  mov r9d, 90h; cbJobObjectInformationLength",
+                "180006360  mov dword ptr [rbp+2E0h+var_33C+0Ch], 2000h",
+                "180006367  mov edx, 9; JobObjectInformationClass",
+                "18000636c  mov [rbp+2E0h+var_2BC], rax",
+                "180006370  mov rcx, rbx; hJob",
+                "180006373  mov [rbp+2E0h+var_2B4], eax",
+                "180006376  movups [rbp+2E0h+var_32C], xmm0",
+                "18000637a  movups [rbp+2E0h+var_31C], xmm0",
+                "18000637e  movups [rbp+2E0h+var_30C], xmm0",
+                "180006382  movups [rbp+2E0h+var_2FC], xmm0",
+                "180006386  movups [rbp+2E0h+var_2EC], xmm0",
+                "18000638a  movups [rbp+2E0h+var_2DC], xmm0",
+                "18000638e  movups [rbp+2E0h+var_2CC], xmm0",
+                "180006392  call cs:SetInformationJobObject; KERNEL32",
+                "180006398  test eax, eax",
+                "18000639a  jnz short loc_1800063B3",
+                "18000639c  mov rcx, rbx; hObject",
+                "18000639f  call cs:CloseHandle; KERNEL32",
+                "1800063a5  mov [r14+48h], rsi",
+                "1800063a9  mov ebx, 80004005h",
+                "1800063ae  jmp loc_1800065D1",
+                "1800063b3  mov [r14+48h], rbx",
+                "1800063b7  mov ebx, 1",
+                "1800063bc  lea r9, Name; \"Global\\\\FaceTrackingExitEvent\"",
+                "1800063c3  mov edx, ebx; bManualReset",
+                "1800063c5  xor r8d, r8d; bInitialState",
+                "1800063c8  xor ecx, ecx; lpEventAttributes",
+                "1800063ca  call cs:CreateEventW; KERNEL32",
+                "1800063d0  mov r12, rax",
+                "1800063d3  test rax, rax",
+                "1800063d6  jnz short loc_180006423",
+                "1800063d8  call cs:GetLastError; KERNEL32",
+                "1800063de  mov rcx, cs:?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A; MSVCP140",
+                "1800063e5  lea rdx, aCreateeventFai; \"CreateEvent failed: \"",
+                "1800063ec  mov ebx, eax",
+                "1800063ee  call sub_180006DE0",
+                "1800063f3  mov rcx, rax",
+                "1800063f6  mov edx, ebx",
+                "1800063f8  call cs:??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z; MSVCP140",
+                "1800063fe  mov rcx, rax",
+                "180006401  lea rdx, asc_18000C04C; \"\\n\"",
+                "180006408  call sub_180006DE0",
+                "18000640d  test ebx, ebx",
+                "18000640f  jle loc_1800065D1",
+                "180006415  movzx ebx, bx",
+                "180006418  or ebx, 80070000h",
+                "18000641e  jmp loc_1800065D1",
+                "180006423  mov rcx, cs:qword_180012A50; hModule",
+                "18000642a  lea rdx, [rbp+2E0h+Filename]; lpFilename",
+                "180006431  xorps xmm0, xmm0",
+                "180006434  mov [rbp+2E0h+StartupInfo.cb], 68h ; 'h'",
+                "18000643b  mov edi, 104h",
+                "180006440  mov r8d, edi; nSize",
+                "180006443  movups xmmword ptr [rbp+2E0h+StartupInfo.lpReserved], xmm0",
+                "180006447  movups xmmword ptr [rbp+2E0h+StartupInfo.lpTitle], xmm0",
+                "18000644b  movups xmmword ptr [rbp+2E0h+StartupInfo.dwXSize], xmm0",
+                "18000644f  movups xmmword ptr [rbp+2E0h+StartupInfo.dwFillAttribute], xmm0",
+                "180006453  movups xmmword ptr [rbp+2E0h+StartupInfo.lpReserved2], xmm0",
+                "180006457  movups xmmword ptr [rbp+2E0h+StartupInfo.hStdOutput], xmm0",
+                "18000645e  call cs:GetModuleFileNameW; KERNEL32",
+                "180006464  test eax, eax",
+                "180006466  jz loc_1800065D1",
+                "18000646c  mov edx, 5Ch ; '\\'; Ch",
+                "180006471  lea rcx, [rbp+2E0h+Filename]; Str",
+                "180006478  call wcsrchr",
+                "18000647d  test rax, rax",
+                "180006480  jnz short loc_1800064AA",
+                "180006482  mov rcx, cs:?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A; MSVCP140",
+                "180006489  lea rdx, aComGetmodulefi; \"COM:GetModuleFileNameW failed\"",
+                "180006490  call sub_180006DE0",
+                "180006495  mov rcx, rax",
+                "180006498  lea rdx, sub_180007040",
+                "18000649f  call cs:??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z; MSVCP140",
+                "1800064a5  jmp loc_1800065D1",
+                "1800064aa  mov [rax+2], si",
+                "1800064ae  mov rcx, rdi",
+                "1800064b1  lea rax, [rbp+2E0h+Filename]",
+                "1800064b8  cmp [rax], si",
+                "1800064bb  jz short loc_1800064C6",
+                "1800064bd  add rax, 2",
+                "1800064c1  sub rcx, rbx",
+                "1800064c4  jnz short loc_1800064B8",
+                "1800064c6  mov rax, rdi",
+                "1800064c9  sub rax, rcx",
+                "1800064cc  test rcx, rcx",
+                "1800064cf  cmovz rax, rsi",
+                "1800064d3  jz short loc_180006520",
+                "1800064d5  lea rcx, [rbp+2E0h+Filename]",
+                "1800064dc  lea rcx, [rcx+rax*2]",
+                "1800064e0  sub rdi, rax",
+                "1800064e3  jz short loc_180006512",
+                "1800064e5  lea r8, aFacetrackingEx; \"FaceTracking.exe\"",
+                "1800064ec  mov eax, 7FFFFFFEh",
+                "1800064f1  sub r8, rcx",
+                "1800064f4  test rax, rax",
+                "1800064f7  jz short loc_180006512",
+                "1800064f9  movzx edx, word ptr [r8+rcx]",
+                "1800064fe  test dx, dx",
+                "180006501  jz short loc_180006512",
+                "180006503  mov [rcx], dx",
+                "180006506  dec rax",
+                "180006509  add rcx, 2",
+                "18000650d  sub rdi, rbx",
+                "180006510  jnz short loc_1800064F4"
+              ],
+              "instruction_count": 160,
+              "truncated": true
+            },
+            "xrefs": {
+              "to": [
+                {
+                  "addr": "0x18000bd68",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x18000be28",
+                  "type": "data"
+                },
+                {
+                  "addr": "0x1800144b0",
+                  "type": "data"
+                }
+              ],
+              "from": [
+                {
+                  "addr": "0x180006275",
+                  "type": "code"
+                }
+              ],
+              "to_truncated": false,
+              "from_truncated": false,
+              "to_count": 3,
+              "from_count": 1
+            },
+            "callers": [],
+            "caller_count": 0,
+            "callers_truncated": false,
+            "callees": [
+              {
+                "addr": "0x18000b0a0",
+                "name": "CloseHandle",
+                "type": "external"
+              },
+              {
+                "addr": "0x18000b048",
+                "name": "GetModuleFileNameW",
+                "type": "external"
+              },
+              {
+                "addr": "0x18000b1d8",
+                "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z",
+                "type": "external"
+              },
+              {
+                "addr": "0x180006de0",
+                "name": "sub_180006DE0",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18000b0f0",
+                "name": "SetInformationJobObject",
+                "type": "external"
+              },
+              {
+                "addr": "0x18000b0e8",
+                "name": "AssignProcessToJobObject",
+                "type": "external"
+              },
+              {
+                "addr": "0x18000b0d0",
+                "name": "GetExitCodeProcess",
+                "type": "external"
+              },
+              {
+                "addr": "0x180009456",
+                "name": "wcsrchr",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18000b110",
+                "name": "DeleteCriticalSection",
+                "type": "external"
+              },
+              {
+                "addr": "0x18000b0d8",
+                "name": "CreateProcessW",
+                "type": "external"
+              },
+              {
+                "addr": "0x18000b0e0",
+                "name": "CreateJobObjectW",
+                "type": "external"
+              },
+              {
+                "addr": "0x18000b120",
+                "name": "GetLastError",
+                "type": "external"
+              },
+              {
+                "addr": "0x180008890",
+                "name": "__security_check_cookie",
+                "type": "internal"
+              },
+              {
+                "addr": "0x18000b1e0",
+                "name": "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z",
+                "type": "external"
+              },
+              {
+                "addr": "0x18000b0c0",
+                "name": "CreateEventW",
+                "type": "external"
+              }
+            ],
+            "callee_count": 15,
+            "callees_truncated": false,
+            "strings": [
+              {
+                "addr": "0x18000c0b0",
+                "length": 21,
+                "string": "COM:open facetracking"
+              },
+              {
+                "addr": "0x18000c050",
+                "length": 20,
+                "string": "CreateEvent failed: "
+              },
+              {
+                "addr": "0x18000c068",
+                "length": 29,
+                "string": "COM:GetModuleFileNameW failed"
+              }
+            ],
+            "string_ref_count": 3,
+            "strings_truncated": false,
+            "constants": [
+              {
+                "addr": "0x18000628a",
+                "value": "0x3c0",
+                "decimal": 960
+              },
+              {
+                "addr": "0x1800062dd",
+                "value": "0x103",
+                "decimal": 259
+              },
+              {
+                "addr": "0x1800062e7",
+                "value": "0xffffffff800700b7",
+                "decimal": 18446744071562526903
+              },
+              {
+                "addr": "0x18000635a",
+                "value": "0x90",
+                "decimal": 144
+              },
+              {
+                "addr": "0x180006360",
+                "value": "0x2000",
+                "decimal": 8192
+              },
+              {
+                "addr": "0x180006367",
+                "value": "0x9",
+                "decimal": 9
+              },
+              {
+                "addr": "0x1800063a9",
+                "value": "0xffffffff80004005",
+                "decimal": 18446744071562084357
+              },
+              {
+                "addr": "0x1800063b7",
+                "value": "0x1",
+                "decimal": 1
+              },
+              {
+                "addr": "0x180006418",
+                "value": "0xffffffff80070000",
+                "decimal": 18446744071562526720
+              },
+              {
+                "addr": "0x180006434",
+                "value": "0x68",
+                "decimal": 104
+              },
+              {
+                "addr": "0x18000643b",
+                "value": "0x104",
+                "decimal": 260
+              },
+              {
+                "addr": "0x18000646c",
+                "value": "0x5c",
+                "decimal": 92
+              },
+              {
+                "addr": "0x1800064bd",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x1800064ec",
+                "value": "0x7ffffffe",
+                "decimal": 2147483646
+              },
+              {
+                "addr": "0x180006509",
+                "value": "0x2",
+                "decimal": 2
+              },
+              {
+                "addr": "0x180006576",
+                "value": "0xffffffff80070000",
+                "decimal": 18446744071562526720
+              },
+              {
+                "addr": "0x1800065b0",
+                "value": "0xffffffff80004005",
+                "decimal": 18446744071562084357
+              }
+            ],
+            "constant_count": 17,
+            "constants_truncated": false,
+            "basic_blocks": [
+              {
+                "start": "0x180006270",
+                "end": "0x1800062ce",
+                "size": 94,
+                "type": 0,
+                "successors": [
+                  "0x1800062ce",
+                  "0x1800062ff"
+                ],
+                "predecessors": []
+              },
+              {
+                "start": "0x1800062ce",
+                "end": "0x1800062dd",
+                "size": 15,
+                "type": 0,
+                "successors": [
+                  "0x1800062dd",
+                  "0x1800062f1"
+                ],
+                "predecessors": [
+                  "0x180006270"
+                ]
+              },
+              {
+                "start": "0x1800062dd",
+                "end": "0x1800062e7",
+                "size": 10,
+                "type": 0,
+                "successors": [
+                  "0x1800062e7",
+                  "0x1800062f1"
+                ],
+                "predecessors": [
+                  "0x1800062ce"
+                ]
+              },
+              {
+                "start": "0x1800062e7",
+                "end": "0x1800062f1",
+                "size": 10,
+                "type": 0,
+                "successors": [
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x1800062dd"
+                ]
+              },
+              {
+                "start": "0x1800062f1",
+                "end": "0x1800062ff",
+                "size": 14,
+                "type": 0,
+                "successors": [
+                  "0x1800062ff"
+                ],
+                "predecessors": [
+                  "0x1800062ce",
+                  "0x1800062dd"
+                ]
+              },
+              {
+                "start": "0x1800062ff",
+                "end": "0x180006338",
+                "size": 57,
+                "type": 0,
+                "successors": [
+                  "0x180006338",
+                  "0x1800063b7"
+                ],
+                "predecessors": [
+                  "0x180006270",
+                  "0x1800062f1"
+                ]
+              },
+              {
+                "start": "0x180006338",
+                "end": "0x18000634a",
+                "size": 18,
+                "type": 0,
+                "successors": [
+                  "0x18000634a",
+                  "0x1800063a5"
+                ],
+                "predecessors": [
+                  "0x1800062ff"
+                ]
+              },
+              {
+                "start": "0x18000634a",
+                "end": "0x18000639c",
+                "size": 82,
+                "type": 0,
+                "successors": [
+                  "0x18000639c",
+                  "0x1800063b3"
+                ],
+                "predecessors": [
+                  "0x180006338"
+                ]
+              },
+              {
+                "start": "0x18000639c",
+                "end": "0x1800063a5",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x1800063a5"
+                ],
+                "predecessors": [
+                  "0x18000634a"
+                ]
+              },
+              {
+                "start": "0x1800063a5",
+                "end": "0x1800063b3",
+                "size": 14,
+                "type": 0,
+                "successors": [
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x180006338",
+                  "0x18000639c"
+                ]
+              },
+              {
+                "start": "0x1800063b3",
+                "end": "0x1800063b7",
+                "size": 4,
+                "type": 0,
+                "successors": [
+                  "0x1800063b7"
+                ],
+                "predecessors": [
+                  "0x18000634a"
+                ]
+              },
+              {
+                "start": "0x1800063b7",
+                "end": "0x1800063d8",
+                "size": 33,
+                "type": 0,
+                "successors": [
+                  "0x1800063d8",
+                  "0x180006423"
+                ],
+                "predecessors": [
+                  "0x1800062ff",
+                  "0x1800063b3"
+                ]
+              },
+              {
+                "start": "0x1800063d8",
+                "end": "0x180006415",
+                "size": 61,
+                "type": 0,
+                "successors": [
+                  "0x180006415",
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x1800063b7"
+                ]
+              },
+              {
+                "start": "0x180006415",
+                "end": "0x180006423",
+                "size": 14,
+                "type": 0,
+                "successors": [
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x1800063d8"
+                ]
+              },
+              {
+                "start": "0x180006423",
+                "end": "0x18000646c",
+                "size": 73,
+                "type": 0,
+                "successors": [
+                  "0x18000646c",
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x1800063b7"
+                ]
+              },
+              {
+                "start": "0x18000646c",
+                "end": "0x180006482",
+                "size": 22,
+                "type": 0,
+                "successors": [
+                  "0x180006482",
+                  "0x1800064aa"
+                ],
+                "predecessors": [
+                  "0x180006423"
+                ]
+              },
+              {
+                "start": "0x180006482",
+                "end": "0x1800064aa",
+                "size": 40,
+                "type": 0,
+                "successors": [
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x18000646c"
+                ]
+              },
+              {
+                "start": "0x1800064aa",
+                "end": "0x1800064b8",
+                "size": 14,
+                "type": 0,
+                "successors": [
+                  "0x1800064b8"
+                ],
+                "predecessors": [
+                  "0x18000646c"
+                ]
+              },
+              {
+                "start": "0x1800064b8",
+                "end": "0x1800064bd",
+                "size": 5,
+                "type": 0,
+                "successors": [
+                  "0x1800064bd",
+                  "0x1800064c6"
+                ],
+                "predecessors": [
+                  "0x1800064aa",
+                  "0x1800064bd"
+                ]
+              },
+              {
+                "start": "0x1800064bd",
+                "end": "0x1800064c6",
+                "size": 9,
+                "type": 0,
+                "successors": [
+                  "0x1800064b8",
+                  "0x1800064c6"
+                ],
+                "predecessors": [
+                  "0x1800064b8"
+                ]
+              },
+              {
+                "start": "0x1800064c6",
+                "end": "0x1800064d5",
+                "size": 15,
+                "type": 0,
+                "successors": [
+                  "0x1800064d5",
+                  "0x180006520"
+                ],
+                "predecessors": [
+                  "0x1800064b8",
+                  "0x1800064bd"
+                ]
+              },
+              {
+                "start": "0x1800064d5",
+                "end": "0x1800064e5",
+                "size": 16,
+                "type": 0,
+                "successors": [
+                  "0x1800064e5",
+                  "0x180006512"
+                ],
+                "predecessors": [
+                  "0x1800064c6"
+                ]
+              },
+              {
+                "start": "0x1800064e5",
+                "end": "0x1800064f4",
+                "size": 15,
+                "type": 0,
+                "successors": [
+                  "0x1800064f4"
+                ],
+                "predecessors": [
+                  "0x1800064d5"
+                ]
+              },
+              {
+                "start": "0x1800064f4",
+                "end": "0x1800064f9",
+                "size": 5,
+                "type": 0,
+                "successors": [
+                  "0x1800064f9",
+                  "0x180006512"
+                ],
+                "predecessors": [
+                  "0x1800064e5",
+                  "0x180006503"
+                ]
+              },
+              {
+                "start": "0x1800064f9",
+                "end": "0x180006503",
+                "size": 10,
+                "type": 0,
+                "successors": [
+                  "0x180006503",
+                  "0x180006512"
+                ],
+                "predecessors": [
+                  "0x1800064f4"
+                ]
+              },
+              {
+                "start": "0x180006503",
+                "end": "0x180006512",
+                "size": 15,
+                "type": 0,
+                "successors": [
+                  "0x1800064f4",
+                  "0x180006512"
+                ],
+                "predecessors": [
+                  "0x1800064f9"
+                ]
+              },
+              {
+                "start": "0x180006512",
+                "end": "0x180006520",
+                "size": 14,
+                "type": 0,
+                "successors": [
+                  "0x180006520"
+                ],
+                "predecessors": [
+                  "0x1800064d5",
+                  "0x1800064f4",
+                  "0x1800064f9",
+                  "0x180006503"
+                ]
+              },
+              {
+                "start": "0x180006520",
+                "end": "0x18000655e",
+                "size": 62,
+                "type": 0,
+                "successors": [
+                  "0x18000655e",
+                  "0x18000657e"
+                ],
+                "predecessors": [
+                  "0x1800064c6",
+                  "0x180006512"
+                ]
+              },
+              {
+                "start": "0x18000655e",
+                "end": "0x180006573",
+                "size": 21,
+                "type": 0,
+                "successors": [
+                  "0x180006573",
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x180006520"
+                ]
+              },
+              {
+                "start": "0x180006573",
+                "end": "0x18000657e",
+                "size": 11,
+                "type": 0,
+                "successors": [
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x18000655e"
+                ]
+              },
+              {
+                "start": "0x18000657e",
+                "end": "0x180006591",
+                "size": 19,
+                "type": 0,
+                "successors": [
+                  "0x180006591",
+                  "0x1800065b7"
+                ],
+                "predecessors": [
+                  "0x180006520"
+                ]
+              },
+              {
+                "start": "0x180006591",
+                "end": "0x1800065b7",
+                "size": 38,
+                "type": 0,
+                "successors": [
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x18000657e"
+                ]
+              },
+              {
+                "start": "0x1800065b7",
+                "end": "0x1800065d1",
+                "size": 26,
+                "type": 0,
+                "successors": [
+                  "0x1800065d1"
+                ],
+                "predecessors": [
+                  "0x18000657e"
+                ]
+              },
+              {
+                "start": "0x1800065d1",
+                "end": "0x180006609",
+                "size": 56,
+                "type": 2,
+                "successors": [],
+                "predecessors": [
+                  "0x1800062e7",
+                  "0x1800063a5",
+                  "0x1800063d8",
+                  "0x180006415",
+                  "0x180006423",
+                  "0x180006482",
+                  "0x18000655e",
+                  "0x180006573",
+                  "0x180006591",
+                  "0x1800065b7"
+                ]
+              }
+            ],
+            "basic_block_count": 34,
+            "basic_blocks_truncated": false
+          },
+          "error": null
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}
