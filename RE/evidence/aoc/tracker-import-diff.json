@@ -1,0 +1,77 @@
+{
+  "BOE_ROI.dll": {
+    "added": [
+      "BOE_ROI_init",
+      "BOE_ROI_release",
+      "BOE_ROI_setFaceROI"
+    ],
+    "removed": []
+  },
+  "KERNEL32.dll": {
+    "added": [
+      "GetACP",
+      "GetCurrentProcess",
+      "GetTickCount64",
+      "IsDebuggerPresent",
+      "IsProcessorFeaturePresent",
+      "MultiByteToWideChar",
+      "RtlCaptureContext",
+      "RtlLookupFunctionEntry",
+      "RtlVirtualUnwind",
+      "SetConsoleCP",
+      "SetConsoleOutputCP",
+      "TerminateProcess",
+      "UnhandledExceptionFilter"
+    ],
+    "removed": []
+  },
+  "MSVCP140.dll": {
+    "added": [
+      "??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@N@Z",
+      "?_Fiopen@std@@YAPEAU_iobuf@@PEB_WHH@Z",
+      "?tolower@?$ctype@D@std@@QEBAPEBDPEADPEBD@Z"
+    ],
+    "removed": [
+      "?_Fiopen@std@@YAPEAU_iobuf@@PEBDHH@Z",
+      "__crtLCMapStringA"
+    ]
+  },
+  "VCRUNTIME140.dll": {
+    "added": [],
+    "removed": [
+      "__RTtypeid",
+      "__std_type_info_compare"
+    ]
+  },
+  "api-ms-win-crt-locale-l1-1-0.dll": {
+    "added": [],
+    "removed": [
+      "___lc_collate_cp_func",
+      "___lc_locale_name_func"
+    ]
+  },
+  "api-ms-win-crt-runtime-l1-1-0.dll": {
+    "added": [
+      "_invoke_watson"
+    ],
+    "removed": []
+  },
+  "api-ms-win-crt-stdio-l1-1-0.dll": {
+    "added": [
+      "__stdio_common_vsprintf_s"
+    ],
+    "removed": []
+  },
+  "api-ms-win-crt-string-l1-1-0.dll": {
+    "added": [],
+    "removed": [
+      "strlen"
+    ]
+  },
+  "opencv_world4110.dll": {
+    "added": [
+      "?putText@cv@@YAXAEBV_InputOutputArray@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$Point_@H@1@HNV?$Scalar_@N@1@HH_N@Z"
+    ],
+    "removed": []
+  }
+}

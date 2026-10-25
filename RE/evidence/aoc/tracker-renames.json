@@ -1,0 +1,28 @@
+{
+  "func": [
+    {
+      "addr": "0x14000c190",
+      "old": "sub_14000C190",
+      "name": "Aoc_FindCameraByConfiguredMediaMode",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x14000d9a0",
+      "old": "sub_14000D9A0",
+      "name": "Aoc_TrackFrame_PublishCenter_OptionalROI",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x14000e350",
+      "old": "sub_14000E350",
+      "name": "Aoc_StartCapture_WithOptionalROI",
+      "dir": "vibe"
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "ok": 3,
+    "failed": 0,
+    "stopped": false
+  }
+}

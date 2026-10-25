@@ -1,0 +1,70 @@
+{
+  "addr": "BOE_ROI_init",
+  "code": "char __fastcall BOE_ROI_init(__int64 a1)\n{\n  int v2; // [rsp+24h] [rbp-44h]\n  int v3; // [rsp+24h] [rbp-44h]\n  __int64 v4; // [rsp+28h] [rbp-40h]\n  __int64 (__fastcall *v5)(__int64, void *, __int64); // [rsp+30h] [rbp-38h]\n  __int64 v6; // [rsp+40h] [rbp-28h] BYREF\n  __int64 v7; // [rsp+48h] [rbp-20h] BYREF\n  _BYTE v8[8]; // [rsp+50h] [rbp-18h] BYREF\n\n  if ( a1 != 0 )\n  {\n    sub_180001CC0(a1: v8, a2: &unk_180005080); /*0x18000173f*/\n    sub_180001270(); /*0x180001744*/\n    v6 = 0; /*0x180001749*/\n    v7 = 0; /*0x180001752*/\n    v5 = *(__int64 (__fastcall **)(__int64, void *, __int64))(*(_QWORD *)a1 + 264LL); /*0x18000176a*/\n    v4 = unknown_libname_1(a1: &v6); /*0x180001779*/\n    v2 = v5(a1, a2: &unk_180003608, a3: v4); /*0x180001793*/\n    if ( v2 >= 0 && v6 != 0 )\n    {\n      v3 = (**(__int64 (__fastcall ***)(__int64, void *, __int64 *))v6)(a1: v6, a2: &unk_1800035F8, a3: &v7); /*0x1800017f5*/\n      if ( v3 >= 0 && v7 != 0 )\n      {\n        qword_1800056C8 = v6; /*0x180001854*/\n        qword_1800056D0 = v7; /*0x180001860*/\n        dword_1800056C0 = 0; /*0x180001867*/\n        sub_1800011A0(a1: \"[BOE_ROI] init returns true: ROI protocol will be detected on first setFaceROI.\\n\");\n        sub_180001CA0(a1: v8); /*0x180001888*/\n        return 1; /*0x18000188d*/\n      }\n      else\n      {\n        sub_1800011A0(a1: \"[BOE_ROI] init returns false: QueryInterface(IKsControl) hr=0x%08lX.\\n\", v3);\n        (*(void (__fastcall **)(__int64))(*(_QWORD *)v6 + 96LL))(a1: v6); /*0x180001825*/\n        (*(void (__fastcall **)(__int64))(*(_QWORD *)v6 + 16LL))(a1: v6); /*0x180001835*/\n        sub_180001CA0(a1: v8); /*0x180001843*/\n        return 0; /*0x180001848*/\n      }\n    }\n    else\n    {\n      sub_1800011A0(a1: \"[BOE_ROI] init returns false: ActivateObject hr=0x%08lX.\\n\", v2);\n      sub_180001CA0(a1: v8); /*0x1800017c1*/\n      return 0; /*0x1800017c6*/\n    }\n  }\n  else\n  {\n    sub_1800011A0(a1: \"[BOE_ROI] init returns false: activate is null.\\n\");\n    return 0; /*0x18000172c*/\n  }\n}",
+  "refs": [
+    {
+      "addr": "0x180001cc0",
+      "name": "sub_180001CC0"
+    },
+    {
+      "addr": "0x180005080",
+      "name": "unk_180005080"
+    },
+    {
+      "addr": "0x180001270",
+      "name": "sub_180001270"
+    },
+    {
+      "addr": "0x180001190",
+      "name": "unknown_libname_1"
+    },
+    {
+      "addr": "0x180003608",
+      "name": "unk_180003608"
+    },
+    {
+      "addr": "0x1800035f8",
+      "name": "unk_1800035F8"
+    },
+    {
+      "addr": "0x1800056c8",
+      "name": "qword_1800056C8"
+    },
+    {
+      "addr": "0x1800056d0",
+      "name": "qword_1800056D0"
+    },
+    {
+      "addr": "0x1800056c0",
+      "name": "dword_1800056C0"
+    },
+    {
+      "addr": "0x1800011a0",
+      "name": "sub_1800011A0"
+    },
+    {
+      "addr": "0x1800032b0",
+      "name": "aBoeRoiInitRetu_2",
+      "string": "[BOE_ROI] init returns true: ROI protocol will be detected on first setFaceROI.\n"
+    },
+    {
+      "addr": "0x180001ca0",
+      "name": "sub_180001CA0"
+    },
+    {
+      "addr": "0x180003260",
+      "name": "aBoeRoiInitRetu_1",
+      "string": "[BOE_ROI] init returns false: QueryInterface(IKsControl) hr=0x%08lX.\n"
+    },
+    {
+      "addr": "0x180003218",
+      "name": "aBoeRoiInitRetu_0",
+      "string": "[BOE_ROI] init returns false: ActivateObject hr=0x%08lX.\n"
+    },
+    {
+      "addr": "0x1800031e0",
+      "name": "aBoeRoiInitRetu",
+      "string": "[BOE_ROI] init returns false: activate is null.\n"
+    }
+  ]
+}

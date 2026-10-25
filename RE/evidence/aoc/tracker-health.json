@@ -1,0 +1,25 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"ok\",\"uptime_sec\":61.962,\"idb_path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\LeiaSRBridge\\\\RE\\\\inputs\\\\aoc\\\\FaceTracking.exe.i64\",\"module\":\"FaceTracking.exe\",\"input_path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\LeiaSRBridge\\\\RE\\\\inputs\\\\aoc\\\\FaceTracking.exe\",\"imagebase\":\"0x140000000\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":837}"
+      }
+    ],
+    "structuredContent": {
+      "status": "ok",
+      "uptime_sec": 61.962,
+      "idb_path": "F:\\开发项目\\LeiaSRBridge\\RE\\inputs\\aoc\\FaceTracking.exe.i64",
+      "module": "FaceTracking.exe",
+      "input_path": "F:\\开发项目\\LeiaSRBridge\\RE\\inputs\\aoc\\FaceTracking.exe",
+      "imagebase": "0x140000000",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 837
+    },
+    "isError": false
+  },
+  "id": 1
+}

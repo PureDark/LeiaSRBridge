@@ -2,7 +2,7 @@
 
 开发者入口：[构建、目录与打包说明](docs/BUILD.zh-CN.md) · [Agent 开发记录](docs/agent-history/README.md) · [HTML 设计稿](design/titan-bridge-opus5.5.html)
 
-面向京东方（BOE）裸眼 3D 显示器的独立 LeiaSR 转接器，支持使用兼容 BOE / DepthTransformerPlus 底层方案的显示器，包括泰坦军团、雷神；ViewX 暂不支持。支持 SDK 1.34.10、Windows x64，含现代 DX12 与 Odyssey 使用的旧版 DX11/DX12 接口。直接使用 FallenFlower3D 和 YakuzaVRMod 已生成的左右眼图像，不修改游戏或 mod 文件。
+面向京东方（BOE）裸眼 3D 显示器的独立 LeiaSR 转接器，支持使用兼容 BOE / DepthTransformerPlus 底层方案的显示器，包括泰坦军团、雷神、AOC；ViewX 暂不支持。支持 SDK 1.34.10、Windows x64，含现代 DX12 与 Odyssey 使用的旧版 DX11/DX12 接口。直接使用 FallenFlower3D 和 YakuzaVRMod 已生成的左右眼图像，不修改游戏或 mod 文件。
 
 本机项目目录：`F:\开发项目\LeiaSRBridge`；局域网共享：`\\PUREDARK-GAMING\LeiaSRBridge`。共享权限与账户不变，其他电脑请更新项目工作目录。
 
@@ -14,10 +14,11 @@
 |---|---|---|
 | 泰坦军团 M27E6V-3D | 支持 | 已实机验证 |
 | 雷神裸眼 3D 显示器（使用本次分析的 DepthTransformerPlus 方案） | 支持现有桥接，无需另写适配 | 配套软件核心组件与现有后端完全一致，实体屏待验证 |
+| AOC 裸眼 3D 显示器（使用本次分析的 DepthTransformerPlus 1.1.30.184 方案） | 支持现有桥接，无需新增显示后端 | MCU、交织库、眼追算法及 COM 组件一致；新版可选摄像头 ROI 增强尚未集成，实体屏待验证 |
 | 其他采用相同 BOE / DepthTransformerPlus 底层方案的裸眼 3D 显示器 | 可使用现有桥接，具体型号需确认兼容 | 未逐型号验证 |
 | ViewX 裸眼 3D 显示器 | **暂不支持** | 已分析的软件使用不同的 LF3D 交织路径，适配暂缓 |
 
-兼容性依据：[雷神分析记录](RE/thunderobot_compatibility_analysis.md) · [ViewX 分析记录](RE/viewx_compatibility_analysis.md)。
+兼容性依据：[AOC 分析记录](RE/aoc_compatibility_analysis.md) · [雷神分析记录](RE/thunderobot_compatibility_analysis.md) · [ViewX 分析记录](RE/viewx_compatibility_analysis.md)。
 
 ## 本版变更
 

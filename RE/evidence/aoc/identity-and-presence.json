@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-25",
+  "brand_source": "User identifies this installation as AOC; exact monitor model and physical display behavior not supplied.",
+  "installations": [
+    {
+      "path": "C:\\Program Files (x86)\\DepthTransformerPlus",
+      "main": "DepthTransformerPlus.exe",
+      "version": "1.1.30.184"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\3D Spatial Gateway",
+      "main": "3DSpatialGateway.exe",
+      "version": "1.8.1.117",
+      "sha256": "1ddf9e2a36dc3cb223e97e3c07d6e786089c0f63e56b221b527044ff87fa9877"
+    }
+  ],
+  "identity": [
+    {
+      "source": "C:\\Program Files (x86)\\DepthTransformerPlus\\DepthTransformerPlus.exe",
+      "copy": "RE\\inputs\\aoc\\DepthTransformerPlus.exe",
+      "bytes": 18446376,
+      "sha256": "c7d8198e5ab2246d3536bfbd1f39dfbf89c4663dc06758695149e48b89bbd4bc",
+      "copy_sha256": "c7d8198e5ab2246d3536bfbd1f39dfbf89c4663dc06758695149e48b89bbd4bc",
+      "copy_equal": true
+    },
+    {
+      "source": "C:\\Program Files (x86)\\DepthTransformerPlus\\BOEInterleaving.dll",
+      "copy": "RE\\inputs\\aoc\\BOEInterleaving.dll",
+      "bytes": 96768,
+      "sha256": "caa487e575dec2c432dbbc91e782479a470d3069b80bbf067a740c92c78d1655",
+      "copy_sha256": "caa487e575dec2c432dbbc91e782479a470d3069b80bbf067a740c92c78d1655",
+      "copy_equal": true
+    },
+    {
+      "source": "C:\\Program Files (x86)\\DepthTransformerPlus\\BOERenderWapper.dll",
+      "copy": "RE\\inputs\\aoc\\BOERenderWapper.dll",
+      "bytes": 158720,
+      "sha256": "70c97baa175abc2d9f6a4d6af6533ad2637548aca3635627422d02f4f80e2f95",
+      "copy_sha256": "70c97baa175abc2d9f6a4d6af6533ad2637548aca3635627422d02f4f80e2f95",
+      "copy_equal": true
+    },
+    {
+      "source": "C:\\Program Files (x86)\\DepthTransformerPlus\\eyetracking\\FaceTracking.exe",
+      "copy": "RE\\inputs\\aoc\\FaceTracking.exe",
+      "bytes": 348208,
+      "sha256": "b11b153445658424809ee196aac532a6e5a9091e42eecd9b585ae15c0e532cc9",
+      "copy_sha256": "b11b153445658424809ee196aac532a6e5a9091e42eecd9b585ae15c0e532cc9",
+      "copy_equal": true
+    },
+    {
+      "source": "C:\\Program Files (x86)\\DepthTransformerPlus\\eyetracking\\BOE_ROI.dll",
+      "copy": "RE\\inputs\\aoc\\BOE_ROI.dll",
+      "bytes": 17408,
+      "sha256": "76269befa8b1e98218dfd837ab4a67e48b8ba4d2eafca9a5b60fe5b6ca285b58",
+      "copy_sha256": "76269befa8b1e98218dfd837ab4a67e48b8ba4d2eafca9a5b60fe5b6ca285b58",
+      "copy_equal": true
+    }
+  ],
+  "comparison_rechecked_unchanged": true,
+  "model_in_bridge": {
+    "file": "vendor/eyetracking/models/landmark_det.onnx",
+    "exists": true
+  },
+  "counts": {
+    "baseline_entries": 21,
+    "matches": 14,
+    "different": 4,
+    "missing": 3
+  }
+}

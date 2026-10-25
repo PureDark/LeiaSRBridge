@@ -1,0 +1,100 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"doEyeTrack_3D\",\"xrefs\":[{\"addr\":\"0x14000d699\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000d4d0\",\"name\":\"sub_14000D4D0\",\"size\":\"0x61f\"}},{\"addr\":\"0x14000d699\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000d4d0\",\"name\":\"sub_14000D4D0\",\"size\":\"0x61f\"}},{\"addr\":\"0x140049c04\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":3},{\"addr\":\"MFEnumDeviceSources\",\"xrefs\":[{\"addr\":\"0x14000be10\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000bd20\",\"name\":\"sub_14000BD20\",\"size\":\"0xbff\"}},{\"addr\":\"0x14000bf6f\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000bd20\",\"name\":\"sub_14000BD20\",\"size\":\"0xbff\"}},{\"addr\":\"0x14000be10\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000bd20\",\"name\":\"sub_14000BD20\",\"size\":\"0xbff\"}},{\"addr\":\"0x14000bf6f\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000bd20\",\"name\":\"sub_14000BD20\",\"size\":\"0xbff\"}},{\"addr\":\"0x140049c90\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":5},{\"addr\":\"BOE_ROI_setFaceROI\",\"xrefs\":null,\"error\":\"Not found: 'BOE_ROI_setFaceROI'\"}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "doEyeTrack_3D",
+          "xrefs": [
+            {
+              "addr": "0x14000d699",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000d4d0",
+                "name": "sub_14000D4D0",
+                "size": "0x61f"
+              }
+            },
+            {
+              "addr": "0x14000d699",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000d4d0",
+                "name": "sub_14000D4D0",
+                "size": "0x61f"
+              }
+            },
+            {
+              "addr": "0x140049c04",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 3
+        },
+        {
+          "addr": "MFEnumDeviceSources",
+          "xrefs": [
+            {
+              "addr": "0x14000be10",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000bd20",
+                "name": "sub_14000BD20",
+                "size": "0xbff"
+              }
+            },
+            {
+              "addr": "0x14000bf6f",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000bd20",
+                "name": "sub_14000BD20",
+                "size": "0xbff"
+              }
+            },
+            {
+              "addr": "0x14000be10",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000bd20",
+                "name": "sub_14000BD20",
+                "size": "0xbff"
+              }
+            },
+            {
+              "addr": "0x14000bf6f",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000bd20",
+                "name": "sub_14000BD20",
+                "size": "0xbff"
+              }
+            },
+            {
+              "addr": "0x140049c90",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 5
+        },
+        {
+          "addr": "BOE_ROI_setFaceROI",
+          "xrefs": null,
+          "error": "Not found: 'BOE_ROI_setFaceROI'"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

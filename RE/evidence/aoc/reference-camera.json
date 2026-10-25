@@ -1,0 +1,168 @@
+{
+  "addr": "0x14000bd20",
+  "code": "HRESULT sub_14000BD20()\n{\n  HRESULT result; // eax\n  int v1; // ebx\n  HRESULT v2; // eax\n  UINT32 v3; // ecx\n  volatile signed __int32 *v4; // rbx\n  __int64 v5; // r14\n  volatile signed __int32 *v6; // rbx\n  char v7; // si\n  UINT32 v8; // edi\n  UINT32 v9; // edx\n  __int64 v10; // rax\n  volatile signed __int32 *v11; // rbx\n  __int64 v12; // rbx\n  volatile signed __int32 *v13; // rbx\n  volatile signed __int32 *v14; // rbx\n  unsigned int v15; // r15d\n  char v16; // r13\n  unsigned __int64 v17; // rdi\n  int v18; // esi\n  int v19; // ebx\n  int v20; // r14d\n  __int64 v21; // rdx\n  int v22; // r8d\n  int v23; // eax\n  volatile signed __int32 *v24; // rbx\n  __int64 i; // rbx\n  IMFActivate *v26; // rcx\n  volatile signed __int32 *v27; // rbx\n  char v28; // [rsp+50h] [rbp-B0h]\n  _DWORD v29[3]; // [rsp+54h] [rbp-ACh] BYREF\n  unsigned __int128 v30; // [rsp+60h] [rbp-A0h] BYREF\n  const char *v31; // [rsp+70h] [rbp-90h]\n  unsigned __int128 v32; // [rsp+80h] [rbp-80h] BYREF\n  const char *v33; // [rsp+90h] [rbp-70h]\n  unsigned int v34; // [rsp+A0h] [rbp-60h] BYREF\n  unsigned __int64 v35; // [rsp+A4h] [rbp-5Ch] BYREF\n  void *v36; // [rsp+B0h] [rbp-50h] BYREF\n  __int64 v37; // [rsp+B8h] [rbp-48h]\n  unsigned __int128 v38; // [rsp+C0h] [rbp-40h] BYREF\n  const char *v39; // [rsp+D0h] [rbp-30h]\n  int v40; // [rsp+E0h] [rbp-20h]\n  int v41; // [rsp+E4h] [rbp-1Ch]\n  int v42; // [rsp+E8h] [rbp-18h]\n  int v43; // [rsp+ECh] [rbp-14h] BYREF\n  __int64 v44; // [rsp+F0h] [rbp-10h] BYREF\n  __int64 v45; // [rsp+F8h] [rbp-8h]\n  __int64 v46; // [rsp+100h] [rbp+0h]\n  __int64 v47; // [rsp+108h] [rbp+8h]\n  const char *v48; // [rsp+110h] [rbp+10h] BYREF\n  volatile signed __int32 *v49; // [rsp+118h] [rbp+18h]\n  const char *v50; // [rsp+120h] [rbp+20h]\n  _DWORD *v51; // [rsp+130h] [rbp+30h]\n  _QWORD v52[2]; // [rsp+140h] [rbp+40h] BYREF\n  _QWORD v53[2]; // [rsp+150h] [rbp+50h] BYREF\n  _QWORD v54[6]; // [rsp+160h] [rbp+60h] BYREF\n  IMFActivate **pppSourceActivate; // [rsp+190h] [rbp+90h] BYREF\n  IMFAttributes *ppMFAttributes; // [rsp+198h] [rbp+98h] BYREF\n  __int64 v57; // [rsp+1A0h] [rbp+A0h] BYREF\n  IMFSourceReader *ppSourceReader; // [rsp+1A8h] [rbp+A8h] BYREF\n  IMFMediaSource *pMediaSource; // [rsp+1B0h] [rbp+B0h] BYREF\n  UINT32 pcSourceActivate; // [rsp+1B8h] [rbp+B8h] BYREF\n  unsigned __int64 v61; // [rsp+1C0h] [rbp+C0h] BYREF\n  _DWORD v62[2]; // [rsp+1C8h] [rbp+C8h] BYREF\n\n  v42 = dword_14004D120; /*0x14000bd53*/\n  v41 = dword_14004D128; /*0x14000bd5c*/\n  v40 = dword_14004D12C; /*0x14000bd65*/\n  qword_140050158 = 0; /*0x14000bd6b*/\n  dword_140050160 = 0; /*0x14000bd72*/\n  ppMFAttributes = nullptr; /*0x14000bd79*/\n  pppSourceActivate = nullptr; /*0x14000bd80*/\n  pcSourceActivate = 0; /*0x14000bd87*/\n  result = MFCreateAttributes(&ppMFAttributes, cInitialSize: 2u); /*0x14000bd9a*/\n  if ( result >= 0 ) /*0x14000bda2*/\n  {\n    v1 = ((__int64 (__fastcall *)(IMFAttributes *, void *, void *))ppMFAttributes->lpVtbl->SetGUID)( /*0x14000bdc6*/\n           a1: ppMFAttributes,\n           a2: &unk_14003C7B8,\n           a3: &unk_14003D2E0);\n    if ( v1 >= 0 ) /*0x14000bdd1*/\n    {\n      v2 = ((__int64 (__fastcall *)(IMFAttributes *, void *, void *))ppMFAttributes->lpVtbl->SetGUID)( /*0x14000bdf1*/\n             a1: ppMFAttributes,\n             a2: &unk_14003CA98,\n             a3: &unk_14003DBE8);\n      if ( v2 >= 0 ) /*0x14000bdf9*/\n        v2 = MFEnumDeviceSources(pAttributes: ppMFAttributes, &pppSourceActivate, &pcSourceActivate); /*0x14000be10*/\n      v3 = pcSourceActivate; /*0x14000be2f*/\n      if ( pcSourceActivate == 0 ) /*0x14000be37*/\n      {\n        if ( dword_1400501CC > *(_DWORD *)(*(_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + 8LL) ) /*0x14000be52*/\n        {\n          sub_140034330(a1: &dword_1400501CC); /*0x14000be5b*/\n          if ( dword_1400501CC == -1 ) /*0x14000be67*/\n          {\n            xmmword_1400503C8 = 0; /*0x14000be6c*/\n            sub_14000B820(); /*0x14000be73*/\n            sub_140034700(Function: sub_140038DB0); /*0x14000be7f*/\n            sub_1400342C0(a1: &dword_1400501CC); /*0x14000be8c*/\n          }\n        }\n        v4 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000be91*/\n        if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000be9b*/\n        {\n          _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000be9d*/\n          v4 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000bea1*/\n        }\n        v36 = (void *)xmmword_1400503C8; /*0x14000beaf*/\n        v37 = (__int64)v4; /*0x14000beb3*/\n        v44 = (__int64)&unk_14003E590; /*0x14000bebe*/\n        v45 = 41; /*0x14000bec2*/\n        *(_QWORD *)&v38 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000beca*/\n        DWORD2(v38) = 119; /*0x14000bece*/\n        HIDWORD(v38) = HIDWORD(v32); /*0x14000bed8*/\n        v39 = \"FindAndSelectCamera\"; /*0x14000bedb*/\n        sub_140008E60(a1: xmmword_1400503C8, a2: &v38, a3: 2, a4: &v44); /*0x14000beed*/\n        if ( v4 != nullptr && _InterlockedExchangeAdd(v4 + 2, 0xFFFFFFFF) == 1 ) /*0x14000bf03*/\n        {\n          (**(void (__fastcall ***)(volatile signed __int32 *))v4)(a1: v4); /*0x14000bf0b*/\n          if ( _InterlockedExchangeAdd(v4 + 3, 0xFFFFFFFF) == 1 ) /*0x14000bf18*/\n            (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v4 + 8LL))(a1: v4); /*0x14000bf20*/\n        }\n        if ( pppSourceActivate != nullptr ) /*0x14000bf2d*/\n        {\n          CoTaskMemFree(pv: pppSourceActivate); /*0x14000bf2f*/\n          pppSourceActivate = nullptr; /*0x14000bf35*/\n        }\n        ((void (__fastcall *)(IMFAttributes *, void *, void *))ppMFAttributes->lpVtbl->SetGUID)( /*0x14000bf54*/\n          a1: ppMFAttributes,\n          a2: &unk_14003CA98,\n          a3: &unk_14003D4A0);\n        v2 = MFEnumDeviceSources(pAttributes: ppMFAttributes, &pppSourceActivate, &pcSourceActivate); /*0x14000bf6f*/\n        v3 = pcSourceActivate; /*0x14000bf75*/\n      }\n      if ( v2 >= 0 && v3 != 0 ) /*0x14000bf85*/\n      {\n        v5 = *(_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer; /*0x14000bf94*/\n        v47 = v5; /*0x14000bf97*/\n        v51 = (_DWORD *)(v5 + 8); /*0x14000bf9f*/\n        if ( dword_1400501CC > *(_DWORD *)(v5 + 8) ) /*0x14000bfab*/\n        {\n          sub_140034330(a1: &dword_1400501CC); /*0x14000bfb4*/\n          if ( dword_1400501CC == -1 ) /*0x14000bfc0*/\n          {\n            xmmword_1400503C8 = 0; /*0x14000bfc5*/\n            sub_14000B820(); /*0x14000bfcc*/\n            sub_140034700(Function: sub_140038DB0); /*0x14000bfd8*/\n            sub_1400342C0(a1: &dword_1400501CC); /*0x14000bfe5*/\n          }\n        }\n        v6 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000bfea*/\n        if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000bff4*/\n        {\n          _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000bff6*/\n          v6 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000bffa*/\n        }\n        v36 = (void *)xmmword_1400503C8; /*0x14000c008*/\n        v37 = (__int64)v6; /*0x14000c00c*/\n        *(_QWORD *)&v38 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000c010*/\n        DWORD2(v38) = 132; /*0x14000c014*/\n        HIDWORD(v38) = HIDWORD(v32); /*0x14000c01e*/\n        v44 = (__int64)&unk_14003E640; /*0x14000c028*/\n        v45 = 20; /*0x14000c02c*/\n        v30 = v38; /*0x14000c038*/\n        v31 = \"FindAndSelectCamera\"; /*0x14000c03d*/\n        sub_140017FB0( /*0x14000c05d*/\n          a1: xmmword_1400503C8,\n          a2: (unsigned int)&v30,\n          a3: 2,\n          a4: (unsigned int)&v44,\n          a5: (__int64)&pcSourceActivate);\n        if ( v6 != nullptr && _InterlockedExchangeAdd(v6 + 2, 0xFFFFFFFF) == 1 ) /*0x14000c073*/\n        {\n          (**(void (__fastcall ***)(volatile signed __int32 *))v6)(a1: v6); /*0x14000c07b*/\n          if ( _InterlockedExchangeAdd(v6 + 3, 0xFFFFFFFF) == 1 ) /*0x14000c088*/\n            (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v6 + 8LL))(a1: v6); /*0x14000c090*/\n        }\n        v7 = 0; /*0x14000c093*/\n        v28 = 0; /*0x14000c096*/\n        v8 = 0; /*0x14000c09b*/\n        v29[0] = 0; /*0x14000c09e*/\n        v9 = pcSourceActivate; /*0x14000c0a3*/\n        if ( pcSourceActivate != 0 ) /*0x14000c0ab*/\n        {\n          v10 = 8; /*0x14000c0b1*/\n          v44 = 8; /*0x14000c0b6*/\n          do /*0x14000c0c1*/\n          {\n            if ( dword_1400501CC > *(_DWORD *)(v5 + v10) ) /*0x14000c0cb*/\n            {\n              sub_140034330(a1: &dword_1400501CC); /*0x14000c0d4*/\n              if ( dword_1400501CC == -1 ) /*0x14000c0e0*/\n              {\n                xmmword_1400503C8 = 0; /*0x14000c0e5*/\n                sub_14000B820(); /*0x14000c0ec*/\n                sub_140034700(Function: sub_140038DB0); /*0x14000c0f8*/\n                sub_1400342C0(a1: &dword_1400501CC); /*0x14000c105*/\n              }\n            }\n            v11 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c111*/\n            if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000c11b*/\n            {\n              _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000c11d*/\n              v11 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c121*/\n            }\n            v54[2] = xmmword_1400503C8; /*0x14000c12f*/\n            v54[3] = v11; /*0x14000c133*/\n            *(_QWORD *)&v30 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000c137*/\n            DWORD2(v30) = 138; /*0x14000c13c*/\n            HIDWORD(v30) = HIDWORD(v32); /*0x14000c147*/\n            v52[0] = &unk_14003E658; /*0x14000c14b*/\n            v52[1] = 20; /*0x14000c14f*/\n            v32 = v30; /*0x14000c15c*/\n            v33 = \"FindAndSelectCamera\"; /*0x14000c167*/\n            sub_140017FB0(a1: xmmword_1400503C8, a2: (unsigned int)&v32, a3: 2, a4: (unsigned int)v52, a5: (__int64)v29); /*0x14000c183*/\n            if ( v11 != nullptr && _InterlockedExchangeAdd(v11 + 2, 0xFFFFFFFF) == 1 ) /*0x14000c199*/\n            {\n              (**(void (__fastcall ***)(volatile signed __int32 *))v11)(a1: v11); /*0x14000c1a1*/\n              if ( _InterlockedExchangeAdd(v11 + 3, 0xFFFFFFFF) == 1 ) /*0x14000c1ae*/\n                (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v11 + 8LL))(a1: v11); /*0x14000c1b6*/\n            }\n            pMediaSource = nullptr; /*0x14000c1b9*/\n            ppSourceReader = nullptr; /*0x14000c1c0*/\n            v12 = 8LL * v8; /*0x14000c1c9*/\n            v46 = v12; /*0x14000c1d1*/\n            if ( ((int (__fastcall *)(_QWORD, void *, IMFMediaSource **))(*(IMFActivate **)((char *)pppSourceActivate /*0x14000c1f9*/\n                                                                                          + v12))->lpVtbl->ActivateObject)(\n                   a1: *(IMFActivate **)((char *)pppSourceActivate + v12),\n                   a2: &unk_14003DFF0,\n                   a3: &pMediaSource) >= 0 )\n            {\n              if ( MFCreateSourceReaderFromMediaSource(pMediaSource, pAttributes: nullptr, &ppSourceReader) >= 0 ) /*0x14000c340*/\n              {\n                v15 = 0; /*0x14000c476*/\n                v34 = 0; /*0x14000c479*/\n                v57 = 0; /*0x14000c47d*/\n                v16 = 0; /*0x14000c484*/\n                if ( ((int (__fastcall *)(IMFSourceReader *, __int64, _QWORD, __int64 *))ppSourceReader->lpVtbl->GetNativeMediaType)( /*0x14000c4a5*/\n                       a1: ppSourceReader,\n                       a2: 4294967292LL,\n                       a3: 0,\n                       a4: &v57) >= 0 )\n                {\n                  while ( 1 ) /*0x14000c4b0*/\n                  {\n                    LODWORD(v17) = 0; /*0x14000c4b0*/\n                    v18 = 0; /*0x14000c4b5*/\n                    v35 = 0; /*0x14000c4b7*/\n                    if ( (*(int (__fastcall **)(__int64, void *, unsigned __int64 *))(*(_QWORD *)v57 + 64LL))( /*0x14000c4d7*/\n                           a1: v57,\n                           a2: &unk_14003BEE0,\n                           a3: &v61) < 0 )\n                    {\n                      v19 = 0; /*0x14000c4f4*/\n                      v20 = 0; /*0x14000c4f6*/\n                    }\n                    else\n                    {\n                      v18 = v61; /*0x14000c4d9*/\n                      v17 = HIDWORD(v61); /*0x14000c4e3*/\n                      v35 = v61; /*0x14000c4ea*/\n                      v19 = HIDWORD(v61); /*0x14000c4ed*/\n                      v20 = v61; /*0x14000c4ef*/\n                    }\n                    if ( (*(int (__fastcall **)(__int64, void *, _DWORD *))(*(_QWORD *)v57 + 64LL))( /*0x14000c521*/\n                           a1: v57,\n                           a2: &unk_14003BEF0,\n                           a3: v62) >= 0\n                      && v62[0] != 0 )\n                    {\n                      v21 = (unsigned int)(v62[1] % v62[0]); /*0x14000c52c*/\n                      v23 = v62[1] / v62[0]; /*0x14000c52c*/\n                    }\n                    else\n                    {\n                      v23 = 0; /*0x14000c530*/\n                    }\n                    v43 = v23; /*0x14000c532*/\n                    if ( v19 == v40 && v20 == v41 && v23 == v42 ) /*0x14000c543*/\n                      break; /*0x14000c543*/\n                    (*(void (__fastcall **)(__int64, __int64))(*(_QWORD *)v57 + 16LL))(a1: v57, a2: v21); /*0x14000c553*/\n                    v34 = ++v15; /*0x14000c559*/\n                    if ( ((int (__fastcall *)(IMFSourceReader *, __int64, _QWORD, __int64 *))ppSourceReader->lpVtbl->GetNativeMediaType)( /*0x14000c57b*/\n                           a1: ppSourceReader,\n                           a2: 4294967292LL,\n                           a3: v15,\n                           a4: &v57) < 0 )\n                    {\n                      v12 = v46; /*0x14000c581*/\n                      v7 = v28; /*0x14000c585*/\n                      goto LABEL_76; /*0x14000c585*/\n                    }\n                  }\n                  if ( dword_1400501CC > *v51 ) /*0x14000c60d*/\n                  {\n                    sub_140034330(a1: &dword_1400501CC); /*0x14000c616*/\n                    if ( dword_1400501CC == -1 ) /*0x14000c622*/\n                    {\n                      xmmword_1400503C8 = 0; /*0x14000c627*/\n                      sub_14000B820(); /*0x14000c62e*/\n                      sub_140034700(Function: sub_140038DB0); /*0x14000c63a*/\n                      sub_1400342C0(a1: &dword_1400501CC); /*0x14000c647*/\n                    }\n                  }\n                  v24 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c64c*/\n                  if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000c656*/\n                  {\n                    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000c658*/\n                    v24 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c65c*/\n                  }\n                  v38 = __PAIR128__((unsigned __int64)v24, xmmword_1400503C8); /*0x14000c66a*/\n                  *(_QWORD *)&v30 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000c679*/\n                  DWORD2(v30) = 175; /*0x14000c67e*/\n                  HIDWORD(v30) = HIDWORD(v32); /*0x14000c689*/\n                  v36 = &unk_14003E6B0; /*0x14000c694*/\n                  v37 = 53; /*0x14000c698*/\n                  v32 = v30; /*0x14000c6a5*/\n                  v33 = \"FindAndSelectCamera\"; /*0x14000c6b0*/\n                  sub_1400182C0( /*0x14000c6ea*/\n                    a1: xmmword_1400503C8,\n                    a2: (unsigned int)&v32,\n                    a3: v22,\n                    a4: (unsigned int)&v36,\n                    a5: (__int64)v29,\n                    a6: (__int64)&v35 + 4,\n                    a7: (__int64)&v35,\n                    a8: (__int64)&v43,\n                    a9: (__int64)&v34);\n                  if ( v24 != nullptr && _InterlockedExchangeAdd(v24 + 2, 0xFFFFFFFF) == 1 ) /*0x14000c700*/\n                  {\n                    (**(void (__fastcall ***)(volatile signed __int32 *))v24)(a1: v24); /*0x14000c708*/\n                    if ( _InterlockedExchangeAdd(v24 + 3, 0xFFFFFFFF) == 1 ) /*0x14000c715*/\n                      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v24 + 8LL))(a1: v24); /*0x14000c71d*/\n                  }\n                  dword_140050160 = v15; /*0x14000c720*/\n                  (*(void (__fastcall **)(__int64, void *, __int128 *))(*(_QWORD *)v57 + 80LL))( /*0x14000c73f*/\n                    a1: v57,\n                    a2: &unk_14003BED0,\n                    a3: &xmmword_140050168);\n                  dword_140050148 = v17; /*0x14000c742*/\n                  dword_140050150 = v18; /*0x14000c748*/\n                  v12 = v46; /*0x14000c755*/\n                  qword_140050158 = *(__int64 *)((char *)pppSourceActivate + v46); /*0x14000c75d*/\n                  (*(void (**)(void))(*(_QWORD *)qword_140050158 + 8LL))(); /*0x14000c767*/\n                  v16 = 1; /*0x14000c76a*/\n                  v7 = 1; /*0x14000c76d*/\n                  v28 = 1; /*0x14000c771*/\n                  (*(void (__fastcall **)(__int64))(*(_QWORD *)v57 + 16LL))(a1: v57); /*0x14000c780*/\nLABEL_76:\n                  v5 = v47; /*0x14000c58a*/\n                  v8 = v29[0]; /*0x14000c58e*/\n                }\n                if ( ppSourceReader != nullptr ) /*0x14000c59c*/\n                  ((void (__fastcall *)(IMFSourceReader *))ppSourceReader->lpVtbl->Release)(a1: ppSourceReader); /*0x14000c5a1*/\n                if ( pMediaSource != nullptr ) /*0x14000c5ae*/\n                  ((void (__fastcall *)(IMFMediaSource *))pMediaSource->lpVtbl->Release)(a1: pMediaSource); /*0x14000c5b3*/\n                ((void (__fastcall *)(_QWORD))(*(IMFActivate **)((char *)pppSourceActivate + v12))->lpVtbl->ShutdownObject)(a1: *(IMFActivate **)((char *)pppSourceActivate + v12)); /*0x14000c5c4*/\n                if ( v16 != 0 ) /*0x14000c5cd*/\n                {\n                  v9 = pcSourceActivate; /*0x14000c788*/\n                  break; /*0x14000c788*/\n                }\n              }\n              else\n              {\n                if ( dword_1400501CC > *(_DWORD *)(*(_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + 8LL) ) /*0x14000c360*/\n                {\n                  sub_140034330(a1: &dword_1400501CC); /*0x14000c369*/\n                  if ( dword_1400501CC == -1 ) /*0x14000c375*/\n                  {\n                    xmmword_1400503C8 = 0; /*0x14000c37a*/\n                    sub_14000B820(); /*0x14000c381*/\n                    sub_140034700(Function: sub_140038DB0); /*0x14000c38d*/\n                    sub_1400342C0(a1: &dword_1400501CC); /*0x14000c39a*/\n                  }\n                }\n                v14 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c39f*/\n                if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000c3a9*/\n                {\n                  _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000c3ab*/\n                  v14 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c3af*/\n                }\n                v48 = (const char *)xmmword_1400503C8; /*0x14000c3bd*/\n                v49 = v14; /*0x14000c3c1*/\n                *(_QWORD *)&v30 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000c3c5*/\n                DWORD2(v30) = 152; /*0x14000c3ca*/\n                HIDWORD(v30) = HIDWORD(v32); /*0x14000c3d5*/\n                v54[0] = &unk_14003E688; /*0x14000c3e0*/\n                v54[1] = 32; /*0x14000c3e4*/\n                v32 = v30; /*0x14000c3f1*/\n                v33 = \"FindAndSelectCamera\"; /*0x14000c3fc*/\n                sub_140017FB0( /*0x14000c418*/\n                  a1: xmmword_1400503C8,\n                  a2: (unsigned int)&v32,\n                  a3: 4,\n                  a4: (unsigned int)v54,\n                  a5: (__int64)v29);\n                if ( v14 != nullptr && _InterlockedExchangeAdd(v14 + 2, 0xFFFFFFFF) == 1 ) /*0x14000c42e*/\n                {\n                  (**(void (__fastcall ***)(volatile signed __int32 *))v14)(a1: v14); /*0x14000c436*/\n                  if ( _InterlockedExchangeAdd(v14 + 3, 0xFFFFFFFF) == 1 ) /*0x14000c443*/\n                    (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v14 + 8LL))(a1: v14); /*0x14000c44b*/\n                }\n                ((void (__fastcall *)(IMFMediaSource *))pMediaSource->lpVtbl->Release)(a1: pMediaSource); /*0x14000c458*/\n                ((void (__fastcall *)(IMFActivate *))pppSourceActivate[v8]->lpVtbl->ShutdownObject)(a1: pppSourceActivate[v8]); /*0x14000c46b*/\n              }\n            }\n            else\n            {\n              if ( dword_1400501CC > *(_DWORD *)(*(_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + 8LL) ) /*0x14000c219*/\n              {\n                sub_140034330(a1: &dword_1400501CC); /*0x14000c222*/\n                if ( dword_1400501CC == -1 ) /*0x14000c22e*/\n                {\n                  xmmword_1400503C8 = 0; /*0x14000c233*/\n                  sub_14000B820(); /*0x14000c23a*/\n                  sub_140034700(Function: sub_140038DB0); /*0x14000c246*/\n                  sub_1400342C0(a1: &dword_1400501CC); /*0x14000c253*/\n                }\n              }\n              v13 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c258*/\n              if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000c262*/\n              {\n                _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000c264*/\n                v13 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c268*/\n              }\n              v54[4] = xmmword_1400503C8; /*0x14000c276*/\n              v54[5] = v13; /*0x14000c27d*/\n              *(_QWORD *)&v30 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000c284*/\n              DWORD2(v30) = 145; /*0x14000c289*/\n              HIDWORD(v30) = HIDWORD(v32); /*0x14000c294*/\n              v53[0] = &unk_14003E670; /*0x14000c29f*/\n              v53[1] = 18; /*0x14000c2a3*/\n              v32 = v30; /*0x14000c2b0*/\n              v33 = \"FindAndSelectCamera\"; /*0x14000c2bb*/\n              sub_140017FB0( /*0x14000c2d7*/\n                a1: xmmword_1400503C8,\n                a2: (unsigned int)&v32,\n                a3: 4,\n                a4: (unsigned int)v53,\n                a5: (__int64)v29);\n              if ( v13 != nullptr && _InterlockedExchangeAdd(v13 + 2, 0xFFFFFFFF) == 1 ) /*0x14000c2ed*/\n              {\n                (**(void (__fastcall ***)(volatile signed __int32 *))v13)(a1: v13); /*0x14000c2f5*/\n                if ( _InterlockedExchangeAdd(v13 + 3, 0xFFFFFFFF) == 1 ) /*0x14000c302*/\n                  (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v13 + 8LL))(a1: v13); /*0x14000c30a*/\n              }\n              ((void (__fastcall *)(IMFActivate *))pppSourceActivate[v8]->lpVtbl->ShutdownObject)(a1: pppSourceActivate[v8]); /*0x14000c31d*/\n            }\n            v29[0] = ++v8; /*0x14000c5df*/\n            v9 = pcSourceActivate; /*0x14000c5e3*/\n            v10 = v44; /*0x14000c5eb*/\n          }\n          while ( v8 < pcSourceActivate ); /*0x14000c0c1*/\n        }\n        for ( i = 0; (unsigned int)i < v9; i = (unsigned int)(i + 1) ) /*0x14000c792*/\n        {\n          v26 = pppSourceActivate[i]; /*0x14000c7a7*/\n          if ( v26 != nullptr ) /*0x14000c7ae*/\n          {\n            ((void (__fastcall *)(IMFActivate *))v26->lpVtbl->Release)(a1: v26); /*0x14000c7b3*/\n            v9 = pcSourceActivate; /*0x14000c7b6*/\n          }\n        }\n        CoTaskMemFree(pv: pppSourceActivate); /*0x14000c7c9*/\n        if ( ppMFAttributes != nullptr ) /*0x14000c7d9*/\n          ((void (__fastcall *)(IMFAttributes *))ppMFAttributes->lpVtbl->Release)(a1: ppMFAttributes); /*0x14000c7de*/\n        result = 0; /*0x14000c7e1*/\n        if ( v7 == 0 ) /*0x14000c7eb*/\n          return -2147023728; /*0x14000c7eb*/\n      }\n      else\n      {\n        if ( dword_1400501CC > *(_DWORD *)(*(_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + 8LL) ) /*0x14000c808*/\n        {\n          sub_140034330(a1: &dword_1400501CC); /*0x14000c811*/\n          if ( dword_1400501CC == -1 ) /*0x14000c81d*/\n          {\n            xmmword_1400503C8 = 0; /*0x14000c822*/\n            sub_14000B820(); /*0x14000c829*/\n            sub_140034700(Function: sub_140038DB0); /*0x14000c835*/\n            sub_1400342C0(a1: &dword_1400501CC); /*0x14000c842*/\n          }\n        }\n        v27 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c847*/\n        if ( *((_QWORD *)&xmmword_1400503C8 + 1) != 0 ) /*0x14000c851*/\n        {\n          _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_1400503C8 + 1) + 8LL)); /*0x14000c853*/\n          v27 = *((volatile signed __int32 **)&xmmword_1400503C8 + 1); /*0x14000c857*/\n        }\n        v38 = __PAIR128__((unsigned __int64)v27, xmmword_1400503C8); /*0x14000c865*/\n        v36 = &unk_14003E628; /*0x14000c874*/\n        v37 = 20; /*0x14000c878*/\n        v48 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14000c880*/\n        LODWORD(v49) = 126; /*0x14000c884*/\n        HIDWORD(v49) = HIDWORD(v32); /*0x14000c88e*/\n        v50 = \"FindAndSelectCamera\"; /*0x14000c891*/\n        sub_140008E60(a1: xmmword_1400503C8, a2: &v48, a3: 4, a4: &v36); /*0x14000c8a3*/\n        if ( v27 != nullptr && _InterlockedExchangeAdd(v27 + 2, 0xFFFFFFFF) == 1 ) /*0x14000c8b9*/\n        {\n          (**(void (__fastcall ***)(volatile signed __int32 *))v27)(a1: v27); /*0x14000c8c1*/\n          if ( _InterlockedExchangeAdd(v27 + 3, 0xFFFFFFFF) == 1 ) /*0x14000c8cd*/\n            (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v27 + 8LL))(a1: v27); /*0x14000c8d5*/\n        }\n        if ( pppSourceActivate != nullptr ) /*0x14000c8e2*/\n          CoTaskMemFree(pv: pppSourceActivate); /*0x14000c8e4*/\n        ((void (__fastcall *)(IMFAttributes *))ppMFAttributes->lpVtbl->Release)(a1: ppMFAttributes); /*0x14000c8f4*/\n        return -2147023728; /*0x14000c8f7*/\n      }\n    }\n    else\n    {\n      ((void (__fastcall *)(IMFAttributes *))ppMFAttributes->lpVtbl->Release)(a1: ppMFAttributes); /*0x14000bdd6*/\n      return v1; /*0x14000bdd9*/\n    }\n  }\n  return result; /*0x14000c8fc*/\n}",
+  "refs": [
+    {
+      "addr": "0x14004d120",
+      "name": "dword_14004D120"
+    },
+    {
+      "addr": "0x14004d128",
+      "name": "dword_14004D128"
+    },
+    {
+      "addr": "0x14004d12c",
+      "name": "dword_14004D12C"
+    },
+    {
+      "addr": "0x140050158",
+      "name": "qword_140050158"
+    },
+    {
+      "addr": "0x140050160",
+      "name": "dword_140050160"
+    },
+    {
+      "addr": "0x140039178",
+      "name": "MFCreateAttributes"
+    },
+    {
+      "addr": "0x14003c7b8",
+      "name": "unk_14003C7B8"
+    },
+    {
+      "addr": "0x14003d2e0",
+      "name": "unk_14003D2E0"
+    },
+    {
+      "addr": "0x14003ca98",
+      "name": "unk_14003CA98"
+    },
+    {
+      "addr": "0x14003dbe8",
+      "name": "unk_14003DBE8"
+    },
+    {
+      "addr": "0x140039158",
+      "name": "MFEnumDeviceSources"
+    },
+    {
+      "addr": "0x140034330",
+      "name": "sub_140034330"
+    },
+    {
+      "addr": "0x1400501cc",
+      "name": "dword_1400501CC"
+    },
+    {
+      "addr": "0x1400503c8",
+      "name": "xmmword_1400503C8"
+    },
+    {
+      "addr": "0x14000b820",
+      "name": "sub_14000B820"
+    },
+    {
+      "addr": "0x140034700",
+      "name": "sub_140034700"
+    },
+    {
+      "addr": "0x140038db0",
+      "name": "sub_140038DB0"
+    },
+    {
+      "addr": "0x1400342c0",
+      "name": "sub_1400342C0"
+    },
+    {
+      "addr": "0x14003e590",
+      "name": "unk_14003E590"
+    },
+    {
+      "addr": "0x14003e5e0",
+      "name": "aKProjectVsproj",
+      "string": "K:\\Project\\VSProject\\RedMagic\\FaceTracking\\MMFaceTracking2\\main.cpp"
+    },
+    {
+      "addr": "0x14003e5c0",
+      "name": "aFindandselectc",
+      "string": "FindAndSelectCamera"
+    },
+    {
+      "addr": "0x140008e60",
+      "name": "sub_140008E60"
+    },
+    {
+      "addr": "0x140039758",
+      "name": "CoTaskMemFree"
+    },
+    {
+      "addr": "0x14003d4a0",
+      "name": "unk_14003D4A0"
+    },
+    {
+      "addr": "0x14003e640",
+      "name": "unk_14003E640"
+    },
+    {
+      "addr": "0x140017fb0",
+      "name": "sub_140017FB0"
+    },
+    {
+      "addr": "0x14003e658",
+      "name": "unk_14003E658"
+    },
+    {
+      "addr": "0x14003bee0",
+      "name": "unk_14003BEE0"
+    },
+    {
+      "addr": "0x14003bef0",
+      "name": "unk_14003BEF0"
+    },
+    {
+      "addr": "0x14003e6b0",
+      "name": "unk_14003E6B0"
+    },
+    {
+      "addr": "0x1400182c0",
+      "name": "sub_1400182C0"
+    },
+    {
+      "addr": "0x14003bed0",
+      "name": "unk_14003BED0"
+    },
+    {
+      "addr": "0x140050168",
+      "name": "xmmword_140050168"
+    },
+    {
+      "addr": "0x140050148",
+      "name": "dword_140050148"
+    },
+    {
+      "addr": "0x140050150",
+      "name": "dword_140050150"
+    },
+    {
+      "addr": "0x14003e688",
+      "name": "unk_14003E688"
+    },
+    {
+      "addr": "0x140039188",
+      "name": "MFCreateSourceReaderFromMediaSource"
+    },
+    {
+      "addr": "0x14003e670",
+      "name": "unk_14003E670"
+    },
+    {
+      "addr": "0x14003dff0",
+      "name": "unk_14003DFF0"
+    },
+    {
+      "addr": "0x14003e628",
+      "name": "unk_14003E628"
+    }
+  ]
+}

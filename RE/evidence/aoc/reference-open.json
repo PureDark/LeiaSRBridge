@@ -1,0 +1,53 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session\":{\"session_id\":\"aoc_reference\",\"input_path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\LeiaSRBridge\\\\RE\\\\inputs\\\\aoc\\\\ReferenceFaceTracking.exe\",\"filename\":\"ReferenceFaceTracking.exe\",\"created_at\":\"2026-10-25T19:54:17.492897\",\"last_accessed\":\"2026-10-25T19:54:17.492897\",\"is_analyzing\":false,\"metadata\":{}},\"warmup\":{\"ok\":true,\"steps\":[{\"step\":\"init_caches\",\"ok\":true,\"ms\":41.78},{\"step\":\"init_hexrays\",\"ok\":true,\"ms\":0.01}],\"health\":{\"status\":\"ok\",\"uptime_sec\":2.219,\"idb_path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\LeiaSRBridge\\\\RE\\\\inputs\\\\aoc\\\\ReferenceFaceTracking.exe.i64\",\"module\":\"ReferenceFaceTracking.exe\",\"input_path\":\"F:\\\\\\u5f00\\u53d1\\u9879\\u76ee\\\\LeiaSRBridge\\\\RE\\\\inputs\\\\aoc\\\\ReferenceFaceTracking.exe\",\"imagebase\":\"0x140000000\",\"auto_analysis_ready\":true,\"hexrays_ready\":true,\"strings_cache_ready\":true,\"strings_cache_size\":814}},\"message\":\"Binary opened: ReferenceFaceTracking.exe (aoc_reference)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session": {
+        "session_id": "aoc_reference",
+        "input_path": "F:\\开发项目\\LeiaSRBridge\\RE\\inputs\\aoc\\ReferenceFaceTracking.exe",
+        "filename": "ReferenceFaceTracking.exe",
+        "created_at": "2026-10-25T19:54:17.492897",
+        "last_accessed": "2026-10-25T19:54:17.492897",
+        "is_analyzing": false,
+        "metadata": {}
+      },
+      "warmup": {
+        "ok": true,
+        "steps": [
+          {
+            "step": "init_caches",
+            "ok": true,
+            "ms": 41.78
+          },
+          {
+            "step": "init_hexrays",
+            "ok": true,
+            "ms": 0.01
+          }
+        ],
+        "health": {
+          "status": "ok",
+          "uptime_sec": 2.219,
+          "idb_path": "F:\\开发项目\\LeiaSRBridge\\RE\\inputs\\aoc\\ReferenceFaceTracking.exe.i64",
+          "module": "ReferenceFaceTracking.exe",
+          "input_path": "F:\\开发项目\\LeiaSRBridge\\RE\\inputs\\aoc\\ReferenceFaceTracking.exe",
+          "imagebase": "0x140000000",
+          "auto_analysis_ready": true,
+          "hexrays_ready": true,
+          "strings_cache_ready": true,
+          "strings_cache_size": 814
+        }
+      },
+      "message": "Binary opened: ReferenceFaceTracking.exe (aoc_reference)"
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,59 @@
+--- reference/Interleaving.cs
++++ aoc/Interleaving.cs
+@@ -17,15 +17,15 @@
+ 		{
+ 			if (deviceParams.Length == 6 && wholeMat.Length == 6 && refractParams.Length == 8)
+ 			{
+-				ref double deviceParamsPtr = ref deviceParams[0];
+-				ref double wholeMatPtr = ref wholeMat[0];
+-				ref double refractParamsPtr = ref refractParams[0];
+-				marshal_context context = new marshal_context();
+-				sbyte* logpathNative = context.marshal_as<char\u0020const\u0020*,System::String>(logpath);
+-				int result = <Module>.BOE_Interleaving_initSDK(device.ToPointer(), null, ref deviceParamsPtr, ref wholeMatPtr, ref refractParamsPtr, (D3DVersion)dxVersion, viewportTopleftX, viewportTopleftY, viewportWidth, viewportHeight, outDXGI_FORMAT, logpathNative);
+-				if (context != null)
++				ref double double& = ref deviceParams[0];
++				ref double double&2 = ref wholeMat[0];
++				ref double double&3 = ref refractParams[0];
++				marshal_context marshal_context = new marshal_context();
++				sbyte* ptr = marshal_context.marshal_as<char\u0020const\u0020*,System::String>(logpath);
++				int result = <Module>.BOE_Interleaving_initSDK(device.ToPointer(), null, ref double&, ref double&2, ref double&3, (D3DVersion)dxVersion, viewportTopleftX, viewportTopleftY, viewportWidth, viewportHeight, outDXGI_FORMAT, ptr);
++				if (marshal_context != null)
+ 				{
+-					((IDisposable)context).Dispose();
++					((IDisposable)marshal_context).Dispose();
+ 				}
+ 				return result;
+ 			}
+@@ -41,8 +41,8 @@
+ 			{
+ 				throw new ArgumentException("参数数组长度必须为6");
+ 			}
+-			ref double paramPtr = ref param[0];
+-			<Module>.BOE_Interleaving_setWholeParam(ref paramPtr);
++			ref double double& = ref param[0];
++			<Module>.BOE_Interleaving_setWholeParam(ref double&);
+ 		}
+ 		public static void SetDeviceParam(double[] param)
+ 		{
+@@ -50,8 +50,8 @@
+ 			{
+ 				throw new ArgumentException("参数数组长度必须为6");
+ 			}
+-			ref double paramPtr = ref param[0];
+-			<Module>.BOE_Interleaving_setDeviceParam(ref paramPtr);
++			ref double double& = ref param[0];
++			<Module>.BOE_Interleaving_setDeviceParam(ref double&);
+ 		}
+ 		public static void SetRefractDeviceParam(double[] param)
+ 		{
+@@ -59,8 +59,8 @@
+ 			{
+ 				throw new ArgumentException("参数数组长度必须为8");
+ 			}
+-			ref double paramPtr = ref param[0];
+-			<Module>.BOE_Interleaving_setRefractDeviceParam(ref paramPtr);
++			ref double double& = ref param[0];
++			<Module>.BOE_Interleaving_setRefractDeviceParam(ref double&);
+ 		}
+ 		public static int DoInterleave(float x, float y, float z, IntPtr context, IntPtr renderTargetView, IntPtr inShaderResourceView, int width, int height, int inDXGI_FORMAT, InterMode inter_mode, int sRGBFix)
+ 		{

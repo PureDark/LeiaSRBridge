@@ -1,0 +1,402 @@
+{
+  "addr": "main",
+  "code": "int __fastcall main(int argc, const char **argv, const char **envp)\n{\n  UINT ACP; // eax\n  UINT v4; // eax\n  __int64 *ThreadLocalStoragePointer; // rax\n  __int64 v6; // rsi\n  volatile signed __int32 *v7; // rbx\n  int v8; // edi\n  volatile signed __int32 *v9; // rbx\n  int v10; // r15d\n  int v11; // eax\n  int cbMultiByte; // r14d\n  CHAR *lpMultiByteStr; // rax\n  _QWORD *v14; // rax\n  DWORD ModuleFileNameW; // eax\n  LPSTR *v16; // r12\n  wchar_t *v17; // rax\n  __int64 v18; // rcx\n  __int64 v19; // r8\n  int v20; // eax\n  int v21; // r13d\n  unsigned __int64 v22; // rcx\n  __int64 v23; // r15\n  LPSTR *v24; // rax\n  size_t v25; // r14\n  LPSTR *v26; // rbx\n  CHAR *v27; // rax\n  HINSTANCE hInstance; // rbx\n  HWND Window; // rax\n  volatile signed __int32 *v30; // rbx\n  HPOWERNOTIFY v31; // r15\n  volatile signed __int32 *v32; // rbx\n  int result; // eax\n  _QWORD *v34; // rax\n  __int64 v35; // rdx\n  __int64 v36; // r8\n  volatile signed __int32 *v37; // rbx\n  volatile signed __int32 *v38; // rbx\n  volatile signed __int32 *v39; // rbx\n  volatile signed __int32 *v40; // rbx\n  HANDLE Thread; // r14\n  volatile signed __int32 *v42; // rbx\n  HRESULT v43; // eax\n  int v44; // ecx\n  volatile signed __int32 *v45; // rbx\n  volatile signed __int32 *v46; // rbx\n  __int64 v47; // r8\n  volatile signed __int32 *v48; // rbx\n  LPVOID v49; // rcx\n  volatile signed __int32 *v50; // rbx\n  volatile signed __int32 *v51; // rbx\n  void *v52; // rcx\n  unsigned __int128 v53; // [rsp+60h] [rbp-A0h] BYREF\n  const char *v54; // [rsp+70h] [rbp-90h]\n  const char *v55; // [rsp+80h] [rbp-80h] BYREF\n  __int64 v56; // [rsp+88h] [rbp-78h]\n  unsigned __int128 v57; // [rsp+90h] [rbp-70h] BYREF\n  const char *v58; // [rsp+A0h] [rbp-60h]\n  _QWORD v59[2]; // [rsp+B0h] [rbp-50h] BYREF\n  __int128 v60; // [rsp+C0h] [rbp-40h] BYREF\n  __m128i v61; // [rsp+D0h] [rbp-30h]\n  _BYTE v62[32]; // [rsp+E0h] [rbp-20h] BYREF\n  WNDCLASSW WndClass; // [rsp+100h] [rbp+0h] BYREF\n  LPSTR v64[2]; // [rsp+150h] [rbp+50h] BYREF\n  __m128i si128; // [rsp+160h] [rbp+60h]\n  void *Block[2]; // [rsp+170h] [rbp+70h] BYREF\n  void *v67[3]; // [rsp+180h] [rbp+80h] BYREF\n  unsigned __int64 v68; // [rsp+198h] [rbp+98h]\n  struct tagMSG Msg; // [rsp+1A0h] [rbp+A0h] BYREF\n  wchar_t Filename[264]; // [rsp+1D0h] [rbp+D0h] BYREF\n  WCHAR Buffer[264]; // [rsp+3E0h] [rbp+2E0h] BYREF\n\n  ACP = GetACP(); /*0x14001117b*/\n  SetConsoleOutputCP(wCodePageID: ACP); /*0x140011183*/\n  v4 = GetACP(); /*0x140011189*/\n  SetConsoleCP(wCodePageID: v4); /*0x140011191*/\n  ThreadLocalStoragePointer = (__int64 *)NtCurrentTeb()->ThreadLocalStoragePointer; /*0x14001119d*/\n  v6 = *ThreadLocalStoragePointer; /*0x1400111a6*/\n  if ( dword_14005073C > *(_DWORD *)(*ThreadLocalStoragePointer + 8) ) /*0x1400111b3*/\n  {\n    sub_1400341D0(a1: &dword_14005073C); /*0x1400111bc*/\n    if ( dword_14005073C == -1 ) /*0x1400111c8*/\n    {\n      __wind /*0xf1c000000000026c*/\n      {\n        xmmword_140050938 = 0; /*0x1400111cd*/\n        sub_14000BA40(); /*0x1400111d4*/\n        atexit(a1: sub_140038CF0); /*0x1400111e0*/\n        Init_thread_footer(a1: &dword_14005073C); /*0x1400111ed*/\n      }\n      __unwind\n      {\n        sub_140034128(a1: &dword_14005073C); /*0x1400375f7*/\n      }\n    }\n  }\n  __wind /*0xf1c0000000000234*/\n  {\n    v7 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400111f2*/\n    if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x1400111fc*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x1400111fe*/\n      v7 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011202*/\n    }\n    v55 = (const char *)xmmword_140050938; /*0x140011210*/\n    v56 = (__int64)v7; /*0x140011214*/\n    *(_QWORD *)&v57 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14001121f*/\n    DWORD2(v57) = 921; /*0x140011223*/\n    HIDWORD(v57) = HIDWORD(v64[1]); /*0x14001122d*/\n    v58 = \"main\"; /*0x140011237*/\n    v59[0] = &unk_14003ED80; /*0x140011242*/\n    v59[1] = 8; /*0x140011246*/\n    v53 = v57; /*0x140011252*/\n    v54 = \"main\"; /*0x14001125c*/\n    sub_140008FF0(a1: xmmword_140050938, a2: &v53, a3: 2, a4: v59); /*0x140011271*/\n    v8 = -1; /*0x140011277*/\n    if ( v7 != nullptr && _InterlockedExchangeAdd(v7 + 2, 0xFFFFFFFF) == 1 ) /*0x14001128d*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v7)(a1: v7); /*0x140011295*/\n      if ( _InterlockedExchangeAdd(v7 + 3, 0xFFFFFFFF) == 1 ) /*0x1400112a1*/\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v7 + 8LL))(a1: v7); /*0x1400112a9*/\n    }\n    GetCurrentDirectoryW(nBufferLength: 0x104u, lpBuffer: Buffer); /*0x1400112b8*/\n    SetCurrentDirectoryW(lpPathName: Buffer); /*0x1400112c5*/\n  }\n  __unwind\n  {\n    sub_140016910(a1: &v55); /*0xf1c0000000000244*/\n  }\n  __wind /*0xf1c000000000024c*/\n  {\n    if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x1400112d5*/\n    {\n      sub_1400341D0(a1: &dword_14005073C); /*0x1400112de*/\n      if ( dword_14005073C == -1 ) /*0x1400112e9*/\n      {\n        xmmword_140050938 = 0; /*0x1400112ee*/\n        sub_14000BA40(); /*0x1400112f5*/\n        atexit(a1: sub_140038CF0); /*0x140011301*/\n        Init_thread_footer(a1: &dword_14005073C); /*0x14001130e*/\n      }\n    }\n  }\n  __unwind\n  {\n    sub_140034128(a1: &dword_14005073C); /*0x14003760f*/\n  }\n  __eh34_enter_wind_state(-1, 3); /*0xf1c0000000000264*/\n  v9 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011313*/\n  if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x14001131d*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x14001131f*/\n    v9 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011323*/\n  }\n  v10 = xmmword_140050938; /*0x14001132a*/\n  *(_QWORD *)&v57 = xmmword_140050938; /*0x140011331*/\n  *((_QWORD *)&v57 + 1) = v9; /*0x140011335*/\n  v11 = WideCharToMultiByte( /*0x14001135e*/\n          CodePage: 0xFDE9u,\n          dwFlags: 0,\n          lpWideCharStr: Buffer,\n          cchWideChar: -1,\n          lpMultiByteStr: nullptr,\n          cbMultiByte: 0,\n          lpDefaultChar: nullptr,\n          lpUsedDefaultChar: nullptr);\n  cbMultiByte = v11; /*0x140011364*/\n  if ( v11 > 0 ) /*0x140011369*/\n  {\n    sub_140017650(a1: v64, a2: v11 - 1); /*0x14001138e*/\n    lpMultiByteStr = (CHAR *)v64; /*0x140011393*/\n    if ( si128.m128i_i64[1] > 0xFuLL ) /*0x14001139c*/\n      lpMultiByteStr = v64[0]; /*0x14001139c*/\n    WideCharToMultiByte( /*0x1400113c6*/\n      CodePage: 0xFDE9u,\n      dwFlags: 0,\n      lpWideCharStr: Buffer,\n      cchWideChar: -1,\n      lpMultiByteStr,\n      cbMultiByte,\n      lpDefaultChar: nullptr,\n      lpUsedDefaultChar: nullptr);\n    v60 = *(_OWORD *)v64; /*0x1400113d0*/\n    v61 = si128; /*0x1400113d8*/\n    si128 = _mm_load_si128((const __m128i *)&xmmword_14003F410); /*0x1400113e4*/\n    LOBYTE(v64[0]) = 0; /*0x1400113e9*/\n    sub_140003EE0(a1: v64); /*0x1400113f1*/\n  }\n  else\n  {\n    v60 = 0; /*0x14001136e*/\n    v61 = _mm_load_si128((const __m128i *)&xmmword_14003F410); /*0x14001137a*/\n    LOBYTE(v60) = 0; /*0x14001137f*/\n  }\n  __wind /*0xf1c0000000000228*/\n  {\n    v14 = (_QWORD *)sub_140005920(a1: v62, a2: &v60); /*0x1400113ff*/\n    if ( v14[3] > 0xFu ) /*0x14001140a*/\n      v14 = (_QWORD *)*v14; /*0x14001140c*/\n    __wind /*0xf1c00000000001f8*/\n    {\n      v59[0] = v14; /*0x14001140f*/\n      *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14001141a*/\n      DWORD2(v53) = 936; /*0x14001141f*/\n      HIDWORD(v53) = HIDWORD(v64[1]); /*0x14001142a*/\n      v54 = \"main\"; /*0x14001142e*/\n      v55 = (const char *)&unk_14003ED98; /*0x14001143a*/\n      v56 = 12; /*0x14001143e*/\n      *(_OWORD *)v64 = v53; /*0x14001144b*/\n      si128.m128i_i64[0] = (__int64)\"main\"; /*0x140011455*/\n      sub_14001A370(a1: v10, a2: (unsigned int)v64, a3: 2, a4: (unsigned int)&v55, a5: (__int64)v59); /*0x140011474*/\n      sub_140003EE0(a1: v62); /*0x14001147e*/\n      sub_140003EE0(a1: &v60); /*0x140011488*/\n      if ( v9 != nullptr && _InterlockedExchangeAdd(v9 + 2, 0xFFFFFFFF) == 1 ) /*0x14001149d*/\n      {\n        (**(void (__fastcall ***)(volatile signed __int32 *))v9)(a1: v9); /*0x1400114a5*/\n        if ( _InterlockedExchangeAdd(v9 + 3, 0xFFFFFFFF) == 1 ) /*0x1400114b1*/\n          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v9 + 8LL))(a1: v9); /*0x1400114b9*/\n      }\n      memset(a1: Filename, Val: 0, Size: 0x20Au); /*0x1400114cb*/\n      ModuleFileNameW = GetModuleFileNameW(hModule: nullptr, lpFilename: Filename, nSize: 0x104u); /*0x1400114df*/\n    }\n    __unwind\n    {\n      sub_1400029D0(a1: v62); /*0xf1c0000000000208*/\n    }\n  }\n  __unwind\n  {\n    sub_1400029D0(a1: &v60); /*0xf1c0000000000214*/\n  }\n  if ( __eh34_unwind(3) ) /*0xf1c000000000021c*/\n  {\nunwind_state_3:\n    sub_140016910(a1: &v57); /*0xf1c0000000000090*/\n    __eh34_propagate_exception_into_caller(3, -1); /*0xf1c0000000000094*/\n  }\n  __eh34_exit_wind_state(3, -1); /*0xf1c0000000000220*/\n  v16 = &::lpMultiByteStr; /*0x1400114e5*/\n  if ( ModuleFileNameW != 0 ) /*0x1400114ee*/\n  {\n    v17 = wcsrchr(Str: Filename, Ch: 0x5Cu); /*0x140011500*/\n    if ( v17 != nullptr ) /*0x140011509*/\n      *v17 = 0; /*0x14001150b*/\n    v19 = -1; /*0x140011516*/\n    do /*0x140011529*/\n      ++v19; /*0x140011520*/\n    while ( Filename[v19] != 0 ); /*0x140011529*/\n    sub_1400225C0(a1: v18, a2: Filename); /*0x140011532*/\n    v20 = WideCharToMultiByte( /*0x14001155c*/\n            CodePage: 0xFDE9u,\n            dwFlags: 0,\n            lpWideCharStr: Filename,\n            cchWideChar: -1,\n            lpMultiByteStr: nullptr,\n            cbMultiByte: 0,\n            lpDefaultChar: nullptr,\n            lpUsedDefaultChar: nullptr);\n    v21 = v20; /*0x140011562*/\n    if ( v20 > 0 ) /*0x140011567*/\n    {\n      v22 = v20 - 1LL; /*0x14001156d*/\n      v23 = qword_14004D160; /*0x140011571*/\n      if ( v22 > qword_14004D160 ) /*0x14001157b*/\n      {\n        v25 = v22 - qword_14004D160; /*0x1400115a0*/\n        if ( v22 - qword_14004D160 > qword_14004D168 - qword_14004D160 ) /*0x1400115b3*/\n        {\n          sub_140021240(Src: &::lpMultiByteStr); /*0x1400115ed*/\n        }\n        else\n        {\n          qword_14004D160 = v20 - 1LL; /*0x1400115b5*/\n          v26 = &::lpMultiByteStr; /*0x1400115bc*/\n          if ( (unsigned __int64)qword_14004D168 > 0xF ) /*0x1400115c3*/\n            v26 = (LPSTR *)::lpMultiByteStr; /*0x1400115c3*/\n          memset(a1: (char *)v26 + v23, Val: 0, Size: v25); /*0x1400115d4*/\n          *((_BYTE *)v26 + v25 + v23) = 0; /*0x1400115dd*/\n        }\n      }\n      else\n      {\n        qword_14004D160 = v20 - 1LL; /*0x14001157d*/\n        v24 = &::lpMultiByteStr; /*0x140011584*/\n        if ( (unsigned __int64)qword_14004D168 > 0xF ) /*0x14001158f*/\n          v24 = (LPSTR *)::lpMultiByteStr; /*0x14001158f*/\n        *((_BYTE *)v24 + v22) = 0; /*0x140011597*/\n      }\n      v27 = (CHAR *)&::lpMultiByteStr; /*0x1400115f9*/\n      if ( (unsigned __int64)qword_14004D168 > 0xF ) /*0x140011604*/\n        v27 = ::lpMultiByteStr; /*0x140011604*/\n      WideCharToMultiByte( /*0x140011633*/\n        CodePage: 0xFDE9u,\n        dwFlags: 0,\n        lpWideCharStr: Filename,\n        cchWideChar: -1,\n        lpMultiByteStr: v27,\n        cbMultiByte: v21,\n        lpDefaultChar: nullptr,\n        lpUsedDefaultChar: nullptr);\n    }\n  }\n  hInstance = GetModuleHandleW(lpModuleName: nullptr); /*0x140011644*/\n  *(_QWORD *)&WndClass.style = 0; /*0x140011647*/\n  *(_QWORD *)&WndClass.cbClsExtra = 0; /*0x14001164b*/\n  memset(&WndClass.hIcon, 0, 32); /*0x140011652*/\n  WndClass.lpfnWndProc = (WNDPROC)&sub_140010F70; /*0x140011666*/\n  WndClass.hInstance = hInstance; /*0x14001166a*/\n  WndClass.lpszClassName = L\"PowerMonitorWindow\"; /*0x140011675*/\n  RegisterClassW(lpWndClass: &WndClass); /*0x14001167d*/\n  Window = CreateWindowExW( /*0x1400116bf*/\n             dwExStyle: 0,\n             lpClassName: WndClass.lpszClassName,\n             lpWindowName: L\"HiddenPowerWindow\",\n             dwStyle: 0,\n             X: 0,\n             Y: 0,\n             nWidth: 0,\n             nHeight: 0,\n             hWndParent: HWND_MESSAGE,\n             hMenu: nullptr,\n             hInstance,\n             lpParam: nullptr);\n  if ( Window == nullptr ) /*0x1400116c8*/\n  {\n    if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x1400116dc*/\n    {\n      sub_1400341D0(a1: &dword_14005073C); /*0x1400116e5*/\n      if ( dword_14005073C == -1 ) /*0x1400116f1*/\n      {\n        __wind /*0xf1c00000000001ec*/\n        {\n          xmmword_140050938 = 0; /*0x1400116f6*/\n          sub_14000BA40(); /*0x1400116fd*/\n          atexit(a1: sub_140038CF0); /*0x140011709*/\n        }\n        __unwind\n        {\n          sub_140034128(a1: &dword_14005073C); /*0x14003763f*/\n        }\n        Init_thread_footer(a1: &dword_14005073C); /*0x140011716*/\n      }\n    }\n    v30 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x14001171b*/\n    if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x140011725*/\n    {\n      _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x140011727*/\n      v30 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x14001172b*/\n    }\n    __eh34_enter_wind_state(-1, 3); /*0xf1c00000000001d8*/\n    v57 = __PAIR128__((unsigned __int64)v30, xmmword_140050938); /*0x140011739*/\n    *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x140011741*/\n    DWORD2(v53) = 979; /*0x140011746*/\n    HIDWORD(v53) = HIDWORD(v64[1]); /*0x140011751*/\n    v54 = \"main\"; /*0x14001175c*/\n    v55 = \"CreateWindow failed\"; /*0x140011768*/\n    v56 = 19; /*0x14001176c*/\n    *(_OWORD *)v64 = v53; /*0x140011779*/\n    si128.m128i_i64[0] = (__int64)\"main\"; /*0x140011783*/\n    sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 4, a4: &v55); /*0x140011796*/\n    if ( v30 != nullptr && _InterlockedExchangeAdd(v30 + 2, 0xFFFFFFFF) == 1 ) /*0x1400117af*/\n    {\n      (**(void (__fastcall ***)(volatile signed __int32 *))v30)(a1: v30); /*0x1400117bb*/\n      if ( _InterlockedExchangeAdd(v30 + 3, 0xFFFFFFFF) == 1 ) /*0x1400117c7*/\n        (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v30 + 8LL))(a1: v30); /*0x1400117d3*/\n    }\nLABEL_187:\n    result = v8; /*0x1400126fc*/\n    goto LABEL_188; /*0x1400126fc*/\n  }\n  __eh34_enter_wind_state(-1, 7); /*0xf1c00000000001d0*/\n  v31 = RegisterPowerSettingNotification(hRecipient: Window, PowerSettingGuid: &Buf2, Flags: 0); /*0x1400117ee*/\n  if ( v31 != nullptr ) /*0x1400117f4*/\n  {\n    if ( __eh34_unwind(7) ) /*0xf1c00000000001bc*/\n    {\nunwind_state_7:\n      sub_140034128(a1: &dword_14005073C); /*0xf1c00000000001c0*/\n      __eh34_propagate_exception_into_caller(7, -1); /*0xf1c00000000001c4*/\n    }\n    __eh34_exit_wind_state(7, -1); /*0xf1c00000000001c8*/\n    sub_140015B30(a1: v67); /*0x14001190c*/\n    __wind /*0xf1c00000000001b0*/\n    {\n      Block[0] = nullptr; /*0x140011919*/\n      Block[1] = nullptr; /*0x14001191d*/\n      v34 = operator new(Size: 0x50u); /*0x140011926*/\n      __wind /*0xf1c0000000000184*/\n      {\n        *v34 = v34; /*0x14001192b*/\n        v34[1] = v34; /*0x14001192e*/\n        v34[2] = v34; /*0x140011932*/\n        *((_WORD *)v34 + 12) = 257; /*0x140011936*/\n        Block[0] = v34; /*0x14001193c*/\n        if ( (unsigned __int8)sub_140001400(a1: Block, a2: v67) == 0 ) /*0x140011952*/\n        {\n          if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x140011966*/\n          {\n            sub_1400341D0(a1: &dword_14005073C); /*0x14001196f*/\n            if ( dword_14005073C == -1 ) /*0x14001197b*/\n            {\n              __wind /*0xf1c000000000016c*/\n              {\n                xmmword_140050938 = 0; /*0x140011980*/\n                sub_14000BA40(); /*0x140011987*/\n                atexit(a1: sub_140038CF0); /*0x140011993*/\n                Init_thread_footer(a1: &dword_14005073C); /*0x1400119a0*/\n              }\n              __unwind\n              {\n                sub_140034128(a1: &dword_14005073C); /*0x140037687*/\n              }\n            }\n          }\n          __eh34_enter_wind_state(9, 11); /*0xf1c0000000000164*/\n          v37 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400119a5*/\n          if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x1400119af*/\n          {\n            _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x1400119b1*/\n            v37 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400119b5*/\n          }\n          v57 = __PAIR128__((unsigned __int64)v37, xmmword_140050938); /*0x1400119c3*/\n          if ( (unsigned __int64)qword_14004D168 > 0xF ) /*0x1400119d3*/\n            v16 = (LPSTR *)::lpMultiByteStr; /*0x1400119d3*/\n          v59[0] = v16; /*0x1400119db*/\n          *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x1400119df*/\n          DWORD2(v53) = 1003; /*0x1400119e4*/\n          HIDWORD(v53) = HIDWORD(v64[1]); /*0x1400119ef*/\n          v54 = \"main\"; /*0x1400119fa*/\n          v55 = (const char *)&unk_14003EE68; /*0x140011a06*/\n          v56 = 54; /*0x140011a0a*/\n          *(_OWORD *)v64 = v53; /*0x140011a17*/\n          si128.m128i_i64[0] = (__int64)\"main\"; /*0x140011a21*/\n          sub_14001A370(a1: xmmword_140050938, a2: (unsigned int)v64, a3: 4, a4: (unsigned int)&v55, a5: (__int64)v59); /*0x140011a3d*/\n          if ( v37 != nullptr && _InterlockedExchangeAdd(v37 + 2, 0xFFFFFFFF) == 1 ) /*0x140011a52*/\n          {\n            (**(void (__fastcall ***)(volatile signed __int32 *))v37)(a1: v37); /*0x140011a5a*/\n            if ( _InterlockedExchangeAdd(v37 + 3, 0xFFFFFFFF) == 1 ) /*0x140011a66*/\n              (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v37 + 8LL))(a1: v37); /*0x140011a6e*/\n          }\n          if ( __eh34_unwind(11) ) /*0xf1c0000000000158*/\n          {\nunwind_state_11:\n            sub_140016910(a1: &v57); /*0xf1c00000000000fc*/\n            __eh34_continue_unwinding(11, 9); /*0xf1c0000000000100*/\n          }\n          __eh34_exit_wind_state(11, 9); /*0xf1c000000000015c*/\n        }\n        LODWORD(v59[0]) = 1032134328; /*0x140011a71*/\n        sub_140001FA0(a1: Block, a2: v35, a3: v36, a4: v59); /*0x140011a80*/\n        LODWORD(v59[0]) = 1; /*0x140011a85*/\n        dword_1400506B4 = sub_140001CD0(a1: Block, a2: \"show_kps\", a3: \"show_img\", a4: v59); /*0x140011aa7*/\n        LODWORD(v59[0]) = 1280; /*0x140011aad*/\n        dword_14004D12C = sub_140001CD0(a1: Block, a2: \"camera_info\", a3: \"width\", a4: v59); /*0x140011acf*/\n        LODWORD(v59[0]) = 480; /*0x140011ad5*/\n        dword_14004D128 = sub_140001CD0(a1: Block, a2: \"camera_info\", a3: \"height\", a4: v59); /*0x140011af7*/\n        LODWORD(v59[0]) = 90; /*0x140011afd*/\n        dword_14004D120 = sub_140001CD0(a1: Block, a2: \"camera_info\", a3: \"fps\", a4: v59); /*0x140011b1f*/\n        if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x140011b35*/\n        {\n          sub_1400341D0(a1: &dword_14005073C); /*0x140011b3e*/\n          if ( dword_14005073C == -1 ) /*0x140011b4a*/\n          {\n            __wind /*0xf1c000000000014c*/\n            {\n              xmmword_140050938 = 0; /*0x140011b4f*/\n              sub_14000BA40(); /*0x140011b56*/\n              atexit(a1: sub_140038CF0); /*0x140011b62*/\n            }\n            __unwind\n            {\n              sub_140034128(a1: &dword_14005073C); /*0x14003769f*/\n            }\n            Init_thread_footer(a1: &dword_14005073C); /*0x140011b6f*/\n          }\n        }\n        v38 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011b74*/\n        if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x140011b7e*/\n        {\n          _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x140011b80*/\n          v38 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011b84*/\n        }\n        __eh34_enter_wind_state(9, 11); /*0xf1c0000000000138*/\n        v57 = __PAIR128__((unsigned __int64)v38, xmmword_140050938); /*0x140011b92*/\n        *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x140011b9a*/\n        DWORD2(v53) = 1015; /*0x140011b9f*/\n        HIDWORD(v53) = HIDWORD(v64[1]); /*0x140011baa*/\n        v54 = \"main\"; /*0x140011bb5*/\n        v55 = (const char *)&unk_14003EF00; /*0x140011bc1*/\n        v56 = 13; /*0x140011bc5*/\n        *(_OWORD *)v64 = v53; /*0x140011bd2*/\n        si128.m128i_i64[0] = (__int64)\"main\"; /*0x140011bdc*/\n        sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 2, a4: &v55); /*0x140011bef*/\n        if ( v38 != nullptr && _InterlockedExchangeAdd(v38 + 2, 0xFFFFFFFF) == 1 ) /*0x140011c04*/\n        {\n          (**(void (__fastcall ***)(volatile signed __int32 *))v38)(a1: v38); /*0x140011c0c*/\n          if ( _InterlockedExchangeAdd(v38 + 3, 0xFFFFFFFF) == 1 ) /*0x140011c18*/\n            (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v38 + 8LL))(a1: v38); /*0x140011c20*/\n        }\n        if ( CoInitializeEx(pvReserved: nullptr, dwCoInit: 6u) >= 0 ) /*0x140011c32*/\n        {\n          if ( CoCreateInstance(rclsid: &rclsid, pUnkOuter: nullptr, dwClsContext: 1u, riid: &riid, ppv: &ppv) >= 0 ) /*0x140011d31*/\n          {\n            if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x140011e50*/\n            {\n              sub_1400341D0(a1: &dword_14005073C); /*0x140011e59*/\n              if ( dword_14005073C == -1 ) /*0x140011e65*/\n              {\n                if ( __eh34_unwind(11) ) /*0xf1c0000000000310*/\n                  goto unwind_state_11; /*0xf1c0000000000310*/\n                __eh34_exit_wind_state(11, 9); /*0xf1c0000000000314*/\n                __wind /*0xf1c0000000000318*/\n                {\n                  xmmword_140050938 = 0; /*0x140011e6a*/\n                  sub_14000BA40(); /*0x140011e71*/\n                  atexit(a1: sub_140038CF0); /*0x140011e7d*/\n                  Init_thread_footer(a1: &dword_14005073C); /*0x140011e8a*/\n                }\n                __unwind\n                {\n                  sub_140034128(a1: &dword_14005073C); /*0x1400376e7*/\n                }\n                __eh34_enter_wind_state(9, 11); /*0xf1c0000000000308*/\n              }\n            }\n            v40 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011e8f*/\n            if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x140011e99*/\n            {\n              _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x140011e9b*/\n              v40 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011e9f*/\n            }\n            v57 = __PAIR128__((unsigned __int64)v40, xmmword_140050938); /*0x140011ead*/\n            *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x140011eb5*/\n            DWORD2(v53) = 1029; /*0x140011eba*/\n            HIDWORD(v53) = HIDWORD(v64[1]); /*0x140011ec5*/\n            v54 = \"main\"; /*0x140011ed0*/\n            v55 = (const char *)&unk_14003EF40; /*0x140011edc*/\n            v56 = 14; /*0x140011ee0*/\n            *(_OWORD *)v64 = v53; /*0x140011eed*/\n            si128.m128i_i64[0] = (__int64)\"main\"; /*0x140011ef7*/\n            sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 2, a4: &v55); /*0x140011f0a*/\n            if ( v40 != nullptr && _InterlockedExchangeAdd(v40 + 2, 0xFFFFFFFF) == 1 ) /*0x140011f1f*/\n            {\n              (**(void (__fastcall ***)(volatile signed __int32 *))v40)(a1: v40); /*0x140011f27*/\n              if ( _InterlockedExchangeAdd(v40 + 3, 0xFFFFFFFF) == 1 ) /*0x140011f33*/\n                (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v40 + 8LL))(a1: v40); /*0x140011f3b*/\n            }\n            Thread = CreateThread( /*0x140011f5c*/\n                       lpThreadAttributes: nullptr,\n                       dwStackSize: 0,\n                       lpStartAddress: sub_14000FFC0,\n                       lpParameter: nullptr,\n                       dwCreationFlags: 0,\n                       lpThreadId: nullptr);\n            if ( Thread != nullptr ) /*0x140011f62*/\n            {\n              if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x140011f72*/\n              {\n                sub_1400341D0(a1: &dword_14005073C); /*0x140011f7b*/\n                if ( dword_14005073C == -1 ) /*0x140011f87*/\n                {\n                  if ( __eh34_unwind(11) ) /*0xf1c00000000002e8*/\n                    goto unwind_state_11; /*0xf1c00000000002e8*/\n                  __eh34_exit_wind_state(11, 9); /*0xf1c00000000002ec*/\n                  __wind /*0xf1c00000000002f0*/\n                  {\n                    xmmword_140050938 = 0; /*0x140011f8c*/\n                    sub_14000BA40(); /*0x140011f93*/\n                    atexit(a1: sub_140038CF0); /*0x140011f9f*/\n                    Init_thread_footer(a1: &dword_14005073C); /*0x140011fac*/\n                  }\n                  __unwind\n                  {\n                    sub_140034128(a1: &dword_14005073C); /*0x1400376ff*/\n                  }\n                  __eh34_enter_wind_state(9, 11); /*0xf1c00000000002e0*/\n                }\n              }\n              v42 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011fb1*/\n              if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x140011fbb*/\n              {\n                _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x140011fbd*/\n                v42 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011fc1*/\n              }\n              v57 = __PAIR128__((unsigned __int64)v42, xmmword_140050938); /*0x140011fcf*/\n              *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x140011fde*/\n              DWORD2(v53) = 1068; /*0x140011fe3*/\n              HIDWORD(v53) = HIDWORD(v64[1]); /*0x140011fee*/\n              v54 = \"main\"; /*0x140011ff9*/\n              v55 = (const char *)&unk_14003EF50; /*0x140012005*/\n              v56 = 26; /*0x140012009*/\n              *(_OWORD *)v64 = v53; /*0x140012016*/\n              si128.m128i_i64[0] = (__int64)\"main\"; /*0x140012020*/\n              sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 2, a4: &v55); /*0x140012033*/\n              if ( v42 != nullptr && _InterlockedExchangeAdd(v42 + 2, 0xFFFFFFFF) == 1 ) /*0x140012048*/\n              {\n                (**(void (__fastcall ***)(volatile signed __int32 *))v42)(a1: v42); /*0x140012050*/\n                if ( _InterlockedExchangeAdd(v42 + 3, 0xFFFFFFFF) == 1 ) /*0x14001205c*/\n                  (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v42 + 8LL))(a1: v42); /*0x140012064*/\n              }\n              v43 = MFStartup(Version: 0x20070u, dwFlags: 0); /*0x14001206e*/\n              v44 = *(_DWORD *)(v6 + 8); /*0x140012074*/\n              if ( v43 >= 0 ) /*0x14001207a*/\n              {\n                if ( dword_14005073C > v44 ) /*0x140012192*/\n                {\n                  sub_1400341D0(a1: &dword_14005073C); /*0x14001219b*/\n                  if ( dword_14005073C == -1 ) /*0x1400121a7*/\n                  {\n                    if ( __eh34_unwind(11) ) /*0xf1c0000000000298*/\n                      goto unwind_state_11; /*0xf1c0000000000298*/\n                    __eh34_exit_wind_state(11, 9); /*0xf1c000000000029c*/\n                    __wind /*0xf1c00000000002a0*/\n                    {\n                      xmmword_140050938 = 0; /*0x1400121ac*/\n                      sub_14000BA40(); /*0x1400121b3*/\n                      atexit(a1: sub_140038CF0); /*0x1400121bf*/\n                      Init_thread_footer(a1: &dword_14005073C); /*0x1400121cc*/\n                    }\n                    __unwind\n                    {\n                      sub_140034128(a1: &dword_14005073C); /*0x14003772f*/\n                    }\n                    __eh34_enter_wind_state(9, 11); /*0xf1c0000000000290*/\n                  }\n                }\n                v46 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400121d1*/\n                if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x1400121db*/\n                {\n                  _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x1400121dd*/\n                  v46 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400121e1*/\n                }\n                v57 = __PAIR128__((unsigned __int64)v46, xmmword_140050938); /*0x1400121ef*/\n                *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x1400121fe*/\n                DWORD2(v53) = 1077; /*0x140012203*/\n                HIDWORD(v53) = HIDWORD(v64[1]); /*0x14001220e*/\n                v54 = \"main\"; /*0x140012219*/\n                v55 = (const char *)&unk_14003EF90; /*0x140012225*/\n                v56 = 21; /*0x140012229*/\n                *(_OWORD *)v64 = v53; /*0x140012236*/\n                si128.m128i_i64[0] = (__int64)\"main\"; /*0x140012240*/\n                sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 2, a4: &v55); /*0x140012253*/\n                if ( v46 != nullptr && _InterlockedExchangeAdd(v46 + 2, 0xFFFFFFFF) == 1 ) /*0x140012268*/\n                {\n                  (**(void (__fastcall ***)(volatile signed __int32 *))v46)(a1: v46); /*0x140012270*/\n                  if ( _InterlockedExchangeAdd(v46 + 3, 0xFFFFFFFF) == 1 ) /*0x14001227c*/\n                    (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v46 + 8LL))(a1: v46); /*0x140012284*/\n                }\n                if ( __eh34_unwind(11) ) /*0xf1c000000000012c*/\n                  goto unwind_state_11; /*0xf1c000000000012c*/\n                __eh34_exit_wind_state(11, 9); /*0xf1c0000000000130*/\n                if ( (int)sub_14000C190() >= 0 && qword_1400506B8 != 0 ) /*0x14001229c*/\n                {\n                  if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x1400122ac*/\n                  {\n                    sub_1400341D0(a1: &dword_14005073C); /*0x1400122b5*/\n                    if ( dword_14005073C == -1 ) /*0x1400122c1*/\n                    {\n                      __wind /*0xf1c0000000000114*/\n                      {\n                        xmmword_140050938 = 0; /*0x1400122c6*/\n                        sub_14000BA40(); /*0x1400122cd*/\n                        atexit(a1: sub_140038CF0); /*0x1400122d9*/\n                        Init_thread_footer(a1: &dword_14005073C); /*0x1400122e6*/\n                      }\n                      __unwind\n                      {\n                        sub_140034128(a1: &dword_14005073C); /*0x14003775f*/\n                      }\n                    }\n                  }\n                  __eh34_enter_wind_state(9, 11); /*0xf1c000000000010c*/\n                  v48 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400122eb*/\n                  if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x1400122f5*/\n                  {\n                    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x1400122f7*/\n                    v48 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400122fb*/\n                  }\n                  v57 = __PAIR128__((unsigned __int64)v48, xmmword_140050938); /*0x140012309*/\n                  *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x140012318*/\n                  DWORD2(v53) = 1095; /*0x14001231d*/\n                  HIDWORD(v53) = HIDWORD(v64[1]); /*0x140012328*/\n                  v54 = \"main\"; /*0x140012333*/\n                  v55 = (const char *)&unk_14003E7C8; /*0x14001233f*/\n                  v56 = 43; /*0x140012343*/\n                  *(_OWORD *)v64 = v53; /*0x140012350*/\n                  si128.m128i_i64[0] = (__int64)\"main\"; /*0x14001235a*/\n                  sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 2, a4: &v55); /*0x14001236d*/\n                  if ( v48 != nullptr && _InterlockedExchangeAdd(v48 + 2, 0xFFFFFFFF) == 1 ) /*0x140012382*/\n                  {\n                    (**(void (__fastcall ***)(volatile signed __int32 *))v48)(a1: v48); /*0x14001238a*/\n                    if ( _InterlockedExchangeAdd(v48 + 3, 0xFFFFFFFF) == 1 ) /*0x140012396*/\n                      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v48 + 8LL))(a1: v48); /*0x14001239e*/\n                  }\n                  while ( GetMessageW(lpMsg: &Msg, hWnd: nullptr, wMsgFilterMin: 0, wMsgFilterMax: 0) ) /*0x1400123b8*/\n                  {\n                    TranslateMessage(lpMsg: &Msg); /*0x1400123c7*/\n                    DispatchMessageW(lpMsg: &Msg); /*0x1400123d4*/\n                  }\n                  UnregisterPowerSettingNotification(Handle: v31); /*0x1400123f6*/\n                  if ( __eh34_unwind(11) ) /*0xf1c00000000000f8*/\n                    goto unwind_state_11; /*0xf1c00000000000f8*/\n                  __eh34_exit_wind_state(11, 9); /*0xf1c0000000000104*/\n                  if ( qword_1400506F0 != 0 ) /*0x140012406*/\n                    (*(void (__fastcall **)(__int64))(*(_QWORD *)qword_1400506F0 + 16LL))(a1: qword_1400506F0); /*0x14001240b*/\n                  if ( qword_1400506B8 != 0 ) /*0x140012418*/\n                  {\n                    (*(void (__fastcall **)(__int64))(*(_QWORD *)qword_1400506B8 + 272LL))(a1: qword_1400506B8); /*0x14001241d*/\n                    (*(void (__fastcall **)(__int64))(*(_QWORD *)qword_1400506B8 + 16LL))(a1: qword_1400506B8); /*0x14001242d*/\n                    qword_1400506B8 = 0; /*0x140012430*/\n                  }\n                  MFShutdown(); /*0x140012437*/\n                  __wind /*0xf1c00000000000ec*/\n                  {\n                    v49 = ppv; /*0x14001243e*/\n                    if ( ppv != nullptr ) /*0x140012448*/\n                    {\n                      ppv = nullptr; /*0x14001244a*/\n                      (*(void (__fastcall **)(LPVOID))(*(_QWORD *)v49 + 16LL))(a1: v49); /*0x140012454*/\n                    }\n                  }\n                  __unwind\n                  {\n                    __std_terminate(); /*0x140036170*/\n                  }\n                  CoUninitialize(); /*0x140012458*/\n                  WaitForSingleObject(hHandle: Thread, dwMilliseconds: 0xFFFFFFFF); /*0x140012466*/\n                  CloseHandle(hObject: Thread); /*0x14001246f*/\n                  if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x14001247f*/\n                  {\n                    sub_1400341D0(a1: &dword_14005073C); /*0x140012488*/\n                    if ( dword_14005073C == -1 ) /*0x140012494*/\n                    {\n                      __wind /*0xf1c00000000000c8*/\n                      {\n                        xmmword_140050938 = 0; /*0x140012499*/\n                        sub_14000BA40(); /*0x1400124a0*/\n                        atexit(a1: sub_140038CF0); /*0x1400124ac*/\n                        Init_thread_footer(a1: &dword_14005073C); /*0x1400124b9*/\n                      }\n                      __unwind\n                      {\n                        sub_140034128(a1: &dword_14005073C); /*0x140037777*/\n                      }\n                    }\n                  }\n                  __eh34_enter_wind_state(9, 11); /*0xf1c00000000000c0*/\n                  v50 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400124be*/\n                  if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x1400124c8*/\n                  {\n                    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x1400124ca*/\n                    v50 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400124ce*/\n                  }\n                  v57 = __PAIR128__((unsigned __int64)v50, xmmword_140050938); /*0x1400124dc*/\n                  *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x1400124eb*/\n                  DWORD2(v53) = 1137; /*0x1400124f0*/\n                  HIDWORD(v53) = HIDWORD(v64[1]); /*0x1400124fb*/\n                  v54 = \"main\"; /*0x140012506*/\n                  v55 = (const char *)&unk_14003EFA8; /*0x140012512*/\n                  v56 = 8; /*0x140012516*/\n                  *(_OWORD *)v64 = v53; /*0x140012523*/\n                  si128.m128i_i64[0] = (__int64)\"main\"; /*0x14001252d*/\n                  sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 2, a4: &v55); /*0x140012540*/\n                  if ( v50 != nullptr && _InterlockedExchangeAdd(v50 + 2, 0xFFFFFFFF) == 1 ) /*0x140012555*/\n                  {\n                    (**(void (__fastcall ***)(volatile signed __int32 *))v50)(a1: v50); /*0x14001255d*/\n                    if ( _InterlockedExchangeAdd(v50 + 3, 0xFFFFFFFF) == 1 ) /*0x140012567*/\n                      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v50 + 8LL))(a1: v50); /*0x14001256f*/\n                  }\n                  v8 = 0; /*0x140012572*/\n                  goto LABEL_182; /*0x140012575*/\n                }\n                __wind /*0xf1c00000000000a0*/\n                {\n                  if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x140012584*/\n                  {\n                    sub_1400341D0(a1: &dword_14005073C); /*0x14001258d*/\n                    if ( dword_14005073C == -1 ) /*0x140012599*/\n                    {\n                      xmmword_140050938 = 0; /*0x14001259e*/\n                      sub_14000BA40(); /*0x1400125a5*/\n                      atexit(a1: sub_140038CF0); /*0x1400125b1*/\n                      Init_thread_footer(a1: &dword_14005073C); /*0x1400125be*/\n                    }\n                  }\n                  v51 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400125c3*/\n                  if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x1400125cd*/\n                  {\n                    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x1400125cf*/\n                    v51 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400125d3*/\n                  }\n                }\n                __unwind\n                {\n                  sub_140034128(a1: &dword_14005073C); /*0x140037747*/\n                }\n                __eh34_enter_wind_state(9, 11); /*0xf1c00000000000b8*/\n                v57 = __PAIR128__((unsigned __int64)v51, xmmword_140050938); /*0x1400125e1*/\n                *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x1400125f0*/\n                DWORD2(v53) = 1090; /*0x1400125f5*/\n                HIDWORD(v53) = HIDWORD(v64[1]); /*0x140012600*/\n                v54 = \"main\"; /*0x14001260b*/\n                v55 = (const char *)&unk_14003E7A8; /*0x140012617*/\n                v56 = 31; /*0x14001261b*/\n                *(_OWORD *)v64 = v53; /*0x140012628*/\n                si128.m128i_i64[0] = (__int64)\"main\"; /*0x140012632*/\n                sub_140019A20(a1: xmmword_140050938, a2: v64, a3: v47, a4: &v55); /*0x14001263f*/\n                if ( v51 != nullptr && _InterlockedExchangeAdd(v51 + 2, 0xFFFFFFFF) == 1 ) /*0x140012654*/\n                {\n                  (**(void (__fastcall ***)(volatile signed __int32 *))v51)(a1: v51); /*0x14001265c*/\n                  if ( _InterlockedExchangeAdd(v51 + 3, 0xFFFFFFFF) == 1 ) /*0x140012668*/\n                    (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v51 + 8LL))(a1: v51); /*0x140012670*/\n                }\n                MFShutdown(); /*0x140012673*/\n              }\n              else\n              {\n                if ( dword_14005073C > v44 ) /*0x140012086*/\n                {\n                  sub_1400341D0(a1: &dword_14005073C); /*0x14001208f*/\n                  if ( dword_14005073C == -1 ) /*0x14001209b*/\n                  {\n                    if ( __eh34_unwind(11) ) /*0xf1c00000000002c0*/\n                      goto unwind_state_11; /*0xf1c00000000002c0*/\n                    __eh34_exit_wind_state(11, 9); /*0xf1c00000000002c4*/\n                    __wind /*0xf1c00000000002c8*/\n                    {\n                      xmmword_140050938 = 0; /*0x1400120a0*/\n                      sub_14000BA40(); /*0x1400120a7*/\n                      atexit(a1: sub_140038CF0); /*0x1400120b3*/\n                      Init_thread_footer(a1: &dword_14005073C); /*0x1400120c0*/\n                    }\n                    __unwind\n                    {\n                      sub_140034128(a1: &dword_14005073C); /*0x140037717*/\n                    }\n                    __eh34_enter_wind_state(9, 11); /*0xf1c00000000002b8*/\n                  }\n                }\n                v45 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400120c5*/\n                if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x1400120cf*/\n                {\n                  _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x1400120d1*/\n                  v45 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x1400120d5*/\n                }\n                v57 = __PAIR128__((unsigned __int64)v45, xmmword_140050938); /*0x1400120e3*/\n                *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x1400120f2*/\n                DWORD2(v53) = 1072; /*0x1400120f7*/\n                HIDWORD(v53) = HIDWORD(v64[1]); /*0x140012102*/\n                v54 = \"main\"; /*0x14001210d*/\n                v55 = (const char *)&unk_14003EF70; /*0x140012119*/\n                v56 = 27; /*0x14001211d*/\n                *(_OWORD *)v64 = v53; /*0x14001212a*/\n                si128.m128i_i64[0] = (__int64)\"main\"; /*0x140012134*/\n                sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 4, a4: &v55); /*0x140012147*/\n                if ( v45 != nullptr && _InterlockedExchangeAdd(v45 + 2, 0xFFFFFFFF) == 1 ) /*0x140012160*/\n                {\n                  (**(void (__fastcall ***)(volatile signed __int32 *))v45)(a1: v45); /*0x14001216c*/\n                  if ( _InterlockedExchangeAdd(v45 + 3, 0xFFFFFFFF) == 1 ) /*0x140012178*/\n                    (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v45 + 8LL))(a1: v45); /*0x140012184*/\n                }\n              }\n            }\n            CoUninitialize(); /*0x140012679*/\nLABEL_182:\n            sub_140003AE0(a1: Block, a2: Block, a3: *((_QWORD *)Block[0] + 1)); /*0x140012680*/\n            j_j_free(Block: Block[0]); /*0x14001269e*/\n            if ( v68 > 7 ) /*0x1400126af*/\n            {\n              v52 = v67[0]; /*0x1400126b9*/\n              if ( 2 * v68 + 2 >= 0x1000 ) /*0x1400126ca*/\n              {\n                v52 = *((void **)v67[0] - 1); /*0x1400126d0*/\n                if ( (unsigned __int64)((char *)v67[0] - (char *)v52 - 8) > 0x1F ) /*0x1400126df*/\n                  invoke_watson(Expression: nullptr, FunctionName: nullptr, FileName: nullptr, LineNo: 0, Reserved: 0); /*0x1400126f0*/\n              }\n              j_j_free(Block: v52); /*0x1400126f7*/\n            }\n            if ( __eh34_unwind(11) ) /*0xf1c0000000000384*/\n              goto unwind_state_11; /*0xf1c0000000000384*/\n            __eh34_exit_wind_state(11, 9); /*0xf1c0000000000388*/\n            goto LABEL_231; /*0xf1c000000000038c*/\n          }\n          CoUninitialize(); /*0x140011d37*/\n          if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x140011d47*/\n          {\n            sub_1400341D0(a1: &dword_14005073C); /*0x140011d50*/\n            if ( dword_14005073C == -1 ) /*0x140011d5c*/\n            {\n              if ( __eh34_unwind(11) ) /*0xf1c0000000000338*/\n                goto unwind_state_11; /*0xf1c0000000000338*/\n              __eh34_exit_wind_state(11, 9); /*0xf1c000000000033c*/\n              __wind /*0xf1c0000000000340*/\n              {\n                xmmword_140050938 = 0; /*0x140011d61*/\n                sub_14000BA40(); /*0x140011d68*/\n                atexit(a1: sub_140038CF0); /*0x140011d74*/\n                Init_thread_footer(a1: &dword_14005073C); /*0x140011d81*/\n              }\n              __unwind\n              {\n                sub_140034128(a1: &dword_14005073C); /*0x1400376cf*/\n              }\n              __eh34_enter_wind_state(9, 11); /*0xf1c0000000000330*/\n            }\n          }\n          v39 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011d86*/\n          if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x140011d90*/\n          {\n            _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x140011d92*/\n            v39 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011d96*/\n          }\n          v57 = __PAIR128__((unsigned __int64)v39, xmmword_140050938); /*0x140011da4*/\n          *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x140011dac*/\n          DWORD2(v53) = 1025; /*0x140011db1*/\n          HIDWORD(v53) = HIDWORD(v64[1]); /*0x140011dbc*/\n          v54 = \"main\"; /*0x140011dc7*/\n          v55 = (const char *)&unk_14003EF20; /*0x140011dd3*/\n          v56 = 29; /*0x140011dd7*/\n          *(_OWORD *)v64 = v53; /*0x140011de4*/\n          si128.m128i_i64[0] = (__int64)\"main\"; /*0x140011dee*/\n          sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 4, a4: &v55); /*0x140011e01*/\n        }\n        else\n        {\n          if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x140011c42*/\n          {\n            sub_1400341D0(a1: &dword_14005073C); /*0x140011c4b*/\n            if ( dword_14005073C == -1 ) /*0x140011c57*/\n            {\n              if ( __eh34_unwind(11) ) /*0xf1c0000000000360*/\n                goto unwind_state_11; /*0xf1c0000000000360*/\n              __eh34_exit_wind_state(11, 9); /*0xf1c0000000000364*/\n              __wind /*0xf1c0000000000368*/\n              {\n                xmmword_140050938 = 0; /*0x140011c5c*/\n                sub_14000BA40(); /*0x140011c63*/\n                atexit(a1: sub_140038CF0); /*0x140011c6f*/\n                Init_thread_footer(a1: &dword_14005073C); /*0x140011c7c*/\n              }\n              __unwind\n              {\n                sub_140034128(a1: &dword_14005073C); /*0x1400376b7*/\n              }\n              __eh34_enter_wind_state(9, 11); /*0xf1c0000000000358*/\n            }\n          }\n          v39 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011c81*/\n          if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x140011c8b*/\n          {\n            _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x140011c8d*/\n            v39 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011c91*/\n          }\n          v57 = __PAIR128__((unsigned __int64)v39, xmmword_140050938); /*0x140011c9f*/\n          *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x140011ca7*/\n          DWORD2(v53) = 1018; /*0x140011cac*/\n          HIDWORD(v53) = HIDWORD(v64[1]); /*0x140011cb7*/\n          v54 = \"main\"; /*0x140011cc2*/\n          v55 = (const char *)&unk_14003EF10; /*0x140011cce*/\n          v56 = 15; /*0x140011cd2*/\n          *(_OWORD *)v64 = v53; /*0x140011cdf*/\n          si128.m128i_i64[0] = (__int64)\"main\"; /*0x140011ce9*/\n          sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 4, a4: &v55); /*0x140011cfc*/\n        }\n        if ( v39 != nullptr && _InterlockedExchangeAdd(v39 + 2, 0xFFFFFFFF) == 1 ) /*0x140011e1a*/\n        {\n          (**(void (__fastcall ***)(volatile signed __int32 *))v39)(a1: v39); /*0x140011e26*/\n          if ( _InterlockedExchangeAdd(v39 + 3, 0xFFFFFFFF) == 1 ) /*0x140011e32*/\n            (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v39 + 8LL))(a1: v39); /*0x140011e3e*/\n        }\n        goto LABEL_182; /*0x140011e41*/\n      }\n      __unwind\n      {\n        sub_1400012F0(a1: Block); /*0xf1c0000000000194*/\n      }\n    }\n    __unwind\n    {\n      sub_1400174C0(a1: v67); /*0xf1c00000000001a0*/\n    }\nLABEL_231:\n    __eh34_enter_wind_state(-1, 3); /*0xf1c00000000001a8*/\n    goto LABEL_187; /*0xf1c00000000001ac*/\n  }\n  if ( dword_14005073C > *(_DWORD *)(v6 + 8) ) /*0x140011808*/\n  {\n    sub_1400341D0(a1: &dword_14005073C); /*0x140011811*/\n    if ( dword_14005073C == -1 ) /*0x14001181d*/\n    {\n      xmmword_140050938 = 0; /*0x140011822*/\n      sub_14000BA40(); /*0x140011829*/\n      atexit(a1: sub_140038CF0); /*0x140011835*/\n      Init_thread_footer(a1: &dword_14005073C); /*0x140011842*/\n    }\n  }\n  v32 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011847*/\n  if ( *((_QWORD *)&xmmword_140050938 + 1) != 0 ) /*0x140011851*/\n  {\n    _InterlockedIncrement((volatile signed __int32 *)(*((_QWORD *)&xmmword_140050938 + 1) + 8LL)); /*0x140011853*/\n    v32 = *((volatile signed __int32 **)&xmmword_140050938 + 1); /*0x140011857*/\n  }\n  if ( __eh34_unwind(7) ) /*0xf1c0000000000374*/\n    goto unwind_state_7; /*0xf1c0000000000374*/\n  __eh34_exit_wind_state(7, -1); /*0xf1c0000000000378*/\n  __eh34_enter_wind_state(-1, 3); /*0xf1c000000000037c*/\n  v57 = __PAIR128__((unsigned __int64)v32, xmmword_140050938); /*0x140011865*/\n  *(_QWORD *)&v53 = \"K:\\\\Project\\\\VSProject\\\\RedMagic\\\\FaceTracking\\\\MMFaceTracking2\\\\main.cpp\"; /*0x14001186d*/\n  DWORD2(v53) = 991; /*0x140011872*/\n  HIDWORD(v53) = HIDWORD(v64[1]); /*0x14001187d*/\n  v54 = \"main\"; /*0x140011888*/\n  v55 = \"RegisterPowerSettingNotification failed\"; /*0x140011894*/\n  v56 = 39; /*0x140011898*/\n  *(_OWORD *)v64 = v53; /*0x1400118a5*/\n  si128.m128i_i64[0] = (__int64)\"main\"; /*0x1400118af*/\n  sub_140008FF0(a1: xmmword_140050938, a2: v64, a3: 4, a4: &v55); /*0x1400118c2*/\n  if ( v32 != nullptr && _InterlockedExchangeAdd(v32 + 2, 0xFFFFFFFF) == 1 ) /*0x1400118d7*/\n  {\n    (**(void (__fastcall ***)(volatile signed __int32 *))v32)(a1: v32); /*0x1400118df*/\n    if ( _InterlockedExchangeAdd(v32 + 3, 0xFFFFFFFF) == 1 ) /*0x1400118e9*/\n      (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v32 + 8LL))(a1: v32); /*0x1400118f1*/\n  }\n  result = -2; /*0x1400118f4*/\n  if ( __eh34_unwind(3) ) /*0xf1c000000000008c*/\n    goto unwind_state_3; /*0xf1c000000000008c*/\nLABEL_188:\n  __eh34_exit_wind_state(3, -1); /*0xf1c0000000000098*/\n  return result; /*0x1400126fe*/\n}",
+  "refs": [
+    {
+      "addr": "0x140039158",
+      "name": "GetACP"
+    },
+    {
+      "addr": "0x1400390c8",
+      "name": "SetConsoleOutputCP"
+    },
+    {
+      "addr": "0x1400391b8",
+      "name": "SetConsoleCP"
+    },
+    {
+      "addr": "0x1400341d0",
+      "name": "sub_1400341D0"
+    },
+    {
+      "addr": "0x14005073c",
+      "name": "dword_14005073C"
+    },
+    {
+      "addr": "0x140050938",
+      "name": "xmmword_140050938"
+    },
+    {
+      "addr": "0x14000ba40",
+      "name": "sub_14000BA40"
+    },
+    {
+      "addr": "0x1400347dc",
+      "name": "atexit"
+    },
+    {
+      "addr": "0x140038cf0",
+      "name": "sub_140038CF0"
+    },
+    {
+      "addr": "0x140034164",
+      "name": "_Init_thread_footer"
+    },
+    {
+      "addr": "0x140034128",
+      "name": "sub_140034128"
+    },
+    {
+      "addr": "0x14003e5a0",
+      "name": "aKProjectVsproj",
+      "string": "K:\\Project\\VSProject\\RedMagic\\FaceTracking\\MMFaceTracking2\\main.cpp"
+    },
+    {
+      "addr": "0x14003ed8c",
+      "name": "aMain",
+      "string": "main"
+    },
+    {
+      "addr": "0x14003ed80",
+      "name": "unk_14003ED80"
+    },
+    {
+      "addr": "0x140008ff0",
+      "name": "sub_140008FF0"
+    },
+    {
+      "addr": "0x1400391a0",
+      "name": "GetCurrentDirectoryW"
+    },
+    {
+      "addr": "0x1400391a8",
+      "name": "SetCurrentDirectoryW"
+    },
+    {
+      "addr": "0x140016910",
+      "name": "sub_140016910"
+    },
+    {
+      "addr": "0x1400390d0",
+      "name": "WideCharToMultiByte"
+    },
+    {
+      "addr": "0x140017650",
+      "name": "sub_140017650"
+    },
+    {
+      "addr": "0x14003f410",
+      "name": "xmmword_14003F410"
+    },
+    {
+      "addr": "0x140003ee0",
+      "name": "sub_140003EE0"
+    },
+    {
+      "addr": "0x140005920",
+      "name": "sub_140005920"
+    },
+    {
+      "addr": "0x14003ed98",
+      "name": "unk_14003ED98"
+    },
+    {
+      "addr": "0x14001a370",
+      "name": "sub_14001A370"
+    },
+    {
+      "addr": "0x140036194",
+      "name": "memset"
+    },
+    {
+      "addr": "0x140039130",
+      "name": "GetModuleFileNameW"
+    },
+    {
+      "addr": "0x1400029d0",
+      "name": "sub_1400029D0"
+    },
+    {
+      "addr": "0x14004d150",
+      "name": "lpMultiByteStr"
+    },
+    {
+      "addr": "0x1400394f0",
+      "name": "wcsrchr"
+    },
+    {
+      "addr": "0x1400225c0",
+      "name": "sub_1400225C0"
+    },
+    {
+      "addr": "0x14004d160",
+      "name": "qword_14004D160"
+    },
+    {
+      "addr": "0x140021240",
+      "name": "sub_140021240"
+    },
+    {
+      "addr": "0x14004d168",
+      "name": "qword_14004D168"
+    },
+    {
+      "addr": "0x1400391c8",
+      "name": "GetModuleHandleW"
+    },
+    {
+      "addr": "0x140010f70",
+      "name": "sub_140010F70"
+    },
+    {
+      "addr": "0x14003eda8",
+      "name": "aPowermonitorwi",
+      "string": "潐敷䵲湯瑩牯楗摮睯"
+    },
+    {
+      "addr": "0x1400394d0",
+      "name": "RegisterClassW"
+    },
+    {
+      "addr": "0x1400394b0",
+      "name": "CreateWindowExW"
+    },
+    {
+      "addr": "0x14003edd0",
+      "name": "WindowName",
+      "string": "楈摤湥潐敷坲湩潤�"
+    },
+    {
+      "addr": "0x14003edf8",
+      "name": "aCreatewindowFa",
+      "string": "CreateWindow failed"
+    },
+    {
+      "addr": "0x1400394b8",
+      "name": "RegisterPowerSettingNotification"
+    },
+    {
+      "addr": "0x140039920",
+      "name": "Buf2"
+    },
+    {
+      "addr": "0x140015b30",
+      "name": "sub_140015B30"
+    },
+    {
+      "addr": "0x1400340b0",
+      "name": "??2@YAPEAX_K@Z"
+    },
+    {
+      "addr": "0x14003ee68",
+      "name": "unk_14003EE68"
+    },
+    {
+      "addr": "0x140001400",
+      "name": "sub_140001400"
+    },
+    {
+      "addr": "0x140001fa0",
+      "name": "sub_140001FA0"
+    },
+    {
+      "addr": "0x1400506b4",
+      "name": "dword_1400506B4"
+    },
+    {
+      "addr": "0x140001cd0",
+      "name": "sub_140001CD0"
+    },
+    {
+      "addr": "0x14003eed0",
+      "name": "aShowKps",
+      "string": "show_kps"
+    },
+    {
+      "addr": "0x14003eec0",
+      "name": "aShowImg",
+      "string": "show_img"
+    },
+    {
+      "addr": "0x14004d12c",
+      "name": "dword_14004D12C"
+    },
+    {
+      "addr": "0x14003eee8",
+      "name": "aCameraInfo",
+      "string": "camera_info"
+    },
+    {
+      "addr": "0x14003eedc",
+      "name": "aWidth",
+      "string": "width"
+    },
+    {
+      "addr": "0x14004d128",
+      "name": "dword_14004D128"
+    },
+    {
+      "addr": "0x14003eef4",
+      "name": "aHeight",
+      "string": "height"
+    },
+    {
+      "addr": "0x14004d120",
+      "name": "dword_14004D120"
+    },
+    {
+      "addr": "0x14003eefc",
+      "name": "aFps",
+      "string": "fps"
+    },
+    {
+      "addr": "0x14003ef00",
+      "name": "unk_14003EF00"
+    },
+    {
+      "addr": "0x14003ef40",
+      "name": "unk_14003EF40"
+    },
+    {
+      "addr": "0x140039198",
+      "name": "CreateThread"
+    },
+    {
+      "addr": "0x14000ffc0",
+      "name": "sub_14000FFC0"
+    },
+    {
+      "addr": "0x14003ef50",
+      "name": "unk_14003EF50"
+    },
+    {
+      "addr": "0x1400391f8",
+      "name": "MFStartup"
+    },
+    {
+      "addr": "0x14003ef90",
+      "name": "unk_14003EF90"
+    },
+    {
+      "addr": "0x14003e7c8",
+      "name": "unk_14003E7C8"
+    },
+    {
+      "addr": "0x1400394d8",
+      "name": "TranslateMessage"
+    },
+    {
+      "addr": "0x1400394c0",
+      "name": "DispatchMessageW"
+    },
+    {
+      "addr": "0x1400394a0",
+      "name": "GetMessageW"
+    },
+    {
+      "addr": "0x1400394c8",
+      "name": "UnregisterPowerSettingNotification"
+    },
+    {
+      "addr": "0x1400506f0",
+      "name": "qword_1400506F0"
+    },
+    {
+      "addr": "0x1400506b8",
+      "name": "qword_1400506B8"
+    },
+    {
+      "addr": "0x140039200",
+      "name": "MFShutdown"
+    },
+    {
+      "addr": "0x1400506f8",
+      "name": "ppv"
+    },
+    {
+      "addr": "0x140039548",
+      "name": "__imp___std_terminate"
+    },
+    {
+      "addr": "0x1400397d0",
+      "name": "CoUninitialize"
+    },
+    {
+      "addr": "0x140039148",
+      "name": "WaitForSingleObject"
+    },
+    {
+      "addr": "0x140039190",
+      "name": "CloseHandle"
+    },
+    {
+      "addr": "0x14003efa8",
+      "name": "unk_14003EFA8"
+    },
+    {
+      "addr": "0x14000c190",
+      "name": "sub_14000C190"
+    },
+    {
+      "addr": "0x14003e7a8",
+      "name": "unk_14003E7A8"
+    },
+    {
+      "addr": "0x140019a20",
+      "name": "sub_140019A20"
+    },
+    {
+      "addr": "0x14003ef70",
+      "name": "unk_14003EF70"
+    },
+    {
+      "addr": "0x140003ae0",
+      "name": "sub_140003AE0"
+    },
+    {
+      "addr": "0x1400340f4",
+      "name": "j_j_free"
+    },
+    {
+      "addr": "0x140039670",
+      "name": "_invoke_watson"
+    },
+    {
+      "addr": "0x1400397d8",
+      "name": "CoCreateInstance"
+    },
+    {
+      "addr": "0x14003bf60",
+      "name": "rclsid"
+    },
+    {
+      "addr": "0x14003bf70",
+      "name": "riid"
+    },
+    {
+      "addr": "0x14003ef20",
+      "name": "unk_14003EF20"
+    },
+    {
+      "addr": "0x14003ef10",
+      "name": "unk_14003EF10"
+    },
+    {
+      "addr": "0x1400397e8",
+      "name": "CoInitializeEx"
+    },
+    {
+      "addr": "0x1400012f0",
+      "name": "sub_1400012F0"
+    },
+    {
+      "addr": "0x1400174c0",
+      "name": "sub_1400174C0"
+    },
+    {
+      "addr": "0x14003ee10",
+      "name": "aRegisterpowers",
+      "string": "RegisterPowerSettingNotification failed"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"doEyeTrack_3D\",\"xrefs\":[{\"addr\":\"0x14000db59\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000d9a0\",\"name\":\"sub_14000D9A0\",\"size\":\"0x9b0\"}},{\"addr\":\"0x14000db59\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000d9a0\",\"name\":\"sub_14000D9A0\",\"size\":\"0x9b0\"}}],\"more\":false,\"xref_count\":2},{\"addr\":\"MFEnumDeviceSources\",\"xrefs\":[{\"addr\":\"0x14000c273\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000c190\",\"name\":\"sub_14000C190\",\"size\":\"0xbd9\"}},{\"addr\":\"0x14000c3e1\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000c190\",\"name\":\"sub_14000C190\",\"size\":\"0xbd9\"}},{\"addr\":\"0x14000c273\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000c190\",\"name\":\"sub_14000C190\",\"size\":\"0xbd9\"}},{\"addr\":\"0x14000c3e1\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000c190\",\"name\":\"sub_14000C190\",\"size\":\"0xbd9\"}},{\"addr\":\"0x14004a05c\",\"type\":\"data\",\"fn\":null}],\"more\":false,\"xref_count\":5},{\"addr\":\"CoCreateInstance\",\"xrefs\":[{\"addr\":\"0x140011d29\",\"type\":\"code\",\"fn\":{\"addr\":\"0x140011140\",\"name\":\"main\",\"size\":\"0x15ee\"}},{\"addr\":\"0x140011d29\",\"type\":\"data\",\"fn\":{\"addr\":\"0x140011140\",\"name\":\"main\",\"size\":\"0x15ee\"}}],\"more\":false,\"xref_count\":2}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "doEyeTrack_3D",
+          "xrefs": [
+            {
+              "addr": "0x14000db59",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000d9a0",
+                "name": "sub_14000D9A0",
+                "size": "0x9b0"
+              }
+            },
+            {
+              "addr": "0x14000db59",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000d9a0",
+                "name": "sub_14000D9A0",
+                "size": "0x9b0"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        },
+        {
+          "addr": "MFEnumDeviceSources",
+          "xrefs": [
+            {
+              "addr": "0x14000c273",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000c190",
+                "name": "sub_14000C190",
+                "size": "0xbd9"
+              }
+            },
+            {
+              "addr": "0x14000c3e1",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000c190",
+                "name": "sub_14000C190",
+                "size": "0xbd9"
+              }
+            },
+            {
+              "addr": "0x14000c273",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000c190",
+                "name": "sub_14000C190",
+                "size": "0xbd9"
+              }
+            },
+            {
+              "addr": "0x14000c3e1",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000c190",
+                "name": "sub_14000C190",
+                "size": "0xbd9"
+              }
+            },
+            {
+              "addr": "0x14004a05c",
+              "type": "data",
+              "fn": null
+            }
+          ],
+          "more": false,
+          "xref_count": 5
+        },
+        {
+          "addr": "CoCreateInstance",
+          "xrefs": [
+            {
+              "addr": "0x140011d29",
+              "type": "code",
+              "fn": {
+                "addr": "0x140011140",
+                "name": "main",
+                "size": "0x15ee"
+              }
+            },
+            {
+              "addr": "0x140011d29",
+              "type": "data",
+              "fn": {
+                "addr": "0x140011140",
+                "name": "main",
+                "size": "0x15ee"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

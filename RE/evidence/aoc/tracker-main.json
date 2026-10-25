@@ -1,0 +1,72 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "structuredContent": {
+      "addr": "main",
+      "code": "int __fastcall main(int argc, const char **argv, const char **envp)\n{\n  UINT ACP; // eax\n  UINT v4; // eax\n  __int64 *ThreadLocalStoragePointer; // rax\n  __int64 v6; // rsi\n  volatile signed __int32 *v7; // rbx\n  int v8; // edi\n  volatile signed __int32 *v9; // rbx\n  int v10; // r15d\n  int v11; // eax\n  int cbMultiByte; // r14d\n  CHAR *lpMultiByteStr; // rax\n  _QWORD *v14; // rax\n  DWORD ModuleFileNameW; // eax\n  LPSTR *v16; // r12\n  wchar_t *v17; // rax\n  __int64 v18; // rcx\n  __int64 v19; // r8\n  int v20; // eax\n  int v21; // r13d\n  unsigned __int64 v22; // rcx\n  __int64 v23; // r15\n  LPSTR *v24; // rax\n  size_t v25; // r14\n  LPSTR *v26; // rbx\n  CHAR *v27; // rax\n  HINSTANCE hInstance; // rbx\n  HWND Window; // rax\n  volatile signed __int32 *v30; // rbx\n  HPOWERNOTIFY v31; // r15\n  volatile signed __int32 *v32; // rbx\n  int result; // eax\n  _QWORD *v34; // rax\n  __int64 v35; // rdx\n  __int64 v36; // r8\n  volatile signed __int32 *v37; // rbx\n  volatile signed __int32 *v38; // rbx\n  vo... [50251 chars total]",
+      "refs": [
+        {
+          "addr": "0x140039158",
+          "name": "GetACP"
+        },
+        {
+          "addr": "0x1400390c8",
+          "name": "SetConsoleOutputCP"
+        },
+        {
+          "addr": "0x1400391b8",
+          "name": "SetConsoleCP"
+        },
+        {
+          "addr": "0x1400341d0",
+          "name": "sub_1400341D0"
+        },
+        {
+          "addr": "0x14005073c",
+          "name": "dword_14005073C"
+        },
+        {
+          "addr": "0x140050938",
+          "name": "xmmword_140050938"
+        },
+        {
+          "addr": "0x14000ba40",
+          "name": "sub_14000BA40"
+        },
+        {
+          "addr": "0x1400347dc",
+          "name": "atexit"
+        },
+        {
+          "addr": "0x140038cf0",
+          "name": "sub_140038CF0"
+        },
+        {
+          "addr": "0x140034164",
+          "name": "_Init_thread_footer"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"addr\":\"main\",\"code\":\"int __fastcall main(int argc, const char **argv, const char **envp)\\n{\\n  UINT ACP; // eax\\n  UINT v4; // eax\\n  __int64 *ThreadLocalStoragePointer; // rax\\n  __int64 v6; // rsi\\n  volatile signed __int32 *v7; // rbx\\n  int v8; // edi\\n  volatile signed __int32 *v9; // rbx\\n  int v10; // r15d\\n  int v11; // eax\\n  int cbMultiByte; // r14d\\n  CHAR *lpMultiByteStr; // rax\\n  _QWORD *v14; // rax\\n  DWORD ModuleFileNameW; // eax\\n  LPSTR *v16; // r12\\n  wchar_t *v17; // rax\\n  __int64 v18; // rcx\\n  __int64 v19; // r8\\n  int v20; // eax\\n  int v21; // r13d\\n  unsigned __int64 v22; // rcx\\n  __int64 v23; // r15\\n  LPSTR *v24; // rax\\n  size_t v25; // r14\\n  LPSTR *v26; // rbx\\n  CHAR *v27; // rax\\n  HINSTANCE hInstance; // rbx\\n  HWND Window; // rax\\n  volatile signed __int32 *v30; // rbx\\n  HPOWERNOTIFY v31; // r15\\n  volatile signed __int32 *v32; // rbx\\n  int result; // eax\\n  _QWORD *v34; // rax\\n  __int64 v35; // rdx\\n  __int64 v36; // r8\\n  volatile signed __int32 *v37; // rbx\\n  volatile signed __int32 *v38; // rbx\\n  vo... [50251 chars total]\",\"refs\":[{\"addr\":\"0x140039158\",\"name\":\"GetACP\"},{\"addr\":\"0x1400390c8\",\"name\":\"SetConsoleOutputCP\"},{\"addr\":\"0x1400391b8\",\"name\":\"SetConsoleCP\"},{\"addr\":\"0x1400341d0\",\"name\":\"sub_1400341D0\"},{\"addr\":\"0x14005073c\",\"name\":\"dword_14005073C\"},{\"addr\":\"0x140050938\",\"name\":\"xmmword_140050938\"},{\"addr\":\"0x14000ba40\",\"name\":\"sub_14000BA40\"},{\"addr\":\"0x1400347dc\",\"name\":\"atexit\"},{\"addr\":\"0x140038cf0\",\"name\":\"sub_140038CF0\"},{\"addr\":\"0x140034164\",\"name\":\"_Init_thread_footer\"}]}"
+      },
+      {
+        "type": "text",
+        "text": "Output truncated. Run: curl -o .ida-mcp/768f923b-ad3c-4cf0-bd61-fda97916e871.json http://127.0.0.1:52475/output/768f923b-ad3c-4cf0-bd61-fda97916e871.json"
+      }
+    ],
+    "isError": false,
+    "_meta": {
+      "ida_mcp": {
+        "output_truncated": true,
+        "total_chars": 56882,
+        "output_id": "768f923b-ad3c-4cf0-bd61-fda97916e871",
+        "download_url": "http://127.0.0.1:52475/output/768f923b-ad3c-4cf0-bd61-fda97916e871.json",
+        "download_hint": "Output truncated. Run: curl -o .ida-mcp/768f923b-ad3c-4cf0-bd61-fda97916e871.json http://127.0.0.1:52475/output/768f923b-ad3c-4cf0-bd61-fda97916e871.json"
+      }
+    }
+  },
+  "id": 1
+}

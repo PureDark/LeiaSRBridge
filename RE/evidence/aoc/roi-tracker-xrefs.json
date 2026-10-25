@@ -1,0 +1,67 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"addr\":\"BOE_ROI_init\",\"xrefs\":[{\"addr\":\"0x14000e7ba\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000e350\",\"name\":\"sub_14000E350\",\"size\":\"0xa60\"}},{\"addr\":\"0x14000e7ba\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000e350\",\"name\":\"sub_14000E350\",\"size\":\"0xa60\"}}],\"more\":false,\"xref_count\":2},{\"addr\":\"BOE_ROI_release\",\"xrefs\":[{\"addr\":\"0x14000eeef\",\"type\":\"code\",\"fn\":{\"addr\":\"0x14000edb0\",\"name\":\"sub_14000EDB0\",\"size\":\"0x285\"}},{\"addr\":\"0x14000eeef\",\"type\":\"data\",\"fn\":{\"addr\":\"0x14000edb0\",\"name\":\"sub_14000EDB0\",\"size\":\"0x285\"}}],\"more\":false,\"xref_count\":2}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "addr": "BOE_ROI_init",
+          "xrefs": [
+            {
+              "addr": "0x14000e7ba",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000e350",
+                "name": "sub_14000E350",
+                "size": "0xa60"
+              }
+            },
+            {
+              "addr": "0x14000e7ba",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000e350",
+                "name": "sub_14000E350",
+                "size": "0xa60"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        },
+        {
+          "addr": "BOE_ROI_release",
+          "xrefs": [
+            {
+              "addr": "0x14000eeef",
+              "type": "code",
+              "fn": {
+                "addr": "0x14000edb0",
+                "name": "sub_14000EDB0",
+                "size": "0x285"
+              }
+            },
+            {
+              "addr": "0x14000eeef",
+              "type": "data",
+              "fn": {
+                "addr": "0x14000edb0",
+                "name": "sub_14000EDB0",
+                "size": "0x285"
+              }
+            }
+          ],
+          "more": false,
+          "xref_count": 2
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

@@ -1,0 +1,46 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"query\":\"main\",\"fn\":{\"addr\":\"0x140011140\",\"name\":\"main\",\"size\":\"0x15ee\"},\"error\":null},{\"query\":\"WinMain\",\"fn\":null,\"error\":\"Not found\"},{\"query\":\"wWinMain\",\"fn\":null,\"error\":\"Not found\"},{\"query\":\"doEyeTrack_3D\",\"fn\":null,\"error\":\"Not a function\"},{\"query\":\"StartCamera\",\"fn\":null,\"error\":\"Not found\"}]"
+      }
+    ],
+    "structuredContent": {
+      "result": [
+        {
+          "query": "main",
+          "fn": {
+            "addr": "0x140011140",
+            "name": "main",
+            "size": "0x15ee"
+          },
+          "error": null
+        },
+        {
+          "query": "WinMain",
+          "fn": null,
+          "error": "Not found"
+        },
+        {
+          "query": "wWinMain",
+          "fn": null,
+          "error": "Not found"
+        },
+        {
+          "query": "doEyeTrack_3D",
+          "fn": null,
+          "error": "Not a function"
+        },
+        {
+          "query": "StartCamera",
+          "fn": null,
+          "error": "Not found"
+        }
+      ]
+    },
+    "isError": false
+  },
+  "id": 1
+}

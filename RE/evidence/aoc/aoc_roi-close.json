@@ -1,0 +1,21 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"session_id\":\"aoc_roi\",\"backend\":\"worker\",\"owned\":true,\"saved\":true,\"message\":\"Session closed: BOE_ROI.dll (aoc_roi)\"}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "session_id": "aoc_roi",
+      "backend": "worker",
+      "owned": true,
+      "saved": true,
+      "message": "Session closed: BOE_ROI.dll (aoc_roi)"
+    },
+    "isError": false
+  },
+  "id": 1
+}
