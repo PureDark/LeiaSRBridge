@@ -1,0 +1,135 @@
+[
+  {
+    "file": "MCU_library.dll",
+    "exists": true,
+    "sha256": "0a2e51c617b585e53e0733135ccede7d5c3d3f30d58bea23313026641e050858",
+    "bridge_source_sha256": "0a2e51c617b585e53e0733135ccede7d5c3d3f30d58bea23313026641e050858",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/FaceTracking.exe",
+    "exists": true,
+    "sha256": "85254ad5838fc6d61c68a9eea1b216d578103239d9432cef0be19e0a1cbc37c4",
+    "bridge_source_sha256": "85254ad5838fc6d61c68a9eea1b216d578103239d9432cef0be19e0a1cbc37c4",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/FaceTrackingManagerService.dll",
+    "exists": true,
+    "sha256": "3132dd6fe285772b327b4aab99de5a05c5cfe4376432e9defdc2680c465e4604",
+    "bridge_source_sha256": "3132dd6fe285772b327b4aab99de5a05c5cfe4376432e9defdc2680c465e4604",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/opencv_world4110.dll",
+    "exists": true,
+    "sha256": "3605a427658597d55310de4ef5bf1ac92ff28df23e01344571fd287d4f1e6dab",
+    "bridge_source_sha256": "3605a427658597d55310de4ef5bf1ac92ff28df23e01344571fd287d4f1e6dab",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/onnxruntime.dll",
+    "exists": true,
+    "sha256": "b2ba7ca16e0e4fe71ad5148744ab885a2f5809e52a0c3de4d9ba3853a03977f9",
+    "bridge_source_sha256": "b2ba7ca16e0e4fe71ad5148744ab885a2f5809e52a0c3de4d9ba3853a03977f9",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/BoeLandmark.dll",
+    "exists": true,
+    "sha256": "abf58ec752dcbab2e6ded3664f94f36068554b09d484b7085777e021a69fa522",
+    "bridge_source_sha256": "abf58ec752dcbab2e6ded3664f94f36068554b09d484b7085777e021a69fa522",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/faceTrackingConfig.ini",
+    "exists": true,
+    "sha256": "0f1dc81278766475ba63057bd87eadce16c591ccac985613416bcdf19dc52277",
+    "bridge_source_sha256": "0f1dc81278766475ba63057bd87eadce16c591ccac985613416bcdf19dc52277",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/models/face_det.onnx",
+    "exists": true,
+    "sha256": "b925a27424ac8a442ea06377b07032529819b0c16342daa1936e47eb260068e2",
+    "bridge_source_sha256": "b925a27424ac8a442ea06377b07032529819b0c16342daa1936e47eb260068e2",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/models/data21_v2.mdata",
+    "exists": true,
+    "sha256": "bcd2c0ded113f48ae24fb139ae027f0765a283cf6998dc7b32982bb59d233e47",
+    "bridge_source_sha256": "bcd2c0ded113f48ae24fb139ae027f0765a283cf6998dc7b32982bb59d233e47",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/models/landmark_det.onnx",
+    "exists": true,
+    "sha256": "73ec788e534a8aed3b3fd6e135e491785cf855968ac45a002c3dc017959b0c27",
+    "bridge_source_sha256": "73ec788e534a8aed3b3fd6e135e491785cf855968ac45a002c3dc017959b0c27",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "eyetracking/BOE_3DET_SDK.dll",
+    "exists": true,
+    "sha256": "752cb438a6d98848f45870c2502ea4ffc886c8daf14c1ee411af77518cd328b5",
+    "bridge_source_sha256": "752cb438a6d98848f45870c2502ea4ffc886c8daf14c1ee411af77518cd328b5",
+    "matches_bridge_source": true
+  },
+  {
+    "file": "DepthTransformerPlus.exe",
+    "exists": true,
+    "sha256": "fd5986a80c410edf0d9d3f5307b4235359413772ba45acaf48c264d43d962c32",
+    "old_sha256": "fd5986a80c410edf0d9d3f5307b4235359413772ba45acaf48c264d43d962c32",
+    "matches_old": true
+  },
+  {
+    "file": "BOEInterleaving.dll",
+    "exists": true,
+    "sha256": "221d31ea87b15a297c86aeee8cf736f51b336c40d7fb035c61082bb732c4e796",
+    "old_sha256": "221d31ea87b15a297c86aeee8cf736f51b336c40d7fb035c61082bb732c4e796",
+    "matches_old": true
+  },
+  {
+    "file": "BOERenderWapper.dll",
+    "exists": true,
+    "sha256": "2fa4a3795218c2b6e85c6c647975972460bda4b44fafb983448af7703807758b",
+    "old_sha256": "2fa4a3795218c2b6e85c6c647975972460bda4b44fafb983448af7703807758b",
+    "matches_old": true
+  },
+  {
+    "file": "interlaceSDK.dll",
+    "exists": true,
+    "sha256": "380a9194a5c2ab42cf1f70a2b3c383f9b340b3b292ac72177350aa0dae56cc6f",
+    "old_sha256": "380a9194a5c2ab42cf1f70a2b3c383f9b340b3b292ac72177350aa0dae56cc6f",
+    "matches_old": true
+  },
+  {
+    "file": "LF3DRenderCore.dll",
+    "exists": true,
+    "sha256": "3ef8d67f55ffb9e071c9a5e40d022a799413b642c5eab5dc7150b5b4d9ac27f1",
+    "old_sha256": "3ef8d67f55ffb9e071c9a5e40d022a799413b642c5eab5dc7150b5b4d9ac27f1",
+    "matches_old": true
+  },
+  {
+    "file": "LF3DRenderCoreForCSharp.dll",
+    "exists": true,
+    "sha256": "6024f4b38f86b48a592579ce1060082721634ad6a49a08d31d657de5ff6e1b10",
+    "old_sha256": "6024f4b38f86b48a592579ce1060082721634ad6a49a08d31d657de5ff6e1b10",
+    "matches_old": true
+  },
+  {
+    "file": "FaceTrackingManagerService.dll",
+    "exists": true,
+    "sha256": "24d677ea070fca322b025fa91823ea1eaa040729db9efed5de2f0fe7855a6118",
+    "old_sha256": "24d677ea070fca322b025fa91823ea1eaa040729db9efed5de2f0fe7855a6118",
+    "matches_old": true
+  },
+  {
+    "file": "StereoscopicDisplayList.json",
+    "exists": true,
+    "sha256": "6bd7813ab3dcf62eeffac03366f8dee92a90d9545392e8899683c499ec8a9627",
+    "old_sha256": "6bd7813ab3dcf62eeffac03366f8dee92a90d9545392e8899683c499ec8a9627",
+    "matches_old": true
+  }
+]
