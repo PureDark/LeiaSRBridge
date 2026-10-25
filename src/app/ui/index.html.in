@@ -450,6 +450,7 @@
           <small id="hubMenuHint"></small>
         </button>
         <hr>
+        <button data-action="sheet-update">检查更新<small>GitHub Release · 下载并安装</small></button>
         <button data-action="keys">快捷键<small>后台运行时仍可调节</small></button>
         <button data-action="logs">打开日志文件夹<small>logs\</small></button>
         <hr>
@@ -645,6 +646,7 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     hubLaunching:false, face:false, integrated:false, integrating:false,
     offset:80, prediction:40, lastPrediction:40, autoAttach:false, page:"overview",
     sheet:null, confirmRestore:false, games:[], editing:-1,
+    update:{phase:"idle",message:"点击检查 GitHub 最新正式版本。"},
     calibration:false, lens:false, rotationValid:false, eyeLabel:"不可用",
     clients:"—", mock:false, message:"", nativePreview:false, recommendedWidth:0, recommendedHeight:0
   };
@@ -1171,6 +1173,44 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     } else if (state.sheet === "odyssey") {
       title.textContent = "Odyssey 3D Hub";
       renderHubSheet(body, foot);
+    } else if (state.sheet === "update") {
+      title.textContent = "检查更新";
+      const info = state.update;
+      const busy = ["checking","downloading","validating","installing"].includes(info.phase);
+      const description = document.createElement("p");
+      description.textContent = "当前版本 @LEIASR_UI_VERSION@ · PureDark / LeiaSRBridge";
+      const message = document.createElement("p");
+      message.id = "updateMessage";
+      message.textContent = info.message;
+      message.style.color = info.phase === "error" ? "var(--danger)" : "var(--ink)";
+      const hint = document.createElement("p");
+      hint.style.cssText = "color:var(--ink-3);font-size:12.5px";
+      hint.textContent = "匿名访问 GitHub，不读取令牌。私有仓库或未发布版本时会显示访问错误。安装前请退出游戏、交织测试和 Odyssey Hub；设置、游戏列表及设备标定会保留，完成后自动重启。";
+      body.replaceChildren(description, message, hint);
+      if (info.phase === "downloading") {
+        const progress = document.createElement("progress");
+        progress.max = 100; progress.value = info.percent || 0;
+        progress.style.cssText = "width:100%;accent-color:var(--accent)";
+        body.append(progress);
+      }
+      if (info.notes) {
+        const notes = document.createElement("div");
+        notes.style.cssText = "white-space:pre-wrap;font-size:12.5px;line-height:1.7;margin-top:20px";
+        notes.textContent = info.notes;
+        body.append(notes);
+      }
+      const check = document.createElement("button");
+      check.id = "updateCheck"; check.className = "btn ghost";
+      check.textContent = busy ? "请稍候…" : "重新检查"; check.disabled = busy;
+      check.onclick = () => send("update-check");
+      foot.append(check);
+      if (info.phase === "available" || info.phase === "ready") {
+        const install = document.createElement("button");
+        install.id = "updateInstall"; install.className = "btn primary";
+        install.textContent = info.phase === "ready" ? "安装并重启" : "下载更新";
+        install.onclick = () => send(info.phase === "ready" ? "update-install" : "update-download");
+        foot.append(install);
+      }
     } else if (state.sheet === "keys") {
       title.textContent = "快捷键";
       body.innerHTML = `
@@ -1244,6 +1284,7 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     "preview-mode": () => send("preview-mode", {value:!state.nativePreview}),
     "sheet-integration": () => openSheet("integration"),
     "sheet-odyssey": () => openSheet("odyssey"),
+    "sheet-update": () => { openSheet("update"); if (state.update.phase === "idle") send("update-check"); },
     "close-sheet": closeSheet,
     logs: () => send("logs"),
     "clear-log": () => { logLines.length = 0; renderLog(); },
@@ -1299,7 +1340,7 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     $("#autoSwitch").setAttribute("aria-checked", String(state.autoAttach));
     if (changed(["games","device"])) renderGames();
     if (changed(["hub","hubSession","hubPath"])) renderHubMenu();
-    if (state.sheet && changed(["hub","hubSession","hubLaunching","hubPath","integrated","integrating","device","integrationDetail","startup","startupOther","startupError"]))
+    if (state.sheet && changed(["hub","hubSession","hubLaunching","hubPath","integrated","integrating","device","integrationDetail","startup","startupOther","startupError","update"]))
       renderSheet();
     if (state.page === "diag") renderDiag();
     renderCaption();

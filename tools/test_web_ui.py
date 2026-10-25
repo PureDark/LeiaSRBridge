@@ -15,7 +15,7 @@ with tempfile.TemporaryDirectory(prefix='webui-',dir=exe.parent.parent/'tests') 
         assert 'HorizontalOffsetTenths=80' in config and 'PredictionMs=40' in config and 'AutoAttachList=0' in config
         assert (root/'games.txt').read_text(encoding='utf-8')==''
         out=exe.parent.parent/'verification-ui';out.mkdir(exist_ok=True)
-        for name in ('overview','games','diag','odyssey'):
+        for name in ('overview','games','diag','odyssey','update'):
             capture=root/'logs'/f'ui-{name}.png';assert capture.stat().st_size>10000
             shutil.copy2(capture,out/capture.name)
         shutil.copy2(root/'logs/ui-test.json',out/'ui-test.json')

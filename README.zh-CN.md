@@ -1,4 +1,4 @@
-# LeiaSRBridge 0.9.1
+# LeiaSRBridge 0.9.2
 
 开发者入口：[构建、目录与打包说明](docs/BUILD.zh-CN.md) · [Agent 开发记录](docs/agent-history/README.md) · [HTML 设计稿](design/titan-bridge-opus5.5.html)
 
@@ -20,7 +20,20 @@
 
 兼容性依据：[AOC 分析记录](RE/aoc_compatibility_analysis.md) · [雷神分析记录](RE/thunderobot_compatibility_analysis.md) · [ViewX 分析记录](RE/viewx_compatibility_analysis.md)。
 
+## 检查更新
+
+在“更多 → 检查更新”查询 GitHub 最新正式 Release，查看版本说明后选择“下载更新”。下载及校验完成后，退出游戏、交织测试和 Odyssey Hub，再点击“安装并重启”。
+
+更新使用匿名 HTTPS，不读取或保存 GitHub 令牌。仓库仍为私有、没有 Release 或附件不可用时显示对应 HTTP 错误；网络、限流、校验及文件占用失败也会明确提示。GitHub 公开后无需改变设置。
+
+更新器验证 Release 的 SHA-256、ZIP 路径及完整文件清单，在原目录更新并保留 settings.ini、games.txt、日志、设备标定和未包含在包内的用户文件，现有免列表接入及自启动路径保持有效。覆盖失败会尝试回滚；更新期间不要新开游戏。安装目录须可写，更新不请求管理员权限。失败详情写入 update-result.txt。
+
+0.9.1 及更早版本没有此入口，需要先手动安装一次 0.9.2。检查和安装均由用户触发，不在游戏运行时自动更新。
+
 ## 本版变更
+
+- 0.9.2：新增匿名 GitHub Release 检查、版本说明、下载进度、完整性验证及原目录更新/回滚，安装完成后自动重启。
+
 
 - 项目更名为 **LeiaSRBridge**：主程序 LeiaSRBridge.exe，独立交织测试 LeiaSRBridgeTest.exe，CMake 项目、界面、托盘、图标资源、日志和发行包使用新名称。
 - 旧版设置、游戏列表和免列表接入配置保持兼容；不再提供旧程序名入口，快捷方式需改指向 LeiaSRBridge.exe。详见下方升级说明。

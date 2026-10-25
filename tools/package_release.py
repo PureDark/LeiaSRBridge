@@ -25,10 +25,10 @@ def main():
         'logs','settings.ini','games.txt','boe_mcu_mat.ini','*.log','*.tmp','verification','manifest.json','TitanLeiaBridge.exe','Stereo3DBridge.exe','TitanStereoTest.exe','Stereo3DBridgeTest.exe'))
     # README changes alone do not trigger the EXE's POST_BUILD copy.
     shutil.copy2(root/'README.zh-CN.md',package/'README.zh-CN.md')
-    for report in ('thunderobot_compatibility_analysis.md','viewx_compatibility_analysis.md'):
+    for report in ('thunderobot_compatibility_analysis.md','viewx_compatibility_analysis.md','aoc_compatibility_analysis.md'):
         (package/'RE').mkdir(exist_ok=True)
         shutil.copy2(root/'RE'/report,package/'RE'/report)
-    for device in ('thunderobot','viewx'):
+    for device in ('thunderobot','viewx','aoc'):
         shutil.copytree(root/'RE/evidence'/device,package/'RE/evidence'/device)
     (package/'docs').mkdir(exist_ok=True)
     shutil.copy2(root/'docs/ODYSSEY.zh-CN.md',package/'docs/ODYSSEY.zh-CN.md')
@@ -59,7 +59,7 @@ def main():
     # Only the current offline UI suite belongs to this release's evidence.
     # Older native-device probes remain local and are not new hardware validation.
     (verification/'ui').mkdir()
-    for name in ('ui-overview.png','ui-games.png','ui-odyssey.png','ui-diag.png','ui-test.json'):
+    for name in ('ui-overview.png','ui-games.png','ui-odyssey.png','ui-diag.png','ui-update.png','ui-test.json'):
         shutil.copy2(build/'verification-ui'/name,verification/'ui'/name)
     shutil.copy2(test_log,verification/'test.log')
     shutil.copy2(build/'Testing/Temporary/LastTest.log',verification/'test-details.log')

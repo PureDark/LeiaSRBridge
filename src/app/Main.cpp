@@ -3,6 +3,7 @@
 #include "Startup.h"
 #include "WebUi.h"
 #include "NativePreview.h"
+#include "Update.h"
 #include <nlohmann/json.hpp>
 #include <dwmapi.h>
 #include <windowsx.h>
@@ -35,6 +36,7 @@ struct Action { bool launch{}; Profile profile; bool odyssey{}; };
 std::filesystem::path appDirectory;
 HWND mainWindow{};
 app::WebUi ui;
+app::Update updater;
 bool uiReady{},uiTest{},nativePreviewTest{};
 std::deque<std::wstring> uiLogs;
 app::GlobalRuntimeStatus integrationStatus;
@@ -310,6 +312,7 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     while(GetMessageW(&message,nullptr,0,0)>0){TranslateMessage(&message);DispatchMessageW(&message);if(end&&GetTickCount64()>=end)DestroyWindow(window);}
     stopping=true;wake.notify_all();nativePreview.Stop();service.Stop();if(worker.joinable())worker.join();
     if(integrationProcess)CloseHandle(integrationProcess);
+    updater.Stop();
     mainWindow=nullptr;
     CoUninitialize();
     if(restartMode>=0)ShellExecuteW(nullptr,L"open",(appDirectory/L"LeiaSRBridge.exe").c_str(),restartMode?L"--native-preview":L"--bridge-mode",appDirectory.c_str(),SW_SHOW);

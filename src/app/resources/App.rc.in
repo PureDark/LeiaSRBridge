@@ -26,3 +26,5 @@ END
 103 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/tests/WebUiSmoke.js"
 
 104 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/tests/NativePreviewSmoke.js"
+
+105 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/src/app/update.ps1"

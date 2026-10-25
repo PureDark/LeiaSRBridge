@@ -1,6 +1,6 @@
 # 构建与目录约定
 
-项目名为 LeiaSRBridge，仓库根目录为 `F:\开发项目\LeiaSRBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.9.1，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
+项目名为 LeiaSRBridge，仓库根目录为 `F:\开发项目\LeiaSRBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.9.2，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
 
 ## 项目目录与局域网共享
 
@@ -94,3 +94,11 @@ tests/NativePreviewSmoke.js 是需要真实设备的只读 UI 检查，不属于
 - 免列表接入保持原 HKLM 所有权键、事务恢复字段和 runtime 目录布局。TitanLeiaRuntime DLL 名、转发导出、IPC、窗口类、厂商组件私有名称属于兼容接口，不全局替换。
 - RenameUpgrade 在临时目录内验证新 EXE 读取已有配置、中文空格路径、后台参数、单实例、已有补偿/预测/Hub/游戏列表。Startup 与 GlobalRuntime 在隔离 HKCU 键内验证旧登记，不修改真实系统配置。
 - 历史 RE、设计原稿和 docs/agent-history 不回写名称，以保持证据原样。当前使用和开发说明采用新产品名。
+
+## 更新器
+
+Update.cpp 将资源中内嵌的 update.ps1 写入当前用户的独立临时目录，通过系统 Windows PowerShell 5.1 隐藏执行；主线程只轮询状态，不阻塞追踪。使用 GitHub latest Release API，接受 vMAJOR.MINOR.PATCH 正式版本与匹配的 LeiaSRBridge-VERSION-win64.zip，要求 Release asset 的 sha256 digest。参考：[GitHub Release API](https://docs.github.com/en/rest/releases/releases)。
+
+更新包须为 package_release.py 生成的根目录 ZIP，包含 manifest.json；不接受源码压缩包、预览版、降级、未知下载地址或缺少完整性元数据的包。所有 ZIP 路径、文件数量和大小、清单及每个文件哈希均验证。Apply 等待主程序退出（PID + 创建时间），重新验证 ZIP，在替换前检查目标文件占用。原目录临时备份用于逐文件原子替换及失败回滚。失败会提示并保留诊断；若回滚不完整，不自动重启。正常成功会清理自己的临时下载目录。
+
+Updater 测试在隔离目录验证版本比较、Release 资产约束、ZIP 遍历及哈希拒绝、配置保留、文件锁和中途覆盖失败回滚，不接触真实安装、MCU、摄像头或游戏。WebUi 同时检查入口与模拟模式禁止联网/安装。

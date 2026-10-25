@@ -32,6 +32,15 @@ void HandleUi(const std::wstring& message) {
         if(nativeMode&&nativePreviewTest&&action=="native-preview-test-capture"){
             ui.Capture(appDirectory/L"logs"/L"native-preview.png");return;
         }
+        if(action=="update-check"){updater.Check(appDirectory,mockMode);PublishUi();return;}
+        if(action=="update-download"){updater.Download();PublishUi();return;}
+        if(action=="update-install"){
+            if(mockMode){Notice(L"离线模拟不安装更新。");return;}
+            if(integrationProcess||hubLaunching){Notice(L"请等待接入配置或 Hub 启动结束后再更新。");return;}
+            SaveTuning();SaveProfiles();
+            if(updater.Install()){restartMode=-1;PostMessageW(mainWindow,WM_COMMAND,kExit,0);}
+            PublishUi();return;
+        }
         if(action=="preview-mode"){
             if(mockMode){Notice(L"离线模拟不切换真实设备模式。");return;}
             restartMode=data.at("value").get<bool>()?1:0;SaveTuning();
@@ -103,7 +112,7 @@ void HandleUi(const std::wstring& message) {
             std::ofstream file(appDirectory/L"logs"/L"ui-test.json");file<<data.dump(2);
         }else if(action=="ui-test-capture"&&uiTest){
             const auto name=data.value("name",std::string{});
-            if(name=="overview"||name=="games"||name=="diag"||name=="odyssey")ui.Capture(appDirectory/L"logs"/Wide("ui-"+name+".png"));
+            if(name=="overview"||name=="games"||name=="diag"||name=="odyssey"||name=="update")ui.Capture(appDirectory/L"logs"/Wide("ui-"+name+".png"));
         }
         PublishUi();
     }catch(const std::exception&){Log(L"界面命令无效，未执行该操作。");}
@@ -167,7 +176,7 @@ void PublishUi(){
     }
     std::error_code ec;const bool installed=std::filesystem::is_regular_file(hubExecutable,ec);
     const char* eye=nativeMode?(n.face?"原厂跟踪中":"等待人脸"):s.eyePositionValid==kEyeTracked?"跟踪中":s.eyePositionValid==kEyeHeld?"短暂保持":s.eyePositionValid==kEyeDefault?"默认眼位":"不可用";
-    Json state{{"device",device},{"displayName",nativeMode?"LeiaSR 原厂服务":""},{"face",nativeMode?n.face:s.eyePositionValid==kEyeTracked},{"nativePreview",nativeMode},
+    Json state{{"update",updater.State()},{"device",device},{"displayName",nativeMode?"LeiaSR 原厂服务":""},{"face",nativeMode?n.face:s.eyePositionValid==kEyeTracked},{"nativePreview",nativeMode},
         {"recommendedWidth",nativeMode?n.recommendedWidth:0},{"recommendedHeight",nativeMode?n.recommendedHeight:0},
         {"integrated",integrationStatus.enabled},{"integrating",integrationProcess!=nullptr},
         {"startup",startupStatus.enabled},{"startupOther",startupStatus.registered&&!startupStatus.enabled},{"startupError",Utf8(startupStatus.error)},
@@ -217,7 +226,7 @@ LRESULT CALLBACK WindowProc(HWND window,UINT message,WPARAM wParam,LPARAM lParam
     case WM_GETMINMAXINFO:{const auto info=reinterpret_cast<MINMAXINFO*>(lParam);const auto dpi=GetDpiForWindow(window);info->ptMinTrackSize={MulDiv(920,dpi,96),MulDiv(760,dpi,96)};return 0;}
     case WM_TIMER:
         if(wParam==2){if(IsWindowVisible(window)&&!IsIconic(window))PublishPose();return 0;}
-        PollIntegration();if(IsWindowVisible(window)&&!IsIconic(window))PublishUi();return 0;
+        updater.Poll();PollIntegration();if(IsWindowVisible(window)&&!IsIconic(window))PublishUi();return 0;
     case WM_HOTKEY:
         if(wParam==kPredictionHotkey)SetPrediction(predictionMs->load()?0:lastEnabledPrediction,true);
         if(wParam>=2&&wParam<=5)SetOffset(horizontalTenths->load()+(wParam==2?-5:wParam==3?5:wParam==4?-1:1),true);

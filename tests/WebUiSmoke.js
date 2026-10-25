@@ -78,6 +78,11 @@
     await wait(()=>$('#toast').textContent.includes('离线模拟不修改'));
     check($('#startupSwitch').getAttribute('aria-checked')===startupBefore,'Mock UI never changes actual startup registration');
     document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}));
+    $('#menuBtn').click();$('[data-action="sheet-update"]').click();
+    await wait(()=>$('#updateMessage')?.textContent.includes('离线模拟不访问'));
+    check(!$('#updateInstall'),'Mock update cannot download or install');
+    await capture('update');
+    document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}));
     post('ui-test-result',{ok:true,checks:'Exact design tokens; live state; numeric offset; prediction; saved arguments; auto attach; removal; diagnostics; real logs; drawers; four captures',width:innerWidth,height:innerHeight,dpr:devicePixelRatio,animation:{posePacketsIn500ms:posePackets,distinctTransformsIn500ms:transforms.size,movePx:finalX-initialX}});
   }catch(error){post('ui-test-result',{ok:false,error:String(error),stack:error.stack});}
 })();
