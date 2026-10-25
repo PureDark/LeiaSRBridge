@@ -112,7 +112,7 @@ def main():
         clients.append({'file':str(path),'sha256':sha(path),'supported_imports':checked})
     pairs=[]
     if args.symbols:
-        for path in [package/'Stereo3DBridge.exe',package/'Stereo3DBridgeTest.exe',package/'TitanLeiaBridge.exe']+list(runtime.glob('SimulatedReality*.dll'))+[runtime/'TitanLeiaRuntime.dll',runtime/'TitanOdysseyHook.dll',runtime/'odyssey/txBridge.dll',package/'vendor/eyetracking/BOE_3DET_SDK.dll']:
+        for path in [package/'LeiaSRBridge.exe',package/'LeiaSRBridgeTest.exe']+list(runtime.glob('SimulatedReality*.dll'))+[runtime/'TitanLeiaRuntime.dll',runtime/'TitanOdysseyHook.dll',runtime/'odyssey/txBridge.dll',package/'vendor/eyetracking/BOE_3DET_SDK.dll']:
             cv=PE(path).codeview();assert cv,('missing CodeView',path)
             pdb=Path(args.symbols)/cv['pdb'];ident=pdb_identity(pdb)
             assert cv['guid']==ident['guid'] and cv['age']==ident['age'],('PDB mismatch',path,pdb)

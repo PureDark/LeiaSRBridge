@@ -8,7 +8,7 @@ assert actual.startswith(original), 'The original design CSS changed'
 html=(root/'src/app/ui/index.html.in').read_text(encoding='utf-8')
 for forbidden in ('Math.random','simulate(','<div class="design-ctl">','PID 18244','演示：'):
     assert forbidden not in html,forbidden
-ico=(root/'src/app/resources/Stereo3DBridge.ico').read_bytes()
+ico=(root/'src/app/resources/LeiaSRBridge.ico').read_bytes()
 assert struct.unpack_from('<HHH',ico)==(0,1,9)
 for i in range(9):
     width,height,_,_,_,depth,size,offset=struct.unpack_from('<BBBBHHII',ico,6+i*16)

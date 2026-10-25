@@ -23,7 +23,7 @@ struct SlotLock {
 }
 
 void RuntimeLog(const char* message) noexcept {
-    OutputDebugStringA("[Stereo3DBridge] ");
+    OutputDebugStringA("[LeiaSRBridge] ");
     OutputDebugStringA(message);
     OutputDebugStringA("\n");
     try {
@@ -60,7 +60,7 @@ std::shared_ptr<IpcClient> IpcClient::Connect() {
 
 IpcClient::IpcClient() {
     mapping_ = OpenFileMappingW(FILE_MAP_ALL_ACCESS, FALSE, kMappingName);
-    if (!mapping_) throw std::runtime_error("Stereo3DBridge must be running before creating a Leia context");
+    if (!mapping_) throw std::runtime_error("LeiaSRBridge must be running before creating a Leia context");
     state_ = static_cast<SharedState*>(MapViewOfFile(mapping_, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(SharedState)));
     Snapshot snapshot{};
     if (!ReadSnapshot(state_, snapshot) || !Recent(snapshot.heartbeatTick, GetTickCount64())) {
@@ -68,7 +68,7 @@ IpcClient::IpcClient() {
         CloseHandle(mapping_);
         state_ = nullptr;
         mapping_ = nullptr;
-        throw std::runtime_error("Stereo3DBridge IPC version or broker heartbeat is invalid");
+        throw std::runtime_error("LeiaSRBridge IPC version or broker heartbeat is invalid");
     }
     creationTime_ = ProcessCreationTime(GetCurrentProcess());
     if (creationTime_ && BeginSlotWrite()) EndSlotWrite();
@@ -78,7 +78,7 @@ IpcClient::IpcClient() {
         if (stop_) CloseHandle(stop_);
         UnmapViewOfFile(state_);
         CloseHandle(mapping_);
-        throw std::runtime_error("Stereo3DBridge cannot allocate an IPC client lease");
+        throw std::runtime_error("LeiaSRBridge cannot allocate an IPC client lease");
     }
     try { worker_ = std::thread(&IpcClient::Run, this); }
     catch (...) {

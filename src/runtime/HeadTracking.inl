@@ -181,7 +181,7 @@ public:
         std::lock_guard lock(feed_->mutex);
         for(auto& weak:feed_->streams)if(auto stream=weak.lock())stream->close();
     }
-    std::string getName() override{return "Stereo3DBridge tracking";}
+    std::string getName() override{return "LeiaSRBridge tracking";}
     std::string getDescription() override{return feed_->raw?
         "BOE eyes without bridge prediction; synthetic optical fallback has time=0":
         "Display-space eyes/center in mm; Rodrigues radians; estimated 140 mm ears; synthetic fallback has time=0";}

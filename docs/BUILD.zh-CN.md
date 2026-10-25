@@ -1,6 +1,6 @@
 # 构建与目录约定
 
-项目名为 Stereo3DBridge；为保留当前局域网共享与开发路径，仓库根目录仍为 `F:\开发项目\TitanLeiaBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.9.0，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
+项目名为 LeiaSRBridge；为保留当前局域网共享与开发路径，仓库根目录仍为 `F:\开发项目\TitanLeiaBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.9.1，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
 
 ## 配置、编译、测试
 
@@ -75,14 +75,14 @@ Git 忽略构建目录、发行包、依赖、安装包、分析二进制和 IDA
 
 NativePreview.cpp 使用已安装官方 C API 的 Head/Eye listener，不链接桥接导入库，不创建 Broker。原厂路径从 64 位注册表读取；验证所有必需导出后才创建不请求镜片的 context。退出时先解除回调，再删除 listener/context 和卸载模块。接口出错时留在预览错误状态，不自动转入 BOE 模式。
 
-tests/NativePreviewSmoke.js 是需要真实设备的只读 UI 检查，不属于无硬件 CTest。显式执行 Stereo3DBridge.exe --native-preview-test --duration-ms 10000，生成 logs/native-preview-test.json 和 logs/native-preview.png；检查原生模式提示、桥接控件隐藏、pose 包更新、镜像变换及原厂推荐视图尺寸。0.8.2 在本机原厂服务实测返回 1920 × 1080 px；主屏首选模式为 3840 × 2160 px。0.8.3 的 Bridge API 将原生宽高各除以 2，推荐单眼尺寸为 1920 × 1080 px；均基于读取结果而非硬编码。原厂 Displays 模块和 context 一同保留，context 销毁后再卸载；查询缺失或返回无效值只显示暂不可用，不中断追踪。测试入口不保存运行模式，也不调节设备或调用游戏操作。不要将有限次实机通过解释为任意 LeiaSR 版本兼容。
+tests/NativePreviewSmoke.js 是需要真实设备的只读 UI 检查，不属于无硬件 CTest。显式执行 LeiaSRBridge.exe --native-preview-test --duration-ms 10000，生成 logs/native-preview-test.json 和 logs/native-preview.png；检查原生模式提示、桥接控件隐藏、pose 包更新、镜像变换及原厂推荐视图尺寸。0.8.2 在本机原厂服务实测返回 1920 × 1080 px；主屏首选模式为 3840 × 2160 px。0.8.3 的 Bridge API 将原生宽高各除以 2，推荐单眼尺寸为 1920 × 1080 px；均基于读取结果而非硬编码。原厂 Displays 模块和 context 一同保留，context 销毁后再卸载；查询缺失或返回无效值只显示暂不可用，不中断追踪。测试入口不保存运行模式，也不调节设备或调用游戏操作。不要将有限次实机通过解释为任意 LeiaSR 版本兼容。
 
-## 0.9.0 名称与兼容边界
+## 0.9.1 名称与兼容边界
 
-- CMake 项目和主目标：Stereo3DBridge；独立测试目标：Stereo3DBridgeTest。
-- LegacyLauncher 目标生成 TitanLeiaBridge.exe，只转发到同目录的 Stereo3DBridge.exe，不包含旧版桥接逻辑；保留命令行和退出码。
-- settings.ini / games.txt 的位置与字段不变。主日志为 logs/Stereo3DBridge.log。
-- 自启动读取新旧 Run 条目。同目录旧命令仅更新 EXE 路径、保留原值名，保证 Windows StartupApproved 禁用状态仍对应同一条目。已有新名称登记优先；不会自动迁移另一安装目录或打开原本未登记的自启动。
+- CMake 项目和主目标：LeiaSRBridge；独立测试目标：LeiaSRBridgeTest。
+- 不构建或打包旧名启动器。正式入口仅 LeiaSRBridge.exe 和 LeiaSRBridgeTest.exe；打包脚本排除旧构建目录中残留的旧名 EXE。
+- settings.ini / games.txt 的位置与字段不变。主日志为 logs/LeiaSRBridge.log。
+- 自启动读取三代 Run 条目；同目录旧项迁移到 LeiaSRBridge，并复制 StartupApproved 状态后移除旧 Run 项。已有新名称登记优先；不会自动迁移另一安装目录或打开原本未登记的自启动。
 - 免列表接入保持原 HKLM 所有权键、事务恢复字段和 runtime 目录布局。TitanLeiaRuntime DLL 名、转发导出、IPC、窗口类、厂商组件私有名称属于兼容接口，不全局替换。
-- RenameUpgrade 在临时目录内验证旧 EXE 到新程序的转发、中文空格路径、后台参数、单实例、已有补偿/预测/Hub/游戏列表。Startup 与 GlobalRuntime 在隔离 HKCU 键内验证旧登记，不修改真实系统配置。
+- RenameUpgrade 在临时目录内验证新 EXE 读取已有配置、中文空格路径、后台参数、单实例、已有补偿/预测/Hub/游戏列表。Startup 与 GlobalRuntime 在隔离 HKCU 键内验证旧登记，不修改真实系统配置。
 - 历史 RE、设计原稿和 docs/agent-history 不回写名称，以保持证据原样。当前使用和开发说明采用新产品名。

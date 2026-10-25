@@ -264,7 +264,7 @@ struct BrokerService::Impl {
         singleton = CreateMutexW(nullptr, FALSE, kBrokerMutexName);
         if (!singleton || GetLastError() == ERROR_ALREADY_EXISTS) {
             if (singleton) { CloseHandle(singleton); singleton = nullptr; }
-            Log(L"Another Stereo3DBridge broker is already running.");
+            Log(L"Another LeiaSRBridge broker is already running.");
             return false;
         }
         mapping = CreateFileMappingW(INVALID_HANDLE_VALUE, nullptr, PAGE_READWRITE, 0,

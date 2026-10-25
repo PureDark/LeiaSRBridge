@@ -60,7 +60,7 @@ void SaveTuning();
 
 void RefreshIntegrationStatus() {
     integrationStatus=app::ReadGlobalRuntimeStatus(appDirectory/L"runtime");
-    startupStatus=app::ReadStartupStatus(appDirectory/L"Stereo3DBridge.exe");
+    startupStatus=app::ReadStartupStatus(appDirectory/L"LeiaSRBridge.exe");
 }
 
 std::string Utf8(const std::wstring& value) {
@@ -89,7 +89,7 @@ void ConfigureIntegration(bool enable) {
         Log(message);if(uiReady)ui.Post(Wide(nlohmann::json{{"type","notice"},{"text",Utf8(message)}}.dump()));return;
     }
     if(mockMode){Log(L"离线模拟不修改系统接入配置。");return;}
-    const auto exe=appDirectory/L"Stereo3DBridge.exe";
+    const auto exe=appDirectory/L"LeiaSRBridge.exe";
     SHELLEXECUTEINFOW request{sizeof(request)};
     request.fMask=SEE_MASK_NOCLOSEPROCESS|SEE_MASK_NOASYNC;
     request.hwnd=mainWindow;request.lpVerb=L"runas";request.lpFile=exe.c_str();
@@ -224,7 +224,7 @@ void SetPrediction(unsigned value, bool notify) {
     const std::wstring label=L"水平眼位预测："+std::to_wstring(value)+L" ms";
 
     SaveTuning();
-    if(notify){tray.uFlags=NIF_INFO;wcscpy_s(tray.szInfoTitle,L"Stereo3DBridge");
+    if(notify){tray.uFlags=NIF_INFO;wcscpy_s(tray.szInfoTitle,L"LeiaSRBridge");
         const std::wstring info=label+L"；Ctrl+Alt+F9 开关";
         wcsncpy_s(tray.szInfo,info.c_str(),_TRUNCATE);tray.dwInfoFlags=NIIF_INFO;
         Shell_NotifyIconW(NIM_MODIFY,&tray);}
@@ -233,7 +233,7 @@ void NotifyTuning(const std::wstring& label) {
     tray.uFlags=NIF_TIP;wcsncpy_s(tray.szTip,label.c_str(),_TRUNCATE);Shell_NotifyIconW(NIM_MODIFY,&tray);
     static ULONGLONG last{};const auto now=GetTickCount64();
     if(now-last<500)return;
-    last=now;tray.uFlags=NIF_INFO;wcscpy_s(tray.szInfoTitle,L"Stereo3DBridge");
+    last=now;tray.uFlags=NIF_INFO;wcscpy_s(tray.szInfoTitle,L"LeiaSRBridge");
     wcsncpy_s(tray.szInfo,label.c_str(),_TRUNCATE);tray.dwInfoFlags=NIIF_INFO;Shell_NotifyIconW(NIM_MODIFY,&tray);
 }
 void SetOffset(int value,bool notify) {
@@ -278,13 +278,13 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
         if(!background){ShowWindow(existing,SW_RESTORE);SetForegroundWindow(existing);}
         CoUninitialize();return 0;
     }
-    logFile.open(appDirectory/L"logs"/L"Stereo3DBridge.log",std::ios::binary|std::ios::app);
+    logFile.open(appDirectory/L"logs"/L"LeiaSRBridge.log",std::ios::binary|std::ios::app);
     std::ifstream games(appDirectory/L"games.txt",std::ios::binary);std::string line;
     while(std::getline(games,line)){if(!line.empty()&&line.back()=='\r')line.pop_back();const auto tab=line.find('\t');
         const auto path=Wide(line.substr(0,tab));if(!path.empty())profiles.push_back({path,tab==std::string::npos?L"":Wide(line.substr(tab+1))});}
     if(!mock&&!nativePreviewTest){
         std::wstring migrationError;
-        if(!app::MigrateLegacyStartup(appDirectory/L"Stereo3DBridge.exe",migrationError))
+        if(!app::MigrateLegacyStartup(appDirectory/L"LeiaSRBridge.exe",migrationError))
             Log(L"旧自启动入口未迁移："+migrationError);
     }
     LoadTuning();
@@ -293,14 +293,14 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     WNDCLASSW wc{};wc.lpfnWndProc=WindowProc;wc.hInstance=instance;wc.lpszClassName=L"TitanLeiaBridge.Main.v1";
     wc.hCursor=LoadCursorW(nullptr,IDC_ARROW);wc.hbrBackground=CreateSolidBrush(RGB(250,249,246));wc.hIcon=LoadIconW(instance,MAKEINTRESOURCEW(101));
     RegisterClassW(&wc);
-    HWND window=CreateWindowW(wc.lpszClassName,L"Stereo3DBridge",WS_POPUP|WS_THICKFRAME|WS_SYSMENU|WS_MINIMIZEBOX,
+    HWND window=CreateWindowW(wc.lpszClassName,L"LeiaSRBridge",WS_POPUP|WS_THICKFRAME|WS_SYSMENU|WS_MINIMIZEBOX,
         CW_USEDEFAULT,CW_USEDEFAULT,MulDiv(920,GetDpiForSystem(),96),MulDiv(760,GetDpiForSystem(),96),nullptr,nullptr,instance,nullptr);
     if(!window)return 1;
     broker::ProviderOptions options;options.mock=mock;options.logDirectory=appDirectory/L"logs";options.vendorDirectory=appDirectory/L"vendor";
     options.predictionMs=predictionMs;
     options.horizontalTenths=horizontalTenths;
     if(nativeMode)nativePreview.Start(Log);
-    else if(!service.Start(options,Log)){if(!background)MessageBoxW(window,L"转接器已在运行，或无法建立后台服务。",L"Stereo3DBridge",MB_ICONINFORMATION);DestroyWindow(window);return 1;}
+    else if(!service.Start(options,Log)){if(!background)MessageBoxW(window,L"转接器已在运行，或无法建立后台服务。",L"LeiaSRBridge",MB_ICONINFORMATION);DestroyWindow(window);return 1;}
     SetPrediction(predictionMs->load(),false);SetOffset(horizontalTenths->load(),false);
     if(!nativeMode)worker=std::thread(Worker);
     if(!background)ShowWindow(window,SW_SHOW);
@@ -312,6 +312,6 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     if(integrationProcess)CloseHandle(integrationProcess);
     mainWindow=nullptr;
     CoUninitialize();
-    if(restartMode>=0)ShellExecuteW(nullptr,L"open",(appDirectory/L"Stereo3DBridge.exe").c_str(),restartMode?L"--native-preview":L"--bridge-mode",appDirectory.c_str(),SW_SHOW);
+    if(restartMode>=0)ShellExecuteW(nullptr,L"open",(appDirectory/L"LeiaSRBridge.exe").c_str(),restartMode?L"--native-preview":L"--bridge-mode",appDirectory.c_str(),SW_SHOW);
     return 0;
 }

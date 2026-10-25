@@ -1,23 +1,36 @@
-# Stereo3DBridge 0.9.0
+# LeiaSRBridge 0.9.1
 
 开发者入口：[构建、目录与打包说明](docs/BUILD.zh-CN.md) · [Agent 开发记录](docs/agent-history/README.md) · [HTML 设计稿](design/titan-bridge-opus5.5.html)
 
-面向兼容 BOE / DepthTransformerPlus 底层方案的独立 LeiaSR 转接器；目前已实机验证泰坦军团 M27E6V-3D。支持 SDK 1.34.10、Windows x64，含现代 DX12 与 Odyssey 使用的旧版 DX11/DX12 接口。直接使用 FallenFlower3D 和 YakuzaVRMod 已生成的左右眼图像，不修改游戏或 mod 文件。
+面向京东方（BOE）裸眼 3D 显示器的独立 LeiaSR 转接器，支持使用兼容 BOE / DepthTransformerPlus 底层方案的显示器，包括泰坦军团、雷神；ViewX 暂不支持。支持 SDK 1.34.10、Windows x64，含现代 DX12 与 Odyssey 使用的旧版 DX11/DX12 接口。直接使用 FallenFlower3D 和 YakuzaVRMod 已生成的左右眼图像，不修改游戏或 mod 文件。
+
+## 显示器兼容性
+
+支持范围以 **BOE / DepthTransformerPlus 的设备控制、眼位追踪和交织方案兼容**为准，不限显示器品牌；仅使用京东方裸眼 3D 面板，并不足以确认兼容。
+
+| 品牌 / 设备 | 当前支持情况 | 验证情况 |
+|---|---|---|
+| 泰坦军团 M27E6V-3D | 支持 | 已实机验证 |
+| 雷神裸眼 3D 显示器（使用本次分析的 DepthTransformerPlus 方案） | 支持现有桥接，无需另写适配 | 配套软件核心组件与现有后端完全一致，实体屏待验证 |
+| 其他采用相同 BOE / DepthTransformerPlus 底层方案的裸眼 3D 显示器 | 可使用现有桥接，具体型号需确认兼容 | 未逐型号验证 |
+| ViewX 裸眼 3D 显示器 | **暂不支持** | 已分析的软件使用不同的 LF3D 交织路径，适配暂缓 |
+
+兼容性依据：[雷神分析记录](RE/thunderobot_compatibility_analysis.md) · [ViewX 分析记录](RE/viewx_compatibility_analysis.md)。
 
 ## 本版变更
 
-- 项目更名为 **Stereo3DBridge**：主程序 Stereo3DBridge.exe，独立交织测试 Stereo3DBridgeTest.exe，CMake 项目、界面、托盘、图标资源、日志和发行包使用新名称。
-- 旧版设置、游戏列表和免列表接入配置保持兼容；保留旧程序名转发入口，旧快捷方式仍可使用。详见下方升级说明。
+- 项目更名为 **LeiaSRBridge**：主程序 LeiaSRBridge.exe，独立交织测试 LeiaSRBridgeTest.exe，CMake 项目、界面、托盘、图标资源、日志和发行包使用新名称。
+- 旧版设置、游戏列表和免列表接入配置保持兼容；不再提供旧程序名入口，快捷方式需改指向 LeiaSRBridge.exe。详见下方升级说明。
 - 适配目标为兼容的 BOE / DepthTransformerPlus 底层方案，并不表示任意版本或型号均已验证。
 
-## 从 TitanLeiaBridge 升级
+## 从 TitanLeiaBridge / Stereo3DBridge 升级
 
 1. 退出旧桥接程序、Hub 和游戏，将新版包内文件覆盖到**原来的安装目录**。保留 settings.ini、games.txt 和 vendor 目录结构，无需重填水平补偿、预测、运行模式或游戏列表。
-2. 启动 Stereo3DBridge.exe。旧 TitanLeiaBridge.exe 现在是兼容启动器，会将参数转交给新程序；旧快捷方式或已登记的旧 EXE 路径仍有效。
-3. 同目录的旧自启动命令会自动改为新 EXE。旧 Run 条目名称及 Windows 启动审批状态保留，避免把用户在 Windows 中禁用的自启动重新启用；新安装使用 Stereo3DBridge 条目。关闭自启动会清除本程序的新旧条目。
+2. 启动 LeiaSRBridge.exe。新版不包含 TitanLeiaBridge.exe、Stereo3DBridge.exe 或旧测试程序；覆盖升级后请删除遗留的旧 EXE，并更新快捷方式。
+3. 首次启动新版时，同目录的旧自启动项会迁移到 LeiaSRBridge 名称和新 EXE，并复制 Windows 启动审批状态，保留用户已禁用的状态。关闭自启动会清除本程序的新旧条目。
 4. 原目录内 runtime 路径不变时，已有免列表接入继续识别，无需因改名再次提权。若换到其他目录，仍须在系统接入中更新路径一次，并重新启用自启动来更新位置。
 
-主日志改为 logs/Stereo3DBridge.log，旧日志不删除。为兼容已登记的免列表接入、旧客户端和设备组件，内部保留 TitanLeiaRuntime.dll、原有 IPC/窗口类名、WebView 缓存和 Software\\TitanLeiaBridge\\RuntimeIntegration 注册表标识。它们属于兼容协议，不是遗漏的界面名称。历史发行包、逆向证据、设计原稿和 Agent 原始记录保留当时名称。
+主日志改为 logs/LeiaSRBridge.log，旧日志不删除。为兼容已登记的免列表接入、旧客户端和设备组件，内部保留 TitanLeiaRuntime.dll、原有 IPC/窗口类名、WebView 缓存和 Software\\TitanLeiaBridge\\RuntimeIntegration 注册表标识。它们属于兼容协议，不是遗漏的界面名称。历史发行包、逆向证据、设计原稿和 Agent 原始记录保留当时名称。
 
 ## 推荐单眼尺寸
 
@@ -34,7 +47,7 @@
 
 - 首页头部示意现在统一镜像显示转头、歪头及左右眼标记；位移方向与范围保持原样。
 - 新增“更多 → 原生 LeiaSR 预览”：真实 LeiaSR / Odyssey 显示器可直接读取原厂头姿与双眼位置。此模式不启动 BOE 设备、不创建桥接共享状态、不接管游戏、不进行交织，也不请求开启镜片。
-- 原生预览不应用桥接的水平补偿或预测，切换模式后会记住选择；从同一菜单可“切回设备桥接”。命令行也可使用 Stereo3DBridge.exe --native-preview 或 --bridge-mode。
+- 原生预览不应用桥接的水平补偿或预测，切换模式后会记住选择；从同一菜单可“切回设备桥接”。命令行也可使用 LeiaSRBridge.exe --native-preview 或 --bridge-mode。
 - 原生预览要求已安装并运行官方 LeiaSR 服务。按官方注册路径加载 DLL，不从桥接 PATH 寻找运行库。已有系统免列表接入配置不会被自动改变；若要让其他游戏也恢复原厂路径，请在桥接模式的系统接入设置中显式恢复。
 - 保留已同步的原生 Odyssey 初始化和 legacy DX12 输入修复。
 
@@ -82,11 +95,11 @@
 
 ## 使用
 
-1. 退出游戏和旧版桥接程序，把新包完整解压到可写目录，例如 `D:\Stereo3DBridge`。迁移旧目录的 `games.txt`；后续升级也可以迁移 `settings.ini`。不要用旧 DLL 覆盖新包。
-2. 不需要 DepthTransformerPlus，不需要注册 COM。关闭其他占用该屏 MCU 或摄像头的 3D 程序，再运行 `Stereo3DBridge.exe`。
+1. 退出游戏和旧版桥接程序，把新包完整解压到可写目录，例如 `D:\LeiaSRBridge`。迁移旧目录的 `games.txt`；后续升级也可以迁移 `settings.ini`。不要用旧 DLL 覆盖新包。
+2. 不需要 DepthTransformerPlus，不需要注册 COM。关闭其他占用该屏 MCU 或摄像头的 3D 程序，再运行 `LeiaSRBridge.exe`。
 3. 首次点击 **“启用免列表接入”**，允许 Windows 管理员提示；“免列表接入”显示“已启用”后，完全退出并重新打开 Steam 等游戏启动器。若启动器仍使用旧环境，注销并重新登录 Windows。这一步只配置一次，更换桥接目录/升级到新目录后再点一次。
 4. 等待设备和校准就绪，点击“后台运行”，随后正常启动游戏，游戏内选择 **LeiaSR**。不需要添加游戏列表。头追需要在 mod 内开启其头部跟随选项，桥接器不会修改 mod 设置。
-5. 关闭桥接窗口会隐藏到托盘；用右上角“更多 → 退出转接器”或托盘右键“退出”才能结束后台。之后使用时只需先启动桥接；可用 `Stereo3DBridge.exe --background` 直接隐藏运行。
+5. 关闭桥接窗口会隐藏到托盘；用右上角“更多 → 退出转接器”或托盘右键“退出”才能结束后台。之后使用时只需先启动桥接；可用 `LeiaSRBridge.exe --background` 直接隐藏运行。
 
 配置作用于系统 PATH 中的桥接 runtime 路径，不覆盖原厂 DLL、不注册伪 SR Service、不停止原厂服务。配置会保留到显式恢复；桥接退出后，已选择桥接运行库的新游戏需要后台重新运行才能取得设备，不能自动切到原厂。
 
@@ -100,13 +113,13 @@ Windows 已加载的同名 DLL、游戏目录中的 DLL 或自定义搜索路径
 
 ## 开机后自动可用
 
-1. 将程序固定放在可写目录，例如 `D:\Stereo3DBridge`。退出旧版和游戏后升级文件；保持相同路径可沿用系统接入和自启动登记。
+1. 将程序固定放在可写目录，例如 `D:\LeiaSRBridge`。退出旧版和游戏后升级文件；保持相同路径可沿用系统接入和自启动登记。
 2. 在“更多 → 系统接入与启动”启用免列表接入，首次接受管理员提示；之后该项应显示“已启用”。首次配置后重启 Steam 等启动器，或重新登录 Windows。
 3. 打开同一抽屉中的“开机自启动”。以后登录 Windows 后程序会在托盘运行，直接正常启动游戏即可，不需要每天再点“启用”。
 
 两项设置独立保存：关闭自启动不会恢复原厂接入；恢复原厂接入也不会关闭自启动。如果升级解压到另一个版本目录，需要在新目录重新启用免列表接入一次，并打开自启动开关以更新启动路径。Windows“启动应用”中手动禁用此程序时，需要在那里重新允许运行。
 
-新安装的自启动使用 `HKCU\Software\Microsoft\Windows\CurrentVersion\Run` 中的 `Stereo3DBridge` 项（旧版升级继续使用 TitanLeiaBridge 项并更新命令），命令为带引号的 EXE 绝对路径加 `--background`，不使用管理员任务或每次登录的提权脚本。启动文件位置以注册表为准，不随 `settings.ini` 迁移自动启用。免列表接入仍使用原有持久系统 PATH 配置，启动时只读取，不重新写入。
+新安装的自启动使用 `HKCU\Software\Microsoft\Windows\CurrentVersion\Run` 中的 `LeiaSRBridge` 项（同目录旧版登记在首次启动新版时迁移到此项），命令为带引号的 EXE 绝对路径加 `--background`，不使用管理员任务或每次登录的提权脚本。启动文件位置以注册表为准，不随 `settings.ini` 迁移自动启用。免列表接入仍使用原有持久系统 PATH 配置，启动时只读取，不重新写入。
 
 ## 调节与保存
 
@@ -143,7 +156,7 @@ SDK `orientation` 使用与已检查的 Leia 实现一致的 **Rodrigues 旋转�
 
 概览页“交织测试”保留静态网格/圆盘和分眼图案，采用相同的全局偏移和预测，不再自动关闭预测。把窗口移到目标屏后按 Enter；1/2/3 切换图案，Esc 退出。以目标屏原生分辨率、SDR 运行。它不另开摄像头或 MCU，也不写标定。
 
-必要日志在 `logs/Stereo3DBridge.log`、`logs/runtime-<PID>.log` 和 `logs/StereoTest.log`；接入配置失败详情在 `logs/RuntimeIntegration.log`。原厂组件也可能产生自己的日志。
+必要日志在 `logs/LeiaSRBridge.log`、`logs/runtime-<PID>.log` 和 `logs/StereoTest.log`；接入配置失败详情在 `logs/RuntimeIntegration.log`。原厂组件也可能产生自己的日志。
 
 ## 验证
 

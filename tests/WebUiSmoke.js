@@ -11,7 +11,7 @@
   const check=(value,label)=>{if(!value)throw new Error(label);};
   const capture=async name=>{await pause();post('ui-test-capture',{name});await pause();};
   try {
-    if(document.title!=="Stereo3DBridge")throw Error("Product title not renamed");
+    if(document.title!=="LeiaSRBridge")throw Error("Product title not renamed");
     await wait(()=>$('#heroChip').textContent.includes('离线模拟'));
     check(!$('#checks').textContent.includes('推荐视图尺寸'),'Native dimensions hidden in bridge mode');
     check(!document.querySelector('.design-ctl'),'Prototype controls removed');

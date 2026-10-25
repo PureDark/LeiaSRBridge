@@ -65,7 +65,7 @@ void HandleUi(const std::wstring& message) {
             if(mockMode)Notice(L"离线模拟不修改 Windows 自启动设置。");
             else{
                 std::wstring error;const bool enable=data.at("value").get<bool>();
-                if(app::ConfigureStartup(appDirectory/L"Stereo3DBridge.exe",enable,error))
+                if(app::ConfigureStartup(appDirectory/L"LeiaSRBridge.exe",enable,error))
                     Notice(enable?L"已开启：登录 Windows 后自动在后台运行。":L"已关闭开机自启动，免列表接入配置仍保留。");
                 else{Notice(error);Log(error);}
             }
@@ -93,7 +93,7 @@ void HandleUi(const std::wstring& message) {
             }
         }else if(action=="logs")ShellExecuteW(mainWindow,L"open",(appDirectory/L"logs").c_str(),nullptr,nullptr,SW_SHOW);
         else if(action=="stereo"){
-            if(reinterpret_cast<INT_PTR>(ShellExecuteW(mainWindow,L"open",(appDirectory/L"Stereo3DBridgeTest.exe").c_str(),nullptr,appDirectory.c_str(),SW_SHOW))<=32)
+            if(reinterpret_cast<INT_PTR>(ShellExecuteW(mainWindow,L"open",(appDirectory/L"LeiaSRBridgeTest.exe").c_str(),nullptr,appDirectory.c_str(),SW_SHOW))<=32)
                 Log(L"无法启动交织测试，请完整解压安装包。");
         }else if(action=="hide")ShowWindow(mainWindow,SW_HIDE);
         else if(action=="minimize")ShowWindow(mainWindow,SW_MINIMIZE);
@@ -198,7 +198,7 @@ LRESULT CALLBACK WindowProc(HWND window,UINT message,WPARAM wParam,LPARAM lParam
         });
         tray.cbSize=sizeof(tray);tray.hWnd=window;tray.uID=1;tray.uFlags=NIF_MESSAGE|NIF_ICON|NIF_TIP;
         tray.uCallbackMessage=kTrayMessage;tray.hIcon=LoadIconW(GetModuleHandleW(nullptr),MAKEINTRESOURCEW(101));
-        wcscpy_s(tray.szTip,L"Stereo3DBridge");Shell_NotifyIconW(NIM_ADD,&tray);
+        wcscpy_s(tray.szTip,L"LeiaSRBridge");Shell_NotifyIconW(NIM_ADD,&tray);
         if(!nativeMode){
         if(!RegisterHotKey(window,kPredictionHotkey,MOD_CONTROL|MOD_ALT|MOD_NOREPEAT,VK_F9))Log(L"Ctrl+Alt+F9 已被占用，请使用窗口调节。");
         const UINT keys[]{VK_LEFT,VK_RIGHT,VK_LEFT,VK_RIGHT,VK_HOME};

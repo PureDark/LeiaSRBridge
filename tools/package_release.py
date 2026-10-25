@@ -14,17 +14,22 @@ def main():
     args=parser.parse_args()
     root=Path(__file__).resolve().parents[1]
     build=args.build.resolve()
-    version=re.search(r'project\(Stereo3DBridge VERSION ([0-9.]+)',(root/'CMakeLists.txt').read_text()).group(1)
-    package=root/'dist'/f'Stereo3DBridge-{version}-win64'
+    version=re.search(r'project\(LeiaSRBridge VERSION ([0-9.]+)',(root/'CMakeLists.txt').read_text()).group(1)
+    package=root/'dist'/f'LeiaSRBridge-{version}-win64'
     archive=Path(str(package)+'.zip')
     assert not package.exists() and not archive.exists(),'Release already exists; do not replace it silently'
     test_log=build/'full-tracking-tests.log'
     assert '100% tests passed' in test_log.read_text(encoding='utf-8'),'Complete successful test log required'
     source=build/'package'
     shutil.copytree(source,package,ignore=shutil.ignore_patterns(
-        'logs','settings.ini','games.txt','boe_mcu_mat.ini','*.log','*.tmp','verification','manifest.json','TitanStereoTest.exe'))
+        'logs','settings.ini','games.txt','boe_mcu_mat.ini','*.log','*.tmp','verification','manifest.json','TitanLeiaBridge.exe','Stereo3DBridge.exe','TitanStereoTest.exe','Stereo3DBridgeTest.exe'))
     # README changes alone do not trigger the EXE's POST_BUILD copy.
     shutil.copy2(root/'README.zh-CN.md',package/'README.zh-CN.md')
+    for report in ('thunderobot_compatibility_analysis.md','viewx_compatibility_analysis.md'):
+        (package/'RE').mkdir(exist_ok=True)
+        shutil.copy2(root/'RE'/report,package/'RE'/report)
+    for device in ('thunderobot','viewx'):
+        shutil.copytree(root/'RE/evidence'/device,package/'RE/evidence'/device)
     (package/'docs').mkdir(exist_ok=True)
     shutil.copy2(root/'docs/ODYSSEY.zh-CN.md',package/'docs/ODYSSEY.zh-CN.md')
     for name in ('msvcp140.dll','vcruntime140.dll','vcruntime140_1.dll','concrt140.dll','msvcp140_atomic_wait.dll'):
@@ -44,7 +49,7 @@ def main():
         record['packaged_sha256']=actual
     provenance.append({'file':'eyetracking/BOE_3DET_SDK.dll',
         'packaged_sha256':sha(package/'vendor/eyetracking/BOE_3DET_SDK.dll'),
-        'note':'Stereo3DBridge result/subpixel-copy proxy; exact vendor identity and same-frame checks; no code/filter patch.'})
+        'note':'LeiaSRBridge result/subpixel-copy proxy; exact vendor identity and same-frame checks; no code/filter patch.'})
     write_json(package/'vendor/provenance.json',provenance)
     verification=package/'verification';verification.mkdir()
     shutil.copy2(root/'RE/bridge_rotation_0.4.0.md',verification/'rotation.md')
@@ -79,7 +84,7 @@ def main():
         'foreign_device_calibration_in_package':False,'vendor_algorithm_unmodified':True,
         'result_proxy_filter_bypass':False,'head_pose':'stereo subpixel facial geometry; Rodrigues radians',
         'mcu_sha256':sha(package/'vendor/MCU_library.dll')})
-    manifest={'product':'Stereo3DBridge','version':version,'sdk':'1.34.10',
+    manifest={'product':'LeiaSRBridge','version':version,'sdk':'1.34.10',
         'architecture':'x64','graphics':'DX11 legacy / DX12 legacy and modern','protocol':3,
         'packagedAtUtc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'files':[{'file':p.relative_to(package).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p)}

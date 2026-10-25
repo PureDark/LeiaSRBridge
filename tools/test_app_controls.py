@@ -86,6 +86,6 @@ with tempfile.TemporaryDirectory(prefix='controls-',dir=exe.parent.parent/'tests
                 if window:u.SendMessageW(window,0x111,112,0)
                 try:p.wait(timeout=5)
                 except subprocess.TimeoutExpired:p.terminate();p.wait()
-    log=(path/'logs/Stereo3DBridge.log').read_text(encoding='utf-8')
+    log=(path/'logs/LeiaSRBridge.log').read_text(encoding='utf-8')
     assert '快捷键注册失败' not in log and 'Eye observations' not in log and 'Eye filter' not in log
     print('AppControls PASS: +8 mm/40 ms defaults; global coarse/fine/zero; negative/numeric offset; prediction cycle/toggle; three-process save/reload including disabled prediction; no hardware/game.')

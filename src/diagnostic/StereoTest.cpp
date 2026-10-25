@@ -269,7 +269,7 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR args,int) {
         Log(offline?"Offline WARP native SDK test":"Original native DX11 interleaver; shared broker offset/prediction");
         if(offline)return SelfTest();
         auto ipc=titan::IpcClient::Connect();titan::Snapshot s{};
-        if(!ipc->SnapshotForWeave(s))throw std::runtime_error("Start Stereo3DBridge and wait for device/calibration readiness");
+        if(!ipc->SnapshotForWeave(s))throw std::runtime_error("Start LeiaSRBridge and wait for device/calibration readiness");
         WNDCLASSW wc{};wc.hInstance=instance;wc.lpfnWndProc=WindowProc;wc.lpszClassName=L"Stereo3DBridgeTest";
         wc.hCursor=LoadCursorW(nullptr,IDC_ARROW);wc.hbrBackground=reinterpret_cast<HBRUSH>(COLOR_WINDOW+1);
         RegisterClassW(&wc);HWND window=CreateWindowW(wc.lpszClassName,L"原厂交织测试 — 移动到目标屏后按 Enter",WS_OVERLAPPEDWINDOW,
@@ -300,5 +300,5 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR args,int) {
         ipc->MarkWeave(window,false);ipc->RemoveLensRequest();graphics.context->ClearState();graphics.context->Flush();
         Log("Test stopped");return 0;
     }catch(const std::exception& e){Log(std::string("ERROR: ")+e.what());
-        if(!offline)MessageBoxA(nullptr,e.what(),"Stereo3DBridgeTest",MB_ICONERROR);return 1;}
+        if(!offline)MessageBoxA(nullptr,e.what(),"LeiaSRBridgeTest",MB_ICONERROR);return 1;}
 }
