@@ -16,7 +16,11 @@ class BridgeSystem final : public SystemSense {
         void Run(){
             while(!stopped.load()){
                 titan::Snapshot s{};const bool ready=context->alive.load()&&context->client->SnapshotForWeave(s);
-                const bool lens=ready&&s.lensEnabled;const bool user=ready&&s.eyePositionValid==titan::kEyeTracked;
+                const bool lens=ready&&s.lensEnabled;
+                // Advertise the virtual viewer while optical fallback is usable.
+                // UserLost can make native Odyssey clients stop drawing. Actual
+                // face availability remains in broker/UI measurement flags.
+                const bool user=ready;
                 std::vector<std::pair<std::shared_ptr<SystemEventStream>,std::vector<SR_eventType>>> events;
                 {std::lock_guard lock(mutex);
                     for(auto it=entries.begin();it!=entries.end();){
@@ -42,7 +46,7 @@ public:
     explicit BridgeSystem(std::shared_ptr<ContextState> c):feed_(std::make_shared<Feed>(std::move(c))){}
     ~BridgeSystem()override{stop();std::lock_guard lock(feed_->mutex);for(auto& e:feed_->entries)if(auto s=e.stream.lock())s->close();}
     std::string getName()override{return "TitanLeiaBridge system";}
-    std::string getDescription()override{return "Live broker readiness, lens and tracking events";}
+    std::string getDescription()override{return "Live broker readiness, lens and virtual viewer availability";}
     void start()override{if(feed_->stopped.exchange(false)){try{worker_=std::thread([feed=feed_]{feed->Run();});}catch(...){feed_->stopped=true;throw;}}}
     void stop()override{feed_->stopped=true;if(worker_.joinable()){if(worker_.get_id()==std::this_thread::get_id())worker_.detach();else worker_.join();}}
     std::shared_ptr<SystemEventStream> openSystemEventStream(SystemEventListener* listener)override{
@@ -64,8 +68,8 @@ public:
     const float getPhysicalSizeWidth()override{return getDotPitch()*getResolutionWidth();}
     const float getDotPitch()override{titan::Snapshot s{};return context_->client->SnapshotForWeave(s)?static_cast<float>(s.refractParams[1]/10.0):0;}
     SR_recti getLocation()override{auto i=Info();return {i.rcMonitor.left,i.rcMonitor.top,i.rcMonitor.right,i.rcMonitor.bottom};}
-    int getRecommendedViewsTextureWidth()override{return getResolutionWidth();}
-    int getRecommendedViewsTextureHeight()override{return getResolutionHeight();}
+    int getRecommendedViewsTextureWidth()override{return titan::NativeDisplayPixels(Info().szDevice).width/2;}
+    int getRecommendedViewsTextureHeight()override{return titan::NativeDisplayPixels(Info().szDevice).height/2;}
 };
 std::map<SRContext*,std::unique_ptr<BridgeDisplay>> displayObjects;
 std::mutex displayMutex;

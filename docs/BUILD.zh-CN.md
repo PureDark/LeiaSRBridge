@@ -1,6 +1,6 @@
 # 构建与目录约定
 
-项目根目录现为 `F:\开发项目\TitanLeiaBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.7.0，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
+项目根目录现为 `F:\开发项目\TitanLeiaBridge`，源码、研究证据、设计稿和 Agent 记录均在此目录。CMake 只允许源码外构建，默认输出到 `build/`。当前版本为 0.8.0，包含 Opus 5.5 桌面界面和 Odyssey Hub 的进程内兼容入口。
 
 ## 配置、编译、测试
 
@@ -69,3 +69,10 @@ python -B tools/prepare_vendor.py '<厂商目录>' dependencies/vendor --mt '<Wi
 - `docs/migration/inventory.json`：迁移前的 5,012 个文件及哈希，已在目标目录逐个核验。随后旧 build 移到归档目录，少量构建脚本已按新布局修改。
 
 Git 忽略构建目录、发行包、依赖、安装包、分析二进制和 IDA 数据库，但保留源码中使用的原厂 shader 字节码 `.dxbc`、研究日志和设计截图。
+
+
+## 原生 LeiaSR 预览验证
+
+NativePreview.cpp 使用已安装官方 C API 的 Head/Eye listener，不链接桥接导入库，不创建 Broker。原厂路径从 64 位注册表读取；验证所有必需导出后才创建不请求镜片的 context。退出时先解除回调，再删除 listener/context 和卸载模块。接口出错时留在预览错误状态，不自动转入 BOE 模式。
+
+tests/NativePreviewSmoke.js 是需要真实设备的只读 UI 检查，不属于无硬件 CTest。显式执行 TitanLeiaBridge.exe --native-preview-test --duration-ms 10000，生成 logs/native-preview-test.json 和 logs/native-preview.png；检查原生模式提示、桥接控件隐藏、pose 包更新、镜像变换及原厂推荐视图尺寸。0.8.2 在本机原厂服务实测返回 1920 × 1080 px；主屏首选模式为 3840 × 2160 px。0.8.3 的 Bridge API 将原生宽高各除以 2，推荐单眼尺寸为 1920 × 1080 px；均基于读取结果而非硬编码。原厂 Displays 模块和 context 一同保留，context 销毁后再卸载；查询缺失或返回无效值只显示暂不可用，不中断追踪。测试入口不保存运行模式，也不调节设备或调用游戏操作。不要将有限次实机通过解释为任意 LeiaSR 版本兼容。

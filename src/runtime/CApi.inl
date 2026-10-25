@@ -19,8 +19,9 @@ struct CHeadListener final : SR::HeadListener {
     explicit CHeadListener(void(*cb)(SR_head)):callback(cb){}
     ~CHeadListener(){if(stream)stream->stopListening();}
     // Legacy Unity consumers copy these values straight into camera transforms.
-    // Keep unknown/NaN semantics in the modern C++ streams, but never poison a
-    // Unity transform when the camera has no face or briefly loses tracking.
+    // C++ streams already supply optical fallback while the device is usable.
+    // Retain finite Unity transforms even during actual device disconnection;
+    // system readiness events still report the unavailable device.
     void accept(const SR_head& e)override{callback(titan::legacy::SafeHead(e,LegacyCenter(client)));}
 };
 struct CEyeListener final : SR::EyePairListener {

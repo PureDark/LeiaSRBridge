@@ -2,6 +2,7 @@
 #include "GlobalRuntime.h"
 #include "Startup.h"
 #include "WebUi.h"
+#include "NativePreview.h"
 #include <nlohmann/json.hpp>
 #include <dwmapi.h>
 #include <windowsx.h>
@@ -34,7 +35,7 @@ struct Action { bool launch{}; Profile profile; bool odyssey{}; };
 std::filesystem::path appDirectory;
 HWND mainWindow{};
 app::WebUi ui;
-bool uiReady{},uiTest{};
+bool uiReady{},uiTest{},nativePreviewTest{};
 std::deque<std::wstring> uiLogs;
 app::GlobalRuntimeStatus integrationStatus;
 app::StartupStatus startupStatus;
@@ -50,7 +51,9 @@ std::thread worker;
 std::atomic<bool> stopping{}, autoAttach{false};
 std::ofstream logFile;
 NOTIFYICONDATAW tray{};
-bool mockMode{};
+bool mockMode{},nativeMode{};
+int restartMode=-1;
+app::NativePreview nativePreview;
 HANDLE integrationProcess{};
 ULONGLONG nextIntegrationStatus{};
 void SaveTuning();
@@ -78,6 +81,7 @@ void Log(const std::wstring& line) {
     if(mainWindow){ auto* copy=new std::wstring(text+L"\r\n"); if(!PostMessageW(mainWindow,kLogMessage,0,reinterpret_cast<LPARAM>(copy)))delete copy; }
 }
 void ConfigureIntegration(bool enable) {
+    if(nativeMode)return;
     if(integrationProcess)return;
     RefreshIntegrationStatus();
     if(enable&&integrationStatus.enabled){
@@ -119,6 +123,7 @@ void SaveTuning() {
     std::ofstream file(temp,std::ios::binary|std::ios::trunc);
     file<<"[Tracking]\nHorizontalOffsetTenths="<<horizontalTenths->load()
         <<"\nPredictionMs="<<predictionMs->load()<<"\nLastEnabledPredictionMs="<<lastEnabledPrediction
+        <<"\n[Application]\nNativePreview="<<((restartMode>=0?restartMode==1:nativeMode)?1:0)
         <<"\n[Integration]\nAutoAttachList="<<(autoAttach.load()?1:0)<<"\n[Odyssey]\nExecutable="<<Utf8(hubExecutable.wstring())<<"\n";
     file.flush();const bool written=bool(file);file.close();
     if(!written||!MoveFileExW(temp.c_str(),target.c_str(),MOVEFILE_REPLACE_EXISTING|MOVEFILE_WRITE_THROUGH)){
@@ -150,6 +155,7 @@ void SaveProfiles() {
     else if(uiReady)ui.Post(LR"({"type":"saved"})");
 }
 void Worker() {
+    if(nativeMode)return;
     std::set<DWORD> attempted;
     while(!stopping) {
         Action action; bool haveAction{};
@@ -212,6 +218,7 @@ void Worker() {
 }
 void Show() {ShowWindow(mainWindow,SW_RESTORE);SetForegroundWindow(mainWindow);}
 void SetPrediction(unsigned value, bool notify) {
+    if(nativeMode)return;
     predictionMs->store(value);
     if(value)lastEnabledPrediction=value;
     const std::wstring label=L"水平眼位预测："+std::to_wstring(value)+L" ms";
@@ -230,6 +237,7 @@ void NotifyTuning(const std::wstring& label) {
     wcsncpy_s(tray.szInfo,label.c_str(),_TRUNCATE);tray.dwInfoFlags=NIIF_INFO;Shell_NotifyIconW(NIM_MODIFY,&tray);
 }
 void SetOffset(int value,bool notify) {
+    if(nativeMode)return;
     value=std::clamp(value,-300,300);horizontalTenths->store(value);
     wchar_t number[32]{};swprintf_s(number,L"%+.1f",value*0.1);
 
@@ -246,9 +254,12 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
     wchar_t module[32768]{};GetModuleFileNameW(nullptr,module,static_cast<DWORD>(std::size(module)));
     appDirectory=std::filesystem::path(module).parent_path();
-    int argc{};auto argv=CommandLineToArgvW(GetCommandLineW(),&argc);bool mock{},background{};DWORD duration{};int integration{};
+    int argc{};auto argv=CommandLineToArgvW(GetCommandLineW(),&argc);bool mock{},background{};DWORD duration{};int integration{},requestedMode=-1;
     for(int i=1;i<argc;++i){if(std::wstring(argv[i])==L"--mock")mock=true;if(std::wstring(argv[i])==L"--background")background=true;
         if(std::wstring(argv[i])==L"--ui-test")uiTest=true;
+        if(std::wstring(argv[i])==L"--native-preview")requestedMode=1;
+        if(std::wstring(argv[i])==L"--native-preview-test"){requestedMode=1;nativePreviewTest=true;}
+        if(std::wstring(argv[i])==L"--bridge-mode")requestedMode=0;
         if(std::wstring(argv[i])==L"--duration-ms"&&i+1<argc)duration=wcstoul(argv[++i],nullptr,10);
         if(std::wstring(argv[i])==L"--enable-global-runtime")integration=1;
         if(std::wstring(argv[i])==L"--disable-global-runtime")integration=-1;}
@@ -257,7 +268,7 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     std::filesystem::create_directories(appDirectory/L"logs");
     if(integration){
         std::wstring error;
-        const bool ok=!mock && app::ConfigureGlobalRuntime(appDirectory/L"runtime",integration>0,error);
+        const bool ok=!mock && requestedMode!=1 && app::ConfigureGlobalRuntime(appDirectory/L"runtime",integration>0,error);
         std::ofstream result(appDirectory/L"logs"/L"RuntimeIntegration.log",std::ios::binary|std::ios::app);
         result<<Utf8(ok?(integration>0?L"免列表接入已配置。重启启动器和游戏后生效。":L"已移除桥接管理的系统路径。重启启动器和游戏后恢复原有搜索路径。"):
             L"配置失败："+error)<<'\n';
@@ -272,6 +283,8 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     while(std::getline(games,line)){if(!line.empty()&&line.back()=='\r')line.pop_back();const auto tab=line.find('\t');
         const auto path=Wide(line.substr(0,tab));if(!path.empty())profiles.push_back({path,tab==std::string::npos?L"":Wide(line.substr(tab+1))});}
     LoadTuning();
+    nativeMode=!mock&&(requestedMode>=0?requestedMode==1:GetPrivateProfileIntW(L"Application",L"NativePreview",0,(appDirectory/L"settings.ini").c_str())!=0);
+    if(requestedMode>=0&&!mock&&!nativePreviewTest)SaveTuning();
     WNDCLASSW wc{};wc.lpfnWndProc=WindowProc;wc.hInstance=instance;wc.lpszClassName=L"TitanLeiaBridge.Main.v1";
     wc.hCursor=LoadCursorW(nullptr,IDC_ARROW);wc.hbrBackground=CreateSolidBrush(RGB(250,249,246));wc.hIcon=LoadIconW(instance,MAKEINTRESOURCEW(101));
     RegisterClassW(&wc);
@@ -281,16 +294,19 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     broker::ProviderOptions options;options.mock=mock;options.logDirectory=appDirectory/L"logs";options.vendorDirectory=appDirectory/L"vendor";
     options.predictionMs=predictionMs;
     options.horizontalTenths=horizontalTenths;
-    if(!service.Start(options,Log)){if(!background)MessageBoxW(window,L"转接器已在运行，或无法建立后台服务。",L"TitanLeiaBridge",MB_ICONINFORMATION);DestroyWindow(window);return 1;}
+    if(nativeMode)nativePreview.Start(Log);
+    else if(!service.Start(options,Log)){if(!background)MessageBoxW(window,L"转接器已在运行，或无法建立后台服务。",L"TitanLeiaBridge",MB_ICONINFORMATION);DestroyWindow(window);return 1;}
     SetPrediction(predictionMs->load(),false);SetOffset(horizontalTenths->load(),false);
-    worker=std::thread(Worker);if(!background)ShowWindow(window,SW_SHOW);
-    Log(L"后台进程已启动，设备就绪状态请查看上方。SDK 1.34.10 / x64 / DX11·DX12；便携设备组件。");
+    if(!nativeMode)worker=std::thread(Worker);
+    if(!background)ShowWindow(window,SW_SHOW);
+    Log(nativeMode?L"原生 LeiaSR 预览已启动；镜像预览，不启用桥接。":L"后台进程已启动，设备就绪状态请查看上方。SDK 1.34.10 / x64 / DX11·DX12；便携设备组件。");
     const auto end=duration?GetTickCount64()+duration:0;
     MSG message{};
     while(GetMessageW(&message,nullptr,0,0)>0){TranslateMessage(&message);DispatchMessageW(&message);if(end&&GetTickCount64()>=end)DestroyWindow(window);}
-    stopping=true;wake.notify_all();service.Stop();if(worker.joinable())worker.join();
+    stopping=true;wake.notify_all();nativePreview.Stop();service.Stop();if(worker.joinable())worker.join();
     if(integrationProcess)CloseHandle(integrationProcess);
     mainWindow=nullptr;
     CoUninitialize();
+    if(restartMode>=0)ShellExecuteW(nullptr,L"open",(appDirectory/L"TitanLeiaBridge.exe").c_str(),restartMode?L"--native-preview":L"--bridge-mode",appDirectory.c_str(),SW_SHOW);
     return 0;
 }

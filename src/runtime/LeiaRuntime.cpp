@@ -26,6 +26,8 @@
 #include "sr/utility/exception.h"
 #include "render/OpticalConstants.h"
 #include "common/PoseMath.h"
+#include "common/NativeDisplayMode.h"
+#include "LegacyTrackingFallback.h"
 #include <wrl/client.h>
 #include <algorithm>
 #include <cmath>
@@ -39,7 +41,7 @@ using Microsoft::WRL::ComPtr;
 namespace SR {
 ServerNotAvailableException::ServerNotAvailableException():Exception("TitanLeiaBridge is unavailable"){} namespace {
 void ReleaseLegacyDisplay(SRContext*);
-bool MeasuredPair(const titan::Snapshot&,bool,uint64_t,bool,SR_eyePair&,SR_point3d&);
+SR_head TrackingFrame(const titan::Snapshot&,bool,uint64_t,bool);
 }}
 
 namespace {
@@ -150,14 +152,13 @@ public:
         if (right) std::fill_n(right, 3, std::numeric_limits<float>::quiet_NaN());
         titan::Snapshot snapshot{};
         const bool usable=state_->alive.load()&&state_->client->SnapshotForWeave(snapshot);
-        SR_eyePair pair{};SR_point3d center{};
-        const auto now=GetTickCount64();
-        if(!SR::MeasuredPair(snapshot,usable,now,false,pair,center))return;
+        if(!usable)return;
         // Reuse the weave's selected pair within an existing recording. Reading
         // eyes alone does not create a recording or apply prediction a second time.
         titan::Snapshot selected{};uint64_t generation{};
-        if(request_.commandList&&titan::InspectRecordingSnapshot(request_.commandList,selected,generation)&&
-            !SR::MeasuredPair(selected,true,now,false,pair,center))return;
+        if(request_.commandList&&titan::InspectRecordingSnapshot(request_.commandList,selected,generation))
+            snapshot=selected;
+        const auto pair=SR::TrackingFrame(snapshot,true,0,false).eyes;
         if(left){left[0]=static_cast<float>(pair.left.x);left[1]=static_cast<float>(pair.left.y);left[2]=static_cast<float>(pair.left.z);}
         if(right){right[0]=static_cast<float>(pair.right.x);right[1]=static_cast<float>(pair.right.y);right[2]=static_cast<float>(pair.right.z);}
     }

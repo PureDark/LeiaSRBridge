@@ -1,4 +1,5 @@
 #include "broker/BrokerService.h"
+#include "common/NativeDisplayMode.h"
 #include <sr/types.h>
 #include <sr/sense/system/systemevent.h>
 #include <sr/sense/headtracker/head.h>
@@ -25,6 +26,13 @@ int wmain(int argc,wchar_t** argv){try{
     auto h=Fn<void*(*)(void*)>(face,"createHeadTracker")(c);auto hl=Fn<void*(*)(void*,void(*)(SR_head))>(face,"createHeadListener")(h,Head);
     auto e=Fn<void*(*)(void*)>(face,"createEyeTracker")(c);auto el=Fn<void*(*)(void*,void(*)(SR_eyePair))>(face,"createEyePairListener")(e,Eyes);
     auto d=Fn<void*(*)(void*)>(display,"createDisplay")(c);Require(d&&Fn<int(*)(void*)>(display,"getResolutionWidth")(d)>0,"display dimensions");
+    MONITORINFOEXW primary{};primary.cbSize=sizeof(primary);
+    Require(GetMonitorInfoW(MonitorFromPoint({0,0},MONITOR_DEFAULTTOPRIMARY),&primary)!=0,"primary monitor");
+    const auto native=titan::NativeDisplayPixels(primary.szDevice);
+    const auto width=Fn<int(*)(void*)>(display,"getRecommendedViewsTextureWidth")(d);
+    const auto height=Fn<int(*)(void*)>(display,"getRecommendedViewsTextureHeight")(d);
+    Require(width==native.width/2&&height==native.height/2,"Recommended per-eye dimensions must be half the native width and height");
+    std::cout<<"Bridge recommended views: "<<width<<" x "<<height<<" pixels\n";
     init(c);for(unsigned i=0;i<100&&(!events[12]||!heads||!eyes);i++)Sleep(10);
     Require(events[12]&&events[3]&&heads&&eyes,"ready/system/head/eye callbacks");
     broker.Stop();for(unsigned i=0;i<300&&!events[13];i++)Sleep(10);Require(events[13]&&events[2],"disconnect events");

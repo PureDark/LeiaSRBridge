@@ -12,6 +12,7 @@
   const capture=async name=>{await pause();post('ui-test-capture',{name});await pause();};
   try {
     await wait(()=>$('#heroChip').textContent.includes('离线模拟'));
+    check(!$('#checks').textContent.includes('推荐视图尺寸'),'Native dimensions hidden in bridge mode');
     check(!document.querySelector('.design-ctl'),'Prototype controls removed');
     check(getComputedStyle($('.hero h1')).fontSize==='38px','Exact headline size');
     check(getComputedStyle($('.window')).backgroundColor==='rgb(250, 249, 246)','Exact window color');

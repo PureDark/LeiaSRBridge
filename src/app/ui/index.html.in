@@ -443,6 +443,7 @@
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><circle cx="3.5" cy="8" r="1.3"/><circle cx="8" cy="8" r="1.3"/><circle cx="12.5" cy="8" r="1.3"/></svg>
       </button>
       <div class="menu" id="menu">
+        <button data-action="preview-mode"><span id="previewModeLabel">原生 LeiaSR 预览</span><small>切换追踪来源 · 预览时不启用桥接</small></button>
         <button data-action="sheet-integration">系统接入与启动<small>开机自启动 · 免列表接入</small></button>
         <button data-action="sheet-odyssey">
           <span class="menu-title">Odyssey 3D Hub 兼容启动<span class="badge">实验</span></span>
@@ -483,7 +484,7 @@
               <path d="M120 6v8M120 150v8M34 82h8M198 82h8" stroke="#E2DDD5"/>
             </g>
             <g id="vizHead">
-              <g id="vizFace">
+              <g id="vizFace" transform="scale(-1 1)">
                 <circle r="30" fill="#FFFFFF" stroke="#1D1C1A" stroke-width="1.4" id="vizOutline"/>
                 <circle id="eyeL" cx="-10" cy="-3" r="3.4" fill="var(--left)"/>
                 <circle id="eyeR" cx="10" cy="-3" r="3.4" fill="var(--right)"/>
@@ -500,7 +501,7 @@
 
       <div class="checks" id="checks"></div>
 
-      <div class="section-head">
+      <div class="section-head" id="tuningHeader">
         <h2>画面微调</h2>
         <div class="aside">
           <span class="saved" id="saved">
@@ -513,7 +514,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" id="tuningCard">
         <div class="row">
           <div class="text">
             <div class="title">水平补偿</div>
@@ -645,7 +646,7 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     offset:80, prediction:40, lastPrediction:40, autoAttach:false, page:"overview",
     sheet:null, confirmRestore:false, games:[], editing:-1,
     calibration:false, lens:false, rotationValid:false, eyeLabel:"不可用",
-    clients:"—", mock:false, message:""
+    clients:"—", mock:false, message:"", nativePreview:false, recommendedWidth:0, recommendedHeight:0
   };
 
   const deviceReady = () => state.device === "ready";
@@ -691,6 +692,13 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     dot.className = "dot";
     cta.innerHTML = "";
 
+    if (state.nativePreview) {
+      dot.classList.add(state.device === "error" ? "err" : state.face ? "ok" : "warn");
+      chip.textContent = "原生 LeiaSR · 仅预览";
+      title.textContent = state.device === "error" ? "原厂追踪暂不可用" : state.face ? "正在跟随你的动作" : "等待原厂追踪…";
+      lead.textContent = state.message || "读取原厂头部和双眼位置，以镜像显示。";
+      return;
+    }
     if (state.device === "error") {
       dot.classList.add("err");
       chip.textContent = "设备异常";
@@ -737,6 +745,11 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     }
   }
 
+  function recommendedViewSize() {
+    return state.recommendedWidth > 0 && state.recommendedHeight > 0
+      ? state.recommendedWidth + " × " + state.recommendedHeight + " px"
+      : "暂不可用";
+  }
   function renderChecks() {
     const ready = deviceReady();
     const display = {
@@ -744,9 +757,9 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     }[state.device];
     const items = [
       { k: "显示器", cls: display[0], v: display[1] },
-      { k: "设备标定", cls: ready ? "ok" : "", v: ready ? "可用" : "—" },
+      { k: state.nativePreview ? "追踪来源" : "设备标定", cls: ready ? "ok" : "", v: state.nativePreview ? "原厂 LeiaSR" : ready ? "可用" : "—" },
       { k: "眼位跟踪", cls: ready ? (state.face ? "ok" : "warn") : "", v: ready ? state.eyeLabel : "—" },
-      { k: "免列表接入", cls: state.integrated ? "ok" : "warn", v: state.integrated ? "已启用" : "未启用", click: true },
+      { k: state.nativePreview ? "推荐视图尺寸" : "免列表接入", cls: state.nativePreview ? (state.recommendedWidth > 0 ? "ok" : "") : state.integrated ? "ok" : "warn", v: state.nativePreview ? recommendedViewSize() : state.integrated ? "已启用" : "未启用", click: !state.nativePreview },
     ];
     const root = $("#checks");
     root.innerHTML = "";
@@ -859,7 +872,7 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     idle.style.display = "none";
     if (!state.face) {
       head.setAttribute("transform", "translate(120 82)");
-      face.setAttribute("transform", "");
+      face.setAttribute("transform", "scale(-1 1)");
       outline.setAttribute("stroke-dasharray", "3 4");
       outline.setAttribute("stroke", "#9A958C");
       head.style.opacity = 0.7;
@@ -871,7 +884,8 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     outline.setAttribute("stroke", "#1D1C1A");
     head.style.opacity = 1;
     head.setAttribute("transform", `translate(${(120 + viz.x).toFixed(2)} ${(82 - viz.y).toFixed(2)}) scale(${viz.scale.toFixed(3)})`);
-    face.setAttribute("transform", `rotate(${viz.roll.toFixed(2)})`);
+    // Mirror the face around its own center, preserving the existing head translation.
+    face.setAttribute("transform", `scale(-1 1) rotate(${viz.roll.toFixed(2)})`);
     const ex = viz.yaw * 0.45, ey = -3 - viz.pitch * 0.5;
     $("#eyeL").setAttribute("cx", (-10 + ex).toFixed(2));
     $("#eyeR").setAttribute("cx", (10 + ex).toFixed(2));
@@ -904,10 +918,11 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
 
     const items = [
       [ready ? (state.face ? "ok" : "warn") : "", "眼位", state.eyeLabel],
-      [ready ? "ok" : "", "3D 请求", ready ? (state.lens ? "开启（软件请求）" : "关闭") : "—"],
-      [ready ? "ok" : "", "标定", state.calibration ? "可用" : "不可用"],
-      ["", "客户端", state.clients],
+      [ready ? "ok" : "", "3D 请求", state.nativePreview ? "不请求" : ready ? (state.lens ? "开启（软件请求）" : "关闭") : "—"],
+      [ready ? "ok" : "", "标定", state.nativePreview ? "由原厂管理" : state.calibration ? "可用" : "不可用"],
+      ["", "客户端", state.nativePreview ? "不接管游戏" : state.clients],
     ];
+    if (state.nativePreview) items.push(["", "推荐视图尺寸", recommendedViewSize()]);
     const root = $("#diagStatus");
     root.innerHTML = "";
     for (const [cls, k, v] of items) {
@@ -1226,6 +1241,7 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     exit: () => send("exit"),
     keys: () => openSheet("keys"),
     guide: () => openSheet("guide"),
+    "preview-mode": () => send("preview-mode", {value:!state.nativePreview}),
     "sheet-integration": () => openSheet("integration"),
     "sheet-odyssey": () => openSheet("odyssey"),
     "close-sheet": closeSheet,
@@ -1267,11 +1283,17 @@ window.addEventListener("error", e => chrome.webview.postMessage({action:"ui-err
     Object.assign(state, data.state);
     Object.assign(pose, data.pose);
     const changed = keys => keys.some(k => JSON.stringify(old[k]) !== JSON.stringify(state[k]));
-    if (changed(["device","integrated","integrating","face","mock","message"])) {
+    $("#previewModeLabel").textContent = state.nativePreview ? "切回泰坦桥接" : "原生 LeiaSR 预览";
+    $("#tuningHeader").style.display = state.nativePreview ? "none" : "";
+    $("#tuningCard").style.display = state.nativePreview ? "none" : "";
+    $('[data-page="games"]').style.display = state.nativePreview ? "none" : "";
+    $('[data-action="sheet-odyssey"]').style.display = state.nativePreview ? "none" : "";
+    $('[data-action="sheet-integration"]').style.display = state.nativePreview ? "none" : "";
+    if (changed(["device","integrated","integrating","face","mock","message","nativePreview"])) {
       renderHero();
       if (state.mock) $("#heroChip").textContent = "离线模拟 · 不控制硬件";
     }
-    if (changed(["device","face","integrated","eyeLabel"])) renderChecks();
+    if (changed(["device","face","integrated","eyeLabel","nativePreview","recommendedWidth","recommendedHeight"])) renderChecks();
     if (changed(["offset"])) renderOffset();
     $$("#predSeg button").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.pred === state.prediction)));
     $("#autoSwitch").setAttribute("aria-checked", String(state.autoAttach));

@@ -5,6 +5,7 @@
 #include <sr/sense/headtracker/headtracker.h>
 #include <sr/sense/headtracker/headposetracker.h>
 #include <sr/sense/eyetracker/eyetracker.h>
+#include <sr/sense/system/systemsense.h>
 #include <sr/weaver/dx12weaver.h>
 #include <dxgi1_6.h>
 #include <wrl/client.h>
@@ -26,6 +27,16 @@ template<class T> T Symbol(HMODULE module, const char* name) {
     if (!symbol) throw std::runtime_error(std::string("Missing export: ") + name);
     return reinterpret_cast<T>(symbol);
 }
+struct SystemListener {
+    std::atomic<unsigned> found{},lost{},disconnected{};
+    void Accept(SR_systemEvent event) {
+        if(event.eventType==UserFound)++found;
+        if(event.eventType==UserLost)++lost;
+        if(event.eventType==DeviceDisconnected)++disconnected;
+    }
+};
+SystemListener* systemObserver{};
+void SystemEventCallback(SR_systemEvent e){systemObserver->Accept(e);}
 struct MockBroker {
     HANDLE mutex{}, mapping{};
     titan::SharedState* state{};
@@ -251,6 +262,10 @@ int wmain(int argc, wchar_t** argv) {
         TrackingListener<SR_head,SR::HeadListener> headListener,otherListener;
         TrackingListener<SR_headPose,SR::HeadPoseListener> poseListener;
         auto headStream=headTracker->openHeadStream(&headListener);
+        SystemListener systemListener;
+        systemObserver=&systemListener;
+        auto* system=Symbol<void*(*)(void*)>(core,"createSystemSense")(secondContext);
+        auto* systemStream=Symbol<void*(*)(void*,void(*)(SR_systemEvent))>(core,"createSystemEventListener")(system,SystemEventCallback);
         auto otherStream=headTracker->openHeadStream(&otherListener);
         auto poseStream=poseTracker->openHeadPoseStream(&poseListener);
         TrackingListener<SR_eyePair,SR::EyePairListener> eyeListener,rawEyeListener,closedEyeListener;
@@ -258,26 +273,45 @@ int wmain(int argc, wchar_t** argv) {
         auto rawEyeStream=rawEyeTracker->openEyePairStream(&rawEyeListener);
         auto closedEyeStream=eyeTracker->openEyePairStream(&closedEyeListener);
         Sleep(20);Require(!headListener.Count()&&!poseListener.Count()&&!eyeListener.Count()&&!rawEyeListener.Count(),"Tracking started before initialize");
-        broker.Tracking(titan::kEyeTracked,12,4,600,true);
+        broker.Tracking(titan::kEyeDefault,8,0,600);
         initialize(secondContext);
-        WaitFor([&]{return headListener.Count()>1&&poseListener.Count()>1&&otherListener.Count()>1;},"Head streams did not publish");
+        WaitFor([&]{return headListener.Count()>1&&poseListener.Count()>1&&otherListener.Count()>1&&
+            eyeListener.Count()>1&&rawEyeListener.Count()>1&&systemListener.found>0;},"No-face startup did not publish continuous frames");
+        Require(headListener.Read().headPose.position.x==8&&eyeListener.Read().left.x==-24&&
+            rawEyeListener.Read().right.x==40&&poseListener.Read().time==0&&systemListener.lost==0,
+            "No-face startup must expose the default virtual viewer");
+        broker.Tracking(titan::kEyeTracked,12,4,600,true);
+        WaitFor([&]{return headListener.Read().headPose.position.x==16&&poseListener.Read().position.x==16&&
+            otherListener.Read().headPose.position.x==16;},"Tracked position did not replace startup fallback");
         auto h=headListener.Read();auto p=poseListener.Read();
         Require(std::abs(h.headPose.position.x-16)<.001&&std::abs(h.headPose.position.y-2)<.001&&
             std::abs(h.headPose.position.z-605)<.001,"Head did not use monitor rotation/translation in millimetres");
-        Require(std::abs(p.position.x-16)<.001&&p.time>1700000000000000ULL&&p.frameId>0,"Pose coordinate/time ABI mismatch");
-        Require(std::isnan(p.orientation.x)&&std::isnan(h.eyes.left.x)&&std::isnan(h.ears.right.z),"Unsupported pose components were fabricated");
-        broker.Tracking(titan::kEyeDefault);
-        WaitFor([&]{return std::isnan(headListener.Read().headPose.position.x)&&std::isnan(poseListener.Read().position.x);},"Default optical eye was published as a tracked head");
-        broker.Tracking(titan::kEyeHeld);Sleep(25);
-        Require(std::isnan(headListener.Read().headPose.position.x),"Held optical eye was published as a tracked head");
+        Require(std::abs(p.position.x-16)<.001&&p.time==0&&p.frameId>0,"Synthetic pose coordinate/time ABI mismatch");
+        Require(p.orientation.x==0&&std::abs(h.eyes.left.x+16)<.001&&h.ears.right.z==605,
+            "Position-only tracking must supply neutral orientation and synthetic eyes/ears");
+        WaitFor([&]{return systemListener.found>0;},"Ready fallback did not announce a usable user");
+        const auto lostBefore=systemListener.lost.load();
+        for(auto mode:{titan::kEyeDefault,titan::kEyeHeld}) {
+            broker.Tracking(mode,12,4,600,true);
+            WaitFor([&]{return headListener.Read().time==0&&headListener.Read().headPose.position.x==16;},
+                "Default/held center not transformed into display space");
+            h=headListener.Read();
+            Require(h.eyes.time==0&&h.headPose.time==0&&h.ears.time==0&&h.headPose.orientation.x==0,
+                "Synthetic fallback must not claim a measured sample");
+            Require(h.eyes.left.x==-16&&h.eyes.right.x==48&&h.eyes.left.z==605,
+                "Synthetic eye pair must straddle the calibrated optical center");
+            const auto count=headListener.Count();Sleep(100);
+            Require(headListener.Count()>count+1,"Unchanged fallback stopped delivering frames");
+            Require(systemListener.lost==lostBefore,"Usable fallback emitted UserLost");
+        }
         broker.Tracking(titan::kEyeTracked,-24,8,620);
         WaitFor([&]{return headListener.Read().headPose.position.x==-24&&poseListener.Read().position.z==620;},"Reacquisition did not update all axes");
         broker.freezeObservation=true;Sleep(350);
-        Require(std::isnan(headListener.Read().headPose.position.x),"Broker heartbeat renewed a stale observation");
+        Require(headListener.Read().headPose.position.x==-24&&headListener.Read().time==0,"Stale observation must use optical fallback without renewing measurement time");
         broker.freezeObservation=false;
-        WaitFor([&]{return headListener.Read().headPose.position.x==-24;},"Observation recovery failed");
+        WaitFor([&]{return headListener.Read().headPose.position.x==-24&&headListener.Read().time>0;},"Observation recovery failed");
         broker.Pair(true);
-        WaitFor([&]{return std::isfinite(eyeListener.Read().left.x)&&std::isfinite(rawEyeListener.Read().left.x)&&
+        WaitFor([&]{return eyeListener.Read().time>0&&rawEyeListener.Read().time>0&&
             std::isfinite(headListener.Read().eyes.left.x)&&std::abs(poseListener.Read().position.y-12)<.001;},"Measured pairs did not reach all SDK interfaces");
         h=headListener.Read();const auto eyes=eyeListener.Read(),rawEyes=rawEyeListener.Read();
         Require(std::abs(h.headPose.position.x-16)<.001&&std::abs(h.headPose.position.y-12)<.001&&
@@ -286,7 +320,7 @@ int wmain(int argc, wchar_t** argv) {
             std::abs(eyes.right.y-42)<.001&&std::abs(eyes.right.z-615)<.001,"Independent measured eye coordinates were lost/transformed incorrectly");
         Require(std::abs(rawEyes.left.y+28)<.001&&std::abs(rawEyes.right.y-32)<.001,"createRaw did not remove only bridge prediction");
         Require(std::abs(h.eyes.left.y-eyes.left.y)<.001&&std::abs(h.eyes.right.z-eyes.right.z)<.001&&
-            std::isnan(h.headPose.orientation.x),"Head pair disagrees with EyeTracker or fabricated full orientation");
+            h.headPose.orientation.x==0&&h.headPose.time==0,"Head pair disagrees with EyeTracker or synthetic orientation has a timestamp");
         const auto distance=[](const SR_point3d& a,const SR_point3d& b){const double x=a.x-b.x,y=a.y-b.y,z=a.z-b.z;return std::sqrt(x*x+y*y+z*z);};
         Require(std::abs(distance(h.ears.left,h.ears.right)-140)<.001&&
             std::abs(distance(h.ears.left,h.headPose.position)-70)<.001&&std::abs(distance(h.ears.right,h.headPose.position)-70)<.001,
@@ -297,8 +331,7 @@ int wmain(int argc, wchar_t** argv) {
         Require(eyes.time>1700000000000000ULL&&eyes.frameId>0&&h.eyes.frameId==h.frameId&&h.eyes.time==h.time,
             "Measured pair timestamp/frame ABI mismatch");
         broker.Pose(true);
-        WaitFor([&]{return std::isfinite(headListener.Read().headPose.orientation.x)&&
-            std::isfinite(poseListener.Read().orientation.x);},"Rotation did not reach Head and HeadPose");
+        WaitFor([&]{return headListener.Read().headPose.time>0&&poseListener.Read().time>0;},"Rotation did not reach Head and HeadPose");
         h=headListener.Read();p=poseListener.Read();
         Require(std::abs(p.orientation.x)<1e-6&&std::abs(p.orientation.y-1.5707963267948966)<1e-6&&
             std::abs(p.orientation.z)<1e-6&&std::abs(h.headPose.orientation.y-p.orientation.y)<1e-6,
@@ -307,32 +340,32 @@ int wmain(int argc, wchar_t** argv) {
             std::abs(h.ears.right.z-h.headPose.position.z+70)<1e-6&&
             std::abs(h.eyes.left.y-eyes.left.y)<.001,"Pose ear model or measured eyes changed incorrectly");
         broker.freezePose=true;Sleep(350);
-        Require(std::isnan(poseListener.Read().orientation.y)&&std::isfinite(eyeListener.Read().left.x),
+        Require(poseListener.Read().orientation.y==0&&poseListener.Read().time==0&&eyeListener.Read().time>0,
             "Fresh eyes/heartbeat renewed stale rotation");
         broker.freezePose=false;broker.Pose(true,true);
-        WaitFor([&]{return std::isnan(headListener.Read().headPose.orientation.y);},"Non-rotation matrix accepted");
+        WaitFor([&]{return headListener.Read().headPose.orientation.y==0&&headListener.Read().headPose.time==0;},"Non-rotation matrix accepted");
         broker.Pose(true);
-        WaitFor([&]{return std::isfinite(poseListener.Read().orientation.y);},"Rotation reacquisition failed");
-        for(auto invalid:{titan::kEyeHeld,titan::kEyeDefault,0u}){
-            broker.Tracking(invalid);
-            WaitFor([&]{return std::isnan(poseListener.Read().orientation.x);},"Fallback eye retained rotation");
+        WaitFor([&]{return poseListener.Read().time>0;},"Rotation reacquisition failed");
+        for(auto fallback:{titan::kEyeHeld,titan::kEyeDefault}){
+            broker.Tracking(fallback);
+            WaitFor([&]{return poseListener.Read().orientation.x==0&&poseListener.Read().time==0&&
+                eyeListener.Read().time==0&&rawEyeListener.Read().time==0;},"Fallback retained measured tracking metadata");
         }
         broker.Pair(true);broker.Pose(false);
         broker.freezePair=true;Sleep(350);
-        Require(std::isnan(eyeListener.Read().left.x)&&std::isnan(rawEyeListener.Read().right.z)&&
-            std::isnan(headListener.Read().eyes.left.x)&&std::isnan(headListener.Read().ears.left.x)&&
-            std::isfinite(headListener.Read().headPose.position.x),"Fresh COM fallback incorrectly renewed stale pair/ears");
+        Require(eyeListener.Read().time==0&&rawEyeListener.Read().time==0&&
+            headListener.Read().eyes.time==0&&headListener.Read().ears.time==0&&
+            std::isfinite(headListener.Read().headPose.position.x),"Stale pair must fall back without renewing measurement time");
         broker.freezePair=false;
-        WaitFor([&]{return std::isfinite(eyeListener.Read().left.x);},"Pair recovery failed");
-        for(const auto invalid:{titan::kEyeDefault,titan::kEyeHeld,0u}){
-            broker.Tracking(invalid);
-            WaitFor([&]{return std::isnan(eyeListener.Read().left.x)&&std::isnan(rawEyeListener.Read().left.x)&&
-                std::isnan(headListener.Read().eyes.left.x)&&std::isnan(headListener.Read().ears.left.x);},"Default/held/invalid eye was exposed as measured pair");
-        }
+        WaitFor([&]{return eyeListener.Read().time>0;},"Pair recovery failed");
+        broker.Tracking(0);
+        WaitFor([&]{return std::isnan(eyeListener.Read().left.x)&&std::isnan(rawEyeListener.Read().left.x)&&
+            std::isnan(headListener.Read().eyes.left.x)&&std::isnan(poseListener.Read().position.x);},"Unavailable device fabricated usable tracking");
+        WaitFor([&]{return systemListener.lost>lostBefore&&systemListener.disconnected>0;},"Unavailable device did not report lost/disconnected");
         broker.Pair(false);broker.Tracking(titan::kEyeTracked);
-        WaitFor([&]{return std::isnan(eyeListener.Read().left.x);},"Invalid pair did not clear SDK eyes");
+        WaitFor([&]{return eyeListener.Read().time==0&&eyeListener.Read().left.x==-20;},"Position-only fallback missing");
         broker.Pair(true);
-        WaitFor([&]{return std::isfinite(eyeListener.Read().left.x)&&std::isfinite(closedEyeListener.Read().left.x);},"Pair reacquisition failed");
+        WaitFor([&]{return eyeListener.Read().time>0&&closedEyeListener.Read().time>0;},"Pair reacquisition failed");
         stopEyes(eyeStream.get());closeEyes(closedEyeStream.get());
         const auto eyeStopped=eyeListener.Count(),closedEyeCount=closedEyeListener.Count();Sleep(30);
         Require(eyeListener.Count()==eyeStopped&&closedEyeListener.Count()==closedEyeCount,"Eye stream close/stop did not fence callbacks");
@@ -371,16 +404,25 @@ int wmain(int argc, wchar_t** argv) {
         Require(!weaver->isLateLatchingEnabled(), "Unsupported late latching must not be advertised");
         float left[3]{}, right[3]{};
         weaver->getPredictedEyePositions(left, right);
-        Require(std::isnan(left[0]) && std::isnan(right[2]), "Unavailable predicted eyes must not appear valid");
+        Require(left[0]==-20 && right[2]==600, "DX12 position-only eye fallback missing");
         broker.Pair(true);
         weaver->getPredictedEyePositions(left,right);
         Require(std::abs(left[1]+18)<.001&&std::abs(right[2]-615)<.001,"DX12 did not expose broker-predicted measured eyes");
         broker.freezePair=true;Sleep(350);
         weaver->getPredictedEyePositions(left,right);
-        Require(std::isnan(left[0])&&std::isnan(right[2]),"DX12 published a stale measured pair");
+        Require(left[0]==-16&&right[2]==605,"DX12 stale pair did not use calibrated optical fallback");
         broker.freezePair=false;broker.Pair(false);
         weaver->getPredictedEyePositions(left,right);
-        Require(std::isnan(left[0])&&std::isnan(right[2]),"DX12 retained an invalid measured pair");
+        Require(left[0]==-16&&right[2]==605,"DX12 invalid pair did not use calibrated optical fallback");
+        for(auto fallback:{titan::kEyeHeld,titan::kEyeDefault}) {
+            broker.Tracking(fallback,8,0,600);
+            weaver->getPredictedEyePositions(left,right);
+            Require(left[0]==-24&&right[0]==40&&right[2]==600,"DX12 held/default eyes missing");
+        }
+        broker.Tracking(0);
+        weaver->getPredictedEyePositions(left,right);
+        Require(std::isnan(left[0])&&std::isnan(right[2]),"DX12 unavailable device must remain unavailable");
+        broker.Tracking(titan::kEyeTracked);
         // The production wrappers do not catch weave exceptions. Missing state
         // must instead revoke the lens lease and return without GPU recording.
         weaver->weave();
@@ -463,6 +505,7 @@ int wmain(int argc, wchar_t** argv) {
         destroyContext(context);
         Require(broker.ClientCount() == 1, "Deleting one context released a shared active lease");
         destroyContext(secondContext);
+        Symbol<void(*)(void*)>(core,"deleteSystemEventListener")(systemStream);
         const auto afterDestroy=rawEyeListener.Count();Sleep(30);
         Require(rawEyeListener.Count()==afterDestroy,"Context destruction did not stop an open eye stream");
         stopEyes(rawEyeStream.get());closeEyes(eyeStream.get());

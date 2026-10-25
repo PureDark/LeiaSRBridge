@@ -26,12 +26,26 @@ void HandleUi(const std::wstring& message) {
     try{
         const auto data=Json::parse(Utf8(message));
         const auto action=data.value("action",std::string{});
+        if(nativeMode&&nativePreviewTest&&action=="native-preview-test-result"){
+            std::ofstream file(appDirectory/L"logs"/L"native-preview-test.json");file<<data.dump(2);return;
+        }
+        if(nativeMode&&nativePreviewTest&&action=="native-preview-test-capture"){
+            ui.Capture(appDirectory/L"logs"/L"native-preview.png");return;
+        }
+        if(action=="preview-mode"){
+            if(mockMode){Notice(L"离线模拟不切换真实设备模式。");return;}
+            restartMode=data.at("value").get<bool>()?1:0;SaveTuning();
+            PostMessageW(mainWindow,WM_COMMAND,kExit,0);return;
+        }
+        if(nativeMode&&action!="ready"&&action!="viz-active"&&action!="ui-error"&&action!="logs"&&action!="hide"&&action!="minimize"&&action!="drag"&&action!="exit"){
+            Notice(L"原生预览只读取追踪；请切回泰坦桥接模式后使用此功能。");return;
+        }
         if(action=="ui-error"){Log(Wide(data.dump()));}
         else if(action=="ready"){
             uiReady=true;PublishUi();UpdatePoseTimer();
             for(const auto& line:uiLogs)ui.Post(Wide(Json{{"type","log"},{"text",Utf8(line)}}.dump()));
-            if(uiTest){
-                const auto r=FindResourceW(nullptr,MAKEINTRESOURCEW(103),RT_RCDATA);
+            if(uiTest||(nativeMode&&nativePreviewTest)){
+                const auto r=FindResourceW(nullptr,MAKEINTRESOURCEW(nativeMode?104:103),RT_RCDATA);
                 const auto bytes=SizeofResource(nullptr,r);
                 const auto script=static_cast<const char*>(LockResource(LoadResource(nullptr,r)));
                 if(script)ui.Script(Wide(std::string(script,bytes)));
@@ -106,17 +120,22 @@ Json UiPose(const Snapshot& s){
         {"yaw",rotation?std::asin(std::clamp(-s.headRotation[6],-1.0,1.0))*degrees:0},
         {"roll",rotation?std::atan2(s.headRotation[3],s.headRotation[0])*degrees:0}};
 }
+Json NativeUiPose(const app::NativePreviewState& s){
+    return Json{{"x",s.x},{"y",s.y},{"z",s.z},{"pitch",s.rotation?s.pitch:0},
+        {"yaw",s.rotation?s.yaw:0},{"roll",s.rotation?s.roll:0}};
+}
 void PublishPose(){
-    if(uiReady)ui.Post(Wide(Json{{"type","pose"},{"pose",UiPose(service.ReadStatus())}}.dump()));
+    if(uiReady)ui.Post(Wide(Json{{"type","pose"},{"pose",nativeMode?NativeUiPose(nativePreview.Read()):UiPose(service.ReadStatus())}}.dump()));
 }
 void PublishUi(){
     if(!uiReady)return;
-    const auto s=service.ReadStatus();
-    const bool ready=(s.status==ProviderStatus::Ready||s.status==ProviderStatus::Mock)&&s.calibrationValid&&s.eyePositionValid;
-    const char* device=ready?"ready":s.status==ProviderStatus::Busy?"busy":s.status==ProviderStatus::NoDevice?"nodevice":s.status==ProviderStatus::Error?"error":"init";
+    const auto n=nativePreview.Read();
+    const auto s=nativeMode?Snapshot{}:service.ReadStatus();
+    const bool ready=nativeMode?n.connected:(s.status==ProviderStatus::Ready||s.status==ProviderStatus::Mock)&&s.calibrationValid&&s.eyePositionValid;
+    const char* device=ready?"ready":nativeMode?(n.error?"error":"init"):s.status==ProviderStatus::Busy?"busy":s.status==ProviderStatus::NoDevice?"nodevice":s.status==ProviderStatus::Error?"error":"init";
     const auto now=GetTickCount64();
     const bool rotation=s.headPoseValid&&s.headPoseObservationTick&&s.headPoseObservationTick<=now&&now-s.headPoseObservationTick<=250;
-    const auto pose=UiPose(s);
+    const auto pose=nativeMode?NativeUiPose(n):UiPose(s);
     Json games=Json::array();
     {std::lock_guard lock(dataMutex);for(const auto& p:profiles)games.push_back({{"exe",Utf8(p.executable.filename().wstring())},{"path",Utf8(p.executable.wstring())},{"args",Utf8(p.arguments)},{"color","#5D5952"}});}
     static ULONGLONG nextProcesses{};
@@ -130,7 +149,7 @@ void PublishUi(){
             if(_wcsicmp(name.c_str(),L"Odyssey3DHubUI.exe")==0||_wcsicmp(name.c_str(),L"Odyssey3DHubService.exe")==0)hubRunning=true;
             if(p.pid==hubOwnedPid.load())hubSession=true;
         }
-        HANDLE mapping=OpenFileMappingW(FILE_MAP_READ,FALSE,kMappingName);
+        HANDLE mapping=nativeMode?nullptr:OpenFileMappingW(FILE_MAP_READ,FALSE,kMappingName);
         if(mapping){
             const auto shared=static_cast<const SharedState*>(MapViewOfFile(mapping,FILE_MAP_READ,0,0,sizeof(SharedState)));
             if(shared&&shared->magic==kProtocolMagic&&shared->version==kProtocolVersion&&shared->size==sizeof(SharedState)){
@@ -147,14 +166,15 @@ void PublishUi(){
         if(clients.empty())clients="—";
     }
     std::error_code ec;const bool installed=std::filesystem::is_regular_file(hubExecutable,ec);
-    const char* eye=s.eyePositionValid==kEyeTracked?"跟踪中":s.eyePositionValid==kEyeHeld?"短暂保持":s.eyePositionValid==kEyeDefault?"默认眼位":"不可用";
-    Json state{{"device",device},{"displayName",""},{"face",s.eyePositionValid==kEyeTracked},
+    const char* eye=nativeMode?(n.face?"原厂跟踪中":"等待人脸"):s.eyePositionValid==kEyeTracked?"跟踪中":s.eyePositionValid==kEyeHeld?"短暂保持":s.eyePositionValid==kEyeDefault?"默认眼位":"不可用";
+    Json state{{"device",device},{"displayName",nativeMode?"LeiaSR 原厂服务":""},{"face",nativeMode?n.face:s.eyePositionValid==kEyeTracked},{"nativePreview",nativeMode},
+        {"recommendedWidth",nativeMode?n.recommendedWidth:0},{"recommendedHeight",nativeMode?n.recommendedHeight:0},
         {"integrated",integrationStatus.enabled},{"integrating",integrationProcess!=nullptr},
         {"startup",startupStatus.enabled},{"startupOther",startupStatus.registered&&!startupStatus.enabled},{"startupError",Utf8(startupStatus.error)},
         {"offset",horizontalTenths->load()},{"prediction",predictionMs->load()},{"lastPrediction",lastEnabledPrediction},
-        {"autoAttach",autoAttach.load()},{"games",games},{"calibration",s.calibrationValid!=0},
-        {"lens",s.lensEnabled!=0},{"rotationValid",rotation},{"eyeLabel",eye},{"clients",clients},
-        {"mock",mockMode},{"message",Utf8(s.message)},
+        {"autoAttach",!nativeMode&&autoAttach.load()},{"games",games},{"calibration",s.calibrationValid!=0},
+        {"lens",s.lensEnabled!=0},{"rotationValid",nativeMode?n.rotation:rotation},{"eyeLabel",eye},{"clients",clients},
+        {"mock",mockMode},{"message",Utf8(nativeMode?n.message:s.message)},
         {"integrationDetail",Utf8(!integrationStatus.error.empty()?integrationStatus.error:integrationStatus.pendingRecovery?L"上次配置未完成，请重新启用或恢复原厂接入。":!integrationStatus.enabled&&!integrationStatus.managedDirectory.empty()?L"已登记其他桥接目录；启用可更新到当前版本。":L"")},{"hub",hubRunning?"running":installed?"installed":"missing"},
         {"hubSession",hubSession},{"hubLaunching",hubLaunching.load()},{"hubPath",Utf8(hubExecutable.parent_path().wstring())}};
     ui.Post(Wide(Json{{"type","state"},{"state",state},{"pose",pose}}.dump()));
@@ -178,11 +198,13 @@ LRESULT CALLBACK WindowProc(HWND window,UINT message,WPARAM wParam,LPARAM lParam
         tray.cbSize=sizeof(tray);tray.hWnd=window;tray.uID=1;tray.uFlags=NIF_MESSAGE|NIF_ICON|NIF_TIP;
         tray.uCallbackMessage=kTrayMessage;tray.hIcon=LoadIconW(GetModuleHandleW(nullptr),MAKEINTRESOURCEW(101));
         wcscpy_s(tray.szTip,L"Titan Bridge");Shell_NotifyIconW(NIM_ADD,&tray);
+        if(!nativeMode){
         if(!RegisterHotKey(window,kPredictionHotkey,MOD_CONTROL|MOD_ALT|MOD_NOREPEAT,VK_F9))Log(L"Ctrl+Alt+F9 已被占用，请使用窗口调节。");
         const UINT keys[]{VK_LEFT,VK_RIGHT,VK_LEFT,VK_RIGHT,VK_HOME};
         for(int i=0;i<5;++i){
             const UINT mods=MOD_CONTROL|MOD_ALT|(i==2||i==3?MOD_SHIFT:0)|(i>=4?MOD_NOREPEAT:0);
             if(!RegisterHotKey(window,2+i,mods,keys[i]))Log(L"全局调节快捷键注册失败，编号="+std::to_wstring(2+i));
+        }
         }
         RefreshIntegrationStatus();SetTimer(window,1,100,nullptr);return 0;}
     case WM_NCCALCSIZE:if(wParam)return 0;break;

@@ -74,6 +74,15 @@ SR_head TrackingFrame(const titan::Snapshot& s,bool usable,uint64_t sequence,boo
             frame.ears.time=frame.headPose.time;
         }
     }
+    // SDK clients use these values directly in projection/camera transforms.
+    // Keep broker measurement flags honest, but supply a usable display pose
+    // whenever weaving can continue (held/default, stale or partial tracking).
+    // Synthetic components retain time=0 instead of inventing sensor samples.
+    if(usable) {
+        SR_point3d fallback{0,0,600};
+        DisplayPoint(s,s.eye,fallback);
+        frame=titan::legacy::SafeHead(frame,fallback);
+    }
     return frame;
 }
 bool SamePoint(const SR_point3d& a,const SR_point3d& b) {
@@ -125,20 +134,24 @@ template<class Base,class Stream> class PositionSense : public Base {
         bool raw{};
         explicit Feed(std::shared_ptr<ContextState> value,bool rawEyes):context(std::move(value)),raw(rawEyes){}
         void Run() {
-            uint64_t lastObservation{},lastPairSequence{},lastPoseSequence{};bool emitted{};SR_head last{};
+            uint64_t lastObservation{},lastPairSequence{},lastPoseSequence{},lastEmit{};bool emitted{};SR_head last{};
             while(!stopped.load()) {
                 titan::Snapshot snapshot{};
                 const bool usable=context->alive.load()&&context->client->SnapshotForWeave(snapshot);
                 auto tracking=TrackingFrame(snapshot,usable,sequence+1,raw);
-                const bool pairValid=std::isfinite(tracking.eyes.left.x);
+                const bool pairValid=tracking.eyes.time!=0;
                 const auto observation=pairValid?snapshot.eyePairObservationTick:
-                    (tracking.headPose.time?snapshot.observationTick:0);
+                    (tracking.time?snapshot.observationTick:0);
                 const auto pairSequence=pairValid?snapshot.eyePairSequence:0;
-                const auto poseSequence=std::isfinite(tracking.headPose.orientation.x)?snapshot.headPoseSequence:0;
-                if(emitted&&lastObservation==observation&&lastPairSequence==pairSequence&&lastPoseSequence==poseSequence&&SameTracking(last,tracking)){
+                const auto poseSequence=tracking.headPose.time?snapshot.headPoseSequence:0;
+                // Some clients consume the callback as their tracking heartbeat.
+                // Continue stationary fallback at ~60 Hz without renewing time.
+                const auto now=GetTickCount64();
+                const bool fallbackDue=usable&&(!tracking.eyes.time||!tracking.headPose.time)&&now-lastEmit>=16;
+                if(emitted&&!fallbackDue&&lastObservation==observation&&lastPairSequence==pairSequence&&lastPoseSequence==poseSequence&&SameTracking(last,tracking)){
                     Sleep(4);continue;
                 }
-                emitted=true;last=tracking;lastObservation=observation;lastPairSequence=pairSequence;lastPoseSequence=poseSequence;++sequence;
+                emitted=true;lastEmit=now;last=tracking;lastObservation=observation;lastPairSequence=pairSequence;lastPoseSequence=poseSequence;++sequence;
                 typename Stream::Frame frame{};
                 if constexpr(std::is_same_v<Stream,HeadPoseStream>)frame=tracking.headPose;
                 else if constexpr(std::is_same_v<Stream,EyePairStream>)frame=tracking.eyes;
@@ -170,8 +183,8 @@ public:
     }
     std::string getName() override{return "TitanLeiaBridge tracking";}
     std::string getDescription() override{return feed_->raw?
-        "Measured BOE eye pair without bridge prediction; vendor filtering retained; local observation clock":
-        "Display-space eyes/center in mm; stereo facial-plane orientation as Rodrigues radians; estimated 140 mm ear model; local observation clock";}
+        "BOE eyes without bridge prediction; synthetic optical fallback has time=0":
+        "Display-space eyes/center in mm; Rodrigues radians; estimated 140 mm ears; synthetic fallback has time=0";}
     void start() override {
         if(!feed_->stopped.exchange(false))return;
         try{worker_=std::thread([feed=feed_]{feed->Run();});}catch(...){feed_->stopped=true;throw;}
